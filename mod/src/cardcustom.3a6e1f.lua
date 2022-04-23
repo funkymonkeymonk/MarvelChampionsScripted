@@ -20,3 +20,4 @@ getObjectFromGUID('e3b2e1').call('createPlayers')
 self.destruct()
 end
 
+

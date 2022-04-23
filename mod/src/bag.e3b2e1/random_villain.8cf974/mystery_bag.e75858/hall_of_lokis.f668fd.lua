@@ -47,3 +47,4 @@ function genLoki()
   self.Shuffle()
 end
 
+

@@ -20,3 +20,4 @@ function genRandom()
   self.takeObject({index = 0, position = {85.75,1.3,8.75}})
 end
 
+

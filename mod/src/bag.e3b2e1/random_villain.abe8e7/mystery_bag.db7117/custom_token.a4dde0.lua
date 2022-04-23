@@ -66,3 +66,4 @@ function updateDisplay()
   	self.editButton({index = 0, label = tostring(value)})
 end
 
+
