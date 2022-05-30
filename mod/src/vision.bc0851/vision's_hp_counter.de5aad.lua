@@ -29,20 +29,20 @@ function createAll()
     else
         ttText = self.getName()
     end
-    local scale = {x=1.5, y=1.5, z=1.5}
+    local scale = {x=3.5, y=3.5, z=3.5}
     local thickness = self.getBoundsNormalized().size.y
     if self.name == "Custom_Tile" then
         thickness = thickness*2
-        scale = {1.25, 1.25, 1.25}
+        scale = {1.4, 1.4, 1.4}
     end
     self.createButton({
       label=tostring(CONFIG.VALUE),
       click_function="add_subtract",
       tooltip=ttText,
       function_owner=self,
-      position={-0.90, thickness/2, -0.05},
+      position={-0.65, thickness/2, -0.05},
       height=600,
-      width=600,
+      width=1000,
       alignment = 1,
       scale=scale,
       font_size=CONFIG.FONT_SIZE,
@@ -110,5 +110,7 @@ function setTooltips()
         tooltip = ttText
         })
 end
+
+
 
 

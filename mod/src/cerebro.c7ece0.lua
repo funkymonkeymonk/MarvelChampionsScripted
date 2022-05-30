@@ -85,7 +85,7 @@ end
 
 function buttonClicked()
 importerBag = getObjectFromGUID('3ca6e4')
-cardPool = importerBag.takeObject(getObjectFromGUID('ced3f3'))
+cardPool = importerBag.takeObject(getObjectFromGUID('7d65df'))
 cardPool.setPosition{-15.75,1.62,-137.25}
 cardPool.setRotation{180,0,0}
   -- Reset
@@ -97,7 +97,7 @@ end
 
 function returnImporter()
 importerBag = getObjectFromGUID('3ca6e4')
-clonePool = getObjectFromGUID('ced3f3')
+clonePool = getObjectFromGUID('7d65df')
 importerBag.putObject(clonePool)
 end
 
@@ -398,5 +398,6 @@ end
 function onUpdate ()
     --[[ print('onUpdate loop!') --]]
 end
+
 
 
