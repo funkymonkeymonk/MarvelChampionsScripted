@@ -169,9 +169,9 @@ end
 --Creates recall and place buttons
 function createMemoryActionButtons()
     self.createButton({
-        label="Begin", click_function="buttonClick_place", function_owner=self,
-        position={0,3,7}, rotation={0,0,0}, height=700, width=2000,
-        font_size=700, color={0,0,0}, font_color={1,1,1}, tooltip="Start Campaign"
+        label="Place", click_function="buttonClick_place", function_owner=self,
+        position={4,0.5,0}, rotation={0,0,0}, height=1000, width=1700,
+        font_size=700, color={0,0,0}, font_color={1,1,1}, tooltip="Place Aspect"
     })
 --    self.createButton({
 --        label="Setup", click_function="buttonClick_setup", function_owner=self,
@@ -191,11 +191,13 @@ function buttonClick_place()
             obj.setRotationSmooth(entry.rot)
             obj.setLock(entry.lock)
         else
+            self.clearButtons()
+            createMemoryActionButtons2()
             --If obj is inside of the bag
             for _, bagObj in ipairs(bagObjList) do
                 if bagObj.guid == guid then
                     local item = self.takeObject({
-                        guid=guid, position=entry.pos, rotation=entry.rot, smooth=false
+                        guid=guid, position=entry.pos, rotation=entry.rot,
                     })
                     item.setLock(entry.lock)
                     break
@@ -204,7 +206,19 @@ function buttonClick_place()
         end
     end
     broadcastToAll("Objects Placed", {1,1,1})
-    self.clearButtons()
+end
+
+function createMemoryActionButtons2()
+    self.createButton({
+        label="Return", click_function="buttonClick_recall", function_owner=self,
+        position={4,0.5,0}, rotation={0,0,0}, height=1000, width=1700,
+        font_size=700, color={0,0,0}, font_color={1,1,1}, tooltip="Return Aspect"
+    })
+--    self.createButton({
+--        label="Setup", click_function="buttonClick_setup", function_owner=self,
+--        position={2,0.3,0}, rotation={0,90,0}, height=350, width=800,
+--        font_size=250, color={0,0,0}, font_color={1,1,1}
+--    })
 end
 
 --Recalls objects to bag from table
@@ -213,6 +227,8 @@ function buttonClick_recall()
         local obj = getObjectFromGUID(guid)
         if obj ~= nil then self.putObject(obj) end
     end
+    self.clearButtons()
+    createMemoryActionButtons()
     broadcastToAll("Objects Recalled", {1,1,1})
 end
 
@@ -267,5 +283,3 @@ function round(num, dec)
   local mult = 10^(dec or 0)
   return math.floor(num * mult + 0.5) / mult
 end
-
-
