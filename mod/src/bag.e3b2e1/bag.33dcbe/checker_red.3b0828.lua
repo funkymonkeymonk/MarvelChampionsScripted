@@ -25,3 +25,4 @@ function clearInvis()
    getObjectFromGUID('dd5292').destroy()
 end
 
+
