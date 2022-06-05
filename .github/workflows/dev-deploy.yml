@@ -1,0 +1,16 @@
+name: dev-deploy
+on: [workflow_call]
+jobs:
+  push-to-steam:
+    runs-on: ubuntu-latest
+    steps:
+      # Github Action Marketplace URL https://github.com/marketplace/actions/steam-workshop-upload
+      - name: steam-workshop-upload
+        uses: Weilbyte/steam-workshop-upload@v1
+        with:
+          appid: 286160
+          itemid: 2817359776
+          path: 'mod' #TODO: reduce the bundle size by separating the mod and src directories
+        env:
+          STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }} # Your Steam username
+          STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }} # Your Steam password
