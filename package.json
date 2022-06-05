@@ -1,8 +1,8 @@
 {
   "name": "tts-marvel-champions-automated",
   "scripts": {
-    "embed": "npx ts-node script/index.ts embed mod/src mod/MarvelChampions.json",
-    "extract": "npx ts-node script/index.ts extract mod/MarvelChampions.json mod/src"
+    "embed": "npx ts-node script/index.ts embed src mod/MarvelChampions.json",
+    "extract": "npx ts-node script/index.ts extract mod/MarvelChampions.json src"
   },
   "license": "MIT",
   "bugs": {

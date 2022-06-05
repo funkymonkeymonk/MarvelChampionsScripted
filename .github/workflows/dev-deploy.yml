@@ -1,16 +1,33 @@
 name: dev-deploy
-on: [workflow_call]
+on:
+  push:
+    branches:
+      - 'ci'
+  workflow_dispatch:
 jobs:
   push-to-steam:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
-      # Github Action Marketplace URL https://github.com/marketplace/actions/steam-workshop-upload
-      - name: steam-workshop-upload
-        uses: Weilbyte/steam-workshop-upload@v1
-        with:
-          appid: 286160
-          itemid: 2817359776
-          path: 'mod' #TODO: reduce the bundle size by separating the mod and src directories
-        env:
-          STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }} # Your Steam username
-          STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }} # Your Steam password
+      - uses: actions/checkout@v3
+      - name : Install kpsteam
+        shell: bash
+        # TODO: Unzip this to a better location and add to path or something
+        run: |
+          curl https://github.com/KillahPotatoes/KP-Steam/releases/download/v1.1.1/kpsteam_1.1.1_with_deps.zip -Lo kpsteam.zip
+          7z x kpsteam.zip
+      - name: Install steam
+        shell: bash
+        #TODO: The first time steam launches it will update. Ignore the error code and relaunch.
+        run: |
+          choco install steam-client
+          cd 'C:/Program Files (x86)/Steam/'
+          ./Steam.exe -login $STEAM_USERNAME $STEAM_PASSWORD || true
+          ./Steam.exe -login $STEAM_USERNAME $STEAM_PASSWORD
+
+      - name: steam-workshop-legacy-upload
+        #TODO: I think I need to start Steam as part of the same step
+        run: |
+          pushd 'C:/Program Files (x86)/Steam/'
+          ./Steam.exe -login $STEAM_USERNAME $STEAM_PASSWORD
+          popd
+          ./kpsteam.exe upload --app 286160 --item 2817359776 --path "./mod/"
