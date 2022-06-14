@@ -20,12 +20,12 @@ jobs:
         #TODO: The first time steam launches it will update. Ignore the error code and relaunch.
         run: |
           choco install steam-client
-          'C:/Program Files (x86)/Steam/./Steam.exe' -login $STEAM_USERNAME $STEAM_PASSWORD || true
-          'C:/Program Files (x86)/Steam/./Steam.exe' -login $STEAM_USERNAME $STEAM_PASSWORD
+          'C:/Program Files (x86)/Steam/Steam.exe' -login $STEAM_USERNAME $STEAM_PASSWORD || true
+          'C:/Program Files (x86)/Steam/Steam.exe' -login $STEAM_USERNAME $STEAM_PASSWORD
 
       - name: steam-workshop-legacy-upload
+        shell: bash
         #TODO: I think I need to start Steam as part of the same step
         run: |
-          ls
-          'C:/Program Files (x86)/Steam/./Steam.exe' -login $STEAM_USERNAME $STEAM_PASSWORD
-          ./kpsteam.exe upload --app 286160 --item 2817359776 --path "./mod/"
+          'C:/Program Files (x86)/Steam/Steam.exe' -login $STEAM_USERNAME $STEAM_PASSWORD
+          ./kpsteam.exe upload --legacy --app 286160 --item 2817359776 --path ".\mod"
