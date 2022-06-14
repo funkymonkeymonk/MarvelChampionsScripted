@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Debug sleep
         shell: bash
-        run: timeout /t 10 /nobreak
+        run: timeout 10
 #      - uses: actions/checkout@v3
 #      - name : Install kpsteam
 #        shell: bash
