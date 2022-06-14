@@ -8,25 +8,27 @@ jobs:
   push-to-steam:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v3
-      - name : Install kpsteam
+      - name: Debug sleep
         shell: bash
-        # TODO: Unzip this to a better location and add to path or something
-        run: |
-          curl https://github.com/KillahPotatoes/KP-Steam/releases/download/v1.1.1/kpsteam_1.1.1_with_deps.zip -Lo kpsteam.zip
-          7z x kpsteam.zip
-      - name: Install steam
-        shell: bash
-        #TODO: The first time steam launches it will update. Ignore the error code and relaunch.
-        run: |
-          choco install steam-client
-          'C:/Program Files (x86)/Steam/Steam.exe' -login $STEAM_USERNAME $STEAM_PASSWORD || true
-          'C:/Program Files (x86)/Steam/Steam.exe' -login $STEAM_USERNAME $STEAM_PASSWORD
-
-      - name: steam-workshop-legacy-upload
-        shell: bash
-        #TODO: I think I need to start Steam as part of the same step
-        run: |
-          'C:/Program Files (x86)/Steam/Steam.exe' -login $STEAM_USERNAME $STEAM_PASSWORD
-          sleep 60s
-          ./kpsteam.exe upload --legacy --app 286160 --item 2817359776 --path ".\mod"
+        run: timeout /t 10 /nobreak
+#      - uses: actions/checkout@v3
+#      - name : Install kpsteam
+#        shell: bash
+#        # TODO: Unzip this to a better location and add to path or something
+#        run: |
+#          curl https://github.com/KillahPotatoes/KP-Steam/releases/download/v1.1.1/kpsteam_1.1.1_with_deps.zip -Lo kpsteam.zip
+#          7z x kpsteam.zip
+#      - name: Install steam
+#        shell: bash
+#        #TODO: The first time steam launches it will update. Ignore the error code and relaunch.
+#        run: |
+#          choco install steam-client
+#          'C:/Program Files (x86)/Steam/Steam.exe' -login $STEAM_USERNAME $STEAM_PASSWORD || true
+#          'C:/Program Files (x86)/Steam/Steam.exe' -login $STEAM_USERNAME $STEAM_PASSWORD
+#
+#      - name: steam-workshop-legacy-upload
+#        shell: bash
+#        #TODO: I think I need to start Steam as part of the same step
+#        run: |
+#          'C:/Program Files (x86)/Steam/Steam.exe' -login $STEAM_USERNAME $STEAM_PASSWORD
+#          ./kpsteam.exe upload --legacy --app 286160 --item 2817359776 --path ".\mod"
