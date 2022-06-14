@@ -28,5 +28,5 @@ jobs:
         #TODO: I think I need to start Steam as part of the same step
         run: |
           'C:/Program Files (x86)/Steam/Steam.exe' -login $STEAM_USERNAME $STEAM_PASSWORD
-          timeout 60
+          timeout /t 60
           ./kpsteam.exe upload --legacy --app 286160 --item 2817359776 --path ".\mod"
