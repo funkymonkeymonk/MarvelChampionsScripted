@@ -12,4 +12,4 @@ jobs:
 #      TODO: Put kpsteam into the path so I don't need to use an absolute path
       - name: steam-workshop-legacy-upload
         shell: bash
-        run: "C:\Program Files (x86)\kpsteam\kpsteam.exe" upload --legacy --app 286160 --item 2817359776 --path ".\mod"
+        run: "C:\\Program Files (x86)\\kpsteam\\kpsteam.exe" upload --legacy --app 286160 --item 2817359776 --path ".\\mod"
