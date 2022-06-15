@@ -2,7 +2,7 @@ name: dev-deploy
 on:
   push:
     branches:
-      - 'ci'
+      - 'main'
   workflow_dispatch:
 jobs:
   push-to-steam:
