@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Debug sleep
         shell: bash
-        run: powershell -command "Please Wait for 5 second" -s 10
+        run: powershell -s 10
 #      - uses: actions/checkout@v3
 #      - name : Install kpsteam
 #        shell: bash
