@@ -12,7 +12,7 @@ jobs:
         shell: bash
         run: |
           date
-          powershell -s 10 || true
+          ping localhost -n 10 >nul
           date
 #      - uses: actions/checkout@v3
 #      - name : Install kpsteam
