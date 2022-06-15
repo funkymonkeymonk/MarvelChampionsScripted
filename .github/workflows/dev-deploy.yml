@@ -10,7 +10,10 @@ jobs:
     steps:
       - name: Debug sleep
         shell: bash
-        run: powershell -s 10
+        run: |
+          date
+          powershell -s 10 || true
+          date
 #      - uses: actions/checkout@v3
 #      - name : Install kpsteam
 #        shell: bash
