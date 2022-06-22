@@ -13,7 +13,7 @@ jobs:
       - name: Convert save file to BSON
         shell: cmd
         run: |
-          node .\script\
+          node .\script\workshopPrep.js
       - name: steam-workshop-legacy-upload
         shell: cmd
         run: |
