@@ -1,0 +1,22 @@
+name: prod-deploy
+on:
+  push:
+    tags:
+      - "v*"
+jobs:
+  push-to-steam:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install node dependencies
+        shell: cmd
+        run: |
+          npm install bson
+      - name: Convert save file to BSON
+        shell: cmd
+        run: |
+          node .\script\workshopPrep.js
+      - name: steam-workshop-legacy-upload
+        shell: cmd
+        run: |
+          "C:\Program Files (x86)\kpsteam\kpsteam.exe" upload --legacy --app 286160 --item 2824240402 --path ".\mod\MarvelChampions.bson"
