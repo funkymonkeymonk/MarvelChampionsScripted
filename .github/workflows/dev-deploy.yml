@@ -13,6 +13,8 @@ jobs:
       - name: Convert save file to BSON
         shell: cmd
         run: |
+          choco install -y node
+          npm install -g bson
           node .\script\
       - name: steam-workshop-legacy-upload
         shell: cmd
