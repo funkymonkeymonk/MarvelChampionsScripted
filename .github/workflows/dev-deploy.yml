@@ -3,13 +3,18 @@ on:
   push:
     branches:
       - 'main'
+      - 'ci-dev'
   workflow_dispatch:
 jobs:
   push-to-steam:
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v3
+      - name: Convert save file to BSON
+        shell: cmd
+        run: |
+          node .\script\
       - name: steam-workshop-legacy-upload
         shell: cmd
         run: |
-          "C:\Program Files (x86)\kpsteam\kpsteam.exe" upload --legacy --app 286160 --item 2817359776 --path ".\mod\2817359776.json"
+          "C:\Program Files (x86)\kpsteam\kpsteam.exe" upload --legacy --app 286160 --item 2817359776 --path ".\mod\MarvelChampions.bson"
