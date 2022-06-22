@@ -13,6 +13,7 @@ jobs:
       - name: Convert save file to BSON
         shell: cmd
         run: |
+          npm install bson
           node .\script\workshopPrep.js
       - name: steam-workshop-legacy-upload
         shell: cmd
