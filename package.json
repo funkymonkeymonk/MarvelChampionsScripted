@@ -1,14 +1,13 @@
 {
   "name": "ultimate-marvel-champions-scripted",
   "scripts": {
-    "compile": "npx ts-node tool/main.ts compile mod/src/MarvelChampionsLCG.json dist/MarvelChampionsLCG.json",
-    "extract": "npx ts-node tool/main.ts extract dist/MarvelChampionsLCG.json mod/src",
+    "compile": "npx ts-node tool/main.ts compile \"mod/src/Marvel Champions LCG.json\" \"dist/Marvel Champions LCG.json\"",
+    "extract": "npx ts-node tool/main.ts extract \"dist/Marvel Champions LCG.json\" mod/src",
     "lint": "prettier --ignore-path .prettierignore --list-different src tool contrib && eslint src tool --ext .ts",
     "lint:fix": "prettier --ignore-path .prettierignore --write src tool contrib && eslint src tool --fix --ext .ts",
     "lint:lua": "luacheck mod/src",
-    "start": "npx ts-node tool/main.ts develop mod/src/MarvelChampionsLCG.json dist/MarvelChampionsLCG.json",
-    "validate": "ts-node ./tool/validate.ts",
-    "convertToBSON": "node ./tool/workshopPrep.js"
+    "start": "npx ts-node tool/main.ts develop mod/src/2817359776.json dist/2817359776.json",
+    "validate": "ts-node ./tool/validate.ts"
   },
   "license": "MIT",
   "bugs": {
@@ -16,6 +15,8 @@
   },
   "homepage": "https://github.com/funkymonkeymonk/MarvelChampionsScripted",
   "devDependencies": {
+    "commander": "^3.0.2",
+    "dot-prop": ">=5.1.1",
     "@matanlurey/tts-editor": "github:matanlurey/tts-editor#dist",
     "@matanlurey/tts-expander": "github:matanlurey/tts-expander#dist",
     "@matanlurey/tts-runner": "github:matanlurey/tts-runner#dist",
@@ -27,17 +28,14 @@
     "@types/mkdirp": "^0.5.2",
     "@types/node": "^12.20.27",
     "@types/node-fetch": "^2.5.12",
-    "@types/sanitize-filename": "^1.6.3",
     "@types/shelljs": "^0.8.9",
     "@typescript-eslint/eslint-plugin": "^4.31.1",
     "@typescript-eslint/parser": "^4.31.1",
+    "@types/sanitize-filename": "^1.6.3",
     "ajv-cli": "^5.0.0",
-    "bson": "^4.6.4",
     "chalk": "^2.4.2",
     "clear": "^0.1.0",
-    "commander": "^3.0.2",
     "detect-newline": "^3.1.0",
-    "dot-prop": ">=5.1.1",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.24.2",
@@ -47,7 +45,6 @@
     "fs-extra": "^8.1.0",
     "image-size": "^1.0.0",
     "is-png": "^2.0.0",
-    "jsonlint": "^1.6.3",
     "minimist": "^1.2.6",
     "mkdirp": "^0.5.5",
     "node-fetch": "^3.1.1",
@@ -60,6 +57,7 @@
     "typescript": "^3.9.10"
   },
   "dependencies": {
+    "bson": "^4.6.4",
     "make-promises-safe": "^5.1.0"
   }
 }

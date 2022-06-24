@@ -23,8 +23,8 @@ const isWindows = process.platform === "win32";
 
 runTool(
   `ajv${isWindows ? ".cmd" : ""}`,
-  '-d "./mod/src/**/*.json"',
-  '-s "./mod/schema/GenericObject.json"',
+  '-d "./contrib/cards/*.json"',
+  '-s "./mod/schema/CardSet.json"',
   '-r "./mod/schema/deps/**.json"',
   "--strict",
   "--errors=line",
