@@ -102,25 +102,31 @@ export async function compileSaveFile(
   }
 }
 
-export async function destroySymlink(homeDir?: string): Promise<void> {
-  // TODO: Add non-win32 support.
-  if (!homeDir) {
-    if (os.platform() !== "win32") {
+function getHomeDir() {
+  switch (os.platform()) {
+    case "win32":
+      return steam.homeDir.win32(process.env);
+      break
+    case "darwin":
+      return process.env.HOME + "/Library/Tabletop Simulator"
+      break
+    default:
       throw new Error(`Unsupported platform: ${os.platform()}`);
-    }
-    homeDir = steam.homeDir.win32(process.env);
   }
+}
+
+export async function destroySymlink(homeDir?: string): Promise<void> {
+  if (!homeDir) {
+    homeDir = getHomeDir();
+  }
+
   const from = path.join(homeDir, "Saves", "TTSDevLink");
   return fs.remove(from);
 }
 
 export async function createSymlink(homeDir?: string): Promise<string> {
-  // TODO: Add non-win32 support.
   if (!homeDir) {
-    if (os.platform() !== "win32") {
-      throw new Error(`Unsupported platform: ${os.platform()}`);
-    }
-    homeDir = steam.homeDir.win32(process.env);
+    homeDir = homeDir = getHomeDir();
   }
   await destroySymlink(homeDir);
   const from = path.join(homeDir, "Saves", "TTSDevLink");
