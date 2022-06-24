@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "92e06e",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 66.25,
+      "posY": -2.69019938,
+      "posZ": -23.75,
+      "rotX": 8.537841e-7,
+      "rotY": 179.994034,
+      "rotZ": 2.033938e-7,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Wrecking Crew",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.494117618,
+      "g": 0.494117618,
+      "b": 0.494117618
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Wrecking_Crew.92e06e.lua",
+    "LuaScriptState": "#include ./Wrecking_Crew.92e06e.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Wrecking_Crew.aa8cb2.json"
+  ]
+}

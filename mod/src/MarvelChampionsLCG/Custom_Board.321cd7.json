@@ -1,0 +1,49 @@
+{
+  "Object": {
+    "GUID": "321cd7",
+    "Name": "Custom_Board",
+    "Transform": {
+      "posX": 2.17958984e-12,
+      "posY": 0,
+      "posZ": 1.09778853e-11,
+      "rotX": -0.00002985713,
+      "rotY": 180.000122,
+      "rotZ": 180,
+      "scaleX": 1.95,
+      "scaleY": 1,
+      "scaleZ": 1.82
+    },
+    "Nickname": "",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.165493816,
+      "g": 0.165493816,
+      "b": 0.165493816
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1484453085526915756/8D76F40C34245458F5C9506BCAFA236A5067E285/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 1.57781208
+    },
+    "LuaScript": "#include ./Custom_Board.321cd7.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

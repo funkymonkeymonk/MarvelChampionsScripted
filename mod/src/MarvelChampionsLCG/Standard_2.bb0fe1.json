@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "bb0fe1",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 75.25,
+      "posY": -2.69026685,
+      "posZ": -0.750013947,
+      "rotX": 0.0000106721691,
+      "rotY": 179.999969,
+      "rotZ": 1.2172606e-7,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Standard 2",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Standard_2.bb0fe1.lua",
+    "LuaScriptState": "#include ./Standard_2.bb0fe1.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Deck.cd6be2.json"
+  ]
+}

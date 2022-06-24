@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "2bbb4f",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 60.25,
+      "posY": -2.69023275,
+      "posZ": -8.75,
+      "rotX": 0.00003799048,
+      "rotY": 179.989822,
+      "rotZ": -0.00002742418,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Black Order",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.5019608,
+      "g": 0.5019608,
+      "b": 0.5019608
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Black_Order.2bbb4f.lua",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Deck.589b66.json"
+  ]
+}

@@ -21,4 +21,4 @@ jobs:
       - name: steam-workshop-legacy-upload
         shell: cmd
         run: |
-          "C:\Program Files (x86)\kpsteam\kpsteam.exe" upload --legacy --app 286160 --item 2817359776 --path ".\mod\MarvelChampions.bson"
+          "C:\Program Files (x86)\kpsteam\kpsteam.exe" upload --legacy --app 286160 --item 2817359776 --path ".\dist\MarvelChampionsLCG.bson"

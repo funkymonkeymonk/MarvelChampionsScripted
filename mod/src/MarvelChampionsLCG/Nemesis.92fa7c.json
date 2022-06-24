@@ -1,0 +1,59 @@
+{
+  "Object": {
+    "GUID": "92fa7c",
+    "Name": "Custom_Model_Bag",
+    "Transform": {
+      "posX": -21.1050014,
+      "posY": 0.9612167,
+      "posZ": 35.175,
+      "rotX": 1.74163034e-7,
+      "rotY": 179.98468,
+      "rotZ": -8.414871e-8,
+      "scaleX": 3,
+      "scaleY": 2.5,
+      "scaleZ": 3
+    },
+    "Nickname": "Nemesis",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.9999998,
+      "g": 0.992160261,
+      "b": 0.9999998
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Number": 0,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1774973579377612606/F3FB68D9163A73D4CE53FCF8190891E17CEA7782/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1774973579377612810/9934E95B27D2E6B1AF36BA5DB958C8ABA2469CC1/",
+      "NormalURL": "http://cloud-3.steamusercontent.com/ugc/1774973579377612743/F87D8C6C9A1EE83B41A54441D08C16259E8366D0/",
+      "ColliderURL": "",
+      "Convex": true,
+      "MaterialIndex": 1,
+      "TypeIndex": 6,
+      "CastShadows": true
+    },
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Nemesis.92fa7c.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

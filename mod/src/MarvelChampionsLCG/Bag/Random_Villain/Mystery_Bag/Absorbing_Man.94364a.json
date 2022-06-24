@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "94364a",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 68.0018845,
+      "posY": 4.69090366,
+      "posZ": 5.86106539,
+      "rotX": 1.15471077e-9,
+      "rotY": 180.000519,
+      "rotZ": -3.149188e-8,
+      "scaleX": 2.81490779,
+      "scaleY": 1,
+      "scaleZ": 2.81490779
+    },
+    "Nickname": "Absorbing Man",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249991566,
+      "g": 0.249991566,
+      "b": 0.249991566
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1595918438102238320/0194F84CEEB5C4D8939A8CDDFDE43B5805AD7EF1/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Absorbing_Man.94364a.lua",
+    "LuaScriptState": "#include ./Absorbing_Man.94364a.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}
+

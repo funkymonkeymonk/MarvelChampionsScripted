@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "962ee4",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 60.25,
+      "posY": -2.69002724,
+      "posZ": -18.75,
+      "rotX": -5.630304e-13,
+      "rotY": 179.999878,
+      "rotZ": -5.46948741e-7,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Power Stone",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.5019608,
+      "g": 0.5019608,
+      "b": 0.5019608
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Power_Stone.962ee4.lua",
+    "LuaScriptState": "#include ./Power_Stone.962ee4.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Power_Stone.607146.802400.json"
+  ]
+}

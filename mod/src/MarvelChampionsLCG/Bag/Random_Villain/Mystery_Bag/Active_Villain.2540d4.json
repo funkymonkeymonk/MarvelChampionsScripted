@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "2540d4",
+    "Name": "Custom_Token",
+    "Transform": {
+      "posX": 63.9292564,
+      "posY": 2.72155714,
+      "posZ": -5.8054533,
+      "rotX": -6.75431068e-7,
+      "rotY": 179.985245,
+      "rotZ": -0.000003252257,
+      "scaleX": 0.577605247,
+      "scaleY": 1,
+      "scaleZ": 0.577605247
+    },
+    "Nickname": "Active Villain",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/776227634105723337/6BF2E58AF9079335E83E51153700A279021A654D/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomToken": {
+        "Thickness": 0.2,
+        "MergeDistancePixels": 15,
+        "StandUp": false,
+        "Stackable": false
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

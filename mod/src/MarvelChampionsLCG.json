@@ -1,0 +1,700 @@
+{
+  "Save": {
+    "SaveName": "MarvelChampionsLCG",
+    "EpochTime": 1655967775,
+    "Date": "6/23/2022 1:02:55 AM",
+    "VersionNumber": "v13.1.1",
+    "GameMode": "MarvelChampionsLCG\n",
+    "GameType": "Game",
+    "GameComplexity": "Low Complexity",
+    "PlayingTime": [
+      0,
+      0
+    ],
+    "PlayerCounts": [
+      1,
+      4
+    ],
+    "Tags": [
+      "Scripting",
+      "Cards"
+    ],
+    "Gravity": 0.5,
+    "PlayArea": 0.5,
+    "Table": "Table_Custom",
+    "TableURL": "http://cloud-3.steamusercontent.com/ugc/1484453085526915756/8D76F40C34245458F5C9506BCAFA236A5067E285/",
+    "Sky": "Sky_Regal",
+    "SkyURL": "http://kelexo.thedailypos.org/games/tabletop/backgrounds/TTSBG6.jpg",
+    "Note": "",
+    "TabStates": {
+      "0": {
+        "title": "Rules",
+        "body": "",
+        "color": "Grey",
+        "visibleColor": {
+          "r": 0.5,
+          "g": 0.5,
+          "b": 0.5
+        },
+        "id": 0
+      },
+      "1": {
+        "title": "White",
+        "body": "",
+        "color": "White",
+        "visibleColor": {
+          "r": 1,
+          "g": 1,
+          "b": 1
+        },
+        "id": 1
+      },
+      "2": {
+        "title": "Brown",
+        "body": "",
+        "color": "Brown",
+        "visibleColor": {
+          "r": 0.443,
+          "g": 0.231,
+          "b": 0.09
+        },
+        "id": 2
+      },
+      "3": {
+        "title": "Red",
+        "body": "",
+        "color": "Red",
+        "visibleColor": {
+          "r": 0.856,
+          "g": 0.1,
+          "b": 0.094
+        },
+        "id": 3
+      },
+      "4": {
+        "title": "Orange",
+        "body": "",
+        "color": "Orange",
+        "visibleColor": {
+          "r": 0.956,
+          "g": 0.392,
+          "b": 0.113
+        },
+        "id": 4
+      },
+      "5": {
+        "title": "Yellow",
+        "body": "",
+        "color": "Yellow",
+        "visibleColor": {
+          "r": 0.905,
+          "g": 0.898,
+          "b": 0.172
+        },
+        "id": 5
+      },
+      "6": {
+        "title": "Green",
+        "body": "",
+        "color": "Green",
+        "visibleColor": {
+          "r": 0.192,
+          "g": 0.701,
+          "b": 0.168
+        },
+        "id": 6
+      },
+      "7": {
+        "title": "Blue",
+        "body": "",
+        "color": "Blue",
+        "visibleColor": {
+          "r": 0.118,
+          "g": 0.53,
+          "b": 1
+        },
+        "id": 7
+      },
+      "8": {
+        "title": "Teal",
+        "body": "",
+        "color": "Teal",
+        "visibleColor": {
+          "r": 0.129,
+          "g": 0.694,
+          "b": 0.607
+        },
+        "id": 8
+      },
+      "9": {
+        "title": "Purple",
+        "body": "",
+        "color": "Purple",
+        "visibleColor": {
+          "r": 0.627,
+          "g": 0.125,
+          "b": 0.941
+        },
+        "id": 9
+      },
+      "10": {
+        "title": "Pink",
+        "body": "",
+        "color": "Pink",
+        "visibleColor": {
+          "r": 0.96,
+          "g": 0.439,
+          "b": 0.807
+        },
+        "id": 10
+      },
+      "11": {
+        "title": "Black",
+        "body": "",
+        "color": "Black",
+        "visibleColor": {
+          "r": 0.25,
+          "g": 0.25,
+          "b": 0.25
+        },
+        "id": 11
+      }
+    },
+    "MusicPlayer": {
+      "RepeatSong": false,
+      "PlaylistEntry": 1,
+      "CurrentAudioTitle": "Rogue One Imperial Suite",
+      "CurrentAudioURL": "http://cloud-3.steamusercontent.com/ugc/763848311381194911/EDAA86C3B5E9489233900020C4A1001A42CF8179/",
+      "AudioLibrary": [
+        {
+          "Item1": "http://cloud-3.steamusercontent.com/ugc/763848311381194911/EDAA86C3B5E9489233900020C4A1001A42CF8179/",
+          "Item2": "Rogue One Imperial Suite"
+        }
+      ]
+    },
+    "Grid": {
+      "Type": 0,
+      "Lines": false,
+      "Color": {
+        "r": 0,
+        "g": 0,
+        "b": 0
+      },
+      "Opacity": 1,
+      "ThickLines": false,
+      "Snapping": false,
+      "Offset": true,
+      "BothSnapping": false,
+      "xSize": 0.5,
+      "ySize": 0.5,
+      "PosOffset": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      }
+    },
+    "Lighting": {
+      "LightIntensity": 0.54,
+      "LightColor": {
+        "r": 1,
+        "g": 0.9804,
+        "b": 0.8902
+      },
+      "AmbientIntensity": 1.3,
+      "AmbientType": 0,
+      "AmbientSkyColor": {
+        "r": 0.5,
+        "g": 0.5,
+        "b": 0.5
+      },
+      "AmbientEquatorColor": {
+        "r": 0.5,
+        "g": 0.5,
+        "b": 0.5
+      },
+      "AmbientGroundColor": {
+        "r": 0.5,
+        "g": 0.5,
+        "b": 0.5
+      },
+      "ReflectionIntensity": 1,
+      "LutIndex": 0,
+      "LutContribution": 1
+    },
+    "Hands": {
+      "Enable": true,
+      "DisableUnused": false,
+      "Hiding": 0
+    },
+    "ComponentTags": {
+      "labels": []
+    },
+    "Turns": {
+      "Enable": false,
+      "Type": 0,
+      "TurnOrder": [],
+      "Reverse": false,
+      "SkipEmpty": false,
+      "DisableInteractions": false,
+      "PassTurns": true,
+      "TurnColor": ""
+    },
+    "DecalPallet": [],
+    "LuaScript": "#include ./MarvelChampionsLCG.lua",
+    "LuaScriptState": "",
+    "XmlUI": "#include ./MarvelChampionsLCG.xml",
+    "SnapPoints": [
+      {
+        "Position": {
+          "x": -0.335001439,
+          "y": 0.9611349,
+          "z": 20.4350033
+        }
+      },
+      {
+        "Position": {
+          "x": -0.3349997,
+          "y": 0.9612171,
+          "z": 29.145
+        }
+      },
+      {
+        "Position": {
+          "x": -9.045,
+          "y": 0.9612171,
+          "z": 28.475
+        }
+      },
+      {
+        "Position": {
+          "x": 8.375,
+          "y": 0.9612171,
+          "z": 28.475
+        }
+      },
+      {
+        "Position": {
+          "x": 8.375001,
+          "y": 0.9611349,
+          "z": 22.445
+        }
+      },
+      {
+        "Position": {
+          "x": -21.1050014,
+          "y": 0.9612171,
+          "z": 35.175
+        }
+      },
+      {
+        "Position": {
+          "x": -41.2050056,
+          "y": 0.9611349,
+          "z": -17.0850029
+        }
+      },
+      {
+        "Position": {
+          "x": -13.7350006,
+          "y": 0.9611349,
+          "z": -17.755003
+        }
+      },
+      {
+        "Position": {
+          "x": 13.7350006,
+          "y": 0.9611349,
+          "z": -17.7550011
+        }
+      },
+      {
+        "Position": {
+          "x": 41.2100754,
+          "y": 0.9611349,
+          "z": -17.0850639
+        }
+      },
+      {
+        "Position": {
+          "x": 16.75,
+          "y": 0.9611349,
+          "z": 21.75
+        }
+      },
+      {
+        "Position": {
+          "x": 16.75,
+          "y": 0.9611349,
+          "z": 16.75
+        }
+      },
+      {
+        "Position": {
+          "x": 8.75,
+          "y": 0.9611349,
+          "z": 16.75
+        }
+      },
+      {
+        "Position": {
+          "x": -7.25,
+          "y": 0.9611349,
+          "z": 22.25
+        }
+      },
+      {
+        "Position": {
+          "x": -12.75,
+          "y": 0.9611349,
+          "z": 22.25
+        }
+      },
+      {
+        "Position": {
+          "x": -7.25,
+          "y": 0.9611349,
+          "z": 15.25
+        }
+      },
+      {
+        "Position": {
+          "x": -12.25,
+          "y": 0.9611349,
+          "z": 15.25
+        }
+      },
+      {
+        "Position": {
+          "x": 13.75,
+          "y": 0.9612171,
+          "z": 29.25
+        }
+      },
+      {
+        "Position": {
+          "x": -46.25,
+          "y": 0.965223134,
+          "z": -5.75
+        }
+      },
+      {
+        "Position": {
+          "x": -18.7714,
+          "y": 0.9611349,
+          "z": -6.2367
+        }
+      },
+      {
+        "Position": {
+          "x": 8.750001,
+          "y": 0.9611349,
+          "z": -6.25
+        }
+      },
+      {
+        "Position": {
+          "x": 36.2495,
+          "y": 0.9611349,
+          "z": -5.6856
+        }
+      },
+      {
+        "Position": {
+          "x": -17.75,
+          "y": 0.9611349,
+          "z": 22.24999
+        }
+      },
+      {
+        "Position": {
+          "x": -77.25,
+          "y": 0.9611349,
+          "z": -32.75001
+        }
+      },
+      {
+        "Position": {
+          "x": -59.7499924,
+          "y": 0.9611349,
+          "z": -24.2500057
+        }
+      },
+      {
+        "Position": {
+          "x": 12.25,
+          "y": 0.9612171,
+          "z": 33.75
+        }
+      }
+    ],
+    "ObjectStates": []
+  },
+  "ObjectPaths": [
+    "HandTrigger.43176d.json",
+    "HandTrigger.f1618d.json",
+    "HandTrigger.b0eff5.json",
+    "HandTrigger.cabb0d.json",
+    "Custom_Board.321cd7.json",
+    "CardCustom.f0da94.8000.json",
+    "CardCustom.5bee48.8100.json",
+    "Custom_PDF.e4d79e.json",
+    "First_Player.d93792.json",
+    "Custom_Tile.74c1d6.json",
+    "Custom_Tile.ed0a82.json",
+    "Wrecking_Crew.34e10e.json",
+    "Risky_Business.6d101c.json",
+    "Ultron.23ec41.json",
+    "Klaw.dd44f9.json",
+    "Rhino.d131c7.json",
+    "Mutagen_Formula.2d85a2.json",
+    "Thunderball.a08314.json",
+    "Piledriver.bd5bc2.json",
+    "Bulldozer.de2c73.json",
+    "Captain_Marvel.1cc3c5.json",
+    "Iron_Man.b060b4.json",
+    "Black_Panther.9ae7f3.json",
+    "She-Hulk.be9686.json",
+    "Captain_America.34bd62.json",
+    "Ms._Marvel.c12aa3.json",
+    "Thor.2401f1.json",
+    "Black_Widow.86b414.json",
+    "Doctor_Strange.33f4c1.json",
+    "Hulk.c27ff3.json",
+    "Spider-Woman.ac0492.json",
+    "Hawkeye.7d3ed5.json",
+    "Absorbing_Man.5bee89.json",
+    "Crossbones.e1f024.json",
+    "Taskmaster.ec0fe5.json",
+    "Red_Skull.5bf623.json",
+    "Zola.902637.json",
+    "ImporterCards.3ca6e4.json",
+    "3DText.48b9e8.json",
+    "3DText.4e892b.json",
+    "3DText.93e9ab.json",
+    "3DText.8261c5.json",
+    "3DText.0736ba.json",
+    "Custom_Tile.805d2e.json",
+    "Cerebro.c7ece0.json",
+    "Spider-Man_Peter_Parker_Hero_Bag.77e897.json",
+    "Captain_Marvel.d0b9c9.json",
+    "Damage_Variable.029e3b.json",
+    "Acceleration.2604fd.json",
+    "Counter_Variable.65c1cc.json",
+    "Threat_Variable.eb5d6d.json",
+    "Stunned.882e12.json",
+    "Confused.50c501.json",
+    "Tough.35b809.json",
+    "Confused.5b482d.json",
+    "Tough.95fc5e.json",
+    "Stunned.0f37d8.json",
+    "Counter_Variable.aec1c4.json",
+    "Damage_Variable.1ac38f.json",
+    "Confused.0b8743.json",
+    "Tough.53a9f2.json",
+    "Stunned.c46ad4.json",
+    "Counter_Variable.d964bd.json",
+    "Damage_Variable.ce313e.json",
+    "Iron_Man.0b8475.json",
+    "Black_Panther.b72fe1.json",
+    "She-Hulk.bb16a6.json",
+    "Captain_America.20942b.json",
+    "Ms._Marvel.7cdb6a.json",
+    "Thor.662406.json",
+    "Black_Widow.9541c0.json",
+    "Doctor_Strange.597d29.json",
+    "Hulk.63bb90.json",
+    "Custom_Token.9d342e.json",
+    "Custom_Token.57a99c.json",
+    "Custom_Token.071416.json",
+    "Kang.af8ff9.json",
+    "Spider-Woman.3c5c4a.json",
+    "Hawkeye.58c39d.json",
+    "Ant-Man.bee771.json",
+    "Table_Blocker.5e531c.json",
+    "Ant-Man.c8c4d3.json",
+    "3DText.359c31.json",
+    "3DText.bfd599.json",
+    "3DText.2d586c.json",
+    "3DText.f846c0.json",
+    "Custom_Token.274fd5.json",
+    "Red_Player.faa6bd.json",
+    "Blue_Player.6066d3.json",
+    "Green_Player.34be58.json",
+    "Yellow_Player.d9c509.json",
+    "Wasp.498a0c.json",
+    "Wasp.df502b.json",
+    "Custom_Tile.9892b9.json",
+    "Quicksilver.28c6b9.json",
+    "Quicksilver.4db435.json",
+    "Negative_Zone.17e882.json",
+    "Negative_Zone.5aa6f5.json",
+    "Scarlet_Witch.c75a17.json",
+    "Scarlet_Witch.9ec76d.json",
+    "3DText.958994.json",
+    "3DText.409c71.json",
+    "3DText.2023ca.json",
+    "3DText.0ce62f.json",
+    "3DText.35bc15.json",
+    "3DText.161504.json",
+    "3DText.6b2a02.json",
+    "3DText.25459e.json",
+    "3DText.401521.json",
+    "3DText.368937.json",
+    "3DText.ffddfd.json",
+    "3DText.17f737.json",
+    "3DText.2b7233.json",
+    "3DText.4f4f3d.json",
+    "3DText.561b6b.json",
+    "3DText.3704dc.json",
+    "3DText.6576f5.json",
+    "3DText.80d4a1.json",
+    "The_Galaxy_s_Most_Wanted.9d1944.json",
+    "Infiltrate_the_Museum.1f26b5.json",
+    "Gamora.6aa5df.json",
+    "Nebula.386de8.json",
+    "Ronan_the_Accuser.24eec0.json",
+    "Groot.aef9ac.json",
+    "Rocket_Raccoon.1f3fa2.json",
+    "Drang.2b659e.json",
+    "Star-Lord.a8b079.json",
+    "Escape_the_Museum.376d33.json",
+    "Rocket_Raccoon.36b0e1.json",
+    "Star-Lord.6c701a.json",
+    "Gamora.5dea66.json",
+    "Custom_PDF.2d7b92.json",
+    "Groot.3ba4cd.json",
+    "Venom.59939c.json",
+    "Drax.aa4c7f.json",
+    "Venom.6977bb.json",
+    "Drax.f0ffac.json",
+    "Spectrum.b98216.json",
+    "Adam_Warlock.93353d.json",
+    "Nebula.460385.json",
+    "3DText.710002.json",
+    "3DText.93a2db.json",
+    "The_Rise_of_Red_Skull.e2a11c.json",
+    "The_Mad_Titan_s_Shadow.6ca74f.json",
+    "Random_Hero.0e915d.json",
+    "Victory_Display.628b4a.json",
+    "Nemesis.92fa7c.json",
+    "Resources.03fcb6.json",
+    "3DText.59d365.json",
+    "Standard.ae4736.json",
+    "Expert.85fe67.json",
+    "Bag.e3b2e1.json",
+    "3DText.7f11d4.json",
+    "3DText.b5922d.json",
+    "3DText.7d55ec.json",
+    "3DText.0ddb73.json",
+    "3DText.58bc1f.json",
+    "CardCustom.3a6e1f.771000.json",
+    "Aggression.0952cb.json",
+    "Justice.9851a5.json",
+    "Leadership.f8d4eb.json",
+    "Protection.305b3b.json",
+    "Basic.6d6ce8.json",
+    "Aggression.8642f6.json",
+    "Justice.e02e32.json",
+    "Leadership.c7b161.json",
+    "Protection.ab879f.json",
+    "Basic.b76a39.json",
+    "War_Machine.84aae1.json",
+    "Custom_Token.57ec93.json",
+    "Custom_Token.5dcfd5.json",
+    "Custom_Token.61e7e8.json",
+    "Custom_Token.71e09c.json",
+    "Custom_Token.cab71a.json",
+    "Custom_Token.dd5292.json",
+    "Custom_Token.e6a306.json",
+    "Custom_Token.e8914a.json",
+    "Venom_Goblin_Scenario_Pack.526ab1.json",
+    "Venom_Scenario_Pack.8fbb63.json",
+    "Sinister_Six_Scenario_Pack.78770b.json",
+    "Sandman_Scenario_Pack.543821.json",
+    "Mysterio_Scenario_Pack.2da0de.json",
+    "Standard_2.bb0fe1.json",
+    "Expert_2.733a8b.json",
+    "ScriptingTrigger.489e50.json",
+    "ScriptingTrigger.eacfa8.json",
+    "ScriptingTrigger.546c74.json",
+    "Sinister_Motives.503b31.json",
+    "Spider-Man_Miles_Morales_Hero_Bag.8cb34d.json",
+    "Ghost-Spider_Hero_Bag.31869d.json",
+    "Vision_Hero_Bag.bc0851.json",
+    "Valkyrie_Hero_Bag.0a6ed8.json",
+    "The_Hood.a938c0.json",
+    "Modular_Encounter_Sets.cef065.json",
+    "A_Mess_of_Things.93a9fd.json",
+    "Anachronauts.a516ad.json",
+    "Armadillo.b126bf.json",
+    "Armies_of_Titan.fe73c8.json",
+    "Badoon_Headhunter.4e7daf.json",
+    "Band_of_Badoon.4020ab.json",
+    "Beasty_Boys.d2ef38.json",
+    "Black_Order.2bbb4f.json",
+    "Bomb_Scare.200f14.json",
+    "Brothers_Grimm.f652b6.json",
+    "Children_of_Thanos.b7f1b5.json",
+    "City_in_Chaos.79a3d4.json",
+    "Crossfire_s_Crew.443435.json",
+    "Down_To_Earth.688338.json",
+    "Enchantress.be480f.json",
+    "Experimental_Weapons.1b092c.json",
+    "Frost_Giants.0f98e2.json",
+    "Galactic_Artifacts.73d4de.json",
+    "Goblin_Gear.f5c6d1.json",
+    "Goblin_Gimmicks.2aa00d.json",
+    "Guerrilla_Tactics.ab9133.json",
+    "Hydra_Assault.be0246.json",
+    "Hydra_Patrol.389cf9.json",
+    "Infinity_Gauntlet.d4d434.json",
+    "Kree_Fanatic.9a13c0.json",
+    "Kree_Militant.e60549.json",
+    "Legions_of_Hel.9963ee.json",
+    "Legions_of_Hydra.37c688.json",
+    "Master_of_Time.ace0c0.json",
+    "Masters_of_Evil.5e1e70.json",
+    "Menagerie_Medley.f50475.json",
+    "Mister_Hyde.2c5371.json",
+    "Osborn_Tech.50237e.json",
+    "Personal_Nightmare.ae6bf6.json",
+    "Power_Drain.7c282e.json",
+    "Power_Stone.962ee4.json",
+    "Ransacked_Armory.44866f.json",
+    "Running_Interference.e60ff3.json",
+    "Ship_Command.0f6e43.json",
+    "Sinister_Assault.16680e.json",
+    "Sinister_Syndicate.bad4b9.json",
+    "Space_Pirates.3e6e5b.json",
+    "State_Of_Emergency.ae92eb.json",
+    "Streets_of_Mayhem.8767eb.json",
+    "Symbiotic_Strength.18e659.json",
+    "Temporal.08fc59.json",
+    "The_Doomsday_Chair.8157e7.json",
+    "Under_Attack.155490.json",
+    "Weapon_Master.cab85a.json",
+    "Whispers_of_Paranoia.9e338f.json",
+    "Wrecking_Crew.92e06e.json",
+    "Zzzax.037187.json",
+    "Random_Modular.92ef30.json",
+    "Nova_Hero_Bag.d7c305.json",
+    "Ironheart_Hero_Bag.8f920d.json",
+    "Adam_Warlock.8890d7.json",
+    "Spectrum.a20e05.json",
+    "Nebula.02a68a.json",
+    "War_Machine.d77759.json",
+    "Valkyrie.c99ec0.json",
+    "Spider-Man_Miles_Morales.419881.json",
+    "Ironheart.6d99f9.json",
+    "Ghost-Spider.994116.json",
+    "Vision.de5aad.json",
+    "Nova.36ab37.json",
+    "HeroPlacer.4431e4.json",
+    "Spider-Man_s_HP_Counter.2ab624.json",
+    "ScriptingTrigger.c22eb2.json",
+    "ScriptingTrigger.392cab.json",
+    "ScriptingTrigger.1e4ec3.json",
+    "Playmat_bag.e549db.json",
+    "ScriptingTrigger.d17076.json"
+  ]
+}

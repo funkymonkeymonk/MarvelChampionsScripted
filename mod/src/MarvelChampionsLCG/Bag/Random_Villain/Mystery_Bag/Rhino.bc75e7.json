@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "bc75e7",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 97.62702,
+      "posY": 2.69227219,
+      "posZ": 23.2779026,
+      "rotX": -5.336084e-8,
+      "rotY": 180.000122,
+      "rotZ": -1.33402676e-8,
+      "scaleX": 2.8751688,
+      "scaleY": 1,
+      "scaleZ": 2.8751688
+    },
+    "Nickname": "Rhino",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249983519,
+      "g": 0.249983519,
+      "b": 0.249983519
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1010439308570627714/0E430806A9602F8F2BEBA87157AA9E17389847A0/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Rhino.bc75e7.lua",
+    "LuaScriptState": "#include ./Rhino.bc75e7.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

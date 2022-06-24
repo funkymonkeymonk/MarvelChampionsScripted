@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "33f4c1",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 58.25028,
+      "posY": 0.4950015,
+      "posZ": 11.2500048,
+      "rotX": -0.00000204535354,
+      "rotY": 180.002228,
+      "rotZ": -2.881915e-7,
+      "scaleX": 1.11,
+      "scaleY": 1,
+      "scaleZ": 1.11
+    },
+    "Nickname": "Doctor Strange",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249954671,
+      "g": 0.249954671,
+      "b": 0.249954671
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1291919813158359638/33B10A22D78A3C16DA0BB97B066EA9FF9C830606/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

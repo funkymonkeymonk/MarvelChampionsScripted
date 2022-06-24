@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "557eb1",
+    "Name": "Card",
+    "Transform": {
+      "posX": -49.2499237,
+      "posY": 2.04132032,
+      "posZ": 45.7500038,
+      "rotX": 0.00369231473,
+      "rotY": 180.000259,
+      "rotZ": 180.312485,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Forcefield Projection",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 972902,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "9729": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1831288304598095336/DBBFB49EB54A3F465BD96FF4F9DE8EFB8DABF9C3/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 9,
+        "NumHeight": 3,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

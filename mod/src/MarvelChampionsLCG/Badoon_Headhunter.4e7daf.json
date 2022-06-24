@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "4e7daf",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 84.25,
+      "posY": -2.69017434,
+      "posZ": -6.25001526,
+      "rotX": -0.00006787544,
+      "rotY": 179.998672,
+      "rotZ": -0.00003728677,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Badoon Headhunter",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.5019608,
+      "g": 0.5019608,
+      "b": 0.5019608
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Badoon_Headhunter.4e7daf.lua",
+    "LuaScriptState": "#include ./Badoon_Headhunter.4e7daf.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Deck.dfd9cc.json"
+  ]
+}
