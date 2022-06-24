@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "a894a6",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 76.614624,
+      "posY": 2.60079813,
+      "posZ": 40.88397,
+      "rotX": 8.067961e-8,
+      "rotY": 180,
+      "rotZ": 180,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Army of Ants",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 772100,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "7712": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1683744853792765489/80C0FD634834FD1DC66B35AA662C1AE0FF7BF99E/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/770610821574915156/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

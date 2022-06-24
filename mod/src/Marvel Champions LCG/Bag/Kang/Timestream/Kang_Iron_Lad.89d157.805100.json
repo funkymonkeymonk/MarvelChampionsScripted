@@ -1,0 +1,58 @@
+{
+  "Object": {
+    "GUID": "89d157",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 64.58807,
+      "posY": 9.943909,
+      "posZ": 102.728577,
+      "rotX": 359.965271,
+      "rotY": 180.034454,
+      "rotZ": 359.2433,
+      "scaleX": 3,
+      "scaleY": 1,
+      "scaleZ": 3
+    },
+    "Nickname": "Kang (Iron Lad)",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 805100,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "8051": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1653342851333142526/E7A97A65CB3EE588298F96245F1B2F757DEAEB14/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/776248693496171403/A0FAB7F60946745D878FAA841A913535303E3816/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}
+
+}

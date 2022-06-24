@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "9b518d",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 98.5852356,
+      "posY": 2.22113562,
+      "posZ": 42.15775,
+      "rotX": 1.79552217e-7,
+      "rotY": 180,
+      "rotZ": 1.85983225e-7,
+      "scaleX": 1.12515855,
+      "scaleY": 1,
+      "scaleZ": 1.12515855
+    },
+    "Nickname": "Nova's HP Counter",
+    "Description": "Created by Unicorn\nTemplate by Hitch, Counter by JQTNguyen",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249984592,
+      "g": 0.249984592,
+      "b": 0.249984592
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1831288304598153213/87223497EB7B85BDD4FDFC5ABDE793FA69A76A7A/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": true,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Nova_s_HP_Counter.9b518d.lua",
+    "LuaScriptState": "#include ./Nova_s_HP_Counter.9b518d.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

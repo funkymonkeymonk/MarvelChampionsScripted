@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "0fbabb",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 80.26074,
+      "posY": 2.585493,
+      "posZ": 57.3472137,
+      "rotX": -2.8848465e-8,
+      "rotY": 89.9755249,
+      "rotZ": -3.05788781e-8,
+      "scaleX": 2.92840672,
+      "scaleY": 1,
+      "scaleZ": 2.92840672
+    },
+    "Nickname": "The Mad Doctor",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 796300,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "7963": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1618437358526292035/9EFAAA063684758581AD36F8E41385E4F7EDD981/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1618437358526292379/BC2FCDD1961B8AAB5F2AB47BC3EA50A7F73F2828/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

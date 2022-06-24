@@ -1,0 +1,51 @@
+{
+  "Object": {
+    "GUID": "fe73c8",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 78.25,
+      "posY": -2.690146,
+      "posZ": -6.25,
+      "rotX": 0.00001963672,
+      "rotY": 179.999847,
+      "rotZ": -0.00005159496,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Armies of Titan",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.5019608,
+      "g": 0.5019608,
+      "b": 0.5019608
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Armies_of_Titan.fe73c8.lua",
+    "LuaScriptState": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Deck.d708f5.json"
+  ]
+}

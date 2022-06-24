@@ -1,0 +1,51 @@
+{
+  "Object": {
+    "GUID": "be0246",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 60.25,
+      "posY": -2.69,
+      "posZ": -13.75,
+      "rotX": 0.04483241,
+      "rotY": 180.003555,
+      "rotZ": 359.9552,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Hydra Assault",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.494117618,
+      "g": 0.494117618,
+      "b": 0.494117618
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Hydra_Assault.be0246.lua",
+    "LuaScriptState": "#include ./Hydra_Assault.be0246.state.json",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Deck.016717.json"
+  ]
+}

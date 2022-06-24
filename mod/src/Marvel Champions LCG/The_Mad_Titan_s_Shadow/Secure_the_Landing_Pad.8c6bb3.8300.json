@@ -1,0 +1,59 @@
+{
+  "Object": {
+    "GUID": "8c6bb3",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 66.66887,
+      "posY": 1.994023,
+      "posZ": 19.6095772,
+      "rotX": 0.056198325,
+      "rotY": 89.9999542,
+      "rotZ": 0.000004739113,
+      "scaleX": 2.12,
+      "scaleY": 1,
+      "scaleZ": 2.12
+    },
+    "Nickname": "Secure the Landing Pad",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "CardID": 8300,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "83": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1711917883467539491/994249F4F7AD61DD2A60A5E47A5F717DFBB2A294/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1054352812477833382/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "States": {}
+  },
+  "StatesPaths": {
+    "2": "Cosmo.2b4786.8200.json"
+  }
+}

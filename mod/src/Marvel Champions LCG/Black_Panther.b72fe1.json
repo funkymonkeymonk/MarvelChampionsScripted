@@ -1,0 +1,57 @@
+{
+  "Object": {
+    "GUID": "b72fe1",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 57.74999,
+      "posY": -2.69003487,
+      "posZ": 26.25001,
+      "rotX": 0.000007683673,
+      "rotY": 179.99498,
+      "rotZ": -0.000006608745,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Black Panther",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.360742927,
+      "g": 0.06552316,
+      "b": 0.5452962
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Black_Panther.b72fe1.lua",
+    "LuaScriptState": "#include ./Black_Panther.b72fe1.state.json",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Black_Panther.ffc8e2.json",
+    "Killmonger.492178.json",
+    "Affairs_of_State.d77eef.461007.json",
+    "Deck.992cde.json",
+    "Black_Panther.84245e.json",
+    "Black_Panther.2b5153.1204.json",
+    "Custom_Tile.1c7a55.json"
+  ]
+}

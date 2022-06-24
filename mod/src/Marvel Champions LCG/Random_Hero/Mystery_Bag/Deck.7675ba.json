@@ -1,0 +1,90 @@
+{
+  "Object": {
+    "GUID": "7675ba",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 51.32252,
+      "posY": 2.171088,
+      "posZ": -15.806674,
+      "rotX": -0.0000165321344,
+      "rotY": 179.9996,
+      "rotZ": -0.004487486,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      802240,
+      802239,
+      802238,
+      802237,
+      802236,
+      802235,
+      802234,
+      802233,
+      802232,
+      802231,
+      802230,
+      802229,
+      802228,
+      802227,
+      802226
+    ],
+    "CustomDeck": {
+      "8022": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1731045816072559530/0A5C9DF10C6EB9BA7B89D2A1ED7E113BD9C8EF18/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/767229025789764879/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 10,
+        "NumHeight": 7,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Thruster_Boots.64220a.802240.json",
+    "Rocket_s_Pistol.0bc746.802239.json",
+    "Rocket_s_Pistol.c65bf9.802238.json",
+    "Rocket_Launcher.454306.802237.json",
+    "Particle_Cannon.e4c427.802236.json",
+    "Cybernetic_Skeleton.7b598b.802235.json",
+    "Battery_Pack.4ddbcb.802234.json",
+    "Battery_Pack.5e7f31.802233.json",
+    "Salvage.ee9451.802232.json",
+    "Salvage.24c165.802231.json",
+    "Schadenfreude.3c2af4.802230.json",
+    "Reload.d21efd.802229.json",
+    "Reload.2ded2a.802228.json",
+    "I_ve_Got_a_Plan.905f6f.802227.json",
+    "I_ve_Got_a_Plan.299814.802226.json"
+  ]
+}

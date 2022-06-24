@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "6ce70e",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": -26.4650021,
+      "posY": 1.0485158,
+      "posZ": 21.1049957,
+      "rotX": 0.00498799,
+      "rotY": 180,
+      "rotZ": 0.0000445770675,
+      "scaleX": 2.42349958,
+      "scaleY": 1,
+      "scaleZ": 2.42349958
+    },
+    "Nickname": "The Viper's Ambition",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 769400,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "7694": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1618436850079351503/9D8209B73809A964965095F6120F56B679EA1EB7/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/770610707611095378/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "8cb34d",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 67.75,
+      "posY": -2.68998337,
+      "posZ": 16.25,
+      "rotX": 4.26886885e-7,
+      "rotY": 180,
+      "rotZ": -3.668557e-8,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Spider-Man (Miles Morales) Hero Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.7058823,
+      "g": 0.366520882,
+      "b": 0
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Spider-Man_Miles_Morales_Hero_Bag.8cb34d.lua",
+    "LuaScriptState": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Keeping_Secrets.f99ef8.700.json",
+    "Spider-Man_s_HP_Counter.084f80.json",
+    "Spider-Man_s_Nemesis_Set.f342da.json",
+    "Deck.69a629.json",
+    "Spider-Man_s_Hero_Deck.ec704d.json",
+    "Spider-Man.d6b1e9.972600.json"
+  ]
+}

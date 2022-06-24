@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "8c010e",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": -43.2500038,
+      "posY": 0.5425863,
+      "posZ": 62.2500153,
+      "rotX": 359.988,
+      "rotY": 179.999359,
+      "rotZ": -0.003013425,
+      "scaleX": 3.64,
+      "scaleY": 1,
+      "scaleZ": 3.64
+    },
+    "Nickname": "Thanos",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 2800,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "28": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1711917883467699425/C4485E9234E606C6CB36657241847D62EA76069F/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1666860958377475324/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

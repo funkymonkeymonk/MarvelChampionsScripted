@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "f7507a",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 43.2501564,
+      "posY": 3.0467782,
+      "posZ": 24.24981,
+      "rotX": 0.448679626,
+      "rotY": 180.002716,
+      "rotZ": 180.392,
+      "scaleX": 1.88,
+      "scaleY": 1,
+      "scaleZ": 1.88
+    },
+    "Nickname": "Drax",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 771700,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "7717": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1693900627247544539/549ACEF68527460AAFE4E2B09B94409A124AE35C/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1693900627247546124/7FE33A853408C7E1A47D4FD92533AE9145BCEAD0/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "53b671",
+    "Name": "Card",
+    "Transform": {
+      "posX": 42.2752571,
+      "posY": 1.98474,
+      "posZ": -25.1777363,
+      "rotX": 0.000004477897,
+      "rotY": 180.018051,
+      "rotZ": 0.00000572341423,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Honed Technique",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 976620,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "9766": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1831288304598095336/DBBFB49EB54A3F465BD96FF4F9DE8EFB8DABF9C3/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 9,
+        "NumHeight": 3,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,0 +1,70 @@
+{
+  "Object": {
+    "GUID": "566ba4",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 40.75,
+      "posY": 3.09493971,
+      "posZ": 1.75,
+      "rotX": 0.0196087789,
+      "rotY": 179.999527,
+      "rotZ": 359.9796,
+      "scaleX": 2.11755562,
+      "scaleY": 1,
+      "scaleZ": 2.11755562
+    },
+    "Nickname": "Brothers Grimm",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      982716,
+      982715,
+      982714,
+      982713,
+      982712
+    ],
+    "CustomDeck": {
+      "9827": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833524088513418557/96FBFF2F56CF4C1A12BFA3D3B8CC14D3C76AEF50/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 6,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Unbreakable_Thread.3ec66c.982716.json",
+    "Paralytic_Stardust.a74acd.982715.json",
+    "Corrosive_Egg_Bomb.bc4ae4.982714.json",
+    "Blackbird_Pellets.2b214f.982713.json",
+    "Brothers_Grimm.268504.982712.json"
+  ]
+}

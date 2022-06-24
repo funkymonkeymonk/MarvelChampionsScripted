@@ -1,0 +1,99 @@
+{
+  "Object": {
+    "GUID": "afb51a",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 78.81691,
+      "posY": 2.66620016,
+      "posZ": 27.3381062,
+      "rotX": -1.07021492e-7,
+      "rotY": 180,
+      "rotZ": 180,
+      "scaleX": 2.12,
+      "scaleY": 1,
+      "scaleZ": 2.12
+    },
+    "Nickname": "",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      461200,
+      461123,
+      461122,
+      461121,
+      461120,
+      461119,
+      461118,
+      461117,
+      461116,
+      461115,
+      461114,
+      461113,
+      461112,
+      461111,
+      461110
+    ],
+    "CustomDeck": {
+      "4611": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/787503561779503215/9F1F90612155F1224AAD800EF58419817295509C/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/767229025789762742/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 5,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "4612": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/787503561779519187/2078C4545EA4F7E7DF67124C23D23E0DCDC8EAE8/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/767229025789762742/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 5,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "You_re_Dead_Meat!.087512.461200.json",
+    "You_re_Dead_Meat!.1ecdf9.461123.json",
+    "Mystical_Link.a1b504.461122.json",
+    "Mystical_Link.432531.461121.json",
+    "I_ve_Been_Waiting_For_This!.307947.461120.json",
+    "Get_Wrecked!.b5957d.461119.json",
+    "Crowbar_Toss.b0227a.461118.json",
+    "Crowbar_Toss.391fa9.461117.json",
+    "Chaos_in_the_Prison.7dd5a1.461116.json",
+    "Buddy_System.4d4dd3.461115.json",
+    "Escaped_Convict.5d5da8.461114.json",
+    "Corrupt_Prison_Guard.0fbccd.461113.json",
+    "Wrecker_s_Command.a2e337.461112.json",
+    "Magic_Crowbar.f66f76.461111.json",
+    "Held_Hostage.08a4ef.461110.json"
+  ]
+}

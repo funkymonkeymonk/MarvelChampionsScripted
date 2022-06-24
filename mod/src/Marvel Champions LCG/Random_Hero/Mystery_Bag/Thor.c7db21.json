@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "c7db21",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 42.840374,
+      "posY": 4.81271839,
+      "posZ": -0.77692914,
+      "rotX": -0.00004112073,
+      "rotY": 180.0259,
+      "rotZ": 0.00050284015,
+      "scaleX": 1.12515855,
+      "scaleY": 1,
+      "scaleZ": 1.12515855
+    },
+    "Nickname": "Thor",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249987,
+      "g": 0.249987,
+      "b": 0.249987
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1010439308570620139/745DD1B79059ED1516DACF12C6FBDBFF65EA99EB/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": true,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Thor.c7db21.lua",
+    "LuaScriptState": "#include ./Thor.c7db21.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

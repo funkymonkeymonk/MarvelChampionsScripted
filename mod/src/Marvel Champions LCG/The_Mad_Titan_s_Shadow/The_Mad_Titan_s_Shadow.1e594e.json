@@ -1,0 +1,49 @@
+{
+  "Object": {
+    "GUID": "1e594e",
+    "Name": "Custom_PDF",
+    "Transform": {
+      "posX": -42.24999,
+      "posY": 1.51810265,
+      "posZ": 8.750009,
+      "rotX": 0.002105155,
+      "rotY": 179.98233,
+      "rotZ": 0.05302501,
+      "scaleX": 1.93,
+      "scaleY": 1,
+      "scaleZ": 1.93
+    },
+    "Nickname": "The Mad Titan's Shadow",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomPDF": {
+      "PDFUrl": "http://cloud-3.steamusercontent.com/ugc/1836901154900936796/24CC7C0D98E299A95FA600F2585B2255016200FC/",
+      "PDFPassword": "",
+      "PDFPage": 0,
+      "PDFPageOffset": 0
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

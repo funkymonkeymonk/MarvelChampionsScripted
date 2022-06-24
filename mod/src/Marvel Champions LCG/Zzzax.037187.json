@@ -1,0 +1,51 @@
+{
+  "Object": {
+    "GUID": "037187",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 72.25,
+      "posY": -2.68999338,
+      "posZ": -23.75,
+      "rotX": -0.000002988281,
+      "rotY": 179.999451,
+      "rotZ": -0.0000151327895,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Zzzax",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.494117618,
+      "g": 0.494117618,
+      "b": 0.494117618
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Zzzax.037187.lua",
+    "LuaScriptState": "#include ./Zzzax.037187.state.json",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Zzzax_Modular_Set.185086.json"
+  ]
+}

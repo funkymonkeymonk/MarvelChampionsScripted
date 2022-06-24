@@ -1,0 +1,51 @@
+{
+  "Object": {
+    "GUID": "ae4736",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 75,
+      "posY": -2.69032216,
+      "posZ": 1.25,
+      "rotX": 0.00000683018834,
+      "rotY": 179.999985,
+      "rotZ": -5.46950048e-7,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Standard",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Standard.ae4736.lua",
+    "LuaScriptState": "#include ./Standard.ae4736.state.json",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Deck.d38835.json"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "Object": {
+    "GUID": "3611af",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 33.75,
+      "posY": 2.32572865,
+      "posZ": 82.25,
+      "rotX": -1.09565794e-11,
+      "rotY": 180.002014,
+      "rotZ": 6.23654671e-7,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Mystery Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 0,
+      "b": 0
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Mystery_Bag.3611af.lua",
+    "LuaScriptState": "#include ./Mystery_Bag.3611af.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Custom_Assetbundle_Bag.7fca5a.json",
+    "Custom_Token.0dd561.json",
+    "Custom_Token.fb7e21.json",
+    "Ronan_the_Accuser.751bc4.json",
+    "Ronan_the_Accuser.5e15df.json",
+    "Custom_Token.0d22f9.json",
+    "Cut_the_Power.ec6d0c.802511.json",
+    "Deck.47cb51.json",
+    "Deck.82783d.json",
+    "Universal_Weapon.1f0e5b.798732.json",
+    "Power_Stone.607146.802400.json",
+    "Milano.0baec6.799000.json",
+    "Kree_Command_Ship.6ffcd7.798731.json",
+    "Take_What_Is_Mine.749542.802100.json",
+    "Interception_Imminent.e1cb47.802000.json",
+    "Ronan_the_Accuser.f29b1f.json",
+    "Ronan_the_Accuser.e1f6b3.json"
+  ]
+}

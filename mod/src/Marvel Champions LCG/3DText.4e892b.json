@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "4e892b",
+    "Name": "3DText",
+    "Transform": {
+      "posX": 96.025795,
+      "posY": 0.497642726,
+      "posZ": 37.0197868,
+      "rotX": 90,
+      "rotY": -0.000007900102,
+      "rotZ": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "Text": {
+      "Text": "VILLAINS",
+      "colorstate": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "fontSize": 120
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

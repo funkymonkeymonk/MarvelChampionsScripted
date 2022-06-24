@@ -1,0 +1,57 @@
+{
+  "Object": {
+    "GUID": "795795",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 89.8514,
+      "posY": 2.68222356,
+      "posZ": 26.1207314,
+      "rotX": 0.00000200718614,
+      "rotY": 179.995667,
+      "rotZ": 4.864789e-8,
+      "scaleX": 2.88,
+      "scaleY": 1,
+      "scaleZ": 2.88
+    },
+    "Nickname": "Kang",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249985576,
+      "g": 0.249985576,
+      "b": 0.249985576
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1625194556400702866/A7EAD219D80DF76FF64C98F14F06AC4078C644EF/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Kang.795795.lua",
+    "LuaScriptState": "#include ./Kang.795795.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}
+
+}

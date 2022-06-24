@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "aa34ee",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 64.57036,
+      "posY": 2.03610063,
+      "posZ": -41.00789,
+      "rotX": -0.00000256133762,
+      "rotY": 180.000336,
+      "rotZ": 0.00000594805942,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Mystery Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.905882359,
+      "g": 0.921568632,
+      "b": 0
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Mystery_Bag.aa34ee.lua",
+    "LuaScriptState": "#include ./Mystery_Bag.aa34ee.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Power_Stone.607146.802400.json"
+  ]
+}

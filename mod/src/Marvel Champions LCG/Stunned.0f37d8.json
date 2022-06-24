@@ -1,0 +1,69 @@
+{
+  "Object": {
+    "GUID": "0f37d8",
+    "Name": "Custom_Model_Infinite_Bag",
+    "Transform": {
+      "posX": -32.25,
+      "posY": 1.061217,
+      "posZ": -27.75,
+      "rotX": -0.00000226571933,
+      "rotY": 180.000061,
+      "rotZ": -4.25208981e-7,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Stunned",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "CustomMesh": {
+      "MeshURL": "https://pastebin.com/raw/ALrYhQGb",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1625192516000636692/4200C4F72075494A5FE5B707494574EA90E3BF7E/",
+      "NormalURL": "",
+      "ColliderURL": "",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 7,
+      "CustomShader": {
+        "SpecularColor": {
+          "r": 1,
+          "g": 1,
+          "b": 1
+        },
+        "SpecularIntensity": 0,
+        "SpecularSharpness": 2,
+        "FresnelStrength": 0
+      },
+      "CastShadows": true
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "CardCustom.445eb8.3600.json"
+  ]
+}

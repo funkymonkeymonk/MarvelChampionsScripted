@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "389bf7",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 51.9919357,
+      "posY": 4.81673956,
+      "posZ": 13.0451393,
+      "rotX": -0.0000425643448,
+      "rotY": 179.968231,
+      "rotZ": 0.0004944899,
+      "scaleX": 1.12515855,
+      "scaleY": 1,
+      "scaleZ": 1.12515855
+    },
+    "Nickname": "Ms Marvel",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.2499868,
+      "g": 0.2499868,
+      "b": 0.2499868
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1595918438101611463/1DD570599796A53510EFD9B3382EC67856E96DA9/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Ms_Marvel.389bf7.lua",
+    "LuaScriptState": "#include ./Ms_Marvel.389bf7.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,0 +1,57 @@
+{
+  "Object": {
+    "GUID": "6ba991",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 69.34752,
+      "posY": 2.59751344,
+      "posZ": 62.34984,
+      "rotX": 5.95904659e-8,
+      "rotY": 89.99993,
+      "rotZ": 180,
+      "scaleX": 2.93,
+      "scaleY": 1,
+      "scaleZ": 2.93
+    },
+    "Nickname": "Kang's Arrival",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 797800,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "7978": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1625194556389984150/30C86F322D6161EEDFB133EF97810E5801F83763/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1625194556389983843/FD26CD7C243FAFA860DB9A2CD7B85E24EC9A4A28/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}
+}

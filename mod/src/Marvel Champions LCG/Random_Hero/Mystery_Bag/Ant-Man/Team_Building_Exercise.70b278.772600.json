@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "70b278",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 60.8424,
+      "posY": 4.713932,
+      "posZ": 26.8756447,
+      "rotX": 2.28028618e-8,
+      "rotY": 180.000015,
+      "rotZ": 180,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Team Building Exercise",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 772600,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "7709": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1683744853792776307/801CD5FD240259EF636F1B619A202D1C0EB7EDD7/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/770610821574915156/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

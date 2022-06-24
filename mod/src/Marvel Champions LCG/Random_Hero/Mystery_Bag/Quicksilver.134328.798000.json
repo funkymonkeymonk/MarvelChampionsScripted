@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "134328",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 51.89607,
+      "posY": 2.09112644,
+      "posZ": 3.07819533,
+      "rotX": -0.00005357363,
+      "rotY": 179.983871,
+      "rotZ": 179.99556,
+      "scaleX": 1.88,
+      "scaleY": 1,
+      "scaleZ": 1.88
+    },
+    "Nickname": "Quicksilver",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 798000,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "7980": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1665733461852328142/3D1F15E40DFF4D600312D6EA2F5E8D91B88E29D8/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1665733461852328852/E6E1F6183505C2CC84F1141F3F022684EC6AF7FA/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

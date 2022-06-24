@@ -1,0 +1,57 @@
+{
+  "Object": {
+    "GUID": "7cdb6a",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 57.7499771,
+      "posY": -2.69034266,
+      "posZ": 18.7499466,
+      "rotX": -0.000007693456,
+      "rotY": 179.991348,
+      "rotZ": -0.000125682564,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Ms. Marvel",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.884074748,
+      "g": 0.7028827,
+      "b": 0.9912891
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Ms._Marvel.7cdb6a.lua",
+    "LuaScriptState": "#include ./Ms._Marvel.7cdb6a.state.json",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Ms_Marvel.389bf7.json",
+    "Thomas_Edison.048acc.json",
+    "Home_by_Dawn.06a4df.460402.json",
+    "Deck.d37d5a.json",
+    "Ms._Marvel.166389.json",
+    "Ms._Marvel.c7c46c.460510.json",
+    "Custom_Tile.7bd811.json"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "ffc8e2",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 94.12927,
+      "posY": 1.97723472,
+      "posZ": 19.9502029,
+      "rotX": 2.1969214e-8,
+      "rotY": 180.015549,
+      "rotZ": -1.43311652e-7,
+      "scaleX": 1.12515855,
+      "scaleY": 1,
+      "scaleZ": 1.12515855
+    },
+    "Nickname": "Black Panther",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249986947,
+      "g": 0.249986947,
+      "b": 0.249986947
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1010439308570672156/5342F47FAB04266DE1E1133DD87FE8C56CBE2862/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Black_Panther.ffc8e2.lua",
+    "LuaScriptState": "#include ./Black_Panther.ffc8e2.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

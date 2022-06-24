@@ -1,0 +1,65 @@
+{
+  "Object": {
+    "GUID": "af4a9e",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 42.82785,
+      "posY": 0.77943784,
+      "posZ": 23.29062,
+      "rotX": -0.000008964267,
+      "rotY": 180.001373,
+      "rotZ": -0.000029098419,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Nebula",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.270587981,
+      "g": 0.647058845,
+      "b": 0.97647053
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Nebula.af4a9e.lua",
+    "LuaScriptState": "#include ./Nebula.af4a9e.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Custom_Assetbundle_Bag.7fca5a.json",
+    "Custom_Token.061c77.json",
+    "Custom_Token.a4dde0.json",
+    "Nebula.d737bd.json",
+    "Nebula.d2c332.json",
+    "Deck.c0e303.json",
+    "Deck.f91d38.json",
+    "Power_Stone.50e4a5.802400.json",
+    "Milano.bb8206.799000.json",
+    "Nebula_s_Ship.4a4bc9.798707.json",
+    "Warp_Drive_Initiated.aad8f2.801900.json",
+    "The_Art_of_Evasion.5492b0.801800.json",
+    "Nebula.cf9762.json",
+    "Nebula.1407c5.json"
+  ]
+}

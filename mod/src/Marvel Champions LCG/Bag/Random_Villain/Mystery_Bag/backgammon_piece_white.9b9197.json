@@ -1,0 +1,43 @@
+{
+  "Object": {
+    "GUID": "9b9197",
+    "Name": "backgammon_piece_white",
+    "Transform": {
+      "posX": 69.56736,
+      "posY": 3.0533452,
+      "posZ": -25.3957,
+      "rotX": -0.000004370464,
+      "rotY": 0.0006788516,
+      "rotZ": 0.00000418672744,
+      "scaleX": 2.14999914,
+      "scaleY": 2.14999914,
+      "scaleZ": 2.14999914
+    },
+    "Nickname": "",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249999613,
+      "g": 0.249999613,
+      "b": 0.249999613
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": false,
+    "Snap": false,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

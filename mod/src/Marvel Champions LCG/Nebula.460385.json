@@ -1,0 +1,57 @@
+{
+  "Object": {
+    "GUID": "460385",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 67.75,
+      "posY": -2.6890564,
+      "posZ": 26.25,
+      "rotX": -0.00000128066063,
+      "rotY": 180,
+      "rotZ": -9.338156e-8,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Nebula",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 0,
+      "b": 0.457249165
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Nebula.460385.lua",
+    "LuaScriptState": "#include ./Nebula.460385.state.json",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Nebula.9ef5ea.json",
+    "Gamora.db0d31.json",
+    "Inferiority_Complex.16c2ad.8405.json",
+    "Deck.fbdae2.json",
+    "Gamora.955b2f.json",
+    "Nebula.61f94a.8600.json",
+    "Custom_Tile.721ab2.json"
+  ]
+}

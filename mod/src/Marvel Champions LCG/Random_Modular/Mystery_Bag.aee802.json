@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "aee802",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 64.3411255,
+      "posY": 2.03610086,
+      "posZ": -15.2009277,
+      "rotX": -1.29151793e-15,
+      "rotY": 180,
+      "rotZ": 3.001548e-8,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Mystery Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.905882359,
+      "g": 0.921568632,
+      "b": 0
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Mystery_Bag.aee802.lua",
+    "LuaScriptState": "#include ./Mystery_Bag.aee802.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Brothers_Grimm.8783c6.json"
+  ]
+}

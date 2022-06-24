@@ -1,0 +1,64 @@
+{
+  "Object": {
+    "GUID": "c58518",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 38.75,
+      "posY": 2.32573247,
+      "posZ": 87.25,
+      "rotX": -8.534086e-7,
+      "rotY": 180.014374,
+      "rotZ": -0.000002909941,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Mystery Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 0,
+      "b": 0
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Mystery_Bag.c58518.lua",
+    "LuaScriptState": "#include ./Mystery_Bag.c58518.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Custom_Assetbundle_Bag.7fca5a.json",
+    "Custom_Token.7e3360.json",
+    "Custom_Token.a4dde0.json",
+    "Green_Goblin.4af874.json",
+    "Green_Goblin.e581f5.json",
+    "Deck.4e603f.json",
+    "Deck.56122b.json",
+    "Criminal_Enterprise_State_of_Madness.68e711.460514.json",
+    "Corporate_Acquisition.f55d35.492407.json",
+    "Hostile_Takeover.b4a14a.492406.json",
+    "Norman_Osborn_Green_Goblin_III.7494ce.460513.json",
+    "Norman_Osborn_Green_Goblin_II.351e3f.460512.json",
+    "Norman_Osborn_Green_Goblin_I.b6762c.460511.json"
+  ]
+}

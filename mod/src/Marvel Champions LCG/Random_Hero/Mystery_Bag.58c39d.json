@@ -1,0 +1,58 @@
+{
+  "Object": {
+    "GUID": "58c39d",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 69.64591,
+      "posY": 1.79266775,
+      "posZ": 14.0655622,
+      "rotX": 0.0278169755,
+      "rotY": 179.982864,
+      "rotZ": 0.00000328287729,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Mystery Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0,
+      "g": 0.6627451,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Mystery_Bag.58c39d.lua",
+    "LuaScriptState": "#include ./Mystery_Bag.58c39d.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Hawkeye.7d2eed.json",
+    "Crossfire.d9c52f.json",
+    "Criminal_Past.a67643.770700.json",
+    "Deck.dc1a9f.json",
+    "Hawkeye.e9f24a.json",
+    "Hawkeye.e6c50b.771500.json",
+    "Custom_Tile.2cd0e4.json"
+  ]
+}

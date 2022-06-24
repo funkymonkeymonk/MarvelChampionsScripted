@@ -1,0 +1,90 @@
+{
+  "Object": {
+    "GUID": "832bdf",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 36.74254,
+      "posY": 2.999631,
+      "posZ": 10.3848257,
+      "rotX": 359.774445,
+      "rotY": 179.853561,
+      "rotZ": 358.715454,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      770909,
+      770909,
+      770908,
+      770908,
+      770907,
+      770907,
+      770906,
+      770906,
+      770905,
+      770904,
+      770903,
+      770903,
+      770902,
+      770901,
+      770900
+    ],
+    "CustomDeck": {
+      "7709": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1836901154907241138/FF5951D4C6942DF1B8C5A468CF89A28F8C9D5F9C/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/767229025789764879/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 10,
+        "NumHeight": 5,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Full_Auto.7e47e8.770909.json",
+    "Full_Auto.885b39.770909.json",
+    "Scorched_Earth.507eca.770908.json",
+    "Scorched_Earth.50f742.770908.json",
+    "Targeted_Strike.3f93fa.770907.json",
+    "Targeted_Strike.f2e320.770907.json",
+    "Repulsor_Beam.596866.770906.json",
+    "Repulsor_Beam.dab2d7.770906.json",
+    "Shoulder_Cannon.9b5db4.770905.json",
+    "Missile_Launcher.ec9e2c.770904.json",
+    "Gauntlet_Gun.2e5735.770903.json",
+    "Gauntlet_Gun.f72335.770903.json",
+    "Upgraded_Chassis.5fbd1d.770902.json",
+    "Munitions_Bunker.75a9ae.770901.json",
+    "Iron_Man.0fddbe.770900.json"
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "Object": {
+    "GUID": "bf100d",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 102.658989,
+      "posY": 2.31427622,
+      "posZ": 21.1346836,
+      "rotX": -8.0316525e-8,
+      "rotY": 180.007645,
+      "rotZ": 7.459878e-8,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Valkyrie's Hero Deck",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      971115,
+      971114,
+      971113,
+      971112,
+      971111,
+      971110,
+      971109,
+      971108,
+      971107,
+      971106,
+      971105,
+      971104,
+      971103,
+      971102,
+      971101
+    ],
+    "CustomDeck": {
+      "9711": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1823396325164167556/30D4B51AE48706BEFB7465F7B51CF66F980B56E9/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 10,
+        "NumHeight": 3,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Have_at_Thee!.9a353f.971115.json",
+    "Have_at_Thee!.f821bb.971114.json",
+    "Have_at_Thee!.4e12af.971113.json",
+    "Shieldmaiden.021336.971112.json",
+    "Shieldmaiden.30b1c6.971111.json",
+    "Chooser_of_the_Slain.f4d774.971110.json",
+    "Chooser_of_the_Slain.ea66d2.971109.json",
+    "Visit_Valhalla.53ebc0.971108.json",
+    "Flight_of_the_Valkyrior.49c8dc.971107.json",
+    "Flight_of_the_Valkyrior.900776.971106.json",
+    "Aragorn.a49d22.971105.json",
+    "Dragonfang.052a38.971104.json",
+    "Valkyrie_s_Spear.bf1306.971103.json",
+    "Valhalla.f41233.971102.json",
+    "Annabelle_Riggs.31d6d3.971101.json"
+  ]
+}

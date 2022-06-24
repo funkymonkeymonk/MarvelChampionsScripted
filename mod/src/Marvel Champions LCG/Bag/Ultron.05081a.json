@@ -1,0 +1,65 @@
+{
+  "Object": {
+    "GUID": "05081a",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 48.4104424,
+      "posY": 2.85132527,
+      "posZ": 20.7357159,
+      "rotX": -0.00000213443354,
+      "rotY": 179.999222,
+      "rotZ": -6.501908e-8,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Ultron",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.8379791,
+      "g": 0.8306798,
+      "b": 0.8306798
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Ultron.05081a.lua",
+    "LuaScriptState": "#include ./Ultron.05081a.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Custom_Assetbundle_Bag.7fca5a.json",
+    "Custom_Token.0dd561.json",
+    "Custom_Token.53db77.json",
+    "Custom_Token.3646e2.json",
+    "Ultron.749aa7.json",
+    "Ultron.d125bc.json",
+    "Deck.32dc4d.json",
+    "Deck.34b101.json",
+    "Ultron_Drones.12d06d.466707.json",
+    "Countdown_to_Oblivion.9870c3.1305.json",
+    "Assault_on_NORAD.963455.1304.json",
+    "The_Crimson_Cowl.d8ea74.1303.json",
+    "Ultron.306bc6.json",
+    "Ultron.0e549e.json"
+  ]
+}

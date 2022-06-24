@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "e1f024",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 98.2504349,
+      "posY": 0.495001525,
+      "posZ": 18.7500153,
+      "rotX": -7.00913347e-7,
+      "rotY": 179.978622,
+      "rotZ": -4.12723523e-7,
+      "scaleX": 1.11209941,
+      "scaleY": 1,
+      "scaleZ": 1.11209941
+    },
+    "Nickname": "Crossbones",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249965191,
+      "g": 0.249965191,
+      "b": 0.249965191
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1625192018166354045/EFCF1CF1DE4129E818F6B47FF2C89A70691828E9/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

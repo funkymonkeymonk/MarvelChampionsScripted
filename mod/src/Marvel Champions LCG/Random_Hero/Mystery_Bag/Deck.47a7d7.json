@@ -1,0 +1,90 @@
+{
+  "Object": {
+    "GUID": "47a7d7",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 49.1848526,
+      "posY": 4.895555,
+      "posZ": 12.5699224,
+      "rotX": -0.00203824556,
+      "rotY": 179.990738,
+      "rotZ": -0.00120976241,
+      "scaleX": 1.27359366,
+      "scaleY": 1,
+      "scaleZ": 1.27359366
+    },
+    "Nickname": "",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      456014,
+      456013,
+      456012,
+      456011,
+      456010,
+      456009,
+      456008,
+      456007,
+      456006,
+      456005,
+      456004,
+      456003,
+      456002,
+      456001,
+      456000
+    ],
+    "CustomDeck": {
+      "4560": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/767229025789760884/0D3AF8A3CDE0DF4F74B361166279A4ED929B2996/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/767229025789764879/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 5,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Webbed_Up.12a3e9.456014.json",
+    "Webbed_Up.a30ca8.456013.json",
+    "Web-Shooter.12a3e9.456012.json",
+    "Web-Shooter.12a3e9.456011.json",
+    "Spider-Tracer.12a3e9.456010.json",
+    "Spider-Tracer.12a3e9.456009.json",
+    "Aunt_May.12a3e9.456008.json",
+    "Swinging_Web_Kick.12a3e9.456007.json",
+    "Swinging_Web_Kick.6f855c.456006.json",
+    "Swinging_Web_Kick.031499.456005.json",
+    "Enhanced_Spider-Sense.12a3e9.456004.json",
+    "Enhanced_Spider-Sense.12a3e9.456003.json",
+    "Backflip.12a3e9.456002.json",
+    "Backflip.d79499.456001.json",
+    "Black_Cat.12a3e9.456000.json"
+  ]
+}

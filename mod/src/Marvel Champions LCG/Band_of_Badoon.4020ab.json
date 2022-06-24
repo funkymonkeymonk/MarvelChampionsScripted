@@ -1,0 +1,51 @@
+{
+  "Object": {
+    "GUID": "4020ab",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 90.25,
+      "posY": -2.690144,
+      "posZ": -6.250007,
+      "rotX": -0.0000260407651,
+      "rotY": 179.998337,
+      "rotZ": -0.0000465636258,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Band of Badoon",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.5019608,
+      "g": 0.5019608,
+      "b": 0.5019608
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Band_of_Badoon.4020ab.lua",
+    "LuaScriptState": "#include ./Band_of_Badoon.4020ab.state.json",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Deck.c9aff3.json"
+  ]
+}

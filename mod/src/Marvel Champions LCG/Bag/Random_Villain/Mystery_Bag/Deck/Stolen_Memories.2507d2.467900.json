@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "2507d2",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 76.83776,
+      "posY": 2.67276144,
+      "posZ": 6.736048,
+      "rotX": 359.964783,
+      "rotY": 179.999908,
+      "rotZ": 180.1022,
+      "scaleX": 2.12,
+      "scaleY": 1,
+      "scaleZ": 2.12
+    },
+    "Nickname": "Stolen Memories",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 467900,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "4679": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1625194556389951488/E326593CB78C95884F7A6EEB4BDAF4EA70F837AC/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1625194556389937121/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

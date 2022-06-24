@@ -1,0 +1,67 @@
+{
+  "Object": {
+    "GUID": "0b94e6",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 26.75,
+      "posY": 2.32574654,
+      "posZ": 56.75,
+      "rotX": -0.000010245285,
+      "rotY": 179.998856,
+      "rotZ": -3.50078352e-7,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Mystery Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 0,
+      "b": 0
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Mystery_Bag.0b94e6.lua",
+    "LuaScriptState": "#include ./Mystery_Bag.0b94e6.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Custom_Assetbundle_Bag.7fca5a.json",
+    "Custom_Token.0dd561.json",
+    "Custom_Token.fb7e21.json",
+    "Custom_Token.5cce62.json",
+    "Thanos.b1125c.json",
+    "Thanos.5e15df.json",
+    "Deck.5ac8e3.json",
+    "Thanos_s_Helmet.f0fee0.3701.json",
+    "Deck.fe8947.json",
+    "Sanctuary.59131d.3500.json",
+    "Deck.4c01ca.json",
+    "Infinity_Gauntlet.1f7690.1920.json",
+    "Balance_the_Scales.17fb20.3200.json",
+    "The_Infinity_Stones.a4f97b.3100.json",
+    "Thanos.973ffc.json",
+    "Thanos.66c314.json"
+  ]
+}

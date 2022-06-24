@@ -1,0 +1,66 @@
+{
+  "Object": {
+    "GUID": "5309d1",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 26.75,
+      "posY": 2.32574582,
+      "posZ": 76.75,
+      "rotX": -1.20618116e-11,
+      "rotY": 179.999466,
+      "rotZ": -0.000002552982,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Mystery Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 0,
+      "b": 0
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Mystery_Bag.5309d1.lua",
+    "LuaScriptState": "#include ./Mystery_Bag.5309d1.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Custom_Assetbundle_Bag.7fca5a.json",
+    "Custom_Token.c9c5e5.json",
+    "Custom_Token.5cce62.json",
+    "Timestream.1a9af6.json",
+    "Timestream.be4177.json",
+    "Kang.9d2108.json",
+    "Kang.795795.json",
+    "Deck.d0003d.json",
+    "Deck.650d2c.json",
+    "Kang_s_Dominion.86e836.json",
+    "Kang_s_Wrath.66d7b9.798400.json",
+    "The_Master_of_Time.9580fa.797900.json",
+    "Kang_s_Arrival.6ba991.797800.json",
+    "Kang_The_Conqueror.dbca6e.json",
+    "Kang_The_Conqueror.1dcb9d.json"
+  ]
+}

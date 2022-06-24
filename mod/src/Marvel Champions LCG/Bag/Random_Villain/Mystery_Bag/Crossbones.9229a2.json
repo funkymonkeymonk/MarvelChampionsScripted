@@ -1,0 +1,73 @@
+{
+  "Object": {
+    "GUID": "9229a2",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 54.876297,
+      "posY": 2.007793,
+      "posZ": 41.6985664,
+      "rotX": 9.940052e-9,
+      "rotY": 179.997665,
+      "rotZ": 5.74643044e-9,
+      "scaleX": 3.6429348,
+      "scaleY": 1,
+      "scaleZ": 3.6429348
+    },
+    "Nickname": "Crossbones",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      771600,
+      771700
+    ],
+    "CustomDeck": {
+      "7716": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1618436934179042134/DA229F031C69B90589219AA74856B7CA8DF11739/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/776248693496171403/A0FAB7F60946745D878FAA841A913535303E3816/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "7717": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1618436934179041539/62ED58444AFFC3D8234FC8AFA8372EA912D5E094/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/776248693496171403/A0FAB7F60946745D878FAA841A913535303E3816/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Crossbones_II.6d9307.771600.json",
+    "Crossbones_I.c23d9f.771700.json"
+  ]
+}

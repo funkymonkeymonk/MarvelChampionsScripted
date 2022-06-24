@@ -1,0 +1,51 @@
+{
+  "Object": {
+    "GUID": "ab9133",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 96.25,
+      "posY": -2.69019961,
+      "posZ": -11.25,
+      "rotX": -0.00002604016,
+      "rotY": 180.000916,
+      "rotZ": 0.000008690938,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Guerrilla Tactics",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.494117618,
+      "g": 0.494117618,
+      "b": 0.494117618
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Guerrilla_Tactics.ab9133.lua",
+    "LuaScriptState": "#include ./Guerrilla_Tactics.ab9133.state.json",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Guerrilla_Tactics_Modular_Set.a99dad.json"
+  ]
+}

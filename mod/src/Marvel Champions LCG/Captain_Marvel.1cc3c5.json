@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "1cc3c5",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 58.2502975,
+      "posY": 0.495001853,
+      "posZ": 31.2500153,
+      "rotX": 0.00000148513368,
+      "rotY": 180.00267,
+      "rotZ": 5.970506e-7,
+      "scaleX": 1.11,
+      "scaleY": 1,
+      "scaleZ": 1.11
+    },
+    "Nickname": "Captain Marvel",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249957412,
+      "g": 0.249957412,
+      "b": 0.249957412
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1010439308570680022/F8C0D746F0EE7E0A55AE86330C51271CD91D19C4/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

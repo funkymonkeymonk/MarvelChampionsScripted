@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "ac0492",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 63.25,
+      "posY": 0.495001554,
+      "posZ": 33.7500076,
+      "rotX": 4.16774128e-7,
+      "rotY": 179.978149,
+      "rotZ": -1.28497064e-7,
+      "scaleX": 1.11,
+      "scaleY": 1,
+      "scaleZ": 1.11
+    },
+    "Nickname": "Spider-Woman",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.24995774,
+      "g": 0.24995774,
+      "b": 0.24995774
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1595918301063196234/82FCEB3DB9E2C14E105A018DDE8A92811F15FD8F/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

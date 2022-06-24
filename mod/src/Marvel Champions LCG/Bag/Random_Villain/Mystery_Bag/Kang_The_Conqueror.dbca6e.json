@@ -1,0 +1,73 @@
+{
+  "Object": {
+    "GUID": "dbca6e",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 43.0654526,
+      "posY": 20.10448,
+      "posZ": 105.461128,
+      "rotX": 359.964844,
+      "rotY": 179.969482,
+      "rotZ": 0.102215745,
+      "scaleX": 3.64,
+      "scaleY": 1,
+      "scaleZ": 3.64
+    },
+    "Nickname": "Kang (The Conqueror)",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      802600,
+      807500
+    ],
+    "CustomDeck": {
+      "8026": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1653342851333148617/D5D998BECBAEFA49C4C6336E8780D63DEB3D846A/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/776248693496171403/A0FAB7F60946745D878FAA841A913535303E3816/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "8075": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1625194556403962388/A11D116C33268FD9D95026448979BDACD012BF3E/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/776248693496171403/A0FAB7F60946745D878FAA841A913535303E3816/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Kang_The_Conqueror_III.0d06fc.802600.json",
+    "Kang_The_Conqueror_I.1a0a33.807500.json"
+  ]
+}

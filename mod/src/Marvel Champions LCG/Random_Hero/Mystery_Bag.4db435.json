@@ -1,0 +1,58 @@
+{
+  "Object": {
+    "GUID": "4db435",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 74.3443451,
+      "posY": 1.792199,
+      "posZ": 31.3328285,
+      "rotX": 8.53772463e-7,
+      "rotY": 179.999985,
+      "rotZ": 3.16829471e-7,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Mystery Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0,
+      "g": 0.6627451,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Mystery_Bag.4db435.lua",
+    "LuaScriptState": "#include ./Mystery_Bag.4db435.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Quicksilver.1b9240.json",
+    "Avalanche.597cb6.json",
+    "Need_for_Speed.574d1a.798200.json",
+    "Deck.9c23b1.json",
+    "Quicksilver.9ae5e4.json",
+    "Quicksilver.134328.798000.json",
+    "Custom_Tile.c96c5b.json"
+  ]
+}

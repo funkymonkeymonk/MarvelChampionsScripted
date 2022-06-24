@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "18d6d6",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 103.1561,
+      "posY": 8.483836,
+      "posZ": -11.3043213,
+      "rotX": 4.25982364e-7,
+      "rotY": 180.0391,
+      "rotZ": 0.00000265151243,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Mystery Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.905882359,
+      "g": 0.921568632,
+      "b": 0
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Mystery_Bag.18d6d6.lua",
+    "LuaScriptState": "#include ./Mystery_Bag.18d6d6.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Zzzax_Modular_Set.5ff73c.json"
+  ]
+}

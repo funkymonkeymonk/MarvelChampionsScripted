@@ -1,0 +1,81 @@
+{
+  "Object": {
+    "GUID": "95f054",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 101.475517,
+      "posY": 2.59159184,
+      "posZ": 44.5209,
+      "rotX": -1.7399455e-7,
+      "rotY": 180,
+      "rotZ": 180,
+      "scaleX": 2.12,
+      "scaleY": 1,
+      "scaleZ": 2.12
+    },
+    "Nickname": "",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      770700,
+      769729,
+      769728,
+      769727,
+      769726,
+      769725
+    ],
+    "CustomDeck": {
+      "7697": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1618436934179028354/33BBE098CDEAA881C7D2DCDC7091CC20B8A87C5C/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/770610707611095378/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 7,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "7707": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1618436934179051166/AA62B189FF6218CCDA4C09C9F739A256A865B8DC/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/770610707611095378/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Hydra_Patrol.b11002.770700.json",
+    "Hydra_Soldier.5a638e.769729.json",
+    "Hydra_Soldier.106f4f.769728.json",
+    "Hydra_Soldier.e630dd.769727.json",
+    "Hydra_Regular.0d7567.769726.json",
+    "Hydra_Regular.a0f98b.769725.json"
+  ]
+}

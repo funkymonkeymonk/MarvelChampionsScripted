@@ -1,0 +1,85 @@
+{
+  "Object": {
+    "GUID": "818b6f",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 43.2501755,
+      "posY": 3.09667826,
+      "posZ": 18.7500019,
+      "rotX": -0.002238194,
+      "rotY": 180,
+      "rotZ": 180.03894,
+      "scaleX": 2.12,
+      "scaleY": 1,
+      "scaleZ": 2.12
+    },
+    "Nickname": "",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      798822,
+      798821,
+      802516,
+      798819,
+      798818,
+      798817,
+      798816,
+      798815
+    ],
+    "CustomDeck": {
+      "7988": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1731045816072501957/BF476B91EB620043C822C64E6DC73AFB1853C222/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/787503561778586465/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 7,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "8025": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1731045816072793896/10BFC7ACFE3D229D9B461B5C9766743FBDFF9C78/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/787503561778586465/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 7,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Honor_Among_Thieves.801ac8.798822.json",
+    "Honor_Among_Thieves.67553d.798821.json",
+    "Sound_the_Alarms.075486.802516.json",
+    "Pirate_Lackey.548062.798819.json",
+    "Pirate_Lackey.930244.798818.json",
+    "Pirate_Lackey.fde001.798817.json",
+    "Pirate_Lackey.99d3e3.798816.json",
+    "Pirate_Commander.90e5c5.798815.json"
+  ]
+}

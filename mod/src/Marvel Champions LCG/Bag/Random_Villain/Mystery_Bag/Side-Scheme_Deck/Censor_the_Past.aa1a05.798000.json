@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "aa1a05",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 30.48501,
+      "posY": 1.68271387,
+      "posZ": 51.9250221,
+      "rotX": 359.9626,
+      "rotY": 179.999741,
+      "rotZ": 0.100178286,
+      "scaleX": 2.42349958,
+      "scaleY": 1,
+      "scaleZ": 2.42349958
+    },
+    "Nickname": "Censor the Past",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 798000,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "7980": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1618437358526309586/A4663477E55D29212F488082C7EC9BB5C55523A3/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/770610707611095378/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

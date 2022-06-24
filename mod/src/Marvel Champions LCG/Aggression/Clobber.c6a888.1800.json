@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "c6a888",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 17.25,
+      "posY": 0.508605957,
+      "posZ": 77.75,
+      "rotX": 1.38436551e-8,
+      "rotY": 180,
+      "rotZ": 4.77025131e-9,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Clobber",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 1800,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "18": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1796351328363653514/917BD2E0BD4E55085BBE1B5D85C86BE4C77D0C47/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1796351328360968967/8718E15DDD109893A667424F6E8CF1F8148DE991/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

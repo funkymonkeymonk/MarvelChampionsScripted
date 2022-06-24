@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "829287",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": -49.2499657,
+      "posY": 2.01993179,
+      "posZ": 45.7499771,
+      "rotX": 0.07120724,
+      "rotY": 180.000275,
+      "rotZ": 180.115433,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Bait and Switch",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 904300,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "9043": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1756939300244719433/7E7ED9ECFFBCEB45EA9028C93942900253A423F4/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1625193014910672699/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

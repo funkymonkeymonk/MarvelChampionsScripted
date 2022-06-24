@@ -1,0 +1,90 @@
+{
+  "Object": {
+    "GUID": "03d6ba",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 50.6657448,
+      "posY": 4.910906,
+      "posZ": -6.085258,
+      "rotX": 0.000172747212,
+      "rotY": 179.98497,
+      "rotZ": 0.0007717798,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      769214,
+      769213,
+      769212,
+      769211,
+      769210,
+      769209,
+      769208,
+      769207,
+      769206,
+      769205,
+      769204,
+      769203,
+      769202,
+      769201,
+      769200
+    ],
+    "CustomDeck": {
+      "7692": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1618436850079337721/CDA12E1FE47ACE641FA900276D767B1B2BDF4171/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/770610821574915156/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 10,
+        "NumHeight": 7,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Self-Propelled_Glide.c74323.769214.json",
+    "Self-Propelled_Glide.5e3de1.769213.json",
+    "Self-Propelled_Glide.ecdc1c.769212.json",
+    "Inconspicuous.ddbc4d.769211.json",
+    "Inconspicuous.425b0b.769210.json",
+    "Contaminant_Immunity.439961.769209.json",
+    "Contaminant_Immunity.771e36.769208.json",
+    "Pheromones.62794d.769207.json",
+    "Pheromones.0bf556.769206.json",
+    "Venom_Blast.9b2af7.769205.json",
+    "Venom_Blast.057296.769204.json",
+    "Jessica_Drew_s_Apartment.777843.769203.json",
+    "Finesse.095637.769202.json",
+    "Finesse.a7e5b2.769201.json",
+    "Captain_Marvel.cb22b8.769200.json"
+  ]
+}

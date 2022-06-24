@@ -1,0 +1,64 @@
+{
+  "Object": {
+    "GUID": "3122ae",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 52.39316,
+      "posY": 4.67176867,
+      "posZ": 40.3961258,
+      "rotX": 0.00625854032,
+      "rotY": 179.9957,
+      "rotZ": -9.092951e-7,
+      "scaleX": 3.6429348,
+      "scaleY": 1,
+      "scaleZ": 3.6429348
+    },
+    "Nickname": "Rhino",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      464802,
+      464801
+    ],
+    "CustomDeck": {
+      "4648": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/767229025789829945/38A8E5A65312FF916426B2803EA89FF322A62FEC/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/767229025789830639/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+        "NumWidth": 5,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Rhino_III.7b3c30.464802.json",
+    "Rhino_II.8e9ae4.464801.json"
+  ]
+}

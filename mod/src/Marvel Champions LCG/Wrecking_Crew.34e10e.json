@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "34e10e",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 98.25044,
+      "posY": 0.495001674,
+      "posZ": 21.2500114,
+      "rotX": -1.76086587e-7,
+      "rotY": 179.998337,
+      "rotZ": -5.23536663e-8,
+      "scaleX": 1.10934126,
+      "scaleY": 1,
+      "scaleZ": 1.10934126
+    },
+    "Nickname": "Wrecking Crew",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.2499564,
+      "g": 0.2499564,
+      "b": 0.2499564
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1010439675058988368/24E8103A35A455C2F26F671008192D9E4D54FF22/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

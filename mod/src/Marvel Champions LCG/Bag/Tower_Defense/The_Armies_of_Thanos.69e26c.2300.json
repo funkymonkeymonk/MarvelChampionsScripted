@@ -1,0 +1,58 @@
+{
+  "Object": {
+    "GUID": "69e26c",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 22.250061,
+      "posY": 2.54938745,
+      "posZ": 46.249958,
+      "rotX": 0.5857971,
+      "rotY": 89.99671,
+      "rotZ": 359.505157,
+      "scaleX": 2.93,
+      "scaleY": 1,
+      "scaleZ": 2.93
+    },
+    "Nickname": "The Armies of Thanos",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 2300,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "23": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1711917883467637536/26714AB4E71B88864223D02DF71FF7AB6720A9AC/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1711917883467638086/E9F2899291504C1B0D51D062AAB0EFF0938147AA/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}
+
+

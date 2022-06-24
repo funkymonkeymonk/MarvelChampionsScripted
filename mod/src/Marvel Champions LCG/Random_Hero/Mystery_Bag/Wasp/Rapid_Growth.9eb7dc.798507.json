@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "9eb7dc",
+    "Name": "Card",
+    "Transform": {
+      "posX": 5.499999,
+      "posY": 1.14524591,
+      "posZ": 4.71000051,
+      "rotX": -0.000192093372,
+      "rotY": 179.999878,
+      "rotZ": 0.000222206581,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Rapid Growth",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 798507,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "7985": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1665734052230182129/85705F73CF0F7BE8CCAC0C140536A4192829AA97/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/767229025789764879/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 10,
+        "NumHeight": 7,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

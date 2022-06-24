@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "a16518",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": -58.25,
+      "posY": 0.508605957,
+      "posZ": 93.25,
+      "rotX": 6.61482158e-9,
+      "rotY": 180,
+      "rotZ": 1.691163e-7,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Speed",
+    "Description": "Thomas Shepherd",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 896500,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "8965": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1756939300244699960/954AC2BFC610DDD3653FD55007813E7936557F83/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1625193014910672699/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

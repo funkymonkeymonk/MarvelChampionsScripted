@@ -1,0 +1,65 @@
+{
+  "Object": {
+    "GUID": "1ee1cd",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 35.25,
+      "posY": 2.32573,
+      "posZ": 76.75,
+      "rotX": 0.000009391622,
+      "rotY": 180.00444,
+      "rotZ": -0.00000299951466,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Mystery Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 0,
+      "b": 0
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Mystery_Bag.1ee1cd.lua",
+    "LuaScriptState": "#include ./Mystery_Bag.1ee1cd.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Custom_Assetbundle_Bag.7fca5a.json",
+    "Custom_Token.e0f2bf.json",
+    "Collector.74132d.json",
+    "Collector.9427df.json",
+    "Deck.8e5588.json",
+    "Deck.897269.json",
+    "Ship_Command.c4fcc4.json",
+    "Milano.5b82ff.799000.json",
+    "Library_Labyrinth.ca7e70.801800.json",
+    "The_Great_Escape.f348ad.801700.json",
+    "Lost_in_the_Museum.99cfc0.801600.json",
+    "The_Missing_Milano.ec05cc.801500.json",
+    "Collector.bf9d8f.800000.json",
+    "Collector.aada72.799900.json"
+  ]
+}

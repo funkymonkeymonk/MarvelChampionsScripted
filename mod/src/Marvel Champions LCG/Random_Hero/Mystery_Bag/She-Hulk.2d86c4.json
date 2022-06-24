@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "2d86c4",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 90.8278351,
+      "posY": 1.97789156,
+      "posZ": -39.66808,
+      "rotX": 0.00006270944,
+      "rotY": 179.9979,
+      "rotZ": 359.9833,
+      "scaleX": 1.12515855,
+      "scaleY": 1,
+      "scaleZ": 1.12515855
+    },
+    "Nickname": "She-Hulk",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249986917,
+      "g": 0.249986917,
+      "b": 0.249986917
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1010439308571868700/366D76E4886EA6713760AC665923FC515FEDD063/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./She-Hulk.2d86c4.lua",
+    "LuaScriptState": "#include ./She-Hulk.2d86c4.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

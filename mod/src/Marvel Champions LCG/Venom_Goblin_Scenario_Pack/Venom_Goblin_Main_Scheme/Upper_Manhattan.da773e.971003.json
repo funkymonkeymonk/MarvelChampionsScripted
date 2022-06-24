@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "da773e",
+    "Name": "Card",
+    "Transform": {
+      "posX": 38.0013161,
+      "posY": 1.44452,
+      "posZ": 8.000069,
+      "rotX": 0.0797685757,
+      "rotY": 89.99765,
+      "rotZ": 359.98407,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Upper Manhattan",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 971003,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "9710": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1834662762014912979/D4B192ADB62CCA799412C9B92AAF8979A7BA01FF/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1834662762014913442/C21FA3176925B48E5CCB35EBD980AB0D41C24F81/",
+        "NumWidth": 4,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": true,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

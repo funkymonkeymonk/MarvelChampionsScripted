@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "0ea228",
+    "Name": "Card",
+    "Transform": {
+      "posX": -79.25,
+      "posY": 0.508605957,
+      "posZ": 71.25,
+      "rotX": -3.77269664e-8,
+      "rotY": 180,
+      "rotZ": -5.00666175e-8,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Boot Camp",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 798520,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "7985": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1665734052230182129/85705F73CF0F7BE8CCAC0C140536A4192829AA97/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/767229025789764879/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 10,
+        "NumHeight": 7,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

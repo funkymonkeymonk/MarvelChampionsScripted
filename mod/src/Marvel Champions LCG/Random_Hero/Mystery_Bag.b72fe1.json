@@ -1,0 +1,58 @@
+{
+  "Object": {
+    "GUID": "b72fe1",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 78.03575,
+      "posY": 1.79219913,
+      "posZ": 39.84282,
+      "rotX": -4.268231e-7,
+      "rotY": 180.015961,
+      "rotZ": -4.552939e-7,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Mystery Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0,
+      "g": 0.6627451,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Mystery_Bag.b72fe1.lua",
+    "LuaScriptState": "#include ./Mystery_Bag.b72fe1.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Black_Panther.ffc8e2.json",
+    "Killmonger.492178.json",
+    "Affairs_of_State.d77eef.461007.json",
+    "Deck.992cde.json",
+    "Black_Panther.84245e.json",
+    "Black_Panther.2b5153.1204.json",
+    "Custom_Tile.1c7a55.json"
+  ]
+}
