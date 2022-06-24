@@ -42,6 +42,5 @@ luac.out
 .idea
 node_modules
 
-dist/
 mod/src/includes/generated/
 node_modules/
