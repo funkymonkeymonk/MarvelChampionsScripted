@@ -33,6 +33,7 @@ jobs:
           path: |
             dist
   push-to-steam:
+    needs: compile
     runs-on: self-hosted
     steps:
       - uses: actions/download-artifact@v3
