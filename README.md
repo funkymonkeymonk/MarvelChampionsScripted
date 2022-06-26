@@ -24,6 +24,8 @@
   * npm compile and also creates symlinks to TTS save directory
 * ```npm validate```
   * **WIP**: validates the JSON in the src directory
+* ```npm convertToBSON```
+  * Convert an existing TTS save file to BSON format for workshop upload
 
 ## Thanks
 Our appreciation goes out to those who came before and made much of this mod possible.

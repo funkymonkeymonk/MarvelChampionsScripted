@@ -7,7 +7,8 @@
     "lint:fix": "prettier --ignore-path .prettierignore --write src tool contrib && eslint src tool --fix --ext .ts",
     "lint:lua": "luacheck mod/src",
     "start": "npx ts-node tool/main.ts develop mod/src/MarvelChampionsLCG.json dist/MarvelChampionsLCG.json",
-    "validate": "ts-node ./tool/validate.ts"
+    "validate": "ts-node ./tool/validate.ts",
+    "convertToBSON": "node ./tool/workshopPrep.js"
   },
   "license": "MIT",
   "bugs": {
@@ -31,6 +32,7 @@
     "@typescript-eslint/eslint-plugin": "^4.31.1",
     "@typescript-eslint/parser": "^4.31.1",
     "ajv-cli": "^5.0.0",
+    "bson": "^4.6.4",
     "chalk": "^2.4.2",
     "clear": "^0.1.0",
     "commander": "^3.0.2",
@@ -58,7 +60,6 @@
     "typescript": "^3.9.10"
   },
   "dependencies": {
-    "bson": "^4.6.4",
     "make-promises-safe": "^5.1.0"
   }
 }
