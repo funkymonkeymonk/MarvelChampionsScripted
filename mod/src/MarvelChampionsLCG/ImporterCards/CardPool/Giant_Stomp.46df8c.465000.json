@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "46df8c",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 58.586628,
+      "posY": 2.85600448,
+      "posZ": 8.891058,
+      "rotX": 9.70107763e-8,
+      "rotY": 180,
+      "rotZ": 180,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Giant Stomp",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 465000,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "4650": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1683744853792108842/F1A72FFEEE707301370BB59FC282DE1F6CC96317/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1625193014910672699/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

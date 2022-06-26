@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "653c81",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 55.36347,
+      "posY": 2.86627769,
+      "posZ": 9.238476,
+      "rotX": -6.54442145e-9,
+      "rotY": 180,
+      "rotZ": 180,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Reinforced Suit",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 772100,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "7721": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1683744853792771692/78238B85A827C773D6D7A143F29D991A410C8514/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/770610821574915156/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

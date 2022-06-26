@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "c7c46c",
+    "Name": "Card",
+    "Transform": {
+      "posX": 52.4911423,
+      "posY": 4.830457,
+      "posZ": 8.545209,
+      "rotX": -0.000008717192,
+      "rotY": 180.019821,
+      "rotZ": 180.000076,
+      "scaleX": 1.88,
+      "scaleY": 1,
+      "scaleZ": 1.88
+    },
+    "Nickname": "Ms. Marvel",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 460510,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "4605": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/782995698740299261/EB864613B9F7AD5888C9FA29C30514417730D3FE/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/782995698740300353/50BE2616B93DF03105A25B1E20494AAEA70D790A/",
+        "NumWidth": 5,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": true,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

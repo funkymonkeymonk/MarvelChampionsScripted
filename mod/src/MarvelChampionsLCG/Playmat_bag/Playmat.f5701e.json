@@ -1,0 +1,218 @@
+{
+  "Object": {
+    "GUID": "f5701e",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 54.7499542,
+      "posY": 2.56546831,
+      "posZ": 88.7499161,
+      "rotX": 359.814484,
+      "rotY": 179.969772,
+      "rotZ": 0.09477102,
+      "scaleX": 7.83173132,
+      "scaleY": 1,
+      "scaleZ": 7.83173132
+    },
+    "Nickname": "Playmat",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1867319584748543443/C10AF8349C00327F6CD68B4001654610E565A6E3/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.1,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Playmat.f5701e.lua",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "AttachedSnapPoints": [
+      {
+        "Position": {
+          "x": 0.631782651,
+          "y": 0.10000439,
+          "z": -0.5920743
+        }
+      },
+      {
+        "Position": {
+          "x": -1.22064114,
+          "y": 0.100001343,
+          "z": 0.0000214282318
+        }
+      },
+      {
+        "Position": {
+          "x": -0.8503205,
+          "y": 0.100012861,
+          "z": 0.00009483222
+        }
+      },
+      {
+        "Position": {
+          "x": -0.480060756,
+          "y": 0.100002192,
+          "z": 0.000168772167
+        }
+      },
+      {
+        "Position": {
+          "x": -0.109775476,
+          "y": 0.09999749,
+          "z": 0.0002414386
+        }
+      },
+      {
+        "Position": {
+          "x": 0.260513,
+          "y": 0.100012332,
+          "z": 0.000314775418
+        }
+      },
+      {
+        "Position": {
+          "x": 0.630801439,
+          "y": 0.100017287,
+          "z": 0.000388112152
+        }
+      },
+      {
+        "Position": {
+          "x": 0.6306846,
+          "y": 0.100006945,
+          "z": 0.5928493
+        }
+      },
+      {
+        "Position": {
+          "x": 0.260382265,
+          "y": 0.0999977,
+          "z": 0.592779756
+        }
+      },
+      {
+        "Position": {
+          "x": -0.109892569,
+          "y": 0.100003719,
+          "z": 0.5927029
+        }
+      },
+      {
+        "Position": {
+          "x": -0.4801584,
+          "y": 0.100001745,
+          "z": 0.592625
+        }
+      },
+      {
+        "Position": {
+          "x": -0.85047,
+          "y": 0.09999989,
+          "z": 0.592556357
+        }
+      },
+      {
+        "Position": {
+          "x": -1.22075856,
+          "y": 0.09999982,
+          "z": 0.592483
+        }
+      },
+      {
+        "Position": {
+          "x": 1.07503033,
+          "y": 0.100001685,
+          "z": 0.592937648
+        }
+      },
+      {
+        "Position": {
+          "x": 1.44234681,
+          "y": 0.100013606,
+          "z": 0.593009949
+        }
+      },
+      {
+        "Position": {
+          "x": -1.51671052,
+          "y": 0.09999776,
+          "z": -0.814672
+        }
+      },
+      {
+        "Position": {
+          "x": 1.33163226,
+          "y": 0.100022219,
+          "z": -0.704266548
+        }
+      },
+      {
+        "Position": {
+          "x": 1.26773381,
+          "y": 0.100005738,
+          "z": -0.129686922
+        }
+      },
+      {
+        "Position": {
+          "x": 0.261650831,
+          "y": 0.09820799,
+          "z": -0.5923951
+        }
+      },
+      {
+        "Position": {
+          "x": -0.108641006,
+          "y": 0.0984946638,
+          "z": -0.592778146
+        }
+      },
+      {
+        "Position": {
+          "x": -0.4789336,
+          "y": 0.09919719,
+          "z": -0.593161047
+        }
+      },
+      {
+        "Position": {
+          "x": -0.849225044,
+          "y": 0.09853933,
+          "z": -0.59354347
+        }
+      },
+      {
+        "Position": {
+          "x": -1.21951807,
+          "y": 0.0973897,
+          "z": -0.593927145
+        }
+      }
+    ]
+  },
+  "StatesPaths": {}
+}

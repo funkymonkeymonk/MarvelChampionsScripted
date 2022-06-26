@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "8fc955",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 76.81537,
+      "posY": 2.60343,
+      "posZ": 2.95028019,
+      "rotX": 359.964783,
+      "rotY": 179.99968,
+      "rotZ": 0.102197327,
+      "scaleX": 2.8751688,
+      "scaleY": 1,
+      "scaleZ": 2.8751688
+    },
+    "Nickname": "Piledriver",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249983281,
+      "g": 0.249983281,
+      "b": 0.249983281
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": false,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1010439675059010592/164D26D5418FEB58C9B7A50DA552221911BDEEB8/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Piledriver.8fc955.lua",
+    "LuaScriptState": "#include ./Piledriver.8fc955.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}
+s": {}

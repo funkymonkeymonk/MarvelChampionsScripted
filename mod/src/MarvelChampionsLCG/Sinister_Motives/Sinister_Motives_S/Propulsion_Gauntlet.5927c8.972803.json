@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "5927c8",
+    "Name": "Card",
+    "Transform": {
+      "posX": 60,
+      "posY": 1.49733412,
+      "posZ": -12,
+      "rotX": 0.0105299456,
+      "rotY": 180,
+      "rotZ": 180.074249,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Propulsion Gauntlet",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 972803,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "9716": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1834662762014742151/D96411C8FE3732D311E0A8AF12E2B29CEFB5CE4D/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1834662762014742919/91FD1D71652CAF96999C66B2D7AA760C80B06D45/",
+        "NumWidth": 4,
+        "NumHeight": 3,
+        "BackIsHidden": false,
+        "UniqueBack": true,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

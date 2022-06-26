@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "215e83",
+    "Name": "Card",
+    "Transform": {
+      "posX": 39.9999771,
+      "posY": 1.47566962,
+      "posZ": 19.9998817,
+      "rotX": 0.0185831711,
+      "rotY": 90.00001,
+      "rotZ": 359.8321,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Sinister Synchronization",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 971000,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "9710": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1834662762014871337/DD5249B75908CEB576B064FEA4F70814B1F452C9/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1834662762014871822/6CE0A51CEAFCF0308B3E0A3BE9D0BF21C3B2638E/",
+        "NumWidth": 4,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": true,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

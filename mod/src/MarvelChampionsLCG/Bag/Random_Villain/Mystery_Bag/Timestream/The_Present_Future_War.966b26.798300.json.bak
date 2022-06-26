@@ -1,0 +1,57 @@
+{
+  "Object": {
+    "GUID": "966b26",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 78.73925,
+      "posY": 4.682838,
+      "posZ": 34.171936,
+      "rotX": 1.13008795e-7,
+      "rotY": 89.9762039,
+      "rotZ": 180,
+      "scaleX": 2.2,
+      "scaleY": 1,
+      "scaleZ": 2.2
+    },
+    "Nickname": "The Present Future War",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 798300,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "7983": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1625194556389987261/365637184397812AB9DC86C259ED319FEE98AC23/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1625194556389987065/1E8C48D5C8723B75B835C2CFF0F2692BB00C6C61/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}
+}

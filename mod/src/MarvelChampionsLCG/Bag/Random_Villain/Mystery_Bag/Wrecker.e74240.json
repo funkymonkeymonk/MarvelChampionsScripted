@@ -1,0 +1,64 @@
+{
+  "Object": {
+    "GUID": "e74240",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 90.50608,
+      "posY": 4.59639359,
+      "posZ": 25.0353718,
+      "rotX": 5.54919524e-8,
+      "rotY": 180.00769,
+      "rotZ": -1.629276e-8,
+      "scaleX": 2.8751688,
+      "scaleY": 1,
+      "scaleZ": 2.8751688
+    },
+    "Nickname": "Wrecker",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.24998194,
+      "g": 0.24998194,
+      "b": 0.24998194
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1010439675058988368/24E8103A35A455C2F26F671008192D9E4D54FF22/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Wrecker.e74240.lua",
+    "LuaScriptState": "#include ./Wrecker.e74240.state.json",
+    "XmlUI": "",
+    "AttachedSnapPoints": [
+      {
+        "Position": {
+          "x": 1.165154,
+          "y": 0.197297692,
+          "z": 0.233012259
+        }
+      }
+    ]
+  },
+  "StatesPaths": {}
+}

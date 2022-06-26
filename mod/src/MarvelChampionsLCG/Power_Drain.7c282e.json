@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "7c282e",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 96.25,
+      "posY": -2.69019938,
+      "posZ": -16.25,
+      "rotX": 8.53217443e-7,
+      "rotY": 179.994034,
+      "rotZ": -0.0000106838861,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Power Drain",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Power_Drain.7c282e.lua",
+    "LuaScriptState": "#include ./Power_Drain.7c282e.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Deck.be895c.json"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "03e0a2",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": -8.82948,
+      "posY": 2.98583317,
+      "posZ": 24.8750858,
+      "rotX": 0.0734065548,
+      "rotY": 179.93605,
+      "rotZ": 358.783447,
+      "scaleX": 1.12246585,
+      "scaleY": 1,
+      "scaleZ": 1.12246585
+    },
+    "Nickname": "Adam Warlock",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.2499842,
+      "g": 0.2499842,
+      "b": 0.2499842
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1291919813158359638/33B10A22D78A3C16DA0BB97B066EA9FF9C830606/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Adam_Warlock.03e0a2.lua",
+    "LuaScriptState": "#include ./Adam_Warlock.03e0a2.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

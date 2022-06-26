@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "63e98b",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": -9.249995,
+      "posY": 0.5085196,
+      "posZ": 57.2500076,
+      "rotX": 0.0004145879,
+      "rotY": 179.999985,
+      "rotZ": -0.00279651582,
+      "scaleX": 2.12,
+      "scaleY": 1,
+      "scaleZ": 2.12
+    },
+    "Nickname": "Blazing Inferno",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 802600,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "8026": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1731045816072823896/5E691A5378CBF5A8BD6DAE84698814C72CDA1012/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/787503561778586465/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

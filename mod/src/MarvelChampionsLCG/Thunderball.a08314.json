@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "a08314",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": -51.053093,
+      "posY": 0.999111235,
+      "posZ": -163.0299,
+      "rotX": 0.0266815014,
+      "rotY": 180.538422,
+      "rotZ": 359.928,
+      "scaleX": 0.0210777912,
+      "scaleY": 1,
+      "scaleZ": 0.0210777912
+    },
+    "Nickname": "Thunderball",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249957353,
+      "g": 0.249957353,
+      "b": 0.249957353
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": false,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1010439675059054104/01D8832C6CFCABAEC07C08DF2E7D40923FFDED1F/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

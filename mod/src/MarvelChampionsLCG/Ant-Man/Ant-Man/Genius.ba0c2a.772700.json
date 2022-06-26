@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "ba0c2a",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 51.27989,
+      "posY": 1.99092126,
+      "posZ": 19.5642815,
+      "rotX": 1.12528127e-7,
+      "rotY": 180.000015,
+      "rotZ": 180,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Genius",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 772700,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "7710": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1683744853792774679/49DB7229C2126348FC6455B98AD1FD02A4E61539/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/770610821574915156/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

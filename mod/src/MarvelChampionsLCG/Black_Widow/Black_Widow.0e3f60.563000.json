@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "0e3f60",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 57.34681,
+      "posY": 4.823718,
+      "posZ": 7.670287,
+      "rotX": 0.0006091342,
+      "rotY": 179.97113,
+      "rotZ": 180.003418,
+      "scaleX": 1.88,
+      "scaleY": 1,
+      "scaleZ": 1.88
+    },
+    "Nickname": "Black Widow",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 563000,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "5630": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1002556983890507415/B04F4CB6B298349CDDC001E461D35BB7C699CF27/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1002556983890507810/22EA587C3420A6A1A7CF8C829F636ADF991B446D/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

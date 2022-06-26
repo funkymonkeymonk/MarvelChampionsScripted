@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "23f410",
+    "Name": "Card",
+    "Transform": {
+      "posX": -49.2499428,
+      "posY": 2.11899161,
+      "posZ": 45.7499962,
+      "rotX": 0.00727383234,
+      "rotY": 180.000671,
+      "rotZ": 179.907639,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Reboot",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 971706,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "9717": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833528529702936172/9A66B507000949C18A519D6703A85D19856AD09D/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 10,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

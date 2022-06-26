@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "f6b16f",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 82.96415,
+      "posY": 2.397334,
+      "posZ": 42.4602966,
+      "rotX": 0.0168882012,
+      "rotY": 179.987564,
+      "rotZ": 0.07987261,
+      "scaleX": 2.00505972,
+      "scaleY": 1,
+      "scaleZ": 2.00505972
+    },
+    "Nickname": "Kraven the Hunter's HP Counter",
+    "Description": "Created by Unicorn\nTemplate by Hitch, Counter by JQTNguyen",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249983519,
+      "g": 0.249983519,
+      "b": 0.249983519
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1834662762015314847/CE58D050162082B341F3FD1F130B57AF41A27AEB/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Kraven_the_Hunter_s_HP_Counter.f6b16f.lua",
+    "LuaScriptState": "#include ./Kraven_the_Hunter_s_HP_Counter.f6b16f.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

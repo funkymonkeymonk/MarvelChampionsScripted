@@ -1,0 +1,83 @@
+{
+  "Object": {
+    "GUID": "4d020a",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 71.25084,
+      "posY": -0.3867675,
+      "posZ": -28.7496,
+      "rotX": 359.5151,
+      "rotY": 179.980576,
+      "rotZ": 1.04575241,
+      "scaleX": 2.11718178,
+      "scaleY": 1,
+      "scaleZ": 2.11718178
+    },
+    "Nickname": "Down to Earth",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      974405,
+      974404,
+      974500,
+      974403,
+      974402,
+      974401,
+      974400
+    ],
+    "CustomDeck": {
+      "9744": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1834662762014717337/64B7D6E585300C6CF373C623A4C5A4EABD3C60E7/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 4,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "9745": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1834662762014719301/71E1FE17A9EE6285990AEE4670951B9FB089F075/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Loose_Ends.791066.974405.json",
+    "Threat_or_Menace.d43795.974404.json",
+    "Volunteer_Work.c25056.974500.json",
+    "Friends_and_Family.f30c7f.974403.json",
+    "Common_Criminal.9ddb9c.974402.json",
+    "Common_Criminal.8333b4.974401.json",
+    "Common_Criminal.15760a.974400.json"
+  ]
+}

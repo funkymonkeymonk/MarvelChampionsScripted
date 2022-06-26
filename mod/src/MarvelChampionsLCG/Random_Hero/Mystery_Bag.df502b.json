@@ -1,0 +1,58 @@
+{
+  "Object": {
+    "GUID": "df502b",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 75.53996,
+      "posY": 1.79219937,
+      "posZ": 35.4635124,
+      "rotX": 4.26886231e-7,
+      "rotY": 180,
+      "rotZ": -4.018733e-7,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Mystery Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0,
+      "g": 0.6627451,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Mystery_Bag.df502b.lua",
+    "LuaScriptState": "#include ./Mystery_Bag.df502b.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Wasp.c43b16.json",
+    "Beetle.850840.json",
+    "Red_Dreams.8e4021.798600.json",
+    "Wasp.165b60.json",
+    "Deck.f73d6e.json",
+    "Wasp.0f11ab.799100.json",
+    "Custom_Tile.46b2ef.json"
+  ]
+}

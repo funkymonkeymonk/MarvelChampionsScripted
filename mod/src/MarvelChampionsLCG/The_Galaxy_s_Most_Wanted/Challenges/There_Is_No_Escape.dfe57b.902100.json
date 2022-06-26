@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "dfe57b",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 11.5551167,
+      "posY": 1.99095857,
+      "posZ": 42.7602463,
+      "rotX": -9.275617e-9,
+      "rotY": 90.00039,
+      "rotZ": -0.00298255915,
+      "scaleX": 2.12,
+      "scaleY": 1,
+      "scaleZ": 2.12
+    },
+    "Nickname": "\"There Is No Escape\"",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 902100,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "9021": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1731045816072533376/6D745843B8B28198BC4A95F016D8550E959813FA/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1731045816072533580/D8D3EC2EAD53DC99A5587361691E2912687C7D7D/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "99cfc0",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 64.82606,
+      "posY": 1.99083889,
+      "posZ": 35.05828,
+      "rotX": -2.794053e-8,
+      "rotY": 90.00001,
+      "rotZ": 1.61236924e-9,
+      "scaleX": 2.93,
+      "scaleY": 1,
+      "scaleZ": 2.93
+    },
+    "Nickname": "Lost in the Museum",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 801600,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "8016": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1731045816072541003/1D78E98EF8733699FC45266DB6E4015FC66C6070/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1731045816072541232/E3904433273B9CEC29A52B59C7D7620B8B6CE851/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

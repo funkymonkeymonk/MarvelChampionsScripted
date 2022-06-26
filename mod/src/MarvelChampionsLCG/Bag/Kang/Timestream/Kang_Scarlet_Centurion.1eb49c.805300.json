@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "1eb49c",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 83.58842,
+      "posY": 9.943176,
+      "posZ": 102.728539,
+      "rotX": 359.964752,
+      "rotY": 180.016434,
+      "rotZ": 0.102187179,
+      "scaleX": 3,
+      "scaleY": 1,
+      "scaleZ": 3
+    },
+    "Nickname": "Kang (Scarlet Centurion)",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 805300,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "8053": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1653342851333144547/0BA33186538B2F4FEF760FA886F2749994C9411D/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/776248693496171403/A0FAB7F60946745D878FAA841A913535303E3816/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

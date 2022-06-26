@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "75e946",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 59.9649925,
+      "posY": 1.56468534,
+      "posZ": 49.245,
+      "rotX": 359.9664,
+      "rotY": 180.00386,
+      "rotZ": 0.0926291645,
+      "scaleX": 1.47602439,
+      "scaleY": 1,
+      "scaleZ": 1.47602439
+    },
+    "Nickname": "Recovery Upgrade",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 770600,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "7706": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1618436934181180951/668296D8742CB537C8696ECC8EB6D3CFBB4ABE1B/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1618436934181181149/0AE9D88D0CE08075D8C85B8CE4663489A59DA901/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

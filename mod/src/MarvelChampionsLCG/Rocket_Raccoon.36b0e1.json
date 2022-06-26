@@ -1,0 +1,58 @@
+{
+  "Object": {
+    "GUID": "36b0e1",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 62.75,
+      "posY": -2.690474,
+      "posZ": 18.75,
+      "rotX": -0.00000811093,
+      "rotY": 180.002182,
+      "rotZ": 0.000004292059,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Rocket Raccoon",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.5607843,
+      "g": 0.5607843,
+      "b": 0.5607843
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Rocket_Raccoon.36b0e1.lua",
+    "LuaScriptState": "#include ./Rocket_Raccoon.36b0e1.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Rocket_Raccoon.6cc4a7.json",
+    "Blackjack_O_Hare.5fe0cf.json",
+    "Crisis_on_Halfworld.1ceae3.798906.json",
+    "Deck.7675ba.json",
+    "Rocket_Raccoon.46d8ce.json",
+    "Rocket_Raccoon.26074b.799200.json",
+    "Custom_Tile.814af6.json"
+  ]
+}

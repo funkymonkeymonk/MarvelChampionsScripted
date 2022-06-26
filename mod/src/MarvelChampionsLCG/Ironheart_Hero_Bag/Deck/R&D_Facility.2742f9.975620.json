@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "2742f9",
+    "Name": "Card",
+    "Transform": {
+      "posX": -49.2499161,
+      "posY": 2.104535,
+      "posZ": 45.74999,
+      "rotX": 0.0233457,
+      "rotY": 179.999649,
+      "rotZ": 180.236084,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "R&D Facility",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 975620,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "9756": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1831288304598090926/0D77E2898E057E2E7FE5A6C79D4BF1645AEA13EA/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 10,
+        "NumHeight": 3,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

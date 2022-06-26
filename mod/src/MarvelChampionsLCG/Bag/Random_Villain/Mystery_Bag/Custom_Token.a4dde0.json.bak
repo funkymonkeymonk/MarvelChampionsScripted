@@ -1,0 +1,57 @@
+{
+  "Object": {
+    "GUID": "a4dde0",
+    "Name": "Custom_Token",
+    "Transform": {
+      "posX": 64.46272,
+      "posY": 2.07723451,
+      "posZ": 25.96824,
+      "rotX": -0.0000243324048,
+      "rotY": 179.995041,
+      "rotZ": 0.00000314934459,
+      "scaleX": 0.397666037,
+      "scaleY": 1,
+      "scaleZ": 0.397666037
+    },
+    "Nickname": "",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": false,
+    "Snap": false,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1470941757168316639/D0252AC3E40D9E1A76512D0F1F10E38C2D5EAFE6/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomToken": {
+        "Thickness": 0.2,
+        "MergeDistancePixels": 8.065111,
+        "StandUp": false,
+        "Stackable": false
+      }
+    },
+    "LuaScript": "#include ./Custom_Token.a4dde0.lua",
+    "LuaScriptState": "#include ./Custom_Token.a4dde0.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}
+
+}

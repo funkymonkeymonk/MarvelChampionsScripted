@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "3a0201",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 77.25148,
+      "posY": 2.036221,
+      "posZ": -15.7391167,
+      "rotX": 8.537748e-7,
+      "rotY": 180.0021,
+      "rotZ": -7.502308e-8,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Mystery Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.905882359,
+      "g": 0.921568632,
+      "b": 0
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Mystery_Bag.3a0201.lua",
+    "LuaScriptState": "#include ./Mystery_Bag.3a0201.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Guerrilla_Tactics.a99dad.json"
+  ]
+}

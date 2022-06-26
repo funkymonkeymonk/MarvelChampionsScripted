@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "09fd82",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 74.02711,
+      "posY": 1.74590468,
+      "posZ": 35.18212,
+      "rotX": 0.09457856,
+      "rotY": 179.999908,
+      "rotZ": 359.985168,
+      "scaleX": 2.42349958,
+      "scaleY": 1,
+      "scaleZ": 2.42349958
+    },
+    "Nickname": "Judge, Jury, Executioner",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 704400,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "7044": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1469814968711152737/D0983633668B3AE5550A6806AEDE07A9F8417236/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1469814968711043924/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

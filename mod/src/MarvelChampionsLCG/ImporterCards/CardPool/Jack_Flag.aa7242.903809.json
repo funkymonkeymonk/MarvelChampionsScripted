@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "aa7242",
+    "Name": "Card",
+    "Transform": {
+      "posX": 35.22096,
+      "posY": 1.990839,
+      "posZ": -9.521459,
+      "rotX": 6.771657e-8,
+      "rotY": 180.000046,
+      "rotZ": -4.32546983e-7,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Jack Flag",
+    "Description": "Jack Harrison",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 903809,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "85": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1693900955161049045/1957CC5CDE584872C544404CF96ADA2CBE4A0014/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/767229025789764879/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 10,
+        "NumHeight": 5,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

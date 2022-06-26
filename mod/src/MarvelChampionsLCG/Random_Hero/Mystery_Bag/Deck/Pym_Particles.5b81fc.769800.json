@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "5b81fc",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 60.5339127,
+      "posY": 4.63166571,
+      "posZ": 29.9455166,
+      "rotX": -4.40647341e-8,
+      "rotY": 180,
+      "rotZ": 180,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Pym Particles",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 769800,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "7698": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1683744853792110701/2A226C4F45C60C33F46211BC612FB85283E23BE5/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1625193014910672699/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

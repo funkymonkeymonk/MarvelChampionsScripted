@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "2b5153",
+    "Name": "Card",
+    "Transform": {
+      "posX": 46.5470963,
+      "posY": 4.829942,
+      "posZ": 3.33021736,
+      "rotX": -0.000808234152,
+      "rotY": 180.009048,
+      "rotZ": 179.996567,
+      "scaleX": 1.88,
+      "scaleY": 1,
+      "scaleZ": 1.88
+    },
+    "Nickname": "Black Panther",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 1204,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "12": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/767229025789807688/D40C6AA08FD1176506D14B0049F30523041BF8CA/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/767229025789808371/0452DE4CEF4295D131375422AAF786826C8E5F25/",
+        "NumWidth": 5,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": true,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

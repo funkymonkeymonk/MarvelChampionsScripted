@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "9e338f",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 60.25,
+      "posY": -2.6901536,
+      "posZ": -23.75,
+      "rotX": -0.0000136591771,
+      "rotY": 179.994034,
+      "rotZ": 0.0000230542646,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Whispers of Paranoia",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.494117618,
+      "g": 0.494117618,
+      "b": 0.494117618
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Whispers_of_Paranoia.9e338f.lua",
+    "LuaScriptState": "#include ./Whispers_of_Paranoia.9e338f.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Whispers_of_Paranoia.b700ef.json"
+  ]
+}

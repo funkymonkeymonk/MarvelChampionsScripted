@@ -1,0 +1,53 @@
+{
+  "Object": {
+    "GUID": "0f6e43",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 78.25,
+      "posY": -2.69024086,
+      "posZ": -18.75,
+      "rotX": 0.00000683005374,
+      "rotY": 179.99942,
+      "rotZ": -0.0000263836355,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Ship Command",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.5019608,
+      "g": 0.5019608,
+      "b": 0.5019608
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Ship_Command.0f6e43.lua",
+    "LuaScriptState": "#include ./Ship_Command.0f6e43.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Deck.c4fcc4.json",
+    "Milano.5b82ff.799000.json"
+  ]
+}

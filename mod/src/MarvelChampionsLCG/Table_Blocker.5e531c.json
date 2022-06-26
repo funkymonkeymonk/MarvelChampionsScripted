@@ -1,0 +1,43 @@
+{
+  "Object": {
+    "GUID": "5e531c",
+    "Name": "go_game_piece_white",
+    "Transform": {
+      "posX": 53.24993,
+      "posY": 1,
+      "posZ": -36.2499123,
+      "rotX": 0.00003294245,
+      "rotY": -0.00250547682,
+      "rotZ": -0.000007741965,
+      "scaleX": 1.84999931,
+      "scaleY": 1.84999931,
+      "scaleZ": 1.84999931
+    },
+    "Nickname": "Table Blocker",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.263055772,
+      "g": 0.263055772,
+      "b": 0.263055772
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "LuaScript": "#include ./Table_Blocker.5e531c.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

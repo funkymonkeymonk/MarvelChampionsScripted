@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "0b7404",
+    "Name": "Card",
+    "Transform": {
+      "posX": 9.749992,
+      "posY": 0.507882833,
+      "posZ": 52.7499962,
+      "rotX": 0.005728278,
+      "rotY": 180.000183,
+      "rotZ": 359.961182,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Charlie-27",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 903121,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "9031": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1711917883467409171/5273F44033F5DD421C5DD1B17FB4AD88389F86AC/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1264897305960075747/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 7,
+        "NumHeight": 4,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

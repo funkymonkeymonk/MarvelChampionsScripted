@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "084f80",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 100.954391,
+      "posY": 24.2898388,
+      "posZ": 1.6013509,
+      "rotX": 1.80509772e-7,
+      "rotY": 180,
+      "rotZ": -2.53956443e-7,
+      "scaleX": 1.12515855,
+      "scaleY": 1,
+      "scaleZ": 1.12515855
+    },
+    "Nickname": "Spider-Man's HP Counter",
+    "Description": "Created by Unicorn\nTemplate by Hitch, Counter by JQTNguyen",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249984682,
+      "g": 0.249984682,
+      "b": 0.249984682
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1834662762015024005/B5834E791B7A9AEC90CCA099E09EA575F1D567EF/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": true,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Spider-Man_s_HP_Counter.084f80.lua",
+    "LuaScriptState": "#include ./Spider-Man_s_HP_Counter.084f80.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

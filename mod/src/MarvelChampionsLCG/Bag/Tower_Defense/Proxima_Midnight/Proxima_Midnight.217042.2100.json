@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "217042",
+    "Name": "Card",
+    "Transform": {
+      "posX": -55.25,
+      "posY": 0.666331768,
+      "posZ": 52.750618,
+      "rotX": 358.909515,
+      "rotY": 180.000671,
+      "rotZ": 359.994263,
+      "scaleX": 3.64,
+      "scaleY": 1,
+      "scaleZ": 3.64
+    },
+    "Nickname": "Proxima Midnight",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 2100,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "21": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1711917883467632916/24667CD487A4BF7198BBE66FBC155D236E86C1A8/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1666860958377475324/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+        "NumWidth": 3,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

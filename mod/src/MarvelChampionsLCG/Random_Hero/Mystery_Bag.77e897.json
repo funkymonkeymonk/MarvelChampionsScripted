@@ -1,0 +1,58 @@
+{
+  "Object": {
+    "GUID": "77e897",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 88.98258,
+      "posY": 1.79219925,
+      "posZ": 31.0706787,
+      "rotX": -6.050407e-12,
+      "rotY": 180.002045,
+      "rotZ": 3.4017495e-7,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Mystery Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0,
+      "g": 0.6627451,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Mystery_Bag.77e897.lua",
+    "LuaScriptState": "#include ./Mystery_Bag.77e897.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Spider-Man.a65cd5.json",
+    "Vulture.80078c.json",
+    "Eviction_Notice.4f37cf.770719.json",
+    "Deck.47a7d7.json",
+    "Spider-Man.2dff24.json",
+    "Spider-Man.43d7e9.1200.json",
+    "Custom_Tile.f5701e.json"
+  ]
+}

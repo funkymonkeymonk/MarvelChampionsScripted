@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "3ca6e4",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 91.25,
+      "posY": 0.346973956,
+      "posZ": 96.25,
+      "rotX": -9.788379e-7,
+      "rotY": -0.0000259800618,
+      "rotZ": 8.054155e-7,
+      "scaleX": 0.800000131,
+      "scaleY": 0.800000131,
+      "scaleZ": 0.800000131
+    },
+    "Nickname": "ImporterCards",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0,
+      "g": 0.0156862754,
+      "b": 0.7019608
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": false,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./ImporterCards.3ca6e4.lua",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "CardPool.7d65df.json"
+  ]
+}

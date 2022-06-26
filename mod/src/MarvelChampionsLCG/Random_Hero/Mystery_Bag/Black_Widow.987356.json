@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "987356",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 56.8490944,
+      "posY": 4.81027269,
+      "posZ": 12.1705618,
+      "rotX": 0.000422638172,
+      "rotY": 179.981384,
+      "rotZ": 0.00355861825,
+      "scaleX": 1.12515855,
+      "scaleY": 1,
+      "scaleZ": 1.12515855
+    },
+    "Nickname": "Black Widow",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249986172,
+      "g": 0.249986172,
+      "b": 0.249986172
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1010439254261018766/6578090C5AB67C8EFEB8DAB8BBE6F1B0E653881C/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Black_Widow.987356.lua",
+    "LuaScriptState": "#include ./Black_Widow.987356.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

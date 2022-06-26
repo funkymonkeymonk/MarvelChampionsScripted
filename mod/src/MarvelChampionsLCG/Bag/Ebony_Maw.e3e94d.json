@@ -1,0 +1,61 @@
+{
+  "Object": {
+    "GUID": "e3e94d",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 43.41043,
+      "posY": 0.7794286,
+      "posZ": 10.735713,
+      "rotX": 4.26590645e-7,
+      "rotY": 180.040176,
+      "rotZ": 8.439176e-7,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Ebony Maw",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.479094148,
+      "g": 0.4722767,
+      "b": 0.464904547
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Ebony_Maw.e3e94d.lua",
+    "LuaScriptState": "#include ./Ebony_Maw.e3e94d.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Custom_Assetbundle_Bag.7fca5a.json",
+    "Custom_Token.061c77.json",
+    "Ebony_Maw.78ff88.json",
+    "Ebony_Maw.8e5750.json",
+    "Deck.fe8947.json",
+    "Deck.189698.json",
+    "The_Power_Stone.7003bd.1300.json",
+    "Attack_on_Knowhere.c60eb6.1200.json",
+    "Ebony_Maw.dcf864.json",
+    "Ebony_Maw.de2142.json"
+  ]
+}

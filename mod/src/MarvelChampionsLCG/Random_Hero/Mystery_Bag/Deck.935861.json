@@ -1,0 +1,90 @@
+{
+  "Object": {
+    "GUID": "935861",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 29.1446247,
+      "posY": 3.0329802,
+      "posZ": 27.3772755,
+      "rotX": 0.179825217,
+      "rotY": 179.8842,
+      "rotZ": 358.846069,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      903617,
+      903616,
+      903615,
+      903614,
+      903613,
+      903612,
+      903611,
+      903610,
+      903609,
+      903608,
+      903607,
+      903606,
+      903605,
+      903604,
+      903603
+    ],
+    "CustomDeck": {
+      "9036": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1711917883466995168/9BE9191AC94F8C97585BB4B6408F7FB988FBBD1E/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1264897305960075747/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 6,
+        "NumHeight": 3,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Speed_of_Light.a8587b.903617.json",
+    "Speed_of_Light.104768.903616.json",
+    "Speed_of_Light.1d031e.903615.json",
+    "Pulsar_Shield.17ff30.903614.json",
+    "Pulsar_Shield.360973.903613.json",
+    "Pulsar_Shield.b41149.903612.json",
+    "Photon_Speed.f1b513.903611.json",
+    "Photon_Speed.259a52.903610.json",
+    "Photon_Speed.f199b6.903609.json",
+    "Gamma_Blast.ebb4cb.903608.json",
+    "Gamma_Blast.9d2814.903607.json",
+    "Gamma_Blast.b6db10.903606.json",
+    "Energy_Duplication.aaeab2.903605.json",
+    "Energy_Duplication.ffc742.903604.json",
+    "Blue_Marvel.fdcf05.903603.json"
+  ]
+}

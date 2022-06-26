@@ -1,0 +1,65 @@
+{
+  "Object": {
+    "GUID": "134bcc",
+    "Name": "Bag",
+    "Transform": {
+      "posX": -16.249464,
+      "posY": 2.85140657,
+      "posZ": -1.74950635,
+      "rotX": 0.0403370671,
+      "rotY": 180.03035,
+      "rotZ": 359.956146,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Mystery Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 0,
+      "b": 0
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Mystery_Bag.134bcc.lua",
+    "LuaScriptState": "#include ./Mystery_Bag.134bcc.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Custom_Assetbundle_Bag.7fca5a.json",
+    "Custom_Token.061c77.json",
+    "Custom_Token.a4dde0.json",
+    "Crossbones.cf9c36.json",
+    "Crossbones.e9b177.json",
+    "Crossbones_Machine_Gun.60847f.773900.json",
+    "Deck.8fa5f8.json",
+    "Deck.cbae24.json",
+    "Experimental_Weapons.cf0c78.json",
+    "The_Getaway.7dffad.770300.json",
+    "The_Infinity_Stone.0f332e.770200.json",
+    "Attack_on_Mount_Athena.a07494.772900.json",
+    "Crossbones.6be3ed.json",
+    "Crossbones.9229a2.json"
+  ]
+}

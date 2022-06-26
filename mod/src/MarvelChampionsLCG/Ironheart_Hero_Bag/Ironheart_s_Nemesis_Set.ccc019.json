@@ -1,0 +1,79 @@
+{
+  "Object": {
+    "GUID": "ccc019",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 99.25496,
+      "posY": 2.26613545,
+      "posZ": 26.3797836,
+      "rotX": -4.944888e-8,
+      "rotY": 180.004868,
+      "rotZ": -1.93328091e-7,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Ironheart's Nemesis Set",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      214,
+      213,
+      212,
+      211,
+      973302
+    ],
+    "CustomDeck": {
+      "2": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1831288304598071486/2724D2C1DB5D76DF4E274B10499ECC85C31C94F4/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 8,
+        "NumHeight": 3,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "9733": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1831288304598069816/5CDA0D7E27B0139ADE5910DF3F3940ACB4645EA1/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 3,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Political_Retribution.fc491c.214.json",
+    "Political_Retribution.1028dc.213.json",
+    "Cyborg_Tech.fb8da2.212.json",
+    "Lucia_von_Bardas.c427c2.211.json",
+    "Rule_by_Force.876a6f.973302.json"
+  ]
+}

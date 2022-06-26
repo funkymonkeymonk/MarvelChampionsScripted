@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "ab4f4d",
+    "Name": "Card",
+    "Transform": {
+      "posX": -19.2023773,
+      "posY": 0.821914434,
+      "posZ": -19.2426357,
+      "rotX": 0.0000326697227,
+      "rotY": 180.002609,
+      "rotZ": -0.00256760418,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Inspired",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 503,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "5": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/767229025789778613/5B577B95A5871E9B86AB945A2FF8BA0BE4E8A6CA/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/767229025789764879/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 5,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

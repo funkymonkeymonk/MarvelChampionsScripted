@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "04ee82",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": -10.7221432,
+      "posY": 1.72041893,
+      "posZ": 4.967446,
+      "rotX": 0.009494908,
+      "rotY": 179.999,
+      "rotZ": 185.059814,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Molecular Decay",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 894900,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "8949": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1756939300244572552/EDEA7013AF0DE82056BD3DBB742B15FDBA090B41/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1625193014910672699/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

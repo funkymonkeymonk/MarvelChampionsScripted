@@ -1,0 +1,68 @@
+{
+  "Object": {
+    "GUID": "b4c9e9",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 61.7489738,
+      "posY": -0.417675,
+      "posZ": -30.2497768,
+      "rotX": 359.6461,
+      "rotY": 180.008377,
+      "rotZ": 358.473755,
+      "scaleX": 2.11755562,
+      "scaleY": 1,
+      "scaleZ": 2.11755562
+    },
+    "Nickname": "Streets of Mayhem",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      974851,
+      974850,
+      974849,
+      974848
+    ],
+    "CustomDeck": {
+      "9748": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833524088513418557/96FBFF2F56CF4C1A12BFA3D3B8CC14D3C76AEF50/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 6,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Warehouse_District.f55544.974851.json",
+    "Sewer_Tunnels.68f562.974850.json",
+    "Secret_Lair.946d12.974849.json",
+    "Back-Alley_Enclave.292945.974848.json"
+  ]
+}

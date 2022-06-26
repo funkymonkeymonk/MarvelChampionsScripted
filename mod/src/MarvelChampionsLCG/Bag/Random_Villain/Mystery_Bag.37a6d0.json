@@ -1,0 +1,62 @@
+{
+  "Object": {
+    "GUID": "37a6d0",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 40.25,
+      "posY": 2.3257308,
+      "posZ": 84.25,
+      "rotX": 1.252042e-10,
+      "rotY": 180.0146,
+      "rotZ": -9.821727e-7,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Mystery Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 0,
+      "b": 0
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Mystery_Bag.37a6d0.lua",
+    "LuaScriptState": "#include ./Mystery_Bag.37a6d0.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Custom_Assetbundle_Bag.7fca5a.json",
+    "Custom_Token.c9c5e5.json",
+    "Custom_Token.fb7e21.json",
+    "Rhino.bc75e7.json",
+    "Rhino.32de15.json",
+    "Deck.c1b53c.json",
+    "Deck.f6d0c0.json",
+    "Breakin_&_Takin.e0ddd7.464629.json",
+    "The_Break-In!.ec618a.464900.json",
+    "Rhino.3122ae.json",
+    "Rhino.08c2dc.json"
+  ]
+}

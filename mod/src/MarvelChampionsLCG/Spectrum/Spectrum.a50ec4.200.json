@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "a50ec4",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 27.6251144,
+      "posY": 2.94329166,
+      "posZ": 33.0328636,
+      "rotX": 0.179197609,
+      "rotY": 179.902573,
+      "rotZ": 178.851257,
+      "scaleX": 1.88,
+      "scaleY": 1,
+      "scaleZ": 1.88
+    },
+    "Nickname": "Spectrum",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 200,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "2": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1711917883466999420/6F08208DF7D33A39C0FF10685DBBFD993F9E1E1A/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1711917883466999846/E27BBB2286238D5AE2CE7D50F8F4C1B308CEE74B/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

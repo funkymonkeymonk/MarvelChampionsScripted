@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "a516ad",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 66.25,
+      "posY": -2.69016075,
+      "posZ": -6.25,
+      "rotX": 0.0000226266166,
+      "rotY": 179.994034,
+      "rotZ": 0.0000311065269,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Anachronauts",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Anachronauts.a516ad.lua",
+    "LuaScriptState": "#include ./Anachronauts.a516ad.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Deck.c7ad75.json"
+  ]
+}

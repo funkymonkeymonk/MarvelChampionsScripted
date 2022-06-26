@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "7c0e17",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 42.39426,
+      "posY": 1.990839,
+      "posZ": 0.244831055,
+      "rotX": -5.07298751e-7,
+      "rotY": 180,
+      "rotZ": 0.000003040607,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Turn the Tide",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 897000,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "8970": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1756939300244702788/ED38A14AF2C4AD65634BDE3078C05C3DC3336023/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1625193014910672699/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

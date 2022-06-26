@@ -1,0 +1,90 @@
+{
+  "Object": {
+    "GUID": "c0102e",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 58.8531075,
+      "posY": 4.90313053,
+      "posZ": 2.01006031,
+      "rotX": 0.0009465508,
+      "rotY": 179.98735,
+      "rotZ": 0.002613275,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      562911,
+      562911,
+      562915,
+      562912,
+      562912,
+      562910,
+      562910,
+      562909,
+      562909,
+      562908,
+      562913,
+      562913,
+      562914,
+      562914,
+      562916
+    ],
+    "CustomDeck": {
+      "5629": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1002556983890503311/4D545FFF3C43BF79A122A17C94773D8D3AC1EAB7/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/772868968001745702/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 10,
+        "NumHeight": 7,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Widow_s_Bite.4fbca5.562911.json",
+    "Widow_s_Bite.690446.562911.json",
+    "Synth-Suit.5f96fd.562915.json",
+    "Grappling_Hook.cf2046.562912.json",
+    "Grappling_Hook.20dfc1.562912.json",
+    "Black_Widow_s_Gauntlet.4ce11f.562910.json",
+    "Black_Widow_s_Gauntlet.bc9e97.562910.json",
+    "Attacrobatics.b9d4fe.562909.json",
+    "Attacrobatics.646ea7.562909.json",
+    "Safe_House_#29.209c35.562908.json",
+    "Dance_of_Death.650a1e.562913.json",
+    "Dance_of_Death.9dec5d.562913.json",
+    "Covert_Ops.8ced44.562914.json",
+    "Covert_Ops.5c0b60.562914.json",
+    "Winter_Soldier.1690e8.562916.json"
+  ]
+}

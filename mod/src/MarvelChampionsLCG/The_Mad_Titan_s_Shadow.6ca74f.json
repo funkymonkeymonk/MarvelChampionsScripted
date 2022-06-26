@@ -1,0 +1,85 @@
+{
+  "Object": {
+    "GUID": "6ca74f",
+    "Name": "Custom_Model_Bag",
+    "Transform": {
+      "posX": -74.25,
+      "posY": 0.4965238,
+      "posZ": 29.2500057,
+      "rotX": 0.00298277661,
+      "rotY": 179.999939,
+      "rotZ": 1.75459377e-7,
+      "scaleX": 0.79,
+      "scaleY": 0.11,
+      "scaleZ": 0.79
+    },
+    "Nickname": "The Mad Titan's Shadow",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "CustomMesh": {
+      "MeshURL": "https://raw.githubusercontent.com/RobMayer/TTSLibrary/master/advboxes/core_h_MSH.obj",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1686023243880610233/724B66AD258A1B315D9967E176B4F3CAA4D46863/",
+      "NormalURL": "",
+      "ColliderURL": "",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 6,
+      "CustomShader": {
+        "SpecularColor": {
+          "r": 1,
+          "g": 1,
+          "b": 1
+        },
+        "SpecularIntensity": 0,
+        "SpecularSharpness": 2,
+        "FresnelStrength": 0
+      },
+      "CastShadows": true
+    },
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./The_Mad_Titan_s_Shadow.6ca74f.lua",
+    "LuaScriptState": "#include ./The_Mad_Titan_s_Shadow.6ca74f.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Captive_Allies.0b7945.json",
+    "Open_the_Dungeons.4f8efa.4900.json",
+    "Summoned_Back.807b94.5000.json",
+    "Summoned_Back.a250dd.5000.json",
+    "Norn_Stone.501f86.json",
+    "Find_the_Norn_Stones.c94231.5200.json",
+    "System_Shock.3a2dc7.json",
+    "Hack_Sanctuary_s_Computer.3eda46.5300.json",
+    "Shawarma.2b44f1.json",
+    "Save_the_Shawarma_Place.dc0cba.5400.json",
+    "Security_Breach.0bd62d.5500.json",
+    "Secure_the_Landing_Pad.8c6bb3.8300.json",
+    "The_Mad_Titan_s_Shadow_Campaign_Log.6f589e.json",
+    "The_Mad_Titan_s_Shadow.1e594e.json"
+  ]
+}

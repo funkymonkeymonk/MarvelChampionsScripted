@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "34dd29",
+    "Name": "Card",
+    "Transform": {
+      "posX": -12.5102444,
+      "posY": 1.84921825,
+      "posZ": 0.234963462,
+      "rotX": 0.000843053451,
+      "rotY": 179.998138,
+      "rotZ": 188.283249,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Crisis Interdiction",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 455816,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "4558": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/767229025789760884/0D3AF8A3CDE0DF4F74B361166279A4ED929B2996/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/767229025789764879/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 5,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

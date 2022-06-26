@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "bf9d8f",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 67.54722,
+      "posY": 1.99118757,
+      "posZ": 52.73852,
+      "rotX": 0.00626028655,
+      "rotY": 180,
+      "rotZ": 8.630348e-7,
+      "scaleX": 3.64,
+      "scaleY": 1,
+      "scaleZ": 3.64
+    },
+    "Nickname": "Collector",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 800000,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "8000": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1731045816072527183/228B06CC2E4467D1427DBCC8087B30407CB6E41D/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1731045816072527551/D73C6E5AB2B1C649BA5371D0571B8D00066B8444/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

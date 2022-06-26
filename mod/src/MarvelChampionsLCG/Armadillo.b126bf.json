@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "b126bf",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 72.25,
+      "posY": -2.690112,
+      "posZ": -6.250009,
+      "rotX": 0.04073931,
+      "rotY": 180.001755,
+      "rotZ": 0.0000636075,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Armadillo",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.494117618,
+      "g": 0.494117618,
+      "b": 0.494117618
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Armadillo.b126bf.lua",
+    "LuaScriptState": "#include ./Armadillo.b126bf.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Armadillo_Modular_Set.f6534e.json"
+  ]
+}

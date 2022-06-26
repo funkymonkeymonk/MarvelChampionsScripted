@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "da57f6",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 98.67149,
+      "posY": 2.5582068,
+      "posZ": 43.3235931,
+      "rotX": -2.00417638e-8,
+      "rotY": 180,
+      "rotZ": -1.00576351e-7,
+      "scaleX": 2.12,
+      "scaleY": 1,
+      "scaleZ": 2.12
+    },
+    "Nickname": "Time Portal",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 802700,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "8027": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1625194556402314199/31D02DA618C9C439D26552EA73CB0841A1CAC78B/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1469814968711043924/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

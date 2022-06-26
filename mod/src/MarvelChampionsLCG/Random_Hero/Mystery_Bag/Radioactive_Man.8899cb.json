@@ -1,0 +1,79 @@
+{
+  "Object": {
+    "GUID": "8899cb",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 37.7495766,
+      "posY": 3.07772732,
+      "posZ": 32.7497864,
+      "rotX": 0.294674069,
+      "rotY": 179.997955,
+      "rotZ": 359.40683,
+      "scaleX": 2.12,
+      "scaleY": 1,
+      "scaleZ": 2.12
+    },
+    "Nickname": "Radioactive Man",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      404,
+      403,
+      402,
+      300,
+      401
+    ],
+    "CustomDeck": {
+      "3": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1711917883467000865/3D093742A0F727CA211C92386E34A3ADFB902BC3/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1054352812477833382/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "4": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1711917883467003034/5088C82F458A99D3E45191BD251CDA9F08A39CD9/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1054352812477833382/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 3,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Radioactive_Blast.f9186a.404.json",
+    "Sap_Power.9c4963.403.json",
+    "Sap_Power.b8391b.402.json",
+    "Reactor_Meltdown.cd4841.300.json",
+    "Radioactive_Man.1f40e9.401.json"
+  ]
+}

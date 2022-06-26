@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "987888",
+    "Name": "Card",
+    "Transform": {
+      "posX": 61.80311,
+      "posY": 4.71593237,
+      "posZ": 27.1226463,
+      "rotX": -4.839615e-8,
+      "rotY": 179.992462,
+      "rotZ": -2.71749236e-8,
+      "scaleX": 3.6429348,
+      "scaleY": 1,
+      "scaleZ": 3.6429348
+    },
+    "Nickname": "Bulldozer A",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 469118,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "4691": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/787503561779483876/6E7611FB427B6D0D330E3AE314A9D965900AEE08/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/767229025789830639/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+        "NumWidth": 5,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

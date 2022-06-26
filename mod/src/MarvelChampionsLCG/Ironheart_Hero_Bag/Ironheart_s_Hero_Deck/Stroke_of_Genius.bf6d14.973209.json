@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "bf6d14",
+    "Name": "Card",
+    "Transform": {
+      "posX": 32.0000458,
+      "posY": 1.56833768,
+      "posZ": 49.99999,
+      "rotX": 0.0161809977,
+      "rotY": 180.002625,
+      "rotZ": 359.858368,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Stroke of Genius",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 973209,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "3": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1831288304598090926/0D77E2898E057E2E7FE5A6C79D4BF1645AEA13EA/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 10,
+        "NumHeight": 3,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

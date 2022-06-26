@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "db4ae5",
+    "Name": "Card",
+    "Transform": {
+      "posX": 27.75,
+      "posY": 0.508605957,
+      "posZ": 60.25,
+      "rotX": 6.82819845e-8,
+      "rotY": 180,
+      "rotZ": -8.267264e-8,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Heroic Intuition",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 902918,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "9029": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/767229025789775463/9047F42DB200C97441FCBE547A01FDFCBB104784/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/767229025789764879/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 5,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

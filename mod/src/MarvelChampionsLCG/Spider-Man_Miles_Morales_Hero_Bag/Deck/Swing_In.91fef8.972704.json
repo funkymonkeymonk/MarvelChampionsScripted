@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "91fef8",
+    "Name": "Card",
+    "Transform": {
+      "posX": -49.24987,
+      "posY": 2.12953615,
+      "posZ": 45.75,
+      "rotX": 359.9305,
+      "rotY": 180.000412,
+      "rotZ": 180.411514,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Swing In",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 972704,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "9727": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1834662762014554473/7DDB5F3D7B4F120BC0FD4262B83C52CD6AE89347/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 10,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,0 +1,99 @@
+{
+  "Object": {
+    "GUID": "8242dc",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 68.45666,
+      "posY": 3.78875,
+      "posZ": 7.4673543,
+      "rotX": -0.0000546664,
+      "rotY": 180.006439,
+      "rotZ": -0.004385987,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      455511,
+      455510,
+      455509,
+      455508,
+      455507,
+      455506,
+      455505,
+      455504,
+      455503,
+      455502,
+      455501,
+      455500,
+      455623,
+      455622,
+      455621
+    ],
+    "CustomDeck": {
+      "4555": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/767229025789772373/00890F1252B95A004709E21756D7E158500E4473/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/767229025789764879/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 5,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "4556": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/767229025789767427/D06D3989D90D494191D71A28201F4E29A5D222B0/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/767229025789764879/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 5,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Rocket_Boots.d30d85.455511.json",
+    "Rocket_Boots.7c0c1d.455510.json",
+    "Powered_Gauntlets.d30d85.455509.json",
+    "Powered_Gauntlets.d30d85.455508.json",
+    "Mark_V_Helmet.d30d85.455507.json",
+    "Mark_V_Armor.d30d85.455506.json",
+    "Arc_Reactor.d30d85.455505.json",
+    "Stark_Tower.d30d85.455504.json",
+    "Pepper_Potts.d30d85.455503.json",
+    "Supersonic_Punch.d30d85.455502.json",
+    "Supersonic_Punch.d30d85.455501.json",
+    "Repulsor_Blast.d30d85.455500.json",
+    "Repulsor_Blast.265f15.455623.json",
+    "Repulsor_Blast.265f15.455622.json",
+    "War_Machine.265f15.455621.json"
+  ]
+}

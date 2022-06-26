@@ -1,0 +1,65 @@
+{
+  "Object": {
+    "GUID": "8616f9",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 47.6038857,
+      "posY": 0.7794562,
+      "posZ": 8.772565,
+      "rotX": 4.26881343e-7,
+      "rotY": 179.999634,
+      "rotZ": -0.00000167920007,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Red Skull",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.856,
+      "g": 0.0999941751,
+      "b": 0.09399415
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Red_Skull.8616f9.lua",
+    "LuaScriptState": "#include ./Red_Skull.8616f9.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Custom_Assetbundle_Bag.ce9972.json",
+    "Custom_Token.b06ca7.json",
+    "Custom_Token.fb7e21.json",
+    "Red_Skull.600cdb.json",
+    "Red_Skull.c06e29.json",
+    "Deck.531e2d.json",
+    "Deck.d3a11d.json",
+    "The_Sleeper.96af2c.798428.json",
+    "Side-Scheme_Deck.dace01.json",
+    "The_Red_House.993c06.798300.json",
+    "New_World_Hydra.979291.796500.json",
+    "The_Rise_of_Red_Skull.eaadca.796600.json",
+    "Red_Skull.7b9b15.json",
+    "Red_Skull.3fa824.json"
+  ]
+}

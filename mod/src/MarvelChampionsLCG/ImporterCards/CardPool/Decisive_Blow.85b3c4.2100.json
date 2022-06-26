@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "85b3c4",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 59.747364,
+      "posY": 1.99083889,
+      "posZ": -15.9437733,
+      "rotX": 6.95978244e-8,
+      "rotY": 179.976135,
+      "rotZ": -4.71202384e-7,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Decisive Blow",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 2100,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "21": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1796351328363656518/8F55C25F9D90AFB3515D5A2F8E5F410A6557790C/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1796351328360968967/8718E15DDD109893A667424F6E8CF1F8148DE991/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

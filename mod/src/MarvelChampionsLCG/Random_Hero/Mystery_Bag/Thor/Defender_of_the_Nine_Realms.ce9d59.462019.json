@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "ce9d59",
+    "Name": "Card",
+    "Transform": {
+      "posX": -20.9824,
+      "posY": 0.9819258,
+      "posZ": -5.63769865,
+      "rotX": 0.000849678763,
+      "rotY": 179.974243,
+      "rotZ": -0.00199654,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Defender of the Nine Realms",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 462019,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "4620": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/786380918762881602/75AA80525132AA0400514C2D1C379EFCD5046ECD/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/767229025789764879/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 5,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

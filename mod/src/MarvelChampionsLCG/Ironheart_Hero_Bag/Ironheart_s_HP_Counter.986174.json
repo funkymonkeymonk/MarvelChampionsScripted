@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "986174",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 101.335159,
+      "posY": 2.41816235,
+      "posZ": 42.24154,
+      "rotX": -8.5478e-7,
+      "rotY": 180.000015,
+      "rotZ": -1.68399325e-7,
+      "scaleX": 1.12515855,
+      "scaleY": 1,
+      "scaleZ": 1.12515855
+    },
+    "Nickname": "Ironheart's HP Counter",
+    "Description": "Created by Unicorn\nTemplate by Hitch, Counter by JQTNguyen",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249984592,
+      "g": 0.249984592,
+      "b": 0.249984592
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1831285606387160774/F0DCB814C3FDEBFAF0FCF46B16480C15E4C90C1B/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": true,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Ironheart_s_HP_Counter.986174.lua",
+    "LuaScriptState": "#include ./Ironheart_s_HP_Counter.986174.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

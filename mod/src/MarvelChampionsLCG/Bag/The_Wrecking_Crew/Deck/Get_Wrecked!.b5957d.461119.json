@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "b5957d",
+    "Name": "Card",
+    "Transform": {
+      "posX": -18.80968,
+      "posY": 0.975968361,
+      "posZ": 4.39110661,
+      "rotX": 0.00225943187,
+      "rotY": 180.018738,
+      "rotZ": 359.993469,
+      "scaleX": 2.42349958,
+      "scaleY": 1,
+      "scaleZ": 2.42349958
+    },
+    "Nickname": "Get Wrecked!",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 461119,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "4611": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/787503561779503215/9F1F90612155F1224AAD800EF58419817295509C/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/767229025789762742/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 5,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

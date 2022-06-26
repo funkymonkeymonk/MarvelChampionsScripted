@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "6cc4a7",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 48.0840874,
+      "posY": 2.0777545,
+      "posZ": -13.5183029,
+      "rotX": 0.0000199946,
+      "rotY": 179.9996,
+      "rotZ": -0.00444904,
+      "scaleX": 1.13,
+      "scaleY": 1,
+      "scaleZ": 1.13
+    },
+    "Nickname": "Rocket Raccoon",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249977052,
+      "g": 0.249977052,
+      "b": 0.249977052
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1755821954015679527/40C21AFA7168523BFE0374B355909D7E436C3B27/",
+      "ImageSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1683744853795306585/08D73433C8AB0861DD4A3B9A5E66E7849F26898F/",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Rocket_Raccoon.6cc4a7.lua",
+    "LuaScriptState": "#include ./Rocket_Raccoon.6cc4a7.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

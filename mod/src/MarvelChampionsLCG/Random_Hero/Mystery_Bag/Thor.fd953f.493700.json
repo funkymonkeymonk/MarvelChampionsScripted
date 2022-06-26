@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "fd953f",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 43.329998,
+      "posY": 4.826229,
+      "posZ": -5.277522,
+      "rotX": 0.00003859088,
+      "rotY": 179.9849,
+      "rotZ": 0.000533713959,
+      "scaleX": 1.88,
+      "scaleY": 1,
+      "scaleZ": 1.88
+    },
+    "Nickname": "Thor",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 493700,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "4937": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/773995528925592532/6AEBAB79E4EE8F39D0208FF7E69261F8EA8729ED/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/773995528925590967/44AD15482126C7AB2A005785FE6C62062B8536F5/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

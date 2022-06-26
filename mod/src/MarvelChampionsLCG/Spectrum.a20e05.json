@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "a20e05",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 68.25,
+      "posY": 0.5,
+      "posZ": 28.7500076,
+      "rotX": 1.79970048e-8,
+      "rotY": 180.000763,
+      "rotZ": -5.28927053e-8,
+      "scaleX": 1.11,
+      "scaleY": 1,
+      "scaleZ": 1.11
+    },
+    "Nickname": "Spectrum",
+    "Description": "Created by Unicorn\nTemplate by Hitch, Counter by JQTNguyen",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.2499845,
+      "g": 0.2499845,
+      "b": 0.2499845
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1833524420371051743/D6FA0E4F75B7C69A5D1F538DE942BB8AFB154C99/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": true,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Spectrum.a20e05.lua",
+    "LuaScriptState": "#include ./Spectrum.a20e05.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

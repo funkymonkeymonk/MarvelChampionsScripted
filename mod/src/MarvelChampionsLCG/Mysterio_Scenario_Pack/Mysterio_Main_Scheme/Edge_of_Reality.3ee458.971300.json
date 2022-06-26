@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "3ee458",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 46.00058,
+      "posY": 1.439404,
+      "posZ": 28.0003853,
+      "rotX": 0.07872512,
+      "rotY": 89.99737,
+      "rotZ": -0.00570484344,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Edge of Reality",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 971300,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "9713": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1834662762014832485/963B8587E3CADA99E3F8F6B725C3353F78067AAD/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1834662762014832665/07D614C1D9ED74309A25F15381A62ED5E26AA8C4/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

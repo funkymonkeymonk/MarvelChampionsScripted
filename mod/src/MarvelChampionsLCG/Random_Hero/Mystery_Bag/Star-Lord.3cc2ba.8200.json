@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "3cc2ba",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 64.08177,
+      "posY": 1.99100924,
+      "posZ": 45.3690567,
+      "rotX": -0.000477333844,
+      "rotY": 180.022949,
+      "rotZ": 179.995834,
+      "scaleX": 1.88,
+      "scaleY": 1,
+      "scaleZ": 1.88
+    },
+    "Nickname": "Star-Lord",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 8200,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "82": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1786219507227791191/28E44791C963D73BA0188EAC633C05AE18666187/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1786219507227791904/9DE9393CA3F3F6AF59EEAD4D6A7145CBEBCF23AF/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

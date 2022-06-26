@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "ec2e1f",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 89.11877,
+      "posY": 2.03610134,
+      "posZ": -45.42039,
+      "rotX": -0.000008537986,
+      "rotY": 180.004639,
+      "rotZ": 0.000006267884,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Mystery Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.905882359,
+      "g": 0.921568632,
+      "b": 0
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Mystery_Bag.ec2e1f.lua",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Deck.95adbf.json"
+  ]
+}

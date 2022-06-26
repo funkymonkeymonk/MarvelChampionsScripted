@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "a07494",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 56.2501945,
+      "posY": 1.99083889,
+      "posZ": 27.1606121,
+      "rotX": 5.23352526e-8,
+      "rotY": 90,
+      "rotZ": -3.25629621e-8,
+      "scaleX": 2.92840672,
+      "scaleY": 1,
+      "scaleZ": 2.92840672
+    },
+    "Nickname": "Attack on Mount Athena",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 772900,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "7729": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1618436934179044374/6C09AB4B659878E00AFB0D30F430DC8845B67351/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1618436934179044700/67DE400BA3AAE4E84CA69E7C2F1732871D1DC8E8/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

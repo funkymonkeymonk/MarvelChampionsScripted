@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "aa4c7f",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 63.2499924,
+      "posY": 0.4950015,
+      "posZ": 8.750002,
+      "rotX": 0.00000182856434,
+      "rotY": 180.002991,
+      "rotZ": 2.015709e-7,
+      "scaleX": 1.11,
+      "scaleY": 1,
+      "scaleZ": 1.11
+    },
+    "Nickname": "Drax",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249972165,
+      "g": 0.249972165,
+      "b": 0.249972165
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1697279384832904969/66EA7FF7A11FC378C8CC1AE5434BF2CDE7D54AC1/",
+      "ImageSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1683744853795306585/08D73433C8AB0861DD4A3B9A5E66E7849F26898F/",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "#include ./Drax.aa4c7f.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

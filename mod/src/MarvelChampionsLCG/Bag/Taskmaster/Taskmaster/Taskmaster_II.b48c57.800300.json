@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "b48c57",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 23.785,
+      "posY": 0.9735815,
+      "posZ": 11.0550013,
+      "rotX": 0.0000762236959,
+      "rotY": 179.988922,
+      "rotZ": -0.000442967576,
+      "scaleX": 3.6429348,
+      "scaleY": 1,
+      "scaleZ": 3.6429348
+    },
+    "Nickname": "Taskmaster II",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 800300,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "7962": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1618436934181029809/E1509C0FFEB8287BACA350B3F7F257DC39094ACF/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/776248693496171403/A0FAB7F60946745D878FAA841A913535303E3816/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}
