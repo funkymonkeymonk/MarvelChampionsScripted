@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "5e15df",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 106.298187,
+      "posY": 27.8904858,
+      "posZ": 65.72851,
+      "rotX": 5.335766e-8,
+      "rotY": 180.02742,
+      "rotZ": 1.33529863e-8,
+      "scaleX": 2.87,
+      "scaleY": 1,
+      "scaleZ": 2.87
+    },
+    "Nickname": "Thanos",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249982268,
+      "g": 0.249982268,
+      "b": 0.249982268
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1755822299096495037/92E46877B1585321BE417B8D3ED2699275D70AF3/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Thanos.5e15df.lua",
+    "LuaScriptState": "#include ./Thanos.5e15df.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}
+}

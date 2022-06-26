@@ -4,7 +4,7 @@
     "Name": "Bag",
     "Transform": {
       "posX": 67.75,
-      "posY": -2.69009638,
+      "posY": -2.69024324,
       "posZ": 8.75,
       "rotX": 7.46412951e-16,
       "rotY": 180,
@@ -47,13 +47,11 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
-    "Progress.a4dde0.json",
-    "Deck.f11701.json",
-    "A_Minor_Setback.615675.210.json",
-    "Ironheart.915892.json",
     "Ironheart.eaab93.973100.json",
-    "Ironheart_s_Nemesis_Set.ccc019.json",
     "Ironheart_s_Hero_Deck.94dfa3.json",
-    "Ironheart_s_HP_Counter.986174.json"
+    "Ironheart.915892.json",
+    "Progress.a4dde0.json",
+    "Ironheart_s_Nemesis_Set.ccc019.json",
+    "A_Minor_Setback.615675.987110.json"
   ]
 }

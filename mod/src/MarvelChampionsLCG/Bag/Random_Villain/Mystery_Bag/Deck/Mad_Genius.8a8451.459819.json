@@ -3,15 +3,15 @@
     "GUID": "8a8451",
     "Name": "Card",
     "Transform": {
-      "posX": 20.077879,
-      "posY": 1.0317136,
-      "posZ": -18.5378723,
-      "rotX": -1.72287258e-7,
-      "rotY": 179.999237,
-      "rotZ": -3.43492047e-7,
-      "scaleX": 1.53204679,
+      "posX": -13.6796827,
+      "posY": 1.18398857,
+      "posZ": 22.2184315,
+      "rotX": -1.3809597e-7,
+      "rotY": 180,
+      "rotZ": 180,
+      "scaleX": 2.42349958,
       "scaleY": 1,
-      "scaleZ": 1.53204679
+      "scaleZ": 2.42349958
     },
     "Nickname": "Mad Genius",
     "Description": "",

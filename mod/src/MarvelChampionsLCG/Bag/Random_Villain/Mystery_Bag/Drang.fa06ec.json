@@ -3,12 +3,12 @@
     "GUID": "fa06ec",
     "Name": "Custom_Tile",
     "Transform": {
-      "posX": 105.898682,
-      "posY": 38.59516,
-      "posZ": 53.3514,
-      "rotX": 5.3356132e-8,
-      "rotY": 179.979752,
-      "rotZ": -2.66898539e-8,
+      "posX": 108.03315,
+      "posY": 38.837574,
+      "posZ": 53.4933777,
+      "rotX": -5.33608464e-8,
+      "rotY": 179.979767,
+      "rotZ": 9.425409e-12,
       "scaleX": 2.87,
       "scaleY": 1,
       "scaleZ": 2.87
@@ -53,4 +53,3 @@
   },
   "StatesPaths": {}
 }
-

@@ -3,12 +3,12 @@
     "GUID": "d5e0b8",
     "Name": "Card",
     "Transform": {
-      "posX": 90.90626,
-      "posY": 18.3388748,
-      "posZ": 103.388573,
-      "rotX": 0,
-      "rotY": 180,
-      "rotZ": 0,
+      "posX": 8.972178,
+      "posY": 1.25964391,
+      "posZ": -11.806035,
+      "rotX": 359.992157,
+      "rotY": 179.9989,
+      "rotZ": 188.484421,
       "scaleX": 2.12,
       "scaleY": 1,
       "scaleZ": 2.12
@@ -54,4 +54,3 @@
   },
   "StatesPaths": {}
 }
-

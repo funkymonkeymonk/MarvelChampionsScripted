@@ -42,3 +42,16 @@
         "FaceURL": "http://cloud-3.steamusercontent.com/ugc/782995698740286845/94BB2B7D9097163C8476202707FDC57BFCEF456C/",
         "BackURL": "http://cloud-3.steamusercontent.com/ugc/767229025789764879/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
         "NumWidth": 5,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}
+{}

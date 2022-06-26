@@ -6,9 +6,9 @@
       "posX": 81.25,
       "posY": 0.309967339,
       "posZ": 96.75,
-      "rotX": -4.268699e-7,
+      "rotX": -4.26874777e-7,
       "rotY": 179.99794,
-      "rotZ": 9.40492555e-7,
+      "rotZ": 6.686858e-7,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -18,7 +18,7 @@
     "GMNotes": "",
     "ColorDiffuse": {
       "r": 0.7058823,
-      "g": 0.368627369,
+      "g": 0.368626654,
       "b": 0
     },
     "LayoutGroupSortIndex": 0,

@@ -1,4 +1,5 @@
 local playmatBagGuid = "e549db"
+local deckImporterGuid = "c7ece0"
 local healthCounterOffset = {-10.42, .1, 5.5}
 local identityOffset = {-9.89, 3, 1}
 local deckOffset = {-8.4, 3, -4.66}
@@ -20,13 +21,40 @@ function placeHero(params)
   local heroDetails = heroBag.call("getHeroDetails")
   local playmatPosition = getPlaymatPosition(playerColor)
 
-  placePlaymat(playerColor, playmatPosition, heroDetails["playmatUrl"])
-  placeHealthCounter(heroBag, heroDetails["counterGuid"], playmatPosition)
-  placeIdentity(heroBag, heroDetails["identityGuid"], playmatPosition)
-  placeDeck(heroBag, deckType, heroDetails["starterDeckGuid"], heroDetails["heroDeckGuid"], playmatPosition)
-  placeExtras(heroBag, heroDetails["extras"], playmatPosition)
-  placeNemesis(heroBag, heroDetails["nemesisGuid"])
-  placeObligation(heroBag, heroDetails["obligationGuid"])
+  placePlaymat(
+    playerColor, 
+    playmatPosition, 
+    heroDetails["playmatUrl"])
+
+  placeHealthCounter(
+    playmatPosition,
+    heroDetails["counterUrl"],
+    heroDetails["hitPoints"])
+
+  placeIdentity(
+    heroBag, 
+    heroDetails["identityGuid"], 
+    playmatPosition)
+
+  placeDeck(
+    heroBag, 
+    deckType, 
+    heroDetails["starterDeckId"], 
+    heroDetails["heroDeckGuid"], 
+    playmatPosition)
+
+  placeExtras(
+    heroBag, 
+    heroDetails["extras"], 
+    playmatPosition)
+
+  placeNemesis(
+    heroBag, 
+    heroDetails["nemesisGuid"])
+
+  placeObligation(
+    heroBag, 
+    heroDetails["obligationGuid"])
 end
 
 function getPlaymatPosition(playerColor)
@@ -61,17 +89,28 @@ function placePlaymat(playerColor, playmatPosition, imageUrl)
   playmatCopy.reload()
 end
 
-function placeHealthCounter(heroBag, counterGuid, playmatPosition)
-  local counterPosition = getOffsetPosition(playmatPosition, healthCounterOffset)
-  local counterOrig = heroBag.takeObject({guid=counterGuid, position=counterPosition})
-  local counterCopy = counterOrig.clone({position=counterPosition})
-  heroBag.putObject(counterOrig)
 
-  counterCopy.setName("")
-  counterCopy.setDescription("")
-  counterCopy.setLock(true)
-  counterCopy.setScale({1.13, 1, 1.13})
-  counterCopy.setPosition(counterPosition)
+
+function placeHealthCounter(playmatPosition, imageUrl, hitPoints)
+  local counterPosition = getOffsetPosition(playmatPosition, healthCounterOffset)
+  local counterBag = getObjectFromGUID("ef3f2f")
+  local counter = counterBag.takeObject({position=counterPosition})
+
+  counter.setName("")
+  counter.setDescription("")
+  counter.setScale({1.13, 1, 1.13})
+  counter.setRotation({0,180,0})
+  counter.setLock(true)
+  counter.setPosition(counterPosition)
+  counter.setCustomObject({image=imageUrl})
+  local reloadedCounter = counter.reload()
+
+  Wait.frames(
+    function()
+      reloadedCounter.call("setValue", {value=hitPoints})
+    end,
+    10
+  )
 end
 
 function placeIdentity(heroBag, identityGuid, playmatPosition)
@@ -86,10 +125,30 @@ function placeIdentity(heroBag, identityGuid, playmatPosition)
   identityCopy.setPosition(identityPosition)
 end
 
-function placeDeck(heroBag, deckType, starterDeckGuid, heroDeckGuid, playmatPosition)
-  local deckGuid = (deckType == "starter" and starterDeckGuid or heroDeckGuid)
+function placeDeck(heroBag, deckType, starterDeckId, heroDeckGuid, playmatPosition)
   local deckPosition = getOffsetPosition(playmatPosition, deckOffset)
-  local deckOrig = heroBag.takeObject({guid=deckGuid, position=deckPosition})
+
+  if(deckType == "starter") then
+    placeStarterDeck(starterDeckId, deckPosition)
+  else
+    placeHeroDeck(heroBag, heroDeckGuid, deckPosition)
+  end
+end
+
+function placeStarterDeck(starterDeckId, deckPosition)
+  local params = {
+    deckId = starterDeckId,
+    privateDeck = true,
+    deckPosition = deckPosition
+  }
+
+  local deckImporter = getObjectFromGUID(deckImporterGuid)
+
+  deckImporter.call("importDeck", params)
+end
+
+function placeHeroDeck(heroBag, heroDeckGuid, deckPosition)
+  local deckOrig = heroBag.takeObject({guid=heroDeckGuid, position=deckPosition})
   local deckCopy = deckOrig.clone({position=deckPosition})
   heroBag.putObject(deckOrig)
 

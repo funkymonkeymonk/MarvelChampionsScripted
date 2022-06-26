@@ -85,7 +85,7 @@ end
 
 function nextPhase()
     self.removeButton(1)
-    CONFIG.VALUE = "40"
+    CONFIG.VALUE = "30"
     updateVal()
     editName()
     nextReset()
@@ -109,7 +109,7 @@ end
 
 function nextPhase2()
     self.removeButton(1)
-    CONFIG.VALUE = "48"
+    CONFIG.VALUE = "36"
     updateVal()
     editName()
     nextReset2()
@@ -133,7 +133,7 @@ end
 
 function nextPhase3()
     self.removeButton(1)
-    CONFIG.VALUE = "56"
+    CONFIG.VALUE = "42"
     updateVal()
     editName()
 end

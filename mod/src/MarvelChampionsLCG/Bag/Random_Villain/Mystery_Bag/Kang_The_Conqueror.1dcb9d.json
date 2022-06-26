@@ -3,12 +3,12 @@
     "GUID": "1dcb9d",
     "Name": "Deck",
     "Transform": {
-      "posX": 54.0653648,
-      "posY": 20.0839386,
-      "posZ": 106.961121,
-      "rotX": 359.9648,
-      "rotY": 179.984619,
-      "rotZ": 0.102206558,
+      "posX": 63.55349,
+      "posY": 21.6841259,
+      "posZ": 102.246475,
+      "rotX": 359.964783,
+      "rotY": 179.984818,
+      "rotZ": 359.9204,
       "scaleX": 3.64,
       "scaleY": 1,
       "scaleZ": 3.64
@@ -37,11 +37,11 @@
     "Hands": false,
     "SidewaysCard": false,
     "DeckIDs": [
-      802800,
-      807400
+      806200,
+      806300
     ],
     "CustomDeck": {
-      "8028": {
+      "8062": {
         "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1653342851333168552/747E53C8B4A171954234E2F7CF58F82E5F2696D2/",
         "BackURL": "http://cloud-3.steamusercontent.com/ugc/1625194556398274879/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
         "NumWidth": 1,
@@ -50,7 +50,7 @@
         "UniqueBack": false,
         "Type": 0
       },
-      "8074": {
+      "8063": {
         "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1653342851333156820/4DC08D4FF1F35C2BED9FFEDF9C84FF7A9D7BA6A8/",
         "BackURL": "http://cloud-3.steamusercontent.com/ugc/1625194556398274879/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
         "NumWidth": 1,
@@ -67,7 +67,8 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
-    "Kang_The_Conqueror_III.0d6144.802800.json",
-    "Kang_The_Conqueror_I.6d4017.807400.json"
+    "Kang_The_Conqueror_III.0d6144.806200.json",
+    "Kang_The_Conqueror_I.6d4017.806300.json"
   ]
 }
+

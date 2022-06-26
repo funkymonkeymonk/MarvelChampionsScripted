@@ -4,7 +4,7 @@
     "Name": "Bag",
     "Transform": {
       "posX": 67.75,
-      "posY": -2.68995953,
+      "posY": -2.689907,
       "posZ": 16.25,
       "rotX": 4.26886885e-7,
       "rotY": 180,
@@ -48,9 +48,7 @@
   "StatesPaths": {},
   "ContainedObjectPaths": [
     "Keeping_Secrets.f99ef8.700.json",
-    "Spider-Man_s_HP_Counter.084f80.json",
     "Spider-Man_s_Nemesis_Set.f342da.json",
-    "Deck.69a629.json",
     "Spider-Man_s_Hero_Deck.ec704d.json",
     "Spider-Man.d6b1e9.972600.json"
   ]

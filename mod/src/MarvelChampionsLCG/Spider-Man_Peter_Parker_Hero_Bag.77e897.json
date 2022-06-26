@@ -4,7 +4,7 @@
     "Name": "Bag",
     "Transform": {
       "posX": 57.7499924,
-      "posY": -2.689722,
+      "posY": -2.689701,
       "posZ": 33.7500153,
       "rotX": -0.0000140892371,
       "rotY": 180.0147,
@@ -18,8 +18,8 @@
     "GMNotes": "",
     "ColorDiffuse": {
       "r": 0.9982578,
-      "g": 0.4434411,
-      "b": 0.4434411
+      "g": 0.4434404,
+      "b": 0.4434404
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,
@@ -47,11 +47,9 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
-    "Spider-Man_s_HP_Counter.19f5d6.json",
+    "Deck.47a7d7.json",
     "Eviction_Notice.4f37cf.972719.json",
     "Vulture.80078c.json",
-    "Deck.47a7d7.json",
-    "Spider-Man.2dff24.json",
     "Spider-Man.43d7e9.1200.json"
   ]
 }

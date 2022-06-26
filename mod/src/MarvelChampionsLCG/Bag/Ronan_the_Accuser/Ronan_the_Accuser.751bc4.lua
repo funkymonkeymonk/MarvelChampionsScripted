@@ -85,7 +85,7 @@ end
 
 function nextPhase()
     self.removeButton(1)
-    CONFIG.VALUE = "25"
+    CONFIG.VALUE = "100"
     updateVal()
     editName()
     villainPhase()
@@ -137,7 +137,6 @@ function setTooltips()
         tooltip = ttText
         })
 end
-
 
 
 

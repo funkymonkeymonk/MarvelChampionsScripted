@@ -84,7 +84,7 @@ function createAll()
 end
 
 function nextPhase()
-    CONFIG.VALUE = "80"
+    CONFIG.VALUE = "60"
     updateVal()
     editName()
 end

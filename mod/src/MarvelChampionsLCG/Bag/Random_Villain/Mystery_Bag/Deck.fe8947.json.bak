@@ -3,11 +3,11 @@
     "GUID": "fe8947",
     "Name": "Deck",
     "Transform": {
-      "posX": 101.915024,
-      "posY": 22.03612,
-      "posZ": 90.07043,
-      "rotX": -2.828713e-8,
-      "rotY": 180,
+      "posX": 103.713249,
+      "posY": 23.303194,
+      "posZ": 90.46325,
+      "rotX": 1.67569123e-8,
+      "rotY": 179.998978,
       "rotZ": 180,
       "scaleX": 2.12,
       "scaleY": 1,
@@ -93,8 +93,5 @@
     "Thanos_s_Armor.42afcd.3700.json"
   ]
 }
-Restrained.508b5c.1400.json",
+508b5c.1400.json",
     "Abjuration.d9a1f5.1401.json",
-    "Channeling_Trance.215b65.1402.json",
-    "Channeling_Trance.6242cb.1403.json",
-    "Channeling_Trance.b5de22.1404.json",

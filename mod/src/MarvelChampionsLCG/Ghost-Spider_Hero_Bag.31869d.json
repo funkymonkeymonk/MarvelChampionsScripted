@@ -4,7 +4,7 @@
     "Name": "Bag",
     "Transform": {
       "posX": 67.75,
-      "posY": -2.69011164,
+      "posY": -2.6902585,
       "posZ": 13.75,
       "rotX": 7.46412951e-16,
       "rotY": 180,
@@ -48,10 +48,8 @@
   "StatesPaths": {},
   "ContainedObjectPaths": [
     "Worried_Father.596a94.972400.json",
-    "Deck.2d7fef.json",
     "Ghost-Spider.c19a52.972200.json",
     "Ghost-Spider_s_Hero_Deck.c17fbb.json",
-    "Ghost-Spider_s_Nemesis_Set.a5a380.json",
-    "Ghost-Spider_s_HP_Counter.2d03a1.json"
+    "Ghost-Spider_s_Nemesis_Set.a5a380.json"
   ]
 }

@@ -85,7 +85,7 @@ end
 
 function nextPhase()
     self.removeButton(1)
-    CONFIG.VALUE = "72"
+    CONFIG.VALUE = "54"
     updateVal()
     editName()
     villainPhase()

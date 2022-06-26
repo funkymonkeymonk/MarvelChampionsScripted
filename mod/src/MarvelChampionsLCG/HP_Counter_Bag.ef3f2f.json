@@ -1,0 +1,49 @@
+{
+  "Object": {
+    "GUID": "ef3f2f",
+    "Name": "Infinite_Bag",
+    "Transform": {
+      "posX": 77.75,
+      "posY": 0.478001,
+      "posZ": 98.75,
+      "rotX": -8.609341e-8,
+      "rotY": 0.00003079402,
+      "rotZ": -1.895709e-8,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "HP Counter Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.3058885,
+      "g": 0.372555166,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "LuaScript": "#include ./HP_Counter_Bag.ef3f2f.lua",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "HP_Counter.9bfb28.json"
+  ]
+}

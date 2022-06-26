@@ -3,12 +3,12 @@
     "GUID": "89d157",
     "Name": "CardCustom",
     "Transform": {
-      "posX": 64.58807,
-      "posY": 9.943909,
-      "posZ": 102.728577,
-      "rotX": 359.965271,
-      "rotY": 180.034454,
-      "rotZ": 359.2433,
+      "posX": 97.42805,
+      "posY": 11.2367744,
+      "posZ": 100.359062,
+      "rotX": 359.964722,
+      "rotY": 180.0265,
+      "rotZ": 0.102174684,
       "scaleX": 3,
       "scaleY": 1,
       "scaleZ": 3
@@ -54,4 +54,3 @@
   },
   "StatesPaths": {}
 }
-

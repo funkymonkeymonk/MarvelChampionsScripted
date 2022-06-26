@@ -4,7 +4,7 @@
     "Name": "Bag",
     "Transform": {
       "posX": 67.75,
-      "posY": -2.69009829,
+      "posY": -2.69024515,
       "posZ": 11.25,
       "rotX": -0.000004695755,
       "rotY": 180,
@@ -47,11 +47,9 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
-    "Deck.b7feb2.json",
     "Weight_of_the_World.947100.200.json",
     "Nova_s_Hero_Deck.4762fa.json",
     "Nova_s_Nemesis_Set.9417cb.json",
-    "Nova.13ab9f.972800.json",
-    "Nova_s_HP_Counter.9b518d.json"
+    "Nova.13ab9f.972800.json"
   ]
 }

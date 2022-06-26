@@ -8,7 +8,7 @@
       "posZ": 33.75,
       "rotX": 0,
       "rotY": 180.0266,
-      "rotZ": 1.50268491e-7,
+      "rotZ": 1.50268519e-7,
       "scaleX": 1.11,
       "scaleY": 1,
       "scaleZ": 1.11
@@ -17,9 +17,9 @@
     "Description": "Created by Unicorn\nTemplate by Hitch, Counter by JQTNguyen",
     "GMNotes": "",
     "ColorDiffuse": {
-      "r": 0.249984831,
-      "g": 0.249984831,
-      "b": 0.249984831
+      "r": 0.249984145,
+      "g": 0.249984145,
+      "b": 0.249984145
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,

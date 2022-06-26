@@ -1,7 +1,6 @@
-    MIN_VALUE = 0
-    MAX_VALUE = 300
-
 CONFIG = {
+    MIN_VALUE = -99,
+    MAX_VALUE = 999,
     FONT_COLOR = {0,0,0,95},
     FONT_SIZE = 600,
     COLOR_HEX = "#000000",
@@ -86,7 +85,7 @@ end
 
 function nextPhase()
     self.removeButton(1)
-    CONFIG.VALUE = "112"
+    CONFIG.VALUE = "84"
     updateVal()
     editName()
     villainPhase()
@@ -104,7 +103,7 @@ end
 
 function add_subtract(_obj, _color, alt_click)
     mod = alt_click and -1 or 1
-    new_value = math.min(math.max(CONFIG.VALUE + mod, MIN_VALUE), MAX_VALUE)
+    new_value = math.min(math.max(CONFIG.VALUE + mod, CONFIG.MIN_VALUE), CONFIG.MAX_VALUE)
     if CONFIG.VALUE ~= new_value then
         CONFIG.VALUE = new_value
         updateVal()
@@ -137,12 +136,6 @@ function setTooltips()
         value = tostring(CONFIG.VALUE),
         tooltip = ttText
         })
-end
-
-
-
-
-     })
 end
 
 

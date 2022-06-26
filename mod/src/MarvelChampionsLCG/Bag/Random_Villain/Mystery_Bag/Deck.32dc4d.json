@@ -3,10 +3,10 @@
     "GUID": "32dc4d",
     "Name": "Deck",
     "Transform": {
-      "posX": 102.849907,
-      "posY": 45.83371,
-      "posZ": 9.418917,
-      "rotX": 5.34700177e-8,
+      "posX": 102.432068,
+      "posY": 43.7483521,
+      "posZ": 20.60447,
+      "rotX": -2.80895183e-8,
       "rotY": 180,
       "rotZ": 180,
       "scaleX": 2.12,
@@ -103,4 +103,3 @@
     "Program_Transmitter.12d06d.466708.json"
   ]
 }
-

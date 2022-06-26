@@ -3,12 +3,12 @@
     "GUID": "c4f71b",
     "Name": "Deck",
     "Transform": {
-      "posX": 4.25,
-      "posY": 3.14532328,
-      "posZ": 51.25,
-      "rotX": 0.00626007374,
-      "rotY": 180.0001,
-      "rotZ": 6.252258e-7,
+      "posX": 14.25,
+      "posY": 1.68941879,
+      "posZ": 39.75,
+      "rotX": 357.498779,
+      "rotY": 180.019775,
+      "rotZ": -0.0008394365,
       "scaleX": 3.64,
       "scaleY": 1,
       "scaleZ": 3.64
@@ -62,3 +62,4 @@
     "Proxima_Midnight.1b3d0c.2101.json"
   ]
 }
+

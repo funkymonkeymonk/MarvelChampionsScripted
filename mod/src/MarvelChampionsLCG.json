@@ -1,8 +1,8 @@
 {
   "Save": {
     "SaveName": "MarvelChampionsLCG",
-    "EpochTime": 1655967775,
-    "Date": "6/23/2022 1:02:55 AM",
+    "EpochTime": 1656201220,
+    "Date": "6/25/2022 5:53:40 PM",
     "VersionNumber": "v13.1.1",
     "GameMode": "MarvelChampionsLCG",
     "GameType": "Game",
@@ -473,7 +473,6 @@
     "3DText.93e9ab.json",
     "3DText.8261c5.json",
     "3DText.0736ba.json",
-    "Custom_Tile.805d2e.json",
     "Cerebro.c7ece0.json",
     "Spider-Man_Peter_Parker_Hero_Bag.77e897.json",
     "Captain_Marvel.d0b9c9.json",
@@ -574,7 +573,6 @@
     "3DText.93a2db.json",
     "The_Rise_of_Red_Skull.e2a11c.json",
     "The_Mad_Titan_s_Shadow.6ca74f.json",
-    "Random_Hero.0e915d.json",
     "Victory_Display.628b4a.json",
     "Nemesis.92fa7c.json",
     "Resources.03fcb6.json",
@@ -676,7 +674,6 @@
     "Whispers_of_Paranoia.9e338f.json",
     "Wrecking_Crew.92e06e.json",
     "Zzzax.037187.json",
-    "Random_Modular.92ef30.json",
     "Nova_Hero_Bag.d7c305.json",
     "Ironheart_Hero_Bag.8f920d.json",
     "Adam_Warlock.8890d7.json",
@@ -695,6 +692,8 @@
     "ScriptingTrigger.392cab.json",
     "ScriptingTrigger.1e4ec3.json",
     "Playmat_bag.e549db.json",
-    "ScriptingTrigger.d17076.json"
+    "ScriptingTrigger.d17076.json",
+    "ScriptingTrigger.d8e9b3.json",
+    "HP_Counter_Bag.ef3f2f.json"
   ]
 }

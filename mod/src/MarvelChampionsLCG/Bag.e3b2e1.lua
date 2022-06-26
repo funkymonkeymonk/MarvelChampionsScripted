@@ -8,7 +8,7 @@ function updateSave()
 end
 
 function onload(saved_data)
-    self.setInvisibleTo({"Red", "Blue", "Green", "Yellow", "White"})
+    --self.setInvisibleTo({"Red", "Blue", "Green", "Yellow", "White"})
 
     if saved_data ~= "" then
         local loaded_data = JSON.decode(saved_data)
@@ -561,22 +561,22 @@ end
 function createPlayers()
     self.createButton({
           label="1-Player", click_function="buttonClick_place1", function_owner=self,
-          position={0,0.5,-185}, rotation={0,0,0}, height=2000, width=8000,
+          position={-103.5,1.5,115}, rotation={0,0,0}, height=2000, width=8000,
           font_size=4000, color={1,1,1}, font_color={0,0,0}
       })
     self.createButton({
           label="2-Player", click_function="buttonClick_place2", function_owner=self,
-          position={0,0.5,-180}, rotation={0,0,0}, height=2000, width=8000,
+          position={-103.5,1.5,120}, rotation={0,0,0}, height=2000, width=8000,
           font_size=4000, color={1,1,1}, font_color={0,0,0}
       })
       self.createButton({
           label="3-Player", click_function="buttonClick_place3", function_owner=self,
-          position={0,0.5,-175}, rotation={0,0,0}, height=2000, width=8000,
+          position={-103.5,1.5,125}, rotation={0,0,0}, height=2000, width=8000,
           font_size=4000, color={1,1,1}, font_color={0,0,0}
       })
       self.createButton({
           label="4-Player", click_function="buttonClick_place4", function_owner=self,
-          position={0,0.5,-170}, rotation={0,0,0}, height=2000, width=8000,
+          position={-103.5,1.5,130}, rotation={0,0,0}, height=2000, width=8000,
           font_size=4000, color={1,1,1}, font_color={0,0,0}
       })
     --    self.createButton({

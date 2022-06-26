@@ -3,12 +3,12 @@
     "GUID": "fba21d",
     "Name": "Custom_Tile",
     "Transform": {
-      "posX": 77.3964844,
-      "posY": 2.58745766,
-      "posZ": 14.2067633,
-      "rotX": -4.25806324e-9,
+      "posX": 21.2452488,
+      "posY": 4.703531,
+      "posZ": 40.9291267,
+      "rotX": 2.36210376e-8,
       "rotY": 180.00058,
-      "rotZ": -8.647783e-9,
+      "rotZ": -9.022335e-8,
       "scaleX": 2.8751688,
       "scaleY": 1,
       "scaleZ": 2.8751688
@@ -17,9 +17,9 @@
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
-      "r": 0.249983251,
-      "g": 0.249983251,
-      "b": 0.249983251
+      "r": 0.249983221,
+      "g": 0.249983221,
+      "b": 0.249983221
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,
@@ -62,3 +62,4 @@
   },
   "StatesPaths": {}
 }
+

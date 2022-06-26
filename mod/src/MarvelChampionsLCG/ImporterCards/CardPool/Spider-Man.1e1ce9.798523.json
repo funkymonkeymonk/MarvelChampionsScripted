@@ -3,10 +3,10 @@
     "GUID": "1e1ce9",
     "Name": "Card",
     "Transform": {
-      "posX": 52.4393539,
-      "posY": 1.99092126,
-      "posZ": 3.72203374,
-      "rotX": 1.24487485e-7,
+      "posX": 102.441566,
+      "posY": 64.2587357,
+      "posZ": 64.52178,
+      "rotX": -4.199049e-8,
       "rotY": 180,
       "rotZ": 180,
       "scaleX": 1.27,
@@ -14,7 +14,7 @@
       "scaleZ": 1.27
     },
     "Nickname": "Spider-Man",
-    "Description": "Miles Morales",
+    "Description": "Miles Morales-Basic",
     "GMNotes": "",
     "ColorDiffuse": {
       "r": 0.713235259,

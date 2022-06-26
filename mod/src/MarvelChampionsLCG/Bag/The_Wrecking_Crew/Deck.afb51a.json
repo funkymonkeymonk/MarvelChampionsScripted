@@ -3,10 +3,10 @@
     "GUID": "afb51a",
     "Name": "Deck",
     "Transform": {
-      "posX": -9.254757,
-      "posY": 4.795454,
-      "posZ": 33.9291267,
-      "rotX": -4.22511057e-8,
+      "posX": 78.81691,
+      "posY": 2.66620016,
+      "posZ": 27.3381062,
+      "rotX": -1.07021492e-7,
       "rotY": 180,
       "rotZ": 180,
       "scaleX": 2.12,
@@ -97,4 +97,3 @@
     "Held_Hostage.08a4ef.461110.json"
   ]
 }
-

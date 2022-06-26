@@ -3,15 +3,15 @@
     "GUID": "dc92fb",
     "Name": "Custom_Token",
     "Transform": {
-      "posX": 19.5273647,
-      "posY": 2.41369128,
-      "posZ": 61.34627,
-      "rotX": 356.426453,
-      "rotY": 181.531662,
-      "rotZ": 355.736328,
-      "scaleX": 0.5,
+      "posX": 93.69956,
+      "posY": 2.07723451,
+      "posZ": 48.8276939,
+      "rotX": 0.00000476246441,
+      "rotY": 179.999222,
+      "rotZ": 0.00000180756558,
+      "scaleX": 0.306216359,
       "scaleY": 1,
-      "scaleZ": 0.5
+      "scaleZ": 0.306216359
     },
     "Nickname": "",
     "Description": "",

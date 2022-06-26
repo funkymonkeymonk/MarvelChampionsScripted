@@ -3,9 +3,9 @@
     "GUID": "f6d0c0",
     "Name": "Deck",
     "Transform": {
-      "posX": 101.890533,
-      "posY": 40.051178,
-      "posZ": 25.69861,
+      "posX": 101.045074,
+      "posY": 36.46524,
+      "posZ": 28.8955021,
       "rotX": -3.7236088e-8,
       "rotY": 179.999863,
       "rotZ": 180,
@@ -101,5 +101,4 @@
     "Armored_Rhino_Suit.4aebec.464703.json"
   ]
 }
-
 }

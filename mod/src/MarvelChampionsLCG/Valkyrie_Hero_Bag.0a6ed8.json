@@ -4,7 +4,7 @@
     "Name": "Bag",
     "Transform": {
       "posX": 67.75,
-      "posY": -2.68995428,
+      "posY": -2.68991232,
       "posZ": 21.2500057,
       "rotX": 0.00000683019,
       "rotY": 179.999771,
@@ -51,8 +51,6 @@
     "Valkyrie_s_Nemesis_Set.d25aa9.json",
     "Death-Glow.f4d12d.971100.json",
     "Valkyrie_s_Hero_Deck.bf100d.json",
-    "Deck.d0929d.json",
-    "Valkyrie.961038.971800.json",
-    "Valkyrie_s_HP_Counter.d4ed76.json"
+    "Valkyrie.961038.971800.json"
   ]
 }

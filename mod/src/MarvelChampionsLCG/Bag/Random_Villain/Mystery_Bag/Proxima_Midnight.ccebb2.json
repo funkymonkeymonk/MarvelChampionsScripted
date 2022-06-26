@@ -3,12 +3,12 @@
     "GUID": "ccebb2",
     "Name": "Custom_Tile",
     "Transform": {
-      "posX": 11.75,
-      "posY": 2.510802,
-      "posZ": 57.25,
-      "rotX": -5.33618447e-8,
+      "posX": 11.25,
+      "posY": 2.51080251,
+      "posZ": 58.75,
+      "rotX": 5.33588356e-8,
       "rotY": 180.008636,
-      "rotZ": 1.33361882e-8,
+      "rotZ": 2.66844467e-8,
       "scaleX": 2,
       "scaleY": 1,
       "scaleZ": 2.87
@@ -53,4 +53,3 @@
   },
   "StatesPaths": {}
 }
-

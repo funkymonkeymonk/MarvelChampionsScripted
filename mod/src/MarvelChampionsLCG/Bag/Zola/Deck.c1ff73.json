@@ -3,11 +3,11 @@
     "GUID": "c1ff73",
     "Name": "Deck",
     "Transform": {
-      "posX": 101.88073,
-      "posY": 42.31725,
-      "posZ": 4.948842,
-      "rotX": 6.376905e-9,
-      "rotY": 179.9984,
+      "posX": 102.383659,
+      "posY": 54.5436058,
+      "posZ": 4.33918428,
+      "rotX": -1.96493328e-8,
+      "rotY": 179.998566,
       "rotZ": 180,
       "scaleX": 2.12,
       "scaleY": 1,
@@ -56,7 +56,8 @@
       797713,
       797712,
       797711,
-      797710
+      797710,
+      797708
     ],
     "CustomDeck": {
       "7975": {
@@ -113,6 +114,7 @@
     "Berserk_Mutate.cd9723.797713.json",
     "Zola_s_Mutate.ce39a3.797712.json",
     "Zola_s_Mutate.ea809a.797711.json",
-    "Zola_s_Mutate.8bd833.797710.json"
+    "Zola_s_Mutate.8bd833.797710.json",
+    "Ultimate_Bio-Servant.52d93b.797708.json"
   ]
 }

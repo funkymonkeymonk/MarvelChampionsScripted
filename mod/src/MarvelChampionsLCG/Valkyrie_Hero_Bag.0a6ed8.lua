@@ -38,12 +38,13 @@ end
 function getHeroDetails()
   local heroDetails = {}
 
-  heroDetails["counterGuid"] = "d4ed76"
   heroDetails["identityGuid"] = "961038"
-  heroDetails["starterDeckGuid"] = "d0929d"
+  heroDetails["starterDeckId"] = 344983
   heroDetails["heroDeckGuid"] = "bf100d"
   heroDetails["nemesisGuid"] = "d25aa9"
   heroDetails["obligationGuid"] = "c02cbd"
+  heroDetails["hitPoints"] = 12
+  heroDetails["counterUrl"] = "http://cloud-3.steamusercontent.com/ugc/1833524813259370146/95AF051AF3D5A3D8E9CCFD33259482641CD7AE0A/"
   heroDetails["playmatUrl"] = "http://cloud-3.steamusercontent.com/ugc/1867319584749113032/BCCEC8078F2B0C822E23C8149F0A686E4D163F6B/"
 
   local extras = {}

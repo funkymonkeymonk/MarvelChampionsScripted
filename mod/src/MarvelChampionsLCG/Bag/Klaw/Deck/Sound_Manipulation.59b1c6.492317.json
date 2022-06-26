@@ -3,12 +3,12 @@
     "GUID": "59b1c6",
     "Name": "Card",
     "Transform": {
-      "posX": -13.6293087,
-      "posY": 1.13738513,
-      "posZ": 22.00926,
-      "rotX": 2.1879476e-8,
-      "rotY": 180,
-      "rotZ": 179.965851,
+      "posX": 28.77829,
+      "posY": 1.24293447,
+      "posZ": -17.98749,
+      "rotX": -0.0001848402,
+      "rotY": 179.999969,
+      "rotZ": 179.993256,
       "scaleX": 2.42349958,
       "scaleY": 1,
       "scaleZ": 2.42349958
@@ -38,7 +38,7 @@
     "CardID": 492317,
     "SidewaysCard": false,
     "CustomDeck": {
-      "4923": {
+      "7": {
         "FaceURL": "http://cloud-3.steamusercontent.com/ugc/767229025789789360/DE60A74852F5BDA8DD2F3F18C158172C55BB017B/",
         "BackURL": "http://cloud-3.steamusercontent.com/ugc/767229025789762742/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
         "NumWidth": 5,
@@ -54,4 +54,3 @@
   },
   "StatesPaths": {}
 }
-

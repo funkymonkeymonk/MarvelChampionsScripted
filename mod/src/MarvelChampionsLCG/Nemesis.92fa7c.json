@@ -37,7 +37,6 @@
     "Hands": false,
     "MaterialIndex": -1,
     "MeshIndex": -1,
-    "Number": 0,
     "CustomMesh": {
       "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1774973579377612606/F3FB68D9163A73D4CE53FCF8190891E17CEA7782/",
       "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1774973579377612810/9934E95B27D2E6B1AF36BA5DB958C8ABA2469CC1/",
@@ -53,7 +52,11 @@
     },
     "LuaScript": "#include ./Nemesis.92fa7c.lua",
     "LuaScriptState": "",
-    "XmlUI": ""
+    "XmlUI": "",
+    "ContainedObjects": []
   },
-  "StatesPaths": {}
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Ironheart_s_Nemesis_Set.87eee6.json"
+  ]
 }

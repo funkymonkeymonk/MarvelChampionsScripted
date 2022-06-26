@@ -3,12 +3,12 @@
     "GUID": "ea0bcc",
     "Name": "Custom_Token",
     "Transform": {
-      "posX": 69.44072,
-      "posY": 2.86248088,
-      "posZ": -28.47316,
-      "rotX": 8.154353e-7,
+      "posX": 80.2452545,
+      "posY": 4.753531,
+      "posZ": 40.928627,
+      "rotX": 4.40365255e-7,
       "rotY": 179.979355,
-      "rotZ": -3.06364655e-7,
+      "rotZ": 7.68285361e-7,
       "scaleX": 1.61284447,
       "scaleY": 1,
       "scaleZ": 1.61284447
@@ -53,4 +53,3 @@
   },
   "StatesPaths": {}
 }
-

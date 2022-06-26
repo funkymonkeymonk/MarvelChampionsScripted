@@ -3,12 +3,12 @@
     "GUID": "d737bd",
     "Name": "Custom_Tile",
     "Transform": {
-      "posX": 80.484436,
-      "posY": 3.582796,
-      "posZ": 44.51034,
-      "rotX": 9.051836e-12,
+      "posX": 81.53419,
+      "posY": 3.58294749,
+      "posZ": 44.0435562,
+      "rotX": 5.33658771e-8,
       "rotY": 180.008636,
-      "rotZ": -1.200619e-7,
+      "rotZ": -6.66970337e-8,
       "scaleX": 2.87,
       "scaleY": 1,
       "scaleZ": 2.87
@@ -53,4 +53,4 @@
   },
   "StatesPaths": {}
 }
- {}
+}

@@ -3,12 +3,12 @@
     "GUID": "f668fd",
     "Name": "Custom_Assetbundle_Bag",
     "Transform": {
-      "posX": 101.193672,
-      "posY": 21.4169922,
-      "posZ": 68.56907,
-      "rotX": -4.39419274e-8,
-      "rotY": 180,
-      "rotZ": -1.62798926e-7,
+      "posX": 102.581711,
+      "posY": 21.5458546,
+      "posZ": 67.84065,
+      "rotX": -2.907749e-8,
+      "rotY": 180.000015,
+      "rotZ": -2.810695e-8,
       "scaleX": 0.5500004,
       "scaleY": 0.5500004,
       "scaleZ": 0.5500004
@@ -54,11 +54,10 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
-    "Loki.0524a5.4503.json",
-    "Loki.8634d4.4500.json",
     "Loki.f22a37.4501.json",
     "Loki.b1c9a7.4504.json",
+    "Loki.0524a5.4503.json",
+    "Loki.8634d4.4500.json",
     "Loki.98cc19.4502.json"
   ]
 }
-

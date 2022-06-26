@@ -3,10 +3,10 @@
     "GUID": "8da035",
     "Name": "Deck",
     "Transform": {
-      "posX": 99.7089157,
-      "posY": 2.06074715,
-      "posZ": 95.70806,
-      "rotX": -1.42995056e-8,
+      "posX": 103.7076,
+      "posY": 23.79196,
+      "posZ": 90.0922546,
+      "rotX": -2.09589839e-8,
       "rotY": 179.999908,
       "rotZ": 180,
       "scaleX": 2.12,
@@ -37,6 +37,8 @@
     "Hands": false,
     "SidewaysCard": false,
     "DeckIDs": [
+      2700,
+      2600,
       2515,
       2514,
       2513,
@@ -45,11 +47,10 @@
       2510,
       2509,
       2508,
-      2700,
-      2600,
       2507,
       2506,
-      2505
+      2505,
+      2504
     ],
     "CustomDeck": {
       "25": {
@@ -87,6 +88,8 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
+    "City_Under_Attack.798a3d.2700.json",
+    "City_Under_Attack.427209.2600.json",
     "Rain_Fire.9a18a5.2515.json",
     "Rain_Fire.d5e0b8.2514.json",
     "Bound_by_Blood.6d8b41.2513.json",
@@ -95,10 +98,9 @@
     "Proxima_s_Power.48a889.2510.json",
     "Proxima_s_Power.38e6c5.2509.json",
     "Direct_Assault.567537.2508.json",
-    "City_Under_Attack.798a3d.2700.json",
-    "City_Under_Attack.427209.2600.json",
     "Direct_Assault.ab64a1.2507.json",
     "Corvus_s_Glaive.8f7560.2506.json",
-    "Proxima_s_Spear.5a9d76.2505.json"
+    "Proxima_s_Spear.5a9d76.2505.json",
+    "Black_Order_Besieger.80f6f7.2504.json"
   ]
 }

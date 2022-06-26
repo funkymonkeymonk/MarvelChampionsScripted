@@ -3,11 +3,11 @@
     "GUID": "794cd8",
     "Name": "Deck",
     "Transform": {
-      "posX": 98.04169,
-      "posY": 2.06074715,
-      "posZ": 93.87979,
-      "rotX": 2.27415118e-8,
-      "rotY": 179.999969,
+      "posX": 103.073822,
+      "posY": 17.2743721,
+      "posZ": 94.36959,
+      "rotX": -6.3113097e-9,
+      "rotY": 179.999954,
       "rotZ": 180,
       "scaleX": 2.12,
       "scaleY": 1,
@@ -49,7 +49,8 @@
       2508,
       2507,
       2506,
-      2505
+      2505,
+      2504
     ],
     "CustomDeck": {
       "25": {
@@ -99,7 +100,8 @@
     "Direct_Assault.567537.2508.json",
     "Direct_Assault.ab64a1.2507.json",
     "Corvus_s_Glaive.8f7560.2506.json",
-    "Proxima_s_Spear.5a9d76.2505.json"
+    "Proxima_s_Spear.5a9d76.2505.json",
+    "Black_Order_Besieger.80f6f7.2504.json"
   ]
 }
-5.json",
+json",

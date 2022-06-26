@@ -1,148 +1,49 @@
---[[ Lua code. See documentation: http://berserk-games.com/knowledgebase/scripting/ --]]
+local publicDeckURL="https://marvelcdb.com/api/public/decklist/"
+local privateDeckURL="https://marvelcdb.com/api/public/deck/"
+local cardURL="https://marvelcdb.com/api/public/card/"
+local subnameCards={{name="Hawkeye"},{name="Spider-Man"},{name="Ant-Man"},{name="Wasp"},{name="Falcon"}}
+local multiAspectCards={{name="Mockingbird"},{name="War Machine"},{name="Gamora"},{name="Iron Man"},{name="Captain Marvel"}, {name="Spider-Man"}, {name="Agent 13"}}
+local enteredDeckId = 0
+local deckId = 0
+local privateDeckSelection = true
+local cardList = {}
+local doneSlots = 0
+local totalCards = 0
 
---[[ The onLoad event is called after the game save finishes loading. --]]
 function onLoad()
-  --[[ print('onLoad!') --]]
-  init()
-  -- Setup...
-  publicDeckURL="https://marvelcdb.com/api/public/decklist/"
-  privateDeckURL="https://marvelcdb.com/api/public/deck/"
-  cardURL="https://marvelcdb.com/api/public/card/"
-  subnameCards={{name="Hawkeye"},{name="Spider-Man"},{name="Ant-Man"},{name="Wasp"}}
-  multiClassCards={{name="Mockingbird"},{name="War Machine"},{name="Gamora"},{name="Iron Man"},{name="Captain Marvel"}}
-
-  local tileGUID = 'c7ece0'
-  tile = getObjectFromGUID(tileGUID)
-  makeText()
-  makeButton() 
-  makeCheckboxPP() 
-  privateDeck = true
+  createDeckIdInput()
+  createPrivateCheckbox() 
+  createSearchButton() 
 end
 
-function spawnZone()
-  -- Clean up scripting zone
-  if pcZone then
-    pcZone.destruct()
-  end
-  if weaknessZone then
-    weaknessZone.destruct()
-  end
-  deckPos = LocalPos(self,{0,1.5,-2})
-  permPos = LocalPos(self,{-4.63,1.5,1.8})
-  pcZonePos = {-15.75,1.62,-137.25}
-  zoneSpawn = {position = pcZonePos
-       , scale = { 10.57, 5.1, 10.47 }
-       , type = 'ScriptingTrigger'
---       , callback = 'zoneCallback'
-       , callback_owner = self
-       , rotation = self.getRotation() }
-  pcZone = spawnObject(zoneSpawn)
+function importDeck(params)
+  deckId = params.deckId
+  deckPos = params.deckPosition
 
-  -- get a scripting zone at the weakness deck
-  --local weaknessZonePosition = self.positionToWorld({-7.5, 2.6 , 1.8})
-  local weaknessZonePosition = LocalPos(self, {-7.5, 0 , 1.8})
-  weaknessZone = spawnObject({
-    position = weaknessZonePosition,
-    type = 'ScriptingTrigger',
-    rotation = self.getRotation()
-  })
+  local privateDeck = params.privateDeck
 
-  for i=1,1 do
-       coroutine.yield(0)
-   end
+  resetCardListAndCounters()
 
-   local objectsInZone = pcZone.getObjects()
-   for i,v in pairs(objectsInZone) do
-     if v.tag == 'Deck' then
-       playerCardDeck = v
-     end
-   end
-
-   local objectsInZone = weaknessZone.getObjects()
-   for i,v in pairs(objectsInZone) do
-     if v.getName() == 'All Weaknesses' then
-       weaknessDeck = v
-     end
-   end
-
-   -- Get deck from MarvelCDB
-   local deckURL
-   if privateDeck then deckURL = privateDeckURL
-   else deckURL = publicDeckURL
-   end
-
-   WebRequest.get(deckURL .. deckID, self, 'deckReadCallback')
-
-   return 1
+  callApi(privateDeck)
 end
 
-function init()
+function resetCardListAndCounters()
   cardList = {}
   doneSlots = 0
-  playerCardDeck = {}
   totalCards = 0
 end
 
-function buttonClicked()
-importerBag = getObjectFromGUID('3ca6e4')
-cardPool = importerBag.takeObject(getObjectFromGUID('7d65df'))
-cardPool.setPosition{-15.75,1.62,-137.25}
-cardPool.setRotation{180,0,0}
-  -- Reset
-  init()
-  -- Spawn scripting zone
-  startLuaCoroutine(self, "spawnZone")
-Wait.time(returnImporter,10)
-end
+function callApi(privateDeck)
+  local deckURL = privateDeck and privateDeckURL or publicDeckURL
 
-function returnImporter()
-importerBag = getObjectFromGUID('3ca6e4')
-clonePool = getObjectFromGUID('7d65df')
-importerBag.putObject(clonePool)
-end
-
-function makeCheckboxPP()
-  local checkbox_parameters = {}
-  checkbox_parameters.click_function = "checkboxPPClicked"
-  checkbox_parameters.function_owner = self
-  checkbox_parameters.position = {0,0.2,0.4}
-  checkbox_parameters.width = 1700
-  checkbox_parameters.height = 400
-  checkbox_parameters.tooltip = "Click to toggle Private/Public deck ID"
-  checkbox_parameters.label = "Private"
-  checkbox_parameters.font_size = 350
-  checkbox_parameters.scale = {0.2,0.2,0.2}
-  tile.createButton(checkbox_parameters)
-end
-
-function checkboxPPClicked()
-  buttons = tile.getButtons()
-  for k,v in pairs(buttons) do
-    if (v.label == "Private") then
-      local button_parameters = {}
-      button_parameters.label = "Public"
-      button_parameters.index = v.index
-      tile.editButton(button_parameters)
-      privateDeck = false
-    else
-      if (v.label == "Public") then
-        local button_parameters = {}
-        button_parameters.label = "Private"
-        button_parameters.index = v.index
-        tile.editButton(button_parameters)
-        privateDeck = true
-      end
-    end
-  end
+  WebRequest.get(deckURL .. deckId, self, 'deckReadCallback')
 end
 
 function deckReadCallback(req)
   -- Result check..
-  if req.is_done and not req.is_error
-  then
-    if string.find(req.text, "<!DOCTYPE html>")
-    then
-      broadcastToAll("Deck "..deckID.." is not shared", {0.5,0.5,0.5})
+  if req.is_done and not req.is_error then
+    if string.find(req.text, "<!DOCTYPE html>") then
+      broadcastToAll("Deck "..deckId.." is not shared", {0.5,0.5,0.5})
       return
     end
     JsonDeckRes = JSON.decode(req.text)
@@ -150,24 +51,22 @@ function deckReadCallback(req)
     print (req.error)
     return
   end
-  if (JsonDeckRes == nil)
-  then
+
+  if (JsonDeckRes == nil) then
     broadcastToAll("Deck not found!", {0.5,0.5,0.5})
     return
   else
     print("Found decklist: "..JsonDeckRes.name)
   end
+
   -- Count number of cards in decklist
   numSlots=0
-  for cardid,number in
-  pairs(JsonDeckRes.slots)
-  do
+  for cardid,number in pairs(JsonDeckRes.slots) do
     numSlots = numSlots + 1
   end
 
   -- Save card id, number in table and request card info from MarvelCDB
-  for cardID,number in pairs(JsonDeckRes.slots)
-  do
+  for cardID,number in pairs(JsonDeckRes.slots) do
     local row = {}
     row.cardName = ""
     row.cardCount = number
@@ -179,8 +78,7 @@ end
 
 function cardReadCallback(req)
   -- Result check..
-  if req.is_done and not req.is_error
-  then
+  if req.is_done and not req.is_error then
     -- Find unicode before using JSON.decode since it doesnt handle hex UTF-16
     local tmpText = string.gsub(req.text,"\\u(%w%w%w%w)", convertHexToDec)
     JsonCardRes = JSON.decode(tmpText)
@@ -189,43 +87,33 @@ function cardReadCallback(req)
     return
   end
 
-  -- Update card name in table
-  if(JsonCardRes.xp == nil or JsonCardRes.xp == 0)
-  then
-    cardList[JsonCardRes.code].cardName = JsonCardRes.real_name
-  else
-    cardList[JsonCardRes.code].cardName = JsonCardRes.real_name .. " (" .. JsonCardRes.xp .. ")"
-  end
+  cardList[JsonCardRes.code].cardName = JsonCardRes.real_name
 
   -- Check for subname
   for k,v in pairs(subnameCards) do
-    if (v.name == JsonCardRes.real_name and (v.xp == JsonCardRes.xp or JsonCardRes.xp == nil))
-    then
+    if (v.name == JsonCardRes.real_name) then
       cardList[JsonCardRes.code].subName = JsonCardRes.subname
     end
   end
 
-  -- Check for multiclass
-  for k,v in pairs(multiClassCards) do
-    if (v.name == JsonCardRes.real_name and (v.xp == JsonCardRes.xp or JsonCardRes.xp == nil))
-    then
-      cardList[JsonCardRes.code].subName = JsonCardRes.faction_name
+  -- Check for multiaspect
+  for k,v in pairs(multiAspectCards) do
+    if (v.name == JsonCardRes.real_name) then
+      cardList[JsonCardRes.code].subName = 
+        (cardList[JsonCardRes.code].subName and cardList[JsonCardRes.code].subName .. "-" .. JsonCardRes.faction_name or JsonCardRes.faction_name)
+      log(cardList[JsonCardRes.code].subName)
     end
   end
 
   -- Update number of processed slots, if complete, start building the deck
   doneSlots = doneSlots + 1
-  if (doneSlots == numSlots)
-  then
+  if (doneSlots == numSlots) then
     createDeck()
   end
 end
 
 function createDeck()
-  -- Create clone of playerCardDeck to use for drawing cards
-  local cloneParams = {}
-  cloneParams.position = {0,0,50}
-  tmpDeck = playerCardDeck.clone(cloneParams)
+  tmpDeck = getCardPool()
   for k,v in pairs(cardList) do
     searchForCard(v.cardName, v.subName, v.cardCount)
   end
@@ -233,13 +121,24 @@ function createDeck()
   tmpDeck.destruct()
 end
 
+function getCardPool()
+  local importerBag = getObjectFromGUID('3ca6e4')
+  local cardPool = importerBag.takeObject(getObjectFromGUID('7d65df'))
+  cardPool.setPosition{-15.75,1.62,-137.25}
+  cardPool.setRotation{180,0,0}
+
+  local poolCopy = cardPool.clone({0, 0, 50})
+
+  importerBag.putObject(cardPool)
+
+  return poolCopy
+end
+
 function searchForCard(cardName, subName, cardCount)
   allCards = tmpDeck.getObjects()
   for k,v in pairs(allCards) do
-    if (v.nickname == cardName)
-    then
-      if(subName == nil or v.description == subName)
-      then
+    if (v.nickname == cardName) then
+      if(subName == nil or v.description == subName) then
         tmpDeck.takeObject({
           position = {10, 0, 20},
           callback = 'cardTaken',
@@ -248,7 +147,7 @@ function searchForCard(cardName, subName, cardCount)
           smooth = false,
           params = { cardName, cardCount, v.guid }
         })
-        print('Added '.. cardCount .. ' of ' .. cardName)
+        --print('Added '.. cardCount .. ' of ' .. cardName)
         return
       end
     end
@@ -258,12 +157,7 @@ end
 
 function cardTaken(card, params)
   local destPos
-  if (params[3] == true) then
-    destPos = permPos
-  else
-    destPos = deckPos
-  end
-
+  destPos = deckPos
   if (card.getName() == params[1]) then
     for i=1,params[2]-1,1 do
       local cloneParams = {}
@@ -277,37 +171,71 @@ function cardTaken(card, params)
   end
 end
 
-
-function makeText()
-  -- Create textbox
-  local input_parameters = {}
-  input_parameters.input_function = "inputTyped"
-  input_parameters.function_owner = self
-  input_parameters.position = {0,0.2,0.2}
-  input_parameters.width = 3620
-  input_parameters.scale = {0.1,0.1,0.1}
-  input_parameters.height = 900
-  input_parameters.font_size = 8000
-  input_parameters.tooltip = "Input deck ID from MarvelCDB"
-  input_parameters.alignment = 3 -- (1 = Automatic, 2 = Left, 3 = Center, 4 = Right, 5 = Justified) –Optional
-  input_parameters.value=""
-  tile.createInput(input_parameters)
+function buttonClicked()
+  params = {
+    deckId = enteredDeckId,
+    privateDeck = privateDeckSelection,
+    deckPosition = LocalPos(self,{0,1.5,-2})
+  }
+  importDeck(params)
 end
 
-function makeButton()
-  -- Create Button
-  local button_parameters = {}
-  button_parameters.click_function = "buttonClicked"
-  button_parameters.function_owner = self
-  button_parameters.position = {0,0.2,0.7}
-  button_parameters.width = 1700
-  button_parameters.height = 400
-  button_parameters.label = "Search"
-  button_parameters.font_size = 350
-  button_parameters.scale = {0.3,0.3,0.3}
-  button_parameters.tooltip = "Search for Heroes!"
-  button_parameters.color = {1,1,0}
-  tile.createButton(button_parameters)
+function createPrivateCheckbox()
+  self.createButton({
+    click_function = "checkboxPPClicked",
+    function_owner = self,
+    position = {0,0.2,0.4},
+    width = 1700,
+    height = 400,
+    tooltip = "Click to toggle Private/Public deck ID",
+    label = "Private",
+    font_size = 350,
+    scale = {0.2,0.2,0.2}  
+  })
+end
+
+function checkboxPPClicked()
+  privateDeckSelection = not privateDeckSelection
+  local newLabel = privateDeckSelection and "Private" or "Public"
+
+  for k, v in pairs(self.getButtons()) do
+    if (v.label == "Private" or v.label == "Public") then
+      self.editButton({
+        label = newLabel,
+        index = v.index          
+      })
+    end
+  end
+end
+
+function createDeckIdInput()
+  self.createInput({
+    input_function = "inputTyped",
+    function_owner = self,
+    position = {0,0.2,0.2},
+    width = 3620,
+    scale = {0.1,0.1,0.1},
+    height = 900,
+    font_size = 8000,
+    tooltip = "Input deck ID from MarvelCDB",
+    alignment = 3,
+    value=""
+  })
+end
+
+function createSearchButton()
+  self.createButton({
+    click_function = "buttonClicked",
+    function_owner = self,
+    position = {0,0.2,0.7},
+    width = 1700,
+    height = 400,
+    label = "Search",
+    font_size = 350,
+    scale = {0.3,0.3,0.3},
+    tooltip = "Search for Heroes!",
+    color = {1,1,0}  
+  })
 end
 
 -- Function to convert utf-16 hex to actual character since JSON.decode doesn't seem to handle utf-16 hex very well..
@@ -389,12 +317,6 @@ end
 
 -- End Dzikakulka's positioning script
 
-
 function inputTyped(objectInputTyped, playerColorTyped, input_value, selected)
-    deckID = input_value
-end
-
---[[ The onUpdate event is called once per frame. --]]
-function onUpdate ()
-    --[[ print('onUpdate loop!') --]]
+    enteredDeckId = input_value
 end

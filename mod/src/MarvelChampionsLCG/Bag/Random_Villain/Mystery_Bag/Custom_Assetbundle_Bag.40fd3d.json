@@ -3,12 +3,12 @@
     "GUID": "40fd3d",
     "Name": "Custom_Assetbundle_Bag",
     "Transform": {
-      "posX": -4.25,
-      "posY": 3.337676,
-      "posZ": 59.25,
-      "rotX": 5.440725e-8,
+      "posX": 5.75,
+      "posY": 2.27817488,
+      "posZ": 47.75,
+      "rotX": 1.09887743e-7,
       "rotY": 90.00789,
-      "rotZ": 1.89140721e-7,
+      "rotZ": 5.96532743e-8,
       "scaleX": 0.5500004,
       "scaleY": 0.5500004,
       "scaleZ": 0.5500004
@@ -54,4 +54,3 @@
   },
   "StatesPaths": {}
 }
-

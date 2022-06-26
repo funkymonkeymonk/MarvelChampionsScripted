@@ -4,7 +4,7 @@
     "Name": "Bag",
     "Transform": {
       "posX": 67.75,
-      "posY": -2.689952,
+      "posY": -2.68989944,
       "posZ": 18.75,
       "rotX": -0.00000170754754,
       "rotY": 180,
@@ -51,8 +51,6 @@
     "Vision_s_Nemesis_Set.295d84.json",
     "Vision.47f46b.972100.json",
     "Mass_Form.6361b4.500.json",
-    "Vision_s_HP_Counter.88329e.json",
-    "Deck.d9a5b6.json",
     "Vision_s_Hero_Deck.345be7.json"
   ]
 }

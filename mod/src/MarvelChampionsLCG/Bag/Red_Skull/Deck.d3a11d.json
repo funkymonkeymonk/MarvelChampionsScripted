@@ -3,10 +3,10 @@
     "GUID": "d3a11d",
     "Name": "Deck",
     "Transform": {
-      "posX": 102.361008,
-      "posY": 42.0397949,
-      "posZ": 11.7722483,
-      "rotX": -6.270024e-8,
+      "posX": 102.281067,
+      "posY": 58.3003349,
+      "posZ": 14.4059639,
+      "rotX": 1.405027e-8,
       "rotY": 180,
       "rotZ": 180,
       "scaleX": 2.12,
@@ -90,3 +90,4 @@
     "Hydra-Exo_Soldier.c5ea8b.798429.json"
   ]
 }
+
