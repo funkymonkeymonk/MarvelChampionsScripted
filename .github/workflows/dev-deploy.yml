@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - 'main'
-      - 'ci-dev'
   workflow_dispatch:
 jobs:
   push-to-steam:
@@ -12,13 +11,18 @@ jobs:
       - uses: actions/checkout@v3
       - name: Install node dependencies
         shell: cmd
-        run: |
-          npm install bson
+        run: npm ci
+      - name: Validate (WIP)
+        shell: cmd
+        run: npm run validate || true
+      - name: Create a TTS save
+        shell: cmd
+        run: npm run compile
       - name: Convert save file to BSON
         shell: cmd
         run: |
-          node .\script\workshopPrep.js
+         npm run convertToBSON
       - name: steam-workshop-legacy-upload
         shell: cmd
         run: |
-          "C:\Program Files (x86)\kpsteam\kpsteam.exe" upload --legacy --app 286160 --item 2817359776 --path ".\mod\MarvelChampions.bson"
+          "C:\Program Files (x86)\kpsteam\kpsteam.exe" upload --legacy --app 286160 --item 2817359776 --path ".\dist\MarvelChampionsLCG.bson"

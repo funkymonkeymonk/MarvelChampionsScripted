@@ -1,0 +1,73 @@
+{
+  "Object": {
+    "GUID": "e502be",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 70.29609,
+      "posY": 2.00777817,
+      "posZ": 56.7201233,
+      "rotX": 3.06443049e-8,
+      "rotY": 180,
+      "rotZ": -2.25003642e-8,
+      "scaleX": 3.64,
+      "scaleY": 1,
+      "scaleZ": 3.64
+    },
+    "Nickname": "Drang",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      799400,
+      799300
+    ],
+    "CustomDeck": {
+      "7993": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1731045816072520776/5C35D921B6242466F66C0BF30F45C3216CD87363/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/776248693496171403/A0FAB7F60946745D878FAA841A913535303E3816/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "7994": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1731045816072521565/AEE83A2756361BB77A762DFE21EE62374E4B743C/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/776248693496171403/A0FAB7F60946745D878FAA841A913535303E3816/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Drang_II.4ec8e3.799400.json",
+    "Drang_I.5d20e1.799300.json"
+  ]
+}

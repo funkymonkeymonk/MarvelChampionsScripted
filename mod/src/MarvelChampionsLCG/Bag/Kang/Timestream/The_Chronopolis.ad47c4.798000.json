@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "ad47c4",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 29.8069382,
+      "posY": 1.99085653,
+      "posZ": 13.4234924,
+      "rotX": -1.3335999e-8,
+      "rotY": 90.01507,
+      "rotZ": 180,
+      "scaleX": 2.2,
+      "scaleY": 1,
+      "scaleZ": 2.2
+    },
+    "Nickname": "The Chronopolis",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 798000,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "7980": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1625194556389985552/1B030363F8B4357221E77647BFC8CE60BAF3FF3A/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1625194556389985261/879B6C803FB6F8F0DDC89A7176D5DED5DA53A7E9/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

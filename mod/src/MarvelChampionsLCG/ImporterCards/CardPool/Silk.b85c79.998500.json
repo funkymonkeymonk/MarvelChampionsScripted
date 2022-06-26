@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "b85c79",
+    "Name": "Card",
+    "Transform": {
+      "posX": -25.7500076,
+      "posY": 1.06763828,
+      "posZ": 9.749994,
+      "rotX": 0.00521092443,
+      "rotY": 179.999481,
+      "rotZ": -0.00515255,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Silk",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 998500,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "4": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1834662762014577143/A4955B202AF9C867AAF79FA26043DA83909FAC26/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 10,
+        "NumHeight": 3,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

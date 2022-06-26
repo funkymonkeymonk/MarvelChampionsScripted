@@ -1,0 +1,90 @@
+{
+  "Object": {
+    "GUID": "94dfa3",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 67.75,
+      "posY": -2.39715433,
+      "posZ": 8.75,
+      "rotX": -1.31937372e-9,
+      "rotY": 179.992966,
+      "rotZ": 2.3483306e-8,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Ironheart's Hero Deck",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      973214,
+      973213,
+      973212,
+      973211,
+      973210,
+      973209,
+      973208,
+      973207,
+      973206,
+      973205,
+      973204,
+      973203,
+      973202,
+      973201,
+      973200
+    ],
+    "CustomDeck": {
+      "9732": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1831288304598090926/0D77E2898E057E2E7FE5A6C79D4BF1645AEA13EA/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 10,
+        "NumHeight": 3,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Propulsion_Jets.c8a23a.973214.json",
+    "Photon_Blasters.3c6aa2.973213.json",
+    "Tony_Stark_A.I.34cfb6.973212.json",
+    "Ronnie_Williams.638547.973211.json",
+    "Stroke_of_Genius.f54985.973210.json",
+    "Stroke_of_Genius.bf6d14.973209.json",
+    "Sector_Scan.e3eb00.973208.json",
+    "New_and_Improved.9d700f.973207.json",
+    "New_and_Improved.9cc95a.973206.json",
+    "Photon_Beam.a8bbfc.973205.json",
+    "Photon_Beam.3482be.973204.json",
+    "Photon_Beam.a98748.973203.json",
+    "Fly_Over.57c48e.973202.json",
+    "Fly_Over.28f861.973201.json",
+    "Brawn.ac6875.973200.json"
+  ]
+}

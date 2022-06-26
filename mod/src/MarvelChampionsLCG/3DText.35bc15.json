@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "35bc15",
+    "Name": "3DText",
+    "Transform": {
+      "posX": -95.75324,
+      "posY": -2.00007629,
+      "posZ": -34,
+      "rotX": 90,
+      "rotY": 359.8334,
+      "rotZ": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "Text": {
+      "Text": "Expert",
+      "colorstate": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "fontSize": 88
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

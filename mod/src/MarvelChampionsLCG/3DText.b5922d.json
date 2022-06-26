@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "b5922d",
+    "Name": "3DText",
+    "Transform": {
+      "posX": 92.00924,
+      "posY": 0.499613672,
+      "posZ": 11.7509966,
+      "rotX": 90,
+      "rotY": 2.35651165e-9,
+      "rotZ": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "Text": {
+      "Text": "Hela",
+      "colorstate": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "fontSize": 64
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

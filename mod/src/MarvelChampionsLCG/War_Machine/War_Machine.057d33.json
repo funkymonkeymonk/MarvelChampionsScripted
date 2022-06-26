@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "057d33",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 34.7225,
+      "posY": 2.82469964,
+      "posZ": 20.5275326,
+      "rotX": 359.742,
+      "rotY": 179.804962,
+      "rotZ": 358.7736,
+      "scaleX": 1.12515855,
+      "scaleY": 1,
+      "scaleZ": 1.12515855
+    },
+    "Nickname": "War Machine",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249985844,
+      "g": 0.249985844,
+      "b": 0.249985844
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1010439308570736455/C014181D728E39248D41FA04D23B916A68072A84/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./War_Machine.057d33.lua",
+    "LuaScriptState": "#include ./War_Machine.057d33.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

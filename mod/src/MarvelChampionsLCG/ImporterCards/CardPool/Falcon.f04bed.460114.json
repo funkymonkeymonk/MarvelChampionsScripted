@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "f04bed",
+    "Name": "Card",
+    "Transform": {
+      "posX": 100.529991,
+      "posY": 53.15383,
+      "posZ": 52.5538,
+      "rotX": -8.177201e-9,
+      "rotY": 180,
+      "rotZ": 180,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Falcon",
+    "Description": "Sam Wilson",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 460114,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "4601": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/782995698740269578/4CD56E1FD9234C70B486B8E187E56717274A099E/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/767229025789764879/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 5,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

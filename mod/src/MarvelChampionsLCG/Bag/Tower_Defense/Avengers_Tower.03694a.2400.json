@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "03694a",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 20.1827049,
+      "posY": 2.421719,
+      "posZ": 60.1870461,
+      "rotX": 356.42807,
+      "rotY": 181.553116,
+      "rotZ": 355.735,
+      "scaleX": 2.12,
+      "scaleY": 1,
+      "scaleZ": 2.12
+    },
+    "Nickname": "Avengers Tower",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 2400,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "24": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1711917883467639459/3C8A5A12205A8194ECF8B8EE7BA7D9BCB322FA3D/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1711917883467639724/C0101D73346184D79E699CD538F1A88C4D951E1E/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,0 +1,45 @@
+{
+  "Object": {
+    "GUID": "cabb0d",
+    "Name": "HandTrigger",
+    "Transform": {
+      "posX": -39.0000038,
+      "posY": 4.46522331,
+      "posZ": -35,
+      "rotX": 0,
+      "rotY": 0,
+      "rotZ": 0,
+      "scaleX": 19.725,
+      "scaleY": 6.483764,
+      "scaleZ": 5.21439934
+    },
+    "Nickname": "",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.856,
+      "g": 0.09999997,
+      "b": 0.09399996,
+      "a": 0
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": false,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "FogColor": "Red",
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

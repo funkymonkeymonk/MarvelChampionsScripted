@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "13547b",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": -0.250007153,
+      "posY": 1.580182,
+      "posZ": 67.24999,
+      "rotX": 359.964783,
+      "rotY": 180,
+      "rotZ": 0.102197148,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Toe to Toe",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 597000,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "5970": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1246883024980486002/E4CCF0F88D0DA6AA2EB153607CE6FDF402373A4B/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/770610821574915156/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,0 +1,73 @@
+{
+  "Object": {
+    "GUID": "f29b1f",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 72.33545,
+      "posY": 2.007858,
+      "posZ": 41.375412,
+      "rotX": 0.00000649487538,
+      "rotY": 179.972275,
+      "rotZ": 0.0009626247,
+      "scaleX": 3.64,
+      "scaleY": 1,
+      "scaleZ": 3.64
+    },
+    "Nickname": "Ronan the Accuser",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      800600,
+      800500
+    ],
+    "CustomDeck": {
+      "8005": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1731045816072530606/81A24E2C422C04E14D569C7BB300D0C7646420BE/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/776248693496171403/A0FAB7F60946745D878FAA841A913535303E3816/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "8006": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1731045816072531089/974873A018E37E8367D43ABCB93410DCF2C5A1F1/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/776248693496171403/A0FAB7F60946745D878FAA841A913535303E3816/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Ronan_the_Accuser_III.b9981c.800600.json",
+    "Ronan_the_Accuser_II.a5128b.800500.json"
+  ]
+}

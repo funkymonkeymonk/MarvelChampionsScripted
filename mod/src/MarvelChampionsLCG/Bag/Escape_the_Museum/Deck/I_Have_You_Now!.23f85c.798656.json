@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "23f85c",
+    "Name": "Card",
+    "Transform": {
+      "posX": 22.2499962,
+      "posY": 1.05854356,
+      "posZ": 15.7500019,
+      "rotX": 0.004830255,
+      "rotY": 179.999939,
+      "rotZ": -0.00134355016,
+      "scaleX": 2.12,
+      "scaleY": 1,
+      "scaleZ": 2.12
+    },
+    "Nickname": "\"I Have You Now!\"",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 798656,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "7986": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1731045816072498492/E46269A7C29A46BAD63A80EB94070106629DB1E0/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/787503561778586465/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 7,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

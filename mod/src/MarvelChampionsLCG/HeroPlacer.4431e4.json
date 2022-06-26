@@ -1,0 +1,44 @@
+{
+  "Object": {
+    "GUID": "4431e4",
+    "Name": "PlayerPawn",
+    "Transform": {
+      "posX": 95.75,
+      "posY": 0.501145959,
+      "posZ": 99.75,
+      "rotX": -0.00000205994729,
+      "rotY": 89.99839,
+      "rotZ": -0.0000018335013,
+      "scaleX": 3.34999752,
+      "scaleY": 3.34999752,
+      "scaleZ": 3.34999752
+    },
+    "Nickname": "HeroPlacer",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0,
+      "g": 0.1724138,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": 5,
+    "LuaScript": "#include ./HeroPlacer.4431e4.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,0 +1,111 @@
+{
+  "Object": {
+    "GUID": "8fa5f8",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 55.670002,
+      "posY": 2.056016,
+      "posZ": 24.927887,
+      "rotX": -6.01397545e-8,
+      "rotY": 180.008865,
+      "rotZ": 180,
+      "scaleX": 2.12,
+      "scaleY": 1,
+      "scaleZ": 2.12
+    },
+    "Nickname": "",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": true,
+    "DeckIDs": [
+      770500,
+      770400,
+      770600,
+      773908,
+      773913,
+      773907,
+      773906,
+      773905,
+      773904,
+      773903,
+      773902,
+      773901
+    ],
+    "CustomDeck": {
+      "7704": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1618436934179049045/E28BF830DAC7D1C84DADB83070E29D08348D9530/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/770610707611095378/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "7705": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1618436934179049684/06481B4F8AD9157C9A1FAEF2D93D5499593835E7/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/770610707611095378/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "7706": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1618436934179050476/9D04CD7AD03E6DCEA7EE0B08763B8B7CF139B5DE/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/770610707611095378/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "7739": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1618436934179028354/33BBE098CDEAA881C7D2DCDC7091CC20B8A87C5C/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/770610707611095378/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 7,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Cornered_Staff.8c99e4.770500.json",
+    "Crossbones_Assault.eb88e5.770400.json",
+    "Crossbones_Assault.7f761c.770600.json",
+    "Raid_the_Armory.b03c8f.773908.json",
+    "Raid_the_Armory.4e20fe.773913.json",
+    "Hard_as_Nails.39b83f.773907.json",
+    "Hard_as_Nails.47092f.773906.json",
+    "Full_Auto.92459e.773905.json",
+    "Full_Auto.05a7c8.773904.json",
+    "Hydra_Bomber.77a195.773903.json",
+    "Hydra_Bomber.b2c910.773902.json",
+    "Crossbones_Armor.3b73f2.773901.json"
+  ]
+}

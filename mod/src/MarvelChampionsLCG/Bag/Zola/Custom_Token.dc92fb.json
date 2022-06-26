@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "dc92fb",
+    "Name": "Custom_Token",
+    "Transform": {
+      "posX": 74.19975,
+      "posY": 4.795398,
+      "posZ": 29.5172958,
+      "rotX": 0.00283545814,
+      "rotY": 179.9957,
+      "rotZ": 0.00313483528,
+      "scaleX": 0.306216359,
+      "scaleY": 1,
+      "scaleZ": 0.306216359
+    },
+    "Nickname": "",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": false,
+    "Snap": false,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1470941757168436942/BD014D190905D3513949EC948BFBFE3E6E27668C/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomToken": {
+        "Thickness": 0.2,
+        "MergeDistancePixels": 15,
+        "StandUp": false,
+        "Stackable": false
+      }
+    },
+    "LuaScript": "#include ./Custom_Token.dc92fb.lua",
+    "LuaScriptState": "#include ./Custom_Token.dc92fb.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

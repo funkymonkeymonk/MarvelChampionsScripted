@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "24eec0",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 93.25001,
+      "posY": 0.495001525,
+      "posZ": 21.2500057,
+      "rotX": -0.00000164603966,
+      "rotY": 180.0263,
+      "rotZ": -3.76575883e-7,
+      "scaleX": 1.11,
+      "scaleY": 1,
+      "scaleZ": 1.11
+    },
+    "Nickname": "Ronan the Accuser",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249977648,
+      "g": 0.249977648,
+      "b": 0.249977648
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1755822299096495037/92E46877B1585321BE417B8D3ED2699275D70AF3/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "#include ./Ronan_the_Accuser.24eec0.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "62d729",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 107.035637,
+      "posY": 26.6229,
+      "posZ": 29.408123,
+      "rotX": -5.30764375e-8,
+      "rotY": 179.998474,
+      "rotZ": -4.240036e-8,
+      "scaleX": 2.88717628,
+      "scaleY": 1,
+      "scaleZ": 2.88717628
+    },
+    "Nickname": "Klaw",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249989212,
+      "g": 0.249989212,
+      "b": 0.249989212
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1010439308573098324/3706448FBF481EB1516E21B5C48E2F3132C1D4B7/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Klaw.62d729.lua",
+    "LuaScriptState": "#include ./Klaw.62d729.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

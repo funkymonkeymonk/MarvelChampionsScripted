@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "d2ef38",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 96.25,
+      "posY": -2.69031477,
+      "posZ": -6.25,
+      "rotX": -0.0000187832247,
+      "rotY": 179.997955,
+      "rotZ": -0.0000114572395,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Beasty Boys",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.494117618,
+      "g": 0.494117618,
+      "b": 0.494117618
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Beasty_Boys.d2ef38.lua",
+    "LuaScriptState": "#include ./Beasty_Boys.d2ef38.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Beasty_Boys.6419ad.json"
+  ]
+}

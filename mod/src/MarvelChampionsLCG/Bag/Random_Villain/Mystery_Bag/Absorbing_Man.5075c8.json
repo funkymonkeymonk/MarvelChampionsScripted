@@ -1,0 +1,73 @@
+{
+  "Object": {
+    "GUID": "5075c8",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 74.0856552,
+      "posY": 2.616562,
+      "posZ": 53.21931,
+      "rotX": 0.00000103588138,
+      "rotY": 179.997787,
+      "rotZ": -1.53968841e-7,
+      "scaleX": 3.6429348,
+      "scaleY": 1,
+      "scaleZ": 3.6429348
+    },
+    "Nickname": "Absorbing Man",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      772000,
+      772100
+    ],
+    "CustomDeck": {
+      "7720": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1618436934181027624/CFBB2C27265705D5E0920080C1EB942D182F605A/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/776248693496171403/A0FAB7F60946745D878FAA841A913535303E3816/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "7721": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1618436934181026615/EB7B93488F9E3935900F420A77AA1861EE0866FD/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/776248693496171403/A0FAB7F60946745D878FAA841A913535303E3816/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Absorbing_Man_II.7e927d.772000.json",
+    "Absorbing_Man_I.2ff3d1.772100.json"
+  ]
+}

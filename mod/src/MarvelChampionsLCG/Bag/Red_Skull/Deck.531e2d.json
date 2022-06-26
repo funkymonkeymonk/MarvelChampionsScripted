@@ -1,0 +1,92 @@
+{
+  "Object": {
+    "GUID": "531e2d",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 101.465034,
+      "posY": 55.89406,
+      "posZ": 14.7289972,
+      "rotX": 1.75472561e-8,
+      "rotY": 180,
+      "rotZ": 180,
+      "scaleX": 2.12,
+      "scaleY": 1,
+      "scaleZ": 2.12
+    },
+    "Nickname": "",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      798405,
+      798404,
+      798403,
+      798402,
+      798401,
+      798400,
+      798438,
+      798437,
+      798436,
+      798435,
+      798434,
+      798433,
+      798432,
+      798431,
+      798430,
+      798429
+    ],
+    "CustomDeck": {
+      "7984": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1618437358526289624/07892A39BFDF6D5DFA26642FD5A59F49D18EE8E6/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/770610707611095378/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 7,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Infinite_Power.34ce98.798405.json",
+    "Infinite_Power.b46bf0.798404.json",
+    "Spreading_Lies.d2968b.798403.json",
+    "Spreading_Lies.d683a4.798402.json",
+    "Bitter_Rival.be1b7a.798401.json",
+    "Bitter_Rival.242e91.798400.json",
+    "Twisted_Reality.84bccf.798438.json",
+    "Twisted_Reality.02b9d3.798437.json",
+    "Master_Strategist.5164c6.798436.json",
+    "Master_Strategist.855154.798435.json",
+    "Red_Skull_s_Right_Hook.05f8c2.798434.json",
+    "Red_Skull_s_Right_Hook.8ba054.798433.json",
+    "Red_Skull_s_Luger.883150.798432.json",
+    "Hydra-Exo_Soldier.39c3a1.798431.json",
+    "Hydra-Exo_Soldier.0d8322.798430.json",
+    "Hydra-Exo_Soldier.c5ea8b.798429.json"
+  ]
+}

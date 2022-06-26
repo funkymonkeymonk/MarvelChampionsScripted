@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "34bd62",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 58.2502823,
+      "posY": 0.495001554,
+      "posZ": 21.25001,
+      "rotX": -7.9276515e-7,
+      "rotY": 180.000641,
+      "rotZ": 4.15901553e-7,
+      "scaleX": 1.11,
+      "scaleY": 1,
+      "scaleZ": 1.11
+    },
+    "Nickname": "Captain America",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249954879,
+      "g": 0.249954879,
+      "b": 0.249954879
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1010439308570640358/3AC12A4A4FA9A72AB3FA87DFC65063FA609C9F40/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "12d06d",
+    "Name": "Card",
+    "Transform": {
+      "posX": -18.5005741,
+      "posY": 0.9568989,
+      "posZ": 2.07234573,
+      "rotX": 0.00621001842,
+      "rotY": 180.0155,
+      "rotZ": 0.0000522496448,
+      "scaleX": 2.42349958,
+      "scaleY": 1,
+      "scaleZ": 2.42349958
+    },
+    "Nickname": "Android Efficiency",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 466714,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "8": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/767229025789793520/6F5A109F79637A12EAAA335F4102EF9976A06867/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/767229025789762742/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 5,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

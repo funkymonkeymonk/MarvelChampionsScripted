@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "65e6b3",
+    "Name": "Card",
+    "Transform": {
+      "posX": -16.6029,
+      "posY": 1.162063,
+      "posZ": -6.26636267,
+      "rotX": -0.0007618034,
+      "rotY": 180.004013,
+      "rotZ": -0.00153752707,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Hercules",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 462108,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "4621": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/786380918762886739/01E250B1F773C937D8FFE3A1DCF909C21522CA33/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/767229025789764879/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 5,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

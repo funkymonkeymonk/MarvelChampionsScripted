@@ -1,0 +1,79 @@
+{
+  "Object": {
+    "GUID": "dcf2ae",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 67.0256,
+      "posY": 2.02223468,
+      "posZ": 42.81632,
+      "rotX": 4.18519939e-8,
+      "rotY": 179.984756,
+      "rotZ": -7.527848e-9,
+      "scaleX": 2.12,
+      "scaleY": 1,
+      "scaleZ": 2.12
+    },
+    "Nickname": "Mister Knife",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      902705,
+      902704,
+      902703,
+      902801,
+      902702
+    ],
+    "CustomDeck": {
+      "9027": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1786219673403005384/62C278BA7DCE056A8EBE0AB6768AFBF8A7B86F2C/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1469814968711043924/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 5,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "9028": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1786219673403005384/62C278BA7DCE056A8EBE0AB6768AFBF8A7B86F2C/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1469814968711043924/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 5,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Spartoi_Cunning.61bcc5.902705.json",
+    "Spartoi_Cunning.48a279.902704.json",
+    "Spartoi_Cunning.34c758.902703.json",
+    "Card.8b08ef.902801.json",
+    "Mister_Knife.34a767.902702.json"
+  ]
+}

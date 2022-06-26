@@ -1,0 +1,78 @@
+{
+  "Object": {
+    "GUID": "370fee",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 103.94265,
+      "posY": 2.94900751,
+      "posZ": 92.03185,
+      "rotX": -6.066015e-8,
+      "rotY": 179.999908,
+      "rotZ": 180,
+      "scaleX": 2.12,
+      "scaleY": 1,
+      "scaleZ": 2.12
+    },
+    "Nickname": "",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      4311,
+      4310,
+      4309,
+      4308,
+      4307,
+      4306,
+      4305,
+      4304,
+      4303
+    ],
+    "CustomDeck": {
+      "43": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1711917883467768737/45B20B3EA4479141AE6E736B63C0743EC1B3309F/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1054352812477833382/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 4,
+        "NumHeight": 3,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "The_Wastes_of_Niffleheim.dd47a6.4311.json",
+    "The_Wastes_of_Niffleheim.ae49da.4310.json",
+    "The_Queen_of_Hel.3a9097.4309.json",
+    "The_Queen_of_Hel.76e990.4308.json",
+    "Hela_s_Domain.237e09.4307.json",
+    "Hela_s_Domain.2614b6.4306.json",
+    "Hela_s_Cloak.60b4ab.4305.json",
+    "Hela_s_Crown.c2898f.4304.json",
+    "Nightsword.e2476c.4303.json"
+  ]
+}

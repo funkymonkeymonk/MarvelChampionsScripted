@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "73d4de",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 78.25,
+      "posY": -2.69,
+      "posZ": -11.25,
+      "rotX": 0.0000243340019,
+      "rotY": 179.994034,
+      "rotZ": 0.0000278964544,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Galactic Artifacts",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.5019608,
+      "g": 0.5019608,
+      "b": 0.5019608
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Galactic_Artifacts.73d4de.lua",
+    "LuaScriptState": "#include ./Galactic_Artifacts.73d4de.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Deck.d31c4c.json"
+  ]
+}

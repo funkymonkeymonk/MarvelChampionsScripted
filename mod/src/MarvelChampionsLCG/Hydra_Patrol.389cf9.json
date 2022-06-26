@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "389cf9",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 66.25,
+      "posY": -2.69031644,
+      "posZ": -13.75,
+      "rotX": 0.00008025527,
+      "rotY": 180.005508,
+      "rotZ": -0.0000115070752,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Hydra Patrol",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.494117618,
+      "g": 0.494117618,
+      "b": 0.494117618
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Hydra_Patrol.389cf9.lua",
+    "LuaScriptState": "#include ./Hydra_Patrol.389cf9.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Deck.95f054.json"
+  ]
+}

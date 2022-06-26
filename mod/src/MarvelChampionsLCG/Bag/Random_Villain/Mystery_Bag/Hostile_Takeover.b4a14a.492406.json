@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "b4a14a",
+    "Name": "Card",
+    "Transform": {
+      "posX": 63.89632,
+      "posY": 2.656394,
+      "posZ": 33.1326523,
+      "rotX": 3.02947427e-8,
+      "rotY": 89.99987,
+      "rotZ": 180,
+      "scaleX": 2.92840672,
+      "scaleY": 1,
+      "scaleZ": 2.92840672
+    },
+    "Nickname": "Hostile Takeover",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 492406,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "4924": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/782995698740309625/A635D728EFBF13778D3642ECBD620ABB3024B197/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/782995698740310419/B0B2729354ACC60E94AC2666B0A2C253C72C41A7/",
+        "NumWidth": 5,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": true,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

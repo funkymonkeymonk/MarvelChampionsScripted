@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "188071",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 76.2483,
+      "posY": 11.5155554,
+      "posZ": 105.352119,
+      "rotX": 359.964752,
+      "rotY": 180.0189,
+      "rotZ": 0.102185555,
+      "scaleX": 3,
+      "scaleY": 1,
+      "scaleZ": 3
+    },
+    "Nickname": "Kang (Rama-Tut)",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 803100,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "8031": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1653342851333167621/257D13FCDC153D9C6224E1FB189CA26FCFB26B8D/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/776248693496171403/A0FAB7F60946745D878FAA841A913535303E3816/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

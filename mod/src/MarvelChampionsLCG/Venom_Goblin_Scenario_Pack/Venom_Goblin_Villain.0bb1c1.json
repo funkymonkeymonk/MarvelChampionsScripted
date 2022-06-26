@@ -1,0 +1,66 @@
+{
+  "Object": {
+    "GUID": "0bb1c1",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 87.25079,
+      "posY": 2.57881737,
+      "posZ": 74.750206,
+      "rotX": 359.651,
+      "rotY": 179.992783,
+      "rotZ": 1.47803986,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Venom Goblin Villain",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      971302,
+      971301,
+      971300
+    ],
+    "CustomDeck": {
+      "9713": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1834662762014917437/EE4FFFF3E5F4F851E59240DF9747D8014B418F0D/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+        "NumWidth": 10,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Venom_Goblin.f2046d.971302.json",
+    "Venom_Goblin.f49d27.971301.json",
+    "Venom_Goblin.f172b3.971300.json"
+  ]
+}

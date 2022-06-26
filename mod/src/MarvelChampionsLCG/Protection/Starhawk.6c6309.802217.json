@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "6c6309",
+    "Name": "Card",
+    "Transform": {
+      "posX": 13.75,
+      "posY": 0.508606,
+      "posZ": 93.25,
+      "rotX": -1.34958951e-8,
+      "rotY": 180.028564,
+      "rotZ": -6.426462e-8,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Starhawk",
+    "Description": "Stakar Ogord",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 802217,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "8022": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1731045816072559530/0A5C9DF10C6EB9BA7B89D2A1ED7E113BD9C8EF18/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/767229025789764879/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 10,
+        "NumHeight": 7,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

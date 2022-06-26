@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "bc0851",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 67.75,
+      "posY": -2.68989944,
+      "posZ": 18.75,
+      "rotX": -0.00000170754754,
+      "rotY": 180,
+      "rotZ": -4.8358352e-8,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Vision Hero Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.7058823,
+      "g": 0.366520882,
+      "b": 0
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Vision_Hero_Bag.bc0851.lua",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Corrupted_Programming.b61502.200.json",
+    "Vision_s_Nemesis_Set.295d84.json",
+    "Vision.47f46b.972100.json",
+    "Mass_Form.6361b4.500.json",
+    "Vision_s_Hero_Deck.345be7.json"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "c27ff3",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 58.25028,
+      "posY": 0.4950016,
+      "posZ": 8.750005,
+      "rotX": -0.000002226286,
+      "rotY": 179.9986,
+      "rotZ": -2.49217237e-7,
+      "scaleX": 1.11,
+      "scaleY": 1,
+      "scaleZ": 1.11
+    },
+    "Nickname": "Hulk",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.2499556,
+      "g": 0.2499556,
+      "b": 0.2499556
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1291919813158606026/FE852F4535795E6C3EC12151B1494A16FA3FAB33/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "688338",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 96.25,
+      "posY": -2.68992972,
+      "posZ": -8.75,
+      "rotX": 0.0000029906912,
+      "rotY": 180.037949,
+      "rotZ": -0.0000074978766,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Down To Earth",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.494117618,
+      "g": 0.494117618,
+      "b": 0.494117618
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Down_To_Earth.688338.lua",
+    "LuaScriptState": "#include ./Down_To_Earth.688338.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Down_to_Earth.63b2cd.json"
+  ]
+}

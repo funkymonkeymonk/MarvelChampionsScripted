@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "37c688",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 96.25,
+      "posY": -2.6903975,
+      "posZ": -13.7500143,
+      "rotX": -0.0000465300327,
+      "rotY": 180.0032,
+      "rotZ": -0.00002232114,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Legions of Hydra",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Legions_of_Hydra.37c688.lua",
+    "LuaScriptState": "#include ./Legions_of_Hydra.37c688.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Deck.5d0a57.json"
+  ]
+}

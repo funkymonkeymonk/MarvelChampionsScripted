@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "edd277",
+    "Name": "Custom_Token",
+    "Transform": {
+      "posX": 24.1786766,
+      "posY": 2.032493,
+      "posZ": 6.884385,
+      "rotX": -0.00000202771366,
+      "rotY": 179.9999,
+      "rotZ": -0.00000207523431,
+      "scaleX": 0.653345346,
+      "scaleY": 1,
+      "scaleZ": 0.653345346
+    },
+    "Nickname": "",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": false,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": false,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1291919813158779419/14CA7D5088762912830BD1C0B5DC98B9B92CBBA3/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomToken": {
+        "Thickness": 0.1,
+        "MergeDistancePixels": 5,
+        "StandUp": false,
+        "Stackable": false
+      }
+    },
+    "LuaScript": "#include ./Custom_Token.edd277.lua",
+    "LuaScriptState": "#include ./Custom_Token.edd277.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

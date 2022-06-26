@@ -1,0 +1,81 @@
+{
+  "Object": {
+    "GUID": "f6534e",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 72.25,
+      "posY": -4.356987,
+      "posZ": -6.250004,
+      "rotX": -1.01554729e-8,
+      "rotY": 180,
+      "rotZ": 180,
+      "scaleX": 2.12,
+      "scaleY": 1,
+      "scaleZ": 2.12
+    },
+    "Nickname": "Armadillo Modular Set",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": true,
+    "DeckIDs": [
+      209,
+      208,
+      207,
+      206,
+      205,
+      101
+    ],
+    "CustomDeck": {
+      "1": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1831288304598069816/5CDA0D7E27B0139ADE5910DF3F3940ACB4645EA1/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 3,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "2": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1831288304598071486/2724D2C1DB5D76DF4E274B10499ECC85C31C94F4/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 8,
+        "NumHeight": 3,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Tough_It_Out.271961.209.json",
+    "Tough_It_Out.54692e.208.json",
+    "Tough_and_Tumble.af5b11.207.json",
+    "Rollin_Rollin.77b8ef.206.json",
+    "Armadillo.c75240.205.json",
+    "Armored_Assault.8fbf1a.101.json"
+  ]
+}

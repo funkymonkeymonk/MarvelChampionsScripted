@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "443435",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 90.25,
+      "posY": -2.69028616,
+      "posZ": -8.75,
+      "rotX": 0.00000128062959,
+      "rotY": 180.000351,
+      "rotZ": 0.0000101585756,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Crossfire's Crew",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.494117618,
+      "g": 0.494117618,
+      "b": 0.494117618
+    },
+    "LayoutGroupSortIndex": 7,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Crossfire_s_Crew.443435.lua",
+    "LuaScriptState": "#include ./Crossfire_s_Crew.443435.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Crossfire_s_Crew_Modular_Set.9143bf.json"
+  ]
+}

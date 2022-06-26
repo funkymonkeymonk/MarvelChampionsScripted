@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "59939c",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 68.25,
+      "posY": 0.495001525,
+      "posZ": 33.75001,
+      "rotX": -0.00000350457685,
+      "rotY": 180.0271,
+      "rotZ": -3.91261823e-9,
+      "scaleX": 1.11,
+      "scaleY": 1,
+      "scaleZ": 1.11
+    },
+    "Nickname": "Venom",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.2499716,
+      "g": 0.2499716,
+      "b": 0.2499716
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1697279384832932281/8E15E55DD312D2313256AD8E07A03AB47A68B335/",
+      "ImageSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1683744853795306585/08D73433C8AB0861DD4A3B9A5E66E7849F26898F/",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "#include ./Venom.59939c.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "1fc538",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 16.24999,
+      "posY": 1.547679,
+      "posZ": 72.24999,
+      "rotX": 359.964783,
+      "rotY": 180.000015,
+      "rotZ": 0.102197058,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "\"You'll Pay for That!\"",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 733400,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "7334": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1246883024980490322/B7F2B51F9EDCF21FE0FF0ACEB2DFEFB69BE46656/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/770610821574915156/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

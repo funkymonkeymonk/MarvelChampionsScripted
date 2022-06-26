@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "986176",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": -10.846097,
+      "posY": 2.98196864,
+      "posZ": 8.050392,
+      "rotX": 359.739166,
+      "rotY": 179.72876,
+      "rotZ": 178.693054,
+      "scaleX": 1.88,
+      "scaleY": 1,
+      "scaleZ": 1.88
+    },
+    "Nickname": "Venom",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 8200,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "82": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1693900955161040853/83EA5F34E5ADFA8010FBC772E2809592D1437D1B/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1693900955161041761/73AF3C6476052AF01C2F3AA48E8051453E984ABC/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

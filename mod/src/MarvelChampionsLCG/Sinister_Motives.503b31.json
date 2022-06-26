@@ -1,0 +1,58 @@
+{
+  "Object": {
+    "GUID": "503b31",
+    "Name": "Bag",
+    "Transform": {
+      "posX": -63.24998,
+      "posY": 0.31141144,
+      "posZ": 27.75027,
+      "rotX": -0.00298546464,
+      "rotY": 0.00125418685,
+      "rotZ": 7.077064e-7,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Sinister Motives",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.7058823,
+      "g": 0.366520882,
+      "b": 0
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Custom_PDF.16c9b3.json",
+    "Custom_PDF.07c6c4.json",
+    "Custom_PDF.38061c.json",
+    "Sinister_Motives_Bad_Publicity.e38fee.json",
+    "Sinister_Motives_Community_Service.717afd.json",
+    "Sinister_Motives_S.H.I.E.L.D._Tech.6948b2.json",
+    "Snitches_Get_Stitches.9dd8b9.972500.json"
+  ]
+}

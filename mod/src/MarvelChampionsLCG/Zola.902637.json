@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "902637",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 98.25045,
+      "posY": 0.495001525,
+      "posZ": 11.2500086,
+      "rotX": 5.688057e-8,
+      "rotY": 180.011261,
+      "rotZ": -5.029341e-9,
+      "scaleX": 1.11436844,
+      "scaleY": 1,
+      "scaleZ": 1.11436844
+    },
+    "Nickname": "Zola",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249966115,
+      "g": 0.249966115,
+      "b": 0.249966115
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1595918438102263921/C45AFB16B3C9871C0F8EB2E0D404FE08AFF2026D/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

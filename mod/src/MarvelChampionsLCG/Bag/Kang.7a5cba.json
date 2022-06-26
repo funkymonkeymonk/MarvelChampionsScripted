@@ -1,0 +1,66 @@
+{
+  "Object": {
+    "GUID": "7a5cba",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 42.82785,
+      "posY": 0.7794567,
+      "posZ": 33.2906227,
+      "rotX": -0.00000128054012,
+      "rotY": 180.013565,
+      "rotZ": -0.00000101233979,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Kang",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.343203336,
+      "g": 0.14648807,
+      "b": 0.343203336
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Kang.7a5cba.lua",
+    "LuaScriptState": "#include ./Kang.7a5cba.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Custom_Assetbundle_Bag.7fca5a.json",
+    "Custom_Token.c9c5e5.json",
+    "Custom_Token.5cce62.json",
+    "Timestream.108112.json",
+    "Timestream.be4177.json",
+    "Kang.9d2108.json",
+    "Kang.795795.json",
+    "Deck.d0003d.json",
+    "Deck.650d2c.json",
+    "Kang_s_Dominion.86e836.json",
+    "Kang_s_Wrath.66d7b9.798400.json",
+    "The_Master_of_Time.9580fa.797900.json",
+    "Kang_s_Arrival.6ba991.797800.json",
+    "Kang_The_Conqueror.1dcb9d.json",
+    "Kang_The_Conqueror.dbca6e.json"
+  ]
+}

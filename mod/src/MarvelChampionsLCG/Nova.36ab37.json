@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "36ab37",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 68.25,
+      "posY": 0.5,
+      "posZ": 11.25,
+      "rotX": 0,
+      "rotY": 180.003448,
+      "rotZ": 3.05061754e-10,
+      "scaleX": 1.11,
+      "scaleY": 1,
+      "scaleZ": 1.11
+    },
+    "Nickname": "Nova",
+    "Description": "Created by Unicorn\nTemplate by Hitch, Counter by JQTNguyen",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.24998346,
+      "g": 0.24998346,
+      "b": 0.24998346
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1831288304598153213/87223497EB7B85BDD4FDFC5ABDE793FA69A76A7A/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": true,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Nova.36ab37.lua",
+    "LuaScriptState": "#include ./Nova.36ab37.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

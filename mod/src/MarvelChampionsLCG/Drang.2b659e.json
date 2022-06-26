@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "2b659e",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 93.25,
+      "posY": 0.495001525,
+      "posZ": 31.2500076,
+      "rotX": -3.22692379e-8,
+      "rotY": 179.979828,
+      "rotZ": 8.082765e-9,
+      "scaleX": 1.11,
+      "scaleY": 1,
+      "scaleZ": 1.11
+    },
+    "Nickname": "Drang",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.24997744,
+      "g": 0.24997744,
+      "b": 0.24997744
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1755822299095979250/E91156784309EACDD2C8BF2CCDF6416FC1F1C547/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "#include ./Drang.2b659e.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

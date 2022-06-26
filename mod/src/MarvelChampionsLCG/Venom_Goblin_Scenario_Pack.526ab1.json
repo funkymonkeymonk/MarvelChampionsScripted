@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "526ab1",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 91.7500153,
+      "posY": 0.309770346,
+      "posZ": -0.7500011,
+      "rotX": -0.000005976423,
+      "rotY": 180.000015,
+      "rotZ": 0.0000495472123,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Venom Goblin Scenario Pack",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.117997058,
+      "g": 0.53,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Venom_Goblin_s_HP_Counter.8cf3d6.json",
+    "Venom_Goblin_Encounter_Cards.eb52cc.json",
+    "Venom_Goblin_Main_Scheme.487742.json",
+    "Venom_Goblin_Villain.0bb1c1.json"
+  ]
+}

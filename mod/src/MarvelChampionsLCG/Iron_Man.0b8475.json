@@ -1,0 +1,58 @@
+{
+  "Object": {
+    "GUID": "0b8475",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 57.7499847,
+      "posY": -2.69261384,
+      "posZ": 28.75002,
+      "rotX": 0.0000239060173,
+      "rotY": 179.994583,
+      "rotZ": 0.00000762280024,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Iron Man",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.831010342,
+      "g": 0.8279045,
+      "b": 0.467623949
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Iron_Man.0b8475.lua",
+    "LuaScriptState": "#include ./Iron_Man.0b8475.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Iron_Man.df2420.json",
+    "Whiplash.990539.json",
+    "Business_Problems.cc381c.652201.json",
+    "Deck.8242dc.json",
+    "Iron_Man.2be065.json",
+    "Iron_Man.e7b966.1203.json",
+    "Custom_Tile.5575ac.json"
+  ]
+}

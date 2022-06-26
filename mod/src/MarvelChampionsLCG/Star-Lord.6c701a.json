@@ -1,0 +1,58 @@
+{
+  "Object": {
+    "GUID": "6c701a",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 62.75,
+      "posY": -2.68997765,
+      "posZ": 13.75,
+      "rotX": 0.0000128066076,
+      "rotY": 179.999985,
+      "rotZ": 0.0000147942937,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Star-Lord",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.294111371,
+      "g": 0.371667564,
+      "b": 0.8901961
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Star-Lord.6c701a.lua",
+    "LuaScriptState": "#include ./Star-Lord.6c701a.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Star-Lord.510b2b.json",
+    "Mister_Knife.dcf2ae.json",
+    "Banishment.810138.902700.json",
+    "Deck.e6fd10.json",
+    "Star-Lord.3bd264.json",
+    "Star-Lord.3cc2ba.8200.json",
+    "Custom_Tile.0d9b96.json"
+  ]
+}

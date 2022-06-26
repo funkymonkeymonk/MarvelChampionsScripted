@@ -1,0 +1,81 @@
+{
+  "Object": {
+    "GUID": "d708f5",
+    "Name": "Deck",
+    "Transform": {
+      "posX": -45.2499924,
+      "posY": 3.087402,
+      "posZ": 22.7496586,
+      "rotX": 0.478764027,
+      "rotY": 180.000031,
+      "rotZ": 180.000259,
+      "scaleX": 2.12,
+      "scaleY": 1,
+      "scaleZ": 2.12
+    },
+    "Nickname": "",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      1701,
+      1700,
+      1903,
+      1902,
+      1901,
+      1900
+    ],
+    "CustomDeck": {
+      "17": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1711917883467323452/132C266597B6A8671CCBF42F700695ABD2282C2B/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1054352812477833382/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 4,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "19": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1711917883467327178/627B4E681E1FDD787A65D64B89957FAE7411A7AE/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1054352812477833382/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 7,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Landing_Craft.70fe8e.1701.json",
+    "Landing_Craft.8ce98a.1700.json",
+    "Outrider.b9703e.1903.json",
+    "Outrider.ae07ed.1902.json",
+    "Black_Order_Infantry.c784f2.1901.json",
+    "Black_Order_Infantry.ebcc66.1900.json"
+  ]
+}

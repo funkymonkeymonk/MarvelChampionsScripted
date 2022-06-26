@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "600cdb",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 107.110954,
+      "posY": 30.5391788,
+      "posZ": -0.6062617,
+      "rotX": -0.00000270071564,
+      "rotY": 179.999985,
+      "rotZ": 5.55312056e-7,
+      "scaleX": 2.881413,
+      "scaleY": 1,
+      "scaleZ": 2.881413
+    },
+    "Nickname": "Red Skull",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249992073,
+      "g": 0.249992073,
+      "b": 0.249992073
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1595918438102501294/F831F47F338402D994B903BBA58E134FBC8D9502/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Red_Skull.600cdb.lua",
+    "LuaScriptState": "#include ./Red_Skull.600cdb.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

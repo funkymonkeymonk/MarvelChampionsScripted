@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "be480f",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 60.25,
+      "posY": -2.68998861,
+      "posZ": -11.25,
+      "rotX": 0.000004268799,
+      "rotY": 179.999557,
+      "rotZ": -0.0000178358823,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Enchantress",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.5019608,
+      "g": 0.5019608,
+      "b": 0.5019608
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Enchantress.be480f.lua",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Deck.95adbf.json"
+  ]
+}

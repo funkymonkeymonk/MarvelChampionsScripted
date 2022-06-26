@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "1269e2",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 82.14215,
+      "posY": 2.65349555,
+      "posZ": -9.46579552,
+      "rotX": 5.19755531e-7,
+      "rotY": 180.000366,
+      "rotZ": 4.62951476e-7,
+      "scaleX": 2.88119912,
+      "scaleY": 1,
+      "scaleZ": 2.88119912
+    },
+    "Nickname": "Taskmaster",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.2499916,
+      "g": 0.2499916,
+      "b": 0.2499916
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1595918438102543694/6ECCE8F0DBD4809F38646EFE623B9A2C9B805ED5/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Taskmaster.1269e2.lua",
+    "LuaScriptState": "#include ./Taskmaster.1269e2.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

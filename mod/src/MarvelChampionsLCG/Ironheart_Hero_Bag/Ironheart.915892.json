@@ -1,0 +1,43 @@
+{
+  "Object": {
+    "GUID": "915892",
+    "Name": "Notecard",
+    "Transform": {
+      "posX": 67.75,
+      "posY": -2.62018323,
+      "posZ": 8.75,
+      "rotX": -9.44809e-9,
+      "rotY": 2.3788424e-10,
+      "rotZ": 1.84105211e-8,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Ironheart",
+    "Description": "To level up Ironheart's identity, either hover over the card and type 1, 2, or 3, or right-click and change the state",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "707350",
+    "Name": "Card",
+    "Transform": {
+      "posX": 72.6949844,
+      "posY": 1.6361711,
+      "posZ": 30.4849434,
+      "rotX": 0.094055824,
+      "rotY": 179.999985,
+      "rotZ": 359.983978,
+      "scaleX": 1.53204679,
+      "scaleY": 1,
+      "scaleZ": 1.53204679
+    },
+    "Nickname": "Ultron III",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 1408,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "14": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/767229025789829945/38A8E5A65312FF916426B2803EA89FF322A62FEC/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/767229025789830639/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+        "NumWidth": 5,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

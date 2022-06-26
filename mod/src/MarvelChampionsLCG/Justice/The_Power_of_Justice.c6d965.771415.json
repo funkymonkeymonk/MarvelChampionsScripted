@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "c6d965",
+    "Name": "Card",
+    "Transform": {
+      "posX": -86.25,
+      "posY": 0.508605957,
+      "posZ": 71.25,
+      "rotX": -8.111242e-9,
+      "rotY": 180,
+      "rotZ": -2.40407729e-7,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "The Power of Justice",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 771415,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "7714": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/767229025789775463/9047F42DB200C97441FCBE547A01FDFCBB104784/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/767229025789764879/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 5,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

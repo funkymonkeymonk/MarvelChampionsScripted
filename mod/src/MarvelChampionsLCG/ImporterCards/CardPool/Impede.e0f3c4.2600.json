@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "e0f3c4",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 67.85916,
+      "posY": 1.99083889,
+      "posZ": 8.000789,
+      "rotX": -5.301146e-8,
+      "rotY": 179.976135,
+      "rotZ": -4.52741276e-8,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Impede",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 2600,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "26": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1796351328363661992/BBA1A272A8C397AB9562A6FA1307AA643504321A/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1796351328360968967/8718E15DDD109893A667424F6E8CF1F8148DE991/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "8a8451",
+    "Name": "Card",
+    "Transform": {
+      "posX": 22.8758411,
+      "posY": 1.06843638,
+      "posZ": 2.47255421,
+      "rotX": 0.000638754864,
+      "rotY": 179.999969,
+      "rotZ": -0.00329902279,
+      "scaleX": 2.12,
+      "scaleY": 1,
+      "scaleZ": 2.12
+    },
+    "Nickname": "Goblin Knight",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 459823,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "4598": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/782995698740236029/FB248F5416A90B81FB4C085D8AACE2C80EEE2C63/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/767229025789762742/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 5,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

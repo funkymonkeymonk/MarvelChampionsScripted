@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "9a13c0",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 78.25,
+      "posY": -2.69031477,
+      "posZ": -13.75,
+      "rotX": 0.00000298818827,
+      "rotY": 179.999817,
+      "rotZ": -0.0000118261023,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Kree Fanatic",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.4980389,
+      "g": 0.4980389,
+      "b": 0.4980389
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Kree_Fanatic.9a13c0.lua",
+    "LuaScriptState": "#include ./Kree_Fanatic.9a13c0.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Deck.921172.json"
+  ]
+}

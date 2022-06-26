@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "0453e1",
+    "Name": "Card",
+    "Transform": {
+      "posX": -55.75,
+      "posY": 0.683115542,
+      "posZ": 52.75,
+      "rotX": -0.0000284116086,
+      "rotY": 180.032425,
+      "rotZ": -0.000315795623,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "\"I Am Groot\"",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 802204,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "8022": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1731045816072559530/0A5C9DF10C6EB9BA7B89D2A1ED7E113BD9C8EF18/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/767229025789764879/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 10,
+        "NumHeight": 7,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

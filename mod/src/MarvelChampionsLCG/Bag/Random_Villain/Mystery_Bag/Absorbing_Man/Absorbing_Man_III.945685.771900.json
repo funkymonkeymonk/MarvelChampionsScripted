@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "945685",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 16.3840084,
+      "posY": 1.56260133,
+      "posZ": 47.49954,
+      "rotX": 359.964966,
+      "rotY": 179.9888,
+      "rotZ": 0.101318911,
+      "scaleX": 3.6429348,
+      "scaleY": 1,
+      "scaleZ": 3.6429348
+    },
+    "Nickname": "Absorbing Man III",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 771900,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "7719": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1618436934181028226/E05D92598B9C13B723E72C68CF92420DAA0E9C5E/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/776248693496171403/A0FAB7F60946745D878FAA841A913535303E3816/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

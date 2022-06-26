@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "0f3ebb",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 45.25,
+      "posY": 0.508605957,
+      "posZ": 82.25,
+      "rotX": 6.852915e-8,
+      "rotY": 179.999649,
+      "rotZ": 6.28420249e-9,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Swarm Tactics",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 798600,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "7986": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1683744853792774310/7FA938826C78FC6F9689D91E185E325A0C168A54/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/770610821574915156/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "2766c4",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 102.500725,
+      "posY": 8.269563,
+      "posZ": 49.2993774,
+      "rotX": -1.83611082e-8,
+      "rotY": 179.976135,
+      "rotZ": -1.242209e-7,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Angela",
+    "Description": "Aldrif Odinsdottir",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 903900,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "8": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1796351328363635750/0F7C1C3F39E722BED37208C59FB391761E28A2E7/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1796351328360968967/8718E15DDD109893A667424F6E8CF1F8148DE991/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

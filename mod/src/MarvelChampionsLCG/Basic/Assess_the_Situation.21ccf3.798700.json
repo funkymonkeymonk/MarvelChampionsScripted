@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "21ccf3",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 10.25,
+      "posY": 0.508605957,
+      "posZ": 82.25,
+      "rotX": -3.32374839e-8,
+      "rotY": 179.999847,
+      "rotZ": 8.432954e-8,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Assess the Situation",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 798700,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "7987": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1683744853792793026/BAA3E8288069ECEA1AE5E53CE5D4EF5A5B45954D/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/770610821574915156/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

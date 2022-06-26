@@ -1,0 +1,90 @@
+{
+  "Object": {
+    "GUID": "c17fbb",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 91.0164948,
+      "posY": 2.31427622,
+      "posZ": 15.3225241,
+      "rotX": -6.099094e-8,
+      "rotY": 179.972168,
+      "rotZ": -6.23050553e-8,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Ghost-Spider's Hero Deck",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      972314,
+      972313,
+      972312,
+      972311,
+      972310,
+      972309,
+      972308,
+      972307,
+      972306,
+      972305,
+      972304,
+      972303,
+      972302,
+      972301,
+      972300
+    ],
+    "CustomDeck": {
+      "9723": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1834662762014496390/33598C88FAC4B04B717CF5150A73263E59ECAF6C/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 10,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Web-Bracelet.fb74af.972314.json",
+    "Web-Bracelet.a8c588.972313.json",
+    "Ticket_to_the_Multiverse.086e15.972312.json",
+    "George_Stacy.e734a7.972311.json",
+    "Web_Binding.d8c5cf.972310.json",
+    "Web_Binding.89d764.972309.json",
+    "Pirouette_and_Punch.defe75.972308.json",
+    "Pirouette_and_Punch.bcf90d.972307.json",
+    "Phantom_Flip.d02736.972306.json",
+    "Phantom_Flip.d9b76b.972305.json",
+    "Phantom_Flip.196ded.972304.json",
+    "Parental_Guidance.10359c.972303.json",
+    "Ghost_Kick.0a5eab.972302.json",
+    "Ghost_Kick.eaedf2.972301.json",
+    "Ghost_Kick.9a908f.972300.json"
+  ]
+}

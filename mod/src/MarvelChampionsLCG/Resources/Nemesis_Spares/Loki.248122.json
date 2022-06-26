@@ -1,0 +1,79 @@
+{
+  "Object": {
+    "GUID": "248122",
+    "Name": "Deck",
+    "Transform": {
+      "posX": -32.2498,
+      "posY": 3.90138245,
+      "posZ": 24.2501965,
+      "rotX": 0.01106105,
+      "rotY": 180.009827,
+      "rotZ": 0.00437960261,
+      "scaleX": 2.12,
+      "scaleY": 1,
+      "scaleZ": 2.12
+    },
+    "Nickname": "Loki",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      461805,
+      461804,
+      461803,
+      462415,
+      461802
+    ],
+    "CustomDeck": {
+      "4618": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/786380918762868749/CA361D95E8A8CFAF2540563E02AD864F8133F918/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/767229025789762742/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 5,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "4624": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/786380918762878337/EA23CD7EEB9CA1BF80A3DEB5EFFD0D278952CAB6/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/767229025789762742/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 5,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Trickster.661737.461805.json",
+    "Frost_Giant.204b9d.461804.json",
+    "Frost_Giant.efcb4e.461803.json",
+    "Family_Feud.3e1727.462415.json",
+    "Loki.661737.461802.json"
+  ]
+}
