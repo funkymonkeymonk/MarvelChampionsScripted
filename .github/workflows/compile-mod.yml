@@ -1,17 +1,19 @@
-name: Build mod
+name: Compile mod
 on:
   push:
     branches:
       - 'ci-dev'
   workflow_dispatch:
 jobs:
-  push-to-steam:
+  compile:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: 16
+      - name: Install dependencies
+        run: npm ci
       - name: Validate (WIP)
         run: npm run validate || true
       - name: Create a TTS save
