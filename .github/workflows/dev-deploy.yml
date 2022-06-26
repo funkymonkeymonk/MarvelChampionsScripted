@@ -12,11 +12,11 @@ jobs:
       - name: Install node dependencies
         shell: cmd
         run: |
-          npm install bson
+          npm install
       - name: Convert save file to BSON
         shell: cmd
         run: |
-         npm convertToBSON
+         npm run convertToBSON
       - name: steam-workshop-legacy-upload
         shell: cmd
         run: |

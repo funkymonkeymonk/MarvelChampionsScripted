@@ -11,12 +11,12 @@ jobs:
       - name: Install node dependencies
         shell: cmd
         run: |
-          npm install bson
+          npm install
       - name: Convert save file to BSON
         shell: cmd
         run: |
-          node .\script\workshopPrep.js
+          npm run convertToBSON
       - name: steam-workshop-legacy-upload
         shell: cmd
         run: |
-          "C:\Program Files (x86)\kpsteam\kpsteam.exe" upload --legacy --app 286160 --item 2824240402 --path ".\mod\MarvelChampions.bson"
+          "C:\Program Files (x86)\kpsteam\kpsteam.exe" upload --legacy --app 286160 --item 2824240402 --path ".\dist\MarvelChampionsLCG.bson"
