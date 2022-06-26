@@ -1,13 +1,14 @@
 {
   "name": "ultimate-marvel-champions-scripted",
   "scripts": {
-    "compile": "npx ts-node tool/main.ts compile \"mod/src/Marvel Champions LCG.json\" \"dist/Marvel Champions LCG.json\"",
-    "extract": "npx ts-node tool/main.ts extract \"dist/Marvel Champions LCG.json\" mod/src",
+    "compile": "npx ts-node tool/main.ts compile mod/src/MarvelChampionsLCG.json dist/MarvelChampionsLCG.json",
+    "extract": "npx ts-node tool/main.ts extract dist/MarvelChampionsLCG.json mod/src",
     "lint": "prettier --ignore-path .prettierignore --list-different src tool contrib && eslint src tool --ext .ts",
     "lint:fix": "prettier --ignore-path .prettierignore --write src tool contrib && eslint src tool --fix --ext .ts",
     "lint:lua": "luacheck mod/src",
     "start": "npx ts-node tool/main.ts develop mod/src/2817359776.json dist/2817359776.json",
-    "validate": "ts-node ./tool/validate.ts"
+    "validate": "ts-node ./tool/validate.ts",
+    "convertToBSON": "node ./tool/workshopPrep.js"
   },
   "license": "MIT",
   "bugs": {
