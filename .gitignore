@@ -45,4 +45,4 @@ node_modules
 mod/src/includes/generated/
 node_modules/
 
-./dist/
+dist
