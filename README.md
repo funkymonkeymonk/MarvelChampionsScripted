@@ -10,6 +10,14 @@
 ### Getting started with development
 * Install nodejs
 * Install [luacheck](https://github.com/mpeterv/luacheck) for lua linting
+* Run `npm start`
+
+### Development commands
+These are all runnable from npm
+* compile - compiles the mod from source 
+* start - compile but also adds symlinks for development
+* extract - extracts source from a TTS save file
+* validate - WIP: confirms the json is valid
 
 ## Thanks
 Our appreciation goes out to those who came before and made much of this mod possible.
