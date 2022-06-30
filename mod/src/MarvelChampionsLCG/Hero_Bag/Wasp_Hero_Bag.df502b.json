@@ -4,11 +4,11 @@
     "Name": "Bag",
     "Transform": {
       "posX": 70.13888,
-      "posY": 0.299687266,
+      "posY": 0.2996874,
       "posZ": 96.25,
-      "rotX": -0.000103306775,
-      "rotY": 179.998825,
-      "rotZ": -0.0000835114552,
+      "rotX": -0.00006958198,
+      "rotY": 179.99884,
+      "rotZ": -0.00001573725,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -18,8 +18,8 @@
     "GMNotes": "",
     "ColorDiffuse": {
       "r": 1,
-      "g": 0.1686115,
-      "b": 0.1686115
+      "g": 0.168611318,
+      "b": 0.168611318
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,
@@ -47,8 +47,8 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
+    "Wasp_Identity.0f11ab.799100.json",
     "Wasp_Nemesis.13c902.json",
-    "Red_Dreams.1c913c.966655.json",
-    "Wasp_Identity.0f11ab.799100.json"
+    "Red_Dreams.1c913c.966655.json"
   ]
 }

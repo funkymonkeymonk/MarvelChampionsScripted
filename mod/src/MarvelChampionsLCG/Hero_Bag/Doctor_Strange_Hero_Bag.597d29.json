@@ -4,11 +4,11 @@
     "Name": "Bag",
     "Transform": {
       "posX": 70.13888,
-      "posY": 0.299687058,
+      "posY": 0.2996873,
       "posZ": 96.25,
-      "rotX": -0.0000110990068,
+      "rotX": 4.26906269e-7,
       "rotY": 179.9955,
-      "rotZ": 0.00000128443162,
+      "rotZ": 4.952386e-7,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -47,9 +47,9 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
-    "Doctor_Strange_Nemesis.46fdd1.json",
-    "Physical_Toll.a7b94b.965444.json",
     "Invocation_Deck.25db81.json",
-    "Doctor_Strange_Identity.4eaae1.965311.json"
+    "Doctor_Strange_Identity.4eaae1.965311.json",
+    "Doctor_Strange_Nemesis.46fdd1.json",
+    "Physical_Toll.a7b94b.965444.json"
   ]
 }

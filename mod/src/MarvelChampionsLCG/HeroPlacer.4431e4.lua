@@ -171,6 +171,10 @@ function placeHeroDeck(heroDeckId, deckPosition)
 end
 
 function placeExtras(heroBag, extras, playmatPosition)
+  if(extras == nil) then
+    return
+  end
+  
   for _, item in pairs(extras) do
     local objectPosition = getOffsetPosition(playmatPosition, item["offset"])
     local objectOrig = heroBag.takeObject({guid=item["guid"], position=objectPosition})

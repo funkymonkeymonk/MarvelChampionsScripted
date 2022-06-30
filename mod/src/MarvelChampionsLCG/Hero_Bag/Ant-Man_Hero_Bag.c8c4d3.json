@@ -4,11 +4,11 @@
     "Name": "Bag",
     "Transform": {
       "posX": 70.13888,
-      "posY": 0.299687147,
+      "posY": 0.2996873,
       "posZ": 96.25,
-      "rotX": 0.0000435421825,
-      "rotY": 179.999954,
-      "rotZ": 0.00004470107,
+      "rotX": 0.0000132334108,
+      "rotY": 179.999969,
+      "rotZ": 0.000024835972,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -47,8 +47,8 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
+    "Ant-Man_Identity.cad2b0.775500.json",
     "Ant-Man_Nemesis.063850.json",
-    "Care_for_Cassie.3ccf94.966351.json",
-    "Ant-Man_Identity.cad2b0.775500.json"
+    "Care_for_Cassie.3ccf94.966351.json"
   ]
 }

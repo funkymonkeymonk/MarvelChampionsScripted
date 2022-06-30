@@ -4,11 +4,11 @@
     "Name": "Bag",
     "Transform": {
       "posX": 70.13888,
-      "posY": 0.2996871,
+      "posY": 0.2996873,
       "posZ": 96.25,
-      "rotX": -0.0000268938365,
+      "rotX": 0.000003414903,
       "rotY": 179.998764,
-      "rotZ": -0.0000188109116,
+      "rotZ": -0.0000144856922,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -17,7 +17,7 @@
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
-      "r": 0.352934122,
+      "r": 0.3529339,
       "g": 1,
       "b": 0.7254902
     },
@@ -47,9 +47,9 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
+    "Groot_Identity.b02d67.967119.json",
     "Growth.586720.json",
     "Groot_Nemesis.5bfb20.json",
-    "Wilt.e604f0.967267.json",
-    "Groot_Identity.b02d67.967119.json"
+    "Wilt.e604f0.967267.json"
   ]
 }

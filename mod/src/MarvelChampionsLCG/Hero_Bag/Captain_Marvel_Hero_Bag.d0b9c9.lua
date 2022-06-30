@@ -10,9 +10,5 @@ function getHeroDetails()
     heroDetails.counterUrl = "http://cloud-3.steamusercontent.com/ugc/1833524706206476621/8B781DD9DAE855B4CC29CDCFBC3DB73A52DE6138/"
     heroDetails.playmatUrl = "http://cloud-3.steamusercontent.com/ugc/1861691130254391768/72BB0EC35830FED228A03EBDF69A2AEC33E180D2/"
   
-    local extras = {}
-  
-    heroDetails["extras"] = extras
-  
     return heroDetails
   end
