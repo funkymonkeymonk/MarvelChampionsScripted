@@ -4,11 +4,11 @@
     "Name": "Bag",
     "Transform": {
       "posX": 70.13888,
-      "posY": 0.2996872,
+      "posY": 0.2996874,
       "posZ": 96.25,
-      "rotX": -0.00005934384,
-      "rotY": 179.99057,
-      "rotZ": -0.00007979794,
+      "rotX": -0.00004610152,
+      "rotY": 179.990555,
+      "rotZ": 0.00002739126,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -47,8 +47,8 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
+    "Captain_Marvel_Identity.11106b.963901.json",
     "Captain_Marvel_Nemesis.6e4469.json",
-    "Family_Emergency.55c0e6.964016.json",
-    "Captain_Marvel_Identity.11106b.963901.json"
+    "Family_Emergency.55c0e6.964016.json"
   ]
 }

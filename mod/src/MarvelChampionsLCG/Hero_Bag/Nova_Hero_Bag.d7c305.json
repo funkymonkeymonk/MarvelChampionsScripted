@@ -4,11 +4,11 @@
     "Name": "Bag",
     "Transform": {
       "posX": 70.13888,
-      "posY": 0.2996872,
+      "posY": 0.2996873,
       "posZ": 96.25,
-      "rotX": 0.00006445948,
+      "rotX": -0.0000162215656,
       "rotY": 180,
-      "rotZ": 0.00008153651,
+      "rotZ": -0.0000252978443,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -47,8 +47,8 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
+    "Nova.13ab9f.972800.json",
     "Weight_of_the_World.947100.200.json",
-    "Nova_s_Nemesis_Set.9417cb.json",
-    "Nova.13ab9f.972800.json"
+    "Nova_s_Nemesis_Set.9417cb.json"
   ]
 }

@@ -3,10 +3,10 @@
     "GUID": "1bc7dc",
     "Name": "CardCustom",
     "Transform": {
-      "posX": 102.3915,
-      "posY": 2.88280416,
-      "posZ": 71.82778,
-      "rotX": -1.54130419e-7,
+      "posX": 103.73848,
+      "posY": 49.1786957,
+      "posZ": 25.36893,
+      "rotX": 6.179543e-8,
       "rotY": 180,
       "rotZ": 180,
       "scaleX": 1.27,
@@ -14,7 +14,7 @@
       "scaleZ": 1.27
     },
     "Nickname": "Wasp",
-    "Description": "Nadia Van Dyne",
+    "Description": "Nadia Van Dyne-Hero",
     "GMNotes": "",
     "ColorDiffuse": {
       "r": 0.713235259,

@@ -4,11 +4,11 @@
     "Name": "Bag",
     "Transform": {
       "posX": 70.13888,
-      "posY": 0.299687058,
+      "posY": 0.2996873,
       "posZ": 96.25,
-      "rotX": -0.000009818735,
+      "rotX": -0.000008111192,
       "rotY": 179.9959,
-      "rotZ": -0.0000122958609,
+      "rotZ": -0.0000119340721,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -17,7 +17,7 @@
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
-      "r": 0.376863658,
+      "r": 0.37686348,
       "g": 0,
       "b": 0.984320462
     },
@@ -47,8 +47,8 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
+    "Hawkeye_Identity.7c71f1.969706.json",
     "Hawkeye_Nemesis.a88606.json",
-    "Criminal_Past.4e3741.971124.json",
-    "Hawkeye_Identity.7c71f1.969706.json"
+    "Criminal_Past.4e3741.971124.json"
   ]
 }

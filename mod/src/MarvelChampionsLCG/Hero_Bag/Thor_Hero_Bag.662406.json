@@ -4,11 +4,11 @@
     "Name": "Bag",
     "Transform": {
       "posX": 70.13888,
-      "posY": 0.299687147,
+      "posY": 0.2996873,
       "posZ": 96.25,
-      "rotX": 0.00004738393,
-      "rotY": 179.995956,
-      "rotZ": -1.43407433e-7,
+      "rotX": 0.0000123798727,
+      "rotY": 179.995987,
+      "rotZ": 0.00000676134232,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -47,8 +47,8 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
+    "Thor_Identity.8886c4.964909.json",
     "Thor_Nemesis.b67f0c.json",
-    "Odin_s_Anger.5c150f.965036.json",
-    "Thor_Identity.8886c4.964909.json"
+    "Odin_s_Anger.5c150f.965036.json"
   ]
 }

@@ -4,11 +4,11 @@
     "Name": "Bag",
     "Transform": {
       "posX": 70.13888,
-      "posY": 0.299687266,
+      "posY": 0.2996874,
       "posZ": 96.25,
-      "rotX": 0.000100313526,
+      "rotX": 0.0000606171161,
       "rotY": 179.994522,
-      "rotZ": -0.00007993018,
+      "rotZ": -0.00000367475127,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -47,8 +47,8 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
+    "Iron_Man_Identity.87a715.963403.json",
     "Iron_Man_Nemesis.630a9d.json",
-    "Business_Problems.9c7ab0.963612.json",
-    "Iron_Man_Identity.87a715.963403.json"
+    "Business_Problems.9c7ab0.963612.json"
   ]
 }

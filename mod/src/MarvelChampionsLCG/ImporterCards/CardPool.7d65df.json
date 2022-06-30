@@ -3,10 +3,10 @@
     "GUID": "7d65df",
     "Name": "Deck",
     "Transform": {
-      "posX": 102.415016,
-      "posY": 22.8310642,
-      "posZ": 80.10125,
-      "rotX": -9.40355349e-8,
+      "posX": 101.972145,
+      "posY": 70.86128,
+      "posZ": 55.12876,
+      "rotX": -1.05946704e-7,
       "rotY": 180,
       "rotZ": 180,
       "scaleX": 1.27,
@@ -57,7 +57,6 @@
       974622,
       975024,
       976025,
-      975126,
       975727,
       973214,
       973213,
@@ -251,7 +250,6 @@
       901824,
       3700,
       798114,
-      798516,
       903811,
       802243,
       902807,
@@ -645,7 +643,6 @@
       901818,
       771110,
       903414,
-      464800,
       903806,
       732400,
       972700,
@@ -701,7 +698,10 @@
       769218,
       798523,
       998501,
-      998506
+      998506,
+      798516,
+      975126,
+      464800
     ],
     "CustomDeck": {
       "16": {
@@ -2217,7 +2217,6 @@
     "Vivian.04f64e.974622.json",
     "Ingenuity.d2dd59.975024.json",
     "Bombshell.8708f3.976025.json",
-    "Wasp.0bb38c.975126.json",
     "Pinpoint.152c78.975727.json",
     "Propulsion_Jets.c8a23a.973214.json",
     "Photon_Blasters.3c6aa2.973213.json",
@@ -2411,7 +2410,6 @@
     "True_Grit.4788ff.901824.json",
     "Hit_and_Run.b1da91.3700.json",
     "Reinforced_Sinew.b4f56e.798114.json",
-    "Wasp.9bceea.798516.json",
     "Making_an_Entrance.f3d454.903811.json",
     "Looking_for_Trouble.c1cb66.802243.json",
     "Drax_s_Other_Knife.133218.902807.json",
@@ -2805,7 +2803,6 @@
     "Knowhere.1344e1.901818.json",
     "Avengers_Mansion.600a09.771110.json",
     "Pip_the_Troll.6e6169.903414.json",
-    "Wasp.1bc7dc.464800.json",
     "Multi-Gun.df0c99.903806.json",
     "Resourceful.24086c.732400.json",
     "Arachnobatics.87b1ac.972700.json",
@@ -2861,6 +2858,9 @@
     "Spider-Man.ca5c08.769218.json",
     "Spider-Man.1e1ce9.798523.json",
     "Spider-Man.c07a0b.998501.json",
-    "Spider-Man.5438cf.998506.json"
+    "Spider-Man.5438cf.998506.json",
+    "Wasp.9bceea.798516.json",
+    "Wasp.0bb38c.975126.json",
+    "Wasp.1bc7dc.464800.json"
   ]
 }

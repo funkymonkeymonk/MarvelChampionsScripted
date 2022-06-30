@@ -2,7 +2,14 @@ local publicDeckURL="https://marvelcdb.com/api/public/decklist/"
 local privateDeckURL="https://marvelcdb.com/api/public/deck/"
 local cardURL="https://marvelcdb.com/api/public/card/"
 local subnameCards={{name="Hawkeye"},{name="Spider-Man"},{name="Ant-Man"},{name="Wasp"},{name="Falcon"}}
-local multiAspectCards={{name="Mockingbird"},{name="War Machine"},{name="Gamora"},{name="Iron Man"},{name="Captain Marvel"}, {name="Spider-Man"}, {name="Agent 13"}}
+local multiAspectCards={{name="Mockingbird"},{name="War Machine"},{name="Gamora"},{name="Iron Man"},{name="Captain Marvel"}, {name="Spider-Man"}, {name="Agent 13"}, {name="Wasp"}}
+local excludeList={
+  {cardId="21002"}, --Spectrum, Gamma
+  {cardId="21003"}, --Spectrum, Photon
+  {cardId="21004"}, --Spectrum, Pulsar
+  {cardId="26002"}, --Vision, Intangible
+  {cardId="25002"} --Valkyrie, Death-Glow
+}
 local enteredDeckId = 0
 local deckId = 0
 local privateDeckSelection = true
@@ -59,14 +66,16 @@ function deckReadCallback(req)
     print("Found decklist: "..JsonDeckRes.name)
   end
 
+  local slots = removeExcludedCards(JsonDeckRes.slots)
+
   -- Count number of cards in decklist
   numSlots=0
-  for cardid,number in pairs(JsonDeckRes.slots) do
+  for cardid,number in pairs(slots) do
     numSlots = numSlots + 1
   end
-
+  
   -- Save card id, number in table and request card info from MarvelCDB
-  for cardID,number in pairs(JsonDeckRes.slots) do
+  for cardID,number in pairs(slots) do
     local row = {}
     row.cardName = ""
     row.cardCount = number
@@ -74,6 +83,28 @@ function deckReadCallback(req)
     WebRequest.get(cardURL .. cardID, self, 'cardReadCallback')
     totalCards = totalCards + number
   end
+end
+
+function removeExcludedCards(slots)
+  local scrubbedSlots = {}
+
+  for cardId,number in pairs(slots) do
+    if(not cardIsInExcludeList(cardId)) then
+      scrubbedSlots[cardId] = number
+    end
+  end
+
+  return scrubbedSlots
+end
+
+function cardIsInExcludeList(cardId)
+  for k,v in pairs(excludeList) do
+    if (v.cardId == cardId) then
+      return true
+    end
+  end
+
+  return false
 end
 
 function cardReadCallback(req)
@@ -88,7 +119,7 @@ function cardReadCallback(req)
   end
 
   cardList[JsonCardRes.code].cardName = JsonCardRes.real_name
-if(JsonCardRes.real_name == "Intangible") then log(JsonCardRes) end
+  
   -- Check for subname
   for k,v in pairs(subnameCards) do
     if (v.name == JsonCardRes.real_name) then

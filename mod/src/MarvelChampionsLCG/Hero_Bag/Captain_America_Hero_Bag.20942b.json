@@ -4,11 +4,11 @@
     "Name": "Bag",
     "Transform": {
       "posX": 70.13888,
-      "posY": 0.2996872,
+      "posY": 0.2996873,
       "posZ": 96.25,
-      "rotX": 0.00004567613,
+      "rotX": 8.5366554e-7,
       "rotY": 179.999481,
-      "rotZ": -0.000100721481,
+      "rotZ": -0.0000216992375,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -17,7 +17,7 @@
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
-      "r": 0.274552524,
+      "r": 0.274552345,
       "g": 0.6404056,
       "b": 0.9912891
     },
@@ -47,8 +47,8 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
+    "Captain_America_Identity.9ab0fe.964505.json",
     "Captain_America_Nemesis.81f322.json",
-    "Man_Out_of_Time.493905.964620.json",
-    "Captain_America_Identity.9ab0fe.964505.json"
+    "Man_Out_of_Time.493905.964620.json"
   ]
 }

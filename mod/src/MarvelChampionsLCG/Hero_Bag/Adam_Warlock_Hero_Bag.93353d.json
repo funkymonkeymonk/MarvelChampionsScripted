@@ -4,11 +4,11 @@
     "Name": "Bag",
     "Transform": {
       "posX": 70.13888,
-      "posY": 0.299687147,
+      "posY": 0.2996873,
       "posZ": 96.25,
-      "rotX": -0.000023051758,
+      "rotX": 0.0000051225943,
       "rotY": 179.999878,
-      "rotZ": -0.0000213258318,
+      "rotZ": -6.15316935e-7,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -48,7 +48,7 @@
   "StatesPaths": {},
   "ContainedObjectPaths": [
     "Adam_Warlock_Identity.3f8b2b.969126.json",
-    "Regeneration_Cycle.53bd99.1007022.json",
-    "Adam_Warlock_Nemesis.0b4499.json"
+    "Adam_Warlock_Nemesis.0b4499.json",
+    "Regeneration_Cycle.53bd99.1007022.json"
   ]
 }
