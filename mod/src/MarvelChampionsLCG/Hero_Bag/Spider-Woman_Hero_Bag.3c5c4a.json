@@ -1,0 +1,54 @@
+{
+  "Object": {
+    "GUID": "3c5c4a",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 70.13888,
+      "posY": 0.299687147,
+      "posZ": 96.25,
+      "rotX": 0.00003287087,
+      "rotY": 180.014465,
+      "rotZ": -0.000006342416,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Spider-Woman Hero Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 0.8556752,
+      "b": 0.11761456
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Spider-Woman_Hero_Bag.3c5c4a.lua",
+    "LuaScriptState": "#include ./Spider-Woman_Hero_Bag.3c5c4a.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Spider-Woman_Nemesis.100eb1.json",
+    "Uncertain_Loyalties.2789f7.965928.json",
+    "Spider-Woman_Identity.1af424.967707.json"
+  ]
+}

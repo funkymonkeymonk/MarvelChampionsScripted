@@ -1,0 +1,54 @@
+{
+  "Object": {
+    "GUID": "58c39d",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 70.13888,
+      "posY": 0.299687058,
+      "posZ": 96.25,
+      "rotX": -0.000009818735,
+      "rotY": 179.9959,
+      "rotZ": -0.0000122958609,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Hawkeye Hero Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.376863658,
+      "g": 0,
+      "b": 0.984320462
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Hawkeye_Hero_Bag.58c39d.lua",
+    "LuaScriptState": "#include ./Hawkeye_Hero_Bag.58c39d.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Hawkeye_Nemesis.a88606.json",
+    "Criminal_Past.4e3741.971124.json",
+    "Hawkeye_Identity.7c71f1.969706.json"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "Object": {
+    "GUID": "9ec76d",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 70.13888,
+      "posY": 0.299687058,
+      "posZ": 96.25,
+      "rotX": -1.24195265e-10,
+      "rotY": 180.003525,
+      "rotZ": 0.00000403372,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Scarlet Witch Hero Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.9921568,
+      "g": 0,
+      "b": 0.34116596
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Scarlet_Witch_Hero_Bag.9ec76d.lua",
+    "LuaScriptState": "#include ./Scarlet_Witch_Hero_Bag.9ec76d.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Scarlet_Witch_Nemesis.4dc8a8.json",
+    "Slipping_Sanity.c227b2.967063.json",
+    "Scarlet_Witch_Identity.a7c02d.966918.json"
+  ]
+}

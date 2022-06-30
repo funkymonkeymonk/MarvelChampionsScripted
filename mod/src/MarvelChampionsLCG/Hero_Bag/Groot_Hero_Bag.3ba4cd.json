@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "3ba4cd",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 70.13888,
+      "posY": 0.2996871,
+      "posZ": 96.25,
+      "rotX": -0.0000268938365,
+      "rotY": 179.998764,
+      "rotZ": -0.0000188109116,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Groot Hero Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.352934122,
+      "g": 1,
+      "b": 0.7254902
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Groot_Hero_Bag.3ba4cd.lua",
+    "LuaScriptState": "#include ./Groot_Hero_Bag.3ba4cd.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Growth.586720.json",
+    "Groot_Nemesis.5bfb20.json",
+    "Wilt.e604f0.967267.json",
+    "Groot_Identity.b02d67.967119.json"
+  ]
+}

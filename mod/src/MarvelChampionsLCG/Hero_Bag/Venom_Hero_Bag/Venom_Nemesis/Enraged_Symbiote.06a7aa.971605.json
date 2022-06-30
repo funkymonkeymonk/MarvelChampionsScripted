@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "06a7aa",
+    "Name": "Card",
+    "Transform": {
+      "posX": -15.9999943,
+      "posY": 1.6011188,
+      "posZ": 44,
+      "rotX": 0.0135036847,
+      "rotY": 180.000015,
+      "rotZ": 180.063934,
+      "scaleX": 1.90718782,
+      "scaleY": 1,
+      "scaleZ": 1.90718782
+    },
+    "Nickname": "Enraged Symbiote",
+    "Description": "Scanned by Unicorn\nImported by Hitch",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 971605,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "9716": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1861671908642215044/005A0F1CC9147E1481F864B596730869D9FE5AA3/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1054352812477833382/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 4,
+        "NumHeight": 3,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

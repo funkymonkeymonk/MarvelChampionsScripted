@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "84aae1",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 70.13888,
+      "posY": 0.299687058,
+      "posZ": 96.25,
+      "rotX": -4.214431e-12,
+      "rotY": 179.986832,
+      "rotZ": -3.66855879e-8,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "War Machine Hero Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.449917257,
+      "g": 0.9300961,
+      "b": 0.952961743
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./War_Machine_Hero_Bag.84aae1.lua",
+    "LuaScriptState": "#include ./War_Machine_Hero_Bag.84aae1.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Ammo.0cd24c.json",
+    "War_Machine_Nemesis.17b4ea.json",
+    "Equipment_Malfunction.523ae0.330.json",
+    "War_Machine_Identity.a6c9e7.970428.json"
+  ]
+}
