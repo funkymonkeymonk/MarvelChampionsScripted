@@ -46,3 +46,4 @@ mod/src/includes/generated/
 node_modules/
 
 dist
+images
