@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "60d1f4",
+    "Name": "Card",
+    "Transform": {
+      "posX": -45.25,
+      "posY": 0.585588932,
+      "posZ": 80.25,
+      "rotX": 0.00199350668,
+      "rotY": 179.998428,
+      "rotZ": 0.205508828,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Seven Rings of Raggadorr",
+    "Description": "Scanned by Unicorn\nImported by Hitch",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 963302,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "9633": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1861671908640026259/4164A03433AD577DDB66FAA0F76C04699A85BD97/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1264897305960075747/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 3,
+        "NumHeight": 2,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

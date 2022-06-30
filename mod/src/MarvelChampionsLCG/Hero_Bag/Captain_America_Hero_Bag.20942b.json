@@ -1,0 +1,54 @@
+{
+  "Object": {
+    "GUID": "20942b",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 70.13888,
+      "posY": 0.2996872,
+      "posZ": 96.25,
+      "rotX": 0.00004567613,
+      "rotY": 179.999481,
+      "rotZ": -0.000100721481,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Captain America Hero Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.274552524,
+      "g": 0.6404056,
+      "b": 0.9912891
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Captain_America_Hero_Bag.20942b.lua",
+    "LuaScriptState": "#include ./Captain_America_Hero_Bag.20942b.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Captain_America_Nemesis.81f322.json",
+    "Man_Out_of_Time.493905.964620.json",
+    "Captain_America_Identity.9ab0fe.964505.json"
+  ]
+}

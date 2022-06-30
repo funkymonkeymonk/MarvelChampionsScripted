@@ -88,7 +88,7 @@ function cardReadCallback(req)
   end
 
   cardList[JsonCardRes.code].cardName = JsonCardRes.real_name
-
+if(JsonCardRes.real_name == "Intangible") then log(JsonCardRes) end
   -- Check for subname
   for k,v in pairs(subnameCards) do
     if (v.name == JsonCardRes.real_name) then
@@ -101,7 +101,6 @@ function cardReadCallback(req)
     if (v.name == JsonCardRes.real_name) then
       cardList[JsonCardRes.code].subName = 
         (cardList[JsonCardRes.code].subName and cardList[JsonCardRes.code].subName .. "-" .. JsonCardRes.faction_name or JsonCardRes.faction_name)
-      log(cardList[JsonCardRes.code].subName)
     end
   end
 

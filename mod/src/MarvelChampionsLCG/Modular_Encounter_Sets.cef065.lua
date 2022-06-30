@@ -56,10 +56,10 @@ function getCoordinates(column, row)
 	    return {x, originY, z}
 end
 
-function placeRandomBag(currentColumn, currentRow)
-    	if currentColumn % columns == 0 then
-        		currentRow = currentRow + 1
-    	end
+-- function placeRandomBag(currentColumn, currentRow)
+--     	if currentColumn % columns == 0 then
+--         		currentRow = currentRow + 1
+--     	end
 	
-    	self.takeObject({index = 0, position = getCoordinates(columns, currentRow)}).setLock(true)
-end
+--     	self.takeObject({index = 0, position = getCoordinates(columns, currentRow)}).setLock(true)
+-- end

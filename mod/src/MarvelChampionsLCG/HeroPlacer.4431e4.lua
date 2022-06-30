@@ -8,53 +8,66 @@ function onLoad()
   self.setInvisibleTo({"Red", "Blue", "Green", "Yellow", "White"})
 end
 
-function placeHero(params)
-  local playerColor = params["playerColor"]
+function placeHeroWithStarterDeck(params)
+  placeHero(params.heroBagGuid, params.playerColor, "starter")
+end
 
+function placeHeroWithHeroDeck(params)
+  placeHero(params.heroBagGuid, params.playerColor, "constructed")
+end
+
+function placeHero(heroBagGuid, playerColor, deckType)
   if(playerColor ~= "Red" and playerColor ~= "Blue" and playerColor ~= "Green" and playerColor ~= "Yellow") then
     broadcastToAll("Take a seat, hero! (Red, Blue, Green, or Yellow.)", {1,1,1})
     return
   end
 
-  local heroBag = params["heroBag"]
-  local deckType = params["deckType"]
-  local heroDetails = heroBag.call("getHeroDetails")
-  local playmatPosition = getPlaymatPosition(playerColor)
+  local heroesBag = getObjectFromGUID("22b26a")
+  local heroBag = heroesBag.takeObject({guid=heroBagGuid})
 
-  placePlaymat(
-    playerColor, 
-    playmatPosition, 
-    heroDetails["playmatUrl"])
-
-  placeHealthCounter(
-    playmatPosition,
-    heroDetails["counterUrl"],
-    heroDetails["hitPoints"])
-
-  placeIdentity(
-    heroBag, 
-    heroDetails["identityGuid"], 
-    playmatPosition)
-
-  placeDeck(
-    heroBag, 
-    deckType, 
-    heroDetails["starterDeckId"], 
-    heroDetails["heroDeckGuid"], 
-    playmatPosition)
-
-  placeExtras(
-    heroBag, 
-    heroDetails["extras"], 
-    playmatPosition)
-
-  placeNemesis(
-    heroBag, 
-    heroDetails["nemesisGuid"])
-
-  placeObligation(
-    heroBag, 
-    heroDetails["obligationGuid"])
+  Wait.frames(
+    function()
+      local heroDetails = heroBag.call("getHeroDetails")
+      local playmatPosition = getPlaymatPosition(playerColor)
+    
+      placePlaymat(
+        playerColor, 
+        playmatPosition, 
+        heroDetails["playmatUrl"])
+    
+      placeHealthCounter(
+        playmatPosition,
+        heroDetails["counterUrl"],
+        heroDetails["hitPoints"])
+    
+      placeIdentity(
+        heroBag, 
+        heroDetails["identityGuid"], 
+        playmatPosition)
+    
+      placeDeck(
+        heroBag, 
+        deckType, 
+        heroDetails["starterDeckId"], 
+        heroDetails["heroDeckId"], 
+        playmatPosition)
+    
+      placeExtras(
+        heroBag, 
+        heroDetails["extras"], 
+        playmatPosition)
+    
+      placeNemesis(
+        heroBag, 
+        heroDetails["nemesisGuid"])
+    
+      placeObligation(
+        heroBag, 
+        heroDetails["obligationGuid"])
+    
+        heroesBag.putObject(heroBag)
+        end, 
+    1)
 end
 
 function getPlaymatPosition(playerColor)
@@ -88,8 +101,6 @@ function placePlaymat(playerColor, playmatPosition, imageUrl)
   playmatCopy.setCustomObject({image=imageUrl})
   playmatCopy.reload()
 end
-
-
 
 function placeHealthCounter(playmatPosition, imageUrl, hitPoints)
   local counterPosition = getOffsetPosition(playmatPosition, healthCounterOffset)
@@ -125,13 +136,13 @@ function placeIdentity(heroBag, identityGuid, playmatPosition)
   identityCopy.setPosition(identityPosition)
 end
 
-function placeDeck(heroBag, deckType, starterDeckId, heroDeckGuid, playmatPosition)
+function placeDeck(heroBag, deckType, starterDeckId, heroDeckId, playmatPosition)
   local deckPosition = getOffsetPosition(playmatPosition, deckOffset)
 
   if(deckType == "starter") then
     placeStarterDeck(starterDeckId, deckPosition)
   else
-    placeHeroDeck(heroBag, heroDeckGuid, deckPosition)
+    placeHeroDeck(heroDeckId, deckPosition)
   end
 end
 
@@ -147,15 +158,16 @@ function placeStarterDeck(starterDeckId, deckPosition)
   deckImporter.call("importDeck", params)
 end
 
-function placeHeroDeck(heroBag, heroDeckGuid, deckPosition)
-  local deckOrig = heroBag.takeObject({guid=heroDeckGuid, position=deckPosition})
-  local deckCopy = deckOrig.clone({position=deckPosition})
-  heroBag.putObject(deckOrig)
+function placeHeroDeck(heroDeckId, deckPosition)
+  local params = {
+    deckId = heroDeckId,
+    privateDeck = true,
+    deckPosition = deckPosition
+  }
 
-  deckCopy.setName("")
-  deckCopy.setDescription("")
-  deckCopy.setScale({1.27, 1, 1.27})
-  deckCopy.setPosition(deckPosition)
+  local deckImporter = getObjectFromGUID(deckImporterGuid)
+
+  deckImporter.call("importDeck", params)
 end
 
 function placeExtras(heroBag, extras, playmatPosition)

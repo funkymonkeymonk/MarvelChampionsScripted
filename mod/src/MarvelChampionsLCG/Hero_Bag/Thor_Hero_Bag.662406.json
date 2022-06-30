@@ -1,0 +1,54 @@
+{
+  "Object": {
+    "GUID": "662406",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 70.13888,
+      "posY": 0.299687147,
+      "posZ": 96.25,
+      "rotX": 0.00004738393,
+      "rotY": 179.995956,
+      "rotZ": -1.43407433e-7,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Thor Hero Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.5875058,
+      "g": 0.8929566,
+      "b": 0.994773448
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Thor_Hero_Bag.662406.lua",
+    "LuaScriptState": "#include ./Thor_Hero_Bag.662406.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Thor_Nemesis.b67f0c.json",
+    "Odin_s_Anger.5c150f.965036.json",
+    "Thor_Identity.8886c4.964909.json"
+  ]
+}

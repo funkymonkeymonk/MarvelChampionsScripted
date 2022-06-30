@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "3f8b2b",
+    "Name": "Card",
+    "Transform": {
+      "posX": 101.470314,
+      "posY": 10.064188,
+      "posZ": 66.25959,
+      "rotX": -4.603044e-8,
+      "rotY": 180.000031,
+      "rotZ": 5.45528565e-8,
+      "scaleX": 0.9502119,
+      "scaleY": 1,
+      "scaleZ": 0.9502119
+    },
+    "Nickname": "Adam Warlock Identity",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 969126,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "9691": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1861671908637682543/A4E5DD1CC12EE12C678B47998FAB16690A326F82/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1861671908637689251/DAA4DB980CAD2A561773AF4688ADE0FDD2134A76/",
+        "NumWidth": 6,
+        "NumHeight": 5,
+        "BackIsHidden": true,
+        "UniqueBack": true,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

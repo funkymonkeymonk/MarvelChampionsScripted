@@ -1,0 +1,60 @@
+{
+  "Object": {
+    "GUID": "0f11ab",
+    "Name": "Card",
+    "Transform": {
+      "posX": 85.40476,
+      "posY": 2.234787,
+      "posZ": 66.6735458,
+      "rotX": -2.96211677e-8,
+      "rotY": 180.021866,
+      "rotZ": 5.00038659e-8,
+      "scaleX": 1.88,
+      "scaleY": 1,
+      "scaleZ": 1.88
+    },
+    "Nickname": "Wasp Identity",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CardID": 799100,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "7991": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1665734052230169652/3D418CD50DC776A895285BEE2EA77CEFCF950ADD/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/767229025789764879/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 2,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "#include ./Wasp_Identity.0f11ab.799100.lua",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "States": {}
+  },
+  "StatesPaths": {
+    "1": "Wasp.b8f9c3.798900.json",
+    "3": "Wasp.ec5cab.798901.json"
+  }
+}
