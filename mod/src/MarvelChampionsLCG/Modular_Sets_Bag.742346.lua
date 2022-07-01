@@ -18,13 +18,13 @@ function createContextMenu()
 end
 
 function layOutModularSets()
-    local modularSetZone = getObjectFromGUID("fe1bcd")
+    local modularSetZone = getObjectFromGUID("7977bc")
     clearModularSetZone(modularSetZone)
     layOutTiles()
 end
 
 function deleteModularSets()
-    local modularSetZone = getObjectFromGUID("fe1bcd")
+    local modularSetZone = getObjectFromGUID("7977bc")
     clearModularSetZone(modularSetZone)
 end
 

@@ -1,0 +1,70 @@
+{
+  "Object": {
+    "GUID": "25db81",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 101.933708,
+      "posY": 4.29037046,
+      "posZ": 37.45294,
+      "rotX": -1.2279652e-8,
+      "rotY": 180,
+      "rotZ": 180,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Invocation Deck",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      963400,
+      963401,
+      963402,
+      963403,
+      963404
+    ],
+    "CustomDeck": {
+      "9634": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1861671908640026259/4164A03433AD577DDB66FAA0F76C04699A85BD97/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/776248693496171403/A0FAB7F60946745D878FAA841A913535303E3816/",
+        "NumWidth": 3,
+        "NumHeight": 2,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Card.711600.963400.json",
+    "Card.ebf310.963401.json",
+    "Card.a299d6.963402.json",
+    "Card.d2f269.963403.json",
+    "Card.04cb13.963404.json"
+  ]
+}

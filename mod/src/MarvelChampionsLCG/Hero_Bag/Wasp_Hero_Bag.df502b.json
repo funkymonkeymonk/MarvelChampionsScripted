@@ -1,0 +1,54 @@
+{
+  "Object": {
+    "GUID": "df502b",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 70.15184,
+      "posY": 0.300886422,
+      "posZ": 96.25,
+      "rotX": -0.00008665783,
+      "rotY": 179.99884,
+      "rotZ": -0.0000395859352,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Wasp Hero Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 0.168611228,
+      "b": 0.168611228
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Wasp_Hero_Bag.df502b.lua",
+    "LuaScriptState": "#include ./Wasp_Hero_Bag.df502b.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Wasp_Identity.0f11ab.799100.json",
+    "Wasp_Nemesis.13c902.json",
+    "Red_Dreams.1c913c.966655.json"
+  ]
+}

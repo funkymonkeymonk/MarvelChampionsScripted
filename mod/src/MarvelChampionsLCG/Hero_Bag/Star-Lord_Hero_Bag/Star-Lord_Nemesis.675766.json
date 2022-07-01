@@ -1,0 +1,88 @@
+{
+  "Object": {
+    "GUID": "675766",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 101.532539,
+      "posY": 23.9753838,
+      "posZ": 57.8636856,
+      "rotX": 4.27771651e-10,
+      "rotY": 179.999771,
+      "rotZ": -3.97238828e-8,
+      "scaleX": 1.93625021,
+      "scaleY": 1,
+      "scaleZ": 1.93625021
+    },
+    "Nickname": "Star-Lord Nemesis",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      971601,
+      971600,
+      1007607,
+      1007606,
+      969807
+    ],
+    "CustomDeck": {
+      "9698": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1861671908637327610/17690CA31E450FD8098399FF9056549BE36A267C/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1054352812477833382/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 7,
+        "NumHeight": 4,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "9716": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1861671908642215044/005A0F1CC9147E1481F864B596730869D9FE5AA3/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1054352812477833382/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 4,
+        "NumHeight": 3,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "10076": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1861671908637357334/F2CB50B6298515BC9F1B6A08A72DFF08CD26D8B7/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1054352812477833382/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 7,
+        "NumHeight": 5,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Spartoi_Cunning.b16746.971601.json",
+    "Spartoi_Cunning.699a43.971600.json",
+    "Spartoi_Cunning.db6e85.1007607.json",
+    "Mister_Knife.f9555f.1007606.json",
+    "Budding_Crime_Syndicate.285c78.969807.json"
+  ]
+}
