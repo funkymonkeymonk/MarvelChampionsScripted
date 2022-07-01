@@ -138,13 +138,3 @@ function setTooltips()
         tooltip = ttText
         })
 end
-
-
-
-
-     })
-end
-
-
-
-
