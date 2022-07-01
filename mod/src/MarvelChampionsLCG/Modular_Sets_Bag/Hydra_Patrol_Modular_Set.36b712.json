@@ -1,0 +1,81 @@
+{
+  "Object": {
+    "GUID": "36b712",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 55.6028366,
+      "posY": 2.27094984,
+      "posZ": -14.4658575,
+      "rotX": -5.25006278e-8,
+      "rotY": 180,
+      "rotZ": 180,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Hydra Patrol Modular Set",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      2000,
+      2104,
+      2103,
+      2102,
+      2101,
+      2100
+    ],
+    "CustomDeck": {
+      "20": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833524420367261173/9CA65B35A19F9ABA3B0693F8E97E9FEEF69FA114/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "21": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833524420367262750/9E08798F8F6CCE41F604E99D728E93B360DB9DAE/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 2,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Hydra_Patrol.abde53.2000.json",
+    "Hydra_Soldier.49df6e.2104.json",
+    "Hydra_Soldier.b92261.2103.json",
+    "Hydra_Soldier.5f03c1.2102.json",
+    "Hydra_Regular.8dda40.2101.json",
+    "Hydra_Regular.91a921.2100.json"
+  ]
+}
