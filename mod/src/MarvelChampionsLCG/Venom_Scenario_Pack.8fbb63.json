@@ -4,8 +4,8 @@
     "Name": "Bag",
     "Transform": {
       "posX": 96.25001,
-      "posY": 0.309575081,
-      "posZ": -0.750033,
+      "posY": 0.309577942,
+      "posZ": -0.7500328,
       "rotX": 4.26886771e-7,
       "rotY": 180,
       "rotZ": 1.20061927e-7,
@@ -17,7 +17,7 @@
     "Description": "Scanned and imported by Unicorn",
     "GMNotes": "",
     "ColorDiffuse": {
-      "r": 0.117994927,
+      "r": 0.117994957,
       "g": 0.53,
       "b": 1
     },

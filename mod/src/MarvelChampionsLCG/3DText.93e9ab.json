@@ -3,11 +3,11 @@
     "GUID": "93e9ab",
     "Name": "3DText",
     "Transform": {
-      "posX": 78.01546,
-      "posY": 0.49844563,
-      "posZ": -2.497858,
+      "posX": 78.0154,
+      "posY": 0.498449415,
+      "posZ": -2.49786,
       "rotX": 90,
-      "rotY": -0.00000607954,
+      "rotY": -0.000006079539,
       "rotZ": 0,
       "scaleX": 1,
       "scaleY": 1,
@@ -36,7 +36,7 @@
     "HideWhenFaceDown": false,
     "Hands": false,
     "Text": {
-      "Text": "MODULARS",
+      "Text": "MODULAR ENCOUNTER SETS",
       "colorstate": {
         "r": 1,
         "g": 1,

@@ -1,0 +1,54 @@
+{
+  "Object": {
+    "GUID": "77e897",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 70.15184,
+      "posY": 0.300912976,
+      "posZ": 96.25,
+      "rotX": 0.03221706,
+      "rotY": 180.004456,
+      "rotZ": -0.00005945008,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Spider-Man (Peter Parker) Hero Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.9982578,
+      "g": 0.443438262,
+      "b": 0.443438262
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Spider-Man_Peter_Parker_Hero_Bag.77e897.lua",
+    "LuaScriptState": "#include ./Spider-Man_Peter_Parker_Hero_Bag.77e897.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Spider-Man.43d7e9.1200.json",
+    "Eviction_Notice.4f37cf.972719.json",
+    "Vulture.80078c.json"
+  ]
+}

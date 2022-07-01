@@ -1,0 +1,54 @@
+{
+  "Object": {
+    "GUID": "4db435",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 70.15184,
+      "posY": 0.300886363,
+      "posZ": 96.25,
+      "rotX": -0.00007598497,
+      "rotY": 179.999191,
+      "rotZ": 0.000010687605,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Quicksilver Hero Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0,
+      "g": 0.8156863,
+      "b": 0.8745098
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Quicksilver_Hero_Bag.4db435.lua",
+    "LuaScriptState": "#include ./Quicksilver_Hero_Bag.4db435.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Quicksilver_Identity.b1a635.966717.json",
+    "Quicksilver_Nemesis.60c5a7.json",
+    "Need_for_Speed.8f253f.966859.json"
+  ]
+}

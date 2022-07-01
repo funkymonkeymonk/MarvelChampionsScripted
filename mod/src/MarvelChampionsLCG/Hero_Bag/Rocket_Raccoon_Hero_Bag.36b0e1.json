@@ -1,0 +1,54 @@
+{
+  "Object": {
+    "GUID": "36b0e1",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 70.15184,
+      "posY": 0.300886363,
+      "posZ": 96.25,
+      "rotX": 0.0000755576,
+      "rotY": 180.002167,
+      "rotZ": 0.0000450877,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Rocket Raccoon Hero Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.5607843,
+      "g": 0.5607843,
+      "b": 0.5607843
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Rocket_Raccoon_Hero_Bag.36b0e1.lua",
+    "LuaScriptState": "#include ./Rocket_Raccoon_Hero_Bag.36b0e1.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Rocket_Raccoon_Identity.f76c83.967320.json",
+    "Crisis_on_Halfworld.a37c7a.1008501.json",
+    "Rocket_Raccoon_Nemesis.a0ea88.json"
+  ]
+}
