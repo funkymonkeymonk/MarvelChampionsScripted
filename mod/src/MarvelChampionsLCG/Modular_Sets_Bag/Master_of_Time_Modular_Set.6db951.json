@@ -1,0 +1,85 @@
+{
+  "Object": {
+    "GUID": "6db951",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 31.1959534,
+      "posY": 2.28057837,
+      "posZ": -5.778834,
+      "rotX": 2.32274044e-9,
+      "rotY": 180,
+      "rotZ": 180,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Master of Time Modular Set",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      978806,
+      978805,
+      978900,
+      978804,
+      978803,
+      978802,
+      978801,
+      978800
+    ],
+    "CustomDeck": {
+      "9788": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833525072613972133/5084F9507EC41527618169DA6DE7B766AC8E5ED9/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "9789": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833525072613975235/B4C5EEA43767A93AE000EAFD2359FB6AA5FA227F/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Ancient_Grudge.e5bf31.978806.json",
+    "Ancient_Grudge.2bb78c.978805.json",
+    "Light_of_Centuries_Sphere.e71650.978900.json",
+    "Fear_of_Kang.b5b8a3.978804.json",
+    "Fear_of_Kang.1a029f.978803.json",
+    "Time-Displaced_Soldier.05c998.978802.json",
+    "Time-Displaced_Soldier.d0992e.978801.json",
+    "Kang_Master_of_Time.e2cbfa.978800.json"
+  ]
+}

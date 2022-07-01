@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "85d1c0",
+    "Name": "Card",
+    "Transform": {
+      "posX": 28.0000114,
+      "posY": 1.54149377,
+      "posZ": -28.0000076,
+      "rotX": 0.0150343571,
+      "rotY": 179.998764,
+      "rotZ": 0.0775726438,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Evil Doppelgänger",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 979301,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "9719": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1834662762014770714/8A1B6F3A27A4C887E2D0E52C2392DAC1EC549CCF/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 4,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}
