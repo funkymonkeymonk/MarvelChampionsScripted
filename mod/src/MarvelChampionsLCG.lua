@@ -381,7 +381,7 @@ function reshuffleEncounterDeck(position, rotation)
          deck.flip()
       end
       deck.shuffle()
-      Wait.time(function() move(deck) end, 0.3)
+      Wait.time(|| move(deck), 0.3)
    else
       printToAll("Couldn't find encounter discard pile to reshuffle", {1,0,0})
    end
@@ -419,4 +419,17 @@ function isFaceup(params)
    else
       return false
    end
+end
+
+function getHeroCount()
+   local allObjects = getAllObjects()
+   local playmatCount = 0
+
+   for _, obj in pairs(allObjects) do
+      if(obj.hasTag("Playmat")) then
+         playmatCount = playmatCount + 1
+      end
+   end
+
+   return playmatCount
 end

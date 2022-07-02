@@ -1,18 +1,8 @@
 DRAWN_ENCOUNTER_OFFSET = {-1.275, 0.5, -1.533}
 DISCARD_POS            = {-17.75, 1.8, 22.25}
-DEBUG             = false
 COLLISION_ENABLED = false
 
-function log(message)
-   if DEBUG then
-      print(message)
-   end
-end
-
 function onload()
-
-  --self.setCustomObject({image=""})
-  --self.reload()
 
    self.createButton({
       label          = "1",
@@ -24,11 +14,11 @@ function onload()
       height         = 100,
       font_size      = 50,
       color          = {0,1,0},
-      tooltip        = "Take the lead!"
+      tooltip        = "Take First Player"
    })
 
    self.createButton({
-      label          = "U",
+      label          = "R",
       click_function = "untapAll",
       function_owner = self,
       position       = {1.56,0.3,-0.27},
@@ -37,7 +27,7 @@ function onload()
       height         = 100,
       font_size      = 50,
       color          = {0.3,0.6,1},
-      tooltip        = "Ready!"
+      tooltip        = "Ready All Cards"
    })
 
    self.createButton({
@@ -50,7 +40,7 @@ function onload()
       height         = 100,
       font_size      = 50,
       color          = {1,0.5,1},
-      tooltip        = "I'm hit!"
+      tooltip        = "Discard a Random Card"
    })
 
    self.createButton({
@@ -63,7 +53,7 @@ function onload()
       height         = 100,
       font_size      = 50,
       color          = {1,1,0},
-      tooltip        = "Look out!"
+      tooltip        = "Draw an Encounter Card"
    })
 
    self.createButton({
@@ -75,9 +65,11 @@ function onload()
       width          = 100,
       height         = 100,
       font_size      = 50,
-      color          = {1,0,0}
+      color          = {1,0,0},
+      tooltip        = "Discard Encounter Card"
    })
 
+   createSelfDestructButton()
 
    COLLISION_ENABLED = true
 end
@@ -89,13 +81,13 @@ function movePlayerone()
 end
 
 function untapAll()
-   untapCards = findObjectsAtPosition()
+   untapCards = findCardsAtPosition()
       for _, obj in ipairs(untapCards) do
       obj.setRotationSmooth({0,180,obj.getRotation().z})
    end
 end
 
-function findObjectsAtPosition(obj)
+function findCardsAtPosition()
    matPos = self.getPosition()
    local objList = Physics.cast({
       origin       = matPos,
@@ -105,13 +97,30 @@ function findObjectsAtPosition(obj)
       max_distance = 0,
       debug        = false,
    })
-   local tappedCards = {}
-      for _, obj in ipairs(objList) do
+   local cards = {}
+   for _, obj in ipairs(objList) do
       if obj.hit_object.tag == "Card" then
-         table.insert(tappedCards, obj.hit_object)
+         table.insert(cards, obj.hit_object)
       end
    end
-   return tappedCards
+   return cards
+end
+
+function findObjectsAtPosition()
+   matPos = self.getPosition()
+   local objList = Physics.cast({
+      origin       = matPos,
+      direction    = {0,1,0},
+      type         = 3,
+      size         = {26,1,15},
+      max_distance = 0,
+      debug        = false,
+   })
+   local objects = {}
+   for _, obj in ipairs(objList) do
+      table.insert(objects, obj.hit_object)
+   end
+   return objects
 end
 
 function drawEncounter(object, player, isRightClick)
@@ -138,7 +147,6 @@ function discardEncounter(object, player_color, isRightClick)
    end
 end
 
-
 function discardRandom(object, player)
    numCardsToDiscard = 1
    if player == "Red" then
@@ -158,4 +166,73 @@ function discardRandom(object, player)
     rand = math.random(count)
     Player[player].getHandObjects()[rand].setPosition(pos)
    end
+end
+
+function createSelfDestructButton()
+   removeButtonByLabel("CANCEL")
+   removeButtonByLabel("CONFIRM")
+
+   self.createButton({
+      label          = "REMOVE",
+      click_function = "createConfirmAndCancelButtons",
+      function_owner = self,
+      position       = {1.3,0.1,1.05},
+      rotation       = {0,0,0},
+      width          = 150,
+      height         = 50,
+      font_size      = 30,
+      font_color     = {1,0,0},
+      color          = {0,0,0},
+      tooltip        = "Clear Playmat"
+   })
+end
+
+function createConfirmAndCancelButtons()
+   removeButtonByLabel("REMOVE")
+
+   self.createButton({
+      label          = "CANCEL",
+      click_function = "createSelfDestructButton",
+      function_owner = self,
+      position       = {1.3,0.1,1.05},
+      rotation       = {0,0,0},
+      width          = 150,
+      height         = 50,
+      font_size      = 30,
+      font_color     = {0,0,0},
+      color          = {0,1,0}
+   })
+
+   self.createButton({
+      label          = "CONFIRM",
+      click_function = "clearPlaymat",
+      function_owner = self,
+      position       = {1.6,0.1,1.05},
+      rotation       = {0,0,0},
+      width          = 150,
+      height         = 50,
+      font_size      = 30,
+      font_color     = {0,0,0},
+      color          = {1,0,0}
+   })
+
+end
+
+function removeButtonByLabel(buttonLabel)
+   for k, button in ipairs(self.getButtons()) do
+      if(button.label == buttonLabel) then
+          self.removeButton(button.index)
+      end
+  end
+end
+
+function clearPlaymat()
+   local objects = findObjectsAtPosition()
+
+   for _, obj in ipairs(objects) do
+      if(obj.tag ~= "Surface") then
+         obj.destruct()
+      end
+   end
+   self.destruct()
 end
