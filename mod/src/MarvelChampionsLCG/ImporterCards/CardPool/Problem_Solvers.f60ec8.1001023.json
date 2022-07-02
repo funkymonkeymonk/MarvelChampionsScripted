@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "0bac3f",
+    "GUID": "f60ec8",
     "Name": "Card",
     "Transform": {
-      "posX": -20.7499828,
-      "posY": 0.973660767,
-      "posZ": 10.2500248,
-      "rotX": -0.000366290275,
-      "rotY": 179.999466,
-      "rotZ": 0.00361889927,
+      "posX": -20.91911,
+      "posY": 2.36526752,
+      "posZ": 3.23467159,
+      "rotX": 0.07103733,
+      "rotY": 179.9994,
+      "rotZ": 359.936462,
       "scaleX": 1.27,
       "scaleY": 1,
       "scaleZ": 1.27
     },
-    "Nickname": "Leadership Training",
+    "Nickname": "Problem Solvers",
     "Description": "Scanned and imported by Unicorn",
     "GMNotes": "",
     "ColorDiffuse": {
@@ -35,7 +35,7 @@
     "GridProjection": false,
     "HideWhenFaceDown": true,
     "Hands": true,
-    "CardID": 971124,
+    "CardID": 1001023,
     "SidewaysCard": false,
     "CustomDeck": {
       "9711": {

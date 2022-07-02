@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "09efea",
-    "Name": "CardCustom",
+    "GUID": "31d6d3",
+    "Name": "Card",
     "Transform": {
-      "posX": -22.25,
-      "posY": 0.9736049,
-      "posZ": 6.25,
-      "rotX": 2.61942237e-8,
-      "rotY": 180,
-      "rotZ": -2.57811251e-7,
-      "scaleX": 1.64563763,
+      "posX": 24,
+      "posY": 1.73247135,
+      "posZ": -54,
+      "rotX": 0.0168685485,
+      "rotY": 179.990128,
+      "rotZ": 355.1014,
+      "scaleX": 1.27,
       "scaleY": 1,
-      "scaleZ": 1.64563763
+      "scaleZ": 1.27
     },
-    "Nickname": "Ironheart",
+    "Nickname": "Annabelle Riggs",
     "Description": "Scanned and imported by Unicorn",
     "GMNotes": "",
     "ColorDiffuse": {
@@ -34,16 +34,16 @@
     "Tooltip": true,
     "GridProjection": false,
     "HideWhenFaceDown": true,
-    "Hands": false,
-    "CardID": 600,
+    "Hands": true,
+    "CardID": 1001001,
     "SidewaysCard": false,
     "CustomDeck": {
-      "6": {
-        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1831288304598176194/2DB0A414A0394BDE6C11C8B183D7F07D9647B244/",
-        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1831288304598176368/288A38CA7DCF2AAB39F4BBA4DA3913F4F5E876BB/",
-        "NumWidth": 1,
-        "NumHeight": 1,
-        "BackIsHidden": true,
+      "9711": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1823396325164167556/30D4B51AE48706BEFB7465F7B51CF66F980B56E9/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 10,
+        "NumHeight": 3,
+        "BackIsHidden": false,
         "UniqueBack": false,
         "Type": 0
       }

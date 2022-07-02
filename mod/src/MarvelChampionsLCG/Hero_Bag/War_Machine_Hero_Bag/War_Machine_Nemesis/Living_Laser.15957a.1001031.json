@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "0d7da9",
+    "GUID": "15957a",
     "Name": "Card",
     "Transform": {
-      "posX": -47.99999,
-      "posY": 1.65043819,
-      "posZ": 60.0000038,
-      "rotX": 0.0135103781,
-      "rotY": 180.000046,
-      "rotZ": 180.064,
+      "posX": -47.9999,
+      "posY": 1.60689759,
+      "posZ": 59.9999771,
+      "rotX": 0.0135179814,
+      "rotY": 180.000122,
+      "rotZ": 180.064056,
       "scaleX": 1.90718782,
       "scaleY": 1,
       "scaleZ": 1.90718782
     },
-    "Nickname": "Laser Strike",
+    "Nickname": "Living Laser",
     "Description": "Scanned by Unicorn\nImported by Hitch",
     "GMNotes": "",
     "ColorDiffuse": {
@@ -35,7 +35,7 @@
     "GridProjection": false,
     "HideWhenFaceDown": true,
     "Hands": true,
-    "CardID": 332,
+    "CardID": 1001031,
     "SidewaysCard": false,
     "CustomDeck": {
       "3": {

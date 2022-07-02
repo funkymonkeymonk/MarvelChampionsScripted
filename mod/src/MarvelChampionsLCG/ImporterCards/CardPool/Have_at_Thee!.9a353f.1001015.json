@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "ac0c02",
+    "GUID": "9a353f",
     "Name": "Card",
     "Transform": {
-      "posX": -29.25,
-      "posY": 1.09643877,
-      "posZ": 5.750007,
-      "rotX": -0.00472835544,
-      "rotY": 180.012192,
-      "rotZ": 0.0025108736,
+      "posX": 44.2498,
+      "posY": 3.071929,
+      "posZ": 18.749712,
+      "rotX": 0.00865761749,
+      "rotY": 179.998383,
+      "rotZ": 179.989761,
       "scaleX": 1.27,
       "scaleY": 1,
       "scaleZ": 1.27
     },
-    "Nickname": "Godlike Stamina",
+    "Nickname": "Have at Thee!",
     "Description": "Scanned and imported by Unicorn",
     "GMNotes": "",
     "ColorDiffuse": {
@@ -35,7 +35,7 @@
     "GridProjection": false,
     "HideWhenFaceDown": true,
     "Hands": true,
-    "CardID": 971122,
+    "CardID": 1001015,
     "SidewaysCard": false,
     "CustomDeck": {
       "9711": {

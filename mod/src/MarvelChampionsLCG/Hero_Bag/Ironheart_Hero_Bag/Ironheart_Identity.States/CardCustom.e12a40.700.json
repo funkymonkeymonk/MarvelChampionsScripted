@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "a6c9e7",
-    "Name": "Card",
+    "GUID": "e12a40",
+    "Name": "CardCustom",
     "Transform": {
-      "posX": 82.25,
-      "posY": 0.138485059,
-      "posZ": 99.75,
-      "rotX": 1.90649274e-8,
+      "posX": 26.25,
+      "posY": 0.9736049,
+      "posZ": 12.25,
+      "rotX": -9.46833e-8,
       "rotY": 180,
       "rotZ": 180,
-      "scaleX": 0.9502119,
+      "scaleX": 1.64563763,
       "scaleY": 1,
-      "scaleZ": 0.9502119
+      "scaleZ": 1.64563763
     },
-    "Nickname": "War Machine Identity",
+    "Nickname": "",
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
@@ -33,18 +33,18 @@
     "Sticky": true,
     "Tooltip": true,
     "GridProjection": false,
-    "HideWhenFaceDown": false,
-    "Hands": true,
-    "CardID": 970428,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "CardID": 700,
     "SidewaysCard": false,
     "CustomDeck": {
-      "9704": {
-        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1861671908637682543/A4E5DD1CC12EE12C678B47998FAB16690A326F82/",
-        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1861671908637689251/DAA4DB980CAD2A561773AF4688ADE0FDD2134A76/",
-        "NumWidth": 6,
-        "NumHeight": 5,
+      "7": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1831288304598176636/7C4C658C3EDEDA7C2F579682DD04EA46ECD50EEA/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1831288304598176829/3429F46E6E9EA5EFD117E0E317E1EFFE471D2433/",
+        "NumWidth": 1,
+        "NumHeight": 1,
         "BackIsHidden": true,
-        "UniqueBack": true,
+        "UniqueBack": false,
         "Type": 0
       }
     },

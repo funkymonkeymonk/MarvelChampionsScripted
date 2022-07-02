@@ -3,12 +3,12 @@
     "GUID": "84aae1",
     "Name": "Bag",
     "Transform": {
-      "posX": 84.14556,
-      "posY": 0.300263226,
+      "posX": 84.15184,
+      "posY": 0.300802231,
       "posZ": 99.75,
-      "rotX": -0.000117390715,
+      "rotX": -0.0000414072638,
       "rotY": 179.986771,
-      "rotZ": 0.000027467715,
+      "rotZ": 0.00000658150657,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -50,6 +50,6 @@
     "War_Machine_Identity.a6c9e7.970428.json",
     "Ammo.0cd24c.json",
     "War_Machine_Nemesis.17b4ea.json",
-    "Equipment_Malfunction.523ae0.330.json"
+    "Equipment_Malfunction.523ae0.1001130.json"
   ]
 }

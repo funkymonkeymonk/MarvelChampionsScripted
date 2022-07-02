@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "53ebc0",
+    "GUID": "021336",
     "Name": "Card",
     "Transform": {
-      "posX": 24,
-      "posY": 1.62941468,
-      "posZ": -54,
-      "rotX": 0.01689098,
-      "rotY": 179.991379,
-      "rotZ": 357.0418,
+      "posX": 24.0000153,
+      "posY": 1.5201664,
+      "posZ": -54.0000153,
+      "rotX": 0.0193268117,
+      "rotY": 179.9994,
+      "rotZ": 0.07889877,
       "scaleX": 1.27,
       "scaleY": 1,
       "scaleZ": 1.27
     },
-    "Nickname": "Visit Valhalla",
+    "Nickname": "Shieldmaiden",
     "Description": "Scanned and imported by Unicorn",
     "GMNotes": "",
     "ColorDiffuse": {
@@ -35,7 +35,7 @@
     "GridProjection": false,
     "HideWhenFaceDown": true,
     "Hands": true,
-    "CardID": 971108,
+    "CardID": 1001012,
     "SidewaysCard": false,
     "CustomDeck": {
       "9711": {

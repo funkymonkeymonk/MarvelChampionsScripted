@@ -1,7 +1,7 @@
 local publicDeckURL="https://marvelcdb.com/api/public/decklist/"
 local privateDeckURL="https://marvelcdb.com/api/public/deck/"
 local cardURL="https://marvelcdb.com/api/public/card/"
-local subnameCards={{name="Hawkeye"},{name="Spider-Man"},{name="Ant-Man"},{name="Wasp"},{name="Falcon"}}
+local subnameCards={{name="Hawkeye"},{name="Spider-Man"},{name="Ant-Man"},{name="Wasp"},{name="Falcon"},{name="Venom"}}
 local multiAspectCards={{name="Mockingbird"},{name="War Machine"},{name="Gamora"},{name="Iron Man"},{name="Captain Marvel"}, {name="Spider-Man"}, {name="Agent 13"}, {name="Wasp"}}
 local excludeList={
   {cardId="21002"}, --Spectrum, Gamma

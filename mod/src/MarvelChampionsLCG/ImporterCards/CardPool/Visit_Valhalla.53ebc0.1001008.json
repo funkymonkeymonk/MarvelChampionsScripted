@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "dc28a5",
+    "GUID": "53ebc0",
     "Name": "Card",
     "Transform": {
-      "posX": -18.75,
-      "posY": 1.03886449,
-      "posZ": 9.75,
-      "rotX": 0.000109802633,
-      "rotY": 180.008392,
-      "rotZ": -0.00001817815,
+      "posX": 24,
+      "posY": 1.62941468,
+      "posZ": -54,
+      "rotX": 0.01689098,
+      "rotY": 179.991379,
+      "rotZ": 357.0418,
       "scaleX": 1.27,
       "scaleY": 1,
       "scaleZ": 1.27
     },
-    "Nickname": "Smash the Problem",
+    "Nickname": "Visit Valhalla",
     "Description": "Scanned and imported by Unicorn",
     "GMNotes": "",
     "ColorDiffuse": {
@@ -35,7 +35,7 @@
     "GridProjection": false,
     "HideWhenFaceDown": true,
     "Hands": true,
-    "CardID": 971119,
+    "CardID": 1001008,
     "SidewaysCard": false,
     "CustomDeck": {
       "9711": {
