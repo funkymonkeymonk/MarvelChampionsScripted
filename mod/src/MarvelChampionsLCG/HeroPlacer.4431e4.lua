@@ -17,10 +17,8 @@ function placeHeroWithHeroDeck(params)
 end
 
 function placeHero(heroBagGuid, playerColor, deckType)
-  if(playerColor ~= "Red" and playerColor ~= "Blue" and playerColor ~= "Green" and playerColor ~= "Yellow") then
-    broadcastToAll("Take a seat, hero! (Red, Blue, Green, or Yellow.)", {1,1,1})
-    return
-  end
+  if not confirmPlayerIsSeated(playerColor) then return end
+  if not confirmSeatIsAvailable(playerColor) then return end
 
   local heroesBag = getObjectFromGUID("22b26a")
   local heroBag = heroesBag.takeObject({guid=heroBagGuid})
@@ -70,6 +68,25 @@ function placeHero(heroBagGuid, playerColor, deckType)
     1)
 end
 
+function confirmPlayerIsSeated(playerColor)
+  if(playerColor ~= "Red" and playerColor ~= "Blue" and playerColor ~= "Green" and playerColor ~= "Yellow") then
+    broadcastToAll("Take a seat, hero! (Red, Blue, Green, or Yellow.)", {1,1,1})
+    return false
+  end
+  return true
+end
+
+function confirmSeatIsAvailable(playerColor)
+  local objects = getAllObjects()
+  for _, object in pairs(objects) do
+    if(object.hasTag("Playmat") and object.hasTag(playerColor)) then
+      broadcastToAll("There is already a hero at this seat.", {1,1,1})
+      return false
+    end
+  end
+  return true
+end
+
 function getPlaymatPosition(playerColor)
   if(playerColor == 'Red') then
     return {-41.19, 1.04, -17.12}
@@ -98,6 +115,8 @@ function placePlaymat(playerColor, playmatPosition, imageUrl)
   playmatCopy.setDescription("")
   playmatCopy.setLock(true)
   playmatCopy.setPosition(playmatPosition)
+  playmatCopy.addTag("Playmat")
+  playmatCopy.addTag(playerColor)
   playmatCopy.setCustomObject({image=imageUrl})
   playmatCopy.reload()
 end

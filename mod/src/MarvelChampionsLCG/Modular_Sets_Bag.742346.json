@@ -4,11 +4,11 @@
     "Name": "Bag",
     "Transform": {
       "posX": 85.75,
-      "posY": 0.309966981,
+      "posY": 0.30992502,
       "posZ": 100.25,
-      "rotX": -2.06773265e-7,
-      "rotY": 0.000007363797,
-      "rotZ": -2.317862e-7,
+      "rotX": 1.88430519e-7,
+      "rotY": 0.000008544406,
+      "rotZ": -2.651367e-7,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -49,7 +49,6 @@
   "ContainedObjectPaths": [
     "Experimental_Weapons_Modular_Set.e020c4.json",
     "A_Mess_of_Things_Modular_Set.c0d33c.json",
-    "Anachronauts_Modular_Set.57b74d.json",
     "Armadillo_Modular_Set.99c64f.json",
     "Armies_of_Titan_Modular_Set.807bf4.json",
     "Band_of_Badoon_Modular_Set.993f31.json",
@@ -98,6 +97,7 @@
     "Under_Attack_Modular_Set.b4f1f6.json",
     "Weapon_Master_Modular_Set.596d85.json",
     "Whispers_of_Paranoia_Modular_Set.b700ef.json",
-    "Wrecking_Crew_Modular_Set.aa8cb2.json"
+    "Wrecking_Crew_Modular_Set.aa8cb2.json",
+    "Anachronauts_Modular_Set.57b74d.json"
   ]
 }
