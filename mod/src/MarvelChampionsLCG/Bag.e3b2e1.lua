@@ -559,36 +559,40 @@ end
 
 --Creates recall and place buttons
 function createPlayers()
+    local originPosition = {x=-115, y=1.5, z=125}
+    local buttonPosition = originPosition
     self.createButton({
           label="1-Player", click_function="buttonClick_place1", function_owner=self,
-          position={-103.5,1.5,115}, rotation={0,0,0}, height=2000, width=8000,
+          position=buttonPosition, rotation={0,0,0}, height=2000, width=8000,
           font_size=4000, color={1,1,1}, font_color={0,0,0}
       })
+    
+    buttonPosition.z = buttonPosition.z + 5
     self.createButton({
           label="2-Player", click_function="buttonClick_place2", function_owner=self,
-          position={-103.5,1.5,120}, rotation={0,0,0}, height=2000, width=8000,
+          position=buttonPosition, rotation={0,0,0}, height=2000, width=8000,
           font_size=4000, color={1,1,1}, font_color={0,0,0}
       })
+
+      buttonPosition.z = buttonPosition.z + 5
       self.createButton({
           label="3-Player", click_function="buttonClick_place3", function_owner=self,
-          position={-103.5,1.5,125}, rotation={0,0,0}, height=2000, width=8000,
+          position=buttonPosition, rotation={0,0,0}, height=2000, width=8000,
           font_size=4000, color={1,1,1}, font_color={0,0,0}
       })
+
+      buttonPosition.z = buttonPosition.z + 5
       self.createButton({
           label="4-Player", click_function="buttonClick_place4", function_owner=self,
-          position={-103.5,1.5,130}, rotation={0,0,0}, height=2000, width=8000,
+          position=buttonPosition, rotation={0,0,0}, height=2000, width=8000,
           font_size=4000, color={1,1,1}, font_color={0,0,0}
       })
-    --    self.createButton({
-    --        label="Setup", click_function="buttonClick_setup", function_owner=self,
-    --        position={2,0.3,0}, rotation={0,90,0}, height=350, width=800,
-    --        font_size=250, color={0,0,0}, font_color={1,1,1}
-    --    })
 end
 
 --Sends objects from bag/table to their saved position/rotation
 function buttonClick_place1()
     local bagObjList = self.getObjects()
+
     for guid, entry in pairs(memoryList) do
         local obj = getObjectFromGUID(guid)
         self.clearButtons()
@@ -610,7 +614,7 @@ function buttonClick_place1()
             end
         end
     end
-    broadcastToAll("Select Heroes -> Villains -> Modulars", {1,1,1})
+    broadcastToAll("Select Heroes -> Villain -> Difficulty -> Modular Set(s)", {1,1,1})
 end
 
 function buttonClick_place2()
@@ -636,7 +640,7 @@ function buttonClick_place2()
             end
         end
     end
-    broadcastToAll("Select Heroes -> Villains -> Modulars", {1,1,1})
+    broadcastToAll("Select Heroes -> Villain -> Difficulty -> Modular Set(s)", {1,1,1})
 end
 
 function buttonClick_place3()
@@ -662,7 +666,7 @@ function buttonClick_place3()
             end
         end
     end
-    broadcastToAll("Select Heroes -> Villains -> Modulars", {1,1,1})
+    broadcastToAll("Select Heroes -> Villain -> Difficulty -> Modular Set(s)", {1,1,1})
 end
 
 function buttonClick_place4()
@@ -688,37 +692,37 @@ function buttonClick_place4()
             end
         end
     end
-    broadcastToAll("Select Heroes -> Villains -> Modulars", {1,1,1})
+    broadcastToAll("Select Heroes -> Villain -> Difficulty -> Modular Set(s)", {1,1,1})
 end
 
 --Utility functions
 
 function createBoostButton()
-  self.createButton({
-    label = "BOOST",
-    click_function = "drawBoost",
-    function_owner = self,
-    position = {-0.6,-1.13,-191},
-    rotation = {0,0,0},
-    width = 3400,
-    height = 1500,
-    font_size = 1700,
-    color = {1,1,0}
-  })
-
-  self.createButton({
-    label = "X",
-    click_function = "discardBoost",
-    function_owner = self,
-    position = {4.2,-1.13,-191},
-    rotation = {0,0,0},
-    width = 1000,
-    height = 1500,
-    font_size = 1700,
-    color = {1,0,0}
-  })
-
-  COLLISION_ENABLED = true
+    self.createButton({
+      label = "BOOST",
+      click_function = "drawBoost",
+      function_owner = self,
+      position = {-114.4,1.13,108.6},
+      rotation = {0,0,0},
+      width = 3400,
+      height = 1500,
+      font_size = 1700,
+      color = {1,1,0}
+    })
+  
+    self.createButton({
+      label = "X",
+      click_function = "discardBoost",
+      function_owner = self,
+      position = {-109.6,1.13,108.6},
+      rotation = {0,0,0},
+      width = 1000,
+      height = 1500,
+      font_size = 1700,
+      color = {1,0,0}
+    })
+  
+    COLLISION_ENABLED = true
 end
 
 function drawBoost(object, player, isRightClick)

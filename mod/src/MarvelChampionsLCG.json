@@ -1,8 +1,8 @@
 {
   "Save": {
     "SaveName": "MarvelChampionsLCG",
-    "EpochTime": 1656791443,
-    "Date": "7/2/2022 1:50:43 PM",
+    "EpochTime": 1656806005,
+    "Date": "7/2/2022 5:53:25 PM",
     "VersionNumber": "v13.1.1",
     "GameMode": "MarvelChampionsLCG",
     "GameType": "Game",
@@ -235,6 +235,14 @@
         {
           "displayed": "modular-set-selector-tile",
           "normalized": "modular-set-selector-tile"
+        },
+        {
+          "displayed": "Playmat",
+          "normalized": "playmat"
+        },
+        {
+          "displayed": "Blue",
+          "normalized": "blue"
         }
       ]
     },
@@ -557,8 +565,6 @@
     "Leadership.c7b161.json",
     "Protection.ab879f.json",
     "Basic.b76a39.json",
-    "Custom_Token.57ec93.json",
-    "Custom_Token.5dcfd5.json",
     "Custom_Token.61e7e8.json",
     "Custom_Token.71e09c.json",
     "Custom_Token.cab71a.json",

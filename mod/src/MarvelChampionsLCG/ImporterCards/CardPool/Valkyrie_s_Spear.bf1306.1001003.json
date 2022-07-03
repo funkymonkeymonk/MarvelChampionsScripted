@@ -1,20 +1,20 @@
 {
   "Object": {
-    "GUID": "5cebc1",
+    "GUID": "bf1306",
     "Name": "Card",
     "Transform": {
-      "posX": 49.9534149,
-      "posY": 2.22970748,
-      "posZ": 21.5634117,
-      "rotX": 0,
-      "rotY": 179.956039,
-      "rotZ": 0,
+      "posX": 24,
+      "posY": 1.703305,
+      "posZ": -54,
+      "rotX": 0.0168722942,
+      "rotY": 179.994064,
+      "rotZ": 355.646179,
       "scaleX": 1.27,
       "scaleY": 1,
       "scaleZ": 1.27
     },
-    "Nickname": "Thor",
-    "Description": "Odinson",
+    "Nickname": "Valkyrie's Spear",
+    "Description": "Scanned and imported by Unicorn",
     "GMNotes": "",
     "ColorDiffuse": {
       "r": 0.713235259,
@@ -35,7 +35,7 @@
     "GridProjection": false,
     "HideWhenFaceDown": true,
     "Hands": true,
-    "CardID": 971116,
+    "CardID": 1001003,
     "SidewaysCard": false,
     "CustomDeck": {
       "9711": {

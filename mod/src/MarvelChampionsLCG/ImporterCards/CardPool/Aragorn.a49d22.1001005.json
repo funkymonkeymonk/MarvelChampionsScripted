@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "72af9a",
+    "GUID": "a49d22",
     "Name": "Card",
     "Transform": {
-      "posX": -29.7500038,
-      "posY": 1.10620391,
-      "posZ": 5.24999666,
-      "rotX": 0.002268588,
-      "rotY": 180.012177,
-      "rotZ": -0.00103747344,
+      "posX": 24,
+      "posY": 1.67398334,
+      "posZ": -54,
+      "rotX": 0.016876353,
+      "rotY": 179.993225,
+      "rotZ": 356.1943,
       "scaleX": 1.27,
       "scaleY": 1,
       "scaleZ": 1.27
     },
-    "Nickname": "Cosmic Alliance",
+    "Nickname": "Aragorn",
     "Description": "Scanned and imported by Unicorn",
     "GMNotes": "",
     "ColorDiffuse": {
@@ -35,7 +35,7 @@
     "GridProjection": false,
     "HideWhenFaceDown": true,
     "Hands": true,
-    "CardID": 971126,
+    "CardID": 1001005,
     "SidewaysCard": false,
     "CustomDeck": {
       "9711": {

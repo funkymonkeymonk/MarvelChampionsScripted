@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "31d6d3",
+    "GUID": "ac0c02",
     "Name": "Card",
     "Transform": {
-      "posX": 24,
-      "posY": 1.73247135,
-      "posZ": -54,
-      "rotX": 0.0168685485,
-      "rotY": 179.990128,
-      "rotZ": 355.1014,
+      "posX": -29.25,
+      "posY": 1.09643877,
+      "posZ": 5.750007,
+      "rotX": -0.00472835544,
+      "rotY": 180.012192,
+      "rotZ": 0.0025108736,
       "scaleX": 1.27,
       "scaleY": 1,
       "scaleZ": 1.27
     },
-    "Nickname": "Annabelle Riggs",
+    "Nickname": "Godlike Stamina",
     "Description": "Scanned and imported by Unicorn",
     "GMNotes": "",
     "ColorDiffuse": {
@@ -35,7 +35,7 @@
     "GridProjection": false,
     "HideWhenFaceDown": true,
     "Hands": true,
-    "CardID": 971101,
+    "CardID": 1001022,
     "SidewaysCard": false,
     "CustomDeck": {
       "9711": {

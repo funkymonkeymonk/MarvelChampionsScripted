@@ -3,18 +3,18 @@
     "GUID": "92874c",
     "Name": "Card",
     "Transform": {
-      "posX": -23.2500057,
-      "posY": 1.135058,
-      "posZ": 9.75,
-      "rotX": -0.00102064491,
-      "rotY": 179.9918,
-      "rotZ": -0.00124587456,
+      "posX": 68.75,
+      "posY": 2.60581422,
+      "posZ": 73.75,
+      "rotX": 8.64713854e-7,
+      "rotY": 180,
+      "rotZ": 180,
       "scaleX": 1.27,
       "scaleY": 1,
       "scaleZ": 1.27
     },
     "Nickname": "Venom",
-    "Description": "Scanned and imported by Unicorn",
+    "Description": "Eddie Brock",
     "GMNotes": "",
     "ColorDiffuse": {
       "r": 0.713235259,
@@ -38,7 +38,7 @@
     "CardID": 998522,
     "SidewaysCard": false,
     "CustomDeck": {
-      "4": {
+      "9985": {
         "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1834662762014577143/A4955B202AF9C867AAF79FA26043DA83909FAC26/",
         "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
         "NumWidth": 10,

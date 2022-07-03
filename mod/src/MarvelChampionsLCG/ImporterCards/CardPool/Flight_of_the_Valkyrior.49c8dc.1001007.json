@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "f79702",
+    "GUID": "49c8dc",
     "Name": "Card",
     "Transform": {
-      "posX": 60.61926,
-      "posY": 1.98473978,
-      "posZ": 17.85522,
-      "rotX": -1.10675188e-7,
-      "rotY": 179.99144,
-      "rotZ": 180,
+      "posX": 24,
+      "posY": 1.64454961,
+      "posZ": -54,
+      "rotX": 0.0168870948,
+      "rotY": 179.994629,
+      "rotZ": 356.7483,
       "scaleX": 1.27,
       "scaleY": 1,
       "scaleZ": 1.27
     },
-    "Nickname": "Death-Glow",
+    "Nickname": "Flight of the Valkyrior",
     "Description": "Scanned and imported by Unicorn",
     "GMNotes": "",
     "ColorDiffuse": {
@@ -35,7 +35,7 @@
     "GridProjection": false,
     "HideWhenFaceDown": true,
     "Hands": true,
-    "CardID": 971100,
+    "CardID": 1001007,
     "SidewaysCard": false,
     "CustomDeck": {
       "9711": {

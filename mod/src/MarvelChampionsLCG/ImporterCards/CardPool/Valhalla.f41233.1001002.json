@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "e1c8b1",
+    "GUID": "f41233",
     "Name": "Card",
     "Transform": {
-      "posX": 44.7497559,
-      "posY": 3.07210064,
-      "posZ": 19.2497463,
-      "rotX": 0.008970607,
-      "rotY": 179.999847,
-      "rotZ": 179.990173,
+      "posX": 24,
+      "posY": 1.7179184,
+      "posZ": -54,
+      "rotX": 0.0168789569,
+      "rotY": 179.9927,
+      "rotZ": 355.373962,
       "scaleX": 1.27,
       "scaleY": 1,
       "scaleZ": 1.27
     },
-    "Nickname": "The Best Defense…",
+    "Nickname": "Valhalla",
     "Description": "Scanned and imported by Unicorn",
     "GMNotes": "",
     "ColorDiffuse": {
@@ -35,7 +35,7 @@
     "GridProjection": false,
     "HideWhenFaceDown": true,
     "Hands": true,
-    "CardID": 971120,
+    "CardID": 1001002,
     "SidewaysCard": false,
     "CustomDeck": {
       "9711": {

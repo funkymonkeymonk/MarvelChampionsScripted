@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "49c8dc",
+    "GUID": "69ca8b",
     "Name": "Card",
     "Transform": {
-      "posX": 24,
-      "posY": 1.64454961,
-      "posZ": -54,
-      "rotX": 0.0168870948,
-      "rotY": 179.994629,
-      "rotZ": 356.7483,
+      "posX": -18.7501278,
+      "posY": 1.05472708,
+      "posZ": 9.749938,
+      "rotX": 0.14715904,
+      "rotY": 180.0072,
+      "rotZ": 359.729584,
       "scaleX": 1.27,
       "scaleY": 1,
       "scaleZ": 1.27
     },
-    "Nickname": "Flight of the Valkyrior",
+    "Nickname": "Throg",
     "Description": "Scanned and imported by Unicorn",
     "GMNotes": "",
     "ColorDiffuse": {
@@ -35,7 +35,7 @@
     "GridProjection": false,
     "HideWhenFaceDown": true,
     "Hands": true,
-    "CardID": 971107,
+    "CardID": 1001017,
     "SidewaysCard": false,
     "CustomDeck": {
       "9711": {

@@ -1,20 +1,20 @@
 {
   "Object": {
-    "GUID": "e12a40",
+    "GUID": "09efea",
     "Name": "CardCustom",
     "Transform": {
-      "posX": -22.25,
+      "posX": 26.25,
       "posY": 0.9736049,
-      "posZ": 6.25,
-      "rotX": -1.40701646e-8,
+      "posZ": 12.25,
+      "rotX": 1.56849591e-8,
       "rotY": 180,
-      "rotZ": -1.86261644e-7,
+      "rotZ": 180,
       "scaleX": 1.64563763,
       "scaleY": 1,
       "scaleZ": 1.64563763
     },
-    "Nickname": "Ironheart",
-    "Description": "Scanned and imported by Unicorn",
+    "Nickname": "",
+    "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
       "r": 0.713235259,
@@ -35,12 +35,12 @@
     "GridProjection": false,
     "HideWhenFaceDown": true,
     "Hands": false,
-    "CardID": 700,
+    "CardID": 600,
     "SidewaysCard": false,
     "CustomDeck": {
-      "7": {
-        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1831288304598176636/7C4C658C3EDEDA7C2F579682DD04EA46ECD50EEA/",
-        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1831288304598176829/3429F46E6E9EA5EFD117E0E317E1EFFE471D2433/",
+      "6": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1831288304598176194/2DB0A414A0394BDE6C11C8B183D7F07D9647B244/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1831288304598176368/288A38CA7DCF2AAB39F4BBA4DA3913F4F5E876BB/",
         "NumWidth": 1,
         "NumHeight": 1,
         "BackIsHidden": true,

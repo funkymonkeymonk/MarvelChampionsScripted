@@ -30,8 +30,44 @@ end
 
 function giantForm()
  self.setState(3)
+ setGiantPlaymatImage()
 end
 
 function tinyForm()
  self.setState(1)
+ setTinyPlaymatImage()
+end
+
+function setGiantPlaymatImage()
+   local playmat = findPlaymatAtLocation()
+   if(playmat == nil) then return end
+   playmat.setCustomObject({image="http://cloud-3.steamusercontent.com/ugc/1861691360008104730/B3D1957D7E9DEC6AD24E02A356ECB5D17FB07505/"})
+   playmat.reload()
+end
+
+function setTinyPlaymatImage()
+   local playmat = findPlaymatAtLocation()
+   if(playmat == nil) then return end
+   playmat.setCustomObject({image="http://cloud-3.steamusercontent.com/ugc/1861691360008104803/C12E71E7CB737BADA41097F594BA71181CBB1E67/"})
+   playmat.reload()
+end
+
+function findPlaymatAtLocation()
+   cardPos = self.getPosition()
+   local objList = Physics.cast({
+      origin       = cardPos,
+      direction    = {0,1,0},
+      type         = 3,
+      size         = {26,1,15},
+      max_distance = 0,
+      debug        = false,
+   })
+
+   for _, obj in ipairs(objList) do
+      if(obj.hit_object.hasTag("Playmat")) then
+         return obj.hit_object
+      end
+   end
+
+   return nil
 end

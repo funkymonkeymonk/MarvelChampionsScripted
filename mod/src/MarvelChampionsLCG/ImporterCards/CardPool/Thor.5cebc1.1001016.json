@@ -1,20 +1,20 @@
 {
   "Object": {
-    "GUID": "9a353f",
+    "GUID": "5cebc1",
     "Name": "Card",
     "Transform": {
-      "posX": 44.2498,
-      "posY": 3.071929,
-      "posZ": 18.749712,
-      "rotX": 0.00865761749,
-      "rotY": 179.998383,
-      "rotZ": 179.989761,
+      "posX": 49.9534149,
+      "posY": 2.22970748,
+      "posZ": 21.5634117,
+      "rotX": 0,
+      "rotY": 179.956039,
+      "rotZ": 0,
       "scaleX": 1.27,
       "scaleY": 1,
       "scaleZ": 1.27
     },
-    "Nickname": "Have at Thee!",
-    "Description": "Scanned and imported by Unicorn",
+    "Nickname": "Thor",
+    "Description": "Odinson",
     "GMNotes": "",
     "ColorDiffuse": {
       "r": 0.713235259,
@@ -35,7 +35,7 @@
     "GridProjection": false,
     "HideWhenFaceDown": true,
     "Hands": true,
-    "CardID": 971115,
+    "CardID": 1001016,
     "SidewaysCard": false,
     "CustomDeck": {
       "9711": {

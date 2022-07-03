@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "021336",
+    "GUID": "ea66d2",
     "Name": "Card",
     "Transform": {
-      "posX": 24.0000153,
-      "posY": 1.5201664,
-      "posZ": -54.0000153,
-      "rotX": 0.0193268117,
-      "rotY": 179.9994,
-      "rotZ": 0.07889877,
+      "posX": 24,
+      "posY": 1.615249,
+      "posZ": -54,
+      "rotX": 0.0168655235,
+      "rotY": 179.984573,
+      "rotZ": 357.294983,
       "scaleX": 1.27,
       "scaleY": 1,
       "scaleZ": 1.27
     },
-    "Nickname": "Shieldmaiden",
+    "Nickname": "Chooser of the Slain",
     "Description": "Scanned and imported by Unicorn",
     "GMNotes": "",
     "ColorDiffuse": {
@@ -35,7 +35,7 @@
     "GridProjection": false,
     "HideWhenFaceDown": true,
     "Hands": true,
-    "CardID": 971112,
+    "CardID": 1001009,
     "SidewaysCard": false,
     "CustomDeck": {
       "9711": {

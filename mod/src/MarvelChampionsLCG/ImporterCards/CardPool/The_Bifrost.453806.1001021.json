@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "052a38",
+    "GUID": "453806",
     "Name": "Card",
     "Transform": {
-      "posX": 24,
-      "posY": 1.68857026,
-      "posZ": -54,
-      "rotX": 0.0168782957,
-      "rotY": 179.9921,
-      "rotZ": 355.923,
+      "posX": -29.2500038,
+      "posY": 1.048433,
+      "posZ": 4.74999762,
+      "rotX": 0.00118938019,
+      "rotY": 179.99,
+      "rotZ": -0.00289733452,
       "scaleX": 1.27,
       "scaleY": 1,
       "scaleZ": 1.27
     },
-    "Nickname": "Dragonfang",
+    "Nickname": "The Bifrost",
     "Description": "Scanned and imported by Unicorn",
     "GMNotes": "",
     "ColorDiffuse": {
@@ -35,7 +35,7 @@
     "GridProjection": false,
     "HideWhenFaceDown": true,
     "Hands": true,
-    "CardID": 971104,
+    "CardID": 1001021,
     "SidewaysCard": false,
     "CustomDeck": {
       "9711": {

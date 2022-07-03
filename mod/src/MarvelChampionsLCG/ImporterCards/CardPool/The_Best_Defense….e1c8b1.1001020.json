@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "453806",
+    "GUID": "e1c8b1",
     "Name": "Card",
     "Transform": {
-      "posX": -29.2500038,
-      "posY": 1.048433,
-      "posZ": 4.74999762,
-      "rotX": 0.00118938019,
-      "rotY": 179.99,
-      "rotZ": -0.00289733452,
+      "posX": 44.7497559,
+      "posY": 3.07210064,
+      "posZ": 19.2497463,
+      "rotX": 0.008970607,
+      "rotY": 179.999847,
+      "rotZ": 179.990173,
       "scaleX": 1.27,
       "scaleY": 1,
       "scaleZ": 1.27
     },
-    "Nickname": "The Bifrost",
+    "Nickname": "The Best Defense…",
     "Description": "Scanned and imported by Unicorn",
     "GMNotes": "",
     "ColorDiffuse": {
@@ -35,7 +35,7 @@
     "GridProjection": false,
     "HideWhenFaceDown": true,
     "Hands": true,
-    "CardID": 971121,
+    "CardID": 1001020,
     "SidewaysCard": false,
     "CustomDeck": {
       "9711": {
