@@ -12,5 +12,7 @@ jobs:
       - uses: leafo/gh-actions-luarocks@v4
       - name: Install luacheck
         run: luarocks install luacheck
+      - name: Install argpase
+        run: luarocks install argparse
       - name: Run lua linter
         run: npm run lint:lua

@@ -381,7 +381,7 @@ function reshuffleEncounterDeck(position, rotation)
          deck.flip()
       end
       deck.shuffle()
-      Wait.time(|| move(deck), 0.3)
+      Wait.time(function() move(deck) end, 0.3)
    else
       printToAll("Couldn't find encounter discard pile to reshuffle", {1,0,0})
    end
