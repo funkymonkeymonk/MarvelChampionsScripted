@@ -1,0 +1,25 @@
+#!/bin/sh
+#
+# Hook to verify what modified lua files pass luacheck checks before got committed.
+# Called by "git commit" with no arguments.
+# To enable this hook, put it to `.git/hooks/pre-commit` and make it executable.
+
+if git rev-parse --verify HEAD >/dev/null 2>&1
+then
+	against=HEAD
+else
+	# Initial commit: diff against an empty tree object
+	against=$(git hash-object -t tree /dev/null)
+fi
+
+# Redirect output to stderr.
+exec 1>&2
+
+gitroot=$(git rev-parse --show-toplevel)
+modified_index=`git diff --cached --name-only --diff-filter=AM $against | grep '.lua$'`
+if test ! -z "$modified_index"
+then
+	cd $gitroot && luacheck --codes $modified_index || exit 1
+fi
+
+exit 0

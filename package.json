@@ -8,7 +8,8 @@
     "lint:lua": "luacheck mod/src",
     "start": "npx ts-node tool/main.ts develop mod/src/MarvelChampionsLCG.json dist/MarvelChampionsLCG.json",
     "validate": "ts-node ./tool/validate.ts",
-    "convertToBSON": "node ./tool/workshopPrep.js"
+    "convertToBSON": "node ./tool/workshopPrep.js",
+    "prepare": "husky install"
   },
   "license": "MIT",
   "bugs": {
@@ -55,7 +56,8 @@
     "sanitize-filename": "^1.6.3",
     "shelljs": "^0.8.5",
     "ts-node": "^9.0.0",
-    "typescript": "^3.9.10"
+    "typescript": "^3.9.10",
+    "husky": "^8.0.0"
   },
   "dependencies": {
     "bson": "^4.6.4",
