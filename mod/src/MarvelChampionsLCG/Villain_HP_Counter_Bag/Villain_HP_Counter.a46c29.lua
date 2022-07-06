@@ -1,4 +1,4 @@
-CONFIG = {
+local CONFIG = {
     MIN_VALUE = -99,
     MAX_VALUE = 999,
     FONT_COLOR = {0,0,0,95},
@@ -7,7 +7,9 @@ CONFIG = {
     TOOLTIP_SHOW = true,
     VALUE = 0
 }
-INJECTED_COUNTER = true
+local INJECTED_COUNTER = true
+
+local villainKey = ""
 
 
 function onload(saved_data)
@@ -115,4 +117,27 @@ function setValue(params)
     CONFIG.VALUE = params.value
     updateVal()
     updateSave()
+end
+
+function createAdvanceButton(params)
+    villainKey = params.villainKey
+
+    self.createButton({
+        label          = params.label or "Advance",
+        click_function = "advanceClick",
+        function_owner = self,
+        position       = {0,0.3,-1.4},
+        rotation       = {0,0,0},
+        width          = 800,
+        height         = 300,
+        font_size      = 200,
+        color          = {0,0,1},
+        font_color     = {1,1,1},
+        tooltip        = params.tooltip or "Next phase!"
+    })
+end
+
+function advanceClick(obj, player_color)
+    local scenarioManager = getObjectFromGUID(Global.getVar("SCENARIO_MANAGER_GUID"))
+    scenarioManager.call("advanceVillain", {villainKey=villainKey})
 end

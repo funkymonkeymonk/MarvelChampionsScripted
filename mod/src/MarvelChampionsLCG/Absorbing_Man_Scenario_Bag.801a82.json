@@ -3,12 +3,12 @@
     "GUID": "801a82",
     "Name": "Bag",
     "Transform": {
-      "posX": 50.75,
+      "posX": 46.75,
       "posY": 0.309967041,
-      "posZ": 80.75,
-      "rotX": -8.17093664e-8,
-      "rotY": 0.0009565934,
-      "rotZ": 6.670039e-8,
+      "posZ": 56.75,
+      "rotX": -8.004185e-8,
+      "rotY": 0.0009565333,
+      "rotZ": 6.83679247e-8,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -17,7 +17,7 @@
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
-      "r": 0.117998637,
+      "r": 0.117997967,
       "g": 0.53,
       "b": 1
     },

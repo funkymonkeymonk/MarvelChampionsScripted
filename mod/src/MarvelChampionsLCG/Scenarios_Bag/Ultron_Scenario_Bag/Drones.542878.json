@@ -1,0 +1,69 @@
+{
+  "Object": {
+    "GUID": "542878",
+    "Name": "Custom_Model_Infinite_Bag",
+    "Transform": {
+      "posX": 83.74866,
+      "posY": 2.321135,
+      "posZ": 25.0234756,
+      "rotX": -7.51712363e-8,
+      "rotY": 180.000046,
+      "rotZ": -2.59080423e-7,
+      "scaleX": 1.25,
+      "scaleY": 1,
+      "scaleZ": 1.25
+    },
+    "Nickname": "Drones",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "CustomMesh": {
+      "MeshURL": "https://pastebin.com/raw/ALrYhQGb",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1861691839689049590/603FA0880CB541EF2A77E8063B3F8CF78D961D4E/",
+      "NormalURL": "",
+      "ColliderURL": "",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 7,
+      "CustomShader": {
+        "SpecularColor": {
+          "r": 1,
+          "g": 1,
+          "b": 1
+        },
+        "SpecularIntensity": 0,
+        "SpecularSharpness": 2,
+        "FresnelStrength": 0
+      },
+      "CastShadows": true
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Custom_Token.3ffd09.json"
+  ]
+}

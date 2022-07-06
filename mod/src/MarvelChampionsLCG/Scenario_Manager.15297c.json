@@ -1,25 +1,25 @@
 {
   "Object": {
-    "GUID": "4431e4",
+    "GUID": "15297c",
     "Name": "PlayerPawn",
     "Transform": {
-      "posX": 98.75,
-      "posY": 0.50110054,
-      "posZ": 101.25,
-      "rotX": -9.739337e-7,
-      "rotY": 89.99646,
-      "rotZ": 6.10813856e-7,
-      "scaleX": 3.34999752,
-      "scaleY": 3.34999752,
-      "scaleZ": 3.34999752
+      "posX": 11.25,
+      "posY": 0.9664195,
+      "posZ": 36.2499962,
+      "rotX": -0.00000160125091,
+      "rotY": 89.99942,
+      "rotZ": -0.0000013371133,
+      "scaleX": 2.84999871,
+      "scaleY": 2.84999871,
+      "scaleZ": 2.84999871
     },
-    "Nickname": "HeroPlacer",
+    "Nickname": "Scenario Manager",
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
-      "r": 0,
-      "g": 0.1724138,
-      "b": 1
+      "r": 0.154411763,
+      "g": 0.154411763,
+      "b": 0.154411763
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,
@@ -35,8 +35,8 @@
     "GridProjection": false,
     "HideWhenFaceDown": false,
     "Hands": false,
-    "MaterialIndex": 5,
-    "LuaScript": "#include ./HeroPlacer.4431e4.lua",
+    "MaterialIndex": 8,
+    "LuaScript": "#include ./Scenario_Manager.15297c.lua",
     "LuaScriptState": "",
     "XmlUI": ""
   },

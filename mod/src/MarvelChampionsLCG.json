@@ -1,8 +1,8 @@
 {
   "Save": {
     "SaveName": "MarvelChampionsLCG",
-    "EpochTime": 1657072673,
-    "Date": "7/5/2022 7:57:53 PM",
+    "EpochTime": 1657151449,
+    "Date": "7/6/2022 5:50:49 PM",
     "VersionNumber": "v13.1.1",
     "GameMode": "MarvelChampionsLCG",
     "GameType": "Game",
@@ -558,7 +558,7 @@
     "ScriptingTrigger.eacfa8.json",
     "ScriptingTrigger.546c74.json",
     "Sinister_Motives.503b31.json",
-    "HeroPlacer.4431e4.json",
+    "Hero_Manager.4431e4.json",
     "ScriptingTrigger.c22eb2.json",
     "ScriptingTrigger.392cab.json",
     "ScriptingTrigger.1e4ec3.json",
@@ -575,7 +575,6 @@
     "Scenarios_Bag.a8cf98.json",
     "Hela_Scenario_Bag.7b0d4e.json",
     "Kang_Scenario_Bag.bc099a.json",
-    "Klaw_Scenario_Bag.54f5e2.json",
     "Loki_Scenario_Bag.fde6c3.json",
     "Green_Goblin_Scenario_Bag.ec1ae5.json",
     "Green_Goblin_Scenario_Bag.9f9dc9.json",
@@ -585,7 +584,6 @@
     "Taskmaster_Scenario_Bag.e7faa7.json",
     "Thanos_Scenario_Bag.f97f84.json",
     "Proxima_Midnight_and_Corvus_Glaive_Scenario_Bag_Scenario_Pack.2417f8.json",
-    "Ultron_Scenario_Bag.e4fb17.json",
     "Zola_Scenario_Bag.61fb7a.json",
     "The_Wrecking_Crew_Scenario_Bag.72a6c2.json",
     "Mysterio_Scenario_Bag.2da0de.json",
@@ -602,7 +600,8 @@
     "Ebony_Maw_Scenario_Bag.c5863f.json",
     "ScriptingTrigger.3c2ffd.json",
     "Venom_Goblin_Scenario_Pack.0a9b55.json",
-    "Scenario_Placer.15297c.json",
-    "Villain_HP_Counter_Bag.c95452.json"
+    "Scenario_Manager.15297c.json",
+    "Villain_HP_Counter_Bag.c95452.json",
+    "Black_Hole_Bag.e334c1.json"
   ]
 }

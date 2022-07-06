@@ -4,11 +4,11 @@
     "Name": "Bag",
     "Transform": {
       "posX": 51.75,
-      "posY": 0.776208341,
+      "posY": 0.7762284,
       "posZ": 35.25,
-      "rotX": -7.337118e-8,
-      "rotY": 0.000002614682,
-      "rotZ": -8.170881e-8,
+      "rotX": -1.08389258e-7,
+      "rotY": 0.00000380196116,
+      "rotZ": 3.08492446e-7,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -47,6 +47,8 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
-    "Rhino_Scenario_Bag.f23e37.json"
+    "Klaw_Scenario_Bag.54f5e2.json",
+    "Rhino_Scenario_Bag.f23e37.json",
+    "Ultron_Scenario_Bag.e4fb17.json"
   ]
 }

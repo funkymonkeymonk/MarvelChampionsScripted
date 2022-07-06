@@ -3,12 +3,12 @@
     "GUID": "54f5e2",
     "Name": "Bag",
     "Transform": {
-      "posX": 46.75,
-      "posY": 0.309966981,
-      "posZ": 52.25,
-      "rotX": -9.838425e-8,
-      "rotY": -0.000450685766,
-      "rotZ": -4.33553069e-8,
+      "posX": 53.63889,
+      "posY": 0.7659488,
+      "posZ": 35.25,
+      "rotX": 4.417818e-7,
+      "rotY": -0.000511010236,
+      "rotZ": -0.0000252913778,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -17,7 +17,7 @@
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
-      "r": 0.117998533,
+      "r": 0.117997877,
       "g": 0.53,
       "b": 1
     },
@@ -40,16 +40,15 @@
     "Bag": {
       "Order": 0
     },
-    "LuaScript": "",
+    "LuaScript": "#include ./Klaw_Scenario_Bag.54f5e2.lua",
     "LuaScriptState": "",
     "XmlUI": "",
     "ContainedObjects": []
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
-    "Klaw_s_HP_Counter.b9d975.json",
-    "Klaw_Encounter_Cards.99fc6d.json",
+    "Klaw_Villain.59a28e.json",
     "Klaw_Main_Scheme.2bcc39.json",
-    "Klaw_Villain.59a28e.json"
+    "Klaw_Encounter_Cards.99fc6d.json"
   ]
 }

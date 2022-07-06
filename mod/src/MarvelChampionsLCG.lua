@@ -12,8 +12,8 @@ ENCOUNTER_YELLOW_POS            = {51.25,1.1,-5.25}
 g_cardWidth  = 2.30;
 g_cardHeight = 3.40;
 
-HERO_PLACER_GUID = "4431e4"
-SCENARIO_PLACER_GUID = "15297c"
+HERO_MANAGER_GUID = "4431e4"
+SCENARIO_MANAGER_GUID = "15297c"
 
 function findInRadiusBy(pos, radius, filter, debug)
    local radius = (radius or 1)

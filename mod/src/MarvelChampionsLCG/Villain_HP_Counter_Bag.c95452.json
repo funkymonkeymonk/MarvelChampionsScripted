@@ -3,12 +3,12 @@
     "GUID": "c95452",
     "Name": "Infinite_Bag",
     "Transform": {
-      "posX": 64.75,
-      "posY": 0.478001118,
-      "posZ": 99.25,
-      "rotX": 6.27639452e-9,
-      "rotY": 0.000545050832,
-      "rotZ": 1.18238139e-8,
+      "posX": 65.25,
+      "posY": 0.478001,
+      "posZ": 98.75,
+      "rotX": 2.00986065e-7,
+      "rotY": 0.0006264895,
+      "rotZ": -9.555214e-8,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -37,7 +37,7 @@
     "Hands": false,
     "MaterialIndex": -1,
     "MeshIndex": -1,
-    "LuaScript": "",
+    "LuaScript": "#include ./Villain_HP_Counter_Bag.c95452.lua",
     "LuaScriptState": "",
     "XmlUI": "",
     "ContainedObjects": []

@@ -3,12 +3,12 @@
     "GUID": "cdcf14",
     "Name": "Bag",
     "Transform": {
-      "posX": 42.25,
+      "posX": 41.25,
       "posY": 0.309967041,
       "posZ": 62.75,
-      "rotX": -1.98436581e-7,
-      "rotY": 0.000975889969,
-      "rotZ": 1.06720016e-7,
+      "rotX": -1.98434776e-7,
+      "rotY": 0.000975876639,
+      "rotZ": -1.067234e-7,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -17,7 +17,7 @@
     "Description": "Infiltrate the Museum",
     "GMNotes": "",
     "ColorDiffuse": {
-      "r": 0.117998637,
+      "r": 0.117997967,
       "g": 0.53,
       "b": 1
     },

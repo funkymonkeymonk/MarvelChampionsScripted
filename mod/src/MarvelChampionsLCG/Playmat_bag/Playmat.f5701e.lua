@@ -237,4 +237,7 @@ function clearPlaymat()
    end
 
    self.destruct()
+
+   local scenarioManager = getObjectFromGUID(Global.getVar("SCENARIO_MANAGER_GUID"))
+   scenarioManager.call("updateCounters")
 end

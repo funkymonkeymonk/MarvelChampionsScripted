@@ -4,11 +4,11 @@
     "Name": "Bag",
     "Transform": {
       "posX": 46.75,
-      "posY": 0.309966981,
+      "posY": 0.309966922,
       "posZ": 64.75,
-      "rotX": 1.717535e-7,
-      "rotY": -0.000535843,
-      "rotZ": -3.735268e-7,
+      "rotX": 7.837353e-8,
+      "rotY": -0.000532628037,
+      "rotZ": -4.835864e-8,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -17,7 +17,7 @@
     "Description": "Mutagen Formula",
     "GMNotes": "",
     "ColorDiffuse": {
-      "r": 0.117998533,
+      "r": 0.117997877,
       "g": 0.53,
       "b": 1
     },

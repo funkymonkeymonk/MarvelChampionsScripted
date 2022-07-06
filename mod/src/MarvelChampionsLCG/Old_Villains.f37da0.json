@@ -4,7 +4,7 @@
     "Name": "Bag",
     "Transform": {
       "posX": 47.25,
-      "posY": 0.7762074,
+      "posY": 0.7762274,
       "posZ": 35.25,
       "rotX": -1.83427971e-7,
       "rotY": -0.000038866714,
@@ -18,8 +18,8 @@
     "GMNotes": "",
     "ColorDiffuse": {
       "r": 0.8392157,
-      "g": 0.08235226,
-      "b": 0.08235226
+      "g": 0.08235166,
+      "b": 0.08235166
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,
@@ -47,6 +47,8 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
+    "Ultron.05081a.json",
+    "Rhino.7853f6.json",
     "Ronan_the_Accuser.4e11d3.json",
     "Ebony_Maw.e3e94d.json",
     "Nebula.13a143.json",
@@ -58,10 +60,8 @@
     "Brotherhood_of_Badoon.315fe7.json",
     "Kang.487715.json",
     "Mutagen_Formula.be97f1.json",
-    "Ultron.05081a.json",
     "Risky_Business.844908.json",
     "Klaw.b86577.json",
-    "Rhino.7853f6.json",
     "Crossbones.e776c3.json",
     "Zola.3247cd.json",
     "The_Wrecking_Crew.6421b3.json",

@@ -28,8 +28,20 @@ local defaults = {
         position= {-9.05, 1.13, 28.48},
         rotation= {0.00, 90.00, 0.00},
         scale= {0.55, 0.55, 0.55}
+    },
+    sideScheme= {
+        position= {16.75, 1.00, 21.75},
+        rotation= {0.00, 90.00, 0.00}
     }
 }
+
+local scenarioBagGuid = ""
+local scenarioInfo = {}
+local mode = ""
+local counters = {}
+
+local advanceVillainFunction --(villainName, stageNumber)
+local advanceSchemeFunction --(schemeName, stageNumber)
 
 function onLoad()
     --self.setInvisibleTo({"Red", "Blue", "Green", "Yellow", "White"})
@@ -64,6 +76,8 @@ function placeScenario(scenarioBagGuid, mode)
 
             placeMainScheme(scenarioBag, scenarioDetails)
             placeThreatCounter(scenarioDetails.mainScheme, 1, heroCount)
+            placeBlackHole(scenarioDetails)
+            placeExtras(scenarioBag, scenarioDetails.extras)
         
             scenariosBag.putObject(scenarioBag)
         end, 
@@ -103,9 +117,15 @@ function placeVillainHpCounter(scenarioBag, villain, heroCount)
             villainHpCounter.setDescription("")
             villainHpCounter.setLock(true)
             villainHpCounter.call("setValue", {value=hitPoints})
+            --villainHpCounter.call("createAdvanceButton", {villainKey=villain.name}) --TODO: make this more dynamic, use villainKey instead of name
         end,
         10
     )
+
+    counters[villainHpCounter.getGUID()] = {
+        base=0,
+        multiplier=villain.hpMultiplier
+    }
 end
 
 function placeVillainDeck(scenarioBag, villain)
@@ -160,22 +180,68 @@ function placeThreatCounter(scheme, stageNumber, heroCount)
     local threatCounterPosition = scheme.counterPosition or defaults.mainSchemeThreatCounter.position
     local threatCounterRotation = scheme.counterRotation or defaults.mainSchemeThreatCounter.rotation
     local threatCounterScale = scheme.counterScale or defaults.mainSchemeThreatCounter.scale
-    
+
+    local threatBase
+    local threatMultiplier
     local initialThreat
-    log(scheme.stages)
-    log(stageNumber)
+
     if(stageNumber ~= nil) then
-        initialThreat = scheme.stages[stageNumber].threatBase + (scheme.stages[stageNumber].threatMultiplier * heroCount)
+        threatBase = scheme.stages[stageNumber].threatBase
+        threatMultiplier = scheme.stages[stageNumber].threatMultiplier
     else
-        initialThreat = scheme.threatBase + (scheme.threatMultiplier * heroCount)
+        threatBase = scheme.threatBase
+        threatMultiplier = scheme.threatMultiplier
     end
+
+    initialThreat = threatBase + (threatMultiplier * heroCount)
 
     local threatCounterBag = getObjectFromGUID("eb5d6d")
     local threatCounter = threatCounterBag.takeObject({position=threatCounterPosition, smooth=false})
-    threatCounter.setRotation(threatCounterRotation)
-    threatCounter.setScale(threatCounterScale)
-    threatCounter.setLock(true)
-    threatCounter.call("setValue", {value=initialThreat})
+
+    Wait.frames(
+        function()
+            threatCounter.setRotation(threatCounterRotation)
+            threatCounter.setScale(threatCounterScale)
+            threatCounter.setLock(true)
+            threatCounter.call("setValue", {value=initialThreat})
+        end,
+        1
+    )
+
+    counters[threatCounter.getGUID()] = {
+        base=threatBase,
+        multiplier=threatMultiplier
+    }
+end
+
+function placeExtras(scenarioBag, extras)
+    if(extras == nil) then return end
+
+    for _, item in pairs(extras) do
+        local objectPosition = Vector(item.position)
+        local objectOrig = scenarioBag.takeObject({guid=item.guid, position=objectPosition})
+        local objectCopy = objectOrig.clone({position=objectPosition})
+        scenarioBag.putObject(objectOrig)
+    
+        objectCopy.setPosition(objectPosition)
+
+        objectCopy.setName(item.name)
+        objectCopy.setDescription(item.description)
+    
+        if(item["locked"]) then
+          objectCopy.setLock(true)
+        end    
+    end
+end
+
+function placeBlackHole(scenarioDetails)
+    local blackHolePosition = scenarioDetails.blackHole and scenarioDetails.blackHole.position or defaults.blackHole.position
+    local blackHoleRotation = scenarioDetails.blackHole and scenarioDetails.blackHole.rotation or defaults.blackHole.rotation
+    local blackHoleScale = scenarioDetails.blackHole and scenarioDetails.blackHole.scale or defaults.blackHole.scale
+
+    local blackHoleBag = getObjectFromGUID("e334c1")
+    local blackHole = blackHoleBag.takeObject({position=blackHolePosition, rotation=blackHoleRotation, scale=blackHoleScale, smooth=false})
+    blackHole.setLock(true)
 end
 
 function getHeroCount()
@@ -189,4 +255,29 @@ function getHeroCount()
     end
  
     return playmatCount
+ end
+
+ function updateCounters()
+    local heroCount = getHeroCount()
+
+    for guid, calc in pairs(counters) do
+        local counter = getObjectFromGUID(guid)
+        newValue = calc.base + (calc.multiplier * heroCount)
+        counter.call("setValue", {value=newValue})
+    end
+ end
+
+ function clearScenario()
+    --TODO: call this when clearing the scenario area
+    scenarioBagGuid = ""
+    scenarioInfo = {}
+    mode = ""
+    counters = {}
+ end
+
+ function advanceVillain(params)
+    broadcastToAll("Advance clicked for "..params.villainKey, {1,1,1})
+ end
+
+ function advanceScheme()
  end

@@ -3,12 +3,12 @@
     "GUID": "0a9b55",
     "Name": "Bag",
     "Transform": {
-      "posX": 53.75,
-      "posY": 0.309966564,
+      "posX": 50.75,
+      "posY": 0.309966683,
       "posZ": 64.25,
-      "rotX": -1.69493055e-13,
+      "rotX": 5.81398536e-14,
       "rotY": 180.000336,
-      "rotZ": 5.83634332e-8,
+      "rotZ": -2.001032e-8,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -17,7 +17,7 @@
     "Description": "Scanned and imported by Unicorn",
     "GMNotes": "",
     "ColorDiffuse": {
-      "r": 0.1179936,
+      "r": 0.117992945,
       "g": 0.53,
       "b": 1
     },

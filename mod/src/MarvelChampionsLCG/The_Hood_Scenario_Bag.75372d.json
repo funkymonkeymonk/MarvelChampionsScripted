@@ -4,11 +4,11 @@
     "Name": "Bag",
     "Transform": {
       "posX": 41.25,
-      "posY": 0.30996722,
+      "posY": 0.309966981,
       "posZ": 46.75,
-      "rotX": 1.2506095e-7,
-      "rotY": 0.000979692,
-      "rotZ": 4.152152e-7,
+      "rotX": -3.168331e-8,
+      "rotY": 0.0009850814,
+      "rotZ": 3.50177878e-8,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -17,7 +17,7 @@
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
-      "r": 0.117998607,
+      "r": 0.117997937,
       "g": 0.53,
       "b": 1
     },

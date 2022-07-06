@@ -63,8 +63,11 @@ function placeHero(heroBagGuid, playerColor, deckType)
         heroBag, 
         heroDetails["obligationGuid"])
     
-        heroesBag.putObject(heroBag)
-        end, 
+      heroesBag.putObject(heroBag)
+      
+      local scenarioManager = getObjectFromGUID(Global.getVar("SCENARIO_MANAGER_GUID"))
+      scenarioManager.call("updateCounters")
+    end, 
     1)
 end
 

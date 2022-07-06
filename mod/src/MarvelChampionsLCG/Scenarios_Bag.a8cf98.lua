@@ -140,11 +140,11 @@ end
 function setTileFunctions(tile, scenarioBagGuid)
     local tileScript = [[
         function placeScenarioInStandardMode(obj, player_color)
-            local scenarioPlacer = getObjectFromGUID(Global.getVar("SCENARIO_PLACER_GUID"))
+            local scenarioPlacer = getObjectFromGUID(Global.getVar("SCENARIO_MANAGER_GUID"))
             scenarioPlacer.call("placeScenarioInStandardMode", {scenarioBagGuid="]]..scenarioBagGuid..[["})
         end
         function placeScenarioInExpertMode(obj, player_color)
-            local scenarioPlacer = getObjectFromGUID(Global.getVar("SCENARIO_PLACER_GUID"))
+            local scenarioPlacer = getObjectFromGUID(Global.getVar("SCENARIO_MANAGER_GUID"))
             scenarioPlacer.call("placeScenarioInExpertMode", {scenarioBagGuid="]]..scenarioBagGuid..[["})
         end    
     ]]

@@ -122,11 +122,11 @@ end
 function setTileFunctions(tile, heroBagGuid)
     local tileScript = [[
         function placeHeroWithStarterDeck(obj, player_color)
-            local heroPlacer = getObjectFromGUID(Global.getVar("HERO_PLACER_GUID"))
+            local heroPlacer = getObjectFromGUID(Global.getVar("HERO_MANAGER_GUID"))
             heroPlacer.call("placeHeroWithStarterDeck", {heroBagGuid="]]..heroBagGuid..[[", playerColor=player_color})
         end
         function placeHeroWithHeroDeck(obj, player_color)
-            local heroPlacer = getObjectFromGUID(Global.getVar("HERO_PLACER_GUID"))
+            local heroPlacer = getObjectFromGUID(Global.getVar("HERO_MANAGER_GUID"))
             heroPlacer.call("placeHeroWithHeroDeck", {heroBagGuid="]]..heroBagGuid..[[", playerColor=player_color})
         end    
     ]]
