@@ -1,0 +1,73 @@
+{
+  "Object": {
+    "GUID": "e291b3",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 34.00002,
+      "posY": 3.54393435,
+      "posZ": 10.0000114,
+      "rotX": 0.07588908,
+      "rotY": 89.9960861,
+      "rotZ": 0.0160749517,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Nebula Main Scheme",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": true,
+    "DeckIDs": [
+      200,
+      100
+    ],
+    "CustomDeck": {
+      "1": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833527325300674904/6F1B300DDBF1E3D4BFA510E818BD3BAF961395E6/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833527325300675071/F5673DF5B3E97235DA8429989361773B41BB6793/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "2": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833527325300675507/9A740B636418C3468FB5122FF2799931DE306448/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833527325300675701/ED7A983BC710F010ECA48BAD9AB8D66009CCC86F/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Warp_Drive_Initiated.3ef3e8.200.json",
+    "The_Art_of_Evasion.eeaf7c.100.json"
+  ]
+}

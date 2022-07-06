@@ -1,0 +1,57 @@
+{
+  "Object": {
+    "GUID": "bc099a",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 46.75,
+      "posY": 0.3099668,
+      "posZ": 42.25,
+      "rotX": -1.85095416e-7,
+      "rotY": 0.000233600484,
+      "rotZ": -2.334575e-8,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Kang Scenario Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.117998533,
+      "g": 0.53,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Kang_s_HP_Counter.c8ac6f.json",
+    "Kang_Encounter_Cards.19cd5f.json",
+    "Kang_Set-Aside_Cards.33e190.json",
+    "Kang_Main_Scheme.90d2ae.json",
+    "Kang_Expert_Villain.1949e3.json",
+    "Kang_Villain.e5af60.json"
+  ]
+}

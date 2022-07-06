@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "cd8169",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 97.05144,
+      "posY": 16.0320816,
+      "posZ": 51.82282,
+      "rotX": 5.48242021e-8,
+      "rotY": 180.021637,
+      "rotZ": -1.17390378e-7,
+      "scaleX": 2.00505972,
+      "scaleY": 1,
+      "scaleZ": 2.00505972
+    },
+    "Nickname": "Crossbones' HP Counter",
+    "Description": "Created by Unicorn\nTemplate by Hitch, Counter by JQTNguyen",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249983609,
+      "g": 0.249983609,
+      "b": 0.249983609
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1833526625011331024/2436BF66FF5980186D51FFDBA4D6E4DA16CBA24C/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Crossbones_HP_Counter.cd8169.lua",
+    "LuaScriptState": "#include ./Crossbones_HP_Counter.cd8169.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

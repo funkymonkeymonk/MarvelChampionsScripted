@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "908dc2",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 83.7465057,
+      "posY": 2.39706969,
+      "posZ": 43.7324,
+      "rotX": 0.01688591,
+      "rotY": 179.98822,
+      "rotZ": 0.07987275,
+      "scaleX": 2.00505972,
+      "scaleY": 1,
+      "scaleZ": 2.00505972
+    },
+    "Nickname": "Doctor Octopus' HP Counter",
+    "Description": "Created by Unicorn\nTemplate by Hitch, Counter by JQTNguyen",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249983609,
+      "g": 0.249983609,
+      "b": 0.249983609
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1834662762015309349/2164A5798EC8BE6A688434F1828DB46278042212/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Doctor_Octopus_HP_Counter.908dc2.lua",
+    "LuaScriptState": "#include ./Doctor_Octopus_HP_Counter.908dc2.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

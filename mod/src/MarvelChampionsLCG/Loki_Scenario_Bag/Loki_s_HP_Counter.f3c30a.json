@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "f3c30a",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 75.73895,
+      "posY": 2.4044404,
+      "posZ": 25.7862053,
+      "rotX": 0.0169282556,
+      "rotY": 179.958771,
+      "rotZ": 0.07986381,
+      "scaleX": 2.00505972,
+      "scaleY": 1,
+      "scaleZ": 2.00505972
+    },
+    "Nickname": "Loki's HP Counter",
+    "Description": "Created by Unicorn\nTemplate by Hitch, Counter by JQTNguyen",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249983639,
+      "g": 0.249983639,
+      "b": 0.249983639
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1849305905150132430/6C8FCFC49383857A4A92407CE13656C5DE148F37/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Loki_s_HP_Counter.f3c30a.lua",
+    "LuaScriptState": "#include ./Loki_s_HP_Counter.f3c30a.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

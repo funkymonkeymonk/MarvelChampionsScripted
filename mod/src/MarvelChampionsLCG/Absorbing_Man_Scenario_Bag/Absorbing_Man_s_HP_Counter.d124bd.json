@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "d124bd",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 94.2565155,
+      "posY": 2.22357035,
+      "posZ": 71.54399,
+      "rotX": 3.51106365e-7,
+      "rotY": 180.010117,
+      "rotZ": -9.046857e-9,
+      "scaleX": 2.00505972,
+      "scaleY": 1,
+      "scaleZ": 2.00505972
+    },
+    "Nickname": "Absorbing Man's HP Counter",
+    "Description": "Created by Unicorn\nTemplate by Hitch, Counter by JQTNguyen",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249983609,
+      "g": 0.249983609,
+      "b": 0.249983609
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1833525541771241261/A31710FDD358F30518B36A6113BE984D88FA6D1A/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Absorbing_Man_s_HP_Counter.d124bd.lua",
+    "LuaScriptState": "#include ./Absorbing_Man_s_HP_Counter.d124bd.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

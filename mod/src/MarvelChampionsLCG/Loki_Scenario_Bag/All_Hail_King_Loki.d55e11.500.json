@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "d55e11",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 38.0000153,
+      "posY": 3.52481127,
+      "posZ": 22.0000076,
+      "rotX": 0.07588152,
+      "rotY": 89.99991,
+      "rotZ": 0.0163674,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "All Hail King Loki",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 500,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "5": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833527325297399589/117735ADB7F39BDBA3FEB7FB333C094DBEA12CD9/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833527325297399855/525100ED9559D3EA5AA3892F46FCF30A97271255/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

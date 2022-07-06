@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "3cdbd0",
+    "Name": "Card",
+    "Transform": {
+      "posX": 52.00003,
+      "posY": 1.5453161,
+      "posZ": 13.9999781,
+      "rotX": 0.0192203838,
+      "rotY": 179.999969,
+      "rotZ": 180.0668,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Hunted by Hydra",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 208,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "2": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833527325300796634/0FC3B1261E5BB53B16207642060F6C1B549DCDEF/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

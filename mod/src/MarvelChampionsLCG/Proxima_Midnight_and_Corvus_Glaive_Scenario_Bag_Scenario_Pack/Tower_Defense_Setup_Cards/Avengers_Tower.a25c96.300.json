@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "a25c96",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 66.0000153,
+      "posY": 1.43812227,
+      "posZ": 14.0000162,
+      "rotX": 0.0103884107,
+      "rotY": 180.004044,
+      "rotZ": 0.06994958,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Avengers Tower",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 300,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "3": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833528529707213842/2533E3D21E5503CF8477C360C95D2C8EADCFF3A3/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833528529707214054/4CACC762BF81505A48F42BE67856EB83D14067BF/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

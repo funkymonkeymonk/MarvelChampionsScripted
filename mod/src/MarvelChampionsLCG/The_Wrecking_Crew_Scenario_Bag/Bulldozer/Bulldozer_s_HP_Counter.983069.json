@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "983069",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 95.10073,
+      "posY": 2.516185,
+      "posZ": 37.58978,
+      "rotX": 0.0168965589,
+      "rotY": 179.982376,
+      "rotZ": 0.07987091,
+      "scaleX": 2.00505972,
+      "scaleY": 1,
+      "scaleZ": 2.00505972
+    },
+    "Nickname": "Bulldozer's HP Counter",
+    "Description": "Created by Unicorn\nTemplate by Hitch, Counter by JQTNguyen",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249983639,
+      "g": 0.249983639,
+      "b": 0.249983639
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1849305905150122545/0C0159E3C74BD9B5BA30D62D9DCB9B5BDF6859FD/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Bulldozer_s_HP_Counter.983069.lua",
+    "LuaScriptState": "#include ./Bulldozer_s_HP_Counter.983069.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

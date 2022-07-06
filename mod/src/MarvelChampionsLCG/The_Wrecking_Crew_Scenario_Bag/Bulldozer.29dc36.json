@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "29dc36",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 101.472855,
+      "posY": 14.8658285,
+      "posZ": 78.86859,
+      "rotX": 7.12035671e-7,
+      "rotY": -0.0000125931629,
+      "rotZ": 0.0000151428112,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Bulldozer",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.9559999,
+      "g": 0.3919999,
+      "b": 0.112999894
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Bulldozer_s_HP_Counter.983069.json",
+    "Bulldozer_s_Encounter_Cards.733999.json",
+    "Clear_the_Road.ef5949.203.json",
+    "Bulldozer_Villain.187f22.json"
+  ]
+}

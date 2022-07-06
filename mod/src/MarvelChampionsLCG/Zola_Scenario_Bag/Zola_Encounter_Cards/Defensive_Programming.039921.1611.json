@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "039921",
+    "Name": "Card",
+    "Transform": {
+      "posX": 67.99747,
+      "posY": 1.55279493,
+      "posZ": 16.00006,
+      "rotX": 0.013507612,
+      "rotY": 180,
+      "rotZ": 180.063965,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Defensive Programming",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 1611,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "16": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833528529707240457/181A2D0713EDC8F5F22FA355E3F86A10C2DFB5EB/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 3,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

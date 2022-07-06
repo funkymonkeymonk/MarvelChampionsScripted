@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "c5863f",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 41.75,
+      "posY": 0.309966922,
+      "posZ": 41.75,
+      "rotX": -4.502338e-8,
+      "rotY": 0.0009855616,
+      "rotZ": 1.83424067e-8,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Ebony Maw Scenario Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.117998607,
+      "g": 0.53,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Ebony_Maw_s_HP_Counter.2fafbf.json",
+    "Ebony_Maw_Encounter_Cards.b480ac.json",
+    "Deck.7abdad.json",
+    "Ebony_Maw_Villain.e798e2.json"
+  ]
+}

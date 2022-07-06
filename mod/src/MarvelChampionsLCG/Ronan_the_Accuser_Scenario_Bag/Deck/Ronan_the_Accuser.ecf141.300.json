@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "ecf141",
+    "Name": "Card",
+    "Transform": {
+      "posX": 36.00144,
+      "posY": 1.53901863,
+      "posZ": 14.0001478,
+      "rotX": 0.0166003946,
+      "rotY": 180.0089,
+      "rotZ": 359.369415,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Ronan the Accuser",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 300,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "3": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833527325300763497/1F0799C197A843C50AB747D28EC86FE18D707AC8/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+        "NumWidth": 10,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

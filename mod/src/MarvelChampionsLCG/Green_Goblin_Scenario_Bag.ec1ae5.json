@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "ec1ae5",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 46.75,
+      "posY": 0.309966981,
+      "posZ": 64.75,
+      "rotX": 1.717535e-7,
+      "rotY": -0.000535843,
+      "rotZ": -3.735268e-7,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Green Goblin Scenario Bag",
+    "Description": "Mutagen Formula",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.117998533,
+      "g": 0.53,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Green_Goblin_s_HP_Counter.a7b2c7.json",
+    "Mutagen_Formula_Encounter_Cards.4026af.json",
+    "Mutagen_Formula_Main_Scheme.228db8.json",
+    "Mutagen_Formula_Villain.d9e184.json"
+  ]
+}

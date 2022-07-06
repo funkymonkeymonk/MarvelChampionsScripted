@@ -1,0 +1,90 @@
+{
+  "Object": {
+    "GUID": "e44b69",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 66.0000153,
+      "posY": 3.57159328,
+      "posZ": 44.00001,
+      "rotX": 0.00112387061,
+      "rotY": 179.992,
+      "rotZ": 0.0734002143,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Piledriver's Encounter Cards",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      144,
+      143,
+      142,
+      141,
+      140,
+      139,
+      138,
+      137,
+      136,
+      135,
+      134,
+      133,
+      132,
+      131,
+      130
+    ],
+    "CustomDeck": {
+      "1": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833528927274591386/E710DBE17E055168225EF1F14462905626E67D4C/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 7,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Uncanny_Resilience.fd8757.144.json",
+    "Pummel.4b9f92.143.json",
+    "Pummel.7ec5f8.142.json",
+    "Escape_Plan.675ce7.141.json",
+    "Escape_Plan.6fdfe9.140.json",
+    "Oversized_Hands.f65f8a.139.json",
+    "Oversized_Hands.35ebe1.138.json",
+    "I_ve_Been_Waiting_For_This!.58225a.137.json",
+    "Get_Wrecked!.95947f.136.json",
+    "Buddy_System.7b0676.135.json",
+    "Escaped_Convict.f19a58.134.json",
+    "Corrupt_Prison_Guard.9b7fe6.133.json",
+    "Held_Hostage.6548de.132.json",
+    "Distracting_Taunts.b66881.131.json",
+    "Distracting_Taunts.c2d96c.130.json"
+  ]
+}

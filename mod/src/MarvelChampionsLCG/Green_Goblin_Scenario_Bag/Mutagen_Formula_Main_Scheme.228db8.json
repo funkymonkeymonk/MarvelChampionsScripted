@@ -1,0 +1,73 @@
+{
+  "Object": {
+    "GUID": "228db8",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 26.00002,
+      "posY": 3.55672741,
+      "posZ": 16.0000114,
+      "rotX": 0.0758847147,
+      "rotY": 89.99992,
+      "rotZ": 0.016337106,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Mutagen Formula Main Scheme",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": true,
+    "DeckIDs": [
+      600,
+      500
+    ],
+    "CustomDeck": {
+      "5": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833527325297425460/87776393C21AD035169C6832BCA3D754E72CE821/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833527325297425698/6BB98262FE42DA2517D73E865FA766C6864442F3/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "6": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833527325297426094/A92E0F0C4DC37525F7B31F838E2A9D24A9138A06/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833527325297426381/24DAA00A6B23981E7083F4A3A608847AD270407E/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Mutagen_Cloud.44b0e3.600.json",
+    "Unleashing_the_Mutagen.927e22.500.json"
+  ]
+}

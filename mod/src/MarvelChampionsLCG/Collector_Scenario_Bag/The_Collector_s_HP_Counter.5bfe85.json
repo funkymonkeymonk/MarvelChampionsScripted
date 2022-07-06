@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "5bfe85",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 97.6598358,
+      "posY": 15.9118853,
+      "posZ": 65.39322,
+      "rotX": -6.137675e-8,
+      "rotY": 179.978592,
+      "rotZ": 2.243072e-8,
+      "scaleX": 2.00505972,
+      "scaleY": 1,
+      "scaleZ": 2.00505972
+    },
+    "Nickname": "The Collector's HP Counter",
+    "Description": "Created by Unicorn\nTemplate by Hitch, Counter by JQTNguyen",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249983668,
+      "g": 0.249983668,
+      "b": 0.249983668
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1833526258727804015/5DDA85319568535B84FBD610334FB7C6F8BFCDF0/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./The_Collector_s_HP_Counter.5bfe85.lua",
+    "LuaScriptState": "#include ./The_Collector_s_HP_Counter.5bfe85.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

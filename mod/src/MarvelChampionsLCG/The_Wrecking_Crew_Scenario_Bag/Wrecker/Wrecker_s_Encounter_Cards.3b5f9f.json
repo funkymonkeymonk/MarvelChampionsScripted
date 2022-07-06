@@ -1,0 +1,90 @@
+{
+  "Object": {
+    "GUID": "3b5f9f",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 74.0000153,
+      "posY": 3.56044,
+      "posZ": 44.00001,
+      "rotX": 0.00118523662,
+      "rotY": 180.0021,
+      "rotZ": 0.0742371157,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Wrecker's Encounter Cards",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      114,
+      113,
+      112,
+      111,
+      110,
+      109,
+      108,
+      107,
+      106,
+      105,
+      104,
+      103,
+      102,
+      101,
+      100
+    ],
+    "CustomDeck": {
+      "1": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833528927274591386/E710DBE17E055168225EF1F14462905626E67D4C/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 7,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "You_re_Dead_Meat!.994bd7.114.json",
+    "You_re_Dead_Meat!.a1d433.113.json",
+    "Mystical_Link.4db83e.112.json",
+    "Mystical_Link.f0100a.111.json",
+    "I_ve_Been_Waiting_For_This!.026078.110.json",
+    "Get_Wrecked!.b1cb0d.109.json",
+    "Crowbar_Toss.825623.108.json",
+    "Crowbar_Toss.5d57c0.107.json",
+    "Chaos_in_the_Prison.d69cde.106.json",
+    "Buddy_System.986543.105.json",
+    "Escaped_Convict.f4354a.104.json",
+    "Corrupt_Prison_Guard.48c02f.103.json",
+    "Wrecker_s_Command.7a5c6e.102.json",
+    "Magical_Crowbar.ee17b3.101.json",
+    "Held_Hostage.6812b4.100.json"
+  ]
+}

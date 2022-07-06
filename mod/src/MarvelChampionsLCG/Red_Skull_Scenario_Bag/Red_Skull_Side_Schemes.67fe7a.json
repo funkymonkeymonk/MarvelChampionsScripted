@@ -1,0 +1,72 @@
+{
+  "Object": {
+    "GUID": "67fe7a",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 40.00002,
+      "posY": 3.55470061,
+      "posZ": 10.0000172,
+      "rotX": 0.07585346,
+      "rotY": 89.99842,
+      "rotZ": 0.0163113922,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Red Skull Side Schemes",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": true,
+    "DeckIDs": [
+      405,
+      404,
+      403,
+      401,
+      400,
+      402
+    ],
+    "CustomDeck": {
+      "4": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833527325300711659/5F7F98CCA6A98BF4E848536662A8D1DD972A2B6F/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Mass_Chaos.4ff9c3.405.json",
+    "Hydra_Reinforcements.6371e1.404.json",
+    "Censor_the_Past.746d7f.403.json",
+    "Prison_Camps.212433.401.json",
+    "The_Sleeper_Awakened.7d862b.400.json",
+    "The_Red_House.1947fe.402.json"
+  ]
+}

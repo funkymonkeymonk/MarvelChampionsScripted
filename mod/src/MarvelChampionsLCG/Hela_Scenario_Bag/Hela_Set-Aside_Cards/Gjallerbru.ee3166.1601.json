@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "ee3166",
+    "Name": "Card",
+    "Transform": {
+      "posX": 28.0000153,
+      "posY": 1.75996065,
+      "posZ": 9.999997,
+      "rotX": 0.01354958,
+      "rotY": 180.000214,
+      "rotZ": 186.53273,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Gjallerbru",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 1601,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "2": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833527325297205822/1B34E31B81FE5F0670BF912C329F80DF4CE691F8/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

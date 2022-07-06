@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "6cc6e3",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 42.25,
+      "posY": 0.309967041,
+      "posZ": 55.25,
+      "rotX": -5.83634652e-8,
+      "rotY": 0.0009860485,
+      "rotZ": 3.3345513e-9,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Crossbones Scenario Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.117998607,
+      "g": 0.53,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Crossbones_HP_Counter.cd8169.json",
+    "Crossbones_Encounter_Cards.9f02a4.json",
+    "Crossbones_Villain.eb5c16.json",
+    "Crossbones_Main_Scheme.bb6b13.json"
+  ]
+}

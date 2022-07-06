@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "801a82",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 50.75,
+      "posY": 0.309967041,
+      "posZ": 80.75,
+      "rotX": -8.17093664e-8,
+      "rotY": 0.0009565934,
+      "rotZ": 6.670039e-8,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Absorbing Man Scenario Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.117998637,
+      "g": 0.53,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "None_Shall_Pass.1ab1ed.971000.json",
+    "Absorbing_Man_Encounter_Cards.a21131.json",
+    "Absorbing_Man_Villain.c84ac1.json",
+    "Absorbing_Man_s_HP_Counter.d124bd.json"
+  ]
+}

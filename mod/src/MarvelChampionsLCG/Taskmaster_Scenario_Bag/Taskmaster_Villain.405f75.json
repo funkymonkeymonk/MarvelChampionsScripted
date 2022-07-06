@@ -1,0 +1,66 @@
+{
+  "Object": {
+    "GUID": "405f75",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 28.0000172,
+      "posY": 3.55738616,
+      "posZ": 12.0000029,
+      "rotX": 0.0008743727,
+      "rotY": 180,
+      "rotZ": 0.07133954,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Taskmaster Villain",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      402,
+      401,
+      400
+    ],
+    "CustomDeck": {
+      "4": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833527325300802479/50608A1EE639D52AD7261D1A1D0D6A1BFFF48B66/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+        "NumWidth": 10,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Taskmaster.1c2347.402.json",
+    "Taskmaster.cdbe7c.401.json",
+    "Taskmaster.49e39d.400.json"
+  ]
+}

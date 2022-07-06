@@ -1,0 +1,103 @@
+{
+  "Object": {
+    "GUID": "b480ac",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 99.90129,
+      "posY": 31.0493946,
+      "posZ": 47.0918,
+      "rotX": 5.33010969e-9,
+      "rotY": 179.999817,
+      "rotZ": -6.59278632e-10,
+      "scaleX": 1.93725336,
+      "scaleY": 1,
+      "scaleZ": 1.93725336
+    },
+    "Nickname": "Ebony Maw Encounter Cards",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      401,
+      400,
+      614,
+      613,
+      612,
+      611,
+      610,
+      609,
+      608,
+      607,
+      606,
+      605,
+      604,
+      603,
+      602,
+      601,
+      600
+    ],
+    "CustomDeck": {
+      "4": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833526625011357905/1A885138944F91B521344587D86E4BD8505D06C0/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "6": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833526625011355164/DB189584F1512A92388CAC48E8B3CC7F614532A1/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Reactor_Overload.3980ed.401.json",
+    "Reactor_Overload.9a222a.400.json",
+    "Restrained.e7998b.614.json",
+    "Abjuration.490741.613.json",
+    "Channeling_Trance.4aaaf2.612.json",
+    "Channeling_Trance.1efe1e.611.json",
+    "Channeling_Trance.bb6b16.610.json",
+    "Agent_of_Thanos.7e29b8.609.json",
+    "Agent_of_Thanos.db3222.608.json",
+    "Rubblestorm.8f6139.607.json",
+    "Rubblestorm.d48577.606.json",
+    "Pacification.97b638.605.json",
+    "Pacification.6b1f51.604.json",
+    "Manipulation.b56fb5.603.json",
+    "Manipulation.a5f881.602.json",
+    "Fireball.cbf771.601.json",
+    "Fireball.44267f.600.json"
+  ]
+}

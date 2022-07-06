@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "16fcb1",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 98.01325,
+      "posY": 2.03622127,
+      "posZ": 76.57366,
+      "rotX": -0.00003919518,
+      "rotY": -0.00000352181223,
+      "rotZ": -0.00000249294862,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Piledriver",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.856,
+      "g": 0.09999991,
+      "b": 0.0939999
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Piledriver_s_HP_Counter.4faae2.json",
+    "Piledriver_s_Encounter_Cards.e44b69.json",
+    "Pile_It_On!.9ede7f.202.json",
+    "Piledriver_Villain.136fa6.json"
+  ]
+}

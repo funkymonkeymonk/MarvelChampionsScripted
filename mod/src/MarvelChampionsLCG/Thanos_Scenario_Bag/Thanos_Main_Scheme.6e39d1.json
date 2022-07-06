@@ -1,0 +1,73 @@
+{
+  "Object": {
+    "GUID": "6e39d1",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 6.00001955,
+      "posY": 3.58108115,
+      "posZ": 4.00001049,
+      "rotX": 0.07688175,
+      "rotY": 90.01211,
+      "rotZ": 0.01483233,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Thanos Main Scheme",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": true,
+    "DeckIDs": [
+      500,
+      400
+    ],
+    "CustomDeck": {
+      "4": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833527325300828027/0094A344C7BBBFCCE6EAE22CFAFF1DBF6B8FA0F4/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833527325300828190/2ADBC90FF2503B8793103659723C90D2BEDFB770/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "5": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833527325300828537/EBC77B2A536983D45E0BC2EEA1E11A6044065345/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833527325300828719/D44D124634C8BA441BC28F8C5D2839B75BAFA7E0/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Balance_the_Scales.1fb086.500.json",
+    "The_Infinity_Stones.477e16.400.json"
+  ]
+}

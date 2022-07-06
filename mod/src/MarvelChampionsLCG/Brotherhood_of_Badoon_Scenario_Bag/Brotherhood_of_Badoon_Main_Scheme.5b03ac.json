@@ -1,0 +1,73 @@
+{
+  "Object": {
+    "GUID": "5b03ac",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 99.49101,
+      "posY": 20.7457275,
+      "posZ": 51.21951,
+      "rotX": -2.4810393e-7,
+      "rotY": 89.999855,
+      "rotZ": -3.524961e-7,
+      "scaleX": 1.93725336,
+      "scaleY": 1,
+      "scaleZ": 1.93725336
+    },
+    "Nickname": "Brotherhood of Badoon Main Scheme",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": true,
+    "DeckIDs": [
+      500,
+      400
+    ],
+    "CustomDeck": {
+      "4": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833525990616309357/775ADA6D20DE9A8578468855DFB824EA234A4740/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833525990616310222/893AA2187BF96483A8C5F9ACE81DFD9FAA46854F/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "5": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833525990616310555/5FB4399039B5D94FC03F51DF202E17F9539AA56D/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833525990616310711/75AFA9B798D5809DDC482ABD9B93F59C520AA8FA/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Protect_the_Planet.1287a9.500.json",
+    "Terrestrial_Invasion.3a84b4.400.json"
+  ]
+}

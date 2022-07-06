@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "691115",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 95.85852,
+      "posY": 2.03612876,
+      "posZ": 68.77621,
+      "rotX": -0.00000551122275,
+      "rotY": -0.000772350933,
+      "rotZ": -0.000007775632,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Thunderball",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.191999912,
+      "g": 0.701,
+      "b": 0.1679999
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Thunderball_s_HP_Counter.839cd1.json",
+    "Thunderball_s_Encounter_Cards.9fada0.json",
+    "Thunderstruck.53ce70.201.json",
+    "Thunderball_Villain.17057f.json"
+  ]
+}

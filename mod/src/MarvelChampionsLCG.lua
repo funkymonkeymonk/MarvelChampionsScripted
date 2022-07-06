@@ -13,6 +13,7 @@ g_cardWidth  = 2.30;
 g_cardHeight = 3.40;
 
 HERO_PLACER_GUID = "4431e4"
+SCENARIO_PLACER_GUID = "15297c"
 
 function findInRadiusBy(pos, radius, filter, debug)
    local radius = (radius or 1)
@@ -419,17 +420,4 @@ function isFaceup(params)
    else
       return false
    end
-end
-
-function getHeroCount()
-   local allObjects = getAllObjects()
-   local playmatCount = 0
-
-   for _, obj in pairs(allObjects) do
-      if(obj.hasTag("Playmat")) then
-         playmatCount = playmatCount + 1
-      end
-   end
-
-   return playmatCount
 end

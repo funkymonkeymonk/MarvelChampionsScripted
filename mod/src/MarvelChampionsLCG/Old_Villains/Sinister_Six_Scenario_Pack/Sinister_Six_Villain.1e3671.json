@@ -1,0 +1,72 @@
+{
+  "Object": {
+    "GUID": "1e3671",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 30.0003414,
+      "posY": 3.56281948,
+      "posZ": 23.9999943,
+      "rotX": 359.3808,
+      "rotY": 179.97345,
+      "rotZ": 0.7976878,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Sinister Six Villain",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      971105,
+      971104,
+      971103,
+      971102,
+      971101,
+      971100
+    ],
+    "CustomDeck": {
+      "9711": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1834662762014875250/72739232E2A199813AB976A55017CCFA7F340F01/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+        "NumWidth": 10,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Vulture.413d33.971105.json",
+    "Scorpion.1cf2ea.971104.json",
+    "Kraven_the_Hunter.9e6d3d.971103.json",
+    "Hobgoblin.69e6c4.971102.json",
+    "Electro.fa0c39.971101.json",
+    "Doctor_Octopus.00190c.971100.json"
+  ]
+}

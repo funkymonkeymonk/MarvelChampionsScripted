@@ -1,0 +1,73 @@
+{
+  "Object": {
+    "GUID": "613d74",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 34.00002,
+      "posY": 3.54498649,
+      "posZ": 14.0000114,
+      "rotX": 0.07584261,
+      "rotY": 90.00964,
+      "rotZ": 0.01634475,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Zola Main Scheme",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": true,
+    "DeckIDs": [
+      1800,
+      1700
+    ],
+    "CustomDeck": {
+      "17": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833528529707244358/6DBC2EA7B0D6D9C5909D3AB308BF668FE5D388B1/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833528529707244521/DEA18626FF4FF896594972CACB421F871D0F5641/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "18": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833528529707244828/23B135ED8215B7B8DC9C7288185504506F7BD9C4/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833528529707245015/CF36A6E596F46C27DC182E06B63D484DF272DBC8/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "The_Mad_Doctor.8aab62.1800.json",
+    "The_Island_of_Dr._Zola.23ac90.1700.json"
+  ]
+}

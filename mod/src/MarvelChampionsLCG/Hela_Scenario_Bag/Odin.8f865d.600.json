@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "8f865d",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 28.0000153,
+      "posY": 3.53855348,
+      "posZ": 22,
+      "rotX": 0.0008584705,
+      "rotY": 180.005325,
+      "rotZ": 0.07139936,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Odin",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 600,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "6": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833527325297209497/C9E3CEB0081BD219095AA960356D597E39A144E6/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833527325297209680/2D8563D6F8EE9FFDD742C5ADA551D16E85E4D64F/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

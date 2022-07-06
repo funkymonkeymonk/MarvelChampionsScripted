@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "c8dbb1",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 91.86791,
+      "posY": 2.51333332,
+      "posZ": 21.949995,
+      "rotX": 0.0169221945,
+      "rotY": 179.963211,
+      "rotZ": 0.07986532,
+      "scaleX": 2.00505972,
+      "scaleY": 1,
+      "scaleZ": 2.00505972
+    },
+    "Nickname": "Taskmaster's HP Counter",
+    "Description": "Created by Unicorn\nTemplate by Hitch, Counter by JQTNguyen",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249983609,
+      "g": 0.249983609,
+      "b": 0.249983609
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1849305905150144125/DE27C71D45C02DF05875C07D98ED6D04C0E09707/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Taskmaster_s_HP_Counter.c8dbb1.lua",
+    "LuaScriptState": "#include ./Taskmaster_s_HP_Counter.c8dbb1.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

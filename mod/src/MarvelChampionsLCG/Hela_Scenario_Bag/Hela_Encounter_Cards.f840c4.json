@@ -1,0 +1,78 @@
+{
+  "Object": {
+    "GUID": "f840c4",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 28.0000172,
+      "posY": 3.58920527,
+      "posZ": 22.0000057,
+      "rotX": 0.00085913355,
+      "rotY": 180.014709,
+      "rotZ": 0.07136905,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Hela Encounter Cards",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      111,
+      110,
+      109,
+      108,
+      107,
+      106,
+      105,
+      104,
+      103
+    ],
+    "CustomDeck": {
+      "1": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833527325297203961/7322588968E6614C92A6EC993A695C62130EA6C0/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "The_Wastes_of_Niffleheim.d1eb0f.111.json",
+    "The_Wastes_of_Niffleheim.30b626.110.json",
+    "The_Queen_of_Hel.25d3f0.109.json",
+    "The_Queen_of_Hel.81573d.108.json",
+    "Hela_s_Domain.ce67bd.107.json",
+    "Hela_s_Domain.1bf4e9.106.json",
+    "Hela_s_Cloak.6ab4ca.105.json",
+    "Hela_s_Crown.f4532e.104.json",
+    "Nightsword.deab11.103.json"
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "Object": {
+    "GUID": "dfd577",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 12.0000172,
+      "posY": 3.5816524,
+      "posZ": 34,
+      "rotX": 0.00150851149,
+      "rotY": 180,
+      "rotZ": 0.07398563,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Hela Villain",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      1200,
+      1300
+    ],
+    "CustomDeck": {
+      "12": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833527325297207920/E236F923D92981333C4BFF5CD856330140E2C5E4/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833527325297208077/2F8AF0B766D7E2CDBD48156F8FFA3BC130633076/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "13": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833527325297207461/78FBD5E08C39EEBCC3462BA780899F198B5388E6/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833527325297207648/6933A1A07CBF589C45FAAB051B3E497A3108DE4E/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Hela.811487.1200.json",
+    "Hela.9d0a8c.1300.json"
+  ]
+}

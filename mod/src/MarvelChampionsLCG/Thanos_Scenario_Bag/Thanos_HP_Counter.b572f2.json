@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "b572f2",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 86.9287338,
+      "posY": 2.50693154,
+      "posZ": 17.5223885,
+      "rotX": 0.0168550964,
+      "rotY": 180.011612,
+      "rotZ": 0.0798792541,
+      "scaleX": 2.00505972,
+      "scaleY": 1,
+      "scaleZ": 2.00505972
+    },
+    "Nickname": "Thanos' HP Counter",
+    "Description": "Created by Unicorn\nTemplate by Hitch, Counter by JQTNguyen",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249983639,
+      "g": 0.249983639,
+      "b": 0.249983639
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1849305905150145079/54DEDEDC81C5F76EDB6DCFE7A64F64476AF811BF/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Thanos_HP_Counter.b572f2.lua",
+    "LuaScriptState": "#include ./Thanos_HP_Counter.b572f2.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

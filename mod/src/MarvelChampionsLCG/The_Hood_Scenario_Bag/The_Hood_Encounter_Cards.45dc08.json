@@ -1,0 +1,116 @@
+{
+  "Object": {
+    "GUID": "45dc08",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 100.036469,
+      "posY": 4.47575045,
+      "posZ": 58.61798,
+      "rotX": 4.10649e-8,
+      "rotY": 179.995041,
+      "rotZ": 8.74354644e-10,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "The Hood Encounter Cards",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      971303,
+      971304,
+      971305,
+      1000,
+      971306,
+      900,
+      971307,
+      971308,
+      971400,
+      1200
+    ],
+    "CustomDeck": {
+      "9": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833524088513424938/E1E8FE05138CA91D300814595F176AA122F986E7/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 2,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "10": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833524420366993573/F26C5B54F17A6AA610859EE62384B303A151F0CF/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "12": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833524420366994695/F6F3A56148181A5D12C5C4B32176E8A025D94B6A/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "9713": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833524088513418557/96FBFF2F56CF4C1A12BFA3D3B8CC14D3C76AEF50/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 6,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "9714": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833524420366994035/DAE4C0A5F2EB36D69F25D3C9F3901437186142EE/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Establish_Dominance.16823d.971303.json",
+    "The_Hood_s_Mantle.015c7c.971304.json",
+    "The_Hood_s_Pistol.4d9e1f.971305.json",
+    "The_Hood_s_Pistol.2c5a65.1000.json",
+    "Madame_Masque.2d1b49.971306.json",
+    "Unbridled_Ambition.aacde7.900.json",
+    "Field_Recruitment.c24e3e.971307.json",
+    "Upper_Hand.0fc8dd.971308.json",
+    "Upper_Hand.8b1faf.971400.json",
+    "Upper_Hand.a7a55b.1200.json"
+  ]
+}

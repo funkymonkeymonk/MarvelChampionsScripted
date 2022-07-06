@@ -1,0 +1,57 @@
+{
+  "Object": {
+    "GUID": "7b0d4e",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 41.25,
+      "posY": 0.309966862,
+      "posZ": 66.75,
+      "rotX": -1.53376533e-7,
+      "rotY": 359.994171,
+      "rotZ": 7.05371633e-7,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Hela Scenario Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.117998533,
+      "g": 0.53,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Hela_s_HP_Counter.2ca162.json",
+    "Hela_Encounter_Cards.f840c4.json",
+    "Odin.8f865d.600.json",
+    "Hela_Set-Aside_Cards.e1a466.json",
+    "Odin_s_Torment.108915.1400.json",
+    "Hela_Villain.dfd577.json"
+  ]
+}

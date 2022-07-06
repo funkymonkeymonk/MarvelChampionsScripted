@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "f51c69",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 28.0000153,
+      "posY": 3.53581023,
+      "posZ": 12.0000067,
+      "rotX": 0.07587776,
+      "rotY": 89.9743,
+      "rotZ": 0.016332943,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Hunting Down Heroes",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 500,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "5": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833527325300803631/7129E2E8A31A244A8F73359AAA704E27A35D1A82/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833527325300803799/24A87546B438FDF1165164399B363008F3E918A0/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

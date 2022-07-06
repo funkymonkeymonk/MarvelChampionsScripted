@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "18b808",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 26.0000553,
+      "posY": 1.46236646,
+      "posZ": 12.0000067,
+      "rotX": 0.017050311,
+      "rotY": 179.999969,
+      "rotZ": 180.0811,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Norman Osborn",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 400,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "4": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833527325297478071/363CB3E979704FA66014F886CC8C01985AC8FECA/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833527325297478284/1A8B9E54E1D12075458D4E1E07982C8A1DF005EA/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

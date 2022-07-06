@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "2ca162",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 84.66529,
+      "posY": 2.39378786,
+      "posZ": 34.65386,
+      "rotX": 0.0169235356,
+      "rotY": 179.963058,
+      "rotZ": 0.07986556,
+      "scaleX": 2.00505972,
+      "scaleY": 1,
+      "scaleZ": 2.00505972
+    },
+    "Nickname": "Hela's HP Counter",
+    "Description": "Created by Unicorn\nTemplate by Hitch, Counter by JQTNguyen",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249983639,
+      "g": 0.249983639,
+      "b": 0.249983639
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1849305905150128726/5561A2846A40991CD9F774C0CA75572DC3A7C096/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Hela_s_HP_Counter.2ca162.lua",
+    "LuaScriptState": "#include ./Hela_s_HP_Counter.2ca162.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

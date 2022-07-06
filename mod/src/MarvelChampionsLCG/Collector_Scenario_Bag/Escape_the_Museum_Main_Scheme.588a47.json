@@ -1,0 +1,84 @@
+{
+  "Object": {
+    "GUID": "588a47",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 93.51525,
+      "posY": 2.25650454,
+      "posZ": 70.62739,
+      "rotX": 7.07706027e-9,
+      "rotY": 89.99968,
+      "rotZ": -4.203411e-9,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Escape the Museum Main Scheme",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": true,
+    "DeckIDs": [
+      700,
+      600,
+      500
+    ],
+    "CustomDeck": {
+      "5": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833526258727788545/6F4B2F00A2C709D6F973BE04891CD7CD81F76A86/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833526258727788687/6B0FA047C68575A53DA8F6A24E3C4871D62C7B21/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "6": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833526258727789009/97722BEEEED332C14F23B437461EF32B5406F167/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833526258727789225/2EB049B3C096F7D8D38D9B68A5B2DCB3410F8B9B/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "7": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833526258727789533/3AF6F9B279D6F4B991C7A0BD5E4B9B6C50FB3093/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833526258727789709/F10399628BA78A0B1867972F1D562E42215D7E0A/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "The_Great_Escape.7ed28e.700.json",
+    "Lost_in_the_Museum.fb2bc4.600.json",
+    "The_Missing_Milano.18abc5.500.json"
+  ]
+}

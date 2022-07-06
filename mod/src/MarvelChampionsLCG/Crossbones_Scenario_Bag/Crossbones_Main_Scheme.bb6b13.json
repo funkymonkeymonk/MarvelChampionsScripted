@@ -1,0 +1,84 @@
+{
+  "Object": {
+    "GUID": "bb6b13",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 102.845581,
+      "posY": 14.0611458,
+      "posZ": 63.3008232,
+      "rotX": 2.11256044e-8,
+      "rotY": 89.99994,
+      "rotZ": -9.65677049e-9,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Crossbones Main Scheme",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": true,
+    "DeckIDs": [
+      600,
+      500,
+      400
+    ],
+    "CustomDeck": {
+      "4": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833526625011340317/F5044C3091C9386262101EFC14D748EB16F4C483/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833526625011340494/4D3C94393C5EAB232BE530CA6CBC03494620E504/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "5": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833526625011340760/6AD9305B8C0DA2488B488871AC578B283AF2D8D8/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833526625011340942/780E1BA95E88B2986D28D7FA586F5FAE47663E67/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "6": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833526625011341185/AD190DED063ED306404932803DBB207E97E1CDBA/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833526625011341368/12BAC0A53DA7B808889E42304C2F25D5E79A54F5/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "The_Getaway.133387.600.json",
+    "The_Infinity_Stone.3557d6.500.json",
+    "Attack_on_Mount_Athena.82dbd8.400.json"
+  ]
+}

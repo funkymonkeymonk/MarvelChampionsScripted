@@ -1,0 +1,73 @@
+{
+  "Object": {
+    "GUID": "cd630e",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 96.79779,
+      "posY": 2.25148177,
+      "posZ": 68.44157,
+      "rotX": -3.60170738e-8,
+      "rotY": 180,
+      "rotZ": 7.934294e-9,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Escape the Museum Villain",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      900,
+      800
+    ],
+    "CustomDeck": {
+      "8": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833526258727790486/26BD6380B0908FBE585F2D7DB8C12524FBC5B8BD/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833526258727790705/FADD9A62F77C2071574FDFC4C3A11F34CC4262F5/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "9": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833526258727791017/0500755FE1384B766BD1044277E2924AF7FDE37C/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833526258727791233/AADB5DCE5D1371CAB3FD034C56CA6D2BCFE0E0B9/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Collector.9c7aaa.900.json",
+    "Collector.7aff16.800.json"
+  ]
+}

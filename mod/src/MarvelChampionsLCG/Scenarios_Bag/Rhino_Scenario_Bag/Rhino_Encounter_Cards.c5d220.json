@@ -1,0 +1,103 @@
+{
+  "Object": {
+    "GUID": "c5d220",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 81.2178955,
+      "posY": 2.32390428,
+      "posZ": 41.1186829,
+      "rotX": -1.28185007e-7,
+      "rotY": 180,
+      "rotZ": 180,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Rhino Encounter Cards",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      201,
+      200,
+      114,
+      113,
+      112,
+      111,
+      110,
+      109,
+      108,
+      107,
+      106,
+      105,
+      104,
+      103,
+      102,
+      101,
+      100
+    ],
+    "CustomDeck": {
+      "1": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833527325300736384/19FE7220AF7066F40F388AFC2F39B18B70F48E01/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "2": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833527325300738367/984622544516CB8C2430F4F7438F6ECDF14B6A6B/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Crowd_Control.48c18a.201.json",
+    "Breakin_and_Takin.7d2e35.200.json",
+    "Stampede.3a07e4.114.json",
+    "Stampede.6bb70f.113.json",
+    "Stampede.6513a4.112.json",
+    "I_m_Tough!.b74083.111.json",
+    "I_m_Tough!.d21b15.110.json",
+    "Hard_to_Keep_Down.a847a6.109.json",
+    "Hard_to_Keep_Down.a36988.108.json",
+    "Shocker.6b7493.107.json",
+    "Sandman.e99533.106.json",
+    "Hydra_Mercenary.9c2b3e.105.json",
+    "Hydra_Mercenary.e5647a.104.json",
+    "Enhanced_Ivory_Horn.3cf27e.103.json",
+    "Charge.db6286.102.json",
+    "Charge.2a2b0f.101.json",
+    "Armored_Rhino_Suit.f058b2.100.json"
+  ]
+}

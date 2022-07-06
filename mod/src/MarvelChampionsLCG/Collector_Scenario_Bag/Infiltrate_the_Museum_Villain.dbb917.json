@@ -1,0 +1,66 @@
+{
+  "Object": {
+    "GUID": "dbb917",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 100.955734,
+      "posY": 7.499314,
+      "posZ": 76.70711,
+      "rotX": 6.994931e-10,
+      "rotY": 179.999069,
+      "rotZ": -1.31906361e-7,
+      "scaleX": 1.93725336,
+      "scaleY": 1,
+      "scaleZ": 1.93725336
+    },
+    "Nickname": "Infiltrate the Museum Villain",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      1202,
+      1201,
+      1200
+    ],
+    "CustomDeck": {
+      "12": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833526258727785993/FD269E41089C2CD27C6D894A9409ABC0DBAC490F/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+        "NumWidth": 10,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Collector.b37ae6.1202.json",
+    "Collector.ef33f2.1201.json",
+    "Collector.9d3f1f.1200.json"
+  ]
+}

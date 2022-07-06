@@ -1,0 +1,59 @@
+{
+  "Object": {
+    "GUID": "2417f8",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 41.25,
+      "posY": 0.309966981,
+      "posZ": 72.25,
+      "rotX": -7.83744341e-8,
+      "rotY": 0.0007293495,
+      "rotZ": 1.0672121e-7,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Proxima Midnight and Corvus Glaive Scenario Bag Scenario Pack",
+    "Description": "Tower Defense",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.1179987,
+      "g": 0.53,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Avengers_Tower_s_HP_Counter.97d17c.json",
+    "Corvus_Glaive_s_HP_Counter.bd39cb.json",
+    "Proxima_Midnight_s_HP_Counter.cae96f.json",
+    "Tower_Defense_Encounter_Cards.10a7e4.json",
+    "Tower_Defense_Setup_Cards.ec4c30.json",
+    "Tower_Defense_Main_Scheme.beb701.json",
+    "Corvus_Glaive_Villain.318fc9.json",
+    "Proxima_Midnight_Villain.0f95a4.json"
+  ]
+}

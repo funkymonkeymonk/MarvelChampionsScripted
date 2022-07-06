@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "8c9128",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 44.0001335,
+      "posY": 1.43612611,
+      "posZ": 8.000008,
+      "rotX": 0.07989203,
+      "rotY": 89.99928,
+      "rotZ": 179.983231,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Interception Imminent",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 400,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "4": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833527325300764343/D6C7CC61D1F32001E704B95546346C0BA723DF59/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833527325300764502/31AD1EA8C48971F9F6EBF6F7FCE472AB8FED7B7B/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

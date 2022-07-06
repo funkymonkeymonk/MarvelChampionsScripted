@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "3a84b4",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 26,
+      "posY": 1.5117979,
+      "posZ": 7.99999952,
+      "rotX": 0.0171211865,
+      "rotY": 89.99998,
+      "rotZ": 359.938416,
+      "scaleX": 1.93725336,
+      "scaleY": 1,
+      "scaleZ": 1.93725336
+    },
+    "Nickname": "Terrestrial Invasion",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 400,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "4": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833525990616309357/775ADA6D20DE9A8578468855DFB824EA234A4740/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833525990616310222/893AA2187BF96483A8C5F9ACE81DFD9FAA46854F/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

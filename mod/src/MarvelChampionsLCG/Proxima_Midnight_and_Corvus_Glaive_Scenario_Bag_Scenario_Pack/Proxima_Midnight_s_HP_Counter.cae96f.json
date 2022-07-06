@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "cae96f",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 90.77987,
+      "posY": 2.51667857,
+      "posZ": 21.0600529,
+      "rotX": 0.0169030745,
+      "rotY": 179.976578,
+      "rotZ": 0.07986944,
+      "scaleX": 2.00505972,
+      "scaleY": 1,
+      "scaleZ": 2.00505972
+    },
+    "Nickname": "Proxima Midnight's HP Counter",
+    "Description": "Created by Unicorn\nTemplate by Hitch, Counter by JQTNguyen",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249983609,
+      "g": 0.249983609,
+      "b": 0.249983609
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1849305905150135976/E9896414070810D2509CE451A33FDFB69BD082DB/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Proxima_Midnight_s_HP_Counter.cae96f.lua",
+    "LuaScriptState": "#include ./Proxima_Midnight_s_HP_Counter.cae96f.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

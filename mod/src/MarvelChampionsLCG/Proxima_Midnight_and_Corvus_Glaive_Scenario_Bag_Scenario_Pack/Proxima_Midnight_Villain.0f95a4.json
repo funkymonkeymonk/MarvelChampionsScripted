@@ -1,0 +1,66 @@
+{
+  "Object": {
+    "GUID": "0f95a4",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 34.00002,
+      "posY": 3.551955,
+      "posZ": 22.0000019,
+      "rotX": 0.00118372508,
+      "rotY": 180.004059,
+      "rotZ": 0.07435913,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Proxima Midnight Villain",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      402,
+      401,
+      400
+    ],
+    "CustomDeck": {
+      "4": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833528529707217946/FC0E7BAA99885FC1DAD02289CBCEAF9F0D7A7636/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+        "NumWidth": 10,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Proxima_Midnight.02c80b.402.json",
+    "Proxima_Midnight.96b5f6.401.json",
+    "Proxima_Midnight.2eec09.400.json"
+  ]
+}

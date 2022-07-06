@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "e7faa7",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 46.25,
+      "posY": 0.3099671,
+      "posZ": 73.25,
+      "rotX": -3.501901e-8,
+      "rotY": 0.00110632391,
+      "rotZ": 9.838374e-8,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Taskmaster Scenario Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.117998563,
+      "g": 0.53,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Taskmaster_s_HP_Counter.c8dbb1.json",
+    "Taskmaster_Encounter_Cards.1ed3dc.json",
+    "Taskmaster_Allies.a0d910.json",
+    "Hunting_Down_Heroes.f51c69.500.json",
+    "Taskmaster_Villain.405f75.json"
+  ]
+}

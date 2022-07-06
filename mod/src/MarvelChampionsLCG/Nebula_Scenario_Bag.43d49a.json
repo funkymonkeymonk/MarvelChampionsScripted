@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "43d49a",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 50.75,
+      "posY": 0.309967041,
+      "posZ": 76.75,
+      "rotX": -4.83583946e-8,
+      "rotY": -0.000210241764,
+      "rotZ": -6.50334542e-8,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Nebula Scenario Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.117998607,
+      "g": 0.53,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Nebula_s_HP_Counter.91ed41.json",
+    "Nebula_Encounter_Cards.48bb5d.json",
+    "Nebula_s_Ship.f22b52.300.json",
+    "Nebula_Main_Scheme.e291b3.json",
+    "Nebula_Villain.343f42.json"
+  ]
+}

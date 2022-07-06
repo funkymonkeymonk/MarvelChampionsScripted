@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "18abc5",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 20.0000038,
+      "posY": 1.4691819,
+      "posZ": 8.000011,
+      "rotX": 0.0825143158,
+      "rotY": 90,
+      "rotZ": 179.998322,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "The Missing Milano",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 500,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "5": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833526258727788545/6F4B2F00A2C709D6F973BE04891CD7CD81F76A86/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833526258727788687/6B0FA047C68575A53DA8F6A24E3C4871D62C7B21/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

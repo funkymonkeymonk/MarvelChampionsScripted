@@ -1,0 +1,65 @@
+{
+  "Object": {
+    "GUID": "315fe7",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 100.81562,
+      "posY": 89.31558,
+      "posZ": -4.77980042,
+      "rotX": -4.26878927e-7,
+      "rotY": 179.99823,
+      "rotZ": 5.102698e-7,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Brotherhood of Badoon",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.2862741,
+      "g": 0.576470554,
+      "b": 0
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Brotherhood_of_Badoon.315fe7.lua",
+    "LuaScriptState": "#include ./Brotherhood_of_Badoon.315fe7.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Custom_Assetbundle_Bag.7fca5a.json",
+    "Custom_Token.7e3360.json",
+    "Drang.bc4b00.json",
+    "Drang.fa06ec.json",
+    "Custom_Token.a4dde0.json",
+    "Drang_s_Spear.696647.798608.json",
+    "Deck.1f3c84.json",
+    "Deck.a80895.json",
+    "Milano.4f5e2c.799000.json",
+    "Badoon_Ship.ea2c17.798607.json",
+    "Protect_the_Planet.e87117.801300.json",
+    "Terrestrial_Invasion.bca5e0.801200.json",
+    "Drang.32b9ad.json",
+    "Drang.e502be.json"
+  ]
+}

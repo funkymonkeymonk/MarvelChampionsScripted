@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "ae7e2f",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 73.56317,
+      "posY": 2.40729547,
+      "posZ": 26.0675621,
+      "rotX": 0.0168944839,
+      "rotY": 179.982391,
+      "rotZ": 0.07987113,
+      "scaleX": 2.00505972,
+      "scaleY": 1,
+      "scaleZ": 2.00505972
+    },
+    "Nickname": "Red Skull's HP Counter",
+    "Description": "Created by Unicorn\nTemplate by Hitch, Counter by JQTNguyen",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249983639,
+      "g": 0.249983639,
+      "b": 0.249983639
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1849305905150138001/6A9EC283F45343AF8C06D9001FF6DA4DC11E99E3/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Red_Skull_s_HP_Counter.ae7e2f.lua",
+    "LuaScriptState": "#include ./Red_Skull_s_HP_Counter.ae7e2f.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

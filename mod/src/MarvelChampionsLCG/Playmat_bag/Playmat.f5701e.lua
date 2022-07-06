@@ -231,7 +231,7 @@ function clearPlaymat()
    local objects = findObjectsAtPosition()
 
    for _, obj in ipairs(objects) do
-      if(obj.tag ~= "Surface") then
+      if(obj.tag ~= "Surface" and obj.getGUID() ~= "321cd7") then
          obj.destruct()
       end
    end

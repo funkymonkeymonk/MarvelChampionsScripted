@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "1287a9",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 26.0001163,
+      "posY": 1.461225,
+      "posZ": 7.999984,
+      "rotX": 0.0798657238,
+      "rotY": 89.99992,
+      "rotZ": 359.983215,
+      "scaleX": 1.93725336,
+      "scaleY": 1,
+      "scaleZ": 1.93725336
+    },
+    "Nickname": "Protect the Planet",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 500,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "5": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833525990616310555/5FB4399039B5D94FC03F51DF202E17F9539AA56D/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833525990616310711/75AFA9B798D5809DDC482ABD9B93F59C520AA8FA/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,0 +1,66 @@
+{
+  "Object": {
+    "GUID": "f85a3f",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 93.4648361,
+      "posY": 2.2563436,
+      "posZ": 56.9204254,
+      "rotX": -6.187433e-8,
+      "rotY": 179.999863,
+      "rotZ": 1.53771129e-8,
+      "scaleX": 1.93725336,
+      "scaleY": 1,
+      "scaleZ": 1.93725336
+    },
+    "Nickname": "Brotherhood of Badoon Villain",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      302,
+      301,
+      300
+    ],
+    "CustomDeck": {
+      "3": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833525990616307600/BD5A4C5469036FE324B9A05EFC8592B15428CC77/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+        "NumWidth": 10,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Drang.6df730.302.json",
+    "Drang.04c56d.301.json",
+    "Drang.142989.300.json"
+  ]
+}

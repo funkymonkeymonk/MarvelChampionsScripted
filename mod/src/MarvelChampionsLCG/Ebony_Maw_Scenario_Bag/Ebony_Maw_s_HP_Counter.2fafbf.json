@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "2fafbf",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 97.96086,
+      "posY": 2.22113538,
+      "posZ": 36.4301834,
+      "rotX": 3.07545179e-7,
+      "rotY": 180.01297,
+      "rotZ": -6.18864462e-8,
+      "scaleX": 2.00505972,
+      "scaleY": 1,
+      "scaleZ": 2.00505972
+    },
+    "Nickname": "Ebony Maw's HP Counter",
+    "Description": "Created by Unicorn\nTemplate by Hitch, Counter by JQTNguyen",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249983579,
+      "g": 0.249983579,
+      "b": 0.249983579
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1833526625011328103/BF2ACCCB17F3483D19BD641EAC011EFD20ECF9B3/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Ebony_Maw_s_HP_Counter.2fafbf.lua",
+    "LuaScriptState": "#include ./Ebony_Maw_s_HP_Counter.2fafbf.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "cdcf14",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 42.25,
+      "posY": 0.309967041,
+      "posZ": 62.75,
+      "rotX": -1.98436581e-7,
+      "rotY": 0.000975889969,
+      "rotZ": 1.06720016e-7,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Collector Scenario Bag",
+    "Description": "Infiltrate the Museum",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.117998637,
+      "g": 0.53,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Infiltrate_the_Museum_Villain.dbb917.json",
+    "The_Collector_s_HP_Counter.3fe988.json",
+    "The_Grand_Collection.1ffbde.400.json",
+    "Infiltrate_the_Museum_Encounter_Cards.6d990d.json"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "2caba5",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 85.45678,
+      "posY": 2.38636971,
+      "posZ": 17.6169167,
+      "rotX": 0.0169091374,
+      "rotY": 179.971313,
+      "rotZ": 0.07986742,
+      "scaleX": 2.00505972,
+      "scaleY": 1,
+      "scaleZ": 2.00505972
+    },
+    "Nickname": "Zola's HP Counter",
+    "Description": "Created by Unicorn\nTemplate by Hitch, Counter by JQTNguyen",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249983639,
+      "g": 0.249983639,
+      "b": 0.249983639
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1849305905150149561/7BDA5483418FB33A377C93A60F7D06F1E3774351/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Zola_s_HP_Counter.2caba5.lua",
+    "LuaScriptState": "#include ./Zola_s_HP_Counter.2caba5.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "72a6c2",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 46.75,
+      "posY": 0.309966624,
+      "posZ": 68.75,
+      "rotX": 3.35172928e-7,
+      "rotY": 0.00112348609,
+      "rotZ": -8.334347e-9,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "The Wrecking Crew Scenario Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.117998727,
+      "g": 0.53,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Wrecker.97f532.json",
+    "Thunderball.691115.json",
+    "Piledriver.16fcb1.json",
+    "Bulldozer.29dc36.json",
+    "Breakout.b6b354.400.json"
+  ]
+}

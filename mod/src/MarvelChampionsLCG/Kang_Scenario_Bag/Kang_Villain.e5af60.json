@@ -1,0 +1,72 @@
+{
+  "Object": {
+    "GUID": "e5af60",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 36.0000153,
+      "posY": 3.563612,
+      "posZ": 22.0000038,
+      "rotX": 0.000904969231,
+      "rotY": 179.986679,
+      "rotZ": 0.07129358,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Kang Villain",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      405,
+      404,
+      403,
+      402,
+      401,
+      400
+    ],
+    "CustomDeck": {
+      "4": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833527325297262391/D417FC3C941E75EF348AC497CA74CEC0D3CBF1A7/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+        "NumWidth": 10,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Kang_The_Conqueror.d76ea1.405.json",
+    "Kang_Scarlet_Centurion.e05e4f.404.json",
+    "Kang_Rama-Tut.0e343d.403.json",
+    "Kang_Iron_Lad.570730.402.json",
+    "Kang_Immortus.9f6b97.401.json",
+    "Kang_The_Conqueror.a13c47.400.json"
+  ]
+}

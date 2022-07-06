@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "9f9dc9",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 46.75,
+      "posY": 0.309967041,
+      "posZ": 47.25,
+      "rotX": 2.83485324e-8,
+      "rotY": 0.0009678191,
+      "rotZ": -6.836835e-8,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Green Goblin Scenario Bag",
+    "Description": "Risky Business",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.117998533,
+      "g": 0.53,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Green_Goblin_s_HP_Counter.66ccaa.json",
+    "Risky_Business_Encounter_Cards.c35c9a.json",
+    "Criminal_Enterprise.428b71.900.json",
+    "Risky_Business_Main_Scheme.d58558.json",
+    "Risky_Business_Villain.56393b.json"
+  ]
+}

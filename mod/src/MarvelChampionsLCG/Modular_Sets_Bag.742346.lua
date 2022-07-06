@@ -97,16 +97,6 @@ function stripArticles(orig)
     return orig
 end
 
-function getWords (orig)
-    local words = {}
-
-    for str in string.gmatch(orig, "([^%s]+)") do
-        table.insert(words, str)
-    end
-
-    return words
-end
-
 function getCoordinates(column, row)
     x = originPosition.x + columnGap * (column - 1)
     z = originPosition.z + rowGap * (row - 1)

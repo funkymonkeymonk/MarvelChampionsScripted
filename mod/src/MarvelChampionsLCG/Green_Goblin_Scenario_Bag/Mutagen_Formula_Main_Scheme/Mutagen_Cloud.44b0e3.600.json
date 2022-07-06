@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "44b0e3",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 34.0002,
+      "posY": 1.47193587,
+      "posZ": 8.000117,
+      "rotX": 0.253358155,
+      "rotY": 90.00026,
+      "rotZ": 180.171967,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Mutagen Cloud",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 600,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "6": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833527325297426094/A92E0F0C4DC37525F7B31F838E2A9D24A9138A06/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833527325297426381/24DAA00A6B23981E7083F4A3A608847AD270407E/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "97f532",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 100.792992,
+      "posY": 2.03620243,
+      "posZ": 66.3398743,
+      "rotX": 0.00000112227224,
+      "rotY": -0.00344595476,
+      "rotZ": 9.187728e-7,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Wrecker",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.627,
+      "g": 0.124999918,
+      "b": 0.941
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Wrecker_s_HP_Counter.4fa46e.json",
+    "Wrecker_s_Encounter_Cards.3b5f9f.json",
+    "Day_of_Reckoning.fa55e8.200.json",
+    "Wrecker_Villain.ac1620.json"
+  ]
+}

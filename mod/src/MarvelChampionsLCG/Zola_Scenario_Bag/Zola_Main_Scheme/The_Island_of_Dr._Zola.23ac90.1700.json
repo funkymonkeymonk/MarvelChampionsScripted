@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "23ac90",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 62.0000267,
+      "posY": 1.41311228,
+      "posZ": 16.0000286,
+      "rotX": 0.08178076,
+      "rotY": 90.0000153,
+      "rotZ": 179.993713,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "The Island of Dr. Zola",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 1700,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "17": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833528529707244358/6DBC2EA7B0D6D9C5909D3AB308BF668FE5D388B1/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833528529707244521/DEA18626FF4FF896594972CACB421F871D0F5641/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

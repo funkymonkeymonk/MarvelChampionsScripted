@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "1ab1ed",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 99.62013,
+      "posY": 12.6697569,
+      "posZ": 59.2570534,
+      "rotX": -1.73208434e-8,
+      "rotY": 89.99949,
+      "rotZ": -1.49230019e-7,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "None Shall Pass",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 971000,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "9710": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833525541771216555/F4D6082FAD3172823A2B85FD04FDBDC489996BA0/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833525541771216030/B5682AA934B680BD319E09112CEF766D2FCCA72F/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

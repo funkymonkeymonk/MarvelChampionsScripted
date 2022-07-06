@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "8fbb63",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 101.711433,
+      "posY": 35.17628,
+      "posZ": 47.2350349,
+      "rotX": -3.61160746e-15,
+      "rotY": 180,
+      "rotZ": 1.31734538e-7,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Venom Scenario Pack",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.117994227,
+      "g": 0.53,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Venom_s_HP_Counter.d47561.json",
+    "Venom_Encounter_Cards.f23b25.json",
+    "Bell_Tower.9a8395.971400.json",
+    "Leave_Us_Alone!.1d24f4.971300.json",
+    "Venom_Villain.b8823e.json"
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "Object": {
+    "GUID": "10a7e4",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 34.00002,
+      "posY": 3.61935616,
+      "posZ": 22.0000114,
+      "rotX": 0.001222206,
+      "rotY": 179.999954,
+      "rotZ": 0.0743968859,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Tower Defense Encounter Cards",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      501,
+      500,
+      615,
+      614,
+      613,
+      612,
+      611,
+      610,
+      609,
+      608,
+      607,
+      606,
+      605,
+      604,
+      603,
+      602,
+      601
+    ],
+    "CustomDeck": {
+      "5": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833528529707220513/0358479A0CB262EFA830A030F6D33B09A46DFB06/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "6": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833528529707221576/760DA8B1C2F0D1594C3262B8F1FA654660564EAC/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "City_Under_Attack.42ef0b.501.json",
+    "City_Under_Attack.ba8c26.500.json",
+    "Rain_Fire.9534d0.615.json",
+    "Rain_Fire.254ba4.614.json",
+    "Bound_by_Blood.9fadbd.613.json",
+    "Corvus_s_Cunning.22acb9.612.json",
+    "Corvus_s_Cunning.9abef0.611.json",
+    "Proxima_s_Power.8e2aee.610.json",
+    "Proxima_s_Power.2020e1.609.json",
+    "Direct_Assault.773f8e.608.json",
+    "Direct_Assault.432974.607.json",
+    "Corvus_s_Glaive.d0249b.606.json",
+    "Proxima_s_Spear.ad156f.605.json",
+    "Black_Order_Besieger.ddead7.604.json",
+    "Black_Order_Besieger.ecbeb6.603.json",
+    "Black_Order_Besieger.c9d3a9.602.json",
+    "Black_Order_Besieger.9d0c6b.601.json"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "f97f84",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 46.25,
+      "posY": 0.3099668,
+      "posZ": 76.75,
+      "rotX": -2.53464464e-7,
+      "rotY": 0.00134113838,
+      "rotZ": 3.501509e-8,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Thanos Scenario Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.117998563,
+      "g": 0.53,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Thanos_HP_Counter.b572f2.json",
+    "Thanos_Encounter_Cards.8e286c.json",
+    "Sanctuary.7dd1f2.200.json",
+    "Thanos_Main_Scheme.6e39d1.json",
+    "Thanos_Villain.fd9230.json"
+  ]
+}

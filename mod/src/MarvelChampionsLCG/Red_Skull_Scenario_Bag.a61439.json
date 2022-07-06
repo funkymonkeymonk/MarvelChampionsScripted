@@ -1,0 +1,57 @@
+{
+  "Object": {
+    "GUID": "a61439",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 51.25,
+      "posY": 0.309966981,
+      "posZ": 68.25,
+      "rotX": 3.66847068e-8,
+      "rotY": -0.0005765173,
+      "rotZ": -1.75090491e-7,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Red Skull Scenario Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.117998607,
+      "g": 0.53,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Red_Skull_s_HP_Counter.ae7e2f.json",
+    "Red_Skull_Encounter_Cards.2b6e24.json",
+    "The_Sleeper.88bfb5.300.json",
+    "Red_Skull_Side_Schemes.67fe7a.json",
+    "Red_Skull_Main_Scheme.bf26ac.json",
+    "Red_Skull_Villain.d89bae.json"
+  ]
+}

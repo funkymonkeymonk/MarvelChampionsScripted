@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "91ed41",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 75.22033,
+      "posY": 2.398626,
+      "posZ": 5.033802,
+      "rotX": 0.016892964,
+      "rotY": 179.983765,
+      "rotZ": 0.07987142,
+      "scaleX": 2.00505972,
+      "scaleY": 1,
+      "scaleZ": 2.00505972
+    },
+    "Nickname": "Nebula's HP Counter",
+    "Description": "Created by Unicorn\nTemplate by Hitch, Counter by JQTNguyen",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249983639,
+      "g": 0.249983639,
+      "b": 0.249983639
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1849305905150133365/FA5F252C872C3D30F0F15DCEBAE68E1C60954D2A/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Nebula_s_HP_Counter.91ed41.lua",
+    "LuaScriptState": "#include ./Nebula_s_HP_Counter.91ed41.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

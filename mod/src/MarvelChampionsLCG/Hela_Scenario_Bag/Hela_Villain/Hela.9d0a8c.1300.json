@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "9d0a8c",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 33.9931221,
+      "posY": 1.45242488,
+      "posZ": 16.0000553,
+      "rotX": 0.0169265866,
+      "rotY": 180.000519,
+      "rotZ": 180.080246,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Hela",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 1300,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "3": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833527325297207461/78FBD5E08C39EEBCC3462BA780899F198B5388E6/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833527325297207648/6933A1A07CBF589C45FAAB051B3E497A3108DE4E/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

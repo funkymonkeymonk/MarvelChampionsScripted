@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "97d17c",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 102.408081,
+      "posY": 1.97731757,
+      "posZ": 23.8564053,
+      "rotX": 0.0169010777,
+      "rotY": 179.978,
+      "rotZ": 0.07986978,
+      "scaleX": 2.00505972,
+      "scaleY": 1,
+      "scaleZ": 2.00505972
+    },
+    "Nickname": "Avengers Tower's HP Counter",
+    "Description": "Created by Unicorn\nTemplate by Hitch, Counter by JQTNguyen",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.249983609,
+      "g": 0.249983609,
+      "b": 0.249983609
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1849305905150121236/51DE813B79BDB1100212F0F05F303100627912AC/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Avengers_Tower_s_HP_Counter.97d17c.lua",
+    "LuaScriptState": "#include ./Avengers_Tower_s_HP_Counter.97d17c.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

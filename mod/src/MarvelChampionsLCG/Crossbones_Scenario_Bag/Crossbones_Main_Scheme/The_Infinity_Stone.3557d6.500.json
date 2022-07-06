@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "3557d6",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 48.0000458,
+      "posY": 1.449033,
+      "posZ": 0.000293372665,
+      "rotX": 0.07439747,
+      "rotY": 90.00004,
+      "rotZ": 180.432968,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "The Infinity Stone",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 500,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "5": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833526625011340760/6AD9305B8C0DA2488B488871AC578B283AF2D8D8/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833526625011340942/780E1BA95E88B2986D28D7FA586F5FAE47663E67/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

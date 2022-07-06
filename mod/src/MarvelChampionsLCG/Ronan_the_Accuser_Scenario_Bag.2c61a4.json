@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "2c61a4",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 40.75,
+      "posY": 0.309966922,
+      "posZ": 75.75,
+      "rotX": -9.19724741e-8,
+      "rotY": 90.00063,
+      "rotZ": 2.09882742e-7,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Ronan the Accuser Scenario Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.117998563,
+      "g": 0.53,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Ronan_the_Accuser_s_HP_Counter.356205.json",
+    "Ronan_the_Accuser_Encounter_Cards.dcc01a.json",
+    "Ronan_the_Accuser_Setup_Cards.24dbbc.json",
+    "Ronan_the_Accuser_Main_Scheme.8c57ad.json",
+    "Deck.917362.json"
+  ]
+}

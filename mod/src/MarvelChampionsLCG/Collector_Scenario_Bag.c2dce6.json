@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "c2dce6",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 41.25,
+      "posY": 0.309967041,
+      "posZ": 59.25,
+      "rotX": -3.16832924e-8,
+      "rotY": 0.0009850881,
+      "rotZ": 3.335026e-8,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Collector Scenario Bag",
+    "Description": "Escape the Museum",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.117998607,
+      "g": 0.53,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "The_Collector_s_HP_Counter.5bfe85.json",
+    "Escape_the_Museum_Encounter_Cards.ef8a00.json",
+    "Escape_the_Museum_Villain.cd630e.json",
+    "Escape_the_Museum_Main_Scheme.588a47.json"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "133387",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 48.0000229,
+      "posY": 1.48898375,
+      "posZ": 0.0000163098175,
+      "rotX": 0.05517413,
+      "rotY": 90.00022,
+      "rotZ": 179.9968,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "The Getaway",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 600,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "6": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833526625011341185/AD190DED063ED306404932803DBB207E97E1CDBA/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833526625011341368/12BAC0A53DA7B808889E42304C2F25D5E79A54F5/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

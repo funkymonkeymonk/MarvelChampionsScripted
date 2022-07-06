@@ -1,0 +1,73 @@
+{
+  "Object": {
+    "GUID": "d58558",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 34.00002,
+      "posY": 3.5461638,
+      "posZ": 18.0000114,
+      "rotX": 0.0758913457,
+      "rotY": 89.9998856,
+      "rotZ": 0.0163482036,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Risky Business Main Scheme",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": true,
+    "DeckIDs": [
+      800,
+      700
+    ],
+    "CustomDeck": {
+      "7": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833527325297479824/038377D115ED15969B6DA7DCE20D99044074DA00/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833527325297480046/221B9478F1C6F7D7D5E40C77EE2EDC8237CD4339/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "8": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833527325297480355/A0AC9DF70DDBC294ED4D02D60C1DBC6B68BEEBF4/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833527325297480624/5138B675BAC4D3F7D10AB600B265A18DE6968510/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Corporate_Acquisition.ba6a0e.800.json",
+    "Hostile_Takeover.20e2d1.700.json"
+  ]
+}

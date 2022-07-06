@@ -1,0 +1,52 @@
+{
+  "Object": {
+    "GUID": "a8cf98",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 51.75,
+      "posY": 0.776208341,
+      "posZ": 35.25,
+      "rotX": -7.337118e-8,
+      "rotY": 0.000002614682,
+      "rotZ": -8.170881e-8,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Scenarios Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Scenarios_Bag.a8cf98.lua",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Rhino_Scenario_Bag.f23e37.json"
+  ]
+}

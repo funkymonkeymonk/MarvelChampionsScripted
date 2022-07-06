@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "61fb7a",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 50.75,
+      "posY": 0.309966922,
+      "posZ": 72.75,
+      "rotX": -1.96767274e-7,
+      "rotY": 0.0009757699,
+      "rotZ": -1.03388324e-7,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Zola Scenario Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.117998667,
+      "g": 0.53,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Zola_s_HP_Counter.2caba5.json",
+    "Zola_Encounter_Cards.b7f186.json",
+    "Hydra_Prison.1779dc.1300.json",
+    "Zola_Main_Scheme.613d74.json",
+    "Zola_Villain.e5b90f.json"
+  ]
+}

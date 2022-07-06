@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "ba7e6a",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 34.00002,
+      "posY": 1.48306036,
+      "posZ": 13.9999819,
+      "rotX": 0.056104742,
+      "rotY": 90,
+      "rotZ": 359.9801,
+      "scaleX": 1.93725336,
+      "scaleY": 1,
+      "scaleZ": 1.93725336
+    },
+    "Nickname": "Attack on Knowhere",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 100,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "1": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833526625011353272/CF110D422467C90627547D2B4D392870C08611FF/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833526625011353489/347435D0A31E395DDCF170B0274F31ED64E69347/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

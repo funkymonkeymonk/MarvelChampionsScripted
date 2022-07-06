@@ -1,0 +1,85 @@
+{
+  "Object": {
+    "GUID": "3e1fae",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 100.179329,
+      "posY": 21.7440777,
+      "posZ": 52.58202,
+      "rotX": 7.943761e-8,
+      "rotY": 179.999786,
+      "rotZ": 4.14075956e-8,
+      "scaleX": 1.93725336,
+      "scaleY": 1,
+      "scaleZ": 1.93725336
+    },
+    "Nickname": "Brotherhood of Badoon Encounter Cards",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      203,
+      202,
+      201,
+      200,
+      103,
+      102,
+      101,
+      100
+    ],
+    "CustomDeck": {
+      "1": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833525990616304509/E2F6D6816CCBD9A731C5DD1981563EF7FAB04336/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "2": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833525990616305935/3D7B0E54E730609DD69EF13919D594599DE3A572/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Spatial_Positioning.c04d4a.203.json",
+    "Oppressive_Armada.97889e.202.json",
+    "Bombardment.be654d.201.json",
+    "Blockade.969944.200.json",
+    "Badoon_Engineer.c4d09c.103.json",
+    "Badoon_Engineer.527aed.102.json",
+    "Drang_s_Spear.0ae3f7.101.json",
+    "Badoon_Ship.4262dd.100.json"
+  ]
+}

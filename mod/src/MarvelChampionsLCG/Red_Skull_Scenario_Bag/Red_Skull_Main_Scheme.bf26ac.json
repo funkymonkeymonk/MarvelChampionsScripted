@@ -1,0 +1,73 @@
+{
+  "Object": {
+    "GUID": "bf26ac",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 40.00002,
+      "posY": 3.535444,
+      "posZ": 10.0000114,
+      "rotX": 0.07585162,
+      "rotY": 90.03131,
+      "rotZ": 0.0163911413,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Red Skull Main Scheme",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": true,
+    "DeckIDs": [
+      200,
+      100
+    ],
+    "CustomDeck": {
+      "1": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833527325300706455/497E00572B3042950E5E086CA313CCAA285E5B43/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833527325300706701/0DB9E1FF57A3237B59DDC1A90F87CCD7EB97CA4A/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "2": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833527325300706979/E37669DC448AC4C2AD67AD32AB469835F5D2483A/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833527325300707173/D41C3463C48F3850A60B315EA7DA46F66832EF64/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "New_World_Hydra.f560fa.200.json",
+    "The_Rise_of_Red_Skull.0773b7.100.json"
+  ]
+}
