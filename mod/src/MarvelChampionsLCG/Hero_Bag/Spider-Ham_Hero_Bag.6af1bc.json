@@ -40,7 +40,7 @@
     "Bag": {
       "Order": 0
     },
-    "LuaScript": "",
+    "LuaScript": "#include ./Spider-Ham_Hero_Bag.6af1bc.lua",
     "LuaScriptState": "",
     "XmlUI": "",
     "ContainedObjects": []
