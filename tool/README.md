@@ -1,6 +1,10 @@
 # A few important how-to's
 
-## How to create a new hero
+## How to add a new modular encounter set
+1. Create a deck for the modular encounter set named "[name] Modular Set"
+2. Add them to the Modular Set bag face down
+
+## How to add a new hero
 ### Prepare the playmat image  
 1. Get the playmat image from https://drive.google.com/drive/folders/1IvTnpIxl8RbSZ2iuOhSdbw8KQQ0g_rA0
 2. Resize the image to 72dpi, and 1500 pixels wide. 
