@@ -3,11 +3,10 @@ on:
   push:
     branches:
       - 'main'
-      - 'automatic-release-tagging'
   workflow_dispatch:
 jobs:
   compile:
-    uses: funkymonkeymonk/MarvelChampionsScripted/.github/workflows/compile-mod.yml@automatic-release-tagging
+    uses: funkymonkeymonk/MarvelChampionsScripted/.github/workflows/compile-mod.yml@main
   push-to-steam:
     needs: compile
     runs-on: self-hosted
