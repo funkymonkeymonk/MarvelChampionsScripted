@@ -3,19 +3,32 @@ on:
   push:
     branches:
       - 'main'
+      - 'automatic-release-tagging'
   workflow_dispatch:
 jobs:
   compile:
-    uses: funkymonkeymonk/MarvelChampionsScripted/.github/workflows/compile-mod.yml@main
-  push-to-steam:
+    uses: "funkymonkeymonk/MarvelChampionsScripted/.github/workflows/compile-mod.yml@main"
+  tag-dev-release:
     needs: compile
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/download-artifact@v3
+      - uses: "marvinpinto/action-automatic-releases@latest"
         with:
-          name: ModSaveFile
-          path: ./dist/
-      - name: steam-workshop-legacy-upload
-        shell: cmd
-        run: |
-          "C:\Program Files (x86)\kpsteam\kpsteam.exe" upload --legacy --app 286160 --item 2817359776 --path ".\dist\MarvelChampionsLCG.bson"
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "dev"
+          prerelease: true
+          title: "Development Build"
+          files: |
+            dist/MarvelChampions.json
+#  push-to-steam:
+#    needs: compile
+#    runs-on: self-hosted
+#    steps:
+#      - uses: actions/download-artifact@v3
+#        with:
+#          name: ModSaveFile
+#          path: ./dist/
+#      - name: steam-workshop-legacy-upload
+#        shell: cmd
+#        run: |
+#          "C:\Program Files (x86)\kpsteam\kpsteam.exe" upload --legacy --app 286160 --item 2817359776 --path ".\dist\MarvelChampionsLCG.bson"
