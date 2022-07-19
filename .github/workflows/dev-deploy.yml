@@ -6,7 +6,23 @@ on:
   workflow_dispatch:
 jobs:
   compile:
-    uses: funkymonkeymonk/MarvelChampionsScripted/.github/workflows/compile-mod.yml@main
+    uses: "funkymonkeymonk/MarvelChampionsScripted/.github/workflows/compile-mod.yml@main"
+  tag-dev-release:
+    needs: compile
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v3
+        with:
+          name: ModSaveFile
+          path: ./dist/
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "dev"
+          prerelease: true
+          title: "Latest Development Build"
+          files: |
+            dist/MarvelChampionsLCG.json
   push-to-steam:
     needs: compile
     runs-on: self-hosted
