@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - 'main'
-      - 'automatic-release-tagging'
   workflow_dispatch:
 jobs:
   compile:
@@ -24,15 +23,15 @@ jobs:
           title: "Latest Development Build"
           files: |
             dist/MarvelChampionsLCG.json
-#  push-to-steam:
-#    needs: compile
-#    runs-on: self-hosted
-#    steps:
-#      - uses: actions/download-artifact@v3
-#        with:
-#          name: ModSaveFile
-#          path: ./dist/
-#      - name: steam-workshop-legacy-upload
-#        shell: cmd
-#        run: |
-#          "C:\Program Files (x86)\kpsteam\kpsteam.exe" upload --legacy --app 286160 --item 2817359776 --path ".\dist\MarvelChampionsLCG.bson"
+  push-to-steam:
+    needs: compile
+    runs-on: self-hosted
+    steps:
+      - uses: actions/download-artifact@v3
+        with:
+          name: ModSaveFile
+          path: ./dist/
+      - name: steam-workshop-legacy-upload
+        shell: cmd
+        run: |
+          "C:\Program Files (x86)\kpsteam\kpsteam.exe" upload --legacy --app 286160 --item 2817359776 --path ".\dist\MarvelChampionsLCG.bson"
