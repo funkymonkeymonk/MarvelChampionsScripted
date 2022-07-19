@@ -1,9 +1,7 @@
 name: Compile mod
-on:
-  push:
-    branches:
-      - 'ci-dev'
-  workflow_dispatch:
+on: [
+  workflow_call
+]
 jobs:
   compile:
     runs-on: ubuntu-latest
@@ -12,21 +10,28 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - name: Cache dependencies
-        uses: actions/cache@v2
+      - name: Get npm cache directory
+        id: npm-cache-dir
+        run: |
+          echo "::set-output name=dir::$(npm config get cache)"
+      - uses: actions/cache@v3
+        id: npm-cache # use this to check for `cache-hit` ==> if: steps.npm-cache.outputs.cache-hit != 'true'
         with:
-          path: ~/.npm
-          key: npm-${{ hashFiles('package-lock.json') }}
-          restore-keys: npm-
+          path: ${{ steps.npm-cache-dir.outputs.dir }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
       - name: Install dependencies
         run: npm ci
       - name: Validate (WIP)
         run: npm run validate || true
       - name: Create a TTS save
         run: npm run compile
+      - name: Create Workshop file
+        run: npm run convertToBSON
       - name: Save the TTS save as artifact
         uses: actions/upload-artifact@v3
         with:
-          name: Mod Save file
+          name: ModSaveFile
           path: |
             dist
