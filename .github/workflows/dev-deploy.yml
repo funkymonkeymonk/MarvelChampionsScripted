@@ -21,9 +21,9 @@ jobs:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: "dev"
           prerelease: true
-          title: "Development Build"
+          title: "Latest Development Build"
           files: |
-            dist/MarvelChampions.json
+            dist/MarvelChampionsLCG.json
 #  push-to-steam:
 #    needs: compile
 #    runs-on: self-hosted
