@@ -445,25 +445,35 @@ Decker.RescanExistingDeckIDs = recheckNextID
 --- End decker.lua code
 ------------------------------------------------------------------------------------------------------------------------
 
-CARDPOOL = {}
-
-function buildCardPool()
-    CARDPOOL_OBJ = getObjectFromGUID('537ca3')
-    CARDPOOL_JSON = CARDPOOL_OBJ.getVar('PACK_12')
-    CARDPOOL_DATA = JSON.decode(CARDPOOL_JSON)
+function buildCardPool(packID)
+    local cardpool = {}
+    local CARDPOOL_OBJ = getObjectFromGUID('537ca3')
+    local CARDPOOL_JSON = CARDPOOL_OBJ.getVar('PACK_' .. packID)
+    local CARDPOOL_DATA = JSON.decode(CARDPOOL_JSON)
 
     for _, cardData in pairs(CARDPOOL_DATA) do
         local cardFace = cardData.FrontURL
         local cardBack = cardData.BackURL
         local cardAsset = Decker.Asset(cardFace, cardBack)
         local card = Decker.Card(cardAsset, 1, 1, { name=cardData.name, tags={type_code=cardData.type_code, code=cardData.code, subname=cardData.subname, faction_code=cardData.faction_code}})
-        CARDPOOL[cardData.code] = card
+        cardpool[cardData.code] = card
     end
+    return cardpool
 end
 
-function onChat()
-    buildCardPool()
+function getCardFromCardPool(cardID)
+    local packID = string.sub(cardID, 1,2)
+    local cardpool = buildCardPool(packID)
+    return cardpool[cardID]
+end
+
+function getCard(player_color, menu_position)
     local FACE_UP_ROTATION = {0, 180, 0}
     local FACE_DOWN_ROTATION = {0, 180, 180}
-    CARDPOOL["12002"]:spawn({position = {4, 3, 0}, rotation = FACE_DOWN_ROTATION})
+    local card = getCardFromCardPool("12002")
+    card:spawn({position = menu_position, rotation = FACE_UP_ROTATION})
+end
+
+function onLoad()
+    addContextMenuItem("Spawn Card", getCard)
 end
