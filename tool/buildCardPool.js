@@ -2,6 +2,7 @@ const {Octokit} = require("octokit")
 const axios = require("axios")
 const fs = require('fs')
 const path = require('path')
+const _ = require('underscore');
 
 async function getDataFromGithub() {
     const octokit = new Octokit({
@@ -47,23 +48,25 @@ function FormatPackData(responses) {
 }
 
 function sortCards(cards) {
-    return [cards];
+    // Right now this is broken out by pack number for fast searching.
+    // I'm not sure if this is enough or if I also need to create and index by name, type, ect
+    return _.groupBy(cards, card => card.code.replace(/[a-zA-Z]/,'').slice(0,-3))
 }
 
-function WriteToMod(cards) {
-    // TODO: write pack data into the relevant mod locations
-    const header = "CARDPOOL_JSON = [[\n"
-    const footer = "\n]]"
+function WriteToMod(pack) {
+    const prefix = "PACK_"
+    const start = " = [[\n"
+    const end= "\n]]"
 
-    const content = header + JSON.stringify(cards[0], null, 2) + footer
+    const content = Object.keys(pack)
+        .map( key => prefix + key + start + JSON.stringify(pack[key], null, 2) + end)
+        .join('\n')
 
     const filepath = path.join(__dirname, '..', 'mod', 'src', 'MarvelChampionsLCG', 'CardpoolData.lua')
-
     fs.writeFile(filepath, content, err => {
         if (err) {
             console.error(err);
         }
-        // file written successfully
     });
 }
 
@@ -85,5 +88,3 @@ start()
 // # TODO: Create a "fallback image" for cards that don't have a front yet
 // # TODO: Upload images to somewhere well cached.
 // # TODO: Formalize this process and make it a github action
-//
-// clean up any files

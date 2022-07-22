@@ -449,7 +449,7 @@ CARDPOOL = {}
 
 function buildCardPool()
     CARDPOOL_OBJ = getObjectFromGUID('537ca3')
-    CARDPOOL_JSON = CARDPOOL_OBJ.getVar('CARDPOOL_JSON')
+    CARDPOOL_JSON = CARDPOOL_OBJ.getVar('PACK_12')
     CARDPOOL_DATA = JSON.decode(CARDPOOL_JSON)
 
     for _, cardData in pairs(CARDPOOL_DATA) do

@@ -64,6 +64,7 @@
   "dependencies": {
     "axios": "^0.27.2",
     "bson": "^4.6.4",
-    "make-promises-safe": "^5.1.0"
+    "make-promises-safe": "^5.1.0",
+    "underscore": "^1.13.4"
   }
 }
