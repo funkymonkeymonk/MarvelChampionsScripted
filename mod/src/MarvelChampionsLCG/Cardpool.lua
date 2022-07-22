@@ -445,39 +445,25 @@ Decker.RescanExistingDeckIDs = recheckNextID
 --- End decker.lua code
 ------------------------------------------------------------------------------------------------------------------------
 
+CARDPOOL = {}
 
-
-function onChat()
+function buildCardPool()
     CARDPOOL_OBJ = getObjectFromGUID('537ca3')
     CARDPOOL_JSON = CARDPOOL_OBJ.getVar('CARDPOOL_JSON')
-    log(CARDPOOL_JSON)
     CARDPOOL_DATA = JSON.decode(CARDPOOL_JSON)
-    log(CARDPOOL_DATA)
-    CARDPOOL = {}
-
-    --{
-    --    "code": "12010",
-    --    "name": "Wrist Gauntlets",
-    --    "subname": null,
-    --    "type_code": "upgrade",
-    --    "faction_code": "hero",
-    --    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    --    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12010.jpg"
-    --},
 
     for _, cardData in pairs(CARDPOOL_DATA) do
         local cardFace = cardData.FrontURL
         local cardBack = cardData.BackURL
         local cardAsset = Decker.Asset(cardFace, cardBack)
         local card = Decker.Card(cardAsset, 1, 1, { name=cardData.name, tags={type_code=cardData.type_code, code=cardData.code, subname=cardData.subname, faction_code=cardData.faction_code}})
-        table.insert(CARDPOOL, card)
+        CARDPOOL[cardData.code] = card
     end
+end
 
+function onChat()
+    buildCardPool()
     local FACE_UP_ROTATION = {0, 180, 0}
     local FACE_DOWN_ROTATION = {0, 180, 180}
-
-    local myDeck = Decker.Deck(CARDPOOL)
-
-    local cardPoolInstance = myDeck:spawn({position = {4, 3, 0}, rotation = FACE_DOWN_ROTATION})
-    cardPoolInstance.setName('CardPool')
+    CARDPOOL["12002"]:spawn({position = {4, 3, 0}, rotation = FACE_DOWN_ROTATION})
 end
