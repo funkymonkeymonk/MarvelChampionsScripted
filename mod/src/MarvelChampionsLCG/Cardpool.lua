@@ -467,13 +467,32 @@ function getCardFromCardPool(cardID)
     return cardpool[cardID]
 end
 
-function getCard(player_color, menu_position)
+function getCard(args)
+    cardID = args.cardID
+    position = args.position
     local FACE_UP_ROTATION = {0, 180, 0}
     local FACE_DOWN_ROTATION = {0, 180, 180}
-    local card = getCardFromCardPool("12002")
-    card:spawn({position = menu_position, rotation = FACE_UP_ROTATION})
+    local card = getCardFromCardPool(cardID)
+    card:spawn({position = position, rotation = FACE_UP_ROTATION})
+end
+
+function createUI(_, menu_position)
+    local xml = [[
+<Panel width="250" height="100">
+    <VerticalLayout>
+        <Text>What card do ya want?</Text>
+        <InputField id="INPUT_CARD_ID" onValueChanged="setCardID"></InputField>
+        <Button onClick="getCard">Gimmie</Button>
+    </VerticalLayout>
+</Panel>
+]]
+    UI.setXml(xml)
+end
+
+function clearUI()
+    UI.setXml("")
 end
 
 function onLoad()
-    addContextMenuItem("Spawn Card", getCard)
+     addContextMenuItem("Spawn Card", createUI)
 end

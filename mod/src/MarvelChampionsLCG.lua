@@ -14,6 +14,25 @@ g_cardHeight = 3.40;
 
 HERO_PLACER_GUID = "4431e4"
 
+------------------------ FOR CARD PLACER ------------------------
+CARD_ID = 0
+
+function setCardID(_, value, _)
+   CARD_ID = value
+end
+
+function getCard(player)
+   local CARDPOOL_OBJ = getObjectFromGUID('cardpool')
+   --TODO: Figure out how to get the pointer position of the original right click to here
+   local position = player.getPointerPosition()
+   CARDPOOL_OBJ.call('getCard', { cardID = CARD_ID, position = position })
+   CARDPOOL_OBJ.call('clearUI')
+end
+
+
+
+------------------------------------------------------------------
+
 function findInRadiusBy(pos, radius, filter, debug)
    local radius = (radius or 1)
    local objList = Physics.cast({
