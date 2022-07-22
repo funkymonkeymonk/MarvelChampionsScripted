@@ -7,9 +7,10 @@
     "lint:fix": "prettier --ignore-path .prettierignore --write src tool contrib && eslint src tool --fix --ext .ts",
     "lint:lua": "luacheck mod/src",
     "start": "npx ts-node tool/main.ts develop mod/src/MarvelChampionsLCG.json dist/MarvelChampionsLCG.json",
-    "validate": "ts-node ./tool/validate.ts",
+    "validate": "npx ts-node ./tool/validate.ts",
     "convertToBSON": "node ./tool/workshopPrep.js",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "update:cardpool": "node tool/buildCardPool.js"
   },
   "license": "MIT",
   "bugs": {
@@ -17,12 +18,11 @@
   },
   "homepage": "https://github.com/funkymonkeymonk/MarvelChampionsScripted",
   "devDependencies": {
-    "commander": "^3.0.2",
-    "dot-prop": ">=5.1.1",
     "@matanlurey/tts-editor": "github:matanlurey/tts-editor#dist",
     "@matanlurey/tts-expander": "github:matanlurey/tts-expander#dist",
     "@matanlurey/tts-runner": "github:matanlurey/tts-runner#dist",
     "@matanlurey/tts-save-files": "github:matanlurey/tts-save-format",
+    "@octokit/types": "^6.40.0",
     "@types/clear": "^0.1.2",
     "@types/figlet": "^1.5.4",
     "@types/fs-extra": "^8.1.2",
@@ -36,7 +36,9 @@
     "ajv-cli": "^5.0.0",
     "chalk": "^2.4.2",
     "clear": "^0.1.0",
+    "commander": "^3.0.2",
     "detect-newline": "^3.1.0",
+    "dot-prop": ">=5.1.1",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.24.2",
@@ -44,21 +46,23 @@
     "eslint-plugin-prettier": "^4.0.0",
     "figlet": "^1.5.2",
     "fs-extra": "^8.1.0",
+    "husky": "^8.0.0",
     "image-size": "^1.0.0",
     "is-png": "^2.0.0",
     "minimist": "^1.2.6",
     "mkdirp": "^0.5.5",
     "node-fetch": "^3.1.1",
     "nodemon": "^2.0.12",
+    "octokit": "^2.0.4",
     "path": "^0.12.7",
     "prettier": "^2.4.1",
     "sanitize-filename": "^1.6.3",
     "shelljs": "^0.8.5",
     "ts-node": "^9.0.0",
-    "typescript": "^3.9.10",
-    "husky": "^8.0.0"
+    "typescript": "^3.9.10"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "bson": "^4.6.4",
     "make-promises-safe": "^5.1.0"
   }
