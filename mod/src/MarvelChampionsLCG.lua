@@ -14,7 +14,12 @@ g_cardHeight = 3.40;
 
 HERO_PLACER_GUID = "4431e4"
 
-require('!/cardplacer')
+require('!/Cardplacer')
+
+function onLoad()
+   -- Create context Menus
+   addContextMenuItem("Spawn Card", createUI)
+end
 
 function findInRadiusBy(pos, radius, filter, debug)
    local radius = (radius or 1)

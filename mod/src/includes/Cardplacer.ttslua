@@ -1,5 +1,14 @@
 require('!/Decker')
 
+--TODO: Put all of this into an object for namespace purposes
+Cardplacer = {}
+
+CARD_ID = 0
+
+function setCardID(_, value, _)
+    CARD_ID = value
+end
+
 function buildCardPool(packID)
     local cardpool = {}
     local CARDPOOL_OBJ = getObjectFromGUID('537ca3')
@@ -22,13 +31,14 @@ function getCardFromCardPool(cardID)
     return cardpool[cardID]
 end
 
-function getCard(args)
-    cardID = args.cardID
-    position = args.position
+function getCard(player)
+    local position = player.getPointerPosition()
+    cardID = CARD_ID
     local FACE_UP_ROTATION = {0, 180, 0}
     local FACE_DOWN_ROTATION = {0, 180, 180}
     local card = getCardFromCardPool(cardID)
     card:spawn({position = position, rotation = FACE_UP_ROTATION})
+    clearUI()
 end
 
 function createUI(_, menu_position)
@@ -47,8 +57,4 @@ end
 
 function clearUI()
     UI.setXml("")
-end
-
-function onLoad()
-     addContextMenuItem("Spawn Card", createUI)
 end
