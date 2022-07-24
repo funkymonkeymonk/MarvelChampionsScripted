@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "5c2697",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 18.75,
+      "posY": 3.06389642,
+      "posZ": -16.75,
+      "rotX": 0.0202627219,
+      "rotY": 180,
+      "rotZ": -0.000009393872,
+      "scaleX": 1.64515615,
+      "scaleY": 1,
+      "scaleZ": 1.64515615
+    },
+    "Nickname": "SP//dr Identitiy",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 972000,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "9720": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1897721393463077661/B90307CC1D3B5B3417ABB21D90390755014F9462/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1897721393463077825/C3D646922B4EE8EC059EE9D16560D4EB18CCE86F/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}
