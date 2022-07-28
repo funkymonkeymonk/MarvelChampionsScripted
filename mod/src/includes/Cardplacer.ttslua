@@ -11,7 +11,7 @@ end
 
 function buildCardPool(packID)
     local cardpool = {}
-    local CARDPOOL_OBJ = getObjectFromGUID('537ca3')
+    local CARDPOOL_OBJ = getObjectFromGUID('843931')
     local CARDPOOL_JSON = CARDPOOL_OBJ.getVar('PACK_' .. packID)
     local CARDPOOL_DATA = JSON.decode(CARDPOOL_JSON)
 
@@ -33,7 +33,7 @@ end
 
 function getCard(player)
     local position = player.getPointerPosition()
-    cardID = CARD_ID
+    local cardID = CARD_ID
     local FACE_UP_ROTATION = {0, 180, 0}
     local FACE_DOWN_ROTATION = {0, 180, 180}
     local card = getCardFromCardPool(cardID)
