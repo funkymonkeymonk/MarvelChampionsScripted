@@ -41,6 +41,22 @@ function getCard(player)
     clearUI()
 end
 
+
+function createDeck(params)
+    cards = params.cards
+    position = params.position
+    local FACE_UP_ROTATION = {0, 180, 0}
+    local FACE_DOWN_ROTATION = {0, 180, 180}
+    deck = {}
+    for cardID,number in pairs(cards) do
+        for i = 1, number, 1 do
+            table.insert(deck, getCardFromCardPool(cardID))
+        end
+    end
+    newDeck = Decker.Deck(deck)
+    newDeck:spawn({position = position, rotation = FACE_DOWN_ROTATION})
+end
+
 function createUI(_, menu_position)
     local xml = [[
 <Panel width="250" height="150">

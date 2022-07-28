@@ -68,21 +68,7 @@ function deckReadCallback(req)
 
   local slots = removeExcludedCards(JsonDeckRes.slots)
 
-  -- Count number of cards in decklist
-  numSlots=0
-  for cardid,number in pairs(slots) do
-    numSlots = numSlots + 1
-  end
-  
-  -- Save card id, number in table and request card info from MarvelCDB
-  for cardID,number in pairs(slots) do
-    local row = {}
-    row.cardName = ""
-    row.cardCount = number
-    cardList[cardID] = row
-    WebRequest.get(cardURL .. cardID, self, 'cardReadCallback')
-    totalCards = totalCards + number
-  end
+  Global.call("createDeck", {cards = slots, position = deckPos})
 end
 
 function removeExcludedCards(slots)
