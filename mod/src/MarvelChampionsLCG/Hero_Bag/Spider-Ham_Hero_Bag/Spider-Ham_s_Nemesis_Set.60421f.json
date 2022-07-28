@@ -1,0 +1,79 @@
+{
+  "Object": {
+    "GUID": "60421f",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 3.75015855,
+      "posY": 3.143539,
+      "posZ": -17.25048,
+      "rotX": 0.83315146,
+      "rotY": 180.018448,
+      "rotZ": 2.87918234,
+      "scaleX": 1.87838769,
+      "scaleY": 1,
+      "scaleZ": 1.87838769
+    },
+    "Nickname": "Spider-Ham's Nemesis Set",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      971704,
+      971703,
+      971702,
+      971701,
+      971600
+    ],
+    "CustomDeck": {
+      "9716": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1897721393463083473/73AAC5D90E9A3472417C06767EB941EAE436E122/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 2,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "9717": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1897721393463084367/3140D9DE088D75486FA34BD5D5FEA0DB2AB646BD/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 7,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Feast_on_This!.231959.971704.json",
+    "Feast_on_This!.9f11ed.971703.json",
+    "Gobbler_Glider.e0cac2.971702.json",
+    "The_Green_Gobbler.8dc23d.971701.json",
+    "Nefarious_Trap.ef75a8.971600.json"
+  ]
+}

@@ -4,7 +4,7 @@
     "Name": "Bag",
     "Transform": {
       "posX": 85.75,
-      "posY": 0.309883058,
+      "posY": 0.309879243,
       "posZ": 100.25,
       "rotX": 1.71755246e-7,
       "rotY": 0.000009078014,
@@ -82,6 +82,8 @@
     "Power_Drain_Modular_Set.103001.json",
     "Power_Stone_Modular_Set.48d155.973200.json",
     "Ransacked_Armory_Modular_Set.42f7d3.json",
+    "Iron_Spider_s_Sinister_Six_Modular_Set.d7ea47.json",
+    "The_Inheritors_Modular_Set.be9e45.json",
     "Running_Interference_Modular_Set.7ef1c9.json",
     "Ship_Command_Modular_Set.f4ec0c.json",
     "Sinister_Assault_Modular_Set.3014ee.json",
