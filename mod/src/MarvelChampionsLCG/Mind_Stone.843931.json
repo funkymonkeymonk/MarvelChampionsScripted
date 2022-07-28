@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "843931",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 64.06733,
+      "posY": 2.03016424,
+      "posZ": 95.9357,
+      "rotX": 359.887268,
+      "rotY": 179.614822,
+      "rotZ": 359.876526,
+      "scaleX": 0.625000358,
+      "scaleY": 0.625000358,
+      "scaleZ": 0.625000358
+    },
+    "Nickname": "Mind Stone",
+    "Description": "Base",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1.1248,
+      "g": 0.988842547,
+      "b": 0.011552
+    },
+    "Tags": [
+      "Infinity Stone"
+    ],
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1845916597512125954/FAE69064A19616699BB85DB7B61CA0A4C39E137E/",
+      "DiffuseURL": "",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1845916597512126821/F1C00D82CF3AA0D79F1993967BC72A4AD4C42B8B/",
+      "Convex": true,
+      "MaterialIndex": 2,
+      "TypeIndex": 1,
+      "CastShadows": true
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

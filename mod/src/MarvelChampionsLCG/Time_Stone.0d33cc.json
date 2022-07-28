@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "0d33cc",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 66.26148,
+      "posY": 2.02786827,
+      "posZ": 95.5766,
+      "rotX": 0.722502053,
+      "rotY": 210.707779,
+      "rotZ": 4.508435,
+      "scaleX": 0.4500004,
+      "scaleY": 0.4500004,
+      "scaleZ": 0.4500004
+    },
+    "Nickname": "Time Stone",
+    "Description": "Thumb",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.227916777,
+      "g": 0.658385932,
+      "b": 0.011552
+    },
+    "Tags": [
+      "Infinity Stone"
+    ],
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1845916597512125954/FAE69064A19616699BB85DB7B61CA0A4C39E137E/",
+      "DiffuseURL": "",
+      "NormalURL": "",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1845916597512126821/F1C00D82CF3AA0D79F1993967BC72A4AD4C42B8B/",
+      "Convex": true,
+      "MaterialIndex": 2,
+      "TypeIndex": 1,
+      "CastShadows": true
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}
