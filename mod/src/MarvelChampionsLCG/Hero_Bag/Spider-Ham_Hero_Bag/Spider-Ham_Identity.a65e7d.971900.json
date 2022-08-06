@@ -1,0 +1,56 @@
+{
+  "Object": {
+    "GUID": "a65e7d",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 58.17598,
+      "posY": 1.98473978,
+      "posZ": -4.506652,
+      "rotX": -8.103261e-7,
+      "rotY": 179.9944,
+      "rotZ": 180,
+      "scaleX": 1.64515615,
+      "scaleY": 1,
+      "scaleZ": 1.64515615
+    },
+    "Nickname": "Spider-Ham Identity",
+    "Description": "Created by Unicorn",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 971900,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "9719": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1897721393463097403/85F1A1053164726F21D4B95F2DD30679D7237CFF/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1897721393463097590/B7845BD6CFEAF2594BEA13935622E439546A4AAC/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

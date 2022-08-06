@@ -1,7 +1,11 @@
-name: Run linters
-on: [workflow_dispatch ]
+name: Lua Linter
+on:
+  pull_request:
+    types: [ opened, reopened ]
+    branches: [ main ]
+    paths: [ '**.lua' ]
 jobs:
-  json-lint:
+  lua-lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -15,4 +19,4 @@ jobs:
       - name: Install argpase
         run: luarocks install argparse
       - name: Run lua linter
-        run: npm run lint:lua
+        run: luacheck `git diff --name-only main | grep -E \"(*.lua)\"`
