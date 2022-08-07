@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "b98216",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 84.15184,
+      "posY": 0.3006454,
+      "posZ": 99.75,
+      "rotX": 0.0410504453,
+      "rotY": 179.9923,
+      "rotZ": 0.000109011809,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Spectrum Hero Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.956862748,
+      "g": 0.75686276,
+      "b": 0
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Spectrum_Hero_Bag.b98216.lua",
+    "LuaScriptState": "#include ./Spectrum_Hero_Bag.b98216.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Spectrum_Identity.8c3f88.969925.json",
+    "Energy_Form.71bfde.963206.json",
+    "Spectrum_Nemesis.47ab21.json",
+    "Loss_of_Control.2e551f.318.json"
+  ]
+}

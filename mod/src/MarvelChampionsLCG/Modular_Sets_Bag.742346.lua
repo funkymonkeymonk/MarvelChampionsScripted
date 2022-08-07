@@ -18,20 +18,18 @@ function createContextMenu()
 end
 
 function layOutModularSets()
-    local modularSetZone = getObjectFromGUID("7977bc")
-    clearModularSetZone(modularSetZone)
+    clearModularSets()
     layOutTiles()
 end
 
 function deleteModularSets()
-    local modularSetZone = getObjectFromGUID("7977bc")
-    clearModularSetZone(modularSetZone)
+    clearModularSets()
 end
 
-function clearModularSetZone(zone)
-    local objectsInZone = zone.getObjects()
+function clearModularSets()
+    local allObjects = getAllObjects()
 
-    for k,v in pairs(objectsInZone) do
+    for k,v in pairs(allObjects) do
         if(v.hasTag("modular-set-selector-tile")) then
             v.destruct()
         end
@@ -47,7 +45,7 @@ function layOutTiles()
 
     for _, listItem in ipairs(sortedList) do
         local tilePosition = getCoordinates(currentColumn, currentRow)
-        local tile = tileBag.takeObject({position = tilePosition, locked = true})
+        local tile = tileBag.takeObject({position = tilePosition, locked = true, smooth=false})
 
         setupTile({
             tile = tile,

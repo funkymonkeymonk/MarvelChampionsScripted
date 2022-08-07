@@ -1,0 +1,54 @@
+{
+  "Object": {
+    "GUID": "6977bb",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 84.15184,
+      "posY": 0.300611466,
+      "posZ": 99.75,
+      "rotX": -0.0000947678345,
+      "rotY": 179.9992,
+      "rotZ": 0.000005945335,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Venom Hero Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Venom_Hero_Bag.6977bb.lua",
+    "LuaScriptState": "#include ./Venom_Hero_Bag.6977bb.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Venom_Identity.81063b.967724.json",
+    "Venom_Nemesis.47fe9a.json",
+    "Struggle_for_Control.90ea5c.1007216.json"
+  ]
+}

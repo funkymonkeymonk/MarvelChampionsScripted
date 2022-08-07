@@ -1,0 +1,54 @@
+{
+  "Object": {
+    "GUID": "6af1bc",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 84.15184,
+      "posY": 0.300611466,
+      "posZ": 99.75,
+      "rotX": -0.0000443957579,
+      "rotY": 180,
+      "rotZ": -0.00003505271,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Spider-Ham Hero Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.7058823,
+      "g": 0.366520882,
+      "b": 0
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Spider-Ham_Hero_Bag.6af1bc.lua",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Spider-Ham_s_Nemesis_Set.60421f.json",
+    "I_Really_Want_a_Hot_Dog!.30f2b8.971700.json",
+    "Spider-Ham_Identity.a65e7d.971900.json"
+  ]
+}

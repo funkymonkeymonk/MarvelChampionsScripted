@@ -1,0 +1,54 @@
+{
+  "Object": {
+    "GUID": "b72fe1",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 84.15184,
+      "posY": 0.300611526,
+      "posZ": 99.75,
+      "rotX": 0.000078976,
+      "rotY": 179.9951,
+      "rotZ": 0.0000582079119,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Black Panther Hero Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.3607373,
+      "g": 0.0655189157,
+      "b": 0.5452962
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Black_Panther_Hero_Bag.b72fe1.lua",
+    "LuaScriptState": "#include ./Black_Panther_Hero_Bag.b72fe1.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Black_Panther_Identity.1c3c1b.964304.json",
+    "Black_Panther_Nemesis.9c825a.json",
+    "Affairs_of_State.a903c2.964400.json"
+  ]
+}

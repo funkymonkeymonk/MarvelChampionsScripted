@@ -17,39 +17,36 @@ function createContextMenu()
 end
 
 function layOutScenarios()
-    local scenarioZone = getObjectFromGUID("3c2ffd")
-    clearScenarioZone(scenarioZone)
-    layOutTiles(scenarioZone)
+    clearScenarios()
+    layOutTiles()
 end
 
 function deleteScenarios()
-    local scenarioZone = getObjectFromGUID("3c2ffd")
-    clearScenarioZone(scenarioZone)
+    clearScenarios()
 end
 
-function clearScenarioZone(zone)
-    local objectsInZone = zone.getObjects()
+function clearScenarios()
+    local allObjects = getAllObjects()
 
-    for k,v in pairs(objectsInZone) do
+    for k,v in pairs(allObjects) do
         if(v.hasTag("scenario-selector-tile")) then
             v.destruct()
         end
     end     
 end
 
-function layOutTiles(zone)
+function layOutTiles()
     local bagList = getSortedListOfScenarios()
     local tileBag = getObjectFromGUID("01ad59")
 
     for bagGuid, tilePosition in pairs(bagList) do
         local tilePosition = tilePosition
 
-        local scenarioBag = self.takeObject({guid=bagGuid})
-        local tile = tileBag.takeObject(tilePosition)
+        local scenarioBag = self.takeObject({guid=bagGuid, smooth=false})
+        local tile = tileBag.takeObject({position=tilePosition, smooth=false})
 
         setupTile({
             scenarioBag=scenarioBag,
-            zone=zone,
             tile=tile,
             tilePosition=tilePosition
         })

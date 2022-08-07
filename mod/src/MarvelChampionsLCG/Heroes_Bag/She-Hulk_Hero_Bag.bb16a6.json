@@ -1,0 +1,54 @@
+{
+  "Object": {
+    "GUID": "bb16a6",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 84.15184,
+      "posY": 0.300611526,
+      "posZ": 99.75,
+      "rotX": 0.0000106715543,
+      "rotY": 179.999451,
+      "rotZ": -0.000103772494,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "She-Hulk Hero Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 0.106378086,
+      "g": 0.381492078,
+      "b": 0.09368277
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./She-Hulk_Hero_Bag.bb16a6.lua",
+    "LuaScriptState": "#include ./She-Hulk_Hero_Bag.bb16a6.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "She-Hulk_Identity.14eca2.963702.json",
+    "Legal_Work.c6aa7e.963804.json",
+    "She-Hulk_Nemesis.9ed7c4.json"
+  ]
+}

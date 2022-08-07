@@ -15,6 +15,8 @@ g_cardHeight = 3.40;
 HERO_MANAGER_GUID = "4431e4"
 SCENARIO_MANAGER_GUID = "15297c"
 
+require ("!/test")
+
 function findInRadiusBy(pos, radius, filter, debug)
    local radius = (radius or 1)
    local objList = Physics.cast({

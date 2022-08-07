@@ -1,0 +1,55 @@
+{
+  "Object": {
+    "GUID": "597d29",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 84.15184,
+      "posY": 0.300611526,
+      "posZ": 99.75,
+      "rotX": 0.0000328742026,
+      "rotY": 179.995514,
+      "rotZ": 0.00009708912,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Doctor Strange Hero Bag",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 0.8827019,
+      "b": 0.6567942
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Doctor_Strange_Hero_Bag.597d29.lua",
+    "LuaScriptState": "#include ./Doctor_Strange_Hero_Bag.597d29.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Invocation_Deck.25db81.json",
+    "Doctor_Strange_Identity.4eaae1.965311.json",
+    "Doctor_Strange_Nemesis.46fdd1.json",
+    "Physical_Toll.a7b94b.965444.json"
+  ]
+}

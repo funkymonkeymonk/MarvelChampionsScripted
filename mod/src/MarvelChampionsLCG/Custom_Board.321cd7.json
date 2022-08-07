@@ -3,9 +3,9 @@
     "GUID": "321cd7",
     "Name": "Custom_Board",
     "Transform": {
-      "posX": 3.03224112e-12,
+      "posX": 3.05355741e-12,
       "posY": 0,
-      "posZ": 1.54400936e-11,
+      "posZ": 1.555378e-11,
       "rotX": -0.00002985713,
       "rotY": 180.000122,
       "rotZ": 180,
@@ -17,9 +17,9 @@
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
-      "r": 0.165489137,
-      "g": 0.165489137,
-      "b": 0.165489137
+      "r": 0.165489018,
+      "g": 0.165489018,
+      "b": 0.165489018
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,
