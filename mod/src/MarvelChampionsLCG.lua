@@ -14,6 +14,22 @@ g_cardHeight = 3.40;
 
 HERO_PLACER_GUID = "4431e4"
 
+function randomFirstPlayer()
+    local sittingPlayers = {}
+    for k,v in pairs({'White','Brown','Red','Orange','Yellow','Green','Teal','Blue','Purple','Pink','Black'}) do
+        if Player[v].seated then
+            table.insert(sittingPlayers,v)
+        end
+    end
+
+    local pickedColor = sittingPlayers[math.random(#sittingPlayers)]
+    broadcastToAll('The first player is ' .. Player[pickedColor].steam_name .. ' (' ..  pickedColor ..')')
+end
+
+function onLoad()
+    addContextMenuItem("Random First Player", randomFirstPlayer)
+end
+
 function findInRadiusBy(pos, radius, filter, debug)
    local radius = (radius or 1)
    local objList = Physics.cast({
