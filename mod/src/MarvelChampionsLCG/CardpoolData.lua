@@ -5,7 +5,7 @@ PACK_10 = [[
     "code": "10001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10001B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10001A.jpg"
   },
   {
@@ -13,7 +13,7 @@ PACK_10 = [[
     "code": "10001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10001A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10001B.jpg"
   },
   {
@@ -191,7 +191,7 @@ PACK_10 = [[
     "code": "10025",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10025.jpg"
   },
   {
@@ -199,7 +199,7 @@ PACK_10 = [[
     "code": "10026",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10026.jpg"
   },
   {
@@ -207,7 +207,7 @@ PACK_10 = [[
     "code": "10027",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10027.jpg"
   },
   {
@@ -215,7 +215,7 @@ PACK_10 = [[
     "code": "10028",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10028.jpg"
   }
 ]
@@ -227,7 +227,7 @@ PACK_11 = [[
     "code": "11001",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11001.jpg"
   },
   {
@@ -235,7 +235,7 @@ PACK_11 = [[
     "code": "11002",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11002.jpg"
   },
   {
@@ -243,7 +243,7 @@ PACK_11 = [[
     "code": "11003",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11003.jpg"
   },
   {
@@ -251,7 +251,7 @@ PACK_11 = [[
     "code": "11004",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11004.jpg"
   },
   {
@@ -259,7 +259,7 @@ PACK_11 = [[
     "code": "11005",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11005.jpg"
   },
   {
@@ -267,7 +267,7 @@ PACK_11 = [[
     "code": "11006",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11006.jpg"
   },
   {
@@ -275,7 +275,7 @@ PACK_11 = [[
     "code": "11007",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11007.jpg"
   },
   {
@@ -283,7 +283,7 @@ PACK_11 = [[
     "code": "11008",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11008.jpg"
   },
   {
@@ -291,7 +291,7 @@ PACK_11 = [[
     "code": "11009",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11009.jpg"
   },
   {
@@ -299,7 +299,7 @@ PACK_11 = [[
     "code": "11010",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11010.jpg"
   },
   {
@@ -307,7 +307,7 @@ PACK_11 = [[
     "code": "11011",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11011.jpg"
   },
   {
@@ -315,7 +315,7 @@ PACK_11 = [[
     "code": "11012",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11012.jpg"
   },
   {
@@ -323,7 +323,7 @@ PACK_11 = [[
     "code": "11013",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11013.jpg"
   },
   {
@@ -331,7 +331,7 @@ PACK_11 = [[
     "code": "11014",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11014.jpg"
   },
   {
@@ -339,7 +339,7 @@ PACK_11 = [[
     "code": "11015",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11015.jpg"
   },
   {
@@ -347,7 +347,7 @@ PACK_11 = [[
     "code": "11016",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11016.jpg"
   },
   {
@@ -355,7 +355,7 @@ PACK_11 = [[
     "code": "11017",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11017.jpg"
   },
   {
@@ -363,7 +363,7 @@ PACK_11 = [[
     "code": "11018",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11018.jpg"
   },
   {
@@ -371,7 +371,7 @@ PACK_11 = [[
     "code": "11019",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11019.jpg"
   },
   {
@@ -379,7 +379,7 @@ PACK_11 = [[
     "code": "11020",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11020.jpg"
   },
   {
@@ -387,7 +387,7 @@ PACK_11 = [[
     "code": "11021",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11021.jpg"
   },
   {
@@ -395,7 +395,7 @@ PACK_11 = [[
     "code": "11022",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11022.jpg"
   },
   {
@@ -403,7 +403,7 @@ PACK_11 = [[
     "code": "11023",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11023.jpg"
   },
   {
@@ -411,7 +411,7 @@ PACK_11 = [[
     "code": "11024",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11024.jpg"
   },
   {
@@ -419,7 +419,7 @@ PACK_11 = [[
     "code": "11025",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11025.jpg"
   },
   {
@@ -427,7 +427,7 @@ PACK_11 = [[
     "code": "11026",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11026.jpg"
   },
   {
@@ -435,7 +435,7 @@ PACK_11 = [[
     "code": "11027",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11027.jpg"
   },
   {
@@ -443,7 +443,7 @@ PACK_11 = [[
     "code": "11028",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11028.jpg"
   },
   {
@@ -451,7 +451,7 @@ PACK_11 = [[
     "code": "11029",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11029.jpg"
   },
   {
@@ -459,7 +459,7 @@ PACK_11 = [[
     "code": "11030",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11030.jpg"
   },
   {
@@ -467,7 +467,7 @@ PACK_11 = [[
     "code": "11031",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11031.jpg"
   },
   {
@@ -475,7 +475,7 @@ PACK_11 = [[
     "code": "11032",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11032.jpg"
   },
   {
@@ -483,7 +483,7 @@ PACK_11 = [[
     "code": "11033",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11033.jpg"
   },
   {
@@ -491,7 +491,7 @@ PACK_11 = [[
     "code": "11034",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11034.jpg"
   },
   {
@@ -499,7 +499,7 @@ PACK_11 = [[
     "code": "11035",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11035.jpg"
   },
   {
@@ -507,7 +507,7 @@ PACK_11 = [[
     "code": "11036",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11036.jpg"
   },
   {
@@ -515,7 +515,7 @@ PACK_11 = [[
     "code": "11037",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11037.jpg"
   },
   {
@@ -523,7 +523,7 @@ PACK_11 = [[
     "code": "11038",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11038.jpg"
   },
   {
@@ -531,7 +531,7 @@ PACK_11 = [[
     "code": "11039",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11039.jpg"
   },
   {
@@ -539,7 +539,7 @@ PACK_11 = [[
     "code": "11040",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11040.jpg"
   },
   {
@@ -547,7 +547,7 @@ PACK_11 = [[
     "code": "11041",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11041.jpg"
   },
   {
@@ -555,7 +555,7 @@ PACK_11 = [[
     "code": "11042",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11042.jpg"
   },
   {
@@ -563,7 +563,7 @@ PACK_11 = [[
     "code": "11043",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11043.jpg"
   },
   {
@@ -571,7 +571,7 @@ PACK_11 = [[
     "code": "11044",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11044.jpg"
   },
   {
@@ -579,7 +579,7 @@ PACK_11 = [[
     "code": "11045",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11045.jpg"
   },
   {
@@ -587,7 +587,7 @@ PACK_11 = [[
     "code": "11046",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11046.jpg"
   },
   {
@@ -595,7 +595,7 @@ PACK_11 = [[
     "code": "11047",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11047.jpg"
   },
   {
@@ -603,7 +603,7 @@ PACK_11 = [[
     "code": "11048",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11048.jpg"
   },
   {
@@ -611,7 +611,7 @@ PACK_11 = [[
     "code": "11049",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11049.jpg"
   },
   {
@@ -619,7 +619,7 @@ PACK_11 = [[
     "code": "11050",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11050.jpg"
   },
   {
@@ -627,7 +627,7 @@ PACK_11 = [[
     "code": "11051",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11051.jpg"
   }
 ]
@@ -639,7 +639,7 @@ PACK_12 = [[
     "code": "12001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12001B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12001A.jpg"
   },
   {
@@ -647,7 +647,7 @@ PACK_12 = [[
     "code": "12001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12001A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12001B.jpg"
   },
   {
@@ -850,7 +850,7 @@ PACK_12 = [[
     "code": "12025",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12025.jpg"
   },
   {
@@ -858,7 +858,7 @@ PACK_12 = [[
     "code": "12026",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12026.jpg"
   },
   {
@@ -866,7 +866,7 @@ PACK_12 = [[
     "code": "12027",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12027.jpg"
   },
   {
@@ -874,7 +874,7 @@ PACK_12 = [[
     "code": "12028",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12028.jpg"
   },
   {
@@ -882,7 +882,7 @@ PACK_12 = [[
     "code": "12029",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12029.jpg"
   }
 ]
@@ -894,7 +894,7 @@ PACK_13 = [[
     "code": "13001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13001B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13001A.jpg"
   },
   {
@@ -902,7 +902,7 @@ PACK_13 = [[
     "code": "13001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13001A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13001B.jpg"
   },
   {
@@ -1106,7 +1106,7 @@ PACK_13 = [[
     "code": "13026",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13026.jpg"
   },
   {
@@ -1114,7 +1114,7 @@ PACK_13 = [[
     "code": "13027",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13027.jpg"
   },
   {
@@ -1122,7 +1122,7 @@ PACK_13 = [[
     "code": "13028",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13028.jpg"
   },
   {
@@ -1130,7 +1130,7 @@ PACK_13 = [[
     "code": "13029",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13029.jpg"
   },
   {
@@ -1138,7 +1138,7 @@ PACK_13 = [[
     "code": "13030",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13030.jpg"
   }
 ]
@@ -1150,7 +1150,7 @@ PACK_14 = [[
     "code": "14001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14001B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14001A.jpg"
   },
   {
@@ -1158,7 +1158,7 @@ PACK_14 = [[
     "code": "14001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14001A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14001B.jpg"
   },
   {
@@ -1343,7 +1343,7 @@ PACK_14 = [[
     "code": "14024",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14024.jpg"
   },
   {
@@ -1351,7 +1351,7 @@ PACK_14 = [[
     "code": "14025",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14025.jpg"
   },
   {
@@ -1359,7 +1359,7 @@ PACK_14 = [[
     "code": "14026",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14026.jpg"
   },
   {
@@ -1367,7 +1367,7 @@ PACK_14 = [[
     "code": "14027",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14027.jpg"
   },
   {
@@ -1375,7 +1375,7 @@ PACK_14 = [[
     "code": "14028",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14028.jpg"
   }
 ]
@@ -1387,7 +1387,7 @@ PACK_15 = [[
     "code": "15001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15001B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15001A.jpg"
   },
   {
@@ -1395,7 +1395,7 @@ PACK_15 = [[
     "code": "15001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15001A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15001B.jpg"
   },
   {
@@ -1558,7 +1558,7 @@ PACK_15 = [[
     "code": "15023",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15023.jpg"
   },
   {
@@ -1566,7 +1566,7 @@ PACK_15 = [[
     "code": "15024",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15024.jpg"
   },
   {
@@ -1574,7 +1574,7 @@ PACK_15 = [[
     "code": "15025",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15025.jpg"
   },
   {
@@ -1582,7 +1582,7 @@ PACK_15 = [[
     "code": "15026",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15026.jpg"
   },
   {
@@ -1590,7 +1590,7 @@ PACK_15 = [[
     "code": "15027",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15027.jpg"
   }
 ]
@@ -1602,7 +1602,7 @@ PACK_16 = [[
     "code": "16001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16001B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16001A.jpg"
   },
   {
@@ -1610,7 +1610,7 @@ PACK_16 = [[
     "code": "16001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16001A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16001B.jpg"
   },
   {
@@ -1754,7 +1754,7 @@ PACK_16 = [[
     "code": "16029a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16029B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16029A.jpg"
   },
   {
@@ -1762,7 +1762,7 @@ PACK_16 = [[
     "code": "16029b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16029A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16029B.jpg"
   },
   {
@@ -2122,7 +2122,7 @@ PACK_16 = [[
     "code": "16178a",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16178B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16178A.jpg"
   },
   {
@@ -2130,7 +2130,7 @@ PACK_16 = [[
     "code": "16178b",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16178A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16178B.jpg"
   },
   {
@@ -2138,7 +2138,7 @@ PACK_16 = [[
     "code": "16179a",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16179B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16179A.jpg"
   },
   {
@@ -2146,7 +2146,7 @@ PACK_16 = [[
     "code": "16179b",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16179A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16179B.jpg"
   },
   {
@@ -2154,7 +2154,7 @@ PACK_16 = [[
     "code": "16180a",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16180B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16180A.jpg"
   },
   {
@@ -2162,7 +2162,7 @@ PACK_16 = [[
     "code": "16180b",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16180A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16180B.jpg"
   },
   {
@@ -2170,7 +2170,7 @@ PACK_16 = [[
     "code": "16181a",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16181B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16181A.jpg"
   },
   {
@@ -2178,7 +2178,7 @@ PACK_16 = [[
     "code": "16181b",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16181A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16181B.jpg"
   },
   {
@@ -2186,7 +2186,7 @@ PACK_16 = [[
     "code": "16182a",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16182B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16182A.jpg"
   },
   {
@@ -2194,7 +2194,7 @@ PACK_16 = [[
     "code": "16182b",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16182A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16182B.jpg"
   },
   {
@@ -2242,7 +2242,7 @@ PACK_16 = [[
     "code": "16025",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16025.jpg"
   },
   {
@@ -2250,7 +2250,7 @@ PACK_16 = [[
     "code": "16026",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16026.jpg"
   },
   {
@@ -2258,7 +2258,7 @@ PACK_16 = [[
     "code": "16027",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16027.jpg"
   },
   {
@@ -2266,7 +2266,7 @@ PACK_16 = [[
     "code": "16028",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16028.jpg"
   },
   {
@@ -2274,7 +2274,7 @@ PACK_16 = [[
     "code": "16053",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16053.jpg"
   },
   {
@@ -2282,7 +2282,7 @@ PACK_16 = [[
     "code": "16054",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16054.jpg"
   },
   {
@@ -2290,7 +2290,7 @@ PACK_16 = [[
     "code": "16055",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16055.jpg"
   },
   {
@@ -2298,7 +2298,7 @@ PACK_16 = [[
     "code": "16056",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16056.jpg"
   },
   {
@@ -2306,7 +2306,7 @@ PACK_16 = [[
     "code": "16057",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16057.jpg"
   },
   {
@@ -2314,7 +2314,7 @@ PACK_16 = [[
     "code": "16058",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16058.jpg"
   },
   {
@@ -2322,7 +2322,7 @@ PACK_16 = [[
     "code": "16059",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16059.jpg"
   },
   {
@@ -2330,7 +2330,7 @@ PACK_16 = [[
     "code": "16060",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16060.jpg"
   },
   {
@@ -2338,7 +2338,7 @@ PACK_16 = [[
     "code": "16061a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16061B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16061A.jpg"
   },
   {
@@ -2346,7 +2346,7 @@ PACK_16 = [[
     "code": "16061b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16061A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16061B.jpg"
   },
   {
@@ -2354,7 +2354,7 @@ PACK_16 = [[
     "code": "16062a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16062B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16062A.jpg"
   },
   {
@@ -2362,7 +2362,7 @@ PACK_16 = [[
     "code": "16062b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16062A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16062B.jpg"
   },
   {
@@ -2370,7 +2370,7 @@ PACK_16 = [[
     "code": "16063",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16063.jpg"
   },
   {
@@ -2378,7 +2378,7 @@ PACK_16 = [[
     "code": "16064",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16064.jpg"
   },
   {
@@ -2386,7 +2386,7 @@ PACK_16 = [[
     "code": "16065",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16065.jpg"
   },
   {
@@ -2394,7 +2394,7 @@ PACK_16 = [[
     "code": "16066",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16066.jpg"
   },
   {
@@ -2402,7 +2402,7 @@ PACK_16 = [[
     "code": "16067",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16067.jpg"
   },
   {
@@ -2410,7 +2410,7 @@ PACK_16 = [[
     "code": "16068",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16068.jpg"
   },
   {
@@ -2418,7 +2418,7 @@ PACK_16 = [[
     "code": "16069",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16069.jpg"
   },
   {
@@ -2426,7 +2426,7 @@ PACK_16 = [[
     "code": "16070",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16070.jpg"
   },
   {
@@ -2434,7 +2434,7 @@ PACK_16 = [[
     "code": "16071",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16071.jpg"
   },
   {
@@ -2442,7 +2442,7 @@ PACK_16 = [[
     "code": "16072",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16072.jpg"
   },
   {
@@ -2450,7 +2450,7 @@ PACK_16 = [[
     "code": "16073a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16073B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16073A.jpg"
   },
   {
@@ -2458,7 +2458,7 @@ PACK_16 = [[
     "code": "16073b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16073A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16073B.jpg"
   },
   {
@@ -2466,7 +2466,7 @@ PACK_16 = [[
     "code": "16074",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16074.jpg"
   },
   {
@@ -2474,7 +2474,7 @@ PACK_16 = [[
     "code": "16075",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16075.jpg"
   },
   {
@@ -2482,7 +2482,7 @@ PACK_16 = [[
     "code": "16076",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16076.jpg"
   },
   {
@@ -2490,7 +2490,7 @@ PACK_16 = [[
     "code": "16077",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16077.jpg"
   },
   {
@@ -2498,7 +2498,7 @@ PACK_16 = [[
     "code": "16078",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16078.jpg"
   },
   {
@@ -2506,7 +2506,7 @@ PACK_16 = [[
     "code": "16079",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16079.jpg"
   },
   {
@@ -2514,7 +2514,7 @@ PACK_16 = [[
     "code": "16080a",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16080B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16080A.jpg"
   },
   {
@@ -2522,7 +2522,7 @@ PACK_16 = [[
     "code": "16080b",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16080A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16080B.jpg"
   },
   {
@@ -2530,7 +2530,7 @@ PACK_16 = [[
     "code": "16081a",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16081B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16081A.jpg"
   },
   {
@@ -2538,7 +2538,7 @@ PACK_16 = [[
     "code": "16081b",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16081A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16081B.jpg"
   },
   {
@@ -2546,7 +2546,7 @@ PACK_16 = [[
     "code": "16082a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16082B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16082A.jpg"
   },
   {
@@ -2554,7 +2554,7 @@ PACK_16 = [[
     "code": "16082b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16082A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16082B.jpg"
   },
   {
@@ -2562,7 +2562,7 @@ PACK_16 = [[
     "code": "16083a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16083B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16083A.jpg"
   },
   {
@@ -2570,7 +2570,7 @@ PACK_16 = [[
     "code": "16083b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16083A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16083B.jpg"
   },
   {
@@ -2578,7 +2578,7 @@ PACK_16 = [[
     "code": "16084a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16084B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16084A.jpg"
   },
   {
@@ -2586,7 +2586,7 @@ PACK_16 = [[
     "code": "16084b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16084A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16084B.jpg"
   },
   {
@@ -2594,7 +2594,7 @@ PACK_16 = [[
     "code": "16085a",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16085B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16085A.jpg"
   },
   {
@@ -2602,7 +2602,7 @@ PACK_16 = [[
     "code": "16085b",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16085A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16085B.jpg"
   },
   {
@@ -2610,7 +2610,7 @@ PACK_16 = [[
     "code": "16086",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16086.jpg"
   },
   {
@@ -2618,7 +2618,7 @@ PACK_16 = [[
     "code": "16087",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16087.jpg"
   },
   {
@@ -2626,7 +2626,7 @@ PACK_16 = [[
     "code": "16088",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16088.jpg"
   },
   {
@@ -2634,7 +2634,7 @@ PACK_16 = [[
     "code": "16089",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16089.jpg"
   },
   {
@@ -2642,7 +2642,7 @@ PACK_16 = [[
     "code": "16090",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16090.jpg"
   },
   {
@@ -2650,7 +2650,7 @@ PACK_16 = [[
     "code": "16091a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16091B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16091A.jpg"
   },
   {
@@ -2658,7 +2658,7 @@ PACK_16 = [[
     "code": "16091b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16091A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16091B.jpg"
   },
   {
@@ -2666,7 +2666,7 @@ PACK_16 = [[
     "code": "16092a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16092B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16092A.jpg"
   },
   {
@@ -2674,7 +2674,7 @@ PACK_16 = [[
     "code": "16092b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16092A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16092B.jpg"
   },
   {
@@ -2682,7 +2682,7 @@ PACK_16 = [[
     "code": "16093",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16093.jpg"
   },
   {
@@ -2690,7 +2690,7 @@ PACK_16 = [[
     "code": "16094",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16094.jpg"
   },
   {
@@ -2698,7 +2698,7 @@ PACK_16 = [[
     "code": "16095",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16095.jpg"
   },
   {
@@ -2706,7 +2706,7 @@ PACK_16 = [[
     "code": "16096",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16096.jpg"
   },
   {
@@ -2714,7 +2714,7 @@ PACK_16 = [[
     "code": "16097",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16097.jpg"
   },
   {
@@ -2722,7 +2722,7 @@ PACK_16 = [[
     "code": "16098",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16098.jpg"
   },
   {
@@ -2730,7 +2730,7 @@ PACK_16 = [[
     "code": "16099",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16099.jpg"
   },
   {
@@ -2738,7 +2738,7 @@ PACK_16 = [[
     "code": "16100",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16100.jpg"
   },
   {
@@ -2746,7 +2746,7 @@ PACK_16 = [[
     "code": "16101",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16101.jpg"
   },
   {
@@ -2754,7 +2754,7 @@ PACK_16 = [[
     "code": "16102",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16102.jpg"
   },
   {
@@ -2762,7 +2762,7 @@ PACK_16 = [[
     "code": "16103",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16103.jpg"
   },
   {
@@ -2770,7 +2770,7 @@ PACK_16 = [[
     "code": "16104",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16104.jpg"
   },
   {
@@ -2778,7 +2778,7 @@ PACK_16 = [[
     "code": "16105",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16105.jpg"
   },
   {
@@ -2786,7 +2786,7 @@ PACK_16 = [[
     "code": "16106a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16106B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16106A.jpg"
   },
   {
@@ -2794,7 +2794,7 @@ PACK_16 = [[
     "code": "16106b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16106A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16106B.jpg"
   },
   {
@@ -2802,7 +2802,7 @@ PACK_16 = [[
     "code": "16107a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16107B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16107A.jpg"
   },
   {
@@ -2810,7 +2810,7 @@ PACK_16 = [[
     "code": "16107b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16107A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16107B.jpg"
   },
   {
@@ -2818,7 +2818,7 @@ PACK_16 = [[
     "code": "16108",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16108.jpg"
   },
   {
@@ -2826,7 +2826,7 @@ PACK_16 = [[
     "code": "16109",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16109.jpg"
   },
   {
@@ -2834,7 +2834,7 @@ PACK_16 = [[
     "code": "16110",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16110.jpg"
   },
   {
@@ -2842,7 +2842,7 @@ PACK_16 = [[
     "code": "16111",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16111.jpg"
   },
   {
@@ -2850,7 +2850,7 @@ PACK_16 = [[
     "code": "16112",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16112.jpg"
   },
   {
@@ -2858,7 +2858,7 @@ PACK_16 = [[
     "code": "16113",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16113.jpg"
   },
   {
@@ -2866,7 +2866,7 @@ PACK_16 = [[
     "code": "16114",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16114.jpg"
   },
   {
@@ -2874,7 +2874,7 @@ PACK_16 = [[
     "code": "16115",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16115.jpg"
   },
   {
@@ -2882,7 +2882,7 @@ PACK_16 = [[
     "code": "16116",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16116.jpg"
   },
   {
@@ -2890,7 +2890,7 @@ PACK_16 = [[
     "code": "16117",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16117.jpg"
   },
   {
@@ -2898,7 +2898,7 @@ PACK_16 = [[
     "code": "16118",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16118.jpg"
   },
   {
@@ -2906,7 +2906,7 @@ PACK_16 = [[
     "code": "16119",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16119.jpg"
   },
   {
@@ -2914,7 +2914,7 @@ PACK_16 = [[
     "code": "16120",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16120.jpg"
   },
   {
@@ -2922,7 +2922,7 @@ PACK_16 = [[
     "code": "16121",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16121.jpg"
   },
   {
@@ -2930,7 +2930,7 @@ PACK_16 = [[
     "code": "16122",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16122.jpg"
   },
   {
@@ -2938,7 +2938,7 @@ PACK_16 = [[
     "code": "16123",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16123.jpg"
   },
   {
@@ -2946,7 +2946,7 @@ PACK_16 = [[
     "code": "16124",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16124.jpg"
   },
   {
@@ -2954,7 +2954,7 @@ PACK_16 = [[
     "code": "16125",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16125.jpg"
   },
   {
@@ -2962,7 +2962,7 @@ PACK_16 = [[
     "code": "16126",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16126.jpg"
   },
   {
@@ -2970,7 +2970,7 @@ PACK_16 = [[
     "code": "16127",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16127.jpg"
   },
   {
@@ -2978,7 +2978,7 @@ PACK_16 = [[
     "code": "16128",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16128.jpg"
   },
   {
@@ -2986,7 +2986,7 @@ PACK_16 = [[
     "code": "16129",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16129.jpg"
   },
   {
@@ -2994,7 +2994,7 @@ PACK_16 = [[
     "code": "16130",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16130.jpg"
   },
   {
@@ -3002,7 +3002,7 @@ PACK_16 = [[
     "code": "16131",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16131.jpg"
   },
   {
@@ -3010,7 +3010,7 @@ PACK_16 = [[
     "code": "16132",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16132.jpg"
   },
   {
@@ -3018,7 +3018,7 @@ PACK_16 = [[
     "code": "16133",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16133.jpg"
   },
   {
@@ -3026,7 +3026,7 @@ PACK_16 = [[
     "code": "16134",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16134.jpg"
   },
   {
@@ -3034,7 +3034,7 @@ PACK_16 = [[
     "code": "16135",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16135.jpg"
   },
   {
@@ -3042,7 +3042,7 @@ PACK_16 = [[
     "code": "16136",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16136.jpg"
   },
   {
@@ -3050,7 +3050,7 @@ PACK_16 = [[
     "code": "16137",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16137.jpg"
   },
   {
@@ -3058,7 +3058,7 @@ PACK_16 = [[
     "code": "16138",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16138.jpg"
   },
   {
@@ -3066,7 +3066,7 @@ PACK_16 = [[
     "code": "16139",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16139.jpg"
   },
   {
@@ -3074,7 +3074,7 @@ PACK_16 = [[
     "code": "16140",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16140.jpg"
   },
   {
@@ -3082,7 +3082,7 @@ PACK_16 = [[
     "code": "16141",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16141.jpg"
   },
   {
@@ -3090,7 +3090,7 @@ PACK_16 = [[
     "code": "16142",
     "type_code": "support",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16142.jpg"
   },
   {
@@ -3098,7 +3098,7 @@ PACK_16 = [[
     "code": "16143",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16143.jpg"
   },
   {
@@ -3106,7 +3106,7 @@ PACK_16 = [[
     "code": "16144",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16144.jpg"
   },
   {
@@ -3114,7 +3114,7 @@ PACK_16 = [[
     "code": "16145",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16145.jpg"
   },
   {
@@ -3122,7 +3122,7 @@ PACK_16 = [[
     "code": "16146",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16146.jpg"
   },
   {
@@ -3130,7 +3130,7 @@ PACK_16 = [[
     "code": "16147",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16147.jpg"
   },
   {
@@ -3138,7 +3138,7 @@ PACK_16 = [[
     "code": "16148",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16148.jpg"
   },
   {
@@ -3146,7 +3146,7 @@ PACK_16 = [[
     "code": "16149",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16149.jpg"
   }
 ]
@@ -3158,7 +3158,7 @@ PACK_17 = [[
     "code": "17001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17001B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17001A.jpg"
   },
   {
@@ -3166,7 +3166,7 @@ PACK_17 = [[
     "code": "17001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17001A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17001B.jpg"
   },
   {
@@ -3359,7 +3359,7 @@ PACK_17 = [[
     "code": "17024",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17024.jpg"
   },
   {
@@ -3367,7 +3367,7 @@ PACK_17 = [[
     "code": "17025",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17025.jpg"
   },
   {
@@ -3375,7 +3375,7 @@ PACK_17 = [[
     "code": "17026",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17026.jpg"
   },
   {
@@ -3383,7 +3383,7 @@ PACK_17 = [[
     "code": "17027",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17027.jpg"
   }
 ]
@@ -3395,7 +3395,7 @@ PACK_18 = [[
     "code": "18001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18001B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18001A.jpg"
   },
   {
@@ -3403,7 +3403,7 @@ PACK_18 = [[
     "code": "18001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18001A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18001B.jpg"
   },
   {
@@ -3572,7 +3572,7 @@ PACK_18 = [[
     "code": "18024",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18024.jpg"
   },
   {
@@ -3580,7 +3580,7 @@ PACK_18 = [[
     "code": "18025",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18025.jpg"
   },
   {
@@ -3588,7 +3588,7 @@ PACK_18 = [[
     "code": "18026",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18026.jpg"
   },
   {
@@ -3596,7 +3596,7 @@ PACK_18 = [[
     "code": "18027",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18027.jpg"
   },
   {
@@ -3604,7 +3604,7 @@ PACK_18 = [[
     "code": "18028",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18028.jpg"
   }
 ]
@@ -3616,7 +3616,7 @@ PACK_19 = [[
     "code": "19001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19001B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19001A.jpg"
   },
   {
@@ -3624,7 +3624,7 @@ PACK_19 = [[
     "code": "19001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19001A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19001B.jpg"
   },
   {
@@ -3794,7 +3794,7 @@ PACK_19 = [[
     "code": "19025",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19025.jpg"
   },
   {
@@ -3802,7 +3802,7 @@ PACK_19 = [[
     "code": "19026",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19026.jpg"
   },
   {
@@ -3810,7 +3810,7 @@ PACK_19 = [[
     "code": "19027",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19027.jpg"
   },
   {
@@ -3818,7 +3818,7 @@ PACK_19 = [[
     "code": "19028",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19028.jpg"
   },
   {
@@ -3826,7 +3826,7 @@ PACK_19 = [[
     "code": "19029",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19029.jpg"
   }
 ]
@@ -3838,7 +3838,7 @@ PACK_20 = [[
     "code": "20001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20001B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20001A.jpg"
   },
   {
@@ -3846,7 +3846,7 @@ PACK_20 = [[
     "code": "20001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20001A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20001B.jpg"
   },
   {
@@ -4016,7 +4016,7 @@ PACK_20 = [[
     "code": "20023",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20023.jpg"
   },
   {
@@ -4024,7 +4024,7 @@ PACK_20 = [[
     "code": "20024",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20024.jpg"
   },
   {
@@ -4032,7 +4032,7 @@ PACK_20 = [[
     "code": "20025",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20025.jpg"
   }
 ]
@@ -4044,7 +4044,7 @@ PACK_21 = [[
     "code": "21001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21001B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21001A.jpg"
   },
   {
@@ -4052,7 +4052,7 @@ PACK_21 = [[
     "code": "21001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21001A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21001B.jpg"
   },
   {
@@ -4209,7 +4209,7 @@ PACK_21 = [[
     "code": "21031a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21031B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21031A.jpg"
   },
   {
@@ -4217,7 +4217,7 @@ PACK_21 = [[
     "code": "21031b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21031A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21031B.jpg"
   },
   {
@@ -4437,7 +4437,7 @@ PACK_21 = [[
     "code": "21180a",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21180B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21180A.jpg"
   },
   {
@@ -4445,7 +4445,7 @@ PACK_21 = [[
     "code": "21180b",
     "type_code": "ally",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21180A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21180B.jpg"
   },
   {
@@ -4461,7 +4461,7 @@ PACK_21 = [[
     "code": "21182a",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21182B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21182A.jpg"
   },
   {
@@ -4469,7 +4469,7 @@ PACK_21 = [[
     "code": "21182b",
     "type_code": "minion",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21182A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21182B.jpg"
   },
   {
@@ -4485,7 +4485,7 @@ PACK_21 = [[
     "code": "21184a",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21184B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21184A.jpg"
   },
   {
@@ -4493,7 +4493,7 @@ PACK_21 = [[
     "code": "21184b",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21184A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21184B.jpg"
   },
   {
@@ -4509,7 +4509,7 @@ PACK_21 = [[
     "code": "21186a",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21186B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21186A.jpg"
   },
   {
@@ -4517,7 +4517,7 @@ PACK_21 = [[
     "code": "21186b",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21186A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21186B.jpg"
   },
   {
@@ -4525,7 +4525,7 @@ PACK_21 = [[
     "code": "21187a",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21187B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21187A.jpg"
   },
   {
@@ -4533,7 +4533,7 @@ PACK_21 = [[
     "code": "21187b",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21187A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21187B.jpg"
   },
   {
@@ -4549,7 +4549,7 @@ PACK_21 = [[
     "code": "21189a",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21189B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21189A.jpg"
   },
   {
@@ -4557,7 +4557,7 @@ PACK_21 = [[
     "code": "21189b",
     "type_code": "attachment",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21189A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21189B.jpg"
   },
   {
@@ -4597,7 +4597,7 @@ PACK_21 = [[
     "code": "21026",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21026.jpg"
   },
   {
@@ -4605,7 +4605,7 @@ PACK_21 = [[
     "code": "21027",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21027.jpg"
   },
   {
@@ -4613,7 +4613,7 @@ PACK_21 = [[
     "code": "21028",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21028.jpg"
   },
   {
@@ -4621,7 +4621,7 @@ PACK_21 = [[
     "code": "21029",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21029.jpg"
   },
   {
@@ -4629,7 +4629,7 @@ PACK_21 = [[
     "code": "21030",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21030.jpg"
   },
   {
@@ -4637,7 +4637,7 @@ PACK_21 = [[
     "code": "21066",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21066.jpg"
   },
   {
@@ -4645,7 +4645,7 @@ PACK_21 = [[
     "code": "21067",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21067.jpg"
   },
   {
@@ -4653,7 +4653,7 @@ PACK_21 = [[
     "code": "21068",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21068.jpg"
   },
   {
@@ -4661,7 +4661,7 @@ PACK_21 = [[
     "code": "21069",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21069.jpg"
   },
   {
@@ -4669,7 +4669,7 @@ PACK_21 = [[
     "code": "21070",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21070.jpg"
   },
   {
@@ -4677,7 +4677,7 @@ PACK_21 = [[
     "code": "21071",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21071.jpg"
   },
   {
@@ -4685,7 +4685,7 @@ PACK_21 = [[
     "code": "21072",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21072.jpg"
   },
   {
@@ -4693,7 +4693,7 @@ PACK_21 = [[
     "code": "21073",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21073.jpg"
   },
   {
@@ -4701,7 +4701,7 @@ PACK_21 = [[
     "code": "21074",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21074.jpg"
   },
   {
@@ -4709,7 +4709,7 @@ PACK_21 = [[
     "code": "21075",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21075.jpg"
   },
   {
@@ -4717,7 +4717,7 @@ PACK_21 = [[
     "code": "21076",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21076.jpg"
   },
   {
@@ -4725,7 +4725,7 @@ PACK_21 = [[
     "code": "21077",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21077.jpg"
   },
   {
@@ -4733,7 +4733,7 @@ PACK_21 = [[
     "code": "21078",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21078.jpg"
   },
   {
@@ -4741,7 +4741,7 @@ PACK_21 = [[
     "code": "21079",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21079.jpg"
   },
   {
@@ -4749,7 +4749,7 @@ PACK_21 = [[
     "code": "21080",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21080.jpg"
   },
   {
@@ -4757,7 +4757,7 @@ PACK_21 = [[
     "code": "21081",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21081.jpg"
   },
   {
@@ -4765,7 +4765,7 @@ PACK_21 = [[
     "code": "21082",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21082.jpg"
   },
   {
@@ -4773,7 +4773,7 @@ PACK_21 = [[
     "code": "21083",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21083.jpg"
   },
   {
@@ -4781,7 +4781,7 @@ PACK_21 = [[
     "code": "21084",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21084.jpg"
   },
   {
@@ -4789,7 +4789,7 @@ PACK_21 = [[
     "code": "21085",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21085.jpg"
   },
   {
@@ -4797,7 +4797,7 @@ PACK_21 = [[
     "code": "21086",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21086.jpg"
   },
   {
@@ -4805,7 +4805,7 @@ PACK_21 = [[
     "code": "21087",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21087.jpg"
   },
   {
@@ -4813,7 +4813,7 @@ PACK_21 = [[
     "code": "21088",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21088.jpg"
   },
   {
@@ -4821,7 +4821,7 @@ PACK_21 = [[
     "code": "21089",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21089.jpg"
   },
   {
@@ -4829,7 +4829,7 @@ PACK_21 = [[
     "code": "21090",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21090.jpg"
   },
   {
@@ -4837,7 +4837,7 @@ PACK_21 = [[
     "code": "21091",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21091.jpg"
   },
   {
@@ -4845,7 +4845,7 @@ PACK_21 = [[
     "code": "21092",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21092.jpg"
   },
   {
@@ -4853,7 +4853,7 @@ PACK_21 = [[
     "code": "21093",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21093.jpg"
   },
   {
@@ -4861,7 +4861,7 @@ PACK_21 = [[
     "code": "21094",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21094.jpg"
   },
   {
@@ -4869,7 +4869,7 @@ PACK_21 = [[
     "code": "21095",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21095.jpg"
   },
   {
@@ -4877,7 +4877,7 @@ PACK_21 = [[
     "code": "21096",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21096.jpg"
   },
   {
@@ -4885,7 +4885,7 @@ PACK_21 = [[
     "code": "21097",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21097.jpg"
   },
   {
@@ -4893,7 +4893,7 @@ PACK_21 = [[
     "code": "21098",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21098.jpg"
   },
   {
@@ -4901,7 +4901,7 @@ PACK_21 = [[
     "code": "21099",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21099.jpg"
   },
   {
@@ -4909,7 +4909,7 @@ PACK_21 = [[
     "code": "21100",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21100.jpg"
   },
   {
@@ -4917,7 +4917,7 @@ PACK_21 = [[
     "code": "21101",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21101.jpg"
   },
   {
@@ -4925,7 +4925,7 @@ PACK_21 = [[
     "code": "21102",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21102.jpg"
   },
   {
@@ -4933,7 +4933,7 @@ PACK_21 = [[
     "code": "21103",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21103.jpg"
   },
   {
@@ -4941,7 +4941,7 @@ PACK_21 = [[
     "code": "21104",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21104.jpg"
   },
   {
@@ -4949,7 +4949,7 @@ PACK_21 = [[
     "code": "21105",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21105.jpg"
   },
   {
@@ -4957,7 +4957,7 @@ PACK_21 = [[
     "code": "21106",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21106.jpg"
   },
   {
@@ -4965,7 +4965,7 @@ PACK_21 = [[
     "code": "21107",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21107.jpg"
   },
   {
@@ -4973,7 +4973,7 @@ PACK_21 = [[
     "code": "21108",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21108.jpg"
   },
   {
@@ -4981,7 +4981,7 @@ PACK_21 = [[
     "code": "21109",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21109.jpg"
   },
   {
@@ -4989,7 +4989,7 @@ PACK_21 = [[
     "code": "21110",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21110.jpg"
   },
   {
@@ -4997,7 +4997,7 @@ PACK_21 = [[
     "code": "21111",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21111.jpg"
   },
   {
@@ -5005,7 +5005,7 @@ PACK_21 = [[
     "code": "21112",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21112.jpg"
   },
   {
@@ -5013,7 +5013,7 @@ PACK_21 = [[
     "code": "21113",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21113.jpg"
   },
   {
@@ -5021,7 +5021,7 @@ PACK_21 = [[
     "code": "21114",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21114.jpg"
   },
   {
@@ -5029,7 +5029,7 @@ PACK_21 = [[
     "code": "21115",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21115.jpg"
   },
   {
@@ -5037,7 +5037,7 @@ PACK_21 = [[
     "code": "21116",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21116.jpg"
   },
   {
@@ -5045,7 +5045,7 @@ PACK_21 = [[
     "code": "21117",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21117.jpg"
   },
   {
@@ -5053,7 +5053,7 @@ PACK_21 = [[
     "code": "21118",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21118.jpg"
   },
   {
@@ -5061,7 +5061,7 @@ PACK_21 = [[
     "code": "21119",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21119.jpg"
   },
   {
@@ -5069,7 +5069,7 @@ PACK_21 = [[
     "code": "21120",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21120.jpg"
   },
   {
@@ -5077,7 +5077,7 @@ PACK_21 = [[
     "code": "21121",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21121.jpg"
   },
   {
@@ -5085,7 +5085,7 @@ PACK_21 = [[
     "code": "21122",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21122.jpg"
   },
   {
@@ -5093,7 +5093,7 @@ PACK_21 = [[
     "code": "21123",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21123.jpg"
   },
   {
@@ -5101,7 +5101,7 @@ PACK_21 = [[
     "code": "21124",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21124.jpg"
   },
   {
@@ -5109,7 +5109,7 @@ PACK_21 = [[
     "code": "21125",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21125.jpg"
   },
   {
@@ -5117,7 +5117,7 @@ PACK_21 = [[
     "code": "21126",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21126.jpg"
   },
   {
@@ -5125,7 +5125,7 @@ PACK_21 = [[
     "code": "21127",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21127.jpg"
   },
   {
@@ -5133,7 +5133,7 @@ PACK_21 = [[
     "code": "21128",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21128.jpg"
   },
   {
@@ -5141,7 +5141,7 @@ PACK_21 = [[
     "code": "21129",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21129.jpg"
   },
   {
@@ -5149,7 +5149,7 @@ PACK_21 = [[
     "code": "21130",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21130.jpg"
   },
   {
@@ -5157,7 +5157,7 @@ PACK_21 = [[
     "code": "21131",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21131.jpg"
   },
   {
@@ -5165,7 +5165,7 @@ PACK_21 = [[
     "code": "21132",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21132.jpg"
   },
   {
@@ -5173,7 +5173,7 @@ PACK_21 = [[
     "code": "21133",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21133.jpg"
   },
   {
@@ -5181,7 +5181,7 @@ PACK_21 = [[
     "code": "21134",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21134.jpg"
   },
   {
@@ -5189,7 +5189,7 @@ PACK_21 = [[
     "code": "21135",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21135.jpg"
   },
   {
@@ -5197,7 +5197,7 @@ PACK_21 = [[
     "code": "21136a",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21136B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21136A.jpg"
   },
   {
@@ -5205,7 +5205,7 @@ PACK_21 = [[
     "code": "21136b",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21136A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21136B.jpg"
   },
   {
@@ -5213,7 +5213,7 @@ PACK_21 = [[
     "code": "21137a",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21137B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21137A.jpg"
   },
   {
@@ -5221,7 +5221,7 @@ PACK_21 = [[
     "code": "21137b",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21137A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21137B.jpg"
   },
   {
@@ -5229,7 +5229,7 @@ PACK_21 = [[
     "code": "21138",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21138.jpg"
   },
   {
@@ -5237,7 +5237,7 @@ PACK_21 = [[
     "code": "21139a",
     "type_code": "ally",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21139B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21139A.jpg"
   },
   {
@@ -5245,7 +5245,7 @@ PACK_21 = [[
     "code": "21139b",
     "type_code": "ally",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21139A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21139B.jpg"
   },
   {
@@ -5253,7 +5253,7 @@ PACK_21 = [[
     "code": "21140",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21140.jpg"
   },
   {
@@ -5261,7 +5261,7 @@ PACK_21 = [[
     "code": "21141",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21141.jpg"
   },
   {
@@ -5269,7 +5269,7 @@ PACK_21 = [[
     "code": "21142",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21142.jpg"
   },
   {
@@ -5277,7 +5277,7 @@ PACK_21 = [[
     "code": "21143",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21143.jpg"
   },
   {
@@ -5285,7 +5285,7 @@ PACK_21 = [[
     "code": "21144",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21144.jpg"
   },
   {
@@ -5293,7 +5293,7 @@ PACK_21 = [[
     "code": "21145",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21145.jpg"
   },
   {
@@ -5301,7 +5301,7 @@ PACK_21 = [[
     "code": "21146",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21146.jpg"
   },
   {
@@ -5309,7 +5309,7 @@ PACK_21 = [[
     "code": "21147",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21147.jpg"
   },
   {
@@ -5317,7 +5317,7 @@ PACK_21 = [[
     "code": "21148",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21148.jpg"
   },
   {
@@ -5325,7 +5325,7 @@ PACK_21 = [[
     "code": "21149",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21149.jpg"
   },
   {
@@ -5333,7 +5333,7 @@ PACK_21 = [[
     "code": "21150",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21150.jpg"
   },
   {
@@ -5341,7 +5341,7 @@ PACK_21 = [[
     "code": "21151",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21151.jpg"
   },
   {
@@ -5349,7 +5349,7 @@ PACK_21 = [[
     "code": "21152",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21152.jpg"
   },
   {
@@ -5357,7 +5357,7 @@ PACK_21 = [[
     "code": "21153",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21153.jpg"
   },
   {
@@ -5365,7 +5365,7 @@ PACK_21 = [[
     "code": "21154",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21154.jpg"
   },
   {
@@ -5373,7 +5373,7 @@ PACK_21 = [[
     "code": "21155",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21155.jpg"
   },
   {
@@ -5381,7 +5381,7 @@ PACK_21 = [[
     "code": "21156",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21156.jpg"
   },
   {
@@ -5389,7 +5389,7 @@ PACK_21 = [[
     "code": "21157",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21157.jpg"
   },
   {
@@ -5397,7 +5397,7 @@ PACK_21 = [[
     "code": "21158",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21158.jpg"
   },
   {
@@ -5405,7 +5405,7 @@ PACK_21 = [[
     "code": "21159",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21159.jpg"
   },
   {
@@ -5413,7 +5413,7 @@ PACK_21 = [[
     "code": "21160",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21160.jpg"
   },
   {
@@ -5421,7 +5421,7 @@ PACK_21 = [[
     "code": "21161",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21161.jpg"
   },
   {
@@ -5429,7 +5429,7 @@ PACK_21 = [[
     "code": "21162",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21162.jpg"
   },
   {
@@ -5437,7 +5437,7 @@ PACK_21 = [[
     "code": "21163",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21163.jpg"
   },
   {
@@ -5445,7 +5445,7 @@ PACK_21 = [[
     "code": "21164",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21164.jpg"
   },
   {
@@ -5453,7 +5453,7 @@ PACK_21 = [[
     "code": "21165",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21165.jpg"
   },
   {
@@ -5461,7 +5461,7 @@ PACK_21 = [[
     "code": "21166",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21166.jpg"
   },
   {
@@ -5469,7 +5469,7 @@ PACK_21 = [[
     "code": "21167",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21167.jpg"
   },
   {
@@ -5477,7 +5477,7 @@ PACK_21 = [[
     "code": "21168",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21168.jpg"
   },
   {
@@ -5485,7 +5485,7 @@ PACK_21 = [[
     "code": "21169",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21169.jpg"
   },
   {
@@ -5493,7 +5493,7 @@ PACK_21 = [[
     "code": "21170",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21170.jpg"
   },
   {
@@ -5501,7 +5501,7 @@ PACK_21 = [[
     "code": "21171",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21171.jpg"
   },
   {
@@ -5509,7 +5509,7 @@ PACK_21 = [[
     "code": "21172",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21172.jpg"
   },
   {
@@ -5517,7 +5517,7 @@ PACK_21 = [[
     "code": "21173",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21173.jpg"
   },
   {
@@ -5525,7 +5525,7 @@ PACK_21 = [[
     "code": "21174",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21174.jpg"
   },
   {
@@ -5533,7 +5533,7 @@ PACK_21 = [[
     "code": "21175",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21175.jpg"
   },
   {
@@ -5541,7 +5541,7 @@ PACK_21 = [[
     "code": "21176",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21176.jpg"
   },
   {
@@ -5549,7 +5549,7 @@ PACK_21 = [[
     "code": "21177",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21177.jpg"
   },
   {
@@ -5557,7 +5557,7 @@ PACK_21 = [[
     "code": "21178",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21178.jpg"
   },
   {
@@ -5565,7 +5565,7 @@ PACK_21 = [[
     "code": "21179",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21179.jpg"
   }
 ]
@@ -5577,7 +5577,7 @@ PACK_22 = [[
     "code": "22001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22001B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22001A.jpg"
   },
   {
@@ -5585,7 +5585,7 @@ PACK_22 = [[
     "code": "22001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22001A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22001B.jpg"
   },
   {
@@ -5755,7 +5755,7 @@ PACK_22 = [[
     "code": "22027",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22027.jpg"
   },
   {
@@ -5763,7 +5763,7 @@ PACK_22 = [[
     "code": "22028",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22028.jpg"
   },
   {
@@ -5771,7 +5771,7 @@ PACK_22 = [[
     "code": "22029",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22029.jpg"
   },
   {
@@ -5779,7 +5779,7 @@ PACK_22 = [[
     "code": "22030",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22030.jpg"
   },
   {
@@ -5787,7 +5787,7 @@ PACK_22 = [[
     "code": "22031",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22031.jpg"
   }
 ]
@@ -5799,7 +5799,7 @@ PACK_23 = [[
     "code": "23001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23001B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23001A.jpg"
   },
   {
@@ -5807,7 +5807,7 @@ PACK_23 = [[
     "code": "23001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23001A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23001B.jpg"
   },
   {
@@ -5986,7 +5986,7 @@ PACK_23 = [[
     "code": "23028",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23028.jpg"
   },
   {
@@ -5994,7 +5994,7 @@ PACK_23 = [[
     "code": "23029",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23029.jpg"
   },
   {
@@ -6002,7 +6002,7 @@ PACK_23 = [[
     "code": "23030",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23030.jpg"
   },
   {
@@ -6010,7 +6010,7 @@ PACK_23 = [[
     "code": "23031",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23031.jpg"
   }
 ]
@@ -6022,7 +6022,7 @@ PACK_24 = [[
     "code": "24001",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24001.jpg"
   },
   {
@@ -6030,7 +6030,7 @@ PACK_24 = [[
     "code": "24002",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24002.jpg"
   },
   {
@@ -6038,7 +6038,7 @@ PACK_24 = [[
     "code": "24003",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24003.jpg"
   },
   {
@@ -6046,7 +6046,7 @@ PACK_24 = [[
     "code": "24004",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24004.jpg"
   },
   {
@@ -6054,7 +6054,7 @@ PACK_24 = [[
     "code": "24005",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24005.jpg"
   },
   {
@@ -6062,7 +6062,7 @@ PACK_24 = [[
     "code": "24006",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24006.jpg"
   },
   {
@@ -6070,7 +6070,7 @@ PACK_24 = [[
     "code": "24007",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24007.jpg"
   },
   {
@@ -6078,7 +6078,7 @@ PACK_24 = [[
     "code": "24008",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24008.jpg"
   },
   {
@@ -6086,7 +6086,7 @@ PACK_24 = [[
     "code": "24009",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24009.jpg"
   },
   {
@@ -6094,7 +6094,7 @@ PACK_24 = [[
     "code": "24010",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24010.jpg"
   },
   {
@@ -6102,7 +6102,7 @@ PACK_24 = [[
     "code": "24011",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24011.jpg"
   },
   {
@@ -6110,7 +6110,7 @@ PACK_24 = [[
     "code": "24012",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24012.jpg"
   },
   {
@@ -6118,7 +6118,7 @@ PACK_24 = [[
     "code": "24013",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24013.jpg"
   },
   {
@@ -6126,7 +6126,7 @@ PACK_24 = [[
     "code": "24014",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24014.jpg"
   },
   {
@@ -6134,7 +6134,7 @@ PACK_24 = [[
     "code": "24015",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24015.jpg"
   },
   {
@@ -6142,7 +6142,7 @@ PACK_24 = [[
     "code": "24016",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24016.jpg"
   },
   {
@@ -6150,7 +6150,7 @@ PACK_24 = [[
     "code": "24017",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24017.jpg"
   },
   {
@@ -6158,7 +6158,7 @@ PACK_24 = [[
     "code": "24018",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24018.jpg"
   },
   {
@@ -6166,7 +6166,7 @@ PACK_24 = [[
     "code": "24019",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24019.jpg"
   },
   {
@@ -6174,7 +6174,7 @@ PACK_24 = [[
     "code": "24020",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24020.jpg"
   },
   {
@@ -6182,7 +6182,7 @@ PACK_24 = [[
     "code": "24021",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24021.jpg"
   },
   {
@@ -6190,7 +6190,7 @@ PACK_24 = [[
     "code": "24022",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24022.jpg"
   },
   {
@@ -6198,7 +6198,7 @@ PACK_24 = [[
     "code": "24023",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24023.jpg"
   },
   {
@@ -6206,7 +6206,7 @@ PACK_24 = [[
     "code": "24024",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24024.jpg"
   },
   {
@@ -6214,7 +6214,7 @@ PACK_24 = [[
     "code": "24025",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24025.jpg"
   },
   {
@@ -6222,7 +6222,7 @@ PACK_24 = [[
     "code": "24026",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24026.jpg"
   },
   {
@@ -6230,7 +6230,7 @@ PACK_24 = [[
     "code": "24027",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24027.jpg"
   },
   {
@@ -6238,7 +6238,7 @@ PACK_24 = [[
     "code": "24028",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24028.jpg"
   },
   {
@@ -6246,7 +6246,7 @@ PACK_24 = [[
     "code": "24029",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24029.jpg"
   },
   {
@@ -6254,7 +6254,7 @@ PACK_24 = [[
     "code": "24030",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24030.jpg"
   },
   {
@@ -6262,7 +6262,7 @@ PACK_24 = [[
     "code": "24031",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24031.jpg"
   },
   {
@@ -6270,7 +6270,7 @@ PACK_24 = [[
     "code": "24032",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24032.jpg"
   },
   {
@@ -6278,7 +6278,7 @@ PACK_24 = [[
     "code": "24033",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24033.jpg"
   },
   {
@@ -6286,7 +6286,7 @@ PACK_24 = [[
     "code": "24034",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24034.jpg"
   },
   {
@@ -6294,7 +6294,7 @@ PACK_24 = [[
     "code": "24035",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24035.jpg"
   },
   {
@@ -6302,7 +6302,7 @@ PACK_24 = [[
     "code": "24036",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24036.jpg"
   },
   {
@@ -6310,7 +6310,7 @@ PACK_24 = [[
     "code": "24037",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24037.jpg"
   },
   {
@@ -6318,7 +6318,7 @@ PACK_24 = [[
     "code": "24038",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24038.jpg"
   },
   {
@@ -6326,7 +6326,7 @@ PACK_24 = [[
     "code": "24039",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24039.jpg"
   },
   {
@@ -6334,7 +6334,7 @@ PACK_24 = [[
     "code": "24040",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24040.jpg"
   },
   {
@@ -6342,7 +6342,7 @@ PACK_24 = [[
     "code": "24041",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24041.jpg"
   },
   {
@@ -6350,7 +6350,7 @@ PACK_24 = [[
     "code": "24042",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24042.jpg"
   },
   {
@@ -6358,7 +6358,7 @@ PACK_24 = [[
     "code": "24043",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24043.jpg"
   },
   {
@@ -6366,7 +6366,7 @@ PACK_24 = [[
     "code": "24044",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24044.jpg"
   },
   {
@@ -6374,7 +6374,7 @@ PACK_24 = [[
     "code": "24045",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24045.jpg"
   },
   {
@@ -6382,7 +6382,7 @@ PACK_24 = [[
     "code": "24046",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24046.jpg"
   },
   {
@@ -6390,7 +6390,7 @@ PACK_24 = [[
     "code": "24047",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24047.jpg"
   },
   {
@@ -6398,7 +6398,7 @@ PACK_24 = [[
     "code": "24048",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24048.jpg"
   },
   {
@@ -6406,7 +6406,7 @@ PACK_24 = [[
     "code": "24049",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24049.jpg"
   },
   {
@@ -6414,7 +6414,7 @@ PACK_24 = [[
     "code": "24050",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24050.jpg"
   },
   {
@@ -6422,7 +6422,7 @@ PACK_24 = [[
     "code": "24051",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24051.jpg"
   },
   {
@@ -6430,7 +6430,7 @@ PACK_24 = [[
     "code": "24052",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24052.jpg"
   },
   {
@@ -6438,7 +6438,7 @@ PACK_24 = [[
     "code": "24053",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24053.jpg"
   },
   {
@@ -6446,7 +6446,7 @@ PACK_24 = [[
     "code": "24054",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24054.jpg"
   },
   {
@@ -6454,7 +6454,7 @@ PACK_24 = [[
     "code": "24055",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24055.jpg"
   },
   {
@@ -6462,7 +6462,7 @@ PACK_24 = [[
     "code": "24056",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24056.jpg"
   },
   {
@@ -6470,7 +6470,7 @@ PACK_24 = [[
     "code": "24057",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24057.jpg"
   },
   {
@@ -6478,7 +6478,7 @@ PACK_24 = [[
     "code": "24058",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24058.jpg"
   },
   {
@@ -6486,7 +6486,7 @@ PACK_24 = [[
     "code": "24059",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24059.jpg"
   },
   {
@@ -6494,7 +6494,7 @@ PACK_24 = [[
     "code": "24060",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24060.jpg"
   },
   {
@@ -6502,7 +6502,7 @@ PACK_24 = [[
     "code": "24061",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24061.jpg"
   },
   {
@@ -6510,7 +6510,7 @@ PACK_24 = [[
     "code": "24062",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24062.jpg"
   },
   {
@@ -6518,7 +6518,7 @@ PACK_24 = [[
     "code": "24063",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24063.jpg"
   },
   {
@@ -6526,7 +6526,7 @@ PACK_24 = [[
     "code": "24064",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24064.jpg"
   },
   {
@@ -6534,7 +6534,7 @@ PACK_24 = [[
     "code": "24065",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24065.jpg"
   },
   {
@@ -6542,7 +6542,7 @@ PACK_24 = [[
     "code": "24066",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24066.jpg"
   },
   {
@@ -6550,7 +6550,7 @@ PACK_24 = [[
     "code": "24067",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24067.jpg"
   },
   {
@@ -6558,7 +6558,7 @@ PACK_24 = [[
     "code": "24068",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24068.jpg"
   },
   {
@@ -6566,7 +6566,7 @@ PACK_24 = [[
     "code": "24069",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24069.jpg"
   },
   {
@@ -6574,7 +6574,7 @@ PACK_24 = [[
     "code": "24070",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24070.jpg"
   }
 ]
@@ -6586,7 +6586,7 @@ PACK_25 = [[
     "code": "25001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25001B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25001A.jpg"
   },
   {
@@ -6594,7 +6594,7 @@ PACK_25 = [[
     "code": "25001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25001A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25001B.jpg"
   },
   {
@@ -6780,7 +6780,7 @@ PACK_25 = [[
     "code": "25028",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25028.jpg"
   },
   {
@@ -6788,7 +6788,7 @@ PACK_25 = [[
     "code": "25029",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25029.jpg"
   },
   {
@@ -6796,7 +6796,7 @@ PACK_25 = [[
     "code": "25030",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25030.jpg"
   },
   {
@@ -6804,7 +6804,7 @@ PACK_25 = [[
     "code": "25031",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25031.jpg"
   },
   {
@@ -6812,7 +6812,7 @@ PACK_25 = [[
     "code": "25032",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25032.jpg"
   }
 ]
@@ -6824,7 +6824,7 @@ PACK_26 = [[
     "code": "26001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26001B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26001A.jpg"
   },
   {
@@ -6832,7 +6832,7 @@ PACK_26 = [[
     "code": "26001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26001A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26001B.jpg"
   },
   {
@@ -7018,7 +7018,7 @@ PACK_26 = [[
     "code": "26028",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26028.jpg"
   },
   {
@@ -7026,7 +7026,7 @@ PACK_26 = [[
     "code": "26029",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26029.jpg"
   },
   {
@@ -7034,7 +7034,7 @@ PACK_26 = [[
     "code": "26030",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26030.jpg"
   },
   {
@@ -7042,7 +7042,7 @@ PACK_26 = [[
     "code": "26031",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26031.jpg"
   },
   {
@@ -7050,7 +7050,7 @@ PACK_26 = [[
     "code": "26032",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26032.jpg"
   }
 ]
@@ -7062,7 +7062,7 @@ PACK_27 = [[
     "code": "27001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27001B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27001A.jpg"
   },
   {
@@ -7070,7 +7070,7 @@ PACK_27 = [[
     "code": "27001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27001A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27001B.jpg"
   },
   {
@@ -7234,7 +7234,7 @@ PACK_27 = [[
     "code": "27030a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27030B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27030A.jpg"
   },
   {
@@ -7242,7 +7242,7 @@ PACK_27 = [[
     "code": "27030b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27030A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27030B.jpg"
   },
   {
@@ -7414,7 +7414,7 @@ PACK_27 = [[
     "code": "27174a",
     "type_code": "environment",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27174B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27174A.jpg"
   },
   {
@@ -7422,7 +7422,7 @@ PACK_27 = [[
     "code": "27174b",
     "type_code": "environment",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27174A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27174B.jpg"
   },
   {
@@ -7486,7 +7486,7 @@ PACK_27 = [[
     "code": "27182a",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27182B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27182A.jpg"
   },
   {
@@ -7494,7 +7494,7 @@ PACK_27 = [[
     "code": "27182b",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27182A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27182B.jpg"
   },
   {
@@ -7502,7 +7502,7 @@ PACK_27 = [[
     "code": "27183a",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27183B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27183A.jpg"
   },
   {
@@ -7510,7 +7510,7 @@ PACK_27 = [[
     "code": "27183b",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27183A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27183B.jpg"
   },
   {
@@ -7518,7 +7518,7 @@ PACK_27 = [[
     "code": "27184a",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27184B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27184A.jpg"
   },
   {
@@ -7526,7 +7526,7 @@ PACK_27 = [[
     "code": "27184b",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27184A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27184B.jpg"
   },
   {
@@ -7534,7 +7534,7 @@ PACK_27 = [[
     "code": "27185a",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27185B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27185A.jpg"
   },
   {
@@ -7542,7 +7542,7 @@ PACK_27 = [[
     "code": "27185b",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27185A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27185B.jpg"
   },
   {
@@ -7550,7 +7550,7 @@ PACK_27 = [[
     "code": "27186a",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27186B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27186A.jpg"
   },
   {
@@ -7558,7 +7558,7 @@ PACK_27 = [[
     "code": "27186b",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27186A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27186B.jpg"
   },
   {
@@ -7566,7 +7566,7 @@ PACK_27 = [[
     "code": "27187a",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27187B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27187A.jpg"
   },
   {
@@ -7574,7 +7574,7 @@ PACK_27 = [[
     "code": "27187b",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27187A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27187B.jpg"
   },
   {
@@ -7582,7 +7582,7 @@ PACK_27 = [[
     "code": "27188a",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27188B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27188A.jpg"
   },
   {
@@ -7590,7 +7590,7 @@ PACK_27 = [[
     "code": "27188b",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27188A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27188B.jpg"
   },
   {
@@ -7598,7 +7598,7 @@ PACK_27 = [[
     "code": "27189a",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27189B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27189A.jpg"
   },
   {
@@ -7606,7 +7606,7 @@ PACK_27 = [[
     "code": "27189b",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27189A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27189B.jpg"
   },
   {
@@ -7631,7 +7631,7 @@ PACK_27 = [[
     "code": "27025",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27025.jpg"
   },
   {
@@ -7639,7 +7639,7 @@ PACK_27 = [[
     "code": "27026",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27026.jpg"
   },
   {
@@ -7647,7 +7647,7 @@ PACK_27 = [[
     "code": "27027",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27027.jpg"
   },
   {
@@ -7655,7 +7655,7 @@ PACK_27 = [[
     "code": "27028",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27028.jpg"
   },
   {
@@ -7663,7 +7663,7 @@ PACK_27 = [[
     "code": "27029",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27029.jpg"
   },
   {
@@ -7671,7 +7671,7 @@ PACK_27 = [[
     "code": "27056",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27056.jpg"
   },
   {
@@ -7679,7 +7679,7 @@ PACK_27 = [[
     "code": "27057",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27057.jpg"
   },
   {
@@ -7687,7 +7687,7 @@ PACK_27 = [[
     "code": "27058",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27058.jpg"
   },
   {
@@ -7695,7 +7695,7 @@ PACK_27 = [[
     "code": "27059",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27059.jpg"
   },
   {
@@ -7703,7 +7703,7 @@ PACK_27 = [[
     "code": "27060",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27060.jpg"
   },
   {
@@ -7711,7 +7711,7 @@ PACK_27 = [[
     "code": "27061",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27061.jpg"
   },
   {
@@ -7719,7 +7719,7 @@ PACK_27 = [[
     "code": "27062",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27062.jpg"
   },
   {
@@ -7727,7 +7727,7 @@ PACK_27 = [[
     "code": "27063",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27063.jpg"
   },
   {
@@ -7735,7 +7735,7 @@ PACK_27 = [[
     "code": "27064",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27064.jpg"
   },
   {
@@ -7743,7 +7743,7 @@ PACK_27 = [[
     "code": "27065",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27065.jpg"
   },
   {
@@ -7751,7 +7751,7 @@ PACK_27 = [[
     "code": "27066",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27066.jpg"
   },
   {
@@ -7759,7 +7759,7 @@ PACK_27 = [[
     "code": "27067",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27067.jpg"
   },
   {
@@ -7767,7 +7767,7 @@ PACK_27 = [[
     "code": "27068",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27068.jpg"
   },
   {
@@ -7775,7 +7775,7 @@ PACK_27 = [[
     "code": "27069",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27069.jpg"
   },
   {
@@ -7783,7 +7783,7 @@ PACK_27 = [[
     "code": "27070",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27070.jpg"
   },
   {
@@ -7791,7 +7791,7 @@ PACK_27 = [[
     "code": "27071",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27071.jpg"
   },
   {
@@ -7799,7 +7799,7 @@ PACK_27 = [[
     "code": "27072",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27072.jpg"
   },
   {
@@ -7807,7 +7807,7 @@ PACK_27 = [[
     "code": "27073",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27073.jpg"
   },
   {
@@ -7815,7 +7815,7 @@ PACK_27 = [[
     "code": "27074",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27074.jpg"
   },
   {
@@ -7823,7 +7823,7 @@ PACK_27 = [[
     "code": "27075",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27075.jpg"
   },
   {
@@ -7831,7 +7831,7 @@ PACK_27 = [[
     "code": "27076a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27076B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27076A.jpg"
   },
   {
@@ -7839,7 +7839,7 @@ PACK_27 = [[
     "code": "27076b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27076A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27076B.jpg"
   },
   {
@@ -7847,7 +7847,7 @@ PACK_27 = [[
     "code": "27077a",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27077B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27077A.jpg"
   },
   {
@@ -7855,7 +7855,7 @@ PACK_27 = [[
     "code": "27077b",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27077A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27077B.jpg"
   },
   {
@@ -7863,7 +7863,7 @@ PACK_27 = [[
     "code": "27078",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27078.jpg"
   },
   {
@@ -7871,7 +7871,7 @@ PACK_27 = [[
     "code": "27079",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27079.jpg"
   },
   {
@@ -7879,7 +7879,7 @@ PACK_27 = [[
     "code": "27080",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27080.jpg"
   },
   {
@@ -7887,7 +7887,7 @@ PACK_27 = [[
     "code": "27081",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27081.jpg"
   },
   {
@@ -7895,7 +7895,7 @@ PACK_27 = [[
     "code": "27082",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27082.jpg"
   },
   {
@@ -7903,7 +7903,7 @@ PACK_27 = [[
     "code": "27083",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27083.jpg"
   },
   {
@@ -7911,7 +7911,7 @@ PACK_27 = [[
     "code": "27084",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27084.jpg"
   },
   {
@@ -7919,7 +7919,7 @@ PACK_27 = [[
     "code": "27085",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27085.jpg"
   },
   {
@@ -7927,7 +7927,7 @@ PACK_27 = [[
     "code": "27086",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27086.jpg"
   },
   {
@@ -7935,7 +7935,7 @@ PACK_27 = [[
     "code": "27087",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27087.jpg"
   },
   {
@@ -7943,7 +7943,7 @@ PACK_27 = [[
     "code": "27088",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27088.jpg"
   },
   {
@@ -7951,7 +7951,7 @@ PACK_27 = [[
     "code": "27089",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27089.jpg"
   },
   {
@@ -7959,7 +7959,7 @@ PACK_27 = [[
     "code": "27090",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27090.jpg"
   },
   {
@@ -7967,7 +7967,7 @@ PACK_27 = [[
     "code": "27091",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27091.jpg"
   },
   {
@@ -7975,7 +7975,7 @@ PACK_27 = [[
     "code": "27092",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27092.jpg"
   },
   {
@@ -7983,7 +7983,7 @@ PACK_27 = [[
     "code": "27093",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27093.jpg"
   },
   {
@@ -7991,7 +7991,7 @@ PACK_27 = [[
     "code": "27094",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27094.jpg"
   },
   {
@@ -7999,7 +7999,7 @@ PACK_27 = [[
     "code": "27095",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27095.jpg"
   },
   {
@@ -8007,7 +8007,7 @@ PACK_27 = [[
     "code": "27096",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27096.jpg"
   },
   {
@@ -8015,7 +8015,7 @@ PACK_27 = [[
     "code": "27097",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27097.jpg"
   },
   {
@@ -8023,7 +8023,7 @@ PACK_27 = [[
     "code": "27098",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27098.jpg"
   },
   {
@@ -8031,7 +8031,7 @@ PACK_27 = [[
     "code": "27099",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27099.jpg"
   },
   {
@@ -8039,7 +8039,7 @@ PACK_27 = [[
     "code": "27100",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27100.jpg"
   },
   {
@@ -8047,7 +8047,7 @@ PACK_27 = [[
     "code": "27101a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27101B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27101A.jpg"
   },
   {
@@ -8055,7 +8055,7 @@ PACK_27 = [[
     "code": "27101b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27101A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27101B.jpg"
   },
   {
@@ -8063,7 +8063,7 @@ PACK_27 = [[
     "code": "27102a",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27102B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27102A.jpg"
   },
   {
@@ -8071,7 +8071,7 @@ PACK_27 = [[
     "code": "27102b",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27102A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27102B.jpg"
   },
   {
@@ -8079,7 +8079,7 @@ PACK_27 = [[
     "code": "27103",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27103.jpg"
   },
   {
@@ -8087,7 +8087,7 @@ PACK_27 = [[
     "code": "27104",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27104.jpg"
   },
   {
@@ -8095,7 +8095,7 @@ PACK_27 = [[
     "code": "27105",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27105.jpg"
   },
   {
@@ -8103,7 +8103,7 @@ PACK_27 = [[
     "code": "27106",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27106.jpg"
   },
   {
@@ -8111,7 +8111,7 @@ PACK_27 = [[
     "code": "27107",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27107.jpg"
   },
   {
@@ -8119,7 +8119,7 @@ PACK_27 = [[
     "code": "27108",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27108.jpg"
   },
   {
@@ -8127,7 +8127,7 @@ PACK_27 = [[
     "code": "27109",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27109.jpg"
   },
   {
@@ -8135,7 +8135,7 @@ PACK_27 = [[
     "code": "27110",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27110.jpg"
   },
   {
@@ -8143,7 +8143,7 @@ PACK_27 = [[
     "code": "27111",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27111.jpg"
   },
   {
@@ -8151,7 +8151,7 @@ PACK_27 = [[
     "code": "27112",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27112.jpg"
   },
   {
@@ -8159,7 +8159,7 @@ PACK_27 = [[
     "code": "27113",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27113.jpg"
   },
   {
@@ -8167,7 +8167,7 @@ PACK_27 = [[
     "code": "27114",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27114.jpg"
   },
   {
@@ -8175,7 +8175,7 @@ PACK_27 = [[
     "code": "27115",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27115.jpg"
   },
   {
@@ -8183,7 +8183,7 @@ PACK_27 = [[
     "code": "27116a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27116B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27116A.jpg"
   },
   {
@@ -8191,7 +8191,7 @@ PACK_27 = [[
     "code": "27116b",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27116A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27116B.jpg"
   },
   {
@@ -8199,7 +8199,7 @@ PACK_27 = [[
     "code": "27117a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27117B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27117A.jpg"
   },
   {
@@ -8207,7 +8207,7 @@ PACK_27 = [[
     "code": "27117b",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27117A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27117B.jpg"
   },
   {
@@ -8215,7 +8215,7 @@ PACK_27 = [[
     "code": "27118a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27118B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27118A.jpg"
   },
   {
@@ -8223,7 +8223,7 @@ PACK_27 = [[
     "code": "27118b",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27118A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27118B.jpg"
   },
   {
@@ -8231,7 +8231,7 @@ PACK_27 = [[
     "code": "27119a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27119B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27119A.jpg"
   },
   {
@@ -8239,7 +8239,7 @@ PACK_27 = [[
     "code": "27119b",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27119A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27119B.jpg"
   },
   {
@@ -8247,7 +8247,7 @@ PACK_27 = [[
     "code": "27120",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27120.jpg"
   },
   {
@@ -8255,7 +8255,7 @@ PACK_27 = [[
     "code": "27121",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27121.jpg"
   },
   {
@@ -8263,7 +8263,7 @@ PACK_27 = [[
     "code": "27122",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27122.jpg"
   },
   {
@@ -8271,7 +8271,7 @@ PACK_27 = [[
     "code": "27123",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27123.jpg"
   },
   {
@@ -8279,7 +8279,7 @@ PACK_27 = [[
     "code": "27124",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27124.jpg"
   },
   {
@@ -8287,7 +8287,7 @@ PACK_27 = [[
     "code": "27125",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27125.jpg"
   },
   {
@@ -8295,7 +8295,7 @@ PACK_27 = [[
     "code": "27126",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27126.jpg"
   },
   {
@@ -8303,7 +8303,7 @@ PACK_27 = [[
     "code": "27127",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27127.jpg"
   },
   {
@@ -8311,7 +8311,7 @@ PACK_27 = [[
     "code": "27128",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27128.jpg"
   },
   {
@@ -8319,7 +8319,7 @@ PACK_27 = [[
     "code": "27129",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27129.jpg"
   },
   {
@@ -8327,7 +8327,7 @@ PACK_27 = [[
     "code": "27130",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27130.jpg"
   },
   {
@@ -8335,7 +8335,7 @@ PACK_27 = [[
     "code": "27131",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27131.jpg"
   },
   {
@@ -8343,7 +8343,7 @@ PACK_27 = [[
     "code": "27132",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27132.jpg"
   },
   {
@@ -8351,7 +8351,7 @@ PACK_27 = [[
     "code": "27133",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27133.jpg"
   },
   {
@@ -8359,7 +8359,7 @@ PACK_27 = [[
     "code": "27134",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27134.jpg"
   },
   {
@@ -8367,7 +8367,7 @@ PACK_27 = [[
     "code": "27135",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27135.jpg"
   },
   {
@@ -8375,7 +8375,7 @@ PACK_27 = [[
     "code": "27136",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27136.jpg"
   },
   {
@@ -8383,7 +8383,7 @@ PACK_27 = [[
     "code": "27137",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27137.jpg"
   },
   {
@@ -8391,7 +8391,7 @@ PACK_27 = [[
     "code": "27138",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27138.jpg"
   },
   {
@@ -8399,7 +8399,7 @@ PACK_27 = [[
     "code": "27139",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27139.jpg"
   },
   {
@@ -8407,7 +8407,7 @@ PACK_27 = [[
     "code": "27140",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27140.jpg"
   },
   {
@@ -8415,7 +8415,7 @@ PACK_27 = [[
     "code": "27141",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27141.jpg"
   },
   {
@@ -8423,7 +8423,7 @@ PACK_27 = [[
     "code": "27142",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27142.jpg"
   },
   {
@@ -8431,7 +8431,7 @@ PACK_27 = [[
     "code": "27143",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27143.jpg"
   },
   {
@@ -8439,7 +8439,7 @@ PACK_27 = [[
     "code": "27144",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27144.jpg"
   },
   {
@@ -8447,7 +8447,7 @@ PACK_27 = [[
     "code": "27145",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27145.jpg"
   },
   {
@@ -8455,7 +8455,7 @@ PACK_27 = [[
     "code": "27146",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27146.jpg"
   },
   {
@@ -8463,7 +8463,7 @@ PACK_27 = [[
     "code": "27147",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27147.jpg"
   },
   {
@@ -8471,7 +8471,7 @@ PACK_27 = [[
     "code": "27148",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27148.jpg"
   },
   {
@@ -8479,7 +8479,7 @@ PACK_27 = [[
     "code": "27149",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27149.jpg"
   },
   {
@@ -8487,7 +8487,7 @@ PACK_27 = [[
     "code": "27150",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27150.jpg"
   },
   {
@@ -8495,7 +8495,7 @@ PACK_27 = [[
     "code": "27151",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27151.jpg"
   },
   {
@@ -8503,7 +8503,7 @@ PACK_27 = [[
     "code": "27152",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27152.jpg"
   },
   {
@@ -8511,7 +8511,7 @@ PACK_27 = [[
     "code": "27153",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27153.jpg"
   },
   {
@@ -8519,7 +8519,7 @@ PACK_27 = [[
     "code": "27154",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27154.jpg"
   },
   {
@@ -8527,7 +8527,7 @@ PACK_27 = [[
     "code": "27155",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27155.jpg"
   },
   {
@@ -8535,7 +8535,7 @@ PACK_27 = [[
     "code": "27156",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27156.jpg"
   },
   {
@@ -8543,7 +8543,7 @@ PACK_27 = [[
     "code": "27157",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27157.jpg"
   },
   {
@@ -8551,7 +8551,7 @@ PACK_27 = [[
     "code": "27158",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27158.jpg"
   },
   {
@@ -8559,7 +8559,7 @@ PACK_27 = [[
     "code": "27159",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27159.jpg"
   },
   {
@@ -8567,7 +8567,7 @@ PACK_27 = [[
     "code": "27160",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27160.jpg"
   },
   {
@@ -8575,7 +8575,7 @@ PACK_27 = [[
     "code": "27161",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27161.jpg"
   },
   {
@@ -8583,7 +8583,7 @@ PACK_27 = [[
     "code": "27162",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27162.jpg"
   },
   {
@@ -8591,7 +8591,7 @@ PACK_27 = [[
     "code": "27163",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27163.jpg"
   },
   {
@@ -8599,7 +8599,7 @@ PACK_27 = [[
     "code": "27164",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27164.jpg"
   },
   {
@@ -8607,7 +8607,7 @@ PACK_27 = [[
     "code": "27165",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27165.jpg"
   },
   {
@@ -8615,7 +8615,7 @@ PACK_27 = [[
     "code": "27166",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27166.jpg"
   },
   {
@@ -8623,7 +8623,7 @@ PACK_27 = [[
     "code": "27167",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27167.jpg"
   },
   {
@@ -8631,7 +8631,7 @@ PACK_27 = [[
     "code": "27168",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27168.jpg"
   },
   {
@@ -8639,7 +8639,7 @@ PACK_27 = [[
     "code": "27169",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27169.jpg"
   },
   {
@@ -8647,7 +8647,7 @@ PACK_27 = [[
     "code": "27170",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27170.jpg"
   },
   {
@@ -8655,7 +8655,7 @@ PACK_27 = [[
     "code": "27171",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27171.jpg"
   },
   {
@@ -8663,7 +8663,7 @@ PACK_27 = [[
     "code": "27172",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27172.jpg"
   },
   {
@@ -8671,7 +8671,7 @@ PACK_27 = [[
     "code": "27173",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27173.jpg"
   }
 ]
@@ -8683,7 +8683,7 @@ PACK_28 = [[
     "code": "28001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28001B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28001A.jpg"
   },
   {
@@ -8691,7 +8691,7 @@ PACK_28 = [[
     "code": "28001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28001A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28001B.jpg"
   },
   {
@@ -8854,7 +8854,7 @@ PACK_28 = [[
     "code": "28021",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28021.jpg"
   },
   {
@@ -8862,7 +8862,7 @@ PACK_28 = [[
     "code": "28022",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28022.jpg"
   },
   {
@@ -8870,7 +8870,7 @@ PACK_28 = [[
     "code": "28023",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28023.jpg"
   },
   {
@@ -8878,7 +8878,7 @@ PACK_28 = [[
     "code": "28024",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28024.jpg"
   },
   {
@@ -8886,7 +8886,7 @@ PACK_28 = [[
     "code": "28025",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28025.jpg"
   },
   {
@@ -8894,7 +8894,7 @@ PACK_28 = [[
     "code": "28028",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28028.jpg"
   },
   {
@@ -8902,7 +8902,7 @@ PACK_28 = [[
     "code": "28029",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28029.jpg"
   },
   {
@@ -8910,7 +8910,7 @@ PACK_28 = [[
     "code": "28030",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28030.jpg"
   },
   {
@@ -8918,7 +8918,7 @@ PACK_28 = [[
     "code": "28031",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28031.jpg"
   },
   {
@@ -8926,7 +8926,7 @@ PACK_28 = [[
     "code": "28032",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28032.jpg"
   }
 ]
@@ -8938,7 +8938,7 @@ PACK_29 = [[
     "code": "29001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29001B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29001A.jpg"
   },
   {
@@ -8946,7 +8946,7 @@ PACK_29 = [[
     "code": "29001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29001A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29001B.jpg"
   },
   {
@@ -8954,7 +8954,7 @@ PACK_29 = [[
     "code": "29002a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29002B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29002A.jpg"
   },
   {
@@ -8962,7 +8962,7 @@ PACK_29 = [[
     "code": "29002b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29002A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29002B.jpg"
   },
   {
@@ -8970,7 +8970,7 @@ PACK_29 = [[
     "code": "29003a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29003B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29003A.jpg"
   },
   {
@@ -8978,7 +8978,7 @@ PACK_29 = [[
     "code": "29003b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29003A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29003B.jpg"
   },
   {
@@ -9178,7 +9178,7 @@ PACK_29 = [[
     "code": "29028",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29028.jpg"
   },
   {
@@ -9186,7 +9186,7 @@ PACK_29 = [[
     "code": "29029",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29029.jpg"
   },
   {
@@ -9194,7 +9194,7 @@ PACK_29 = [[
     "code": "29030",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29030.jpg"
   },
   {
@@ -9202,7 +9202,7 @@ PACK_29 = [[
     "code": "29031",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29031.jpg"
   },
   {
@@ -9210,7 +9210,7 @@ PACK_29 = [[
     "code": "29032",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29032.jpg"
   },
   {
@@ -9218,7 +9218,7 @@ PACK_29 = [[
     "code": "29036",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29036.jpg"
   },
   {
@@ -9226,31 +9226,31 @@ PACK_29 = [[
     "code": "29037",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29037.jpg"
   },
   {
     "name": "Haywire",
-    "code": "29037",
+    "code": "29038",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29037.jpg"
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29038.jpg"
   },
   {
     "name": "Air Static",
-    "code": "29037",
+    "code": "29039",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29037.jpg"
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29039.jpg"
   },
   {
     "name": "Zzzap!",
     "code": "29040",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29040.jpg"
   }
 ]
@@ -9262,7 +9262,7 @@ PACK_30 = [[
     "code": "30001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30001B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30001A.jpg"
   },
   {
@@ -9270,7 +9270,7 @@ PACK_30 = [[
     "code": "30001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30001A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30001B.jpg"
   },
   {
@@ -9315,7 +9315,7 @@ PACK_30 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30006.jpg"
   },
   {
-    "name": "Swinging Wb Pig",
+    "name": "Swinging Web Pig",
     "code": "30007",
     "type_code": "event",
     "faction_code": "hero",
@@ -9419,7 +9419,7 @@ PACK_30 = [[
     "code": "30024",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30024.jpg"
   },
   {
@@ -9427,7 +9427,7 @@ PACK_30 = [[
     "code": "30025",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30025.jpg"
   },
   {
@@ -9435,7 +9435,7 @@ PACK_30 = [[
     "code": "30026",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30026.jpg"
   },
   {
@@ -9443,7 +9443,7 @@ PACK_30 = [[
     "code": "30027",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30027.jpg"
   },
   {
@@ -9451,7 +9451,7 @@ PACK_30 = [[
     "code": "30028",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30028.jpg"
   },
   {
@@ -9459,7 +9459,7 @@ PACK_30 = [[
     "code": "30030",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30030.jpg"
   },
   {
@@ -9467,7 +9467,7 @@ PACK_30 = [[
     "code": "30031",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30031.jpg"
   },
   {
@@ -9475,7 +9475,7 @@ PACK_30 = [[
     "code": "30032",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30032.jpg"
   },
   {
@@ -9483,7 +9483,7 @@ PACK_30 = [[
     "code": "30033",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30033.jpg"
   },
   {
@@ -9491,7 +9491,7 @@ PACK_30 = [[
     "code": "30034",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30034.jpg"
   },
   {
@@ -9499,7 +9499,7 @@ PACK_30 = [[
     "code": "30035",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30035.jpg"
   },
   {
@@ -9507,7 +9507,7 @@ PACK_30 = [[
     "code": "30036",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30036.jpg"
   },
   {
@@ -9515,7 +9515,7 @@ PACK_30 = [[
     "code": "30037",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30037.jpg"
   },
   {
@@ -9523,7 +9523,7 @@ PACK_30 = [[
     "code": "30038",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30038.jpg"
   }
 ]
@@ -9535,7 +9535,7 @@ PACK_31 = [[
     "code": "31001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31001B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31001A.jpg"
   },
   {
@@ -9543,7 +9543,7 @@ PACK_31 = [[
     "code": "31001b",
     "type_code": "support",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31001A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31001B.jpg"
   },
   {
@@ -9551,7 +9551,7 @@ PACK_31 = [[
     "code": "31002a",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31002B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31002A.jpg"
   },
   {
@@ -9559,7 +9559,7 @@ PACK_31 = [[
     "code": "31002b",
     "type_code": "upgrade",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31002A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31002B.jpg"
   },
   {
@@ -9596,7 +9596,7 @@ PACK_31 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31006.jpg"
   },
   {
-    "name": "Autn May & Uncle Ben",
+    "name": "Aunt May & Uncle Ben",
     "code": "31007",
     "type_code": "support",
     "faction_code": "hero",
@@ -9746,15 +9746,15 @@ PACK_31 = [[
     "code": "31025",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31025.jpg"
   },
   {
-    "name": "Ginat Monster Attack",
+    "name": "Giant Monster Attack",
     "code": "31026",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31026.jpg"
   },
   {
@@ -9762,7 +9762,7 @@ PACK_31 = [[
     "code": "31027",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31027.jpg"
   },
   {
@@ -9770,7 +9770,7 @@ PACK_31 = [[
     "code": "31028",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31028.jpg"
   },
   {
@@ -9778,7 +9778,7 @@ PACK_31 = [[
     "code": "31030",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31030.jpg"
   },
   {
@@ -9786,7 +9786,7 @@ PACK_31 = [[
     "code": "31031",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31031.jpg"
   },
   {
@@ -9794,7 +9794,7 @@ PACK_31 = [[
     "code": "31032",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31032.jpg"
   },
   {
@@ -9802,7 +9802,7 @@ PACK_31 = [[
     "code": "31033",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31033.jpg"
   },
   {
@@ -9810,7 +9810,7 @@ PACK_31 = [[
     "code": "31034",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31034.jpg"
   },
   {
@@ -9818,7 +9818,7 @@ PACK_31 = [[
     "code": "31035",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31035.jpg"
   },
   {
@@ -9826,7 +9826,7 @@ PACK_31 = [[
     "code": "31036",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31036.jpg"
   },
   {
@@ -9834,7 +9834,7 @@ PACK_31 = [[
     "code": "31037",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31037.jpg"
   }
 ]
@@ -9846,7 +9846,7 @@ PACK_90 = [[
     "code": "90001",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/90001.jpg"
   },
   {
@@ -9854,7 +9854,7 @@ PACK_90 = [[
     "code": "90002",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/90002.jpg"
   },
   {
@@ -9862,7 +9862,7 @@ PACK_90 = [[
     "code": "90003",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/90003.jpg"
   },
   {
@@ -9870,7 +9870,7 @@ PACK_90 = [[
     "code": "90004",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/90004.jpg"
   },
   {
@@ -9878,7 +9878,7 @@ PACK_90 = [[
     "code": "90005",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/90005.jpg"
   }
 ]
@@ -9890,7 +9890,7 @@ PACK_08 = [[
     "code": "08001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08001B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08001A.jpg"
   },
   {
@@ -9898,7 +9898,7 @@ PACK_08 = [[
     "code": "08001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08001A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08001B.jpg"
   },
   {
@@ -10068,7 +10068,7 @@ PACK_08 = [[
     "code": "08025",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08025.jpg"
   },
   {
@@ -10076,7 +10076,7 @@ PACK_08 = [[
     "code": "08026",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08026.jpg"
   },
   {
@@ -10084,7 +10084,7 @@ PACK_08 = [[
     "code": "08027",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08027.jpg"
   },
   {
@@ -10092,7 +10092,7 @@ PACK_08 = [[
     "code": "08028",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08028.jpg"
   },
   {
@@ -10100,7 +10100,7 @@ PACK_08 = [[
     "code": "08029",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08029.jpg"
   }
 ]
@@ -10112,7 +10112,7 @@ PACK_03 = [[
     "code": "03001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03001B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03001A.jpg"
   },
   {
@@ -10120,7 +10120,7 @@ PACK_03 = [[
     "code": "03001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03001A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03001B.jpg"
   },
   {
@@ -10300,7 +10300,7 @@ PACK_03 = [[
     "code": "03026",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03026.jpg"
   },
   {
@@ -10308,7 +10308,7 @@ PACK_03 = [[
     "code": "03027",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03027.jpg"
   },
   {
@@ -10316,7 +10316,7 @@ PACK_03 = [[
     "code": "03028",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03028.jpg"
   },
   {
@@ -10324,7 +10324,7 @@ PACK_03 = [[
     "code": "03029",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03029.jpg"
   },
   {
@@ -10332,7 +10332,7 @@ PACK_03 = [[
     "code": "03030",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03030.jpg"
   }
 ]
@@ -10344,7 +10344,7 @@ PACK_01 = [[
     "code": "01001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01001B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01001A.jpg"
   },
   {
@@ -10352,7 +10352,7 @@ PACK_01 = [[
     "code": "01001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01001A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01001B.jpg"
   },
   {
@@ -10425,7 +10425,7 @@ PACK_01 = [[
     "code": "01010a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01010B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01010A.jpg"
   },
   {
@@ -10433,7 +10433,7 @@ PACK_01 = [[
     "code": "01010b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01010A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01010B.jpg"
   },
   {
@@ -10506,7 +10506,7 @@ PACK_01 = [[
     "code": "01019a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01019B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01019A.jpg"
   },
   {
@@ -10514,7 +10514,7 @@ PACK_01 = [[
     "code": "01019b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01019A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01019B.jpg"
   },
   {
@@ -10595,7 +10595,7 @@ PACK_01 = [[
     "code": "01029a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01029B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01029A.jpg"
   },
   {
@@ -10603,7 +10603,7 @@ PACK_01 = [[
     "code": "01029b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01029A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01029B.jpg"
   },
   {
@@ -10692,7 +10692,7 @@ PACK_01 = [[
     "code": "01040a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01040B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01040A.jpg"
   },
   {
@@ -10700,7 +10700,7 @@ PACK_01 = [[
     "code": "01040b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01040A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01040B.jpg"
   },
   {
@@ -10724,7 +10724,7 @@ PACK_01 = [[
     "code": "01043a",
     "type_code": "event",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01043B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01043A.jpg"
   },
   {
@@ -10732,7 +10732,7 @@ PACK_01 = [[
     "code": "01043b",
     "type_code": "event",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01043A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01043B.jpg"
   },
   {
@@ -10933,6 +10933,7 @@ PACK_01 = [[
   {
     "name": "Hawkeye",
     "code": "01066",
+    "subname": "Clint Barton",
     "type_code": "ally",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
@@ -11161,7 +11162,7 @@ PACK_01 = [[
     "code": "01094",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01094.jpg"
   },
   {
@@ -11169,7 +11170,7 @@ PACK_01 = [[
     "code": "01095",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01095.jpg"
   },
   {
@@ -11177,7 +11178,7 @@ PACK_01 = [[
     "code": "01096",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01096.jpg"
   },
   {
@@ -11185,7 +11186,7 @@ PACK_01 = [[
     "code": "01097",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01097.jpg"
   },
   {
@@ -11193,7 +11194,7 @@ PACK_01 = [[
     "code": "01098",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01098.jpg"
   },
   {
@@ -11201,7 +11202,7 @@ PACK_01 = [[
     "code": "01099",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01099.jpg"
   },
   {
@@ -11209,7 +11210,7 @@ PACK_01 = [[
     "code": "01100",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01100.jpg"
   },
   {
@@ -11217,7 +11218,7 @@ PACK_01 = [[
     "code": "01101",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01101.jpg"
   },
   {
@@ -11225,7 +11226,7 @@ PACK_01 = [[
     "code": "01102",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01102.jpg"
   },
   {
@@ -11233,7 +11234,7 @@ PACK_01 = [[
     "code": "01103",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01103.jpg"
   },
   {
@@ -11241,7 +11242,7 @@ PACK_01 = [[
     "code": "01104",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01104.jpg"
   },
   {
@@ -11249,7 +11250,7 @@ PACK_01 = [[
     "code": "01105",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01105.jpg"
   },
   {
@@ -11257,7 +11258,7 @@ PACK_01 = [[
     "code": "01106",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01106.jpg"
   },
   {
@@ -11265,7 +11266,7 @@ PACK_01 = [[
     "code": "01107",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01107.jpg"
   },
   {
@@ -11273,7 +11274,7 @@ PACK_01 = [[
     "code": "01108",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01108.jpg"
   },
   {
@@ -11281,7 +11282,7 @@ PACK_01 = [[
     "code": "01109",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01109.jpg"
   },
   {
@@ -11289,7 +11290,7 @@ PACK_01 = [[
     "code": "01110",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01110.jpg"
   },
   {
@@ -11297,7 +11298,7 @@ PACK_01 = [[
     "code": "01111",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01111.jpg"
   },
   {
@@ -11305,7 +11306,7 @@ PACK_01 = [[
     "code": "01112",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01112.jpg"
   },
   {
@@ -11313,7 +11314,7 @@ PACK_01 = [[
     "code": "01113",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01113.jpg"
   },
   {
@@ -11321,7 +11322,7 @@ PACK_01 = [[
     "code": "01114",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01114.jpg"
   },
   {
@@ -11329,7 +11330,7 @@ PACK_01 = [[
     "code": "01115",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01115.jpg"
   },
   {
@@ -11337,7 +11338,7 @@ PACK_01 = [[
     "code": "01116",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01116.jpg"
   },
   {
@@ -11345,7 +11346,7 @@ PACK_01 = [[
     "code": "01117",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01117.jpg"
   },
   {
@@ -11353,7 +11354,7 @@ PACK_01 = [[
     "code": "01118",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01118.jpg"
   },
   {
@@ -11361,7 +11362,7 @@ PACK_01 = [[
     "code": "01119",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01119.jpg"
   },
   {
@@ -11369,7 +11370,7 @@ PACK_01 = [[
     "code": "01120",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01120.jpg"
   },
   {
@@ -11377,7 +11378,7 @@ PACK_01 = [[
     "code": "01121",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01121.jpg"
   },
   {
@@ -11385,7 +11386,7 @@ PACK_01 = [[
     "code": "01122",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01122.jpg"
   },
   {
@@ -11393,7 +11394,7 @@ PACK_01 = [[
     "code": "01123",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01123.jpg"
   },
   {
@@ -11401,7 +11402,7 @@ PACK_01 = [[
     "code": "01124",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01124.jpg"
   },
   {
@@ -11409,7 +11410,7 @@ PACK_01 = [[
     "code": "01125",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01125.jpg"
   },
   {
@@ -11417,7 +11418,7 @@ PACK_01 = [[
     "code": "01126",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01126.jpg"
   },
   {
@@ -11425,7 +11426,7 @@ PACK_01 = [[
     "code": "01127",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01127.jpg"
   },
   {
@@ -11433,7 +11434,7 @@ PACK_01 = [[
     "code": "01128",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01128.jpg"
   },
   {
@@ -11441,7 +11442,7 @@ PACK_01 = [[
     "code": "01129",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01129.jpg"
   },
   {
@@ -11449,7 +11450,7 @@ PACK_01 = [[
     "code": "01130",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01130.jpg"
   },
   {
@@ -11457,7 +11458,7 @@ PACK_01 = [[
     "code": "01131",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01131.jpg"
   },
   {
@@ -11465,7 +11466,7 @@ PACK_01 = [[
     "code": "01132",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01132.jpg"
   },
   {
@@ -11473,7 +11474,7 @@ PACK_01 = [[
     "code": "01133",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01133.jpg"
   },
   {
@@ -11481,7 +11482,7 @@ PACK_01 = [[
     "code": "01134",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01134.jpg"
   },
   {
@@ -11489,7 +11490,7 @@ PACK_01 = [[
     "code": "01135",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01135.jpg"
   },
   {
@@ -11497,7 +11498,7 @@ PACK_01 = [[
     "code": "01136",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01136.jpg"
   },
   {
@@ -11505,7 +11506,7 @@ PACK_01 = [[
     "code": "01137",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01137.jpg"
   },
   {
@@ -11513,7 +11514,7 @@ PACK_01 = [[
     "code": "01138",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01138.jpg"
   },
   {
@@ -11521,7 +11522,7 @@ PACK_01 = [[
     "code": "01139",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01139.jpg"
   },
   {
@@ -11529,7 +11530,7 @@ PACK_01 = [[
     "code": "01140",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01140.jpg"
   },
   {
@@ -11537,7 +11538,7 @@ PACK_01 = [[
     "code": "01141",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01141.jpg"
   },
   {
@@ -11545,7 +11546,7 @@ PACK_01 = [[
     "code": "01142",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01142.jpg"
   },
   {
@@ -11553,7 +11554,7 @@ PACK_01 = [[
     "code": "01143",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01143.jpg"
   },
   {
@@ -11561,7 +11562,7 @@ PACK_01 = [[
     "code": "01144a",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01144B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01144A.jpg"
   },
   {
@@ -11569,7 +11570,7 @@ PACK_01 = [[
     "code": "01144b",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01144A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01144B.jpg"
   },
   {
@@ -11577,7 +11578,7 @@ PACK_01 = [[
     "code": "01144c",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01144C.jpg"
   },
   {
@@ -11585,7 +11586,7 @@ PACK_01 = [[
     "code": "01145",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01145.jpg"
   },
   {
@@ -11593,7 +11594,7 @@ PACK_01 = [[
     "code": "01146",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01146.jpg"
   },
   {
@@ -11601,7 +11602,7 @@ PACK_01 = [[
     "code": "01147",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01147.jpg"
   },
   {
@@ -11609,7 +11610,7 @@ PACK_01 = [[
     "code": "01148",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01148.jpg"
   },
   {
@@ -11617,7 +11618,7 @@ PACK_01 = [[
     "code": "01149",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01149.jpg"
   },
   {
@@ -11625,7 +11626,7 @@ PACK_01 = [[
     "code": "01150",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01150.jpg"
   },
   {
@@ -11633,7 +11634,7 @@ PACK_01 = [[
     "code": "01151",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01151.jpg"
   },
   {
@@ -11641,7 +11642,7 @@ PACK_01 = [[
     "code": "01152",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01152.jpg"
   },
   {
@@ -11649,7 +11650,7 @@ PACK_01 = [[
     "code": "01153",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01153.jpg"
   },
   {
@@ -11657,7 +11658,7 @@ PACK_01 = [[
     "code": "01154",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01154.jpg"
   },
   {
@@ -11665,7 +11666,7 @@ PACK_01 = [[
     "code": "01155",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01155.jpg"
   },
   {
@@ -11673,7 +11674,7 @@ PACK_01 = [[
     "code": "01156",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01156.jpg"
   },
   {
@@ -11681,7 +11682,7 @@ PACK_01 = [[
     "code": "01157",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01157.jpg"
   },
   {
@@ -11689,7 +11690,7 @@ PACK_01 = [[
     "code": "01158",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01158.jpg"
   },
   {
@@ -11697,7 +11698,7 @@ PACK_01 = [[
     "code": "01159",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01159.jpg"
   },
   {
@@ -11705,7 +11706,7 @@ PACK_01 = [[
     "code": "01160",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01160.jpg"
   },
   {
@@ -11713,7 +11714,7 @@ PACK_01 = [[
     "code": "01161",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01161.jpg"
   },
   {
@@ -11721,7 +11722,7 @@ PACK_01 = [[
     "code": "01162",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01162.jpg"
   },
   {
@@ -11729,7 +11730,7 @@ PACK_01 = [[
     "code": "01163",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01163.jpg"
   },
   {
@@ -11737,7 +11738,7 @@ PACK_01 = [[
     "code": "01164",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01164.jpg"
   },
   {
@@ -11745,7 +11746,7 @@ PACK_01 = [[
     "code": "01165",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01165.jpg"
   },
   {
@@ -11753,7 +11754,7 @@ PACK_01 = [[
     "code": "01166",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01166.jpg"
   },
   {
@@ -11761,7 +11762,7 @@ PACK_01 = [[
     "code": "01167",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01167.jpg"
   },
   {
@@ -11769,7 +11770,7 @@ PACK_01 = [[
     "code": "01168",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01168.jpg"
   },
   {
@@ -11777,7 +11778,7 @@ PACK_01 = [[
     "code": "01169",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01169.jpg"
   },
   {
@@ -11785,7 +11786,7 @@ PACK_01 = [[
     "code": "01170",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01170.jpg"
   },
   {
@@ -11793,7 +11794,7 @@ PACK_01 = [[
     "code": "01171",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01171.jpg"
   },
   {
@@ -11801,7 +11802,7 @@ PACK_01 = [[
     "code": "01172",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01172.jpg"
   },
   {
@@ -11809,7 +11810,7 @@ PACK_01 = [[
     "code": "01173",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01173.jpg"
   },
   {
@@ -11817,7 +11818,7 @@ PACK_01 = [[
     "code": "01174",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01174.jpg"
   },
   {
@@ -11825,7 +11826,7 @@ PACK_01 = [[
     "code": "01175",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01175.jpg"
   },
   {
@@ -11833,7 +11834,7 @@ PACK_01 = [[
     "code": "01176",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01176.jpg"
   },
   {
@@ -11841,7 +11842,7 @@ PACK_01 = [[
     "code": "01177",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01177.jpg"
   },
   {
@@ -11849,7 +11850,7 @@ PACK_01 = [[
     "code": "01178",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01178.jpg"
   },
   {
@@ -11857,7 +11858,7 @@ PACK_01 = [[
     "code": "01179",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01179.jpg"
   },
   {
@@ -11865,7 +11866,7 @@ PACK_01 = [[
     "code": "01180",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01180.jpg"
   },
   {
@@ -11873,7 +11874,7 @@ PACK_01 = [[
     "code": "01181",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01181.jpg"
   },
   {
@@ -11881,7 +11882,7 @@ PACK_01 = [[
     "code": "01182",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01182.jpg"
   },
   {
@@ -11889,7 +11890,7 @@ PACK_01 = [[
     "code": "01183",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01183.jpg"
   },
   {
@@ -11897,7 +11898,7 @@ PACK_01 = [[
     "code": "01184",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01184.jpg"
   },
   {
@@ -11905,7 +11906,7 @@ PACK_01 = [[
     "code": "01185",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01185.jpg"
   },
   {
@@ -11913,7 +11914,7 @@ PACK_01 = [[
     "code": "01186",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01186.jpg"
   },
   {
@@ -11921,7 +11922,7 @@ PACK_01 = [[
     "code": "01187",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01187.jpg"
   },
   {
@@ -11929,7 +11930,7 @@ PACK_01 = [[
     "code": "01188",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01188.jpg"
   },
   {
@@ -11937,7 +11938,7 @@ PACK_01 = [[
     "code": "01189",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01189.jpg"
   },
   {
@@ -11945,7 +11946,7 @@ PACK_01 = [[
     "code": "01190",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01190.jpg"
   },
   {
@@ -11953,7 +11954,7 @@ PACK_01 = [[
     "code": "01191",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01191.jpg"
   },
   {
@@ -11961,7 +11962,7 @@ PACK_01 = [[
     "code": "01192",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01192.jpg"
   },
   {
@@ -11969,7 +11970,7 @@ PACK_01 = [[
     "code": "01193",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01193.jpg"
   }
 ]
@@ -11981,7 +11982,7 @@ PACK_09 = [[
     "code": "09001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09001B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09001A.jpg"
   },
   {
@@ -11989,7 +11990,7 @@ PACK_09 = [[
     "code": "09001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09001A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09001B.jpg"
   },
   {
@@ -12216,7 +12217,7 @@ PACK_09 = [[
     "code": "09027",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09027.jpg"
   },
   {
@@ -12224,7 +12225,7 @@ PACK_09 = [[
     "code": "09028",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09028.jpg"
   },
   {
@@ -12232,7 +12233,7 @@ PACK_09 = [[
     "code": "09029",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09029.jpg"
   },
   {
@@ -12240,7 +12241,7 @@ PACK_09 = [[
     "code": "09030",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09030.jpg"
   },
   {
@@ -12248,7 +12249,7 @@ PACK_09 = [[
     "code": "09031",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09031.jpg"
   }
 ]
@@ -12260,7 +12261,7 @@ PACK_02 = [[
     "code": "02001a",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02001B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02001A.jpg"
   },
   {
@@ -12268,7 +12269,7 @@ PACK_02 = [[
     "code": "02001b",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02001A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02001B.jpg"
   },
   {
@@ -12276,7 +12277,7 @@ PACK_02 = [[
     "code": "02002a",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02002B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02002A.jpg"
   },
   {
@@ -12284,7 +12285,7 @@ PACK_02 = [[
     "code": "02002b",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02002A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02002B.jpg"
   },
   {
@@ -12292,7 +12293,7 @@ PACK_02 = [[
     "code": "02003a",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02003B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02003A.jpg"
   },
   {
@@ -12300,7 +12301,7 @@ PACK_02 = [[
     "code": "02003b",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02003A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02003B.jpg"
   },
   {
@@ -12308,7 +12309,7 @@ PACK_02 = [[
     "code": "02004",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02004.jpg"
   },
   {
@@ -12316,7 +12317,7 @@ PACK_02 = [[
     "code": "02005",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02005.jpg"
   },
   {
@@ -12324,7 +12325,7 @@ PACK_02 = [[
     "code": "02006a",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02006B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02006A.jpg"
   },
   {
@@ -12332,7 +12333,7 @@ PACK_02 = [[
     "code": "02006b",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02006A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02006B.jpg"
   },
   {
@@ -12340,7 +12341,7 @@ PACK_02 = [[
     "code": "02007",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02007.jpg"
   },
   {
@@ -12348,7 +12349,7 @@ PACK_02 = [[
     "code": "02008",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02008.jpg"
   },
   {
@@ -12356,7 +12357,7 @@ PACK_02 = [[
     "code": "02009",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02009.jpg"
   },
   {
@@ -12364,7 +12365,7 @@ PACK_02 = [[
     "code": "02010",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02010.jpg"
   },
   {
@@ -12372,7 +12373,7 @@ PACK_02 = [[
     "code": "02011",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02011.jpg"
   },
   {
@@ -12380,7 +12381,7 @@ PACK_02 = [[
     "code": "02012",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02012.jpg"
   },
   {
@@ -12388,7 +12389,7 @@ PACK_02 = [[
     "code": "02013",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02013.jpg"
   },
   {
@@ -12396,7 +12397,7 @@ PACK_02 = [[
     "code": "02014",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02014.jpg"
   },
   {
@@ -12404,7 +12405,7 @@ PACK_02 = [[
     "code": "02015",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02015.jpg"
   },
   {
@@ -12412,7 +12413,7 @@ PACK_02 = [[
     "code": "02016",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02016.jpg"
   },
   {
@@ -12420,7 +12421,7 @@ PACK_02 = [[
     "code": "02017",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02017.jpg"
   },
   {
@@ -12428,7 +12429,7 @@ PACK_02 = [[
     "code": "02018",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02018.jpg"
   },
   {
@@ -12436,7 +12437,7 @@ PACK_02 = [[
     "code": "02019",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02019.jpg"
   },
   {
@@ -12444,7 +12445,7 @@ PACK_02 = [[
     "code": "02020",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02020.jpg"
   },
   {
@@ -12452,7 +12453,7 @@ PACK_02 = [[
     "code": "02021",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02021.jpg"
   },
   {
@@ -12460,7 +12461,7 @@ PACK_02 = [[
     "code": "02022",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02022.jpg"
   },
   {
@@ -12468,7 +12469,7 @@ PACK_02 = [[
     "code": "02023",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02023.jpg"
   },
   {
@@ -12476,7 +12477,7 @@ PACK_02 = [[
     "code": "02024",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02024.jpg"
   },
   {
@@ -12484,7 +12485,7 @@ PACK_02 = [[
     "code": "02025",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02025.jpg"
   },
   {
@@ -12492,7 +12493,7 @@ PACK_02 = [[
     "code": "02026",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02026.jpg"
   },
   {
@@ -12500,7 +12501,7 @@ PACK_02 = [[
     "code": "02027",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02027.jpg"
   },
   {
@@ -12508,7 +12509,7 @@ PACK_02 = [[
     "code": "02028",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02028.jpg"
   },
   {
@@ -12516,7 +12517,7 @@ PACK_02 = [[
     "code": "02029",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02029.jpg"
   },
   {
@@ -12524,7 +12525,7 @@ PACK_02 = [[
     "code": "02030",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02030.jpg"
   },
   {
@@ -12532,7 +12533,7 @@ PACK_02 = [[
     "code": "02031",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02031.jpg"
   },
   {
@@ -12540,7 +12541,7 @@ PACK_02 = [[
     "code": "02032",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02032.jpg"
   },
   {
@@ -12548,7 +12549,7 @@ PACK_02 = [[
     "code": "02033",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02033.jpg"
   },
   {
@@ -12556,7 +12557,7 @@ PACK_02 = [[
     "code": "02034",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02034.jpg"
   },
   {
@@ -12564,7 +12565,7 @@ PACK_02 = [[
     "code": "02035",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02035.jpg"
   },
   {
@@ -12572,7 +12573,7 @@ PACK_02 = [[
     "code": "02036",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02036.jpg"
   },
   {
@@ -12580,7 +12581,7 @@ PACK_02 = [[
     "code": "02037",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02037.jpg"
   },
   {
@@ -12588,7 +12589,7 @@ PACK_02 = [[
     "code": "02038",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02038.jpg"
   },
   {
@@ -12596,7 +12597,7 @@ PACK_02 = [[
     "code": "02039",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02039.jpg"
   },
   {
@@ -12604,7 +12605,7 @@ PACK_02 = [[
     "code": "02040",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02040.jpg"
   },
   {
@@ -12612,7 +12613,7 @@ PACK_02 = [[
     "code": "02041",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02041.jpg"
   },
   {
@@ -12620,7 +12621,7 @@ PACK_02 = [[
     "code": "02042",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02042.jpg"
   },
   {
@@ -12628,7 +12629,7 @@ PACK_02 = [[
     "code": "02043",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02043.jpg"
   },
   {
@@ -12636,7 +12637,7 @@ PACK_02 = [[
     "code": "02044",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02044.jpg"
   },
   {
@@ -12644,7 +12645,7 @@ PACK_02 = [[
     "code": "02045",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02045.jpg"
   },
   {
@@ -12652,7 +12653,7 @@ PACK_02 = [[
     "code": "02046",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02046.jpg"
   },
   {
@@ -12660,7 +12661,7 @@ PACK_02 = [[
     "code": "02047",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02047.jpg"
   },
   {
@@ -12668,7 +12669,7 @@ PACK_02 = [[
     "code": "02048",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02048.jpg"
   },
   {
@@ -12676,7 +12677,7 @@ PACK_02 = [[
     "code": "02049",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02049.jpg"
   }
 ]
@@ -12688,7 +12689,7 @@ PACK_05 = [[
     "code": "05001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05001B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05001A.jpg"
   },
   {
@@ -12696,7 +12697,7 @@ PACK_05 = [[
     "code": "05001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05001A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05001B.jpg"
   },
   {
@@ -12873,7 +12874,7 @@ PACK_05 = [[
     "code": "05025",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05025.jpg"
   },
   {
@@ -12881,7 +12882,7 @@ PACK_05 = [[
     "code": "05026",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05026.jpg"
   },
   {
@@ -12889,7 +12890,7 @@ PACK_05 = [[
     "code": "05027",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05027.jpg"
   },
   {
@@ -12897,7 +12898,7 @@ PACK_05 = [[
     "code": "05028",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05028.jpg"
   },
   {
@@ -12905,7 +12906,7 @@ PACK_05 = [[
     "code": "05029",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05029.jpg"
   }
 ]
@@ -12917,7 +12918,7 @@ PACK_06 = [[
     "code": "06001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06001B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06001A.jpg"
   },
   {
@@ -12925,7 +12926,7 @@ PACK_06 = [[
     "code": "06001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06001A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06001B.jpg"
   },
   {
@@ -13109,7 +13110,7 @@ PACK_06 = [[
     "code": "06026",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06026.jpg"
   },
   {
@@ -13117,7 +13118,7 @@ PACK_06 = [[
     "code": "06027",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06027.jpg"
   },
   {
@@ -13125,7 +13126,7 @@ PACK_06 = [[
     "code": "06028",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06028.jpg"
   },
   {
@@ -13133,7 +13134,7 @@ PACK_06 = [[
     "code": "06029",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06029.jpg"
   },
   {
@@ -13141,7 +13142,7 @@ PACK_06 = [[
     "code": "06030",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06030.jpg"
   }
 ]
@@ -13153,7 +13154,7 @@ PACK_04 = [[
     "code": "04001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04001B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04001A.jpg"
   },
   {
@@ -13161,7 +13162,7 @@ PACK_04 = [[
     "code": "04001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04001A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04001B.jpg"
   },
   {
@@ -13319,7 +13320,7 @@ PACK_04 = [[
     "code": "04031a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04031B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04031A.jpg"
   },
   {
@@ -13327,7 +13328,7 @@ PACK_04 = [[
     "code": "04031b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04031A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04031B.jpg"
   },
   {
@@ -13482,7 +13483,7 @@ PACK_04 = [[
     "code": "04159a",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04159B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04159A.jpg"
   },
   {
@@ -13490,7 +13491,7 @@ PACK_04 = [[
     "code": "04159b",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04159A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04159B.jpg"
   },
   {
@@ -13498,7 +13499,7 @@ PACK_04 = [[
     "code": "04160a",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04160B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04160A.jpg"
   },
   {
@@ -13506,7 +13507,7 @@ PACK_04 = [[
     "code": "04160b",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04160A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04160B.jpg"
   },
   {
@@ -13514,7 +13515,7 @@ PACK_04 = [[
     "code": "04161a",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04161B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04161A.jpg"
   },
   {
@@ -13522,7 +13523,7 @@ PACK_04 = [[
     "code": "04161b",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04161A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04161B.jpg"
   },
   {
@@ -13530,7 +13531,7 @@ PACK_04 = [[
     "code": "04162a",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04162B.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04162A.jpg"
   },
   {
@@ -13538,7 +13539,7 @@ PACK_04 = [[
     "code": "04162b",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04162A.jpg",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04162B.jpg"
   },
   {
@@ -13578,7 +13579,7 @@ PACK_04 = [[
     "code": "04026",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04026.jpg"
   },
   {
@@ -13586,7 +13587,7 @@ PACK_04 = [[
     "code": "04027",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04027.jpg"
   },
   {
@@ -13594,7 +13595,7 @@ PACK_04 = [[
     "code": "04028",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04028.jpg"
   },
   {
@@ -13602,7 +13603,7 @@ PACK_04 = [[
     "code": "04029",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04029.jpg"
   },
   {
@@ -13610,7 +13611,7 @@ PACK_04 = [[
     "code": "04030",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04030.jpg"
   },
   {
@@ -13618,7 +13619,7 @@ PACK_04 = [[
     "code": "04053",
     "type_code": "obligation",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04053.jpg"
   },
   {
@@ -13626,7 +13627,7 @@ PACK_04 = [[
     "code": "04054",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04054.jpg"
   },
   {
@@ -13634,7 +13635,7 @@ PACK_04 = [[
     "code": "04055",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04055.jpg"
   },
   {
@@ -13642,7 +13643,7 @@ PACK_04 = [[
     "code": "04056",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04056.jpg"
   },
   {
@@ -13650,7 +13651,7 @@ PACK_04 = [[
     "code": "04057",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04057.jpg"
   },
   {
@@ -13658,7 +13659,7 @@ PACK_04 = [[
     "code": "04058",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04058.jpg"
   },
   {
@@ -13666,7 +13667,7 @@ PACK_04 = [[
     "code": "04059",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04059.jpg"
   },
   {
@@ -13674,7 +13675,7 @@ PACK_04 = [[
     "code": "04060",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04060.jpg"
   },
   {
@@ -13682,7 +13683,7 @@ PACK_04 = [[
     "code": "04061",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04061.jpg"
   },
   {
@@ -13690,7 +13691,7 @@ PACK_04 = [[
     "code": "04062",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04062.jpg"
   },
   {
@@ -13698,7 +13699,7 @@ PACK_04 = [[
     "code": "04063",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04063.jpg"
   },
   {
@@ -13706,7 +13707,7 @@ PACK_04 = [[
     "code": "04064",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04064.jpg"
   },
   {
@@ -13714,7 +13715,7 @@ PACK_04 = [[
     "code": "04065",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04065.jpg"
   },
   {
@@ -13722,7 +13723,7 @@ PACK_04 = [[
     "code": "04066",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04066.jpg"
   },
   {
@@ -13730,7 +13731,7 @@ PACK_04 = [[
     "code": "04067",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04067.jpg"
   },
   {
@@ -13738,7 +13739,7 @@ PACK_04 = [[
     "code": "04068",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04068.jpg"
   },
   {
@@ -13746,7 +13747,7 @@ PACK_04 = [[
     "code": "04069",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04069.jpg"
   },
   {
@@ -13754,7 +13755,7 @@ PACK_04 = [[
     "code": "04070",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04070.jpg"
   },
   {
@@ -13762,7 +13763,7 @@ PACK_04 = [[
     "code": "04071",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04071.jpg"
   },
   {
@@ -13770,7 +13771,7 @@ PACK_04 = [[
     "code": "04072",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04072.jpg"
   },
   {
@@ -13778,7 +13779,7 @@ PACK_04 = [[
     "code": "04073",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04073.jpg"
   },
   {
@@ -13786,7 +13787,7 @@ PACK_04 = [[
     "code": "04074",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04074.jpg"
   },
   {
@@ -13794,7 +13795,7 @@ PACK_04 = [[
     "code": "04075",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04075.jpg"
   },
   {
@@ -13802,7 +13803,7 @@ PACK_04 = [[
     "code": "04076",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04076.jpg"
   },
   {
@@ -13810,7 +13811,7 @@ PACK_04 = [[
     "code": "04077",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04077.jpg"
   },
   {
@@ -13818,7 +13819,7 @@ PACK_04 = [[
     "code": "04078",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04078.jpg"
   },
   {
@@ -13826,7 +13827,7 @@ PACK_04 = [[
     "code": "04079",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04079.jpg"
   },
   {
@@ -13834,7 +13835,7 @@ PACK_04 = [[
     "code": "04080",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04080.jpg"
   },
   {
@@ -13842,7 +13843,7 @@ PACK_04 = [[
     "code": "04081",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04081.jpg"
   },
   {
@@ -13850,7 +13851,7 @@ PACK_04 = [[
     "code": "04082",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04082.jpg"
   },
   {
@@ -13858,7 +13859,7 @@ PACK_04 = [[
     "code": "04083",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04083.jpg"
   },
   {
@@ -13866,7 +13867,7 @@ PACK_04 = [[
     "code": "04084",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04084.jpg"
   },
   {
@@ -13874,7 +13875,7 @@ PACK_04 = [[
     "code": "04085",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04085.jpg"
   },
   {
@@ -13882,7 +13883,7 @@ PACK_04 = [[
     "code": "04086",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04086.jpg"
   },
   {
@@ -13890,7 +13891,7 @@ PACK_04 = [[
     "code": "04087",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04087.jpg"
   },
   {
@@ -13898,7 +13899,7 @@ PACK_04 = [[
     "code": "04088",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04088.jpg"
   },
   {
@@ -13906,7 +13907,7 @@ PACK_04 = [[
     "code": "04089",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04089.jpg"
   },
   {
@@ -13914,7 +13915,7 @@ PACK_04 = [[
     "code": "04090",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04090.jpg"
   },
   {
@@ -13922,7 +13923,7 @@ PACK_04 = [[
     "code": "04091",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04091.jpg"
   },
   {
@@ -13930,7 +13931,7 @@ PACK_04 = [[
     "code": "04092",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04092.jpg"
   },
   {
@@ -13938,7 +13939,7 @@ PACK_04 = [[
     "code": "04093",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04093.jpg"
   },
   {
@@ -13946,7 +13947,7 @@ PACK_04 = [[
     "code": "04094",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04094.jpg"
   },
   {
@@ -13954,7 +13955,7 @@ PACK_04 = [[
     "code": "04095",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04095.jpg"
   },
   {
@@ -13962,7 +13963,7 @@ PACK_04 = [[
     "code": "04096",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04096.jpg"
   },
   {
@@ -14004,7 +14005,7 @@ PACK_04 = [[
     "code": "04101",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04101.jpg"
   },
   {
@@ -14012,7 +14013,7 @@ PACK_04 = [[
     "code": "04102",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04102.jpg"
   },
   {
@@ -14020,7 +14021,7 @@ PACK_04 = [[
     "code": "04103",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04103.jpg"
   },
   {
@@ -14028,7 +14029,7 @@ PACK_04 = [[
     "code": "04104",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04104.jpg"
   },
   {
@@ -14036,7 +14037,7 @@ PACK_04 = [[
     "code": "04105",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04105.jpg"
   },
   {
@@ -14044,7 +14045,7 @@ PACK_04 = [[
     "code": "04106",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04106.jpg"
   },
   {
@@ -14052,7 +14053,7 @@ PACK_04 = [[
     "code": "04107",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04107.jpg"
   },
   {
@@ -14060,7 +14061,7 @@ PACK_04 = [[
     "code": "04108",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04108.jpg"
   },
   {
@@ -14068,7 +14069,7 @@ PACK_04 = [[
     "code": "04109",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04109.jpg"
   },
   {
@@ -14076,7 +14077,7 @@ PACK_04 = [[
     "code": "04110",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04110.jpg"
   },
   {
@@ -14084,7 +14085,7 @@ PACK_04 = [[
     "code": "04111",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04111.jpg"
   },
   {
@@ -14092,7 +14093,7 @@ PACK_04 = [[
     "code": "04112",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04112.jpg"
   },
   {
@@ -14100,7 +14101,7 @@ PACK_04 = [[
     "code": "04113",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04113.jpg"
   },
   {
@@ -14108,7 +14109,7 @@ PACK_04 = [[
     "code": "04114",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04114.jpg"
   },
   {
@@ -14116,7 +14117,7 @@ PACK_04 = [[
     "code": "04115",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04115.jpg"
   },
   {
@@ -14124,7 +14125,7 @@ PACK_04 = [[
     "code": "04116",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04116.jpg"
   },
   {
@@ -14132,7 +14133,7 @@ PACK_04 = [[
     "code": "04117",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04117.jpg"
   },
   {
@@ -14140,7 +14141,7 @@ PACK_04 = [[
     "code": "04118",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04118.jpg"
   },
   {
@@ -14148,7 +14149,7 @@ PACK_04 = [[
     "code": "04119",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04119.jpg"
   },
   {
@@ -14156,7 +14157,7 @@ PACK_04 = [[
     "code": "04120",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04120.jpg"
   },
   {
@@ -14164,7 +14165,7 @@ PACK_04 = [[
     "code": "04121",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04121.jpg"
   },
   {
@@ -14172,7 +14173,7 @@ PACK_04 = [[
     "code": "04122",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04122.jpg"
   },
   {
@@ -14180,7 +14181,7 @@ PACK_04 = [[
     "code": "04123",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04123.jpg"
   },
   {
@@ -14188,7 +14189,7 @@ PACK_04 = [[
     "code": "04124",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04124.jpg"
   },
   {
@@ -14196,7 +14197,7 @@ PACK_04 = [[
     "code": "04125",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04125.jpg"
   },
   {
@@ -14204,7 +14205,7 @@ PACK_04 = [[
     "code": "04126",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04126.jpg"
   },
   {
@@ -14212,7 +14213,7 @@ PACK_04 = [[
     "code": "04127",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04127.jpg"
   },
   {
@@ -14220,7 +14221,7 @@ PACK_04 = [[
     "code": "04128",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04128.jpg"
   },
   {
@@ -14228,7 +14229,7 @@ PACK_04 = [[
     "code": "04129",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04129.jpg"
   },
   {
@@ -14236,7 +14237,7 @@ PACK_04 = [[
     "code": "04130",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04130.jpg"
   },
   {
@@ -14244,7 +14245,7 @@ PACK_04 = [[
     "code": "04131",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04131.jpg"
   },
   {
@@ -14252,7 +14253,7 @@ PACK_04 = [[
     "code": "04132",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04132.jpg"
   },
   {
@@ -14260,7 +14261,7 @@ PACK_04 = [[
     "code": "04133",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04133.jpg"
   },
   {
@@ -14268,7 +14269,7 @@ PACK_04 = [[
     "code": "04134",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04134.jpg"
   },
   {
@@ -14276,7 +14277,7 @@ PACK_04 = [[
     "code": "04135",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04135.jpg"
   },
   {
@@ -14284,7 +14285,7 @@ PACK_04 = [[
     "code": "04136",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04136.jpg"
   },
   {
@@ -14292,7 +14293,7 @@ PACK_04 = [[
     "code": "04137",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04137.jpg"
   },
   {
@@ -14300,7 +14301,7 @@ PACK_04 = [[
     "code": "04138",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04138.jpg"
   },
   {
@@ -14308,7 +14309,7 @@ PACK_04 = [[
     "code": "04139",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04139.jpg"
   },
   {
@@ -14316,7 +14317,7 @@ PACK_04 = [[
     "code": "04140",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04140.jpg"
   },
   {
@@ -14324,7 +14325,7 @@ PACK_04 = [[
     "code": "04141",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04141.jpg"
   },
   {
@@ -14332,7 +14333,7 @@ PACK_04 = [[
     "code": "04142",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04142.jpg"
   },
   {
@@ -14340,7 +14341,7 @@ PACK_04 = [[
     "code": "04143",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04143.jpg"
   },
   {
@@ -14348,7 +14349,7 @@ PACK_04 = [[
     "code": "04144",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04144.jpg"
   },
   {
@@ -14356,7 +14357,7 @@ PACK_04 = [[
     "code": "04145",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04145.jpg"
   },
   {
@@ -14364,7 +14365,7 @@ PACK_04 = [[
     "code": "04146",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04146.jpg"
   },
   {
@@ -14372,7 +14373,7 @@ PACK_04 = [[
     "code": "04147",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04147.jpg"
   },
   {
@@ -14380,7 +14381,7 @@ PACK_04 = [[
     "code": "04148",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04148.jpg"
   },
   {
@@ -14388,7 +14389,7 @@ PACK_04 = [[
     "code": "04149",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04149.jpg"
   },
   {
@@ -14396,7 +14397,7 @@ PACK_04 = [[
     "code": "04150",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04150.jpg"
   },
   {
@@ -14404,7 +14405,7 @@ PACK_04 = [[
     "code": "04151",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04151.jpg"
   },
   {
@@ -14412,7 +14413,7 @@ PACK_04 = [[
     "code": "04152",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04152.jpg"
   },
   {
@@ -14420,7 +14421,7 @@ PACK_04 = [[
     "code": "04153",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04153.jpg"
   },
   {
@@ -14428,7 +14429,7 @@ PACK_04 = [[
     "code": "04154",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04154.jpg"
   }
 ]
@@ -14440,7 +14441,7 @@ PACK_07 = [[
     "code": "07001",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07001.jpg"
   },
   {
@@ -14448,7 +14449,7 @@ PACK_07 = [[
     "code": "07002",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07002.jpg"
   },
   {
@@ -14456,7 +14457,7 @@ PACK_07 = [[
     "code": "07003",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07003.jpg"
   },
   {
@@ -14464,7 +14465,7 @@ PACK_07 = [[
     "code": "07004",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07004.jpg"
   },
   {
@@ -14472,7 +14473,7 @@ PACK_07 = [[
     "code": "07005",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07005.jpg"
   },
   {
@@ -14480,7 +14481,7 @@ PACK_07 = [[
     "code": "07006",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07006.jpg"
   },
   {
@@ -14488,7 +14489,7 @@ PACK_07 = [[
     "code": "07007",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07007.jpg"
   },
   {
@@ -14496,7 +14497,7 @@ PACK_07 = [[
     "code": "07008",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07008.jpg"
   },
   {
@@ -14504,7 +14505,7 @@ PACK_07 = [[
     "code": "07009",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07009.jpg"
   },
   {
@@ -14512,7 +14513,7 @@ PACK_07 = [[
     "code": "07010",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07010.jpg"
   },
   {
@@ -14520,7 +14521,7 @@ PACK_07 = [[
     "code": "07011",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07011.jpg"
   },
   {
@@ -14528,7 +14529,7 @@ PACK_07 = [[
     "code": "07012",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07012.jpg"
   },
   {
@@ -14536,7 +14537,7 @@ PACK_07 = [[
     "code": "07013",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07013.jpg"
   },
   {
@@ -14544,7 +14545,7 @@ PACK_07 = [[
     "code": "07014",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07014.jpg"
   },
   {
@@ -14552,7 +14553,7 @@ PACK_07 = [[
     "code": "07015",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07015.jpg"
   },
   {
@@ -14560,7 +14561,7 @@ PACK_07 = [[
     "code": "07016",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07016.jpg"
   },
   {
@@ -14568,7 +14569,7 @@ PACK_07 = [[
     "code": "07017",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07017.jpg"
   },
   {
@@ -14576,7 +14577,7 @@ PACK_07 = [[
     "code": "07018",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07018.jpg"
   },
   {
@@ -14584,7 +14585,7 @@ PACK_07 = [[
     "code": "07019",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07019.jpg"
   },
   {
@@ -14592,7 +14593,7 @@ PACK_07 = [[
     "code": "07020",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07020.jpg"
   },
   {
@@ -14600,7 +14601,7 @@ PACK_07 = [[
     "code": "07021",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07021.jpg"
   },
   {
@@ -14608,7 +14609,7 @@ PACK_07 = [[
     "code": "07022",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07022.jpg"
   },
   {
@@ -14616,7 +14617,7 @@ PACK_07 = [[
     "code": "07023",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07023.jpg"
   },
   {
@@ -14624,7 +14625,7 @@ PACK_07 = [[
     "code": "07024",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07024.jpg"
   },
   {
@@ -14632,7 +14633,7 @@ PACK_07 = [[
     "code": "07025",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07025.jpg"
   },
   {
@@ -14640,7 +14641,7 @@ PACK_07 = [[
     "code": "07026",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07026.jpg"
   },
   {
@@ -14648,7 +14649,7 @@ PACK_07 = [[
     "code": "07027",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07027.jpg"
   },
   {
@@ -14656,7 +14657,7 @@ PACK_07 = [[
     "code": "07028",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07028.jpg"
   },
   {
@@ -14664,7 +14665,7 @@ PACK_07 = [[
     "code": "07029",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07029.jpg"
   },
   {
@@ -14672,7 +14673,7 @@ PACK_07 = [[
     "code": "07030",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07030.jpg"
   },
   {
@@ -14680,7 +14681,7 @@ PACK_07 = [[
     "code": "07031",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07031.jpg"
   },
   {
@@ -14688,7 +14689,7 @@ PACK_07 = [[
     "code": "07032",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07032.jpg"
   },
   {
@@ -14696,7 +14697,7 @@ PACK_07 = [[
     "code": "07033",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07033.jpg"
   },
   {
@@ -14704,7 +14705,7 @@ PACK_07 = [[
     "code": "07034",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07034.jpg"
   },
   {
@@ -14712,7 +14713,7 @@ PACK_07 = [[
     "code": "07035",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07035.jpg"
   },
   {
@@ -14720,7 +14721,7 @@ PACK_07 = [[
     "code": "07036",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07036.jpg"
   },
   {
@@ -14728,7 +14729,7 @@ PACK_07 = [[
     "code": "07037",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07037.jpg"
   },
   {
@@ -14736,7 +14737,7 @@ PACK_07 = [[
     "code": "07038",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07038.jpg"
   },
   {
@@ -14744,7 +14745,7 @@ PACK_07 = [[
     "code": "07039",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07039.jpg"
   },
   {
@@ -14752,7 +14753,7 @@ PACK_07 = [[
     "code": "07040",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07040.jpg"
   },
   {
@@ -14760,7 +14761,7 @@ PACK_07 = [[
     "code": "07041",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07041.jpg"
   },
   {
@@ -14768,7 +14769,7 @@ PACK_07 = [[
     "code": "07042",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07042.jpg"
   },
   {
@@ -14776,7 +14777,7 @@ PACK_07 = [[
     "code": "07043",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07043.jpg"
   },
   {
@@ -14784,7 +14785,7 @@ PACK_07 = [[
     "code": "07044",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07044.jpg"
   },
   {
@@ -14792,7 +14793,7 @@ PACK_07 = [[
     "code": "07045",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07045.jpg"
   },
   {
@@ -14800,7 +14801,7 @@ PACK_07 = [[
     "code": "07046",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07046.jpg"
   },
   {
@@ -14808,7 +14809,7 @@ PACK_07 = [[
     "code": "07047",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07047.jpg"
   },
   {
@@ -14816,7 +14817,7 @@ PACK_07 = [[
     "code": "07048",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07048.jpg"
   },
   {
@@ -14824,7 +14825,7 @@ PACK_07 = [[
     "code": "07049",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07049.jpg"
   },
   {
@@ -14832,7 +14833,7 @@ PACK_07 = [[
     "code": "07050",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07050.jpg"
   },
   {
@@ -14840,7 +14841,7 @@ PACK_07 = [[
     "code": "07051",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07051.jpg"
   },
   {
@@ -14848,7 +14849,7 @@ PACK_07 = [[
     "code": "07052",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07052.jpg"
   },
   {
@@ -14856,7 +14857,7 @@ PACK_07 = [[
     "code": "07053",
     "type_code": "minion",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07053.jpg"
   },
   {
@@ -14864,7 +14865,7 @@ PACK_07 = [[
     "code": "07054",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07054.jpg"
   },
   {
@@ -14872,7 +14873,7 @@ PACK_07 = [[
     "code": "07055",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07055.jpg"
   },
   {
@@ -14880,7 +14881,7 @@ PACK_07 = [[
     "code": "07056",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07056.jpg"
   },
   {
@@ -14888,7 +14889,7 @@ PACK_07 = [[
     "code": "07057",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07057.jpg"
   },
   {
@@ -14896,7 +14897,7 @@ PACK_07 = [[
     "code": "07058",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07058.jpg"
   },
   {
@@ -14904,7 +14905,7 @@ PACK_07 = [[
     "code": "07059",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07059.jpg"
   }
 ]
