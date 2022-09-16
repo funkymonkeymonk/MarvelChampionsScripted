@@ -11,7 +11,6 @@ function setCardID(_, value, _)
 end
 
 function buildCardPool(packID)
-    -- TODO: See if there are faster JSON parsing libraries for LUA
     if (CARDPOOL_BY_PACK_ID[packID] == nil) then
         local cardpool = {}
         local CARDPOOL_OBJ = getObjectFromGUID('843931')

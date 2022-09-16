@@ -27,15 +27,6 @@ async function getDataFromGithub() {
 }
 
 function FormatPackData(responses) {
-  // Example with Ant-Man: https://marvelcdb.com/api/public/card/12001a
-  // My best guess at logic to determine card back:
-  // if linked card then other card
-  // if type_code = villain
-  // if faction_code = encounter, encounter
-  // else player
-  // This falls apart for some cards but I think that may be OK.
-  // We can contain the mess in an "exceptions check"
-
   function GetCardBack(card) {
     const cardBack = {
       "player": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
@@ -104,7 +95,3 @@ async function start() {
 }
 
 start()
-
-// # TODO: Create a "fallback image" for cards that don't have a front yet
-// # TODO: Upload images to somewhere well cached.
-// # TODO: Formalize this process and make it a github action
