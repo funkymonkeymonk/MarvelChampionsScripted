@@ -78,6 +78,8 @@ function movePlayerone()
    playerToken   = getObjectFromGUID("d93792")
    boardPosition = self.getPosition()
    playerToken.setPositionSmooth(boardPosition + Vector{11.9, 0.3, 6.3}, false, false)
+   local turn_counter = getObjectFromGUID("turncounter")
+   turn_counter.call('add_subtract')
 end
 
 function untapAll()
