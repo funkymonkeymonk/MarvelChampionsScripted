@@ -1,7 +1,7 @@
 {
   "Object": {
     "GUID": "38061c",
-    "Name": "Custom_PDF",
+    "Name": "Custom_Token",
     "Transform": {
       "posX": -70.25,
       "posY": 2.58520079,
@@ -9,11 +9,11 @@
       "rotX": 0.00298242085,
       "rotY": 180.000259,
       "rotZ": 2.14422357e-7,
-      "scaleX": 1.81875479,
+      "scaleX": 2.05,
       "scaleY": 1,
-      "scaleZ": 1.81875479
+      "scaleZ": 2.05
     },
-    "Nickname": "",
+    "Nickname": "Sinister Motives Campaign Log 2",
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
@@ -35,13 +35,19 @@
     "GridProjection": false,
     "HideWhenFaceDown": false,
     "Hands": false,
-    "CustomPDF": {
-      "PDFUrl": "http://cloud-3.steamusercontent.com/ugc/1811020040247469948/3E673289F6D33971F0EB5523A1C7CC914BBB3820/",
-      "PDFPassword": "",
-      "PDFPage": 1,
-      "PDFPageOffset": 0
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1775004563407155902/364AA2155850F8CDBEC52CB2C36EC7133594C41C/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomToken": {
+        "Thickness": 0.2,
+        "MergeDistancePixels": 15,
+        "StandUp": false,
+        "Stackable": false
+      }
     },
-    "LuaScript": "",
+    "LuaScript": "#include ./Campaign_Log2.lua",
     "LuaScriptState": "",
     "XmlUI": ""
   },
