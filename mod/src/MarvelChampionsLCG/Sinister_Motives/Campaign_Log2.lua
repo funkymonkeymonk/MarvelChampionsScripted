@@ -6,49 +6,78 @@
         If it was 0, it would be down inside the model of the sheet
 ]]
 
+-- TODO: make grid in game toggleable
+-- grid = true
+
+function newCounter(pos, size, value, hideBG)
+    return  { pos = pos, size = size, value = value, hideBG = hideBG}
+end
+
+function newTextbox(pos, rows, width, height, font_size, label, value, alignment)
+    return {
+        pos = pos,
+        rows = rows,
+        width = width,
+        height = height,
+        font_size = font_size,
+        label = label,
+        value = value,
+        alignment = alignment
+    }
+end
+
 --This is the button placement information
 defaultButtonData = {
-    --Add checkboxes
-    checkbox = {
-        --[[
-        {
-            pos   = {0,0.2,0}, -- the position (pasted from the helper tool)
-            size  = 800,     -- height/width/font_size for checkbox
-            state = false    -- default starting value for checkbox (true=checked, false=not)
-        },
-        ]]
-        {
-            pos = {0.0,0.2,0.0},
-            size  = 800,
-            state = true},
-        },
-    --Add counters that have a + and - button
-    counter = {
-        --[[
-        {
-            pos    = {0,0,0}, -- the position (pasted from the helper tool)
-            size   = 500,     -- height/width/font_size for counter
-            value  = 0,       -- default starting value for counter
-            hideBG = true     -- if background of counter is hidden (true=hidden, false=not)
-        },
-        ]]
-    },
-    --Add editable text boxes
-    textbox = {
-        --[[
-        {
-            pos       = {-0.0,0.1,0.0}, -- the position (pasted from the helper tool)
-            rows      = 1,              -- how many lines of text you want for this box
-            width     = 7000,           -- how wide the text box is
-	        height    = 1000,           -- how tall the text box is
-            font_size = 400,            -- size of text. This and "rows" effect overall height
-            label     = "",             -- what is shown when there is no text. "" = nothing
-            value     = "",             -- text entered into box. "" = nothing
-            alignment = 3               -- Number to indicate how you want text aligned (1=Automatic, 2=Left, 3=Center, 4=Right, 5=Justified)
-        },
-        ]]
-    }
+    checkbox = {},
+    counter = {},
+    textbox = {}
 }
+
+-- Create Player Rows
+for i=0,3 do
+    local offset = 0.825
+    table.insert(defaultButtonData.counter, newCounter({-1.225 + offset * i,0.2,-1.0}, 500, 0, true))
+    table.insert(defaultButtonData.textbox, newTextbox({-1.225 + offset * i,0.2,-1.25}, 1, 3500, 1000, 400, "", "", 3))
+end
+
+-- Community Service
+for i=0,1 do
+    for j=0,1 do
+    local xoffset = 1.2
+    local zoffset = 0.2
+    table.insert(defaultButtonData.textbox, newTextbox({-1.0 + xoffset * i,0.2,-0.6 + zoffset * j}, 1,  5000, 1000, 400, "", "", 3))
+    end
+end
+
+-- Last Ones Standing
+for i=0,2 do
+    for j=0,1 do
+    local xoffset = 0.825
+    local zoffset = 0.2
+    table.insert(defaultButtonData.textbox, newTextbox({-1.225 + xoffset * i,0.2, 0 + zoffset * j}, 1,  3500, 1000, 400, "", "", 3))
+    end
+end
+
+-- Waking Nightmare
+table.insert(defaultButtonData.counter, newCounter({1.225, 0.2, -0.5}, 700, 0, true))
+
+-- Final Reputation Score
+table.insert(defaultButtonData.counter, newCounter({1.225, 0.2, 0.1}, 700, 0, true))
+
+-- Shield Tech, Aspect Advantage, Planning Ahead
+for i=0,2 do
+    for j=0,3 do
+    local xoffset = 1.1
+    local zoffset = 0.175
+    table.insert(defaultButtonData.textbox, newTextbox({-1.1 + xoffset * i,0.2, 0.65 + zoffset * j}, 1,  3500, 1000, 400, "", "", 3))
+    end
+end
+
+-- Osborne Tech
+for i=0,2 do
+    local xoffset = 1.1
+    table.insert(defaultButtonData.textbox, newTextbox({-1.1 + xoffset * i,0.2, 1.525 }, 1,  3500, 1000, 400, "", "", 3))
+end
 
 --Library Code
 disableSave = false
@@ -80,6 +109,7 @@ function onload(saved_data)
     createCheckbox()
     createCounter()
     createTextbox()
+    if grid then drawLayoutGrid() end
 end
 
 
@@ -229,5 +259,45 @@ function createTextbox()
     end
 end
 
+-- Custom tools for easier creation
+WHITE={1,1,1}
+BLACK={0,0,0}
+GREY={0.5,0.5,0.5}
 
+function line(p1, p2, color)
+    return {
+        points    = { p1, p2 },
+        color     = color,
+        thickness = 0.01,
+        rotation  = {0,0,0},
+    }
+end
+
+function drawLayoutGrid()
+    lines = {}
+    for i=-20,20 do
+        local cord = i/10
+        if i == 0 then
+            table.insert(lines, line({cord,1,-2}, {cord,1,2}, WHITE))
+            table.insert(lines, line({-2,1,cord}, {2,1,cord}, WHITE))
+        else
+            table.insert(lines, line({cord,1,-2}, {cord,1,2}, GREY))
+            table.insert(lines, line({-2,1,cord}, {2,1,cord}, GREY))
+        end
+
+        if i%5 == 0 then
+            table.insert(lines, line({cord,1,-0.1}, {cord,1,0.1}, BLACK))
+            table.insert(lines, line({-0.1,1,cord}, {0.1,1,cord}, BLACK))
+        end
+    end
+    self.setVectorLines(lines)
+end
+
+function table.merge(t1, t2)
+   for k,v in ipairs(t2) do
+      table.insert(t1, v)
+   end
+
+   return t1
+end
 

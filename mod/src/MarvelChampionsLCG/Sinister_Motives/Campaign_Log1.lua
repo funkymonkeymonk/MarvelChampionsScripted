@@ -6,18 +6,18 @@
         If it was 0, it would be down inside the model of the sheet
 ]]
 
+function newCheckBox(pos, size, state)
+    return  { pos = pos, size = size, state = state}
+end
+
 function col(count, startingPos, xoffset, zoffset, size)
     local checkboxes = {}
     for i=0,count - 1 do
-        table.insert(checkboxes, {
-            pos = {
-                startingPos[1] + i * xoffset,
-                startingPos[2],
-                startingPos[3] + i * zoffset
-            },
-            size  = size,
-            state = false
-        })
+        table.insert(checkboxes, newCheckBox(
+            { startingPos[1] + i * xoffset, startingPos[2], startingPos[3] + i * zoffset },
+            size,
+            false
+        ))
     end
     return checkboxes
 end
