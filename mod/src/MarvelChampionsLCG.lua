@@ -16,9 +16,22 @@ HERO_PLACER_GUID = "4431e4"
 
 require('!/Cardplacer')
 
+function randomFirstPlayer()
+    local sittingPlayers = {}
+    for k,v in pairs({'White','Brown','Red','Orange','Yellow','Green','Teal','Blue','Purple','Pink','Black'}) do
+        if Player[v].seated then
+            table.insert(sittingPlayers,v)
+        end
+    end
+
+    local pickedColor = sittingPlayers[math.random(#sittingPlayers)]
+    broadcastToAll('The first player is ' .. Player[pickedColor].steam_name .. ' (' ..  pickedColor ..')')
+end
+
 function onLoad()
-   -- Create context Menus
-   addContextMenuItem("Spawn Card", createUI)
+    -- Create context Menus
+    addContextMenuItem("Random First Player", randomFirstPlayer)
+    addContextMenuItem("Spawn Card", createUI)
 end
 
 function findInRadiusBy(pos, radius, filter, debug)
