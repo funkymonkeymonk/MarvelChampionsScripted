@@ -1,29 +1,29 @@
 {
   "Object": {
     "GUID": "503b31",
-    "Name": "Bag",
+    "Name": "Custom_Model_Bag",
     "Transform": {
-      "posX": -63.24998,
-      "posY": 0.3114112,
-      "posZ": 27.7504559,
-      "rotX": -0.00298646814,
-      "rotY": 0.00139569957,
-      "rotZ": 5.539299e-7,
-      "scaleX": 1,
-      "scaleY": 1,
-      "scaleZ": 1
+      "posX": -64.25,
+      "posY": 0.5,
+      "posZ": 29.0,
+      "rotX": 0,
+      "rotY": 180,
+      "rotZ": 0,
+      "scaleX": 0.79,
+      "scaleY": 0.11,
+      "scaleZ": 0.79
     },
     "Nickname": "Sinister Motives",
     "Description": "",
     "GMNotes": "",
     "ColorDiffuse": {
-      "r": 0.7058823,
-      "g": 0.366520882,
-      "b": 0
+      "r": 1,
+      "g": 1,
+      "b": 1
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,
-    "Locked": false,
+    "Locked": true,
     "Grid": true,
     "Snap": true,
     "IgnoreFoW": false,
@@ -37,11 +37,31 @@
     "Hands": false,
     "MaterialIndex": -1,
     "MeshIndex": -1,
+    "CustomMesh": {
+      "MeshURL": "https://raw.githubusercontent.com/RobMayer/TTSLibrary/master/advboxes/core_h_MSH.obj",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1775004563403355246/082BADA0D27826B509B06C3BA42583113CFAE997/",
+      "NormalURL": "",
+      "ColliderURL": "",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 6,
+      "CustomShader": {
+        "SpecularColor": {
+          "r": 1,
+          "g": 1,
+          "b": 1
+        },
+        "SpecularIntensity": 0,
+        "SpecularSharpness": 2,
+        "FresnelStrength": 0
+      },
+      "CastShadows": true
+    },
     "Bag": {
       "Order": 0
     },
-    "LuaScript": "",
-    "LuaScriptState": "",
+    "LuaScript": "#include ./Sinister_Motives.503b31.lua",
+    "LuaScriptState": "#include ./Sinister_Motives.503b31.state.json",
     "XmlUI": "",
     "ContainedObjects": []
   },
