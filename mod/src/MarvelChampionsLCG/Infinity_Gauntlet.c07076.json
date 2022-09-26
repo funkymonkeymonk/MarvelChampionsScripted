@@ -1,0 +1,209 @@
+{
+  "Object": {
+    "GUID": "c07076",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": 64.0811,
+      "posY": 1.37234664,
+      "posZ": 96.22866,
+      "rotX": 359.954773,
+      "rotY": 179.995865,
+      "rotZ": 359.97522,
+      "scaleX": 1.05000031,
+      "scaleY": 1.05000031,
+      "scaleZ": 1.05000031
+    },
+    "Nickname": "Infinity Gauntlet",
+    "Description": "",
+    "GMNotes": "",
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": false,
+    "Snap": false,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1845916597517940747/8B744E432F2BECB3BEA49912DBBFA6F5966D476F/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1845916597507186042/84C5905C51E62FF414F23FDCABFA24B6BE42B24E/",
+      "NormalURL": "http://cloud-3.steamusercontent.com/ugc/1845916597506826633/6791F855CBBC85A9AB22DBFCEC0F52C437ECAB6F/",
+      "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1845916597506798379/C5AA00E54D84945280E36CC40D37EAA61C120E49/",
+      "Convex": false,
+      "MaterialIndex": 2,
+      "TypeIndex": 1,
+      "CustomShader": {
+        "SpecularColor": {
+          "r": 0.735294163,
+          "g": 0.735294163,
+          "b": 0.735294163
+        },
+        "SpecularIntensity": 0.7,
+        "SpecularSharpness": 7,
+        "FresnelStrength": 0.119598731
+      },
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Infinity_Gauntlet.c07076.lua",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "AttachedSnapPoints": [
+      {
+        "Position": {
+          "x": 1.43439472,
+          "y": 4.45656443,
+          "z": -8.365322
+        },
+        "Rotation": {
+          "x": 3.09158373,
+          "y": 180.1682,
+          "z": 359.9838
+        }
+      },
+      {
+        "Position": {
+          "x": -5.536759,
+          "y": 3.51907,
+          "z": -9.3696785
+        },
+        "Rotation": {
+          "x": 0.7953043,
+          "y": 179.651611,
+          "z": 337.651459
+        }
+      },
+      {
+        "Position": {
+          "x": -2.70114684,
+          "y": 3.71881318,
+          "z": -13.0609055
+        },
+        "Rotation": {
+          "x": 12.6226425,
+          "y": 179.6544,
+          "z": 358.451569
+        }
+      },
+      {
+        "Position": {
+          "x": -0.00232550642,
+          "y": 3.71340871,
+          "z": -13.0401573
+        },
+        "Rotation": {
+          "x": 14.5155573,
+          "y": 181.133133,
+          "z": 0.290465117
+        }
+      },
+      {
+        "Position": {
+          "x": 3.34396,
+          "y": 3.68835044,
+          "z": -13.0306225
+        },
+        "Rotation": {
+          "x": 14.5146828,
+          "y": 179.744064,
+          "z": 359.9326
+        }
+      },
+      {
+        "Position": {
+          "x": 6.310289,
+          "y": 3.700285,
+          "z": -13.0094709
+        },
+        "Rotation": {
+          "x": 12.5562105,
+          "y": 180.35228,
+          "z": 1.57081425
+        }
+      },
+      {
+        "Position": {
+          "x": -1.23579443,
+          "y": 0.6825818,
+          "z": -0.5636109
+        },
+        "Rotation": {
+          "x": 359.889435,
+          "y": 11.7511377,
+          "z": 0.990144134
+        }
+      },
+      {
+        "Position": {
+          "x": -0.3982809,
+          "y": 0.693176031,
+          "z": -1.10996354
+        },
+        "Rotation": {
+          "x": 0.02503654,
+          "y": 359.910217,
+          "z": 1.99475765
+        }
+      },
+      {
+        "Position": {
+          "x": 0.506100833,
+          "y": 0.7063427,
+          "z": -1.13782108
+        },
+        "Rotation": {
+          "x": 359.9901,
+          "y": 0.076942645,
+          "z": 0.233593971
+        }
+      },
+      {
+        "Position": {
+          "x": 1.33523512,
+          "y": 0.6675578,
+          "z": -0.7286811
+        },
+        "Rotation": {
+          "x": 359.140564,
+          "y": 347.4744,
+          "z": 355.930267
+        }
+      },
+      {
+        "Position": {
+          "x": 0.0128053306,
+          "y": 0.550533533,
+          "z": 0.28410843
+        },
+        "Rotation": {
+          "x": 359.938751,
+          "y": 359.915283,
+          "z": 0.0715712756
+        }
+      },
+      {
+        "Position": {
+          "x": -2.105906,
+          "y": 0.5797967,
+          "z": 0.6878384
+        },
+        "Rotation": {
+          "x": 358.361176,
+          "y": 24.7434,
+          "z": 359.745
+        }
+      }
+    ]
+  },
+  "StatesPaths": {}
+}

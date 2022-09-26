@@ -1,8 +1,5 @@
 local publicDeckURL="https://marvelcdb.com/api/public/decklist/"
 local privateDeckURL="https://marvelcdb.com/api/public/deck/"
-local cardURL="https://marvelcdb.com/api/public/card/"
-local subnameCards={{name="Hawkeye"},{name="Spider-Man"},{name="Ant-Man"},{name="Wasp"},{name="Falcon"},{name="Venom"}}
-local multiAspectCards={{name="Mockingbird"},{name="War Machine"},{name="Gamora"},{name="Iron Man"},{name="Captain Marvel"}, {name="Spider-Man"}, {name="Agent 13"}, {name="Wasp"}}
 local excludeList={
   {cardId="21002"}, --Spectrum, Gamma
   {cardId="21003"}, --Spectrum, Photon
@@ -13,9 +10,6 @@ local excludeList={
 local enteredDeckId = 0
 local deckId = 0
 local privateDeckSelection = true
-local cardList = {}
-local doneSlots = 0
-local totalCards = 0
 
 function onLoad()
   createDeckIdInput()
@@ -26,18 +20,9 @@ end
 function importDeck(params)
   deckId = params.deckId
   deckPos = params.deckPosition
-
   local privateDeck = params.privateDeck
 
-  resetCardListAndCounters()
-
   callApi(privateDeck)
-end
-
-function resetCardListAndCounters()
-  cardList = {}
-  doneSlots = 0
-  totalCards = 0
 end
 
 function callApi(privateDeck)
@@ -68,21 +53,7 @@ function deckReadCallback(req)
 
   local slots = removeExcludedCards(JsonDeckRes.slots)
 
-  -- Count number of cards in decklist
-  numSlots=0
-  for cardid,number in pairs(slots) do
-    numSlots = numSlots + 1
-  end
-  
-  -- Save card id, number in table and request card info from MarvelCDB
-  for cardID,number in pairs(slots) do
-    local row = {}
-    row.cardName = ""
-    row.cardCount = number
-    cardList[cardID] = row
-    WebRequest.get(cardURL .. cardID, self, 'cardReadCallback')
-    totalCards = totalCards + number
-  end
+  Global.call("createDeck", {cards = slots, position = deckPos})
 end
 
 function removeExcludedCards(slots)
@@ -105,100 +76,6 @@ function cardIsInExcludeList(cardId)
   end
 
   return false
-end
-
-function cardReadCallback(req)
-  -- Result check..
-  if req.is_done and not req.is_error then
-    -- Find unicode before using JSON.decode since it doesnt handle hex UTF-16
-    local tmpText = string.gsub(req.text,"\\u(%w%w%w%w)", convertHexToDec)
-    JsonCardRes = JSON.decode(tmpText)
-  else
-    print(req.error)
-    return
-  end
-
-  cardList[JsonCardRes.code].cardName = JsonCardRes.real_name
-  
-  -- Check for subname
-  for k,v in pairs(subnameCards) do
-    if (v.name == JsonCardRes.real_name) then
-      cardList[JsonCardRes.code].subName = JsonCardRes.subname
-    end
-  end
-
-  -- Check for multiaspect
-  for k,v in pairs(multiAspectCards) do
-    if (v.name == JsonCardRes.real_name) then
-      cardList[JsonCardRes.code].subName = 
-        (cardList[JsonCardRes.code].subName and cardList[JsonCardRes.code].subName .. "-" .. JsonCardRes.faction_name or JsonCardRes.faction_name)
-    end
-  end
-
-  -- Update number of processed slots, if complete, start building the deck
-  doneSlots = doneSlots + 1
-  if (doneSlots == numSlots) then
-    createDeck()
-  end
-end
-
-function createDeck()
-  tmpDeck = getCardPool()
-  for k,v in pairs(cardList) do
-    searchForCard(v.cardName, v.subName, v.cardCount)
-  end
-
-  tmpDeck.destruct()
-end
-
-function getCardPool()
-  local importerBag = getObjectFromGUID('3ca6e4')
-  local cardPool = importerBag.takeObject(getObjectFromGUID('7d65df'))
-  cardPool.setPosition{-15.75,1.62,-137.25}
-  cardPool.setRotation{180,0,0}
-
-  local poolCopy = cardPool.clone({0, 0, 50})
-
-  importerBag.putObject(cardPool)
-
-  return poolCopy
-end
-
-function searchForCard(cardName, subName, cardCount)
-  allCards = tmpDeck.getObjects()
-  for k,v in pairs(allCards) do
-    if (v.nickname == cardName) then
-      if(subName == nil or v.description == subName) then
-        tmpDeck.takeObject({
-          position = {10, 0, 20},
-          callback = 'cardTaken',
-          callback_owner=self,
-          index = v.index,
-          smooth = false,
-          params = { cardName, cardCount, v.guid }
-        })
-        --print('Added '.. cardCount .. ' of ' .. cardName)
-        return
-      end
-    end
-  end
-  broadcastToAll("Card not found: "..cardName, {0.5,0.5,0.5})
-end
-
-function cardTaken(card, params)
-  local destPos
-  destPos = deckPos
-  if (card.getName() == params[1]) then
-    for i=1,params[2]-1,1 do
-      local cloneParams = {}
-      cloneParams.position=destPos
-      card.clone(cloneParams)
-    end
-    card.setPosition(destPos)
-  else
-    print('Wrong card: ' .. card.getName())
-    tmpDeck.putObject(card)
-  end
 end
 
 function buttonClicked()

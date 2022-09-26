@@ -14,6 +14,8 @@ g_cardHeight = 3.40;
 
 HERO_PLACER_GUID = "4431e4"
 
+require('!/Cardplacer')
+
 function randomFirstPlayer()
     local sittingPlayers = {}
     for k,v in pairs({'White','Brown','Red','Orange','Yellow','Green','Teal','Blue','Purple','Pink','Black'}) do
@@ -27,7 +29,9 @@ function randomFirstPlayer()
 end
 
 function onLoad()
+    -- Create context Menus
     addContextMenuItem("Random First Player", randomFirstPlayer)
+    addContextMenuItem("Spawn Card", createUI)
 end
 
 function findInRadiusBy(pos, radius, filter, debug)
