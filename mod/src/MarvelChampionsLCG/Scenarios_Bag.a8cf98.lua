@@ -42,7 +42,7 @@ function layOutTiles()
     for bagGuid, tilePosition in pairs(bagList) do
         local tilePosition = tilePosition
 
-        local scenarioBag = self.takeObject({guid=bagGuid, smooth=false})
+        local scenarioBag = self.takeObject({guid=bagGuid})
         local tile = tileBag.takeObject({position=tilePosition, smooth=false})
 
         setupTile({

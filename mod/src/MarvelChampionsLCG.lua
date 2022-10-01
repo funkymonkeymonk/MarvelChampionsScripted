@@ -1,21 +1,55 @@
-ENCOUNTER_DECK_POS              = {-12.75, 1.05, 22.25}
-ENCOUNTER_DECK_SPAWN_POS        = {-12.75, 3, 22.25}
-ENCOUNTER_DECK_DISCARD_POSITION = {-17.75, 1.8, 22.25}
-VILLAIN_POS                     = {-0.34,3,20.44}
-VILLAIN2_POS                    = {8.25,3,20.44}
-LOKI_POS                        = {-0.34,1,20.44}
-BOOST_POS                       = {-0.3,1.1,7.7}
-ENCOUNTER_RED_POS               = {-31.25,1.1,-5.25}
-ENCOUNTER_BLUE_POS              = {-3.75,1.1,-5.75}
-ENCOUNTER_GREEN_POS             = {23.75,1.1,-5.75}
-ENCOUNTER_YELLOW_POS            = {51.25,1.1,-5.25}
-g_cardWidth  = 2.30;
-g_cardHeight = 3.40;
+require('!/constants')
+require('!/find')
+require('!/scenario')
 
-HERO_MANAGER_GUID = "4431e4"
-SCENARIO_MANAGER_GUID = "15297c"
-
-require ("!/test")
+-- function dealCardsInRows(paramlist)
+--    local currPosition   = {};
+--    local numRow         = 1;
+--    local numCard        = 0;
+--    local invMultiplier  = 1;
+--    local allCardsDealed = 0;
+--    if paramlist.inverse then
+--       invMultiplier = -1;
+--    end
+--    if paramlist.maxCardsDealed == nil then
+--       allCardsDealed = 0;
+--       paramlist.maxCardsDealed = paramlist.cardDeck.getQuantity()
+--       elseif paramlist.maxCardsDealed >= paramlist.cardDeck.getQuantity() or paramlist.maxCardsDealed <=0 then
+--          allCardsDealed = 0;
+--          paramlist.maxCardsDealed=paramlist.cardDeck.getQuantity()
+--       else
+--          allCardsDealed = 1;
+--       end
+--       if paramlist.mode =="x" then
+--          currPosition = {paramlist.iniPosition[1]+(2*g_cardWidth*invMultiplier*allCardsDealed),paramlist.iniPosition[2],paramlist.iniPosition[3]};
+--       else
+--          currPosition = {paramlist.iniPosition[1],paramlist.iniPosition[2],paramlist.iniPosition[3]+(2*g_cardWidth*invMultiplier*allCardsDealed)};
+--       end
+--       for i = 1,paramlist.maxCardsDealed,1 do
+--          paramlist.cardDeck.takeObject({
+--             position = currPosition,
+--             smooth   = true
+--          });
+--          numCard = numCard+1;
+--          if numCard >= paramlist.maxCardRow then
+--             if paramlist.mode == "x" then
+--                currPosition    = {paramlist.iniPosition[1]+(2*g_cardWidth*invMultiplier*allCardsDealed),paramlist.iniPosition[2],paramlist.iniPosition[3]};
+--                currPosition[3] = currPosition[3]-(numRow*g_cardHeight*invMultiplier);
+--             else
+--                currPosition    = {paramlist.iniPosition[1],paramlist.iniPosition[2],paramlist.iniPosition[3]+(2*g_cardWidth*invMultiplier*allCardsDealed)};
+--                currPosition[1] = currPosition[1]+(numRow*g_cardHeight*invMultiplier);
+--             end
+--             numCard = 0;
+--             numRow  = numRow+1;
+--          else
+--             if paramlist.mode == "x" then
+--                currPosition[1] = currPosition[1]+(g_cardWidth*invMultiplier);
+--          else
+--             currPosition[3] = currPosition[3]+(g_cardWidth*invMultiplier);
+--          end
+--       end
+--    end
+-- end
 
 function randomFirstPlayer()
     local sittingPlayers = {}
@@ -24,7 +58,7 @@ function randomFirstPlayer()
             table.insert(sittingPlayers,v)
         end
     end
-
+    
     local pickedColor = sittingPlayers[math.random(#sittingPlayers)]
     broadcastToAll('The first player is ' .. Player[pickedColor].steam_name .. ' (' ..  pickedColor ..')')
 end
@@ -53,55 +87,6 @@ function findInRadiusBy(pos, radius, filter, debug)
       end
    end
    return filteredList
-end
-
-function dealCardsInRows(paramlist)
-   local currPosition   = {};
-   local numRow         = 1;
-   local numCard        = 0;
-   local invMultiplier  = 1;
-   local allCardsDealed = 0;
-   if paramlist.inverse then
-      invMultiplier = -1;
-   end
-   if paramlist.maxCardsDealed == nil then
-      allCardsDealed = 0;
-      paramlist.maxCardsDealed = paramlist.cardDeck.getQuantity()
-      elseif paramlist.maxCardsDealed >= paramlist.cardDeck.getQuantity() or paramlist.maxCardsDealed <=0 then
-         allCardsDealed = 0;
-         paramlist.maxCardsDealed=paramlist.cardDeck.getQuantity()
-      else
-         allCardsDealed = 1;
-      end
-      if paramlist.mode =="x" then
-         currPosition = {paramlist.iniPosition[1]+(2*g_cardWidth*invMultiplier*allCardsDealed),paramlist.iniPosition[2],paramlist.iniPosition[3]};
-      else
-         currPosition = {paramlist.iniPosition[1],paramlist.iniPosition[2],paramlist.iniPosition[3]+(2*g_cardWidth*invMultiplier*allCardsDealed)};
-      end
-      for i = 1,paramlist.maxCardsDealed,1 do
-         paramlist.cardDeck.takeObject({
-            position = currPosition,
-            smooth   = true
-         });
-         numCard = numCard+1;
-         if numCard >= paramlist.maxCardRow then
-            if paramlist.mode == "x" then
-               currPosition    = {paramlist.iniPosition[1]+(2*g_cardWidth*invMultiplier*allCardsDealed),paramlist.iniPosition[2],paramlist.iniPosition[3]};
-               currPosition[3] = currPosition[3]-(numRow*g_cardHeight*invMultiplier);
-            else
-               currPosition    = {paramlist.iniPosition[1],paramlist.iniPosition[2],paramlist.iniPosition[3]+(2*g_cardWidth*invMultiplier*allCardsDealed)};
-               currPosition[1] = currPosition[1]+(numRow*g_cardHeight*invMultiplier);
-            end
-            numCard = 0;
-            numRow  = numRow+1;
-         else
-            if paramlist.mode == "x" then
-               currPosition[1] = currPosition[1]+(g_cardWidth*invMultiplier);
-         else
-            currPosition[3] = currPosition[3]+(g_cardWidth*invMultiplier);
-         end
-      end
-   end
 end
 
 function isDeck(x)

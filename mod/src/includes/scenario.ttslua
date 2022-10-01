@@ -1,0 +1,21 @@
+function findCardInDeck(params)
+    local deckPosition = params.position;
+    local cardName = params.name;
+    local deck = findDeck(deckPosition)
+
+    if(deck.tag == "deck")
+        local cards = deck.getObjects()
+
+        for _, card in pairs(cards) do
+            if(card.getName() == cardName)
+                return cards.takeObject({guid=card.getGuid()})
+            end
+        end
+    else
+        if(deck.getName() == cardName)
+            return deck
+        end
+    end
+
+    return nil
+end

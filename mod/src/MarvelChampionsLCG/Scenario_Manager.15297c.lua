@@ -39,6 +39,7 @@ local scenarioBagGuid = ""
 local scenarioInfo = {}
 local mode = ""
 local counters = {}
+local villains = {}
 
 local advanceVillainFunction --(villainName, stageNumber)
 local advanceSchemeFunction --(schemeName, stageNumber)
@@ -273,6 +274,7 @@ function getHeroCount()
     scenarioInfo = {}
     mode = ""
     counters = {}
+    vilains = {}
  end
 
  function advanceVillain(params)

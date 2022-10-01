@@ -1,0 +1,16 @@
+ENCOUNTER_DECK_POS              = {-12.75, 1.05, 22.25}
+ENCOUNTER_DECK_SPAWN_POS        = {-12.75, 3, 22.25}
+ENCOUNTER_DECK_DISCARD_POSITION = {-17.75, 1.8, 22.25}
+VILLAIN_POS                     = {-0.34,3,20.44}
+VILLAIN2_POS                    = {8.25,3,20.44}
+LOKI_POS                        = {-0.34,1,20.44}
+BOOST_POS                       = {-0.3,1.1,7.7}
+ENCOUNTER_RED_POS               = {-31.25,1.1,-5.25}
+ENCOUNTER_BLUE_POS              = {-3.75,1.1,-5.75}
+ENCOUNTER_GREEN_POS             = {23.75,1.1,-5.75}
+ENCOUNTER_YELLOW_POS            = {51.25,1.1,-5.25}
+g_cardWidth  = 2.30;
+g_cardHeight = 3.40;
+
+HERO_MANAGER_GUID = "4431e4"
+SCENARIO_MANAGER_GUID = "15297c"

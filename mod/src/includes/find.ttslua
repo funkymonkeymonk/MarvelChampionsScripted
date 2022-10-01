@@ -1,0 +1,33 @@
+function findInRadiusBy(pos, radius, filter)
+   local radius = (radius or 1)
+   local objList = Physics.cast({
+      origin       = pos,
+      direction    = {0,1,0},
+      type         = 2,
+      size         = {radius, radius, radius},
+      max_distance = 0,
+      debug        = false
+   })
+
+   local filteredList = {}
+   for _, obj in ipairs(objList) do
+      if filter == nil then
+         table.insert(filteredList, obj.hit_object)
+      elseif filter and filter(obj.hit_object) then
+         table.insert(filteredList, obj.hit_object)
+      end
+   end
+   return filteredList
+end
+
+function isDeck(x)
+   return x.tag == 'Deck'
+end
+
+function isCardOrDeck(x)
+   return x.getName() ~= '' or isDeck(x)
+end
+
+function findDeck(position)
+    return findInRadius(position, 4, isCardOrDeck) --Look for cards as well as decks, since a deck becomes a card once it has only one object
+end

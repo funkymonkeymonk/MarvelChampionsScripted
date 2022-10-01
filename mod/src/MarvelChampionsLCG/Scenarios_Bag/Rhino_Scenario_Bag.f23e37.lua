@@ -27,3 +27,7 @@ function getScenarioDetails()
         }
     }
 end
+
+function advanceVillain(params)
+    
+end
