@@ -1,8 +1,8 @@
 {
   "Save": {
     "SaveName": "MarvelChampionsLCG",
-    "EpochTime": 1664732468,
-    "Date": "10/2/2022 11:41:08 AM",
+    "EpochTime": 1664740702,
+    "Date": "10/2/2022 1:58:22 PM",
     "VersionNumber": "v13.2.2",
     "GameMode": "MarvelChampionsLCG",
     "GameType": "Game",
@@ -604,7 +604,6 @@
     "Selector_Tile_Bag.01ad59.json",
     "Modular_Sets_Bag.742346.json",
     "ScriptingTrigger.7977bc.json",
-    "Infinity_Gauntlet.c07076.json",
     "Cardpool_Data.843931.json",
     "Power_Stone.608543.json",
     "Reality_Stone.06c2fd.json",
