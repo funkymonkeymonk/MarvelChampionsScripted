@@ -1,0 +1,63 @@
+{
+  "Object": {
+    "GUID": "c573a8",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 63.25,
+      "posY": 0.5,
+      "posZ": 28.75,
+      "rotX": 0,
+      "rotY": 180,
+      "rotZ": 0,
+      "scaleX": 1.13,
+      "scaleY": 1,
+      "scaleZ": 1.13
+    },
+    "Nickname": "Ironheart",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.24998343,
+      "g": 0.24998343,
+      "b": 0.24998343
+    },
+    "Tags": [
+      "hero-selector-tile"
+    ],
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1831285606387160774/F0DCB814C3FDEBFAF0FCF46B16480C15E4C90C1B/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": true,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Ironheart.c573a8.lua",
+    "LuaScriptState": "#include ./Ironheart.c573a8.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}
