@@ -3,15 +3,15 @@
     "GUID": "0d33cc",
     "Name": "Custom_Model",
     "Transform": {
-      "posX": 66.26148,
-      "posY": 2.02786827,
-      "posZ": 95.5766,
-      "rotX": 0.7225019,
-      "rotY": 210.707779,
-      "rotZ": 4.50843525,
-      "scaleX": 0.4500004,
-      "scaleY": 0.4500004,
-      "scaleZ": 0.4500004
+      "posX": 3.43,
+      "posY": 24.86,
+      "posZ": 35.75,
+      "rotX": 90,
+      "rotY": 179.99,
+      "rotZ": 0,
+      "scaleX": 1.33,
+      "scaleY": 1.33,
+      "scaleZ": 1.33
     },
     "Nickname": "Time Stone",
     "Description": "Thumb",
@@ -22,7 +22,7 @@
       "z": 0
     },
     "ColorDiffuse": {
-      "r": 0.227916539,
+      "r": 0.227916449,
       "g": 0.658385932,
       "b": 0.011552
     },
