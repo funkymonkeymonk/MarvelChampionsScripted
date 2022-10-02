@@ -16,10 +16,15 @@
     "Nickname": "Table Blocker",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
-      "r": 0.263052285,
-      "g": 0.263052285,
-      "b": 0.263052285
+      "r": 0.263052166,
+      "g": 0.263052166,
+      "b": 0.263052166
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,

@@ -16,10 +16,15 @@
     "Nickname": "Green Player",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
-      "r": 0.191988349,
+      "r": 0.19198823,
       "g": 0.701,
-      "b": 0.16798833
+      "b": 0.167988211
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,

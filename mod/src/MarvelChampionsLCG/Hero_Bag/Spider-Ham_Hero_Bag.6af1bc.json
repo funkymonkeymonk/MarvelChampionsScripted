@@ -3,12 +3,12 @@
     "GUID": "6af1bc",
     "Name": "Bag",
     "Transform": {
-      "posX": 82.24979,
-      "posY": 2.37229,
-      "posZ": 99.2548,
-      "rotX": 358.674438,
-      "rotY": 0.0120736249,
-      "rotZ": 359.970337,
+      "posX": 84.11619,
+      "posY": 0.2974995,
+      "posZ": 99.75,
+      "rotX": -0.000007683885,
+      "rotY": 180,
+      "rotZ": -0.0000359014921,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -16,6 +16,11 @@
     "Nickname": "Spider-Ham Hero Bag",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0.7058823,
       "g": 0.366520882,

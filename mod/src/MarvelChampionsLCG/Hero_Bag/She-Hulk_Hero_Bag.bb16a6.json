@@ -3,12 +3,12 @@
     "GUID": "bb16a6",
     "Name": "Bag",
     "Transform": {
-      "posX": 84.15184,
-      "posY": 0.300802261,
+      "posX": 84.11619,
+      "posY": 0.2974996,
       "posZ": 99.75,
-      "rotX": 0.0000106715552,
+      "rotX": 0.0000106715652,
       "rotY": 179.999451,
-      "rotZ": -0.000103559054,
+      "rotZ": -0.000102905455,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -16,10 +16,15 @@
     "Nickname": "She-Hulk Hero Bag",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
-      "r": 0.106379725,
-      "g": 0.3814937,
-      "b": 0.09368434
+      "r": 0.106379606,
+      "g": 0.381493568,
+      "b": 0.0936842039
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,

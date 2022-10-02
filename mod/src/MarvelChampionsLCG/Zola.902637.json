@@ -16,10 +16,15 @@
     "Nickname": "Zola",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
-      "r": 0.249963313,
-      "g": 0.249963313,
-      "b": 0.249963313
+      "r": 0.249963164,
+      "g": 0.249963164,
+      "b": 0.249963164
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,

@@ -6,9 +6,9 @@
       "posX": 98.75,
       "posY": 0.5011277,
       "posZ": 101.25,
-      "rotX": -1.00204851e-7,
+      "rotX": -1.00204929e-7,
       "rotY": 89.9964447,
-      "rotZ": 6.5441435e-7,
+      "rotZ": 6.544143e-7,
       "scaleX": 3.34999752,
       "scaleY": 3.34999752,
       "scaleZ": 3.34999752
@@ -16,6 +16,11 @@
     "Nickname": "HeroPlacer",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0,
       "g": 0.1724138,

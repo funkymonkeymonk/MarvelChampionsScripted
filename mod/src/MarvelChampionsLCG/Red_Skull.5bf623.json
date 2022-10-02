@@ -16,10 +16,15 @@
     "Nickname": "Red Skull",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
-      "r": 0.249963641,
-      "g": 0.249963641,
-      "b": 0.249963641
+      "r": 0.249963522,
+      "g": 0.249963522,
+      "b": 0.249963522
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,

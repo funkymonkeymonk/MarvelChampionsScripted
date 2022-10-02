@@ -16,6 +16,11 @@
     "Nickname": "Tough",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 1,
       "g": 1,
@@ -64,6 +69,6 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
-    "CardCustom.d4e92c.3700.json"
+    "Custom_Token.442a29.json"
   ]
 }

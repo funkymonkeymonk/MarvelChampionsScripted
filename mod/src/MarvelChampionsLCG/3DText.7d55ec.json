@@ -3,11 +3,11 @@
     "GUID": "7d55ec",
     "Name": "3DText",
     "Transform": {
-      "posX": 91.61648,
-      "posY": 0.499274582,
-      "posZ": 14.2518625,
+      "posX": 91.6168442,
+      "posY": 0.499259353,
+      "posZ": 14.2519007,
       "rotX": 90,
-      "rotY": 2.35593567e-9,
+      "rotY": 2.357087e-9,
       "rotZ": 0,
       "scaleX": 1,
       "scaleY": 1,
@@ -16,6 +16,11 @@
     "Nickname": "",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 1,
       "g": 1,

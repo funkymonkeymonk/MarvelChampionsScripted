@@ -3,12 +3,12 @@
     "GUID": "460385",
     "Name": "Bag",
     "Transform": {
-      "posX": 84.15184,
-      "posY": 0.3008022,
+      "posX": 84.11619,
+      "posY": 0.2974996,
       "posZ": 99.75,
-      "rotX": -0.0000315894067,
+      "rotX": -0.0000328701171,
       "rotY": 180.0002,
-      "rotZ": 0.0000501770046,
+      "rotZ": 0.0000909876253,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -16,6 +16,11 @@
     "Nickname": "Nebula Hero Bag",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 1,
       "g": 0,

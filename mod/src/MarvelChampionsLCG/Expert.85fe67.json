@@ -6,7 +6,7 @@
       "posX": 81,
       "posY": -2.689702,
       "posZ": 1.25000036,
-      "rotX": 0.00005036474,
+      "rotX": 0.000050364768,
       "rotY": 180.021042,
       "rotZ": 0.0000430797954,
       "scaleX": 1,
@@ -16,6 +16,11 @@
     "Nickname": "Expert",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0.5,
       "g": 0.5,

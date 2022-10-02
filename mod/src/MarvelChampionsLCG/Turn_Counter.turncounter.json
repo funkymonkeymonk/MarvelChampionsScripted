@@ -3,12 +3,12 @@
     "GUID": "turncounter",
     "Name": "Custom_Tile",
     "Transform": {
-      "posX": -48.25,
-      "posY": 1.02,
-      "posZ": 33.25,
-      "rotX": -0.00363065838,
-      "rotY": 179.99765,
-      "rotZ": 358.626,
+      "posX": -48.249176,
+      "posY": 0.9652238,
+      "posZ": 33.2501,
+      "rotX": 1.68553775e-8,
+      "rotY": 179.994339,
+      "rotZ": -4.37922751e-7,
       "scaleX": 1.12515855,
       "scaleY": 1,
       "scaleZ": 1.12515855
@@ -16,10 +16,15 @@
     "Nickname": "Turn Counter",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
-      "r": 0.249983549,
-      "g": 0.249983549,
-      "b": 0.249983549
+      "r": 0.24998343,
+      "g": 0.24998343,
+      "b": 0.24998343
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,
@@ -47,8 +52,8 @@
         "Stretch": true
       }
     },
-    "LuaScript": "#include ./Turn_Counter.lua",
-    "LuaScriptState": "#include ./Turn_Counter.state.json",
+    "LuaScript": "#include ./Turn_Counter.turncounter.lua",
+    "LuaScriptState": "#include ./Turn_Counter.turncounter.state.json",
     "XmlUI": ""
   },
   "StatesPaths": {}

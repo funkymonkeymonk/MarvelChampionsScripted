@@ -3,12 +3,12 @@
     "GUID": "d0b9c9",
     "Name": "Bag",
     "Transform": {
-      "posX": 84.15184,
-      "posY": 0.300802231,
+      "posX": 84.11619,
+      "posY": 0.2974995,
       "posZ": 99.75,
-      "rotX": 0.0000260388479,
+      "rotX": 0.000074708194,
       "rotY": 179.990555,
-      "rotZ": -0.0000124117723,
+      "rotZ": 0.00004198523,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -16,6 +16,11 @@
     "Nickname": "Captain Marvel Hero Bag",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0.5067343,
       "g": 0.6157037,

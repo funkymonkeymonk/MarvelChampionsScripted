@@ -16,6 +16,11 @@
     "Nickname": "Klaw",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0.972549,
       "g": 0.109802343,

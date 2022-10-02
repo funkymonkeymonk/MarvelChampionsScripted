@@ -16,6 +16,11 @@
     "Nickname": "Scorpion's HP Counter",
     "Description": "Created by Unicorn\nTemplate by Hitch, Counter by JQTNguyen",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0.24998349,
       "g": 0.24998349,

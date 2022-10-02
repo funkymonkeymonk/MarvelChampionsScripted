@@ -3,12 +3,12 @@
     "GUID": "9541c0",
     "Name": "Bag",
     "Transform": {
-      "posX": 84.15184,
-      "posY": 0.300802231,
+      "posX": 84.11619,
+      "posY": 0.2974995,
       "posZ": 99.75,
-      "rotX": 0.00002475984,
+      "rotX": 0.0000247600383,
       "rotY": 179.995575,
-      "rotZ": 0.0000148716117,
+      "rotZ": 0.0000196623951,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -16,10 +16,15 @@
     "Nickname": "Black Widow Hero Bag",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0.886759639,
       "g": 0.4538846,
-      "b": 0.165264517
+      "b": 0.1652644
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,

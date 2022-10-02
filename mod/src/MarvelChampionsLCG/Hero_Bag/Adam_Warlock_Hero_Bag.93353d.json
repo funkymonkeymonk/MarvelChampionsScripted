@@ -3,12 +3,12 @@
     "GUID": "93353d",
     "Name": "Bag",
     "Transform": {
-      "posX": 84.15184,
-      "posY": 0.300802261,
+      "posX": 84.11619,
+      "posY": 0.297499627,
       "posZ": 99.75,
-      "rotX": 0.000021344078,
+      "rotX": 0.0000213440926,
       "rotY": 179.999878,
-      "rotZ": -0.000113097572,
+      "rotZ": -0.000112018759,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -16,6 +16,11 @@
     "Nickname": "Adam Warlock Hero Bag",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0.8,
       "g": 0,

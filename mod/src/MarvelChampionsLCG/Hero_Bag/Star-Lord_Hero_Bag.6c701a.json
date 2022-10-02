@@ -3,12 +3,12 @@
     "GUID": "6c701a",
     "Name": "Bag",
     "Transform": {
-      "posX": 84.15184,
-      "posY": 0.300802261,
+      "posX": 84.11619,
+      "posY": 0.297499627,
       "posZ": 99.75,
-      "rotX": 0.00007897361,
+      "rotX": 0.00007683924,
       "rotY": 179.99968,
-      "rotZ": 0.0000315041434,
+      "rotZ": 0.0000379074263,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -16,9 +16,14 @@
     "Nickname": "Star-Lord Hero Bag",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
-      "r": 0.294108421,
-      "g": 0.3716646,
+      "r": 0.2941083,
+      "g": 0.371664464,
       "b": 0.8901961
     },
     "LayoutGroupSortIndex": 0,

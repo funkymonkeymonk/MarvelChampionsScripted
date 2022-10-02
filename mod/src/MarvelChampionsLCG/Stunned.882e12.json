@@ -16,6 +16,11 @@
     "Nickname": "Stunned",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 1,
       "g": 1,
@@ -64,6 +69,6 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
-    "CardCustom.445eb8.3600.json"
+    "Custom_Token.37995f.json"
   ]
 }

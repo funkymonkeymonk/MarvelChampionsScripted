@@ -3,19 +3,24 @@
     "GUID": "fb7e21",
     "Name": "Custom_Token",
     "Transform": {
-      "posX": -22.4243355,
-      "posY": 1.18065941,
-      "posZ": 22.8568726,
-      "rotX": 0.0145909088,
-      "rotY": 0.0000306087459,
-      "rotZ": 0.005760893,
-      "scaleX": 0.476486176,
+      "posX": -8.046082,
+      "posY": 1.22721946,
+      "posZ": 35.9190369,
+      "rotX": 0.001696642,
+      "rotY": 0.02593264,
+      "rotZ": 0.0005076626,
+      "scaleX": 0.7,
       "scaleY": 1,
-      "scaleZ": 0.476486176
+      "scaleZ": 0.7
     },
     "Nickname": "",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 1,
       "g": 1,

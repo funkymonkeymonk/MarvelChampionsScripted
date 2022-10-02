@@ -16,6 +16,11 @@
     "Nickname": "Ironheart",
     "Description": "To level up Ironheart's identity, either hover over the card and type 1, 2, or 3, or right-click and change the state",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 1,
       "g": 1,

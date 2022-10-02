@@ -16,8 +16,13 @@
     "Nickname": "Venom Goblin Scenario Pack",
     "Description": "Scanned and imported by Unicorn",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
-      "r": 0.117994256,
+      "r": 0.117994137,
       "g": 0.53,
       "b": 1
     },

@@ -16,10 +16,15 @@
     "Nickname": "Infiltrate the Museum",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
-      "r": 0.2499749,
-      "g": 0.2499749,
-      "b": 0.2499749
+      "r": 0.249974787,
+      "g": 0.249974787,
+      "b": 0.249974787
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,

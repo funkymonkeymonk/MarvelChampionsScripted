@@ -16,6 +16,11 @@
     "Nickname": "Expert 2",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0.5,
       "g": 0.5,

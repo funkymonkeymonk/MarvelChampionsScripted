@@ -1,21 +1,26 @@
 {
   "Object": {
-    "GUID": "07c6c4",
+    "GUID": "232691",
     "Name": "Custom_Token",
     "Transform": {
-      "posX": 38.09836,
-      "posY": 2.07743454,
-      "posZ": 39.0464058,
-      "rotX": 0.00298255682,
-      "rotY": 180.003632,
-      "rotZ": 1.67530146e-7,
-      "scaleX": 2.05,
+      "posX": -3.287236,
+      "posY": 1.27720535,
+      "posZ": 35.5165329,
+      "rotX": 1.83263467e-8,
+      "rotY": 0.00105196284,
+      "rotZ": -0.00000161920821,
+      "scaleX": 0.89,
       "scaleY": 1,
-      "scaleZ": 2.05
+      "scaleZ": 0.89
     },
-    "Nickname": "Sinister Motives Campaign Log 1",
+    "Nickname": "",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 1,
       "g": 1,
@@ -24,8 +29,8 @@
     "LayoutGroupSortIndex": 0,
     "Value": 0,
     "Locked": false,
-    "Grid": true,
-    "Snap": true,
+    "Grid": false,
+    "Snap": false,
     "IgnoreFoW": false,
     "MeasureMovement": false,
     "DragSelectable": true,
@@ -36,19 +41,19 @@
     "HideWhenFaceDown": false,
     "Hands": false,
     "CustomImage": {
-      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1775004563407153936/1A2DCE93107BE42265442B5D47471A2150EF0543/",
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1470941757168316639/D0252AC3E40D9E1A76512D0F1F10E38C2D5EAFE6/",
       "ImageSecondaryURL": "",
       "ImageScalar": 1,
       "WidthScale": 0,
       "CustomToken": {
         "Thickness": 0.2,
-        "MergeDistancePixels": 15,
+        "MergeDistancePixels": 8.065111,
         "StandUp": false,
         "Stackable": false
       }
     },
-    "LuaScript": "#include ./Campaign_Log1.lua",
-    "LuaScriptState": "",
+    "LuaScript": "#include ./Custom_Token.232691.lua",
+    "LuaScriptState": "#include ./Custom_Token.232691.state.json",
     "XmlUI": ""
   },
   "StatesPaths": {}

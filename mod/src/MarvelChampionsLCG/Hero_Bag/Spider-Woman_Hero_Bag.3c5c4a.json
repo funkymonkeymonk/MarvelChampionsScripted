@@ -3,12 +3,12 @@
     "GUID": "3c5c4a",
     "Name": "Bag",
     "Transform": {
-      "posX": 84.15184,
-      "posY": 0.300802141,
+      "posX": 84.11619,
+      "posY": 0.297499418,
       "posZ": 99.75,
-      "rotX": 0.000004271189,
+      "rotX": -0.00000255902683,
       "rotY": 180.014282,
-      "rotZ": -0.0000190923838,
+      "rotZ": -0.0000181778232,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -16,10 +16,15 @@
     "Nickname": "Spider-Woman Hero Bag",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 1,
       "g": 0.8556752,
-      "b": 0.117613427
+      "b": 0.117613308
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,

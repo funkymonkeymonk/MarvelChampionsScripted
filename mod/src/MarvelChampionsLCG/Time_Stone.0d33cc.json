@@ -1,29 +1,33 @@
 {
   "Object": {
-    "GUID": "843931",
+    "GUID": "0d33cc",
     "Name": "Custom_Model",
     "Transform": {
-      "posX": 64.06733,
-      "posY": 2.03016424,
-      "posZ": 95.9357,
-      "rotX": 359.887268,
-      "rotY": 179.614822,
-      "rotZ": 359.876526,
-      "scaleX": 0.625000358,
-      "scaleY": 0.625000358,
-      "scaleZ": 0.625000358
+      "posX": 66.26148,
+      "posY": 2.02786827,
+      "posZ": 95.5766,
+      "rotX": 0.7225019,
+      "rotY": 210.707779,
+      "rotZ": 4.50843525,
+      "scaleX": 0.4500004,
+      "scaleY": 0.4500004,
+      "scaleZ": 0.4500004
     },
-    "Nickname": "Cardpool Data",
-    "Description": "Mind Stone - Base",
+    "Nickname": "Time Stone",
+    "Description": "Thumb",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
-      "r": 1.1248,
-      "g": 0.988842547,
+      "r": 0.227916539,
+      "g": 0.658385932,
       "b": 0.011552
     },
     "Tags": [
-      "Infinity Stone",
-      "CARDPOOL"
+      "Infinity Stone"
     ],
     "LayoutGroupSortIndex": 0,
     "Value": 0,
@@ -32,7 +36,7 @@
     "Snap": true,
     "IgnoreFoW": false,
     "MeasureMovement": false,
-    "DragSelectable": false,
+    "DragSelectable": true,
     "Autoraise": true,
     "Sticky": true,
     "Tooltip": true,
@@ -49,7 +53,8 @@
       "TypeIndex": 1,
       "CastShadows": true
     },
-    "LuaScript": "#include ./CardpoolData.lua",
+    "LuaScript": "",
+    "LuaScriptState": "",
     "XmlUI": ""
   },
   "StatesPaths": {}

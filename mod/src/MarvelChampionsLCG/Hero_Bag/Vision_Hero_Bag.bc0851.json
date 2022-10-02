@@ -3,12 +3,12 @@
     "GUID": "bc0851",
     "Name": "Bag",
     "Transform": {
-      "posX": 84.15184,
-      "posY": 0.300802171,
+      "posX": 84.11619,
+      "posY": 0.297499418,
       "posZ": 99.75,
-      "rotX": -0.0000102452,
+      "rotX": -0.0000102452423,
       "rotY": 180.0002,
-      "rotZ": 0.00001341176,
+      "rotZ": 0.0000134351594,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -16,6 +16,11 @@
     "Nickname": "Vision Hero Bag",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0.7058823,
       "g": 0.366520882,

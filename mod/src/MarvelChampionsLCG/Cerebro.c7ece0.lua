@@ -52,8 +52,9 @@ function deckReadCallback(req)
   end
 
   local slots = removeExcludedCards(JsonDeckRes.slots)
+  local deckScale = Vector(Global.getVar("CARD_SCALE_PLAYER"))
 
-  Global.call("createDeck", {cards = slots, position = deckPos})
+  Global.call("createDeck", {cards = slots, position = deckPos, scale = deckScale})
 end
 
 function removeExcludedCards(slots)

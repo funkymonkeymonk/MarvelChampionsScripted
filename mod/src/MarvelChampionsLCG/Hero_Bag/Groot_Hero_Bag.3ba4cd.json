@@ -3,12 +3,12 @@
     "GUID": "3ba4cd",
     "Name": "Bag",
     "Transform": {
-      "posX": 84.15184,
-      "posY": 0.300802261,
+      "posX": 84.11619,
+      "posY": 0.297499657,
       "posZ": 99.75,
-      "rotX": -0.000103733262,
+      "rotX": -0.00008623102,
       "rotY": 179.998764,
-      "rotZ": -0.00004461325,
+      "rotZ": -0.00003959424,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -16,8 +16,13 @@
     "Nickname": "Groot Hero Bag",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
-      "r": 0.352933049,
+      "r": 0.35293293,
       "g": 1,
       "b": 0.7254902
     },

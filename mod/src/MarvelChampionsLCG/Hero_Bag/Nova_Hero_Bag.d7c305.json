@@ -3,12 +3,12 @@
     "GUID": "d7c305",
     "Name": "Bag",
     "Transform": {
-      "posX": 84.15184,
-      "posY": 0.3008025,
+      "posX": 84.11619,
+      "posY": 0.2975,
       "posZ": 99.75,
-      "rotX": -0.000189963335,
+      "rotX": -0.000367122673,
       "rotY": 180,
-      "rotZ": -0.000167465245,
+      "rotZ": -0.000195497516,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -16,6 +16,11 @@
     "Nickname": "Nova Hero Bag",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0.7058823,
       "g": 0.366520882,

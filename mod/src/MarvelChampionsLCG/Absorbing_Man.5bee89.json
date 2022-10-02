@@ -8,7 +8,7 @@
       "posZ": 16.2500153,
       "rotX": -1.12705273e-7,
       "rotY": 180.018265,
-      "rotZ": -5.06961335e-8,
+      "rotZ": -5.06961619e-8,
       "scaleX": 1.11209941,
       "scaleY": 1,
       "scaleZ": 1.11209941
@@ -16,10 +16,15 @@
     "Nickname": "Absorbing Man",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
-      "r": 0.249961019,
-      "g": 0.249961019,
-      "b": 0.249961019
+      "r": 0.24996087,
+      "g": 0.24996087,
+      "b": 0.24996087
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,

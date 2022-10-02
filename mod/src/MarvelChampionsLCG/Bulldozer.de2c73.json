@@ -6,7 +6,7 @@
       "posX": -51.05396,
       "posY": 0.999074,
       "posZ": -163.072052,
-      "rotX": 0.02678086,
+      "rotX": 0.0267809033,
       "rotY": 180.538315,
       "rotZ": 359.9746,
       "scaleX": 0.0210777912,
@@ -16,10 +16,15 @@
     "Nickname": "Bulldozer",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
-      "r": 0.249953866,
-      "g": 0.249953866,
-      "b": 0.249953866
+      "r": 0.249953747,
+      "g": 0.249953747,
+      "b": 0.249953747
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,
