@@ -3,19 +3,24 @@
     "GUID": "b298c6",
     "Name": "Card",
     "Transform": {
-      "posX": 60.0000153,
-      "posY": 1.52087235,
-      "posZ": -12.0000105,
-      "rotX": 0.0190423764,
-      "rotY": 180.00116,
-      "rotZ": 0.0789744258,
-      "scaleX": 1,
+      "posX": -70.75,
+      "posY": 0.63869077,
+      "posZ": -1.75000072,
+      "rotX": 0.002903398,
+      "rotY": 180.00354,
+      "rotZ": -0.000300551124,
+      "scaleX": 1.27,
       "scaleY": 1,
-      "scaleZ": 1
+      "scaleZ": 1.27
     },
     "Nickname": "Compact Darts",
     "Description": "Scanned and imported by Unicorn",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0.713235259,
       "g": 0.713235259,
@@ -38,7 +43,7 @@
     "CardID": 972800,
     "SidewaysCard": false,
     "CustomDeck": {
-      "9716": {
+      "9728": {
         "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1834662762014742151/D96411C8FE3732D311E0A8AF12E2B29CEFB5CE4D/",
         "BackURL": "http://cloud-3.steamusercontent.com/ugc/1834662762014742919/91FD1D71652CAF96999C66B2D7AA760C80B06D45/",
         "NumWidth": 4,

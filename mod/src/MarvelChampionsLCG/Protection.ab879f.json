@@ -16,10 +16,15 @@
     "Nickname": "Protection",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
-      "r": 0.192151219,
+      "r": 0.192151159,
       "g": 0.7019608,
-      "b": 0.168621808
+      "b": 0.168621749
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,

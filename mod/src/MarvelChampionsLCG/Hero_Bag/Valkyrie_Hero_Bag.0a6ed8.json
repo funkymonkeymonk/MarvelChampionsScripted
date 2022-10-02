@@ -3,8 +3,8 @@
     "GUID": "0a6ed8",
     "Name": "Bag",
     "Transform": {
-      "posX": 84.15184,
-      "posY": 0.3008025,
+      "posX": 84.0889,
+      "posY": 0.294974685,
       "posZ": 99.75,
       "rotX": -0.000117394375,
       "rotY": 179.999741,
@@ -16,6 +16,11 @@
     "Nickname": "Valkyrie Hero Bag",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0.7058823,
       "g": 0.366520882,

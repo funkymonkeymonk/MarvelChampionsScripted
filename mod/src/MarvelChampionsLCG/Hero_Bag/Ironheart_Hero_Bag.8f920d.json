@@ -3,12 +3,12 @@
     "GUID": "8f920d",
     "Name": "Bag",
     "Transform": {
-      "posX": 84.15184,
-      "posY": 0.300802231,
+      "posX": 84.0889,
+      "posY": 0.294974357,
       "posZ": 99.75,
-      "rotX": -0.0000495185232,
+      "rotX": -0.00007385097,
       "rotY": 180,
-      "rotZ": -0.00008068272,
+      "rotZ": -0.00008613725,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -16,6 +16,11 @@
     "Nickname": "Ironheart Hero Bag",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0.7058823,
       "g": 0.366520882,

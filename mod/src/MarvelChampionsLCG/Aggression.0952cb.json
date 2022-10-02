@@ -16,10 +16,15 @@
     "Nickname": "Aggression",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0.854901969,
-      "g": 0.0980339,
-      "b": 0.0941119
+      "g": 0.09803385,
+      "b": 0.09411185
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,

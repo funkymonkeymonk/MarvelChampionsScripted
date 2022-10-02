@@ -16,6 +16,11 @@
     "Nickname": "Absorbing Man",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0.623529434,
       "g": 0,

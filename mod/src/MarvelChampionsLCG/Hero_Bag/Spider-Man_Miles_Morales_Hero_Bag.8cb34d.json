@@ -3,12 +3,12 @@
     "GUID": "8cb34d",
     "Name": "Bag",
     "Transform": {
-      "posX": 84.15184,
-      "posY": 0.300819159,
+      "posX": 84.0889,
+      "posY": 0.295002043,
       "posZ": 99.75,
-      "rotX": 0.020500347,
+      "rotX": 0.0205305535,
       "rotY": 180.000122,
-      "rotZ": 0.0000460274423,
+      "rotZ": 0.00007659158,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -16,6 +16,11 @@
     "Nickname": "Spider-Man (Miles Morales) Hero Bag",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0.7058823,
       "g": 0.366520882,

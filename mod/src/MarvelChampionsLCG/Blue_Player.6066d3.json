@@ -7,7 +7,7 @@
       "posY": 0.4,
       "posZ": -30,
       "rotX": 0.07270083,
-      "rotY": 0.00186859991,
+      "rotY": 0.00186859909,
       "rotZ": 0.0000130220378,
       "scaleX": 1.49999964,
       "scaleY": 1.49999964,
@@ -16,8 +16,13 @@
     "Nickname": "Blue Player",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
-      "r": 0.121556319,
+      "r": 0.12155626,
       "g": 0.5294118,
       "b": 1
     },

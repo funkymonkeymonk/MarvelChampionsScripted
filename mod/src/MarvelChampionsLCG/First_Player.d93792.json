@@ -6,9 +6,9 @@
       "posX": -49.25,
       "posY": 1.06522369,
       "posZ": 36.25,
-      "rotX": -7.58790861e-8,
+      "rotX": -1.310622e-7,
       "rotY": 179.978317,
-      "rotZ": -4.001503e-8,
+      "rotZ": 8.009048e-8,
       "scaleX": 0.5,
       "scaleY": 1,
       "scaleZ": 0.5
@@ -16,6 +16,11 @@
     "Nickname": "First Player",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 1,
       "g": 1,

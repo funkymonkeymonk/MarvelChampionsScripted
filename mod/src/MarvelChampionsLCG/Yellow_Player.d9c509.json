@@ -6,7 +6,7 @@
       "posX": 39,
       "posY": 0.4,
       "posZ": -30,
-      "rotX": -8.17083333e-7,
+      "rotX": -8.1708373e-7,
       "rotY": 359.689117,
       "rotZ": -0.00000458874456,
       "scaleX": 1.49999964,
@@ -16,10 +16,15 @@
     "Nickname": "Yellow Player",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0.905,
       "g": 0.898,
-      "b": 0.171988338
+      "b": 0.171988279
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,

@@ -16,6 +16,11 @@
     "Nickname": "Tower Defense",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0.439215,
       "g": 1,

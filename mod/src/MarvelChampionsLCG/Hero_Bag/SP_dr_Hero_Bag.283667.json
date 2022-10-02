@@ -3,12 +3,12 @@
     "GUID": "283667",
     "Name": "Bag",
     "Transform": {
-      "posX": 81.75087,
-      "posY": 2.399496,
-      "posZ": 100.249168,
-      "rotX": 0.0480112843,
-      "rotY": -0.000973435352,
-      "rotZ": 0.05005229,
+      "posX": 84.0889,
+      "posY": 0.294974148,
+      "posZ": 99.75,
+      "rotX": 0.00000128064812,
+      "rotY": 180,
+      "rotZ": 8.68773157e-7,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -16,6 +16,11 @@
     "Nickname": "SP//dr Hero Bag",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0.7058823,
       "g": 0.366520882,

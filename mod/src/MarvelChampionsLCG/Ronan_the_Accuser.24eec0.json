@@ -6,7 +6,7 @@
       "posX": 93.25001,
       "posY": 0.495001525,
       "posZ": 21.2500057,
-      "rotX": -0.0000016460599,
+      "rotX": -0.00000164606035,
       "rotY": 180.0263,
       "rotZ": -3.76575883e-7,
       "scaleX": 1.11,
@@ -16,10 +16,15 @@
     "Nickname": "Ronan the Accuser",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
-      "r": 0.249974847,
-      "g": 0.249974847,
-      "b": 0.249974847
+      "r": 0.249974787,
+      "g": 0.249974787,
+      "b": 0.249974787
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,

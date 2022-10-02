@@ -3,12 +3,12 @@
     "GUID": "58c39d",
     "Name": "Bag",
     "Transform": {
-      "posX": 84.15184,
-      "posY": 0.300802141,
+      "posX": 84.0889,
+      "posY": 0.294974178,
       "posZ": 99.75,
-      "rotX": -0.00000811144,
+      "rotX": -1.25896971e-9,
       "rotY": 179.9959,
-      "rotZ": -0.0000189092589,
+      "rotZ": -0.0000351411145,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -16,8 +16,13 @@
     "Nickname": "Hawkeye Hero Bag",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
-      "r": 0.3768625,
+      "r": 0.376862437,
       "g": 0,
       "b": 0.984320462
     },

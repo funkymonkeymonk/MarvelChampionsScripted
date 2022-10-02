@@ -16,6 +16,11 @@
     "Nickname": "Loki",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0.02745098,
       "g": 0.5333333,

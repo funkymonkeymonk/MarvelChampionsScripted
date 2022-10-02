@@ -3,12 +3,12 @@
     "GUID": "77e897",
     "Name": "Bag",
     "Transform": {
-      "posX": 84.15184,
-      "posY": 0.300829232,
+      "posX": 84.0889,
+      "posY": 0.295018673,
       "posZ": 99.75,
-      "rotX": 0.03255668,
+      "rotX": 0.0326035134,
       "rotY": 180.004456,
-      "rotZ": -0.000260887347,
+      "rotZ": -0.000257182983,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -16,10 +16,15 @@
     "Nickname": "Spider-Man (Peter Parker) Hero Bag",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0.9982578,
-      "g": 0.4434375,
-      "b": 0.4434375
+      "g": 0.4434374,
+      "b": 0.4434374
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,

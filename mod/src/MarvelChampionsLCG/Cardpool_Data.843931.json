@@ -16,14 +16,19 @@
     "Nickname": "Cardpool Data",
     "Description": "Mind Stone - Base",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 1.1248,
       "g": 0.988842547,
       "b": 0.011552
     },
     "Tags": [
-      "Infinity Stone",
-      "CARDPOOL"
+      "CARDPOOL",
+      "Infinity Stone"
     ],
     "LayoutGroupSortIndex": 0,
     "Value": 0,
@@ -49,7 +54,8 @@
       "TypeIndex": 1,
       "CastShadows": true
     },
-    "LuaScript": "#include ./CardpoolData.lua",
+    "LuaScript": "#include ./Cardpool_Data.843931.lua",
+    "LuaScriptState": "",
     "XmlUI": ""
   },
   "StatesPaths": {}

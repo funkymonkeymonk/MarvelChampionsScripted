@@ -1,25 +1,30 @@
 {
   "Object": {
-    "GUID": "608543",
+    "GUID": "0d33cc",
     "Name": "Custom_Model",
     "Transform": {
-      "posX": 65.37799,
-      "posY": 2.15362763,
-      "posZ": 96.82259,
-      "rotX": 359.874054,
-      "rotY": 191.897964,
-      "rotZ": 1.0001018,
-      "scaleX": 0.5000004,
-      "scaleY": 0.5000004,
-      "scaleZ": 0.5000004
+      "posX": 66.26148,
+      "posY": 2.02786827,
+      "posZ": 95.5766,
+      "rotX": 0.7225019,
+      "rotY": 210.707779,
+      "rotZ": 4.50843525,
+      "scaleX": 0.4500004,
+      "scaleY": 0.4500004,
+      "scaleZ": 0.4500004
     },
-    "Nickname": "Power Stone",
-    "Description": "Index",
+    "Nickname": "Time Stone",
+    "Description": "Thumb",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
-      "r": 0.662932038,
-      "g": 0.114431955,
-      "b": 0.77913475
+      "r": 0.227916658,
+      "g": 0.658385932,
+      "b": 0.011552
     },
     "Tags": [
       "Infinity Stone"

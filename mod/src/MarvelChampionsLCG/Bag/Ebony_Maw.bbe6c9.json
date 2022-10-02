@@ -16,6 +16,11 @@
     "Nickname": "Ebony Maw",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0.479094148,
       "g": 0.4722767,

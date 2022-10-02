@@ -16,6 +16,11 @@
     "Nickname": "Hall of Lokis",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 1,
       "g": 0.8364319,

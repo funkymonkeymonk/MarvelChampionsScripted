@@ -3,12 +3,12 @@
     "GUID": "c8c4d3",
     "Name": "Bag",
     "Transform": {
-      "posX": 84.15184,
-      "posY": 0.300802141,
+      "posX": 84.0889,
+      "posY": 0.294974118,
       "posZ": 99.75,
-      "rotX": -2.928007e-11,
+      "rotX": 0.00000426866427,
       "rotY": 179.999619,
-      "rotZ": -0.000008886127,
+      "rotZ": -0.0000489130871,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -16,6 +16,11 @@
     "Nickname": "Ant-Man Hero Bag",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0.688153446,
       "g": 0.688153446,

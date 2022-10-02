@@ -8,7 +8,7 @@
       "posZ": 18.7500153,
       "rotX": -7.00913347e-7,
       "rotY": 179.978622,
-      "rotZ": -4.127304e-7,
+      "rotZ": -4.12730515e-7,
       "scaleX": 1.11209941,
       "scaleY": 1,
       "scaleZ": 1.11209941
@@ -16,10 +16,15 @@
     "Nickname": "Crossbones",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
-      "r": 0.249961376,
-      "g": 0.249961376,
-      "b": 0.249961376
+      "r": 0.249961317,
+      "g": 0.249961317,
+      "b": 0.249961317
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,

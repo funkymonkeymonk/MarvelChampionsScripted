@@ -3,12 +3,12 @@
     "GUID": "63bb90",
     "Name": "Bag",
     "Transform": {
-      "posX": 84.15184,
-      "posY": 0.300802231,
+      "posX": 84.0889,
+      "posY": 0.294974118,
       "posZ": 99.75,
-      "rotX": -0.000003842146,
+      "rotX": -0.000007684099,
       "rotY": 179.998367,
-      "rotZ": -0.0000133450731,
+      "rotZ": -0.0000127897438,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -16,6 +16,11 @@
     "Nickname": "Hulk Hero Bag",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0.5493784,
       "g": 0.994773448,

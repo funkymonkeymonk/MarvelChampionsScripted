@@ -3,12 +3,12 @@
     "GUID": "4db435",
     "Name": "Bag",
     "Transform": {
-      "posX": 84.15184,
-      "posY": 0.300802231,
+      "posX": 84.0889,
+      "posY": 0.294974267,
       "posZ": 99.75,
-      "rotX": -0.0000443957761,
+      "rotX": -0.000034150733,
       "rotY": 179.999191,
-      "rotZ": -0.000002579321,
+      "rotZ": 0.0000015693762,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -16,6 +16,11 @@
     "Nickname": "Quicksilver Hero Bag",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0,
       "g": 0.8156863,

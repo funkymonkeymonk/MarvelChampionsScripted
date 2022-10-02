@@ -16,6 +16,11 @@
     "Nickname": "Thunderball",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0.249983251,
       "g": 0.249983251,

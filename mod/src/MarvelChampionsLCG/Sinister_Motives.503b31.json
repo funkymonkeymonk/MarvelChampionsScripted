@@ -5,7 +5,7 @@
     "Transform": {
       "posX": -64.25,
       "posY": 0.5,
-      "posZ": 29.0,
+      "posZ": 29,
       "rotX": 0,
       "rotY": 180,
       "rotZ": 0,
@@ -16,6 +16,11 @@
     "Nickname": "Sinister Motives",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 1,
       "g": 1,
@@ -67,12 +72,12 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
+    "Sinister_Motives_S.H.I.E.L.D._Tech.6948b2.json",
     "Custom_PDF.16c9b3.json",
-    "Custom_PDF.07c6c4.json",
-    "Custom_PDF.38061c.json",
+    "Sinister_Motives_Campaign_Log_1.07c6c4.json",
+    "Sinister_Motives_Campaign_Log_2.38061c.json",
     "Sinister_Motives_Bad_Publicity.e38fee.json",
     "Sinister_Motives_Community_Service.717afd.json",
-    "Sinister_Motives_S.H.I.E.L.D._Tech.6948b2.json",
     "Snitches_Get_Stitches.9dd8b9.972500.json"
   ]
 }

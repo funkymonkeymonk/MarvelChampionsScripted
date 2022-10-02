@@ -3,12 +3,12 @@
     "GUID": "b72fe1",
     "Name": "Bag",
     "Transform": {
-      "posX": 84.15184,
-      "posY": 0.300802261,
+      "posX": 84.0889,
+      "posY": 0.294974357,
       "posZ": 99.75,
-      "rotX": 0.00008324434,
+      "rotX": 0.00008324405,
       "rotY": 179.9951,
-      "rotZ": 0.00004633669,
+      "rotZ": 0.0000377940451,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -16,9 +16,14 @@
     "Nickname": "Black Panther Hero Bag",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
-      "r": 0.3607389,
-      "g": 0.065520145,
+      "r": 0.360738844,
+      "g": 0.06552009,
       "b": 0.5452962
     },
     "LayoutGroupSortIndex": 0,

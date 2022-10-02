@@ -3,12 +3,12 @@
     "GUID": "0b8475",
     "Name": "Bag",
     "Transform": {
-      "posX": 84.15184,
-      "posY": 0.300802261,
+      "posX": 84.0889,
+      "posY": 0.294974357,
       "posZ": 99.75,
-      "rotX": 0.00009306284,
+      "rotX": 0.00009306298,
       "rotY": 179.994522,
-      "rotZ": 0.000052457046,
+      "rotZ": 0.00005365604,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -16,6 +16,11 @@
     "Nickname": "Iron Man Hero Bag",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0.831010342,
       "g": 0.8279045,

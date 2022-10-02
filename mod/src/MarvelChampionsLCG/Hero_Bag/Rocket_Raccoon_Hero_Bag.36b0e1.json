@@ -3,12 +3,12 @@
     "GUID": "36b0e1",
     "Name": "Bag",
     "Transform": {
-      "posX": 84.15184,
-      "posY": 0.300802559,
+      "posX": 84.0889,
+      "posY": 0.2949747,
       "posZ": 99.75,
-      "rotX": 0.000384620536,
+      "rotX": 0.000391452137,
       "rotY": 180.002167,
-      "rotZ": 0.0000559689761,
+      "rotZ": 0.0000342948842,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -16,6 +16,11 @@
     "Nickname": "Rocket Raccoon Hero Bag",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0.5607843,
       "g": 0.5607843,

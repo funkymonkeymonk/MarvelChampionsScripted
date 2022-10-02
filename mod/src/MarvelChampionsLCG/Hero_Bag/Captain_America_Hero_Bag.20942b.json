@@ -3,12 +3,12 @@
     "GUID": "20942b",
     "Name": "Bag",
     "Transform": {
-      "posX": 84.15184,
-      "posY": 0.300802231,
+      "posX": 84.0889,
+      "posY": 0.2949743,
       "posZ": 99.75,
-      "rotX": 0.00000384146733,
+      "rotX": 0.0000064027704,
       "rotY": 179.999481,
-      "rotZ": -0.000105301544,
+      "rotZ": -0.000104414532,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -16,8 +16,13 @@
     "Nickname": "Captain America Hero Bag",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
-      "r": 0.274551451,
+      "r": 0.2745514,
       "g": 0.6404056,
       "b": 0.9912891
     },

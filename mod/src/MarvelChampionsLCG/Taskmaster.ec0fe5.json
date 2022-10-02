@@ -16,10 +16,15 @@
     "Nickname": "Taskmaster",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
-      "r": 0.249963015,
-      "g": 0.249963015,
-      "b": 0.249963015
+      "r": 0.249962956,
+      "g": 0.249962956,
+      "b": 0.249962956
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,

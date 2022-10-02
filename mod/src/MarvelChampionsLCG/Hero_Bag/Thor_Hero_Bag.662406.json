@@ -3,12 +3,12 @@
     "GUID": "662406",
     "Name": "Bag",
     "Transform": {
-      "posX": 84.15184,
-      "posY": 0.3008022,
+      "posX": 84.0889,
+      "posY": 0.294974267,
       "posZ": 99.75,
-      "rotX": 0.0000401259858,
+      "rotX": 0.00004738248,
       "rotY": 179.995987,
-      "rotZ": -0.0000315908146,
+      "rotZ": -0.00004778602,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -16,6 +16,11 @@
     "Nickname": "Thor Hero Bag",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0.5875058,
       "g": 0.8929566,

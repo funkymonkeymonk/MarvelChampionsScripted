@@ -8,7 +8,7 @@
       "posZ": 97.41956,
       "rotX": 359.983917,
       "rotY": 180.188171,
-      "rotZ": 0.289386064,
+      "rotZ": 0.289386034,
       "scaleX": 0.5000004,
       "scaleY": 0.5000004,
       "scaleZ": 0.5000004
@@ -16,9 +16,14 @@
     "Nickname": "Reality Stone",
     "Description": "Ring",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 1.06010449,
-      "g": 0.114431955,
+      "g": 0.114431836,
       "b": 0.011552
     },
     "Tags": [

@@ -6,7 +6,7 @@
       "posX": -35.61,
       "posY": 1.06121719,
       "posZ": 28.59,
-      "rotX": 8.48706563e-8,
+      "rotX": 8.4870706e-8,
       "rotY": 179.966171,
       "rotZ": -1.09354321e-8,
       "scaleX": 0.577605247,
@@ -16,6 +16,11 @@
     "Nickname": "",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 1,
       "g": 1,

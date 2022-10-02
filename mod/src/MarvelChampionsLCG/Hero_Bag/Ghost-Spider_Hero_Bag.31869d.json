@@ -3,12 +3,12 @@
     "GUID": "31869d",
     "Name": "Bag",
     "Transform": {
-      "posX": 84.15184,
-      "posY": 0.300802141,
+      "posX": 84.0889,
+      "posY": 0.294974118,
       "posZ": 99.75,
-      "rotX": -4.2689004e-7,
+      "rotX": -4.26889926e-7,
       "rotY": 180.000076,
-      "rotZ": 0.000009744953,
+      "rotZ": 0.0000100717753,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -16,6 +16,11 @@
     "Nickname": "Ghost-Spider Hero Bag",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0.7058823,
       "g": 0.366520882,

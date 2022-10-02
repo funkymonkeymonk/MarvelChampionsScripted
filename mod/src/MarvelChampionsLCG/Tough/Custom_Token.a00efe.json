@@ -1,21 +1,26 @@
 {
   "Object": {
-    "GUID": "38061c",
+    "GUID": "a00efe",
     "Name": "Custom_Token",
     "Transform": {
-      "posX": -70.25,
-      "posY": 2.58520079,
-      "posZ": 29.75,
-      "rotX": 0.00298242085,
-      "rotY": 180.000259,
-      "rotZ": 2.14422357e-7,
-      "scaleX": 2.05,
+      "posX": 27.25,
+      "posY": 1.21536446,
+      "posZ": -27.75,
+      "rotX": 0.00000116065212,
+      "rotY": -0.0050924574,
+      "rotZ": -0.00000438290272,
+      "scaleX": 0.4,
       "scaleY": 1,
-      "scaleZ": 2.05
+      "scaleZ": 0.4
     },
-    "Nickname": "Sinister Motives Campaign Log 2",
+    "Nickname": "",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 1,
       "g": 1,
@@ -36,18 +41,18 @@
     "HideWhenFaceDown": false,
     "Hands": false,
     "CustomImage": {
-      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1775004563407155902/364AA2155850F8CDBEC52CB2C36EC7133594C41C/",
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1779509151657441823/3F15F4C635C0278E7E115962CAA93CB25EF1B1B2/",
       "ImageSecondaryURL": "",
       "ImageScalar": 1,
       "WidthScale": 0,
       "CustomToken": {
-        "Thickness": 0.2,
-        "MergeDistancePixels": 15,
+        "Thickness": 0.1,
+        "MergeDistancePixels": 25,
         "StandUp": false,
         "Stackable": false
       }
     },
-    "LuaScript": "#include ./Campaign_Log2.lua",
+    "LuaScript": "",
     "LuaScriptState": "",
     "XmlUI": ""
   },

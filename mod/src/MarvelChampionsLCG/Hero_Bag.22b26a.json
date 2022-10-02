@@ -16,6 +16,11 @@
     "Nickname": "Hero Bag",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0.7058823,
       "g": 0.366520882,
@@ -69,7 +74,9 @@
     "Rocket_Raccoon_Hero_Bag.36b0e1.json",
     "Scarlet_Witch_Hero_Bag.9ec76d.json",
     "She-Hulk_Hero_Bag.bb16a6.json",
+    "SP_dr_Hero_Bag.283667.json",
     "Spectrum_Hero_Bag.b98216.json",
+    "Spider-Ham_Hero_Bag.6af1bc.json",
     "Spider-Man_Miles_Morales_Hero_Bag.8cb34d.json",
     "Spider-Man_Peter_Parker_Hero_Bag.77e897.json",
     "Spider-Woman_Hero_Bag.3c5c4a.json",
@@ -79,8 +86,6 @@
     "Venom_Hero_Bag.6977bb.json",
     "Vision_Hero_Bag.bc0851.json",
     "War_Machine_Hero_Bag.84aae1.json",
-    "Wasp_Hero_Bag.df502b.json",
-    "SP_dr_Hero_Bag.283667.json",
-    "Spider-Ham_Hero_Bag.6af1bc.json"
+    "Wasp_Hero_Bag.df502b.json"
   ]
 }

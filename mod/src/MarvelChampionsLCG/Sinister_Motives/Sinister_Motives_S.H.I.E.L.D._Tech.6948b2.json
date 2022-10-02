@@ -3,19 +3,24 @@
     "GUID": "6948b2",
     "Name": "Deck",
     "Transform": {
-      "posX": -62.7499847,
-      "posY": 2.63284159,
-      "posZ": 27.7499962,
-      "rotX": 0.00612068735,
-      "rotY": 180.001038,
-      "rotZ": 0.9634782,
-      "scaleX": 1,
+      "posX": 46.3365669,
+      "posY": 2.28076124,
+      "posZ": 12.8616314,
+      "rotX": 0.00298262876,
+      "rotY": 180.00354,
+      "rotZ": 1.84732173e-7,
+      "scaleX": 1.27,
       "scaleY": 1,
-      "scaleZ": 1
+      "scaleZ": 1.27
     },
     "Nickname": "Sinister Motives S.H.I.E.L.D. Tech",
     "Description": "Scanned and imported by Unicorn",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0.713235259,
       "g": 0.713235259,

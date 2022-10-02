@@ -3,8 +3,8 @@
     "GUID": "84aae1",
     "Name": "Bag",
     "Transform": {
-      "posX": 84.15184,
-      "posY": 0.300802231,
+      "posX": 84.0889,
+      "posY": 0.294974238,
       "posZ": 99.75,
       "rotX": -0.0000414072638,
       "rotY": 179.986771,
@@ -16,6 +16,11 @@
     "Nickname": "War Machine Hero Bag",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0.449917257,
       "g": 0.9300961,

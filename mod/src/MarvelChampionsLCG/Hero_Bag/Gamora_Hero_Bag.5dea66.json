@@ -3,12 +3,12 @@
     "GUID": "5dea66",
     "Name": "Bag",
     "Transform": {
-      "posX": 84.15184,
-      "posY": 0.30080232,
+      "posX": 84.0889,
+      "posY": 0.294974446,
       "posZ": 99.75,
-      "rotX": 0.000150263077,
+      "rotX": 0.000150263222,
       "rotY": 180.000076,
-      "rotZ": 0.0000659003,
+      "rotZ": 0.0000517514782,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -16,6 +16,11 @@
     "Nickname": "Gamora Hero Bag",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0.977351964,
       "g": 0.867235541,

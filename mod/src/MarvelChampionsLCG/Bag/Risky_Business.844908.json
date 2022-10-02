@@ -16,6 +16,11 @@
     "Nickname": "Risky Business",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 0.102417208,
       "g": 0.6916378,

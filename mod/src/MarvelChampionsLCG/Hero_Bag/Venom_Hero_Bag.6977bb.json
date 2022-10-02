@@ -3,12 +3,12 @@
     "GUID": "6977bb",
     "Name": "Bag",
     "Transform": {
-      "posX": 84.15184,
-      "posY": 0.3008022,
+      "posX": 84.0889,
+      "posY": 0.294974267,
       "posZ": 99.75,
-      "rotX": -0.00007598503,
+      "rotX": -0.000100744423,
       "rotY": 179.9992,
-      "rotZ": 0.00000321715515,
+      "rotZ": 0.0000106077605,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -16,6 +16,11 @@
     "Nickname": "Venom Hero Bag",
     "Description": "",
     "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "ColorDiffuse": {
       "r": 1,
       "g": 1,
