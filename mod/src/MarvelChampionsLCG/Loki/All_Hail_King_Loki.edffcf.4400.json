@@ -1,0 +1,61 @@
+{
+  "Object": {
+    "GUID": "edffcf",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 3.75,
+      "posY": 3.28761816,
+      "posZ": 59.25,
+      "rotX": -4.51499318e-8,
+      "rotY": 90.00001,
+      "rotZ": 3.074206e-7,
+      "scaleX": 2.93,
+      "scaleY": 1,
+      "scaleZ": 2.93
+    },
+    "Nickname": "All Hail King Loki",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 4400,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "44": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1711917883467827525/EBF2099B7C1F4DD82BD9F8BBC9C0952C649E3020/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1711917883467827863/7618168746F09195314B18444DEEFD8F84378EF9/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

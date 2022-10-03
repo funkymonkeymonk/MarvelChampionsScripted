@@ -1,0 +1,61 @@
+{
+  "Object": {
+    "GUID": "7fca5a",
+    "Name": "Custom_Assetbundle_Bag",
+    "Transform": {
+      "posX": 56.8847961,
+      "posY": 2.14759016,
+      "posZ": 32.6654434,
+      "rotX": -2.02378672e-7,
+      "rotY": 89.99998,
+      "rotZ": -1.92355234e-8,
+      "scaleX": 0.5500004,
+      "scaleY": 0.5500004,
+      "scaleZ": 0.5500004
+    },
+    "Nickname": "",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.838235259,
+      "g": 0.838235259,
+      "b": 0.838235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Number": 0,
+    "CustomAssetbundle": {
+      "AssetbundleURL": "http://chry.me/up/new_blackhole4.unity3d",
+      "AssetbundleSecondaryURL": "",
+      "MaterialIndex": 2,
+      "TypeIndex": 6,
+      "LoopingEffectIndex": 1
+    },
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Custom_Assetbundle_Bag.7fca5a.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

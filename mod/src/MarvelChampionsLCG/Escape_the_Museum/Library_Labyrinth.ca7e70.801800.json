@@ -1,0 +1,61 @@
+{
+  "Object": {
+    "GUID": "ca7e70",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 63.1153221,
+      "posY": 1.99083889,
+      "posZ": 35.80189,
+      "rotX": 8.50307e-8,
+      "rotY": 180,
+      "rotZ": 1.45509276e-7,
+      "scaleX": 2.12,
+      "scaleY": 1,
+      "scaleZ": 2.12
+    },
+    "Nickname": "Library Labyrinth",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 801800,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "8018": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1731045816074754760/08E3CA7CFD0581DE91C211CBDC31DFBE3402DA39/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1731045816074752636/AA1DEDEBE51E4F3685E61A25BE087F8812355FBB/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

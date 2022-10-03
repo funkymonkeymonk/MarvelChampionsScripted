@@ -1,0 +1,61 @@
+{
+  "Object": {
+    "GUID": "a604e0",
+    "Name": "Card",
+    "Transform": {
+      "posX": -79.25,
+      "posY": 0.611701369,
+      "posZ": 4.749998,
+      "rotX": 0.00166049891,
+      "rotY": 179.999741,
+      "rotZ": -0.00124197756,
+      "scaleX": 2.12,
+      "scaleY": 1,
+      "scaleZ": 2.12
+    },
+    "Nickname": "Rogue Vessel",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 798809,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "7988": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1731045816072501957/BF476B91EB620043C822C64E6DC73AFB1853C222/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/787503561778586465/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 7,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

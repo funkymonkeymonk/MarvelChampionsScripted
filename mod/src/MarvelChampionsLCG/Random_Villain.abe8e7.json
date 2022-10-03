@@ -1,0 +1,78 @@
+{
+  "Object": {
+    "GUID": "abe8e7",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 87.75,
+      "posY": -2.69,
+      "posZ": 13.75,
+      "rotX": 0.0000234783565,
+      "rotY": 179.999817,
+      "rotZ": -0.0000155344551,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Random Villain",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 0,
+      "b": 0
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Random_Villain.abe8e7.lua",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Mystery_Bag.d3c34e.json",
+    "Mystery_Bag.116c0e.json",
+    "Mystery_Bag.41edd0.json",
+    "Mystery_Bag.d5cd26.json",
+    "Mystery_Bag.19c93b.json",
+    "Mystery_Bag.486049.json",
+    "Mystery_Bag.fcc400.json",
+    "Mystery_Bag.b88aa3.json",
+    "Mystery_Bag.832baa.json",
+    "Mystery_Bag.67a9d4.json",
+    "Mystery_Bag.8b46d7.json",
+    "Mystery_Bag.984493.json",
+    "Mystery_Bag.ce6091.json",
+    "Mystery_Bag.64eff9.json",
+    "Mystery_Bag.b97ba2.json",
+    "Mystery_Bag.c0b373.json",
+    "Mystery_Bag.b5810a.json",
+    "Mystery_Bag.db7117.json",
+    "Mystery_Bag.134bcc.json",
+    "Mystery_Bag.65082c.json",
+    "Mystery_Bag.cbf5f6.json",
+    "Mystery_Bag.c14002.json"
+  ]
+}

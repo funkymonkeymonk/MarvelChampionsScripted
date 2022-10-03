@@ -1,0 +1,61 @@
+{
+  "Object": {
+    "GUID": "4ed0e0",
+    "Name": "Card",
+    "Transform": {
+      "posX": -55.2500267,
+      "posY": 0.5425532,
+      "posZ": 79.24999,
+      "rotX": 0.0107659986,
+      "rotY": 179.999969,
+      "rotZ": 359.977173,
+      "scaleX": 3.64,
+      "scaleY": 1,
+      "scaleZ": 3.64
+    },
+    "Nickname": "Corvus Glaive",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 2103,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "21": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1711917883467632916/24667CD487A4BF7198BBE66FBC155D236E86C1A8/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1666860958377475324/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+        "NumWidth": 3,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

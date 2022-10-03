@@ -1,0 +1,84 @@
+{
+  "Object": {
+    "GUID": "c0d33c",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 89.5987854,
+      "posY": 3.86693716,
+      "posZ": -3.536187,
+      "rotX": -4.8390433e-8,
+      "rotY": 180,
+      "rotZ": 180,
+      "scaleX": 1.93625021,
+      "scaleY": 1,
+      "scaleZ": 1.93625021
+    },
+    "Nickname": "A Mess of Things Modular Set",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": true,
+    "DeckIDs": [
+      972203,
+      972202,
+      972201,
+      972200,
+      972100
+    ],
+    "CustomDeck": {
+      "9721": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833524420369037900/2A2C580B27760EA35386DEB8C29A1A40A4DDDB82/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "9722": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833524420369033132/24F523CF85996912CBC6ED52E5630820CA58062A/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 2,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Tail_Sweep.f703d9.972203.json",
+    "Tail_Sweep.fbe9bf.972202.json",
+    "Gang-Up.5c4b6e.972201.json",
+    "Scorpion.aa64d8.972200.json",
+    "A_Mess_of_Things.29fefd.972100.json"
+  ]
+}

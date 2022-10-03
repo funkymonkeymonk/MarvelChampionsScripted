@@ -18,7 +18,8 @@ ENCOUNTER_YELLOW_POS            = {51.25,1.1,-5.25}
 g_cardWidth  = 2.30;
 g_cardHeight = 3.40;
 
-HERO_PLACER_GUID = "4431e4"
+HERO_MANAGER_GUID = "ff377b"
+SCENARIO_MANAGER_GUID = "06c2fd"
 
 require('!/Cardplacer')
 

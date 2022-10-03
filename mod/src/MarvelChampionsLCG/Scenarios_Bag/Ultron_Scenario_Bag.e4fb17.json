@@ -1,0 +1,62 @@
+{
+  "Object": {
+    "GUID": "e4fb17",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 82.6317749,
+      "posY": 0.2990303,
+      "posZ": 91.75,
+      "rotX": -0.0001512295,
+      "rotY": 0.00077829673,
+      "rotZ": -0.00013080769,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Ultron Scenario Bag",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.117997758,
+      "g": 0.53,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Ultron_Scenario_Bag.e4fb17.lua",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Upgraded_Drones.7ca97a.json",
+    "Drones.542878.json",
+    "Ultron_Drones.559246.900.json",
+    "Ultron_Main_Scheme.66824a.json",
+    "Ultron_Villain.5ea1bb.json",
+    "Ultron_Encounter_Cards.f160ac.json"
+  ]
+}

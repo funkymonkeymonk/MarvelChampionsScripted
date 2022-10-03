@@ -1,0 +1,59 @@
+{
+  "Object": {
+    "GUID": "63bb90",
+    "Name": "Bag",
+    "Transform": {
+      "posX": -5.0611124,
+      "posY": 32.9097061,
+      "posZ": 35.75,
+      "rotX": 90,
+      "rotY": 180,
+      "rotZ": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Hulk Hero Bag",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.5493784,
+      "g": 0.994773448,
+      "b": 0.5775259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Hulk_Hero_Bag.63bb90.lua",
+    "LuaScriptState": "#include ./Hulk_Hero_Bag.63bb90.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Hulk_Identity.32072a.968612.json",
+    "Inner_Demons.966ec5.969548.json",
+    "Hulk_Nemesis.d8697c.json"
+  ]
+}

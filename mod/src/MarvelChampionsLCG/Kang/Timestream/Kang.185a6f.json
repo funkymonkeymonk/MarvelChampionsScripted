@@ -1,0 +1,60 @@
+{
+  "Object": {
+    "GUID": "185a6f",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 28.8069382,
+      "posY": 1.97725177,
+      "posZ": 18.42349,
+      "rotX": 8.652407e-9,
+      "rotY": 179.997787,
+      "rotZ": -5.94439236e-8,
+      "scaleX": 2.2,
+      "scaleY": 1,
+      "scaleZ": 2.2
+    },
+    "Nickname": "Kang",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.249989331,
+      "g": 0.249989331,
+      "b": 0.249989331
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1625194556400702866/A7EAD219D80DF76FF64C98F14F06AC4078C644EF/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Kang.185a6f.lua",
+    "LuaScriptState": "#include ./Kang.185a6f.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

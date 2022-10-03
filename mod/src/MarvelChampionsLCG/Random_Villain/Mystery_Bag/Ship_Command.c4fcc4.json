@@ -1,0 +1,86 @@
+{
+  "Object": {
+    "GUID": "c4fcc4",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 59.5094566,
+      "posY": 2.02704883,
+      "posZ": 35.52672,
+      "rotX": 6.660519e-8,
+      "rotY": 90.0144348,
+      "rotZ": 180,
+      "scaleX": 2.12,
+      "scaleY": 1,
+      "scaleZ": 2.12
+    },
+    "Nickname": "Ship Command",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      798814,
+      798813,
+      798812,
+      798811,
+      802515,
+      798809
+    ],
+    "CustomDeck": {
+      "7988": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1731045816072501957/BF476B91EB620043C822C64E6DC73AFB1853C222/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/787503561778586465/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 7,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "8025": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1731045816072793896/10BFC7ACFE3D229D9B461B5C9766743FBDFF9C78/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/787503561778586465/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 7,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Special_Delivery.42a196.798814.json",
+    "Power_Siphon.562048.798813.json",
+    "Hull_Breach.0754ee.798812.json",
+    "Blind_Side.e68e6e.798811.json",
+    "Cannonade.ef9226.802515.json",
+    "Rogue_Vessel.a604e0.798809.json"
+  ]
+}

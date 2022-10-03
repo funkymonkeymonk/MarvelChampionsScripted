@@ -1,0 +1,61 @@
+{
+  "Object": {
+    "GUID": "8a9323",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 88.42803,
+      "posY": 11.2528267,
+      "posZ": 100.359055,
+      "rotX": 359.964752,
+      "rotY": 180.020737,
+      "rotZ": 0.10218472,
+      "scaleX": 3,
+      "scaleY": 1,
+      "scaleZ": 3
+    },
+    "Nickname": "Kang (Immortus)",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 805000,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "8050": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1653342851333140621/7CC0495DF16BB9AC4123DF6F1A80E4676532509A/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/776248693496171403/A0FAB7F60946745D878FAA841A913535303E3816/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

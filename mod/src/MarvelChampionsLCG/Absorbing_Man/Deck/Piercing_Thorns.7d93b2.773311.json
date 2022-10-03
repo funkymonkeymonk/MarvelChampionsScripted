@@ -1,0 +1,61 @@
+{
+  "Object": {
+    "GUID": "7d93b2",
+    "Name": "Card",
+    "Transform": {
+      "posX": 5.025007,
+      "posY": 1.709037,
+      "posZ": 60.6350136,
+      "rotX": 359.966064,
+      "rotY": 179.999619,
+      "rotZ": 0.0975753441,
+      "scaleX": 2.42349958,
+      "scaleY": 1,
+      "scaleZ": 2.42349958
+    },
+    "Nickname": "Piercing Thorns",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 773311,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "7733": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1618436934180910535/D9EBFE6FF54A0686F0D76A5B8FB7E63E7A359494/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/770610707611095378/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 7,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

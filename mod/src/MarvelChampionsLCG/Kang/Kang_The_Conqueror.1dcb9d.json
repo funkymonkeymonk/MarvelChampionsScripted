@@ -1,0 +1,78 @@
+{
+  "Object": {
+    "GUID": "1dcb9d",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 54.0653648,
+      "posY": 20.0839386,
+      "posZ": 106.961121,
+      "rotX": 359.9648,
+      "rotY": 179.984619,
+      "rotZ": 0.102206558,
+      "scaleX": 3.64,
+      "scaleY": 1,
+      "scaleZ": 3.64
+    },
+    "Nickname": "Kang (The Conqueror)",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      802800,
+      807400
+    ],
+    "CustomDeck": {
+      "8028": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1653342851333168552/747E53C8B4A171954234E2F7CF58F82E5F2696D2/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1625194556398274879/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "8074": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1653342851333156820/4DC08D4FF1F35C2BED9FFEDF9C84FF7A9D7BA6A8/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1625194556398274879/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Kang_The_Conqueror_III.0d6144.802800.json",
+    "Kang_The_Conqueror_I.6d4017.807400.json"
+  ]
+}

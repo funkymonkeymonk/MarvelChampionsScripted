@@ -1,0 +1,60 @@
+{
+  "Object": {
+    "GUID": "c8e731",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 82.30833,
+      "posY": 1.977235,
+      "posZ": 25.71159,
+      "rotX": 8.020388e-12,
+      "rotY": 180.0086,
+      "rotZ": -1.06721707e-7,
+      "scaleX": 2,
+      "scaleY": 1,
+      "scaleZ": 2.87
+    },
+    "Nickname": "Proxima Midnight",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.2499823,
+      "g": 0.2499823,
+      "b": 0.2499823
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1755822299095748562/5A90B28F0A8D6C8391127B4EBDA15EA2AB9FFE45/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Proxima_Midnight.c8e731.lua",
+    "LuaScriptState": "#include ./Proxima_Midnight.c8e731.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

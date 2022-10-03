@@ -1,0 +1,60 @@
+{
+  "Object": {
+    "GUID": "749aa7",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 85.90495,
+      "posY": 4.62003469,
+      "posZ": 0.9732785,
+      "rotX": 1.63821525e-8,
+      "rotY": 179.999023,
+      "rotZ": 8.169683e-10,
+      "scaleX": 2.88718462,
+      "scaleY": 1,
+      "scaleZ": 2.88718462
+    },
+    "Nickname": "Ultron",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.249989182,
+      "g": 0.249989182,
+      "b": 0.249989182
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1010439308570674075/869D0517265CE4DDCE31E4C93793819701763D87/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Ultron.749aa7.lua",
+    "LuaScriptState": "#include ./Ultron.749aa7.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

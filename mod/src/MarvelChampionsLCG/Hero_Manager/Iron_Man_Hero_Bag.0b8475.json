@@ -1,0 +1,59 @@
+{
+  "Object": {
+    "GUID": "0b8475",
+    "Name": "Bag",
+    "Transform": {
+      "posX": -5.0611124,
+      "posY": 32.9097061,
+      "posZ": 35.75,
+      "rotX": 90,
+      "rotY": 180,
+      "rotZ": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Iron Man Hero Bag",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.831010342,
+      "g": 0.8279045,
+      "b": 0.467623949
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Iron_Man_Hero_Bag.0b8475.lua",
+    "LuaScriptState": "#include ./Iron_Man_Hero_Bag.0b8475.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Iron_Man_Identity.87a715.963403.json",
+    "Iron_Man_Nemesis.630a9d.json",
+    "Business_Problems.9c7ab0.963612.json"
+  ]
+}

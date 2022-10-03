@@ -1,0 +1,61 @@
+{
+  "Object": {
+    "GUID": "ff131b",
+    "Name": "Card",
+    "Transform": {
+      "posX": 0.747906148,
+      "posY": 1.3619591,
+      "posZ": -18.25025,
+      "rotX": 0.0470521748,
+      "rotY": 179.995438,
+      "rotZ": 2.50355268,
+      "scaleX": 2.12,
+      "scaleY": 1,
+      "scaleZ": 2.12
+    },
+    "Nickname": "Casket of Ancient Winters",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 4600,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "46": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1711917883467830828/9DDEF2CEE477761851DC1A36270FAB3812E15D07/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1054352812477833382/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 2,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,0 +1,61 @@
+{
+  "Object": {
+    "GUID": "97088e",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 25.75,
+      "posY": 2.250727,
+      "posZ": 26.25,
+      "rotX": 0.000106121166,
+      "rotY": 90.00001,
+      "rotZ": -0.000130923931,
+      "scaleX": 2.93,
+      "scaleY": 1,
+      "scaleZ": 2.93
+    },
+    "Nickname": "Odin's Torment",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 4000,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "40": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1711917883467764576/39B658BF00404F965E324F4FAF158DA9EFF13998/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1711917883467764859/37382122B017236C6A418B96001E1E869E8AA738/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}
