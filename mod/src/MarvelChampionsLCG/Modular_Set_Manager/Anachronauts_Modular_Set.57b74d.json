@@ -1,0 +1,92 @@
+{
+  "Object": {
+    "GUID": "57b74d",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 94.77791,
+      "posY": 3.7428565,
+      "posZ": -4.33288145,
+      "rotX": 9.615493e-8,
+      "rotY": 180,
+      "rotZ": 180,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Anachronauts Modular Set",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      506,
+      505,
+      971901,
+      971900,
+      504,
+      503,
+      502,
+      501,
+      500
+    ],
+    "CustomDeck": {
+      "5": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833524420369044474/9285F651A184372CBD91411382067D2CF6852CEA/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 2,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "9719": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833524420369047791/D86B1C266F0EA172BEA86BFE1FCD26E5E63C439C/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 2,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Kang_s_Chosen.86397c.506.json",
+    "Kang_s_Chosen.694546.505.json",
+    "The_Anachronauts.974f2b.971901.json",
+    "The_Anachronauts.fc6e1b.971900.json",
+    "Wildrun.70f159.504.json",
+    "Terminatrix.e6ef12.503.json",
+    "Sir_Raston.f30e9c.502.json",
+    "Deathunt_9000.3670e0.501.json",
+    "Apocryphus.4c727a.500.json"
+  ]
+}

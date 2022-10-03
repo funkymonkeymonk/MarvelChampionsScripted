@@ -1,0 +1,61 @@
+{
+  "Object": {
+    "GUID": "f66936",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 86.18228,
+      "posY": 2.61649036,
+      "posZ": 7.462119,
+      "rotX": 359.964752,
+      "rotY": 180.001083,
+      "rotZ": 178.527344,
+      "scaleX": 2.12,
+      "scaleY": 1,
+      "scaleZ": 2.12
+    },
+    "Nickname": "Weakened",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 467800,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "4678": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1625194556389951170/5C881BCC171A6D66DFCC541CFE60A3D370E815A8/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1625194556389937121/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

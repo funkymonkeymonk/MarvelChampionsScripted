@@ -1,0 +1,61 @@
+{
+  "Object": {
+    "GUID": "5492b0",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 73.2181,
+      "posY": 1.99028969,
+      "posZ": 44.4124146,
+      "rotX": 1.69086878e-9,
+      "rotY": 90.00001,
+      "rotZ": -8.786252e-8,
+      "scaleX": 2.93,
+      "scaleY": 1,
+      "scaleZ": 2.93
+    },
+    "Nickname": "The Art of Evasion",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 801800,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "8018": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1731045816072542877/0B1687836A3AC1D8B9800B2697E30B9D2404EF2B/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1731045816072543118/BAE537C4372FF84DB3F37ADF7F496B217A2FA02F/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

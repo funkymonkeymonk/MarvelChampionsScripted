@@ -1,0 +1,61 @@
+{
+  "Object": {
+    "GUID": "a4f97b",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 23.25,
+      "posY": 0.508658469,
+      "posZ": 47.75,
+      "rotX": -6.23114271e-9,
+      "rotY": 90.00006,
+      "rotZ": 7.02006542e-9,
+      "scaleX": 2.93,
+      "scaleY": 1,
+      "scaleZ": 2.93
+    },
+    "Nickname": "The Infinity Stones",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 3100,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "31": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1711917883467701438/280C5E6C752C26455E17283A4E00220EB37508BE/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1711917883467701733/F1F359EA762D53FE98245C62157ED1AA7B75FDF5/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

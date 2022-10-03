@@ -1,0 +1,69 @@
+{
+  "Object": {
+    "GUID": "b2f33c",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 79.47262,
+      "posY": 4.652295,
+      "posZ": 36.73605,
+      "rotX": 359.964752,
+      "rotY": 180.015839,
+      "rotZ": 0.102187924,
+      "scaleX": 2.8751688,
+      "scaleY": 1,
+      "scaleZ": 2.8751688
+    },
+    "Nickname": "Wrecker",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.24998194,
+      "g": 0.24998194,
+      "b": 0.24998194
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1010439675058988368/24E8103A35A455C2F26F671008192D9E4D54FF22/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Wrecker.b2f33c.lua",
+    "LuaScriptState": "#include ./Wrecker.b2f33c.state.json",
+    "XmlUI": "",
+    "AttachedSnapPoints": [
+      {
+        "Position": {
+          "x": 1.16515183,
+          "y": 0.197297856,
+          "z": 0.233019367
+        }
+      }
+    ]
+  },
+  "StatesPaths": {}
+}

@@ -1,0 +1,60 @@
+{
+  "Object": {
+    "GUID": "e581f5",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 77.6055,
+      "posY": 2.65349984,
+      "posZ": -6.275271,
+      "rotX": -3.60686059e-8,
+      "rotY": 179.999664,
+      "rotZ": -6.707271e-8,
+      "scaleX": 2.87109566,
+      "scaleY": 1,
+      "scaleZ": 2.87109566
+    },
+    "Nickname": "Green Goblin",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0,
+      "g": 0,
+      "b": 0
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1010439308570631452/B082179CC36E010EB528DE7A9256E29591BA0050/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Green_Goblin.e581f5.lua",
+    "LuaScriptState": "#include ./Green_Goblin.e581f5.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,0 +1,60 @@
+{
+  "Object": {
+    "GUID": "69a631",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 106.623055,
+      "posY": 8.260104,
+      "posZ": 47.77612,
+      "rotX": 0.615945637,
+      "rotY": 180.0087,
+      "rotZ": 359.333832,
+      "scaleX": 2.87,
+      "scaleY": 1,
+      "scaleZ": 2.87
+    },
+    "Nickname": "Collector",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.249983042,
+      "g": 0.249983042,
+      "b": 0.249983042
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1755822299095545614/2EBF21AE977F06CE570C7DA6560202DEC2598AD8/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Collector.69a631.lua",
+    "LuaScriptState": "#include ./Collector.69a631.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

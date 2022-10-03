@@ -1,0 +1,92 @@
+{
+  "Object": {
+    "GUID": "941743",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 98.83065,
+      "posY": 3.70897174,
+      "posZ": -3.58834434,
+      "rotX": -8.03838347e-8,
+      "rotY": 180,
+      "rotZ": 180,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Galactic Artifacts Modular Set",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      1803,
+      1802,
+      1801,
+      1800,
+      977704,
+      977703,
+      977702,
+      977701,
+      977700
+    ],
+    "CustomDeck": {
+      "18": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833524420366908626/1CE4BCB157A93D906321CE52AB6D374EE63A965D/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 2,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "9777": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833524420366906303/C05328A51E72D13AE41491092D4ED7CEE67B3130/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 2,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Crystal_Ball.4ddfab.1803.json",
+    "Philosopher_s_Stone.6b5c10.1802.json",
+    "Magical_Teapot.b012c4.1801.json",
+    "Hujahdarian_Monarch_Egg.71586f.1800.json",
+    "Vandarian_Power_Wand.dffeb6.977704.json",
+    "The_Poison.c1c43f.977703.json",
+    "The_Beyonder_s_Blazer.f3aea1.977702.json",
+    "Obedience_Potion.2749d6.977701.json",
+    "Cloak_of_Hercules.412d4d.977700.json"
+  ]
+}

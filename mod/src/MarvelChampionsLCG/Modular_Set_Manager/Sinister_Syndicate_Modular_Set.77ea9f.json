@@ -1,0 +1,88 @@
+{
+  "Object": {
+    "GUID": "77ea9f",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 104.004677,
+      "posY": 6.62406,
+      "posZ": -3.39472628,
+      "rotX": 5.987081e-8,
+      "rotY": 180,
+      "rotZ": 180,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Sinister Syndicate Modular Set",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": true,
+    "DeckIDs": [
+      974139,
+      974138,
+      974137,
+      974136,
+      974135,
+      974134,
+      974204
+    ],
+    "CustomDeck": {
+      "9741": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833524088513418557/96FBFF2F56CF4C1A12BFA3D3B8CC14D3C76AEF50/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 6,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "9742": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833524088513424938/E1E8FE05138CA91D300814595F176AA122F986E7/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 2,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Sinister_Onslaught.dc2a68.974139.json",
+    "White_Rabbit.ab8973.974138.json",
+    "Speed_Demon.bc1bd3.974137.json",
+    "Shocker.99d785.974136.json",
+    "Boomerang.aeddeb.974135.json",
+    "Beetle.c42aee.974134.json",
+    "Crime_Pays.1ed0ad.974204.json"
+  ]
+}

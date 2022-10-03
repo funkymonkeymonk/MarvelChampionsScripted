@@ -1,0 +1,117 @@
+{
+  "Object": {
+    "GUID": "fe8947",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 99.3203049,
+      "posY": 6.10375071,
+      "posZ": 100.968323,
+      "rotX": 1.28123858e-8,
+      "rotY": 180,
+      "rotZ": 180,
+      "scaleX": 2.12,
+      "scaleY": 1,
+      "scaleZ": 2.12
+    },
+    "Nickname": "",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      1600,
+      1500,
+      1400,
+      1401,
+      1402,
+      1403,
+      1404,
+      1405,
+      1406,
+      1407,
+      1408,
+      1409,
+      1410,
+      1411,
+      1412,
+      1413,
+      1414
+    ],
+    "CustomDeck": {
+      "14": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1711917883467175270/1CD2F59D742EFFE00022339120147C2EAE05D452/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1054352812477833382/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 5,
+        "NumHeight": 3,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "15": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1711917883467179511/0D5F27DE1558E2F0FF2A04133ED12580154D4208/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1054352812477833382/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "16": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1711917883467180490/3A45874E861B9153F0C1EC2FD1D0310F4CB87319/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1054352812477833382/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Reactor_Overload.50c445.1600.json",
+    "Reactor_Overload.052156.1500.json",
+    "Restrained.508b5c.1400.json",
+    "Abjuration.d9a1f5.1401.json",
+    "Channeling_Trance.215b65.1402.json",
+    "Channeling_Trance.6242cb.1403.json",
+    "Channeling_Trance.b5de22.1404.json",
+    "Agent_of_Thanos.90acea.1405.json",
+    "Agent_of_Thanos.c06af7.1406.json",
+    "Rubblestorm.8c1be8.1407.json",
+    "Rubblestorm.2bb55e.1408.json",
+    "Pacification.17476b.1409.json",
+    "Pacification.efcec1.1410.json",
+    "Manipulation.3de5bc.1411.json",
+    "Manipulation.c59783.1412.json",
+    "Fireball.aaca2e.1413.json",
+    "Fireball.8b946c.1414.json"
+  ]
+}

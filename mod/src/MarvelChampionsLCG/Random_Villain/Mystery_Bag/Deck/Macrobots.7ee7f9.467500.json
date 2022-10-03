@@ -1,0 +1,61 @@
+{
+  "Object": {
+    "GUID": "7ee7f9",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 74.67455,
+      "posY": 4.66361475,
+      "posZ": -4.02895164,
+      "rotX": 359.964783,
+      "rotY": 180.000031,
+      "rotZ": 180.1022,
+      "scaleX": 2.12,
+      "scaleY": 1,
+      "scaleZ": 2.12
+    },
+    "Nickname": "Macrobots",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 467500,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "4675": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1625194556389950196/6B1605DAF143167F7F0F42F70DED354DEE86D1B0/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1625194556389937121/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

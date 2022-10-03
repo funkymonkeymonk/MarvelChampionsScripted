@@ -1,0 +1,61 @@
+{
+  "Object": {
+    "GUID": "c77e88",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 23.7849884,
+      "posY": 1.004994,
+      "posZ": 11.0549955,
+      "rotX": 0.005816086,
+      "rotY": 179.988922,
+      "rotZ": 359.9872,
+      "scaleX": 3.6429348,
+      "scaleY": 1,
+      "scaleZ": 3.6429348
+    },
+    "Nickname": "Taskmaster I",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 770100,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "7701": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1618436934181029135/951B9133B24BDDE0274FCA0D3D35FB6BAF012E0D/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/776248693496171403/A0FAB7F60946745D878FAA841A913535303E3816/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

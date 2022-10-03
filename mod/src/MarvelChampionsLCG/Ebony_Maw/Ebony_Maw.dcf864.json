@@ -1,0 +1,78 @@
+{
+  "Object": {
+    "GUID": "dcf864",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 56.9858055,
+      "posY": 3.614129,
+      "posZ": 52.7164574,
+      "rotX": 0.006259506,
+      "rotY": 180.000916,
+      "rotZ": 9.343661e-7,
+      "scaleX": 3.64,
+      "scaleY": 1,
+      "scaleZ": 3.64
+    },
+    "Nickname": "Ebony Maw",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      1100,
+      1000
+    ],
+    "CustomDeck": {
+      "10": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1711917883467170441/E50C9FC444354C097DF500CF7B89B6A0A05D7B19/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1666860958377475324/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "11": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1711917883467171205/1A9D925963F2C479B9492B7B5E815310B55A9854/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1666860958377475324/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Ebony_Maw.cf18d0.1100.json",
+    "Ebony_Maw.f8752c.1000.json"
+  ]
+}

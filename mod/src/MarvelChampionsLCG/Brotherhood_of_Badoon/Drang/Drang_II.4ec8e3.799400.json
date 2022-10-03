@@ -1,0 +1,61 @@
+{
+  "Object": {
+    "GUID": "4ec8e3",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 84.25,
+      "posY": 0.508491635,
+      "posZ": 31.7500248,
+      "rotX": 0.00212118356,
+      "rotY": 179.999954,
+      "rotZ": -0.000637824938,
+      "scaleX": 3.64,
+      "scaleY": 1,
+      "scaleZ": 3.64
+    },
+    "Nickname": "Drang II",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 799400,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "7994": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1731045816072521565/AEE83A2756361BB77A762DFE21EE62374E4B743C/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/776248693496171403/A0FAB7F60946745D878FAA841A913535303E3816/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,0 +1,59 @@
+{
+  "Object": {
+    "GUID": "54f5e2",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 82.6317749,
+      "posY": 0.299030125,
+      "posZ": 91.75,
+      "rotX": 0.000104546067,
+      "rotY": -0.000504061754,
+      "rotZ": -0.00003765451,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Klaw Scenario Bag",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.117997654,
+      "g": 0.53,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Klaw_Scenario_Bag.54f5e2.lua",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Klaw_Villain.59a28e.json",
+    "Klaw_Main_Scheme.2bcc39.json",
+    "Klaw_Encounter_Cards.99fc6d.json"
+  ]
+}

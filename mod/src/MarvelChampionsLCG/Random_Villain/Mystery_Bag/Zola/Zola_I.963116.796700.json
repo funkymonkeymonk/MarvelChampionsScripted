@@ -1,0 +1,61 @@
+{
+  "Object": {
+    "GUID": "963116",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 28.4749985,
+      "posY": 1.0049932,
+      "posZ": 7.03500175,
+      "rotX": -0.00153596152,
+      "rotY": 179.988937,
+      "rotZ": -0.002969621,
+      "scaleX": 3.6429348,
+      "scaleY": 1,
+      "scaleZ": 3.6429348
+    },
+    "Nickname": "Zola I",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 796700,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "7967": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1618437358526297836/ABAD7FBA9DD33CC5CF9262318F6286790F72ACFA/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/776248693496171403/A0FAB7F60946745D878FAA841A913535303E3816/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

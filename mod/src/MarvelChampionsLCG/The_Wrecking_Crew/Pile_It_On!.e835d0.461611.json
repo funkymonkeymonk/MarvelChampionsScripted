@@ -1,0 +1,70 @@
+{
+  "Object": {
+    "GUID": "e835d0",
+    "Name": "Card",
+    "Transform": {
+      "posX": 75.57725,
+      "posY": 2.60566854,
+      "posZ": -0.154909492,
+      "rotX": -5.048604e-8,
+      "rotY": 89.98366,
+      "rotZ": 0.0000037869454,
+      "scaleX": 2.42404532,
+      "scaleY": 1,
+      "scaleZ": 2.42404532
+    },
+    "Nickname": "Pile It On!",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": false,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 461611,
+    "SidewaysCard": true,
+    "CustomDeck": {
+      "4616": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/787503561779629933/D8CC006DD0FE68793C5DA70ED66B7E53F9BDBC49/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/767229025789762742/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 5,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "AttachedSnapPoints": [
+      {
+        "Position": {
+          "x": 0.55481863,
+          "y": 0.209294632,
+          "z": -0.276613832
+        }
+      }
+    ]
+  },
+  "StatesPaths": {}
+}

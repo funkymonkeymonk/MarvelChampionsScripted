@@ -1,0 +1,78 @@
+{
+  "Object": {
+    "GUID": "6be3ed",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 54.0606728,
+      "posY": 2.00848436,
+      "posZ": 27.6572857,
+      "rotX": 0.00625600666,
+      "rotY": 179.99765,
+      "rotZ": 3.5459297e-7,
+      "scaleX": 3.6429348,
+      "scaleY": 1,
+      "scaleZ": 3.6429348
+    },
+    "Nickname": "Crossbones",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      771500,
+      771600
+    ],
+    "CustomDeck": {
+      "7715": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1618436934179042732/59E699D3218B0F57B7DE3FE9D22FCAFFD966147E/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/776248693496171403/A0FAB7F60946745D878FAA841A913535303E3816/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "7716": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1618436934179042134/DA229F031C69B90589219AA74856B7CA8DF11739/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/776248693496171403/A0FAB7F60946745D878FAA841A913535303E3816/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Crossbones_III.c8a5e0.771500.json",
+    "Crossbones_II.4c3a5b.771600.json"
+  ]
+}

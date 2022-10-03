@@ -1,0 +1,84 @@
+{
+  "Object": {
+    "GUID": "b4f1f6",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 104.652481,
+      "posY": 9.337582,
+      "posZ": 15.1773825,
+      "rotX": -6.72874449e-8,
+      "rotY": 180,
+      "rotZ": 180,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Under Attack Modular Set",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": true,
+    "DeckIDs": [
+      980703,
+      980702,
+      980701,
+      980700,
+      972408
+    ],
+    "CustomDeck": {
+      "9724": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833525541758764998/DC4E15098944F15026E0747F74FC5DC2EFA6581C/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "9807": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833525541758779130/E4AC372A8F7960024679918DEEC6BECA4FE0B6EA/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Concussive_Blast.e5c55e.980703.json",
+    "Concussive_Blast.cb2a23.980702.json",
+    "Concussion_Blasters.1577a6.980701.json",
+    "Vibranium_Armor.1838ea.980700.json",
+    "Under_Attack.c57cd4.972408.json"
+  ]
+}

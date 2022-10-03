@@ -1,0 +1,110 @@
+{
+  "Object": {
+    "GUID": "4e603f",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 101.305786,
+      "posY": 46.266346,
+      "posZ": 15.8378143,
+      "rotX": 3.550737e-8,
+      "rotY": 180.0009,
+      "rotZ": 180,
+      "scaleX": 2.12,
+      "scaleY": 1,
+      "scaleZ": 2.12
+    },
+    "Nickname": "",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      459819,
+      459818,
+      459817,
+      459816,
+      459815,
+      459814,
+      464623,
+      464633,
+      464618,
+      464622,
+      464610,
+      459808,
+      459807,
+      459806,
+      459805,
+      459804,
+      459803,
+      459802
+    ],
+    "CustomDeck": {
+      "4598": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/782995698740236029/FB248F5416A90B81FB4C085D8AACE2C80EEE2C63/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/767229025789762742/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 5,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "4646": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/770610821575354813/23F66B3AAC9FC48FEA180846DA55007A86B856F2/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/770610707611095378/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 7,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Mad_Genius.8a8451.459819.json",
+    "Mad_Genius.f34377.459818.json",
+    "All_in_a_Day_s_Work.8a8451.459817.json",
+    "All_in_a_Day_s_Work.8a8451.459816.json",
+    "All_in_a_Day_s_Work.8a8451.459815.json",
+    "All_in_a_Day_s_Work.8a8451.459814.json",
+    "Payoff.66e514.464623.json",
+    "Payoff.487115.464633.json",
+    "Oscorp_Manufacturning.a23983.464618.json",
+    "Oscorp_Manufacturning.ea7cd5.464622.json",
+    "Collapsing_Bridge.c05d37.464610.json",
+    "Private_Security_Specialist.8a8451.459808.json",
+    "Private_Security_Specialist.8a8451.459807.json",
+    "Private_Security_Specialist.8a8451.459806.json",
+    "Private_Security_Specialist.8a8451.459805.json",
+    "Hired_Gun.8a8451.459804.json",
+    "Hired_Gun.8a8451.459803.json",
+    "Hired_Gun.8a8451.459802.json"
+  ]
+}

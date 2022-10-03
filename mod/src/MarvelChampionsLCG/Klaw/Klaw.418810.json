@@ -1,0 +1,69 @@
+{
+  "Object": {
+    "GUID": "418810",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 71.56443,
+      "posY": 2.60236955,
+      "posZ": 82.3137,
+      "rotX": 0.00625687046,
+      "rotY": 180.000549,
+      "rotZ": 9.935104e-7,
+      "scaleX": 3.6429348,
+      "scaleY": 1,
+      "scaleZ": 3.6429348
+    },
+    "Nickname": "Klaw",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      1405,
+      1404
+    ],
+    "CustomDeck": {
+      "14": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/767229025789829945/38A8E5A65312FF916426B2803EA89FF322A62FEC/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/767229025789830639/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+        "NumWidth": 5,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Klaw_III.7b3c30.1405.json",
+    "Klaw_II.14bc02.1404.json"
+  ]
+}

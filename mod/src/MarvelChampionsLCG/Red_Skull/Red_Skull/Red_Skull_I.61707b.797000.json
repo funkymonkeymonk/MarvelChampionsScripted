@@ -1,0 +1,61 @@
+{
+  "Object": {
+    "GUID": "61707b",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 31.1549931,
+      "posY": 1.00470471,
+      "posZ": 4.354993,
+      "rotX": 0.008034359,
+      "rotY": 179.9889,
+      "rotZ": 359.992279,
+      "scaleX": 3.6429348,
+      "scaleY": 1,
+      "scaleZ": 3.6429348
+    },
+    "Nickname": "Red Skull I",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 797000,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "7970": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1618437358526300834/85B6D14F9DB6A77A78D2F12EE78DF12C81671CE0/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/776248693496171403/A0FAB7F60946745D878FAA841A913535303E3816/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

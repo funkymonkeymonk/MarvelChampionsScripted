@@ -1,8 +1,8 @@
 {
   "Save": {
     "SaveName": "MarvelChampionsLCG",
-    "EpochTime": 1664740702,
-    "Date": "10/2/2022 1:58:22 PM",
+    "EpochTime": 1664757965,
+    "Date": "10/2/2022 6:46:05 PM",
     "VersionNumber": "v13.2.2",
     "GameMode": "MarvelChampionsLCG",
     "GameType": "Game",
@@ -251,6 +251,10 @@
         {
           "displayed": "CARDPOOL",
           "normalized": "cardpool"
+        },
+        {
+          "displayed": "Scenario-selector-tile",
+          "normalized": "scenario-selector-tile"
         }
       ]
     },
@@ -562,7 +566,6 @@
     "3DText.7d55ec.json",
     "3DText.0ddb73.json",
     "3DText.58bc1f.json",
-    "CardCustom.3a6e1f.771000.json",
     "Aggression.0952cb.json",
     "Justice.9851a5.json",
     "Leadership.f8d4eb.json",
@@ -591,7 +594,6 @@
     "ScriptingTrigger.546c74.json",
     "Sinister_Motives.503b31.json",
     "The_Hood.a938c0.json",
-    "HeroPlacer.4431e4.json",
     "ScriptingTrigger.c22eb2.json",
     "ScriptingTrigger.392cab.json",
     "ScriptingTrigger.1e4ec3.json",
@@ -599,17 +601,38 @@
     "ScriptingTrigger.d17076.json",
     "ScriptingTrigger.d8e9b3.json",
     "HP_Counter_Bag.ef3f2f.json",
-    "Hero_Zone.210c2b.json",
-    "Hero_Bag.22b26a.json",
     "Selector_Tile_Bag.01ad59.json",
-    "Modular_Sets_Bag.742346.json",
-    "ScriptingTrigger.7977bc.json",
+    "Turn_Counter.turncounter.json",
+    "Ultron.05081a.json",
+    "Nebula.13a143.json",
+    "Brotherhood_of_Badoon.315fe7.json",
+    "Zola.3247cd.json",
+    "Taskmaster.336cd2.json",
+    "Kang.487715.json",
+    "Loki.4a4b57.json",
+    "Ronan_the_Accuser.4e11d3.json",
+    "Absorbing_Man.5a494a.json",
+    "The_Wrecking_Crew.6421b3.json",
+    "The_Hood.73aab9.json",
+    "Hela.7768f6.json",
+    "Thanos.797789.json",
+    "Risky_Business.844908.json",
+    "Infiltrate_the_Museum.9a1321.json",
+    "Tower_Defense.a07ae1.json",
+    "Red_Skull.a32e27.json",
+    "Random_Villain.abe8e7.json",
+    "Klaw.b86577.json",
+    "Mutagen_Formula.be97f1.json",
+    "Ebony_Maw.e3e94d.json",
+    "Crossbones.e776c3.json",
+    "Escape_the_Museum.e9a54b.json",
+    "Scenario_Manager.06c2fd.json",
+    "Scenarios_Bag.a8cf98.json",
+    "Rhino_Scenario_Bag.f23e37.json",
     "Cardpool_Data.843931.json",
-    "Power_Stone.608543.json",
-    "Reality_Stone.06c2fd.json",
-    "Soul_Stone.ff377b.json",
-    "Space_Stone.71f4e2.json",
     "Time_Stone.0d33cc.json",
-    "Turn_Counter.turncounter.json"
+    "Space_Stone.71f4e2.json",
+    "Modular_Set_Manager.608543.json",
+    "Hero_Manager.ff377b.json"
   ]
 }

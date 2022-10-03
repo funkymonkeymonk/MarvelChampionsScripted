@@ -1,0 +1,85 @@
+{
+  "Object": {
+    "GUID": "993f31",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 88.77278,
+      "posY": 2.290207,
+      "posZ": -2.686336,
+      "rotX": -3.15388178e-7,
+      "rotY": 179.999969,
+      "rotZ": 180,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Band of Badoon Modular Set",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      973509,
+      973508,
+      973507,
+      973506,
+      973505,
+      973504,
+      973503,
+      973502,
+      973501,
+      973500
+    ],
+    "CustomDeck": {
+      "9735": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1833524420369122261/6D4F82A52D79583C0B2074106235E06F7499612A/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 10,
+        "NumHeight": 2,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Badoon_Warlord.f653f2.973509.json",
+    "Badoon_Warlord.e3af5a.973508.json",
+    "Badoon_Sentry.9f919b.973507.json",
+    "Badoon_Sentry.69dc12.973506.json",
+    "Badoon_Lieutenant.1eb9fe.973505.json",
+    "Badoon_Grunt.785095.973504.json",
+    "Badoon_Grunt.0a4ec5.973503.json",
+    "Badoon_Grunt.eda96d.973502.json",
+    "Badoon_Assassin.458ace.973501.json",
+    "Badoon_Assassin.151d25.973500.json"
+  ]
+}
