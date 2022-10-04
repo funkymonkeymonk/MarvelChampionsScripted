@@ -47,10 +47,13 @@ function FormatPackData(responses) {
     return cardBack["player"]
   }
 
+  //  Right now this filters out duplicate cards,
+  //  but they 100% exist in MarvelCDB and we'll need to manage supporting them
+
   return responses
       .map(res => res.data)
       .flat()
-      .filter(card => card.name != null)
+      .filter(card => card.name != null || card.duplicate_of != null)
       .map(card => {
         return {
           name: card.name,
@@ -58,8 +61,9 @@ function FormatPackData(responses) {
           ...card.subname && {subname: card.subname},
           type_code: card.type_code,
           faction_code: card.faction_code,
-          BackURL: GetCardBack(card),
-          FrontURL: "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/" + card.code.toUpperCase() + ".jpg",
+          ...!card.duplicate_of && { BackURL: GetCardBack(card)},
+          ...!card.duplicate_of && { FrontURL: "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/" + card.code.toUpperCase() + ".jpg"},
+          duplicate_of: card.duplicate_of,
         }
       })
 }
