@@ -139,6 +139,10 @@ PACK_10 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10016.jpg"
   },
   {
+    "code": "10017",
+    "duplicate_of": "01055"
+  },
+  {
     "name": "Martial Prowess",
     "code": "10018",
     "type_code": "upgrade",
@@ -153,6 +157,26 @@ PACK_10 = [[
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10019.jpg"
+  },
+  {
+    "code": "10020",
+    "duplicate_of": "01088"
+  },
+  {
+    "code": "10021",
+    "duplicate_of": "01089"
+  },
+  {
+    "code": "10022",
+    "duplicate_of": "01090"
+  },
+  {
+    "code": "10023",
+    "duplicate_of": "01091"
+  },
+  {
+    "code": "10024",
+    "duplicate_of": "01092"
   },
   {
     "name": "Beat Cop",
@@ -798,12 +822,28 @@ PACK_12 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12018.jpg"
   },
   {
+    "code": "12019",
+    "duplicate_of": "01086"
+  },
+  {
     "name": "Swarm Tactics",
     "code": "12020",
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12020.jpg"
+  },
+  {
+    "code": "12021",
+    "duplicate_of": "01088"
+  },
+  {
+    "code": "12022",
+    "duplicate_of": "01089"
+  },
+  {
+    "code": "12023",
+    "duplicate_of": "01090"
   },
   {
     "name": "Team-Building Exercise",
@@ -1021,6 +1061,10 @@ PACK_13 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13014.jpg"
   },
   {
+    "code": "13015",
+    "duplicate_of": "01055"
+  },
+  {
     "name": "Boot Camp",
     "code": "13016",
     "type_code": "support",
@@ -1062,12 +1106,28 @@ PACK_13 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13020.jpg"
   },
   {
+    "code": "13021",
+    "duplicate_of": "01088"
+  },
+  {
+    "code": "13022",
+    "duplicate_of": "01089"
+  },
+  {
+    "code": "13023",
+    "duplicate_of": "01090"
+  },
+  {
     "name": "The Power in All of Us",
     "code": "13024",
     "type_code": "resource",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13024.jpg"
+  },
+  {
+    "code": "13025",
+    "duplicate_of": "08023"
   },
   {
     "name": "Running Interference",
@@ -1275,6 +1335,10 @@ PACK_14 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14015.jpg"
   },
   {
+    "code": "14016",
+    "duplicate_of": "01081"
+  },
+  {
     "name": "Nerves of Steel",
     "code": "14017",
     "type_code": "upgrade",
@@ -1289,6 +1353,18 @@ PACK_14 = [[
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14018.jpg"
+  },
+  {
+    "code": "14019",
+    "duplicate_of": "01088"
+  },
+  {
+    "code": "14020",
+    "duplicate_of": "01089"
+  },
+  {
+    "code": "14021",
+    "duplicate_of": "01090"
   },
   {
     "name": "Adrenaline Rush",
@@ -1514,12 +1590,36 @@ PACK_15 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15015.jpg"
   },
   {
+    "code": "15016",
+    "duplicate_of": "01062"
+  },
+  {
+    "code": "15017",
+    "duplicate_of": "01065"
+  },
+  {
+    "code": "15018",
+    "duplicate_of": "14018"
+  },
+  {
     "name": "Spiritual Meditation",
     "code": "15019",
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15019.jpg"
+  },
+  {
+    "code": "15020",
+    "duplicate_of": "01088"
+  },
+  {
+    "code": "15021",
+    "duplicate_of": "01089"
+  },
+  {
+    "code": "15022",
+    "duplicate_of": "01090"
   },
   {
     "name": "Browbeat",
@@ -1702,12 +1802,20 @@ PACK_16 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16012.jpg"
   },
   {
+    "code": "16013",
+    "duplicate_of": "09015"
+  },
+  {
     "name": "Fighting Fit",
     "code": "16014",
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16014.jpg"
+  },
+  {
+    "code": "16015",
+    "duplicate_of": "01079"
   },
   {
     "name": "Dauntless",
@@ -1726,6 +1834,10 @@ PACK_16 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16017.jpg"
   },
   {
+    "code": "16018",
+    "duplicate_of": "01082"
+  },
+  {
     "name": "Rocket Raccoon",
     "code": "16019",
     "type_code": "ally",
@@ -1740,6 +1852,18 @@ PACK_16 = [[
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16020.jpg"
+  },
+  {
+    "code": "16021",
+    "duplicate_of": "01088"
+  },
+  {
+    "code": "16022",
+    "duplicate_of": "01089"
+  },
+  {
+    "code": "16023",
+    "duplicate_of": "01090"
   },
   {
     "name": "Deft Focus",
@@ -1854,12 +1978,24 @@ PACK_16 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16040.jpg"
   },
   {
+    "code": "16041",
+    "duplicate_of": "01052"
+  },
+  {
+    "code": "16042",
+    "duplicate_of": "13013"
+  },
+  {
     "name": "Looking for Trouble",
     "code": "16043",
     "type_code": "event",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16043.jpg"
+  },
+  {
+    "code": "16044",
+    "duplicate_of": "01053"
   },
   {
     "name": "Follow Through",
@@ -1884,6 +2020,22 @@ PACK_16 = [[
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16047.jpg"
+  },
+  {
+    "code": "16048",
+    "duplicate_of": "16020"
+  },
+  {
+    "code": "16049",
+    "duplicate_of": "01088"
+  },
+  {
+    "code": "16050",
+    "duplicate_of": "01089"
+  },
+  {
+    "code": "16051",
+    "duplicate_of": "01090"
   },
   {
     "name": "Booster Boots",
@@ -3283,12 +3435,20 @@ PACK_17 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17015.jpg"
   },
   {
+    "code": "17016",
+    "duplicate_of": "01069"
+  },
+  {
     "name": "Target Practice",
     "code": "17017",
     "type_code": "support",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17017.jpg"
+  },
+  {
+    "code": "17018",
+    "duplicate_of": "01072"
   },
   {
     "name": "Laser Blaster",
@@ -3353,6 +3513,10 @@ PACK_17 = [[
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17030.jpg"
+  },
+  {
+    "code": "17031",
+    "duplicate_of": "03034"
   },
   {
     "name": "Banishment",
@@ -3504,6 +3668,10 @@ PACK_18 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18013.jpg"
   },
   {
+    "code": "18014",
+    "duplicate_of": "01054"
+  },
+  {
     "name": "First Hit",
     "code": "18015",
     "type_code": "event",
@@ -3518,6 +3686,10 @@ PACK_18 = [[
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18016.jpg"
+  },
+  {
+    "code": "18017",
+    "duplicate_of": "01057"
   },
   {
     "name": "Godslayer",
@@ -3542,6 +3714,18 @@ PACK_18 = [[
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18020.jpg"
+  },
+  {
+    "code": "18021",
+    "duplicate_of": "01088"
+  },
+  {
+    "code": "18022",
+    "duplicate_of": "01089"
+  },
+  {
+    "code": "18023",
+    "duplicate_of": "01090"
   },
   {
     "name": "Pivotal Moment",
@@ -3726,6 +3910,10 @@ PACK_19 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19013.jpg"
   },
   {
+    "code": "19014",
+    "duplicate_of": "01077"
+  },
+  {
     "name": "Deflection",
     "code": "19015",
     "type_code": "event",
@@ -3758,12 +3946,32 @@ PACK_19 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19018.jpg"
   },
   {
+    "code": "19019",
+    "duplicate_of": "01082"
+  },
+  {
     "name": "Gamora",
     "code": "19020",
     "type_code": "ally",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19020.jpg"
+  },
+  {
+    "code": "19021",
+    "duplicate_of": "13034"
+  },
+  {
+    "code": "19022",
+    "duplicate_of": "01088"
+  },
+  {
+    "code": "19023",
+    "duplicate_of": "01089"
+  },
+  {
+    "code": "19024",
+    "duplicate_of": "01090"
   },
   {
     "name": "\"Bring It!\"",
@@ -3788,6 +3996,10 @@ PACK_19 = [[
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19032.jpg"
+  },
+  {
+    "code": "19033",
+    "duplicate_of": "06034"
   },
   {
     "name": "Memories of Another Life",
@@ -3947,6 +4159,10 @@ PACK_20 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20013.jpg"
   },
   {
+    "code": "20014",
+    "duplicate_of": "01062"
+  },
+  {
     "name": "Sonic Rifle",
     "code": "20015",
     "type_code": "upgrade",
@@ -3962,6 +4178,22 @@ PACK_20 = [[
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20016.jpg"
+  },
+  {
+    "code": "20017",
+    "duplicate_of": "01088"
+  },
+  {
+    "code": "20018",
+    "duplicate_of": "01089"
+  },
+  {
+    "code": "20019",
+    "duplicate_of": "01090"
+  },
+  {
+    "code": "20020",
+    "duplicate_of": "10032"
   },
   {
     "name": "Side Holster",
@@ -4180,6 +4412,10 @@ PACK_21 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21016.jpg"
   },
   {
+    "code": "21017",
+    "duplicate_of": "12016"
+  },
+  {
     "name": "Band Together",
     "code": "21018",
     "type_code": "resource",
@@ -4197,12 +4433,32 @@ PACK_21 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21019.jpg"
   },
   {
+    "code": "21020",
+    "duplicate_of": "03024"
+  },
+  {
+    "code": "21021",
+    "duplicate_of": "01091"
+  },
+  {
     "name": "Ready to Rumble",
     "code": "21022",
     "type_code": "upgrade",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21022.jpg"
+  },
+  {
+    "code": "21023",
+    "duplicate_of": "01088"
+  },
+  {
+    "code": "21024",
+    "duplicate_of": "01089"
+  },
+  {
+    "code": "21025",
+    "duplicate_of": "01090"
   },
   {
     "name": "Adam Warlock",
@@ -4318,6 +4574,14 @@ PACK_21 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21043.jpg"
   },
   {
+    "code": "21044",
+    "duplicate_of": "01054"
+  },
+  {
+    "code": "21045",
+    "duplicate_of": "01057"
+  },
+  {
     "name": "Audacity",
     "code": "21046",
     "type_code": "resource",
@@ -4343,12 +4607,20 @@ PACK_21 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21048.jpg"
   },
   {
+    "code": "21049",
+    "duplicate_of": "01060"
+  },
+  {
     "name": "Zone of Silence",
     "code": "21050",
     "type_code": "event",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21050.jpg"
+  },
+  {
+    "code": "21051",
+    "duplicate_of": "01065"
   },
   {
     "name": "Determination",
@@ -4384,6 +4656,14 @@ PACK_21 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21055.jpg"
   },
   {
+    "code": "21056",
+    "duplicate_of": "01071"
+  },
+  {
+    "code": "21057",
+    "duplicate_of": "01074"
+  },
+  {
     "name": "Innovation",
     "code": "21058",
     "type_code": "resource",
@@ -4414,6 +4694,14 @@ PACK_21 = [[
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21061.jpg"
+  },
+  {
+    "code": "21062",
+    "duplicate_of": "01077"
+  },
+  {
+    "code": "21063",
+    "duplicate_of": "01081"
   },
   {
     "name": "Preservation",
@@ -5703,6 +5991,14 @@ PACK_22 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22015.jpg"
   },
   {
+    "code": "22016",
+    "duplicate_of": "21052"
+  },
+  {
+    "code": "22017",
+    "duplicate_of": "01062"
+  },
+  {
     "name": "Brains Over Brawn",
     "code": "22018",
     "type_code": "event",
@@ -5711,12 +6007,40 @@ PACK_22 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22018.jpg"
   },
   {
+    "code": "22019",
+    "duplicate_of": "01065"
+  },
+  {
+    "code": "22020",
+    "duplicate_of": "17020"
+  },
+  {
+    "code": "22021",
+    "duplicate_of": "17022"
+  },
+  {
     "name": "Daughters of Thanos",
     "code": "22022",
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22022.jpg"
+  },
+  {
+    "code": "22023",
+    "duplicate_of": "01086"
+  },
+  {
+    "code": "22024",
+    "duplicate_of": "01088"
+  },
+  {
+    "code": "22025",
+    "duplicate_of": "01089"
+  },
+  {
+    "code": "22026",
+    "duplicate_of": "01090"
   },
   {
     "name": "Energy Spear",
@@ -5910,6 +6234,14 @@ PACK_23 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23013.jpg"
   },
   {
+    "code": "23014",
+    "duplicate_of": "03011"
+  },
+  {
+    "code": "23015",
+    "duplicate_of": "04013"
+  },
+  {
     "name": "Command Team",
     "code": "23016",
     "type_code": "support",
@@ -5942,12 +6274,40 @@ PACK_23 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23019.jpg"
   },
   {
+    "code": "23020",
+    "duplicate_of": "01071"
+  },
+  {
+    "code": "23021",
+    "duplicate_of": "21058"
+  },
+  {
+    "code": "23022",
+    "duplicate_of": "01083"
+  },
+  {
+    "code": "23023",
+    "duplicate_of": "08023"
+  },
+  {
     "name": "Two Against the World",
     "code": "23024",
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23024.jpg"
+  },
+  {
+    "code": "23025",
+    "duplicate_of": "01088"
+  },
+  {
+    "code": "23026",
+    "duplicate_of": "01089"
+  },
+  {
+    "code": "23027",
+    "duplicate_of": "01090"
   },
   {
     "name": "As One!",
@@ -6704,6 +7064,18 @@ PACK_25 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25014.jpg"
   },
   {
+    "code": "25015",
+    "duplicate_of": "18011"
+  },
+  {
+    "code": "25016",
+    "duplicate_of": "06017"
+  },
+  {
+    "code": "25017",
+    "duplicate_of": "01057"
+  },
+  {
     "name": "Quick Strike",
     "code": "25018",
     "type_code": "event",
@@ -6728,6 +7100,14 @@ PACK_25 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25020.jpg"
   },
   {
+    "code": "25021",
+    "duplicate_of": "21046"
+  },
+  {
+    "code": "25022",
+    "duplicate_of": "01055"
+  },
+  {
     "name": "The Bifrost",
     "code": "25023",
     "type_code": "support",
@@ -6742,6 +7122,18 @@ PACK_25 = [[
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25024.jpg"
+  },
+  {
+    "code": "25025",
+    "duplicate_of": "01088"
+  },
+  {
+    "code": "25026",
+    "duplicate_of": "01089"
+  },
+  {
+    "code": "25027",
+    "duplicate_of": "01090"
   },
   {
     "name": "Problem Solvers",
@@ -6957,12 +7349,28 @@ PACK_26 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26016.jpg"
   },
   {
+    "code": "26017",
+    "duplicate_of": "01082"
+  },
+  {
     "name": "Defiance",
     "code": "26018",
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26018.jpg"
+  },
+  {
+    "code": "26019",
+    "duplicate_of": "14015"
+  },
+  {
+    "code": "26020",
+    "duplicate_of": "01078"
+  },
+  {
+    "code": "26021",
+    "duplicate_of": "21064"
   },
   {
     "name": "Machine Man",
@@ -6974,12 +7382,28 @@ PACK_26 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26022.jpg"
   },
   {
+    "code": "26023",
+    "duplicate_of": "01091"
+  },
+  {
     "name": "Reboot",
     "code": "26024",
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26024.jpg"
+  },
+  {
+    "code": "26025",
+    "duplicate_of": "01088"
+  },
+  {
+    "code": "26026",
+    "duplicate_of": "01089"
+  },
+  {
+    "code": "26027",
+    "duplicate_of": "01090"
   },
   {
     "name": "Assault Training",
@@ -7165,6 +7589,10 @@ PACK_27 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27012.jpg"
   },
   {
+    "code": "27013",
+    "duplicate_of": "15030"
+  },
+  {
     "name": "Jump Flip",
     "code": "27014",
     "type_code": "event",
@@ -7212,6 +7640,18 @@ PACK_27 = [[
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27019.jpg"
+  },
+  {
+    "code": "27020",
+    "duplicate_of": "01088"
+  },
+  {
+    "code": "27021",
+    "duplicate_of": "01089"
+  },
+  {
+    "code": "27022",
+    "duplicate_of": "01090"
   },
   {
     "name": "Web of Life and Destiny",
@@ -7359,6 +7799,10 @@ PACK_27 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27044.jpg"
   },
   {
+    "code": "27045",
+    "duplicate_of": "01064"
+  },
+  {
     "name": "Agent 13",
     "code": "27046",
     "subname": "Sharon Carter",
@@ -7392,6 +7836,22 @@ PACK_27 = [[
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27049.jpg"
+  },
+  {
+    "code": "27050",
+    "duplicate_of": "27019"
+  },
+  {
+    "code": "27051",
+    "duplicate_of": "01088"
+  },
+  {
+    "code": "27052",
+    "duplicate_of": "01089"
+  },
+  {
+    "code": "27053",
+    "duplicate_of": "01090"
   },
   {
     "name": "Government Liaison",
@@ -8769,6 +9229,10 @@ PACK_28 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28010.jpg"
   },
   {
+    "code": "28011",
+    "duplicate_of": "01052"
+  },
+  {
     "name": "Pitchback",
     "code": "28012",
     "type_code": "event",
@@ -8791,6 +9255,10 @@ PACK_28 = [[
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28014.jpg"
+  },
+  {
+    "code": "28015",
+    "duplicate_of": "01055"
   },
   {
     "name": "Fluid Motion",
@@ -9106,12 +9574,24 @@ PACK_29 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29018.jpg"
   },
   {
+    "code": "29019",
+    "duplicate_of": "05032"
+  },
+  {
     "name": "R&D Facility",
     "code": "29020",
     "type_code": "support",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29020.jpg"
+  },
+  {
+    "code": "29021",
+    "duplicate_of": "01072"
+  },
+  {
+    "code": "29022",
+    "duplicate_of": "27046"
   },
   {
     "name": "Snowguard",
@@ -9137,6 +9617,10 @@ PACK_29 = [[
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29025.jpg"
+  },
+  {
+    "code": "29026",
+    "duplicate_of": "01092"
   },
   {
     "name": "Ingenuity",
@@ -9381,6 +9865,22 @@ PACK_30 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30014.jpg"
   },
   {
+    "code": "30015",
+    "duplicate_of": "01061"
+  },
+  {
+    "code": "30016",
+    "duplicate_of": "20013"
+  },
+  {
+    "code": "30017",
+    "duplicate_of": "22015"
+  },
+  {
+    "code": "30018",
+    "duplicate_of": "03032"
+  },
+  {
     "name": "Overwatch",
     "code": "30019",
     "type_code": "upgrade",
@@ -9405,6 +9905,14 @@ PACK_30 = [[
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30021.jpg"
+  },
+  {
+    "code": "30022",
+    "duplicate_of": "12024"
+  },
+  {
+    "code": "30023",
+    "duplicate_of": "27023"
   },
   {
     "name": "Warrior of the Great Web",
@@ -9684,6 +10192,10 @@ PACK_31 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31017.jpg"
   },
   {
+    "code": "31018",
+    "duplicate_of": "05017"
+  },
+  {
     "name": "Forcefield Generator",
     "code": "31019",
     "type_code": "upgrade",
@@ -9836,6 +10348,2339 @@ PACK_31 = [[
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31037.jpg"
+  }
+]
+]]
+PACK_32 = [[
+[
+  {
+    "name": "Colossus",
+    "code": "32001a",
+    "type_code": "hero",
+    "faction_code": "hero",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32001B.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32001A.jpg"
+  },
+  {
+    "name": "Piotr Rasputin",
+    "code": "32001b",
+    "type_code": "alter_ego",
+    "faction_code": "hero",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32001A.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32001B.jpg"
+  },
+  {
+    "name": "Shadowcat",
+    "code": "32002",
+    "subname": "Kitty Pryde",
+    "type_code": "ally",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32002.jpg"
+  },
+  {
+    "name": "Piotr's Studio",
+    "code": "32003",
+    "type_code": "support",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32003.jpg"
+  },
+  {
+    "name": "Iron Will",
+    "code": "32004",
+    "type_code": "upgrade",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32004.jpg"
+  },
+  {
+    "name": "Titanium Muscles",
+    "code": "32005",
+    "type_code": "upgrade",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32005.jpg"
+  },
+  {
+    "name": "Organic Steel",
+    "code": "32006",
+    "type_code": "upgrade",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32006.jpg"
+  },
+  {
+    "name": "Made of Rage",
+    "code": "32007",
+    "type_code": "event",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32007.jpg"
+  },
+  {
+    "name": "Steel Fist",
+    "code": "32008",
+    "type_code": "event",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32008.jpg"
+  },
+  {
+    "name": "Bulletproof Protector",
+    "code": "32009",
+    "type_code": "event",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32009.jpg"
+  },
+  {
+    "name": "Armor Up",
+    "code": "32010",
+    "type_code": "event",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32010.jpg"
+  },
+  {
+    "name": "Nightcrawler",
+    "code": "32011",
+    "subname": "Kurt Wagner",
+    "type_code": "ally",
+    "faction_code": "protection",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32011.jpg"
+  },
+  {
+    "name": "Polaris",
+    "code": "32012",
+    "subname": "Lorna Dane",
+    "type_code": "ally",
+    "faction_code": "protection",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32012.jpg"
+  },
+  {
+    "name": "Protective Training",
+    "code": "32013",
+    "type_code": "upgrade",
+    "faction_code": "protection",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32013.jpg"
+  },
+  {
+    "name": "Powerful Punch",
+    "code": "32014",
+    "type_code": "event",
+    "faction_code": "protection",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32014.jpg"
+  },
+  {
+    "code": "32015",
+    "duplicate_of": "15030"
+  },
+  {
+    "name": "Perseverance",
+    "code": "32016",
+    "type_code": "event",
+    "faction_code": "protection",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32016.jpg"
+  },
+  {
+    "name": "Mutant Protection",
+    "code": "32017",
+    "type_code": "event",
+    "faction_code": "protection",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32017.jpg"
+  },
+  {
+    "name": "Defensive Energy",
+    "code": "32018",
+    "type_code": "resource",
+    "faction_code": "protection",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32018.jpg"
+  },
+  {
+    "name": "Professor X",
+    "code": "32019",
+    "subname": "Charles Xavier",
+    "type_code": "ally",
+    "faction_code": "basic",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32019.jpg"
+  },
+  {
+    "name": "The X-Jet",
+    "code": "32020",
+    "type_code": "support",
+    "faction_code": "basic",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32020.jpg"
+  },
+  {
+    "name": "Shadow and Steel",
+    "code": "32021",
+    "type_code": "event",
+    "faction_code": "basic",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32021.jpg"
+  },
+  {
+    "code": "32022",
+    "duplicate_of": "01088"
+  },
+  {
+    "code": "32023",
+    "duplicate_of": "01089"
+  },
+  {
+    "code": "32024",
+    "duplicate_of": "01090"
+  },
+  {
+    "name": "Shadowcat",
+    "code": "32030a",
+    "type_code": "hero",
+    "faction_code": "hero",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32030B.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32030A.jpg"
+  },
+  {
+    "name": "Kitty Pride",
+    "code": "32030b",
+    "type_code": "alter_ego",
+    "faction_code": "hero",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32030A.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32030B.jpg"
+  },
+  {
+    "name": "Solid",
+    "code": "32031a",
+    "type_code": "upgrade",
+    "faction_code": "hero",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32031B.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32031A.jpg"
+  },
+  {
+    "name": "Phased",
+    "code": "32031b",
+    "type_code": "upgrade",
+    "faction_code": "hero",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32031A.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32031B.jpg"
+  },
+  {
+    "name": "Lockheed",
+    "code": "32032",
+    "type_code": "ally",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32032.jpg"
+  },
+  {
+    "name": "Kitty's Room",
+    "code": "32033",
+    "type_code": "support",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32033.jpg"
+  },
+  {
+    "name": "Acute Control",
+    "code": "32034",
+    "type_code": "upgrade",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32034.jpg"
+  },
+  {
+    "name": "Intangible Interference",
+    "code": "32035",
+    "type_code": "upgrade",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32035.jpg"
+  },
+  {
+    "name": "Phased and Confused",
+    "code": "32036",
+    "type_code": "upgrade",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32036.jpg"
+  },
+  {
+    "name": "Shadowcat Surprise",
+    "code": "32037",
+    "type_code": "event",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32037.jpg"
+  },
+  {
+    "name": "Phase Strike",
+    "code": "32038",
+    "type_code": "event",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32038.jpg"
+  },
+  {
+    "name": "Airwalk",
+    "code": "32039",
+    "type_code": "event",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32039.jpg"
+  },
+  {
+    "name": "Quick Shift",
+    "code": "32040",
+    "type_code": "event",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32040.jpg"
+  },
+  {
+    "name": "Wolverine",
+    "code": "32041",
+    "subname": "Logan",
+    "type_code": "ally",
+    "faction_code": "aggression",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32041.jpg"
+  },
+  {
+    "name": "Magik",
+    "code": "32042",
+    "subname": "Illyana Rasputin",
+    "type_code": "ally",
+    "faction_code": "aggression",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32042.jpg"
+  },
+  {
+    "name": "Attack Training",
+    "code": "32043",
+    "type_code": "upgrade",
+    "faction_code": "aggression",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32043.jpg"
+  },
+  {
+    "name": "Gatekeeper",
+    "code": "32044",
+    "type_code": "upgrade",
+    "faction_code": "aggression",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32044.jpg"
+  },
+  {
+    "name": "Team Strike",
+    "code": "32045",
+    "type_code": "event",
+    "faction_code": "aggression",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32045.jpg"
+  },
+  {
+    "code": "32046",
+    "duplicate_of": "10015"
+  },
+  {
+    "name": "Aggressive Energy",
+    "code": "32047",
+    "type_code": "resource",
+    "faction_code": "aggression",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32047.jpg"
+  },
+  {
+    "name": "Colossus",
+    "code": "32048",
+    "type_code": "ally",
+    "faction_code": "basic",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32048.jpg"
+  },
+  {
+    "name": "X-Mansion",
+    "code": "32049",
+    "type_code": "support",
+    "faction_code": "basic",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32049.jpg"
+  },
+  {
+    "code": "32050",
+    "duplicate_of": "32021"
+  },
+  {
+    "name": "Ready to Rumble",
+    "code": "32051",
+    "type_code": "upgrade",
+    "faction_code": "basic",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32051.jpg"
+  },
+  {
+    "code": "32052",
+    "duplicate_of": "01088"
+  },
+  {
+    "code": "32053",
+    "duplicate_of": "01089"
+  },
+  {
+    "code": "32054",
+    "duplicate_of": "01090"
+  },
+  {
+    "name": "Frightened Police",
+    "code": "32171a",
+    "type_code": "side_scheme",
+    "faction_code": "campaign",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32171B.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32171A.jpg"
+  },
+  {
+    "name": "Metro P.D.",
+    "code": "32171b",
+    "type_code": "support",
+    "faction_code": "campaign",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32171A.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32171B.jpg"
+  },
+  {
+    "name": "Enemy of My Enemy",
+    "code": "32172a",
+    "type_code": "side_scheme",
+    "faction_code": "campaign",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32172B.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32172A.jpg"
+  },
+  {
+    "name": "Magneto",
+    "code": "32172b",
+    "subname": "Erik Lensherr",
+    "type_code": "ally",
+    "faction_code": "campaign",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32172A.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32172B.jpg"
+  },
+  {
+    "name": "Find the Prisoners",
+    "code": "32173a",
+    "type_code": "side_scheme",
+    "faction_code": "campaign",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32173B.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32173A.jpg"
+  },
+  {
+    "name": "Rescue Captives",
+    "code": "32173b",
+    "type_code": "environment",
+    "faction_code": "campaign",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32173A.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32173B.jpg"
+  },
+  {
+    "name": "Surprise Attack",
+    "code": "32174a",
+    "type_code": "side_scheme",
+    "faction_code": "campaign",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32174B.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32174A.jpg"
+  },
+  {
+    "name": "Reactive Defense",
+    "code": "32174b",
+    "type_code": "obligation",
+    "faction_code": "campaign",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32174A.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32174B.jpg"
+  },
+  {
+    "name": "Magneto's Fortress",
+    "code": "32175a",
+    "type_code": "side_scheme",
+    "faction_code": "campaign",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32175B.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32175A.jpg"
+  },
+  {
+    "name": "Magneto's Power",
+    "code": "32175b",
+    "type_code": "attachment",
+    "faction_code": "campaign",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32175A.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32175B.jpg"
+  },
+  {
+    "name": "Coup de Grâce",
+    "code": "32176",
+    "type_code": "upgrade",
+    "faction_code": "campaign",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32176.jpg"
+  },
+  {
+    "name": "Swagger",
+    "code": "32177",
+    "type_code": "upgrade",
+    "faction_code": "campaign",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32177.jpg"
+  },
+  {
+    "name": "Brazen Defense",
+    "code": "32178",
+    "type_code": "upgrade",
+    "faction_code": "campaign",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32178.jpg"
+  },
+  {
+    "name": "Ferocious Attack",
+    "code": "32179",
+    "type_code": "upgrade",
+    "faction_code": "campaign",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32179.jpg"
+  },
+  {
+    "name": "War Cry",
+    "code": "32180",
+    "type_code": "upgrade",
+    "faction_code": "campaign",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32180.jpg"
+  },
+  {
+    "name": "Coup de Grâce",
+    "code": "32181",
+    "type_code": "upgrade",
+    "faction_code": "campaign",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32181.jpg"
+  },
+  {
+    "name": "Compassion",
+    "code": "32182",
+    "type_code": "upgrade",
+    "faction_code": "campaign",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32182.jpg"
+  },
+  {
+    "name": "Group Assault",
+    "code": "32183",
+    "type_code": "upgrade",
+    "faction_code": "campaign",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32183.jpg"
+  },
+  {
+    "name": "Shock and Awe",
+    "code": "32184",
+    "type_code": "upgrade",
+    "faction_code": "campaign",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32184.jpg"
+  },
+  {
+    "name": "Improvisation",
+    "code": "32185",
+    "type_code": "upgrade",
+    "faction_code": "campaign",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32185.jpg"
+  },
+  {
+    "name": "Swagger",
+    "code": "32186",
+    "type_code": "upgrade",
+    "faction_code": "campaign",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32186.jpg"
+  },
+  {
+    "name": "Surprise!",
+    "code": "32187",
+    "type_code": "upgrade",
+    "faction_code": "campaign",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32187.jpg"
+  },
+  {
+    "name": "Heroic Intervention",
+    "code": "32188",
+    "type_code": "upgrade",
+    "faction_code": "campaign",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32188.jpg"
+  },
+  {
+    "name": "Determined Defense",
+    "code": "32189",
+    "type_code": "upgrade",
+    "faction_code": "campaign",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32189.jpg"
+  },
+  {
+    "name": "Bodyguard",
+    "code": "32190",
+    "type_code": "upgrade",
+    "faction_code": "campaign",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32190.jpg"
+  },
+  {
+    "name": "Surprise!",
+    "code": "32191",
+    "type_code": "upgrade",
+    "faction_code": "campaign",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32191.jpg"
+  },
+  {
+    "name": "Compassion",
+    "code": "32192",
+    "type_code": "upgrade",
+    "faction_code": "campaign",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32192.jpg"
+  },
+  {
+    "name": "Rescue Operation",
+    "code": "32193",
+    "type_code": "upgrade",
+    "faction_code": "campaign",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32193.jpg"
+  },
+  {
+    "name": "Mentorship",
+    "code": "32194",
+    "type_code": "upgrade",
+    "faction_code": "campaign",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32194.jpg"
+  },
+  {
+    "name": "Fortitude",
+    "code": "32195",
+    "type_code": "upgrade",
+    "faction_code": "campaign",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32195.jpg"
+  },
+  {
+    "name": "Homesick",
+    "code": "32025",
+    "type_code": "obligation",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32025.jpg"
+  },
+  {
+    "name": "Juggernaut",
+    "code": "32026",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32026.jpg"
+  },
+  {
+    "name": "Rampaging Juggernaut",
+    "code": "32027",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32027.jpg"
+  },
+  {
+    "name": "Unstoppable",
+    "code": "32028",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32028.jpg"
+  },
+  {
+    "name": "Slammed",
+    "code": "32029",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32029.jpg"
+  },
+  {
+    "name": "Permanently Phased",
+    "code": "32055",
+    "type_code": "obligation",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32055.jpg"
+  },
+  {
+    "name": "White Queen",
+    "code": "32056",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32056.jpg"
+  },
+  {
+    "name": "The Hellfire Club",
+    "code": "32057",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32057.jpg"
+  },
+  {
+    "name": "Hellfire Pawn",
+    "code": "32058",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32058.jpg"
+  },
+  {
+    "name": "Telepathic Restraint",
+    "code": "32059",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32059.jpg"
+  },
+  {
+    "name": "Sabretooth I",
+    "code": "32060",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32060.jpg"
+  },
+  {
+    "name": "Sabretooth II",
+    "code": "32061",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32061.jpg"
+  },
+  {
+    "name": "Sabretooth III",
+    "code": "32062",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32062.jpg"
+  },
+  {
+    "name": "Stalked by Sabretooth 1A",
+    "code": "32063a",
+    "type_code": "main_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32063B.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32063A.jpg"
+  },
+  {
+    "name": "Stalked by Sabretooth 1B",
+    "code": "32063b",
+    "type_code": "main_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32063A.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32063B.jpg"
+  },
+  {
+    "name": "The Injured Senator 2A",
+    "code": "32064a",
+    "type_code": "main_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32064B.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32064A.jpg"
+  },
+  {
+    "name": "The Injured Senator 2B",
+    "code": "32064b",
+    "type_code": "main_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32064A.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32064B.jpg"
+  },
+  {
+    "name": "Find the Senator",
+    "code": "32065a",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32065B.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32065A.jpg"
+  },
+  {
+    "name": "Protect the Senator",
+    "code": "32065b",
+    "type_code": "environment",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32065A.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32065B.jpg"
+  },
+  {
+    "name": "Robert Kelly",
+    "code": "32066",
+    "type_code": "ally",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32066.jpg"
+  },
+  {
+    "name": "Adamantium Claws",
+    "code": "32067",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32067.jpg"
+  },
+  {
+    "name": "Animal Ferocity",
+    "code": "32068",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32068.jpg"
+  },
+  {
+    "name": "Sabretooth Strikes",
+    "code": "32069",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32069.jpg"
+  },
+  {
+    "name": "Unreleting Savage",
+    "code": "32070",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32070.jpg"
+  },
+  {
+    "name": "Medical Emergency",
+    "code": "32071",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32071.jpg"
+  },
+  {
+    "name": "Deral Rage",
+    "code": "32072",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32072.jpg"
+  },
+  {
+    "name": "Avalanche",
+    "code": "32073",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32073.jpg"
+  },
+  {
+    "name": "Blob",
+    "code": "32074",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32074.jpg"
+  },
+  {
+    "name": "Pyro",
+    "code": "32075",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32075.jpg"
+  },
+  {
+    "name": "Toad",
+    "code": "32076",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32076.jpg"
+  },
+  {
+    "name": "Homo Superior",
+    "code": "32077",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32077.jpg"
+  },
+  {
+    "name": "Mutant Terrorists",
+    "code": "32078",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32078.jpg"
+  },
+  {
+    "name": "The Brotherhood",
+    "code": "32079",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32079.jpg"
+  },
+  {
+    "name": "Mystique",
+    "code": "32080",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32080.jpg"
+  },
+  {
+    "name": "Metamorphic Mayhem",
+    "code": "32081",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32081.jpg"
+  },
+  {
+    "name": "Infiltration",
+    "code": "32082",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32082.jpg"
+  },
+  {
+    "name": "Shapeshifter Surprise",
+    "code": "32083",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32083.jpg"
+  },
+  {
+    "name": "Sentinel I",
+    "code": "32084",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32084.jpg"
+  },
+  {
+    "name": "Sentinel II",
+    "code": "32085",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32085.jpg"
+  },
+  {
+    "name": "Sentinel III",
+    "code": "32086",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32086.jpg"
+  },
+  {
+    "name": "Night of the Sentinels A",
+    "code": "32087a",
+    "type_code": "main_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32087B.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32087A.jpg"
+  },
+  {
+    "name": "Night of the Sentinels B",
+    "code": "32087b",
+    "type_code": "main_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32087A.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32087B.jpg"
+  },
+  {
+    "name": "Mutant at the Mall",
+    "code": "32088a",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32088B.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32088A.jpg"
+  },
+  {
+    "name": "Jubilee",
+    "code": "32088b",
+    "subname": "Jubilation Lee",
+    "type_code": "ally",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32088A.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32088B.jpg"
+  },
+  {
+    "name": "Rictor",
+    "code": "32089",
+    "subname": "Julio Richter",
+    "type_code": "ally",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32089.jpg"
+  },
+  {
+    "name": "Boom Boom",
+    "code": "32090",
+    "subname": "Tabitha Smith",
+    "type_code": "ally",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32090.jpg"
+  },
+  {
+    "name": "Cannonball",
+    "code": "32091",
+    "subname": "Sam Guthrie",
+    "type_code": "ally",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32091.jpg"
+  },
+  {
+    "name": "Wolfsbane",
+    "code": "32092",
+    "subname": "Rahne Sinclair",
+    "type_code": "ally",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32092.jpg"
+  },
+  {
+    "name": "Sentinel Mark IV",
+    "code": "32093",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32093.jpg"
+  },
+  {
+    "name": "Gauntlet Beam",
+    "code": "32094",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32094.jpg"
+  },
+  {
+    "name": "Learning A.I.",
+    "code": "32095",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32095.jpg"
+  },
+  {
+    "name": "Adaptive Armor",
+    "code": "32096",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32096.jpg"
+  },
+  {
+    "name": "Self-Repair",
+    "code": "32097",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32097.jpg"
+  },
+  {
+    "name": "Mutant Detected",
+    "code": "32098",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32098.jpg"
+  },
+  {
+    "name": "Warn the Others",
+    "code": "32099",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32099.jpg"
+  },
+  {
+    "name": "Abduction Protocols",
+    "code": "32100",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32100.jpg"
+  },
+  {
+    "name": "Sentinel Mark II",
+    "code": "32101",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32101.jpg"
+  },
+  {
+    "name": "Sentinel Mark III",
+    "code": "32102",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32102.jpg"
+  },
+  {
+    "name": "Energy Barrier",
+    "code": "32103",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32103.jpg"
+  },
+  {
+    "name": "Operation Zero Tolerance",
+    "code": "32104",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32104.jpg"
+  },
+  {
+    "name": "Sentinel Mark V",
+    "code": "32105",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32105.jpg"
+  },
+  {
+    "name": "Sentinel Mark VI",
+    "code": "32106",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32106.jpg"
+  },
+  {
+    "name": "Targeted for Elimination",
+    "code": "32107",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32107.jpg"
+  },
+  {
+    "name": "Relentless Robots",
+    "code": "32108",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32108.jpg"
+  },
+  {
+    "name": "Master Mold I",
+    "code": "32109",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32109.jpg"
+  },
+  {
+    "name": "Master Mold II",
+    "code": "32110",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32110.jpg"
+  },
+  {
+    "name": "Master Mold III",
+    "code": "32111",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32111.jpg"
+  },
+  {
+    "name": "The Sentinel Factory A",
+    "code": "32112a",
+    "type_code": "main_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32112B.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32112A.jpg"
+  },
+  {
+    "name": "The Sentinel Factory B",
+    "code": "32112b",
+    "type_code": "main_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32112A.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32112B.jpg"
+  },
+  {
+    "name": "Master Mold's Agenda A",
+    "code": "32113a",
+    "type_code": "main_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32113B.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32113A.jpg"
+  },
+  {
+    "name": "Master Mold's Agenda B",
+    "code": "32113b",
+    "type_code": "main_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32113A.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32113B.jpg"
+  },
+  {
+    "name": "Sentinel Mark VIII",
+    "code": "32114",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32114.jpg"
+  },
+  {
+    "name": "Unit Upgrade",
+    "code": "32115",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32115.jpg"
+  },
+  {
+    "name": "Stun Beam",
+    "code": "32116",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32116.jpg"
+  },
+  {
+    "name": "Master Mold's Children",
+    "code": "32117",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32117.jpg"
+  },
+  {
+    "name": "Shields Up",
+    "code": "32118",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32118.jpg"
+  },
+  {
+    "name": "Intruder Alert!",
+    "code": "32119",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32119.jpg"
+  },
+  {
+    "name": "Insert Virus Program",
+    "code": "32120",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32120.jpg"
+  },
+  {
+    "name": "Avalanche A",
+    "code": "32121a",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32121B.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32121A.jpg"
+  },
+  {
+    "name": "Avalanche B",
+    "code": "32121b",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32121A.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32121B.jpg"
+  },
+  {
+    "name": "Blob A",
+    "code": "32122a",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32122B.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32122A.jpg"
+  },
+  {
+    "name": "Blob B",
+    "code": "32122b",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32122A.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32122B.jpg"
+  },
+  {
+    "name": "Pyro A",
+    "code": "32123a",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32123B.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32123A.jpg"
+  },
+  {
+    "name": "Pyro B",
+    "code": "32123b",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32123A.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32123B.jpg"
+  },
+  {
+    "name": "Toad A",
+    "code": "32124a",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32124B.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32124A.jpg"
+  },
+  {
+    "name": "Toad B",
+    "code": "32124b",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32124A.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32124B.jpg"
+  },
+  {
+    "name": "The Brotherhood Strikes! A",
+    "code": "32125a",
+    "type_code": "main_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32125B.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32125A.jpg"
+  },
+  {
+    "name": "The Brotherhood Strikes! B",
+    "code": "32125b",
+    "type_code": "main_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32125A.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32125B.jpg"
+  },
+  {
+    "name": "The Atrium A",
+    "code": "32126a",
+    "type_code": "main_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32126B.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32126A.jpg"
+  },
+  {
+    "name": "The Atrium B",
+    "code": "32126b",
+    "type_code": "main_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32126A.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32126B.jpg"
+  },
+  {
+    "name": "The Cafeteria A",
+    "code": "32127a",
+    "type_code": "main_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32127B.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32127A.jpg"
+  },
+  {
+    "name": "The Cafeteria B",
+    "code": "32127b",
+    "type_code": "main_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32127A.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32127B.jpg"
+  },
+  {
+    "name": "The Basketball Court A",
+    "code": "32128a",
+    "type_code": "main_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32128B.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32128A.jpg"
+  },
+  {
+    "name": "The Basketball Court B",
+    "code": "32128b",
+    "type_code": "main_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32128A.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32128B.jpg"
+  },
+  {
+    "name": "The Courtyard A",
+    "code": "32129a",
+    "type_code": "main_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32129B.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32129A.jpg"
+  },
+  {
+    "name": "The Courtyard B",
+    "code": "32129b",
+    "type_code": "main_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32129A.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32129B.jpg"
+  },
+  {
+    "name": "Save the School",
+    "code": "32130",
+    "type_code": "environment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32130.jpg"
+  },
+  {
+    "name": "Brotherhood Beatdown",
+    "code": "32131",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32131.jpg"
+  },
+  {
+    "name": "Ground Swell",
+    "code": "32132",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32132.jpg"
+  },
+  {
+    "name": "Immovable",
+    "code": "32133",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32133.jpg"
+  },
+  {
+    "name": "Pyromaniac",
+    "code": "32134",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32134.jpg"
+  },
+  {
+    "name": "Hopping Mad",
+    "code": "32135",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32135.jpg"
+  },
+  {
+    "name": "Protect the Students",
+    "code": "32136",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32136.jpg"
+  },
+  {
+    "name": "Under Siege",
+    "code": "32137",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32137.jpg"
+  },
+  {
+    "name": "Magneto I",
+    "code": "32138",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32138.jpg"
+  },
+  {
+    "name": "Magneto II",
+    "code": "32139",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32139.jpg"
+  },
+  {
+    "name": "Magneto III",
+    "code": "32140",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32140.jpg"
+  },
+  {
+    "name": "Asteroid M A",
+    "code": "32141a",
+    "type_code": "main_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32141B.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32141A.jpg"
+  },
+  {
+    "name": "Asteroid M B",
+    "code": "32141b",
+    "type_code": "main_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32141A.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32141B.jpg"
+  },
+  {
+    "name": "Factory Online A",
+    "code": "32142a",
+    "type_code": "main_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32142B.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32142A.jpg"
+  },
+  {
+    "name": "Factory Online B",
+    "code": "32142b",
+    "type_code": "main_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32142A.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32142B.jpg"
+  },
+  {
+    "name": "The Rule of Magnus A",
+    "code": "32143a",
+    "type_code": "main_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32143B.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32143A.jpg"
+  },
+  {
+    "name": "The Rule of Magnus B",
+    "code": "32143b",
+    "type_code": "main_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32143A.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32143B.jpg"
+  },
+  {
+    "name": "Boarding Party",
+    "code": "32144a",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32144B.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32144A.jpg"
+  },
+  {
+    "name": "Sabotage Master Mold",
+    "code": "32144b",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32144A.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32144B.jpg"
+  },
+  {
+    "name": "Orbital Decay",
+    "code": "32145a",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32145B.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32145A.jpg"
+  },
+  {
+    "name": "Physical Strain",
+    "code": "32145b",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32145A.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32145B.jpg"
+  },
+  {
+    "name": "M-Type Sentinel",
+    "code": "32146",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32146.jpg"
+  },
+  {
+    "name": "Magneto's Helmet",
+    "code": "32147",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32147.jpg"
+  },
+  {
+    "name": "Magneto's Armor",
+    "code": "32148",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32148.jpg"
+  },
+  {
+    "name": "Magnetic Bubble",
+    "code": "32149",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32149.jpg"
+  },
+  {
+    "name": "Wrapped in Metal",
+    "code": "32150",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32150.jpg"
+  },
+  {
+    "name": "Master of Magnetism",
+    "code": "32151",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32151.jpg"
+  },
+  {
+    "name": "Electric Shock",
+    "code": "32152",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32152.jpg"
+  },
+  {
+    "name": "Electromagnetic Blast",
+    "code": "32153",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32153.jpg"
+  },
+  {
+    "name": "Metal Shards",
+    "code": "32154",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32154.jpg"
+  },
+  {
+    "name": "Magnetic Missile",
+    "code": "32155",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32155.jpg"
+  },
+  {
+    "name": "Magnetic Mayhem",
+    "code": "32156",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32156.jpg"
+  },
+  {
+    "name": "Magnetically Sealed",
+    "code": "32157",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32157.jpg"
+  },
+  {
+    "name": "Seized!",
+    "code": "32158",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32158.jpg"
+  },
+  {
+    "name": "Fabian Cortez",
+    "code": "32159",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32159.jpg"
+  },
+  {
+    "name": "Amelia Voght",
+    "code": "32160",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32160.jpg"
+  },
+  {
+    "name": "Senyaka",
+    "code": "32161",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32161.jpg"
+  },
+  {
+    "name": "Delgado",
+    "code": "32162",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32162.jpg"
+  },
+  {
+    "name": "Unuscione",
+    "code": "32163",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32163.jpg"
+  },
+  {
+    "name": "Zeal for the Cause",
+    "code": "32164",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32164.jpg"
+  },
+  {
+    "name": "The Acolytes",
+    "code": "32165",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32165.jpg"
+  },
+  {
+    "name": "Nimrod",
+    "code": "32166",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32166.jpg"
+  },
+  {
+    "name": "Bastion",
+    "code": "32167",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32167.jpg"
+  },
+  {
+    "name": "Nimrod's Portal",
+    "code": "32168",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32168.jpg"
+  },
+  {
+    "name": "Bastion's Machinations",
+    "code": "32169",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32169.jpg"
+  },
+  {
+    "name": "Nano-Sentinel Tech",
+    "code": "32170",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32170.jpg"
+  }
+]
+]]
+PACK_33 = [[
+[
+  {
+    "name": "Cyclops",
+    "code": "33001a",
+    "type_code": "hero",
+    "faction_code": "hero",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33001B.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33001A.jpg"
+  },
+  {
+    "name": "Scott Summers",
+    "code": "33001b",
+    "type_code": "alter_ego",
+    "faction_code": "hero",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33001A.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33001B.jpg"
+  },
+  {
+    "name": "Phoenix",
+    "code": "33002",
+    "subname": "Jean Grey",
+    "type_code": "ally",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33002.jpg"
+  },
+  {
+    "name": "Ruby Quartz Visor",
+    "code": "33003",
+    "type_code": "upgrade",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33003.jpg"
+  },
+  {
+    "name": "Field Commander",
+    "code": "33004",
+    "type_code": "upgrade",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33004.jpg"
+  },
+  {
+    "name": "Exploit Weakness",
+    "code": "33005",
+    "type_code": "upgrade",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33005.jpg"
+  },
+  {
+    "name": "Practiced Defense",
+    "code": "33006",
+    "type_code": "upgrade",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33006.jpg"
+  },
+  {
+    "name": "Priority Target",
+    "code": "33007",
+    "type_code": "upgrade",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33007.jpg"
+  },
+  {
+    "name": "Full Blast",
+    "code": "33008",
+    "type_code": "event",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33008.jpg"
+  },
+  {
+    "name": "Rocket Beam",
+    "code": "33009",
+    "type_code": "event",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33009.jpg"
+  },
+  {
+    "name": "Tactical Brillance",
+    "code": "33010",
+    "type_code": "event",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33010.jpg"
+  },
+  {
+    "name": "Beast",
+    "code": "33011",
+    "subname": "Hank Mccoy",
+    "type_code": "ally",
+    "faction_code": "leadership",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33011.jpg"
+  },
+  {
+    "name": "Dust",
+    "code": "33012",
+    "subname": "Sooraya Qadir",
+    "type_code": "ally",
+    "faction_code": "aggression",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33012.jpg"
+  },
+  {
+    "name": "Rockslide",
+    "code": "33013",
+    "subname": "Santo Vaccarro",
+    "type_code": "ally",
+    "faction_code": "protection",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33013.jpg"
+  },
+  {
+    "name": "Blindfold",
+    "code": "33014",
+    "subname": "Ruth Aldine",
+    "type_code": "ally",
+    "faction_code": "justice",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33014.jpg"
+  },
+  {
+    "name": "Danger Room Training",
+    "code": "33015",
+    "type_code": "upgrade",
+    "faction_code": "leadership",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33015.jpg"
+  },
+  {
+    "name": "Coordinated Attack",
+    "code": "33016",
+    "type_code": "upgrade",
+    "faction_code": "leadership",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33016.jpg"
+  },
+  {
+    "code": "33017",
+    "duplicate_of": "06032"
+  },
+  {
+    "name": "Effective Leadership",
+    "code": "33018",
+    "type_code": "resource",
+    "faction_code": "leadership",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33018.jpg"
+  },
+  {
+    "name": "Angel",
+    "code": "33019",
+    "subname": "Warren Worthington III",
+    "type_code": "ally",
+    "faction_code": "basic",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33019.jpg"
+  },
+  {
+    "name": "Utopia",
+    "code": "33020",
+    "type_code": "support",
+    "faction_code": "basic",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33020.jpg"
+  },
+  {
+    "name": "Danger Room",
+    "code": "33021",
+    "type_code": "support",
+    "faction_code": "basic",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33021.jpg"
+  },
+  {
+    "name": "Game Time",
+    "code": "33022",
+    "type_code": "event",
+    "faction_code": "basic",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33022.jpg"
+  },
+  {
+    "name": "Psychic Rapport",
+    "code": "33023",
+    "type_code": "event",
+    "faction_code": "basic",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33023.jpg"
+  },
+  {
+    "code": "33024",
+    "duplicate_of": "01088"
+  },
+  {
+    "code": "33025",
+    "duplicate_of": "01089"
+  },
+  {
+    "code": "33026",
+    "duplicate_of": "01090"
+  },
+  {
+    "name": "Marked",
+    "code": "33032",
+    "type_code": "upgrade",
+    "faction_code": "aggression",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33032.jpg"
+  },
+  {
+    "name": "Befuddle",
+    "code": "33033",
+    "type_code": "upgrade",
+    "faction_code": "protection",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33033.jpg"
+  },
+  {
+    "name": "Pinned Down",
+    "code": "33034",
+    "type_code": "upgrade",
+    "faction_code": "justice",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33034.jpg"
+  },
+  {
+    "name": "Honorary X-Men",
+    "code": "33035",
+    "type_code": "upgrade",
+    "faction_code": "basic",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33035.jpg"
+  },
+  {
+    "name": "Lost Visor",
+    "code": "33027",
+    "type_code": "obligation",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33027.jpg"
+  },
+  {
+    "name": "Mister Sinister",
+    "code": "33028",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33028.jpg"
+  },
+  {
+    "name": "Genetic Manipulation",
+    "code": "33029",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33029.jpg"
+  },
+  {
+    "name": "Gene Therapy",
+    "code": "33030",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33030.jpg"
+  },
+  {
+    "name": "Concussive Force",
+    "code": "33031",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33031.jpg"
+  }
+]
+]]
+PACK_34 = [[
+[
+  {
+    "name": "Phoenix",
+    "code": "34001a",
+    "type_code": "hero",
+    "faction_code": "hero",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34001B.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34001A.jpg"
+  },
+  {
+    "name": "Jean Grey",
+    "code": "34001b",
+    "type_code": "alter_ego",
+    "faction_code": "hero",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34001A.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34001B.jpg"
+  },
+  {
+    "name": "Phoenix Force A",
+    "code": "34002a",
+    "type_code": "upgrade",
+    "faction_code": "hero",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34002B.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34002A.jpg"
+  },
+  {
+    "name": "Phoenix Force B",
+    "code": "34002b",
+    "type_code": "upgrade",
+    "faction_code": "hero",
+    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34002A.jpg",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34002B.jpg"
+  },
+  {
+    "name": "Cyclops",
+    "code": "34003",
+    "type_code": "ally",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34003.jpg"
+  },
+  {
+    "name": "White Hot Room",
+    "code": "34004",
+    "type_code": "support",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34004.jpg"
+  },
+  {
+    "name": "Phoenix Suit",
+    "code": "34005",
+    "type_code": "upgrade",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34005.jpg"
+  },
+  {
+    "name": "Rise from the Ashes",
+    "code": "34006",
+    "type_code": "upgrade",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34006.jpg"
+  },
+  {
+    "name": "Telekinetic Shield",
+    "code": "34007",
+    "type_code": "upgrade",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34007.jpg"
+  },
+  {
+    "name": "Mental Paralysis",
+    "code": "34008",
+    "type_code": "upgrade",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34008.jpg"
+  },
+  {
+    "name": "Mind Control",
+    "code": "34009",
+    "type_code": "upgrade",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34009.jpg"
+  },
+  {
+    "name": "Telekinetic Attack",
+    "code": "34010",
+    "type_code": "event",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34010.jpg"
+  },
+  {
+    "name": "Psychic Blast",
+    "code": "34011",
+    "type_code": "event",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34011.jpg"
+  },
+  {
+    "name": "Telepathic Trickery",
+    "code": "34012",
+    "type_code": "event",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34012.jpg"
+  },
+  {
+    "name": "Phoenix Firebird",
+    "code": "34013",
+    "type_code": "event",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34013.jpg"
+  },
+  {
+    "name": "Banshee",
+    "code": "34014",
+    "subname": "Sean Cassidy",
+    "type_code": "ally",
+    "faction_code": "justice",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34014.jpg"
+  },
+  {
+    "name": "Marvel Girl",
+    "code": "34015",
+    "subname": "Rachel Summers",
+    "type_code": "ally",
+    "faction_code": "justice",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34015.jpg"
+  },
+  {
+    "name": "Mission Training",
+    "code": "34016",
+    "type_code": "upgrade",
+    "faction_code": "justice",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34016.jpg"
+  },
+  {
+    "name": "Psychic Manipulation",
+    "code": "34017",
+    "type_code": "event",
+    "faction_code": "justice",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34017.jpg"
+  },
+  {
+    "name": "Mutant Peacekeepers",
+    "code": "34018",
+    "type_code": "event",
+    "faction_code": "justice",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34018.jpg"
+  },
+  {
+    "code": "34019",
+    "duplicate_of": "15014"
+  },
+  {
+    "name": "Passion for Justice",
+    "code": "34020",
+    "type_code": "resource",
+    "faction_code": "justice",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34020.jpg"
+  },
+  {
+    "name": "Storm",
+    "code": "34021",
+    "subname": "Ororo Munroe",
+    "type_code": "ally",
+    "faction_code": "basic",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34021.jpg"
+  },
+  {
+    "name": "Cerebro",
+    "code": "34022",
+    "type_code": "support",
+    "faction_code": "basic",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34022.jpg"
+  },
+  {
+    "code": "34023",
+    "duplicate_of": "33023"
+  },
+  {
+    "code": "34024",
+    "duplicate_of": "05033"
+  },
+  {
+    "code": "34025",
+    "duplicate_of": "01088"
+  },
+  {
+    "code": "34026",
+    "duplicate_of": "01089"
+  },
+  {
+    "code": "34027",
+    "duplicate_of": "01090"
+  },
+  {
+    "name": "Psychic Assault",
+    "code": "34032",
+    "type_code": "event",
+    "faction_code": "aggression",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34032.jpg"
+  },
+  {
+    "name": "Psychic Misdirection",
+    "code": "34033",
+    "type_code": "event",
+    "faction_code": "protection",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34033.jpg"
+  },
+  {
+    "name": "Psychic Kicker",
+    "code": "34034",
+    "type_code": "event",
+    "faction_code": "leadership",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34034.jpg"
+  },
+  {
+    "name": "Soul Sisters",
+    "code": "34035",
+    "type_code": "event",
+    "faction_code": "basic",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34035.jpg"
+  },
+  {
+    "name": "Burning Hunger",
+    "code": "34028",
+    "type_code": "obligation",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34028.jpg"
+  },
+  {
+    "name": "Dark Phoenix",
+    "code": "34029",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34029.jpg"
+  },
+  {
+    "name": "Consume the World",
+    "code": "34030",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34030.jpg"
+  },
+  {
+    "name": "Fiery Rage",
+    "code": "34031",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34031.jpg"
   }
 ]
 ]]
@@ -10000,6 +12845,18 @@ PACK_08 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08013.jpg"
   },
   {
+    "code": "08014",
+    "duplicate_of": "01062"
+  },
+  {
+    "code": "08015",
+    "duplicate_of": "01063"
+  },
+  {
+    "code": "08016",
+    "duplicate_of": "01064"
+  },
+  {
     "name": "Counterintelligence",
     "code": "08017",
     "type_code": "upgrade",
@@ -10014,6 +12871,22 @@ PACK_08 = [[
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08018.jpg"
+  },
+  {
+    "code": "08019",
+    "duplicate_of": "01084"
+  },
+  {
+    "code": "08020",
+    "duplicate_of": "01088"
+  },
+  {
+    "code": "08021",
+    "duplicate_of": "01089"
+  },
+  {
+    "code": "08022",
+    "duplicate_of": "01090"
   },
   {
     "name": "Quincarrier",
@@ -10206,6 +13079,10 @@ PACK_03 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03011.jpg"
   },
   {
+    "code": "03012",
+    "duplicate_of": "01066"
+  },
+  {
     "name": "Squirrel Girl",
     "code": "03013",
     "subname": "Doreen Green",
@@ -10232,6 +13109,10 @@ PACK_03 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03015.jpg"
   },
   {
+    "code": "03016",
+    "duplicate_of": "01071"
+  },
+  {
     "name": "Strength In Numbers",
     "code": "03017",
     "type_code": "event",
@@ -10240,12 +13121,32 @@ PACK_03 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03017.jpg"
   },
   {
+    "code": "03018",
+    "duplicate_of": "01072"
+  },
+  {
     "name": "Quinjet",
     "code": "03019",
     "type_code": "support",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03019.jpg"
+  },
+  {
+    "code": "03020",
+    "duplicate_of": "01083"
+  },
+  {
+    "code": "03021",
+    "duplicate_of": "01088"
+  },
+  {
+    "code": "03022",
+    "duplicate_of": "01089"
+  },
+  {
+    "code": "03023",
+    "duplicate_of": "01090"
   },
   {
     "name": "Avengers Tower",
@@ -12116,6 +15017,14 @@ PACK_09 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09016.jpg"
   },
   {
+    "code": "09017",
+    "duplicate_of": "01079"
+  },
+  {
+    "code": "09018",
+    "duplicate_of": "01080"
+  },
+  {
     "name": "The Night Nurse",
     "code": "09019",
     "type_code": "support",
@@ -12138,6 +15047,22 @@ PACK_09 = [[
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09021.jpg"
+  },
+  {
+    "code": "09022",
+    "duplicate_of": "01088"
+  },
+  {
+    "code": "09023",
+    "duplicate_of": "01089"
+  },
+  {
+    "code": "09024",
+    "duplicate_of": "01090"
+  },
+  {
+    "code": "09025",
+    "duplicate_of": "01091"
   },
   {
     "name": "The Sorcerer Supreme",
@@ -12790,6 +15715,10 @@ PACK_05 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05012.jpg"
   },
   {
+    "code": "05013",
+    "duplicate_of": "01078"
+  },
+  {
     "name": "Preemptive Strike",
     "code": "05014",
     "type_code": "event",
@@ -12806,6 +15735,10 @@ PACK_05 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05015.jpg"
   },
   {
+    "code": "05016",
+    "duplicate_of": "01079"
+  },
+  {
     "name": "Energy Barrier",
     "code": "05017",
     "type_code": "upgrade",
@@ -12820,6 +15753,22 @@ PACK_05 = [[
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05018.jpg"
+  },
+  {
+    "code": "05019",
+    "duplicate_of": "01088"
+  },
+  {
+    "code": "05020",
+    "duplicate_of": "01089"
+  },
+  {
+    "code": "05021",
+    "duplicate_of": "01090"
+  },
+  {
+    "code": "05022",
+    "duplicate_of": "01091"
   },
   {
     "name": "Endurance",
@@ -13018,6 +15967,10 @@ PACK_06 = [[
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06012.jpg"
   },
   {
+    "code": "06013",
+    "duplicate_of": "01052"
+  },
+  {
     "name": "Get Over Here!",
     "code": "06014",
     "type_code": "event",
@@ -13032,6 +15985,10 @@ PACK_06 = [[
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06015.jpg"
+  },
+  {
+    "code": "06016",
+    "duplicate_of": "01055"
   },
   {
     "name": "Hall of Heroes",
@@ -13072,6 +16029,22 @@ PACK_06 = [[
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06021.jpg"
+  },
+  {
+    "code": "06022",
+    "duplicate_of": "01088"
+  },
+  {
+    "code": "06023",
+    "duplicate_of": "01089"
+  },
+  {
+    "code": "06024",
+    "duplicate_of": "01090"
+  },
+  {
+    "code": "06025",
+    "duplicate_of": "01091"
   },
   {
     "name": "Under Surveillance",
@@ -13306,6 +16279,10 @@ PACK_04 = [[
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04020.jpg"
+  },
+  {
+    "code": "04021",
+    "duplicate_of": "03024"
   },
   {
     "name": "Earth's Mightiest Heroes",

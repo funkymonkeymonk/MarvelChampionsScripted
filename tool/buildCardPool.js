@@ -47,9 +47,7 @@ function FormatPackData(responses) {
     return cardBack["player"]
   }
 
-  //  Right now this filters out duplicate cards,
-  //  but they 100% exist in MarvelCDB and we'll need to manage supporting them
-
+  responses.forEach(response => console.log(response.data[0].pack_code))
   return responses
       .map(res => res.data)
       .flat()
@@ -83,7 +81,7 @@ function WriteToMod(pack) {
       .map(key => prefix + key + start + JSON.stringify(pack[key], null, 2) + end)
       .join('\n')
 
-  const filepath = path.join(__dirname, '..', 'mod', 'src', 'MarvelChampionsLCG', 'CardpoolData.lua')
+  const filepath = path.join(__dirname, '..', 'mod', 'src', 'MarvelChampionsLCG', 'Cardpool_Data.843931.lua')
   fs.writeFile(filepath, content, err => {
     if (err) {
       console.error(err);
