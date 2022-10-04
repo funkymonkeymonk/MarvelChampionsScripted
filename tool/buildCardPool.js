@@ -47,10 +47,11 @@ function FormatPackData(responses) {
     return cardBack["player"]
   }
 
+  responses.forEach(response => console.log(response.data[0].pack_code))
   return responses
       .map(res => res.data)
       .flat()
-      .filter(card => card.name != null)
+      .filter(card => card.name != null || card.duplicate_of != null)
       .map(card => {
         return {
           name: card.name,
@@ -58,8 +59,9 @@ function FormatPackData(responses) {
           ...card.subname && {subname: card.subname},
           type_code: card.type_code,
           faction_code: card.faction_code,
-          BackURL: GetCardBack(card),
-          FrontURL: "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/" + card.code.toUpperCase() + ".jpg",
+          ...!card.duplicate_of && { BackURL: GetCardBack(card)},
+          ...!card.duplicate_of && { FrontURL: "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/" + card.code.toUpperCase() + ".jpg"},
+          duplicate_of: card.duplicate_of,
         }
       })
 }
@@ -79,7 +81,7 @@ function WriteToMod(pack) {
       .map(key => prefix + key + start + JSON.stringify(pack[key], null, 2) + end)
       .join('\n')
 
-  const filepath = path.join(__dirname, '..', 'mod', 'src', 'MarvelChampionsLCG', 'CardpoolData.lua')
+  const filepath = path.join(__dirname, '..', 'mod', 'src', 'MarvelChampionsLCG', 'Cardpool_Data.843931.lua')
   fs.writeFile(filepath, content, err => {
     if (err) {
       console.error(err);
