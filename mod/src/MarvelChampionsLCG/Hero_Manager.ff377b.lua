@@ -47,30 +47,30 @@ function placeHero(heroBagGuid, playerColor, deckType)
         heroDetails["counterUrl"],
         heroDetails["hitPoints"])
     
-      placeIdentity(
-        heroBag, 
-        heroDetails["identityGuid"], 
-        playmatPosition)
-    
-      placeDeck(
-        heroBag, 
-        deckType, 
-        heroDetails["starterDeckId"], 
-        heroDetails["heroDeckId"], 
-        playmatPosition)
-    
-      placeExtras(
-        heroBag, 
-        heroDetails["extras"], 
-        playmatPosition)
-    
-      placeNemesis(
-        heroBag, 
-        heroDetails["nemesisGuid"])
-    
-      placeObligation(
-        heroBag, 
-        heroDetails["obligationGuid"])
+--       placeIdentity(
+--         heroBag,
+--         heroDetails["identityGuid"],
+--         playmatPosition)
+--
+--       placeDeck(
+--         heroBag,
+--         deckType,
+--         heroDetails["starterDeckId"],
+--         heroDetails["heroDeckId"],
+--         playmatPosition)
+--
+--       placeExtras(
+--         heroBag,
+--         heroDetails["extras"],
+--         playmatPosition)
+--
+--       placeNemesis(
+--         heroBag,
+--         heroDetails["nemesisGuid"])
+--
+--       placeObligation(
+--         heroBag,
+--         heroDetails["obligationGuid"])
     
       self.putObject(heroBag)
       
@@ -271,6 +271,7 @@ end
 
 function layOutTiles()
     local bagList = getSortedListOfHeroes()
+    log(bagList)
     local tileBag = getObjectFromGUID("01ad59")
 
     for bagGuid, tilePosition in pairs(bagList) do
