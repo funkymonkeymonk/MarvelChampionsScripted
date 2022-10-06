@@ -259,16 +259,26 @@ function placeExtras(heroBag, extras, playmatPosition)
     return
   end
   
-  for _, item in pairs(extras) do
+  for key, item in pairs(extras) do
     local objectPosition = getOffsetPosition(playmatPosition, item["offset"])
-    local objectOrig = heroBag.takeObject({guid=item["guid"], position=objectPosition})
-    local objectCopy = objectOrig.clone({position=objectPosition})
-    heroBag.putObject(objectOrig)
 
-    objectCopy.setPosition(objectPosition)
+    if (item.guid ~= nil) then
+        local objectOrig = heroBag.takeObject({guid=item["guid"], position=objectPosition})
+        local objectCopy = objectOrig.clone({position=objectPosition})
+        heroBag.putObject(objectOrig)
 
-    if(item["locked"]) then
-      objectCopy.setLock(true)
+        objectCopy.setPosition(objectPosition)
+
+        if(item["locked"]) then
+          objectCopy.setLock(true)
+        end
+    else
+        -- This will need to grow but let's do it as port the heroes over to this approach.
+        if (item.type == 'card') then
+          getCardByID(item.id, objectPosition)
+        else
+          log('Unable to spawn extra ' .. key)
+        end
     end
   end
 end

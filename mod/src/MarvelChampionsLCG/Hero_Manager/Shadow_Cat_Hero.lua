@@ -10,5 +10,15 @@ function getHeroDetails()
     heroDetails.counterUrl = "http://cloud-3.steamusercontent.com/ugc/1753608754708630727/F6C8D9E1B2C1EC28EB94559CB6440FF7A1271CD3/"
     heroDetails.playmatUrl = "http://cloud-3.steamusercontent.com/ugc/1796397839017055938/24DCF725A8838B827F286B13B623822D8FC6D52A/"
 
+    local extras = {}
+
+    extras["Solid"] = {
+      type = "card",
+      id = "32031a",
+      offset = {-4.95, 2, 4.64}
+    }
+
+    heroDetails["extras"] = extras
+
     return heroDetails
 end
