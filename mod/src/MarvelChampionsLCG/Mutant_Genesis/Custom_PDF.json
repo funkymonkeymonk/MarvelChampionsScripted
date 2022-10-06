@@ -1,20 +1,20 @@
 {
   "Object": {
-    "GUID": "8261c5",
-    "Name": "3DText",
+    "GUID": "16c9b3",
+    "Name": "Custom_PDF",
     "Transform": {
-      "posX": -78.00406,
-      "posY": 0.497067034,
-      "posZ": 37.0213928,
-      "rotX": 90,
-      "rotY": -0.00000607246466,
-      "rotZ": 0,
-      "scaleX": 1,
+      "posX": -61.7500229,
+      "posY": 2.58599424,
+      "posZ": 29.7499676,
+      "rotX": 359.9847,
+      "rotY": 180.000381,
+      "rotZ": 0.0136115523,
+      "scaleX": 1.93762064,
       "scaleY": 1,
-      "scaleZ": 1
+      "scaleZ": 1.93762064
     },
-    "Nickname": "",
-    "Description": "",
+    "Nickname": "Mutant Genesis Rulebook",
+    "Description": "Mutant Genesis Rulebook",
     "GMNotes": "",
     "AltLookAngle": {
       "x": 0,
@@ -28,7 +28,7 @@
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,
-    "Locked": true,
+    "Locked": false,
     "Grid": true,
     "Snap": true,
     "IgnoreFoW": false,
@@ -40,14 +40,11 @@
     "GridProjection": false,
     "HideWhenFaceDown": false,
     "Hands": false,
-    "Text": {
-      "Text": "CAMPAIGN",
-      "colorstate": {
-        "r": 1,
-        "g": 1,
-        "b": 1
-      },
-      "fontSize": 124
+    "CustomPDF": {
+      "PDFUrl": "http://cloud-3.steamusercontent.com/ugc/1796397839025770490/83BEA5C79C61B7C6586473D9262CB701E9A60A3B/",
+      "PDFPassword": "",
+      "PDFPage": 0,
+      "PDFPageOffset": 0
     },
     "LuaScript": "",
     "LuaScriptState": "",

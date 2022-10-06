@@ -3,9 +3,9 @@
     "GUID": "503b31",
     "Name": "Custom_Model_Bag",
     "Transform": {
-      "posX": -64.25,
+      "posX": -94.25,
       "posY": 0.5,
-      "posZ": 42,
+      "posZ": 29,
       "rotX": 0,
       "rotY": 180,
       "rotZ": 0,
@@ -13,7 +13,7 @@
       "scaleY": 0.11,
       "scaleZ": 0.79
     },
-    "Nickname": "Sinister Motives",
+    "Nickname": "Mutant Genesis",
     "Description": "",
     "GMNotes": "",
     "AltLookAngle": {
@@ -44,7 +44,7 @@
     "MeshIndex": -1,
     "CustomMesh": {
       "MeshURL": "https://raw.githubusercontent.com/RobMayer/TTSLibrary/master/advboxes/core_h_MSH.obj",
-      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1775004563403355246/082BADA0D27826B509B06C3BA42583113CFAE997/",
+      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1796397839025759422/0F88E592362D312ACAD340E7EA1D09C7C19C016D/",
       "NormalURL": "",
       "ColliderURL": "",
       "Convex": true,
@@ -65,19 +65,14 @@
     "Bag": {
       "Order": 0
     },
-    "LuaScript": "#include ./Sinister_Motives.503b31.lua",
-    "LuaScriptState": "#include ./Sinister_Motives.503b31.state.json",
+    "LuaScript": "#include ./Mutant_Genesis.lua",
+    "LuaScriptState": "#include ./Mutant_Genesis.state.json",
     "XmlUI": "",
     "ContainedObjects": []
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
-    "Sinister_Motives_S.H.I.E.L.D._Tech.6948b2.json",
-    "Custom_PDF.16c9b3.json",
-    "Sinister_Motives_Campaign_Log_1.07c6c4.json",
-    "Sinister_Motives_Campaign_Log_2.38061c.json",
-    "Sinister_Motives_Bad_Publicity.e38fee.json",
-    "Sinister_Motives_Community_Service.717afd.json",
-    "Snitches_Get_Stitches.9dd8b9.972500.json"
+    "Custom_PDF.json",
+    "Mutant_Genesis_Campaign_Log.json"
   ]
 }

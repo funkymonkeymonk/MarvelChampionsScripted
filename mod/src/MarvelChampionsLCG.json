@@ -488,7 +488,7 @@
     "3DText.48b9e8.json",
     "3DText.4e892b.json",
     "3DText.93e9ab.json",
-    "3DText.8261c5.json",
+    "Campaign_Label.8261c5.json",
     "3DText.0736ba.json",
     "Cerebro.c7ece0.json",
     "Damage_Variable.029e3b.json",
@@ -633,6 +633,7 @@
     "Time_Stone.0d33cc.json",
     "Space_Stone.71f4e2.json",
     "Modular_Set_Manager.608543.json",
-    "Hero_Manager.ff377b.json"
+    "Hero_Manager.ff377b.json",
+    "Mutant_Genesis.json"
   ]
 }
