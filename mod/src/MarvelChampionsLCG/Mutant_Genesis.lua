@@ -1,3 +1,65 @@
+require('!/Cardplacer')
+
+function layoutCampaignCards()
+    log("Laying out the cards")
+    local campaignCardsJSON = [[
+{
+    "32171a": 1,
+    "32172a": 1,
+    "32173a": 1,
+    "32174a": 1,
+    "32175a": 1,
+    "32176": 1,
+    "32177": 1,
+    "32178": 1,
+    "32179": 1,
+    "32180": 1,
+    "32181": 1,
+    "32182": 1,
+    "32183": 1,
+    "32184": 1,
+    "32185": 1,
+    "32186": 1,
+    "32187": 1,
+    "32188": 1,
+    "32189": 1,
+    "32190": 1,
+    "32191": 1,
+    "32192": 1,
+    "32193": 1,
+    "32194": 1,
+    "32195": 1
+}]]
+
+    --[[
+    Lots of cleanup to do here.
+    The scale is wrong for the encounter cards.
+    Cards that have both a vertical and horizontal component are messed up bad.
+    These cards should be laid out in a meaningful way not just piled in a deck.
+    Cards should be spread by a function for easy reuse.CAMPAIGN_STARTING_POSITION
+    Campaign data should be separated from campaign box functionality, probably through an import
+    This whole process needs to be evaluated, but this is a kinda crappy but reasonable first pass.
+    ]]
+
+    local CAMPAIGN_STARTING_POSITION = { -94.75, 0.51, 13.75 }
+    local deck = {
+        cards = JSON.decode(campaignCardsJSON),
+        position = CAMPAIGN_STARTING_POSITION,
+        scale = Global.getTable("CARD_SCALE_PLAYER")
+    }
+    createDeck(deck)
+
+end
+
+
+
+
+
+
+
+
+
+
 -- TODO: How much of this can be deleted and everything still work?
 function onload(saved_data)
     if saved_data ~= "" then
@@ -43,6 +105,8 @@ function buttonClick_place()
             end
         end
     end
+
+    layoutCampaignCards()
     broadcastToAll("Objects Placed", {1,1,1})
     self.clearButtons()
 end
