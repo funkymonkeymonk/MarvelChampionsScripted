@@ -1,3 +1,5 @@
+require('!/Cardplacer')
+
 local playmatBagGuid = "e549db"
 local deckImporterGuid = "c7ece0"
 local healthCounterOffset = {-10.42, .1, 5.5}
@@ -47,31 +49,58 @@ function placeHero(heroBagGuid, playerColor, deckType)
         heroDetails["counterUrl"],
         heroDetails["hitPoints"])
     
-      placeIdentity(
-        heroBag, 
-        heroDetails["identityGuid"], 
-        playmatPosition)
-    
-      placeDeck(
-        heroBag, 
-        deckType, 
-        heroDetails["starterDeckId"], 
-        heroDetails["heroDeckId"], 
-        playmatPosition)
-    
+      if (heroDetails.identityGuid ~= nil) then
+        placeIdentityOld(
+          heroBag,
+          heroDetails["identityGuid"],
+          playmatPosition)
+      else
+        placeIdentity(
+          heroDetails["identity"],
+          playmatPosition
+        )
+      end
+
+      if (heroDetails.starterDeckId ~= nil) then
+        placeDeckOld(
+          heroBag,
+          deckType,
+          heroDetails["starterDeckId"],
+          heroDetails["heroDeckId"],
+          playmatPosition
+        )
+      else
+        placeDeck(
+          deckType,
+          heroDetails["starterDeck"],
+          heroDetails["heroDeck"],
+          playmatPosition
+        )
+      end
+
       placeExtras(
-        heroBag, 
-        heroDetails["extras"], 
+        heroBag,
+        heroDetails["extras"],
         playmatPosition)
-    
-      placeNemesis(
-        heroBag, 
-        heroDetails["nemesisGuid"])
-    
-      placeObligation(
-        heroBag, 
-        heroDetails["obligationGuid"])
-    
+
+      if (heroDetails.nemesisGuid ~= nil) then
+        placeNemesisOld(
+          heroBag,
+          heroDetails["nemesisGuid"])
+      else
+        placeNemesis(heroDetails["nemesis"])
+      end
+
+      if (heroDetails.obligationGuid ~= nil) then
+        placeObligationOld(
+          heroBag,
+          heroDetails["obligationGuid"])
+      else
+        placeObligation(heroDetails["obligation"])
+      end
+
+
+
       self.putObject(heroBag)
       
       local scenarioManager = getObjectFromGUID(Global.getVar("SCENARIO_MANAGER_GUID"))
@@ -155,7 +184,7 @@ function placeHealthCounter(playmatPosition, imageUrl, hitPoints)
   )
 end
 
-function placeIdentity(heroBag, identityGuid, playmatPosition)
+function placeIdentityOld(heroBag, identityGuid, playmatPosition)
   local identityPosition = getOffsetPosition(playmatPosition, identityOffset)
   local identityOrig = heroBag.takeObject({guid=identityGuid, position=identityPosition})
   local identityCopy = identityOrig.clone({position=identityPosition})
@@ -167,7 +196,13 @@ function placeIdentity(heroBag, identityGuid, playmatPosition)
   identityCopy.setPosition(identityPosition)
 end
 
-function placeDeck(heroBag, deckType, starterDeckId, heroDeckId, playmatPosition)
+function placeIdentity(identity, playmatPosition)
+  local identityPosition = getOffsetPosition(playmatPosition, identityOffset)
+  getCardByID(identity, identityPosition)
+  --TODO: Fix size
+end
+
+function placeDeckOld(heroBag, deckType, starterDeckId, heroDeckId, playmatPosition)
   local deckPosition = getOffsetPosition(playmatPosition, deckOffset)
 
   if(deckType == "starter") then
@@ -175,6 +210,24 @@ function placeDeck(heroBag, deckType, starterDeckId, heroDeckId, playmatPosition
   else
     placeHeroDeck(heroDeckId, deckPosition)
   end
+end
+
+function placeDeck(deckType, starterDeck, heroDeck, playmatPosition)
+  local deckPosition = getOffsetPosition(playmatPosition, deckOffset)
+
+  local deck = {
+    position = deckPosition,
+    scal = {1,1,1}
+  }
+
+  if (deckType == "starter") then
+    deck.cards = JSON.decode(starterDeck)
+  else
+    deck.cards = JSON.decode(heroDeck)
+  end
+
+  --TODO: Fix sizes for cards
+  createDeck(deck)
 end
 
 function placeStarterDeck(starterDeckId, deckPosition)
@@ -206,21 +259,31 @@ function placeExtras(heroBag, extras, playmatPosition)
     return
   end
   
-  for _, item in pairs(extras) do
+  for key, item in pairs(extras) do
     local objectPosition = getOffsetPosition(playmatPosition, item["offset"])
-    local objectOrig = heroBag.takeObject({guid=item["guid"], position=objectPosition})
-    local objectCopy = objectOrig.clone({position=objectPosition})
-    heroBag.putObject(objectOrig)
 
-    objectCopy.setPosition(objectPosition)
+    if (item.guid ~= nil) then
+        local objectOrig = heroBag.takeObject({guid=item["guid"], position=objectPosition})
+        local objectCopy = objectOrig.clone({position=objectPosition})
+        heroBag.putObject(objectOrig)
 
-    if(item["locked"]) then
-      objectCopy.setLock(true)
+        objectCopy.setPosition(objectPosition)
+
+        if(item["locked"]) then
+          objectCopy.setLock(true)
+        end
+    else
+        -- This will need to grow but let's do it as port the heroes over to this approach.
+        if (item.type == 'card') then
+          getCardByID(item.id, objectPosition)
+        else
+          log('Unable to spawn extra ' .. key)
+        end
     end
   end
 end
 
-function placeNemesis(heroBag, nemesisGuid)
+function placeNemesisOld(heroBag, nemesisGuid)
   local nemesisPosition = {-21.11, 4, 35.18}
   local nemesisOrig = heroBag.takeObject({guid=nemesisGuid, position=nemesisPosition})
   local nemesisCopy = nemesisOrig.clone({position=nemesisPosition})
@@ -229,7 +292,18 @@ function placeNemesis(heroBag, nemesisGuid)
   nemesisCopy.setScale({2.12, 1, 2.12})
 end
 
-function placeObligation(heroBag, obligationGuid)
+function placeNemesis(nemesis)
+  local nemesisPosition = {-21.11, 4, 35.18}
+  local deck = {
+    cards = JSON.decode(nemesis),
+    position = nemesisPosition,
+    scale = {1,1,1}
+  }
+  --TODO: Fix sizes for cards
+  createDeck(deck)
+end
+
+function placeObligationOld(heroBag, obligationGuid)
   local encounterDeckPosition = {-12.75, 3, 22.25} --TODO: figure out why this produces an error: Global.getVar("ENCOUNTER_DECK_SPAWN_POS")
   local obligationOrig = heroBag.takeObject({guid=obligationGuid, position=encounterDeckPosition})
   local obligationCopy = obligationOrig.clone({position=encounterDeckPosition})
@@ -238,12 +312,16 @@ function placeObligation(heroBag, obligationGuid)
   obligationCopy.setScale({2.12, 1, 2.12})
 end
 
+function placeObligation(obligation)
+  local encounterDeckPosition = {-12.75, 3, 22.25} --TODO: figure out why this produces an error: Global.getVar("ENCOUNTER_DECK_SPAWN_POS")
+  getCardByID(obligation, encounterDeckPosition)
+  --TODO: Face down and wrong size
+  --obligationCopy.setScale({2.12, 1, 2.12})
+end
+
 function getOffsetPosition(origPosition, offset)
   return {origPosition[1] + offset[1], origPosition[2] + offset[2], origPosition[3] + offset[3]}
 end
-
-
-
 
 function createContextMenu()
     self.addContextMenuItem("Lay Out Heroes", layOutHeroes)

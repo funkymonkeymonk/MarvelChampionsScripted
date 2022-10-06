@@ -58,6 +58,20 @@ function getCard(player)
     end
 end
 
+function getCardByID(id, position)
+    local position = position
+    local cardID = id
+    local FACE_UP_ROTATION = {0, 180, 0}
+    local FACE_DOWN_ROTATION = {0, 180, 180}
+    local card = getCardFromCardPool(cardID)
+    if (card.duplicate_of == nil) then
+        card:spawn({position = position, rotation = FACE_UP_ROTATION})
+        clearUI()
+    else
+        getCardByID(card.duplicate_of, position)
+    end
+end
+
 
 function createDeck(params)
     cards = params.cards
