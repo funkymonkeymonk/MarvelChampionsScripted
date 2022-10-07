@@ -1,0 +1,61 @@
+{
+  "Object": {
+    "GUID": "f2b93c",
+    "Name": "Card",
+    "Transform": {
+      "posX": 47.0000038,
+      "posY": 1.54774559,
+      "posZ": 32,
+      "rotX": 0.0163096469,
+      "rotY": 179.980011,
+      "rotZ": 358.555084,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Delgado",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 103,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "1": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1829048392450923991/8247740164AD1150BEBE9EE21A83267B0632F084/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1829048392450924385/59B873A9956467496A0CF001A70570635C315BEB/",
+        "NumWidth": 4,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

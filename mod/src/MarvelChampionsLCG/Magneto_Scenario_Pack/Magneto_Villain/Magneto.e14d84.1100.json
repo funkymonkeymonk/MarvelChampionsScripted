@@ -1,0 +1,61 @@
+{
+  "Object": {
+    "GUID": "e14d84",
+    "Name": "Card",
+    "Transform": {
+      "posX": 48.0000153,
+      "posY": 1.5047754,
+      "posZ": 16.9999962,
+      "rotX": 0.0158028826,
+      "rotY": 180.0197,
+      "rotZ": 0.07931754,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Magneto",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 1100,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "11": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1829048392450961536/EC9DC2749EFA75F96B1877E444F010DF5DB0842D/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+        "NumWidth": 2,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

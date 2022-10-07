@@ -1,0 +1,71 @@
+{
+  "Object": {
+    "GUID": "ea9197",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 44.0000076,
+      "posY": 3.54151487,
+      "posZ": 22.9999981,
+      "rotX": 0.0795993954,
+      "rotY": 90.01588,
+      "rotZ": 0.187249035,
+      "scaleX": 1.88,
+      "scaleY": 1,
+      "scaleZ": 1.88
+    },
+    "Nickname": "Magneto Main Scheme",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "SidewaysCard": true,
+    "DeckIDs": [
+      1202,
+      1201,
+      1200
+    ],
+    "CustomDeck": {
+      "12": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1829048392450963647/CBD0F0B6B6FB6BC9C5548AD09FC18BA38921A2CB/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1829048392450964059/986B19E555D2CB9C3C7B752CF99698BB780255E0/",
+        "NumWidth": 3,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": true,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "The_Rule_of_Magnus.bf3483.1202.json",
+    "Factory_Online.9f27d3.1201.json",
+    "Asteroid_M.07cbf4.1200.json"
+  ]
+}

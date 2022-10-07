@@ -1,0 +1,61 @@
+{
+  "Object": {
+    "GUID": "c05ec6",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 48.0000153,
+      "posY": 3.512293,
+      "posZ": 5.999997,
+      "rotX": 0.00727575645,
+      "rotY": 179.999222,
+      "rotZ": 0.07607909,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Robert Kelly",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 2700,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "27": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1829048392450991309/504A562A6BC4BC3CE8DFF59F58B430A9D05BE026/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1829048392450953595/58F99A85B31D79A99A2FEF0C952A65B7AC6DA73A/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

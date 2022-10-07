@@ -1,0 +1,54 @@
+{
+  "Object": {
+    "GUID": "colossus",
+    "Name": "Bag",
+    "Transform": {
+      "posX": -5.06821728,
+      "posY": 32.97695,
+      "posZ": 35.75,
+      "rotX": 90,
+      "rotY": 180,
+      "rotZ": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Colossus Hero",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.5067343,
+      "g": 0.6157037,
+      "b": 0.7439024
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Number": 0,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Colossus_Hero.colossus.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

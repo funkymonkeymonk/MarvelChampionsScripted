@@ -1,0 +1,61 @@
+{
+  "Object": {
+    "GUID": "b06ac9",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 82.75,
+      "posY": 0.30996722,
+      "posZ": 39.75,
+      "rotX": -3.75193423e-7,
+      "rotY": -0.000002014372,
+      "rotZ": 9.15472e-7,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Sabretooth Scenario Pack",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.121568434,
+      "g": 0.5294118,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Sabretooth_Encounter_Cards.9636e3.json",
+    "Robert_Kelly.c05ec6.2700.json",
+    "Find_the_Senator.8e7703.2402.json",
+    "Sabretooth_Main_Scheme.1768ec.json",
+    "Sabretooth_Villain.2e054a.json"
+  ]
+}
