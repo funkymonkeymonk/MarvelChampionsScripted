@@ -5,16 +5,16 @@ PACK_10 = [[
     "code": "10001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10001B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10001A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/10001B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/10001A.jpg"
   },
   {
     "name": "Bruce Banner",
     "code": "10001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10001A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10001B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/10001A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/10001B.jpg"
   },
   {
     "name": "Crushing Blow",
@@ -22,7 +22,7 @@ PACK_10 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10002.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/10002.jpg"
   },
   {
     "name": "Hulk Smash",
@@ -30,7 +30,7 @@ PACK_10 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10003.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/10003.jpg"
   },
   {
     "name": "Sub-Orbital Leap",
@@ -38,7 +38,7 @@ PACK_10 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10004.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/10004.jpg"
   },
   {
     "name": "Thunderclap",
@@ -46,7 +46,7 @@ PACK_10 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10005.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/10005.jpg"
   },
   {
     "name": "Unstoppable Force",
@@ -54,7 +54,7 @@ PACK_10 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10006.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/10006.jpg"
   },
   {
     "name": "Limitless Strength",
@@ -62,7 +62,7 @@ PACK_10 = [[
     "type_code": "resource",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10007.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/10007.jpg"
   },
   {
     "name": "Banner's Laboratory",
@@ -70,7 +70,7 @@ PACK_10 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10008.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/10008.jpg"
   },
   {
     "name": "Boundless Rage",
@@ -78,7 +78,7 @@ PACK_10 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10009.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/10009.jpg"
   },
   {
     "name": "Immovable Object",
@@ -86,7 +86,7 @@ PACK_10 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10010.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/10010.jpg"
   },
   {
     "name": "Brawn",
@@ -94,7 +94,7 @@ PACK_10 = [[
     "type_code": "ally",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10011.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/10011.jpg"
   },
   {
     "name": "Sentry",
@@ -103,7 +103,7 @@ PACK_10 = [[
     "type_code": "ally",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10012.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/10012.jpg"
   },
   {
     "name": "She-Hulk",
@@ -112,7 +112,7 @@ PACK_10 = [[
     "type_code": "ally",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10013.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/10013.jpg"
   },
   {
     "name": "Drop Kick",
@@ -120,7 +120,7 @@ PACK_10 = [[
     "type_code": "event",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10014.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/10014.jpg"
   },
   {
     "name": "Toe to Toe",
@@ -128,7 +128,7 @@ PACK_10 = [[
     "type_code": "event",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10015.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/10015.jpg"
   },
   {
     "name": "\"You'll Pay for That!\"",
@@ -136,7 +136,7 @@ PACK_10 = [[
     "type_code": "event",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10016.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/10016.jpg"
   },
   {
     "code": "10017",
@@ -148,7 +148,7 @@ PACK_10 = [[
     "type_code": "upgrade",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10018.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/10018.jpg"
   },
   {
     "name": "To the Rescue!",
@@ -156,7 +156,7 @@ PACK_10 = [[
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10019.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/10019.jpg"
   },
   {
     "code": "10020",
@@ -184,7 +184,7 @@ PACK_10 = [[
     "type_code": "support",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10029.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/10029.jpg"
   },
   {
     "name": "Inspiring Presence",
@@ -192,7 +192,7 @@ PACK_10 = [[
     "type_code": "event",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10030.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/10030.jpg"
   },
   {
     "name": "Electrostatic Armor",
@@ -200,7 +200,7 @@ PACK_10 = [[
     "type_code": "upgrade",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10031.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/10031.jpg"
   },
   {
     "name": "Resourceful",
@@ -208,7 +208,7 @@ PACK_10 = [[
     "type_code": "upgrade",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10032.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/10032.jpg"
   },
   {
     "name": "Inner Demons",
@@ -216,7 +216,7 @@ PACK_10 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10025.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/10025.jpg"
   },
   {
     "name": "Abomination",
@@ -224,7 +224,7 @@ PACK_10 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10026.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/10026.jpg"
   },
   {
     "name": "Total Destruction",
@@ -232,7 +232,7 @@ PACK_10 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10027.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/10027.jpg"
   },
   {
     "name": "Clash Of The Titans",
@@ -240,7 +240,7 @@ PACK_10 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/10028.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/10028.jpg"
   }
 ]
 ]]
@@ -252,7 +252,7 @@ PACK_11 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11001.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11001.jpg"
   },
   {
     "name": "Kang (Immortus)",
@@ -260,7 +260,7 @@ PACK_11 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11002.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11002.jpg"
   },
   {
     "name": "Kang (Iron Lad)",
@@ -268,7 +268,7 @@ PACK_11 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11003.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11003.jpg"
   },
   {
     "name": "Kang (Rama-Tut)",
@@ -276,7 +276,7 @@ PACK_11 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11004.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11004.jpg"
   },
   {
     "name": "Kang (Scarlet Centurion)",
@@ -284,7 +284,7 @@ PACK_11 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11005.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11005.jpg"
   },
   {
     "name": "Kang (The Conqueror)",
@@ -292,7 +292,7 @@ PACK_11 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11006.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11006.jpg"
   },
   {
     "name": "Kang's Arrival",
@@ -300,7 +300,7 @@ PACK_11 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11007.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11007.jpg"
   },
   {
     "name": "The Master of Time",
@@ -308,7 +308,7 @@ PACK_11 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11008.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11008.jpg"
   },
   {
     "name": "The Chronopolis",
@@ -316,7 +316,7 @@ PACK_11 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11009.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11009.jpg"
   },
   {
     "name": "Inexorable Fate",
@@ -324,7 +324,7 @@ PACK_11 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11010.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11010.jpg"
   },
   {
     "name": "The Realm of Rama-Tut",
@@ -332,7 +332,7 @@ PACK_11 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11011.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11011.jpg"
   },
   {
     "name": "The Present Future War",
@@ -340,7 +340,7 @@ PACK_11 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11012.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11012.jpg"
   },
   {
     "name": "Kang's Wrath",
@@ -348,7 +348,7 @@ PACK_11 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11013.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11013.jpg"
   },
   {
     "name": "Temporal Shield",
@@ -356,7 +356,7 @@ PACK_11 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11014.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11014.jpg"
   },
   {
     "name": "Future Weapon",
@@ -364,7 +364,7 @@ PACK_11 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11015.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11015.jpg"
   },
   {
     "name": "Frozen in Time",
@@ -372,7 +372,7 @@ PACK_11 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11016.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11016.jpg"
   },
   {
     "name": "Macrobots",
@@ -380,7 +380,7 @@ PACK_11 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11017.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11017.jpg"
   },
   {
     "name": "Weakened",
@@ -388,7 +388,7 @@ PACK_11 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11018.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11018.jpg"
   },
   {
     "name": "Stolen Memories",
@@ -396,7 +396,7 @@ PACK_11 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11019.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11019.jpg"
   },
   {
     "name": "Depowered",
@@ -404,7 +404,7 @@ PACK_11 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11020.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11020.jpg"
   },
   {
     "name": "Time-Travel Hijinks",
@@ -412,7 +412,7 @@ PACK_11 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11021.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11021.jpg"
   },
   {
     "name": "Corrupted Timestream",
@@ -420,7 +420,7 @@ PACK_11 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11022.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11022.jpg"
   },
   {
     "name": "Kang's Dominion",
@@ -428,7 +428,7 @@ PACK_11 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11023.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11023.jpg"
   },
   {
     "name": "Pinned Down",
@@ -436,7 +436,7 @@ PACK_11 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11024.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11024.jpg"
   },
   {
     "name": "Rampage",
@@ -444,7 +444,7 @@ PACK_11 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11025.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11025.jpg"
   },
   {
     "name": "Energy Blast",
@@ -452,7 +452,7 @@ PACK_11 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11026.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11026.jpg"
   },
   {
     "name": "Manipulated Timestream",
@@ -460,7 +460,7 @@ PACK_11 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11027.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11027.jpg"
   },
   {
     "name": "Time-Travel Tactics",
@@ -468,7 +468,7 @@ PACK_11 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11028.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11028.jpg"
   },
   {
     "name": "Past Machinations",
@@ -476,7 +476,7 @@ PACK_11 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11029.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11029.jpg"
   },
   {
     "name": "Ancient Warrior",
@@ -484,7 +484,7 @@ PACK_11 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11030.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11030.jpg"
   },
   {
     "name": "Chitauri Soldier",
@@ -492,7 +492,7 @@ PACK_11 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11031.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11031.jpg"
   },
   {
     "name": "Tyrannosaurus Rex",
@@ -500,7 +500,7 @@ PACK_11 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11032.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11032.jpg"
   },
   {
     "name": "Time Portal",
@@ -508,7 +508,7 @@ PACK_11 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11033.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11033.jpg"
   },
   {
     "name": "Kang (The Conqueror)",
@@ -516,7 +516,7 @@ PACK_11 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11034.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11034.jpg"
   },
   {
     "name": "Kang (Immortus)",
@@ -524,7 +524,7 @@ PACK_11 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11035.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11035.jpg"
   },
   {
     "name": "Kang (Iron Lad)",
@@ -532,7 +532,7 @@ PACK_11 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11036.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11036.jpg"
   },
   {
     "name": "Kang (Rama-Tut)",
@@ -540,7 +540,7 @@ PACK_11 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11037.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11037.jpg"
   },
   {
     "name": "Kang (Scarlet Centurion)",
@@ -548,7 +548,7 @@ PACK_11 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11038.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11038.jpg"
   },
   {
     "name": "Kang (The Conqueror)",
@@ -556,7 +556,7 @@ PACK_11 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11039.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11039.jpg"
   },
   {
     "name": "Apocryphus",
@@ -564,7 +564,7 @@ PACK_11 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11040.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11040.jpg"
   },
   {
     "name": "Deathunt 9000",
@@ -572,7 +572,7 @@ PACK_11 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11041.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11041.jpg"
   },
   {
     "name": "Sir Raston",
@@ -580,7 +580,7 @@ PACK_11 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11042.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11042.jpg"
   },
   {
     "name": "Terminatrix",
@@ -588,7 +588,7 @@ PACK_11 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11043.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11043.jpg"
   },
   {
     "name": "Wildrun",
@@ -596,7 +596,7 @@ PACK_11 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11044.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11044.jpg"
   },
   {
     "name": "The Anachronauts",
@@ -604,7 +604,7 @@ PACK_11 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11045.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11045.jpg"
   },
   {
     "name": "Kang's Chosen",
@@ -612,7 +612,7 @@ PACK_11 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11046.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11046.jpg"
   },
   {
     "name": "Kang (Master of Time)",
@@ -620,7 +620,7 @@ PACK_11 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11047.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11047.jpg"
   },
   {
     "name": "Time-Displaced Soldier",
@@ -628,7 +628,7 @@ PACK_11 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11048.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11048.jpg"
   },
   {
     "name": "Fear of Kang",
@@ -636,7 +636,7 @@ PACK_11 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11049.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11049.jpg"
   },
   {
     "name": "Light of Centuries Sphere",
@@ -644,7 +644,7 @@ PACK_11 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11050.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11050.jpg"
   },
   {
     "name": "Ancient Grudge",
@@ -652,7 +652,7 @@ PACK_11 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/11051.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11051.jpg"
   }
 ]
 ]]
@@ -663,16 +663,16 @@ PACK_12 = [[
     "code": "12001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12001B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12001A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/12001B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/12001A.jpg"
   },
   {
     "name": "Scott Lang",
     "code": "12001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12001A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12001B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/12001A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/12001B.jpg"
   },
   {
     "name": "Ant-Man",
@@ -680,7 +680,7 @@ PACK_12 = [[
     "type_code": "hero",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12001C.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/12001C.jpg"
   },
   {
     "name": "Wasp",
@@ -689,7 +689,7 @@ PACK_12 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12002.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/12002.jpg"
   },
   {
     "name": "Giant Stomp",
@@ -697,7 +697,7 @@ PACK_12 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12003.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/12003.jpg"
   },
   {
     "name": "Hive Mind",
@@ -705,7 +705,7 @@ PACK_12 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12004.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/12004.jpg"
   },
   {
     "name": "Resize",
@@ -713,7 +713,7 @@ PACK_12 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12005.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/12005.jpg"
   },
   {
     "name": "Pym Particles",
@@ -721,7 +721,7 @@ PACK_12 = [[
     "type_code": "resource",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12006.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/12006.jpg"
   },
   {
     "name": "Army of Ants",
@@ -729,7 +729,7 @@ PACK_12 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12007.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/12007.jpg"
   },
   {
     "name": "Ant-Man's Helmet",
@@ -737,7 +737,7 @@ PACK_12 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12008.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/12008.jpg"
   },
   {
     "name": "Giant Strength",
@@ -745,7 +745,7 @@ PACK_12 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12009.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/12009.jpg"
   },
   {
     "name": "Wrist Gauntlets",
@@ -753,7 +753,7 @@ PACK_12 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12010.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/12010.jpg"
   },
   {
     "name": "Ant-Man",
@@ -762,7 +762,7 @@ PACK_12 = [[
     "type_code": "ally",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12011.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/12011.jpg"
   },
   {
     "name": "Giant-Man",
@@ -770,7 +770,7 @@ PACK_12 = [[
     "type_code": "ally",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12012.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/12012.jpg"
   },
   {
     "name": "Ronin",
@@ -778,7 +778,7 @@ PACK_12 = [[
     "type_code": "ally",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12013.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/12013.jpg"
   },
   {
     "name": "Stinger",
@@ -787,7 +787,7 @@ PACK_12 = [[
     "type_code": "ally",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12014.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/12014.jpg"
   },
   {
     "name": "Call for Aid",
@@ -795,7 +795,7 @@ PACK_12 = [[
     "type_code": "event",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12015.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/12015.jpg"
   },
   {
     "name": "Moxie",
@@ -803,7 +803,7 @@ PACK_12 = [[
     "type_code": "event",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12016.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/12016.jpg"
   },
   {
     "name": "Power Gloves",
@@ -811,7 +811,7 @@ PACK_12 = [[
     "type_code": "upgrade",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12017.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/12017.jpg"
   },
   {
     "name": "Reinforced Suit",
@@ -819,7 +819,7 @@ PACK_12 = [[
     "type_code": "upgrade",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12018.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/12018.jpg"
   },
   {
     "code": "12019",
@@ -831,7 +831,7 @@ PACK_12 = [[
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12020.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/12020.jpg"
   },
   {
     "code": "12021",
@@ -851,7 +851,7 @@ PACK_12 = [[
     "type_code": "support",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12024.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/12024.jpg"
   },
   {
     "name": "Moment of Triumph",
@@ -859,7 +859,7 @@ PACK_12 = [[
     "type_code": "event",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12030.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/12030.jpg"
   },
   {
     "name": "Lay Down the Law",
@@ -867,7 +867,7 @@ PACK_12 = [[
     "type_code": "event",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12031.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/12031.jpg"
   },
   {
     "name": "Muster Courage",
@@ -875,7 +875,7 @@ PACK_12 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12032.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/12032.jpg"
   },
   {
     "name": "Assess the Situation",
@@ -883,7 +883,7 @@ PACK_12 = [[
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12033.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/12033.jpg"
   },
   {
     "name": "Care for Cassie",
@@ -891,7 +891,7 @@ PACK_12 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12025.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/12025.jpg"
   },
   {
     "name": "Tech Theft",
@@ -899,7 +899,7 @@ PACK_12 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12026.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/12026.jpg"
   },
   {
     "name": "Yellowjacket",
@@ -907,7 +907,7 @@ PACK_12 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12027.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/12027.jpg"
   },
   {
     "name": "Size Increase",
@@ -915,7 +915,7 @@ PACK_12 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12028.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/12028.jpg"
   },
   {
     "name": "Yellowjacket's Plan",
@@ -923,7 +923,7 @@ PACK_12 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/12029.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/12029.jpg"
   }
 ]
 ]]
@@ -934,16 +934,16 @@ PACK_13 = [[
     "code": "13001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13001B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13001A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/13001B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/13001A.jpg"
   },
   {
     "name": "Nadia Van Dyne",
     "code": "13001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13001A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13001B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/13001A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/13001B.jpg"
   },
   {
     "name": "Wasp",
@@ -951,7 +951,7 @@ PACK_13 = [[
     "type_code": "hero",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13001C.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/13001C.jpg"
   },
   {
     "name": "Ant-Man",
@@ -960,7 +960,7 @@ PACK_13 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13002.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/13002.jpg"
   },
   {
     "name": "Giant Help",
@@ -968,7 +968,7 @@ PACK_13 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13003.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/13003.jpg"
   },
   {
     "name": "Pinpoint Strike",
@@ -976,7 +976,7 @@ PACK_13 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13004.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/13004.jpg"
   },
   {
     "name": "Rapid Growth",
@@ -984,7 +984,7 @@ PACK_13 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13005.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/13005.jpg"
   },
   {
     "name": "Wasp Sting",
@@ -992,7 +992,7 @@ PACK_13 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13006.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/13006.jpg"
   },
   {
     "name": "Pym Particles",
@@ -1000,7 +1000,7 @@ PACK_13 = [[
     "type_code": "resource",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13007.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/13007.jpg"
   },
   {
     "name": "Red Room Training",
@@ -1008,7 +1008,7 @@ PACK_13 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13008.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/13008.jpg"
   },
   {
     "name": "Bio-Synthetic Wings",
@@ -1016,7 +1016,7 @@ PACK_13 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13009.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/13009.jpg"
   },
   {
     "name": "Wasp's Helmet",
@@ -1024,7 +1024,7 @@ PACK_13 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13010.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/13010.jpg"
   },
   {
     "name": "Thor",
@@ -1033,7 +1033,7 @@ PACK_13 = [[
     "type_code": "ally",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13011.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/13011.jpg"
   },
   {
     "name": "Wasp",
@@ -1042,7 +1042,7 @@ PACK_13 = [[
     "type_code": "ally",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13012.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/13012.jpg"
   },
   {
     "name": "Into the Fray",
@@ -1050,7 +1050,7 @@ PACK_13 = [[
     "type_code": "event",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13013.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/13013.jpg"
   },
   {
     "name": "Surprise Attack",
@@ -1058,7 +1058,7 @@ PACK_13 = [[
     "type_code": "event",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13014.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/13014.jpg"
   },
   {
     "code": "13015",
@@ -1070,7 +1070,7 @@ PACK_13 = [[
     "type_code": "support",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13016.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/13016.jpg"
   },
   {
     "name": "Lie in Wait",
@@ -1078,7 +1078,7 @@ PACK_13 = [[
     "type_code": "upgrade",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13017.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/13017.jpg"
   },
   {
     "name": "Ironheart",
@@ -1086,7 +1086,7 @@ PACK_13 = [[
     "type_code": "ally",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13018.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/13018.jpg"
   },
   {
     "name": "Spider-Man",
@@ -1095,7 +1095,7 @@ PACK_13 = [[
     "type_code": "ally",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13019.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/13019.jpg"
   },
   {
     "name": "Swarm Tactics",
@@ -1103,7 +1103,7 @@ PACK_13 = [[
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13020.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/13020.jpg"
   },
   {
     "code": "13021",
@@ -1123,7 +1123,7 @@ PACK_13 = [[
     "type_code": "resource",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13024.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/13024.jpg"
   },
   {
     "code": "13025",
@@ -1135,7 +1135,7 @@ PACK_13 = [[
     "type_code": "event",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13031.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/13031.jpg"
   },
   {
     "name": "All for One",
@@ -1143,7 +1143,7 @@ PACK_13 = [[
     "type_code": "event",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13032.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/13032.jpg"
   },
   {
     "name": "Perseverance",
@@ -1151,7 +1151,7 @@ PACK_13 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13033.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/13033.jpg"
   },
   {
     "name": "Athletic Conditioning",
@@ -1159,7 +1159,7 @@ PACK_13 = [[
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13034.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/13034.jpg"
   },
   {
     "name": "Red Dreams",
@@ -1167,7 +1167,7 @@ PACK_13 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13026.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/13026.jpg"
   },
   {
     "name": "Mother's Orders",
@@ -1175,7 +1175,7 @@ PACK_13 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13027.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/13027.jpg"
   },
   {
     "name": "Beetle",
@@ -1183,7 +1183,7 @@ PACK_13 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13028.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/13028.jpg"
   },
   {
     "name": "Beetle Armor MK IV",
@@ -1191,7 +1191,7 @@ PACK_13 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13029.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/13029.jpg"
   },
   {
     "name": "Beetle Mania",
@@ -1199,7 +1199,7 @@ PACK_13 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/13030.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/13030.jpg"
   }
 ]
 ]]
@@ -1210,16 +1210,16 @@ PACK_14 = [[
     "code": "14001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14001B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14001A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/14001B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/14001A.jpg"
   },
   {
     "name": "Pietro Maximoff",
     "code": "14001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14001A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14001B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/14001A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/14001B.jpg"
   },
   {
     "name": "Scarlet Witch",
@@ -1228,7 +1228,7 @@ PACK_14 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14002.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/14002.jpg"
   },
   {
     "name": "Always Be Running",
@@ -1236,7 +1236,7 @@ PACK_14 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14003.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/14003.jpg"
   },
   {
     "name": "Double Time",
@@ -1244,7 +1244,7 @@ PACK_14 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14004.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/14004.jpg"
   },
   {
     "name": "Maximum Velocity",
@@ -1252,7 +1252,7 @@ PACK_14 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14005.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/14005.jpg"
   },
   {
     "name": "Speed Cyclone",
@@ -1260,7 +1260,7 @@ PACK_14 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14006.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/14006.jpg"
   },
   {
     "name": "Serval Industries",
@@ -1268,7 +1268,7 @@ PACK_14 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14007.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/14007.jpg"
   },
   {
     "name": "Accelerated Reflex",
@@ -1276,7 +1276,7 @@ PACK_14 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14008.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/14008.jpg"
   },
   {
     "name": "Friction Resistance",
@@ -1284,7 +1284,7 @@ PACK_14 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14009.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/14009.jpg"
   },
   {
     "name": "Hyper Perception",
@@ -1292,7 +1292,7 @@ PACK_14 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14010.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/14010.jpg"
   },
   {
     "name": "Reinforced Sinew",
@@ -1300,7 +1300,7 @@ PACK_14 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14011.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/14011.jpg"
   },
   {
     "name": "Multiple Man",
@@ -1308,7 +1308,7 @@ PACK_14 = [[
     "type_code": "ally",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14012.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/14012.jpg"
   },
   {
     "name": "Warlock",
@@ -1316,7 +1316,7 @@ PACK_14 = [[
     "type_code": "ally",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14013.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/14013.jpg"
   },
   {
     "name": "Never Back Down",
@@ -1324,7 +1324,7 @@ PACK_14 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14014.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/14014.jpg"
   },
   {
     "name": "Side Step",
@@ -1332,7 +1332,7 @@ PACK_14 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14015.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/14015.jpg"
   },
   {
     "code": "14016",
@@ -1344,7 +1344,7 @@ PACK_14 = [[
     "type_code": "upgrade",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14017.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/14017.jpg"
   },
   {
     "name": "Order and Chaos",
@@ -1352,7 +1352,7 @@ PACK_14 = [[
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14018.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/14018.jpg"
   },
   {
     "code": "14019",
@@ -1372,7 +1372,7 @@ PACK_14 = [[
     "type_code": "upgrade",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14022.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/14022.jpg"
   },
   {
     "name": "Civic Duty",
@@ -1380,7 +1380,7 @@ PACK_14 = [[
     "type_code": "upgrade",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14023.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/14023.jpg"
   },
   {
     "name": "Brute Force",
@@ -1388,7 +1388,7 @@ PACK_14 = [[
     "type_code": "upgrade",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14029.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/14029.jpg"
   },
   {
     "name": "Sense of Justice",
@@ -1396,7 +1396,7 @@ PACK_14 = [[
     "type_code": "upgrade",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14030.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/14030.jpg"
   },
   {
     "name": "United We Stand",
@@ -1404,7 +1404,7 @@ PACK_14 = [[
     "type_code": "event",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14031.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/14031.jpg"
   },
   {
     "name": "Beat 'Em Up",
@@ -1412,7 +1412,7 @@ PACK_14 = [[
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14032.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/14032.jpg"
   },
   {
     "name": "Need for Speed",
@@ -1420,7 +1420,7 @@ PACK_14 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14024.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/14024.jpg"
   },
   {
     "name": "Extortion of Seismic Proportion",
@@ -1428,7 +1428,7 @@ PACK_14 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14025.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/14025.jpg"
   },
   {
     "name": "Avalanche",
@@ -1436,7 +1436,7 @@ PACK_14 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14026.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/14026.jpg"
   },
   {
     "name": "Vibration Resistance",
@@ -1444,7 +1444,7 @@ PACK_14 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14027.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/14027.jpg"
   },
   {
     "name": "Earthquake",
@@ -1452,7 +1452,7 @@ PACK_14 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/14028.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/14028.jpg"
   }
 ]
 ]]
@@ -1463,16 +1463,16 @@ PACK_15 = [[
     "code": "15001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15001B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15001A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/15001B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/15001A.jpg"
   },
   {
     "name": "Wanda Maximoff",
     "code": "15001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15001A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15001B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/15001A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/15001B.jpg"
   },
   {
     "name": "Quicksilver",
@@ -1481,7 +1481,7 @@ PACK_15 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15002.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/15002.jpg"
   },
   {
     "name": "Chaos Magic",
@@ -1489,7 +1489,7 @@ PACK_15 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15003.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/15003.jpg"
   },
   {
     "name": "Hex Bolt",
@@ -1497,7 +1497,7 @@ PACK_15 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15004.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/15004.jpg"
   },
   {
     "name": "Molecular Decay",
@@ -1505,7 +1505,7 @@ PACK_15 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15005.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/15005.jpg"
   },
   {
     "name": "Warp Reality",
@@ -1513,7 +1513,7 @@ PACK_15 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15006.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/15006.jpg"
   },
   {
     "name": "Agatha Harkness",
@@ -1521,7 +1521,7 @@ PACK_15 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15007.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/15007.jpg"
   },
   {
     "name": "Magic Shield",
@@ -1529,7 +1529,7 @@ PACK_15 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15008.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/15008.jpg"
   },
   {
     "name": "Scarlet Witch's Crest",
@@ -1537,7 +1537,7 @@ PACK_15 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15009.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/15009.jpg"
   },
   {
     "name": "Speed",
@@ -1546,7 +1546,7 @@ PACK_15 = [[
     "type_code": "ally",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15010.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/15010.jpg"
   },
   {
     "name": "Wiccan",
@@ -1555,7 +1555,7 @@ PACK_15 = [[
     "type_code": "ally",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15011.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/15011.jpg"
   },
   {
     "name": "Crisis Averted",
@@ -1563,7 +1563,7 @@ PACK_15 = [[
     "type_code": "event",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15012.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/15012.jpg"
   },
   {
     "name": "Multitasking",
@@ -1571,7 +1571,7 @@ PACK_15 = [[
     "type_code": "event",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15013.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/15013.jpg"
   },
   {
     "name": "Swift Retribution",
@@ -1579,7 +1579,7 @@ PACK_15 = [[
     "type_code": "event",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15014.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/15014.jpg"
   },
   {
     "name": "Turn the Tide",
@@ -1587,7 +1587,7 @@ PACK_15 = [[
     "type_code": "event",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15015.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/15015.jpg"
   },
   {
     "code": "15016",
@@ -1607,7 +1607,7 @@ PACK_15 = [[
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15019.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/15019.jpg"
   },
   {
     "code": "15020",
@@ -1627,7 +1627,7 @@ PACK_15 = [[
     "type_code": "event",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15028.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/15028.jpg"
   },
   {
     "name": "Last Stand",
@@ -1635,7 +1635,7 @@ PACK_15 = [[
     "type_code": "event",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15029.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/15029.jpg"
   },
   {
     "name": "Bait and Switch",
@@ -1643,7 +1643,7 @@ PACK_15 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15030.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/15030.jpg"
   },
   {
     "name": "Recuperation",
@@ -1651,7 +1651,7 @@ PACK_15 = [[
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15031.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/15031.jpg"
   },
   {
     "name": "Slipping Sanity",
@@ -1659,7 +1659,7 @@ PACK_15 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15023.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/15023.jpg"
   },
   {
     "name": "The Next Evolution",
@@ -1667,7 +1667,7 @@ PACK_15 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15024.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/15024.jpg"
   },
   {
     "name": "Luminous",
@@ -1675,7 +1675,7 @@ PACK_15 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15025.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/15025.jpg"
   },
   {
     "name": "Magical Suspension",
@@ -1683,7 +1683,7 @@ PACK_15 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15026.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/15026.jpg"
   },
   {
     "name": "Chaos Manipulation",
@@ -1691,7 +1691,7 @@ PACK_15 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/15027.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/15027.jpg"
   }
 ]
 ]]
@@ -1702,16 +1702,16 @@ PACK_16 = [[
     "code": "16001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16001B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16001A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16001B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16001A.jpg"
   },
   {
     "name": "Groot",
     "code": "16001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16001A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16001B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16001A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16001B.jpg"
   },
   {
     "name": "Fruition",
@@ -1719,7 +1719,7 @@ PACK_16 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16002.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16002.jpg"
   },
   {
     "name": "\"I am Groot\"",
@@ -1727,7 +1727,7 @@ PACK_16 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16003.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16003.jpg"
   },
   {
     "name": "\"I. AM. GROOT!\"",
@@ -1735,7 +1735,7 @@ PACK_16 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16004.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16004.jpg"
   },
   {
     "name": "Root Stomp",
@@ -1743,7 +1743,7 @@ PACK_16 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16005.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16005.jpg"
   },
   {
     "name": "\"We Are Groot\"",
@@ -1751,7 +1751,7 @@ PACK_16 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16006.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16006.jpg"
   },
   {
     "name": "Fertile Ground",
@@ -1759,7 +1759,7 @@ PACK_16 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16007.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16007.jpg"
   },
   {
     "name": "Entangling Vines",
@@ -1767,7 +1767,7 @@ PACK_16 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16008.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16008.jpg"
   },
   {
     "name": "Lashing Vines",
@@ -1775,7 +1775,7 @@ PACK_16 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16009.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16009.jpg"
   },
   {
     "name": "Vine Shield",
@@ -1783,7 +1783,7 @@ PACK_16 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16010.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16010.jpg"
   },
   {
     "name": "Vine Spikes",
@@ -1791,7 +1791,7 @@ PACK_16 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16011.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16011.jpg"
   },
   {
     "name": "Starhawk",
@@ -1799,7 +1799,7 @@ PACK_16 = [[
     "type_code": "ally",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16012.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16012.jpg"
   },
   {
     "code": "16013",
@@ -1811,7 +1811,7 @@ PACK_16 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16014.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16014.jpg"
   },
   {
     "code": "16015",
@@ -1823,7 +1823,7 @@ PACK_16 = [[
     "type_code": "upgrade",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16016.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16016.jpg"
   },
   {
     "name": "Hard to Ignore",
@@ -1831,7 +1831,7 @@ PACK_16 = [[
     "type_code": "upgrade",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16017.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16017.jpg"
   },
   {
     "code": "16018",
@@ -1843,7 +1843,7 @@ PACK_16 = [[
     "type_code": "ally",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16019.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16019.jpg"
   },
   {
     "name": "Flora and Fauna",
@@ -1851,7 +1851,7 @@ PACK_16 = [[
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16020.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16020.jpg"
   },
   {
     "code": "16021",
@@ -1871,23 +1871,23 @@ PACK_16 = [[
     "type_code": "upgrade",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16024.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16024.jpg"
   },
   {
     "name": "Rocket Raccoon",
     "code": "16029a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16029B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16029A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16029B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16029A.jpg"
   },
   {
     "name": "Rocket Raccoon",
     "code": "16029b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16029A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16029B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16029A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16029B.jpg"
   },
   {
     "name": "I've Got a Plan",
@@ -1895,7 +1895,7 @@ PACK_16 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16030.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16030.jpg"
   },
   {
     "name": "Reload",
@@ -1903,7 +1903,7 @@ PACK_16 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16031.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16031.jpg"
   },
   {
     "name": "Schadenfreude",
@@ -1911,7 +1911,7 @@ PACK_16 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16032.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16032.jpg"
   },
   {
     "name": "Salvage",
@@ -1919,7 +1919,7 @@ PACK_16 = [[
     "type_code": "resource",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16033.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16033.jpg"
   },
   {
     "name": "Battery Pack",
@@ -1927,7 +1927,7 @@ PACK_16 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16034.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16034.jpg"
   },
   {
     "name": "Cybernetic Skeleton",
@@ -1935,7 +1935,7 @@ PACK_16 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16035.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16035.jpg"
   },
   {
     "name": "Particle Cannon",
@@ -1943,7 +1943,7 @@ PACK_16 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16036.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16036.jpg"
   },
   {
     "name": "Rocket Launcher",
@@ -1951,7 +1951,7 @@ PACK_16 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16037.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16037.jpg"
   },
   {
     "name": "Rocket's Pistol",
@@ -1959,7 +1959,7 @@ PACK_16 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16038.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16038.jpg"
   },
   {
     "name": "Thruster Boots",
@@ -1967,7 +1967,7 @@ PACK_16 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16039.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16039.jpg"
   },
   {
     "name": "Bug",
@@ -1975,7 +1975,7 @@ PACK_16 = [[
     "type_code": "ally",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16040.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16040.jpg"
   },
   {
     "code": "16041",
@@ -1991,7 +1991,7 @@ PACK_16 = [[
     "type_code": "event",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16043.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16043.jpg"
   },
   {
     "code": "16044",
@@ -2003,7 +2003,7 @@ PACK_16 = [[
     "type_code": "upgrade",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16045.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16045.jpg"
   },
   {
     "name": "Hand Cannon",
@@ -2011,7 +2011,7 @@ PACK_16 = [[
     "type_code": "upgrade",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16046.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16046.jpg"
   },
   {
     "name": "Groot",
@@ -2019,7 +2019,7 @@ PACK_16 = [[
     "type_code": "ally",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16047.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16047.jpg"
   },
   {
     "code": "16048",
@@ -2043,7 +2043,7 @@ PACK_16 = [[
     "type_code": "upgrade",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16052.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16052.jpg"
   },
   {
     "name": "Brainstorm",
@@ -2051,7 +2051,7 @@ PACK_16 = [[
     "type_code": "event",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16150.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16150.jpg"
   },
   {
     "name": "By Any Means",
@@ -2059,7 +2059,7 @@ PACK_16 = [[
     "type_code": "event",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16151.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16151.jpg"
   },
   {
     "name": "Contingency Plan",
@@ -2067,7 +2067,7 @@ PACK_16 = [[
     "type_code": "event",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16152.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16152.jpg"
   },
   {
     "name": "In Defiance",
@@ -2075,7 +2075,7 @@ PACK_16 = [[
     "type_code": "event",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16153.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16153.jpg"
   },
   {
     "name": "Calculate the Odds",
@@ -2083,7 +2083,7 @@ PACK_16 = [[
     "type_code": "event",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16154.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16154.jpg"
   },
   {
     "name": "Creative Solution",
@@ -2091,7 +2091,7 @@ PACK_16 = [[
     "type_code": "event",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16155.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16155.jpg"
   },
   {
     "name": "Grapple",
@@ -2099,7 +2099,7 @@ PACK_16 = [[
     "type_code": "event",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16156.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16156.jpg"
   },
   {
     "name": "Wing It",
@@ -2107,7 +2107,7 @@ PACK_16 = [[
     "type_code": "event",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16157.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16157.jpg"
   },
   {
     "name": "Close Call",
@@ -2115,7 +2115,7 @@ PACK_16 = [[
     "type_code": "event",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16158.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16158.jpg"
   },
   {
     "name": "Defy Danger",
@@ -2123,7 +2123,7 @@ PACK_16 = [[
     "type_code": "event",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16159.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16159.jpg"
   },
   {
     "name": "In Harm's Way",
@@ -2131,7 +2131,7 @@ PACK_16 = [[
     "type_code": "event",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16160.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16160.jpg"
   },
   {
     "name": "Take the Fight to Them",
@@ -2139,7 +2139,7 @@ PACK_16 = [[
     "type_code": "event",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16161.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16161.jpg"
   },
   {
     "name": "Armor Plating",
@@ -2147,7 +2147,7 @@ PACK_16 = [[
     "type_code": "upgrade",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16162.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16162.jpg"
   },
   {
     "name": "Heavy Cannon",
@@ -2155,7 +2155,7 @@ PACK_16 = [[
     "type_code": "upgrade",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16163.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16163.jpg"
   },
   {
     "name": "Hyper Thrusters",
@@ -2163,7 +2163,7 @@ PACK_16 = [[
     "type_code": "upgrade",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16164.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16164.jpg"
   },
   {
     "name": "Reactor Core",
@@ -2171,7 +2171,7 @@ PACK_16 = [[
     "type_code": "upgrade",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16165.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16165.jpg"
   },
   {
     "name": "Ardent Resolve",
@@ -2179,7 +2179,7 @@ PACK_16 = [[
     "type_code": "event",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16166.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16166.jpg"
   },
   {
     "name": "Onrush",
@@ -2187,7 +2187,7 @@ PACK_16 = [[
     "type_code": "event",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16167.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16167.jpg"
   },
   {
     "name": "Safeguard",
@@ -2195,7 +2195,7 @@ PACK_16 = [[
     "type_code": "event",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16168.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16168.jpg"
   },
   {
     "name": "Sure Gamble",
@@ -2203,7 +2203,7 @@ PACK_16 = [[
     "type_code": "event",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16169.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16169.jpg"
   },
   {
     "name": "Cargo Hold",
@@ -2211,7 +2211,7 @@ PACK_16 = [[
     "type_code": "upgrade",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16170.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16170.jpg"
   },
   {
     "name": "Mounted Laser",
@@ -2219,7 +2219,7 @@ PACK_16 = [[
     "type_code": "upgrade",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16171.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16171.jpg"
   },
   {
     "name": "Navigation Column",
@@ -2227,7 +2227,7 @@ PACK_16 = [[
     "type_code": "upgrade",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16172.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16172.jpg"
   },
   {
     "name": "Targeting Screen",
@@ -2235,7 +2235,7 @@ PACK_16 = [[
     "type_code": "upgrade",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16173.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16173.jpg"
   },
   {
     "name": "Grand Strategy",
@@ -2243,7 +2243,7 @@ PACK_16 = [[
     "type_code": "event",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16174.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16174.jpg"
   },
   {
     "name": "Power Unleashed",
@@ -2251,7 +2251,7 @@ PACK_16 = [[
     "type_code": "event",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16175.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16175.jpg"
   },
   {
     "name": "Tried and True",
@@ -2259,7 +2259,7 @@ PACK_16 = [[
     "type_code": "event",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16176.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16176.jpg"
   },
   {
     "name": "Triple Threat",
@@ -2267,87 +2267,87 @@ PACK_16 = [[
     "type_code": "event",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16177.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16177.jpg"
   },
   {
     "name": "Badoon Blitz",
     "code": "16178a",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16178B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16178A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16178B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16178A.jpg"
   },
   {
     "name": "Badoon Blitz",
     "code": "16178b",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16178A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16178B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16178A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16178B.jpg"
   },
   {
     "name": "Gallery of Splendor",
     "code": "16179a",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16179B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16179A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16179B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16179A.jpg"
   },
   {
     "name": "Gallery of Splendor",
     "code": "16179b",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16179A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16179B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16179A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16179B.jpg"
   },
   {
     "name": "\"There is No Escape\"",
     "code": "16180a",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16180B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16180A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16180B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16180A.jpg"
   },
   {
     "name": "\"There is No Escape\"",
     "code": "16180b",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16180A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16180B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16180A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16180B.jpg"
   },
   {
     "name": "Guerrilla Tactics",
     "code": "16181a",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16181B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16181A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16181B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16181A.jpg"
   },
   {
     "name": "Guerrilla Tactics",
     "code": "16181b",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16181A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16181B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16181A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16181B.jpg"
   },
   {
     "name": "Kree Supremacy",
     "code": "16182a",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16182B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16182A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16182B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16182A.jpg"
   },
   {
     "name": "Kree Supremacy",
     "code": "16182b",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16182A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16182B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16182A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16182B.jpg"
   },
   {
     "name": "Badoon Headhunter",
@@ -2355,7 +2355,7 @@ PACK_16 = [[
     "type_code": "minion",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16183.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16183.jpg"
   },
   {
     "name": "On the Hunt",
@@ -2363,7 +2363,7 @@ PACK_16 = [[
     "type_code": "treachery",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16184.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16184.jpg"
   },
   {
     "name": "Dead to Rights",
@@ -2371,7 +2371,7 @@ PACK_16 = [[
     "type_code": "treachery",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16185.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16185.jpg"
   },
   {
     "name": "Headhunter's Henchman",
@@ -2379,7 +2379,7 @@ PACK_16 = [[
     "type_code": "minion",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16186.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16186.jpg"
   },
   {
     "name": "Fugitive Recovery",
@@ -2387,7 +2387,7 @@ PACK_16 = [[
     "type_code": "side_scheme",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16187.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16187.jpg"
   },
   {
     "name": "Wilt",
@@ -2395,7 +2395,7 @@ PACK_16 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16025.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16025.jpg"
   },
   {
     "name": "Blazing Inferno",
@@ -2403,7 +2403,7 @@ PACK_16 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16026.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16026.jpg"
   },
   {
     "name": "Furnax",
@@ -2411,7 +2411,7 @@ PACK_16 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16027.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16027.jpg"
   },
   {
     "name": "Fan the Flames",
@@ -2419,7 +2419,7 @@ PACK_16 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16028.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16028.jpg"
   },
   {
     "name": "Crisis on Halfworld",
@@ -2427,7 +2427,7 @@ PACK_16 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16053.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16053.jpg"
   },
   {
     "name": "Vendetta",
@@ -2435,7 +2435,7 @@ PACK_16 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16054.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16054.jpg"
   },
   {
     "name": "Blackjack O'Hare",
@@ -2443,7 +2443,7 @@ PACK_16 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16055.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16055.jpg"
   },
   {
     "name": "Blackjack's Bazooka",
@@ -2451,7 +2451,7 @@ PACK_16 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16056.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16056.jpg"
   },
   {
     "name": "Planetary Invasion",
@@ -2459,7 +2459,7 @@ PACK_16 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16057.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16057.jpg"
   },
   {
     "name": "Drang",
@@ -2467,7 +2467,7 @@ PACK_16 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16058.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16058.jpg"
   },
   {
     "name": "Drang",
@@ -2475,7 +2475,7 @@ PACK_16 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16059.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16059.jpg"
   },
   {
     "name": "Drang",
@@ -2483,39 +2483,39 @@ PACK_16 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16060.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16060.jpg"
   },
   {
     "name": "Terrestrial Invasion",
     "code": "16061a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16061B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16061A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16061B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16061A.jpg"
   },
   {
     "name": "Terrestrial Invasion",
     "code": "16061b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16061A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16061B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16061A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16061B.jpg"
   },
   {
     "name": "Protect the Planet",
     "code": "16062a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16062B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16062A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16062B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16062A.jpg"
   },
   {
     "name": "Protect the Planet",
     "code": "16062b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16062A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16062B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16062A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16062B.jpg"
   },
   {
     "name": "Badoon Ship",
@@ -2523,7 +2523,7 @@ PACK_16 = [[
     "type_code": "environment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16063.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16063.jpg"
   },
   {
     "name": "Drang's Spear",
@@ -2531,7 +2531,7 @@ PACK_16 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16064.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16064.jpg"
   },
   {
     "name": "Badoon Engineer",
@@ -2539,7 +2539,7 @@ PACK_16 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16065.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16065.jpg"
   },
   {
     "name": "Blockade",
@@ -2547,7 +2547,7 @@ PACK_16 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16066.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16066.jpg"
   },
   {
     "name": "Bombardment",
@@ -2555,7 +2555,7 @@ PACK_16 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16067.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16067.jpg"
   },
   {
     "name": "Oppressive Armada",
@@ -2563,7 +2563,7 @@ PACK_16 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16068.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16068.jpg"
   },
   {
     "name": "Spatial Positioning",
@@ -2571,7 +2571,7 @@ PACK_16 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16069.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16069.jpg"
   },
   {
     "name": "Collector",
@@ -2579,7 +2579,7 @@ PACK_16 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16070.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16070.jpg"
   },
   {
     "name": "Collector",
@@ -2587,7 +2587,7 @@ PACK_16 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16071.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16071.jpg"
   },
   {
     "name": "Collector",
@@ -2595,23 +2595,23 @@ PACK_16 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16072.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16072.jpg"
   },
   {
     "name": "The Grand Collection",
     "code": "16073a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16073B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16073A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16073B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16073A.jpg"
   },
   {
     "name": "The Grand Collection",
     "code": "16073b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16073A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16073B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16073A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16073B.jpg"
   },
   {
     "name": "Biogram Image",
@@ -2619,7 +2619,7 @@ PACK_16 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16074.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16074.jpg"
   },
   {
     "name": "Monarch Starstalker",
@@ -2627,7 +2627,7 @@ PACK_16 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16075.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16075.jpg"
   },
   {
     "name": "Inconspicuous Box",
@@ -2635,7 +2635,7 @@ PACK_16 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16076.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16076.jpg"
   },
   {
     "name": "View the Cosmos",
@@ -2643,7 +2643,7 @@ PACK_16 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16077.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16077.jpg"
   },
   {
     "name": "Stay Awhile",
@@ -2651,7 +2651,7 @@ PACK_16 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16078.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16078.jpg"
   },
   {
     "name": "Caught Off Guard",
@@ -2659,103 +2659,103 @@ PACK_16 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16079.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16079.jpg"
   },
   {
     "name": "Collector",
     "code": "16080a",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16080B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16080A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16080B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16080A.jpg"
   },
   {
     "name": "Collector",
     "code": "16080b",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16080A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16080B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16080A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16080B.jpg"
   },
   {
     "name": "Collector",
     "code": "16081a",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16081B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16081A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16081B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16081A.jpg"
   },
   {
     "name": "Collector",
     "code": "16081b",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16081A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16081B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16081A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16081B.jpg"
   },
   {
     "name": "The Missing Milano",
     "code": "16082a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16082B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16082A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16082B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16082A.jpg"
   },
   {
     "name": "The Missing Milano",
     "code": "16082b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16082A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16082B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16082A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16082B.jpg"
   },
   {
     "name": "Lost in the Museum",
     "code": "16083a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16083B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16083A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16083B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16083A.jpg"
   },
   {
     "name": "Lost in the Museum",
     "code": "16083b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16083A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16083B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16083A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16083B.jpg"
   },
   {
     "name": "The Great Escape",
     "code": "16084a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16084B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16084A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16084B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16084A.jpg"
   },
   {
     "name": "The Great Escape",
     "code": "16084b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16084A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16084B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16084A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16084B.jpg"
   },
   {
     "name": "Library Labyrinth",
     "code": "16085a",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16085B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16085A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16085B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16085A.jpg"
   },
   {
     "name": "Museum Ship",
     "code": "16085b",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16085A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16085B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16085A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16085B.jpg"
   },
   {
     "name": "\"I Have You Now!\"",
@@ -2763,7 +2763,7 @@ PACK_16 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16086.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16086.jpg"
   },
   {
     "name": "Impossible Geometry",
@@ -2771,7 +2771,7 @@ PACK_16 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16087.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16087.jpg"
   },
   {
     "name": "Nebula",
@@ -2779,7 +2779,7 @@ PACK_16 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16088.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16088.jpg"
   },
   {
     "name": "Nebula",
@@ -2787,7 +2787,7 @@ PACK_16 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16089.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16089.jpg"
   },
   {
     "name": "Nebula",
@@ -2795,39 +2795,39 @@ PACK_16 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16090.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16090.jpg"
   },
   {
     "name": "The Art of Evasion",
     "code": "16091a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16091B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16091A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16091B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16091A.jpg"
   },
   {
     "name": "The Art of Evasion",
     "code": "16091b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16091A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16091B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16091A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16091B.jpg"
   },
   {
     "name": "Warp Drive Initiated",
     "code": "16092a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16092B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16092A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16092B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16092A.jpg"
   },
   {
     "name": "Warp Drive Initiated",
     "code": "16092b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16092A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16092B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16092A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16092B.jpg"
   },
   {
     "name": "Nebula's Ship",
@@ -2835,7 +2835,7 @@ PACK_16 = [[
     "type_code": "environment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16093.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16093.jpg"
   },
   {
     "name": "Cutthroat Ambition",
@@ -2843,7 +2843,7 @@ PACK_16 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16094.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16094.jpg"
   },
   {
     "name": "Evasive Maneuvering",
@@ -2851,7 +2851,7 @@ PACK_16 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16095.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16095.jpg"
   },
   {
     "name": "Unyielding Persistence",
@@ -2859,7 +2859,7 @@ PACK_16 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16096.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16096.jpg"
   },
   {
     "name": "Weapon Mastery",
@@ -2867,7 +2867,7 @@ PACK_16 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16097.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16097.jpg"
   },
   {
     "name": "Wide Stance",
@@ -2875,7 +2875,7 @@ PACK_16 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16098.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16098.jpg"
   },
   {
     "name": "Lethal Intent",
@@ -2883,7 +2883,7 @@ PACK_16 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16099.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16099.jpg"
   },
   {
     "name": "Barrel Roll",
@@ -2891,7 +2891,7 @@ PACK_16 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16100.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16100.jpg"
   },
   {
     "name": "Combat Ready",
@@ -2899,7 +2899,7 @@ PACK_16 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16101.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16101.jpg"
   },
   {
     "name": "Ruthless",
@@ -2907,7 +2907,7 @@ PACK_16 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16102.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16102.jpg"
   },
   {
     "name": "Ronan the Accuser",
@@ -2915,7 +2915,7 @@ PACK_16 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16103.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16103.jpg"
   },
   {
     "name": "Ronan the Accuser",
@@ -2923,7 +2923,7 @@ PACK_16 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16104.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16104.jpg"
   },
   {
     "name": "Ronan the Accuser",
@@ -2931,39 +2931,39 @@ PACK_16 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16105.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16105.jpg"
   },
   {
     "name": "Interception Imminent",
     "code": "16106a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16106B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16106A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16106B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16106A.jpg"
   },
   {
     "name": "Interception Imminent",
     "code": "16106b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16106A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16106B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16106A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16106B.jpg"
   },
   {
     "name": "\"Take What Is Mine\"",
     "code": "16107a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16107B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16107A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16107B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16107A.jpg"
   },
   {
     "name": "\"Take What Is Mine\"",
     "code": "16107b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16107A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16107B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16107A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16107B.jpg"
   },
   {
     "name": "Kree Command Ship",
@@ -2971,7 +2971,7 @@ PACK_16 = [[
     "type_code": "environment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16108.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16108.jpg"
   },
   {
     "name": "Universal Weapon",
@@ -2979,7 +2979,7 @@ PACK_16 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16109.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16109.jpg"
   },
   {
     "name": "Fanaticism",
@@ -2987,7 +2987,7 @@ PACK_16 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16110.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16110.jpg"
   },
   {
     "name": "Cut the Power",
@@ -2995,7 +2995,7 @@ PACK_16 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16111.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16111.jpg"
   },
   {
     "name": "Pincer Maneuver",
@@ -3003,7 +3003,7 @@ PACK_16 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16112.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16112.jpg"
   },
   {
     "name": "Superior Tactics",
@@ -3011,7 +3011,7 @@ PACK_16 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16113.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16113.jpg"
   },
   {
     "name": "Single-Minded Fury",
@@ -3019,7 +3019,7 @@ PACK_16 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16114.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16114.jpg"
   },
   {
     "name": "Kree Physiology",
@@ -3027,7 +3027,7 @@ PACK_16 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16115.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16115.jpg"
   },
   {
     "name": "\"You Stand Accused!\"",
@@ -3035,7 +3035,7 @@ PACK_16 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16116.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16116.jpg"
   },
   {
     "name": "Badoon Assassin",
@@ -3043,7 +3043,7 @@ PACK_16 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16117.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16117.jpg"
   },
   {
     "name": "Badoon Grunt",
@@ -3051,7 +3051,7 @@ PACK_16 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16118.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16118.jpg"
   },
   {
     "name": "Badoon Lieutenant",
@@ -3059,7 +3059,7 @@ PACK_16 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16119.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16119.jpg"
   },
   {
     "name": "Badoon Sentry",
@@ -3067,7 +3067,7 @@ PACK_16 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16120.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16120.jpg"
   },
   {
     "name": "Badoon Warlord",
@@ -3075,7 +3075,7 @@ PACK_16 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16121.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16121.jpg"
   },
   {
     "name": "Cloak of Hercules",
@@ -3083,7 +3083,7 @@ PACK_16 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16122.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16122.jpg"
   },
   {
     "name": "Obedience Potion",
@@ -3091,7 +3091,7 @@ PACK_16 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16123.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16123.jpg"
   },
   {
     "name": "The Beyonder's Blazer",
@@ -3099,7 +3099,7 @@ PACK_16 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16124.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16124.jpg"
   },
   {
     "name": "The Poison",
@@ -3107,7 +3107,7 @@ PACK_16 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16125.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16125.jpg"
   },
   {
     "name": "Vandarian Power Stone",
@@ -3115,7 +3115,7 @@ PACK_16 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16126.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16126.jpg"
   },
   {
     "name": "Hujahdarian Monarch Egg",
@@ -3123,7 +3123,7 @@ PACK_16 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16127.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16127.jpg"
   },
   {
     "name": "Magical Teapot",
@@ -3131,7 +3131,7 @@ PACK_16 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16128.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16128.jpg"
   },
   {
     "name": "Philosopher's Stone",
@@ -3139,7 +3139,7 @@ PACK_16 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16129.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16129.jpg"
   },
   {
     "name": "Crystal Ball",
@@ -3147,7 +3147,7 @@ PACK_16 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16130.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16130.jpg"
   },
   {
     "name": "Kree Combat Armor",
@@ -3155,7 +3155,7 @@ PACK_16 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16131.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16131.jpg"
   },
   {
     "name": "Kree Commando",
@@ -3163,7 +3163,7 @@ PACK_16 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16132.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16132.jpg"
   },
   {
     "name": "Kree Lieutenant",
@@ -3171,7 +3171,7 @@ PACK_16 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16133.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16133.jpg"
   },
   {
     "name": "Kree Private",
@@ -3179,7 +3179,7 @@ PACK_16 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16134.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16134.jpg"
   },
   {
     "name": "Psionic Ghost",
@@ -3187,7 +3187,7 @@ PACK_16 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16135.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16135.jpg"
   },
   {
     "name": "Servant Bot",
@@ -3195,7 +3195,7 @@ PACK_16 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16136.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16136.jpg"
   },
   {
     "name": "Starshark",
@@ -3203,7 +3203,7 @@ PACK_16 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16137.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16137.jpg"
   },
   {
     "name": "Pirate Commander",
@@ -3211,7 +3211,7 @@ PACK_16 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16138.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16138.jpg"
   },
   {
     "name": "Pirate Lackey",
@@ -3219,7 +3219,7 @@ PACK_16 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16139.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16139.jpg"
   },
   {
     "name": "Sound the Alarms",
@@ -3227,7 +3227,7 @@ PACK_16 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16140.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16140.jpg"
   },
   {
     "name": "Honor Among Thieves",
@@ -3235,7 +3235,7 @@ PACK_16 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16141.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16141.jpg"
   },
   {
     "name": "Milano",
@@ -3243,7 +3243,7 @@ PACK_16 = [[
     "type_code": "support",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16142.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16142.jpg"
   },
   {
     "name": "Rogue Vessel",
@@ -3251,7 +3251,7 @@ PACK_16 = [[
     "type_code": "environment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16143.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16143.jpg"
   },
   {
     "name": "Cannonade",
@@ -3259,7 +3259,7 @@ PACK_16 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16144.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16144.jpg"
   },
   {
     "name": "Blind Side",
@@ -3267,7 +3267,7 @@ PACK_16 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16145.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16145.jpg"
   },
   {
     "name": "Hull Breach",
@@ -3275,7 +3275,7 @@ PACK_16 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16146.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16146.jpg"
   },
   {
     "name": "Power Siphon",
@@ -3283,7 +3283,7 @@ PACK_16 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16147.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16147.jpg"
   },
   {
     "name": "Special Delivery",
@@ -3291,7 +3291,7 @@ PACK_16 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16148.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16148.jpg"
   },
   {
     "name": "Power Stone",
@@ -3299,7 +3299,7 @@ PACK_16 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/16149.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16149.jpg"
   }
 ]
 ]]
@@ -3310,16 +3310,16 @@ PACK_17 = [[
     "code": "17001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17001B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17001A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/17001B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/17001A.jpg"
   },
   {
     "name": "Peter Quill",
     "code": "17001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17001A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17001B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/17001A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/17001B.jpg"
   },
   {
     "name": "Nova Prime",
@@ -3328,7 +3328,7 @@ PACK_17 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17002.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/17002.jpg"
   },
   {
     "name": "Daring Escape",
@@ -3336,7 +3336,7 @@ PACK_17 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17003.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/17003.jpg"
   },
   {
     "name": "Gutsy Move",
@@ -3344,7 +3344,7 @@ PACK_17 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17004.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/17004.jpg"
   },
   {
     "name": "Sliding Shot",
@@ -3352,7 +3352,7 @@ PACK_17 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17005.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/17005.jpg"
   },
   {
     "name": "Bad Boy",
@@ -3360,7 +3360,7 @@ PACK_17 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17006.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/17006.jpg"
   },
   {
     "name": "Element Gun",
@@ -3368,7 +3368,7 @@ PACK_17 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17007.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/17007.jpg"
   },
   {
     "name": "Jet Boots",
@@ -3376,7 +3376,7 @@ PACK_17 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17008.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/17008.jpg"
   },
   {
     "name": "Leader of the Guardians",
@@ -3384,7 +3384,7 @@ PACK_17 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17009.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/17009.jpg"
   },
   {
     "name": "Star-Lord's Helmet",
@@ -3392,7 +3392,7 @@ PACK_17 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17010.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/17010.jpg"
   },
   {
     "name": "Adam Warlock",
@@ -3400,7 +3400,7 @@ PACK_17 = [[
     "type_code": "ally",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17011.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/17011.jpg"
   },
   {
     "name": "Beta Ray Bill",
@@ -3408,7 +3408,7 @@ PACK_17 = [[
     "type_code": "ally",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17012.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/17012.jpg"
   },
   {
     "name": "Yondu",
@@ -3416,7 +3416,7 @@ PACK_17 = [[
     "type_code": "ally",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17013.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/17013.jpg"
   },
   {
     "name": "Air Supremacy",
@@ -3424,7 +3424,7 @@ PACK_17 = [[
     "type_code": "event",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17014.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/17014.jpg"
   },
   {
     "name": "Blaze of Glory",
@@ -3432,7 +3432,7 @@ PACK_17 = [[
     "type_code": "event",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17015.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/17015.jpg"
   },
   {
     "code": "17016",
@@ -3444,7 +3444,7 @@ PACK_17 = [[
     "type_code": "support",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17017.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/17017.jpg"
   },
   {
     "code": "17018",
@@ -3456,7 +3456,7 @@ PACK_17 = [[
     "type_code": "upgrade",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17019.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/17019.jpg"
   },
   {
     "name": "Cosmo",
@@ -3464,7 +3464,7 @@ PACK_17 = [[
     "type_code": "ally",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17020.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/17020.jpg"
   },
   {
     "name": "C.I.T.T.",
@@ -3472,7 +3472,7 @@ PACK_17 = [[
     "type_code": "support",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17021.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/17021.jpg"
   },
   {
     "name": "Knowhere",
@@ -3480,7 +3480,7 @@ PACK_17 = [[
     "type_code": "support",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17022.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/17022.jpg"
   },
   {
     "name": "Pulse Grenade",
@@ -3488,7 +3488,7 @@ PACK_17 = [[
     "type_code": "upgrade",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17023.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/17023.jpg"
   },
   {
     "name": "Dive Bomb",
@@ -3496,7 +3496,7 @@ PACK_17 = [[
     "type_code": "event",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17028.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/17028.jpg"
   },
   {
     "name": "Agile Flight",
@@ -3504,7 +3504,7 @@ PACK_17 = [[
     "type_code": "event",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17029.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/17029.jpg"
   },
   {
     "name": "Ever Vigilant",
@@ -3512,7 +3512,7 @@ PACK_17 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17030.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/17030.jpg"
   },
   {
     "code": "17031",
@@ -3524,7 +3524,7 @@ PACK_17 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17024.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/17024.jpg"
   },
   {
     "name": "Budding Crime Syndicate",
@@ -3532,7 +3532,7 @@ PACK_17 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17025.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/17025.jpg"
   },
   {
     "name": "Mister Knife",
@@ -3540,7 +3540,7 @@ PACK_17 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17026.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/17026.jpg"
   },
   {
     "name": "Spartoi Cunning",
@@ -3548,7 +3548,7 @@ PACK_17 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/17027.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/17027.jpg"
   }
 ]
 ]]
@@ -3559,16 +3559,16 @@ PACK_18 = [[
     "code": "18001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18001B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18001A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/18001B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/18001A.jpg"
   },
   {
     "name": "Gamora",
     "code": "18001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18001A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18001B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/18001A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/18001B.jpg"
   },
   {
     "name": "Nebula",
@@ -3576,7 +3576,7 @@ PACK_18 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18002.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/18002.jpg"
   },
   {
     "name": "Acrobatic Move",
@@ -3584,7 +3584,7 @@ PACK_18 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18003.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/18003.jpg"
   },
   {
     "name": "Crosscounter",
@@ -3592,7 +3592,7 @@ PACK_18 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18004.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/18004.jpg"
   },
   {
     "name": "Set the Pace",
@@ -3600,7 +3600,7 @@ PACK_18 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18005.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/18005.jpg"
   },
   {
     "name": "Decisive Blow",
@@ -3608,7 +3608,7 @@ PACK_18 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18006.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/18006.jpg"
   },
   {
     "name": "Forward Momentum",
@@ -3616,7 +3616,7 @@ PACK_18 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18007.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/18007.jpg"
   },
   {
     "name": "Conditioning Room",
@@ -3624,7 +3624,7 @@ PACK_18 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18008.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/18008.jpg"
   },
   {
     "name": "Keen Instincts",
@@ -3632,7 +3632,7 @@ PACK_18 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18009.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/18009.jpg"
   },
   {
     "name": "Gamora's Sword",
@@ -3640,7 +3640,7 @@ PACK_18 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18010.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/18010.jpg"
   },
   {
     "name": "Angela",
@@ -3649,7 +3649,7 @@ PACK_18 = [[
     "type_code": "ally",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18011.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/18011.jpg"
   },
   {
     "name": "Clobber",
@@ -3657,7 +3657,7 @@ PACK_18 = [[
     "type_code": "event",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18012.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/18012.jpg"
   },
   {
     "name": "Plan of Attack",
@@ -3665,7 +3665,7 @@ PACK_18 = [[
     "type_code": "event",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18013.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/18013.jpg"
   },
   {
     "code": "18014",
@@ -3677,7 +3677,7 @@ PACK_18 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18015.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/18015.jpg"
   },
   {
     "name": "Impede",
@@ -3685,7 +3685,7 @@ PACK_18 = [[
     "type_code": "event",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18016.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/18016.jpg"
   },
   {
     "code": "18017",
@@ -3697,7 +3697,7 @@ PACK_18 = [[
     "type_code": "upgrade",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18018.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/18018.jpg"
   },
   {
     "name": "Drax",
@@ -3705,7 +3705,7 @@ PACK_18 = [[
     "type_code": "ally",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18019.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/18019.jpg"
   },
   {
     "name": "Hit and Run",
@@ -3713,7 +3713,7 @@ PACK_18 = [[
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18020.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/18020.jpg"
   },
   {
     "code": "18021",
@@ -3733,7 +3733,7 @@ PACK_18 = [[
     "type_code": "event",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18029.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/18029.jpg"
   },
   {
     "name": "Comms Implant",
@@ -3741,7 +3741,7 @@ PACK_18 = [[
     "type_code": "upgrade",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18030.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/18030.jpg"
   },
   {
     "name": "True Grit",
@@ -3749,7 +3749,7 @@ PACK_18 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18031.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/18031.jpg"
   },
   {
     "name": "Unfulfilled Destiny",
@@ -3757,7 +3757,7 @@ PACK_18 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18024.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/18024.jpg"
   },
   {
     "name": "Sibling Rivalry",
@@ -3765,7 +3765,7 @@ PACK_18 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18025.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/18025.jpg"
   },
   {
     "name": "Nebula",
@@ -3773,7 +3773,7 @@ PACK_18 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18026.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/18026.jpg"
   },
   {
     "name": "In A Bind",
@@ -3781,7 +3781,7 @@ PACK_18 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18027.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/18027.jpg"
   },
   {
     "name": "Waylay",
@@ -3789,7 +3789,7 @@ PACK_18 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/18028.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/18028.jpg"
   }
 ]
 ]]
@@ -3800,16 +3800,16 @@ PACK_19 = [[
     "code": "19001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19001B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19001A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/19001B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/19001A.jpg"
   },
   {
     "name": "Drax",
     "code": "19001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19001A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19001B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/19001A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/19001B.jpg"
   },
   {
     "name": "Mantis",
@@ -3817,7 +3817,7 @@ PACK_19 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19002.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/19002.jpg"
   },
   {
     "name": "\"Fight Me, Coward!\"",
@@ -3825,7 +3825,7 @@ PACK_19 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19003.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/19003.jpg"
   },
   {
     "name": "Intimidation",
@@ -3833,7 +3833,7 @@ PACK_19 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19004.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/19004.jpg"
   },
   {
     "name": "Knife Leap",
@@ -3841,7 +3841,7 @@ PACK_19 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19005.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/19005.jpg"
   },
   {
     "name": "Parry",
@@ -3849,7 +3849,7 @@ PACK_19 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19006.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/19006.jpg"
   },
   {
     "name": "Payback",
@@ -3857,7 +3857,7 @@ PACK_19 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19007.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/19007.jpg"
   },
   {
     "name": "Drax's Knife",
@@ -3865,7 +3865,7 @@ PACK_19 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19008.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/19008.jpg"
   },
   {
     "name": "Drax's Other Knife",
@@ -3873,7 +3873,7 @@ PACK_19 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19009.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/19009.jpg"
   },
   {
     "name": "DWI Theet Mastery",
@@ -3881,7 +3881,7 @@ PACK_19 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19010.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/19010.jpg"
   },
   {
     "name": "Too Stubborn to Die",
@@ -3889,7 +3889,7 @@ PACK_19 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19011.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/19011.jpg"
   },
   {
     "name": "Martyr",
@@ -3898,7 +3898,7 @@ PACK_19 = [[
     "type_code": "ally",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19012.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/19012.jpg"
   },
   {
     "name": "Moondragon",
@@ -3907,7 +3907,7 @@ PACK_19 = [[
     "type_code": "ally",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19013.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/19013.jpg"
   },
   {
     "code": "19014",
@@ -3919,7 +3919,7 @@ PACK_19 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19015.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/19015.jpg"
   },
   {
     "name": "Hard Knocks",
@@ -3927,7 +3927,7 @@ PACK_19 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19016.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/19016.jpg"
   },
   {
     "name": "Leading Blow",
@@ -3935,7 +3935,7 @@ PACK_19 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19017.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/19017.jpg"
   },
   {
     "name": "Subdue",
@@ -3943,7 +3943,7 @@ PACK_19 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19018.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/19018.jpg"
   },
   {
     "code": "19019",
@@ -3955,7 +3955,7 @@ PACK_19 = [[
     "type_code": "ally",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19020.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/19020.jpg"
   },
   {
     "code": "19021",
@@ -3979,7 +3979,7 @@ PACK_19 = [[
     "type_code": "event",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19030.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/19030.jpg"
   },
   {
     "name": "\"Think Fast!\"",
@@ -3987,7 +3987,7 @@ PACK_19 = [[
     "type_code": "event",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19031.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/19031.jpg"
   },
   {
     "name": "Regroup",
@@ -3995,7 +3995,7 @@ PACK_19 = [[
     "type_code": "support",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19032.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/19032.jpg"
   },
   {
     "code": "19033",
@@ -4007,7 +4007,7 @@ PACK_19 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19025.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/19025.jpg"
   },
   {
     "name": "Cull the Weak",
@@ -4015,7 +4015,7 @@ PACK_19 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19026.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/19026.jpg"
   },
   {
     "name": "Yotat the Destroyer",
@@ -4023,7 +4023,7 @@ PACK_19 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19027.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/19027.jpg"
   },
   {
     "name": "Challenge Accepted",
@@ -4031,7 +4031,7 @@ PACK_19 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19028.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/19028.jpg"
   },
   {
     "name": "\"I Will Destroy You!\"",
@@ -4039,7 +4039,7 @@ PACK_19 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/19029.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/19029.jpg"
   }
 ]
 ]]
@@ -4050,16 +4050,16 @@ PACK_20 = [[
     "code": "20001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20001B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20001A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/20001B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/20001A.jpg"
   },
   {
     "name": "Flash Thompson",
     "code": "20001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20001A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20001B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/20001A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/20001B.jpg"
   },
   {
     "name": "Behind Enemy Lines",
@@ -4067,7 +4067,7 @@ PACK_20 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20002.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/20002.jpg"
   },
   {
     "name": "Grasping Tendrils",
@@ -4075,7 +4075,7 @@ PACK_20 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20003.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/20003.jpg"
   },
   {
     "name": "Locked and Loaded",
@@ -4083,7 +4083,7 @@ PACK_20 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20004.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/20004.jpg"
   },
   {
     "name": "Run and Gun",
@@ -4091,7 +4091,7 @@ PACK_20 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20005.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/20005.jpg"
   },
   {
     "name": "Savage Attack",
@@ -4099,7 +4099,7 @@ PACK_20 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20006.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/20006.jpg"
   },
   {
     "name": "Project Rebirth 2.0",
@@ -4107,7 +4107,7 @@ PACK_20 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20007.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/20007.jpg"
   },
   {
     "name": "Multi-Gun",
@@ -4115,7 +4115,7 @@ PACK_20 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20008.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/20008.jpg"
   },
   {
     "name": "Spider-Sense",
@@ -4123,7 +4123,7 @@ PACK_20 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20009.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/20009.jpg"
   },
   {
     "name": "Venom's Pistol",
@@ -4131,7 +4131,7 @@ PACK_20 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20010.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/20010.jpg"
   },
   {
     "name": "Jack Flag",
@@ -4140,7 +4140,7 @@ PACK_20 = [[
     "type_code": "ally",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20011.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/20011.jpg"
   },
   {
     "name": "Scare Tactic",
@@ -4148,7 +4148,7 @@ PACK_20 = [[
     "type_code": "event",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20012.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/20012.jpg"
   },
   {
     "name": "Making an Entrance",
@@ -4156,7 +4156,7 @@ PACK_20 = [[
     "type_code": "event",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20013.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/20013.jpg"
   },
   {
     "code": "20014",
@@ -4168,7 +4168,7 @@ PACK_20 = [[
     "type_code": "upgrade",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20015.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/20015.jpg"
   },
   {
     "name": "Star-Lord",
@@ -4177,7 +4177,7 @@ PACK_20 = [[
     "type_code": "ally",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20016.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/20016.jpg"
   },
   {
     "code": "20017",
@@ -4201,7 +4201,7 @@ PACK_20 = [[
     "type_code": "upgrade",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20021.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/20021.jpg"
   },
   {
     "name": "Plasma Pistol",
@@ -4209,7 +4209,7 @@ PACK_20 = [[
     "type_code": "upgrade",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20022.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/20022.jpg"
   },
   {
     "name": "Fusillade",
@@ -4217,7 +4217,7 @@ PACK_20 = [[
     "type_code": "event",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20026.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/20026.jpg"
   },
   {
     "name": "\"Welcome Aboard\"",
@@ -4225,7 +4225,7 @@ PACK_20 = [[
     "type_code": "event",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20027.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/20027.jpg"
   },
   {
     "name": "Shake it Off",
@@ -4233,7 +4233,7 @@ PACK_20 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20028.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/20028.jpg"
   },
   {
     "name": "Crew Quarters",
@@ -4241,7 +4241,7 @@ PACK_20 = [[
     "type_code": "support",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20029.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/20029.jpg"
   },
   {
     "name": "Struggle for Control",
@@ -4249,7 +4249,7 @@ PACK_20 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20023.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/20023.jpg"
   },
   {
     "name": "Klyntar Frenzy",
@@ -4257,7 +4257,7 @@ PACK_20 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20024.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/20024.jpg"
   },
   {
     "name": "Enraged Symbiote",
@@ -4265,7 +4265,7 @@ PACK_20 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/20025.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/20025.jpg"
   }
 ]
 ]]
@@ -4276,16 +4276,16 @@ PACK_21 = [[
     "code": "21001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21001B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21001A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/21001B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21001A.jpg"
   },
   {
     "name": "Monica Rambeau",
     "code": "21001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21001A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21001B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/21001A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21001B.jpg"
   },
   {
     "name": "Gamma",
@@ -4293,7 +4293,7 @@ PACK_21 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21002.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21002.jpg"
   },
   {
     "name": "Photon",
@@ -4301,7 +4301,7 @@ PACK_21 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21003.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21003.jpg"
   },
   {
     "name": "Pulsar",
@@ -4309,7 +4309,7 @@ PACK_21 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21004.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21004.jpg"
   },
   {
     "name": "Blue Marvel",
@@ -4318,7 +4318,7 @@ PACK_21 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21005.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21005.jpg"
   },
   {
     "name": "Energy Duplication",
@@ -4326,7 +4326,7 @@ PACK_21 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21006.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21006.jpg"
   },
   {
     "name": "Gamma Blast",
@@ -4334,7 +4334,7 @@ PACK_21 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21007.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21007.jpg"
   },
   {
     "name": "Photon Speed",
@@ -4342,7 +4342,7 @@ PACK_21 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21008.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21008.jpg"
   },
   {
     "name": "Pulsar Shield",
@@ -4350,7 +4350,7 @@ PACK_21 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21009.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21009.jpg"
   },
   {
     "name": "Speed of Light",
@@ -4358,7 +4358,7 @@ PACK_21 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21010.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21010.jpg"
   },
   {
     "name": "Captain America",
@@ -4367,7 +4367,7 @@ PACK_21 = [[
     "type_code": "ally",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21011.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21011.jpg"
   },
   {
     "name": "Power Man",
@@ -4376,7 +4376,7 @@ PACK_21 = [[
     "type_code": "ally",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21012.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21012.jpg"
   },
   {
     "name": "White Tiger",
@@ -4385,7 +4385,7 @@ PACK_21 = [[
     "type_code": "ally",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21013.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21013.jpg"
   },
   {
     "name": "Kaluu",
@@ -4393,7 +4393,7 @@ PACK_21 = [[
     "type_code": "ally",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21014.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21014.jpg"
   },
   {
     "name": "Mighty Avengers",
@@ -4401,7 +4401,7 @@ PACK_21 = [[
     "type_code": "support",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21015.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21015.jpg"
   },
   {
     "name": "Mass Attack",
@@ -4409,7 +4409,7 @@ PACK_21 = [[
     "type_code": "event",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21016.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21016.jpg"
   },
   {
     "code": "21017",
@@ -4421,7 +4421,7 @@ PACK_21 = [[
     "type_code": "resource",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21018.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21018.jpg"
   },
   {
     "name": "Blade",
@@ -4430,7 +4430,7 @@ PACK_21 = [[
     "type_code": "ally",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21019.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21019.jpg"
   },
   {
     "code": "21020",
@@ -4446,7 +4446,7 @@ PACK_21 = [[
     "type_code": "upgrade",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21022.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21022.jpg"
   },
   {
     "code": "21023",
@@ -4465,16 +4465,16 @@ PACK_21 = [[
     "code": "21031a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21031B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21031A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/21031B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21031A.jpg"
   },
   {
     "name": "Adam Warlock",
     "code": "21031b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21031A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21031B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/21031A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21031B.jpg"
   },
   {
     "name": "Pip the Troll",
@@ -4482,7 +4482,7 @@ PACK_21 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21032.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21032.jpg"
   },
   {
     "name": "Soul World",
@@ -4490,7 +4490,7 @@ PACK_21 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21033.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21033.jpg"
   },
   {
     "name": "Karmic Staff",
@@ -4498,7 +4498,7 @@ PACK_21 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21034.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21034.jpg"
   },
   {
     "name": "Warlock's Cape",
@@ -4506,7 +4506,7 @@ PACK_21 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21035.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21035.jpg"
   },
   {
     "name": "Cosmic Ward",
@@ -4514,7 +4514,7 @@ PACK_21 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21036.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21036.jpg"
   },
   {
     "name": "Mystic Senses",
@@ -4522,7 +4522,7 @@ PACK_21 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21037.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21037.jpg"
   },
   {
     "name": "Karmic Blast",
@@ -4530,7 +4530,7 @@ PACK_21 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21038.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21038.jpg"
   },
   {
     "name": "Cosmic Awareness",
@@ -4538,7 +4538,7 @@ PACK_21 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21039.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21039.jpg"
   },
   {
     "name": "Quantum Magic",
@@ -4546,7 +4546,7 @@ PACK_21 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21040.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21040.jpg"
   },
   {
     "name": "Marvel Boy",
@@ -4555,7 +4555,7 @@ PACK_21 = [[
     "type_code": "ally",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21041.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21041.jpg"
   },
   {
     "name": "In-Betweener",
@@ -4563,7 +4563,7 @@ PACK_21 = [[
     "type_code": "event",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21042.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21042.jpg"
   },
   {
     "name": "Magic Attack",
@@ -4571,7 +4571,7 @@ PACK_21 = [[
     "type_code": "event",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21043.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21043.jpg"
   },
   {
     "code": "21044",
@@ -4587,7 +4587,7 @@ PACK_21 = [[
     "type_code": "resource",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21046.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21046.jpg"
   },
   {
     "name": "Quasar",
@@ -4596,7 +4596,7 @@ PACK_21 = [[
     "type_code": "ally",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21047.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21047.jpg"
   },
   {
     "name": "Living Tribunal",
@@ -4604,7 +4604,7 @@ PACK_21 = [[
     "type_code": "event",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21048.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21048.jpg"
   },
   {
     "code": "21049",
@@ -4616,7 +4616,7 @@ PACK_21 = [[
     "type_code": "event",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21050.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21050.jpg"
   },
   {
     "code": "21051",
@@ -4628,7 +4628,7 @@ PACK_21 = [[
     "type_code": "resource",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21052.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21052.jpg"
   },
   {
     "name": "Major Victory",
@@ -4637,7 +4637,7 @@ PACK_21 = [[
     "type_code": "ally",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21053.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21053.jpg"
   },
   {
     "name": "Eternity",
@@ -4645,7 +4645,7 @@ PACK_21 = [[
     "type_code": "event",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21054.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21054.jpg"
   },
   {
     "name": "Summoning Spell",
@@ -4653,7 +4653,7 @@ PACK_21 = [[
     "type_code": "event",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21055.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21055.jpg"
   },
   {
     "code": "21056",
@@ -4669,7 +4669,7 @@ PACK_21 = [[
     "type_code": "resource",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21058.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21058.jpg"
   },
   {
     "name": "Charlie-27",
@@ -4677,7 +4677,7 @@ PACK_21 = [[
     "type_code": "ally",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21059.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21059.jpg"
   },
   {
     "name": "The Gardener",
@@ -4685,7 +4685,7 @@ PACK_21 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21060.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21060.jpg"
   },
   {
     "name": "Shield Spell",
@@ -4693,7 +4693,7 @@ PACK_21 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21061.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21061.jpg"
   },
   {
     "code": "21062",
@@ -4709,7 +4709,7 @@ PACK_21 = [[
     "type_code": "resource",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21064.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21064.jpg"
   },
   {
     "name": "Martinex",
@@ -4718,23 +4718,23 @@ PACK_21 = [[
     "type_code": "ally",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21065.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21065.jpg"
   },
   {
     "name": "Secure the Landing Pad",
     "code": "21180a",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21180B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21180A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/21180B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21180A.jpg"
   },
   {
     "name": "Cosmo",
     "code": "21180b",
     "type_code": "ally",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21180A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21180B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/21180A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21180B.jpg"
   },
   {
     "name": "Security Breach",
@@ -4742,23 +4742,23 @@ PACK_21 = [[
     "type_code": "side_scheme",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21181.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21181.jpg"
   },
   {
     "name": "Save the Shawarma Place",
     "code": "21182a",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21182B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21182A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/21182B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21182A.jpg"
   },
   {
     "name": "Black Swan",
     "code": "21182b",
     "type_code": "minion",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21182A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21182B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/21182A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21182B.jpg"
   },
   {
     "name": "Shawarma",
@@ -4766,23 +4766,23 @@ PACK_21 = [[
     "type_code": "resource",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21183.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21183.jpg"
   },
   {
     "name": "Hack Sanctuary's Computer",
     "code": "21184a",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21184B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21184A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/21184B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21184A.jpg"
   },
   {
     "name": "Defensive Protocols",
     "code": "21184b",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21184A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21184B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/21184A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21184B.jpg"
   },
   {
     "name": "System Shock",
@@ -4790,39 +4790,39 @@ PACK_21 = [[
     "type_code": "obligation",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21185.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21185.jpg"
   },
   {
     "name": "Find the Norn Stones",
     "code": "21186a",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21186B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21186A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/21186B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21186A.jpg"
   },
   {
     "name": "Retrieve Odin's Armor",
     "code": "21186b",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21186A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21186B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/21186A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21186B.jpg"
   },
   {
     "name": "Norn Stone",
     "code": "21187a",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21187B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21187A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/21187B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21187A.jpg"
   },
   {
     "name": "Norn Stone",
     "code": "21187b",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21187A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21187B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/21187A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21187B.jpg"
   },
   {
     "name": "Summoned Back",
@@ -4830,23 +4830,23 @@ PACK_21 = [[
     "type_code": "treachery",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21188.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21188.jpg"
   },
   {
     "name": "Open the Dungeons",
     "code": "21189a",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21189B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21189A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/21189B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21189A.jpg"
   },
   {
     "name": "Jormungand",
     "code": "21189b",
     "type_code": "attachment",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21189A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21189B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/21189A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21189B.jpg"
   },
   {
     "name": "Lady Sif",
@@ -4854,7 +4854,7 @@ PACK_21 = [[
     "type_code": "ally",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21190.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21190.jpg"
   },
   {
     "name": "Fandral",
@@ -4862,7 +4862,7 @@ PACK_21 = [[
     "type_code": "ally",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21191.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21191.jpg"
   },
   {
     "name": "Hogun",
@@ -4870,7 +4870,7 @@ PACK_21 = [[
     "type_code": "ally",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21192.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21192.jpg"
   },
   {
     "name": "Volstagg",
@@ -4878,7 +4878,7 @@ PACK_21 = [[
     "type_code": "ally",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21193.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21193.jpg"
   },
   {
     "name": "Loss of Control",
@@ -4886,7 +4886,7 @@ PACK_21 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21026.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21026.jpg"
   },
   {
     "name": "Radioactive Man",
@@ -4894,7 +4894,7 @@ PACK_21 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21027.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21027.jpg"
   },
   {
     "name": "Reactor Meltdown",
@@ -4902,7 +4902,7 @@ PACK_21 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21028.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21028.jpg"
   },
   {
     "name": "Sap Power",
@@ -4910,7 +4910,7 @@ PACK_21 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21029.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21029.jpg"
   },
   {
     "name": "Radioactive Blast",
@@ -4918,7 +4918,7 @@ PACK_21 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21030.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21030.jpg"
   },
   {
     "name": "Regeneration Cycle",
@@ -4926,7 +4926,7 @@ PACK_21 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21066.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21066.jpg"
   },
   {
     "name": "The Magus",
@@ -4934,7 +4934,7 @@ PACK_21 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21067.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21067.jpg"
   },
   {
     "name": "Universal Church of Truth",
@@ -4942,7 +4942,7 @@ PACK_21 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21068.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21068.jpg"
   },
   {
     "name": "Zealot of thuth",
@@ -4950,7 +4950,7 @@ PACK_21 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21069.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21069.jpg"
   },
   {
     "name": "Cosmic Inquisition",
@@ -4958,7 +4958,7 @@ PACK_21 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21070.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21070.jpg"
   },
   {
     "name": "Ebony Maw",
@@ -4966,7 +4966,7 @@ PACK_21 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21071.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21071.jpg"
   },
   {
     "name": "Ebony Maw",
@@ -4974,7 +4974,7 @@ PACK_21 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21072.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21072.jpg"
   },
   {
     "name": "Ebony Maw",
@@ -4982,7 +4982,7 @@ PACK_21 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21073.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21073.jpg"
   },
   {
     "name": "Attack on Knowhere",
@@ -4990,7 +4990,7 @@ PACK_21 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21074.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21074.jpg"
   },
   {
     "name": "The Power Stone",
@@ -4998,7 +4998,7 @@ PACK_21 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21075.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21075.jpg"
   },
   {
     "name": "Fireball",
@@ -5006,7 +5006,7 @@ PACK_21 = [[
     "type_code": "environment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21076.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21076.jpg"
   },
   {
     "name": "Manipulation",
@@ -5014,7 +5014,7 @@ PACK_21 = [[
     "type_code": "environment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21077.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21077.jpg"
   },
   {
     "name": "Pacification",
@@ -5022,7 +5022,7 @@ PACK_21 = [[
     "type_code": "environment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21078.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21078.jpg"
   },
   {
     "name": "Rubblestorm",
@@ -5030,7 +5030,7 @@ PACK_21 = [[
     "type_code": "environment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21079.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21079.jpg"
   },
   {
     "name": "Agent of Thanos",
@@ -5038,7 +5038,7 @@ PACK_21 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21080.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21080.jpg"
   },
   {
     "name": "Channeling Trance",
@@ -5046,7 +5046,7 @@ PACK_21 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21081.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21081.jpg"
   },
   {
     "name": "Abjuration",
@@ -5054,7 +5054,7 @@ PACK_21 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21082.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21082.jpg"
   },
   {
     "name": "Restrained",
@@ -5062,7 +5062,7 @@ PACK_21 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21083.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21083.jpg"
   },
   {
     "name": "Reactor Overload",
@@ -5070,7 +5070,7 @@ PACK_21 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21084.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21084.jpg"
   },
   {
     "name": "Black Dwarf",
@@ -5078,7 +5078,7 @@ PACK_21 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21085.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21085.jpg"
   },
   {
     "name": "Supergiant",
@@ -5086,7 +5086,7 @@ PACK_21 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21086.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21086.jpg"
   },
   {
     "name": "The Black Order",
@@ -5094,7 +5094,7 @@ PACK_21 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21087.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21087.jpg"
   },
   {
     "name": "Blood to Spare",
@@ -5102,7 +5102,7 @@ PACK_21 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21088.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21088.jpg"
   },
   {
     "name": "Black Order Infantry",
@@ -5110,7 +5110,7 @@ PACK_21 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21089.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21089.jpg"
   },
   {
     "name": "Outrider",
@@ -5118,7 +5118,7 @@ PACK_21 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21090.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21090.jpg"
   },
   {
     "name": "Landing Craft",
@@ -5126,7 +5126,7 @@ PACK_21 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21091.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21091.jpg"
   },
   {
     "name": "Proxima Midnight",
@@ -5134,7 +5134,7 @@ PACK_21 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21092.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21092.jpg"
   },
   {
     "name": "Proxima Midnight",
@@ -5142,7 +5142,7 @@ PACK_21 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21093.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21093.jpg"
   },
   {
     "name": "Proxima Midnight",
@@ -5150,7 +5150,7 @@ PACK_21 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21094.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21094.jpg"
   },
   {
     "name": "Corvus Glaive",
@@ -5158,7 +5158,7 @@ PACK_21 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21095.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21095.jpg"
   },
   {
     "name": "Corvus Glaive",
@@ -5166,7 +5166,7 @@ PACK_21 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21096.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21096.jpg"
   },
   {
     "name": "Corvus Glaive",
@@ -5174,7 +5174,7 @@ PACK_21 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21097.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21097.jpg"
   },
   {
     "name": "Under Siege",
@@ -5182,7 +5182,7 @@ PACK_21 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21098.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21098.jpg"
   },
   {
     "name": "The Armies of Thanos",
@@ -5190,7 +5190,7 @@ PACK_21 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21099.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21099.jpg"
   },
   {
     "name": "Avengers Tower",
@@ -5198,7 +5198,7 @@ PACK_21 = [[
     "type_code": "environment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21100.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21100.jpg"
   },
   {
     "name": "Focused Defense",
@@ -5206,7 +5206,7 @@ PACK_21 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21101.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21101.jpg"
   },
   {
     "name": "Black Order Besieger",
@@ -5214,7 +5214,7 @@ PACK_21 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21102.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21102.jpg"
   },
   {
     "name": "Proxima's Spear",
@@ -5222,7 +5222,7 @@ PACK_21 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21103.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21103.jpg"
   },
   {
     "name": "Corvus Glaive",
@@ -5230,7 +5230,7 @@ PACK_21 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21104.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21104.jpg"
   },
   {
     "name": "Direct Assault",
@@ -5238,7 +5238,7 @@ PACK_21 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21105.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21105.jpg"
   },
   {
     "name": "Proxima's Power",
@@ -5246,7 +5246,7 @@ PACK_21 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21106.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21106.jpg"
   },
   {
     "name": "Corvus's Cunning",
@@ -5254,7 +5254,7 @@ PACK_21 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21107.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21107.jpg"
   },
   {
     "name": "Bound by Blood",
@@ -5262,7 +5262,7 @@ PACK_21 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21108.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21108.jpg"
   },
   {
     "name": "Rain Fire",
@@ -5270,7 +5270,7 @@ PACK_21 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21109.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21109.jpg"
   },
   {
     "name": "City Under Attack",
@@ -5278,7 +5278,7 @@ PACK_21 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21110.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21110.jpg"
   },
   {
     "name": "Thanos",
@@ -5286,7 +5286,7 @@ PACK_21 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21111.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21111.jpg"
   },
   {
     "name": "Thanos",
@@ -5294,7 +5294,7 @@ PACK_21 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21112.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21112.jpg"
   },
   {
     "name": "Thanos",
@@ -5302,7 +5302,7 @@ PACK_21 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21113.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21113.jpg"
   },
   {
     "name": "The Infinity Stones",
@@ -5310,7 +5310,7 @@ PACK_21 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21114.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21114.jpg"
   },
   {
     "name": "Balance the Scales",
@@ -5318,7 +5318,7 @@ PACK_21 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21115.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21115.jpg"
   },
   {
     "name": "Sanctuary",
@@ -5326,7 +5326,7 @@ PACK_21 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21116.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21116.jpg"
   },
   {
     "name": "Thanos's Armor",
@@ -5334,7 +5334,7 @@ PACK_21 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21117.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21117.jpg"
   },
   {
     "name": "Thanos's Helmet",
@@ -5342,7 +5342,7 @@ PACK_21 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21118.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21118.jpg"
   },
   {
     "name": "Master of the Stones",
@@ -5350,7 +5350,7 @@ PACK_21 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21119.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21119.jpg"
   },
   {
     "name": "Avatar of Death",
@@ -5358,7 +5358,7 @@ PACK_21 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21120.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21120.jpg"
   },
   {
     "name": "Deviant Syndrome",
@@ -5366,7 +5366,7 @@ PACK_21 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21121.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21121.jpg"
   },
   {
     "name": "\"I Am Inevitable\"",
@@ -5374,7 +5374,7 @@ PACK_21 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21122.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21122.jpg"
   },
   {
     "name": "The Mad Titan",
@@ -5382,7 +5382,7 @@ PACK_21 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21123.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21123.jpg"
   },
   {
     "name": "The Titan's Throne",
@@ -5390,7 +5390,7 @@ PACK_21 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21124.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21124.jpg"
   },
   {
     "name": "Corvus Glaive",
@@ -5398,7 +5398,7 @@ PACK_21 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21125.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21125.jpg"
   },
   {
     "name": "Proxima Midnight",
@@ -5406,7 +5406,7 @@ PACK_21 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21126.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21126.jpg"
   },
   {
     "name": "Ebony Maw",
@@ -5414,7 +5414,7 @@ PACK_21 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21127.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21127.jpg"
   },
   {
     "name": "Tribute",
@@ -5422,7 +5422,7 @@ PACK_21 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21128.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21128.jpg"
   },
   {
     "name": "Infinity Gauntlet",
@@ -5430,7 +5430,7 @@ PACK_21 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21129.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21129.jpg"
   },
   {
     "name": "Mind Stone",
@@ -5438,7 +5438,7 @@ PACK_21 = [[
     "type_code": "environment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21130.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21130.jpg"
   },
   {
     "name": "Power Stone",
@@ -5446,7 +5446,7 @@ PACK_21 = [[
     "type_code": "environment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21131.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21131.jpg"
   },
   {
     "name": "Reality Stone",
@@ -5454,7 +5454,7 @@ PACK_21 = [[
     "type_code": "environment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21132.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21132.jpg"
   },
   {
     "name": "Soul Stone",
@@ -5462,7 +5462,7 @@ PACK_21 = [[
     "type_code": "environment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21133.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21133.jpg"
   },
   {
     "name": "Space Stone",
@@ -5470,7 +5470,7 @@ PACK_21 = [[
     "type_code": "environment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21134.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21134.jpg"
   },
   {
     "name": "Time Stone",
@@ -5478,39 +5478,39 @@ PACK_21 = [[
     "type_code": "environment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21135.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21135.jpg"
   },
   {
     "name": "Hela",
     "code": "21136a",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21136B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21136A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/21136B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21136A.jpg"
   },
   {
     "name": "Hela",
     "code": "21136b",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21136A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21136B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/21136A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21136B.jpg"
   },
   {
     "name": "Hela",
     "code": "21137a",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21137B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21137A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/21137B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21137A.jpg"
   },
   {
     "name": "Hela",
     "code": "21137b",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21137A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21137B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/21137A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21137B.jpg"
   },
   {
     "name": "Odin's Torment",
@@ -5518,23 +5518,23 @@ PACK_21 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21138.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21138.jpg"
   },
   {
     "name": "Odin",
     "code": "21139a",
     "type_code": "ally",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21139B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21139A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/21139B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21139A.jpg"
   },
   {
     "name": "Odin",
     "code": "21139b",
     "type_code": "ally",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21139A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21139B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/21139A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21139B.jpg"
   },
   {
     "name": "Gnipahellir",
@@ -5542,7 +5542,7 @@ PACK_21 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21140.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21140.jpg"
   },
   {
     "name": "Hall of Nastrond",
@@ -5550,7 +5550,7 @@ PACK_21 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21141.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21141.jpg"
   },
   {
     "name": "Gjallerbru",
@@ -5558,7 +5558,7 @@ PACK_21 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21142.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21142.jpg"
   },
   {
     "name": "Garm",
@@ -5566,7 +5566,7 @@ PACK_21 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21143.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21143.jpg"
   },
   {
     "name": "Skurge",
@@ -5574,7 +5574,7 @@ PACK_21 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21144.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21144.jpg"
   },
   {
     "name": "Nidhogg",
@@ -5582,7 +5582,7 @@ PACK_21 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21145.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21145.jpg"
   },
   {
     "name": "Nightsword",
@@ -5590,7 +5590,7 @@ PACK_21 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21146.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21146.jpg"
   },
   {
     "name": "Hela's Crown",
@@ -5598,7 +5598,7 @@ PACK_21 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21147.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21147.jpg"
   },
   {
     "name": "Hela's Cloak",
@@ -5606,7 +5606,7 @@ PACK_21 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21148.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21148.jpg"
   },
   {
     "name": "Hela's Domain",
@@ -5614,7 +5614,7 @@ PACK_21 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21149.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21149.jpg"
   },
   {
     "name": "The Queen of Hel",
@@ -5622,7 +5622,7 @@ PACK_21 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21150.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21150.jpg"
   },
   {
     "name": "The Wastes of Niffleheim",
@@ -5630,7 +5630,7 @@ PACK_21 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21151.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21151.jpg"
   },
   {
     "name": "Draugr",
@@ -5638,7 +5638,7 @@ PACK_21 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21152.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21152.jpg"
   },
   {
     "name": "Fallen Warrior",
@@ -5646,7 +5646,7 @@ PACK_21 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21153.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21153.jpg"
   },
   {
     "name": "No Place for the Living",
@@ -5654,7 +5654,7 @@ PACK_21 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21154.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21154.jpg"
   },
   {
     "name": "Legions of Hel",
@@ -5662,7 +5662,7 @@ PACK_21 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21155.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21155.jpg"
   },
   {
     "name": "Laufey",
@@ -5670,7 +5670,7 @@ PACK_21 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21156.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21156.jpg"
   },
   {
     "name": "Frost Giant",
@@ -5678,7 +5678,7 @@ PACK_21 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21157.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21157.jpg"
   },
   {
     "name": "Frozen",
@@ -5686,7 +5686,7 @@ PACK_21 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21158.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21158.jpg"
   },
   {
     "name": "Unnatural Storm",
@@ -5694,7 +5694,7 @@ PACK_21 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21159.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21159.jpg"
   },
   {
     "name": "Loki",
@@ -5702,7 +5702,7 @@ PACK_21 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21160.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21160.jpg"
   },
   {
     "name": "Loki",
@@ -5710,7 +5710,7 @@ PACK_21 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21161.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21161.jpg"
   },
   {
     "name": "Loki",
@@ -5718,7 +5718,7 @@ PACK_21 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21162.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21162.jpg"
   },
   {
     "name": "Loki",
@@ -5726,7 +5726,7 @@ PACK_21 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21163.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21163.jpg"
   },
   {
     "name": "Loki",
@@ -5734,7 +5734,7 @@ PACK_21 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21164.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21164.jpg"
   },
   {
     "name": "All Hail King Loki",
@@ -5742,7 +5742,7 @@ PACK_21 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21165.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21165.jpg"
   },
   {
     "name": "Casket of Ancient Winters",
@@ -5750,7 +5750,7 @@ PACK_21 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21166.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21166.jpg"
   },
   {
     "name": "War in Asgard",
@@ -5758,7 +5758,7 @@ PACK_21 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21167.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21167.jpg"
   },
   {
     "name": "Madness on Midgard",
@@ -5766,7 +5766,7 @@ PACK_21 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21168.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21168.jpg"
   },
   {
     "name": "Open the Bifrost",
@@ -5774,7 +5774,7 @@ PACK_21 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21169.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21169.jpg"
   },
   {
     "name": "Loki's Staff",
@@ -5782,7 +5782,7 @@ PACK_21 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21170.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21170.jpg"
   },
   {
     "name": "Loki's Crown",
@@ -5790,7 +5790,7 @@ PACK_21 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21171.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21171.jpg"
   },
   {
     "name": "Loki's Cape",
@@ -5798,7 +5798,7 @@ PACK_21 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21172.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21172.jpg"
   },
   {
     "name": "Master of Illusions",
@@ -5806,7 +5806,7 @@ PACK_21 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21173.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21173.jpg"
   },
   {
     "name": "Devious Sorcery",
@@ -5814,7 +5814,7 @@ PACK_21 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21174.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21174.jpg"
   },
   {
     "name": "Infinite Mischief",
@@ -5822,7 +5822,7 @@ PACK_21 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21175.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21175.jpg"
   },
   {
     "name": "The Trickster",
@@ -5830,7 +5830,7 @@ PACK_21 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21176.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21176.jpg"
   },
   {
     "name": "Enchantress",
@@ -5838,7 +5838,7 @@ PACK_21 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21177.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21177.jpg"
   },
   {
     "name": "Beguiled",
@@ -5846,7 +5846,7 @@ PACK_21 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21178.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21178.jpg"
   },
   {
     "name": "Seduced",
@@ -5854,7 +5854,7 @@ PACK_21 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/21179.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21179.jpg"
   }
 ]
 ]]
@@ -5865,16 +5865,16 @@ PACK_22 = [[
     "code": "22001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22001B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22001A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/22001B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/22001A.jpg"
   },
   {
     "name": "Nebula",
     "code": "22001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22001A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22001B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/22001A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/22001B.jpg"
   },
   {
     "name": "Gamora",
@@ -5882,7 +5882,7 @@ PACK_22 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22002.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/22002.jpg"
   },
   {
     "name": "Nebula's Ship",
@@ -5890,7 +5890,7 @@ PACK_22 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22003.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/22003.jpg"
   },
   {
     "name": "Cutthroat Ambition",
@@ -5898,7 +5898,7 @@ PACK_22 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22004.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/22004.jpg"
   },
   {
     "name": "Evasive Maneuvering",
@@ -5906,7 +5906,7 @@ PACK_22 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22005.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/22005.jpg"
   },
   {
     "name": "Unyielding Persistence",
@@ -5914,7 +5914,7 @@ PACK_22 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22006.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/22006.jpg"
   },
   {
     "name": "Weapons Master",
@@ -5922,7 +5922,7 @@ PACK_22 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22007.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/22007.jpg"
   },
   {
     "name": "Wide Stance",
@@ -5930,7 +5930,7 @@ PACK_22 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22008.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/22008.jpg"
   },
   {
     "name": "Combat Ready",
@@ -5938,7 +5938,7 @@ PACK_22 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22009.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/22009.jpg"
   },
   {
     "name": "Lethal Intent",
@@ -5946,7 +5946,7 @@ PACK_22 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22010.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/22010.jpg"
   },
   {
     "name": "Eros",
@@ -5954,7 +5954,7 @@ PACK_22 = [[
     "type_code": "ally",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22011.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/22011.jpg"
   },
   {
     "name": "Wraith",
@@ -5963,7 +5963,7 @@ PACK_22 = [[
     "type_code": "ally",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22012.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/22012.jpg"
   },
   {
     "name": "Venom",
@@ -5972,7 +5972,7 @@ PACK_22 = [[
     "type_code": "ally",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22013.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/22013.jpg"
   },
   {
     "name": "Justice Served",
@@ -5980,7 +5980,7 @@ PACK_22 = [[
     "type_code": "upgrade",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22014.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/22014.jpg"
   },
   {
     "name": "One Way or Another",
@@ -5988,7 +5988,7 @@ PACK_22 = [[
     "type_code": "event",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22015.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/22015.jpg"
   },
   {
     "code": "22016",
@@ -6004,7 +6004,7 @@ PACK_22 = [[
     "type_code": "event",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22018.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/22018.jpg"
   },
   {
     "code": "22019",
@@ -6024,7 +6024,7 @@ PACK_22 = [[
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22022.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/22022.jpg"
   },
   {
     "code": "22023",
@@ -6048,7 +6048,7 @@ PACK_22 = [[
     "type_code": "upgrade",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22032.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/22032.jpg"
   },
   {
     "name": "Guardians of the Galaxy",
@@ -6056,7 +6056,7 @@ PACK_22 = [[
     "type_code": "support",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22033.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/22033.jpg"
   },
   {
     "name": "Defensive Training",
@@ -6064,7 +6064,7 @@ PACK_22 = [[
     "type_code": "support",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22034.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/22034.jpg"
   },
   {
     "name": "Honorary Guardian",
@@ -6072,7 +6072,7 @@ PACK_22 = [[
     "type_code": "upgrade",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22035.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/22035.jpg"
   },
   {
     "name": "Inferiority Complex",
@@ -6080,7 +6080,7 @@ PACK_22 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22027.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/22027.jpg"
   },
   {
     "name": "Gamora",
@@ -6088,7 +6088,7 @@ PACK_22 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22028.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/22028.jpg"
   },
   {
     "name": "Self-Preservation",
@@ -6096,7 +6096,7 @@ PACK_22 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22029.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/22029.jpg"
   },
   {
     "name": "Lethal Weapon",
@@ -6104,7 +6104,7 @@ PACK_22 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22030.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/22030.jpg"
   },
   {
     "name": "Old Rivals",
@@ -6112,7 +6112,7 @@ PACK_22 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/22031.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/22031.jpg"
   }
 ]
 ]]
@@ -6123,16 +6123,16 @@ PACK_23 = [[
     "code": "23001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23001B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23001A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/23001B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/23001A.jpg"
   },
   {
     "name": "James Rhodes",
     "code": "23001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23001A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23001B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/23001A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/23001B.jpg"
   },
   {
     "name": "Iron Man",
@@ -6141,7 +6141,7 @@ PACK_23 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23002.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/23002.jpg"
   },
   {
     "name": "Munitions Bunker",
@@ -6149,7 +6149,7 @@ PACK_23 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23003.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/23003.jpg"
   },
   {
     "name": "Upgraded Chassis",
@@ -6157,7 +6157,7 @@ PACK_23 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23004.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/23004.jpg"
   },
   {
     "name": "Gauntlet Gun",
@@ -6165,7 +6165,7 @@ PACK_23 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23005.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/23005.jpg"
   },
   {
     "name": "Missile Launcher",
@@ -6173,7 +6173,7 @@ PACK_23 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23006.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/23006.jpg"
   },
   {
     "name": "Shoulder Cannon",
@@ -6181,7 +6181,7 @@ PACK_23 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23007.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/23007.jpg"
   },
   {
     "name": "Repulsor Beam",
@@ -6189,7 +6189,7 @@ PACK_23 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23008.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/23008.jpg"
   },
   {
     "name": "Targeted Strike",
@@ -6197,7 +6197,7 @@ PACK_23 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23009.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/23009.jpg"
   },
   {
     "name": "Scorched Earth",
@@ -6205,7 +6205,7 @@ PACK_23 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23010.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/23010.jpg"
   },
   {
     "name": "Full Auto",
@@ -6213,7 +6213,7 @@ PACK_23 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23011.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/23011.jpg"
   },
   {
     "name": "Black Panther",
@@ -6222,7 +6222,7 @@ PACK_23 = [[
     "type_code": "ally",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23012.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/23012.jpg"
   },
   {
     "name": "Captain Marvel",
@@ -6231,7 +6231,7 @@ PACK_23 = [[
     "type_code": "ally",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23013.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/23013.jpg"
   },
   {
     "code": "23014",
@@ -6247,7 +6247,7 @@ PACK_23 = [[
     "type_code": "support",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23016.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/23016.jpg"
   },
   {
     "name": "Sneak Attack",
@@ -6255,7 +6255,7 @@ PACK_23 = [[
     "type_code": "event",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23017.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/23017.jpg"
   },
   {
     "name": "Save the Day",
@@ -6263,7 +6263,7 @@ PACK_23 = [[
     "type_code": "event",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23018.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/23018.jpg"
   },
   {
     "name": "Go Down Swinging",
@@ -6271,7 +6271,7 @@ PACK_23 = [[
     "type_code": "event",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23019.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/23019.jpg"
   },
   {
     "code": "23020",
@@ -6295,7 +6295,7 @@ PACK_23 = [[
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23024.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/23024.jpg"
   },
   {
     "code": "23025",
@@ -6315,7 +6315,7 @@ PACK_23 = [[
     "type_code": "event",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23032.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/23032.jpg"
   },
   {
     "name": "Vigilante Training",
@@ -6323,7 +6323,7 @@ PACK_23 = [[
     "type_code": "support",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23033.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/23033.jpg"
   },
   {
     "name": "Stand Together",
@@ -6331,7 +6331,7 @@ PACK_23 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23034.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/23034.jpg"
   },
   {
     "name": "Sidearm",
@@ -6339,7 +6339,7 @@ PACK_23 = [[
     "type_code": "upgrade",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23035.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/23035.jpg"
   },
   {
     "name": "Equipment Malfunction",
@@ -6347,7 +6347,7 @@ PACK_23 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23028.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/23028.jpg"
   },
   {
     "name": "Living Laser",
@@ -6355,7 +6355,7 @@ PACK_23 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23029.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/23029.jpg"
   },
   {
     "name": "Deadly Light Show",
@@ -6363,7 +6363,7 @@ PACK_23 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23030.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/23030.jpg"
   },
   {
     "name": "Laser Strike",
@@ -6371,7 +6371,7 @@ PACK_23 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/23031.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/23031.jpg"
   }
 ]
 ]]
@@ -6383,7 +6383,7 @@ PACK_24 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24001.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24001.jpg"
   },
   {
     "name": "The Hood",
@@ -6391,7 +6391,7 @@ PACK_24 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24002.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24002.jpg"
   },
   {
     "name": "The Hood",
@@ -6399,7 +6399,7 @@ PACK_24 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24003.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24003.jpg"
   },
   {
     "name": "Making Connections",
@@ -6407,7 +6407,7 @@ PACK_24 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24004.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24004.jpg"
   },
   {
     "name": "Promised Prosperity",
@@ -6415,7 +6415,7 @@ PACK_24 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24005.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24005.jpg"
   },
   {
     "name": "Crime State",
@@ -6423,7 +6423,7 @@ PACK_24 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24006.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24006.jpg"
   },
   {
     "name": "Established Dominance",
@@ -6431,7 +6431,7 @@ PACK_24 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24007.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24007.jpg"
   },
   {
     "name": "The Hood's Mantle",
@@ -6439,7 +6439,7 @@ PACK_24 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24008.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24008.jpg"
   },
   {
     "name": "The Hood's Pistol",
@@ -6447,7 +6447,7 @@ PACK_24 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24009.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24009.jpg"
   },
   {
     "name": "Madame Masque",
@@ -6455,7 +6455,7 @@ PACK_24 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24010.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24010.jpg"
   },
   {
     "name": "Unbridled Ambition",
@@ -6463,7 +6463,7 @@ PACK_24 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24011.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24011.jpg"
   },
   {
     "name": "Field Recruitment",
@@ -6471,7 +6471,7 @@ PACK_24 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24012.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24012.jpg"
   },
   {
     "name": "Upper Hand",
@@ -6479,7 +6479,7 @@ PACK_24 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24013.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24013.jpg"
   },
   {
     "name": "Beast Mode",
@@ -6487,7 +6487,7 @@ PACK_24 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24014.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24014.jpg"
   },
   {
     "name": "Griffin",
@@ -6495,7 +6495,7 @@ PACK_24 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24015.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24015.jpg"
   },
   {
     "name": "Mandrill",
@@ -6503,7 +6503,7 @@ PACK_24 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24016.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24016.jpg"
   },
   {
     "name": "Double Trouble",
@@ -6511,7 +6511,7 @@ PACK_24 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24017.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24017.jpg"
   },
   {
     "name": "Brothers Grimm",
@@ -6519,7 +6519,7 @@ PACK_24 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24018.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24018.jpg"
   },
   {
     "name": "Blackbird Pellets",
@@ -6527,7 +6527,7 @@ PACK_24 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24019.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24019.jpg"
   },
   {
     "name": "Corrosive Egg Bomb",
@@ -6535,7 +6535,7 @@ PACK_24 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24020.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24020.jpg"
   },
   {
     "name": "Paralytic Stardust",
@@ -6543,7 +6543,7 @@ PACK_24 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24021.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24021.jpg"
   },
   {
     "name": "Unbreakable Thread",
@@ -6551,7 +6551,7 @@ PACK_24 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24022.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24022.jpg"
   },
   {
     "name": "Out for Blood",
@@ -6559,7 +6559,7 @@ PACK_24 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24023.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24023.jpg"
   },
   {
     "name": "Controller",
@@ -6567,7 +6567,7 @@ PACK_24 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24024.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24024.jpg"
   },
   {
     "name": "Corruptor",
@@ -6575,7 +6575,7 @@ PACK_24 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24025.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24025.jpg"
   },
   {
     "name": "Crossfire",
@@ -6583,7 +6583,7 @@ PACK_24 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24026.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24026.jpg"
   },
   {
     "name": "Mister Fear",
@@ -6591,7 +6591,7 @@ PACK_24 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24027.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24027.jpg"
   },
   {
     "name": "Caught in the Crossfire",
@@ -6599,7 +6599,7 @@ PACK_24 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24028.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24028.jpg"
   },
   {
     "name": "Cruel Intentions",
@@ -6607,7 +6607,7 @@ PACK_24 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24029.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24029.jpg"
   },
   {
     "name": "Ruination",
@@ -6615,7 +6615,7 @@ PACK_24 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24030.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24030.jpg"
   },
   {
     "name": "Seek and Destroy",
@@ -6623,7 +6623,7 @@ PACK_24 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24031.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24031.jpg"
   },
   {
     "name": "Slug It Out",
@@ -6631,7 +6631,7 @@ PACK_24 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24032.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24032.jpg"
   },
   {
     "name": "Self-Experimentation",
@@ -6639,7 +6639,7 @@ PACK_24 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24033.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24033.jpg"
   },
   {
     "name": "Calvin Zabo",
@@ -6647,7 +6647,7 @@ PACK_24 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24034.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24034.jpg"
   },
   {
     "name": "Mister Hyde",
@@ -6655,7 +6655,7 @@ PACK_24 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24035.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24035.jpg"
   },
   {
     "name": "Hyde Formula",
@@ -6663,7 +6663,7 @@ PACK_24 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24036.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24036.jpg"
   },
   {
     "name": "Flamethrower",
@@ -6671,7 +6671,7 @@ PACK_24 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24037.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24037.jpg"
   },
   {
     "name": "Holoshield Generator",
@@ -6679,7 +6679,7 @@ PACK_24 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24038.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24038.jpg"
   },
   {
     "name": "Jetpack",
@@ -6687,7 +6687,7 @@ PACK_24 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24039.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24039.jpg"
   },
   {
     "name": "Tech Gauntlets",
@@ -6695,7 +6695,7 @@ PACK_24 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24040.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24040.jpg"
   },
   {
     "name": "Armored Guard",
@@ -6703,7 +6703,7 @@ PACK_24 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24041.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24041.jpg"
   },
   {
     "name": "Crime Pays",
@@ -6711,7 +6711,7 @@ PACK_24 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24042.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24042.jpg"
   },
   {
     "name": "Beetle",
@@ -6719,7 +6719,7 @@ PACK_24 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24043.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24043.jpg"
   },
   {
     "name": "Boomerang",
@@ -6727,7 +6727,7 @@ PACK_24 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24044.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24044.jpg"
   },
   {
     "name": "Shocker",
@@ -6735,7 +6735,7 @@ PACK_24 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24045.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24045.jpg"
   },
   {
     "name": "Speed Demon",
@@ -6743,7 +6743,7 @@ PACK_24 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24046.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24046.jpg"
   },
   {
     "name": "White Rabbit",
@@ -6751,7 +6751,7 @@ PACK_24 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24047.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24047.jpg"
   },
   {
     "name": "Sinister Onslaught",
@@ -6759,7 +6759,7 @@ PACK_24 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24048.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24048.jpg"
   },
   {
     "name": "Formidable Foe",
@@ -6767,7 +6767,7 @@ PACK_24 = [[
     "type_code": "environment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24049.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24049.jpg"
   },
   {
     "name": "Dark Dealings",
@@ -6775,7 +6775,7 @@ PACK_24 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24050.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24050.jpg"
   },
   {
     "name": "Mob Mentality",
@@ -6783,7 +6783,7 @@ PACK_24 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24051.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24051.jpg"
   },
   {
     "name": "Overwhelming Force",
@@ -6791,7 +6791,7 @@ PACK_24 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24052.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24052.jpg"
   },
   {
     "name": "Shadow of the Past",
@@ -6799,7 +6799,7 @@ PACK_24 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24053.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24053.jpg"
   },
   {
     "name": "Total Annihilation",
@@ -6807,7 +6807,7 @@ PACK_24 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24054.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24054.jpg"
   },
   {
     "name": "Feisty Heist",
@@ -6815,7 +6815,7 @@ PACK_24 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24055.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24055.jpg"
   },
   {
     "name": "Disaster at the Docks",
@@ -6823,7 +6823,7 @@ PACK_24 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24056.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24056.jpg"
   },
   {
     "name": "Offshore Inferno",
@@ -6831,7 +6831,7 @@ PACK_24 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24057.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24057.jpg"
   },
   {
     "name": "Hot Pursuit",
@@ -6839,7 +6839,7 @@ PACK_24 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24058.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24058.jpg"
   },
   {
     "name": "Citywide Crisis",
@@ -6847,7 +6847,7 @@ PACK_24 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24059.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24059.jpg"
   },
   {
     "name": "Back-Alley Enclave",
@@ -6855,7 +6855,7 @@ PACK_24 = [[
     "type_code": "environment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24060.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24060.jpg"
   },
   {
     "name": "Secret Lair",
@@ -6863,7 +6863,7 @@ PACK_24 = [[
     "type_code": "environment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24061.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24061.jpg"
   },
   {
     "name": "Sewer Tunnels",
@@ -6871,7 +6871,7 @@ PACK_24 = [[
     "type_code": "environment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24062.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24062.jpg"
   },
   {
     "name": "Warehouse District",
@@ -6879,7 +6879,7 @@ PACK_24 = [[
     "type_code": "environment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24063.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24063.jpg"
   },
   {
     "name": "Top Talent",
@@ -6887,7 +6887,7 @@ PACK_24 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24064.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24064.jpg"
   },
   {
     "name": "Wrecker",
@@ -6895,7 +6895,7 @@ PACK_24 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24065.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24065.jpg"
   },
   {
     "name": "Bulldozer",
@@ -6903,7 +6903,7 @@ PACK_24 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24066.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24066.jpg"
   },
   {
     "name": "Piledriver",
@@ -6911,7 +6911,7 @@ PACK_24 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24067.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24067.jpg"
   },
   {
     "name": "Thunderball",
@@ -6919,7 +6919,7 @@ PACK_24 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24068.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24068.jpg"
   },
   {
     "name": "Combined Effort",
@@ -6927,7 +6927,7 @@ PACK_24 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24069.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24069.jpg"
   },
   {
     "name": "Magic Muscle",
@@ -6935,7 +6935,7 @@ PACK_24 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/24070.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24070.jpg"
   }
 ]
 ]]
@@ -6946,16 +6946,16 @@ PACK_25 = [[
     "code": "25001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25001B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25001A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/25001B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/25001A.jpg"
   },
   {
     "name": "Brunnhilde",
     "code": "25001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25001A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25001B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/25001A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/25001B.jpg"
   },
   {
     "name": "Death-Glow",
@@ -6963,7 +6963,7 @@ PACK_25 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25002.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/25002.jpg"
   },
   {
     "name": "Annabelle Riggs",
@@ -6971,7 +6971,7 @@ PACK_25 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25003.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/25003.jpg"
   },
   {
     "name": "Valhalla",
@@ -6979,7 +6979,7 @@ PACK_25 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25004.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/25004.jpg"
   },
   {
     "name": "Valkyrie's Spear",
@@ -6987,7 +6987,7 @@ PACK_25 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25005.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/25005.jpg"
   },
   {
     "name": "Dragonfang",
@@ -6995,7 +6995,7 @@ PACK_25 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25006.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/25006.jpg"
   },
   {
     "name": "Aragorn",
@@ -7003,7 +7003,7 @@ PACK_25 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25007.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/25007.jpg"
   },
   {
     "name": "Flight of the Valkyrior",
@@ -7011,7 +7011,7 @@ PACK_25 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25008.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/25008.jpg"
   },
   {
     "name": "Visit Valhalla",
@@ -7019,7 +7019,7 @@ PACK_25 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25009.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/25009.jpg"
   },
   {
     "name": "Chooser of the Slain",
@@ -7027,7 +7027,7 @@ PACK_25 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25010.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/25010.jpg"
   },
   {
     "name": "Shieldmaiden",
@@ -7035,7 +7035,7 @@ PACK_25 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25011.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/25011.jpg"
   },
   {
     "name": "Have at Thee!",
@@ -7043,7 +7043,7 @@ PACK_25 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25012.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/25012.jpg"
   },
   {
     "name": "Thor",
@@ -7052,7 +7052,7 @@ PACK_25 = [[
     "type_code": "ally",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25013.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/25013.jpg"
   },
   {
     "name": "Throg",
@@ -7061,7 +7061,7 @@ PACK_25 = [[
     "type_code": "ally",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25014.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/25014.jpg"
   },
   {
     "code": "25015",
@@ -7081,7 +7081,7 @@ PACK_25 = [[
     "type_code": "event",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25018.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/25018.jpg"
   },
   {
     "name": "Smash the Problem",
@@ -7089,7 +7089,7 @@ PACK_25 = [[
     "type_code": "event",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25019.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/25019.jpg"
   },
   {
     "name": "The Best Defense…",
@@ -7097,7 +7097,7 @@ PACK_25 = [[
     "type_code": "event",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25020.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/25020.jpg"
   },
   {
     "code": "25021",
@@ -7113,7 +7113,7 @@ PACK_25 = [[
     "type_code": "support",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25023.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/25023.jpg"
   },
   {
     "name": "Godlike Stamina",
@@ -7121,7 +7121,7 @@ PACK_25 = [[
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25024.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/25024.jpg"
   },
   {
     "code": "25025",
@@ -7141,7 +7141,7 @@ PACK_25 = [[
     "type_code": "event",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25033.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/25033.jpg"
   },
   {
     "name": "Leadership Training",
@@ -7149,7 +7149,7 @@ PACK_25 = [[
     "type_code": "support",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25034.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/25034.jpg"
   },
   {
     "name": "Anticipation",
@@ -7157,7 +7157,7 @@ PACK_25 = [[
     "type_code": "upgrade",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25035.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/25035.jpg"
   },
   {
     "name": "Cosmic Alliance",
@@ -7165,7 +7165,7 @@ PACK_25 = [[
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25036.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/25036.jpg"
   },
   {
     "name": "Trouble in Otherworld",
@@ -7173,7 +7173,7 @@ PACK_25 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25028.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/25028.jpg"
   },
   {
     "name": "Enchantress",
@@ -7181,7 +7181,7 @@ PACK_25 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25029.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/25029.jpg"
   },
   {
     "name": "Powerful Enchantments",
@@ -7189,7 +7189,7 @@ PACK_25 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25030.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/25030.jpg"
   },
   {
     "name": "Beguiled",
@@ -7197,7 +7197,7 @@ PACK_25 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25031.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/25031.jpg"
   },
   {
     "name": "Seduced",
@@ -7205,7 +7205,7 @@ PACK_25 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/25032.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/25032.jpg"
   }
 ]
 ]]
@@ -7216,16 +7216,16 @@ PACK_26 = [[
     "code": "26001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26001B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26001A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/26001B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/26001A.jpg"
   },
   {
     "name": "Vision",
     "code": "26001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26001A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26001B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/26001A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/26001B.jpg"
   },
   {
     "name": "Intangible",
@@ -7233,7 +7233,7 @@ PACK_26 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26002.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/26002.jpg"
   },
   {
     "name": "Vivian",
@@ -7241,7 +7241,7 @@ PACK_26 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26003.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/26003.jpg"
   },
   {
     "name": "616 Hickory Branch Lane",
@@ -7249,7 +7249,7 @@ PACK_26 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26004.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/26004.jpg"
   },
   {
     "name": "Solar Gem",
@@ -7257,7 +7257,7 @@ PACK_26 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26005.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/26005.jpg"
   },
   {
     "name": "Vision's Cape",
@@ -7265,7 +7265,7 @@ PACK_26 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26006.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/26006.jpg"
   },
   {
     "name": "Density Control",
@@ -7273,7 +7273,7 @@ PACK_26 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26007.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/26007.jpg"
   },
   {
     "name": "Solar Beam",
@@ -7281,7 +7281,7 @@ PACK_26 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26008.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/26008.jpg"
   },
   {
     "name": "Superdense Strike",
@@ -7289,7 +7289,7 @@ PACK_26 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26009.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/26009.jpg"
   },
   {
     "name": "Just Passing Through",
@@ -7297,7 +7297,7 @@ PACK_26 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26010.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/26010.jpg"
   },
   {
     "name": "Phase Disruption",
@@ -7305,7 +7305,7 @@ PACK_26 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26011.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/26011.jpg"
   },
   {
     "name": "Mass Increase",
@@ -7313,7 +7313,7 @@ PACK_26 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26012.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/26012.jpg"
   },
   {
     "name": "Jocasta",
@@ -7321,7 +7321,7 @@ PACK_26 = [[
     "type_code": "ally",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26013.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/26013.jpg"
   },
   {
     "name": "Protector",
@@ -7330,7 +7330,7 @@ PACK_26 = [[
     "type_code": "ally",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26014.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/26014.jpg"
   },
   {
     "name": "Victor Mancha",
@@ -7338,7 +7338,7 @@ PACK_26 = [[
     "type_code": "ally",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26015.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/26015.jpg"
   },
   {
     "name": "Flow Like Water",
@@ -7346,7 +7346,7 @@ PACK_26 = [[
     "type_code": "upgrade",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26016.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/26016.jpg"
   },
   {
     "code": "26017",
@@ -7358,7 +7358,7 @@ PACK_26 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26018.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/26018.jpg"
   },
   {
     "code": "26019",
@@ -7379,7 +7379,7 @@ PACK_26 = [[
     "type_code": "ally",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26022.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/26022.jpg"
   },
   {
     "code": "26023",
@@ -7391,7 +7391,7 @@ PACK_26 = [[
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26024.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/26024.jpg"
   },
   {
     "code": "26025",
@@ -7411,7 +7411,7 @@ PACK_26 = [[
     "type_code": "support",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26033.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/26033.jpg"
   },
   {
     "name": "Chance Encounter",
@@ -7419,7 +7419,7 @@ PACK_26 = [[
     "type_code": "upgrade",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26034.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/26034.jpg"
   },
   {
     "name": "Joining Forces",
@@ -7427,7 +7427,7 @@ PACK_26 = [[
     "type_code": "event",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26035.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/26035.jpg"
   },
   {
     "name": "Meditation",
@@ -7435,7 +7435,7 @@ PACK_26 = [[
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26036.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/26036.jpg"
   },
   {
     "name": "Corrupted Programming",
@@ -7443,7 +7443,7 @@ PACK_26 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26028.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/26028.jpg"
   },
   {
     "name": "Ultron",
@@ -7451,7 +7451,7 @@ PACK_26 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26029.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/26029.jpg"
   },
   {
     "name": "Ultron Unleashed",
@@ -7459,7 +7459,7 @@ PACK_26 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26030.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/26030.jpg"
   },
   {
     "name": "Ultron Drones",
@@ -7467,7 +7467,7 @@ PACK_26 = [[
     "type_code": "environment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26031.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/26031.jpg"
   },
   {
     "name": "Relentless Android",
@@ -7475,7 +7475,7 @@ PACK_26 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/26032.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/26032.jpg"
   }
 ]
 ]]
@@ -7486,16 +7486,16 @@ PACK_27 = [[
     "code": "27001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27001B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27001A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27001B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27001A.jpg"
   },
   {
     "name": "Gwen Stacy",
     "code": "27001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27001A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27001B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27001A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27001B.jpg"
   },
   {
     "name": "Ghost Kick",
@@ -7503,7 +7503,7 @@ PACK_27 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27002.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27002.jpg"
   },
   {
     "name": "Parental Guidance",
@@ -7511,7 +7511,7 @@ PACK_27 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27003.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27003.jpg"
   },
   {
     "name": "Phantom Flip",
@@ -7519,7 +7519,7 @@ PACK_27 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27004.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27004.jpg"
   },
   {
     "name": "Pirouette and Punch",
@@ -7527,7 +7527,7 @@ PACK_27 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27005.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27005.jpg"
   },
   {
     "name": "Web Binding",
@@ -7535,7 +7535,7 @@ PACK_27 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27006.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27006.jpg"
   },
   {
     "name": "George Stacy",
@@ -7543,7 +7543,7 @@ PACK_27 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27007.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27007.jpg"
   },
   {
     "name": "Ticket to the Multiverse",
@@ -7551,7 +7551,7 @@ PACK_27 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27008.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27008.jpg"
   },
   {
     "name": "Web-Bracelet",
@@ -7559,7 +7559,7 @@ PACK_27 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27009.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27009.jpg"
   },
   {
     "name": "Silk",
@@ -7568,7 +7568,7 @@ PACK_27 = [[
     "type_code": "ally",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27010.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27010.jpg"
   },
   {
     "name": "Spider-Man",
@@ -7577,7 +7577,7 @@ PACK_27 = [[
     "type_code": "ally",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27011.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27011.jpg"
   },
   {
     "name": "Spider-UK",
@@ -7586,7 +7586,7 @@ PACK_27 = [[
     "type_code": "ally",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27012.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27012.jpg"
   },
   {
     "code": "27013",
@@ -7598,7 +7598,7 @@ PACK_27 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27014.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27014.jpg"
   },
   {
     "name": "Return the Favor",
@@ -7606,7 +7606,7 @@ PACK_27 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27015.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27015.jpg"
   },
   {
     "name": "What Doesn't Kill Me",
@@ -7614,7 +7614,7 @@ PACK_27 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27016.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27016.jpg"
   },
   {
     "name": "Spider-Man",
@@ -7623,7 +7623,7 @@ PACK_27 = [[
     "type_code": "ally",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27017.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27017.jpg"
   },
   {
     "name": "Across the Spider-Verse",
@@ -7631,7 +7631,7 @@ PACK_27 = [[
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27018.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27018.jpg"
   },
   {
     "name": "Young Love",
@@ -7639,7 +7639,7 @@ PACK_27 = [[
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27019.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27019.jpg"
   },
   {
     "code": "27020",
@@ -7659,7 +7659,7 @@ PACK_27 = [[
     "type_code": "support",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27023.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27023.jpg"
   },
   {
     "name": "Plan B",
@@ -7667,23 +7667,23 @@ PACK_27 = [[
     "type_code": "upgrade",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27024.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27024.jpg"
   },
   {
     "name": "Spider-Man",
     "code": "27030a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27030B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27030A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27030B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27030A.jpg"
   },
   {
     "name": "Miles Morales",
     "code": "27030b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27030A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27030B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27030A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27030B.jpg"
   },
   {
     "name": "Arachnobatics",
@@ -7691,7 +7691,7 @@ PACK_27 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27031.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27031.jpg"
   },
   {
     "name": "Double Life",
@@ -7699,7 +7699,7 @@ PACK_27 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27032.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27032.jpg"
   },
   {
     "name": "Swing In",
@@ -7707,7 +7707,7 @@ PACK_27 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27033.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27033.jpg"
   },
   {
     "name": "Web-Shot",
@@ -7715,7 +7715,7 @@ PACK_27 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27034.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27034.jpg"
   },
   {
     "name": "Ganke Lee",
@@ -7723,7 +7723,7 @@ PACK_27 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27035.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27035.jpg"
   },
   {
     "name": "Jefferson Davis",
@@ -7731,7 +7731,7 @@ PACK_27 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27036.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27036.jpg"
   },
   {
     "name": "Power Within",
@@ -7739,7 +7739,7 @@ PACK_27 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27037.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27037.jpg"
   },
   {
     "name": "Defense Mechanism",
@@ -7747,7 +7747,7 @@ PACK_27 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27038.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27038.jpg"
   },
   {
     "name": "Web-Shooter",
@@ -7755,7 +7755,7 @@ PACK_27 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27039.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27039.jpg"
   },
   {
     "name": "Monica Chang",
@@ -7763,7 +7763,7 @@ PACK_27 = [[
     "type_code": "ally",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27040.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27040.jpg"
   },
   {
     "name": "Spider-Woman",
@@ -7772,7 +7772,7 @@ PACK_27 = [[
     "type_code": "ally",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27041.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27041.jpg"
   },
   {
     "name": "Homeland Intervention",
@@ -7780,7 +7780,7 @@ PACK_27 = [[
     "type_code": "event",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27042.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27042.jpg"
   },
   {
     "name": "Global Logistics",
@@ -7788,7 +7788,7 @@ PACK_27 = [[
     "type_code": "event",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27043.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27043.jpg"
   },
   {
     "name": "Field Agent",
@@ -7796,7 +7796,7 @@ PACK_27 = [[
     "type_code": "support",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27044.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27044.jpg"
   },
   {
     "code": "27045",
@@ -7809,7 +7809,7 @@ PACK_27 = [[
     "type_code": "ally",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27046.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27046.jpg"
   },
   {
     "name": "Dum Dum Dugan",
@@ -7817,7 +7817,7 @@ PACK_27 = [[
     "type_code": "ally",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27047.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27047.jpg"
   },
   {
     "name": "Ghost-Spider",
@@ -7826,7 +7826,7 @@ PACK_27 = [[
     "type_code": "ally",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27048.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27048.jpg"
   },
   {
     "name": "Spider-Man",
@@ -7835,7 +7835,7 @@ PACK_27 = [[
     "type_code": "ally",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27049.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27049.jpg"
   },
   {
     "code": "27050",
@@ -7859,7 +7859,7 @@ PACK_27 = [[
     "type_code": "support",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27054.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27054.jpg"
   },
   {
     "name": "Sky-Destroyer",
@@ -7867,23 +7867,23 @@ PACK_27 = [[
     "type_code": "support",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27055.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27055.jpg"
   },
   {
     "name": "Public Outcry",
     "code": "27174a",
     "type_code": "environment",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27174B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27174A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27174B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27174A.jpg"
   },
   {
     "name": "Public Outcry",
     "code": "27174b",
     "type_code": "environment",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27174A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27174B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27174A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27174B.jpg"
   },
   {
     "name": "Smear Campaign",
@@ -7891,7 +7891,7 @@ PACK_27 = [[
     "type_code": "treachery",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27175.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27175.jpg"
   },
   {
     "name": "Back Alley Burglary",
@@ -7899,7 +7899,7 @@ PACK_27 = [[
     "type_code": "side_scheme",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27176.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27176.jpg"
   },
   {
     "name": "Cat in a Tree",
@@ -7907,7 +7907,7 @@ PACK_27 = [[
     "type_code": "side_scheme",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27177.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27177.jpg"
   },
   {
     "name": "Henchmen Heist",
@@ -7915,7 +7915,7 @@ PACK_27 = [[
     "type_code": "side_scheme",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27178.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27178.jpg"
   },
   {
     "name": "Off the Rails",
@@ -7923,7 +7923,7 @@ PACK_27 = [[
     "type_code": "side_scheme",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27179.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27179.jpg"
   },
   {
     "name": "Rubble Rescue",
@@ -7931,7 +7931,7 @@ PACK_27 = [[
     "type_code": "side_scheme",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27180.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27180.jpg"
   },
   {
     "name": "Snitches Get Stitches",
@@ -7939,135 +7939,135 @@ PACK_27 = [[
     "type_code": "attachment",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27181.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27181.jpg"
   },
   {
     "name": "Compact Darts",
     "code": "27182a",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27182B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27182A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27182B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27182A.jpg"
   },
   {
     "name": "Compact Darts",
     "code": "27182b",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27182A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27182B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27182A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27182B.jpg"
   },
   {
     "name": "Impact-Dampening Suit",
     "code": "27183a",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27183B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27183A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27183B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27183A.jpg"
   },
   {
     "name": "Impact-Dampening Suit",
     "code": "27183b",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27183A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27183B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27183A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27183B.jpg"
   },
   {
     "name": "Laser Googles",
     "code": "27184a",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27184B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27184A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27184B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27184A.jpg"
   },
   {
     "name": "Laser Googles",
     "code": "27184b",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27184A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27184B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27184A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27184B.jpg"
   },
   {
     "name": "Propulsion Gauntlet",
     "code": "27185a",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27185B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27185A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27185B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27185A.jpg"
   },
   {
     "name": "Propulsion Gauntlet",
     "code": "27185b",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27185A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27185B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27185A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27185B.jpg"
   },
   {
     "name": "Retinal Display",
     "code": "27186a",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27186B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27186A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27186B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27186A.jpg"
   },
   {
     "name": "Retinal Display",
     "code": "27186b",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27186A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27186B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27186A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27186B.jpg"
   },
   {
     "name": "Shock Knuckles",
     "code": "27187a",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27187B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27187A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27187B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27187A.jpg"
   },
   {
     "name": "Shock Knuckles",
     "code": "27187b",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27187A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27187B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27187A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27187B.jpg"
   },
   {
     "name": "Wave Bracers",
     "code": "27188a",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27188B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27188A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27188B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27188A.jpg"
   },
   {
     "name": "Wave Bracers",
     "code": "27188b",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27188A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27188B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27188A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27188B.jpg"
   },
   {
     "name": "Wrist Navigators",
     "code": "27189a",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27189B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27189A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27189B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27189A.jpg"
   },
   {
     "name": "Wrist Navigators",
     "code": "27189b",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27189A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27189B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27189A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27189B.jpg"
   },
   {
     "name": "Venom",
@@ -8076,7 +8076,7 @@ PACK_27 = [[
     "type_code": "ally",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27190.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27190.jpg"
   },
   {
     "name": "Symbiote Suit",
@@ -8084,7 +8084,7 @@ PACK_27 = [[
     "type_code": "upgrade",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27191.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27191.jpg"
   },
   {
     "name": "Worried Father",
@@ -8092,7 +8092,7 @@ PACK_27 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27025.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27025.jpg"
   },
   {
     "name": "Regenerative Research",
@@ -8100,7 +8100,7 @@ PACK_27 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27026.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27026.jpg"
   },
   {
     "name": "The Lizard",
@@ -8108,7 +8108,7 @@ PACK_27 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27027.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27027.jpg"
   },
   {
     "name": "Experimental Injection",
@@ -8116,7 +8116,7 @@ PACK_27 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27028.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27028.jpg"
   },
   {
     "name": "In Cold Blood",
@@ -8124,7 +8124,7 @@ PACK_27 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27029.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27029.jpg"
   },
   {
     "name": "Keeping Secrets",
@@ -8132,7 +8132,7 @@ PACK_27 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27056.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27056.jpg"
   },
   {
     "name": "Tracking Prey",
@@ -8140,7 +8140,7 @@ PACK_27 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27057.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27057.jpg"
   },
   {
     "name": "Prowler",
@@ -8148,7 +8148,7 @@ PACK_27 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27058.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27058.jpg"
   },
   {
     "name": "Razor Claws",
@@ -8156,7 +8156,7 @@ PACK_27 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27059.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27059.jpg"
   },
   {
     "name": "Slice and Dice",
@@ -8164,7 +8164,7 @@ PACK_27 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27060.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27060.jpg"
   },
   {
     "name": "Sandman",
@@ -8172,7 +8172,7 @@ PACK_27 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27061.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27061.jpg"
   },
   {
     "name": "Sandman",
@@ -8180,7 +8180,7 @@ PACK_27 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27062.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27062.jpg"
   },
   {
     "name": "Sandman",
@@ -8188,7 +8188,7 @@ PACK_27 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27063.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27063.jpg"
   },
   {
     "name": "Hapless Pedestrians",
@@ -8196,7 +8196,7 @@ PACK_27 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27064.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27064.jpg"
   },
   {
     "name": "City Streets",
@@ -8204,7 +8204,7 @@ PACK_27 = [[
     "type_code": "environment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27065.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27065.jpg"
   },
   {
     "name": "Sand Form",
@@ -8212,7 +8212,7 @@ PACK_27 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27066.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27066.jpg"
   },
   {
     "name": "Sand Clone",
@@ -8220,7 +8220,7 @@ PACK_27 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27067.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27067.jpg"
   },
   {
     "name": "Dirt Trap",
@@ -8228,7 +8228,7 @@ PACK_27 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27068.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27068.jpg"
   },
   {
     "name": "Tidal Sands",
@@ -8236,7 +8236,7 @@ PACK_27 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27069.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27069.jpg"
   },
   {
     "name": "Sandslide",
@@ -8244,7 +8244,7 @@ PACK_27 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27070.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27070.jpg"
   },
   {
     "name": "Sand Storm",
@@ -8252,7 +8252,7 @@ PACK_27 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27071.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27071.jpg"
   },
   {
     "name": "Sand Smash",
@@ -8260,7 +8260,7 @@ PACK_27 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27072.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27072.jpg"
   },
   {
     "name": "Venom",
@@ -8268,7 +8268,7 @@ PACK_27 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27073.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27073.jpg"
   },
   {
     "name": "Venom",
@@ -8276,7 +8276,7 @@ PACK_27 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27074.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27074.jpg"
   },
   {
     "name": "Venom",
@@ -8284,39 +8284,39 @@ PACK_27 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27075.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27075.jpg"
   },
   {
     "name": "\"Leave Us Alone!\"",
     "code": "27076a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27076B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27076A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27076B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27076A.jpg"
   },
   {
     "name": "\"Leave Us Alone!\"",
     "code": "27076b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27076A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27076B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27076A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27076B.jpg"
   },
   {
     "name": "Bell Tower",
     "code": "27077a",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27077B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27077A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27077B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27077A.jpg"
   },
   {
     "name": "Bell Tower",
     "code": "27077b",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27077A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27077B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27077A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27077B.jpg"
   },
   {
     "name": "\"Now We're Angry!\"",
@@ -8324,7 +8324,7 @@ PACK_27 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27078.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27078.jpg"
   },
   {
     "name": "Guard the Bell Tower",
@@ -8332,7 +8332,7 @@ PACK_27 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27079.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27079.jpg"
   },
   {
     "name": "Lashing Out",
@@ -8340,7 +8340,7 @@ PACK_27 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27080.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27080.jpg"
   },
   {
     "name": "Tooth and Nail",
@@ -8348,7 +8348,7 @@ PACK_27 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27081.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27081.jpg"
   },
   {
     "name": "Biting Retort",
@@ -8356,7 +8356,7 @@ PACK_27 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27082.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27082.jpg"
   },
   {
     "name": "For Whom the Bell Tolls",
@@ -8364,7 +8364,7 @@ PACK_27 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27083.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27083.jpg"
   },
   {
     "name": "Mysterio",
@@ -8372,7 +8372,7 @@ PACK_27 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27084.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27084.jpg"
   },
   {
     "name": "Mysterio",
@@ -8380,7 +8380,7 @@ PACK_27 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27085.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27085.jpg"
   },
   {
     "name": "Mysterio",
@@ -8388,7 +8388,7 @@ PACK_27 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27086.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27086.jpg"
   },
   {
     "name": "Maze of Mirrors",
@@ -8396,7 +8396,7 @@ PACK_27 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27087.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27087.jpg"
   },
   {
     "name": "Edge of Reality",
@@ -8404,7 +8404,7 @@ PACK_27 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27088.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27088.jpg"
   },
   {
     "name": "Humongous Hallucination",
@@ -8412,7 +8412,7 @@ PACK_27 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27089.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27089.jpg"
   },
   {
     "name": "Masterful Mirage",
@@ -8420,7 +8420,7 @@ PACK_27 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27090.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27090.jpg"
   },
   {
     "name": "Shifting Apparition",
@@ -8428,7 +8428,7 @@ PACK_27 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27091.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27091.jpg"
   },
   {
     "name": "Déjà Vu",
@@ -8436,7 +8436,7 @@ PACK_27 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27092.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27092.jpg"
   },
   {
     "name": "Fearmonger",
@@ -8444,7 +8444,7 @@ PACK_27 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27093.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27093.jpg"
   },
   {
     "name": "Doctor Octopus",
@@ -8452,7 +8452,7 @@ PACK_27 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27094.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27094.jpg"
   },
   {
     "name": "Electro",
@@ -8460,7 +8460,7 @@ PACK_27 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27095.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27095.jpg"
   },
   {
     "name": "Hobgoblin",
@@ -8468,7 +8468,7 @@ PACK_27 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27096.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27096.jpg"
   },
   {
     "name": "Kraven the Hunter",
@@ -8476,7 +8476,7 @@ PACK_27 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27097.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27097.jpg"
   },
   {
     "name": "Scorpion",
@@ -8484,7 +8484,7 @@ PACK_27 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27098.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27098.jpg"
   },
   {
     "name": "Vulture",
@@ -8492,7 +8492,7 @@ PACK_27 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27099.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27099.jpg"
   },
   {
     "name": "Sinister Synchonization",
@@ -8500,39 +8500,39 @@ PACK_27 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27100.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27100.jpg"
   },
   {
     "name": "Sinister Beatdown",
     "code": "27101a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27101B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27101A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27101B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27101A.jpg"
   },
   {
     "name": "Sinister Beatdown",
     "code": "27101b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27101A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27101B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27101A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27101B.jpg"
   },
   {
     "name": "Light at the End",
     "code": "27102a",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27102B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27102A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27102B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27102A.jpg"
   },
   {
     "name": "Light at the End",
     "code": "27102b",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27102A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27102B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27102A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27102B.jpg"
   },
   {
     "name": "Heightened Morale",
@@ -8540,7 +8540,7 @@ PACK_27 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27103.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27103.jpg"
   },
   {
     "name": "Taunting Presence",
@@ -8548,7 +8548,7 @@ PACK_27 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27104.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27104.jpg"
   },
   {
     "name": "Team Leader",
@@ -8556,7 +8556,7 @@ PACK_27 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27105.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27105.jpg"
   },
   {
     "name": "Take One for the Team",
@@ -8564,7 +8564,7 @@ PACK_27 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27106.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27106.jpg"
   },
   {
     "name": "Brute Force Barricade",
@@ -8572,7 +8572,7 @@ PACK_27 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27107.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27107.jpg"
   },
   {
     "name": "Frequent Flyers",
@@ -8580,7 +8580,7 @@ PACK_27 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27108.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27108.jpg"
   },
   {
     "name": "High Fashion",
@@ -8588,7 +8588,7 @@ PACK_27 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27109.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27109.jpg"
   },
   {
     "name": "Robotic Enhancements",
@@ -8596,7 +8596,7 @@ PACK_27 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27110.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27110.jpg"
   },
   {
     "name": "Partnership of Pain",
@@ -8604,7 +8604,7 @@ PACK_27 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27111.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27111.jpg"
   },
   {
     "name": "Surprise!",
@@ -8612,7 +8612,7 @@ PACK_27 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27112.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27112.jpg"
   },
   {
     "name": "Venom Goblin",
@@ -8620,7 +8620,7 @@ PACK_27 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27113.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27113.jpg"
   },
   {
     "name": "Venom Goblin",
@@ -8628,7 +8628,7 @@ PACK_27 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27114.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27114.jpg"
   },
   {
     "name": "Venom Goblin",
@@ -8636,71 +8636,71 @@ PACK_27 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27115.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27115.jpg"
   },
   {
     "name": "Skies Over New York",
     "code": "27116a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27116B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27116A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27116B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27116A.jpg"
   },
   {
     "name": "Skies Over New York",
     "code": "27116b",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27116A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27116B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27116A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27116B.jpg"
   },
   {
     "name": "Lower Manhattan",
     "code": "27117a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27117B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27117A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27117B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27117A.jpg"
   },
   {
     "name": "Lower Manhattan",
     "code": "27117b",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27117A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27117B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27117A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27117B.jpg"
   },
   {
     "name": "Midtown Manhattan",
     "code": "27118a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27118B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27118A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27118B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27118A.jpg"
   },
   {
     "name": "Midtown Manhattan",
     "code": "27118b",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27118A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27118B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27118A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27118B.jpg"
   },
   {
     "name": "Upper Manhattan",
     "code": "27119a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27119B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27119A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27119B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27119A.jpg"
   },
   {
     "name": "Upper Manhattan",
     "code": "27119b",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27119A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27119B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27119A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27119B.jpg"
   },
   {
     "name": "We Are One",
@@ -8708,7 +8708,7 @@ PACK_27 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27120.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27120.jpg"
   },
   {
     "name": "Symbiotic Berserker",
@@ -8716,7 +8716,7 @@ PACK_27 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27121.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27121.jpg"
   },
   {
     "name": "Symbiotic Monstrosity",
@@ -8724,7 +8724,7 @@ PACK_27 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27122.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27122.jpg"
   },
   {
     "name": "Symbiotic Thrall",
@@ -8732,7 +8732,7 @@ PACK_27 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27123.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27123.jpg"
   },
   {
     "name": "Festering Mass",
@@ -8740,7 +8740,7 @@ PACK_27 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27124.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27124.jpg"
   },
   {
     "name": "Joy Ride",
@@ -8748,7 +8748,7 @@ PACK_27 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27125.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27125.jpg"
   },
   {
     "name": "Spreading Panic",
@@ -8756,7 +8756,7 @@ PACK_27 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27126.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27126.jpg"
   },
   {
     "name": "Panic in the Streets",
@@ -8764,7 +8764,7 @@ PACK_27 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27127.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27127.jpg"
   },
   {
     "name": "Rhino",
@@ -8772,7 +8772,7 @@ PACK_27 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27128.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27128.jpg"
   },
   {
     "name": "Calling in Favors",
@@ -8780,7 +8780,7 @@ PACK_27 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27129.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27129.jpg"
   },
   {
     "name": "Now or Never",
@@ -8788,7 +8788,7 @@ PACK_27 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27130.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27130.jpg"
   },
   {
     "name": "Common Criminal",
@@ -8796,7 +8796,7 @@ PACK_27 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27131.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27131.jpg"
   },
   {
     "name": "Friends and Family",
@@ -8804,7 +8804,7 @@ PACK_27 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27132.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27132.jpg"
   },
   {
     "name": "Volunteer Work",
@@ -8812,7 +8812,7 @@ PACK_27 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27133.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27133.jpg"
   },
   {
     "name": "\"Threat or Menace?\"",
@@ -8820,7 +8820,7 @@ PACK_27 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27134.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27134.jpg"
   },
   {
     "name": "Loose Ends",
@@ -8828,7 +8828,7 @@ PACK_27 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27135.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27135.jpg"
   },
   {
     "name": "Advanced Glider",
@@ -8836,7 +8836,7 @@ PACK_27 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27136.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27136.jpg"
   },
   {
     "name": "Concussive Bombs",
@@ -8844,7 +8844,7 @@ PACK_27 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27137.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27137.jpg"
   },
   {
     "name": "Incendiary Bombs",
@@ -8852,7 +8852,7 @@ PACK_27 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27138.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27138.jpg"
   },
   {
     "name": "Smoke Bombs",
@@ -8860,7 +8860,7 @@ PACK_27 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27139.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27139.jpg"
   },
   {
     "name": "Limitless Supply",
@@ -8868,7 +8868,7 @@ PACK_27 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27140.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27140.jpg"
   },
   {
     "name": "Remote Navigation",
@@ -8876,7 +8876,7 @@ PACK_27 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27141.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27141.jpg"
   },
   {
     "name": "Life-Size Decoy",
@@ -8884,7 +8884,7 @@ PACK_27 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27142.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27142.jpg"
   },
   {
     "name": "Coordinated Effort",
@@ -8892,7 +8892,7 @@ PACK_27 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27143.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27143.jpg"
   },
   {
     "name": "Hidden in Shadow",
@@ -8900,7 +8900,7 @@ PACK_27 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27144.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27144.jpg"
   },
   {
     "name": "Teamwork Makes the Dream Work",
@@ -8908,7 +8908,7 @@ PACK_27 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27145.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27145.jpg"
   },
   {
     "name": "From Every Direction",
@@ -8916,7 +8916,7 @@ PACK_27 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27146.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27146.jpg"
   },
   {
     "name": "Arm Cannon",
@@ -8924,7 +8924,7 @@ PACK_27 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27147.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27147.jpg"
   },
   {
     "name": "Ionic Boots",
@@ -8932,7 +8932,7 @@ PACK_27 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27148.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27148.jpg"
   },
   {
     "name": "Kinetic Armor",
@@ -8940,7 +8940,7 @@ PACK_27 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27149.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27149.jpg"
   },
   {
     "name": "Neocarbon Scales",
@@ -8948,7 +8948,7 @@ PACK_27 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27150.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27150.jpg"
   },
   {
     "name": "Spiked Gauntlet",
@@ -8956,7 +8956,7 @@ PACK_27 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27151.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27151.jpg"
   },
   {
     "name": "Tracking Display",
@@ -8964,7 +8964,7 @@ PACK_27 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27152.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27152.jpg"
   },
   {
     "name": "Induced Panic",
@@ -8972,7 +8972,7 @@ PACK_27 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27153.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27153.jpg"
   },
   {
     "name": "Evil Doppelgänger",
@@ -8980,7 +8980,7 @@ PACK_27 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27154.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27154.jpg"
   },
   {
     "name": "Fool's Paradise",
@@ -8988,7 +8988,7 @@ PACK_27 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27155.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27155.jpg"
   },
   {
     "name": "Weakness from Within",
@@ -8996,7 +8996,7 @@ PACK_27 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27156.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27156.jpg"
   },
   {
     "name": "Deepest Fears",
@@ -9004,7 +9004,7 @@ PACK_27 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27157.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27157.jpg"
   },
   {
     "name": "Doctor Octopus",
@@ -9012,7 +9012,7 @@ PACK_27 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27158.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27158.jpg"
   },
   {
     "name": "Electro",
@@ -9020,7 +9020,7 @@ PACK_27 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27159.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27159.jpg"
   },
   {
     "name": "Hobgoblin",
@@ -9028,7 +9028,7 @@ PACK_27 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27160.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27160.jpg"
   },
   {
     "name": "Kraven the Hunter",
@@ -9036,7 +9036,7 @@ PACK_27 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27161.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27161.jpg"
   },
   {
     "name": "Scorpion",
@@ -9044,7 +9044,7 @@ PACK_27 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27162.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27162.jpg"
   },
   {
     "name": "Vulture",
@@ -9052,7 +9052,7 @@ PACK_27 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27163.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27163.jpg"
   },
   {
     "name": "Improvised Weapons",
@@ -9060,7 +9060,7 @@ PACK_27 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27164.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27164.jpg"
   },
   {
     "name": "Violent Tendencies",
@@ -9068,7 +9068,7 @@ PACK_27 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27165.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27165.jpg"
   },
   {
     "name": "Webbed Up",
@@ -9076,7 +9076,7 @@ PACK_27 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27166.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27166.jpg"
   },
   {
     "name": "Enraged Symbiote",
@@ -9084,7 +9084,7 @@ PACK_27 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27167.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27167.jpg"
   },
   {
     "name": "Swinging Assault",
@@ -9092,7 +9092,7 @@ PACK_27 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27168.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27168.jpg"
   },
   {
     "name": "Unstable Sentience",
@@ -9100,7 +9100,7 @@ PACK_27 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27169.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27169.jpg"
   },
   {
     "name": "Delusion of Collusion",
@@ -9108,7 +9108,7 @@ PACK_27 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27170.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27170.jpg"
   },
   {
     "name": "Manipulated Mind",
@@ -9116,7 +9116,7 @@ PACK_27 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27171.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27171.jpg"
   },
   {
     "name": "Old Grudge",
@@ -9124,7 +9124,7 @@ PACK_27 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27172.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27172.jpg"
   },
   {
     "name": "Analysis Paralysis",
@@ -9132,7 +9132,7 @@ PACK_27 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/27173.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27173.jpg"
   }
 ]
 ]]
@@ -9143,16 +9143,16 @@ PACK_28 = [[
     "code": "28001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28001B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28001A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/28001B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/28001A.jpg"
   },
   {
     "name": "Sam Alexander",
     "code": "28001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28001A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28001B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/28001A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/28001B.jpg"
   },
   {
     "name": "Ms. Marvel",
@@ -9161,7 +9161,7 @@ PACK_28 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28002.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/28002.jpg"
   },
   {
     "name": "Forcefield Projection",
@@ -9169,7 +9169,7 @@ PACK_28 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28003.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/28003.jpg"
   },
   {
     "name": "Lightspeed Flight",
@@ -9177,7 +9177,7 @@ PACK_28 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28004.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/28004.jpg"
   },
   {
     "name": "Pot Shot",
@@ -9185,7 +9185,7 @@ PACK_28 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28005.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/28005.jpg"
   },
   {
     "name": "Unleash Nova Force",
@@ -9193,7 +9193,7 @@ PACK_28 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28006.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/28006.jpg"
   },
   {
     "name": "Connection to the Worldmind",
@@ -9201,7 +9201,7 @@ PACK_28 = [[
     "type_code": "resource",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28007.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/28007.jpg"
   },
   {
     "name": "Jesse Alexander",
@@ -9209,7 +9209,7 @@ PACK_28 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28008.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/28008.jpg"
   },
   {
     "name": "Supernova Helmet",
@@ -9217,7 +9217,7 @@ PACK_28 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28009.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/28009.jpg"
   },
   {
     "name": "The Locust",
@@ -9226,7 +9226,7 @@ PACK_28 = [[
     "type_code": "ally",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28010.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/28010.jpg"
   },
   {
     "code": "28011",
@@ -9238,7 +9238,7 @@ PACK_28 = [[
     "type_code": "event",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28012.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/28012.jpg"
   },
   {
     "name": "No Quarter",
@@ -9246,7 +9246,7 @@ PACK_28 = [[
     "type_code": "event",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28013.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/28013.jpg"
   },
   {
     "name": "One by One",
@@ -9254,7 +9254,7 @@ PACK_28 = [[
     "type_code": "event",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28014.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/28014.jpg"
   },
   {
     "code": "28015",
@@ -9266,7 +9266,7 @@ PACK_28 = [[
     "type_code": "upgrade",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28016.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/28016.jpg"
   },
   {
     "name": "Honed Technique",
@@ -9274,7 +9274,7 @@ PACK_28 = [[
     "type_code": "upgrade",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28017.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/28017.jpg"
   },
   {
     "name": "Moon Girl",
@@ -9283,7 +9283,7 @@ PACK_28 = [[
     "type_code": "ally",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28018.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/28018.jpg"
   },
   {
     "name": "Everyday Hero",
@@ -9291,7 +9291,7 @@ PACK_28 = [[
     "type_code": "resource",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28019.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/28019.jpg"
   },
   {
     "name": "Champions Mobile Bunker",
@@ -9299,7 +9299,7 @@ PACK_28 = [[
     "type_code": "support",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28020.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/28020.jpg"
   },
   {
     "name": "Yaw and Roll",
@@ -9307,7 +9307,7 @@ PACK_28 = [[
     "type_code": "event",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28026.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/28026.jpg"
   },
   {
     "name": "Height Advantage",
@@ -9315,7 +9315,7 @@ PACK_28 = [[
     "type_code": "upgrade",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28027.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/28027.jpg"
   },
   {
     "name": "Weight of the World",
@@ -9323,7 +9323,7 @@ PACK_28 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28021.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/28021.jpg"
   },
   {
     "name": "\"Bring the War!\"",
@@ -9331,7 +9331,7 @@ PACK_28 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28022.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/28022.jpg"
   },
   {
     "name": "Warbringer",
@@ -9339,7 +9339,7 @@ PACK_28 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28023.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/28023.jpg"
   },
   {
     "name": "War Delivery",
@@ -9347,7 +9347,7 @@ PACK_28 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28024.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/28024.jpg"
   },
   {
     "name": "\"The War's Been Brought\"",
@@ -9355,7 +9355,7 @@ PACK_28 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28025.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/28025.jpg"
   },
   {
     "name": "Armored Assault",
@@ -9363,7 +9363,7 @@ PACK_28 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28028.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/28028.jpg"
   },
   {
     "name": "Armadillo",
@@ -9371,7 +9371,7 @@ PACK_28 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28029.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/28029.jpg"
   },
   {
     "name": "Rollin', Rollin'",
@@ -9379,7 +9379,7 @@ PACK_28 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28030.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/28030.jpg"
   },
   {
     "name": "Tough and Tumble",
@@ -9387,7 +9387,7 @@ PACK_28 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28031.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/28031.jpg"
   },
   {
     "name": "Tough It Out",
@@ -9395,7 +9395,7 @@ PACK_28 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/28032.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/28032.jpg"
   }
 ]
 ]]
@@ -9406,48 +9406,48 @@ PACK_29 = [[
     "code": "29001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29001B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29001A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/29001B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29001A.jpg"
   },
   {
     "name": "Riri Williams",
     "code": "29001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29001A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29001B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/29001A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29001B.jpg"
   },
   {
     "name": "Ironheart",
     "code": "29002a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29002B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29002A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/29002B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29002A.jpg"
   },
   {
     "name": "Riri Williams",
     "code": "29002b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29002A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29002B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/29002A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29002B.jpg"
   },
   {
     "name": "Ironheart",
     "code": "29003a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29003B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29003A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/29003B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29003A.jpg"
   },
   {
     "name": "Riri Williams",
     "code": "29003b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29003A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29003B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/29003A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29003B.jpg"
   },
   {
     "name": "Brawn",
@@ -9456,7 +9456,7 @@ PACK_29 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29004.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29004.jpg"
   },
   {
     "name": "Fly Over",
@@ -9464,7 +9464,7 @@ PACK_29 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29005.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29005.jpg"
   },
   {
     "name": "Photon Beam",
@@ -9472,7 +9472,7 @@ PACK_29 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29006.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29006.jpg"
   },
   {
     "name": "New and Improved",
@@ -9480,7 +9480,7 @@ PACK_29 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29007.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29007.jpg"
   },
   {
     "name": "Sector Scan",
@@ -9488,7 +9488,7 @@ PACK_29 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29008.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29008.jpg"
   },
   {
     "name": "Stroke of Genius",
@@ -9496,7 +9496,7 @@ PACK_29 = [[
     "type_code": "resource",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29009.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29009.jpg"
   },
   {
     "name": "Ronnie Williams",
@@ -9504,7 +9504,7 @@ PACK_29 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29010.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29010.jpg"
   },
   {
     "name": "Tony Stark A.I.",
@@ -9512,7 +9512,7 @@ PACK_29 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29011.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29011.jpg"
   },
   {
     "name": "Photon Blasters",
@@ -9520,7 +9520,7 @@ PACK_29 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29012.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29012.jpg"
   },
   {
     "name": "Propulsion Jets",
@@ -9528,7 +9528,7 @@ PACK_29 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29013.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29013.jpg"
   },
   {
     "name": "Cloud 9",
@@ -9537,7 +9537,7 @@ PACK_29 = [[
     "type_code": "ally",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29014.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29014.jpg"
   },
   {
     "name": "Falcon",
@@ -9546,7 +9546,7 @@ PACK_29 = [[
     "type_code": "ally",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29015.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29015.jpg"
   },
   {
     "name": "Patriot",
@@ -9555,7 +9555,7 @@ PACK_29 = [[
     "type_code": "ally",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29016.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29016.jpg"
   },
   {
     "name": "Go All Out",
@@ -9563,7 +9563,7 @@ PACK_29 = [[
     "type_code": "event",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29017.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29017.jpg"
   },
   {
     "name": "Push Ahead",
@@ -9571,7 +9571,7 @@ PACK_29 = [[
     "type_code": "event",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29018.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29018.jpg"
   },
   {
     "code": "29019",
@@ -9583,7 +9583,7 @@ PACK_29 = [[
     "type_code": "support",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29020.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29020.jpg"
   },
   {
     "code": "29021",
@@ -9600,7 +9600,7 @@ PACK_29 = [[
     "type_code": "ally",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29023.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29023.jpg"
   },
   {
     "name": "Vivian",
@@ -9608,7 +9608,7 @@ PACK_29 = [[
     "type_code": "ally",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29024.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29024.jpg"
   },
   {
     "name": "\"Go for Champions!\"",
@@ -9616,7 +9616,7 @@ PACK_29 = [[
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29025.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29025.jpg"
   },
   {
     "code": "29026",
@@ -9628,7 +9628,7 @@ PACK_29 = [[
     "type_code": "upgrade",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29027.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29027.jpg"
   },
   {
     "name": "Bombshell",
@@ -9637,7 +9637,7 @@ PACK_29 = [[
     "type_code": "ally",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29033.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29033.jpg"
   },
   {
     "name": "Wasp",
@@ -9646,7 +9646,7 @@ PACK_29 = [[
     "type_code": "ally",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29034.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29034.jpg"
   },
   {
     "name": "Pinpoint",
@@ -9655,7 +9655,7 @@ PACK_29 = [[
     "type_code": "ally",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29035.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29035.jpg"
   },
   {
     "name": "A Minor Setback",
@@ -9663,7 +9663,7 @@ PACK_29 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29028.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29028.jpg"
   },
   {
     "name": "Rule by Force",
@@ -9671,7 +9671,7 @@ PACK_29 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29029.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29029.jpg"
   },
   {
     "name": "Lucia von Bardas",
@@ -9679,7 +9679,7 @@ PACK_29 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29030.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29030.jpg"
   },
   {
     "name": "Cyborg Tech",
@@ -9687,7 +9687,7 @@ PACK_29 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29031.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29031.jpg"
   },
   {
     "name": "Political Retribution",
@@ -9695,7 +9695,7 @@ PACK_29 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29032.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29032.jpg"
   },
   {
     "name": "Feedback Loop",
@@ -9703,7 +9703,7 @@ PACK_29 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29036.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29036.jpg"
   },
   {
     "name": "Zzzax",
@@ -9711,7 +9711,7 @@ PACK_29 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29037.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29037.jpg"
   },
   {
     "name": "Haywire",
@@ -9719,7 +9719,7 @@ PACK_29 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29038.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29038.jpg"
   },
   {
     "name": "Air Static",
@@ -9727,7 +9727,7 @@ PACK_29 = [[
     "type_code": "environment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29039.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29039.jpg"
   },
   {
     "name": "Zzzap!",
@@ -9735,7 +9735,7 @@ PACK_29 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/29040.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/29040.jpg"
   }
 ]
 ]]
@@ -9746,16 +9746,16 @@ PACK_30 = [[
     "code": "30001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30001B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30001A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/30001B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/30001A.jpg"
   },
   {
     "name": "Peter Porker",
     "code": "30001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30001A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30001B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/30001A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/30001B.jpg"
   },
   {
     "name": "Captain Americat",
@@ -9764,7 +9764,7 @@ PACK_30 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30002.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/30002.jpg"
   },
   {
     "name": "Ham It Up",
@@ -9772,7 +9772,7 @@ PACK_30 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30003.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/30003.jpg"
   },
   {
     "name": "Hogwashed",
@@ -9780,7 +9780,7 @@ PACK_30 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30004.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/30004.jpg"
   },
   {
     "name": "\"I Don't Think So!\"",
@@ -9788,7 +9788,7 @@ PACK_30 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30005.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/30005.jpg"
   },
   {
     "name": "Petulant Pig",
@@ -9796,7 +9796,7 @@ PACK_30 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30006.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/30006.jpg"
   },
   {
     "name": "Swinging Web Pig",
@@ -9804,7 +9804,7 @@ PACK_30 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30007.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/30007.jpg"
   },
   {
     "name": "The Daily Beagle",
@@ -9812,7 +9812,7 @@ PACK_30 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30008.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/30008.jpg"
   },
   {
     "name": "Cartoon Physics",
@@ -9820,7 +9820,7 @@ PACK_30 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30009.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/30009.jpg"
   },
   {
     "name": "Huge Wooden Hammer",
@@ -9828,7 +9828,7 @@ PACK_30 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30010.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/30010.jpg"
   },
   {
     "name": "Organic Webbing",
@@ -9836,7 +9836,7 @@ PACK_30 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30011.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/30011.jpg"
   },
   {
     "name": "Lady Spider",
@@ -9845,7 +9845,7 @@ PACK_30 = [[
     "type_code": "ally",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30012.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/30012.jpg"
   },
   {
     "name": "Spider-Man",
@@ -9854,7 +9854,7 @@ PACK_30 = [[
     "type_code": "ally",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30013.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/30013.jpg"
   },
   {
     "name": "Even the Odds",
@@ -9862,7 +9862,7 @@ PACK_30 = [[
     "type_code": "event",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30014.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/30014.jpg"
   },
   {
     "code": "30015",
@@ -9886,7 +9886,7 @@ PACK_30 = [[
     "type_code": "upgrade",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30019.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/30019.jpg"
   },
   {
     "name": "Scarlet Spider",
@@ -9895,7 +9895,7 @@ PACK_30 = [[
     "type_code": "ally",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30020.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/30020.jpg"
   },
   {
     "name": "SP//dr",
@@ -9904,7 +9904,7 @@ PACK_30 = [[
     "type_code": "ally",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30021.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/30021.jpg"
   },
   {
     "code": "30022",
@@ -9920,7 +9920,7 @@ PACK_30 = [[
     "type_code": "upgrade",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30029.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/30029.jpg"
   },
   {
     "name": "\"I Really Want a Hot Dog!\"",
@@ -9928,7 +9928,7 @@ PACK_30 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30024.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/30024.jpg"
   },
   {
     "name": "Nefarious Trap",
@@ -9936,7 +9936,7 @@ PACK_30 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30025.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/30025.jpg"
   },
   {
     "name": "The Green Gobbler",
@@ -9944,7 +9944,7 @@ PACK_30 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30026.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/30026.jpg"
   },
   {
     "name": "Gobbler Glider",
@@ -9952,7 +9952,7 @@ PACK_30 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30027.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/30027.jpg"
   },
   {
     "name": "\"Feast on This!\"",
@@ -9960,7 +9960,7 @@ PACK_30 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30028.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/30028.jpg"
   },
   {
     "name": "Hunting the Spider-Totems",
@@ -9968,7 +9968,7 @@ PACK_30 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30030.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/30030.jpg"
   },
   {
     "name": "Bora",
@@ -9976,7 +9976,7 @@ PACK_30 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30031.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/30031.jpg"
   },
   {
     "name": "Brix",
@@ -9984,7 +9984,7 @@ PACK_30 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30032.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/30032.jpg"
   },
   {
     "name": "Daemos",
@@ -9992,7 +9992,7 @@ PACK_30 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30033.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/30033.jpg"
   },
   {
     "name": "Jennix",
@@ -10000,7 +10000,7 @@ PACK_30 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30034.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/30034.jpg"
   },
   {
     "name": "Karn",
@@ -10008,7 +10008,7 @@ PACK_30 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30035.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/30035.jpg"
   },
   {
     "name": "Morlun",
@@ -10016,7 +10016,7 @@ PACK_30 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30036.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/30036.jpg"
   },
   {
     "name": "Solus",
@@ -10024,7 +10024,7 @@ PACK_30 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30037.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/30037.jpg"
   },
   {
     "name": "Verna",
@@ -10032,7 +10032,7 @@ PACK_30 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/30038.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/30038.jpg"
   }
 ]
 ]]
@@ -10043,32 +10043,32 @@ PACK_31 = [[
     "code": "31001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31001B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31001A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/31001B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31001A.jpg"
   },
   {
     "name": "SP//dr Suit",
     "code": "31001b",
     "type_code": "support",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31001A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31001B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/31001A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31001B.jpg"
   },
   {
     "name": "Peni Parker",
     "code": "31002a",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31002B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31002A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/31002B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31002A.jpg"
   },
   {
     "name": "SP//dr",
     "code": "31002b",
     "type_code": "upgrade",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31002A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31002B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/31002A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31002B.jpg"
   },
   {
     "name": "VEN#m",
@@ -10077,7 +10077,7 @@ PACK_31 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31003.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31003.jpg"
   },
   {
     "name": "All Systems Go!",
@@ -10085,7 +10085,7 @@ PACK_31 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31004.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31004.jpg"
   },
   {
     "name": "Rapid Deployment",
@@ -10093,7 +10093,7 @@ PACK_31 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31005.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31005.jpg"
   },
   {
     "name": "Web-Trap",
@@ -10101,7 +10101,7 @@ PACK_31 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31006.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31006.jpg"
   },
   {
     "name": "Aunt May & Uncle Ben",
@@ -10109,7 +10109,7 @@ PACK_31 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31007.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31007.jpg"
   },
   {
     "name": "Ejection Protocol",
@@ -10117,7 +10117,7 @@ PACK_31 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31008.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31008.jpg"
   },
   {
     "name": "SP//dr Command",
@@ -10125,7 +10125,7 @@ PACK_31 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31009.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31009.jpg"
   },
   {
     "name": "Host Spider",
@@ -10133,7 +10133,7 @@ PACK_31 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31010.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31010.jpg"
   },
   {
     "name": "Psychic Link",
@@ -10141,7 +10141,7 @@ PACK_31 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31011.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31011.jpg"
   },
   {
     "name": "Speed-Metal Alloy",
@@ -10149,7 +10149,7 @@ PACK_31 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31012.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31012.jpg"
   },
   {
     "name": "Web-Fluid Compressor",
@@ -10157,7 +10157,7 @@ PACK_31 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31013.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31013.jpg"
   },
   {
     "name": "Daredevil",
@@ -10165,7 +10165,7 @@ PACK_31 = [[
     "type_code": "ally",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31014.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31014.jpg"
   },
   {
     "name": "Spider-Man Noir",
@@ -10173,7 +10173,7 @@ PACK_31 = [[
     "type_code": "ally",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31015.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31015.jpg"
   },
   {
     "name": "Repurpose",
@@ -10181,7 +10181,7 @@ PACK_31 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31016.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31016.jpg"
   },
   {
     "name": "Thwip! Thwip!",
@@ -10189,7 +10189,7 @@ PACK_31 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31017.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31017.jpg"
   },
   {
     "code": "31018",
@@ -10201,7 +10201,7 @@ PACK_31 = [[
     "type_code": "upgrade",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31019.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31019.jpg"
   },
   {
     "name": "Spider-Tingle",
@@ -10209,7 +10209,7 @@ PACK_31 = [[
     "type_code": "upgrade",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31020.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31020.jpg"
   },
   {
     "name": "Spider-Ham",
@@ -10218,7 +10218,7 @@ PACK_31 = [[
     "type_code": "ally",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31021.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31021.jpg"
   },
   {
     "name": "Spider-Man",
@@ -10227,7 +10227,7 @@ PACK_31 = [[
     "type_code": "ally",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31022.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31022.jpg"
   },
   {
     "name": "Limitless Stamina",
@@ -10235,7 +10235,7 @@ PACK_31 = [[
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31023.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31023.jpg"
   },
   {
     "name": "Unshakable",
@@ -10243,7 +10243,7 @@ PACK_31 = [[
     "type_code": "upgrade",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31024.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31024.jpg"
   },
   {
     "name": "Clarity of Purpose",
@@ -10251,7 +10251,7 @@ PACK_31 = [[
     "type_code": "upgrade",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31029.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31029.jpg"
   },
   {
     "name": "Inherited Burden",
@@ -10259,7 +10259,7 @@ PACK_31 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31025.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31025.jpg"
   },
   {
     "name": "Giant Monster Attack",
@@ -10267,7 +10267,7 @@ PACK_31 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31026.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31026.jpg"
   },
   {
     "name": "M.O.R.B.I.U.S.",
@@ -10275,7 +10275,7 @@ PACK_31 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31027.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31027.jpg"
   },
   {
     "name": "Energy Drain",
@@ -10283,7 +10283,7 @@ PACK_31 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31028.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31028.jpg"
   },
   {
     "name": "Grand Larceny",
@@ -10291,7 +10291,7 @@ PACK_31 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31030.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31030.jpg"
   },
   {
     "name": "Bombshell",
@@ -10299,7 +10299,7 @@ PACK_31 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31031.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31031.jpg"
   },
   {
     "name": "Electro",
@@ -10307,7 +10307,7 @@ PACK_31 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31032.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31032.jpg"
   },
   {
     "name": "Hobgoblin",
@@ -10315,7 +10315,7 @@ PACK_31 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31033.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31033.jpg"
   },
   {
     "name": "Iron Spider",
@@ -10323,7 +10323,7 @@ PACK_31 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31034.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31034.jpg"
   },
   {
     "name": "Sandman",
@@ -10331,7 +10331,7 @@ PACK_31 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31035.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31035.jpg"
   },
   {
     "name": "Spot",
@@ -10339,7 +10339,7 @@ PACK_31 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31036.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31036.jpg"
   },
   {
     "name": "Surge in Crime",
@@ -10347,7 +10347,7 @@ PACK_31 = [[
     "type_code": "environment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/31037.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/31037.jpg"
   }
 ]
 ]]
@@ -10358,16 +10358,16 @@ PACK_32 = [[
     "code": "32001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32001B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32001A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32001B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32001A.jpg"
   },
   {
     "name": "Piotr Rasputin",
     "code": "32001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32001A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32001B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32001A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32001B.jpg"
   },
   {
     "name": "Shadowcat",
@@ -10376,7 +10376,7 @@ PACK_32 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32002.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32002.jpg"
   },
   {
     "name": "Piotr's Studio",
@@ -10384,7 +10384,7 @@ PACK_32 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32003.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32003.jpg"
   },
   {
     "name": "Iron Will",
@@ -10392,7 +10392,7 @@ PACK_32 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32004.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32004.jpg"
   },
   {
     "name": "Titanium Muscles",
@@ -10400,7 +10400,7 @@ PACK_32 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32005.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32005.jpg"
   },
   {
     "name": "Organic Steel",
@@ -10408,7 +10408,7 @@ PACK_32 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32006.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32006.jpg"
   },
   {
     "name": "Made of Rage",
@@ -10416,7 +10416,7 @@ PACK_32 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32007.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32007.jpg"
   },
   {
     "name": "Steel Fist",
@@ -10424,7 +10424,7 @@ PACK_32 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32008.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32008.jpg"
   },
   {
     "name": "Bulletproof Protector",
@@ -10432,7 +10432,7 @@ PACK_32 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32009.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32009.jpg"
   },
   {
     "name": "Armor Up",
@@ -10440,7 +10440,7 @@ PACK_32 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32010.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32010.jpg"
   },
   {
     "name": "Nightcrawler",
@@ -10449,7 +10449,7 @@ PACK_32 = [[
     "type_code": "ally",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32011.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32011.jpg"
   },
   {
     "name": "Polaris",
@@ -10458,7 +10458,7 @@ PACK_32 = [[
     "type_code": "ally",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32012.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32012.jpg"
   },
   {
     "name": "Protective Training",
@@ -10466,7 +10466,7 @@ PACK_32 = [[
     "type_code": "upgrade",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32013.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32013.jpg"
   },
   {
     "name": "Powerful Punch",
@@ -10474,7 +10474,7 @@ PACK_32 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32014.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32014.jpg"
   },
   {
     "code": "32015",
@@ -10486,7 +10486,7 @@ PACK_32 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32016.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32016.jpg"
   },
   {
     "name": "Mutant Protection",
@@ -10494,7 +10494,7 @@ PACK_32 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32017.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32017.jpg"
   },
   {
     "name": "Defensive Energy",
@@ -10502,7 +10502,7 @@ PACK_32 = [[
     "type_code": "resource",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32018.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32018.jpg"
   },
   {
     "name": "Professor X",
@@ -10511,7 +10511,7 @@ PACK_32 = [[
     "type_code": "ally",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32019.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32019.jpg"
   },
   {
     "name": "The X-Jet",
@@ -10519,7 +10519,7 @@ PACK_32 = [[
     "type_code": "support",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32020.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32020.jpg"
   },
   {
     "name": "Shadow and Steel",
@@ -10527,7 +10527,7 @@ PACK_32 = [[
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32021.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32021.jpg"
   },
   {
     "code": "32022",
@@ -10546,32 +10546,32 @@ PACK_32 = [[
     "code": "32030a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32030B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32030A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32030B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32030A.jpg"
   },
   {
     "name": "Kitty Pride",
     "code": "32030b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32030A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32030B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32030A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32030B.jpg"
   },
   {
     "name": "Solid",
     "code": "32031a",
     "type_code": "upgrade",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32031B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32031A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32031B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32031A.jpg"
   },
   {
     "name": "Phased",
     "code": "32031b",
     "type_code": "upgrade",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32031A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32031B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32031A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32031B.jpg"
   },
   {
     "name": "Lockheed",
@@ -10579,7 +10579,7 @@ PACK_32 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32032.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32032.jpg"
   },
   {
     "name": "Kitty's Room",
@@ -10587,7 +10587,7 @@ PACK_32 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32033.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32033.jpg"
   },
   {
     "name": "Acute Control",
@@ -10595,7 +10595,7 @@ PACK_32 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32034.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32034.jpg"
   },
   {
     "name": "Intangible Interference",
@@ -10603,7 +10603,7 @@ PACK_32 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32035.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32035.jpg"
   },
   {
     "name": "Phased and Confused",
@@ -10611,7 +10611,7 @@ PACK_32 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32036.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32036.jpg"
   },
   {
     "name": "Shadowcat Surprise",
@@ -10619,7 +10619,7 @@ PACK_32 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32037.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32037.jpg"
   },
   {
     "name": "Phase Strike",
@@ -10627,7 +10627,7 @@ PACK_32 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32038.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32038.jpg"
   },
   {
     "name": "Airwalk",
@@ -10635,7 +10635,7 @@ PACK_32 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32039.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32039.jpg"
   },
   {
     "name": "Quick Shift",
@@ -10643,7 +10643,7 @@ PACK_32 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32040.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32040.jpg"
   },
   {
     "name": "Wolverine",
@@ -10652,7 +10652,7 @@ PACK_32 = [[
     "type_code": "ally",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32041.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32041.jpg"
   },
   {
     "name": "Magik",
@@ -10661,7 +10661,7 @@ PACK_32 = [[
     "type_code": "ally",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32042.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32042.jpg"
   },
   {
     "name": "Attack Training",
@@ -10669,7 +10669,7 @@ PACK_32 = [[
     "type_code": "upgrade",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32043.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32043.jpg"
   },
   {
     "name": "Gatekeeper",
@@ -10677,7 +10677,7 @@ PACK_32 = [[
     "type_code": "upgrade",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32044.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32044.jpg"
   },
   {
     "name": "Team Strike",
@@ -10685,7 +10685,7 @@ PACK_32 = [[
     "type_code": "event",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32045.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32045.jpg"
   },
   {
     "code": "32046",
@@ -10697,7 +10697,7 @@ PACK_32 = [[
     "type_code": "resource",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32047.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32047.jpg"
   },
   {
     "name": "Colossus",
@@ -10705,7 +10705,7 @@ PACK_32 = [[
     "type_code": "ally",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32048.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32048.jpg"
   },
   {
     "name": "X-Mansion",
@@ -10713,7 +10713,7 @@ PACK_32 = [[
     "type_code": "support",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32049.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32049.jpg"
   },
   {
     "code": "32050",
@@ -10725,7 +10725,7 @@ PACK_32 = [[
     "type_code": "upgrade",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32051.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32051.jpg"
   },
   {
     "code": "32052",
@@ -10744,24 +10744,24 @@ PACK_32 = [[
     "code": "32171a",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32171B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32171A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32171B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32171A.jpg"
   },
   {
     "name": "Metro P.D.",
     "code": "32171b",
     "type_code": "support",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32171A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32171B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32171A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32171B.jpg"
   },
   {
     "name": "Enemy of My Enemy",
     "code": "32172a",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32172B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32172A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32172B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32172A.jpg"
   },
   {
     "name": "Magneto",
@@ -10769,56 +10769,56 @@ PACK_32 = [[
     "subname": "Erik Lensherr",
     "type_code": "ally",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32172A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32172B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32172A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32172B.jpg"
   },
   {
     "name": "Find the Prisoners",
     "code": "32173a",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32173B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32173A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32173B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32173A.jpg"
   },
   {
     "name": "Rescue Captives",
     "code": "32173b",
     "type_code": "environment",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32173A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32173B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32173A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32173B.jpg"
   },
   {
     "name": "Surprise Attack",
     "code": "32174a",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32174B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32174A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32174B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32174A.jpg"
   },
   {
     "name": "Reactive Defense",
     "code": "32174b",
     "type_code": "obligation",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32174A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32174B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32174A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32174B.jpg"
   },
   {
     "name": "Magneto's Fortress",
     "code": "32175a",
     "type_code": "side_scheme",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32175B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32175A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32175B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32175A.jpg"
   },
   {
     "name": "Magneto's Power",
     "code": "32175b",
     "type_code": "attachment",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32175A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32175B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32175A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32175B.jpg"
   },
   {
     "name": "Coup de Grâce",
@@ -10826,7 +10826,7 @@ PACK_32 = [[
     "type_code": "upgrade",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32176.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32176.jpg"
   },
   {
     "name": "Swagger",
@@ -10834,7 +10834,7 @@ PACK_32 = [[
     "type_code": "upgrade",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32177.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32177.jpg"
   },
   {
     "name": "Brazen Defense",
@@ -10842,7 +10842,7 @@ PACK_32 = [[
     "type_code": "upgrade",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32178.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32178.jpg"
   },
   {
     "name": "Ferocious Attack",
@@ -10850,7 +10850,7 @@ PACK_32 = [[
     "type_code": "upgrade",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32179.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32179.jpg"
   },
   {
     "name": "War Cry",
@@ -10858,7 +10858,7 @@ PACK_32 = [[
     "type_code": "upgrade",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32180.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32180.jpg"
   },
   {
     "name": "Coup de Grâce",
@@ -10866,7 +10866,7 @@ PACK_32 = [[
     "type_code": "upgrade",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32181.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32181.jpg"
   },
   {
     "name": "Compassion",
@@ -10874,7 +10874,7 @@ PACK_32 = [[
     "type_code": "upgrade",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32182.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32182.jpg"
   },
   {
     "name": "Group Assault",
@@ -10882,7 +10882,7 @@ PACK_32 = [[
     "type_code": "upgrade",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32183.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32183.jpg"
   },
   {
     "name": "Shock and Awe",
@@ -10890,7 +10890,7 @@ PACK_32 = [[
     "type_code": "upgrade",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32184.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32184.jpg"
   },
   {
     "name": "Improvisation",
@@ -10898,7 +10898,7 @@ PACK_32 = [[
     "type_code": "upgrade",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32185.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32185.jpg"
   },
   {
     "name": "Swagger",
@@ -10906,7 +10906,7 @@ PACK_32 = [[
     "type_code": "upgrade",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32186.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32186.jpg"
   },
   {
     "name": "Surprise!",
@@ -10914,7 +10914,7 @@ PACK_32 = [[
     "type_code": "upgrade",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32187.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32187.jpg"
   },
   {
     "name": "Heroic Intervention",
@@ -10922,7 +10922,7 @@ PACK_32 = [[
     "type_code": "upgrade",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32188.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32188.jpg"
   },
   {
     "name": "Determined Defense",
@@ -10930,7 +10930,7 @@ PACK_32 = [[
     "type_code": "upgrade",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32189.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32189.jpg"
   },
   {
     "name": "Bodyguard",
@@ -10938,7 +10938,7 @@ PACK_32 = [[
     "type_code": "upgrade",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32190.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32190.jpg"
   },
   {
     "name": "Surprise!",
@@ -10946,7 +10946,7 @@ PACK_32 = [[
     "type_code": "upgrade",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32191.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32191.jpg"
   },
   {
     "name": "Compassion",
@@ -10954,7 +10954,7 @@ PACK_32 = [[
     "type_code": "upgrade",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32192.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32192.jpg"
   },
   {
     "name": "Rescue Operation",
@@ -10962,7 +10962,7 @@ PACK_32 = [[
     "type_code": "upgrade",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32193.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32193.jpg"
   },
   {
     "name": "Mentorship",
@@ -10970,7 +10970,7 @@ PACK_32 = [[
     "type_code": "upgrade",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32194.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32194.jpg"
   },
   {
     "name": "Fortitude",
@@ -10978,7 +10978,7 @@ PACK_32 = [[
     "type_code": "upgrade",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32195.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32195.jpg"
   },
   {
     "name": "Homesick",
@@ -10986,7 +10986,7 @@ PACK_32 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32025.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32025.jpg"
   },
   {
     "name": "Juggernaut",
@@ -10994,7 +10994,7 @@ PACK_32 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32026.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32026.jpg"
   },
   {
     "name": "Rampaging Juggernaut",
@@ -11002,7 +11002,7 @@ PACK_32 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32027.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32027.jpg"
   },
   {
     "name": "Unstoppable",
@@ -11010,7 +11010,7 @@ PACK_32 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32028.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32028.jpg"
   },
   {
     "name": "Slammed",
@@ -11018,7 +11018,7 @@ PACK_32 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32029.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32029.jpg"
   },
   {
     "name": "Permanently Phased",
@@ -11026,7 +11026,7 @@ PACK_32 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32055.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32055.jpg"
   },
   {
     "name": "White Queen",
@@ -11034,7 +11034,7 @@ PACK_32 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32056.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32056.jpg"
   },
   {
     "name": "The Hellfire Club",
@@ -11042,7 +11042,7 @@ PACK_32 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32057.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32057.jpg"
   },
   {
     "name": "Hellfire Pawn",
@@ -11050,7 +11050,7 @@ PACK_32 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32058.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32058.jpg"
   },
   {
     "name": "Telepathic Restraint",
@@ -11058,7 +11058,7 @@ PACK_32 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32059.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32059.jpg"
   },
   {
     "name": "Sabretooth I",
@@ -11066,7 +11066,7 @@ PACK_32 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32060.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32060.jpg"
   },
   {
     "name": "Sabretooth II",
@@ -11074,7 +11074,7 @@ PACK_32 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32061.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32061.jpg"
   },
   {
     "name": "Sabretooth III",
@@ -11082,55 +11082,55 @@ PACK_32 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32062.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32062.jpg"
   },
   {
     "name": "Stalked by Sabretooth 1A",
     "code": "32063a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32063B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32063A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32063B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32063A.jpg"
   },
   {
     "name": "Stalked by Sabretooth 1B",
     "code": "32063b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32063A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32063B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32063A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32063B.jpg"
   },
   {
     "name": "The Injured Senator 2A",
     "code": "32064a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32064B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32064A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32064B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32064A.jpg"
   },
   {
     "name": "The Injured Senator 2B",
     "code": "32064b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32064A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32064B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32064A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32064B.jpg"
   },
   {
     "name": "Find the Senator",
     "code": "32065a",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32065B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32065A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32065B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32065A.jpg"
   },
   {
     "name": "Protect the Senator",
     "code": "32065b",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32065A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32065B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32065A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32065B.jpg"
   },
   {
     "name": "Robert Kelly",
@@ -11138,7 +11138,7 @@ PACK_32 = [[
     "type_code": "ally",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32066.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32066.jpg"
   },
   {
     "name": "Adamantium Claws",
@@ -11146,7 +11146,7 @@ PACK_32 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32067.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32067.jpg"
   },
   {
     "name": "Animal Ferocity",
@@ -11154,7 +11154,7 @@ PACK_32 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32068.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32068.jpg"
   },
   {
     "name": "Sabretooth Strikes",
@@ -11162,7 +11162,7 @@ PACK_32 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32069.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32069.jpg"
   },
   {
     "name": "Unreleting Savage",
@@ -11170,7 +11170,7 @@ PACK_32 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32070.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32070.jpg"
   },
   {
     "name": "Medical Emergency",
@@ -11178,7 +11178,7 @@ PACK_32 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32071.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32071.jpg"
   },
   {
     "name": "Deral Rage",
@@ -11186,7 +11186,7 @@ PACK_32 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32072.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32072.jpg"
   },
   {
     "name": "Avalanche",
@@ -11194,7 +11194,7 @@ PACK_32 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32073.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32073.jpg"
   },
   {
     "name": "Blob",
@@ -11202,7 +11202,7 @@ PACK_32 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32074.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32074.jpg"
   },
   {
     "name": "Pyro",
@@ -11210,7 +11210,7 @@ PACK_32 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32075.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32075.jpg"
   },
   {
     "name": "Toad",
@@ -11218,7 +11218,7 @@ PACK_32 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32076.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32076.jpg"
   },
   {
     "name": "Homo Superior",
@@ -11226,7 +11226,7 @@ PACK_32 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32077.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32077.jpg"
   },
   {
     "name": "Mutant Terrorists",
@@ -11234,7 +11234,7 @@ PACK_32 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32078.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32078.jpg"
   },
   {
     "name": "The Brotherhood",
@@ -11242,7 +11242,7 @@ PACK_32 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32079.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32079.jpg"
   },
   {
     "name": "Mystique",
@@ -11250,7 +11250,7 @@ PACK_32 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32080.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32080.jpg"
   },
   {
     "name": "Metamorphic Mayhem",
@@ -11258,7 +11258,7 @@ PACK_32 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32081.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32081.jpg"
   },
   {
     "name": "Infiltration",
@@ -11266,7 +11266,7 @@ PACK_32 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32082.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32082.jpg"
   },
   {
     "name": "Shapeshifter Surprise",
@@ -11274,7 +11274,7 @@ PACK_32 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32083.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32083.jpg"
   },
   {
     "name": "Sentinel I",
@@ -11282,7 +11282,7 @@ PACK_32 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32084.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32084.jpg"
   },
   {
     "name": "Sentinel II",
@@ -11290,7 +11290,7 @@ PACK_32 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32085.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32085.jpg"
   },
   {
     "name": "Sentinel III",
@@ -11298,31 +11298,31 @@ PACK_32 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32086.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32086.jpg"
   },
   {
     "name": "Night of the Sentinels A",
     "code": "32087a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32087B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32087A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32087B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32087A.jpg"
   },
   {
     "name": "Night of the Sentinels B",
     "code": "32087b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32087A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32087B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32087A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32087B.jpg"
   },
   {
     "name": "Mutant at the Mall",
     "code": "32088a",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32088B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32088A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32088B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32088A.jpg"
   },
   {
     "name": "Jubilee",
@@ -11330,8 +11330,8 @@ PACK_32 = [[
     "subname": "Jubilation Lee",
     "type_code": "ally",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32088A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32088B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32088A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32088B.jpg"
   },
   {
     "name": "Rictor",
@@ -11340,7 +11340,7 @@ PACK_32 = [[
     "type_code": "ally",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32089.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32089.jpg"
   },
   {
     "name": "Boom Boom",
@@ -11349,7 +11349,7 @@ PACK_32 = [[
     "type_code": "ally",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32090.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32090.jpg"
   },
   {
     "name": "Cannonball",
@@ -11358,7 +11358,7 @@ PACK_32 = [[
     "type_code": "ally",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32091.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32091.jpg"
   },
   {
     "name": "Wolfsbane",
@@ -11367,7 +11367,7 @@ PACK_32 = [[
     "type_code": "ally",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32092.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32092.jpg"
   },
   {
     "name": "Sentinel Mark IV",
@@ -11375,7 +11375,7 @@ PACK_32 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32093.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32093.jpg"
   },
   {
     "name": "Gauntlet Beam",
@@ -11383,7 +11383,7 @@ PACK_32 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32094.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32094.jpg"
   },
   {
     "name": "Learning A.I.",
@@ -11391,7 +11391,7 @@ PACK_32 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32095.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32095.jpg"
   },
   {
     "name": "Adaptive Armor",
@@ -11399,7 +11399,7 @@ PACK_32 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32096.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32096.jpg"
   },
   {
     "name": "Self-Repair",
@@ -11407,7 +11407,7 @@ PACK_32 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32097.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32097.jpg"
   },
   {
     "name": "Mutant Detected",
@@ -11415,7 +11415,7 @@ PACK_32 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32098.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32098.jpg"
   },
   {
     "name": "Warn the Others",
@@ -11423,7 +11423,7 @@ PACK_32 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32099.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32099.jpg"
   },
   {
     "name": "Abduction Protocols",
@@ -11431,7 +11431,7 @@ PACK_32 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32100.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32100.jpg"
   },
   {
     "name": "Sentinel Mark II",
@@ -11439,7 +11439,7 @@ PACK_32 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32101.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32101.jpg"
   },
   {
     "name": "Sentinel Mark III",
@@ -11447,7 +11447,7 @@ PACK_32 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32102.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32102.jpg"
   },
   {
     "name": "Energy Barrier",
@@ -11455,7 +11455,7 @@ PACK_32 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32103.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32103.jpg"
   },
   {
     "name": "Operation Zero Tolerance",
@@ -11463,7 +11463,7 @@ PACK_32 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32104.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32104.jpg"
   },
   {
     "name": "Sentinel Mark V",
@@ -11471,7 +11471,7 @@ PACK_32 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32105.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32105.jpg"
   },
   {
     "name": "Sentinel Mark VI",
@@ -11479,7 +11479,7 @@ PACK_32 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32106.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32106.jpg"
   },
   {
     "name": "Targeted for Elimination",
@@ -11487,7 +11487,7 @@ PACK_32 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32107.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32107.jpg"
   },
   {
     "name": "Relentless Robots",
@@ -11495,7 +11495,7 @@ PACK_32 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32108.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32108.jpg"
   },
   {
     "name": "Master Mold I",
@@ -11503,7 +11503,7 @@ PACK_32 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32109.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32109.jpg"
   },
   {
     "name": "Master Mold II",
@@ -11511,7 +11511,7 @@ PACK_32 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32110.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32110.jpg"
   },
   {
     "name": "Master Mold III",
@@ -11519,39 +11519,39 @@ PACK_32 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32111.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32111.jpg"
   },
   {
     "name": "The Sentinel Factory A",
     "code": "32112a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32112B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32112A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32112B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32112A.jpg"
   },
   {
     "name": "The Sentinel Factory B",
     "code": "32112b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32112A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32112B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32112A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32112B.jpg"
   },
   {
     "name": "Master Mold's Agenda A",
     "code": "32113a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32113B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32113A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32113B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32113A.jpg"
   },
   {
     "name": "Master Mold's Agenda B",
     "code": "32113b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32113A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32113B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32113A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32113B.jpg"
   },
   {
     "name": "Sentinel Mark VIII",
@@ -11559,7 +11559,7 @@ PACK_32 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32114.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32114.jpg"
   },
   {
     "name": "Unit Upgrade",
@@ -11567,7 +11567,7 @@ PACK_32 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32115.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32115.jpg"
   },
   {
     "name": "Stun Beam",
@@ -11575,7 +11575,7 @@ PACK_32 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32116.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32116.jpg"
   },
   {
     "name": "Master Mold's Children",
@@ -11583,7 +11583,7 @@ PACK_32 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32117.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32117.jpg"
   },
   {
     "name": "Shields Up",
@@ -11591,7 +11591,7 @@ PACK_32 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32118.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32118.jpg"
   },
   {
     "name": "Intruder Alert!",
@@ -11599,7 +11599,7 @@ PACK_32 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32119.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32119.jpg"
   },
   {
     "name": "Insert Virus Program",
@@ -11607,151 +11607,151 @@ PACK_32 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32120.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32120.jpg"
   },
   {
     "name": "Avalanche A",
     "code": "32121a",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32121B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32121A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32121B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32121A.jpg"
   },
   {
     "name": "Avalanche B",
     "code": "32121b",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32121A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32121B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32121A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32121B.jpg"
   },
   {
     "name": "Blob A",
     "code": "32122a",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32122B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32122A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32122B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32122A.jpg"
   },
   {
     "name": "Blob B",
     "code": "32122b",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32122A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32122B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32122A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32122B.jpg"
   },
   {
     "name": "Pyro A",
     "code": "32123a",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32123B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32123A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32123B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32123A.jpg"
   },
   {
     "name": "Pyro B",
     "code": "32123b",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32123A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32123B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32123A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32123B.jpg"
   },
   {
     "name": "Toad A",
     "code": "32124a",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32124B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32124A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32124B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32124A.jpg"
   },
   {
     "name": "Toad B",
     "code": "32124b",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32124A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32124B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32124A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32124B.jpg"
   },
   {
     "name": "The Brotherhood Strikes! A",
     "code": "32125a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32125B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32125A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32125B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32125A.jpg"
   },
   {
     "name": "The Brotherhood Strikes! B",
     "code": "32125b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32125A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32125B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32125A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32125B.jpg"
   },
   {
     "name": "The Atrium A",
     "code": "32126a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32126B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32126A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32126B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32126A.jpg"
   },
   {
     "name": "The Atrium B",
     "code": "32126b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32126A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32126B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32126A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32126B.jpg"
   },
   {
     "name": "The Cafeteria A",
     "code": "32127a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32127B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32127A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32127B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32127A.jpg"
   },
   {
     "name": "The Cafeteria B",
     "code": "32127b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32127A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32127B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32127A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32127B.jpg"
   },
   {
     "name": "The Basketball Court A",
     "code": "32128a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32128B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32128A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32128B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32128A.jpg"
   },
   {
     "name": "The Basketball Court B",
     "code": "32128b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32128A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32128B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32128A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32128B.jpg"
   },
   {
     "name": "The Courtyard A",
     "code": "32129a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32129B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32129A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32129B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32129A.jpg"
   },
   {
     "name": "The Courtyard B",
     "code": "32129b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32129A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32129B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32129A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32129B.jpg"
   },
   {
     "name": "Save the School",
@@ -11759,7 +11759,7 @@ PACK_32 = [[
     "type_code": "environment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32130.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32130.jpg"
   },
   {
     "name": "Brotherhood Beatdown",
@@ -11767,7 +11767,7 @@ PACK_32 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32131.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32131.jpg"
   },
   {
     "name": "Ground Swell",
@@ -11775,7 +11775,7 @@ PACK_32 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32132.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32132.jpg"
   },
   {
     "name": "Immovable",
@@ -11783,7 +11783,7 @@ PACK_32 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32133.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32133.jpg"
   },
   {
     "name": "Pyromaniac",
@@ -11791,7 +11791,7 @@ PACK_32 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32134.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32134.jpg"
   },
   {
     "name": "Hopping Mad",
@@ -11799,7 +11799,7 @@ PACK_32 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32135.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32135.jpg"
   },
   {
     "name": "Protect the Students",
@@ -11807,7 +11807,7 @@ PACK_32 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32136.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32136.jpg"
   },
   {
     "name": "Under Siege",
@@ -11815,7 +11815,7 @@ PACK_32 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32137.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32137.jpg"
   },
   {
     "name": "Magneto I",
@@ -11823,7 +11823,7 @@ PACK_32 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32138.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32138.jpg"
   },
   {
     "name": "Magneto II",
@@ -11831,7 +11831,7 @@ PACK_32 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32139.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32139.jpg"
   },
   {
     "name": "Magneto III",
@@ -11839,87 +11839,87 @@ PACK_32 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32140.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32140.jpg"
   },
   {
     "name": "Asteroid M A",
     "code": "32141a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32141B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32141A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32141B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32141A.jpg"
   },
   {
     "name": "Asteroid M B",
     "code": "32141b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32141A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32141B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32141A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32141B.jpg"
   },
   {
     "name": "Factory Online A",
     "code": "32142a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32142B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32142A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32142B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32142A.jpg"
   },
   {
     "name": "Factory Online B",
     "code": "32142b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32142A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32142B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32142A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32142B.jpg"
   },
   {
     "name": "The Rule of Magnus A",
     "code": "32143a",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32143B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32143A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32143B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32143A.jpg"
   },
   {
     "name": "The Rule of Magnus B",
     "code": "32143b",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32143A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32143B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32143A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32143B.jpg"
   },
   {
     "name": "Boarding Party",
     "code": "32144a",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32144B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32144A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32144B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32144A.jpg"
   },
   {
     "name": "Sabotage Master Mold",
     "code": "32144b",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32144A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32144B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32144A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32144B.jpg"
   },
   {
     "name": "Orbital Decay",
     "code": "32145a",
     "type_code": "side_scheme",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32145B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32145A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32145B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32145A.jpg"
   },
   {
     "name": "Physical Strain",
     "code": "32145b",
     "type_code": "attachment",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32145A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32145B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32145A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32145B.jpg"
   },
   {
     "name": "M-Type Sentinel",
@@ -11927,7 +11927,7 @@ PACK_32 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32146.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32146.jpg"
   },
   {
     "name": "Magneto's Helmet",
@@ -11935,7 +11935,7 @@ PACK_32 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32147.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32147.jpg"
   },
   {
     "name": "Magneto's Armor",
@@ -11943,7 +11943,7 @@ PACK_32 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32148.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32148.jpg"
   },
   {
     "name": "Magnetic Bubble",
@@ -11951,7 +11951,7 @@ PACK_32 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32149.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32149.jpg"
   },
   {
     "name": "Wrapped in Metal",
@@ -11959,7 +11959,7 @@ PACK_32 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32150.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32150.jpg"
   },
   {
     "name": "Master of Magnetism",
@@ -11967,7 +11967,7 @@ PACK_32 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32151.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32151.jpg"
   },
   {
     "name": "Electric Shock",
@@ -11975,7 +11975,7 @@ PACK_32 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32152.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32152.jpg"
   },
   {
     "name": "Electromagnetic Blast",
@@ -11983,7 +11983,7 @@ PACK_32 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32153.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32153.jpg"
   },
   {
     "name": "Metal Shards",
@@ -11991,7 +11991,7 @@ PACK_32 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32154.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32154.jpg"
   },
   {
     "name": "Magnetic Missile",
@@ -11999,7 +11999,7 @@ PACK_32 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32155.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32155.jpg"
   },
   {
     "name": "Magnetic Mayhem",
@@ -12007,7 +12007,7 @@ PACK_32 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32156.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32156.jpg"
   },
   {
     "name": "Magnetically Sealed",
@@ -12015,7 +12015,7 @@ PACK_32 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32157.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32157.jpg"
   },
   {
     "name": "Seized!",
@@ -12023,7 +12023,7 @@ PACK_32 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32158.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32158.jpg"
   },
   {
     "name": "Fabian Cortez",
@@ -12031,7 +12031,7 @@ PACK_32 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32159.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32159.jpg"
   },
   {
     "name": "Amelia Voght",
@@ -12039,7 +12039,7 @@ PACK_32 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32160.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32160.jpg"
   },
   {
     "name": "Senyaka",
@@ -12047,7 +12047,7 @@ PACK_32 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32161.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32161.jpg"
   },
   {
     "name": "Delgado",
@@ -12055,7 +12055,7 @@ PACK_32 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32162.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32162.jpg"
   },
   {
     "name": "Unuscione",
@@ -12063,7 +12063,7 @@ PACK_32 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32163.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32163.jpg"
   },
   {
     "name": "Zeal for the Cause",
@@ -12071,7 +12071,7 @@ PACK_32 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32164.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32164.jpg"
   },
   {
     "name": "The Acolytes",
@@ -12079,7 +12079,7 @@ PACK_32 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32165.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32165.jpg"
   },
   {
     "name": "Nimrod",
@@ -12087,7 +12087,7 @@ PACK_32 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32166.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32166.jpg"
   },
   {
     "name": "Bastion",
@@ -12095,7 +12095,7 @@ PACK_32 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32167.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32167.jpg"
   },
   {
     "name": "Nimrod's Portal",
@@ -12103,7 +12103,7 @@ PACK_32 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32168.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32168.jpg"
   },
   {
     "name": "Bastion's Machinations",
@@ -12111,7 +12111,7 @@ PACK_32 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32169.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32169.jpg"
   },
   {
     "name": "Nano-Sentinel Tech",
@@ -12119,7 +12119,7 @@ PACK_32 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/32170.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32170.jpg"
   }
 ]
 ]]
@@ -12130,16 +12130,16 @@ PACK_33 = [[
     "code": "33001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33001B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33001A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/33001B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/33001A.jpg"
   },
   {
     "name": "Scott Summers",
     "code": "33001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33001A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33001B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/33001A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/33001B.jpg"
   },
   {
     "name": "Phoenix",
@@ -12148,7 +12148,7 @@ PACK_33 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33002.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/33002.jpg"
   },
   {
     "name": "Ruby Quartz Visor",
@@ -12156,7 +12156,7 @@ PACK_33 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33003.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/33003.jpg"
   },
   {
     "name": "Field Commander",
@@ -12164,7 +12164,7 @@ PACK_33 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33004.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/33004.jpg"
   },
   {
     "name": "Exploit Weakness",
@@ -12172,7 +12172,7 @@ PACK_33 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33005.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/33005.jpg"
   },
   {
     "name": "Practiced Defense",
@@ -12180,7 +12180,7 @@ PACK_33 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33006.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/33006.jpg"
   },
   {
     "name": "Priority Target",
@@ -12188,7 +12188,7 @@ PACK_33 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33007.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/33007.jpg"
   },
   {
     "name": "Full Blast",
@@ -12196,7 +12196,7 @@ PACK_33 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33008.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/33008.jpg"
   },
   {
     "name": "Rocket Beam",
@@ -12204,7 +12204,7 @@ PACK_33 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33009.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/33009.jpg"
   },
   {
     "name": "Tactical Brillance",
@@ -12212,7 +12212,7 @@ PACK_33 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33010.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/33010.jpg"
   },
   {
     "name": "Beast",
@@ -12221,7 +12221,7 @@ PACK_33 = [[
     "type_code": "ally",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33011.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/33011.jpg"
   },
   {
     "name": "Dust",
@@ -12230,7 +12230,7 @@ PACK_33 = [[
     "type_code": "ally",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33012.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/33012.jpg"
   },
   {
     "name": "Rockslide",
@@ -12239,7 +12239,7 @@ PACK_33 = [[
     "type_code": "ally",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33013.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/33013.jpg"
   },
   {
     "name": "Blindfold",
@@ -12248,7 +12248,7 @@ PACK_33 = [[
     "type_code": "ally",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33014.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/33014.jpg"
   },
   {
     "name": "Danger Room Training",
@@ -12256,7 +12256,7 @@ PACK_33 = [[
     "type_code": "upgrade",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33015.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/33015.jpg"
   },
   {
     "name": "Coordinated Attack",
@@ -12264,7 +12264,7 @@ PACK_33 = [[
     "type_code": "upgrade",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33016.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/33016.jpg"
   },
   {
     "code": "33017",
@@ -12276,7 +12276,7 @@ PACK_33 = [[
     "type_code": "resource",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33018.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/33018.jpg"
   },
   {
     "name": "Angel",
@@ -12285,7 +12285,7 @@ PACK_33 = [[
     "type_code": "ally",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33019.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/33019.jpg"
   },
   {
     "name": "Utopia",
@@ -12293,7 +12293,7 @@ PACK_33 = [[
     "type_code": "support",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33020.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/33020.jpg"
   },
   {
     "name": "Danger Room",
@@ -12301,7 +12301,7 @@ PACK_33 = [[
     "type_code": "support",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33021.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/33021.jpg"
   },
   {
     "name": "Game Time",
@@ -12309,7 +12309,7 @@ PACK_33 = [[
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33022.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/33022.jpg"
   },
   {
     "name": "Psychic Rapport",
@@ -12317,7 +12317,7 @@ PACK_33 = [[
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33023.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/33023.jpg"
   },
   {
     "code": "33024",
@@ -12337,7 +12337,7 @@ PACK_33 = [[
     "type_code": "upgrade",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33032.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/33032.jpg"
   },
   {
     "name": "Befuddle",
@@ -12345,7 +12345,7 @@ PACK_33 = [[
     "type_code": "upgrade",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33033.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/33033.jpg"
   },
   {
     "name": "Pinned Down",
@@ -12353,7 +12353,7 @@ PACK_33 = [[
     "type_code": "upgrade",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33034.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/33034.jpg"
   },
   {
     "name": "Honorary X-Men",
@@ -12361,7 +12361,7 @@ PACK_33 = [[
     "type_code": "upgrade",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33035.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/33035.jpg"
   },
   {
     "name": "Lost Visor",
@@ -12369,7 +12369,7 @@ PACK_33 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33027.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/33027.jpg"
   },
   {
     "name": "Mister Sinister",
@@ -12377,7 +12377,7 @@ PACK_33 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33028.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/33028.jpg"
   },
   {
     "name": "Genetic Manipulation",
@@ -12385,7 +12385,7 @@ PACK_33 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33029.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/33029.jpg"
   },
   {
     "name": "Gene Therapy",
@@ -12393,7 +12393,7 @@ PACK_33 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33030.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/33030.jpg"
   },
   {
     "name": "Concussive Force",
@@ -12401,7 +12401,7 @@ PACK_33 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/33031.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/33031.jpg"
   }
 ]
 ]]
@@ -12412,32 +12412,32 @@ PACK_34 = [[
     "code": "34001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34001B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34001A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/34001B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/34001A.jpg"
   },
   {
     "name": "Jean Grey",
     "code": "34001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34001A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34001B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/34001A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/34001B.jpg"
   },
   {
     "name": "Phoenix Force A",
     "code": "34002a",
     "type_code": "upgrade",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34002B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34002A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/34002B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/34002A.jpg"
   },
   {
     "name": "Phoenix Force B",
     "code": "34002b",
     "type_code": "upgrade",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34002A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34002B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/34002A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/34002B.jpg"
   },
   {
     "name": "Cyclops",
@@ -12445,7 +12445,7 @@ PACK_34 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34003.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/34003.jpg"
   },
   {
     "name": "White Hot Room",
@@ -12453,7 +12453,7 @@ PACK_34 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34004.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/34004.jpg"
   },
   {
     "name": "Phoenix Suit",
@@ -12461,7 +12461,7 @@ PACK_34 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34005.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/34005.jpg"
   },
   {
     "name": "Rise from the Ashes",
@@ -12469,7 +12469,7 @@ PACK_34 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34006.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/34006.jpg"
   },
   {
     "name": "Telekinetic Shield",
@@ -12477,7 +12477,7 @@ PACK_34 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34007.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/34007.jpg"
   },
   {
     "name": "Mental Paralysis",
@@ -12485,7 +12485,7 @@ PACK_34 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34008.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/34008.jpg"
   },
   {
     "name": "Mind Control",
@@ -12493,7 +12493,7 @@ PACK_34 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34009.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/34009.jpg"
   },
   {
     "name": "Telekinetic Attack",
@@ -12501,7 +12501,7 @@ PACK_34 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34010.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/34010.jpg"
   },
   {
     "name": "Psychic Blast",
@@ -12509,7 +12509,7 @@ PACK_34 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34011.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/34011.jpg"
   },
   {
     "name": "Telepathic Trickery",
@@ -12517,7 +12517,7 @@ PACK_34 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34012.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/34012.jpg"
   },
   {
     "name": "Phoenix Firebird",
@@ -12525,7 +12525,7 @@ PACK_34 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34013.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/34013.jpg"
   },
   {
     "name": "Banshee",
@@ -12534,7 +12534,7 @@ PACK_34 = [[
     "type_code": "ally",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34014.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/34014.jpg"
   },
   {
     "name": "Marvel Girl",
@@ -12543,7 +12543,7 @@ PACK_34 = [[
     "type_code": "ally",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34015.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/34015.jpg"
   },
   {
     "name": "Mission Training",
@@ -12551,7 +12551,7 @@ PACK_34 = [[
     "type_code": "upgrade",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34016.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/34016.jpg"
   },
   {
     "name": "Psychic Manipulation",
@@ -12559,7 +12559,7 @@ PACK_34 = [[
     "type_code": "event",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34017.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/34017.jpg"
   },
   {
     "name": "Mutant Peacekeepers",
@@ -12567,7 +12567,7 @@ PACK_34 = [[
     "type_code": "event",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34018.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/34018.jpg"
   },
   {
     "code": "34019",
@@ -12579,7 +12579,7 @@ PACK_34 = [[
     "type_code": "resource",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34020.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/34020.jpg"
   },
   {
     "name": "Storm",
@@ -12588,7 +12588,7 @@ PACK_34 = [[
     "type_code": "ally",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34021.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/34021.jpg"
   },
   {
     "name": "Cerebro",
@@ -12596,7 +12596,7 @@ PACK_34 = [[
     "type_code": "support",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34022.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/34022.jpg"
   },
   {
     "code": "34023",
@@ -12624,7 +12624,7 @@ PACK_34 = [[
     "type_code": "event",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34032.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/34032.jpg"
   },
   {
     "name": "Psychic Misdirection",
@@ -12632,7 +12632,7 @@ PACK_34 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34033.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/34033.jpg"
   },
   {
     "name": "Psychic Kicker",
@@ -12640,7 +12640,7 @@ PACK_34 = [[
     "type_code": "event",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34034.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/34034.jpg"
   },
   {
     "name": "Soul Sisters",
@@ -12648,7 +12648,7 @@ PACK_34 = [[
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34035.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/34035.jpg"
   },
   {
     "name": "Burning Hunger",
@@ -12656,7 +12656,7 @@ PACK_34 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34028.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/34028.jpg"
   },
   {
     "name": "Dark Phoenix",
@@ -12664,7 +12664,7 @@ PACK_34 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34029.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/34029.jpg"
   },
   {
     "name": "Consume the World",
@@ -12672,7 +12672,7 @@ PACK_34 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34030.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/34030.jpg"
   },
   {
     "name": "Fiery Rage",
@@ -12680,7 +12680,7 @@ PACK_34 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/34031.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/34031.jpg"
   }
 ]
 ]]
@@ -12692,7 +12692,7 @@ PACK_90 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/90001.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/90001.jpg"
   },
   {
     "name": "Judge, Jury, Executioner",
@@ -12700,7 +12700,7 @@ PACK_90 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/90002.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/90002.jpg"
   },
   {
     "name": "The Accused",
@@ -12708,7 +12708,7 @@ PACK_90 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/90003.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/90003.jpg"
   },
   {
     "name": "Bring the Hammer Down",
@@ -12716,7 +12716,7 @@ PACK_90 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/90004.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/90004.jpg"
   },
   {
     "name": "You Dare Oppose Me?",
@@ -12724,7 +12724,7 @@ PACK_90 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/90005.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/90005.jpg"
   }
 ]
 ]]
@@ -12735,16 +12735,16 @@ PACK_08 = [[
     "code": "08001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08001B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08001A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/08001B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/08001A.jpg"
   },
   {
     "name": "Natasha Romanoff",
     "code": "08001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08001A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08001B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/08001A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/08001B.jpg"
   },
   {
     "name": "Winter Soldier",
@@ -12753,7 +12753,7 @@ PACK_08 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08002.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/08002.jpg"
   },
   {
     "name": "Covert Ops",
@@ -12761,7 +12761,7 @@ PACK_08 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08003.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/08003.jpg"
   },
   {
     "name": "Dance of Death",
@@ -12769,7 +12769,7 @@ PACK_08 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08004.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/08004.jpg"
   },
   {
     "name": "Safe House #29",
@@ -12777,7 +12777,7 @@ PACK_08 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08005.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/08005.jpg"
   },
   {
     "name": "Attacrobatics",
@@ -12785,7 +12785,7 @@ PACK_08 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08006.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/08006.jpg"
   },
   {
     "name": "Black Widow's Gauntlet",
@@ -12793,7 +12793,7 @@ PACK_08 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08007.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/08007.jpg"
   },
   {
     "name": "Grappling Hook",
@@ -12801,7 +12801,7 @@ PACK_08 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08008.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/08008.jpg"
   },
   {
     "name": "Synth-Suit",
@@ -12809,7 +12809,7 @@ PACK_08 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08009.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/08009.jpg"
   },
   {
     "name": "Widow's Bite",
@@ -12817,7 +12817,7 @@ PACK_08 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08010.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/08010.jpg"
   },
   {
     "name": "Agent Coulson",
@@ -12825,7 +12825,7 @@ PACK_08 = [[
     "type_code": "ally",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08011.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/08011.jpg"
   },
   {
     "name": "Quake",
@@ -12834,7 +12834,7 @@ PACK_08 = [[
     "type_code": "ally",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08012.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/08012.jpg"
   },
   {
     "name": "Stealth Strike",
@@ -12842,7 +12842,7 @@ PACK_08 = [[
     "type_code": "event",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08013.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/08013.jpg"
   },
   {
     "code": "08014",
@@ -12862,7 +12862,7 @@ PACK_08 = [[
     "type_code": "upgrade",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08017.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/08017.jpg"
   },
   {
     "name": "Spycraft",
@@ -12870,7 +12870,7 @@ PACK_08 = [[
     "type_code": "upgrade",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08018.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/08018.jpg"
   },
   {
     "code": "08019",
@@ -12894,7 +12894,7 @@ PACK_08 = [[
     "type_code": "support",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08023.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/08023.jpg"
   },
   {
     "name": "Target Acquired",
@@ -12902,7 +12902,7 @@ PACK_08 = [[
     "type_code": "upgrade",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08024.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/08024.jpg"
   },
   {
     "name": "Counterattack",
@@ -12910,7 +12910,7 @@ PACK_08 = [[
     "type_code": "upgrade",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08030.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/08030.jpg"
   },
   {
     "name": "Rapid Response",
@@ -12918,7 +12918,7 @@ PACK_08 = [[
     "type_code": "upgrade",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08031.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/08031.jpg"
   },
   {
     "name": "Defensive Stance",
@@ -12926,7 +12926,7 @@ PACK_08 = [[
     "type_code": "upgrade",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08032.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/08032.jpg"
   },
   {
     "name": "Espionage",
@@ -12934,7 +12934,7 @@ PACK_08 = [[
     "type_code": "upgrade",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08033.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/08033.jpg"
   },
   {
     "name": "Burn Notice",
@@ -12942,7 +12942,7 @@ PACK_08 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08025.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/08025.jpg"
   },
   {
     "name": "Taskmaster",
@@ -12950,7 +12950,7 @@ PACK_08 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08026.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/08026.jpg"
   },
   {
     "name": "Killer for Hire",
@@ -12958,7 +12958,7 @@ PACK_08 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08027.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/08027.jpg"
   },
   {
     "name": "Hydra Mercenary",
@@ -12966,7 +12966,7 @@ PACK_08 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08028.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/08028.jpg"
   },
   {
     "name": "Deadly Shot",
@@ -12974,7 +12974,7 @@ PACK_08 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/08029.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/08029.jpg"
   }
 ]
 ]]
@@ -12985,16 +12985,16 @@ PACK_03 = [[
     "code": "03001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03001B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03001A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/03001B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/03001A.jpg"
   },
   {
     "name": "Steve Rogers",
     "code": "03001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03001A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03001B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/03001A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/03001B.jpg"
   },
   {
     "name": "Agent 13",
@@ -13003,7 +13003,7 @@ PACK_03 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03002.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/03002.jpg"
   },
   {
     "name": "Fearless Determination",
@@ -13011,7 +13011,7 @@ PACK_03 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03003.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/03003.jpg"
   },
   {
     "name": "Heroic Strike",
@@ -13019,7 +13019,7 @@ PACK_03 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03004.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/03004.jpg"
   },
   {
     "name": "Shield Block",
@@ -13027,7 +13027,7 @@ PACK_03 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03005.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/03005.jpg"
   },
   {
     "name": "Shield Toss",
@@ -13035,7 +13035,7 @@ PACK_03 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03006.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/03006.jpg"
   },
   {
     "name": "Steve's Apartment",
@@ -13043,7 +13043,7 @@ PACK_03 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03007.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/03007.jpg"
   },
   {
     "name": "Captain America's Helmet",
@@ -13051,7 +13051,7 @@ PACK_03 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03008.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/03008.jpg"
   },
   {
     "name": "Captain America's Shield",
@@ -13059,7 +13059,7 @@ PACK_03 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03009.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/03009.jpg"
   },
   {
     "name": "Super-Soldier Serum",
@@ -13067,7 +13067,7 @@ PACK_03 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03010.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/03010.jpg"
   },
   {
     "name": "Falcon",
@@ -13076,7 +13076,7 @@ PACK_03 = [[
     "type_code": "ally",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03011.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/03011.jpg"
   },
   {
     "code": "03012",
@@ -13089,7 +13089,7 @@ PACK_03 = [[
     "type_code": "ally",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03013.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/03013.jpg"
   },
   {
     "name": "Wonder Man",
@@ -13098,7 +13098,7 @@ PACK_03 = [[
     "type_code": "ally",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03014.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/03014.jpg"
   },
   {
     "name": "Avengers Assemble!",
@@ -13106,7 +13106,7 @@ PACK_03 = [[
     "type_code": "event",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03015.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/03015.jpg"
   },
   {
     "code": "03016",
@@ -13118,7 +13118,7 @@ PACK_03 = [[
     "type_code": "event",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03017.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/03017.jpg"
   },
   {
     "code": "03018",
@@ -13130,7 +13130,7 @@ PACK_03 = [[
     "type_code": "support",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03019.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/03019.jpg"
   },
   {
     "code": "03020",
@@ -13154,7 +13154,7 @@ PACK_03 = [[
     "type_code": "support",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03024.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/03024.jpg"
   },
   {
     "name": "Honorary Avenger",
@@ -13162,7 +13162,7 @@ PACK_03 = [[
     "type_code": "upgrade",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03025.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/03025.jpg"
   },
   {
     "name": "Enraged",
@@ -13170,7 +13170,7 @@ PACK_03 = [[
     "type_code": "upgrade",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03031.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/03031.jpg"
   },
   {
     "name": "Followed",
@@ -13178,7 +13178,7 @@ PACK_03 = [[
     "type_code": "upgrade",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03032.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/03032.jpg"
   },
   {
     "name": "Expert Defense",
@@ -13186,7 +13186,7 @@ PACK_03 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03033.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/03033.jpg"
   },
   {
     "name": "Enhanced Awareness",
@@ -13194,7 +13194,7 @@ PACK_03 = [[
     "type_code": "upgrade",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03034.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/03034.jpg"
   },
   {
     "name": "Man Out of Time",
@@ -13202,7 +13202,7 @@ PACK_03 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03026.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/03026.jpg"
   },
   {
     "name": "Hit Squad",
@@ -13210,7 +13210,7 @@ PACK_03 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03027.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/03027.jpg"
   },
   {
     "name": "Baron Zemo",
@@ -13218,7 +13218,7 @@ PACK_03 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03028.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/03028.jpg"
   },
   {
     "name": "Hydra Soldier",
@@ -13226,7 +13226,7 @@ PACK_03 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03029.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/03029.jpg"
   },
   {
     "name": "Hail Hydra!",
@@ -13234,7 +13234,7 @@ PACK_03 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/03030.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/03030.jpg"
   }
 ]
 ]]
@@ -13245,16 +13245,16 @@ PACK_01 = [[
     "code": "01001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01001B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01001A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/01001B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01001A.jpg"
   },
   {
     "name": "Peter Parker",
     "code": "01001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01001A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01001B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/01001A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01001B.jpg"
   },
   {
     "name": "Black Cat",
@@ -13263,7 +13263,7 @@ PACK_01 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01002.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01002.jpg"
   },
   {
     "name": "Backflip",
@@ -13271,7 +13271,7 @@ PACK_01 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01003.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01003.jpg"
   },
   {
     "name": "Enhanced Spider-Sense",
@@ -13279,7 +13279,7 @@ PACK_01 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01004.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01004.jpg"
   },
   {
     "name": "Swinging Web Kick",
@@ -13287,7 +13287,7 @@ PACK_01 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01005.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01005.jpg"
   },
   {
     "name": "Aunt May",
@@ -13295,7 +13295,7 @@ PACK_01 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01006.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01006.jpg"
   },
   {
     "name": "Spider-Tracer",
@@ -13303,7 +13303,7 @@ PACK_01 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01007.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01007.jpg"
   },
   {
     "name": "Web-Shooter",
@@ -13311,7 +13311,7 @@ PACK_01 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01008.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01008.jpg"
   },
   {
     "name": "Webbed Up",
@@ -13319,23 +13319,23 @@ PACK_01 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01009.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01009.jpg"
   },
   {
     "name": "Captain Marvel",
     "code": "01010a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01010B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01010A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/01010B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01010A.jpg"
   },
   {
     "name": "Carol Danvers",
     "code": "01010b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01010A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01010B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/01010A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01010B.jpg"
   },
   {
     "name": "Spider-Woman",
@@ -13344,7 +13344,7 @@ PACK_01 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01011.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01011.jpg"
   },
   {
     "name": "Crisis Interdiction",
@@ -13352,7 +13352,7 @@ PACK_01 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01012.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01012.jpg"
   },
   {
     "name": "Photonic Blast",
@@ -13360,7 +13360,7 @@ PACK_01 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01013.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01013.jpg"
   },
   {
     "name": "Energy Absorption",
@@ -13368,7 +13368,7 @@ PACK_01 = [[
     "type_code": "resource",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01014.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01014.jpg"
   },
   {
     "name": "Alpha Flight Station",
@@ -13376,7 +13376,7 @@ PACK_01 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01015.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01015.jpg"
   },
   {
     "name": "Captain Marvel's Helmet",
@@ -13384,7 +13384,7 @@ PACK_01 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01016.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01016.jpg"
   },
   {
     "name": "Cosmic Flight",
@@ -13392,7 +13392,7 @@ PACK_01 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01017.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01017.jpg"
   },
   {
     "name": "Energy Channel",
@@ -13400,23 +13400,23 @@ PACK_01 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01018.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01018.jpg"
   },
   {
     "name": "She-Hulk",
     "code": "01019a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01019B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01019A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/01019B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01019A.jpg"
   },
   {
     "name": "Jennifer Walters",
     "code": "01019b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01019A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01019B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/01019A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01019B.jpg"
   },
   {
     "name": "Hellcat",
@@ -13425,7 +13425,7 @@ PACK_01 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01020.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01020.jpg"
   },
   {
     "name": "Gamma Slam",
@@ -13433,7 +13433,7 @@ PACK_01 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01021.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01021.jpg"
   },
   {
     "name": "Ground Stomp",
@@ -13441,7 +13441,7 @@ PACK_01 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01022.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01022.jpg"
   },
   {
     "name": "Legal Practice",
@@ -13449,7 +13449,7 @@ PACK_01 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01023.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01023.jpg"
   },
   {
     "name": "One-Two Punch",
@@ -13457,7 +13457,7 @@ PACK_01 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01024.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01024.jpg"
   },
   {
     "name": "Split Personality",
@@ -13465,7 +13465,7 @@ PACK_01 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01025.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01025.jpg"
   },
   {
     "name": "Superhuman Law Division",
@@ -13473,7 +13473,7 @@ PACK_01 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01026.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01026.jpg"
   },
   {
     "name": "Focused Rage",
@@ -13481,7 +13481,7 @@ PACK_01 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01027.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01027.jpg"
   },
   {
     "name": "Superhuman Strength",
@@ -13489,23 +13489,23 @@ PACK_01 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01028.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01028.jpg"
   },
   {
     "name": "Iron Man",
     "code": "01029a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01029B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01029A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/01029B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01029A.jpg"
   },
   {
     "name": "Tony Stark",
     "code": "01029b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01029A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01029B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/01029A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01029B.jpg"
   },
   {
     "name": "War Machine",
@@ -13514,7 +13514,7 @@ PACK_01 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01030.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01030.jpg"
   },
   {
     "name": "Repulsor Blast",
@@ -13522,7 +13522,7 @@ PACK_01 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01031.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01031.jpg"
   },
   {
     "name": "Supersonic Punch",
@@ -13530,7 +13530,7 @@ PACK_01 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01032.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01032.jpg"
   },
   {
     "name": "Pepper Potts",
@@ -13538,7 +13538,7 @@ PACK_01 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01033.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01033.jpg"
   },
   {
     "name": "Stark Tower",
@@ -13546,7 +13546,7 @@ PACK_01 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01034.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01034.jpg"
   },
   {
     "name": "Arc Reactor",
@@ -13554,7 +13554,7 @@ PACK_01 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01035.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01035.jpg"
   },
   {
     "name": "Mark V Armor",
@@ -13562,7 +13562,7 @@ PACK_01 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01036.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01036.jpg"
   },
   {
     "name": "Mark V Helmet",
@@ -13570,7 +13570,7 @@ PACK_01 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01037.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01037.jpg"
   },
   {
     "name": "Powered Gauntlets",
@@ -13578,7 +13578,7 @@ PACK_01 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01038.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01038.jpg"
   },
   {
     "name": "Rocket Boots",
@@ -13586,23 +13586,23 @@ PACK_01 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01039.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01039.jpg"
   },
   {
     "name": "Black Panther",
     "code": "01040a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01040B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01040A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/01040B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01040A.jpg"
   },
   {
     "name": "T'Challa",
     "code": "01040b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01040A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01040B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/01040A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01040B.jpg"
   },
   {
     "name": "Shuri",
@@ -13610,7 +13610,7 @@ PACK_01 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01041.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01041.jpg"
   },
   {
     "name": "Ancestral Knowledge",
@@ -13618,23 +13618,23 @@ PACK_01 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01042.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01042.jpg"
   },
   {
     "name": "Wakanda Forever!",
     "code": "01043a",
     "type_code": "event",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01043B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01043A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/01043B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01043A.jpg"
   },
   {
     "name": "Wakanda Forever!",
     "code": "01043b",
     "type_code": "event",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01043A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01043B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/01043A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01043B.jpg"
   },
   {
     "name": "Wakanda Forever!",
@@ -13642,7 +13642,7 @@ PACK_01 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01043C.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01043C.jpg"
   },
   {
     "name": "Wakanda Forever!",
@@ -13650,7 +13650,7 @@ PACK_01 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01043D.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01043D.jpg"
   },
   {
     "name": "Vibranium",
@@ -13658,7 +13658,7 @@ PACK_01 = [[
     "type_code": "resource",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01044.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01044.jpg"
   },
   {
     "name": "The Golden City",
@@ -13666,7 +13666,7 @@ PACK_01 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01045.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01045.jpg"
   },
   {
     "name": "Energy Daggers",
@@ -13674,7 +13674,7 @@ PACK_01 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01046.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01046.jpg"
   },
   {
     "name": "Panther Claws",
@@ -13682,7 +13682,7 @@ PACK_01 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01047.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01047.jpg"
   },
   {
     "name": "Tactical Genius",
@@ -13690,7 +13690,7 @@ PACK_01 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01048.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01048.jpg"
   },
   {
     "name": "Vibranium Suit",
@@ -13698,7 +13698,7 @@ PACK_01 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01049.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01049.jpg"
   },
   {
     "name": "Hulk",
@@ -13707,7 +13707,7 @@ PACK_01 = [[
     "type_code": "ally",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01050.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01050.jpg"
   },
   {
     "name": "Tigra",
@@ -13716,7 +13716,7 @@ PACK_01 = [[
     "type_code": "ally",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01051.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01051.jpg"
   },
   {
     "name": "Chase Them Down",
@@ -13724,7 +13724,7 @@ PACK_01 = [[
     "type_code": "event",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01052.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01052.jpg"
   },
   {
     "name": "Relentless Assault",
@@ -13732,7 +13732,7 @@ PACK_01 = [[
     "type_code": "event",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01053.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01053.jpg"
   },
   {
     "name": "Uppercut",
@@ -13740,7 +13740,7 @@ PACK_01 = [[
     "type_code": "event",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01054.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01054.jpg"
   },
   {
     "name": "The Power of Aggression",
@@ -13748,7 +13748,7 @@ PACK_01 = [[
     "type_code": "resource",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01055.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01055.jpg"
   },
   {
     "name": "Tac Team",
@@ -13756,7 +13756,7 @@ PACK_01 = [[
     "type_code": "support",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01056.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01056.jpg"
   },
   {
     "name": "Combat Training",
@@ -13764,7 +13764,7 @@ PACK_01 = [[
     "type_code": "upgrade",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01057.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01057.jpg"
   },
   {
     "name": "Jessica Jones",
@@ -13772,7 +13772,7 @@ PACK_01 = [[
     "type_code": "ally",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01059.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01059.jpg"
   },
   {
     "name": "Daredevil",
@@ -13781,7 +13781,7 @@ PACK_01 = [[
     "type_code": "ally",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01058.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01058.jpg"
   },
   {
     "name": "For Justice!",
@@ -13789,7 +13789,7 @@ PACK_01 = [[
     "type_code": "event",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01060.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01060.jpg"
   },
   {
     "name": "Great Responsibility",
@@ -13797,7 +13797,7 @@ PACK_01 = [[
     "type_code": "event",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01061.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01061.jpg"
   },
   {
     "name": "The Power of Justice",
@@ -13805,7 +13805,7 @@ PACK_01 = [[
     "type_code": "resource",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01062.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01062.jpg"
   },
   {
     "name": "Interrogation Room",
@@ -13813,7 +13813,7 @@ PACK_01 = [[
     "type_code": "support",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01063.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01063.jpg"
   },
   {
     "name": "Surveillance Team",
@@ -13821,7 +13821,7 @@ PACK_01 = [[
     "type_code": "support",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01064.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01064.jpg"
   },
   {
     "name": "Heroic Intuition",
@@ -13829,7 +13829,7 @@ PACK_01 = [[
     "type_code": "upgrade",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01065.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01065.jpg"
   },
   {
     "name": "Hawkeye",
@@ -13838,7 +13838,7 @@ PACK_01 = [[
     "type_code": "ally",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01066.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01066.jpg"
   },
   {
     "name": "Maria Hill",
@@ -13846,7 +13846,7 @@ PACK_01 = [[
     "type_code": "ally",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01067.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01067.jpg"
   },
   {
     "name": "Vision",
@@ -13854,7 +13854,7 @@ PACK_01 = [[
     "type_code": "ally",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01068.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01068.jpg"
   },
   {
     "name": "Get Ready",
@@ -13862,7 +13862,7 @@ PACK_01 = [[
     "type_code": "event",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01069.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01069.jpg"
   },
   {
     "name": "Lead from the Front",
@@ -13870,7 +13870,7 @@ PACK_01 = [[
     "type_code": "event",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01070.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01070.jpg"
   },
   {
     "name": "Make the Call",
@@ -13878,7 +13878,7 @@ PACK_01 = [[
     "type_code": "event",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01071.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01071.jpg"
   },
   {
     "name": "The Power of Leadership",
@@ -13886,7 +13886,7 @@ PACK_01 = [[
     "type_code": "resource",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01072.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01072.jpg"
   },
   {
     "name": "The Triskelion",
@@ -13894,7 +13894,7 @@ PACK_01 = [[
     "type_code": "support",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01073.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01073.jpg"
   },
   {
     "name": "Inspired",
@@ -13902,7 +13902,7 @@ PACK_01 = [[
     "type_code": "upgrade",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01074.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01074.jpg"
   },
   {
     "name": "Black Widow",
@@ -13911,7 +13911,7 @@ PACK_01 = [[
     "type_code": "ally",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01075.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01075.jpg"
   },
   {
     "name": "Luke Cage",
@@ -13919,7 +13919,7 @@ PACK_01 = [[
     "type_code": "ally",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01076.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01076.jpg"
   },
   {
     "name": "Counter-Punch",
@@ -13927,7 +13927,7 @@ PACK_01 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01077.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01077.jpg"
   },
   {
     "name": "Get Behind Me!",
@@ -13935,7 +13935,7 @@ PACK_01 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01078.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01078.jpg"
   },
   {
     "name": "The Power of Protection",
@@ -13943,7 +13943,7 @@ PACK_01 = [[
     "type_code": "resource",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01079.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01079.jpg"
   },
   {
     "name": "Med Team",
@@ -13951,7 +13951,7 @@ PACK_01 = [[
     "type_code": "support",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01080.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01080.jpg"
   },
   {
     "name": "Armored Vest",
@@ -13959,7 +13959,7 @@ PACK_01 = [[
     "type_code": "upgrade",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01081.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01081.jpg"
   },
   {
     "name": "Indomitable",
@@ -13967,7 +13967,7 @@ PACK_01 = [[
     "type_code": "upgrade",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01082.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01082.jpg"
   },
   {
     "name": "Mockingbird",
@@ -13976,7 +13976,7 @@ PACK_01 = [[
     "type_code": "ally",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01083.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01083.jpg"
   },
   {
     "name": "Nick Fury",
@@ -13984,7 +13984,7 @@ PACK_01 = [[
     "type_code": "ally",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01084.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01084.jpg"
   },
   {
     "name": "Emergency",
@@ -13992,7 +13992,7 @@ PACK_01 = [[
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01085.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01085.jpg"
   },
   {
     "name": "First Aid",
@@ -14000,7 +14000,7 @@ PACK_01 = [[
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01086.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01086.jpg"
   },
   {
     "name": "Haymaker",
@@ -14008,7 +14008,7 @@ PACK_01 = [[
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01087.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01087.jpg"
   },
   {
     "name": "Energy",
@@ -14016,7 +14016,7 @@ PACK_01 = [[
     "type_code": "resource",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01088.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01088.jpg"
   },
   {
     "name": "Genius",
@@ -14024,7 +14024,7 @@ PACK_01 = [[
     "type_code": "resource",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01089.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01089.jpg"
   },
   {
     "name": "Strength",
@@ -14032,7 +14032,7 @@ PACK_01 = [[
     "type_code": "resource",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01090.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01090.jpg"
   },
   {
     "name": "Avengers Mansion",
@@ -14040,7 +14040,7 @@ PACK_01 = [[
     "type_code": "support",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01091.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01091.jpg"
   },
   {
     "name": "Helicarrier",
@@ -14048,7 +14048,7 @@ PACK_01 = [[
     "type_code": "support",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01092.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01092.jpg"
   },
   {
     "name": "Tenacity",
@@ -14056,7 +14056,7 @@ PACK_01 = [[
     "type_code": "upgrade",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01093.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01093.jpg"
   },
   {
     "name": "Rhino",
@@ -14064,7 +14064,7 @@ PACK_01 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01094.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01094.jpg"
   },
   {
     "name": "Rhino",
@@ -14072,7 +14072,7 @@ PACK_01 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01095.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01095.jpg"
   },
   {
     "name": "Rhino",
@@ -14080,7 +14080,7 @@ PACK_01 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01096.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01096.jpg"
   },
   {
     "name": "The Break-In!",
@@ -14088,7 +14088,7 @@ PACK_01 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01097.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01097.jpg"
   },
   {
     "name": "Armored Rhino Suit",
@@ -14096,7 +14096,7 @@ PACK_01 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01098.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01098.jpg"
   },
   {
     "name": "Charge",
@@ -14104,7 +14104,7 @@ PACK_01 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01099.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01099.jpg"
   },
   {
     "name": "Enhanced Ivory Horn",
@@ -14112,7 +14112,7 @@ PACK_01 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01100.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01100.jpg"
   },
   {
     "name": "Hydra Mercenary",
@@ -14120,7 +14120,7 @@ PACK_01 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01101.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01101.jpg"
   },
   {
     "name": "Sandman",
@@ -14128,7 +14128,7 @@ PACK_01 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01102.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01102.jpg"
   },
   {
     "name": "Shocker",
@@ -14136,7 +14136,7 @@ PACK_01 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01103.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01103.jpg"
   },
   {
     "name": "Hard to Keep Down",
@@ -14144,7 +14144,7 @@ PACK_01 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01104.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01104.jpg"
   },
   {
     "name": "\"I'm Tough\"",
@@ -14152,7 +14152,7 @@ PACK_01 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01105.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01105.jpg"
   },
   {
     "name": "Stampede",
@@ -14160,7 +14160,7 @@ PACK_01 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01106.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01106.jpg"
   },
   {
     "name": "Breakin' & Takin'",
@@ -14168,7 +14168,7 @@ PACK_01 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01107.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01107.jpg"
   },
   {
     "name": "Crowd Control",
@@ -14176,7 +14176,7 @@ PACK_01 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01108.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01108.jpg"
   },
   {
     "name": "Bomb Scare",
@@ -14184,7 +14184,7 @@ PACK_01 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01109.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01109.jpg"
   },
   {
     "name": "Hydra Bomber",
@@ -14192,7 +14192,7 @@ PACK_01 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01110.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01110.jpg"
   },
   {
     "name": "Explosion",
@@ -14200,7 +14200,7 @@ PACK_01 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01111.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01111.jpg"
   },
   {
     "name": "False Alarm",
@@ -14208,7 +14208,7 @@ PACK_01 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01112.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01112.jpg"
   },
   {
     "name": "Klaw",
@@ -14216,7 +14216,7 @@ PACK_01 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01113.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01113.jpg"
   },
   {
     "name": "Klaw",
@@ -14224,7 +14224,7 @@ PACK_01 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01114.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01114.jpg"
   },
   {
     "name": "Klaw",
@@ -14232,7 +14232,7 @@ PACK_01 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01115.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01115.jpg"
   },
   {
     "name": "Underground Distribution",
@@ -14240,7 +14240,7 @@ PACK_01 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01116.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01116.jpg"
   },
   {
     "name": "Secret Rendezvous",
@@ -14248,7 +14248,7 @@ PACK_01 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01117.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01117.jpg"
   },
   {
     "name": "Sonic Converter",
@@ -14256,7 +14256,7 @@ PACK_01 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01118.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01118.jpg"
   },
   {
     "name": "Solid-Sound Body",
@@ -14264,7 +14264,7 @@ PACK_01 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01119.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01119.jpg"
   },
   {
     "name": "Armored Guard",
@@ -14272,7 +14272,7 @@ PACK_01 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01120.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01120.jpg"
   },
   {
     "name": "Weapons Runner",
@@ -14280,7 +14280,7 @@ PACK_01 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01121.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01121.jpg"
   },
   {
     "name": "Klaw's Vengeance",
@@ -14288,7 +14288,7 @@ PACK_01 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01122.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01122.jpg"
   },
   {
     "name": "Sonic Boom",
@@ -14296,7 +14296,7 @@ PACK_01 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01123.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01123.jpg"
   },
   {
     "name": "Sound Manipulation",
@@ -14304,7 +14304,7 @@ PACK_01 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01124.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01124.jpg"
   },
   {
     "name": "Defense Network",
@@ -14312,7 +14312,7 @@ PACK_01 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01125.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01125.jpg"
   },
   {
     "name": "Illegal Arms Factory",
@@ -14320,7 +14320,7 @@ PACK_01 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01126.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01126.jpg"
   },
   {
     "name": "The \"Immortal\" Klaw",
@@ -14328,7 +14328,7 @@ PACK_01 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01127.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01127.jpg"
   },
   {
     "name": "The Masters of Evil",
@@ -14336,7 +14336,7 @@ PACK_01 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01128.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01128.jpg"
   },
   {
     "name": "Radioactive Man",
@@ -14344,7 +14344,7 @@ PACK_01 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01129.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01129.jpg"
   },
   {
     "name": "Whirlwind",
@@ -14352,7 +14352,7 @@ PACK_01 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01130.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01130.jpg"
   },
   {
     "name": "Tiger Shark",
@@ -14360,7 +14360,7 @@ PACK_01 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01131.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01131.jpg"
   },
   {
     "name": "Melter",
@@ -14368,7 +14368,7 @@ PACK_01 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01132.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01132.jpg"
   },
   {
     "name": "Masters of Mayhem",
@@ -14376,7 +14376,7 @@ PACK_01 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01133.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01133.jpg"
   },
   {
     "name": "Ultron",
@@ -14384,7 +14384,7 @@ PACK_01 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01134.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01134.jpg"
   },
   {
     "name": "Ultron",
@@ -14392,7 +14392,7 @@ PACK_01 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01135.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01135.jpg"
   },
   {
     "name": "Ultron",
@@ -14400,7 +14400,7 @@ PACK_01 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01136.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01136.jpg"
   },
   {
     "name": "The Crimson Cowl",
@@ -14408,7 +14408,7 @@ PACK_01 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01137.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01137.jpg"
   },
   {
     "name": "Assault on NORAD",
@@ -14416,7 +14416,7 @@ PACK_01 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01138.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01138.jpg"
   },
   {
     "name": "Countdown to Oblivion",
@@ -14424,7 +14424,7 @@ PACK_01 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01139.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01139.jpg"
   },
   {
     "name": "Ultron Drones",
@@ -14432,7 +14432,7 @@ PACK_01 = [[
     "type_code": "environment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01140.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01140.jpg"
   },
   {
     "name": "Program Transmitter",
@@ -14440,7 +14440,7 @@ PACK_01 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01141.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01141.jpg"
   },
   {
     "name": "Upgraded Drones",
@@ -14448,7 +14448,7 @@ PACK_01 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01142.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01142.jpg"
   },
   {
     "name": "Advanced Ultron Drone",
@@ -14456,23 +14456,23 @@ PACK_01 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01143.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01143.jpg"
   },
   {
     "name": "Android Efficiency",
     "code": "01144a",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01144B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01144A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/01144B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01144A.jpg"
   },
   {
     "name": "Android Efficiency",
     "code": "01144b",
     "type_code": "treachery",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01144A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01144B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/01144A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01144B.jpg"
   },
   {
     "name": "Android Efficiency",
@@ -14480,7 +14480,7 @@ PACK_01 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01144C.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01144C.jpg"
   },
   {
     "name": "Rage of Ultron",
@@ -14488,7 +14488,7 @@ PACK_01 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01145.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01145.jpg"
   },
   {
     "name": "Repair Sequence",
@@ -14496,7 +14496,7 @@ PACK_01 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01146.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01146.jpg"
   },
   {
     "name": "Swarm Attack",
@@ -14504,7 +14504,7 @@ PACK_01 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01147.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01147.jpg"
   },
   {
     "name": "Drone Factory",
@@ -14512,7 +14512,7 @@ PACK_01 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01148.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01148.jpg"
   },
   {
     "name": "Invasive AI",
@@ -14520,7 +14520,7 @@ PACK_01 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01149.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01149.jpg"
   },
   {
     "name": "Ultron's Imperative",
@@ -14528,7 +14528,7 @@ PACK_01 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01150.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01150.jpg"
   },
   {
     "name": "Under Attack",
@@ -14536,7 +14536,7 @@ PACK_01 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01151.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01151.jpg"
   },
   {
     "name": "Vibranium Armor",
@@ -14544,7 +14544,7 @@ PACK_01 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01152.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01152.jpg"
   },
   {
     "name": "Concussion Blasters",
@@ -14552,7 +14552,7 @@ PACK_01 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01153.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01153.jpg"
   },
   {
     "name": "Concussive Blast",
@@ -14560,7 +14560,7 @@ PACK_01 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01154.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01154.jpg"
   },
   {
     "name": "Affairs of State",
@@ -14568,7 +14568,7 @@ PACK_01 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01155.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01155.jpg"
   },
   {
     "name": "Usurp The Throne",
@@ -14576,7 +14576,7 @@ PACK_01 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01156.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01156.jpg"
   },
   {
     "name": "Killmonger",
@@ -14584,7 +14584,7 @@ PACK_01 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01157.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01157.jpg"
   },
   {
     "name": "Heart-Shaped Herb",
@@ -14592,7 +14592,7 @@ PACK_01 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01158.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01158.jpg"
   },
   {
     "name": "Ritual Combat",
@@ -14600,7 +14600,7 @@ PACK_01 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01159.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01159.jpg"
   },
   {
     "name": "Legal Work",
@@ -14608,7 +14608,7 @@ PACK_01 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01160.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01160.jpg"
   },
   {
     "name": "Personal Challenge",
@@ -14616,7 +14616,7 @@ PACK_01 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01161.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01161.jpg"
   },
   {
     "name": "Titania",
@@ -14624,7 +14624,7 @@ PACK_01 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01162.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01162.jpg"
   },
   {
     "name": "Genetically Enhanced",
@@ -14632,7 +14632,7 @@ PACK_01 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01163.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01163.jpg"
   },
   {
     "name": "Titania's Fury",
@@ -14640,7 +14640,7 @@ PACK_01 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01164.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01164.jpg"
   },
   {
     "name": "Eviction Notice",
@@ -14648,7 +14648,7 @@ PACK_01 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01165.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01165.jpg"
   },
   {
     "name": "Highway Robbery",
@@ -14656,7 +14656,7 @@ PACK_01 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01166.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01166.jpg"
   },
   {
     "name": "Vulture",
@@ -14664,7 +14664,7 @@ PACK_01 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01167.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01167.jpg"
   },
   {
     "name": "Sweeping Swoop",
@@ -14672,7 +14672,7 @@ PACK_01 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01168.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01168.jpg"
   },
   {
     "name": "The Vulture's Plans",
@@ -14680,7 +14680,7 @@ PACK_01 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01169.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01169.jpg"
   },
   {
     "name": "Business Problems",
@@ -14688,7 +14688,7 @@ PACK_01 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01170.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01170.jpg"
   },
   {
     "name": "Imminent Overload",
@@ -14696,7 +14696,7 @@ PACK_01 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01171.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01171.jpg"
   },
   {
     "name": "Whiplash",
@@ -14704,7 +14704,7 @@ PACK_01 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01172.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01172.jpg"
   },
   {
     "name": "Electric Whip Attack",
@@ -14712,7 +14712,7 @@ PACK_01 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01173.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01173.jpg"
   },
   {
     "name": "Electromagnetic Backlash",
@@ -14720,7 +14720,7 @@ PACK_01 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01174.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01174.jpg"
   },
   {
     "name": "Family Emergency",
@@ -14728,7 +14728,7 @@ PACK_01 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01175.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01175.jpg"
   },
   {
     "name": "The Psych-Magnitron",
@@ -14736,7 +14736,7 @@ PACK_01 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01176.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01176.jpg"
   },
   {
     "name": "Yon-Rogg",
@@ -14744,7 +14744,7 @@ PACK_01 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01177.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01177.jpg"
   },
   {
     "name": "Kree Manipulator",
@@ -14752,7 +14752,7 @@ PACK_01 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01178.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01178.jpg"
   },
   {
     "name": "Yon-Rogg's Treason",
@@ -14760,7 +14760,7 @@ PACK_01 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01179.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01179.jpg"
   },
   {
     "name": "Legions of Hydra",
@@ -14768,7 +14768,7 @@ PACK_01 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01180.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01180.jpg"
   },
   {
     "name": "Madame Hydra",
@@ -14776,7 +14776,7 @@ PACK_01 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01181.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01181.jpg"
   },
   {
     "name": "Hydra Soldier",
@@ -14784,7 +14784,7 @@ PACK_01 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01182.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01182.jpg"
   },
   {
     "name": "The Doomsday Chair",
@@ -14792,7 +14792,7 @@ PACK_01 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01183.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01183.jpg"
   },
   {
     "name": "MODOK",
@@ -14800,7 +14800,7 @@ PACK_01 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01184.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01184.jpg"
   },
   {
     "name": "Biomechanical Upgrades",
@@ -14808,7 +14808,7 @@ PACK_01 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01185.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01185.jpg"
   },
   {
     "name": "Advance",
@@ -14816,7 +14816,7 @@ PACK_01 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01186.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01186.jpg"
   },
   {
     "name": "Assault",
@@ -14824,7 +14824,7 @@ PACK_01 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01187.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01187.jpg"
   },
   {
     "name": "Caught Off Guard",
@@ -14832,7 +14832,7 @@ PACK_01 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01188.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01188.jpg"
   },
   {
     "name": "Gang-Up",
@@ -14840,7 +14840,7 @@ PACK_01 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01189.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01189.jpg"
   },
   {
     "name": "Shadow of the Past",
@@ -14848,7 +14848,7 @@ PACK_01 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01190.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01190.jpg"
   },
   {
     "name": "Exhaustion",
@@ -14856,7 +14856,7 @@ PACK_01 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01191.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01191.jpg"
   },
   {
     "name": "Masterplan",
@@ -14864,7 +14864,7 @@ PACK_01 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01192.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01192.jpg"
   },
   {
     "name": "Under Fire",
@@ -14872,7 +14872,7 @@ PACK_01 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/01193.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01193.jpg"
   }
 ]
 ]]
@@ -14883,16 +14883,16 @@ PACK_09 = [[
     "code": "09001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09001B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09001A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/09001B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/09001A.jpg"
   },
   {
     "name": "Stephen Strange",
     "code": "09001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09001A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09001B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/09001A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/09001B.jpg"
   },
   {
     "name": "Wong",
@@ -14900,7 +14900,7 @@ PACK_09 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09002.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/09002.jpg"
   },
   {
     "name": "Astral Projection",
@@ -14908,7 +14908,7 @@ PACK_09 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09003.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/09003.jpg"
   },
   {
     "name": "Magic Blast",
@@ -14916,7 +14916,7 @@ PACK_09 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09004.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/09004.jpg"
   },
   {
     "name": "Master of the Mystic Arts",
@@ -14924,7 +14924,7 @@ PACK_09 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09005.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/09005.jpg"
   },
   {
     "name": "Mystical Studies",
@@ -14932,7 +14932,7 @@ PACK_09 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09006.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/09006.jpg"
   },
   {
     "name": "Protective Ward",
@@ -14940,7 +14940,7 @@ PACK_09 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09007.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/09007.jpg"
   },
   {
     "name": "Sanctum Sanctorum",
@@ -14948,7 +14948,7 @@ PACK_09 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09008.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/09008.jpg"
   },
   {
     "name": "Cloak of Levitation",
@@ -14956,7 +14956,7 @@ PACK_09 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09009.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/09009.jpg"
   },
   {
     "name": "Magical Enhancements",
@@ -14964,7 +14964,7 @@ PACK_09 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09010.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/09010.jpg"
   },
   {
     "name": "The Eye of Agamotto",
@@ -14972,7 +14972,7 @@ PACK_09 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09011.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/09011.jpg"
   },
   {
     "name": "Brother Voodoo",
@@ -14981,7 +14981,7 @@ PACK_09 = [[
     "type_code": "ally",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09012.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/09012.jpg"
   },
   {
     "name": "Clea",
@@ -14989,7 +14989,7 @@ PACK_09 = [[
     "type_code": "ally",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09013.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/09013.jpg"
   },
   {
     "name": "Iron Fist",
@@ -14998,7 +14998,7 @@ PACK_09 = [[
     "type_code": "ally",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09014.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/09014.jpg"
   },
   {
     "name": "Desperate Defense",
@@ -15006,7 +15006,7 @@ PACK_09 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09015.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/09015.jpg"
   },
   {
     "name": "Momentum Shift",
@@ -15014,7 +15014,7 @@ PACK_09 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09016.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/09016.jpg"
   },
   {
     "code": "09017",
@@ -15030,7 +15030,7 @@ PACK_09 = [[
     "type_code": "support",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09019.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/09019.jpg"
   },
   {
     "name": "Unflappable",
@@ -15038,7 +15038,7 @@ PACK_09 = [[
     "type_code": "upgrade",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09020.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/09020.jpg"
   },
   {
     "name": "Warning",
@@ -15046,7 +15046,7 @@ PACK_09 = [[
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09021.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/09021.jpg"
   },
   {
     "code": "09022",
@@ -15070,7 +15070,7 @@ PACK_09 = [[
     "type_code": "upgrade",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09026.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/09026.jpg"
   },
   {
     "name": "Crimson Bands of Cyttorak",
@@ -15078,7 +15078,7 @@ PACK_09 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09032.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/09032.jpg"
   },
   {
     "name": "Images of Ikonn",
@@ -15086,7 +15086,7 @@ PACK_09 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09033.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/09033.jpg"
   },
   {
     "name": "Seven Rings of Raggadorr",
@@ -15094,7 +15094,7 @@ PACK_09 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09034.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/09034.jpg"
   },
   {
     "name": "Vapors of Valtorr",
@@ -15102,7 +15102,7 @@ PACK_09 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09035.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/09035.jpg"
   },
   {
     "name": "Winds of Watoomb",
@@ -15110,7 +15110,7 @@ PACK_09 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09036.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/09036.jpg"
   },
   {
     "name": "Skilled Strike",
@@ -15118,7 +15118,7 @@ PACK_09 = [[
     "type_code": "event",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09037.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/09037.jpg"
   },
   {
     "name": "Foiled!",
@@ -15126,7 +15126,7 @@ PACK_09 = [[
     "type_code": "event",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09038.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/09038.jpg"
   },
   {
     "name": "Iron Man",
@@ -15135,7 +15135,7 @@ PACK_09 = [[
     "type_code": "ally",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09039.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/09039.jpg"
   },
   {
     "name": "Physical Toll",
@@ -15143,7 +15143,7 @@ PACK_09 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09027.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/09027.jpg"
   },
   {
     "name": "Baron Mordo",
@@ -15151,7 +15151,7 @@ PACK_09 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09028.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/09028.jpg"
   },
   {
     "name": "Open the Dark Dimension",
@@ -15159,7 +15159,7 @@ PACK_09 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09029.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/09029.jpg"
   },
   {
     "name": "Counterspell",
@@ -15167,7 +15167,7 @@ PACK_09 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09030.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/09030.jpg"
   },
   {
     "name": "Thoughtcasting",
@@ -15175,7 +15175,7 @@ PACK_09 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/09031.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/09031.jpg"
   }
 ]
 ]]
@@ -15186,48 +15186,48 @@ PACK_02 = [[
     "code": "02001a",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02001B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02001A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/02001B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02001A.jpg"
   },
   {
     "name": "Green Goblin",
     "code": "02001b",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02001A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02001B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/02001A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02001B.jpg"
   },
   {
     "name": "Norman Osborn",
     "code": "02002a",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02002B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02002A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/02002B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02002A.jpg"
   },
   {
     "name": "Green Goblin",
     "code": "02002b",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02002A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02002B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/02002A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02002B.jpg"
   },
   {
     "name": "Norman Osborn",
     "code": "02003a",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02003B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02003A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/02003B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02003A.jpg"
   },
   {
     "name": "Green Goblin",
     "code": "02003b",
     "type_code": "villain",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02003A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02003B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/02003A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02003B.jpg"
   },
   {
     "name": "Hostile Takeover",
@@ -15235,7 +15235,7 @@ PACK_02 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02004.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02004.jpg"
   },
   {
     "name": "Corporate Acquisition",
@@ -15243,23 +15243,23 @@ PACK_02 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02005.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02005.jpg"
   },
   {
     "name": "Criminal Enterprise",
     "code": "02006a",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02006B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02006A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/02006B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02006A.jpg"
   },
   {
     "name": "State of Madness",
     "code": "02006b",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02006A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02006B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/02006A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02006B.jpg"
   },
   {
     "name": "Hired Gun",
@@ -15267,7 +15267,7 @@ PACK_02 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02007.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02007.jpg"
   },
   {
     "name": "Private Security Specialist",
@@ -15275,7 +15275,7 @@ PACK_02 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02008.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02008.jpg"
   },
   {
     "name": "Collapsing Bridge",
@@ -15283,7 +15283,7 @@ PACK_02 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02009.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02009.jpg"
   },
   {
     "name": "Oscorp Manufacturing",
@@ -15291,7 +15291,7 @@ PACK_02 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02010.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02010.jpg"
   },
   {
     "name": "Payoff",
@@ -15299,7 +15299,7 @@ PACK_02 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02011.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02011.jpg"
   },
   {
     "name": "All in a Day's Work",
@@ -15307,7 +15307,7 @@ PACK_02 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02012.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02012.jpg"
   },
   {
     "name": "Mad Genius",
@@ -15315,7 +15315,7 @@ PACK_02 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02013.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02013.jpg"
   },
   {
     "name": "Green Goblin",
@@ -15323,7 +15323,7 @@ PACK_02 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02014.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02014.jpg"
   },
   {
     "name": "Green Goblin",
@@ -15331,7 +15331,7 @@ PACK_02 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02015.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02015.jpg"
   },
   {
     "name": "Green Goblin",
@@ -15339,7 +15339,7 @@ PACK_02 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02016.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02016.jpg"
   },
   {
     "name": "Unleashing the Mutagen",
@@ -15347,7 +15347,7 @@ PACK_02 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02017.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02017.jpg"
   },
   {
     "name": "Mutagen Cloud",
@@ -15355,7 +15355,7 @@ PACK_02 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02018.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02018.jpg"
   },
   {
     "name": "Goblin Glider",
@@ -15363,7 +15363,7 @@ PACK_02 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02019.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02019.jpg"
   },
   {
     "name": "Hysteria",
@@ -15371,7 +15371,7 @@ PACK_02 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02020.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02020.jpg"
   },
   {
     "name": "Pumpkin Bombs",
@@ -15379,7 +15379,7 @@ PACK_02 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02021.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02021.jpg"
   },
   {
     "name": "Goblin Knight",
@@ -15387,7 +15387,7 @@ PACK_02 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02022.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02022.jpg"
   },
   {
     "name": "Goblin Soldier",
@@ -15395,7 +15395,7 @@ PACK_02 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02023.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02023.jpg"
   },
   {
     "name": "Goblin Thrall",
@@ -15403,7 +15403,7 @@ PACK_02 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02024.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02024.jpg"
   },
   {
     "name": "Monster",
@@ -15411,7 +15411,7 @@ PACK_02 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02025.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02025.jpg"
   },
   {
     "name": "Goblin Reinforcements",
@@ -15419,7 +15419,7 @@ PACK_02 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02026.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02026.jpg"
   },
   {
     "name": "Goblin Nation",
@@ -15427,7 +15427,7 @@ PACK_02 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02027.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02027.jpg"
   },
   {
     "name": "Overrun",
@@ -15435,7 +15435,7 @@ PACK_02 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02028.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02028.jpg"
   },
   {
     "name": "Death from Above",
@@ -15443,7 +15443,7 @@ PACK_02 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02029.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02029.jpg"
   },
   {
     "name": "I See You",
@@ -15451,7 +15451,7 @@ PACK_02 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02030.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02030.jpg"
   },
   {
     "name": "Overconfidence",
@@ -15459,7 +15459,7 @@ PACK_02 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02031.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02031.jpg"
   },
   {
     "name": "Wicked Ambitions",
@@ -15467,7 +15467,7 @@ PACK_02 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02032.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02032.jpg"
   },
   {
     "name": "Goblin Glider",
@@ -15475,7 +15475,7 @@ PACK_02 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02033.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02033.jpg"
   },
   {
     "name": "Pumpkin Bombs",
@@ -15483,7 +15483,7 @@ PACK_02 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02034.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02034.jpg"
   },
   {
     "name": "Intimidation",
@@ -15491,7 +15491,7 @@ PACK_02 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02035.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02035.jpg"
   },
   {
     "name": "Regenerative Healing",
@@ -15499,7 +15499,7 @@ PACK_02 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02036.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02036.jpg"
   },
   {
     "name": "A Mess of Things",
@@ -15507,7 +15507,7 @@ PACK_02 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02037.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02037.jpg"
   },
   {
     "name": "Scorpion",
@@ -15515,7 +15515,7 @@ PACK_02 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02038.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02038.jpg"
   },
   {
     "name": "Gang-Up",
@@ -15523,7 +15523,7 @@ PACK_02 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02039.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02039.jpg"
   },
   {
     "name": "Tail Sweep",
@@ -15531,7 +15531,7 @@ PACK_02 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02040.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02040.jpg"
   },
   {
     "name": "Power Drain",
@@ -15539,7 +15539,7 @@ PACK_02 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02041.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02041.jpg"
   },
   {
     "name": "Electro",
@@ -15547,7 +15547,7 @@ PACK_02 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02042.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02042.jpg"
   },
   {
     "name": "Electromagnetic Pulse",
@@ -15555,7 +15555,7 @@ PACK_02 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02043.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02043.jpg"
   },
   {
     "name": "Lightning Bolt",
@@ -15563,7 +15563,7 @@ PACK_02 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02044.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02044.jpg"
   },
   {
     "name": "Shock Therapy",
@@ -15571,7 +15571,7 @@ PACK_02 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02045.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02045.jpg"
   },
   {
     "name": "Running Interference",
@@ -15579,7 +15579,7 @@ PACK_02 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02046.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02046.jpg"
   },
   {
     "name": "Tombstone",
@@ -15587,7 +15587,7 @@ PACK_02 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02047.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02047.jpg"
   },
   {
     "name": "All Tied Up",
@@ -15595,7 +15595,7 @@ PACK_02 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02048.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02048.jpg"
   },
   {
     "name": "Media Coverage",
@@ -15603,7 +15603,7 @@ PACK_02 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/02049.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02049.jpg"
   }
 ]
 ]]
@@ -15614,16 +15614,16 @@ PACK_05 = [[
     "code": "05001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05001B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05001A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/05001B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/05001A.jpg"
   },
   {
     "name": "Kamala Khan",
     "code": "05001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05001A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05001B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/05001A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/05001B.jpg"
   },
   {
     "name": "Red Dagger",
@@ -15631,7 +15631,7 @@ PACK_05 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05002.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/05002.jpg"
   },
   {
     "name": "Big Hands",
@@ -15639,7 +15639,7 @@ PACK_05 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05003.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/05003.jpg"
   },
   {
     "name": "Sneak By",
@@ -15647,7 +15647,7 @@ PACK_05 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05004.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/05004.jpg"
   },
   {
     "name": "Wiggle Room",
@@ -15655,7 +15655,7 @@ PACK_05 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05005.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/05005.jpg"
   },
   {
     "name": "Aamir Khan",
@@ -15663,7 +15663,7 @@ PACK_05 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05006.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/05006.jpg"
   },
   {
     "name": "Bruno Carrelli",
@@ -15671,7 +15671,7 @@ PACK_05 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05007.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/05007.jpg"
   },
   {
     "name": "Nakia Bahadir",
@@ -15679,7 +15679,7 @@ PACK_05 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05008.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/05008.jpg"
   },
   {
     "name": "Biokinetic Polymer Suit",
@@ -15687,7 +15687,7 @@ PACK_05 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05009.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/05009.jpg"
   },
   {
     "name": "Embiggen!",
@@ -15695,7 +15695,7 @@ PACK_05 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05010.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/05010.jpg"
   },
   {
     "name": "Shrink",
@@ -15703,7 +15703,7 @@ PACK_05 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05011.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/05011.jpg"
   },
   {
     "name": "Nova",
@@ -15712,7 +15712,7 @@ PACK_05 = [[
     "type_code": "ally",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05012.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/05012.jpg"
   },
   {
     "code": "05013",
@@ -15724,7 +15724,7 @@ PACK_05 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05014.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/05014.jpg"
   },
   {
     "name": "Tackle",
@@ -15732,7 +15732,7 @@ PACK_05 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05015.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/05015.jpg"
   },
   {
     "code": "05016",
@@ -15744,7 +15744,7 @@ PACK_05 = [[
     "type_code": "upgrade",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05017.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/05017.jpg"
   },
   {
     "name": "Lockjaw",
@@ -15752,7 +15752,7 @@ PACK_05 = [[
     "type_code": "ally",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05018.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/05018.jpg"
   },
   {
     "code": "05019",
@@ -15776,7 +15776,7 @@ PACK_05 = [[
     "type_code": "upgrade",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05023.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/05023.jpg"
   },
   {
     "name": "Enhanced Reflexes",
@@ -15784,7 +15784,7 @@ PACK_05 = [[
     "type_code": "upgrade",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05024.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/05024.jpg"
   },
   {
     "name": "Melee",
@@ -15792,7 +15792,7 @@ PACK_05 = [[
     "type_code": "event",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05030.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/05030.jpg"
   },
   {
     "name": "Concussive Blow",
@@ -15800,7 +15800,7 @@ PACK_05 = [[
     "type_code": "event",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05031.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/05031.jpg"
   },
   {
     "name": "Morale Boost",
@@ -15808,7 +15808,7 @@ PACK_05 = [[
     "type_code": "event",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05032.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/05032.jpg"
   },
   {
     "name": "Down Time",
@@ -15816,7 +15816,7 @@ PACK_05 = [[
     "type_code": "upgrade",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05033.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/05033.jpg"
   },
   {
     "name": "Home by Dawn",
@@ -15824,7 +15824,7 @@ PACK_05 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05025.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/05025.jpg"
   },
   {
     "name": "Generation Why?",
@@ -15832,7 +15832,7 @@ PACK_05 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05026.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/05026.jpg"
   },
   {
     "name": "Thomas Edison",
@@ -15840,7 +15840,7 @@ PACK_05 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05027.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/05027.jpg"
   },
   {
     "name": "Edison's Giant Robot",
@@ -15848,7 +15848,7 @@ PACK_05 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05028.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/05028.jpg"
   },
   {
     "name": "Harvest",
@@ -15856,7 +15856,7 @@ PACK_05 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/05029.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/05029.jpg"
   }
 ]
 ]]
@@ -15867,16 +15867,16 @@ PACK_06 = [[
     "code": "06001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06001B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06001A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/06001B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/06001A.jpg"
   },
   {
     "name": "Odinson",
     "code": "06001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06001A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06001B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/06001A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/06001B.jpg"
   },
   {
     "name": "Lady Sif",
@@ -15884,7 +15884,7 @@ PACK_06 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06002.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/06002.jpg"
   },
   {
     "name": "Defender of the Nine Realms",
@@ -15892,7 +15892,7 @@ PACK_06 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06003.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/06003.jpg"
   },
   {
     "name": "For Asgard!",
@@ -15900,7 +15900,7 @@ PACK_06 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06004.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/06004.jpg"
   },
   {
     "name": "Hammer Throw",
@@ -15908,7 +15908,7 @@ PACK_06 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06005.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/06005.jpg"
   },
   {
     "name": "Lightning Strike",
@@ -15916,7 +15916,7 @@ PACK_06 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06006.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/06006.jpg"
   },
   {
     "name": "Asgard",
@@ -15924,7 +15924,7 @@ PACK_06 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06007.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/06007.jpg"
   },
   {
     "name": "God of Thunder",
@@ -15932,7 +15932,7 @@ PACK_06 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06008.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/06008.jpg"
   },
   {
     "name": "Mjolnir",
@@ -15940,7 +15940,7 @@ PACK_06 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06009.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/06009.jpg"
   },
   {
     "name": "Thor's Helmet",
@@ -15948,7 +15948,7 @@ PACK_06 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06010.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/06010.jpg"
   },
   {
     "name": "Hercules",
@@ -15956,7 +15956,7 @@ PACK_06 = [[
     "type_code": "ally",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06011.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/06011.jpg"
   },
   {
     "name": "Valkyrie",
@@ -15964,7 +15964,7 @@ PACK_06 = [[
     "type_code": "ally",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06012.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/06012.jpg"
   },
   {
     "code": "06013",
@@ -15976,7 +15976,7 @@ PACK_06 = [[
     "type_code": "event",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06014.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/06014.jpg"
   },
   {
     "name": "Mean Swing",
@@ -15984,7 +15984,7 @@ PACK_06 = [[
     "type_code": "event",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06015.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/06015.jpg"
   },
   {
     "code": "06016",
@@ -15996,7 +15996,7 @@ PACK_06 = [[
     "type_code": "support",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06017.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/06017.jpg"
   },
   {
     "name": "Battle Fury",
@@ -16004,7 +16004,7 @@ PACK_06 = [[
     "type_code": "upgrade",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06018.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/06018.jpg"
   },
   {
     "name": "Jarnbjorn",
@@ -16012,7 +16012,7 @@ PACK_06 = [[
     "type_code": "upgrade",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06019.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/06019.jpg"
   },
   {
     "name": "Heimdall",
@@ -16020,7 +16020,7 @@ PACK_06 = [[
     "type_code": "ally",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06020.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/06020.jpg"
   },
   {
     "name": "Invulnerability",
@@ -16028,7 +16028,7 @@ PACK_06 = [[
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06021.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/06021.jpg"
   },
   {
     "code": "06022",
@@ -16052,7 +16052,7 @@ PACK_06 = [[
     "type_code": "upgrade",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06031.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/06031.jpg"
   },
   {
     "name": "Teamwork",
@@ -16060,7 +16060,7 @@ PACK_06 = [[
     "type_code": "event",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06032.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/06032.jpg"
   },
   {
     "name": "Second Wind",
@@ -16068,7 +16068,7 @@ PACK_06 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06033.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/06033.jpg"
   },
   {
     "name": "Enhanced Physique",
@@ -16076,7 +16076,7 @@ PACK_06 = [[
     "type_code": "upgrade",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06034.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/06034.jpg"
   },
   {
     "name": "Odin's Anger",
@@ -16084,7 +16084,7 @@ PACK_06 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06026.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/06026.jpg"
   },
   {
     "name": "Family Feud",
@@ -16092,7 +16092,7 @@ PACK_06 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06027.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/06027.jpg"
   },
   {
     "name": "Loki",
@@ -16100,7 +16100,7 @@ PACK_06 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06028.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/06028.jpg"
   },
   {
     "name": "Frost Giant",
@@ -16108,7 +16108,7 @@ PACK_06 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06029.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/06029.jpg"
   },
   {
     "name": "Trickster",
@@ -16116,7 +16116,7 @@ PACK_06 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/06030.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/06030.jpg"
   }
 ]
 ]]
@@ -16127,16 +16127,16 @@ PACK_04 = [[
     "code": "04001a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04001B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04001A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/04001B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04001A.jpg"
   },
   {
     "name": "Clint Barton",
     "code": "04001b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04001A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04001B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/04001A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04001B.jpg"
   },
   {
     "name": "Hawkeye's Bow",
@@ -16144,7 +16144,7 @@ PACK_04 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04002.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04002.jpg"
   },
   {
     "name": "Hawkeye's Quiver",
@@ -16152,7 +16152,7 @@ PACK_04 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04003.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04003.jpg"
   },
   {
     "name": "Mockingbird",
@@ -16161,7 +16161,7 @@ PACK_04 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04004.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04004.jpg"
   },
   {
     "name": "Sonic Arrow",
@@ -16169,7 +16169,7 @@ PACK_04 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04005.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04005.jpg"
   },
   {
     "name": "Explosive Arrow",
@@ -16177,7 +16177,7 @@ PACK_04 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04006.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04006.jpg"
   },
   {
     "name": "Electric Arrow",
@@ -16185,7 +16185,7 @@ PACK_04 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04007.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04007.jpg"
   },
   {
     "name": "Cable Arrow",
@@ -16193,7 +16193,7 @@ PACK_04 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04008.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04008.jpg"
   },
   {
     "name": "Vibranium Arrow",
@@ -16201,7 +16201,7 @@ PACK_04 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04009.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04009.jpg"
   },
   {
     "name": "Expert Marksman",
@@ -16209,7 +16209,7 @@ PACK_04 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04010.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04010.jpg"
   },
   {
     "name": "Hawkeye",
@@ -16218,7 +16218,7 @@ PACK_04 = [[
     "type_code": "ally",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04011.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04011.jpg"
   },
   {
     "name": "Black Knight",
@@ -16227,7 +16227,7 @@ PACK_04 = [[
     "type_code": "ally",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04012.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04012.jpg"
   },
   {
     "name": "Goliath",
@@ -16236,7 +16236,7 @@ PACK_04 = [[
     "type_code": "ally",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04013.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04013.jpg"
   },
   {
     "name": "U.S. Agent",
@@ -16245,7 +16245,7 @@ PACK_04 = [[
     "type_code": "ally",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04014.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04014.jpg"
   },
   {
     "name": "Sky Cycle",
@@ -16253,7 +16253,7 @@ PACK_04 = [[
     "type_code": "upgrade",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04015.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04015.jpg"
   },
   {
     "name": "Team Training",
@@ -16261,7 +16261,7 @@ PACK_04 = [[
     "type_code": "support",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04016.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04016.jpg"
   },
   {
     "name": "Ready for Action",
@@ -16269,7 +16269,7 @@ PACK_04 = [[
     "type_code": "event",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04017.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04017.jpg"
   },
   {
     "name": "War Machine",
@@ -16278,7 +16278,7 @@ PACK_04 = [[
     "type_code": "ally",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04020.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04020.jpg"
   },
   {
     "code": "04021",
@@ -16290,23 +16290,23 @@ PACK_04 = [[
     "type_code": "event",
     "faction_code": "basic",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04022.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04022.jpg"
   },
   {
     "name": "Spider-Woman",
     "code": "04031a",
     "type_code": "hero",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04031B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04031A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/04031B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04031A.jpg"
   },
   {
     "name": "Jessica Drew",
     "code": "04031b",
     "type_code": "alter_ego",
     "faction_code": "hero",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04031A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04031B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/04031A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04031B.jpg"
   },
   {
     "name": "Captain Marvel",
@@ -16315,7 +16315,7 @@ PACK_04 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04032.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04032.jpg"
   },
   {
     "name": "Finesse",
@@ -16323,7 +16323,7 @@ PACK_04 = [[
     "type_code": "upgrade",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04033.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04033.jpg"
   },
   {
     "name": "Jessica Drew's Apartment",
@@ -16331,7 +16331,7 @@ PACK_04 = [[
     "type_code": "support",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04034.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04034.jpg"
   },
   {
     "name": "Venom Blast",
@@ -16339,7 +16339,7 @@ PACK_04 = [[
     "type_code": "event",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04035.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04035.jpg"
   },
   {
     "name": "Pheromones",
@@ -16347,7 +16347,7 @@ PACK_04 = [[
     "type_code": "event",
     "faction_code": "leadership",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04036.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04036.jpg"
   },
   {
     "name": "Contaminant Immunity",
@@ -16355,7 +16355,7 @@ PACK_04 = [[
     "type_code": "event",
     "faction_code": "protection",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04037.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04037.jpg"
   },
   {
     "name": "Inconspicuous",
@@ -16363,7 +16363,7 @@ PACK_04 = [[
     "type_code": "event",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04038.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04038.jpg"
   },
   {
     "name": "Self-Propelled Glide",
@@ -16371,7 +16371,7 @@ PACK_04 = [[
     "type_code": "event",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04039.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04039.jpg"
   },
   {
     "name": "Spider-Girl",
@@ -16380,7 +16380,7 @@ PACK_04 = [[
     "type_code": "ally",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04040.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04040.jpg"
   },
   {
     "name": "Press the Advantage",
@@ -16388,7 +16388,7 @@ PACK_04 = [[
     "type_code": "event",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04043.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04043.jpg"
   },
   {
     "name": "Piercing Strike",
@@ -16396,7 +16396,7 @@ PACK_04 = [[
     "type_code": "event",
     "faction_code": "aggression",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04044.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04044.jpg"
   },
   {
     "name": "Spider-Man",
@@ -16405,7 +16405,7 @@ PACK_04 = [[
     "type_code": "ally",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04045.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04045.jpg"
   },
   {
     "name": "Skilled Investigator",
@@ -16413,7 +16413,7 @@ PACK_04 = [[
     "type_code": "upgrade",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04047.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04047.jpg"
   },
   {
     "name": "Clear the Area",
@@ -16421,7 +16421,7 @@ PACK_04 = [[
     "type_code": "event",
     "faction_code": "justice",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04049.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04049.jpg"
   },
   {
     "name": "Adrenal Stims",
@@ -16429,7 +16429,7 @@ PACK_04 = [[
     "type_code": "upgrade",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04155.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04155.jpg"
   },
   {
     "name": "Tactical Scanner",
@@ -16437,7 +16437,7 @@ PACK_04 = [[
     "type_code": "upgrade",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04156.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04156.jpg"
   },
   {
     "name": "Emergency Teleporter",
@@ -16445,7 +16445,7 @@ PACK_04 = [[
     "type_code": "upgrade",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04157.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04157.jpg"
   },
   {
     "name": "Laser Cannon",
@@ -16453,71 +16453,71 @@ PACK_04 = [[
     "type_code": "upgrade",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04158.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04158.jpg"
   },
   {
     "name": "Basic Thwart Upgrade",
     "code": "04159a",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04159B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04159A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/04159B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04159A.jpg"
   },
   {
     "name": "Improved Thwart Upgrade",
     "code": "04159b",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04159A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04159B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/04159A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04159B.jpg"
   },
   {
     "name": "Basic Attack Upgrade",
     "code": "04160a",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04160B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04160A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/04160B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04160A.jpg"
   },
   {
     "name": "Improved Attack Upgrade",
     "code": "04160b",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04160A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04160B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/04160A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04160B.jpg"
   },
   {
     "name": "Basic Defense Upgrade",
     "code": "04161a",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04161B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04161A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/04161B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04161A.jpg"
   },
   {
     "name": "Improved Defense Upgrade",
     "code": "04161b",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04161A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04161B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/04161A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04161B.jpg"
   },
   {
     "name": "Basic Recovery Upgrade",
     "code": "04162a",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04162B.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04162A.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/04162B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04162A.jpg"
   },
   {
     "name": "Improved Recovery Upgrade",
     "code": "04162b",
     "type_code": "upgrade",
     "faction_code": "campaign",
-    "BackURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04162A.jpg",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04162B.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/04162A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04162B.jpg"
   },
   {
     "name": "Zola's Algorithm",
@@ -16525,7 +16525,7 @@ PACK_04 = [[
     "type_code": "obligation",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04163.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04163.jpg"
   },
   {
     "name": "Medical Emergency",
@@ -16533,7 +16533,7 @@ PACK_04 = [[
     "type_code": "obligation",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04164.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04164.jpg"
   },
   {
     "name": "Martial Law",
@@ -16541,7 +16541,7 @@ PACK_04 = [[
     "type_code": "obligation",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04165.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04165.jpg"
   },
   {
     "name": "Anti-Hero Propaganda",
@@ -16549,7 +16549,7 @@ PACK_04 = [[
     "type_code": "obligation",
     "faction_code": "campaign",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04166.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04166.jpg"
   },
   {
     "name": "Criminal Past",
@@ -16557,7 +16557,7 @@ PACK_04 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04026.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04026.jpg"
   },
   {
     "name": "Crossfire",
@@ -16565,7 +16565,7 @@ PACK_04 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04027.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04027.jpg"
   },
   {
     "name": "Marked for Death",
@@ -16573,7 +16573,7 @@ PACK_04 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04028.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04028.jpg"
   },
   {
     "name": "Crossfire's Rifle",
@@ -16581,7 +16581,7 @@ PACK_04 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04029.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04029.jpg"
   },
   {
     "name": "Sniper Shot",
@@ -16589,7 +16589,7 @@ PACK_04 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04030.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04030.jpg"
   },
   {
     "name": "Uncertain Loyalties",
@@ -16597,7 +16597,7 @@ PACK_04 = [[
     "type_code": "obligation",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04053.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04053.jpg"
   },
   {
     "name": "The Viper",
@@ -16605,7 +16605,7 @@ PACK_04 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04054.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04054.jpg"
   },
   {
     "name": "The Viper's Ambition",
@@ -16613,7 +16613,7 @@ PACK_04 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04055.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04055.jpg"
   },
   {
     "name": "Hydra Regular",
@@ -16621,7 +16621,7 @@ PACK_04 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04056.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04056.jpg"
   },
   {
     "name": "Hail Hydra!",
@@ -16629,7 +16629,7 @@ PACK_04 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04057.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04057.jpg"
   },
   {
     "name": "Crossbones",
@@ -16637,7 +16637,7 @@ PACK_04 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04058.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04058.jpg"
   },
   {
     "name": "Crossbones",
@@ -16645,7 +16645,7 @@ PACK_04 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04059.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04059.jpg"
   },
   {
     "name": "Crossbones",
@@ -16653,7 +16653,7 @@ PACK_04 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04060.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04060.jpg"
   },
   {
     "name": "Attack on Mount Athena",
@@ -16661,7 +16661,7 @@ PACK_04 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04061.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04061.jpg"
   },
   {
     "name": "The Infinity Stone",
@@ -16669,7 +16669,7 @@ PACK_04 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04062.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04062.jpg"
   },
   {
     "name": "The Getaway",
@@ -16677,7 +16677,7 @@ PACK_04 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04063.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04063.jpg"
   },
   {
     "name": "Crossbones' Machine Gun",
@@ -16685,7 +16685,7 @@ PACK_04 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04064.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04064.jpg"
   },
   {
     "name": "Crossbones' Armor",
@@ -16693,7 +16693,7 @@ PACK_04 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04065.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04065.jpg"
   },
   {
     "name": "Hydra Bomber",
@@ -16701,7 +16701,7 @@ PACK_04 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04066.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04066.jpg"
   },
   {
     "name": "Full Auto",
@@ -16709,7 +16709,7 @@ PACK_04 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04067.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04067.jpg"
   },
   {
     "name": "Hard as Nails",
@@ -16717,7 +16717,7 @@ PACK_04 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04068.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04068.jpg"
   },
   {
     "name": "Raid the Armory",
@@ -16725,7 +16725,7 @@ PACK_04 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04069.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04069.jpg"
   },
   {
     "name": "Crossbones' Assault",
@@ -16733,7 +16733,7 @@ PACK_04 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04070.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04070.jpg"
   },
   {
     "name": "Cornered Staff",
@@ -16741,7 +16741,7 @@ PACK_04 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04071.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04071.jpg"
   },
   {
     "name": "Laser Rifle",
@@ -16749,7 +16749,7 @@ PACK_04 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04072.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04072.jpg"
   },
   {
     "name": "Energy Shield",
@@ -16757,7 +16757,7 @@ PACK_04 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04073.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04073.jpg"
   },
   {
     "name": "Power Gauntlets",
@@ -16765,7 +16765,7 @@ PACK_04 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04074.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04074.jpg"
   },
   {
     "name": "Exo-Suit",
@@ -16773,7 +16773,7 @@ PACK_04 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04075.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04075.jpg"
   },
   {
     "name": "Absorbing Man",
@@ -16781,7 +16781,7 @@ PACK_04 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04076.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04076.jpg"
   },
   {
     "name": "Absorbing Man",
@@ -16789,7 +16789,7 @@ PACK_04 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04077.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04077.jpg"
   },
   {
     "name": "Absorbing Man",
@@ -16797,7 +16797,7 @@ PACK_04 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04078.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04078.jpg"
   },
   {
     "name": "None Shall Pass",
@@ -16805,7 +16805,7 @@ PACK_04 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04079.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04079.jpg"
   },
   {
     "name": "Dense Forest",
@@ -16813,7 +16813,7 @@ PACK_04 = [[
     "type_code": "environment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04080.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04080.jpg"
   },
   {
     "name": "Snowy Hillside",
@@ -16821,7 +16821,7 @@ PACK_04 = [[
     "type_code": "environment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04081.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04081.jpg"
   },
   {
     "name": "Rocky Outcrop",
@@ -16829,7 +16829,7 @@ PACK_04 = [[
     "type_code": "environment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04082.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04082.jpg"
   },
   {
     "name": "Abandoned Facility",
@@ -16837,7 +16837,7 @@ PACK_04 = [[
     "type_code": "environment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04083.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04083.jpg"
   },
   {
     "name": "Ball and Chain",
@@ -16845,7 +16845,7 @@ PACK_04 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04084.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04084.jpg"
   },
   {
     "name": "Stall Tactics",
@@ -16853,7 +16853,7 @@ PACK_04 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04085.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04085.jpg"
   },
   {
     "name": "Swinging Stone",
@@ -16861,7 +16861,7 @@ PACK_04 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04086.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04086.jpg"
   },
   {
     "name": "Steel Kick",
@@ -16869,7 +16869,7 @@ PACK_04 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04087.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04087.jpg"
   },
   {
     "name": "Piercing Thorns",
@@ -16877,7 +16877,7 @@ PACK_04 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04088.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04088.jpg"
   },
   {
     "name": "Omni-Morph Duplication",
@@ -16885,7 +16885,7 @@ PACK_04 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04089.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04089.jpg"
   },
   {
     "name": "Icy Grip",
@@ -16893,7 +16893,7 @@ PACK_04 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04090.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04090.jpg"
   },
   {
     "name": "Avalanche!",
@@ -16901,7 +16901,7 @@ PACK_04 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04091.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04091.jpg"
   },
   {
     "name": "Super Absorbing Power",
@@ -16909,7 +16909,7 @@ PACK_04 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04092.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04092.jpg"
   },
   {
     "name": "Taskmaster",
@@ -16917,7 +16917,7 @@ PACK_04 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04093.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04093.jpg"
   },
   {
     "name": "Taskmaster",
@@ -16925,7 +16925,7 @@ PACK_04 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04094.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04094.jpg"
   },
   {
     "name": "Taskmaster",
@@ -16933,7 +16933,7 @@ PACK_04 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04095.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04095.jpg"
   },
   {
     "name": "Hunting Down Heroes",
@@ -16941,7 +16941,7 @@ PACK_04 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04096.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04096.jpg"
   },
   {
     "name": "Moon Knight",
@@ -16950,7 +16950,7 @@ PACK_04 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04097.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04097.jpg"
   },
   {
     "name": "Shang-Chi",
@@ -16958,7 +16958,7 @@ PACK_04 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04098.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04098.jpg"
   },
   {
     "name": "White Tiger",
@@ -16967,7 +16967,7 @@ PACK_04 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04099.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04099.jpg"
   },
   {
     "name": "Elektra",
@@ -16975,7 +16975,7 @@ PACK_04 = [[
     "type_code": "ally",
     "faction_code": "hero",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04100.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04100.jpg"
   },
   {
     "name": "Hydra Hunter",
@@ -16983,7 +16983,7 @@ PACK_04 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04101.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04101.jpg"
   },
   {
     "name": "Taskmaster's Sword",
@@ -16991,7 +16991,7 @@ PACK_04 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04102.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04102.jpg"
   },
   {
     "name": "Taskmaster's Shield",
@@ -16999,7 +16999,7 @@ PACK_04 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04103.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04103.jpg"
   },
   {
     "name": "Photographic Reflexes",
@@ -17007,7 +17007,7 @@ PACK_04 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04104.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04104.jpg"
   },
   {
     "name": "Mimicry",
@@ -17015,7 +17015,7 @@ PACK_04 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04105.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04105.jpg"
   },
   {
     "name": "Hunted by Hydra",
@@ -17023,7 +17023,7 @@ PACK_04 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04106.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04106.jpg"
   },
   {
     "name": "Captured by Hydra",
@@ -17031,7 +17031,7 @@ PACK_04 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04107.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04107.jpg"
   },
   {
     "name": "Taskmaster's Training Camp",
@@ -17039,7 +17039,7 @@ PACK_04 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04108.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04108.jpg"
   },
   {
     "name": "Zola",
@@ -17047,7 +17047,7 @@ PACK_04 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04109.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04109.jpg"
   },
   {
     "name": "Zola",
@@ -17055,7 +17055,7 @@ PACK_04 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04110.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04110.jpg"
   },
   {
     "name": "Zola",
@@ -17063,7 +17063,7 @@ PACK_04 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04111.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04111.jpg"
   },
   {
     "name": "The Island of Dr. Zola",
@@ -17071,7 +17071,7 @@ PACK_04 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04112.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04112.jpg"
   },
   {
     "name": "The Mad Doctor",
@@ -17079,7 +17079,7 @@ PACK_04 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04113.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04113.jpg"
   },
   {
     "name": "Ultimate Bio-Servant",
@@ -17087,7 +17087,7 @@ PACK_04 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04114.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04114.jpg"
   },
   {
     "name": "Zola's Mutate",
@@ -17095,7 +17095,7 @@ PACK_04 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04115.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04115.jpg"
   },
   {
     "name": "Berserk Mutate",
@@ -17103,7 +17103,7 @@ PACK_04 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04116.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04116.jpg"
   },
   {
     "name": "Defensive Programming",
@@ -17111,7 +17111,7 @@ PACK_04 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04117.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04117.jpg"
   },
   {
     "name": "Pain Inhibitors",
@@ -17119,7 +17119,7 @@ PACK_04 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04118.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04118.jpg"
   },
   {
     "name": "Neurological Implants",
@@ -17127,7 +17127,7 @@ PACK_04 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04119.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04119.jpg"
   },
   {
     "name": "Mind Ray",
@@ -17135,7 +17135,7 @@ PACK_04 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04120.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04120.jpg"
   },
   {
     "name": "Technological Enhancements",
@@ -17143,7 +17143,7 @@ PACK_04 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04121.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04121.jpg"
   },
   {
     "name": "Hydra Prison",
@@ -17151,7 +17151,7 @@ PACK_04 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04122.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04122.jpg"
   },
   {
     "name": "Test Subjects",
@@ -17159,7 +17159,7 @@ PACK_04 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04123.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04123.jpg"
   },
   {
     "name": "Zola's Experiments",
@@ -17167,7 +17167,7 @@ PACK_04 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04124.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04124.jpg"
   },
   {
     "name": "Red Skull",
@@ -17175,7 +17175,7 @@ PACK_04 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04125.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04125.jpg"
   },
   {
     "name": "Red Skull",
@@ -17183,7 +17183,7 @@ PACK_04 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04126.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04126.jpg"
   },
   {
     "name": "Red Skull",
@@ -17191,7 +17191,7 @@ PACK_04 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04127.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04127.jpg"
   },
   {
     "name": "The Rise of the Red Skull",
@@ -17199,7 +17199,7 @@ PACK_04 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04128.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04128.jpg"
   },
   {
     "name": "New World Hydra",
@@ -17207,7 +17207,7 @@ PACK_04 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04129.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04129.jpg"
   },
   {
     "name": "The Sleeper",
@@ -17215,7 +17215,7 @@ PACK_04 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04130.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04130.jpg"
   },
   {
     "name": "Hydra Exo-Soldier",
@@ -17223,7 +17223,7 @@ PACK_04 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04131.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04131.jpg"
   },
   {
     "name": "Red Skull's Luger",
@@ -17231,7 +17231,7 @@ PACK_04 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04132.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04132.jpg"
   },
   {
     "name": "Red Skull's Right Hook",
@@ -17239,7 +17239,7 @@ PACK_04 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04133.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04133.jpg"
   },
   {
     "name": "Master Strategist",
@@ -17247,7 +17247,7 @@ PACK_04 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04134.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04134.jpg"
   },
   {
     "name": "Twisted Reality",
@@ -17255,7 +17255,7 @@ PACK_04 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04135.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04135.jpg"
   },
   {
     "name": "Bitter Rival",
@@ -17263,7 +17263,7 @@ PACK_04 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04136.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04136.jpg"
   },
   {
     "name": "Spreading Lies",
@@ -17271,7 +17271,7 @@ PACK_04 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04137.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04137.jpg"
   },
   {
     "name": "Infinite Power",
@@ -17279,7 +17279,7 @@ PACK_04 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04138.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04138.jpg"
   },
   {
     "name": "The Red House",
@@ -17287,7 +17287,7 @@ PACK_04 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04139.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04139.jpg"
   },
   {
     "name": "The Sleeper Awakened",
@@ -17295,7 +17295,7 @@ PACK_04 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04140.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04140.jpg"
   },
   {
     "name": "Prison Camps",
@@ -17303,7 +17303,7 @@ PACK_04 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04141.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04141.jpg"
   },
   {
     "name": "Censor the Past",
@@ -17311,7 +17311,7 @@ PACK_04 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04142.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04142.jpg"
   },
   {
     "name": "Hydra Reinforcements",
@@ -17319,7 +17319,7 @@ PACK_04 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04143.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04143.jpg"
   },
   {
     "name": "Mass Chaos",
@@ -17327,7 +17327,7 @@ PACK_04 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04144.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04144.jpg"
   },
   {
     "name": "Hydra Flame-Soldier",
@@ -17335,7 +17335,7 @@ PACK_04 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04145.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04145.jpg"
   },
   {
     "name": "Hydra Jet-Trooper",
@@ -17343,7 +17343,7 @@ PACK_04 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04146.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04146.jpg"
   },
   {
     "name": "Hail Hydra!",
@@ -17351,7 +17351,7 @@ PACK_04 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04147.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04147.jpg"
   },
   {
     "name": "Combat Knife",
@@ -17359,7 +17359,7 @@ PACK_04 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04148.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04148.jpg"
   },
   {
     "name": "Hydra Sidearm",
@@ -17367,7 +17367,7 @@ PACK_04 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04149.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04149.jpg"
   },
   {
     "name": "Weapon Master",
@@ -17375,7 +17375,7 @@ PACK_04 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04150.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04150.jpg"
   },
   {
     "name": "Concussion Grenade",
@@ -17383,7 +17383,7 @@ PACK_04 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04151.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04151.jpg"
   },
   {
     "name": "Hydra Regular",
@@ -17391,7 +17391,7 @@ PACK_04 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04152.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04152.jpg"
   },
   {
     "name": "Hydra Soldier",
@@ -17399,7 +17399,7 @@ PACK_04 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04153.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04153.jpg"
   },
   {
     "name": "Hydra Patrol",
@@ -17407,7 +17407,7 @@ PACK_04 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/04154.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04154.jpg"
   }
 ]
 ]]
@@ -17419,7 +17419,7 @@ PACK_07 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07001.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07001.jpg"
   },
   {
     "name": "Wrecker",
@@ -17427,7 +17427,7 @@ PACK_07 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07002.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07002.jpg"
   },
   {
     "name": "Wrecker",
@@ -17435,7 +17435,7 @@ PACK_07 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07003.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07003.jpg"
   },
   {
     "name": "Day of Reckoning",
@@ -17443,7 +17443,7 @@ PACK_07 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07004.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07004.jpg"
   },
   {
     "name": "Held Hostage",
@@ -17451,7 +17451,7 @@ PACK_07 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07005.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07005.jpg"
   },
   {
     "name": "Magic Crowbar",
@@ -17459,7 +17459,7 @@ PACK_07 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07006.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07006.jpg"
   },
   {
     "name": "Wrecker's Command",
@@ -17467,7 +17467,7 @@ PACK_07 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07007.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07007.jpg"
   },
   {
     "name": "Corrupt Prison Guard",
@@ -17475,7 +17475,7 @@ PACK_07 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07008.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07008.jpg"
   },
   {
     "name": "Escaped Convict",
@@ -17483,7 +17483,7 @@ PACK_07 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07009.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07009.jpg"
   },
   {
     "name": "Buddy System",
@@ -17491,7 +17491,7 @@ PACK_07 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07010.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07010.jpg"
   },
   {
     "name": "Chaos In the Prison",
@@ -17499,7 +17499,7 @@ PACK_07 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07011.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07011.jpg"
   },
   {
     "name": "Crowbar Toss",
@@ -17507,7 +17507,7 @@ PACK_07 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07012.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07012.jpg"
   },
   {
     "name": "Get Wrecked!",
@@ -17515,7 +17515,7 @@ PACK_07 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07013.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07013.jpg"
   },
   {
     "name": "I've Been Waiting For This!",
@@ -17523,7 +17523,7 @@ PACK_07 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07014.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07014.jpg"
   },
   {
     "name": "Mystical Link",
@@ -17531,7 +17531,7 @@ PACK_07 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07015.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07015.jpg"
   },
   {
     "name": "You're Dead Meat!",
@@ -17539,7 +17539,7 @@ PACK_07 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07016.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07016.jpg"
   },
   {
     "name": "Thunderball",
@@ -17547,7 +17547,7 @@ PACK_07 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07017.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07017.jpg"
   },
   {
     "name": "Thunderball",
@@ -17555,7 +17555,7 @@ PACK_07 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07018.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07018.jpg"
   },
   {
     "name": "Thunderstruck",
@@ -17563,7 +17563,7 @@ PACK_07 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07019.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07019.jpg"
   },
   {
     "name": "Ball and Chain",
@@ -17571,7 +17571,7 @@ PACK_07 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07020.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07020.jpg"
   },
   {
     "name": "Held Hostage",
@@ -17579,7 +17579,7 @@ PACK_07 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07021.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07021.jpg"
   },
   {
     "name": "Radioactive Buildup",
@@ -17587,7 +17587,7 @@ PACK_07 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07022.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07022.jpg"
   },
   {
     "name": "Corrupt Prison Guard",
@@ -17595,7 +17595,7 @@ PACK_07 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07023.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07023.jpg"
   },
   {
     "name": "Escaped Convict",
@@ -17603,7 +17603,7 @@ PACK_07 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07024.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07024.jpg"
   },
   {
     "name": "Buddy System",
@@ -17611,7 +17611,7 @@ PACK_07 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07025.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07025.jpg"
   },
   {
     "name": "Chaos In the Prison",
@@ -17619,7 +17619,7 @@ PACK_07 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07026.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07026.jpg"
   },
   {
     "name": "Energy Projectiles",
@@ -17627,7 +17627,7 @@ PACK_07 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07027.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07027.jpg"
   },
   {
     "name": "Get Wrecked!",
@@ -17635,7 +17635,7 @@ PACK_07 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07028.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07028.jpg"
   },
   {
     "name": "I've Been Waiting For This!",
@@ -17643,7 +17643,7 @@ PACK_07 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07029.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07029.jpg"
   },
   {
     "name": "Lightning Blast",
@@ -17651,7 +17651,7 @@ PACK_07 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07030.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07030.jpg"
   },
   {
     "name": "Tactical Prowess",
@@ -17659,7 +17659,7 @@ PACK_07 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07031.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07031.jpg"
   },
   {
     "name": "Piledriver",
@@ -17667,7 +17667,7 @@ PACK_07 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07032.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07032.jpg"
   },
   {
     "name": "Piledriver",
@@ -17675,7 +17675,7 @@ PACK_07 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07033.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07033.jpg"
   },
   {
     "name": "Pile It On!",
@@ -17683,7 +17683,7 @@ PACK_07 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07034.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07034.jpg"
   },
   {
     "name": "Distracting Taunts",
@@ -17691,7 +17691,7 @@ PACK_07 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07035.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07035.jpg"
   },
   {
     "name": "Held Hostage",
@@ -17699,7 +17699,7 @@ PACK_07 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07036.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07036.jpg"
   },
   {
     "name": "Corrupt Prison Guard",
@@ -17707,7 +17707,7 @@ PACK_07 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07037.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07037.jpg"
   },
   {
     "name": "Escaped Convict",
@@ -17715,7 +17715,7 @@ PACK_07 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07038.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07038.jpg"
   },
   {
     "name": "Buddy System",
@@ -17723,7 +17723,7 @@ PACK_07 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07039.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07039.jpg"
   },
   {
     "name": "Get Wrecked!",
@@ -17731,7 +17731,7 @@ PACK_07 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07040.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07040.jpg"
   },
   {
     "name": "I've Been Waiting For This!",
@@ -17739,7 +17739,7 @@ PACK_07 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07041.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07041.jpg"
   },
   {
     "name": "Oversized Hands",
@@ -17747,7 +17747,7 @@ PACK_07 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07042.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07042.jpg"
   },
   {
     "name": "Escape Plan",
@@ -17755,7 +17755,7 @@ PACK_07 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07043.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07043.jpg"
   },
   {
     "name": "Pummel",
@@ -17763,7 +17763,7 @@ PACK_07 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07044.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07044.jpg"
   },
   {
     "name": "Uncanny Resilience",
@@ -17771,7 +17771,7 @@ PACK_07 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07045.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07045.jpg"
   },
   {
     "name": "Bulldozer",
@@ -17779,7 +17779,7 @@ PACK_07 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07046.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07046.jpg"
   },
   {
     "name": "Bulldozer",
@@ -17787,7 +17787,7 @@ PACK_07 = [[
     "type_code": "villain",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07047.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07047.jpg"
   },
   {
     "name": "Clear the Road",
@@ -17795,7 +17795,7 @@ PACK_07 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07048.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07048.jpg"
   },
   {
     "name": "Bulldozer's Helmet",
@@ -17803,7 +17803,7 @@ PACK_07 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07049.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07049.jpg"
   },
   {
     "name": "Held Hostage",
@@ -17811,7 +17811,7 @@ PACK_07 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07050.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07050.jpg"
   },
   {
     "name": "Ramming Speed",
@@ -17819,7 +17819,7 @@ PACK_07 = [[
     "type_code": "attachment",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07051.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07051.jpg"
   },
   {
     "name": "Corrupt Prison Guard",
@@ -17827,7 +17827,7 @@ PACK_07 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07052.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07052.jpg"
   },
   {
     "name": "Escaped Convict",
@@ -17835,7 +17835,7 @@ PACK_07 = [[
     "type_code": "minion",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07053.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07053.jpg"
   },
   {
     "name": "Buddy System",
@@ -17843,7 +17843,7 @@ PACK_07 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07054.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07054.jpg"
   },
   {
     "name": "Bull Rush",
@@ -17851,7 +17851,7 @@ PACK_07 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07055.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07055.jpg"
   },
   {
     "name": "Chaos In the Prison",
@@ -17859,7 +17859,7 @@ PACK_07 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07056.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07056.jpg"
   },
   {
     "name": "Get Wrecked!",
@@ -17867,7 +17867,7 @@ PACK_07 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07057.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07057.jpg"
   },
   {
     "name": "Headbutt",
@@ -17875,7 +17875,7 @@ PACK_07 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07058.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07058.jpg"
   },
   {
     "name": "Leading the Charge",
@@ -17883,7 +17883,7 @@ PACK_07 = [[
     "type_code": "treachery",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/07059.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07059.jpg"
   }
 ]
 ]]

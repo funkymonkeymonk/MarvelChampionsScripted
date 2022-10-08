@@ -3,6 +3,7 @@ const axios = require("axios")
 const fs = require('fs')
 const path = require('path')
 const _ = require('underscore');
+const IMG_ROOT = 'https://dcqvlrey92bew.cloudfront.net/'
 
 async function getDataFromGithub() {
   const octokit = new Octokit({
@@ -37,10 +38,10 @@ function FormatPackData(responses) {
     // TODO: Check for exceptions and special cards
     // This is a janky way to do double sided cards but it should work
     if (card.code.slice(-1) === 'a') {
-      return "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/" + card.code.slice(0, -1).toUpperCase() + "B.jpg"
+      return IMG_ROOT + card.code.slice(0, -1).toUpperCase() + "B.jpg"
     }
     if (card.code.slice(-1) === 'b') {
-      return "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/" + card.code.slice(0, -1).toUpperCase() + "A.jpg"
+      return IMG_ROOT + card.code.slice(0, -1).toUpperCase() + "A.jpg"
     }
     if (card.type_code === "villain") return cardBack["villain"]
     if (card.faction_code === "encounter") return cardBack["encounter"]
@@ -60,7 +61,7 @@ function FormatPackData(responses) {
           type_code: card.type_code,
           faction_code: card.faction_code,
           ...!card.duplicate_of && { BackURL: GetCardBack(card)},
-          ...!card.duplicate_of && { FrontURL: "https://cerebrodatastorage.blob.core.windows.net/cerebro-cards/official/" + card.code.toUpperCase() + ".jpg"},
+          ...!card.duplicate_of && { FrontURL: IMG_ROOT + card.code.toUpperCase() + ".jpg"},
           duplicate_of: card.duplicate_of,
         }
       })
