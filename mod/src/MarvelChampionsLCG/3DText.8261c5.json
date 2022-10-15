@@ -3,9 +3,9 @@
     "GUID": "8261c5",
     "Name": "3DText",
     "Transform": {
-      "posX": -78.00406,
-      "posY": 0.497067034,
-      "posZ": 37.0213928,
+      "posX": -78.00409,
+      "posY": 0.4970446,
+      "posZ": 50.00012,
       "rotX": 90,
       "rotY": -0.00000607246466,
       "rotZ": 0,
@@ -41,7 +41,7 @@
     "HideWhenFaceDown": false,
     "Hands": false,
     "Text": {
-      "Text": "CAMPAIGN",
+      "Text": "CAMPAIGNS",
       "colorstate": {
         "r": 1,
         "g": 1,

@@ -58,14 +58,24 @@ function getCard(player)
     end
 end
 
-function getCardByID(id, position)
+function getCardByID(id, position, params)
     local position = position
     local cardID = id
-    local FACE_UP_ROTATION = {0, 180, 0}
-    local FACE_DOWN_ROTATION = {0, 180, 180}
+
+    local params = params or {}
+    local scale = params.scale or Global.getTable("CARD_SCALE_PLAYER")
+    local name = params.name or ""
+
+    -- Default face up
+    local rotation = {0, 180, 0}
+    if (params.flipped) then
+        rotation = {0, 180, 180}
+    end
+
+
     local card = getCardFromCardPool(cardID)
     if (card.duplicate_of == nil) then
-        card:spawn({position = position, rotation = FACE_UP_ROTATION})
+        card:spawn({position = position, scale = scale, rotation = rotation, name = name})
         clearUI()
     else
         getCardByID(card.duplicate_of, position)
@@ -74,11 +84,17 @@ end
 
 
 function createDeck(params)
-    cards = params.cards
-    position = Vector(params.position)
-    scale = params.scale
-    local FACE_UP_ROTATION = {0, 180, 0}
-    local FACE_DOWN_ROTATION = {0, 180, 180}
+    local cards = params.cards
+    local position = Vector(params.position)
+    local scale = params.scale or Global.getTable("CARD_SCALE_PLAYER")
+    local name = params.name or ""
+
+    -- Default face down
+    local rotation = {0, 180, 180}
+    if (params.flipped) then
+        rotation = {0, 180, 0}
+    end
+
     deck = {}
     for cardID,number in pairs(cards) do
         for i = 1, number, 1 do
@@ -91,7 +107,7 @@ function createDeck(params)
         end
     end
     newDeck = Decker.Deck(deck)
-    newDeck:spawn({position = position, scale = scale, rotation = FACE_DOWN_ROTATION})
+    newDeck:spawn({position = position, scale = scale, rotation = rotation, name = name})
 end
 
 function createUI(_, menu_position)

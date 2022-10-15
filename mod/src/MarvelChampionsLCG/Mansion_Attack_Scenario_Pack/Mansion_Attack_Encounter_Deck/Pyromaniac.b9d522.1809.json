@@ -1,0 +1,61 @@
+{
+  "Object": {
+    "GUID": "b9d522",
+    "Name": "Card",
+    "Transform": {
+      "posX": 61.0000038,
+      "posY": 1.58084488,
+      "posZ": 10.999999,
+      "rotX": 2.17181969,
+      "rotY": 179.996735,
+      "rotZ": 0.07994073,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Pyromaniac",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 1809,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "18": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1829048392450977702/EB7FB6FACD05E40EAD1F6299E3EA53923288ED78/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1829048392450924385/59B873A9956467496A0CF001A70570635C315BEB/",
+        "NumWidth": 7,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -198,8 +198,7 @@ end
 
 function placeIdentity(identity, playmatPosition)
   local identityPosition = getOffsetPosition(playmatPosition, identityOffset)
-  getCardByID(identity, identityPosition)
-  --TODO: Fix size
+  getCardByID(identity, identityPosition, {scale = Global.getTable("CARD_SCALE_IDENTITY")})
 end
 
 function placeDeckOld(heroBag, deckType, starterDeckId, heroDeckId, playmatPosition)
@@ -217,7 +216,7 @@ function placeDeck(deckType, starterDeck, heroDeck, playmatPosition)
 
   local deck = {
     position = deckPosition,
-    scal = {1,1,1}
+    scale = Global.getTable("CARD_SCALE_PLAYER")
   }
 
   if (deckType == "starter") then
@@ -275,7 +274,7 @@ function placeExtras(heroBag, extras, playmatPosition)
     else
         -- This will need to grow but let's do it as port the heroes over to this approach.
         if (item.type == 'card') then
-          getCardByID(item.id, objectPosition)
+          getCardByID(item.id, objectPosition, {scale = Global.getTable("CARD_SCALE_PLAYER")})
         else
           log('Unable to spawn extra ' .. key)
         end
@@ -297,7 +296,7 @@ function placeNemesis(nemesis)
   local deck = {
     cards = JSON.decode(nemesis),
     position = nemesisPosition,
-    scale = {1,1,1}
+    scale = Global.getTable("CARD_SCALE_ENCOUNTER")
   }
   --TODO: Fix sizes for cards
   createDeck(deck)
@@ -314,9 +313,7 @@ end
 
 function placeObligation(obligation)
   local encounterDeckPosition = {-12.75, 3, 22.25} --TODO: figure out why this produces an error: Global.getVar("ENCOUNTER_DECK_SPAWN_POS")
-  getCardByID(obligation, encounterDeckPosition)
-  --TODO: Face down and wrong size
-  --obligationCopy.setScale({2.12, 1, 2.12})
+  getCardByID(obligation, encounterDeckPosition, {scale = Global.getTable("CARD_SCALE_ENCOUNTER"), flipped=true})
 end
 
 function getOffsetPosition(origPosition, offset)

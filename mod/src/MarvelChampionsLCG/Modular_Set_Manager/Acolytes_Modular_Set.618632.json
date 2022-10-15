@@ -1,0 +1,88 @@
+{
+  "Object": {
+    "GUID": "618632",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 103.385445,
+      "posY": 15.23961,
+      "posZ": 67.8059,
+      "rotX": -6.351485e-8,
+      "rotY": 180.007278,
+      "rotZ": -3.333996e-7,
+      "scaleX": 1.88,
+      "scaleY": 1,
+      "scaleZ": 1.88
+    },
+    "Nickname": "Acolytes Modular Set",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      700,
+      105,
+      104,
+      103,
+      102,
+      101,
+      100
+    ],
+    "CustomDeck": {
+      "1": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1829048392450923991/8247740164AD1150BEBE9EE21A83267B0632F084/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1829048392450924385/59B873A9956467496A0CF001A70570635C315BEB/",
+        "NumWidth": 4,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "7": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1829048392450933486/0BF76DA0C35CCAD0DDF18325847BA8FA244F5C27/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1829048392450924385/59B873A9956467496A0CF001A70570635C315BEB/",
+        "NumWidth": 4,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "The_Acolytes.b07c43.700.json",
+    "Zeal_for_the_Cause.17ca57.105.json",
+    "Unuscione.44f4ef.104.json",
+    "Delgado.f2b93c.103.json",
+    "Senyaka.e138da.102.json",
+    "Amelia_Voght.93bf90.101.json",
+    "Fabian_Cortez.a58c82.100.json"
+  ]
+}

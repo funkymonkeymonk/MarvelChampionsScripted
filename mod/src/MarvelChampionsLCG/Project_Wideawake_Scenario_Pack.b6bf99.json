@@ -1,0 +1,61 @@
+{
+  "Object": {
+    "GUID": "b6bf99",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 86.75,
+      "posY": 0.309967339,
+      "posZ": 39.75,
+      "rotX": -4.96922553e-7,
+      "rotY": -0.0000431222325,
+      "rotZ": 9.15472242e-7,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Project Wideawake Scenario Pack",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.121568434,
+      "g": 0.5294118,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Project_Wideawake_Encounter_Cards.41d9bf.json",
+    "Mutants_at_the_Mall.8b282b.2901.json",
+    "Captive_Allies.f519b6.json",
+    "Night_of_the_Sentinels.0dbdd1.2900.json",
+    "Project_Wideawake_Villain.4a0249.json"
+  ]
+}

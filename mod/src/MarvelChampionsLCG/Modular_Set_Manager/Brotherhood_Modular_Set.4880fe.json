@@ -1,0 +1,90 @@
+{
+  "Object": {
+    "GUID": "4880fe",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 85.79087,
+      "posY": 2.030578,
+      "posZ": 35.6223068,
+      "rotX": -2.51045389e-8,
+      "rotY": 179.972351,
+      "rotZ": 1.13603448e-7,
+      "scaleX": 1.88,
+      "scaleY": 1,
+      "scaleZ": 1.88
+    },
+    "Nickname": "Brotherhood Modular Set",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      701,
+      206,
+      205,
+      204,
+      203,
+      202,
+      201,
+      200
+    ],
+    "CustomDeck": {
+      "2": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1829048392450925818/E71FFB744E66E4E55A88FF5429B9BE45998CA746/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1829048392450924385/59B873A9956467496A0CF001A70570635C315BEB/",
+        "NumWidth": 4,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "7": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1829048392450933486/0BF76DA0C35CCAD0DDF18325847BA8FA244F5C27/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1829048392450924385/59B873A9956467496A0CF001A70570635C315BEB/",
+        "NumWidth": 4,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "The_Brotherhood.18f463.701.json",
+    "Mutant_Terrorists.3e6c5e.206.json",
+    "Homo_Superior.b9fd95.205.json",
+    "Homo_Superior.9d3f6d.204.json",
+    "Toad.89459c.203.json",
+    "Pyro.f9c3c3.202.json",
+    "Blob.856875.201.json",
+    "Avalanche.8345ac.200.json"
+  ]
+}

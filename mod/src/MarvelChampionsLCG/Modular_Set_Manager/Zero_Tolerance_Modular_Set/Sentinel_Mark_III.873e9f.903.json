@@ -1,0 +1,61 @@
+{
+  "Object": {
+    "GUID": "873e9f",
+    "Name": "Card",
+    "Transform": {
+      "posX": 67.00001,
+      "posY": 1.49113691,
+      "posZ": 26.9999981,
+      "rotX": 0.0165244583,
+      "rotY": 180.00235,
+      "rotZ": 0.0748671,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Sentinel Mark III",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 903,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "9": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1829048392450950583/9F47841A9EC59C533D0861D27397299E9439D3C1/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1829048392450924385/59B873A9956467496A0CF001A70570635C315BEB/",
+        "NumWidth": 4,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

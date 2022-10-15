@@ -1,0 +1,61 @@
+{
+  "Object": {
+    "GUID": "6ba52e",
+    "Name": "Card",
+    "Transform": {
+      "posX": 52.0000153,
+      "posY": 1.58265746,
+      "posZ": 5.999997,
+      "rotX": 0.0172640644,
+      "rotY": 179.9907,
+      "rotZ": 0.07969046,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Gauntlet Beam",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 3103,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "31": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1829048392450997065/A78F3B6D75E0E62C5C8C8E6B49BF93371731B4FB/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1829048392450924385/59B873A9956467496A0CF001A70570635C315BEB/",
+        "NumWidth": 6,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,8 +1,8 @@
 {
   "Save": {
     "SaveName": "MarvelChampionsLCG",
-    "EpochTime": 1664757965,
-    "Date": "10/2/2022 6:46:05 PM",
+    "EpochTime": 1665181827,
+    "Date": "10/7/2022 6:30:27 PM",
     "VersionNumber": "v13.2.2",
     "GameMode": "MarvelChampionsLCG",
     "GameType": "Game",
@@ -633,6 +633,12 @@
     "Time_Stone.0d33cc.json",
     "Space_Stone.71f4e2.json",
     "Modular_Set_Manager.608543.json",
-    "Hero_Manager.ff377b.json"
+    "Hero_Manager.ff377b.json",
+    "Mutant_Genesis.b8a859.json",
+    "Sabretooth_Scenario_Pack.b06ac9.json",
+    "Magneto_Scenario_Pack.d98b87.json",
+    "Project_Wideawake_Scenario_Pack.b6bf99.json",
+    "Master_Mold_Scenario_Pack.091bd4.json",
+    "Mansion_Attack_Scenario_Pack.f6daa9.json"
   ]
 }
