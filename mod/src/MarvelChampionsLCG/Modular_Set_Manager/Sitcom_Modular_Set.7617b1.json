@@ -1,0 +1,77 @@
+{
+  "Object": {
+    "GUID": "7617b1",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 102.062958,
+      "posY": 8.267991,
+      "posZ": -26.23215,
+      "rotX": 0.00002702108,
+      "rotY": 180.000916,
+      "rotZ": 1.49049377,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Sitcom Modular Set",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      725,
+      724,
+      723,
+      722,
+      721,
+      720
+    ],
+    "CustomDeck": {
+      "7": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1924753791406004188/7E265854BDDC2C4DAD980D9C5D33C8D70B506D21/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 7,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Watch_Me_Play.79183f.725.json",
+    "The_One_with_the_Breakup.14da87.724.json",
+    "The_Odd_Couple.54d599.723.json",
+    "Growing_Pains.6ec788.722.json",
+    "Family_Matters.5df7c3.721.json",
+    "Mojo_in_the_Middle.50a0a9.720.json"
+  ]
+}

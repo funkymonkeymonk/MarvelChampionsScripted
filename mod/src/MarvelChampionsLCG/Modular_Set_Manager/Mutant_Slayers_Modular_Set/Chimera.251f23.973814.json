@@ -1,0 +1,61 @@
+{
+  "Object": {
+    "GUID": "251f23",
+    "Name": "Card",
+    "Transform": {
+      "posX": 48.0000229,
+      "posY": 1.51453447,
+      "posZ": -58.9999962,
+      "rotX": 0.0191616546,
+      "rotY": 179.999,
+      "rotZ": 0.0795742348,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Chimera",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 973814,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "9738": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/2062139566431384430/AD392F1FDEC00A1F606481C07DA991C6B8BD6764/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1829048392450924385/59B873A9956467496A0CF001A70570635C315BEB/",
+        "NumWidth": 7,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}
