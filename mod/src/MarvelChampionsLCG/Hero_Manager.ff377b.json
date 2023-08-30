@@ -65,6 +65,10 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
+    "Gambit_Hero_Bag.c37739.json",
+    "Cable_Hero_Bag.0847ac.json",
+    "Domino_Hero_Bag.348324.json",
+    "Rogue_Hero_Bag.19b0fa.json",
     "Adam_Warlock_Hero_Bag.93353d.json",
     "Ant-Man_Hero_Bag.c8c4d3.json",
     "Black_Panther_Hero_Bag.b72fe1.json",

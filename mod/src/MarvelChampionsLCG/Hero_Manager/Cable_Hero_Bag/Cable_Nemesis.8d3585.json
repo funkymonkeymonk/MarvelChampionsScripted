@@ -1,0 +1,84 @@
+{
+  "Object": {
+    "GUID": "8d3585",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 35.75,
+      "posY": 2.544585,
+      "posZ": 54.25,
+      "rotX": -5.44360645e-8,
+      "rotY": 179.99173,
+      "rotZ": 7.757288e-9,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Cable Nemesis",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      973204,
+      973203,
+      973202,
+      973300,
+      973201
+    ],
+    "CustomDeck": {
+      "9732": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/2062139566431390810/0A6F414CAE42693C815B794EA182CEA5D44582B6/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1829048392450924385/59B873A9956467496A0CF001A70570635C315BEB/",
+        "NumWidth": 4,
+        "NumHeight": 3,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "9733": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/2062139566431396856/8D37B62E7A6BEF46669567F03742D83BAFEFEA23/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1829048392450924385/59B873A9956467496A0CF001A70570635C315BEB/",
+        "NumWidth": 7,
+        "NumHeight": 3,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Telekinetic_Blast.98ac04.973204.json",
+    "Mind_Scan.2463b9.973203.json",
+    "Telekinetic_Force_Field.8941f2.973202.json",
+    "Back_to_the_Future.4cc222.973300.json",
+    "Stryfe.d68d57.973201.json"
+  ]
+}

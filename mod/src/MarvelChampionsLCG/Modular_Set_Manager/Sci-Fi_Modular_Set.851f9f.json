@@ -1,0 +1,88 @@
+{
+  "Object": {
+    "GUID": "851f9f",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 102.498055,
+      "posY": 12.6646137,
+      "posZ": -25.6831131,
+      "rotX": 7.14793158e-9,
+      "rotY": 179.986221,
+      "rotZ": -4.71690669e-8,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Sci-Fi Modular Set",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      507,
+      719,
+      718,
+      717,
+      716,
+      715,
+      714
+    ],
+    "CustomDeck": {
+      "5": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1924753791405997245/8B9562344A3CF9FE9BAEA42B8AFDA2E70BCC6A2E/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 3,
+        "NumHeight": 3,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "7": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1924753791406004188/7E265854BDDC2C4DAD980D9C5D33C8D70B506D21/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 7,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "ICE-teroid_M.5c408c.507.json",
+    "Toad_2.0.6cc697.719.json",
+    "Pyro_4.0.e01b93.718.json",
+    "Magneto_2.6.84d3a1.717.json",
+    "Blob_3.14.13004d.716.json",
+    "Avalanche_9.0.c8141f.715.json",
+    "Mojo_Runner.6fd2b3.714.json"
+  ]
+}

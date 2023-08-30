@@ -1,0 +1,61 @@
+{
+  "Object": {
+    "GUID": "12a0a8",
+    "Name": "Card",
+    "Transform": {
+      "posX": 33.0000038,
+      "posY": 1.57097876,
+      "posZ": 49,
+      "rotX": 0.0168572031,
+      "rotY": 180.006821,
+      "rotZ": 359.611572,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Bandolier of Stakes",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 709,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "7": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1924753791406004188/7E265854BDDC2C4DAD980D9C5D33C8D70B506D21/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 7,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

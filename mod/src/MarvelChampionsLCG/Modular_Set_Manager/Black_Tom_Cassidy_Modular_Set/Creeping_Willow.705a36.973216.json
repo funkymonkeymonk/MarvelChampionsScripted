@@ -1,0 +1,61 @@
+{
+  "Object": {
+    "GUID": "705a36",
+    "Name": "Card",
+    "Transform": {
+      "posX": 36.99996,
+      "posY": 1.455201,
+      "posZ": -64.99999,
+      "rotX": 359.988525,
+      "rotY": 179.99295,
+      "rotZ": 0.0122700278,
+      "scaleX": 1.93762064,
+      "scaleY": 1,
+      "scaleZ": 1.93762064
+    },
+    "Nickname": "Creeping Willow",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 973216,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "9732": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/2062139566431438452/99B2E87EBD6430FC3849684FCDB51687DB455B06/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1829048392450924385/59B873A9956467496A0CF001A70570635C315BEB/",
+        "NumWidth": 7,
+        "NumHeight": 5,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,0 +1,61 @@
+{
+  "Object": {
+    "GUID": "776e75",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 29.25,
+      "posY": 2.584617,
+      "posZ": 62.7500267,
+      "rotX": 359.934967,
+      "rotY": 180,
+      "rotZ": 179.998825,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Rogue Identity",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 1300,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "13": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/2058745292939663757/8AEDEDE31F3DF1E36E706ECBB9FC8AF311DAD2A7/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/2058745292939663132/E74457B0F13F9E817CD75B51DBF820C539DECBDA/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}
