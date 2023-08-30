@@ -8,7 +8,7 @@ function getHeroDetails()
     heroDetails.obligationGuid = "8f253f"
     heroDetails.hitPoints = 9
     heroDetails.counterUrl = "http://cloud-3.steamusercontent.com/ugc/1833524706206964033/40605F7210359B98578100705E93635C77E4441F/"
-    heroDetails.playmatUrl = "http://cloud-3.steamusercontent.com/ugc/1679240425696826518/DF98C7F8717FD5D077243F6DB396CB6B356C7EA1/"
+    heroDetails.playmatUrl = "http://cloud-3.steamusercontent.com/ugc/2035118512670981741/04EDC113211C59BF4303762A535E1636969F7719/"
    
     return heroDetails
   end

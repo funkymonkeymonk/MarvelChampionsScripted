@@ -1,0 +1,61 @@
+{
+  "Object": {
+    "GUID": "2fb2de",
+    "Name": "CardCustom",
+    "Transform": {
+      "posX": 17.25,
+      "posY": 2.9781878,
+      "posZ": 34.75,
+      "rotX": -4.64236827e-8,
+      "rotY": 180,
+      "rotZ": 180,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Wolverine Identity",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 1200,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "12": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1924753791401546955/68AC1EB0DD45FE22EF86A70A2142637BD6CFDC92/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1924753791401547119/E40453C40FA0E605E44B9213C8A0DEA04B1B081B/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": true,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

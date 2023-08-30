@@ -38,6 +38,7 @@ function deckReadCallback(req)
       broadcastToAll("Deck "..deckId.." is not shared", {0.5,0.5,0.5})
       return
     end
+    broadcastToAll(req.text, {0.5, 0.5, 0.5})
     JsonDeckRes = JSON.decode(req.text)
   else
     print (req.error)
