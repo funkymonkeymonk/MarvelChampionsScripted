@@ -15,7 +15,7 @@ function getHeroDetails()
     extras["Touched"] =
       {
         guid = "e42299",
-        offset = {-4.94, 3, -4.66},
+        offset = {-4.95, 2, 4.64},
         locked = false
       }
   

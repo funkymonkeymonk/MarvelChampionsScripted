@@ -5,7 +5,8 @@ local excludeList={
   {cardId="21003"}, --Spectrum, Photon
   {cardId="21004"}, --Spectrum, Pulsar
   {cardId="26002"}, --Vision, Intangible
-  {cardId="25002"} --Valkyrie, Death-Glow
+  {cardId="25002"}, --Valkyrie, Death-Glow
+  {cardId="38002"}  --Rogue, Touched
 }
 local enteredDeckId = 0
 local deckId = 0
