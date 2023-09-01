@@ -28,6 +28,10 @@ async function getDataFromGithub() {
 }
 
 function FormatPackData(responses) {
+  function GetCardFront(card) {
+    if (card.type_code === "main_scheme") return IMG_ROOT  + card.code.toUpperCase() + "A.jpg"
+    return IMG_ROOT + card.code.toUpperCase() + ".jpg"
+  }
   function GetCardBack(card) {
     const cardBack = {
       "player": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
@@ -43,6 +47,7 @@ function FormatPackData(responses) {
     if (card.code.slice(-1) === 'b') {
       return IMG_ROOT + card.code.slice(0, -1).toUpperCase() + "A.jpg"
     }
+    if (card.type_code === "main_scheme") return IMG_ROOT + card.code.toUpperCase() + "B.jpg"
     if (card.type_code === "villain") return cardBack["villain"]
     if (card.faction_code === "encounter") return cardBack["encounter"]
     return cardBack["player"]
@@ -61,7 +66,7 @@ function FormatPackData(responses) {
           type_code: card.type_code,
           faction_code: card.faction_code,
           ...!card.duplicate_of && { BackURL: GetCardBack(card)},
-          ...!card.duplicate_of && { FrontURL: IMG_ROOT + card.code.toUpperCase() + ".jpg"},
+          ...!card.duplicate_of && { FrontURL: GetCardFront(card)},
           duplicate_of: card.duplicate_of,
         }
       })

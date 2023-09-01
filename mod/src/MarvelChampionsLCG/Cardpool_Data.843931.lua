@@ -299,56 +299,56 @@ PACK_11 = [[
     "code": "11007",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11007.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/11007B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11007A.jpg"
   },
   {
     "name": "The Master of Time",
     "code": "11008",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11008.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/11008B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11008A.jpg"
   },
   {
     "name": "The Chronopolis",
     "code": "11009",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11009.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/11009B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11009A.jpg"
   },
   {
     "name": "Inexorable Fate",
     "code": "11010",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11010.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/11010B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11010A.jpg"
   },
   {
     "name": "The Realm of Rama-Tut",
     "code": "11011",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11011.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/11011B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11011A.jpg"
   },
   {
     "name": "The Present Future War",
     "code": "11012",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11012.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/11012B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11012A.jpg"
   },
   {
     "name": "Kang's Wrath",
     "code": "11013",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11013.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/11013B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/11013A.jpg"
   },
   {
     "name": "Temporal Shield",
@@ -2487,7 +2487,7 @@ PACK_16 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/16061B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16061A.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16061AA.jpg"
   },
   {
     "name": "Terrestrial Invasion",
@@ -2495,7 +2495,7 @@ PACK_16 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/16061A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16061B.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16061BA.jpg"
   },
   {
     "name": "Protect the Planet",
@@ -2503,7 +2503,7 @@ PACK_16 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/16062B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16062A.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16062AA.jpg"
   },
   {
     "name": "Protect the Planet",
@@ -2511,7 +2511,7 @@ PACK_16 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/16062A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16062B.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16062BA.jpg"
   },
   {
     "name": "Badoon Ship",
@@ -2599,7 +2599,7 @@ PACK_16 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/16073B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16073A.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16073AA.jpg"
   },
   {
     "name": "The Grand Collection",
@@ -2607,7 +2607,7 @@ PACK_16 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/16073A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16073B.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16073BA.jpg"
   },
   {
     "name": "Biogram Image",
@@ -2695,7 +2695,7 @@ PACK_16 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/16082B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16082A.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16082AA.jpg"
   },
   {
     "name": "The Missing Milano",
@@ -2703,7 +2703,7 @@ PACK_16 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/16082A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16082B.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16082BA.jpg"
   },
   {
     "name": "Lost in the Museum",
@@ -2711,7 +2711,7 @@ PACK_16 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/16083B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16083A.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16083AA.jpg"
   },
   {
     "name": "Lost in the Museum",
@@ -2719,7 +2719,7 @@ PACK_16 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/16083A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16083B.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16083BA.jpg"
   },
   {
     "name": "The Great Escape",
@@ -2727,7 +2727,7 @@ PACK_16 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/16084B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16084A.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16084AA.jpg"
   },
   {
     "name": "The Great Escape",
@@ -2735,7 +2735,7 @@ PACK_16 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/16084A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16084B.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16084BA.jpg"
   },
   {
     "name": "Library Labyrinth",
@@ -2799,7 +2799,7 @@ PACK_16 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/16091B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16091A.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16091AA.jpg"
   },
   {
     "name": "The Art of Evasion",
@@ -2807,7 +2807,7 @@ PACK_16 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/16091A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16091B.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16091BA.jpg"
   },
   {
     "name": "Warp Drive Initiated",
@@ -2815,7 +2815,7 @@ PACK_16 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/16092B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16092A.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16092AA.jpg"
   },
   {
     "name": "Warp Drive Initiated",
@@ -2823,7 +2823,7 @@ PACK_16 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/16092A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16092B.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16092BA.jpg"
   },
   {
     "name": "Nebula's Ship",
@@ -2935,7 +2935,7 @@ PACK_16 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/16106B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16106A.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16106AA.jpg"
   },
   {
     "name": "Interception Imminent",
@@ -2943,7 +2943,7 @@ PACK_16 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/16106A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16106B.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16106BA.jpg"
   },
   {
     "name": "\"Take What Is Mine\"",
@@ -2951,7 +2951,7 @@ PACK_16 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/16107B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16107A.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16107AA.jpg"
   },
   {
     "name": "\"Take What Is Mine\"",
@@ -2959,7 +2959,7 @@ PACK_16 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/16107A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16107B.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16107BA.jpg"
   },
   {
     "name": "Kree Command Ship",
@@ -4989,16 +4989,16 @@ PACK_21 = [[
     "code": "21074",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21074.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/21074B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21074A.jpg"
   },
   {
     "name": "The Power Stone",
     "code": "21075",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21075.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/21075B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21075A.jpg"
   },
   {
     "name": "Fireball",
@@ -5181,16 +5181,16 @@ PACK_21 = [[
     "code": "21098",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21098.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/21098B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21098A.jpg"
   },
   {
     "name": "The Armies of Thanos",
     "code": "21099",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21099.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/21099B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21099A.jpg"
   },
   {
     "name": "Avengers Tower",
@@ -5309,16 +5309,16 @@ PACK_21 = [[
     "code": "21114",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21114.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/21114B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21114A.jpg"
   },
   {
     "name": "Balance the Scales",
     "code": "21115",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21115.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/21115B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21115A.jpg"
   },
   {
     "name": "Sanctuary",
@@ -5517,8 +5517,8 @@ PACK_21 = [[
     "code": "21138",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21138.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/21138B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21138A.jpg"
   },
   {
     "name": "Odin",
@@ -5741,8 +5741,8 @@ PACK_21 = [[
     "code": "21165",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21165.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/21165B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21165A.jpg"
   },
   {
     "name": "Casket of Ancient Winters",
@@ -6406,24 +6406,24 @@ PACK_24 = [[
     "code": "24004",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24004.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/24004B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24004A.jpg"
   },
   {
     "name": "Promised Prosperity",
     "code": "24005",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24005.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/24005B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24005A.jpg"
   },
   {
     "name": "Crime State",
     "code": "24006",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24006.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/24006B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24006A.jpg"
   },
   {
     "name": "Established Dominance",
@@ -8195,8 +8195,8 @@ PACK_27 = [[
     "code": "27064",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27064.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27064B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27064A.jpg"
   },
   {
     "name": "City Streets",
@@ -8292,7 +8292,7 @@ PACK_27 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/27076B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27076A.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27076AA.jpg"
   },
   {
     "name": "\"Leave Us Alone!\"",
@@ -8300,7 +8300,7 @@ PACK_27 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/27076A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27076B.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27076BA.jpg"
   },
   {
     "name": "Bell Tower",
@@ -8395,16 +8395,16 @@ PACK_27 = [[
     "code": "27087",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27087.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27087B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27087A.jpg"
   },
   {
     "name": "Edge of Reality",
     "code": "27088",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27088.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27088B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27088A.jpg"
   },
   {
     "name": "Humongous Hallucination",
@@ -8499,8 +8499,8 @@ PACK_27 = [[
     "code": "27100",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27100.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/27100B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27100A.jpg"
   },
   {
     "name": "Sinister Beatdown",
@@ -8508,7 +8508,7 @@ PACK_27 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/27101B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27101A.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27101AA.jpg"
   },
   {
     "name": "Sinister Beatdown",
@@ -8516,7 +8516,7 @@ PACK_27 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/27101A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27101B.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27101BA.jpg"
   },
   {
     "name": "Light at the End",
@@ -8644,7 +8644,7 @@ PACK_27 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/27116B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27116A.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27116AA.jpg"
   },
   {
     "name": "Skies Over New York",
@@ -8660,7 +8660,7 @@ PACK_27 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/27117B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27117A.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27117AA.jpg"
   },
   {
     "name": "Lower Manhattan",
@@ -8676,7 +8676,7 @@ PACK_27 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/27118B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27118A.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27118AA.jpg"
   },
   {
     "name": "Midtown Manhattan",
@@ -8692,7 +8692,7 @@ PACK_27 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/27119B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27119A.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27119AA.jpg"
   },
   {
     "name": "Upper Manhattan",
@@ -11090,7 +11090,7 @@ PACK_32 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32063B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32063A.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32063AA.jpg"
   },
   {
     "name": "Stalked by Sabretooth 1B",
@@ -11098,7 +11098,7 @@ PACK_32 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32063A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32063B.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32063BA.jpg"
   },
   {
     "name": "The Injured Senator 2A",
@@ -11106,7 +11106,7 @@ PACK_32 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32064B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32064A.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32064AA.jpg"
   },
   {
     "name": "The Injured Senator 2B",
@@ -11114,7 +11114,7 @@ PACK_32 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32064A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32064B.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32064BA.jpg"
   },
   {
     "name": "Find the Senator",
@@ -11306,7 +11306,7 @@ PACK_32 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32087B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32087A.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32087AA.jpg"
   },
   {
     "name": "Night of the Sentinels B",
@@ -11314,7 +11314,7 @@ PACK_32 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32087A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32087B.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32087BA.jpg"
   },
   {
     "name": "Mutant at the Mall",
@@ -11527,7 +11527,7 @@ PACK_32 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32112B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32112A.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32112AA.jpg"
   },
   {
     "name": "The Sentinel Factory B",
@@ -11535,7 +11535,7 @@ PACK_32 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32112A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32112B.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32112BA.jpg"
   },
   {
     "name": "Master Mold's Agenda A",
@@ -11543,7 +11543,7 @@ PACK_32 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32113B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32113A.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32113AA.jpg"
   },
   {
     "name": "Master Mold's Agenda B",
@@ -11551,7 +11551,7 @@ PACK_32 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32113A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32113B.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32113BA.jpg"
   },
   {
     "name": "Sentinel Mark VIII",
@@ -11679,7 +11679,7 @@ PACK_32 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32125B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32125A.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32125AA.jpg"
   },
   {
     "name": "The Brotherhood Strikes! B",
@@ -11687,7 +11687,7 @@ PACK_32 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32125A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32125B.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32125BA.jpg"
   },
   {
     "name": "The Atrium A",
@@ -11695,7 +11695,7 @@ PACK_32 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32126B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32126A.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32126AA.jpg"
   },
   {
     "name": "The Atrium B",
@@ -11703,7 +11703,7 @@ PACK_32 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32126A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32126B.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32126BA.jpg"
   },
   {
     "name": "The Cafeteria A",
@@ -11711,7 +11711,7 @@ PACK_32 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32127B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32127A.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32127AA.jpg"
   },
   {
     "name": "The Cafeteria B",
@@ -11719,7 +11719,7 @@ PACK_32 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32127A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32127B.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32127BA.jpg"
   },
   {
     "name": "The Basketball Court A",
@@ -11727,7 +11727,7 @@ PACK_32 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32128B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32128A.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32128AA.jpg"
   },
   {
     "name": "The Basketball Court B",
@@ -11735,7 +11735,7 @@ PACK_32 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32128A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32128B.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32128BA.jpg"
   },
   {
     "name": "The Courtyard A",
@@ -11743,7 +11743,7 @@ PACK_32 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32129B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32129A.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32129AA.jpg"
   },
   {
     "name": "The Courtyard B",
@@ -11751,7 +11751,7 @@ PACK_32 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32129A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32129B.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32129BA.jpg"
   },
   {
     "name": "Save the School",
@@ -11847,7 +11847,7 @@ PACK_32 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32141B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32141A.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32141AA.jpg"
   },
   {
     "name": "Asteroid M B",
@@ -11855,7 +11855,7 @@ PACK_32 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32141A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32141B.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32141BA.jpg"
   },
   {
     "name": "Factory Online A",
@@ -11863,7 +11863,7 @@ PACK_32 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32142B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32142A.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32142AA.jpg"
   },
   {
     "name": "Factory Online B",
@@ -11871,7 +11871,7 @@ PACK_32 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32142A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32142B.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32142BA.jpg"
   },
   {
     "name": "The Rule of Magnus A",
@@ -11879,7 +11879,7 @@ PACK_32 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32143B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32143A.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32143AA.jpg"
   },
   {
     "name": "The Rule of Magnus B",
@@ -11887,7 +11887,7 @@ PACK_32 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32143A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32143B.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32143BA.jpg"
   },
   {
     "name": "Boarding Party",
@@ -13831,7 +13831,7 @@ PACK_39 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/39002B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/39002A.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/39002AA.jpg"
   },
   {
     "name": "Melee in the Mojo-seum",
@@ -13839,7 +13839,7 @@ PACK_39 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/39002A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/39002B.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/39002BA.jpg"
   },
   {
     "name": "The Champion",
@@ -13983,7 +13983,7 @@ PACK_39 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/39015B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/39015A.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/39015AA.jpg"
   },
   {
     "name": "Across the Mojoverse",
@@ -13991,7 +13991,7 @@ PACK_39 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/39015A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/39015B.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/39015BA.jpg"
   },
   {
     "name": "The Search for Spiral",
@@ -14071,7 +14071,7 @@ PACK_39 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/39025B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/39025A.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/39025AA.jpg"
   },
   {
     "name": "MojoMania",
@@ -14079,7 +14079,7 @@ PACK_39 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/39025A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/39025B.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/39025BA.jpg"
   },
   {
     "name": "Wheel of Genres",
@@ -15073,7 +15073,7 @@ PACK_40 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/40078A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/40078B.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/40078BA.jpg"
   },
   {
     "name": "Morlock",
@@ -15121,7 +15121,7 @@ PACK_40 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/40104A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/40104B.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/40104BA.jpg"
   },
   {
     "name": "Hope's Captor",
@@ -15145,7 +15145,7 @@ PACK_40 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/40121A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/40121B.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/40121BA.jpg"
   },
   {
     "name": "Juggernaut's Helmet",
@@ -15241,7 +15241,7 @@ PACK_40 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/40166A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/40166B.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/40166BA.jpg"
   },
   {
     "name": "Left to Your Fate",
@@ -15249,7 +15249,7 @@ PACK_40 = [[
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/40167A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/40167B.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/40167BA.jpg"
   },
   {
     "name": "Stryfe's Grasp",
@@ -16680,8 +16680,8 @@ PACK_01 = [[
     "code": "01097",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01097.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/01097B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01097A.jpg"
   },
   {
     "name": "Armored Rhino Suit",
@@ -16832,16 +16832,16 @@ PACK_01 = [[
     "code": "01116",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01116.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/01116B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01116A.jpg"
   },
   {
     "name": "Secret Rendezvous",
     "code": "01117",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01117.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/01117B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01117A.jpg"
   },
   {
     "name": "Sonic Converter",
@@ -17000,24 +17000,24 @@ PACK_01 = [[
     "code": "01137",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01137.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/01137B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01137A.jpg"
   },
   {
     "name": "Assault on NORAD",
     "code": "01138",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01138.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/01138B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01138A.jpg"
   },
   {
     "name": "Countdown to Oblivion",
     "code": "01139",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01139.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/01139B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01139A.jpg"
   },
   {
     "name": "Ultron Drones",
@@ -17827,16 +17827,16 @@ PACK_02 = [[
     "code": "02004",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02004.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/02004B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02004A.jpg"
   },
   {
     "name": "Corporate Acquisition",
     "code": "02005",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02005.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/02005B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02005A.jpg"
   },
   {
     "name": "Criminal Enterprise",
@@ -17939,16 +17939,16 @@ PACK_02 = [[
     "code": "02017",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02017.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/02017B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02017A.jpg"
   },
   {
     "name": "Mutagen Cloud",
     "code": "02018",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02018.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/02018B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02018A.jpg"
   },
   {
     "name": "Goblin Glider",
@@ -19301,24 +19301,24 @@ PACK_04 = [[
     "code": "04061",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04061.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/04061B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04061A.jpg"
   },
   {
     "name": "The Infinity Stone",
     "code": "04062",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04062.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/04062B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04062A.jpg"
   },
   {
     "name": "The Getaway",
     "code": "04063",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04063.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/04063B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04063A.jpg"
   },
   {
     "name": "Crossbones' Machine Gun",
@@ -19445,8 +19445,8 @@ PACK_04 = [[
     "code": "04079",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04079.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/04079B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04079A.jpg"
   },
   {
     "name": "Dense Forest",
@@ -19581,8 +19581,8 @@ PACK_04 = [[
     "code": "04096",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04096.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/04096B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04096A.jpg"
   },
   {
     "name": "Moon Knight",
@@ -19711,16 +19711,16 @@ PACK_04 = [[
     "code": "04112",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04112.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/04112B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04112A.jpg"
   },
   {
     "name": "The Mad Doctor",
     "code": "04113",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04113.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/04113B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04113A.jpg"
   },
   {
     "name": "Ultimate Bio-Servant",
@@ -19839,16 +19839,16 @@ PACK_04 = [[
     "code": "04128",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04128.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/04128B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04128A.jpg"
   },
   {
     "name": "New World Hydra",
     "code": "04129",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04129.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/04129B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04129A.jpg"
   },
   {
     "name": "The Sleeper",
@@ -20059,8 +20059,8 @@ PACK_07 = [[
     "code": "07001",
     "type_code": "main_scheme",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07001.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/07001B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/07001A.jpg"
   },
   {
     "name": "Wrecker",
