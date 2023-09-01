@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "48b9e8",
-    "Name": "3DText",
+    "GUID": "d8fbff",
+    "Name": "Infinite_Bag",
     "Transform": {
-      "posX": 63.1822968,
-      "posY": 0.496574521,
-      "posZ": 37.02331,
-      "rotX": 90,
-      "rotY": -0.0000079001,
-      "rotZ": 0,
+      "posX": 62.75,
+      "posY": 0.478001237,
+      "posZ": 79.25,
+      "rotX": 4.569653e-8,
+      "rotY": 0.000007928909,
+      "rotZ": -1.27875609e-7,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
     },
-    "Nickname": "",
+    "Nickname": "Villain HP Counter Bag",
     "Description": "",
     "GMNotes": "",
     "AltLookAngle": {
@@ -22,13 +22,13 @@
       "z": 0
     },
     "ColorDiffuse": {
-      "r": 1,
-      "g": 1,
+      "r": 0.3058885,
+      "g": 0.372555166,
       "b": 1
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,
-    "Locked": true,
+    "Locked": false,
     "Grid": true,
     "Snap": true,
     "IgnoreFoW": false,
@@ -40,18 +40,15 @@
     "GridProjection": false,
     "HideWhenFaceDown": false,
     "Hands": false,
-    "Text": {
-      "Text": "HEROES",
-      "colorstate": {
-        "r": 1,
-        "g": 1,
-        "b": 1
-      },
-      "fontSize": 124
-    },
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
     "LuaScript": "",
     "LuaScriptState": "",
-    "XmlUI": ""
+    "XmlUI": "",
+    "ContainedObjects": []
   },
-  "StatesPaths": {}
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Venom_Goblin_s_HP_Counter.8cf3d6.json"
+  ]
 }

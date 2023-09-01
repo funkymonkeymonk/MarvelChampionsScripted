@@ -14,7 +14,6 @@ local columnGap = 5
 local rows = 12
 
 function onload(saved_data)
---    self.setInvisibleTo({"Red", "Blue", "Green", "Yellow", "White"})
     createContextMenu()
     layOutHeroes()
 end

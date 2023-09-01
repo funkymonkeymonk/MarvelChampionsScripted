@@ -72,13 +72,13 @@ function getCardByID(id, position, params)
         rotation = {0, 180, 180}
     end
 
-
     local card = getCardFromCardPool(cardID)
+
     if (card.duplicate_of == nil) then
         card:spawn({position = position, scale = scale, rotation = rotation, name = name})
         clearUI()
     else
-        getCardByID(card.duplicate_of, position)
+        getCardByID(card.duplicate_of, position, params)
     end
 end
 
@@ -99,6 +99,10 @@ function createDeck(params)
     for cardID,number in pairs(cards) do
         for i = 1, number, 1 do
             local card = getCardFromCardPool(cardID)
+
+            --Temporary work-around for cardpool issue
+            if(card == nil) then card = getCardFromCardPool(cardID.."a") end
+
             if (card.duplicate_of == nil) then
                 table.insert(deck, card)
             else

@@ -1,8 +1,8 @@
 {
   "Save": {
     "SaveName": "MarvelChampionsLCG",
-    "EpochTime": 1693434780,
-    "Date": "8/30/2023 4:33:00 PM",
+    "EpochTime": 1693605266,
+    "Date": "9/1/2023 3:54:26 PM",
     "VersionNumber": "v13.2.2",
     "GameMode": "MarvelChampionsLCG",
     "GameType": "Game",
@@ -639,6 +639,7 @@
     "Magneto_Scenario_Pack.d98b87.json",
     "Project_Wideawake_Scenario_Pack.b6bf99.json",
     "Master_Mold_Scenario_Pack.091bd4.json",
-    "Mansion_Attack_Scenario_Pack.f6daa9.json"
+    "Mansion_Attack_Scenario_Pack.f6daa9.json",
+    "Villain_HP_Counter_Bag.d8fbff.json"
   ]
 }
