@@ -3,9 +3,9 @@
     "GUID": "4e892b",
     "Name": "3DText",
     "Transform": {
-      "posX": 96.0382,
-      "posY": 0.496585846,
-      "posZ": 37.02319,
+      "posX": 90.68324,
+      "posY": 0.49653253,
+      "posZ": 37.0234032,
       "rotX": 90,
       "rotY": -0.0000079001,
       "rotZ": 0,
@@ -41,7 +41,7 @@
     "HideWhenFaceDown": false,
     "Hands": false,
     "Text": {
-      "Text": "VILLAINS",
+      "Text": "SCENARIOS",
       "colorstate": {
         "r": 1,
         "g": 1,

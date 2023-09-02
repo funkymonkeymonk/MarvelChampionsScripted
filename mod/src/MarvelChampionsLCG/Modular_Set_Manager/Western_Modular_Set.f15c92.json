@@ -3,12 +3,12 @@
     "GUID": "f15c92",
     "Name": "Deck",
     "Transform": {
-      "posX": 101.9652,
-      "posY": 16.4400177,
-      "posZ": -26.2465782,
-      "rotX": 2.37525413e-8,
-      "rotY": 179.999939,
-      "rotZ": -9.311541e-9,
+      "posX": 103.020287,
+      "posY": 34.67498,
+      "posZ": -19.911705,
+      "rotX": 2.86118818e-9,
+      "rotY": 180,
+      "rotZ": 180,
       "scaleX": 1.93762064,
       "scaleY": 1,
       "scaleZ": 1.93762064
@@ -42,15 +42,15 @@
     "Hands": false,
     "SidewaysCard": false,
     "DeckIDs": [
-      731,
-      730,
-      729,
-      728,
-      727,
-      726
+      975231,
+      975230,
+      975229,
+      975228,
+      975227,
+      975226
     ],
     "CustomDeck": {
-      "7": {
+      "9752": {
         "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1924753791406004188/7E265854BDDC2C4DAD980D9C5D33C8D70B506D21/",
         "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
         "NumWidth": 7,
@@ -67,11 +67,11 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
-    "A_Game_of_Cards.c996b5.731.json",
-    "Gunslinger.14b928.730.json",
-    "Gunslinger.2c79fe.729.json",
-    "Card_Shark.ebbccf.728.json",
-    "Dead_or_Alive.208003.727.json",
-    "Wild_Wild_Mojo.1af9cc.726.json"
+    "A_Game_of_Cards.c996b5.975231.json",
+    "Gunslinger.14b928.975230.json",
+    "Gunslinger.2c79fe.975229.json",
+    "Card_Shark.ebbccf.975228.json",
+    "Dead_or_Alive.208003.975227.json",
+    "Wild_Wild_Mojo.1af9cc.975226.json"
   ]
 }

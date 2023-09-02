@@ -3,12 +3,12 @@
     "GUID": "fcd3b5",
     "Name": "Deck",
     "Transform": {
-      "posX": 94.29088,
-      "posY": 2.01613569,
-      "posZ": 35.6223068,
-      "rotX": -1.87572255e-7,
-      "rotY": 180.001968,
-      "rotZ": -4.054292e-7,
+      "posX": 102.542046,
+      "posY": 38.75038,
+      "posZ": -23.21632,
+      "rotX": -3.74262754e-8,
+      "rotY": 180,
+      "rotZ": 180,
       "scaleX": 1.88,
       "scaleY": 1,
       "scaleZ": 1.88
@@ -42,26 +42,26 @@
     "Hands": false,
     "SidewaysCard": false,
     "DeckIDs": [
-      503,
-      502,
-      501,
+      974603,
+      974602,
+      974601,
       704,
-      500
+      974600
     ],
     "CustomDeck": {
-      "5": {
-        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1829048392450931352/7DC64A07FE73AF245D24BBA8CCBA4E5AE71D2CFF/",
+      "7": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1829048392450933486/0BF76DA0C35CCAD0DDF18325847BA8FA244F5C27/",
         "BackURL": "http://cloud-3.steamusercontent.com/ugc/1829048392450924385/59B873A9956467496A0CF001A70570635C315BEB/",
-        "NumWidth": 3,
+        "NumWidth": 4,
         "NumHeight": 2,
         "BackIsHidden": false,
         "UniqueBack": false,
         "Type": 0
       },
-      "7": {
-        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1829048392450933486/0BF76DA0C35CCAD0DDF18325847BA8FA244F5C27/",
+      "9746": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1829048392450931352/7DC64A07FE73AF245D24BBA8CCBA4E5AE71D2CFF/",
         "BackURL": "http://cloud-3.steamusercontent.com/ugc/1829048392450924385/59B873A9956467496A0CF001A70570635C315BEB/",
-        "NumWidth": 4,
+        "NumWidth": 3,
         "NumHeight": 2,
         "BackIsHidden": false,
         "UniqueBack": false,
@@ -75,10 +75,10 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
-    "Shapeshifter_Surprise.68e304.503.json",
-    "Infiltration.56c219.502.json",
-    "Infiltration.142fdd.501.json",
+    "Shapeshifter_Surprise.68e304.974603.json",
+    "Infiltration.56c219.974602.json",
+    "Infiltration.142fdd.974601.json",
     "Metamorphic_Mayhem.bfe5ca.704.json",
-    "Mystique.25a8f1.500.json"
+    "Mystique.25a8f1.974600.json"
   ]
 }

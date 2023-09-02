@@ -3,12 +3,12 @@
     "GUID": "aac060",
     "Name": "Deck",
     "Transform": {
-      "posX": 102.574287,
-      "posY": 4.727477,
-      "posZ": -31.0343971,
-      "rotX": 6.232476e-8,
-      "rotY": 179.9971,
-      "rotZ": -4.079138e-8,
+      "posX": 102.792717,
+      "posY": 33.4435463,
+      "posZ": -19.2571812,
+      "rotX": -3.243365e-8,
+      "rotY": 180,
+      "rotZ": 180,
       "scaleX": 1.87838769,
       "scaleY": 1,
       "scaleZ": 1.87838769
@@ -42,26 +42,26 @@
     "Hands": false,
     "SidewaysCard": false,
     "DeckIDs": [
-      803,
-      802,
-      801,
+      975103,
+      975102,
+      975101,
       1001,
-      800
+      975100
     ],
     "CustomDeck": {
-      "8": {
-        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1924753791401540480/E8AE6B76E8774429B054D0B569E19C9CCFDF00C9/",
+      "10": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1924753791401542150/837205F0A21493D793981B7ABF04B1F25C12E61D/",
         "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-        "NumWidth": 3,
+        "NumWidth": 2,
         "NumHeight": 2,
         "BackIsHidden": false,
         "UniqueBack": false,
         "Type": 0
       },
-      "10": {
-        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1924753791401542150/837205F0A21493D793981B7ABF04B1F25C12E61D/",
+      "9751": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1924753791401540480/E8AE6B76E8774429B054D0B569E19C9CCFDF00C9/",
         "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-        "NumWidth": 2,
+        "NumWidth": 3,
         "NumHeight": 2,
         "BackIsHidden": false,
         "UniqueBack": false,
@@ -75,10 +75,10 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
-    "Astral_Attack.029a77.803.json",
-    "Possessed.6c0261.802.json",
-    "Possessed.f5c381.801.json",
+    "Astral_Attack.029a77.975103.json",
+    "Possessed.6c0261.975102.json",
+    "Possessed.f5c381.975101.json",
     "Ruler_of_the_Astral_Plane.2d75c2.1001.json",
-    "The_Shadow_King.799692.800.json"
+    "The_Shadow_King.799692.975100.json"
   ]
 }

@@ -3,12 +3,12 @@
     "GUID": "5fef47",
     "Name": "Deck",
     "Transform": {
-      "posX": 103.5626,
-      "posY": 16.9255,
-      "posZ": -28.8073063,
-      "rotX": 5.95233125e-8,
-      "rotY": 179.975754,
-      "rotZ": -5.21917123e-8,
+      "posX": 102.053619,
+      "posY": 38.3925438,
+      "posZ": -21.6178131,
+      "rotX": 1.07821707e-8,
+      "rotY": 180,
+      "rotZ": 180,
       "scaleX": 1.93762064,
       "scaleY": 1,
       "scaleZ": 1.93762064
@@ -43,10 +43,10 @@
     "SidewaysCard": false,
     "DeckIDs": [
       973706,
-      973811,
-      973810,
-      973809,
-      973808
+      974411,
+      974410,
+      974409,
+      974408
     ],
     "CustomDeck": {
       "9737": {
@@ -58,7 +58,7 @@
         "UniqueBack": false,
         "Type": 0
       },
-      "9738": {
+      "9744": {
         "FaceURL": "http://cloud-3.steamusercontent.com/ugc/2062139566431384430/AD392F1FDEC00A1F606481C07DA991C6B8BD6764/",
         "BackURL": "http://cloud-3.steamusercontent.com/ugc/1829048392450924385/59B873A9956467496A0CF001A70570635C315BEB/",
         "NumWidth": 7,
@@ -76,9 +76,9 @@
   "StatesPaths": {},
   "ContainedObjectPaths": [
     "Military_Grade.e75689.973706.json",
-    "Military_Grade.7180f9.973811.json",
-    "Military_Grade.bffad1.973810.json",
-    "Titanium_Exoskeleton.cab398.973809.json",
-    "Heavy_Armament.cd922b.973808.json"
+    "Military_Grade.7180f9.974411.json",
+    "Military_Grade.bffad1.974410.json",
+    "Titanium_Exoskeleton.cab398.974409.json",
+    "Heavy_Armament.cd922b.974408.json"
   ]
 }

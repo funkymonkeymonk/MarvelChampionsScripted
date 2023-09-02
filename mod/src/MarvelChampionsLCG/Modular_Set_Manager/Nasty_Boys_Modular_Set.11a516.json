@@ -3,12 +3,12 @@
     "GUID": "11a516",
     "Name": "Deck",
     "Transform": {
-      "posX": 102.586258,
-      "posY": 11.0993338,
-      "posZ": -26.26209,
-      "rotX": 358.80545,
-      "rotY": 179.9703,
-      "rotZ": 0.0005045376,
+      "posX": 102.933769,
+      "posY": 39.6099739,
+      "posZ": -22.1247787,
+      "rotX": -2.690454e-8,
+      "rotY": 180,
+      "rotZ": 180,
       "scaleX": 1.93762064,
       "scaleY": 1,
       "scaleZ": 1.93762064
@@ -43,11 +43,11 @@
     "SidewaysCard": false,
     "DeckIDs": [
       973710,
-      973831,
-      973830,
-      973829,
-      973828,
-      973827
+      974731,
+      974730,
+      974729,
+      974728,
+      974727
     ],
     "CustomDeck": {
       "9737": {
@@ -59,7 +59,7 @@
         "UniqueBack": false,
         "Type": 0
       },
-      "9738": {
+      "9747": {
         "FaceURL": "http://cloud-3.steamusercontent.com/ugc/2062139566431384430/AD392F1FDEC00A1F606481C07DA991C6B8BD6764/",
         "BackURL": "http://cloud-3.steamusercontent.com/ugc/1829048392450924385/59B873A9956467496A0CF001A70570635C315BEB/",
         "NumWidth": 7,
@@ -77,10 +77,10 @@
   "StatesPaths": {},
   "ContainedObjectPaths": [
     "Get_Nasty.087f93.973710.json",
-    "Slab.ae0232.973831.json",
-    "Ruckus.6919b7.973830.json",
-    "Ramrod.0f57c1.973829.json",
-    "Hairbag.c52afd.973828.json",
-    "Gorgeous_George.8fcf60.973827.json"
+    "Slab.ae0232.974731.json",
+    "Ruckus.6919b7.974730.json",
+    "Ramrod.0f57c1.974729.json",
+    "Hairbag.c52afd.974728.json",
+    "Gorgeous_George.8fcf60.974727.json"
   ]
 }
