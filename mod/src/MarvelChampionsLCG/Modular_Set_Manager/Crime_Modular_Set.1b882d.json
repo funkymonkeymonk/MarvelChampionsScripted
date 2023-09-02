@@ -3,12 +3,12 @@
     "GUID": "1b882d",
     "Name": "Deck",
     "Transform": {
-      "posX": 103.127083,
-      "posY": 2.36951566,
-      "posZ": -31.3967113,
-      "rotX": 3.02565226e-8,
-      "rotY": 180.004547,
-      "rotZ": -2.03485982e-7,
+      "posX": 102.800461,
+      "posY": 39.2180252,
+      "posZ": -24.0410824,
+      "rotX": 2.89618036e-8,
+      "rotY": 180,
+      "rotZ": 180,
       "scaleX": 1.93762064,
       "scaleY": 1,
       "scaleZ": 1.93762064
@@ -42,12 +42,12 @@
     "Hands": false,
     "SidewaysCard": false,
     "DeckIDs": [
-      702,
+      973802,
       505,
       504,
       503,
-      701,
-      700
+      973801,
+      973800
     ],
     "CustomDeck": {
       "5": {
@@ -59,7 +59,7 @@
         "UniqueBack": false,
         "Type": 0
       },
-      "7": {
+      "9738": {
         "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1924753791406004188/7E265854BDDC2C4DAD980D9C5D33C8D70B506D21/",
         "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
         "NumWidth": 7,
@@ -76,11 +76,11 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
-    "Elementary_My_Dear_Mojo.654c80.702.json",
+    "Elementary_My_Dear_Mojo.654c80.973802.json",
     "Dragnet.7c285c.505.json",
     "Law_&_Order.8e9449.504.json",
     "Crime_Scene_Investigation.a1b007.503.json",
-    "Build_the_Case.796b2c.701.json",
-    "Dial_M_for_Mojo.a89bf8.700.json"
+    "Build_the_Case.796b2c.973801.json",
+    "Dial_M_for_Mojo.a89bf8.973800.json"
   ]
 }

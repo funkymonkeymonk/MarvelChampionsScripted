@@ -3,12 +3,12 @@
     "GUID": "d8fbff",
     "Name": "Infinite_Bag",
     "Transform": {
-      "posX": 62.75,
-      "posY": 0.478001237,
-      "posZ": 79.25,
-      "rotX": 4.569653e-8,
-      "rotY": 0.000007928909,
-      "rotZ": -1.27875609e-7,
+      "posX": 65.75,
+      "posY": 0.478001118,
+      "posZ": 98.75,
+      "rotX": 3.036954e-7,
+      "rotY": 8.464353e-7,
+      "rotZ": 1.20586861e-7,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -28,7 +28,7 @@
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,
-    "Locked": false,
+    "Locked": true,
     "Grid": true,
     "Snap": true,
     "IgnoreFoW": false,
@@ -49,6 +49,6 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
-    "Venom_Goblin_s_HP_Counter.8cf3d6.json"
+    "Villain_HP_Counter.8cf3d6.json"
   ]
 }

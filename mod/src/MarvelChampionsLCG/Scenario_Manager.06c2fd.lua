@@ -12,12 +12,12 @@ local defaults = {
         scale= {2.12, 1.00, 2.12}
     },
     villainDeck= {
-        position= {-0.34, 0.99, 20.44},
+        position= {-0.34, 2, 20.44},
         rotation= {0.00, 180.00, 0.00},
         scale= {3.64, 1.00, 3.64}
     },
     mainSchemeDeck= {
-        position= {8.38, 0.97, 22.45},
+        position= {8.38, 2, 22.45},
         rotation= {0.00, 90.00, 180.00},
         scale= {2.93, 1.00, 2.93}
     },
@@ -47,7 +47,7 @@ local villains = {}
 local advanceVillainFunction --(villainName, stageNumber)
 local advanceSchemeFunction --(schemeName, stageNumber)
 
-local originPosition = {x=88.25, y=0.50, z=33.75}
+local originPosition = {x=83.25, y=0.50, z=33.75}
 
 local rowGap = -2.5
 local columnGap = 5
@@ -95,7 +95,7 @@ function placeScenario(scenarioKey, mode)
                 placeScheme(scheme)
             end
 
-            --placeBlackHole(scenarioDetails)
+            placeBlackHole(scenario)
             --placeExtras(scenarioBag, scenarioDetails.extras)
         end, 
         1)
@@ -110,6 +110,7 @@ function placeVillainHpCounter(villain, heroCount)
     local counterRotation = villain.hpCounter.rotation or defaults.villainHpCounter.rotation
     local counterScale = villain.hpCounter.scale or defaults.villainHpCounter.scale
 
+    local counterTemp
     local villainHpCounter
 
     if(villain.hpCounter.guid ~= nil) then
@@ -118,12 +119,17 @@ function placeVillainHpCounter(villain, heroCount)
         -- scenarioBag.putObject(villainHpCounterOrig)
     else
         local villainHpCounterBag = getObjectFromGUID("d8fbff")
-        local counterTemp = villainHpCounterBag.takeObject({position=counterPosition})
+        counterTemp = villainHpCounterBag.takeObject({position=counterPosition})
         counterTemp.setCustomObject({image=villain.hpCounter.imageUrl})
         villainHpCounter = counterTemp.reload()
     end
 
-    --local hitPoints = villain.hpMultiplier * heroCount
+    --local hitPoints = villain.hitPointsPerPlayer * heroCount
+    local lock = true;
+
+    if(villain.hpCounter.locked ~= nil) then
+        lock = villain.hpCounter.locked
+    end
 
     Wait.frames(
         function()
@@ -132,17 +138,18 @@ function placeVillainHpCounter(villain, heroCount)
             villainHpCounter.setScale(counterScale)
             villainHpCounter.setName("")
             villainHpCounter.setDescription("")
-            villainHpCounter.setLock(true)
+            villainHpCounter.setLock(lock)
+            villainHpCounter.reload() --Second reload is needed to get the image to show up
             --villainHpCounter.call("setValue", {value=hitPoints})
             --villainHpCounter.call("createAdvanceButton", {villainKey=villain.name}) --TODO: make this more dynamic, use villainKey instead of name
         end,
         10
     )
 
-    counters[villainHpCounter.getGUID()] = {
-        base=0,
-        multiplier=villain.hpMultiplier
-    }
+    -- counters[villainHpCounter.getGUID()] = {
+    --     base=0,
+    --     multiplier=villain.hitPointsPerPlayer
+    -- }
 end
 
 function placeVillain(villain)
@@ -156,11 +163,27 @@ function placeVillain(villain)
     end
 
     if(villain.stage2 ~= nil) then
-        getCardByID(villain.stage2.cardId, villainPosition, {scale=villainScale, name=villain.name, flipped=false})
+        
+        Wait.time(
+            function()
+                getCardByID(
+                    villain.stage2.cardId, 
+                    villainPosition, 
+                    {scale=villainScale, name=villain.name, flipped=false}) 
+            end,
+            .5)
+        
     end
     
     if(villain.stage1 ~= nil) then
-        getCardByID(villain.stage1.cardId, villainPosition, {scale=villainScale, name=villain.name, flipped=false})
+        Wait.time(
+            function()
+                getCardByID(
+                    villain.stage1.cardId, 
+                    villainPosition, 
+                    {scale=villainScale, name=villain.name, flipped=false})
+            end,
+            1)
     end
 end
 
@@ -177,13 +200,19 @@ function placeScheme(scheme)
     local schemeRotation = scheme.rotation or defaults.mainSchemeDeck.rotation
     local schemeScale = scheme.scale or defaults.mainSchemeDeck.scale
 
-    --Skipping the placement of the cards, pending a fix for the scheme image issue
-    -- --There may be a better way to iterate over the stages backward
-    -- for i = 5, 1, -1 do
-    --     if(scheme.stages["stage"..i] ~= nil) then
-    --         getCardByID(scheme.stages["stage"..i].cardId, schemePosition, {scale=schemeScale, name=scheme.name, flipped=true})
-    --     end
-    -- end
+    --There may be a better way to iterate over the stages backward
+    local delay = 0
+    for i = 5, 1, -1 do
+        if(scheme.stages["stage"..i] ~= nil) then
+            Wait.time(
+                function()
+                    getCardByID(scheme.stages["stage"..i].cardId, schemePosition, {scale=schemeScale, name=scheme.name, flipped=false, landscape=true})
+                end,
+                delay
+            )
+            delay = delay + 0.5
+        end
+    end
 
     local counter = scheme.counter or {}
 
@@ -248,13 +277,15 @@ function placeExtras(scenarioBag, extras)
     end
 end
 
-function placeBlackHole(scenarioDetails)
-    local blackHolePosition = scenarioDetails.blackHole and scenarioDetails.blackHole.position or defaults.blackHole.position
-    local blackHoleRotation = scenarioDetails.blackHole and scenarioDetails.blackHole.rotation or defaults.blackHole.rotation
-    local blackHoleScale = scenarioDetails.blackHole and scenarioDetails.blackHole.scale or defaults.blackHole.scale
+function placeBlackHole(scenario)
+    local blackHolePosition = scenario.blackHole and scenario.blackHole.position or defaults.blackHole.position
+    local blackHoleRotation = scenario.blackHole and scenario.blackHole.rotation or defaults.blackHole.rotation
+    local blackHoleScale = scenario.blackHole and scenario.blackHole.scale or defaults.blackHole.scale
 
-    local blackHoleBag = getObjectFromGUID("e334c1")
+    local blackHoleBag = getObjectFromGUID("92f0f7")
     local blackHole = blackHoleBag.takeObject({position=blackHolePosition, rotation=blackHoleRotation, scale=blackHoleScale, smooth=false})
+
+    blackHole.setScale(blackHoleScale) --Shouldn't have to do this, but the scale wasn't being applied in the takeObject call
     blackHole.setLock(true)
 end
 
@@ -454,8 +485,8 @@ end
 function createTileButtons(tile)
     tile.createButton({
         label="GO", click_function="placeScenario", function_owner=tile,
-        position={1.17,0.2,-0.18}, rotation={0,0,0}, height=540, width=530, 
-        font_size=600, color={1,1,1}, font_color={0,0,0}, tooltip="Set Up Scenario"
+        position={0.85,0.2,-0.18}, rotation={0,0,0}, height=540, width=875, 
+        font_size=500, color={1,1,1}, font_color={0,0,0}, tooltip="Set Up Scenario"
     })
 
     -- tile.createButton({
@@ -483,15 +514,15 @@ function constructScenarioList()
                     },
                     stage1={
                         cardId="01094",
-                        hpMultiplier=14
+                        hitPointsPerPlayer=14
                     },
                     stage2={
                         cardId="01095",
-                        hpMultiplier=15
+                        hitPointsPerPlayer=15
                     },
                     stage3={
                         cardId="01096",
-                        hpMultiplier=16
+                        hitPointsPerPlayer=16
                     }
                 }
             },
@@ -500,8 +531,8 @@ function constructScenarioList()
                     stages={
                         stage1={
                             cardId="01097",
-                            threatBase=0,
-                            threatMultiplier=7
+                            startingThreat=0,
+                            targetThreatPerPlayer=7
                         }
                     }
                 }
@@ -538,15 +569,15 @@ function constructScenarioList()
                     },
                     stage1={
                         cardId="01113",
-                        hpMultiplier=12
+                        hitPointsPerPlayer=12
                     },
                     stage2={
                         cardId="01114",
-                        hpMultiplier=18
+                        hitPointsPerPlayer=18
                     },
                     stage3={
                         cardId="01115",
-                        hpMultiplier=22
+                        hitPointsPerPlayer=22
                     }
                 }
             },
@@ -555,13 +586,13 @@ function constructScenarioList()
                     stages={
                         stage1={
                             cardId="01116",
-                            threatBase=0,
-                            threatMultiplier=6
+                            startingThreat=0,
+                            targetThreatPerPlayer=6
                         },
                         stage2={
                             cardId="01117",
-                            threatBase=0,
-                            threatMultiplier=8
+                            startingThreat=0,
+                            targetThreatPerPlayer=8
                         }
                     }
                 }
@@ -597,15 +628,15 @@ function constructScenarioList()
                     },
                     stage1={
                         cardId="01134",
-                        hpMultiplier=17
+                        hitPointsPerPlayer=17
                     },
                     stage2={
                         cardId="01135",
-                        hpMultiplier=22
+                        hitPointsPerPlayer=22
                     },
                     stage3={
                         cardId="01136",
-                        hpMultiplier=27
+                        hitPointsPerPlayer=27
                     }
                 }
             },
@@ -614,18 +645,18 @@ function constructScenarioList()
                     stages={
                         stage1={
                             cardId="01137",
-                            threatBase=0,
-                            threatMultiplier=3
+                            startingThreat=0,
+                            targetThreatPerPlayer=3
                         },
                         stage2={
                             cardId="01138",
-                            threatBase=0,
-                            threatMultiplier=10
+                            startingThreat=0,
+                            targetThreatPerPlayer=10
                         },
                         stage3={
                             cardId="01139",
-                            threatBase=0,
-                            threatMultiplier=5
+                            startingThreat=0,
+                            targetThreatPerPlayer=5
                         }
                     }
                 }
@@ -654,6 +685,9 @@ function constructScenarioList()
         {
             name="The Wrecking Crew",
             selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150148690/BBFD396544E7663BE7F363242AA077FAE4D5FA53/",
+            blackHole={
+                position={48.58, 1.13, 33.84}
+            },
             villains={
                 wrecker={
                     name="Wrecker",
@@ -664,11 +698,11 @@ function constructScenarioList()
                     },
                     stage1={
                         cardId="07002",
-                        hpMultiplier=14
+                        hitPointsPerPlayer=14
                     },
                     stage3={
                         cardId="07003",
-                        hpMultiplier=18
+                        hitPointsPerPlayer=18
                     },
                     deckPosition={-34.25, 0.97, 20.25},
                     deckScale={3.64, 1.00, 3.64}
@@ -682,11 +716,11 @@ function constructScenarioList()
                     },
                     stage1={
                         cardId="07017",
-                        hpMultiplier=13
+                        hitPointsPerPlayer=13
                     },
                     stage3={
                         cardId="07018",
-                        hpMultiplier=16
+                        hitPointsPerPlayer=16
                     },
                     deckPosition={-12.25, 0.97, 20.25},
                     deckScale={3.64, 1.00, 3.64}
@@ -700,11 +734,11 @@ function constructScenarioList()
                     },
                     stage1={
                         cardId="07032",
-                        hpMultiplier=11
+                        hitPointsPerPlayer=11
                     },
                     stage3={
                         cardId="07033",
-                        hpMultiplier=14
+                        hitPointsPerPlayer=14
                     },
                     deckPosition={9.75, 0.97, 20.25},
                     deckScale={3.64, 1.00, 3.64}
@@ -718,11 +752,11 @@ function constructScenarioList()
                     },
                     stage1={
                         cardId="07046",
-                        hpMultiplier=12
+                        hitPointsPerPlayer=12
                     },
                     stage3={
                         cardId="07047",
-                        hpMultiplier=15
+                        hitPointsPerPlayer=15
                     },
                     deckPosition={31.75, 0.97, 20.25},
                     deckScale={3.64, 1.00, 3.64}
@@ -733,8 +767,8 @@ function constructScenarioList()
                     stages={
                         stage1={
                             cardId="07001",
-                            threatBase=0,
-                            threatMultiplier=6
+                            startingThreat=0,
+                            targetThreatPerPlayer=6
                         }
                     },
                     position={49.25, 0.97, 23.25},
@@ -748,8 +782,8 @@ function constructScenarioList()
                     stages={
                         stage1={
                             cardId="07004",
-                            threatBase=6,
-                            threatMultiplier=0
+                            startingThreat=6,
+                            targetThreat=0
                         }
                     },
                     position={-26.27, 0.97, 22.79},
@@ -763,8 +797,8 @@ function constructScenarioList()
                     stages={
                         stage1={
                             cardId="07019",
-                            threatBase=5,
-                            threatMultiplier=0
+                            startingThreat=5,
+                            targetThreat=0
                         }
                     },
                     position={-4.25, 0.97, 22.78},
@@ -778,8 +812,8 @@ function constructScenarioList()
                     stages={
                         stage1={
                             cardId="07034",
-                            threatBase=3,
-                            threatMultiplier=0
+                            startingThreat=3,
+                            targetThreat=0
                         }
                     },
                     position={17.75, 0.97, 22.79},
@@ -793,8 +827,8 @@ function constructScenarioList()
                     stages={
                         stage1={
                             cardId="07048",
-                            threatBase=4,
-                            threatMultiplier=0
+                            startingThreat=4,
+                            targetThreat=0
                         }
                     },
                     position={39.75, 0.97, 22.73},
@@ -879,6 +913,420 @@ function constructScenarioList()
                     },
                     position={25.25, 1.05, 22.25},
                     scale={2.12, 1.00, 2.12}
+                }
+            }
+        }
+
+        scenarios["sandman"] =
+        {
+            name="Sandman",
+            selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015304068/2C53497A93B4E4B559A8AAA8DDC9B09FBB89DDDC/",
+            villains={
+                sandman={
+                    name="Sandman",
+                    hpCounter={
+                        imageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015304068/2C53497A93B4E4B559A8AAA8DDC9B09FBB89DDDC/",
+                    },
+                    stage1={
+                        cardId="27061",
+                        hitPointsPerPlayer=16
+                    },
+                    stage2={
+                        cardId="27062",
+                        hitPointsPerPlayer=18
+                    },
+                    stage3={
+                        cardId="27063",
+                        hitPointsPerPlayer=19
+                    }
+                }
+            },
+            schemes={
+                main={
+                    stages={
+                        stage1={
+                            cardId="27064",
+                            startingThreatPerPlayer=2,
+                            targetThreatPerPlayer=7
+                        }
+                    }
+                }
+            },
+            decks={
+                encounterDeck={
+                    name="Sandman's Encounter Deck",
+                    cards={
+                        ["27065"]=1,
+                        ["27066"]=2,
+                        ["27067"]=2,
+                        ["27068"]=2,
+                        ["27069"]=1,
+                        ["27070"]=1,
+                        ["27071"]=1,
+                        ["27072"]=2
+                    }
+                }
+            }
+        }
+
+        scenarios["mysterio"] =
+        {
+            name="Mysterio",
+            selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015300129/E16882E32FAEAB2A523B84CFE831BE74A92BD500/",
+            villains={
+                mysterio={
+                    name="Mysterio",
+                    hpCounter={
+                        imageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015300129/E16882E32FAEAB2A523B84CFE831BE74A92BD500/",
+                    },
+                    stage1={
+                        cardId="27084",
+                        hitPointsPerPlayer=15
+                    },
+                    stage2={
+                        cardId="27085",
+                        hitPointsPerPlayer=17
+                    },
+                    stage3={
+                        cardId="27086",
+                        hitPointsPerPlayer=16
+                    }
+                }
+            },
+            schemes={
+                main={
+                    stages={
+                        stage1={
+                            cardId="27087",
+                            startingThreatPerPlayer=2,
+                            targetThreatPerPlayer=8
+                        },
+                        stage2={
+                            cardId="27088",
+                            startingThreatPerPlayer=3,
+                            targetThreatPerPlayer=9
+                        }
+                    }
+                }
+            },
+            decks={
+                encounterDeck={
+                    name="Sandman's Encounter Deck",
+                    cards={
+                        ["27089"]=1,
+                        ["27090"]=2,
+                        ["27091"]=4,
+                        ["27092"]=2,
+                        ["27093"]=2
+                    }
+                }
+            }
+        }
+
+        scenarios["venomgoblin"] =
+        {
+            name="Venom Goblin",
+            selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015324268/4E05FFF64F4A303C0F674C9D0BB2A1EE07FC589A/",
+            villains={
+                venomgoblin={
+                    name="Venom Goblin",
+                    hpCounter={
+                        imageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015324268/4E05FFF64F4A303C0F674C9D0BB2A1EE07FC589A/",
+                    },
+                    stage1={
+                        cardId="27113",
+                        hitPointsPerPlayer=16
+                    },
+                    stage2={
+                        cardId="27114",
+                        hitPointsPerPlayer=18
+                    },
+                    stage3={
+                        cardId="27115",
+                        hitPointsPerPlayer=21
+                    }
+                }
+            },
+            schemes={
+                main={
+                    stages={
+                        stage1={
+                            cardId="27116",
+                            startingThreat=0,
+                            targetThreat=0
+                        },
+                        stage2={
+                            cardId="27117",
+                            startingThreatPerPlayer=1,
+                            targetThreatPerPlayer=11
+                        },
+                        stage3={
+                            cardId="27118",
+                            startingThreatPerPlayer=2,
+                            targetThreatPerPlayer=12
+                        },
+                        stage4={
+                            cardId="27119",
+                            startingThreat=0,
+                            targetThreatPerPlayer=12
+                        }
+                    }
+                }
+            },
+            decks={
+                encounterDeck={
+                    name="Sandman's Encounter Deck",
+                    cards={
+                        ["27089"]=1,
+                        ["27090"]=2,
+                        ["27091"]=4,
+                        ["27092"]=2,
+                        ["27093"]=2
+                    }
+                }
+            }
+        }        
+
+        scenarios["venom"] =
+        {
+            name="Venom",
+            selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015321996/340B2A0AD541B66D6F2184D8E810943AC73B7553/",
+            villains={
+                venom={
+                    name="Venom",
+                    hpCounter={
+                        imageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015321996/340B2A0AD541B66D6F2184D8E810943AC73B7553/",
+                    },
+                    stage1={
+                        cardId="27073",
+                        hitPointsPerPlayer=17
+                    },
+                    stage2={
+                        cardId="27074",
+                        hitPointsPerPlayer=18
+                    },
+                    stage3={
+                        cardId="27075",
+                        hitPointsPerPlayer=20
+                    }
+                }
+            },
+            schemes={
+                main={
+                    stages={
+                        stage1={
+                            cardId="27076",
+                            startingThreatPerPlayer=2,
+                            targetThreatPerPlayer=10
+                        }
+                    }
+                }
+            },
+            decks={
+                encounterDeck={
+                    name="Venom's Encounter Deck",
+                    cards={
+                        ["27077"]=1,
+                        ["27078"]=2,
+                        ["27079"]=1,
+                        ["27080"]=1,
+                        ["27081"]=1,
+                        ["27082"]=2,
+                        ["27083"]=2
+                    }
+                }
+            }
+        }
+
+        scenarios["sinistersix"] =
+        {
+            name="The Sinister Six",
+            selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015309349/2164A5798EC8BE6A688434F1828DB46278042212/",
+            villains={
+                docock={
+                    name="Doctor Octopus",
+                    hpCounter={
+                        imageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015309349/2164A5798EC8BE6A688434F1828DB46278042212/",
+                        position={49.50, 1.00, 35.00},
+                        scale={2.01, 1.00, 2.01},
+                        locked=false
+                    },
+                    stage1={
+                        cardId="27094",
+                        hitPointsPer=8
+                    },
+                    deckPosition={49.50, 1.00, 29.75},
+                    deckScale={1.94, 1.00, 1.94}
+                },
+                electro={
+                    name="Electro",
+                    hpCounter={
+                        imageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015311687/D43B3C5C8278CBF2FE6F607761AFDCD1C8DB74B5/",
+                        position={49.50, 1.00, 24.00},
+                        scale={2.01, 1.00, 2.01},
+                        locked=false
+                    },
+                    stage1={
+                        cardId="27095",
+                        hitPointsPer=8
+                    },
+                    deckPosition={49.50, 1.00, 18.75},
+                    deckScale={1.94, 1.00, 1.94}
+                },
+                hobgoblin={
+                    name="Hobgoblin",
+                    hpCounter={
+                        imageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015313258/5B1EB215742197F8BEFE99BA876EB16427D9A2B0/",
+                        position={49.50, 1.00, 13.00},
+                        scale={2.01, 1.00, 2.01},
+                        locked=false
+                    },
+                    stage1={
+                        cardId="27096",
+                        hitPointsPer=8
+                    },
+                    deckPosition={49.50, 1.00, 7.75},
+                    deckScale={1.94, 1.00, 1.94}
+                },
+                kraven={
+                    name="Kraven the Hunter",
+                    hpCounter={
+                        imageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015314847/CE58D050162082B341F3FD1F130B57AF41A27AEB/",
+                        position={49.50, 1.00, 2.00},
+                        scale={2.01, 1.00, 2.01},
+                        locked=false
+                    },
+                    stage1={
+                        cardId="27097",
+                        hitPointsPer=8
+                    },
+                    deckPosition={49.50, 1.00, -3.25},
+                    deckScale={1.94, 1.00, 1.94}
+                },
+                scorpion={
+                    name="Scorpion",
+                    hpCounter={
+                        imageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015316302/2C4DEA609613C6C55BD2F662FCC952FB26268474/",
+                        position={49.50, 1.00, -9.00},
+                        scale={2.01, 1.00, 2.01},
+                        locked=false
+                    },
+                    stage1={
+                        cardId="27098",
+                        hitPointsPer=8
+                    },
+                    deckPosition={49.75, 1.00, -14.25},
+                    deckScale={1.94, 1.00, 1.94}
+                },
+                vulture={
+                    name="Vulture",
+                    hpCounter={
+                        imageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015318364/0BCC55652842E110C7EB20C47D2ACED673EFDFF6/",
+                        position={49.75, 1.00, -20.00},
+                        scale={2.01, 1.00, 2.01},
+                        locked=false
+                    },
+                    stage1={
+                        cardId="27099",
+                        hitPointsPer=8
+                    },
+                    deckPosition={49.50, 1.00, -25.25},
+                    deckScale={1.94, 1.00, 1.94}
+                },
+            },
+            schemes={
+                main={
+                    stages={
+                        stage1={
+                            cardId="27100",
+                            startingThreatPerPlayer=2,
+                            targetThreatPerPlayer=8
+                        },
+                        stage2={
+                            cardId="27101",
+                            startingThreatPerPlayer=3,
+                            targetThreatPerPlayer=7
+                        }
+                    }
+                }
+            },
+            decks={
+                encounterDeck={
+                    name="The Sinister Six Encounter Deck",
+                    cards={
+                        ["27102"]=1,
+                        ["27103"]=2,
+                        ["27104"]=2,
+                        ["27105"]=1,
+                        ["27106"]=1,
+                        ["27107"]=1,
+                        ["27108"]=1,
+                        ["27109"]=1,
+                        ["27110"]=1,
+                        ["27111"]=3,
+                        ["27112"]=3
+                    }
+                }
+            }
+        }
+
+        scenarios["hood"] =
+        {
+            name="The Hood",
+            selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1833524420369390047/812F91439CB08F9A17D25523A7375B04E3D9C4A5/",
+            villains={
+                hood={
+                    name="The Hood",
+                    hpCounter={
+                        imageUrl="http://cloud-3.steamusercontent.com/ugc/1833524420369390047/812F91439CB08F9A17D25523A7375B04E3D9C4A5/",
+                    },
+                    stage1={
+                        cardId="24001",
+                        hitPointsPerPlayer=14
+                    },
+                    stage2={
+                        cardId="24002",
+                        hitPointsPerPlayer=16
+                    },
+                    stage3={
+                        cardId="24003",
+                        hitPointsPerPlayer=18
+                    }
+                }
+            },
+            schemes={
+                main={
+                    stages={
+                        stage1={
+                            cardId="24004",
+                            startingThreatPerPlayer=1,
+                            targetThreatPerPlayer=5
+                        },
+                        stage2={
+                            cardId="24005",
+                            startingThreatPerPlayer=2,
+                            targetThreatPerPlayer=8
+                        },
+                        stage3={
+                            cardId="24006",
+                            startingThreatPerPlayer=3,
+                            targetThreatPerPlayer=10
+                        }
+                    }
+                }
+            },
+            decks={
+                encounterDeck={
+                    name="The Hood's Encounter Deck",
+                    cards={
+                        ["24007"]=1,
+                        ["24008"]=1,
+                        ["24009"]=2,
+                        ["24010"]=1,
+                        ["24011"]=1,
+                        ["24012"]=1,
+                        ["24013"]=3
+                    }
                 }
             }
         }

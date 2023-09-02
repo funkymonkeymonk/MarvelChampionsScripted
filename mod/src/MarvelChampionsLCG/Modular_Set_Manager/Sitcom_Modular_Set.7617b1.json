@@ -3,12 +3,12 @@
     "GUID": "7617b1",
     "Name": "Deck",
     "Transform": {
-      "posX": 102.062958,
-      "posY": 8.267991,
-      "posZ": -26.23215,
-      "rotX": 0.00002702108,
-      "rotY": 180.000916,
-      "rotZ": 1.49049377,
+      "posX": 103.851433,
+      "posY": 28.4737453,
+      "posZ": -21.3412666,
+      "rotX": -3.3898516e-8,
+      "rotY": 180,
+      "rotZ": 180,
       "scaleX": 1.93762064,
       "scaleY": 1,
       "scaleZ": 1.93762064
@@ -42,15 +42,15 @@
     "Hands": false,
     "SidewaysCard": false,
     "DeckIDs": [
-      725,
-      724,
-      723,
-      722,
-      721,
-      720
+      975025,
+      975024,
+      975023,
+      975022,
+      975021,
+      975020
     ],
     "CustomDeck": {
-      "7": {
+      "9750": {
         "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1924753791406004188/7E265854BDDC2C4DAD980D9C5D33C8D70B506D21/",
         "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
         "NumWidth": 7,
@@ -67,11 +67,11 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
-    "Watch_Me_Play.79183f.725.json",
-    "The_One_with_the_Breakup.14da87.724.json",
-    "The_Odd_Couple.54d599.723.json",
-    "Growing_Pains.6ec788.722.json",
-    "Family_Matters.5df7c3.721.json",
-    "Mojo_in_the_Middle.50a0a9.720.json"
+    "Watch_Me_Play.79183f.975025.json",
+    "The_One_with_the_Breakup.14da87.975024.json",
+    "The_Odd_Couple.54d599.975023.json",
+    "Growing_Pains.6ec788.975022.json",
+    "Family_Matters.5df7c3.975021.json",
+    "Mojo_in_the_Middle.50a0a9.975020.json"
   ]
 }
