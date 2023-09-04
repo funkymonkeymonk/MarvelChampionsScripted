@@ -1,8 +1,8 @@
 {
   "Save": {
     "SaveName": "MarvelChampionsLCG",
-    "EpochTime": 1693782416,
-    "Date": "9/3/2023 5:06:56 PM",
+    "EpochTime": 1693863956,
+    "Date": "9/4/2023 3:45:56 PM",
     "VersionNumber": "v13.2.2",
     "GameMode": "MarvelChampionsLCG",
     "GameType": "Game",
@@ -473,7 +473,6 @@
     "Thunderball.a08314.json",
     "Piledriver.bd5bc2.json",
     "Bulldozer.de2c73.json",
-    "ImporterCards.3ca6e4.json",
     "3DText.48b9e8.json",
     "3DText.4e892b.json",
     "3DText.93e9ab.json",
@@ -541,7 +540,6 @@
     "3DText.59d365.json",
     "Standard.ae4736.json",
     "Expert.85fe67.json",
-    "Scenario_Backup.e3b2e1.json",
     "Aggression.0952cb.json",
     "Justice.9851a5.json",
     "Leadership.f8d4eb.json",
