@@ -42,7 +42,7 @@ function onload()
 end
 
 function playerCount()
-getObjectFromGUID('e3b2e1').call('createPlayers')
+   getObjectFromGUID('e3b2e1').call('createPlayers')
 end
 
 function restoreBoost()
@@ -50,13 +50,19 @@ function restoreBoost()
 end
 
 function clearVillain()
+   getObjectFromGUID('e3b2e1').clearButtons()
+
    clearCards = findCardsAtPosition()
-      for _, obj in ipairs(clearCards) do
-      obj.destruct()
+   for _, obj in ipairs(clearCards) do
+      if obj.getGUID() ~= 'e3b2e1' then
+         obj.destruct()
+      end
    end
    clearCards2 = findCardsAtPosition2()
-      for _, obj in ipairs(clearCards2) do
-      obj.destruct()
+   for _, obj in ipairs(clearCards2) do
+      if obj.getGUID() ~= 'e3b2e1' then
+         obj.destruct()
+      end
    end
 end
 
@@ -70,7 +76,7 @@ function findCardsAtPosition(obj)
       debug        = false,
    })
    local villainAssets = {}
-      for _, obj in ipairs(objList) do
+   for _, obj in ipairs(objList) do
       table.insert(villainAssets, obj.hit_object)
    end
    return villainAssets
@@ -86,8 +92,46 @@ function findCardsAtPosition2(obj)
       debug        = false,
    })
    local villainAssets2 = {}
-      for _, obj in ipairs(objList) do
+   for _, obj in ipairs(objList) do
       table.insert(villainAssets2, obj.hit_object)
    end
    return villainAssets2
 end
+
+function createBoostButton()
+   self.createButton({
+     label = "BOOST",
+     click_function = "drawBoost",
+     function_owner = self,
+     position = {10.0,1.13,10.0},
+     scale = {0.33, 1, 0.33},
+     rotation = {0,0,0},
+     width = 3400,
+     height = 1500,
+     font_size = 1700,
+     color = {1,1,0}
+   })
+ 
+   self.createButton({
+     label = "X",
+     click_function = "discardBoost",
+     function_owner = self,
+     position = {14.8,1.13,10.0},
+     scale = {0.33, 1, 0.33},
+     rotation = {0,0,0},
+     width = 1000,
+     height = 1500,
+     font_size = 1700,
+     color = {1,0,0}
+   })
+end
+
+function drawBoost(object, player, isRightClick)
+   local toPosition = BOOST_POS
+   Global.call("drawBoostcard", {toPosition, self.getRotation(), isRightClick})
+   end
+   
+   function discardBoost(object, player, isRightClick)
+   local toPosition = DISCARD_POS
+   Global.call("discardBoostcard", {toPosition, self.getRotation(), isRightClick})
+   end

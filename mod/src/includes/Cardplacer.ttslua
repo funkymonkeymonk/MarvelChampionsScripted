@@ -24,7 +24,9 @@ function buildCardPool(packID)
                 local cardFace = cardData.FrontURL
                 local cardBack = cardData.BackURL
                 local cardAsset = Decker.Asset(cardFace, cardBack)
-                local card = Decker.Card(cardAsset, 1, 1, { name=cardData.name, tags={type_code=cardData.type_code, code=cardData.code, subname=cardData.subname, faction_code=cardData.faction_code}})
+                local sideways = string.sub(cardData.type_code, -6, -1) == "scheme"
+
+                local card = Decker.Card(cardAsset, 1, 1, { name=cardData.name, sideways=sideways, tags={type_code=cardData.type_code, code=cardData.code, subname=cardData.subname, faction_code=cardData.faction_code}})
                 cardpool[cardData.code] = card
             else
                 cardpool[cardData.code] = {duplicate_of = cardData.duplicate_of}
@@ -91,7 +93,7 @@ function getCardByID(id, position, params)
     local card = getCardFromCardPool(cardID)
 
     if (card.duplicate_of == nil) then
-        card:spawn({position = position, scale = scale, rotation = rotation, name = name})
+        card:spawn({position = position, scale = scale, rotation = rotation, name = name, locked=true})
         clearUI()
     else
         getCardByID(card.duplicate_of, position, params)

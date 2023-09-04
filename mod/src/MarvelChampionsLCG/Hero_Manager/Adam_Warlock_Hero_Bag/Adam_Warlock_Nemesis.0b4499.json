@@ -3,9 +3,9 @@
     "GUID": "0b4499",
     "Name": "Deck",
     "Transform": {
-      "posX": 52.0382423,
-      "posY": 2.26621819,
-      "posZ": 26.4515648,
+      "posX": -6.95,
+      "posY": 34.17649,
+      "posZ": 42,
       "rotX": -1.15139791e-8,
       "rotY": 179.999283,
       "rotZ": -2.88079121e-7,
@@ -43,7 +43,7 @@
     "SidewaysCard": false,
     "DeckIDs": [
       1007025,
-      971501,
+      974201,
       1007024,
       970002,
       1007023
@@ -58,7 +58,7 @@
         "UniqueBack": false,
         "Type": 0
       },
-      "9715": {
+      "9742": {
         "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1861671908641602350/34070678ACAE782A425E6183D6511CE6D8FC460D/",
         "BackURL": "http://cloud-3.steamusercontent.com/ugc/1054352812477833382/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
         "NumWidth": 6,
@@ -85,7 +85,7 @@
   "StatesPaths": {},
   "ContainedObjectPaths": [
     "Cosmic_Inquisition.b801d0.1007025.json",
-    "Zealot_of_Truth.6c8caa.971501.json",
+    "Zealot_of_Truth.6c8caa.974201.json",
     "Zealot_of_Truth.beb459.1007024.json",
     "Universal_Church_of_Truth.e5c780.970002.json",
     "The_Magus.0454be.1007023.json"

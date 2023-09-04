@@ -1,20 +1,20 @@
 {
   "Object": {
-    "GUID": "3f8b2b",
+    "GUID": "6c8caa",
     "Name": "Card",
     "Transform": {
-      "posX": -6.95,
-      "posY": 33.8970642,
-      "posZ": 42,
-      "rotX": -8.763594e-8,
+      "posX": -6,
+      "posY": 1.201376,
+      "posZ": 2,
+      "rotX": 0.00004324276,
       "rotY": 180,
-      "rotZ": 180,
-      "scaleX": 0.9502119,
+      "rotZ": 183.711823,
+      "scaleX": 1.90718782,
       "scaleY": 1,
-      "scaleZ": 0.9502119
+      "scaleZ": 1.90718782
     },
-    "Nickname": "Adam Warlock Identity",
-    "Description": "",
+    "Nickname": "Zealot of Truth",
+    "Description": "Scanned by Unicorn\nImported by Hitch",
     "GMNotes": "",
     "AltLookAngle": {
       "x": 0,
@@ -38,18 +38,18 @@
     "Sticky": true,
     "Tooltip": true,
     "GridProjection": false,
-    "HideWhenFaceDown": false,
+    "HideWhenFaceDown": true,
     "Hands": true,
-    "CardID": 969126,
+    "CardID": 974201,
     "SidewaysCard": false,
     "CustomDeck": {
-      "9691": {
-        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1861671908637682543/A4E5DD1CC12EE12C678B47998FAB16690A326F82/",
-        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1861671908637689251/DAA4DB980CAD2A561773AF4688ADE0FDD2134A76/",
+      "9715": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1861671908641602350/34070678ACAE782A425E6183D6511CE6D8FC460D/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1054352812477833382/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
         "NumWidth": 6,
-        "NumHeight": 5,
+        "NumHeight": 4,
         "BackIsHidden": true,
-        "UniqueBack": true,
+        "UniqueBack": false,
         "Type": 0
       }
     },

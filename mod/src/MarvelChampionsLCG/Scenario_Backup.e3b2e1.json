@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "0ce62f",
-    "Name": "3DText",
+    "GUID": "e3b2e1",
+    "Name": "Bag",
     "Transform": {
-      "posX": 11.0086975,
-      "posY": 0.49417904,
-      "posZ": 63.7683754,
-      "rotX": 90,
-      "rotY": 7.07471637e-9,
-      "rotZ": 0,
+      "posX": 90.25,
+      "posY": 0.3099671,
+      "posZ": 100.25,
+      "rotX": 1.58692764e-12,
+      "rotY": 179.99794,
+      "rotZ": 8.83789042e-8,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
     },
-    "Nickname": "",
+    "Nickname": "Scenario Backup",
     "Description": "",
     "GMNotes": "",
     "AltLookAngle": {
@@ -22,9 +22,9 @@
       "z": 0
     },
     "ColorDiffuse": {
-      "r": 1,
-      "g": 1,
-      "b": 1
+      "r": 0.7058823,
+      "g": 0.368622869,
+      "b": 0
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,
@@ -40,17 +40,14 @@
     "GridProjection": false,
     "HideWhenFaceDown": false,
     "Hands": false,
-    "Text": {
-      "Text": "Upgrades",
-      "colorstate": {
-        "r": 1,
-        "g": 1,
-        "b": 1
-      },
-      "fontSize": 88
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Number": 0,
+    "Bag": {
+      "Order": 0
     },
-    "LuaScript": "",
-    "LuaScriptState": "",
+    "LuaScript": "#include ./Scenario_Backup.e3b2e1.lua",
+    "LuaScriptState": "#include ./Scenario_Backup.e3b2e1.state.json",
     "XmlUI": ""
   },
   "StatesPaths": {}
