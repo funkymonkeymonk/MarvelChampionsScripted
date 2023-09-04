@@ -1,8 +1,8 @@
 {
   "Save": {
     "SaveName": "MarvelChampionsLCG",
-    "EpochTime": 1693863956,
-    "Date": "9/4/2023 3:45:56 PM",
+    "EpochTime": 1693867426,
+    "Date": "9/4/2023 4:43:46 PM",
     "VersionNumber": "v13.2.2",
     "GameMode": "MarvelChampionsLCG",
     "GameType": "Game",
@@ -504,7 +504,6 @@
     "3DText.bfd599.json",
     "3DText.2d586c.json",
     "3DText.f846c0.json",
-    "Custom_Token.274fd5.json",
     "Red_Player.faa6bd.json",
     "Blue_Player.6066d3.json",
     "Green_Player.34be58.json",
@@ -581,6 +580,7 @@
     "Villain_HP_Counter_Bag.d8fbff.json",
     "Black_Hole_Bag.92f0f7.json",
     "Negative_Zone.cf6ca1.json",
-    "Negative_Zone.27506e.json"
+    "Negative_Zone.27506e.json",
+    "Scenario_Backup.e3b2e1.json"
   ]
 }

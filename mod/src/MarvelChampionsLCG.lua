@@ -417,10 +417,12 @@ end
 
 function requestBoost()
    getObjectFromGUID('e3b2e1').call('createBoostButton')
+   --getObjectFromGUID('92fa7c').call('createBoostButton')
 end
 
 function removeBoostButton()
    boostBag = getObjectFromGUID('e3b2e1')
+   --boostBag = getObjectFromGUID('92fa7c')
    boostBag.clearButtons()
 end
 
