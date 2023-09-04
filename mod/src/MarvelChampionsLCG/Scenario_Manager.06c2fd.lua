@@ -1,5 +1,3 @@
-require('!/Cardplacer')
-
 local defaults = {
     villainHpCounter= {
         position= {-0.34, 0.96, 29.15},
@@ -96,6 +94,28 @@ function placeScenario(scenarioKey, mode)
             end
 
             placeBlackHole(scenario)
+
+            if(scenario.cards ~= nil) then
+                for _, card in pairs(scenario.cards) do
+                    getCardByID(card.cardId, card.position, {scale=card.scale, name=card.name, flipped=card.flipped, landscape=card.landscape})
+                end
+            end
+
+            if(scenario.counters ~= nil) then
+                for _, counter in pairs(scenario.counters) do
+                    Wait.time(
+                        function()
+                            if(counter.type=="threat") then
+                                placeThreatCounter(counter, nil, heroCount)
+                            else
+                                placeGeneralCounter(counter)
+                            end
+                        end,
+                        1)
+                    
+                end
+            end
+
             --placeExtras(scenarioBag, scenarioDetails.extras)
         end, 
         1)
@@ -158,6 +178,10 @@ function placeVillain(villain)
     local villainScale = villain.deckScale or defaults.villainDeck.scale
 
     --TODO: only place the cards that are needed, based on mode
+    if(villain.stage4 ~= nil) then --TODO: Remove this after adding scripting to Mansion Attack scenario
+        getCardByID(villain.stage4.cardId, villainPosition, {scale=villainScale, name=villain.name, flipped=false})
+    end
+
     if(villain.stage3 ~= nil) then
         getCardByID(villain.stage3.cardId, villainPosition, {scale=villainScale, name=villain.name, flipped=false})
     end
@@ -216,7 +240,12 @@ function placeScheme(scheme)
 
     local counter = scheme.counter or {}
 
-    placeThreatCounter(counter, nil, getHeroCount())
+    Wait.time(
+        function()
+            placeThreatCounter(counter, nil, getHeroCount())
+        end,
+        1
+    )
 end
 
 function placeThreatCounter(counter, stageNumber, heroCount)
@@ -241,11 +270,16 @@ function placeThreatCounter(counter, stageNumber, heroCount)
     local threatCounterBag = getObjectFromGUID("eb5d6d")
     local threatCounter = threatCounterBag.takeObject({position=threatCounterPosition, smooth=false})
 
+    local locked = true;
+    if(counter.locked ~= nil) then
+        locked = counter.locked
+    end
+
     Wait.frames(
         function()
             threatCounter.setRotation(threatCounterRotation)
             threatCounter.setScale(threatCounterScale)
-            threatCounter.setLock(true)
+            threatCounter.setLock(locked)
             --threatCounter.call("setValue", {value=initialThreat})
         end,
         1
@@ -255,6 +289,32 @@ function placeThreatCounter(counter, stageNumber, heroCount)
     --     base=threatBase,
     --     multiplier=threatMultiplier
     -- }
+end
+
+function placeGeneralCounter(counter)
+    local counterPosition = counter.position or defaults.mainSchemeThreatCounter.position
+    local counterRotation = counter.rotation or defaults.mainSchemeThreatCounter.rotation
+    local counterScale = counter.scale or defaults.mainSchemeThreatCounter.scale
+
+    local counterBag = getObjectFromGUID("65c1cc")
+    local generalCounter = counterBag.takeObject({position=counterPosition, smooth=false})
+
+    local locked = true;
+    log (counter)
+
+    if(counter.locked ~= nil) then
+        locked = counter.locked
+    end
+
+    Wait.frames(
+        function()
+            generalCounter.setRotation(counterRotation)
+            generalCounter.setScale(counterScale)
+            generalCounter.setLock(locked)
+            --threatCounter.call("setValue", {value=initialThreat})
+        end,
+        1
+    )
 end
 
 function placeExtras(scenarioBag, extras)
@@ -502,6 +562,7 @@ function createTileButtons(tile)
 end
 
 function constructScenarioList()
+
     scenarios["rhino"] =
         {
             name="Rhino",
@@ -557,7 +618,7 @@ function constructScenarioList()
             }
         }
 
-        scenarios["klaw"] =
+    scenarios["klaw"] =
         {
             name="Klaw",
             selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150131516/7DC18F8C2BEC0AFE2B74AA31695A21E7B34621F1/",
@@ -597,6 +658,21 @@ function constructScenarioList()
                     }
                 }
             },
+            cards={
+                defenseNetwork={
+                    cardId="01125",
+                    position={16.75, 1.00, 21.75},
+                    scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
+                    landscape=true
+                }
+            },
+            counters={
+                defenseNetworkThreat={
+                    type="threat",
+                    position={16.37, 1.10, 20.30},
+                    scale={0.48, 1.00, 0.48}
+                }
+            },
             decks={
                 encounterDeck={
                     name="Klaw's Encounter Deck",
@@ -608,7 +684,6 @@ function constructScenarioList()
                         ["01122"]=2,
                         ["01123"]=2,
                         ["01124"]=2,
-                        ["01125"]=1,
                         ["01126"]=1,
                         ["01127"]=1
                     }
@@ -616,7 +691,7 @@ function constructScenarioList()
             }
         }
 
-        scenarios["ultron"] =
+    scenarios["ultron"] =
         {
             name="Ultron",
             selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150147610/D43024CA72F4372B28AF86672D67286730C6CE72/",
@@ -661,11 +736,17 @@ function constructScenarioList()
                     }
                 }
             },
+            cards={
+                ultronDrones={
+                    cardId="01140",
+                    position={13.75, 0.97, 29.25},
+                    scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
+                }
+            },
             decks={
                 encounterDeck={
                     name="Ultron's Encounter Deck",
                     cards={
-                        ["01140"]=1,
                         ["01141"]=1,
                         ["01142"]=2,
                         ["01143"]=3,
@@ -681,7 +762,7 @@ function constructScenarioList()
             }
         }
 
-        scenarios["wreckingCrew"] =
+    scenarios["wreckingCrew"] =
         {
             name="The Wrecking Crew",
             selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150148690/BBFD396544E7663BE7F363242AA077FAE4D5FA53/",
@@ -917,7 +998,7 @@ function constructScenarioList()
             }
         }
 
-        scenarios["sandman"] =
+    scenarios["sandman"] =
         {
             name="Sandman",
             selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015304068/2C53497A93B4E4B559A8AAA8DDC9B09FBB89DDDC/",
@@ -952,11 +1033,26 @@ function constructScenarioList()
                     }
                 }
             },
+            cards={
+                cityStreets={
+                    cardId="27065",
+                    position={13.75, 1.00, 29.25},
+                    scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
+                    locked=true
+                }
+            },
+            counters={
+                findTheSenatorThreat={
+                    type="general",
+                    position={14.94, 1.10, 31.49},
+                    scale={0.50, 1.00, 0.50},
+                    locked=true
+                }
+            },
             decks={
                 encounterDeck={
                     name="Sandman's Encounter Deck",
                     cards={
-                        ["27065"]=1,
                         ["27066"]=2,
                         ["27067"]=2,
                         ["27068"]=2,
@@ -969,7 +1065,7 @@ function constructScenarioList()
             }
         }
 
-        scenarios["mysterio"] =
+    scenarios["mysterio"] =
         {
             name="Mysterio",
             selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015300129/E16882E32FAEAB2A523B84CFE831BE74A92BD500/",
@@ -1023,7 +1119,7 @@ function constructScenarioList()
             }
         }
 
-        scenarios["venomgoblin"] =
+    scenarios["venomgoblin"] =
         {
             name="Venom Goblin",
             selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015324268/4E05FFF64F4A303C0F674C9D0BB2A1EE07FC589A/",
@@ -1048,31 +1144,59 @@ function constructScenarioList()
                 }
             },
             schemes={
-                main={
+                lowerManhattan={
                     stages={
                         stage1={
-                            cardId="27116",
-                            startingThreat=0,
-                            targetThreat=0
-                        },
-                        stage2={
                             cardId="27117",
                             startingThreatPerPlayer=1,
                             targetThreatPerPlayer=11
                         },
-                        stage3={
+                    },
+                    counter={
+                        position={11.19, 1.01, 20.93},
+                        scale={1.00, 1.00, 1.00},
+                        locked=true
+                    }
+                },
+                midtownManhattan={
+                    position={18.38, 0.97, 22.45},
+                    stages={
+                        stage1={
                             cardId="27118",
                             startingThreatPerPlayer=2,
                             targetThreatPerPlayer=12
-                        },
-                        stage4={
+                        }
+                    },
+                    counter={
+                        position={21.19, 1.01, 20.93},
+                        scale={1.00, 1.00, 1.00},
+                        locked=true
+                    }
+                },
+                upperManhattan={
+                    position={28.38, 0.97, 22.45},
+                    stages={
+                        stage1={
                             cardId="27119",
                             startingThreat=0,
                             targetThreatPerPlayer=12
                         }
+                    },
+                    counter={
+                        position={31.19, 1.01, 20.93},
+                        scale={1.00, 1.00, 1.00},
+                        locked=true
                     }
                 }
             },
+            cards={
+                skiesOverNewYork={
+                    cardId="27116",
+                    position={13.75, 0.97, 29.25},
+                    scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
+                    flipped=true
+                }
+            },            
             decks={
                 encounterDeck={
                     name="Sandman's Encounter Deck",
@@ -1087,7 +1211,7 @@ function constructScenarioList()
             }
         }        
 
-        scenarios["venom"] =
+    scenarios["venom"] =
         {
             name="Venom",
             selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015321996/340B2A0AD541B66D6F2184D8E810943AC73B7553/",
@@ -1122,11 +1246,25 @@ function constructScenarioList()
                     }
                 }
             },
+            cards={
+                bellTower={
+                    cardId="27077",
+                    position={13.75, 0.97, 29.25},
+                    scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
+                }
+            },            
+            counters={
+                findTheSenatorThreat={
+                    type="general",
+                    position={14.94, 1.10, 31.49},
+                    scale={0.50, 1.00, 0.50},
+                    locked=true
+                }
+            },
             decks={
                 encounterDeck={
                     name="Venom's Encounter Deck",
                     cards={
-                        ["27077"]=1,
                         ["27078"]=2,
                         ["27079"]=1,
                         ["27080"]=1,
@@ -1138,7 +1276,7 @@ function constructScenarioList()
             }
         }
 
-        scenarios["sinistersix"] =
+    scenarios["sinistersix"] =
         {
             name="The Sinister Six",
             selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015309349/2164A5798EC8BE6A688434F1828DB46278042212/",
@@ -1250,11 +1388,25 @@ function constructScenarioList()
                     }
                 }
             },
+            cards={
+                lightAtTheEnd={
+                    cardId="27102",
+                    position={16.75, 1.00, 21.75},
+                    scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
+                    landscape=true
+                }
+            },
+            counters={
+                lightAtTheEndThreat={
+                    type="threat",
+                    position={16.37, 1.10, 20.30},
+                    scale={0.48, 1.00, 0.48}
+                }
+            },
             decks={
                 encounterDeck={
                     name="The Sinister Six Encounter Deck",
                     cards={
-                        ["27102"]=1,
                         ["27103"]=2,
                         ["27104"]=2,
                         ["27105"]=1,
@@ -1270,7 +1422,7 @@ function constructScenarioList()
             }
         }
 
-        scenarios["hood"] =
+    scenarios["hood"] =
         {
             name="The Hood",
             selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1833524420369390047/812F91439CB08F9A17D25523A7375B04E3D9C4A5/",
@@ -1331,4 +1483,805 @@ function constructScenarioList()
             }
         }
 
+    scenarios["sabretooth"] =
+        {
+            name="Sabretooth",
+            selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/2035118913124026079/1346FDBB47BCA704CFA9E914755A9AAF6B1CD5A3/",
+            villains={
+                sabretooth={
+                    name="Sabretooth",
+                    hpCounter={
+                        imageUrl="http://cloud-3.steamusercontent.com/ugc/2035118913124026079/1346FDBB47BCA704CFA9E914755A9AAF6B1CD5A3/",
+                    },
+                    stage1={
+                        cardId="32060",
+                        hitPointsPerPlayer=13
+                    },
+                    stage2={
+                        cardId="32061",
+                        hitPointsPerPlayer=15
+                    },
+                    stage3={
+                        cardId="32062",
+                        hitPointsPerPlayer=18
+                    }
+                }
+            },
+            schemes={
+                main={
+                    stages={
+                        stage1={
+                            cardId="32063",
+                            startingThreat=0,
+                            targetThreat=0
+                        },
+                        stage2={
+                            cardId="32064",
+                            startingThreat=0,
+                            targetThreatPerPlayer=9
+                        }
+                    }
+                }
+            },
+            cards={
+                findTheSenator={
+                    cardId="32065",
+                    position={16.75, 1.00, 21.75},
+                    scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
+                    landscape=true
+                },
+                robertKelly={
+                    cardId="32066",
+                    position={21.75, 1.00, 21.75},
+                    scale=Vector(Global.getVar("CARD_SCALE_PLAYER"))
+                }
+            },
+            counters={
+                findTheSenatorThreat={
+                    type="threat",
+                    position={16.37, 1.10, 20.30},
+                    scale={0.48, 1.00, 0.48}
+                }
+            },
+            decks={
+                encounterDeck={
+                    name="Sabretooth's Encounter Deck",
+                    cards={
+                        ["32067"]=1,
+                        ["32068"]=1,
+                        ["32069"]=2,
+                        ["32070"]=4,
+                        ["32071"]=1,
+                        ["32072"]=1
+                    }
+                }
+            }
+        }
+
+    scenarios["operationWideawake"] =
+        {
+            name="Project Wideawake",
+            selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/2035118913124026079/1346FDBB47BCA704CFA9E914755A9AAF6B1CD5A3/",
+            villains={
+                sentinel={
+                    name="Sentinel",
+                    hpCounter={
+                        imageUrl="http://cloud-3.steamusercontent.com/ugc/2035118913124026079/1346FDBB47BCA704CFA9E914755A9AAF6B1CD5A3/",
+                    },
+                    stage1={
+                        cardId="32084",
+                        hitPointsPerPlayer=16
+                    },
+                    stage2={
+                        cardId="32085",
+                        hitPointsPerPlayer=18
+                    },
+                    stage3={
+                        cardId="32086",
+                        hitPointsPerPlayer=22
+                    }
+                }
+            },
+            schemes={
+                main={
+                    stages={
+                        stage1={
+                            cardId="32087",
+                            startingThreatPerPlayer=1,
+                            targetThreat=0
+                        }
+                    }
+                }
+            },
+            cards={
+                mutantsAtTheMall={
+                    cardId="32088",
+                    position={16.75, 0.97, 21.74},
+                    scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
+                    landscape=true
+                },
+                operationZeroTolerance={
+                    cardId="32104",
+                    position={16.75, 0.97, 16.75},
+                    scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
+                    landscape=true
+                }
+            },
+            counters={
+                mutantsAtTheMallThreat={
+                    type="threat",
+                    position={16.37, 1.04, 20.30},
+                    scale={0.48, 1.00, 0.48},
+                    locked=false
+                },
+                operationZeroToleranceThreat={
+                    type="threat",
+                    position={16.32, 1.04, 15.36},
+                    scale={0.48, 1.00, 0.48},
+                    locked=false
+                }
+            },
+            decks={
+                encounterDeck={
+                    name="Project Wideawake Encounter Deck",
+                    cards={
+                        ["32093"]=2,
+                        ["32094"]=2,
+                        ["32095"]=1,
+                        ["32096"]=1,
+                        ["32097"]=1,
+                        ["32098"]=2,
+                        ["32099"]=2,
+                        ["32100"]=4
+                    }
+                },
+                captiveAllies={
+                    name="Captive Allies",
+                    position={13.75, 0.97, 29.25},
+                    scale=Vector(Global.getVar("CARD_SCALE_PLAYER")),
+                    cards={
+                        ["32089"]=1,
+                        ["32090"]=1,
+                        ["32091"]=1,
+                        ["32092"]=1
+                    }
+                }
+            }
+        }
+
+    scenarios["masterMold"] =
+        {
+            name="Master Mold",
+            selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/2035118913124026079/1346FDBB47BCA704CFA9E914755A9AAF6B1CD5A3/",
+            villains={
+                masterMold={
+                    name="Master Mold",
+                    hpCounter={
+                        imageUrl="http://cloud-3.steamusercontent.com/ugc/2035118913124026079/1346FDBB47BCA704CFA9E914755A9AAF6B1CD5A3/",
+                    },
+                    stage1={
+                        cardId="32109",
+                        hitPointsPerPlayer=12
+                    },
+                    stage2={
+                        cardId="32109",
+                        hitPointsPerPlayer=14
+                    },
+                    stage3={
+                        cardId="32109",
+                        hitPointsPerPlayer=16
+                    }
+                }
+            },
+            schemes={
+                main={
+                    stages={
+                        stage1={
+                            cardId="32112",
+                            startingThreatPerPlayer=1,
+                            targetThreatPerPlayer=6
+                        },
+                        stage2={
+                            cardId="32113",
+                            startingThreatPerPlayer=1,
+                            targetThreatPerPlayer=8
+                        }
+                    }
+                }
+            },
+            cards={
+                magnetoAlly={
+                    cardId="32172",
+                    position={0, 1.00, 1.25},
+                    scale=Vector(Global.getVar("CARD_SCALE_PLAYER")),
+                    flipped=true
+                }
+            },
+            decks={
+                encounterDeck={
+                    name="Master Mold's Encounter Deck",
+                    cards={
+                        ["32114"]=2,
+                        ["32115"]=2,
+                        ["32116"]=2,
+                        ["32117"]=2,
+                        ["32118"]=2,
+                        ["32119"]=1,
+                        ["32120"]=2
+                    }
+                }
+            }
+        }
+
+    scenarios["mansionAttack"] =
+        {
+            name="Mansion Attack",
+            selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/2035118913124026079/1346FDBB47BCA704CFA9E914755A9AAF6B1CD5A3/",
+            villains={
+                brotherhood={
+                    name="Brotherhood of Mutants",
+                    hpCounter={
+                        imageUrl="http://cloud-3.steamusercontent.com/ugc/2035118913124026079/1346FDBB47BCA704CFA9E914755A9AAF6B1CD5A3/",
+                    },
+                    stage1={
+                        cardId="32121",
+                        hitPointsPerPlayer=15
+                    },            
+                    stage2={
+                        cardId="32122",
+                        hitPointsPerPlayer=16
+                    },
+                    stage3={
+                        cardId="32123",
+                        hitPointsPerPlayer=14
+                    },
+                    stage4={
+                        cardId="32124",
+                        hitPointsPerPlayer=13
+                    }
+                }
+            },
+            schemes={
+                main={
+                    stages={
+                        stage1={
+                            cardId="32125",
+                            startingThreat=0,
+                            targetThreat=0
+                        },
+                        stage2={
+                            cardId="32126",
+                            startingThreatPerPlayer=1,
+                            targetThreatPerPlayer=7
+                        },
+                        stage3={
+                            cardId="32127",
+                            startingThreatPerPlayer=1,
+                            targetThreatPerPlayer=7
+                        },
+                        stage4={
+                            cardId="32128",
+                            startingThreatPerPlayer=1,
+                            targetThreatPerPlayer=7
+                        },
+                        stage5={
+                            cardId="32129",
+                            startingThreatPerPlayer=1,
+                            targetThreatPerPlayer=7
+                        }
+                    }
+                }
+            },
+            cards={
+                ultronDrones={
+                    cardId="32130",
+                    position={13.75, 0.97, 29.25},
+                    scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
+                }
+            },
+            decks={
+                encounterDeck={
+                    name="Mansion Attack Encounter Deck",
+                    cards={
+                        ["32131"]=3,
+                        ["32132"]=2,
+                        ["32133"]=2,
+                        ["32134"]=2,
+                        ["32135"]=2,
+                        ["32136"]=2,
+                        ["32137"]=2
+                    }
+                }
+            }
+        }
+
+    scenarios["magneto"] =
+        {
+            name="Magneto",
+            selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/2035118913124026079/1346FDBB47BCA704CFA9E914755A9AAF6B1CD5A3/",
+            villains={
+                magneto={
+                    name="Magneto",
+                    hpCounter={
+                        imageUrl="http://cloud-3.steamusercontent.com/ugc/2035118913124026079/1346FDBB47BCA704CFA9E914755A9AAF6B1CD5A3/",
+                    },
+                    stage1={
+                        cardId="32138",
+                        hitPointsPerPlayer=18
+                    },
+                    stage2={
+                        cardId="32139",
+                        hitPointsPerPlayer=20
+                    },
+                    stage3={
+                        cardId="32140",
+                        hitPointsPerPlayer=22
+                    }
+                }
+            },
+            schemes={
+                main={
+                    stages={
+                        stage1={
+                            cardId="32141",
+                            startingThreatPerPlayer=1,
+                            targetThreatPerPlayer=5
+                        },
+                        stage2={
+                            cardId="32142",
+                            startingThreatPerPlayer=1,
+                            targetThreatPerPlayer=6
+                        },
+                        stage3={
+                            cardId="32143",
+                            startingThreatPerPlayer=1,
+                            targetThreatPerPlayer=7
+                        }
+                    }
+                }
+            },
+            cards={
+                boardingParty={
+                    cardId="32144",
+                    position={16.75, 1.00, 21.75},
+                    scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
+                    landscape=true
+                },
+                orbitalDecay={
+                    cardId="32145",
+                    position={16.75, 1.00, 29.25},
+                    scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
+                    landscape=true
+                }
+            },
+            counters={
+                boardingPartyThreat={
+                    type="threat",
+                    position={16.37, 1.10, 20.30},
+                    scale={0.48, 1.00, 0.48}
+                }
+            },
+            decks={
+                encounterDeck={
+                    name="Magneto's Encounter Deck",
+                    cards={
+                        ["32146"]=4,
+                        ["32147"]=1,
+                        ["32148"]=1,
+                        ["32149"]=1,
+                        ["32150"]=2,
+                        ["32151"]=2,
+                        ["32152"]=2,
+                        ["32153"]=2,
+                        ["32154"]=2,
+                        ["32155"]=2,
+                        ["32156"]=1,
+                        ["32157"]=1,
+                        ["32158"]=1
+                    }
+                }
+            }
+        }
+
+    scenarios["mojoMania"] =
+        {
+            name="Mojo Mania",
+            selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/2035118913124026079/1346FDBB47BCA704CFA9E914755A9AAF6B1CD5A3/",
+            villains={
+                mojo={
+                    name="Mojo",
+                    hpCounter={
+                        imageUrl="http://cloud-3.steamusercontent.com/ugc/2035118913124026079/1346FDBB47BCA704CFA9E914755A9AAF6B1CD5A3/",
+                    },
+                    stage1={
+                        cardId="39022",
+                        hitPointsPerPlayer=16
+                    },
+                    stage2={
+                        cardId="39023",
+                        hitPointsPerPlayer=18
+                    },
+                    stage3={
+                        cardId="39024",
+                        hitPointsPerPlayer=25
+                    }
+                }
+            },
+            schemes={
+                main={
+                    stages={
+                        stage1={
+                            cardId="39025",
+                            startingThreatPerPlayer=10,
+                            targetThreatPerPlayer=25
+                        }
+                    }
+                }
+            },
+            cards={
+                ultronDrones={
+                    cardId="39026",
+                    position={13.75, 0.97, 29.25},
+                    scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
+                }
+            },
+            decks={
+                encounterDeck={
+                    name="Mojo's Encounter Deck",
+                    cards={
+                        ["39027"]=1,
+                        ["39028"]=1,
+                        ["39029"]=2,
+                        ["39030"]=1,
+                        ["39031"]=1,
+                        ["39032"]=2,
+                        ["39033"]=2,
+                        ["39034"]=1
+                    }
+                }
+            }
+        }
+
+        scenarios["riskyBusiness"] =
+        {
+            name="Risky Business",
+            selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150126338/C91FC9CB4D7BF94C206CE46B1982DF0CE750085D/",
+            villains={
+                greenGoblin={
+                    name="Green Goblin",
+                    hpCounter={
+                        imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150126338/C91FC9CB4D7BF94C206CE46B1982DF0CE750085D/",
+                    },
+                    stage1={
+                        cardId="02001",
+                        hitPointsPerPlayer=14
+                    },
+                    stage2={
+                        cardId="02002",
+                        hitPointsPerPlayer=18
+                    },
+                    stage3={
+                        cardId="02003",
+                        hitPointsPerPlayer=22
+                    }
+                }
+            },
+            schemes={
+                main={
+                    stages={
+                        stage1={
+                            cardId="02004",
+                            startingThreatPerPlayer=2,
+                            targetThreatPerPlayer=7
+                        },
+                        stage2={
+                            cardId="02005",
+                            startingThreatPerPlayer=1,
+                            targetThreatPerPlayer=10
+                        }
+                    }
+                }
+            },
+            cards={
+                criminalEnterprise={
+                    cardId="02006",
+                    position={13.75, 0.97, 29.25},
+                    scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
+                }
+            },            
+            counters={
+                findTheSenatorThreat={
+                    type="general",
+                    position={14.94, 1.10, 31.49},
+                    scale={0.50, 1.00, 0.50},
+                    locked=true
+                }
+            },
+            decks={
+                encounterDeck={
+                    name="Green Goblin's Encounter Deck",
+                    cards={
+                        ["02007"]=3,
+                        ["02008"]=4,
+                        ["02009"]=1,
+                        ["02010"]=2,
+                        ["02011"]=2,
+                        ["02012"]=4,
+                        ["02013"]=2
+                    }
+                }
+            }
+        }
+
+        scenarios["mutagenFormula"] =
+        {
+            name="Mutagen Formula",
+            selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150126338/C91FC9CB4D7BF94C206CE46B1982DF0CE750085D/",
+            villains={
+                greenGoblin={
+                    name="Green Goblin",
+                    hpCounter={
+                        imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150126338/C91FC9CB4D7BF94C206CE46B1982DF0CE750085D/",
+                    },
+                    stage1={
+                        cardId="02014",
+                        hitPointsPerPlayer=16
+                    },
+                    stage2={
+                        cardId="02015",
+                        hitPointsPerPlayer=18
+                    },
+                    stage3={
+                        cardId="02016",
+                        hitPointsPerPlayer=20
+                    }
+                }
+            },
+            schemes={
+                main={
+                    stages={
+                        stage1={
+                            cardId="02017",
+                            startingThreatPerPlayer=2,
+                            targetThreatPerPlayer=7
+                        },
+                        stage2={
+                            cardId="02018",
+                            startingThreatPerPlayer=4,
+                            targetThreatPerPlayer=11
+                        }
+                    }
+                }
+            },
+            decks={
+                encounterDeck={
+                    name="Green Goblin's Encounter Deck",
+                    cards={
+                        ["02019"]=1,
+                        ["02020"]=1,
+                        ["02021"]=1,
+                        ["02022"]=1,
+                        ["02023"]=4,
+                        ["02024"]=6,
+                        ["02025"]=1,
+                        ["02026"]=2,
+                        ["02027"]=1,
+                        ["02028"]=2,
+                        ["02029"]=2,
+                        ["02030"]=1,
+                        ["02031"]=1,
+                        ["02032"]=2
+                    }
+                }
+            }
+        }
+
+        scenarios["crossbones"] =
+        {
+            name="Crossbones",
+            selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1833526625011331024/2436BF66FF5980186D51FFDBA4D6E4DA16CBA24C/",
+            villains={
+                crossbones={
+                    name="Crossbones",
+                    hpCounter={
+                        imageUrl="http://cloud-3.steamusercontent.com/ugc/1833526625011331024/2436BF66FF5980186D51FFDBA4D6E4DA16CBA24C/",
+                    },
+                    stage1={
+                        cardId="04058",
+                        hitPointsPerPlayer=12
+                    },
+                    stage2={
+                        cardId="04059",
+                        hitPointsPerPlayer=14
+                    },
+                    stage3={
+                        cardId="04060",
+                        hitPointsPerPlayer=16
+                    }
+                }
+            },
+            schemes={
+                main={
+                    stages={
+                        stage1={
+                            cardId="04061",
+                            startingThreat=0,
+                            targetThreatPerPlayer=3
+                        },
+                        stage2={
+                            cardId="04062",
+                            startingThreatPerPlayer=1,
+                            targetThreatPerPlayer=6
+                        },
+                        stage3={
+                            cardId="04063",
+                            startingThreatPerPlayer=1,
+                            targetThreatPerPlayer=5
+                        }
+                    }
+                }
+            },
+            decks={
+                encounterDeck={
+                    name="Crossbones' Encounter Deck",
+                    cards={
+                        ["04064"]=1,
+                        ["04065"]=1,
+                        ["04066"]=2,
+                        ["04067"]=2,
+                        ["04068"]=2,
+                        ["04069"]=2,
+                        ["04070"]=2,
+                        ["04071"]=1
+                    }
+                },
+                experimentalWeapons={
+                    name="Experimental Weapons",
+                    position={13.75, 0.97, 29.25},
+                    scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
+                    cards={
+                        ["04072"]=1,
+                        ["04073"]=1,
+                        ["04074"]=1,
+                        ["04075"]=1
+                    }
+                }
+            }
+        }
+
+        scenarios["absorbingMan"] =
+        {
+            name="Absorbing Man",
+            selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1833525541771241261/A31710FDD358F30518B36A6113BE984D88FA6D1A/",
+            villains={
+                absorbingMan={
+                    name="Absorbing Man",
+                    hpCounter={
+                        imageUrl="http://cloud-3.steamusercontent.com/ugc/1833525541771241261/A31710FDD358F30518B36A6113BE984D88FA6D1A/",
+                    },
+                    stage1={
+                        cardId="04076",
+                        hitPointsPerPlayer=14
+                    },
+                    stage2={
+                        cardId="04077",
+                        hitPointsPerPlayer=15
+                    },
+                    stage3={
+                        cardId="04078",
+                        hitPointsPerPlayer=16
+                    }
+                }
+            },
+            schemes={
+                main={
+                    stages={
+                        stage1={
+                            cardId="04079",
+                            startingThreat=2,
+                            targetThreatPerPlayer=12
+                        }
+                    }
+                }
+            },
+            counters={
+                findTheSenatorThreat={
+                    type="general",
+                    position={11.78, 1.09, 20.38},
+                    scale={0.52, 1.00, 0.52},
+                    locked=true
+                }
+            },
+            decks={
+                encounterDeck={
+                    name="Absorbing Man's Encounter Deck",
+                    cards={
+                        ["04080"]=1,
+                        ["04081"]=1,
+                        ["04082"]=1,
+                        ["04083"]=1,
+                        ["04084"]=1,
+                        ["04085"]=2,
+                        ["04086"]=2,
+                        ["04087"]=2,
+                        ["04088"]=2,
+                        ["04089"]=3,
+                        ["04090"]=2,
+                        ["04091"]=2,
+                        ["04092"]=1
+                    }
+                }
+            }
+        }
+
+        scenarios["taskmaster"] =
+        {
+            name="Taskmaster",
+            selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150144125/DE27C71D45C02DF05875C07D98ED6D04C0E09707/",
+            villains={
+                taskmaster={
+                    name="Taskmaster",
+                    hpCounter={
+                        imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150144125/DE27C71D45C02DF05875C07D98ED6D04C0E09707/",
+                    },
+                    stage1={
+                        cardId="04093",
+                        hitPointsPerPlayer=13
+                    },
+                    stage2={
+                        cardId="04094",
+                        hitPointsPerPlayer=16
+                    },
+                    stage3={
+                        cardId="04095",
+                        hitPointsPerPlayer=17
+                    }
+                }
+            },
+            schemes={
+                main={
+                    stages={
+                        stage1={
+                            cardId="04096",
+                            startingThreatPerPlayer=1,
+                            targetThreatPerPlayer=12
+                        }
+                    }
+                }
+            },
+            cards={
+                hydraPatrol={
+                    cardId="04154",
+                    position={16.75, 1.00, 21.75},
+                    scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
+                    landscape=true
+                }
+            },
+            counters={
+                hydraPatrolThreat={
+                    type="threat",
+                    position={16.37, 1.10, 20.30},
+                    scale={0.48, 1.00, 0.48}
+                }
+            },
+            decks={
+                encounterDeck={
+                    name="Taskmaster's Encounter Deck",
+                    cards={
+                        ["04101"]=2,
+                        ["04102"]=1,
+                        ["04103"]=1,
+                        ["04104"]=2,
+                        ["04105"]=2,
+                        ["04106"]=2,
+                        ["04107"]=4,
+                        ["04108"]=1
+                    }
+                }
+            }
+        }
+
+
 end
+
+require('!/Cardplacer')

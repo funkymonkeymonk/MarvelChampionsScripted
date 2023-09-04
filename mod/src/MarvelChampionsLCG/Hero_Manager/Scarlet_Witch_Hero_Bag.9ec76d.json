@@ -3,8 +3,8 @@
     "GUID": "9ec76d",
     "Name": "Bag",
     "Transform": {
-      "posX": -5.08381,
-      "posY": 32.9844627,
+      "posX": -5.01763439,
+      "posY": 32.9525833,
       "posZ": 42,
       "rotX": 90,
       "rotY": 180,
@@ -24,7 +24,7 @@
     "ColorDiffuse": {
       "r": 0.9921568,
       "g": 0,
-      "b": 0.3411627
+      "b": 0.341162622
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,

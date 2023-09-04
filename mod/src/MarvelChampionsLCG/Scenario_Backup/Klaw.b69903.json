@@ -1,0 +1,70 @@
+{
+  "Object": {
+    "GUID": "b69903",
+    "Name": "Bag",
+    "Transform": {
+      "posX": 101.680244,
+      "posY": 35.3244934,
+      "posZ": 26.8504314,
+      "rotX": -7.768753e-12,
+      "rotY": 180.014435,
+      "rotZ": 6.169846e-8,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Klaw",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.972549,
+      "g": 0.109802313,
+      "b": 0.407841533
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Klaw.b69903.lua",
+    "LuaScriptState": "#include ./Klaw.b69903.state.json",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Custom_Assetbundle_Bag.7fca5a.json",
+    "Custom_Token.e0f2bf.json",
+    "Custom_Token.8c62f4.json",
+    "Custom_Token.530029.json",
+    "Klaw.62d729.json",
+    "Klaw.206eb2.json",
+    "The_Immortal_Klaw.28eb8e.464603.json",
+    "Deck.32d329.json",
+    "Defense_Network.4faf63.464608.json",
+    "Deck.4232c8.json",
+    "Secret_Rendezvous.5b3bd4.1302.json",
+    "Underground_Distribution.0c3a97.1301.json",
+    "Klaw.418810.json",
+    "Klaw.3a4e8d.json"
+  ]
+}
