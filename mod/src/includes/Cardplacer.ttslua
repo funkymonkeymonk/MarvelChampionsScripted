@@ -26,7 +26,7 @@ function buildCardPool(packID)
                 local cardAsset = Decker.Asset(cardFace, cardBack)
                 local sideways = string.sub(cardData.type_code, -6, -1) == "scheme"
 
-                local card = Decker.Card(cardAsset, 1, 1, { name=cardData.name, sideways=sideways, tags={type_code=cardData.type_code, code=cardData.code, subname=cardData.subname, faction_code=cardData.faction_code}})
+                local card = Decker.Card(cardAsset, 1, 1, { name = cardData.name, sideways = sideways})
                 cardpool[cardData.code] = card
             else
                 cardpool[cardData.code] = {duplicate_of = cardData.duplicate_of}
