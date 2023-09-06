@@ -10,6 +10,14 @@ function setCardID(_, value, _)
     CARD_ID = value
 end
 
+function mapCardData(cardData)
+    local t = {"cardData = {"}
+    for k,v in pairs(cardData) do
+        t[#t+1] = tostring(k) .. "=[[" .. tostring(v) .. "]],"
+    end
+    t[#t+1] = "}"
+    return table.concat(t,"\n")
+end
 
 -- Fix card pool to deal with duplicates
 function buildCardPool(packID)
@@ -25,8 +33,9 @@ function buildCardPool(packID)
                 local cardBack = cardData.BackURL
                 local cardAsset = Decker.Asset(cardFace, cardBack)
                 local sideways = string.sub(cardData.type_code, -6, -1) == "scheme"
+                local script = mapCardData(cardData)
 
-                local card = Decker.Card(cardAsset, 1, 1, { name = cardData.name, sideways = sideways})
+                local card = Decker.Card(cardAsset, 1, 1, { name = cardData.name, sideways = sideways, script = script})
                 cardpool[cardData.code] = card
             else
                 cardpool[cardData.code] = {duplicate_of = cardData.duplicate_of}
