@@ -29,9 +29,16 @@ async function getDataFromGithub() {
 
 function FormatPackData(responses) {
   function GetCardFront(card) {
-    if (card.type_code === "main_scheme") return IMG_ROOT  + card.code.toUpperCase() + "A.jpg"
+
+  // This is nasty. I need to spend some time with the upstream datasource and send some PRs to fix it.
+  // If I can't fix it there then come back and rethink this cludge.
+    if (card.type_code === "main_scheme") {
+      if (card.code.toUpperCase().includes("A") || card.code.toUpperCase().includes("B")) return IMG_ROOT  + card.code.toUpperCase() + ".jpg"
+      return IMG_ROOT  + card.code.toUpperCase() + "A.jpg"
+    }
     return IMG_ROOT + card.code.toUpperCase() + ".jpg"
   }
+
   function GetCardBack(card) {
     const cardBack = {
       "player": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
