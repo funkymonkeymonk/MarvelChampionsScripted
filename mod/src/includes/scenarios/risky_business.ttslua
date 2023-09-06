@@ -1,0 +1,70 @@
+scenarios["riskyBusiness"] =
+{
+    name="Risky Business",
+    selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150126338/C91FC9CB4D7BF94C206CE46B1982DF0CE750085D/",
+    villains={
+        greenGoblin={
+            name="Green Goblin",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150126338/C91FC9CB4D7BF94C206CE46B1982DF0CE750085D/",
+            },
+            stage1={
+                cardId="02001",
+                hitPointsPerPlayer=14
+            },
+            stage2={
+                cardId="02002",
+                hitPointsPerPlayer=18
+            },
+            stage3={
+                cardId="02003",
+                hitPointsPerPlayer=22
+            }
+        }
+    },
+    schemes={
+        main={
+            stages={
+                stage1={
+                    cardId="02004",
+                    startingThreatPerPlayer=2,
+                    targetThreatPerPlayer=7
+                },
+                stage2={
+                    cardId="02005",
+                    startingThreatPerPlayer=1,
+                    targetThreatPerPlayer=10
+                }
+            }
+        }
+    },
+    cards={
+        criminalEnterprise={
+            cardId="02006",
+            position={13.75, 0.97, 29.25},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
+        }
+    },            
+    counters={
+        infamy={
+            type="general",
+            position={15.26, 1.06, 26.74},
+            scale={0.50, 1.00, 0.50},
+            locked=true
+        }
+    },
+    decks={
+        encounterDeck={
+            name="Green Goblin's Encounter Deck",
+            cards={
+                ["02007"]=3,
+                ["02008"]=4,
+                ["02009"]=1,
+                ["02010"]=2,
+                ["02011"]=2,
+                ["02012"]=4,
+                ["02013"]=2
+            }
+        }
+    }
+}

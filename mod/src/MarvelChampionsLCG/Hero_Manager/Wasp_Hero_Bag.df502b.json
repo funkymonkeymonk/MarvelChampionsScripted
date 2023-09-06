@@ -3,8 +3,8 @@
     "GUID": "df502b",
     "Name": "Bag",
     "Transform": {
-      "posX": -5.09235573,
-      "posY": 32.98858,
+      "posX": -5.727566,
+      "posY": 33.29458,
       "posZ": 42,
       "rotX": 90,
       "rotY": 180,
@@ -23,8 +23,8 @@
     },
     "ColorDiffuse": {
       "r": 1,
-      "g": 0.168608159,
-      "b": 0.168608159
+      "g": 0.16860795,
+      "b": 0.16860795
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,

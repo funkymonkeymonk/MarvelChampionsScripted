@@ -1,0 +1,49 @@
+scenarios["infiltrateMuseum"] =
+{
+    name="Infiltrate the Museum",
+    selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1833526258727804015/5DDA85319568535B84FBD610334FB7C6F8BFCDF0/",
+    villains={
+        collector={
+            name="Collector",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1833526258727804015/5DDA85319568535B84FBD610334FB7C6F8BFCDF0/",
+            },
+            stage1={
+                cardId="16070",
+                hitPointsPerPlayer=13
+            },
+            stage2={
+                cardId="16071",
+                hitPointsPerPlayer=14
+            },
+            stage3={
+                cardId="16072",
+                hitPointsPerPlayer=18
+            }
+        }
+    },
+    schemes={
+        main={
+            stages={
+                stage1={
+                    cardId="16073",
+                    startingThreatPerPlayer=4,
+                    targetThreatPerPlayer=10
+                }
+            }
+        }
+    },
+    decks={
+        encounterDeck={
+            name="Collector's Encounter Deck",
+            cards={
+                ["16074"]=1,
+                ["16075"]=1,
+                ["16076"]=2,
+                ["16077"]=2,
+                ["16078"]=2,
+                ["16079"]=1
+            }
+        }
+    }
+}

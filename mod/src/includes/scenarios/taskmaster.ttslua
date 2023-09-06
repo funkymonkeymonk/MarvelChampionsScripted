@@ -1,0 +1,66 @@
+scenarios["taskmaster"] =
+{
+    name="Taskmaster",
+    selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150144125/DE27C71D45C02DF05875C07D98ED6D04C0E09707/",
+    villains={
+        taskmaster={
+            name="Taskmaster",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150144125/DE27C71D45C02DF05875C07D98ED6D04C0E09707/",
+            },
+            stage1={
+                cardId="04093",
+                hitPointsPerPlayer=13
+            },
+            stage2={
+                cardId="04094",
+                hitPointsPerPlayer=16
+            },
+            stage3={
+                cardId="04095",
+                hitPointsPerPlayer=17
+            }
+        }
+    },
+    schemes={
+        main={
+            stages={
+                stage1={
+                    cardId="04096",
+                    startingThreatPerPlayer=1,
+                    targetThreatPerPlayer=12
+                }
+            }
+        }
+    },
+    cards={
+        hydraPatrol={
+            cardId="04154",
+            position={16.75, 1.00, 21.75},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
+            landscape=true
+        }
+    },
+    counters={
+        hydraPatrolThreat={
+            type="threat",
+            position={16.37, 1.10, 20.30},
+            scale={0.48, 1.00, 0.48}
+        }
+    },
+    decks={
+        encounterDeck={
+            name="Taskmaster's Encounter Deck",
+            cards={
+                ["04101"]=2,
+                ["04102"]=1,
+                ["04103"]=1,
+                ["04104"]=2,
+                ["04105"]=2,
+                ["04106"]=2,
+                ["04107"]=4,
+                ["04108"]=1
+            }
+        }
+    }
+}

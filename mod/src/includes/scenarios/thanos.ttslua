@@ -1,0 +1,89 @@
+scenarios["thanos"] =
+{
+    name="Thanos",
+    selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150145079/54DEDEDC81C5F76EDB6DCFE7A64F64476AF811BF/",
+    villains={
+        thanos={
+            name="Thanos",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150145079/54DEDEDC81C5F76EDB6DCFE7A64F64476AF811BF/",
+            },
+            stage1={
+                cardId="21111",
+                hitPointsPerPlayer=16
+            },
+            stage2={
+                cardId="21112",
+                hitPointsPerPlayer=23
+            },
+            stage3={
+                cardId="21113",
+                hitPointsPerPlayer=28
+            }
+        }
+    },
+    schemes={
+        main={
+            stages={
+                stage1={
+                    cardId="21114",
+                    startingThreat=0,
+                    targetThreatPerPlayer=12
+                },
+                stage1={
+                    cardId="21115",
+                    startingThreat=0,
+                    targetThreatPerPlayer=12
+                }
+            }
+        }
+    },
+    cards={
+        sanctuary={
+            cardId="21116",
+            position={16.75, 1.00, 21.75},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
+            landscape=true
+        },
+        infinityGuantlet={
+            cardId="21129",
+            position={-7.25, 0.97, 22.25},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
+        }
+    },
+    counters={
+        sanctuaryThreat={
+            type="threat",
+            position={16.37, 1.10, 20.30},
+            scale={0.48, 1.00, 0.48}
+        }
+    },
+    decks={
+        encounterDeck={
+            name="Thanos' Encounter Deck",
+            cards={
+                ["21117"]=1,
+                ["21118"]=1,
+                ["21119"]=2,
+                ["21120"]=2,
+                ["21121"]=2,
+                ["21122"]=2,
+                ["21123"]=2,
+                ["21124"]=1
+            }
+        },
+        infinityStones={
+            name="Infinity Stones",
+            position={13.75, 0.97, 29.25},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
+            cards={
+                ["21130"]=1,
+                ["21131"]=1,
+                ["21132"]=1,
+                ["21133"]=1,
+                ["21134"]=1,
+                ["21135"]=1
+            }
+        }
+    }
+}

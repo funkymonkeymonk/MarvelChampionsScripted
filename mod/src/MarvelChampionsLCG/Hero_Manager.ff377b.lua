@@ -1,6 +1,3 @@
-require('!/Cardplacer')
-
-local playmatBagGuid = "e549db"
 local deckImporterGuid = "c7ece0"
 local healthCounterOffset = {-10.42, .1, 5.5}
 local identityOffset = {-9.89, 3, 1}
@@ -13,9 +10,16 @@ local columnGap = 5
 
 local rows = 12
 
+local assetBag = getObjectFromGUID("91eba8")
+
 function onload(saved_data)
     createContextMenu()
     layOutHeroes()
+end
+
+function spawnAsset(params)
+  params.caller = self
+  assetBag.call("spawnAsset", params)
 end
 
 function placeHeroWithStarterDeck(params)
@@ -30,7 +34,6 @@ function placeHero(heroBagGuid, playerColor, deckType)
   if not confirmPlayerIsSeated(playerColor) then return end
   if not confirmSeatIsAvailable(playerColor) then return end
 
-  --local heroesBag = getObjectFromGUID("22b26a")
   local heroBag = self.takeObject({guid=heroBagGuid})
 
   Wait.frames(
@@ -98,8 +101,6 @@ function placeHero(heroBagGuid, playerColor, deckType)
         placeObligation(heroDetails["obligation"])
       end
 
-
-
       self.putObject(heroBag)
       
       local scenarioManager = getObjectFromGUID(Global.getVar("SCENARIO_MANAGER_GUID"))
@@ -147,32 +148,54 @@ function getPlaymatPosition(playerColor)
   return nil
 end
 
-function placePlaymat(playerColor, playmatPosition, imageUrl)
-  local playmatBag = getObjectFromGUID(playmatBagGuid)
-  local playmatCopy = playmatBag.takeObject({position=playmatPosition})
+function placePlaymat(playerColor, position, imageUrl)
+  spawnAsset({
+    guid="f5701e",
+    playerColor=playerColor,
+    position=position,
+    rotation={0, 180, 0},
+    playmatUrl=imageUrl,
+    callback="configurePlaymat"
+  })
+end
 
-  playmatCopy.setName("")
-  playmatCopy.setDescription("")
-  playmatCopy.setLock(true)
-  playmatCopy.setPosition(playmatPosition)
-  playmatCopy.addTag("Playmat")
-  playmatCopy.addTag(playerColor)
-  playmatCopy.setCustomObject({image=imageUrl})
-  playmatCopy.reload()
+function configurePlaymat(params)
+  local playmat = params.spawnedObject
+  local playmatUrl = params.playmatUrl
+
+  playmat.setName("")
+  playmat.setDescription("")
+  playmat.setLock(true)
+  playmat.addTag("Playmat")
+  playmat.addTag(params.playerColor)
+  playmat.setPosition(params.position)
+  playmat.setCustomObject({image=playmatUrl})
+  playmat.reload()
 end
 
 function placeHealthCounter(playmatPosition, imageUrl, hitPoints)
-  local counterPosition = getOffsetPosition(playmatPosition, healthCounterOffset)
-  local counterBag = getObjectFromGUID("ef3f2f")
-  local counter = counterBag.takeObject({position=counterPosition})
+  spawnAsset({
+    guid="16b5bd",
+    position=getOffsetPosition(playmatPosition, healthCounterOffset),
+    rotation={0, 180, 0},
+    scale={1.13, 1, 1.13},
+    imageUrl=imageUrl,
+    hitPoints=hitPoints,
+    callback="configureHealthCounter"
+  })
+end
 
+function configureHealthCounter(params)
+  local counter = params.spawnedObject
+  local imageUrl = params.imageUrl
+  local hitPoints = params.hitPoints
+  
   counter.setName("")
   counter.setDescription("")
-  counter.setScale({1.13, 1, 1.13})
-  counter.setRotation({0,180,0})
   counter.setLock(true)
-  counter.setPosition(counterPosition)
+  counter.setPosition(params.position)
   counter.setCustomObject({image=imageUrl})
+
   local reloadedCounter = counter.reload()
 
   Wait.frames(
@@ -302,7 +325,7 @@ function placeNemesis(nemesis)
 end
 
 function placeObligationOld(heroBag, obligationGuid)
-  local encounterDeckPosition = {-12.75, 3, 22.25} --TODO: figure out why this produces an error: Global.getVar("ENCOUNTER_DECK_SPAWN_POS")
+  local encounterDeckPosition = Vector(Global.getVar("ENCOUNTER_DECK_SPAWN_POS"))
   local obligationOrig = heroBag.takeObject({guid=obligationGuid, position=encounterDeckPosition})
   local obligationCopy = obligationOrig.clone({position=encounterDeckPosition})
   heroBag.putObject(obligationOrig)
@@ -311,7 +334,7 @@ function placeObligationOld(heroBag, obligationGuid)
 end
 
 function placeObligation(obligation)
-  local encounterDeckPosition = {-12.75, 3, 22.25} --TODO: figure out why this produces an error: Global.getVar("ENCOUNTER_DECK_SPAWN_POS")
+  local encounterDeckPosition = Vector(Global.getVar("ENCOUNTER_DECK_SPAWN_POS"))
   getCardByID(obligation, encounterDeckPosition, {scale = Global.getTable("CARD_SCALE_ENCOUNTER"), flipped=true})
 end
 
@@ -326,7 +349,7 @@ end
 
 function layOutHeroes()
     clearHeroes()
-    layOutTiles()
+    layOutHeroTiles()
 end
 
 function deleteHeroes()
@@ -343,23 +366,92 @@ function clearHeroes()
     end     
 end
 
-function layOutTiles()
-    local bagList = getSortedListOfHeroes()
-    local tileBag = getObjectFromGUID("01ad59")
+-- function spawnHeroSelectors()
+--   spawnAsset({
+--     guid="c04e76",
+--     position={70.25, -9.69, 7.25},
+--     rotation={0, 180, 0},
+--     scale={1.13, 1, 1.13},
+--     callback="layOutHeroTiles"
+--   })
+-- end
 
-    for bagGuid, tilePosition in pairs(bagList) do
-        local tilePosition = tilePosition
+function layOutHeroTiles()
+  baseTile=getObjectFromGUID("c04e76")
+  local bagList = getSortedListOfHeroes()
 
-        local heroBag = self.takeObject({guid=bagGuid})
-        local tile = tileBag.takeObject({position=tilePosition, smooth=false})
+  for bagGuid, tilePosition in pairs(bagList) do
+      local position = tilePosition
 
-        setupTile({
-            heroBag=heroBag,
-            tile=tile,
-            tilePosition=tilePosition
-        })
-    end
+      local heroBag = self.takeObject({guid=bagGuid})
+
+      Wait.frames(
+        function()
+          local heroDetails = heroBag.call("getHeroDetails")
+          local imageUrl = heroDetails["counterUrl"]
+          local heroName = string.gsub(heroBag.getName(), " Hero Bag", "")
+          self.putObject(heroBag)
+    
+          tile = baseTile.clone({
+            position=position,
+            rotation={0,180,0},
+            scale={1.13, 1, 1.13}})
+    
+          tile.setName(heroName)
+          tile.setLock(true)
+          tile.setPosition(position)
+          tile.addTag("hero-selector-tile")
+          tile.setCustomObject({image=imageUrl})
+          reloadedTile = tile.reload()
+        
+          setTileFunctions(reloadedTile, bagGuid)
+          createTileButtons(reloadedTile)
+            
+        end, 
+        10)
+  end
 end
+
+-- function layOutTiles()
+--   local bagList = getSortedListOfHeroes()
+--   local tileBag = getObjectFromGUID("01ad59")
+
+--   for bagGuid, tilePosition in pairs(bagList) do
+--       local tilePosition = tilePosition
+
+--       local heroBag = self.takeObject({guid=bagGuid})
+--       local tile = tileBag.takeObject({position=tilePosition, smooth=false})
+
+--       setupTile({
+--           heroBag=heroBag,
+--           tile=tile,
+--           tilePosition=tilePosition
+--       })
+--   end
+-- end
+
+-- function configureTile(params)
+--   local heroBag=params.heroBag
+--   local heroDetails = heroBag.call("getHeroDetails")
+--   local imageUrl = heroDetails["counterUrl"]
+--   self.putObject(heroBag)
+
+--   local tile = params.spawnedObject
+--   local position = params.position
+
+--   tile.setName(string.gsub(heroBag.getName(), " Hero Bag", ""))
+--   tile.setDescription("")
+--   -- tile.setScale({1.13, 1, 1.13})
+--   -- tile.setRotation({0,180,0})
+--   tile.setLock(true)
+--   tile.setPosition(position)
+--   tile.addTag("hero-selector-tile")
+--   tile.setCustomObject({image=imageUrl})
+--   reloadedTile = tile.reload()
+
+--   setTileFunctions(reloadedTile, heroBag.getGUID())
+--   createTileButtons(reloadedTile)
+-- end
 
 function getSortedListOfHeroes()
     local heroList = {}
@@ -398,31 +490,31 @@ function getTilePosition(column, row)
         originPosition.z + rowGap * (row - 1)}
 end
 
-function setupTile(params)
-    Wait.frames(
-        function()
-            local heroBag=params.heroBag
-            local heroDetails = heroBag.call("getHeroDetails")
-            local imageUrl = heroDetails["counterUrl"]
-            self.putObject(heroBag)
+-- function setupTile(params)
+--     Wait.frames(
+--         function()
+--             local heroBag=params.heroBag
+--             local heroDetails = heroBag.call("getHeroDetails")
+--             local imageUrl = heroDetails["counterUrl"]
+--             self.putObject(heroBag)
 
-            local tile = params.tile
-            local tilePosition = params.tilePosition
-            tile.setName(string.    gsub(heroBag.getName(), " Hero Bag", ""))
-            tile.setDescription("")
-            tile.setScale({1.13, 1, 1.13})
-            tile.setRotation({0,180,0})
-            tile.setLock(true)
-            tile.setPosition(tilePosition)
-            tile.addTag("hero-selector-tile")
-            tile.setCustomObject({image=imageUrl})
-            reloadedTile = tile.reload()
+--             local tile = params.tile
+--             local tilePosition = params.tilePosition
+--             tile.setName(string.    gsub(heroBag.getName(), " Hero Bag", ""))
+--             tile.setDescription("")
+--             tile.setScale({1.13, 1, 1.13})
+--             tile.setRotation({0,180,0})
+--             tile.setLock(true)
+--             tile.setPosition(tilePosition)
+--             tile.addTag("hero-selector-tile")
+--             tile.setCustomObject({image=imageUrl})
+--             reloadedTile = tile.reload()
 
-            setTileFunctions(reloadedTile, heroBag.getGUID())
-            createTileButtons(reloadedTile)
-        end,
-        30)
-end
+--             setTileFunctions(reloadedTile, heroBag.getGUID())
+--             createTileButtons(reloadedTile)
+--         end,
+--         30)
+-- end
 
 function setTileFunctions(tile, heroBagGuid)
     local tileScript = [[
@@ -450,3 +542,66 @@ function createTileButtons(tile)
         font_size=600, color={1,1,1}, font_color={0,0,0}, tooltip="Constructed"
     })
 end
+
+local heroes = {}
+
+function constructHeroList()
+
+  heroes["adamWarlock"] = {
+    name = "Adam Warlock",
+    hitPoints = 11,
+    counterUrl = "http://cloud-3.steamusercontent.com/ugc/1833524420371050034/61A7EE53D4D7DE302E99B49594CCBA6D4075BE91/",
+    playmatUrl = "http://cloud-3.steamusercontent.com/ugc/1861691130254391544/53968F7E3F8F28287E82D74297D2B820CFDA630F/",
+    identityCardId = 0,
+    obligationCardId = 0,
+    heroDeck = {
+      cards = {
+        ["21032"] =	1,
+        ["21033"] =	1,
+        ["21034"] =	1,
+        ["21035"] =	1,
+        ["21036"] =	2,
+        ["21037"] =	2,
+        ["21038"] =	3,
+        ["21039"] =	2,
+        ["21040"] =	2
+      }
+    },
+    starterDeck = {
+      cards = {
+        ["21041"] =	1,
+        ["21042"] =	1,
+        ["21043"] =	1,
+        ["21044"] =	1,
+        ["21046"] =	1,
+        ["21047"] =	1,
+        ["21048"] =	1,
+        ["21049"] =	1,
+        ["21050"] =	1,
+        ["21052"] =	1,
+        ["21053"] =	1,
+        ["21054"] =	1,
+        ["21055"] =	1,
+        ["21057"] =	1,
+        ["21058"] =	1,
+        ["21059"] =	1,
+        ["21060"] =	1,
+        ["21061"] =	1,
+        ["21062"] =	1,
+        ["21063"] =	1,
+        ["21064"] =	1,
+        ["21065"] =	1,
+        ["22019"] =	1,
+        ["23020"] =	1,
+        ["25017"] =	1
+      }
+    },
+    nemesis = {
+      cards = {
+
+      }
+    }
+  }
+end
+
+require('!/Cardplacer')

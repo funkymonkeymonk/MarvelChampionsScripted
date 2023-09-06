@@ -1,14 +1,14 @@
 {
   "Object": {
-    "GUID": "cf6ca1",
+    "GUID": "740595",
     "Name": "Custom_Assetbundle_Bag",
     "Transform": {
-      "posX": 79.7488251,
-      "posY": 2.861956,
-      "posZ": 83.25036,
-      "rotX": 0.469577581,
-      "rotY": -0.002487927,
-      "rotZ": 0.8917045,
+      "posX": 70.25,
+      "posY": -9.690033,
+      "posZ": 15.750001,
+      "rotX": -8.55444853e-7,
+      "rotY": -0.0007417825,
+      "rotZ": -5.78626157e-7,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -53,7 +53,7 @@
     "Bag": {
       "Order": 0
     },
-    "LuaScript": "#include ./Custom_Assetbundle_Bag.cf6ca1.lua",
+    "LuaScript": "#include ./Custom_Assetbundle_Bag.740595.lua",
     "LuaScriptState": "",
     "XmlUI": ""
   },

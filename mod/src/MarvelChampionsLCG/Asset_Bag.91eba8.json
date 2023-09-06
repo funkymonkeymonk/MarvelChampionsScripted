@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "01ad59",
-    "Name": "Infinite_Bag",
+    "GUID": "91eba8",
+    "Name": "Bag",
     "Transform": {
-      "posX": 69.75,
-      "posY": 0.478001058,
-      "posZ": 100.25,
-      "rotX": 8.381463e-9,
-      "rotY": -0.00100501045,
-      "rotZ": -1.40582927e-7,
+      "posX": 68.25,
+      "posY": -9.690033,
+      "posZ": 15.750001,
+      "rotX": -8.55444853e-7,
+      "rotY": -0.0007417825,
+      "rotZ": -5.78626157e-7,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
     },
-    "Nickname": "Selector Tile Bag",
+    "Nickname": "Asset Bag",
     "Description": "",
     "GMNotes": "",
     "AltLookAngle": {
@@ -22,9 +22,9 @@
       "z": 0
     },
     "ColorDiffuse": {
-      "r": 0.3058885,
-      "g": 0.372555166,
-      "b": 1
+      "r": 0.7058823,
+      "g": 0.366520882,
+      "b": 0
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,
@@ -42,13 +42,19 @@
     "Hands": false,
     "MaterialIndex": -1,
     "MeshIndex": -1,
-    "LuaScript": "#include ./Selector_Tile_Bag.01ad59.lua",
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "#include ./Asset_Bag.91eba8.lua",
     "LuaScriptState": "",
     "XmlUI": "",
     "ContainedObjects": []
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
-    "Selector_Tile.9bfb28.json"
+    "HP_Counter.16b5bd.json",
+    "Playmat.f5701e.json",
+    "Villain_HP_Counter.8cf3d6.json",
+    "Custom_Assetbundle_Bag.740595.json"
   ]
 }

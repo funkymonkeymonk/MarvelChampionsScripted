@@ -1,0 +1,145 @@
+scenarios["sinistersix"] =
+{
+    name="The Sinister Six",
+    selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015309349/2164A5798EC8BE6A688434F1828DB46278042212/",
+    villains={
+        docock={
+            name="Doctor Octopus",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015309349/2164A5798EC8BE6A688434F1828DB46278042212/",
+                position={49.50, 1.00, 35.00},
+                scale={2.01, 1.00, 2.01},
+                locked=false
+            },
+            stage1={
+                cardId="27094",
+                hitPointsPer=8
+            },
+            deckPosition={49.50, 1.00, 29.75},
+            deckScale={1.94, 1.00, 1.94}
+        },
+        electro={
+            name="Electro",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015311687/D43B3C5C8278CBF2FE6F607761AFDCD1C8DB74B5/",
+                position={49.50, 1.00, 24.00},
+                scale={2.01, 1.00, 2.01},
+                locked=false
+            },
+            stage1={
+                cardId="27095",
+                hitPointsPer=8
+            },
+            deckPosition={49.50, 1.00, 18.75},
+            deckScale={1.94, 1.00, 1.94}
+        },
+        hobgoblin={
+            name="Hobgoblin",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015313258/5B1EB215742197F8BEFE99BA876EB16427D9A2B0/",
+                position={49.50, 1.00, 13.00},
+                scale={2.01, 1.00, 2.01},
+                locked=false
+            },
+            stage1={
+                cardId="27096",
+                hitPointsPer=8
+            },
+            deckPosition={49.50, 1.00, 7.75},
+            deckScale={1.94, 1.00, 1.94}
+        },
+        kraven={
+            name="Kraven the Hunter",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015314847/CE58D050162082B341F3FD1F130B57AF41A27AEB/",
+                position={49.50, 1.00, 2.00},
+                scale={2.01, 1.00, 2.01},
+                locked=false
+            },
+            stage1={
+                cardId="27097",
+                hitPointsPer=8
+            },
+            deckPosition={49.50, 1.00, -3.25},
+            deckScale={1.94, 1.00, 1.94}
+        },
+        scorpion={
+            name="Scorpion",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015316302/2C4DEA609613C6C55BD2F662FCC952FB26268474/",
+                position={49.50, 1.00, -9.00},
+                scale={2.01, 1.00, 2.01},
+                locked=false
+            },
+            stage1={
+                cardId="27098",
+                hitPointsPer=8
+            },
+            deckPosition={49.75, 1.00, -14.25},
+            deckScale={1.94, 1.00, 1.94}
+        },
+        vulture={
+            name="Vulture",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015318364/0BCC55652842E110C7EB20C47D2ACED673EFDFF6/",
+                position={49.75, 1.00, -20.00},
+                scale={2.01, 1.00, 2.01},
+                locked=false
+            },
+            stage1={
+                cardId="27099",
+                hitPointsPer=8
+            },
+            deckPosition={49.50, 1.00, -25.25},
+            deckScale={1.94, 1.00, 1.94}
+        },
+    },
+    schemes={
+        main={
+            stages={
+                stage1={
+                    cardId="27100",
+                    startingThreatPerPlayer=2,
+                    targetThreatPerPlayer=8
+                },
+                stage2={
+                    cardId="27101",
+                    startingThreatPerPlayer=3,
+                    targetThreatPerPlayer=7
+                }
+            }
+        }
+    },
+    cards={
+        lightAtTheEnd={
+            cardId="27102",
+            position={16.75, 1.00, 21.75},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
+            landscape=true
+        }
+    },
+    counters={
+        lightAtTheEndThreat={
+            type="threat",
+            position={16.37, 1.10, 20.30},
+            scale={0.48, 1.00, 0.48}
+        }
+    },
+    decks={
+        encounterDeck={
+            name="The Sinister Six Encounter Deck",
+            cards={
+                ["27103"]=2,
+                ["27104"]=2,
+                ["27105"]=1,
+                ["27106"]=1,
+                ["27107"]=1,
+                ["27108"]=1,
+                ["27109"]=1,
+                ["27110"]=1,
+                ["27111"]=3,
+                ["27112"]=3
+            }
+        }
+    }
+}
