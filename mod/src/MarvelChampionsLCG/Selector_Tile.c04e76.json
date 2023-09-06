@@ -1,14 +1,14 @@
 {
   "Object": {
-    "GUID": "9bfb28",
+    "GUID": "c04e76",
     "Name": "Custom_Tile",
     "Transform": {
-      "posX": 74.74135,
-      "posY": 3.03040171,
-      "posZ": 60.2483749,
-      "rotX": 359.211975,
-      "rotY": 180.464233,
-      "rotZ": 328.078949,
+      "posX": 72.25,
+      "posY": -9.504998,
+      "posZ": 15.749999,
+      "rotX": 2.04229949e-7,
+      "rotY": -0.00403494248,
+      "rotZ": -9.236342e-8,
       "scaleX": 1.12515855,
       "scaleY": 1,
       "scaleZ": 1.12515855
@@ -22,13 +22,13 @@
       "z": 0
     },
     "ColorDiffuse": {
-      "r": 0.24998349,
-      "g": 0.24998349,
-      "b": 0.24998349
+      "r": 0.249983341,
+      "g": 0.249983341,
+      "b": 0.249983341
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,
-    "Locked": false,
+    "Locked": true,
     "Grid": true,
     "Snap": true,
     "IgnoreFoW": false,
@@ -53,7 +53,7 @@
       }
     },
     "LuaScript": "",
-    "LuaScriptState": "#include ./Selector_Tile.9bfb28.state.json",
+    "LuaScriptState": "#include ./Selector_Tile.c04e76.state.json",
     "XmlUI": ""
   },
   "StatesPaths": {}

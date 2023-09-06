@@ -1,0 +1,73 @@
+scenarios["zola"] =
+{
+    name="Zola",
+    selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150149561/7BDA5483418FB33A377C93A60F7D06F1E3774351/",
+    villains={
+        zola={
+            name="Zola",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150149561/7BDA5483418FB33A377C93A60F7D06F1E3774351/",
+            },
+            stage1={
+                cardId="04109",
+                hitPointsPerPlayer=12
+            },
+            stage2={
+                cardId="04110",
+                hitPointsPerPlayer=14
+            },
+            stage3={
+                cardId="04111",
+                hitPointsPerPlayer=16
+            }
+        }
+    },
+    schemes={
+        main={
+            stages={
+                stage1={
+                    cardId="04112",
+                    startingThreat=0,
+                    targetThreatPerPlayer=6
+                },
+                stage2={
+                    cardId="04113",
+                    startingThreatPerPlayer=1,
+                    targetThreatPerPlayer=8
+                }
+            }
+        }
+    },
+    cards={
+        hydraPatrol={
+            cardId="04122",
+            position={16.75, 1.00, 21.75},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
+            landscape=true
+        }
+    },
+    counters={
+        hydraPatrolThreat={
+            type="threat",
+            position={16.37, 1.10, 20.30},
+            scale={0.48, 1.00, 0.48}
+        }
+    },
+    decks={
+        encounterDeck={
+            name="Zola's Encounter Deck",
+            cards={
+                ["04114"]=4,
+                ["04115"]=3,
+                ["04116"]=3,
+                ["04117"]=3,
+                ["04118"]=2,
+                ["04119"]=2,
+                ["04120"]=3,
+                ["04121"]=2,
+                ["04123"]=2,
+                ["04124"]=1,
+            }
+        }
+    }
+}

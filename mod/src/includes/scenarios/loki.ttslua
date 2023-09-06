@@ -1,0 +1,86 @@
+scenarios["loki"] =
+{
+    name="Loki",
+    selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150132430/6C8FCFC49383857A4A92407CE13656C5DE148F37/",
+    villains={
+        loki={
+            name="Loki",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150132430/6C8FCFC49383857A4A92407CE13656C5DE148F37/",
+            }
+        }
+    },
+    schemes={
+        main={
+            stages={
+                stage1={
+                    cardId="21165",
+                    startingThreatPerPlayer=1,
+                    targetThreatPerPlayer=12
+                }
+            }
+        }
+    },
+    cards={
+        warInAsgard={
+            cardId="21167",
+            position={16.75, 1.00, 21.75},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
+            landscape=true
+        },
+        infinityGuantlet={
+            cardId="21129",
+            position={-7.25, 0.97, 22.25},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
+        }
+    },
+    counters={
+        warInAsguardThreat={
+            type="threat",
+            position={16.37, 1.10, 20.30},
+            scale={0.48, 1.00, 0.48}
+        }
+    },
+    decks={
+        encounterDeck={
+            name="Loki's Encounter Deck",
+            cards={
+                ["21166"]=1,
+                ["21168"]=1,
+                ["21169"]=1,
+                ["21170"]=1,
+                ["21171"]=1,
+                ["21172"]=1,
+                ["21173"]=1,
+                ["21174"]=2,
+                ["21175"]=2,
+                ["21176"]=3
+            }
+        },
+        lokis={
+            name="Lokis",
+            position={15.25, 1.01, 31.75},
+            scale=Vector(Global.getVar("CARD_SCALE_VILLAIN")),
+            cards={
+                ["21160"]=1,
+                ["21161"]=1,
+                ["21162"]=1,
+                ["21163"]=1,
+                ["21164"]=1
+            }
+        },
+        infinityStones={
+            name="Infinity Stones",
+            position={22.75, 1.01, 29.75},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
+            cards={
+                ["21130"]=1,
+                ["21131"]=1,
+                ["21132"]=1,
+                ["21133"]=1,
+                ["21134"]=1,
+                ["21135"]=1
+            }
+        }
+    }
+}

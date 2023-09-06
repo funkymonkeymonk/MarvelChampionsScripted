@@ -18,7 +18,7 @@ end
 
 function layOutModularSets()
     clearModularSetTiles()
-    layOutTiles()
+    layOutModularSetTiles()
 end
 
 function deleteModularSets()
@@ -35,23 +35,32 @@ function clearModularSetTiles()
     end     
 end
 
-function layOutTiles()
+function layOutModularSetTiles()
+    baseTile = getObjectFromGUID("c04e76")
+
     local currentRow = 1
     local currentColumn = 1
 
-    local tileBag = getObjectFromGUID("01ad59")
     local sortedList = getSortedListOfMods()	
 
     for _, listItem in ipairs(sortedList) do
-        local tilePosition = getCoordinates(currentColumn, currentRow)
-        local tile = tileBag.takeObject({position = tilePosition, locked = true, smooth=false})
+        local modularSetGuid = listItem[1]
+        local modularSetName = listItem[2]
+        local position = getCoordinates(currentColumn, currentRow)
+        
+        tile = baseTile.clone({
+            position=position,
+            rotation={0,180,0},
+            scale={1.13, 1, 1.13}})
 
-        setupTile({
-            tile = tile,
-            tilePosition = tilePosition,
-            modularSetGuid = listItem[1],
-            modularSetName = listItem[2]
-        })
+        tile.setName("")
+        tile.setDescription("")
+        tile.setLock(true)
+        tile.setPosition(position)
+        tile.addTag("modular-set-selector-tile")
+
+        setTileFunctions(tile, modularSetGuid)
+        createTileButton(tile, string.gsub(modularSetName, " Modular Set", ""))
 
         currentColumn = currentColumn + 1
 
@@ -111,24 +120,24 @@ function getCoordinates(column, row)
     return {x, originPosition.y, z}
 end
 
-function setupTile(params)
-    Wait.frames(
-        function()
-            local tile = params.tile
-            local tilePosition = params.tilePosition
-            tile.setName("")
-            tile.setDescription("")
-            tile.setScale({1.13, 1, 1.13})
-            tile.setRotation({0,180,0})
-            tile.setLock(true)
-            tile.setPosition(tilePosition)
-            tile.addTag("modular-set-selector-tile")
+-- function setupTile(params)
+--     Wait.frames(
+--         function()
+--             local tile = params.tile
+--             local tilePosition = params.tilePosition
+--             tile.setName("")
+--             tile.setDescription("")
+--             tile.setScale({1.13, 1, 1.13})
+--             tile.setRotation({0,180,0})
+--             tile.setLock(true)
+--             tile.setPosition(tilePosition)
+--             tile.addTag("modular-set-selector-tile")
 
-            setTileFunctions(tile, params.modularSetGuid)
-            createTileButton(tile, string.gsub(params.modularSetName, " Modular Set", ""))
-        end,
-        30)
-end
+--             setTileFunctions(tile, params.modularSetGuid)
+--             createTileButton(tile, string.gsub(params.modularSetName, " Modular Set", ""))
+--         end,
+--         30)
+-- end
 
 function setTileFunctions(tile, modularSetGuid)
     local tileScript = [[

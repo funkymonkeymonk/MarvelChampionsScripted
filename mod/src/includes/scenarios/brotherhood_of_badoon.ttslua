@@ -1,0 +1,74 @@
+scenarios["badoon"] =
+{
+    name="Brotherhood of Badoon",
+    selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1833525990616300296/C9276570D20792F346FDE1CC56A8C6AF0DF576F3/",
+    villains={
+        drang={
+            name="Drang",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1833525990616300296/C9276570D20792F346FDE1CC56A8C6AF0DF576F3/",
+            },
+            stage1={
+                cardId="16058",
+                hitPointsPerPlayer=13
+            },
+            stage2={
+                cardId="16059",
+                hitPointsPerPlayer=14
+            },
+            stage3={
+                cardId="16060",
+                hitPointsPerPlayer=18
+            }
+        }
+    },
+    schemes={
+        main={
+            stages={
+                stage1={
+                    cardId="16061",
+                    startingThreatPerPlayer=2,
+                    targetThreatPerPlayer=8
+                },
+                stage2={
+                    cardId="16062",
+                    startingThreatPerPlayer=4,
+                    targetThreatPerPlayer=8
+                }
+            }
+        }
+    },
+    cards={
+        badoonShip={
+            cardId="16063",
+            position={13.75, 0.97, 29.25},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
+        },
+        milano={
+            cardId="16142",
+            position={0, 1.00, 1.25},
+            scale=Vector(Global.getVar("CARD_SCALE_PLAYER"))
+        }
+    },            
+    counters={
+        barrage={
+            type="general",
+            position={15.26, 1.06, 26.74},
+            scale={0.50, 1.00, 0.50},
+            locked=true
+        }
+    },
+    decks={
+        encounterDeck={
+            name="Drang's Encounter Deck",
+            cards={
+                ["16064"]=1,
+                ["16065"]=2,
+                ["16066"]=1,
+                ["16067"]=1,
+                ["16068"]=1,
+                ["16069"]=1
+            }
+        }
+    }
+}

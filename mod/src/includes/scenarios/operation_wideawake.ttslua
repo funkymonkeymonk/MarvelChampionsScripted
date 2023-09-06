@@ -1,0 +1,90 @@
+scenarios["operationWideawake"] =
+{
+    name="Project Wideawake",
+    selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/2035118913124026079/1346FDBB47BCA704CFA9E914755A9AAF6B1CD5A3/",
+    villains={
+        sentinel={
+            name="Sentinel",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/2035118913124026079/1346FDBB47BCA704CFA9E914755A9AAF6B1CD5A3/",
+            },
+            stage1={
+                cardId="32084",
+                hitPointsPerPlayer=16
+            },
+            stage2={
+                cardId="32085",
+                hitPointsPerPlayer=18
+            },
+            stage3={
+                cardId="32086",
+                hitPointsPerPlayer=22
+            }
+        }
+    },
+    schemes={
+        main={
+            stages={
+                stage1={
+                    cardId="32087",
+                    startingThreatPerPlayer=1,
+                    targetThreat=0
+                }
+            }
+        }
+    },
+    cards={
+        mutantsAtTheMall={
+            cardId="32088",
+            position={16.75, 0.97, 21.74},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
+            landscape=true
+        },
+        operationZeroTolerance={
+            cardId="32104",
+            position={16.75, 0.97, 16.75},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
+            landscape=true
+        }
+    },
+    counters={
+        mutantsAtTheMallThreat={
+            type="threat",
+            position={16.37, 1.04, 20.30},
+            scale={0.48, 1.00, 0.48},
+            locked=false
+        },
+        operationZeroToleranceThreat={
+            type="threat",
+            position={16.32, 1.04, 15.36},
+            scale={0.48, 1.00, 0.48},
+            locked=false
+        }
+    },
+    decks={
+        encounterDeck={
+            name="Project Wideawake Encounter Deck",
+            cards={
+                ["32093"]=2,
+                ["32094"]=2,
+                ["32095"]=1,
+                ["32096"]=1,
+                ["32097"]=1,
+                ["32098"]=2,
+                ["32099"]=2,
+                ["32100"]=4
+            }
+        },
+        captiveAllies={
+            name="Captive Allies",
+            position={13.75, 0.97, 29.25},
+            scale=Vector(Global.getVar("CARD_SCALE_PLAYER")),
+            cards={
+                ["32089"]=1,
+                ["32090"]=1,
+                ["32091"]=1,
+                ["32092"]=1
+            }
+        }
+    }
+}

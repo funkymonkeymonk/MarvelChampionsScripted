@@ -1,0 +1,77 @@
+scenarios["ronan"] =
+{
+    name="Ronan the Accuser",
+    selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150140593/6ACB7C021C95822892BB77CA5BCAAF4CE7CDF49E/",
+    villains={
+        ronan={
+            name="Ronan the Accuser",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150140593/6ACB7C021C95822892BB77CA5BCAAF4CE7CDF49E/",
+            },
+            stage1={
+                cardId="16103",
+                hitPointsPerPlayer=14
+            },
+            stage2={
+                cardId="16104",
+                hitPointsPerPlayer=18
+            },
+            stage3={
+                cardId="16105",
+                hitPointsPerPlayer=25
+            }
+        }
+    },
+    schemes={
+        main={
+            stages={
+                stage1={
+                    cardId="16106",
+                    startingThreatPerPlayer=2,
+                    targetThreatPerPlayer=7
+                },
+                stage2={
+                    cardId="16107",
+                    startingThreatPerPlayer=1,
+                    targetThreatPerPlayer=10
+                }
+            }
+        }
+    },
+    cards={
+        kreeCommandShip={
+            cardId="16108",
+            position={13.75, 0.97, 29.25},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
+        },
+        milano={
+            cardId="16142",
+            position={-3, 1.00, 1.25},
+            scale=Vector(Global.getVar("CARD_SCALE_PLAYER"))
+        },
+        powerStone={
+            cardId="16149",
+            position={3, 1.00, 1.25},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
+        },
+        universalWeapon={
+            cardId="16109",
+            position={-7.25, 0.97, 22.25},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
+        }
+    },            
+    decks={
+        encounterDeck={
+            name="Ronan's Encounter Deck",
+            cards={
+                ["16110"]=2,
+                ["16111"]=1,
+                ["16112"]=2,
+                ["16113"]=1,
+                ["16114"]=2,
+                ["16115"]=2,
+                ["16116"]=3
+            }
+        }
+    }
+}
