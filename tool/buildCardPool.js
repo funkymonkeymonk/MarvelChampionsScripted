@@ -53,7 +53,8 @@ function FormatPackData(responses) {
     return cardBack["player"]
   }
 
-  responses.forEach(response => console.log(response.data[0].pack_code))
+  // responses.forEach(response => console.log(response.data[0].pack_code))
+  
   return responses
       .map(res => res.data)
       .flat()
@@ -68,6 +69,13 @@ function FormatPackData(responses) {
           ...!card.duplicate_of && { BackURL: GetCardBack(card)},
           ...!card.duplicate_of && { FrontURL: GetCardFront(card)},
           duplicate_of: card.duplicate_of,
+          ...card.flavor && {flavor: card.flavor},
+          ...card.health && {health: card.health},
+          ...card.health_per_hero && {health_per_hero: card.health_per_hero},
+          ...card.is_unique && {is_unique: card.is_unique},
+          ...card.pack_code && {pack_code: card.pack_code},
+          ...card.set_code && {scheme: card.set_code},
+          ...card.traits && {traits: card.traits},
         }
       })
 }
