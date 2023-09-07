@@ -6766,8 +6766,8 @@ PACK_24 = [[
     "code": "24049",
     "type_code": "environment",
     "faction_code": "encounter",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24049.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/24049B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/24049A.jpg"
   },
   {
     "name": "Dark Dealings",
@@ -7232,8 +7232,8 @@ PACK_26 = [[
     "code": "26002",
     "type_code": "upgrade",
     "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/26002.jpg"
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/26002B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/26002A.jpg"
   },
   {
     "name": "Vivian",
