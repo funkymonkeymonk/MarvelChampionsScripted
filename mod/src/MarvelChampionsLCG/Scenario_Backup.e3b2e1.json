@@ -14,7 +14,7 @@
       "scaleZ": 1
     },
     "Nickname": "Scenario Backup",
-    "Description": "",
+    "Description": "Don'e move this!",
     "GMNotes": "",
     "AltLookAngle": {
       "x": 0,
@@ -23,7 +23,7 @@
     },
     "ColorDiffuse": {
       "r": 0.7058823,
-      "g": 0.368622661,
+      "g": 0.368622631,
       "b": 0
     },
     "LayoutGroupSortIndex": 0,
