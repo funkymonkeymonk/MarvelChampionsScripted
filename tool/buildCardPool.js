@@ -29,14 +29,38 @@ async function getDataFromGithub() {
 
 function FormatPackData(responses) {
   function GetCardFront(card) {
-    if (card.type_code === "main_scheme") return IMG_ROOT  + card.code.toUpperCase() + "A.jpg"
+    // This is nasty. I need to spend some time with the upstream datasource and send some PRs to fix it.
+    // If I can't fix it there then come back and rethink this cludge.
+
+    if (card.double_sided) {
+      if (card.code.toUpperCase().includes("B")) return IMG_ROOT + card.code.slice(0, -1).toUpperCase() + "B.jpg"
+      if (card.code.toUpperCase().includes("A")) return IMG_ROOT + card.code.slice(0, -1).toUpperCase() + "A.jpg"
+      if (card.code == "39027") return IMG_ROOT + card.code + ".jpg"
+      return IMG_ROOT + card.code.toUpperCase() + "A.jpg"
+    }
+
+    if (card.type_code === "main_scheme") {
+      console.log(card.code)
+      if (card.code.toUpperCase().includes("A") || card.code.toUpperCase().includes("B")) return IMG_ROOT  + card.code.toUpperCase() + ".jpg"
+      return IMG_ROOT  + card.code.toUpperCase() + "A.jpg"
+    }
+
     return IMG_ROOT + card.code.toUpperCase() + ".jpg"
   }
+
   function GetCardBack(card) {
     const cardBack = {
       "player": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
       "encounter": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
       "villain": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+    }
+
+    if (card.double_sided) {
+      if (card.code.toUpperCase().includes("B")) return IMG_ROOT + card.code.slice(0, -1).toUpperCase() + "A.jpg"
+      if (card.code.toUpperCase().includes("A")) return IMG_ROOT + card.code.slice(0, -1).toUpperCase() + "B.jpg"
+      // Major Domo fix
+      if (card.code == "39027") return cardBack["encounter"]
+      return IMG_ROOT + card.code.toUpperCase() + "B.jpg"
     }
 
     // TODO: Check for exceptions and special cards
