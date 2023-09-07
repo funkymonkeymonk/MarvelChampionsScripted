@@ -1,0 +1,122 @@
+modularSets["armadillo"] = 
+{
+    name="Armadillo",
+    modular=true,
+    cards = {
+        ["28028"] = 1,
+        ["28029"] = 1,
+        ["28030"] = 1,
+        ["28031"] = 1,
+        ["25032"] = 2
+    }
+}
+
+modularSets["zzzax"] = 
+{
+    name="Zzzax",
+    modular=true,
+    cards = {
+        ["29036"] = 1,
+        ["29037"] = 1,
+        ["29038"] = 2,
+        ["29039"] = 1,
+        ["29040"] = 2
+    }
+}
+
+modularSets["inheritors"] = 
+{
+    name="The Inheritors",
+    modular=true,
+    cards = {
+        ["30030"] = 1,
+        ["30031"] = 1,
+        ["30032"] = 1,
+        ["30033"] = 1,
+        ["30034"] = 1,
+        ["30035"] = 1,
+        ["30036"] = 1,
+        ["30037"] = 1,
+        ["30038"] = 1
+    }
+}
+
+modularSets["ronanTheAccuser"] = 
+{
+    name="Ronan The Accuser",
+    modular=true,
+    cards = {
+        ["90001"] = 1,
+        ["90002"] = 1,
+        ["90003"] = 1,
+        ["90004"] = 2,
+        ["90005"] = 2
+    }
+}
+
+modularSets["ironSpidersSinisterSix"] = 
+{
+    name="Iron Spider's Sinister Six",
+    modular=true,
+    cards = {
+        ["31030"] = 1,
+        ["31031"] = 1,
+        ["31032"] = 1,
+        ["31033"] = 1,
+        ["31034"] = 1,
+        ["31035"] = 1,
+        ["31036"] = 1,
+        ["31037"] = 1
+    }
+}
+
+modularSets["exodus"] = 
+{
+    name="Exodus",
+    modular=true,
+    cards = {
+        ["37032"] = 1,
+        ["37033"] = 1,
+        ["37034"] = 2,
+        ["37035"] = 2
+    }
+}
+
+modularSets["shadowKing"] = 
+{
+    name="Shadow King",
+    modular=true,
+    cards = {
+        ["36036"] = 1,
+        ["36037"] = 1,
+        ["36038"] = 2,
+        ["36039"] = 1
+    }
+}
+
+modularSets["reavers"] = 
+{
+    name="Reavers",
+    modular=true,
+    cards = {
+        ["38029"] = 1,
+        ["38030"] = 1,
+        ["38031"] = 1,
+        ["38032"] = 1,
+        ["38033"] = 1,
+        ["38034"] = 1,
+        ["38035"] = 2
+    }
+}
+
+modularSets["deathstrike"] = 
+{
+    name="Deathstrike",
+    modular=true,
+    cards = {
+        ["35034"] = 1,
+        ["35035"] = 1,
+        ["35036"] = 2,
+        ["35037"] = 2
+    }
+}

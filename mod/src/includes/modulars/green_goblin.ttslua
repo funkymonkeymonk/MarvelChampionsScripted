@@ -1,0 +1,48 @@
+modularSets["goblinGimmicks"] = 
+{
+    name="Goblin Gimmicks",
+    modular=true,
+    cards = {
+        ["02033"] = 2,
+        ["02034"] = 2,
+        ["02035"] = 2,
+        ["02036"] = 2
+    }
+}
+
+modularSets["messOfThings"] = 
+{
+    name="A Mess of Things",
+    modular=true,
+    cards = {
+        ["02037"] = 1,
+        ["02038"] = 1,
+        ["02039"] = 1,
+        ["02040"] = 2
+    }
+}
+
+modularSets["powerDrain"] = 
+{
+    name="Power Drain",
+    modular=true,
+    cards = {
+        ["02041"] = 1,
+        ["02042"] = 1,
+        ["02043"] = 1,
+        ["02044"] = 1,
+        ["02045"] = 1
+    }
+}
+
+modularSets["runningInterference"] = 
+{
+    name="Running Interference",
+    modular=true,
+    cards = {
+        ["02046"] = 1,
+        ["02047"] = 1,
+        ["02048"] = 1,
+        ["02049"] = 2
+    }
+}

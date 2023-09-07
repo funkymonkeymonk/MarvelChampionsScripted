@@ -311,7 +311,6 @@ function placeGeneralCounter(counter)
     local generalCounter = counterBag.takeObject({position=counterPosition, smooth=false})
 
     local locked = true;
-    log (counter)
 
     if(counter.locked ~= nil) then
         locked = counter.locked
@@ -593,7 +592,9 @@ require('!/scenarios/absorbing_man')
 require('!/scenarios/crossbones')
 require('!/scenarios/mutagen_formula')
 require('!/scenarios/risky_business')
-require('!/scenarios/mojo_mania')
+require('!/scenarios/magog')
+require('!/scenarios/spiral')
+require('!/scenarios/mojo')
 require('!/scenarios/magneto')
 require('!/scenarios/mansion_attack')
 require('!/scenarios/master_mold')

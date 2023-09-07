@@ -1,0 +1,92 @@
+modularSets["crime"] = 
+{
+    name="Crime",
+    modular=true,
+    cards = {
+        ["39035"] = 1,
+        ["39036"] = 1,
+        ["39037"] = 1,
+        ["39038"] = 1,
+        ["39039"] = 1,
+        ["39040"] = 1
+    }
+}
+
+modularSets["fantasy"] = 
+{
+    name="Fantasy",
+    modular=true,
+    cards = {
+        ["39041"] = 1,
+        ["39042"] = 1,
+        ["39043"] = 1,
+        ["39044"] = 1,
+        ["39045"] = 1,
+        ["39046"] = 1
+    }
+}
+
+modularSets["horror"] = 
+{
+    name="Horror",
+    modular=true,
+    cards = {
+        ["39047"] = 1,
+        ["39048"] = 1,
+        ["39049"] = 1,
+        ["39050"] = 1,
+        ["39051"] = 1,
+        ["39052"] = 1
+    }
+}
+
+modularSets["sciFi"] = 
+{
+    name="Sci-Fi",
+    modular=true,
+    cards = {
+        ["39053"] = 1,
+        ["39054"] = 1,
+        ["39055"] = 1,
+        ["39056"] = 1,
+        ["39057"] = 1,
+        ["39058"] = 1,
+        ["39059"] = 1
+    }
+}
+
+modularSets["sitcom"] = 
+{
+    name="Sitcom",
+    modular=true,
+    cards = {
+        ["39060"] = 1,
+        ["39061"] = 1,
+        ["39062"] = 1,
+        ["39063"] = 1,
+        ["39064"] = 1,
+        ["39065"] = 1
+    }
+}
+
+modularSets["western"] = 
+{
+    name="Western",
+    modular=true,
+    cards = {
+        ["39066"] = 1,
+        ["39067"] = 1,
+        ["39068"] = 1,
+        ["39069"] = 2,
+        ["39070"] = 1
+    }
+}
+
+modularSets["longshot"] = 
+{
+    name="Longshot",
+    modular=true,
+    cards = {
+        ["39071"] = 1
+    }
+}

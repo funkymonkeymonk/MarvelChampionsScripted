@@ -412,56 +412,15 @@ function layOutHeroTiles()
   end
 end
 
--- function layOutTiles()
---   local bagList = getSortedListOfHeroes()
---   local tileBag = getObjectFromGUID("01ad59")
-
---   for bagGuid, tilePosition in pairs(bagList) do
---       local tilePosition = tilePosition
-
---       local heroBag = self.takeObject({guid=bagGuid})
---       local tile = tileBag.takeObject({position=tilePosition, smooth=false})
-
---       setupTile({
---           heroBag=heroBag,
---           tile=tile,
---           tilePosition=tilePosition
---       })
---   end
--- end
-
--- function configureTile(params)
---   local heroBag=params.heroBag
---   local heroDetails = heroBag.call("getHeroDetails")
---   local imageUrl = heroDetails["counterUrl"]
---   self.putObject(heroBag)
-
---   local tile = params.spawnedObject
---   local position = params.position
-
---   tile.setName(string.gsub(heroBag.getName(), " Hero Bag", ""))
---   tile.setDescription("")
---   -- tile.setScale({1.13, 1, 1.13})
---   -- tile.setRotation({0,180,0})
---   tile.setLock(true)
---   tile.setPosition(position)
---   tile.addTag("hero-selector-tile")
---   tile.setCustomObject({image=imageUrl})
---   reloadedTile = tile.reload()
-
---   setTileFunctions(reloadedTile, heroBag.getGUID())
---   createTileButtons(reloadedTile)
--- end
-
 function getSortedListOfHeroes()
     local heroList = {}
 
     for _, heroBag in ipairs(self.getObjects()) do
-        table.insert (heroList, {heroBag.guid, heroBag.name})
+      table.insert (heroList, {heroBag.guid, heroBag.name})
     end
 
     local compareHeroNames = function(a,b)
-            return a[2] < b[2]
+      return a[2] < b[2]
     end
 
     local sortedList = table.sort(heroList, compareHeroNames)
@@ -489,32 +448,6 @@ function getTilePosition(column, row)
         originPosition.y, 
         originPosition.z + rowGap * (row - 1)}
 end
-
--- function setupTile(params)
---     Wait.frames(
---         function()
---             local heroBag=params.heroBag
---             local heroDetails = heroBag.call("getHeroDetails")
---             local imageUrl = heroDetails["counterUrl"]
---             self.putObject(heroBag)
-
---             local tile = params.tile
---             local tilePosition = params.tilePosition
---             tile.setName(string.    gsub(heroBag.getName(), " Hero Bag", ""))
---             tile.setDescription("")
---             tile.setScale({1.13, 1, 1.13})
---             tile.setRotation({0,180,0})
---             tile.setLock(true)
---             tile.setPosition(tilePosition)
---             tile.addTag("hero-selector-tile")
---             tile.setCustomObject({image=imageUrl})
---             reloadedTile = tile.reload()
-
---             setTileFunctions(reloadedTile, heroBag.getGUID())
---             createTileButtons(reloadedTile)
---         end,
---         30)
--- end
 
 function setTileFunctions(tile, heroBagGuid)
     local tileScript = [[

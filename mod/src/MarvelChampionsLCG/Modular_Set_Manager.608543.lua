@@ -6,6 +6,8 @@ local rowGap = -2.5
 
 local columns = 7
 
+local modularSets = {}
+
 function onLoad()
     createContextMenu()
 	layOutModularSets()
@@ -44,8 +46,8 @@ function layOutModularSetTiles()
     local sortedList = getSortedListOfMods()	
 
     for _, listItem in ipairs(sortedList) do
-        local modularSetGuid = listItem[1]
-        local modularSetName = listItem[2]
+        local modularSetKey = listItem[1]
+        local modularSet = listItem[2]
         local position = getCoordinates(currentColumn, currentRow)
         
         tile = baseTile.clone({
@@ -59,8 +61,8 @@ function layOutModularSetTiles()
         tile.setPosition(position)
         tile.addTag("modular-set-selector-tile")
 
-        setTileFunctions(tile, modularSetGuid)
-        createTileButton(tile, string.gsub(modularSetName, " Modular Set", ""))
+        setTileFunctions(tile, modularSetKey)
+        createTileButton(tile, modularSet.name)
 
         currentColumn = currentColumn + 1
 
@@ -72,18 +74,21 @@ function layOutModularSetTiles()
 end
 
 function getSortedListOfMods()
-    modList = {}
+    local modList = {}
+    local index = 1
 
-    for _, modularSet in ipairs(self.getObjects()) do
-        table.insert (modList, {modularSet.guid, modularSet.name})
+    for k, v in pairs(modularSets) do
+        modList[index] = {k, v}
+        index = index + 1
     end
 
+    function compareModularNames(a,b)
+        return stripArticles(a[2].name) < stripArticles(b[2].name) 
+    end
+    
     return table.sort(modList, compareModularNames)
 end
 
-function compareModularNames(a,b)
-    return stripArticles(a[2]) < stripArticles(b[2]) 
-end
 
 function stripArticles(orig)
     local lower = string.lower(orig)
@@ -120,30 +125,11 @@ function getCoordinates(column, row)
     return {x, originPosition.y, z}
 end
 
--- function setupTile(params)
---     Wait.frames(
---         function()
---             local tile = params.tile
---             local tilePosition = params.tilePosition
---             tile.setName("")
---             tile.setDescription("")
---             tile.setScale({1.13, 1, 1.13})
---             tile.setRotation({0,180,0})
---             tile.setLock(true)
---             tile.setPosition(tilePosition)
---             tile.addTag("modular-set-selector-tile")
-
---             setTileFunctions(tile, params.modularSetGuid)
---             createTileButton(tile, string.gsub(params.modularSetName, " Modular Set", ""))
---         end,
---         30)
--- end
-
-function setTileFunctions(tile, modularSetGuid)
+function setTileFunctions(tile, modularSetKey)
     local tileScript = [[
         function placeModularSet(obj, player_color)
             local modularSetsBag = getObjectFromGUID("]]..self.guid..[[")
-            modularSetsBag.call("placeModularSet", {modularSetGuid="]]..modularSetGuid..[["})
+            modularSetsBag.call("placeModularSet", {modularSetKey="]]..modularSetKey..[["})
         end
     ]]
     tile.setLuaScript(tileScript)
@@ -163,12 +149,47 @@ function createTileButton(tile, modularSetName)
 end
 
 function placeModularSet(params)
-    local modularSetOrig = self.takeObject({guid=params.modularSetGuid, position = encounterDeckPosition, rotation = {0,180,180}})
-    local modularSetCopy = modularSetOrig.clone({position=encounterDeckPosition})
+    local modularSet = modularSets[params.modularSetKey]
+    local position = encounterDeckPosition
+    local rotation = {0,180,180}
+    local scale = {2.12,3,2.12}
+    
+    local cards = modularSet.cards
 
-    modularSetCopy.setName("")
-    modularSetCopy.setDescription("")
-    modularSetCopy.setScale({2.12,3,2.12})
+    local deckCount = 0
+    local cardId = nil
 
-    self.putObject(modularSetOrig)  
+    --Oh god, this is hacky. The createDeck function only works with two or more cards, so
+    --we have to use getCardByID for single-card sets. But there doesn't seem to be a way to 
+    --get the length of a table in Lua, so we have to iterate through the table to determine
+    --which function to use.
+    for k,v in pairs(cards) do
+        if(deckCount > 1) then break end
+
+        deckCount = deckCount + v
+        cardId = k
+    end     
+
+    if(deckCount < 2) then
+        getCardByID(
+            cardId,
+            position, 
+            {scale=scale, flipped=true})
+    else
+        createDeck({cards=modularSet.cards, position=position, rotation=rotation, scale=scale})
+    end
 end
+
+require('!/Cardplacer')
+
+require('!/modulars/kang')
+require('!/modulars/mutant_genesis')
+require('!/modulars/misc')
+require('!/modulars/hood')
+require('!/modulars/green_goblin')
+require('!/modulars/sinister_motives')
+require('!/modulars/galaxys_most_wanted')
+require('!/modulars/core')
+require('!/modulars/rise_of_the_red_skull')
+require('!/modulars/mad_titans_shadow')
+require('!/modulars/mojo_mania')
