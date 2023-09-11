@@ -2,7 +2,20 @@ DRAWN_ENCOUNTER_OFFSET = {-1.275, 0.5, -1.533}
 DISCARD_POS            = {-17.75, 1.8, 22.25}
 COLLISION_ENABLED = false
 
-function onload()
+local playerColor
+
+function setPlayerColor(params)
+   playerColor = params.color
+
+   local saved_data = JSON.encode({playerColor = playerColor})
+   self.script_state = saved_data
+end
+
+function onload(saved_data)
+   if(saved_data ~= "") then
+      local loaded_data = JSON.decode(saved_data)
+      playerColor = loaded_data.playerColor
+   end
 
    self.createButton({
       label          = "1",
@@ -67,6 +80,20 @@ function onload()
       font_size      = 50,
       color          = {1,0,0},
       tooltip        = "Discard Encounter Card"
+   })
+
+   self.createButton({
+      label          = "N",
+      click_function = "spawnNemesis",
+      function_owner = self,
+      position       = {1.56,0.3,0.88},
+      rotation       = {0,0,0},
+      width          = 100,
+      height         = 100,
+      font_size      = 50,
+      font_color     = {1,1,1},
+      color          = {0,0,0},
+      tooltip        = "Summon Your Nemesis!"
    })
 
    createSelfDestructButton()
@@ -239,4 +266,9 @@ function clearPlaymat()
    end
 
    self.destruct()
+end
+
+function spawnNemesis()
+   local scenarioManager = getObjectFromGUID(Global.getVar("SCENARIO_MANAGER_GUID"))
+   scenarioManager.call("spawnNemesis", {playerColor = playerColor})
 end
