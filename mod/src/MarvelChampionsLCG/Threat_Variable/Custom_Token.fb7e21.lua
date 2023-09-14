@@ -54,7 +54,7 @@ function add_subtract(_obj, _color, alt_click)
         CONFIG.VALUE = new_value
         updateVal()
         updateSave()
-end
+    end
 end
 
 function updateVal()

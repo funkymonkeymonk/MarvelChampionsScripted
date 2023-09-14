@@ -83,12 +83,6 @@ function getCardByID(id, position, params)
 
     -- Default face up
     local rotation = {x, y, z}
---    if (params.flipped) then
---        rotation = {0, 180, 180}
---    end
-
-    --landscape: 0, 90, 0
-    --landscape flipped: 0, 90, 180
 
     local card = getCardFromCardPool(cardID)
 

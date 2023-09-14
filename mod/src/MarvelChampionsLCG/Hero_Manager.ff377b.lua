@@ -1,7 +1,8 @@
 local deckImporterGuid = "c7ece0"
 local healthCounterOffset = {-10.42, .1, 5.5}
 local identityOffset = {-9.89, 3, 1}
-local deckOffset = {-8.4, 3, -4.66}
+local deckOffset = {-8.4, 3.0, -4.66}
+local discardOffset = {-11.3, 2.0, -4.66}
 
 local originPosition = {x=58.25, y=0.50, z=33.75}
 
@@ -10,11 +11,19 @@ local columnGap = 5
 
 local rows = 12
 
+local heroes = {}
+local selectedHeroes = {}
+
 local assetBag = getObjectFromGUID("91eba8")
 
 function onload(saved_data)
-    createContextMenu()
-    layOutHeroes()
+  if(saved_data ~= "") then
+      local loaded_data = JSON.decode(saved_data)
+      selectedHeroes = loaded_data.selectedHeroes
+  end
+  
+  createContextMenu()
+  layOutHeroes()
 end
 
 function spawnAsset(params)
@@ -23,90 +32,117 @@ function spawnAsset(params)
 end
 
 function placeHeroWithStarterDeck(params)
-  placeHero(params.heroBagGuid, params.playerColor, "starter")
+  placeHero(params.heroKey, params.playerColor, "starter")
 end
 
 function placeHeroWithHeroDeck(params)
-  placeHero(params.heroBagGuid, params.playerColor, "constructed")
+  placeHero(params.heroKey, params.playerColor, "constructed")
 end
 
-function placeHero(heroBagGuid, playerColor, deckType)
+function placeHero(heroKey, playerColor, deckType)
   if not confirmPlayerIsSeated(playerColor) then return end
   if not confirmSeatIsAvailable(playerColor) then return end
 
-  local heroBag = self.takeObject({guid=heroBagGuid})
+  local hero = deepCopy(heroes[heroKey])
+  local playmatPosition = getPlaymatPosition(playerColor)
+  
+  placePlaymat(
+    playerColor, 
+    playmatPosition, 
+    hero.playmatImageUrl
+  )
+    
+  placeHealthCounter(
+    playmatPosition,
+    hero.counterImageUrl,
+    hero.hitPoints
+  )
+
+  placeIdentity(
+    hero,
+    playmatPosition
+  )
+
+  placeDeck(
+    hero,
+    deckType,
+    playmatPosition
+  )
 
   Wait.frames(
     function()
-      local heroDetails = heroBag.call("getHeroDetails")
-      local playmatPosition = getPlaymatPosition(playerColor)
-    
-      placePlaymat(
-        playerColor, 
-        playmatPosition, 
-        heroDetails["playmatUrl"])
-    
-      placeHealthCounter(
-        playmatPosition,
-        heroDetails["counterUrl"],
-        heroDetails["hitPoints"])
-    
-      if (heroDetails.identityGuid ~= nil) then
-        placeIdentityOld(
-          heroBag,
-          heroDetails["identityGuid"],
-          playmatPosition)
-      else
-        placeIdentity(
-          heroDetails["identity"],
-          playmatPosition
-        )
-      end
+      placeCards(
+        hero,
+        playerColor,
+        playmatPosition
+      )
+    end,
+    30
+  )
 
-      if (heroDetails.starterDeckId ~= nil) then
-        placeDeckOld(
-          heroBag,
-          deckType,
-          heroDetails["starterDeckId"],
-          heroDetails["heroDeckId"],
-          playmatPosition
-        )
-      else
-        placeDeck(
-          deckType,
-          heroDetails["starterDeck"],
-          heroDetails["heroDeck"],
-          playmatPosition
-        )
-      end
-
+  Wait.frames(
+    function()
       placeExtras(
-        heroBag,
-        heroDetails["extras"],
-        playmatPosition)
+        hero,
+        playmatPosition
+      )
+    end,
+    120
+  )
 
-      if (heroDetails.nemesisGuid ~= nil) then
-        placeNemesisOld(
-          heroBag,
-          heroDetails["nemesisGuid"])
-      else
-        placeNemesis(heroDetails["nemesis"])
-      end
+  --placeNemesis(hero)
 
-      if (heroDetails.obligationGuid ~= nil) then
-        placeObligationOld(
-          heroBag,
-          heroDetails["obligationGuid"])
-      else
-        placeObligation(heroDetails["obligation"])
-      end
+  placeObligation(hero)
+    
+  selectedHeroes[playerColor] = hero
 
-      self.putObject(heroBag)
-      
-      local scenarioManager = getObjectFromGUID(Global.getVar("SCENARIO_MANAGER_GUID"))
-      scenarioManager.call("updateCounters")
-    end, 
-    1)
+  local saved_data = JSON.encode({selectedHeroes = selectedHeroes})
+  self.script_state = saved_data
+end
+
+function physicsTest(params)
+  local playerColor = "Blue"
+  local hero = getHeroByPlayerColor({playerColor = playerColor})
+  local playmatPosition = getPlaymatPosition(playerColor)
+
+  placeCards(
+    hero,
+    playerColor,
+    playmatPosition
+  )
+end
+
+function getHeroByPlayerColor(params)
+  return selectedHeroes[params.playerColor]
+end
+
+function getPlayerDeckPositions(params)
+  local includeDiscard = params.includeDiscard or false
+  local hero = params.hero
+
+  local deckPositions = {}
+  local deckPosition = hero.deckPosition
+  deckPosition[2] = -0.5
+
+  table.insert(deckPositions, deckPosition)
+
+  if(includeDiscard) then
+    local discardPosition = hero.discardPosition
+    discardPosition[2] = -0.5
+    table.insert(deckPositions, discardPosition)
+  end
+
+  return deckPositions
+end
+
+function deepCopy(obj, seen)
+  if type(obj) ~= 'table' then return obj end
+  if seen and seen[obj] then return seen[obj] end
+  local s = seen or {}
+  local res = setmetatable({}, getmetatable(obj))
+  s[obj] = res
+  for k, v in pairs(obj) do res[deepCopy(k, s)] = deepCopy(v, s) end
+  return res
 end
 
 function confirmPlayerIsSeated(playerColor)
@@ -170,7 +206,13 @@ function configurePlaymat(params)
   playmat.addTag(params.playerColor)
   playmat.setPosition(params.position)
   playmat.setCustomObject({image=playmatUrl})
-  playmat.reload()
+  local reloadedPlaymat = playmat.reload()
+
+  Wait.frames(
+    function()
+      reloadedPlaymat.call("setPlayerColor", {color = params.playerColor})
+    end,
+  30)
 end
 
 function placeHealthCounter(playmatPosition, imageUrl, hitPoints)
@@ -202,53 +244,78 @@ function configureHealthCounter(params)
     function()
       reloadedCounter.call("setValue", {value=hitPoints})
     end,
-    10
+    60
   )
 end
 
-function placeIdentityOld(heroBag, identityGuid, playmatPosition)
-  local identityPosition = getOffsetPosition(playmatPosition, identityOffset)
-  local identityOrig = heroBag.takeObject({guid=identityGuid, position=identityPosition})
-  local identityCopy = identityOrig.clone({position=identityPosition})
-  heroBag.putObject(identityOrig)
-
-  identityCopy.setName("")
-  identityCopy.setDescription("")
-  identityCopy.setScale({1.88, 1, 1.88})
-  identityCopy.setPosition(identityPosition)
-end
-
-function placeIdentity(identity, playmatPosition)
-  local identityPosition = getOffsetPosition(playmatPosition, identityOffset)
-  getCardByID(identity, identityPosition, {scale = Global.getTable("CARD_SCALE_IDENTITY")})
-end
-
-function placeDeckOld(heroBag, deckType, starterDeckId, heroDeckId, playmatPosition)
-  local deckPosition = getOffsetPosition(playmatPosition, deckOffset)
-
-  if(deckType == "starter") then
-    placeStarterDeck(starterDeckId, deckPosition)
-  else
-    placeHeroDeck(heroDeckId, deckPosition)
+function placeIdentity(hero, playmatPosition)
+  local position = getOffsetPosition(playmatPosition, identityOffset)
+  local scale = Global.getTable("CARD_SCALE_IDENTITY")
+  if(hero.identityAssetGuid ~= nil) then
+    log(hero.identityAssetGuid)
+    spawnAsset({
+      guid = hero.identityAssetGuid,
+      position = position,
+      rotation = {0, 180, 0},
+      scale = scale,
+      callback = "configureIdentity"
+    })
+    return
   end
+  
+  getCardByID(hero.identityCardId, position, {scale = scale})
 end
 
-function placeDeck(deckType, starterDeck, heroDeck, playmatPosition)
+function configureIdentity(params)
+  log("configureIdentity")
+  log(params)
+  local identity = params.spawnedObject
+  identity.setPosition(params.position)
+end
+
+function placeDeck(hero, deckType, playmatPosition)
   local deckPosition = getOffsetPosition(playmatPosition, deckOffset)
+  local discardPostition = getOffsetPosition(playmatPosition, discardOffset)
+
+  hero.deckPosition = deckPosition
+  hero.discardPosition = discardPostition
 
   local deck = {
+    cards = {},
     position = deckPosition,
     scale = Global.getTable("CARD_SCALE_PLAYER")
   }
 
-  if (deckType == "starter") then
-    deck.cards = JSON.decode(starterDeck)
-  else
-    deck.cards = JSON.decode(heroDeck)
+  for k, v in pairs(hero.decks.hero) do
+    deck.cards[k] = v
   end
 
-  --TODO: Fix sizes for cards
+  if (deckType == "starter") then
+    for k, v in pairs(hero.decks.starter) do
+      deck.cards[k] = v
+    end
+  end
+
   createDeck(deck)
+end
+
+function placeCards(hero, playerColor, playmatPosition)
+  if(hero.cards == nil) then
+    return
+  end
+
+  for key, card in pairs(hero.cards) do
+    local cardPosition = getOffsetPosition(playmatPosition, card["offset"])
+
+    findAndPlacePlayerCard({
+      hero = hero,
+      cardName = card["name"],
+      position = cardPosition,
+      scale = card["scale"],
+      rotation = card["rotation"],
+      flipped = card["flipped"]
+    })
+  end
 end
 
 function placeStarterDeck(starterDeckId, deckPosition)
@@ -275,67 +342,81 @@ function placeHeroDeck(heroDeckId, deckPosition)
   deckImporter.call("importDeck", params)
 end
 
-function placeExtras(heroBag, extras, playmatPosition)
-  if(extras == nil) then
+function placeExtras(hero, playmatPosition)
+  if(hero.extras == nil) then
     return
   end
   
-  for key, item in pairs(extras) do
-    local objectPosition = getOffsetPosition(playmatPosition, item["offset"])
+  for key, item in pairs(hero.extras) do
+    local itemPosition = getOffsetPosition(playmatPosition, item["offset"])
+    local lockItem = false
 
-    if (item.guid ~= nil) then
-        local objectOrig = heroBag.takeObject({guid=item["guid"], position=objectPosition})
-        local objectCopy = objectOrig.clone({position=objectPosition})
-        heroBag.putObject(objectOrig)
+    if(item.locked ~= nil) then
+      lockItem = item.locked
+    end
 
-        objectCopy.setPosition(objectPosition)
+    if(item.type == "counter") then
+      local counterBag
 
-        if(item["locked"]) then
-          objectCopy.setLock(true)
+      if(item.counterType == "general") then
+        counterBag = getObjectFromGUID("aec1c4")
+      end
+      --get a different counter bag for other types
+
+      counterBag.takeObject({
+        position = itemPosition,
+        smooth = false,
+        callback_function = function(counter) 
+          counter.setPosition(itemPosition)
+          counter.setLock(lockItem)
+          counter.setName(item.name)
+
+          Wait.frames(
+            function()
+              counter.call("setValue", {value = item.value or 0})
+            end,
+            1)
         end
-    else
-        -- This will need to grow but let's do it as port the heroes over to this approach.
-        if (item.type == 'card') then
-          getCardByID(item.id, objectPosition, {scale = Global.getTable("CARD_SCALE_PLAYER")})
-        else
-          log('Unable to spawn extra ' .. key)
-        end
+      })
+
+    end
+
+    if(item.type == "status") then
+    end
+
+    if(item.type == "deck") then
+      local deck = {
+        cards = item.cards,
+        position = itemPosition,
+        scale = Global.getTable("CARD_SCALE_PLAYER")
+      }
+
+      createDeck(deck)
+    end
+
+    if(item.type == "asset") then
+      spawnAsset({
+        guid = item.assetGuid,
+        position = itemPosition,
+        rotation = item.rotation,
+        callback = "configureAsset"
+      })
     end
   end
 end
 
-function placeNemesisOld(heroBag, nemesisGuid)
-  local nemesisPosition = {-21.11, 4, 35.18}
-  local nemesisOrig = heroBag.takeObject({guid=nemesisGuid, position=nemesisPosition})
-  local nemesisCopy = nemesisOrig.clone({position=nemesisPosition})
-  heroBag.putObject(nemesisOrig)
+function configureAsset(params)
+  local asset = params.spawnedObject
+  asset.setPosition(params.position)
 
-  nemesisCopy.setScale({2.12, 1, 2.12})
+  if(params.rotation ~= nil) then
+    asset.setRotation(params.rotation)
+  end
 end
 
-function placeNemesis(nemesis)
-  local nemesisPosition = {-21.11, 4, 35.18}
-  local deck = {
-    cards = JSON.decode(nemesis),
-    position = nemesisPosition,
-    scale = Global.getTable("CARD_SCALE_ENCOUNTER")
-  }
-  --TODO: Fix sizes for cards
-  createDeck(deck)
-end
-
-function placeObligationOld(heroBag, obligationGuid)
+function placeObligation(hero)
   local encounterDeckPosition = Vector(Global.getVar("ENCOUNTER_DECK_SPAWN_POS"))
-  local obligationOrig = heroBag.takeObject({guid=obligationGuid, position=encounterDeckPosition})
-  local obligationCopy = obligationOrig.clone({position=encounterDeckPosition})
-  heroBag.putObject(obligationOrig)
-
-  obligationCopy.setScale({2.12, 1, 2.12})
-end
-
-function placeObligation(obligation)
-  local encounterDeckPosition = Vector(Global.getVar("ENCOUNTER_DECK_SPAWN_POS"))
-  getCardByID(obligation, encounterDeckPosition, {scale = Global.getTable("CARD_SCALE_ENCOUNTER"), flipped=true})
+  getCardByID(hero.obligationCardId, encounterDeckPosition, {scale = Global.getTable("CARD_SCALE_ENCOUNTER"), flipped=true})
 end
 
 function getOffsetPosition(origPosition, offset)
@@ -366,80 +447,55 @@ function clearHeroes()
     end     
 end
 
--- function spawnHeroSelectors()
---   spawnAsset({
---     guid="c04e76",
---     position={70.25, -9.69, 7.25},
---     rotation={0, 180, 0},
---     scale={1.13, 1, 1.13},
---     callback="layOutHeroTiles"
---   })
--- end
-
 function layOutHeroTiles()
-  baseTile=getObjectFromGUID("c04e76")
-  local bagList = getSortedListOfHeroes()
+  local baseTile=getObjectFromGUID("c04e76")
+  local heroList = getSortedListOfHeroes()
 
-  for bagGuid, tilePosition in pairs(bagList) do
-      local position = tilePosition
+  local row = 1
+  local column = 1
+  local orderedList = {}
 
-      local heroBag = self.takeObject({guid=bagGuid})
+  for _, v in ipairs(heroList) do
+    local hero = v.hero
+    local heroKey = v.heroKey
+    local position = getTilePosition(column, row)
 
-      Wait.frames(
-        function()
-          local heroDetails = heroBag.call("getHeroDetails")
-          local imageUrl = heroDetails["counterUrl"]
-          local heroName = string.gsub(heroBag.getName(), " Hero Bag", "")
-          self.putObject(heroBag)
-    
-          tile = baseTile.clone({
-            position=position,
-            rotation={0,180,0},
-            scale={1.13, 1, 1.13}})
-    
-          tile.setName(heroName)
-          tile.setLock(true)
-          tile.setPosition(position)
-          tile.addTag("hero-selector-tile")
-          tile.setCustomObject({image=imageUrl})
-          reloadedTile = tile.reload()
-        
-          setTileFunctions(reloadedTile, bagGuid)
-          createTileButtons(reloadedTile)
-            
-        end, 
-        10)
+    tile = baseTile.clone({
+      position=position,
+      rotation={0,180,0},
+      scale={1.13, 1, 1.13}})
+
+    tile.setName(hero.name)
+    tile.setDescription("")
+    tile.setLock(true)
+    tile.setPosition(position)
+    tile.addTag("hero-selector-tile")
+    tile.setCustomObject({image=hero.counterImageUrl})
+    reloadedTile = tile.reload()
+  
+    setTileFunctions(reloadedTile, heroKey)
+    createTileButtons(reloadedTile) 
+
+    row = row + 1
+    if row > rows then
+        row = 1
+        column = column + 1
+    end
   end
 end
 
 function getSortedListOfHeroes()
     local heroList = {}
 
-    for _, heroBag in ipairs(self.getObjects()) do
-      table.insert (heroList, {heroBag.guid, heroBag.name})
+    for k, v in pairs(heroes) do
+      table.insert (heroList, {heroKey = k, hero = v})
     end
 
     local compareHeroNames = function(a,b)
-      return a[2] < b[2]
+      return a.hero.name < b.hero.name
     end
 
-    local sortedList = table.sort(heroList, compareHeroNames)
-
-    local row = 1
-    local column = 1
-    local orderedList = {}
-
-    for _,v in ipairs(sortedList) do
-        orderedList[v[1]] = getTilePosition(column, row)
-
-        row = row + 1
-        if row > rows then
-            row = 1
-            column = column + 1
-        end
-    end
-
-    return orderedList
+    return table.sort(heroList, compareHeroNames)
 end
 
 function getTilePosition(column, row)
@@ -449,15 +505,15 @@ function getTilePosition(column, row)
         originPosition.z + rowGap * (row - 1)}
 end
 
-function setTileFunctions(tile, heroBagGuid)
+function setTileFunctions(tile, heroKey)
     local tileScript = [[
         function placeHeroWithStarterDeck(obj, player_color)
             local heroManager = getObjectFromGUID(Global.getVar("HERO_MANAGER_GUID"))
-            heroManager.call("placeHeroWithStarterDeck", {heroBagGuid="]]..heroBagGuid..[[", playerColor=player_color})
+            heroManager.call("placeHeroWithStarterDeck", {heroKey="]]..heroKey..[[", playerColor=player_color})
         end
         function placeHeroWithHeroDeck(obj, player_color)
             local heroManager = getObjectFromGUID(Global.getVar("HERO_MANAGER_GUID"))
-            heroManager.call("placeHeroWithHeroDeck", {heroBagGuid="]]..heroBagGuid..[[", playerColor=player_color})
+            heroManager.call("placeHeroWithHeroDeck", {heroKey="]]..heroKey..[[", playerColor=player_color})
         end    
     ]]
     tile.setLuaScript(tileScript)
@@ -476,65 +532,152 @@ function createTileButtons(tile)
     })
 end
 
-local heroes = {}
+function findAndPlacePlayerCard(params)
+  local hero = params.hero
+  local cardName = params.cardName
+  local position = params.position
+  local scale = params.scale or Global.getTable("CARD_SCALE_PLAYER")
+  local deckPositions = getPlayerDeckPositions({hero = hero, includeDiscard = true})
+  local decks = {}
 
-function constructHeroList()
+  for _, deckPosition in pairs(deckPositions) do
+    local deckOrCard = getDeckOrCardAtLocation(deckPosition)
+    if(deckOrCard ~= nil) then
+      if(deckOrCard.tag == "Deck") then
+        table.insert(decks, deckOrCard)
+      else
+        if(deckOrCard.getName() == cardName) then
+          rotation = params.rotation or {0, 180, 180}
 
-  heroes["adamWarlock"] = {
-    name = "Adam Warlock",
-    hitPoints = 11,
-    counterUrl = "http://cloud-3.steamusercontent.com/ugc/1833524420371050034/61A7EE53D4D7DE302E99B49594CCBA6D4075BE91/",
-    playmatUrl = "http://cloud-3.steamusercontent.com/ugc/1861691130254391544/53968F7E3F8F28287E82D74297D2B820CFDA630F/",
-    identityCardId = 0,
-    obligationCardId = 0,
-    heroDeck = {
-      cards = {
-        ["21032"] =	1,
-        ["21033"] =	1,
-        ["21034"] =	1,
-        ["21035"] =	1,
-        ["21036"] =	2,
-        ["21037"] =	2,
-        ["21038"] =	3,
-        ["21039"] =	2,
-        ["21040"] =	2
-      }
-    },
-    starterDeck = {
-      cards = {
-        ["21041"] =	1,
-        ["21042"] =	1,
-        ["21043"] =	1,
-        ["21044"] =	1,
-        ["21046"] =	1,
-        ["21047"] =	1,
-        ["21048"] =	1,
-        ["21049"] =	1,
-        ["21050"] =	1,
-        ["21052"] =	1,
-        ["21053"] =	1,
-        ["21054"] =	1,
-        ["21055"] =	1,
-        ["21057"] =	1,
-        ["21058"] =	1,
-        ["21059"] =	1,
-        ["21060"] =	1,
-        ["21061"] =	1,
-        ["21062"] =	1,
-        ["21063"] =	1,
-        ["21064"] =	1,
-        ["21065"] =	1,
-        ["22019"] =	1,
-        ["23020"] =	1,
-        ["25017"] =	1
-      }
-    },
-    nemesis = {
-      cards = {
+          if(params.flipped) then
+            rotation = {rotation[1], rotation[2], 0}
+          end
 
-      }
-    }
-  }
+          deckOrCard.setPositionSmooth(position)
+          deckOrCard.setRotationSmooth(rotation)
+          deckOrCard.setScale(scale)
+          return
+        end
+      end
+    end
+  end
+
+  local cardInDeck = findCardInDecks(decks, cardName)
+  
+  if(cardInDeck ~= nil) then
+    placeCardFromDeck(cardInDeck.deck, cardInDeck.cardGuid, position, scale, params.rotation, params.flipped)
+    return
+  end
+
 end
 
+function findCardInDecks(decks, cardName)
+  for _, deck in pairs(decks) do
+    for _, card in pairs(deck.getObjects()) do
+      if(card.name == cardName) then
+        return {
+          deck = deck,
+          cardGuid = card.guid
+        }
+      end
+    end
+  end
+end
+
+function placeCardFromDeck(deck, cardGuid, position, scale, rotation, flipped)
+  local cardScale = scale or deck.getScale()
+  local cardRotation = rotation or deck.getRotation()
+
+  if(flipped) then
+    cardRotation = {cardRotation[1], cardRotation[2], 0}
+  end
+
+  deck.takeObject(
+    {
+      guid = cardGuid,
+      position = position,
+      scale = cardScale,
+      rotation = cardRotation,
+      smooth = true,
+      callback_function = function(card)
+        card.setScale(cardScale)
+      end
+    }
+  )
+end
+
+function getDeckOrCardAtLocation(position)
+  local objects = findObjectsAtPosition(position)
+  for _, object in pairs(objects) do
+    if(object.tag == "Deck" or object.tag == "Card") then
+      return object
+    end
+  end
+
+  return nil
+end
+
+function findObjectsAtPosition(position)
+  local objList = Physics.cast({
+     origin       = position,
+     direction    = {0,1,0},
+     type         = 3,
+     size         = {0.5,10,0.5},
+     max_distance = 0,
+     debug        = false,
+  })
+  local objects = {}
+  for _, obj in ipairs(objList) do
+     table.insert(objects, obj.hit_object)
+  end
+  return objects
+end
+
+
 require('!/Cardplacer')
+
+require('!/heroes/adam_warlock')
+require('!/heroes/wolverine')
+require('!/heroes/colossus')
+require('!/heroes/cyclops')
+require('!/heroes/black_panther')
+require('!/heroes/black_widow')
+require('!/heroes/hawkeye')
+require('!/heroes/cable')
+require('!/heroes/domino')
+require('!/heroes/captain_america')
+require('!/heroes/captain_marvel')
+require('!/heroes/she_hulk')
+require('!/heroes/spider_man_peter')
+require('!/heroes/iron_man')
+require('!/heroes/drax')
+require('!/heroes/gambit')
+require('!/heroes/gamora')
+require('!/heroes/ghost_spider')
+require('!/heroes/spider_man_miles')
+require('!/heroes/hulk')
+require('!/heroes/rocket_raccoon')
+require('!/heroes/groot')
+require('!/heroes/ms_marvel')
+require('!/heroes/nebula')
+require('!/heroes/nova')
+require('!/heroes/quicksilver')
+require('!/heroes/scarlet_witch')
+require('!/heroes/spider_ham')
+require('!/heroes/spider_woman')
+require('!/heroes/star_lord')
+require('!/heroes/thor')
+require('!/heroes/valkyrie')
+require('!/heroes/venom')
+require('!/heroes/vision')
+require('!/heroes/war_machine')
+require('!/heroes/phoenix')
+require('!/heroes/rogue')
+require('!/heroes/shadowcat')
+require('!/heroes/sp_dr')
+require('!/heroes/doctor_strange')
+require('!/heroes/storm')
+require('!/heroes/ant_man')
+require('!/heroes/wasp')
+require('!/heroes/ironheart')
+require('!/heroes/spectrum')

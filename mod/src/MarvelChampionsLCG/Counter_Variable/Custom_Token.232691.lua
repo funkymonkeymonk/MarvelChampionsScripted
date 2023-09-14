@@ -37,19 +37,19 @@ function createBtns()
 	
 	--center display
 	self.createButton({
-  label=tostring(value),
-  click_function="add_subtract",
-  function_owner=self,
-  position=pos,
-  rotation=rot,
-  height=h,
-  width=w,
-  font_size=f_size,
-  scale={x=3, y=3, z=3},
-  color=f_size,
-  font_color=f_color, 
-  color = bg_color
-})
+    label=tostring(value),
+    click_function="add_subtract",
+    function_owner=self,
+    position=pos,
+    rotation=rot,
+    height=h,
+    width=w,
+    font_size=f_size,
+    scale={x=3, y=3, z=3},
+    color=f_size,
+    font_color=f_color, 
+    color = bg_color
+  })
 	
 end
 
@@ -67,5 +67,8 @@ function updateDisplay()
   	self.editButton({index = 0, label = tostring(value)})
 end
 
-
-
+function setValue(params)
+  value = params.value
+  updateDisplay()
+  updateSave()
+end

@@ -407,7 +407,18 @@ function getHeroCount()
  function advanceScheme()
  end
 
+function spawnNemesis(params)
+    local heroManager = getObjectFromGUID(Global.getVar("HERO_MANAGER_GUID"))
+    local hero = heroManager.call("getHeroByPlayerColor", {playerColor=params.playerColor})
 
+    local deck = {
+        position = {0,0,0},
+        scale = Global.getTable("CARD_SCALE_ENCOUNTER"),
+        cards = hero.decks.nemesis
+    }
+
+    createDeck(deck)
+end
 
 
 
