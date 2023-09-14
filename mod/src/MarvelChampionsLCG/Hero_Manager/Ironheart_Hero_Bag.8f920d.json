@@ -3,12 +3,12 @@
     "GUID": "8f920d",
     "Name": "Bag",
     "Transform": {
-      "posX": -5.642346,
-      "posY": 33.2535248,
-      "posZ": 42,
-      "rotX": 90,
-      "rotY": 180,
-      "rotZ": 0,
+      "posX": 88.88073,
+      "posY": 2.036102,
+      "posZ": 6.19339228,
+      "rotX": -0.00000108460983,
+      "rotY": 359.963531,
+      "rotZ": -0.00000225415056,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -52,7 +52,6 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
-    "Ironheart_Identity.eaab93.973100.json",
     "Ironheart.915892.json",
     "Progress.a4dde0.json",
     "Ironheart_s_Nemesis_Set.ccc019.json",

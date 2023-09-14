@@ -3,12 +3,12 @@
     "GUID": "df502b",
     "Name": "Bag",
     "Transform": {
-      "posX": -5.642346,
-      "posY": 33.2535248,
-      "posZ": 42,
-      "rotX": 90,
-      "rotY": 180,
-      "rotZ": 0,
+      "posX": 76.37434,
+      "posY": 2.03610182,
+      "posZ": 22.45269,
+      "rotX": 6.686149e-7,
+      "rotY": 0.0243797414,
+      "rotZ": 2.96961929e-7,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -23,8 +23,8 @@
     },
     "ColorDiffuse": {
       "r": 1,
-      "g": 0.16860792,
-      "b": 0.16860792
+      "g": 0.168607891,
+      "b": 0.168607891
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,
@@ -52,7 +52,6 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
-    "Wasp_Identity.0f11ab.799100.json",
     "Wasp_Nemesis.13c902.json",
     "Red_Dreams.1c913c.966655.json"
   ]

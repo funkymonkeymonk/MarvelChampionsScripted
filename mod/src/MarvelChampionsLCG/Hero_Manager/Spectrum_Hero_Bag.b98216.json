@@ -3,12 +3,12 @@
     "GUID": "b98216",
     "Name": "Bag",
     "Transform": {
-      "posX": -5.642346,
-      "posY": 33.2535248,
-      "posZ": 42,
-      "rotX": 90,
-      "rotY": 180,
-      "rotZ": 0,
+      "posX": 81.0029144,
+      "posY": 2.03609824,
+      "posZ": 21.1490479,
+      "rotX": 2.28484083e-7,
+      "rotY": 0.0222447421,
+      "rotZ": -1.700433e-7,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -53,7 +53,6 @@
   "StatesPaths": {},
   "ContainedObjectPaths": [
     "Spectrum_Identity.8c3f88.969925.json",
-    "Energy_Form.71bfde.963206.json",
     "Spectrum_Nemesis.47ab21.json",
     "Loss_of_Control.2e551f.318.json"
   ]

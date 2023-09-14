@@ -3,12 +3,12 @@
     "GUID": "c8c4d3",
     "Name": "Bag",
     "Transform": {
-      "posX": -5.642346,
-      "posY": 33.2535248,
-      "posZ": 42,
-      "rotX": 90,
-      "rotY": 180,
-      "rotZ": 0,
+      "posX": 86.85601,
+      "posY": 2.03609848,
+      "posZ": 14.9438705,
+      "rotX": -3.810592e-8,
+      "rotY": 359.963562,
+      "rotZ": 7.770793e-7,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -52,7 +52,6 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
-    "Ant-Man_Identity.cad2b0.775500.json",
     "Ant-Man_Nemesis.063850.json",
     "Care_for_Cassie.3ccf94.966351.json"
   ]

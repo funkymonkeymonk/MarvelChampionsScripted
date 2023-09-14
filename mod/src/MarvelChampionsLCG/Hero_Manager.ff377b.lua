@@ -59,7 +59,7 @@ function placeHero(heroKey, playerColor, deckType)
   )
 
   placeIdentity(
-    hero.identityCardId,
+    hero,
     playmatPosition
   )
 
@@ -80,12 +80,17 @@ function placeHero(heroKey, playerColor, deckType)
     30
   )
 
-  -- placeExtras(
-  --   hero,
-  --   playmatPosition
-  -- )
+  Wait.frames(
+    function()
+      placeExtras(
+        hero,
+        playmatPosition
+      )
+    end,
+    120
+  )
 
-  -- placeNemesis(hero)
+  --placeNemesis(hero)
 
   placeObligation(hero)
     
@@ -243,9 +248,29 @@ function configureHealthCounter(params)
   )
 end
 
-function placeIdentity(cardId, playmatPosition)
-  local identityPosition = getOffsetPosition(playmatPosition, identityOffset)
-  getCardByID(cardId, identityPosition, {scale = Global.getTable("CARD_SCALE_IDENTITY")})
+function placeIdentity(hero, playmatPosition)
+  local position = getOffsetPosition(playmatPosition, identityOffset)
+  local scale = Global.getTable("CARD_SCALE_IDENTITY")
+  if(hero.identityAssetGuid ~= nil) then
+    log(hero.identityAssetGuid)
+    spawnAsset({
+      guid = hero.identityAssetGuid,
+      position = position,
+      rotation = {0, 180, 0},
+      scale = scale,
+      callback = "configureIdentity"
+    })
+    return
+  end
+  
+  getCardByID(hero.identityCardId, position, {scale = scale})
+end
+
+function configureIdentity(params)
+  log("configureIdentity")
+  log(params)
+  local identity = params.spawnedObject
+  identity.setPosition(params.position)
 end
 
 function placeDeck(hero, deckType, playmatPosition)
@@ -317,46 +342,77 @@ function placeHeroDeck(heroDeckId, deckPosition)
   deckImporter.call("importDeck", params)
 end
 
-function placeExtras(heroBag, extras, playmatPosition)
-  if(extras == nil) then
+function placeExtras(hero, playmatPosition)
+  if(hero.extras == nil) then
     return
   end
   
-  for key, item in pairs(extras) do
-    local objectPosition = getOffsetPosition(playmatPosition, item["offset"])
+  for key, item in pairs(hero.extras) do
+    local itemPosition = getOffsetPosition(playmatPosition, item["offset"])
+    local lockItem = false
 
-    if (item.guid ~= nil) then
-        local objectOrig = heroBag.takeObject({guid=item["guid"], position=objectPosition})
-        local objectCopy = objectOrig.clone({position=objectPosition})
-        heroBag.putObject(objectOrig)
+    if(item.locked ~= nil) then
+      lockItem = item.locked
+    end
 
-        objectCopy.setPosition(objectPosition)
+    if(item.type == "counter") then
+      local counterBag
 
-        if(item["locked"]) then
-          objectCopy.setLock(true)
+      if(item.counterType == "general") then
+        counterBag = getObjectFromGUID("aec1c4")
+      end
+      --get a different counter bag for other types
+
+      counterBag.takeObject({
+        position = itemPosition,
+        smooth = false,
+        callback_function = function(counter) 
+          counter.setPosition(itemPosition)
+          counter.setLock(lockItem)
+          counter.setName(item.name)
+
+          Wait.frames(
+            function()
+              counter.call("setValue", {value = item.value or 0})
+            end,
+            1)
         end
-    else
-        -- This will need to grow but let's do it as port the heroes over to this approach.
-        if (item.type == 'card') then
-          getCardByID(item.id, objectPosition, {scale = Global.getTable("CARD_SCALE_PLAYER")})
-        else
-          log('Unable to spawn extra ' .. key)
-        end
+      })
+
+    end
+
+    if(item.type == "status") then
+    end
+
+    if(item.type == "deck") then
+      local deck = {
+        cards = item.cards,
+        position = itemPosition,
+        scale = Global.getTable("CARD_SCALE_PLAYER")
+      }
+
+      createDeck(deck)
+    end
+
+    if(item.type == "asset") then
+      spawnAsset({
+        guid = item.assetGuid,
+        position = itemPosition,
+        rotation = item.rotation,
+        callback = "configureAsset"
+      })
     end
   end
 end
 
--- function placeNemesis(heroKey)
---   local hero = heroes[heroKey]
---   local scale = Vector(Global.getVar("CARD_SCALE_ENCOUNTER")) --Global.getTable("CARD_SCALE_ENCOUNTER")
---   local deck = {
---     cards = hero.nemesisDeck,
---     position = {0, 0, 0},
---     scale = scale
---   }
+function configureAsset(params)
+  local asset = params.spawnedObject
+  asset.setPosition(params.position)
 
---   --createDeck(deck)
--- end
+  if(params.rotation ~= nil) then
+    asset.setRotation(params.rotation)
+  end
+end
 
 function placeObligation(hero)
   local encounterDeckPosition = Vector(Global.getVar("ENCOUNTER_DECK_SPAWN_POS"))
@@ -483,7 +539,6 @@ function findAndPlacePlayerCard(params)
   local position = params.position
   local scale = params.scale or Global.getTable("CARD_SCALE_PLAYER")
   local deckPositions = getPlayerDeckPositions({hero = hero, includeDiscard = true})
-
   local decks = {}
 
   for _, deckPosition in pairs(deckPositions) do
@@ -538,14 +593,16 @@ function placeCardFromDeck(deck, cardGuid, position, scale, rotation, flipped)
     cardRotation = {cardRotation[1], cardRotation[2], 0}
   end
 
-log(cardRotation)
   deck.takeObject(
     {
       guid = cardGuid,
       position = position,
       scale = cardScale,
       rotation = cardRotation,
-      smooth = true
+      smooth = true,
+      callback_function = function(card)
+        card.setScale(cardScale)
+      end
     }
   )
 end
@@ -553,7 +610,6 @@ end
 function getDeckOrCardAtLocation(position)
   local objects = findObjectsAtPosition(position)
   for _, object in pairs(objects) do
-    log(object.tag)
     if(object.tag == "Deck" or object.tag == "Card") then
       return object
     end
@@ -567,7 +623,7 @@ function findObjectsAtPosition(position)
      origin       = position,
      direction    = {0,1,0},
      type         = 3,
-     size         = {0.5,5,0.5},
+     size         = {0.5,10,0.5},
      max_distance = 0,
      debug        = false,
   })
@@ -811,3 +867,42 @@ require('!/heroes/colossus')
 require('!/heroes/cyclops')
 require('!/heroes/black_panther')
 require('!/heroes/black_widow')
+require('!/heroes/hawkeye')
+require('!/heroes/cable')
+require('!/heroes/domino')
+require('!/heroes/captain_america')
+require('!/heroes/captain_marvel')
+require('!/heroes/she_hulk')
+require('!/heroes/spider_man_peter')
+require('!/heroes/iron_man')
+require('!/heroes/drax')
+require('!/heroes/gambit')
+require('!/heroes/gamora')
+require('!/heroes/ghost_spider')
+require('!/heroes/spider_man_miles')
+require('!/heroes/hulk')
+require('!/heroes/rocket_raccoon')
+require('!/heroes/groot')
+require('!/heroes/ms_marvel')
+require('!/heroes/nebula')
+require('!/heroes/nova')
+require('!/heroes/quicksilver')
+require('!/heroes/scarlet_witch')
+require('!/heroes/spider_ham')
+require('!/heroes/spider_woman')
+require('!/heroes/star_lord')
+require('!/heroes/thor')
+require('!/heroes/valkyrie')
+require('!/heroes/venom')
+require('!/heroes/vision')
+require('!/heroes/war_machine')
+require('!/heroes/phoenix')
+require('!/heroes/rogue')
+require('!/heroes/shadowcat')
+require('!/heroes/sp_dr')
+require('!/heroes/doctor_strange')
+require('!/heroes/storm')
+require('!/heroes/ant_man')
+require('!/heroes/wasp')
+require('!/heroes/ironheart')
+require('!/heroes/spectrum')

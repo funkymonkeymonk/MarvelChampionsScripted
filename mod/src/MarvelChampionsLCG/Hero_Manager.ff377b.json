@@ -59,14 +59,13 @@
       "Order": 0
     },
     "LuaScript": "#include ./Hero_Manager.ff377b.lua",
-    "LuaScriptState": "",
+    "LuaScriptState": "#include ./Hero_Manager.ff377b.state.json",
     "XmlUI": "",
     "ContainedObjects": []
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
     "Adam_Warlock_Hero_Bag.93353d.json",
-    "Ant-Man_Hero_Bag.c8c4d3.json",
     "Black_Panther_Hero_Bag.b72fe1.json",
     "Black_Widow_Hero_Bag.9541c0.json",
     "Cable_Hero_Bag.0847ac.json",
@@ -90,13 +89,15 @@
     "Nova_Hero_Bag.d7c305.json",
     "Phoenix_Hero_Bag.phoenix.json",
     "Quicksilver_Hero_Bag.4db435.json",
+    "Ant-Man_Hero_Bag.c8c4d3.json",
     "Rocket_Raccoon_Hero_Bag.36b0e1.json",
+    "Spectrum_Hero_Bag.b98216.json",
+    "Wasp_Hero_Bag.df502b.json",
     "Rogue_Hero_Bag.19b0fa.json",
     "Scarlet_Witch_Hero_Bag.9ec76d.json",
     "Shadow_Cat_Hero_Bag.shadowcat.json",
     "She-Hulk_Hero_Bag.bb16a6.json",
     "SP_dr_Hero_Bag.283667.json",
-    "Spectrum_Hero_Bag.b98216.json",
     "Spider-Ham_Hero_Bag.6af1bc.json",
     "Spider-Man_Miles_Morales_Hero_Bag.8cb34d.json",
     "Spider-Man_Peter_Parker_Hero_Bag.77e897.json",
@@ -108,7 +109,6 @@
     "Venom_Hero_Bag.6977bb.json",
     "Vision_Hero_Bag.bc0851.json",
     "War_Machine_Hero_Bag.84aae1.json",
-    "Wasp_Hero_Bag.df502b.json",
     "Wolverine_Hero_Bag.5355a9.json"
   ]
 }

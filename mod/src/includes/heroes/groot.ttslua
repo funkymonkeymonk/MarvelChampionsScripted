@@ -1,0 +1,52 @@
+heroes["groot"] = {
+    name = "Groot",
+    identityCardId = "16001",
+    hitPoints = 10,
+    counterImageUrl = "http://cloud-3.steamusercontent.com/ugc/1833524420370697394/0DEAEEA88256A4282B49C1EF08100BFAAF3647E1/",
+    playmatImageUrl = "http://cloud-3.steamusercontent.com/ugc/1861691130254392177/6383D817A13C0EEBBEA766FD7BBC80AB996ADB52/",
+    obligationCardId = "16025",
+    decks = {
+        hero = {
+            ["16002"] = 2,
+            ["16003"] = 2,
+            ["16004"] = 2,
+            ["16005"] = 3,
+            ["16006"] = 1,
+            ["16007"] = 1,
+            ["16008"] = 1,
+            ["16009"] = 1,
+            ["16010"] = 1,
+            ["16011"] = 1
+        },
+        starter = {
+            ["16012"] = 1,
+            ["16014"] = 3,
+            ["16016"] = 3,
+            ["16017"] = 3,
+            ["16019"] = 1,
+            ["16020"] = 1,
+            ["16024"] = 3,
+            ["26017"] = 2,
+            ["27020"] = 1,
+            ["27021"] = 1,
+            ["27022"] = 1,
+            ["09015"] = 3,
+            ["09017"] = 2
+        },
+        nemesis = {
+            ["16026"] = 1,
+            ["16027"] = 1,
+            ["16028"] = 3
+        }
+    },
+    extras = {
+        growthCounter = {
+            name="Growth",
+            type = "counter",
+            counterType = "general",
+            offset = {-12.57, .28, 3.28},
+            value = 0,
+            locked = true
+        }
+    }    
+}
