@@ -256,7 +256,6 @@ function removeButtonByLabel(buttonLabel)
 end
 
 function clearPlaymat()
-   broadcastToAll("Please delete your obligation card and nemesis set manually.", {1,1,1})
    local objects = findObjectsAtPosition()
 
    for _, obj in ipairs(objects) do
