@@ -71,6 +71,13 @@ function placeHero(heroKey, playerColor, deckType)
 
   Wait.frames(
     function()
+      removeCards(hero)
+    end,
+    25
+  )
+
+  Wait.frames(
+    function()
       placeCards(
         hero,
         playerColor,
@@ -263,7 +270,7 @@ function placeIdentity(hero, playmatPosition)
     return
   end
   
-  getCardByID(hero.identityCardId, position, {scale = scale})
+  getCardByID(hero.identityCardId, position, {scale = scale, flipped = hero.flipIdentityCard == nil or hero.flipIdentityCard})
 end
 
 function configureIdentity(params)
@@ -404,6 +411,33 @@ function placeExtras(hero, playmatPosition)
     end
   end
 end
+
+function removeCards(hero)
+  --Bit of a kludge, but I can't think of a better way to deal with things like Spectrum's energy form cards, 
+  --which has been replaced with a single multi-state card.
+  if(hero.removeCards == nil) then return end
+
+  for _, cardName in pairs(hero.removeCards) do
+    local cardPosition = {0, -50, 0}
+
+    Wait.frames(
+      function()
+        findAndPlacePlayerCard({
+          hero = hero,
+          cardName = cardName,
+          position = cardPosition,
+          scale = {1, 1, 1},
+          rotation = {0, 180, 180},
+          flipped = false,
+          deleteCard = true
+        })
+      end,
+      1
+    )
+
+  end
+end
+
 
 function configureAsset(params)
   local asset = params.spawnedObject
@@ -565,7 +599,7 @@ function findAndPlacePlayerCard(params)
   local cardInDeck = findCardInDecks(decks, cardName)
   
   if(cardInDeck ~= nil) then
-    placeCardFromDeck(cardInDeck.deck, cardInDeck.cardGuid, position, scale, params.rotation, params.flipped)
+    placeCardFromDeck(cardInDeck.deck, cardInDeck.cardGuid, position, scale, params.rotation, params.flipped, params.deleteCard)
     return
   end
 
@@ -584,7 +618,7 @@ function findCardInDecks(decks, cardName)
   end
 end
 
-function placeCardFromDeck(deck, cardGuid, position, scale, rotation, flipped)
+function placeCardFromDeck(deck, cardGuid, position, scale, rotation, flipped, deleteCard)
   local cardScale = scale or deck.getScale()
   local cardRotation = rotation or deck.getRotation()
 
@@ -598,8 +632,13 @@ function placeCardFromDeck(deck, cardGuid, position, scale, rotation, flipped)
       position = position,
       scale = cardScale,
       rotation = cardRotation,
-      smooth = true,
+      smooth = not deleteCard,
       callback_function = function(card)
+        if(deleteCard) then 
+          card.destruct() 
+          return
+        end
+
         card.setScale(cardScale)
       end
     }

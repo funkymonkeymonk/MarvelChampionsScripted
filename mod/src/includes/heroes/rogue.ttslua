@@ -1,6 +1,7 @@
 heroes["rogue"] = {
     name = "Rogue",
     identityCardId = "38001",
+    flipIdentityCard = false,
     hitPoints = 11,
     counterImageUrl = "http://cloud-3.steamusercontent.com/ugc/2058745292939695220/25A7C564B51556328CB1987E9F225B51D0C19F69/",
     playmatImageUrl = "http://cloud-3.steamusercontent.com/ugc/2035118512673864953/9F191D57829E59CE767A055C9D3F6D0A08729D0B/",
