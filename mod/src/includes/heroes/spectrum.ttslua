@@ -50,6 +50,11 @@ heroes["spectrum"] = {
             rotation = {0, 180, 0},
             locked = false
         }
+    },
+    removeCards = {
+        ["21002"] = "Gamma",
+        ["21003"] = "Photon",
+        ["21004"] = "Pulsar"
     }
 }
 
