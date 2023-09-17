@@ -1,5 +1,5 @@
 DRAWN_ENCOUNTER_OFFSET = {-1.275, 0.5, -1.533}
-DISCARD_POS            = {-17.75, 1.8, 22.25}
+
 COLLISION_ENABLED = false
 
 local playerColor
@@ -86,7 +86,7 @@ function onload(saved_data)
       label          = "N",
       click_function = "spawnNemesis",
       function_owner = self,
-      position       = {1.56,0.3,0.88},
+      position       = {1.56,0.3,0.78},
       rotation       = {0,0,0},
       width          = 100,
       height         = 100,
@@ -102,7 +102,7 @@ function onload(saved_data)
 end
 
 function movePlayerone()
-   playerToken   = getObjectFromGUID("d93792")
+   playerToken   = getObjectFromGUID(Global.getVar("FIRST_PLAYER_TOKEN_GUID"))
    boardPosition = self.getPosition()
    playerToken.setPositionSmooth(boardPosition + Vector{11.9, 0.3, 6.3}, false, false)
    local turn_counter = getObjectFromGUID("turncounter")
@@ -158,22 +158,7 @@ function drawEncounter(object, player, isRightClick)
 end
 
 function discardEncounter(object, player_color, isRightClick)
-   if player_color == "Red" then
-      local toPosition = DISCARD_POS
-      Global.call("discardEncounterRed", {toPosition, self.getRotation(), isRightClick})
-   end
-   if player_color == "Blue" then
-      local toPosition = DISCARD_POS
-      Global.call("discardEncounterBlue", {toPosition, self.getRotation(), isRightClick})
-   end
-   if player_color == "Green" then
-      local toPosition = DISCARD_POS
-      Global.call("discardEncounterGreen", {toPosition, self.getRotation(), isRightClick})
-   end
-   if player_color == "Yellow" then
-      local toPosition = DISCARD_POS
-      Global.call("discardEncounterYellow", {toPosition, self.getRotation(), isRightClick})
-   end
+   Global.call("discardEncounterCard", {playerColor = playerColor})
 end
 
 function discardRandom(object, player)
@@ -259,7 +244,7 @@ function clearPlaymat()
    local objects = findObjectsAtPosition()
 
    for _, obj in ipairs(objects) do
-      if(obj.tag ~= "Surface") then
+      if(obj.tag ~= "Surface" and obj.tag ~= "Board" and obj.getVar("preventDeletion") ~= true) then
          obj.destruct()
       end
    end
