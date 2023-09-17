@@ -52,7 +52,7 @@
         "Stackable": false
       }
     },
-    "LuaScript": "",
+    "LuaScript": "#include ./First_Player.d93792.lua",
     "LuaScriptState": "",
     "XmlUI": ""
   },

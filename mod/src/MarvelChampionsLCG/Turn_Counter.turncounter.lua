@@ -18,6 +18,11 @@ function onload(saved_data)
     createAll()
 end
 
+function onDestroy()
+    log("Destroying " .. self.getName())
+    return false
+end
+
 function updateSave()
     saved_data = JSON.encode(CONFIG)
     self.script_state = saved_data
@@ -116,3 +121,8 @@ function setValue(params)
     updateVal()
     updateSave()
 end
+
+preventDeletion = true
+-- function preventDeletion()
+--     return true
+-- end

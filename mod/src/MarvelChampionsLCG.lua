@@ -1,27 +1,83 @@
+VILLAIN_HEALTH_COUNTER_POSITION = {-0.34, 0.96, 29.15}
+VILLAIN_HEALTH_COUNTER_ROTATION = {0.00, 180, 0.00}
+VILLAIN_HEALTH_COUNTER_SCALE    = {2.88, 1.00, 2.88}
+
+ENCOUNTER_DECK_POSITION = {-12.75, 1.06, 22.25}
+ENCOUNTER_DECK_ROTATION = {0.00, 180.00, 180.00}
+ENCOUNTER_DECK_SCALE    = {2.12, 1.00, 2.12}
+
+VILLAIN_POSITION = {-0.34, 2.00, 20.44}
+VILLAIN_ROTATION = {0.00, 180.00, 0.00}
+VILLAIN_SCALE    = {3.64, 1.00, 3.64}
+
+MAIN_SCHEME_POSITION = {8.38, 2.00, 22.45}
+MAIN_SCHEME_ROTATION = {0.00, 90.00, 180.00}
+MAIN_SCHEME_SCALE    = {2.93, 1.00, 2.93}
+
+MAIN_THREAT_COUNTER_POSITION = {8.38, 1.01, 28.48}
+MAIN_THREAT_COUNTER_ROTATION = {0.00, 180.00, 0.00}
+MAIN_THREAT_COUNTER_SCALE    = {1.61, 1.00, 1.61}
+
+BLACK_HOLE_POSITION = {-9.05, 1.13, 28.48}
+BLACK_HOLE_ROTATION = {0.00, 90.00, 0.00}
+BLACK_HOLE_SCALE    = {0.55, 0.55, 0.55}
+
+SIDE_SCHEME_POSITION = {16.75, 1.00, 21.75}
+SIDE_SCHEME_ROTATION = {0.00, 90.00, 0.00}
+
 CARD_SCALE_IDENTITY     = {1.88, 1.00, 1.88}
 CARD_SCALE_PLAYER       = {1.27, 1.00, 1.27}
 CARD_SCALE_VILLAIN      = {3.64, 1.00, 3.64}
 CARD_SCALE_ENCOUNTER    = {2.12, 1.00, 2.12}
 CARD_SCALE_MAIN_SCHEME  = {2.93, 1.00, 2.93}
 
+SCALE_PLAYER_HEALTH_COUNTER = {1.13, 1.00, 1.13}
+SCALE_HERO_SELECTOR         = {1.13, 1.00, 1.13}
+
 ENCOUNTER_DECK_POS              = {-12.75, 1.05, 22.25}
 ENCOUNTER_DECK_SPAWN_POS        = {-12.75, 3, 22.25}
 ENCOUNTER_DECK_DISCARD_POSITION = {-17.75, 1.8, 22.25}
 VILLAIN_POS                     = {-0.34,3,20.44}
-VILLAIN2_POS                    = {8.25,3,20.44}
-LOKI_POS                        = {-0.34,1,20.44}
-BOOST_POS                       = {-0.3,1.1,7.7}
-ENCOUNTER_RED_POS               = {-31.25,1.1,-5.25}
-ENCOUNTER_BLUE_POS              = {-3.75,1.1,-5.75}
-ENCOUNTER_GREEN_POS             = {23.75,1.1,-5.75}
-ENCOUNTER_YELLOW_POS            = {51.25,1.1,-5.25}
-g_cardWidth  = 2.30;
-g_cardHeight = 3.40;
 
-HERO_MANAGER_GUID = "ff377b"
-SCENARIO_MANAGER_GUID = "06c2fd"
+BOOST_POS            = {-0.3,1.1,7.7}
+ENCOUNTER_RED_POS    = {-31.25,1.1,-5.25}
+ENCOUNTER_BLUE_POS   = {-3.75,1.1,-5.75}
+ENCOUNTER_GREEN_POS  = {23.75,1.1,-5.75}
+ENCOUNTER_YELLOW_POS = {51.25,1.1,-5.25}
+
+PLAYMAT_POSITION_RED    = {-41.19, 1.04, -17.12}
+PLAYMAT_POSITION_BLUE   = {-13.75, 1.04, -17.75}
+PLAYMAT_POSITION_GREEN  = {13.74, 1.04, -17.76}
+PLAYMAT_POSITION_YELLOW = {41.21, 1.04, -17.08}
+
+PLAYMAT_OFFSET_HEALTH_COUNTER = {-10.42, 0.10, 5.50}
+PLAYMAT_OFFSET_IDENTITY       = {-9.89, 3.00, 1.00}
+PLAYMAT_OFFSET_DECK           = {-8.40, 3.00, -4.66}
+PLAYMAT_OFFSET_DISCARD        = {-11.30, 2.00, -4.66}
+
+HERO_MANAGER_GUID              = "ff377b"
+SCENARIO_MANAGER_GUID          = "06c2fd"
+ASSET_BAG_GUID                 = "91eba8"
+FIRST_PLAYER_TOKEN_GUID        = "d93792"
+GENERAL_COUNTER_BAG_GUID       = "aec1c4"
+GUID_LARGE_GENERAL_COUNTER_BAG = "65c1cc"
+GUID_THREAT_COUNTER_BAG        = "eb5d6d"
+GUID_SELECTOR_TILE             = "c04e76"
+
+ASSET_GUID_BLACK_HOLE             = "740595"
+ASSET_GUID_PLAYMAT                = "f5701e"
+ASSET_GUID_HERO_HEALTH_COUNTER    = "16b5bd"
+ASSET_GUID_VILLAIN_HEALTH_COUNTER = "8cf3d6"
+
+IS_RESHUFFLING = false
 
 require('!/Cardplacer')
+
+function onLoad()
+    -- Create context Menus
+    addContextMenuItem("Random First Player", randomFirstPlayer)
+    addContextMenuItem("Spawn Card", createUI)
+end
 
 function randomFirstPlayer()
     local sittingPlayers = {}
@@ -33,12 +89,6 @@ function randomFirstPlayer()
 
     local pickedColor = sittingPlayers[math.random(#sittingPlayers)]
     broadcastToAll('The first player is ' .. Player[pickedColor].steam_name .. ' (' ..  pickedColor ..')')
-end
-
-function onLoad()
-    -- Create context Menus
-    addContextMenuItem("Random First Player", randomFirstPlayer)
-    addContextMenuItem("Spawn Card", createUI)
 end
 
 function findInRadiusBy(pos, radius, filter, debug)
@@ -61,55 +111,6 @@ function findInRadiusBy(pos, radius, filter, debug)
       end
    end
    return filteredList
-end
-
-function dealCardsInRows(paramlist)
-   local currPosition   = {};
-   local numRow         = 1;
-   local numCard        = 0;
-   local invMultiplier  = 1;
-   local allCardsDealed = 0;
-   if paramlist.inverse then
-      invMultiplier = -1;
-   end
-   if paramlist.maxCardsDealed == nil then
-      allCardsDealed = 0;
-      paramlist.maxCardsDealed = paramlist.cardDeck.getQuantity()
-      elseif paramlist.maxCardsDealed >= paramlist.cardDeck.getQuantity() or paramlist.maxCardsDealed <=0 then
-         allCardsDealed = 0;
-         paramlist.maxCardsDealed=paramlist.cardDeck.getQuantity()
-      else
-         allCardsDealed = 1;
-      end
-      if paramlist.mode =="x" then
-         currPosition = {paramlist.iniPosition[1]+(2*g_cardWidth*invMultiplier*allCardsDealed),paramlist.iniPosition[2],paramlist.iniPosition[3]};
-      else
-         currPosition = {paramlist.iniPosition[1],paramlist.iniPosition[2],paramlist.iniPosition[3]+(2*g_cardWidth*invMultiplier*allCardsDealed)};
-      end
-      for i = 1,paramlist.maxCardsDealed,1 do
-         paramlist.cardDeck.takeObject({
-            position = currPosition,
-            smooth   = true
-         });
-         numCard = numCard+1;
-         if numCard >= paramlist.maxCardRow then
-            if paramlist.mode == "x" then
-               currPosition    = {paramlist.iniPosition[1]+(2*g_cardWidth*invMultiplier*allCardsDealed),paramlist.iniPosition[2],paramlist.iniPosition[3]};
-               currPosition[3] = currPosition[3]-(numRow*g_cardHeight*invMultiplier);
-            else
-               currPosition    = {paramlist.iniPosition[1],paramlist.iniPosition[2],paramlist.iniPosition[3]+(2*g_cardWidth*invMultiplier*allCardsDealed)};
-               currPosition[1] = currPosition[1]+(numRow*g_cardHeight*invMultiplier);
-            end
-            numCard = 0;
-            numRow  = numRow+1;
-         else
-            if paramlist.mode == "x" then
-               currPosition[1] = currPosition[1]+(g_cardWidth*invMultiplier);
-         else
-            currPosition[3] = currPosition[3]+(g_cardWidth*invMultiplier);
-         end
-      end
-   end
 end
 
 function isDeck(x)
@@ -184,7 +185,7 @@ function discardBoostcard(params)
    if #items > 0 then
       for i, v in ipairs(items) do
          if v.tag == 'Deck' then
-            v.takeObject({index = index, position = position, rotation = {0,180,faceUpRotation}})
+            v.takeObject({index = 0, position = position, rotation = {0,180,faceUpRotation}})
             return
          end
       end
@@ -194,203 +195,38 @@ function discardBoostcard(params)
    end
 end
 
-function villainPhasecard(params)
-   local position = params[1]
-   local rotation = params[2]
-   local isFaceUp = params[3]
-   local faceUpRotation
-   if (isFaceUp) then
-      faceUpRotation = 0
-   else
-      faceUpRotation = 0
-   end
-   local items = findInRadiusBy(VILLAIN_POS, 4, isCardOrDeck)
-   if #items > 0 then
-      for i, v in ipairs(items) do
-         if v.tag == 'Deck' then
-            v.takeObject({index = index, position = position, rotation = {0,180,faceUpRotation}})
-            return
-         end
-      end
-      items[1].setPositionSmooth(position, false, false)
-      items[1].setRotationSmooth({0,rotation.y,faceUpRotation}, false, false)
-      return
-   end
-end
+function discardEncounterCard(params)
+   local playerColor = params.playerColor
+   local encounterPosition
 
-function villainPhasecard2(params)
-   local position = params[1]
-   local rotation = params[2]
-   local isFaceUp = params[3]
-   local faceUpRotation
-   if (isFaceUp) then
-      faceUpRotation = 0
-   else
-      faceUpRotation = 0
+   if(playerColor == "Red") then
+      encounterPosition = ENCOUNTER_RED_POS
    end
-   local items = findInRadiusBy(VILLAIN2_POS, 4, isCardOrDeck)
-   if #items > 0 then
-      for i, v in ipairs(items) do
-         if v.tag == 'Deck' then
-            v.takeObject({index = index, position = position, rotation = {0,180,faceUpRotation}})
-            return
-         end
-      end
-      items[1].setPositionSmooth(position, false, false)
-      items[1].setRotationSmooth({0,rotation.y,faceUpRotation}, false, false)
-      return
+   if(playerColor == "Blue") then
+      encounterPosition = ENCOUNTER_BLUE_POS
    end
-end
+   if(playerColor == "Green") then
+      encounterPosition = ENCOUNTER_GREEN_POS
+   end
+   if(playerColor == "Yellow") then
+      encounterPosition = ENCOUNTER_YELLOW_POS
+   end
 
-function villainPhaseloki(params)
-   local position = params[1]
-   local rotation = params[2]
-   local isFaceUp = params[3]
-   local faceUpRotation
-   if (isFaceUp) then
-      faceUpRotation = 0
-   else
-      faceUpRotation = 0
-   end
-   local items = findInRadiusBy(LOKI_POS, 4, isCardOrDeck)
-   if #items > 0 then
-      for i, v in ipairs(items) do
-         if v.tag == 'Deck' then
-            v.takeObject({index = index, position = position, rotation = {0,180,faceUpRotation}})
-            return
-         end
-      end
-      items[1].setPositionSmooth(position, false, false)
-      items[1].setRotationSmooth({0,rotation.y,faceUpRotation}, false, false)
-      return
-   end
-end
+   local items = findInRadiusBy(encounterPosition, 4, isCardOrDeck)
 
-function returnEncountercard(params)
-   local position = params[1]
-   local rotation = params[2]
-   local isFaceUp = params[3]
-   local faceUpRotation
-   if (isFaceUp) then
-      faceUpRotation = 0
-   else
-      faceUpRotation = 180
-   end
-   local items = findInRadiusBy(ENCOUNTER_DECK_POS, 4, isCardOrDeck)
-   if #items > 0 then
-      for i, v in ipairs(items) do
-         if v.tag == 'Deck' then
-            v.takeObject({index = index, position = position, rotation = {0,180,faceUpRotation}})
-            v.takeObject({index = index, position = position, rotation = {0,180,faceUpRotation}})
-            v.takeObject({index = index, position = position, rotation = {0,180,faceUpRotation}})
-            v.takeObject({index = index, position = position, rotation = {0,180,faceUpRotation}})
-            v.takeObject({index = index, position = position, rotation = {0,180,faceUpRotation}})
-            return
-         end
-      end
-      items[1].setPositionSmooth(position, false, false)
-      items[1].setRotationSmooth({0,rotation.y,faceUpRotation}, false, false)
-      return
-   end
-end
-
-function discardEncounterRed(params)
-   local position = params[1]
-   local rotation = params[2]
-   local isFaceUp = params[3]
-   local faceUpRotation
-   if (isFaceUp) then
-      faceUpRotation = 0
-   else
-      faceUpRotation = 0
-   end
-   local items = findInRadiusBy(ENCOUNTER_RED_POS, 4, isCardOrDeck)
    if #items > 0 then
      for i, v in ipairs(items) do
         if v.tag == 'Deck' then
-           v.takeObject({index = index, position = position, rotation = {0,180,faceUpRotation}})
+           v.takeObject({position = ENCOUNTER_DECK_DISCARD_POSITION, rotation = {0,180,0}, top = false})
            return
         end
       end
-      items[1].setPositionSmooth(position, false, false)
-      items[1].setRotationSmooth({0,rotation.y,faceUpRotation}, false, false)
-      return
+
+      items[1].setPositionSmooth(ENCOUNTER_DECK_DISCARD_POSITION, false, false)
+      items[1].setRotationSmooth({0,180,0}, false, false)
    end
 end
 
-function discardEncounterBlue(params)
-   local position = params[1]
-   local rotation = params[2]
-   local isFaceUp = params[3]
-   local faceUpRotation
-   if (isFaceUp) then
-      faceUpRotation = 0
-   else
-      faceUpRotation = 0
-   end
-   local items = findInRadiusBy(ENCOUNTER_BLUE_POS, 4, isCardOrDeck)
-   if #items > 0 then
-      for i, v in ipairs(items) do
-         if v.tag == 'Deck' then
-            v.takeObject({index = index, position = position, rotation = {0,180,faceUpRotation}})
-            return
-         end
-      end
-      items[1].setPositionSmooth(position, false, false)
-      items[1].setRotationSmooth({0,rotation.y,faceUpRotation}, false, false)
-      return
-   end
-end
-
-function discardEncounterGreen(params)
-   local position = params[1]
-   local rotation = params[2]
-   local isFaceUp = params[3]
-   local faceUpRotation
-   if (isFaceUp) then
-      faceUpRotation = 0
-   else
-      faceUpRotation = 0
-   end
-   local items = findInRadiusBy(ENCOUNTER_GREEN_POS, 4, isCardOrDeck)
-   if #items > 0 then
-      for i, v in ipairs(items) do
-         if v.tag == 'Deck' then
-            v.takeObject({index = index, position = position, rotation = {0,180,faceUpRotation}})
-            return
-         end
-      end
-      items[1].setPositionSmooth(position, false, false)
-      items[1].setRotationSmooth({0,rotation.y,faceUpRotation}, false, false)
-      return
-   end
-end
-
-function discardEncounterYellow(params)
-   local position = params[1]
-   local rotation = params[2]
-   local isFaceUp = params[3]
-   local faceUpRotation
-   if (isFaceUp) then
-      faceUpRotation = 0
-   else
-      faceUpRotation = 0
-   end
-   local items = findInRadiusBy(ENCOUNTER_YELLOW_POS, 4, isCardOrDeck)
-   if #items > 0 then
-      for i, v in ipairs(items) do
-         if v.tag == 'Deck' then
-            v.takeObject({index = index, position = position, rotation = {0,180,faceUpRotation}})
-            return
-         end
-      end
-      items[1].setPositionSmooth(position, false, false)
-      items[1].setRotationSmooth({0,rotation.y,faceUpRotation}, false, false)
-      return
-   end
-end
-
-IS_RESHUFFLING = false
 function reshuffleEncounterDeck(position, rotation)
    local function move(deck)
       deck.setPositionSmooth(ENCOUNTER_DECK_SPAWN_POS, true, false)
@@ -414,32 +250,8 @@ function reshuffleEncounterDeck(position, rotation)
    end
 end
 
-
 function requestBoost()
    getObjectFromGUID('e3b2e1').call('createBoostButton')
-   --getObjectFromGUID('92fa7c').call('createBoostButton')
-end
-
-function removeBoostButton()
-   boostBag = getObjectFromGUID('e3b2e1')
-   --boostBag = getObjectFromGUID('92fa7c')
-   boostBag.clearButtons()
-end
-
-function round(params)
-   return tonumber(string.format("%." .. (params[2] or 0) .. "f", params[1]))
-end
-
-function roundposition(params)
-   return {round({params[1], 2}), round({params[2], 2}), round({params[3], 2})}
-end
-
-function isEqual(params)
-   if params[1][1] == params[2][1] and params[1][2] == params[2][2] and params[1][3] == params[2][3] then
-      return true
-   else
-      return false
-   end
 end
 
 function isFaceup(params)
@@ -461,4 +273,18 @@ function getHeroCount()
    end
 
    return playmatCount
+end
+
+function onPlayerAction(player, action, targets)
+   if action == Player.Action.Delete then
+      for _, target in ipairs(targets) do
+         if not target.getVar("preventDeletion") then
+            target.destroy()
+         end
+      end
+
+      return false
+   end
+
+   return true
 end

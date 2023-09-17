@@ -253,7 +253,7 @@
           "normalized": "cardpool"
         },
         {
-          "displayed": "Scenario-selector-tile",
+          "displayed": "scenario-selector-tile",
           "normalized": "scenario-selector-tile"
         }
       ]
