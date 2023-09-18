@@ -1,0 +1,158 @@
+modularSets["marauders"] = 
+{
+    name="Marauders",
+    modular=true,
+    cards = {
+        ["40070"] = 1,
+        ["40071"] = 1,
+        ["40072"] = 1,
+        ["40073"] = 1,
+        ["40074"] = 1,
+        ["40075"] = 1,
+        ["40076"] = 1
+    }
+}
+
+modularSets["militaryGrade"] = 
+{
+    name="Military Grade",
+    modular=true,
+    cards = {
+        ["40090"] = 1,
+        ["40091"] = 1,
+        ["40092"] = 2,
+        ["40093"] = 1
+    }
+}
+
+modularSets["mutantSlayers"] = 
+{
+    name="Mutant Slayers",
+    modular=true,
+    cards = {
+        ["40094"] = 1,
+        ["40095"] = 1,
+        ["40096"] = 1,
+        ["40097"] = 1,
+        ["40098"] = 1,
+        ["40099"] = 1,
+        ["40100"] = 1,
+        ["40101"] = 1,
+        ["40102"] = 2
+    }
+}
+
+modularSets["onTheRun"] = 
+{
+    name="On the Run",
+    modular=true,
+    cards = {
+        ["40103"] = 1,
+        ["40104"] = 1,
+        ["40105"] = 1,
+        ["40106"] = 2,
+        ["40107"] = 1,
+        ["40108"] = 1,
+        ["40109"] = 1,
+        ["40110"] = 1,
+        ["40111"] = 2
+    }
+}
+
+modularSets["nastyBoys"] = 
+{
+    name="Nasty Boys",
+    modular=true,
+    cards = {
+        ["40112"] = 1,
+        ["40113"] = 1,
+        ["40114"] = 1,
+        ["40115"] = 1,
+        ["40116"] = 1,
+        ["40117"] = 1
+    }
+}
+
+modularSets["hopeSummers"] = 
+{
+    name="Hope Summers",
+    modular=true,
+    cards = {
+        ["40130"] = 1,
+        ["40131"] = 1
+    }
+}
+
+modularSets["blackTomCassidy"] = 
+{
+    name="Black Tom Cassidy",
+    modular=true,
+    cards = {
+        ["40132"] = 1,
+        ["40133"] = 4,
+        ["40134"] = 1,
+        ["40135"] = 1
+    }
+}
+
+modularSets["flight"] = 
+{
+    name="Flight",
+    modular=true,
+    cards = {
+        ["40151"] = 1,
+        ["40152"] = 1,
+        ["40153"] = 1,
+        ["40154"] = 2
+    }
+}
+
+modularSets["superStrength"] = 
+{
+    name="Super Strength",
+    modular=true,
+    cards = {
+        ["40155"] = 1,
+        ["40156"] = 1,
+        ["40157"] = 1,
+        ["40158"] = 2
+    }
+}
+
+modularSets["telepathy"] = 
+{
+    name="Telepathy",
+    modular=true,
+    cards = {
+        ["40159"] = 1,
+        ["40160"] = 1,
+        ["40161"] = 1,
+        ["40162"] = 2
+    }
+}
+
+modularSets["extremeMeasures"] = 
+{
+    name="Extreme Measures",
+    modular=true,
+    cards = {
+        ["40180"] = 1,
+        ["40181"] = 1,
+        ["40182"] = 1,
+        ["40183"] = 1,
+        ["40184"] = 1
+    }
+}
+
+modularSets["mutantInsurrection"] = 
+{
+    name="Mutant Insurrection",
+    modular=true,
+    cards = {
+        ["40185"] = 1,
+        ["40186"] = 1,
+        ["40187"] = 1,
+        ["40188"] = 1,
+        ["40189"] = 1
+    }
+}

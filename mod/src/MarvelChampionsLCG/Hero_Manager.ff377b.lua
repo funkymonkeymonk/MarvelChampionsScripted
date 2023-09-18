@@ -1,3 +1,5 @@
+preventDeletion = true
+
 local offset = {
  healthCounter = Global.getTable("PLAYMAT_OFFSET_HEALTH_COUNTER"),
  identity = Global.getTable("PLAYMAT_OFFSET_IDENTITY"),
@@ -550,108 +552,121 @@ local columnGap = 5
 local rows = 12
 
 function layOutHeroes()
-  clearHeroes()
-  layOutHeroTiles()
+  local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
+
+  layoutManager.call("layOutSelectorTiles", {
+      origin = originPosition,
+      direction = "vertical",
+      maxRowsOrColumns = rows,
+      columnGap = columnGap,
+      rowGap = rowGap,
+      items = heroes,
+      itemType = "hero"
+  })  
+  -- clearHeroes()
+  -- layOutHeroTiles()
 end
 
 function deleteHeroes()
-  clearHeroes()
+  local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
+  layoutManager.call("clearSelectorTiles", {itemType = "hero"})
+  --clearHeroes()
 end
 
-function clearHeroes()
-  local allObjects = getAllObjects()
+-- function clearHeroes()
+--   local allObjects = getAllObjects()
 
-  for k,v in pairs(allObjects) do
-    if(v.hasTag("hero-selector-tile")) then
-      v.destruct()
-    end
-  end   
-end
+--   for k,v in pairs(allObjects) do
+--     if(v.hasTag("hero-selector-tile")) then
+--       v.destruct()
+--     end
+--   end   
+-- end
 
-function layOutHeroTiles()
- local baseTile = getObjectFromGUID(Global.getVar("GUID_SELECTOR_TILE"))
- local heroList = getSortedListOfHeroes()
+-- function layOutHeroTiles()
+--  local baseTile = getObjectFromGUID(Global.getVar("GUID_SELECTOR_TILE"))
+--  local heroList = getSortedListOfHeroes()
 
- local row = 1
- local column = 1
- local orderedList = {}
+--  local row = 1
+--  local column = 1
+--  local orderedList = {}
 
- for _, v in ipairs(heroList) do
-  local hero = v.hero
-  local heroKey = v.heroKey
-  local position = getTilePosition(column, row)
+--  for _, v in ipairs(heroList) do
+--   local hero = v.hero
+--   local heroKey = v.heroKey
+--   local position = getTilePosition(column, row)
 
-  tile = baseTile.clone({
-   position = position,
-   rotation = {0,180,0},
-   scale = scale.heroSelector})
+--   tile = baseTile.clone({
+--    position = position,
+--    rotation = {0,180,0},
+--    scale = scale.heroSelector})
 
-  tile.setName(hero.name)
-  tile.setDescription("")
-  tile.setLock(true)
-  tile.setPosition(position)
-  tile.addTag("hero-selector-tile")
-  tile.setCustomObject({image = hero.counterImageUrl})
-  reloadedTile = tile.reload()
+--   tile.setName(hero.name)
+--   tile.setDescription("")
+--   tile.setLock(true)
+--   tile.setPosition(position)
+--   tile.addTag("hero-selector-tile")
+--   tile.setCustomObject({image = hero.counterImageUrl})
+--   reloadedTile = tile.reload()
  
-  setTileFunctions(reloadedTile, heroKey)
-  createTileButtons(reloadedTile) 
+--   setTileFunctions(reloadedTile, heroKey)
+--   createTileButtons(reloadedTile) 
 
-  row = row + 1
-  if row > rows then
-    row = 1
-    column = column + 1
-  end
- end
-end
+--   row = row + 1
+--   if row > rows then
+--     row = 1
+--     column = column + 1
+--   end
+--  end
+-- end
 
-function getSortedListOfHeroes()
-  local heroList = {}
+-- function getSortedListOfHeroes()
+--   local heroList = {}
 
-  for k, v in pairs(heroes) do
-   table.insert (heroList, {heroKey = k, hero = v})
-  end
+--   for k, v in pairs(heroes) do
+--    table.insert (heroList, {heroKey = k, hero = v})
+--   end
 
-  local compareHeroNames = function(a,b)
-   return a.hero.name < b.hero.name
-  end
+--   local compareHeroNames = function(a,b)
+--    return a.hero.name < b.hero.name
+--   end
 
-  return table.sort(heroList, compareHeroNames)
-end
+--   return table.sort(heroList, compareHeroNames)
+-- end
 
-function getTilePosition(column, row)
-  return {
-    originPosition.x + columnGap * (column - 1), 
-    originPosition.y, 
-    originPosition.z + rowGap * (row - 1)}
-end
+-- function getTilePosition(column, row)
+--   return {
+--     originPosition.x + columnGap * (column - 1), 
+--     originPosition.y, 
+--     originPosition.z + rowGap * (row - 1)}
+-- end
 
-function setTileFunctions(tile, heroKey)
-  local tileScript = [[
-    function placeHeroWithStarterDeck(obj, player_color)
-      local heroManager = getObjectFromGUID(Global.getVar("HERO_MANAGER_GUID"))
-      heroManager.call("placeHeroWithStarterDeck", {heroKey = "]]..heroKey..[[", playerColor = player_color})
-    end
-    function placeHeroWithHeroDeck(obj, player_color)
-      local heroManager = getObjectFromGUID(Global.getVar("HERO_MANAGER_GUID"))
-      heroManager.call("placeHeroWithHeroDeck", {heroKey = "]]..heroKey..[[", playerColor = player_color})
-    end  
-  ]]
-  tile.setLuaScript(tileScript)
-end
+-- function setTileFunctions(tile, heroKey)
+--   local tileScript = [[
+--     function placeHeroWithStarterDeck(obj, player_color)
+--       local heroManager = getObjectFromGUID(Global.getVar("HERO_MANAGER_GUID"))
+--       heroManager.call("placeHeroWithStarterDeck", {heroKey = "]]..heroKey..[[", playerColor = player_color})
+--     end
+--     function placeHeroWithHeroDeck(obj, player_color)
+--       local heroManager = getObjectFromGUID(Global.getVar("HERO_MANAGER_GUID"))
+--       heroManager.call("placeHeroWithHeroDeck", {heroKey = "]]..heroKey..[[", playerColor = player_color})
+--     end  
+--   ]]
+--   tile.setLuaScript(tileScript)
+-- end
 
-function createTileButtons(tile)
-  tile.createButton({
-    label = "S|", click_function = "placeHeroWithStarterDeck", function_owner = tile,
-    position = {-1,0.2,-0.12}, rotation = {0,0,0}, height = 560, width = 550,
-    font_size = 600, color = {1,1,1}, font_color = {0,0,0}, tooltip = "Starter"
-  })
-  tile.createButton({
-    label = "C", click_function = "placeHeroWithHeroDeck", function_owner = tile,
-    position = {-0.24,0.2,-0.12}, rotation = {0,0,0}, height = 560, width = 550, 
-    font_size = 600, color = {1,1,1}, font_color = {0,0,0}, tooltip = "Constructed"
-  })
-end
+-- function createTileButtons(tile)
+--   tile.createButton({
+--     label = "S|", click_function = "placeHeroWithStarterDeck", function_owner = tile,
+--     position = {-1,0.2,-0.12}, rotation = {0,0,0}, height = 560, width = 550,
+--     font_size = 600, color = {1,1,1}, font_color = {0,0,0}, tooltip = "Starter"
+--   })
+--   tile.createButton({
+--     label = "C", click_function = "placeHeroWithHeroDeck", function_owner = tile,
+--     position = {-0.24,0.2,-0.12}, rotation = {0,0,0}, height = 560, width = 550, 
+--     font_size = 600, color = {1,1,1}, font_color = {0,0,0}, tooltip = "Constructed"
+--   })
+-- end
 
 
 

@@ -1,3 +1,5 @@
+preventDeletion = true
+
 local defaults = {
   villainHpCounter = {
     position = Global.getTable("VILLAIN_HEALTH_COUNTER_POSITION"),

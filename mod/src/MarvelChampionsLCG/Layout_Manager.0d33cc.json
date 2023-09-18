@@ -13,8 +13,8 @@
       "scaleY": 1.33,
       "scaleZ": 1.33
     },
-    "Nickname": "Time Stone",
-    "Description": "Thumb",
+    "Nickname": "Layout Manager",
+    "Description": "",
     "GMNotes": "",
     "AltLookAngle": {
       "x": 0,
@@ -22,7 +22,7 @@
       "z": 0
     },
     "ColorDiffuse": {
-      "r": 0.227913976,
+      "r": 0.227913916,
       "g": 0.658385932,
       "b": 0.011552
     },
@@ -53,7 +53,7 @@
       "TypeIndex": 1,
       "CastShadows": true
     },
-    "LuaScript": "",
+    "LuaScript": "#include ./Layout_Manager.0d33cc.lua",
     "LuaScriptState": "",
     "XmlUI": ""
   },
