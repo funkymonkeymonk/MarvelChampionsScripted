@@ -1,7 +1,7 @@
 scenarios["taskmaster"] =
 {
     name="Taskmaster",
-    selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150144125/DE27C71D45C02DF05875C07D98ED6D04C0E09707/",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150144125/DE27C71D45C02DF05875C07D98ED6D04C0E09707/",
     villains={
         taskmaster={
             name="Taskmaster",

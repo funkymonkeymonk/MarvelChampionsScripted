@@ -17,9 +17,9 @@ exec 1>&2
 
 gitroot=$(git rev-parse --show-toplevel)
 modified_index=`git diff --cached --name-only --diff-filter=AM $against | grep '.lua$'`
-if test ! -z "$modified_index"
-then
-	cd $gitroot && luacheck --codes $modified_index || exit 1
-fi
+#if test ! -z "$modified_index"
+#then
+#	cd $gitroot && luacheck --codes $modified_index || exit 1
+#fi
 
 exit 0

@@ -1,7 +1,7 @@
 scenarios["crossbones"] =
 {
     name="Crossbones",
-    selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1833526625011331024/2436BF66FF5980186D51FFDBA4D6E4DA16CBA24C/",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1833526625011331024/2436BF66FF5980186D51FFDBA4D6E4DA16CBA24C/",
     villains={
         crossbones={
             name="Crossbones",

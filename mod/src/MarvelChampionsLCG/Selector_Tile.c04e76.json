@@ -52,7 +52,7 @@
         "Stretch": true
       }
     },
-    "LuaScript": "",
+    "LuaScript": "#include ./Selector_Tile.c04e76.lua",
     "LuaScriptState": "#include ./Selector_Tile.c04e76.state.json",
     "XmlUI": ""
   },

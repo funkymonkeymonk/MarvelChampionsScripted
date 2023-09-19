@@ -1,7 +1,7 @@
 scenarios["sandman"] =
 {
     name="Sandman",
-    selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015304068/2C53497A93B4E4B559A8AAA8DDC9B09FBB89DDDC/",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015304068/2C53497A93B4E4B559A8AAA8DDC9B09FBB89DDDC/",
     villains={
         sandman={
             name="Sandman",

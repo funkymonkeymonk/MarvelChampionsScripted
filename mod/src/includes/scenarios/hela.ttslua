@@ -1,7 +1,7 @@
     scenarios["hela"] =
 {
     name="Hela",
-    selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150128726/5561A2846A40991CD9F774C0CA75572DC3A7C096/",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150128726/5561A2846A40991CD9F774C0CA75572DC3A7C096/",
     villains={
         hela={
             name="Hela",

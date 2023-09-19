@@ -1,7 +1,7 @@
 scenarios["loki"] =
 {
     name="Loki",
-    selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150132430/6C8FCFC49383857A4A92407CE13656C5DE148F37/",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150132430/6C8FCFC49383857A4A92407CE13656C5DE148F37/",
     villains={
         loki={
             name="Loki",

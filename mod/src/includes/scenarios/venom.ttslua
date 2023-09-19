@@ -1,7 +1,7 @@
 scenarios["venom"] =
 {
     name="Venom",
-    selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015321996/340B2A0AD541B66D6F2184D8E810943AC73B7553/",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015321996/340B2A0AD541B66D6F2184D8E810943AC73B7553/",
     villains={
         venom={
             name="Venom",

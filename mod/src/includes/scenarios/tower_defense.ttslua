@@ -1,7 +1,7 @@
 scenarios["towerDefense"] =
 {
     name="Tower Defense",
-    selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150121236/51DE813B79BDB1100212F0F05F303100627912AC/",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150121236/51DE813B79BDB1100212F0F05F303100627912AC/",
     villains={
         proximaMidnight={
             name="Proxima Midnight",

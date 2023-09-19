@@ -1,7 +1,7 @@
 scenarios["absorbingMan"] =
 {
     name="Absorbing Man",
-    selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1833525541771241261/A31710FDD358F30518B36A6113BE984D88FA6D1A/",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1833525541771241261/A31710FDD358F30518B36A6113BE984D88FA6D1A/",
     villains={
         absorbingMan={
             name="Absorbing Man",

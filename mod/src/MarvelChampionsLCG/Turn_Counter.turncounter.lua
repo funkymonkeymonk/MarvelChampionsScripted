@@ -1,3 +1,5 @@
+preventDeletion = true
+
 CONFIG = {
     MIN_VALUE = -99,
     MAX_VALUE = 999,
@@ -121,8 +123,3 @@ function setValue(params)
     updateVal()
     updateSave()
 end
-
-preventDeletion = true
--- function preventDeletion()
---     return true
--- end
