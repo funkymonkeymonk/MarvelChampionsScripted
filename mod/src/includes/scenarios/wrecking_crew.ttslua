@@ -1,7 +1,7 @@
 scenarios["wreckingCrew"] =
 {
     name="The Wrecking Crew",
-    selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150148690/BBFD396544E7663BE7F363242AA077FAE4D5FA53/",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150148690/BBFD396544E7663BE7F363242AA077FAE4D5FA53/",
     blackHole={
         position={48.58, 1.13, 33.84}
     },

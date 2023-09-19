@@ -1,7 +1,7 @@
 scenarios["badoon"] =
 {
     name="Brotherhood of Badoon",
-    selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1833525990616300296/C9276570D20792F346FDE1CC56A8C6AF0DF576F3/",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1833525990616300296/C9276570D20792F346FDE1CC56A8C6AF0DF576F3/",
     villains={
         drang={
             name="Drang",

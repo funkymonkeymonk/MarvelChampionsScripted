@@ -1,7 +1,7 @@
 scenarios["redSkull"] =
 {
     name="Red Skull",
-    selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150138001/6A9EC283F45343AF8C06D9001FF6DA4DC11E99E3/",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150138001/6A9EC283F45343AF8C06D9001FF6DA4DC11E99E3/",
     villains={
         redSkull={
             name="Red Skull",

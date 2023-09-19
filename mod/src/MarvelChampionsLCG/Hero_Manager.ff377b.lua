@@ -59,7 +59,7 @@ function placeHero(heroKey, playerColor, deckType)
   
  placeHealthCounter(
   playmatPosition,
-  hero.counterImageUrl,
+  hero.tileImageUrl,
   hero.hitPoints
  )
 
@@ -240,7 +240,6 @@ function placeIdentity(hero, playmatPosition)
  local position = getOffsetPosition(playmatPosition, offset.identity)
  local scale = cardScale.identity
  if(hero.identityAssetGuid ~= nil) then
-  log(hero.identityAssetGuid)
   spawnAsset({
    guid = hero.identityAssetGuid,
    position = position,
@@ -407,12 +406,24 @@ function placeObligation(hero)
  getCardByID(hero.obligationCardId, encounterDeckPosition, {scale = cardScale.encounter, flipped = true})
 end
 
-function getOffsetPosition(origPosition, offset)
- return {origPosition[1] + offset[1], origPosition[2] + offset[2], origPosition[3] + offset[3]}
+function getHeroesByTeam(team)
+  local heroList = {}
+
+  for key, hero in pairs(heroes) do
+    teams = hero.teams or ""
+    if(string.match(teams, team)) then
+      heroList[key] = hero
+    end
+  end
+
+  return heroList
 end
 
-
 --Utility functions - move to global?
+
+function getOffsetPosition(origPosition, offset)
+  return {origPosition[1] + offset[1], origPosition[2] + offset[2], origPosition[3] + offset[3]}
+end
 
 function spawnAsset(params)
  params.caller = self
@@ -539,14 +550,16 @@ end
 function createContextMenu()
   self.addContextMenuItem("Lay Out Heroes", layOutHeroes)
   self.addContextMenuItem("Delete Heroes", deleteHeroes)
+  self.addContextMenuItem("Lay Out Avengers", layOutAvengers)
+  self.addContextMenuItem("Lay Out Mutants", layOutMutants)
+  self.addContextMenuItem("Lay Out Guardians", layOutGuardians)
+  self.addContextMenuItem("Lay Out Web Warriors", layOutSpiders)
 end
 
 
---Layout functions - move to central layout manager
-
 local originPosition = {x = 58.25, y = 0.50, z = 33.75}
 
-local rowGap = -2.5
+local rowGap = 2.5
 local columnGap = 5
 
 local rows = 12
@@ -563,112 +576,44 @@ function layOutHeroes()
       items = heroes,
       itemType = "hero"
   })  
-  -- clearHeroes()
-  -- layOutHeroTiles()
+end
+
+function layOutHeroesByTeam(params)
+  local heroList = getHeroesByTeam(params.team)
+  local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
+
+  layoutManager.call("layOutSelectorTiles", {
+      center = {0, 1.0, 0},
+      direction = "horizontal",
+      maxRowsOrColumns = 6,
+      columnGap = 6.5,
+      rowGap = 3.5,
+      selectorScale = {1.33, 1, 1.33},
+      items = heroList,
+      itemType = "hero"
+  }) 
+end
+
+function layOutAvengers()
+  layOutHeroesByTeam({team = "avengers"})
+end
+  
+function layOutMutants()
+  layOutHeroesByTeam({team = "mutants"})
+end
+
+function layOutGuardians()
+  layOutHeroesByTeam({team = "guardians"})
+end
+
+function layOutSpiders()
+  layOutHeroesByTeam({team = "spiders"})
 end
 
 function deleteHeroes()
   local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
   layoutManager.call("clearSelectorTiles", {itemType = "hero"})
-  --clearHeroes()
 end
-
--- function clearHeroes()
---   local allObjects = getAllObjects()
-
---   for k,v in pairs(allObjects) do
---     if(v.hasTag("hero-selector-tile")) then
---       v.destruct()
---     end
---   end   
--- end
-
--- function layOutHeroTiles()
---  local baseTile = getObjectFromGUID(Global.getVar("GUID_SELECTOR_TILE"))
---  local heroList = getSortedListOfHeroes()
-
---  local row = 1
---  local column = 1
---  local orderedList = {}
-
---  for _, v in ipairs(heroList) do
---   local hero = v.hero
---   local heroKey = v.heroKey
---   local position = getTilePosition(column, row)
-
---   tile = baseTile.clone({
---    position = position,
---    rotation = {0,180,0},
---    scale = scale.heroSelector})
-
---   tile.setName(hero.name)
---   tile.setDescription("")
---   tile.setLock(true)
---   tile.setPosition(position)
---   tile.addTag("hero-selector-tile")
---   tile.setCustomObject({image = hero.counterImageUrl})
---   reloadedTile = tile.reload()
- 
---   setTileFunctions(reloadedTile, heroKey)
---   createTileButtons(reloadedTile) 
-
---   row = row + 1
---   if row > rows then
---     row = 1
---     column = column + 1
---   end
---  end
--- end
-
--- function getSortedListOfHeroes()
---   local heroList = {}
-
---   for k, v in pairs(heroes) do
---    table.insert (heroList, {heroKey = k, hero = v})
---   end
-
---   local compareHeroNames = function(a,b)
---    return a.hero.name < b.hero.name
---   end
-
---   return table.sort(heroList, compareHeroNames)
--- end
-
--- function getTilePosition(column, row)
---   return {
---     originPosition.x + columnGap * (column - 1), 
---     originPosition.y, 
---     originPosition.z + rowGap * (row - 1)}
--- end
-
--- function setTileFunctions(tile, heroKey)
---   local tileScript = [[
---     function placeHeroWithStarterDeck(obj, player_color)
---       local heroManager = getObjectFromGUID(Global.getVar("HERO_MANAGER_GUID"))
---       heroManager.call("placeHeroWithStarterDeck", {heroKey = "]]..heroKey..[[", playerColor = player_color})
---     end
---     function placeHeroWithHeroDeck(obj, player_color)
---       local heroManager = getObjectFromGUID(Global.getVar("HERO_MANAGER_GUID"))
---       heroManager.call("placeHeroWithHeroDeck", {heroKey = "]]..heroKey..[[", playerColor = player_color})
---     end  
---   ]]
---   tile.setLuaScript(tileScript)
--- end
-
--- function createTileButtons(tile)
---   tile.createButton({
---     label = "S|", click_function = "placeHeroWithStarterDeck", function_owner = tile,
---     position = {-1,0.2,-0.12}, rotation = {0,0,0}, height = 560, width = 550,
---     font_size = 600, color = {1,1,1}, font_color = {0,0,0}, tooltip = "Starter"
---   })
---   tile.createButton({
---     label = "C", click_function = "placeHeroWithHeroDeck", function_owner = tile,
---     position = {-0.24,0.2,-0.12}, rotation = {0,0,0}, height = 560, width = 550, 
---     font_size = 600, color = {1,1,1}, font_color = {0,0,0}, tooltip = "Constructed"
---   })
--- end
-
-
 
 require('!/Cardplacer')
 

@@ -1,7 +1,7 @@
 scenarios["ultron"] =
 {
     name="Ultron",
-    selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150147610/D43024CA72F4372B28AF86672D67286730C6CE72/",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150147610/D43024CA72F4372B28AF86672D67286730C6CE72/",
     villains={
         ultron={
             name="Ultron",

@@ -1,8 +1,8 @@
 {
   "Save": {
     "SaveName": "MarvelChampionsLCG",
-    "EpochTime": 1694997971,
-    "Date": "9/17/2023 6:46:11 PM",
+    "EpochTime": 1695084531,
+    "Date": "9/18/2023 6:48:51 PM",
     "VersionNumber": "v13.2.2",
     "GameMode": "MarvelChampionsLCG",
     "GameType": "Game",
@@ -255,6 +255,10 @@
         {
           "displayed": "scenario-selector-tile",
           "normalized": "scenario-selector-tile"
+        },
+        {
+          "displayed": "selector-tile",
+          "normalized": "selector-tile"
         }
       ]
     },

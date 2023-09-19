@@ -1,6 +1,6 @@
-local itemType = ""
-local itemKey = ""
-local itemName = ""
+itemType = ""
+itemKey = ""
+itemName = ""
 
 function onload(saved_data)
     if(saved_data ~= "") then
@@ -38,7 +38,7 @@ function setUpTile(params)
     self.setDescription("")
 
     if(imageUrl ~= nil) then
-        self.UI.setCustomObject({
+        self.setCustomObject({
             image = imageUrl
         })
     end
@@ -89,6 +89,8 @@ function createModularSetButton()
         position={0,0.2,0}, rotation={0,0,0}, height=1000, width=2500,
         font_size=fontSize, color={0,0,0}, font_color={1,1,1}
     })
+
+    self.setName("")
 end
 
 function placeHeroWithStarterDeck(obj, player_color)

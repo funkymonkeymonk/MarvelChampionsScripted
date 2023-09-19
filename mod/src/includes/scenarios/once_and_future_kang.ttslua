@@ -1,7 +1,7 @@
 scenarios["kang"] =
 {
     name="The Once and Future Kang",
-    selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
     villains={
         kang={
             name="Kang",

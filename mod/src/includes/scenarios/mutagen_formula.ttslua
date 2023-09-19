@@ -1,7 +1,7 @@
 scenarios["mutagenFormula"] =
 {
     name="Mutagen Formula",
-    selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150126338/C91FC9CB4D7BF94C206CE46B1982DF0CE750085D/",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150126338/C91FC9CB4D7BF94C206CE46B1982DF0CE750085D/",
     villains={
         greenGoblin={
             name="Green Goblin",

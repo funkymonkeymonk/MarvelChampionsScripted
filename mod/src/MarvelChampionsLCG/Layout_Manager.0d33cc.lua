@@ -18,7 +18,6 @@ function layOutSelectorTiles(params)
     local selectorRotation = params.selectorRotation or defaultSelectorRotation
     local items = params.items
     local itemType = params.itemType
-
     local sortedList = getSortedListOfItems(items)
     local itemCount = #sortedList
 
@@ -31,7 +30,7 @@ function layOutSelectorTiles(params)
         origin = calculateOrigin(center, direction, maxRowsOrColumns, columnGap, rowGap, itemCount)
     end
 
-    clearSelectorTiles(itemType)
+    clearSelectorTiles({itemType = itemType})
 
     local baseTile = getObjectFromGUID(Global.getVar("GUID_SELECTOR_TILE"))
     local currentRow = 1
@@ -57,7 +56,7 @@ function layOutSelectorTiles(params)
                     itemType = itemType,
                     itemKey = key,
                     itemName = item.name,
-                    imageUrl = item.imageUrl
+                    imageUrl = item.tileImageUrl
                 })
          end,
             1
@@ -86,9 +85,9 @@ function calculateOrigin(center, direction, maxRowsOrColumns, columnGap, rowGap,
     local gridDimensions = calculateGridDimenstions(direction, maxRowsOrColumns, columnGap, rowGap, itemCount)
 
     return {
-        center[1] - gridDimensions.width / 2,
-        center[2],
-        center[3] - gridDimensions.height / 2
+        x = center[1] - gridDimensions.width / 2,
+        y = center[2],
+        z = center[3] + gridDimensions.height / 2
     }
 end
 
@@ -107,7 +106,7 @@ function calculateGridDimenstions(direction, maxRowsOrColumns, columnGap, rowGap
     end
 
     local width = (columns - 1) * columnGap
-    local width = (rows - 1) * rowGap
+    local height = (rows - 1) * rowGap
 
     return {width = width, height = height}
 end
@@ -145,8 +144,30 @@ function stripArticles(orig)
 end
 
 function getCoordinates(origin, column, row, columnGap, rowGap)
+    log(origin)
+    if(origin == nil) then
+        log("Origin is nil")
+        return
+    end
+    if(column == nil) then
+        log("Column is nil")
+        return
+    end
+    if(row == nil) then
+        log("Row is nil")
+        return
+    end
+    if(columnGap == nil) then
+        log("Column gap is nil")
+        return
+    end
+    if(rowGap == nil) then
+        log("Row gap is nil")
+        return
+    end
+
     local x = origin.x + columnGap * (column - 1)
-    local z = origin.z + rowGap * (row - 1)
+    local z = origin.z - rowGap * (row - 1)
 
     return {x, origin.y, z}
 end

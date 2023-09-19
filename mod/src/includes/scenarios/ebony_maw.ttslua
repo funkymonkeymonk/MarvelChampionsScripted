@@ -1,7 +1,7 @@
 scenarios["ebonyMaw"] =
 {
     name="Ebony Maw",
-    selectorImageUrl="http://cloud-3.steamusercontent.com/ugc/1833526625011328103/BF2ACCCB17F3483D19BD641EAC011EFD20ECF9B3/",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1833526625011328103/BF2ACCCB17F3483D19BD641EAC011EFD20ECF9B3/",
     villains={
         ebonyMaw={
             name="Ebony Maw",

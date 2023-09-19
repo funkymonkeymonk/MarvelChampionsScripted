@@ -414,159 +414,29 @@ end
 
 local originPosition = {x = 83.25, y = 0.50, z = 33.75}
 
-local rowGap = -2.5
+local rowGap = 2.5
 local columnGap = 5
 
 local rows = 12
 
 function layOutScenarios()
-  clearScenarios()
-  layOutScenarioTiles()
+  local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
+
+  layoutManager.call("layOutSelectorTiles", {
+      origin = originPosition,
+      direction = "vertical",
+      maxRowsOrColumns = rows,
+      columnGap = columnGap,
+      rowGap = rowGap,
+      items = scenarios,
+      itemType = "scenario"
+  }) 
 end
 
 function deleteScenarios()
-  clearScenarios()
+  local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
+  layoutManager.call("clearSelectorTiles", {itemType = "scenario"})
 end
-
-function clearScenarios()
-  local allObjects = getAllObjects()
-
-  for k,v in pairs(allObjects) do
-    if(v.hasTag("scenario-selector-tile")) then
-      v.destruct()
-    end
-  end   
-end
-
-function layOutScenarioTiles()
-  baseTile = getObjectFromGUID(Global.getVar("GUID_SELECTOR_TILE"))
-  local scenarioList = getSortedListOfScenarios()
-
-  for k, v in ipairs(scenarioList) do
-    local position = v.tilePosition
-
-    tile = baseTile.clone({
-      position = position,
-      rotation = {0,180,0},
-      scale = {1.13, 1, 1.13}})
-
-    local scenarioDetails = scenarios[v.scenarioKey]
-    local imageUrl = scenarioDetails["selectorImageUrl"]
-  
-    tile.setName(scenarioDetails.name)
-    tile.setLock(true)
-    tile.setPosition(position)
-    tile.addTag("scenario-selector-tile")
-    tile.setCustomObject({image = imageUrl})
-    reloadedTile = tile.reload()
-  
-    setTileFunctions(reloadedTile, v.scenarioKey)
-    createTileButtons(reloadedTile)
-  end
-end
-
-function getSortedListOfScenarios()
-  local scenarioList = {}
-
-  local index = 1
-
-  --This may be a hack; I couldn't figure out how to get numeric keys
-  for k, v in pairs(scenarios) do
-    scenarioList[index] = {k, v.name}
-    index = index + 1
-  end
-
-  local sortedList = table.sort(scenarioList, compareScenarioNames)
-
-  local row = 1
-  local column = 1
-  local orderedList = {}
-
-  for i, v in ipairs(sortedList) do
-    orderedList[i] = {
-      scenarioKey = v[1],
-      tilePosition = getTilePosition(column, row)
-    }
-
-    row = row + 1
-    if row > rows then
-      row = 1
-      column = column + 1
-    end
-  end
-
-  return orderedList
-end
-
-function compareScenarioNames(a,b)
-  return stripArticles(a[2]) < stripArticles(b[2]) 
-end
-
-function stripArticles(orig)
-  local lower = string.lower(orig)
-
-  if(string.sub(lower, 1, 4) == "the ") then
-    return string.sub(orig, 5, -1)
-  end
-
-  if(string.sub(lower, 1, 2) == "a ") then
-    return string.sub(orig, 3, -1)
-  end
-
-  if(string.sub(lower, 1, 3) == "an ") then
-    return string.sub(orig, 4, -1)
-  end
-
-  return orig
-end
-
-function getTilePosition(column, row)
-  return {
-    originPosition.x + columnGap * (column - 1), 
-    originPosition.y, 
-    originPosition.z + rowGap * (row - 1)}
-end
-
-function setTileFunctions(tile, scenarioKey)
-  local tileScript = [[
-    function placeScenario(obj, player_color)
-      local scenarioPlacer = getObjectFromGUID(Global.getVar("SCENARIO_MANAGER_GUID"))
-      scenarioPlacer.call("placeUnscriptedScenario", {scenarioKey = "]]..scenarioKey..[["})
-    end
-  ]]
-
-  -- local tileScript = [[
-  --   function placeScenarioInStandardMode(obj, player_color)
-  --     local scenarioPlacer = getObjectFromGUID(Global.getVar("SCENARIO_MANAGER_GUID"))
-  --     scenarioPlacer.call("placeScenarioInStandardMode", {scenarioBagGuid = "]]..scenarioBagGuid..[["})
-  --   end
-  --   function placeScenarioInExpertMode(obj, player_color)
-  --     local scenarioPlacer = getObjectFromGUID(Global.getVar("SCENARIO_MANAGER_GUID"))
-  --     scenarioPlacer.call("placeScenarioInExpertMode", {scenarioBagGuid = "]]..scenarioBagGuid..[["})
-  --   end  
-  -- ]]
-  tile.setLuaScript(tileScript)
-end
-
-function createTileButtons(tile)
-  tile.createButton({
-    label = "GO", click_function = "placeScenario", function_owner = tile,
-    position = {0.85,0.2,-0.18}, rotation = {0,0,0}, height = 540, width = 875, 
-    font_size = 500, color = {1,1,1}, font_color = {0,0,0}, tooltip = "Set Up Scenario"
-  })
-
-  -- tile.createButton({
-  --   label = "S|", click_function = "placeScenarioInStandardMode", function_owner = tile,
-  --   position = {0.47,0.2,-0.15}, rotation = {0,0,0}, height = 540, width = 530,
-  --   font_size = 600, color = {1,1,1}, font_color = {0,0,0}, tooltip = "Standard Mode"
-  -- })
-  -- tile.createButton({
-  --   label = "E", click_function = "placeScenarioInExpertMode", function_owner = tile,
-  --   position = {1.17,0.2,-0.18}, rotation = {0,0,0}, height = 540, width = 530, 
-  --   font_size = 600, color = {1,1,1}, font_color = {0,0,0}, tooltip = "Expert Mode"
-  -- })
-end
-
 
 require('!/Cardplacer')
 
