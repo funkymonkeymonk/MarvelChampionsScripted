@@ -68,6 +68,7 @@ scenarios["mansionAttack"] =
         encounterDeck={
             name="Mansion Attack Encounter Deck",
             cards={
+                ["32130"]=1,
                 ["32131"]=3,
                 ["32132"]=2,
                 ["32133"]=2,
@@ -77,5 +78,9 @@ scenarios["mansionAttack"] =
                 ["32137"]=2
             }
         }
+    },
+    modularSets={
+        brotherhood="required",
+        mystique="recommended"
     }
 }

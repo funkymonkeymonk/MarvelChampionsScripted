@@ -50,5 +50,8 @@ scenarios["rhino"] =
                 ["01108"]=1
             }
         }
+    },
+    modularSets={
+        bombScare="recommended"
     }
 }

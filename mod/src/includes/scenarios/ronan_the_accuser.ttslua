@@ -73,5 +73,10 @@ scenarios["ronan"] =
                 ["16116"]=3
             }
         }
+    },
+    modularSets={
+        powerStone="required",
+        shipCommand="required",
+        kreeMilitants="recommended"
     }
 }

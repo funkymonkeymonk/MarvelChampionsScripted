@@ -30,7 +30,7 @@ scenarios["thanos"] =
                     startingThreat=0,
                     targetThreatPerPlayer=12
                 },
-                stage1={
+                stage2={
                     cardId="21115",
                     startingThreat=0,
                     targetThreatPerPlayer=12
@@ -85,5 +85,10 @@ scenarios["thanos"] =
                 ["21135"]=1
             }
         }
+    },
+    modularSets={
+        infinityGauntlet="required",
+        blackOrder="recommended",
+        childrenOfThanos="recommended"
     }
 }

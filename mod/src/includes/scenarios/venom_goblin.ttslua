@@ -80,6 +80,7 @@ scenarios["venomgoblin"] =
         encounterDeck={
             name="Sandman's Encounter Deck",
             cards={
+                ["27116"]=1,
                 ["27089"]=1,
                 ["27090"]=2,
                 ["27091"]=4,
@@ -87,5 +88,9 @@ scenarios["venomgoblin"] =
                 ["27093"]=2
             }
         }
+    },
+    modularSets={
+        symbioticStrength="required",
+        goblinGear="recommended"
     }
 }

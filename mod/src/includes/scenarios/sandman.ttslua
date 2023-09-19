@@ -62,5 +62,9 @@ scenarios["sandman"] =
                 ["27072"]=2
             }
         }
+    },
+    modularSets={
+        cityInChaos="required",
+        downToEarth="recommended"
     }
 }

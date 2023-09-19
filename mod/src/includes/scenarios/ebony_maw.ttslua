@@ -30,7 +30,7 @@ scenarios["ebonyMaw"] =
                     startingThreatPerPlayer=1,
                     targetThreatPerPlayer=6
                 },
-                stage1={
+                stage2={
                     cardId="21075",
                     startingThreatPerPlayer=1,
                     targetThreatPerPlayer=9
@@ -53,5 +53,9 @@ scenarios["ebonyMaw"] =
                 ["21084"]=2
             }
         }
+    },
+    modularSets={
+        armiesOfTitan="recommended",
+        blackOrder="recommended",
     }
 }

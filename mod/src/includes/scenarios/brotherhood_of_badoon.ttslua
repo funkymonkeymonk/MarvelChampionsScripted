@@ -62,6 +62,7 @@ scenarios["badoon"] =
         encounterDeck={
             name="Drang's Encounter Deck",
             cards={
+                ["16063"]=1,
                 ["16064"]=1,
                 ["16065"]=2,
                 ["16066"]=1,
@@ -70,5 +71,9 @@ scenarios["badoon"] =
                 ["16069"]=1
             }
         }
+    },
+    modularSets={
+        shipCommand="required",
+        bandOfBadoon="recommended",
     }
 }

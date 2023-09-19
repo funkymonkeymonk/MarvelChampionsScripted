@@ -30,7 +30,7 @@ scenarios["nebula"] =
                     startingThreatPerPlayer=2,
                     targetThreatPerPlayer=6
                 },
-                stage1={
+                stage2={
                     cardId="16092",
                     startingThreatPerPlayer=3,
                     targetThreatPerPlayer=9
@@ -67,6 +67,7 @@ scenarios["nebula"] =
         encounterDeck={
             name="Nebula's Encounter Deck",
             cards={
+                ["16093"]=1,
                 ["16094"]=2,
                 ["16095"]=1,
                 ["16096"]=1,
@@ -78,5 +79,10 @@ scenarios["nebula"] =
                 ["16102"]=2
             }
         }
+    },
+    modularSets={
+        powerStone="required",
+        shipCommand="required",
+        spacePirates="recommended"
     }
 }

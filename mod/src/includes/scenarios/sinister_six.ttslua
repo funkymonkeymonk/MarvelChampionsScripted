@@ -141,5 +141,8 @@ scenarios["sinistersix"] =
                 ["27112"]=3
             }
         }
+    },
+    modularSets={
+        guerillaTactics="required"
     }
 }

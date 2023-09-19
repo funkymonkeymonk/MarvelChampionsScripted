@@ -70,5 +70,9 @@ scenarios["sabretooth"] =
                 ["32072"]=1
             }
         }
+    },
+    modularSets={
+        brotherhood="recommended",
+        mystique="recommended"
     }
 }

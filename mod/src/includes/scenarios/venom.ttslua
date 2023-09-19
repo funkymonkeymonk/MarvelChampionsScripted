@@ -60,5 +60,9 @@ scenarios["venom"] =
                 ["27083"]=2
             }
         }
+    },
+    modularSets={
+        symbioticStrength="required",
+        downToEarth="recommended"
     }
 }

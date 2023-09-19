@@ -66,5 +66,8 @@ scenarios["ultron"] =
                 ["01150"]=1
             }
         }
+    },
+    modularSets={
+        underAttack="recommended"
     }
 }

@@ -60,5 +60,8 @@ scenarios["absorbingMan"] =
                 ["04092"]=1
             }
         }
+    },
+    modularSets={
+        hydraPatrol="required"
     }
 }

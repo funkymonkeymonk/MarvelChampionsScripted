@@ -62,5 +62,9 @@ scenarios["taskmaster"] =
                 ["04108"]=1
             }
         }
+    },
+    modularSets={
+        hydraPatrol="required",
+        weaponMaster="recommended"
     }
 }
