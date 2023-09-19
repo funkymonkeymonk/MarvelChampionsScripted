@@ -49,5 +49,9 @@ scenarios["mysterio"] =
                 ["27093"]=2
             }
         }
+    },
+    modularSets={
+        personalNightmare="required",
+        whispersOfParanoia="recommended"
     }
 }

@@ -69,5 +69,8 @@ scenarios["zola"] =
                 ["04124"]=1,
             }
         }
+    },
+    modularSets={
+        underAttack="recommended"
     }
 }

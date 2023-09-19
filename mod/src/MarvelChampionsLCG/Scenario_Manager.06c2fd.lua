@@ -69,54 +69,57 @@ function placeScenarioInExpertMode(params)
 end
 
 function placeScenario(scenarioKey, mode)
-
   if not confirmNoScenarioIsPlaced() then return end
 
   local heroCount = getHeroCount()
-  
   local scenario = scenarios[scenarioKey];
+  local delay = 0
 
-  Wait.frames(
-    function()
-      for _, villain in pairs(scenario.villains) do
+  for _, villain in pairs(scenario.villains) do
+    Wait.frames(
+      function()
         placeVillainHpCounter(villain, heroCount)
         placeVillain(villain)
-      end
+      end,
+      delay
+    )
 
-      for _, deck in pairs(scenario.decks) do
-        placeDeck(deck)
-      end
+    delay = delay + 10
+  end
 
-      for _, scheme in pairs(scenario.schemes) do
-        placeScheme(scheme)
-      end
+  for _, deck in pairs(scenario.decks) do
+    placeDeck(deck)
+  end
 
-      placeBlackHole(scenario)
+  for _, scheme in pairs(scenario.schemes) do
+    placeScheme(scheme)
+  end
 
-      if(scenario.cards ~= nil) then
-        for _, card in pairs(scenario.cards) do
-          getCardByID(card.cardId, card.position, {scale = card.scale, name = card.name, flipped = card.flipped, landscape = card.landscape})
-        end
-      end
+  placeBlackHole(scenario)
 
-      if(scenario.counters ~= nil) then
-        for _, counter in pairs(scenario.counters) do
-          Wait.time(
-            function()
-              if(counter.type == "threat") then
-                placeThreatCounter(counter, nil, heroCount)
-              else
-                placeGeneralCounter(counter)
-              end
-            end,
-            1)
-          
-        end
-      end
+  placeModularSets(scenario)
 
-      --placeExtras(scenarioBag, scenarioDetails.extras)
-    end, 
-    1)
+  -- if(scenario.cards ~= nil) then
+  --   for _, card in pairs(scenario.cards) do
+  --     getCardByID(card.cardId, card.position, {scale = card.scale, name = card.name, flipped = card.flipped, landscape = card.landscape})
+  --   end
+  -- end
+
+  -- if(scenario.counters ~= nil) then
+  --   for _, counter in pairs(scenario.counters) do
+  --     Wait.time(
+  --       function()
+  --         if(counter.type == "threat") then
+  --           placeThreatCounter(counter, nil, heroCount)
+  --         else
+  --           placeGeneralCounter(counter)
+  --         end
+  --       end,
+  --       1)
+  --   end
+  -- end
+
+  --placeExtras(scenarioBag, scenarioDetails.extras)
 end
 
 function confirmNoScenarioIsPlaced()
@@ -163,7 +166,13 @@ function configureVillainHpCounter(params)
   counter.setDescription("")
   counter.setLock(params.lock)
   counter.setCustomObject({image = params.imageUrl})
-  counter.reload()
+
+  Wait.frames(
+    function()
+      counter.reload()
+    end,
+    10
+  )
 
   --counter.call("setValue", {value = hitPoints})
   --counter.call("createAdvanceButton", {villainKey = villain.name}) --TODO: make this more dynamic, use villainKey instead of name
@@ -352,6 +361,61 @@ function placeBlackHole(scenario)
   })
 end
 
+function placeModularSets(scenario)
+  if(scenario.modularSets == nil) then return end
+
+  local modularSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
+  local cards = {}
+  local addedSetCount = 0
+  local recommendedSetCount = 0
+  local addedSetList = ""
+  local recommendedSetList = ""
+  local cardCount = 0
+
+  for key, value in pairs(scenario.modularSets) do
+    local modularSet = modularSetManager.call("getModularSet", {modularSetKey = key})
+
+    if(value == "required") then
+      for cardId, count in pairs(modularSet.cards) do
+        cards[cardId] = count
+        cardCount = cardCount + count
+      end
+
+      addedSetCount = addedSetCount + 1
+      addedSetList = addedSetList .. modularSet.name .. ", "
+    else
+      recommendedSetCount = recommendedSetCount + 1
+      recommendedSetList = recommendedSetList .. modularSet.name .. ", "
+    end
+  end
+
+  --TODO: make these values dynamic
+  local deckPosition = defaults.encounterDeck.position
+  local deckRotation = defaults.encounterDeck.rotation
+  local deckScale = defaults.encounterDeck.scale
+
+  if(cardCount == 1) then
+    --TODO: place single card
+  elseif(cardCount > 1) then
+    createDeck({cards = cards, position = deckPosition, rotation = deckRotation, scale = deckScale})
+  end
+
+  local message = ""
+
+  if(addedSetCount > 0) then
+    local plural = addedSetCount > 1 and "s" or ""
+    message = "Added " .. addedSetCount .. " modular set" .. plural .. ": " .. addedSetList:sub(1, -3) .. "\n"
+  end
+
+  if(recommendedSetCount> 0) then
+    local plural = recommendedSetCount > 1 and "s" or ""
+    local modular = addedSetCount > 0 and " more " or " modular "
+    message = message .. "Add ".. recommendedSetCount .. modular .. "set" .. plural .. " (recommended: " .. recommendedSetList:sub(1, -3) .. ")."
+  end
+
+  broadcastToAll(message)
+end
+
 function configureBlackHole(params)
   local blackHole = params.spawnedObject
   blackHole.setPosition(params.position)
@@ -470,7 +534,7 @@ require('!/scenarios/mojo')
 require('!/scenarios/magneto')
 require('!/scenarios/mansion_attack')
 require('!/scenarios/master_mold')
-require('!/scenarios/operation_wideawake')
+require('!/scenarios/project_wideawake')
 require('!/scenarios/sabretooth')
 require('!/scenarios/hood')
 require('!/scenarios/sinister_six')

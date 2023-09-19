@@ -28,7 +28,7 @@ modularSets["galacticArtifacts"] =
     }
 }
 
-modularSets["kreeMilitant"] = 
+modularSets["kreeMilitants"] = 
 {
     name="Kree Militants",
     modular=true,

@@ -103,5 +103,8 @@ scenarios["kang"] =
                 ["11039"]=1
             }
         }
+    },
+    modularSets={
+        temporal="recommended"
     }
 }

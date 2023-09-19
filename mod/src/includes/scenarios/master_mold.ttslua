@@ -59,5 +59,9 @@ scenarios["masterMold"] =
                 ["32120"]=2
             }
         }
+    },
+    modularSets={
+        sentinels="required",
+        zeroTolerance="recommended"
     }
 }

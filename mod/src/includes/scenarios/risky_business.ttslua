@@ -57,6 +57,7 @@ scenarios["riskyBusiness"] =
         encounterDeck={
             name="Green Goblin's Encounter Deck",
             cards={
+                ["02006"]=1,
                 ["02007"]=3,
                 ["02008"]=4,
                 ["02009"]=1,
@@ -66,5 +67,8 @@ scenarios["riskyBusiness"] =
                 ["02013"]=2
             }
         }
+    },
+    modularSets={
+        goblinGimmicks="recommended"
     }
 }

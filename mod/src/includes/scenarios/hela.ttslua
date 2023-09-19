@@ -78,5 +78,9 @@
                 ["21145"]=1
             }
         }
+    },
+    modularSets={
+        legionsOfHel="recommended",
+        frostGiants="recommended"
     }
 }

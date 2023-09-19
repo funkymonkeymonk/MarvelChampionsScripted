@@ -74,6 +74,7 @@ scenarios["loki"] =
             position={22.75, 1.01, 29.75},
             scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
             cards={
+                ["21129"]=1,
                 ["21130"]=1,
                 ["21131"]=1,
                 ["21132"]=1,
@@ -82,5 +83,9 @@ scenarios["loki"] =
                 ["21135"]=1
             }
         }
+    },
+    modularSets={
+        enchantress="recommended",
+        frostGiants="recommended"
     }
 }

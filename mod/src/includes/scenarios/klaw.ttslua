@@ -68,5 +68,8 @@ scenarios["klaw"] =
                 ["01127"]=1
             }
         }
+    },
+    modularSets={
+        mastersOfEvil="recommended"
     }
 }

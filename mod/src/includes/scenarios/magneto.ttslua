@@ -68,6 +68,8 @@ scenarios["magneto"] =
         encounterDeck={
             name="Magneto's Encounter Deck",
             cards={
+                ["32144"]=1,
+                ["32145"]=1,
                 ["32146"]=4,
                 ["32147"]=1,
                 ["32148"]=1,
@@ -83,5 +85,8 @@ scenarios["magneto"] =
                 ["32158"]=1
             }
         }
+    },
+    modularSets={
+        acolytes="recommended"
     }
 }

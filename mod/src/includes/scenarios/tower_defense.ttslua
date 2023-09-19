@@ -113,5 +113,8 @@ scenarios["towerDefense"] =
                 ["21110"]=2
             }
         }
+    },
+    modularSets={
+        armiesOfTitan="recommended"
     }
 }

@@ -1,4 +1,4 @@
-scenarios["operationWideawake"] =
+scenarios["projectWideawake"] =
 {
     name="Project Wideawake",
     tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2035118913124026079/1346FDBB47BCA704CFA9E914755A9AAF6B1CD5A3/",
@@ -86,5 +86,9 @@ scenarios["operationWideawake"] =
                 ["32092"]=1
             }
         }
+    },
+    modularSets={
+        zeroTolerance="required",
+        sentinels="recommended"
     }
 }

@@ -20,6 +20,10 @@ function createContextMenu()
     self.addContextMenuItem("Delete Modular Sets", deleteModularSets)
 end
 
+function getModularSet(params)
+    return modularSets[params.modularSetKey]
+end
+
 function layOutModularSets()
     local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
 
@@ -84,4 +88,3 @@ require('!/modulars/core')
 require('!/modulars/rise_of_the_red_skull')
 require('!/modulars/mad_titans_shadow')
 require('!/modulars/mojo_mania')
-require('!/modulars/next_evolution')

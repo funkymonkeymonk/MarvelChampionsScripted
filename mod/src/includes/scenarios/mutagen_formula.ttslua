@@ -58,5 +58,8 @@ scenarios["mutagenFormula"] =
                 ["02032"]=2
             }
         }
+    },
+    modularSets={
+        goblinGimmicks="recommended"
     }
 }
