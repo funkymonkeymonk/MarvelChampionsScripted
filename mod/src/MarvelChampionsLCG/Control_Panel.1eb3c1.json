@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "de2c73",
-    "Name": "Custom_Tile",
+    "GUID": "1eb3c1",
+    "Name": "Custom_Token",
     "Transform": {
-      "posX": -51.05396,
-      "posY": 0.999074,
-      "posZ": -163.072052,
-      "rotX": 0.0267813075,
-      "rotY": 180.538315,
-      "rotZ": 359.9746,
-      "scaleX": 0.0210777912,
+      "posX": -27.2124348,
+      "posY": 10,
+      "posZ": 36.53,
+      "rotX": 45.0000038,
+      "rotY": 180,
+      "rotZ": -0.00000190363312,
+      "scaleX": 5,
       "scaleY": 1,
-      "scaleZ": 0.0210777912
+      "scaleZ": 5
     },
-    "Nickname": "Bulldozer",
+    "Nickname": "Control Panel",
     "Description": "",
     "GMNotes": "",
     "AltLookAngle": {
@@ -22,9 +22,9 @@
       "z": 0
     },
     "ColorDiffuse": {
-      "r": 0.249952555,
-      "g": 0.249952555,
-      "b": 0.249952555
+      "r": 1,
+      "g": 1,
+      "b": 1
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,
@@ -36,23 +36,23 @@
     "DragSelectable": true,
     "Autoraise": true,
     "Sticky": true,
-    "Tooltip": false,
+    "Tooltip": true,
     "GridProjection": false,
     "HideWhenFaceDown": false,
     "Hands": false,
     "CustomImage": {
-      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1010439675058993865/B2BC84B830FE61E1CA6EB33FB1A1C2D17E09B539/",
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/2101548510580058886/B02752B40EB9723F5FE5D6857F34CE87010A53BE/",
       "ImageSecondaryURL": "",
       "ImageScalar": 1,
       "WidthScale": 0,
-      "CustomTile": {
-        "Type": 3,
-        "Thickness": 0.197297364,
-        "Stackable": false,
-        "Stretch": true
+      "CustomToken": {
+        "Thickness": 0.1,
+        "MergeDistancePixels": 5,
+        "StandUp": false,
+        "Stackable": false
       }
     },
-    "LuaScript": "",
+    "LuaScript": "#include ./Control_Panel.1eb3c1.lua",
     "LuaScriptState": "",
     "XmlUI": ""
   },

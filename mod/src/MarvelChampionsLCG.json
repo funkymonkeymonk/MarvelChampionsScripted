@@ -1,8 +1,8 @@
 {
   "Save": {
     "SaveName": "MarvelChampionsLCG",
-    "EpochTime": 1695171900,
-    "Date": "9/19/2023 7:05:00 PM",
+    "EpochTime": 1695184333,
+    "Date": "9/19/2023 10:32:13 PM",
     "VersionNumber": "v13.2.2",
     "GameMode": "MarvelChampionsLCG",
     "GameType": "Game",
@@ -474,9 +474,6 @@
     "First_Player.d93792.json",
     "Custom_Tile.74c1d6.json",
     "Custom_Tile.ed0a82.json",
-    "Thunderball.a08314.json",
-    "Piledriver.bd5bc2.json",
-    "Bulldozer.de2c73.json",
     "3DText.48b9e8.json",
     "3DText.4e892b.json",
     "3DText.93e9ab.json",
@@ -527,9 +524,6 @@
     "3DText.93a2db.json",
     "The_Rise_of_Red_Skull.e2a11c.json",
     "The_Mad_Titan_s_Shadow.6ca74f.json",
-    "Victory_Display.628b4a.json",
-    "Nemesis.92fa7c.json",
-    "Resources.03fcb6.json",
     "3DText.59d365.json",
     "Standard.ae4736.json",
     "Expert.85fe67.json",
@@ -562,6 +556,7 @@
     "Selector_Tile.c04e76.json",
     "Scenario_Manager.06c2fd.json",
     "Modular_Set_Manager.608543.json",
-    "Hero_Manager.ff377b.json"
+    "Hero_Manager.ff377b.json",
+    "Control_Panel.1eb3c1.json"
   ]
 }
