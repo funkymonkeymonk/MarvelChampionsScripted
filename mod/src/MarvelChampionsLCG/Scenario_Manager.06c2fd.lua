@@ -477,7 +477,7 @@ function getHeroCount()
  end
 
 function spawnNemesis(params)
-  local heroManager = getObjectFromGUID(Global.getVar("HERO_MANAGER_GUID"))
+  local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
   local hero = heroManager.call("getHeroByPlayerColor", {playerColor = params.playerColor})
 
   local deck = {

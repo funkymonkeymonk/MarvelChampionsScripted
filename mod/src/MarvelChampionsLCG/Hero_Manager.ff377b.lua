@@ -32,7 +32,7 @@ function onload(saved_data)
  end
  
  createContextMenu()
- layOutHeroes()
+ --layOutHeroes()
 end
 
 
@@ -550,10 +550,6 @@ end
 function createContextMenu()
   self.addContextMenuItem("Lay Out Heroes", layOutHeroes)
   self.addContextMenuItem("Delete Heroes", deleteHeroes)
-  self.addContextMenuItem("Lay Out Avengers", layOutAvengers)
-  self.addContextMenuItem("Lay Out Mutants", layOutMutants)
-  self.addContextMenuItem("Lay Out Guardians", layOutGuardians)
-  self.addContextMenuItem("Lay Out Web Warriors", layOutSpiders)
 end
 
 
@@ -578,36 +574,20 @@ function layOutHeroes()
   })  
 end
 
-function layOutHeroesByTeam(params)
-  local heroList = getHeroesByTeam(params.team)
+function layOutHeroSelectors(params)
+  local heroList = params.team ~= nil and getHeroesByTeam(params.team) or heroes
   local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
 
   layoutManager.call("layOutSelectorTiles", {
-      center = {0, 1.0, 0},
-      direction = "horizontal",
-      maxRowsOrColumns = 6,
-      columnGap = 6.5,
-      rowGap = 3.5,
-      selectorScale = {1.33, 1, 1.33},
+      center = params.center or {0,0.5,0},
+      direction = params.direction or "horizontal",
+      maxRowsOrColumns = params.maxRowsOrColumns or 6,
+      columnGap = params.columnGap or 6.5,
+      rowGap = params.rowGap or 3.5,
+      selectorScale = params.selectorScale or {1.33, 1, 1.33},
       items = heroList,
       itemType = "hero"
   }) 
-end
-
-function layOutAvengers()
-  layOutHeroesByTeam({team = "avengers"})
-end
-  
-function layOutMutants()
-  layOutHeroesByTeam({team = "mutants"})
-end
-
-function layOutGuardians()
-  layOutHeroesByTeam({team = "guardians"})
-end
-
-function layOutSpiders()
-  layOutHeroesByTeam({team = "spiders"})
 end
 
 function deleteHeroes()

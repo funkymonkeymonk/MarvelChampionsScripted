@@ -58,7 +58,7 @@ PLAYMAT_OFFSET_IDENTITY       = {-9.89, 3.00, 1.00}
 PLAYMAT_OFFSET_DECK           = {-8.40, 3.00, -4.66}
 PLAYMAT_OFFSET_DISCARD        = {-11.30, 2.00, -4.66}
 
-HERO_MANAGER_GUID              = "ff377b"
+GUID_HERO_MANAGER              = "ff377b"
 SCENARIO_MANAGER_GUID          = "06c2fd"
 GUID_MODULAR_SET_MANAGER       = "608543"
 GUID_LAYOUT_MANAGER            = "0d33cc"

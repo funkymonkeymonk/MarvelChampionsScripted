@@ -94,11 +94,11 @@ function createModularSetButton()
 end
 
 function placeHeroWithStarterDeck(obj, player_color)
-    local heroManager = getObjectFromGUID(Global.getVar("HERO_MANAGER_GUID"))
+    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
     heroManager.call("placeHeroWithStarterDeck", {heroKey = itemKey, playerColor = player_color})
 end
 function placeHeroWithHeroDeck(obj, player_color)
-    local heroManager = getObjectFromGUID(Global.getVar("HERO_MANAGER_GUID"))
+    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
     heroManager.call("placeHeroWithHeroDeck", {heroKey = itemKey, playerColor = player_color})
 end
 
