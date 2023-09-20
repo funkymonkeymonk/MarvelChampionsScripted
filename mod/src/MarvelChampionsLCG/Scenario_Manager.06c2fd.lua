@@ -57,7 +57,6 @@ end
 
 function placeUnscriptedScenario(params)
   placeScenario(params.scenarioKey, "")
-  Global.call("requestBoost")
 end
 
 function placeScenarioInStandardMode(params)
@@ -120,6 +119,8 @@ function placeScenario(scenarioKey, mode)
   -- end
 
   --placeExtras(scenarioBag, scenarioDetails.extras)
+
+    placeBoostPanel(scenario)
 end
 
 function confirmNoScenarioIsPlaced()
@@ -361,6 +362,13 @@ function placeBlackHole(scenario)
   })
 end
 
+function configureBlackHole(params)
+  local blackHole = params.spawnedObject
+  blackHole.setPosition(params.position)
+  blackHole.setScale(params.scale) --Shouldn't have to do this, but the scale wasn't being applied in the takeObject call
+  blackHole.setLock(true)
+end
+
 function placeModularSets(scenario)
   if(scenario.modularSets == nil) then return end
 
@@ -416,11 +424,25 @@ function placeModularSets(scenario)
   broadcastToAll(message)
 end
 
-function configureBlackHole(params)
-  local blackHole = params.spawnedObject
-  blackHole.setPosition(params.position)
-  blackHole.setScale(params.scale) --Shouldn't have to do this, but the scale wasn't being applied in the takeObject call
-  blackHole.setLock(true)
+function placeBoostPanel(scenario)
+  local placeBoostPanel = scenario.placeBoostPanel == nil or scenario.placeBoostPanel
+
+  if(placeBoostPanel == false) then return end
+
+  local position = Global.getTable("BOOST_PANEL_POSITION")
+
+  spawnAsset({
+    guid = Global.getVar("ASSET_GUID_BOOST_PANEL"),
+    position = position,
+    rotation = Global.getTable("DEFAULT_ROTATION"),
+    callback = "configureBoostPanel"
+  })
+end
+
+function configureBoostPanel(params)
+  local boostPanel = params.spawnedObject
+  boostPanel.setPosition(params.position)
+  boostPanel.setLock(true)
 end
 
 function getHeroCount()
