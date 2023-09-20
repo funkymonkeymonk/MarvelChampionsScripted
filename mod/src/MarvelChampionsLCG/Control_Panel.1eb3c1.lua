@@ -134,7 +134,7 @@ function layOutChampions()
 end
 
 function layOutGuardians()
-    layOutHeroSelectors("gauardians")
+    layOutHeroSelectors("guardians")
 end
 
 function layOutMutants()
