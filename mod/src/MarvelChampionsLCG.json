@@ -1,8 +1,8 @@
 {
   "Save": {
     "SaveName": "MarvelChampionsLCG",
-    "EpochTime": 1695084531,
-    "Date": "9/18/2023 6:48:51 PM",
+    "EpochTime": 1695171900,
+    "Date": "9/19/2023 7:05:00 PM",
     "VersionNumber": "v13.2.2",
     "GameMode": "MarvelChampionsLCG",
     "GameType": "Game",
@@ -557,7 +557,6 @@
     "Mutant_Genesis.b8a859.json",
     "Negative_Zone.cf6ca1.json",
     "Negative_Zone.27506e.json",
-    "Scenario_Backup.e3b2e1.json",
     "Asset_Bag.91eba8.json",
     "Custom_Tile.6420a5.json",
     "Selector_Tile.c04e76.json",
