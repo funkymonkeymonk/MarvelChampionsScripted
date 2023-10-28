@@ -144,7 +144,20 @@ async function writeFileToTmp(image) {
     const data = image.image
     const TEMP_DIR = '../tmp'
     const localFilePath = path.resolve(__dirname, TEMP_DIR, fileName);
-    const file = await data.pipe(fs.createWriteStream(localFilePath));
+    
+    // This is a dirty freaking hack instead of proper error handling
+    // It's code like this that makes me glad there is no PE or CPA for 
+    // software engineers.
+    if (data) {
+        const file = await data.pipe(fs.createWriteStream(localFilePath));
+    } else {
+        console.log(fileName + " no data found");
+        return Promise.resolve({
+            "filename": fileName,
+            "localFilePath": path.resolve(__dirname, "tool", "notfound.jpg"),
+        });
+    }
+    
     return {
         "filename": fileName,
         "localFilePath": localFilePath,
@@ -217,7 +230,7 @@ const main = async () => {
     // # Publish to s3 bucket.
     // Upload params
 
-    await publishToS3(formatted[0])
+    // await publishToS3(formatted[0])
 }
 
 main();

@@ -10,7 +10,8 @@
     "validate": "npx ts-node ./tool/validate.ts",
     "convertToBSON": "node ./tool/workshopPrep.js",
     "prepare": "husky install",
-    "update:cardpool": "node tool/buildCardPool.js"
+    "update:cardpool": "node tool/buildCardPool.js",
+    "update:images": "node tool/getImages.js"
   },
   "license": "MIT",
   "bugs": {
