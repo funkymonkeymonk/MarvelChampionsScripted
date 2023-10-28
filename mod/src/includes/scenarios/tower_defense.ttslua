@@ -1,0 +1,121 @@
+scenarios["towerDefense"] =
+{
+    name="Tower Defense",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150121236/51DE813B79BDB1100212F0F05F303100627912AC/",
+    placeBoostPanel=false,
+    villains={
+        proximaMidnight={
+            name="Proxima Midnight",
+            deckPosition={-6.84, 1.00, 20.44},
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150135976/E9896414070810D2509CE451A33FDFB69BD082DB/",
+                position={-6.84, 1.00, 29.16}
+            },
+            stage1={
+                cardId="21092",
+                hitPointsPerPlayer=9
+            },
+            stage2={
+                cardId="21093",
+                hitPointsPerPlayer=12
+            },
+            stage3={
+                cardId="21094",
+                hitPointsPerPlayer=15
+            }
+        },
+        corvusGlaive={
+            name="Corvus Glaive",
+            deckPosition={5.25, 1.00, 20.43},
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150124820/5FE7B3E843483F341D1E0AD49CC49C7744EA9086/",
+                position={5.25, 0.96, 29.15}
+            },
+            stage1={
+                cardId="21095",
+                hitPointsPerPlayer=8
+            },
+            stage2={
+                cardId="21096",
+                hitPointsPerPlayer=11
+            },
+            stage3={
+                cardId="21097",
+                hitPointsPerPlayer=14
+            }
+        }
+    },
+    blackHole={
+        position={-15.15, 1.13, 28.48}
+    },
+    schemes={
+        underSiege={
+            stages={
+                stage1={
+                    cardId="21098",
+                    startingThreatPerPlayer=1,
+                    targetThreatPerPlayer=6
+                }
+            },
+            position={16.75, 0.97, 22.25},
+            counter={
+                position={25.13, 1.01, 22.25},
+                scale={1.61, 1.00, 1.61}
+            }
+        },
+        armiesOfThanos={
+            stages={
+                stage1={
+                    cardId="21099",
+                    startingThreatPerPlayer=1,
+                    targetThreatPerPlayer=6
+                }
+            },
+            position={16.75, 0.97, 15.75},
+            counter={
+                position={25.13, 1.01, 15.75},
+                scale={1.61, 1.00, 1.61}
+            }
+        }
+    },
+    cards={
+        avengersTower={
+            cardId="21100",
+            position={13.75, 0.97, 29.25},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
+        },
+        focusedDefense={
+            cardId="21101",
+            position={19.25, 1.00, 15.75},
+            scale=Vector(Global.getVar("CARD_SCALE_PLAYER"))
+        }
+    },            
+    counters={
+        damage={
+            type="general",
+            position={15.26, 1.06, 26.74},
+            scale={0.50, 1.00, 0.50},
+            locked=true
+        }
+    },
+    decks={
+        encounterDeck={
+            name="Tower Defense Encounter Deck",
+            position={-19.25, 1.06, 22.25},
+            cards={
+                ["21102"]=4,
+                ["21103"]=1,
+                ["21104"]=1,
+                ["21105"]=2,
+                ["21106"]=2,
+                ["21107"]=2,
+                ["21108"]=1,
+                ["21109"]=2,
+                ["21110"]=2
+            }
+        }
+    },
+    modularSets={
+        armiesOfTitan="recommended"
+    }
+}

@@ -1,0 +1,42 @@
+heroes["starLord"] = {
+    name = "Star-Lord",
+    identityCardId = "17001",
+    hitPoints = 10,
+    tileImageUrl = "http://cloud-3.steamusercontent.com/ugc/1833524706205929330/EFBFB50116C8CA144EFDABC907B6641088AB45DD/",
+    playmatImageUrl = "http://cloud-3.steamusercontent.com/ugc/1861691130254392766/F994622DDB11159FE6022E86AE21CD973B2F901C/",
+    obligationCardId = "17024",
+    teams = "guardians",
+    decks = {
+        hero = {
+            ["17002"] = 1,
+            ["17003"] = 3,
+            ["17004"] = 2,
+            ["17005"] = 3,
+            ["17006"] = 1,
+            ["17007"] = 2,
+            ["17008"] = 1,
+            ["17009"] = 1,
+            ["17010"] = 1
+        },
+        starter = {
+            ["17011"] = 1,
+            ["17012"] = 1,
+            ["17013"] = 1,
+            ["17014"] = 3,
+            ["17015"] = 3,
+            ["17016"] = 2,
+            ["17017"] = 3,
+            ["17019"] = 3,
+            ["17020"] = 1,
+            ["17021"] = 1,
+            ["17022"] = 1,
+            ["17023"] = 3,
+            ["29021"] = 2
+        },
+        nemesis = {
+            ["17025"] = 1,
+            ["17026"] = 1,
+            ["17027"] = 3
+        }
+    }
+}

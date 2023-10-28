@@ -1,0 +1,56 @@
+heroes["warMachine"] = {
+    name = "War Machine",
+    identityCardId = "23001",
+    hitPoints = 10,
+    tileImageUrl = "http://cloud-3.steamusercontent.com/ugc/1833524420371778340/5762C4392F8E0C0AECFBD3C81ED33CE0B9068328/",
+    playmatImageUrl = "http://cloud-3.steamusercontent.com/ugc/1861691360008105065/5AE93B832C886C56C3A47B01A4F939B277EFA156/",
+    obligationCardId = "23028",
+    teams = "avengers",
+    decks = {
+        hero = {
+            ["23002"] = 1,
+            ["23003"] = 1,
+            ["23004"] = 1,
+            ["23005"] = 2,
+            ["23006"] = 1,
+            ["23007"] = 1,
+            ["23008"] = 2,
+            ["23009"] = 2,
+            ["23010"] = 2,
+            ["23011"] = 2
+        },
+        starter = {
+            ["23012"] = 1,
+            ["23013"] = 1,
+            ["23015"] = 1,
+            ["23016"] = 3,
+            ["23017"] = 3,
+            ["23018"] = 3,
+            ["23019"] = 3,
+            ["23020"] = 2,
+            ["23021"] = 1,
+            ["23022"] = 1,
+            ["23023"] = 1,
+            ["23024"] = 1,
+            ["27020"] = 1,
+            ["27021"] = 1,
+            ["27022"] = 1,
+            ["03011"] = 1
+        },
+        nemesis = {
+            ["23029"] = 1,
+            ["23030"] = 1,
+            ["23031"] = 3
+        }
+    },
+    extras = {
+        ammoCounter = {
+            name="Ammo",
+            type = "counter",
+            counterType = "general",
+            offset = {-12.57, .28, 3.28},
+            value = 0,
+            locked = true
+        }
+    } 
+}

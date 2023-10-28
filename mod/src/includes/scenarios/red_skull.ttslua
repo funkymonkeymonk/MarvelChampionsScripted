@@ -1,0 +1,92 @@
+scenarios["redSkull"] =
+{
+    name="Red Skull",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150138001/6A9EC283F45343AF8C06D9001FF6DA4DC11E99E3/",
+    villains={
+        redSkull={
+            name="Red Skull",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150138001/6A9EC283F45343AF8C06D9001FF6DA4DC11E99E3/",
+            },
+            stage1={
+                cardId="04125",
+                hitPointsPerPlayer=12
+            },
+            stage2={
+                cardId="04126",
+                hitPointsPerPlayer=16
+            },
+            stage3={
+                cardId="04127",
+                hitPointsPerPlayer=20
+            }
+        }
+    },
+    schemes={
+        main={
+            stages={
+                stage1={
+                    cardId="04128",
+                    startingThreat=0,
+                    targetThreatPerPlayer=8
+                },
+                stage2={
+                    cardId="04129",
+                    startingThreatPerPlayer=1,
+                    targetThreatPerPlayer=11
+                }
+            }
+        }
+    },
+    cards={
+        sleeper={
+            cardId="04130",
+            position={19.75, 0.97, 29.25},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
+        },
+        redHouse={
+            cardId="04139",
+            position={16.75, 1.00, 21.75},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
+            landscape=true
+        }
+    },
+    counters={
+        redHouseThreat={
+            type="threat",
+            position={16.37, 1.10, 20.30},
+            scale={0.48, 1.00, 0.48}
+        }
+    },
+    decks={
+        encounterDeck={
+            name="Red Skull's Encounter Deck",
+            cards={
+                ["04131"]=3,
+                ["04132"]=1,
+                ["04133"]=2,
+                ["04134"]=2,
+                ["04135"]=2,
+                ["04136"]=2,
+                ["04137"]=2,
+                ["04138"]=2
+            }
+        },
+        sideSchemes={
+            name="Side Scheme Deck",
+            position={13.75, 0.97, 29.25},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
+            cards={
+                ["04140"]=1,
+                ["04141"]=1,
+                ["04142"]=1,
+                ["04143"]=1,
+                ["04144"]=1
+            }
+        }
+    },
+    modularSets={
+        hydraAssault="recommended",
+        hydraPatrol="recommended"
+    }
+}

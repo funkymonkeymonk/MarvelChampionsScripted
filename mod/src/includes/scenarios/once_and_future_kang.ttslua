@@ -1,0 +1,110 @@
+scenarios["kang"] =
+{
+    name="The Once and Future Kang",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
+    villains={
+        kang={
+            name="Kang",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
+            },
+            stage1={
+                cardId="11001",
+                hitPointsPerPlayer=12
+            },
+            stage3={
+                cardId="11006",
+                hitPointsPerPlayer=20
+            }
+        }
+    },
+    schemes={
+        main={
+            stages={
+                stage1={
+                    cardId="11007",
+                    startingThreat=0,
+                    targetThreatPerPlayer=7
+                },
+                stage2={
+                    cardId="11008",
+                    startingThreat=0,
+                    targetThreat=0
+                },
+                stage3={
+                    cardId="11013",
+                    startingThreat=0,
+                    targetThreatPerPlayer=10
+                }
+            }
+        }
+    },
+    decks={
+        encounterDeck={
+            name="Kang's Encounter Deck",
+            cards={
+                ["11014"]=2,
+                ["11015"]=2,
+                ["11016"]=1,
+                ["11017"]=3,
+                ["11018"]=2,
+                ["11019"]=2,
+                ["11020"]=2,
+                ["11021"]=2,
+                ["11022"]=1,
+                ["11024"]=1,
+                ["11025"]=2,
+                ["11026"]=2,
+                ["11027"]=1,
+                ["11028"]=2,
+                ["11029"]=1
+            }
+        },
+        stageTwoVillains={
+            name="Stage Two Villains",
+            position={15.75, 1.00, 31.75},
+            scale=Vector(Global.getVar("CARD_SCALE_VILLAIN")),
+            cards={
+                ["11002"]=1,
+                ["11003"]=1,
+                ["11004"]=1,
+                ["11005"]=1
+            }
+        },
+        stageTwoSchemes={
+            name="Stage Two Schemes",
+            position={22.75, 1.00, 29.25},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
+            cards={
+                ["11009"]=1,
+                ["11010"]=1,
+                ["11011"]=1,
+                ["11012"]=1
+            }
+        },
+        kangsDominion={
+            name="Kang's Dominion",
+            position={28.25, 1.00, 29.25},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
+            cards={
+                ["11023"]=4
+            }
+        },
+        expertVillains={
+            name="Expert Villains",
+            position={39.75, 1.01, 31.75},
+            scale=Vector(Global.getVar("CARD_SCALE_VILLAIN")),
+            cards={
+                ["11034"]=1,
+                ["11035"]=1,
+                ["11036"]=1,
+                ["11037"]=1,
+                ["11038"]=1,
+                ["11039"]=1
+            }
+        }
+    },
+    modularSets={
+        temporal="recommended"
+    }
+}

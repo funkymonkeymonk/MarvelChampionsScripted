@@ -1,0 +1,60 @@
+scenarios["hood"] =
+{
+    name="The Hood",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1833524420369390047/812F91439CB08F9A17D25523A7375B04E3D9C4A5/",
+    villains={
+        hood={
+            name="The Hood",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1833524420369390047/812F91439CB08F9A17D25523A7375B04E3D9C4A5/",
+            },
+            stage1={
+                cardId="24001",
+                hitPointsPerPlayer=14
+            },
+            stage2={
+                cardId="24002",
+                hitPointsPerPlayer=16
+            },
+            stage3={
+                cardId="24003",
+                hitPointsPerPlayer=18
+            }
+        }
+    },
+    schemes={
+        main={
+            stages={
+                stage1={
+                    cardId="24004",
+                    startingThreatPerPlayer=1,
+                    targetThreatPerPlayer=5
+                },
+                stage2={
+                    cardId="24005",
+                    startingThreatPerPlayer=2,
+                    targetThreatPerPlayer=8
+                },
+                stage3={
+                    cardId="24006",
+                    startingThreatPerPlayer=3,
+                    targetThreatPerPlayer=10
+                }
+            }
+        }
+    },
+    decks={
+        encounterDeck={
+            name="The Hood's Encounter Deck",
+            cards={
+                ["24007"]=1,
+                ["24008"]=1,
+                ["24009"]=2,
+                ["24010"]=1,
+                ["24011"]=1,
+                ["24012"]=1,
+                ["24013"]=3
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+heroes["rogue"] = {
+    name = "Rogue",
+    identityCardId = "38001",
+    flipIdentityCard = false,
+    hitPoints = 11,
+    tileImageUrl = "http://cloud-3.steamusercontent.com/ugc/2058745292939695220/25A7C564B51556328CB1987E9F225B51D0C19F69/",
+    playmatImageUrl = "http://cloud-3.steamusercontent.com/ugc/2035118512673864953/9F191D57829E59CE767A055C9D3F6D0A08729D0B/",
+    obligationCardId = "38024",
+    teams = "mutants",
+    decks = {
+        hero = {
+            ["38002"] = 1,
+            ["38003"] = 1,
+            ["38004"] = 1,
+            ["38005"] = 3,
+            ["38006"] = 3,
+            ["38007"] = 2,
+            ["38008"] = 2,
+            ["38009"] = 3
+        },
+        starter = {
+            ["32018"] = 2,
+            ["37019"] = 1,
+            ["38010"] = 1,
+            ["38011"] = 1,
+            ["38012"] = 1,
+            ["38014"] = 3,
+            ["38015"] = 3,
+            ["38016"] = 3,
+            ["38018"] = 1,
+            ["38019"] = 3,
+            ["40061"] = 1,
+            ["40062"] = 1,
+            ["40063"] = 1,
+            ["09020"] = 3
+        },
+        nemesis = {
+            ["38025"] = 1,
+            ["38026"] = 1,
+            ["38027"] = 3
+        }
+    },
+    cards = {
+        touched = {
+            cardId = "38002",
+            name = "Touched",
+            offset = {-4.95, 2, 4.64},
+            flipped = true
+        }        
+    }
+}

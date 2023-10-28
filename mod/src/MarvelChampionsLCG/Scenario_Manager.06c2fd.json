@@ -1,7 +1,7 @@
 {
   "Object": {
     "GUID": "06c2fd",
-    "Name": "Custom_Model_Bag",
+    "Name": "Custom_Model",
     "Transform": {
       "posX": -0.75,
       "posY": 36.6808929,
@@ -23,7 +23,7 @@
     },
     "ColorDiffuse": {
       "r": 1.06010449,
-      "g": 0.114429824,
+      "g": 0.114428915,
       "b": 0.011552
     },
     "Tags": [
@@ -43,9 +43,6 @@
     "GridProjection": false,
     "HideWhenFaceDown": false,
     "Hands": false,
-    "MaterialIndex": -1,
-    "MeshIndex": -1,
-    "Number": 0,
     "CustomMesh": {
       "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1845916597512125954/FAE69064A19616699BB85DB7B61CA0A4C39E137E/",
       "DiffuseURL": "",
@@ -53,11 +50,8 @@
       "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1845916597512126821/F1C00D82CF3AA0D79F1993967BC72A4AD4C42B8B/",
       "Convex": true,
       "MaterialIndex": 2,
-      "TypeIndex": 6,
+      "TypeIndex": 1,
       "CastShadows": true
-    },
-    "Bag": {
-      "Order": 0
     },
     "LuaScript": "#include ./Scenario_Manager.06c2fd.lua",
     "LuaScriptState": "",

@@ -1,0 +1,118 @@
+modularSets["cityInChaos"] = 
+{
+    name="City in Chaos",
+    modular=true,
+    cards = {
+        ["27127"] = 1,
+        ["27128"] = 1,
+        ["27129"] = 1,
+        ["27130"] = 2
+    }
+}
+
+modularSets["downToEarth"] = 
+{
+    name="Down to Earth",
+    modular=true,
+    cards = {
+        ["27131"] = 1,
+        ["27132"] = 1,
+        ["27133"] = 1,
+        ["27134"] = 1,
+        ["27135"] = 1
+    }
+}
+
+modularSets["goblinGear"] = 
+{
+    name="Goblin Gear",
+    modular=true,
+    cards = {
+        ["27136"] = 1,
+        ["27137"] = 1,
+        ["27138"] = 1,
+        ["27139"] = 1,
+        ["27140"] = 1,
+        ["27141"] = 1
+    }
+}
+
+modularSets["guerillaTactics"] = 
+{
+    name="Guerilla Tactics",
+    modular=true,
+    cards = {
+        ["27142"] = 2,
+        ["27143"] = 1,
+        ["27144"] = 1,
+        ["27145"] = 1,
+        ["27146"] = 2
+    }
+}
+
+modularSets["osbornTech"] = 
+{
+    name="Osborn Tech",
+    modular=true,
+    cards = {
+        ["27147"] = 1,
+        ["27148"] = 1,
+        ["27149"] = 1,
+        ["27150"] = 1,
+        ["27151"] = 1,
+        ["27152"] = 1
+    }
+}
+
+modularSets["personalNightmare"] = 
+{
+    name="Personal Nightmare",
+    modular=true,
+    cards = {
+        ["27153"] = 1,
+        ["27154"] = 2,
+        ["27155"] = 1,
+        ["27156"] = 1,
+        ["27157"] = 2
+    }
+}
+
+modularSets["sinisterAssault"] = 
+{
+    name="Sinister Assault",
+    modular=true,
+    cards = {
+        ["27158"] = 1,
+        ["27159"] = 1,
+        ["27160"] = 1,
+        ["27161"] = 1,
+        ["27162"] = 1,
+        ["27163"] = 1
+    }
+}
+
+modularSets["symbioticStrength"] = 
+{
+    name="Symbiotic Strength",
+    modular=true,
+    cards = {
+        ["27164"] = 1,
+        ["27165"] = 1,
+        ["27166"] = 1,
+        ["27167"] = 3,
+        ["27168"] = 2,
+        ["27169"] = 1
+    }
+}
+
+modularSets["whispersOfParanoia"] = 
+{
+    name="Whispers of Paranoia",
+    modular=true,
+    cards = {
+        ["27170"] = 2,
+        ["27171"] = 1,
+        ["27172"] = 1,
+        ["27173"] = 1
+    }
+}

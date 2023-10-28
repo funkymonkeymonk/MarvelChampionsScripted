@@ -1,0 +1,65 @@
+scenarios["mutagenFormula"] =
+{
+    name="Mutagen Formula",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150126338/C91FC9CB4D7BF94C206CE46B1982DF0CE750085D/",
+    villains={
+        greenGoblin={
+            name="Green Goblin",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150126338/C91FC9CB4D7BF94C206CE46B1982DF0CE750085D/",
+            },
+            stage1={
+                cardId="02014",
+                hitPointsPerPlayer=16
+            },
+            stage2={
+                cardId="02015",
+                hitPointsPerPlayer=18
+            },
+            stage3={
+                cardId="02016",
+                hitPointsPerPlayer=20
+            }
+        }
+    },
+    schemes={
+        main={
+            stages={
+                stage1={
+                    cardId="02017",
+                    startingThreatPerPlayer=2,
+                    targetThreatPerPlayer=7
+                },
+                stage2={
+                    cardId="02018",
+                    startingThreatPerPlayer=4,
+                    targetThreatPerPlayer=11
+                }
+            }
+        }
+    },
+    decks={
+        encounterDeck={
+            name="Green Goblin's Encounter Deck",
+            cards={
+                ["02019"]=1,
+                ["02020"]=1,
+                ["02021"]=1,
+                ["02022"]=1,
+                ["02023"]=4,
+                ["02024"]=6,
+                ["02025"]=1,
+                ["02026"]=2,
+                ["02027"]=1,
+                ["02028"]=2,
+                ["02029"]=2,
+                ["02030"]=1,
+                ["02031"]=1,
+                ["02032"]=2
+            }
+        }
+    },
+    modularSets={
+        goblinGimmicks="recommended"
+    }
+}

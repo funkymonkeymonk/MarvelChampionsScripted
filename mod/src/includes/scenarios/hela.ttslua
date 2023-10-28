@@ -1,0 +1,86 @@
+    scenarios["hela"] =
+{
+    name="Hela",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150128726/5561A2846A40991CD9F774C0CA75572DC3A7C096/",
+    villains={
+        hela={
+            name="Hela",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150128726/5561A2846A40991CD9F774C0CA75572DC3A7C096/",
+            },
+            stage1={
+                cardId="21136",
+                hitPointsPerPlayer=8
+            }
+        }
+    },
+    schemes={
+        main={
+            stages={
+                stage1={
+                    cardId="21138",
+                    startingThreatPerPlayer=1,
+                    targetThreatPerPlayer=18
+                }
+            }
+        }
+    },
+    cards={
+        gnipahellir={
+            cardId="21140",
+            position={16.75, 1.00, 21.75},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
+            landscape=true
+        },
+        garm={
+            cardId="21143",
+            position={-0.34, 1.00, 1.25},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
+        },
+        odin={
+            cardId="21139",
+            position={10.75, 1.00, 22.25},
+            scale=Vector(Global.getVar("CARD_SCALE_PLAYER"))
+        },
+        expertHela={
+            cardId="21137",
+            position={48.25, 0.97, 31.75},
+            scale=Vector(Global.getVar("CARD_SCALE_VILLAIN"))
+        }
+    },
+    counters={
+        gnipahellirThreat={
+            type="threat",
+            position={16.37, 1.10, 20.30},
+            scale={0.48, 1.00, 0.48}
+        }
+    },
+    decks={
+        encounterDeck={
+            name="Rhino's Encounter Deck",
+            cards={
+                ["21146"]=1,
+                ["21147"]=1,
+                ["21148"]=1,
+                ["21149"]=2,
+                ["21150"]=2,
+                ["21151"]=2,
+            }
+        },
+        setAside={
+            name="Set Aside Cards",
+            position={13.75, 0.97, 29.25},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
+            cards={
+                ["21141"]=1,
+                ["21142"]=1,
+                ["21144"]=1,
+                ["21145"]=1
+            }
+        }
+    },
+    modularSets={
+        legionsOfHel="recommended",
+        frostGiants="recommended"
+    }
+}

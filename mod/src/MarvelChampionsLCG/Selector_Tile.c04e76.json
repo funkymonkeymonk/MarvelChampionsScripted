@@ -1,0 +1,60 @@
+{
+  "Object": {
+    "GUID": "c04e76",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 72.25,
+      "posY": -9.504998,
+      "posZ": 15.749999,
+      "rotX": 2.04229949e-7,
+      "rotY": -0.00403494248,
+      "rotZ": -9.236342e-8,
+      "scaleX": 1.12515855,
+      "scaleY": 1,
+      "scaleZ": 1.12515855
+    },
+    "Nickname": "Selector Tile",
+    "Description": "Leave this out to speed up layouts",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.2499831,
+      "g": 0.2499831,
+      "b": 0.2499831
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1867319584748543443/C10AF8349C00327F6CD68B4001654610E565A6E3/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": true,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Selector_Tile.c04e76.lua",
+    "LuaScriptState": "#include ./Selector_Tile.c04e76.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -1,0 +1,60 @@
+{
+  "Object": {
+    "GUID": "8cf3d6",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 70.25,
+      "posY": -9.690033,
+      "posZ": 15.750001,
+      "rotX": -8.55444853e-7,
+      "rotY": -0.0007417825,
+      "rotZ": -5.78626157e-7,
+      "scaleX": 2.00505972,
+      "scaleY": 1,
+      "scaleZ": 2.00505972
+    },
+    "Nickname": "Villain HP Counter",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.249983311,
+      "g": 0.249983311,
+      "b": 0.249983311
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1867319584748543443/C10AF8349C00327F6CD68B4001654610E565A6E3/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.197297364,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Villain_HP_Counter.8cf3d6.lua",
+    "LuaScriptState": "#include ./Villain_HP_Counter.8cf3d6.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

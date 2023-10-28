@@ -1,0 +1,236 @@
+scenarios["wreckingCrew"] =
+{
+    name="The Wrecking Crew",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150148690/BBFD396544E7663BE7F363242AA077FAE4D5FA53/",
+    placeBoostPanel=false,
+    blackHole={
+        position={48.58, 1.13, 33.84}
+    },
+    villains={
+        wrecker={
+            name="Wrecker",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150148690/BBFD396544E7663BE7F363242AA077FAE4D5FA53/",
+                position={-32.25, 0.96, 29.25},
+                scale={2.88, 1.00, 2.88}
+            },
+            stage1={
+                cardId="07002",
+                hitPointsPerPlayer=14
+            },
+            stage3={
+                cardId="07003",
+                hitPointsPerPlayer=18
+            },
+            deckPosition={-34.25, 0.97, 20.25},
+            deckScale={3.64, 1.00, 3.64}
+        },
+        thunderball={
+            name="ThunderBall",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150146633/81635C26BBCDF2281C945515041D9BF8B3E46CD9/",
+                position={-10.25, 0.96, 29.25},
+                scale={2.88, 1.00, 2.88}
+            },
+            stage1={
+                cardId="07017",
+                hitPointsPerPlayer=13
+            },
+            stage3={
+                cardId="07018",
+                hitPointsPerPlayer=16
+            },
+            deckPosition={-12.25, 0.97, 20.25},
+            deckScale={3.64, 1.00, 3.64}
+        },
+        piledriver={
+            name="Piledriver",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150134663/393C22936C553E34C89EE38AD8582B33B005558B/",
+                position={11.75, 0.96, 29.25},
+                scale={2.88, 1.00, 2.88}
+            },
+            stage1={
+                cardId="07032",
+                hitPointsPerPlayer=11
+            },
+            stage3={
+                cardId="07033",
+                hitPointsPerPlayer=14
+            },
+            deckPosition={9.75, 0.97, 20.25},
+            deckScale={3.64, 1.00, 3.64}
+        },
+        bulldozer={
+            name="Bulldozer",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150122545/0C0159E3C74BD9B5BA30D62D9DCB9B5BDF6859FD/",
+                position={33.75, 0.96, 29.25},
+                scale={2.88, 1.00, 2.88}
+            },
+            stage1={
+                cardId="07046",
+                hitPointsPerPlayer=12
+            },
+            stage3={
+                cardId="07047",
+                hitPointsPerPlayer=15
+            },
+            deckPosition={31.75, 0.97, 20.25},
+            deckScale={3.64, 1.00, 3.64}
+        }
+    },
+    schemes={
+        main={
+            stages={
+                stage1={
+                    cardId="07001",
+                    startingThreat=0,
+                    targetThreatPerPlayer=6
+                }
+            },
+            position={49.25, 0.97, 23.25},
+            scale={2.93, 1.00, 2.93},
+            counter={
+                position={48.75, 1.01, 29.25},
+                scale={1.61, 1.00, 1.61}
+            }
+        },
+        wreckerScheme={
+            stages={
+                stage1={
+                    cardId="07004",
+                    startingThreat=6,
+                    targetThreat=0
+                }
+            },
+            position={-26.27, 0.97, 22.79},
+            scale={2.42, 1.00, 2.42},
+            counter={
+                position={-26.82, 1.04, 20.95},
+                scale={0.48, 1.00, 0.48}
+            }
+        },
+        thunderballScheme={
+            stages={
+                stage1={
+                    cardId="07019",
+                    startingThreat=5,
+                    targetThreat=0
+                }
+            },
+            position={-4.25, 0.97, 22.78},
+            scale={2.42, 1.00, 2.42},
+            counter={
+                position={-4.79, 1.04, 20.94},
+                scale={0.48, 1.00, 0.48}
+            }
+        },
+        piledriverScheme={
+            stages={
+                stage1={
+                    cardId="07034",
+                    startingThreat=3,
+                    targetThreat=0
+                }
+            },
+            position={17.75, 0.97, 22.79},
+            scale={2.42, 1.00, 2.42},
+            counter={
+                position={17.15, 1.04, 20.97},
+                scale={0.48, 1.00, 0.48}
+            }
+        },
+        bulldozerScheme={
+            stages={
+                stage1={
+                    cardId="07048",
+                    startingThreat=4,
+                    targetThreat=0
+                }
+            },
+            position={39.75, 0.97, 22.73},
+            scale={2.42, 1.00, 2.42},
+            counter={
+                position={39.20, 1.04, 20.90},
+                scale={0.48, 1.00, 0.48}
+            }
+        }
+    },
+    decks={
+        wreckerDeck={
+            name="Wrecker's Encounter Deck",
+            cards={
+                ["07005"]=1,
+                ["07006"]=1,
+                ["07007"]=1,
+                ["07008"]=1,
+                ["07009"]=1,
+                ["07010"]=1,
+                ["07011"]=1,
+                ["07012"]=2,
+                ["07013"]=1,
+                ["07014"]=1,
+                ["07015"]=2,
+                ["07016"]=2
+            },
+            position={-40.75, 1.05, 22.25},
+            scale={2.12, 1.00, 2.12}
+        },
+        thunderballDeck={
+            name="Thunderball's Encounter Deck",
+            cards={
+                ["07020"]=1,
+                ["07021"]=1,
+                ["07022"]=1,
+                ["07023"]=1,
+                ["07024"]=1,
+                ["07025"]=1,
+                ["07026"]=1,
+                ["07027"]=1,
+                ["07028"]=1,
+                ["07029"]=1,
+                ["07030"]=2,
+                ["07031"]=2
+            },
+            position={-18.75, 1.05, 22.25},
+            scale={2.12, 1.00, 2.12}
+        },
+        piledriverDeck={
+            name="Piledriver's Encounter Deck",
+            cards={
+                ["07035"]=2,
+                ["07036"]=1,
+                ["07037"]=1,
+                ["07038"]=1,
+                ["07039"]=1,
+                ["07040"]=1,
+                ["07041"]=1,
+                ["07042"]=2,
+                ["07043"]=2,
+                ["07044"]=2,
+                ["07045"]=1
+            },
+            position={3.25, 1.05, 22.25},
+            scale={2.12, 1.00, 2.12}
+        },
+        bulldozerDeck={
+            name="Bulldozer's Encounter Deck",
+            cards={
+                ["07049"]=1,
+                ["07050"]=1,
+                ["07051"]=2,
+                ["07052"]=1,
+                ["07053"]=1,
+                ["07054"]=1,
+                ["07055"]=2,
+                ["07056"]=1,
+                ["07057"]=1,
+                ["07058"]=2,
+                ["07059"]=2
+            },
+            position={25.25, 1.05, 22.25},
+            scale={2.12, 1.00, 2.12}
+        }
+    }
+}

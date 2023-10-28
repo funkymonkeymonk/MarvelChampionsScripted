@@ -1,0 +1,82 @@
+scenarios["escapeMuseum"] =
+{
+    name="Escape the Museum",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1833526258727804015/5DDA85319568535B84FBD610334FB7C6F8BFCDF0/",
+    villains={
+        collector={
+            name="Collector",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1833526258727804015/5DDA85319568535B84FBD610334FB7C6F8BFCDF0/",
+            },
+            stage1={
+                cardId="16080",
+                hitPointsPerPlayer=13
+            },
+            stage3={
+                cardId="16081",
+                hitPointsPerPlayer=18
+            }
+        }
+    },
+    schemes={
+        main={
+            stages={
+                stage1={
+                    cardId="16082",
+                    startingThreatPerPlayer=7,
+                    targetThreatPerPlayer=11
+                },
+                stage2={
+                    cardId="16083",
+                    startingThreatPerPlayer=1,
+                    targetThreatPerPlayer=15
+                },
+                stage3={
+                    cardId="16084",
+                    startingThreatPerPlayer=8,
+                    targetThreatPerPlayer=12
+                }
+            }
+        }
+    },
+    cards={
+        libraryLabyrinth={
+            cardId="16085",
+            position={13.75, 0.97, 29.25},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
+        },
+        milano={
+            cardId="16142",
+            position={26.25, 0.97, 29.25},
+            scale=Vector(Global.getVar("CARD_SCALE_PLAYER"))
+        }
+    },            
+    decks={
+        encounterDeck={
+            name="Collector's Encounter Deck",
+            cards={
+                ["16085"]=1,
+                ["16086"]=3,
+                ["16087"]=3
+            }
+        },
+        shipCommand={
+            name="Ship Command",
+            position={21.25, 1.01, 29.25},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
+            cards={
+                ["16142"]=1,
+                ["16143"]=1,
+                ["16144"]=1,
+                ["16145"]=1,
+                ["16146"]=1,
+                ["16147"]=1,
+                ["16148"]=1
+            }
+        }
+    },
+    modularSets={
+        galacticArtifacts="required",
+        menagerieMedley="recommended",
+    }
+}

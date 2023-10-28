@@ -1,0 +1,45 @@
+modularSets["experimentalWeapons"] = 
+{
+    name="Experimental Weapons",
+    modular=true,
+    cards = {
+        ["04072"] = 1,
+        ["04073"] = 1,
+        ["04074"] = 1,
+        ["04075"] = 1
+    }
+}
+
+modularSets["hydraAssault"] = 
+{
+    name="Hydra Assault",
+    modular=true,
+    cards = {
+        ["04145"] = 3,
+        ["04146"] = 2,
+        ["04147"] = 1
+    }
+}
+
+modularSets["weaponMaster"] = 
+{
+    name="Weapon Master",
+    modular=true,
+    cards = {
+        ["04148"] = 1,
+        ["04149"] = 1,
+        ["04150"] = 2,
+        ["04151"] = 1
+    }
+}
+
+modularSets["hydraPatrol"] = 
+{
+    name="Hydra Patrol",
+    modular=true,
+    cards = {
+        ["04152"] = 2,
+        ["04153"] = 3,
+        ["04154"] = 1
+    }
+}

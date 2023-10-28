@@ -1,0 +1,55 @@
+heroes["valkyrie"] = {
+    name = "Valkyrie",
+    identityCardId = "25001",
+    hitPoints = 12,
+    tileImageUrl = "http://cloud-3.steamusercontent.com/ugc/1833524813259370146/95AF051AF3D5A3D8E9CCFD33259482641CD7AE0A/",
+    playmatImageUrl = "http://cloud-3.steamusercontent.com/ugc/1867319584749113032/BCCEC8078F2B0C822E23C8149F0A686E4D163F6B/",
+    obligationCardId = "25028",
+    teams = "avengers",
+    decks = {
+        hero = {
+            ["25002"] = 1,
+            ["25003"] = 1,
+            ["25004"] = 1,
+            ["25005"] = 1,
+            ["25006"] = 1,
+            ["25007"] = 1,
+            ["25008"] = 2,
+            ["25009"] = 1,
+            ["25010"] = 2,
+            ["25011"] = 2,
+            ["25012"] = 3
+        },
+        starter = {
+            ["18011"] = 1,
+            ["25013"] = 1,
+            ["25014"] = 1,
+            ["25016"] = 1,
+            ["25017"] = 2,
+            ["25018"] = 3,
+            ["25019"] = 3,
+            ["25020"] = 3,
+            ["25021"] = 1,
+            ["25023"] = 1,
+            ["25024"] = 3,
+            ["27020"] = 1,
+            ["27021"] = 1,
+            ["27022"] = 1,
+            ["28015"] = 1
+        },
+        nemesis = {
+            ["25029"] = 1,
+            ["25030"] = 1,
+            ["25031"] = 1,
+            ["25032"] = 2
+        }
+    },
+    cards = {
+        deathGlow = {
+            cardId = "25002",
+            name = "Death-Glow",
+            offset = {-4.95, 2, 4.64},
+            flipped = true
+        }
+    }    
+}

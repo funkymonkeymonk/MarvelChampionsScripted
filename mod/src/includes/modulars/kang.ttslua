@@ -1,0 +1,39 @@
+modularSets["anachronauts"] = 
+{
+    name="Anachronauts",
+    modular=true,
+    cards = {
+        ["11040"] = 1,
+        ["11041"] = 1,
+        ["11042"] = 1,
+        ["11043"] = 1,
+        ["11044"] = 1,
+        ["11045"] = 2,
+        ["11046"] = 2
+    }
+}
+
+modularSets["temporal"] = 
+{
+    name="Temporal",
+    modular=true,
+    cards = {
+        ["11030"] = 3,
+        ["11031"] = 2,
+        ["11032"] = 1,
+        ["11033"] = 1
+    }
+}
+
+modularSets["masterOfTime"] = 
+{
+    name="Master Of Time",
+    modular=true,
+    cards = {
+        ["11047"] = 1,
+        ["11048"] = 2,
+        ["11049"] = 2,
+        ["11050"] = 1,
+        ["11051"] = 2
+    }
+}

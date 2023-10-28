@@ -1,3 +1,5 @@
+preventDeletion = true
+
 CONFIG = {
     MIN_VALUE = -99,
     MAX_VALUE = 999,
@@ -16,6 +18,11 @@ function onload(saved_data)
         CONFIG = loaded_data
     end
     createAll()
+end
+
+function onDestroy()
+    log("Destroying " .. self.getName())
+    return false
 end
 
 function updateSave()

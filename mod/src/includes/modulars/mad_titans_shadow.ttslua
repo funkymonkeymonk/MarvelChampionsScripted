@@ -1,0 +1,84 @@
+modularSets["blackOrder"] = 
+{
+    name="Black Order",
+    modular=true,
+    cards = {
+        ["21085"] = 1,
+        ["21086"] = 1,
+        ["21087"] = 1,
+        ["21088"] = 1
+    }
+}
+
+modularSets["armiesOfTitan"] = 
+{
+    name="Armies of Titan",
+    modular=true,
+    cards = {
+        ["21089"] = 1,
+        ["21090"] = 1,
+        ["21091"] = 1
+    }
+}
+
+modularSets["childrenOfThanos"] = 
+{
+    name="Children of Thanos",
+    modular=true,
+    cards = {
+        ["21125"] = 1,
+        ["21126"] = 1,
+        ["21127"] = 1,
+        ["21128"] = 2
+    }
+}
+
+modularSets["infinityGauntlet"] = 
+{
+    name="Infinity Gauntlet",
+    modular=true,
+    cards = {
+        ["21129"] = 1,
+        ["21130"] = 1,
+        ["21131"] = 1,
+        ["21132"] = 1,
+        ["21133"] = 1,
+        ["21134"] = 1,
+        ["21135"] = 1
+    }
+}
+
+modularSets["legionsOfHel"] = 
+{
+    name="Legions of Hel",
+    modular=true,
+    cards = {
+        ["21152"] = 2,
+        ["21153"] = 2,
+        ["21154"] = 1,
+        ["21155"] = 2
+    }
+}
+
+modularSets["frostGiants"] = 
+{
+    name="Frost Giants",
+    modular=true,
+    cards = {
+        ["21156"] = 1,
+        ["21157"] = 2,
+        ["21158"] = 2,
+        ["21159"] = 1
+    }
+}
+
+modularSets["enchantress"] = 
+{
+    name="Enchantress",
+    modular=true,
+    cards = {
+        ["21177"] = 1,
+        ["21178"] = 2,
+        ["21179"] = 2
+    }
+}

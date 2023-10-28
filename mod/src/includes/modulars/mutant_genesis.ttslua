@@ -1,0 +1,78 @@
+modularSets["acolytes"] = 
+{
+    name="Acolytes",
+    modular=true,
+    cards = {
+        ["32159"] = 1,
+        ["32160"] = 1,
+        ["32161"] = 1,
+        ["32162"] = 1,
+        ["32163"] = 1,
+        ["32164"] = 1,
+        ["32165"] = 1
+    }
+}
+
+modularSets["brotherhood"] = 
+{
+    name="Brotherhood",
+    modular=true,
+    cards = {
+        ["32073"] = 1,
+        ["32074"] = 1,
+        ["32075"] = 1,
+        ["32076"] = 1,
+        ["32077"] = 2,
+        ["32078"] = 1,
+        ["32079"] = 1
+    }
+}
+
+modularSets["mystique"] = 
+{
+    name="Mystique",
+    modular=true,
+    cards = {
+        ["32080"] = 1,
+        ["32081"] = 1,
+        ["32082"] = 2,
+        ["32083"] = 1
+    }
+}
+
+modularSets["zeroTolerance"] = 
+{
+    name="Zero Tolerance",
+    modular=true,
+    cards = {
+        ["32101"] = 2,
+        ["32102"] = 2,
+        ["32103"] = 2,
+        ["32104"] = 1
+    }
+}
+
+modularSets["sentinels"] = 
+{
+    name="Sentinels",
+    modular=true,
+    cards = {
+        ["32105"] = 2,
+        ["32106"] = 2,
+        ["32107"] = 2,
+        ["32108"] = 1
+    }
+}
+
+modularSets["futurePast"] = 
+{
+    name="Future Past",
+    modular=true,
+    cards = {
+        ["32166"] = 1,
+        ["32167"] = 1,
+        ["32168"] = 1,
+        ["32169"] = 1,
+        ["32170"] = 1
+    }
+}

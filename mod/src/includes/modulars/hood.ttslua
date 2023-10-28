@@ -1,0 +1,118 @@
+modularSets["beastyBoys"] = 
+{
+    name="Beasty Boys",
+    modular=true,
+    cards = {
+        ["24014"] = 1,
+        ["24015"] = 1,
+        ["24016"] = 1,
+        ["24017"] = 1
+    }
+}
+
+modularSets["brothersGrimm"] = 
+{
+    name="Brothers Grimm",
+    modular=true,
+    cards = {
+        ["24018"] = 1,
+        ["24019"] = 1,
+        ["24020"] = 1,
+        ["24021"] = 1,
+        ["24022"] = 1
+    }
+}
+
+modularSets["crossfiresCrew"] = 
+{
+    name="Crossfire's Crew",
+    modular=true,
+    cards = {
+        ["24023"] = 1,
+        ["24024"] = 1,
+        ["24025"] = 1,
+        ["24026"] = 1,
+        ["24027"] = 1,
+        ["24028"] = 1
+    }
+}
+
+modularSets["misterHyde"] = 
+{
+    name="Mister Hyde",
+    modular=true,
+    cards = {
+        ["24033"] = 1,
+        ["24034"] = 1,
+        ["24035"] = 1,
+        ["24036"] = 1
+    }
+}
+
+modularSets["ransackedArmory"] = 
+{
+    name="Ransacked Armory",
+    modular=true,
+    cards = {
+        ["24037"] = 1,
+        ["24038"] = 1,
+        ["24039"] = 2,
+        ["24040"] = 1,
+        ["24041"] = 2
+    }
+}
+
+modularSets["sinisterSyndicate"] = 
+{
+    name="Sinister Syndicate",
+    modular=true,
+    cards = {
+        ["24042"] = 1,
+        ["24043"] = 1,
+        ["24044"] = 1,
+        ["24045"] = 1,
+        ["24046"] = 1,
+        ["24047"] = 1,
+        ["24048"] = 1
+    }
+}
+
+modularSets["stateOfEmergency"] = 
+{
+    name="State of Emergency",
+    modular=true,
+    cards = {
+        ["24055"] = 1,
+        ["24056"] = 1,
+        ["24057"] = 1,
+        ["24058"] = 1,
+        ["24059"] = 2
+    }
+}
+
+modularSets["streetsOfMayhem"] = 
+{
+    name="Streets of Mayhem",
+    modular=true,
+    cards = {
+        ["24060"] = 1,
+        ["24061"] = 1,
+        ["24062"] = 1,
+        ["24063"] = 1
+    }
+}
+
+modularSets["wreckingCrew"] = 
+{
+    name="Wrecking Crew",
+    modular=true,
+    cards = {
+        ["24064"] = 1,
+        ["24065"] = 1,
+        ["24066"] = 1,
+        ["24067"] = 1,
+        ["24068"] = 1,
+        ["24069"] = 1,
+        ["24070"] = 1
+    }
+}

@@ -1,0 +1,70 @@
+scenarios["sandman"] =
+{
+    name="Sandman",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015304068/2C53497A93B4E4B559A8AAA8DDC9B09FBB89DDDC/",
+    villains={
+        sandman={
+            name="Sandman",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015304068/2C53497A93B4E4B559A8AAA8DDC9B09FBB89DDDC/",
+            },
+            stage1={
+                cardId="27061",
+                hitPointsPerPlayer=16
+            },
+            stage2={
+                cardId="27062",
+                hitPointsPerPlayer=18
+            },
+            stage3={
+                cardId="27063",
+                hitPointsPerPlayer=19
+            }
+        }
+    },
+    schemes={
+        main={
+            stages={
+                stage1={
+                    cardId="27064",
+                    startingThreatPerPlayer=2,
+                    targetThreatPerPlayer=7
+                }
+            }
+        }
+    },
+    cards={
+        cityStreets={
+            cardId="27065",
+            position={13.75, 1.00, 29.25},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
+            locked=true
+        }
+    },
+    counters={
+        findTheSenatorThreat={
+            type="general",
+            position={15.26, 1.06, 26.74},
+            scale={0.50, 1.00, 0.50},
+            locked=true
+        }
+    },
+    decks={
+        encounterDeck={
+            name="Sandman's Encounter Deck",
+            cards={
+                ["27066"]=2,
+                ["27067"]=2,
+                ["27068"]=2,
+                ["27069"]=1,
+                ["27070"]=1,
+                ["27071"]=1,
+                ["27072"]=2
+            }
+        }
+    },
+    modularSets={
+        cityInChaos="required",
+        downToEarth="recommended"
+    }
+}

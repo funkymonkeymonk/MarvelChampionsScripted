@@ -1,0 +1,96 @@
+scenarios["venomgoblin"] =
+{
+    name="Venom Goblin",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015324268/4E05FFF64F4A303C0F674C9D0BB2A1EE07FC589A/",
+    villains={
+        venomgoblin={
+            name="Venom Goblin",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015324268/4E05FFF64F4A303C0F674C9D0BB2A1EE07FC589A/",
+            },
+            stage1={
+                cardId="27113",
+                hitPointsPerPlayer=16
+            },
+            stage2={
+                cardId="27114",
+                hitPointsPerPlayer=18
+            },
+            stage3={
+                cardId="27115",
+                hitPointsPerPlayer=21
+            }
+        }
+    },
+    schemes={
+        lowerManhattan={
+            stages={
+                stage1={
+                    cardId="27117",
+                    startingThreatPerPlayer=1,
+                    targetThreatPerPlayer=11
+                },
+            },
+            counter={
+                position={11.19, 1.01, 20.93},
+                scale={1.00, 1.00, 1.00},
+                locked=true
+            }
+        },
+        midtownManhattan={
+            position={18.38, 0.97, 22.45},
+            stages={
+                stage1={
+                    cardId="27118",
+                    startingThreatPerPlayer=2,
+                    targetThreatPerPlayer=12
+                }
+            },
+            counter={
+                position={21.19, 1.01, 20.93},
+                scale={1.00, 1.00, 1.00},
+                locked=true
+            }
+        },
+        upperManhattan={
+            position={28.38, 0.97, 22.45},
+            stages={
+                stage1={
+                    cardId="27119",
+                    startingThreat=0,
+                    targetThreatPerPlayer=12
+                }
+            },
+            counter={
+                position={31.19, 1.01, 20.93},
+                scale={1.00, 1.00, 1.00},
+                locked=true
+            }
+        }
+    },
+    cards={
+        skiesOverNewYork={
+            cardId="27116",
+            position={13.75, 0.97, 29.25},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
+            flipped=true
+        }
+    },            
+    decks={
+        encounterDeck={
+            name="Sandman's Encounter Deck",
+            cards={
+                ["27116"]=1,
+                ["27089"]=1,
+                ["27090"]=2,
+                ["27091"]=4,
+                ["27092"]=2,
+                ["27093"]=2
+            }
+        }
+    },
+    modularSets={
+        symbioticStrength="required",
+        goblinGear="recommended"
+    }
+}

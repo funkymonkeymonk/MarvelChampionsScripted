@@ -1,0 +1,78 @@
+scenarios["sabretooth"] =
+{
+    name="Sabretooth",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2035118913124026079/1346FDBB47BCA704CFA9E914755A9AAF6B1CD5A3/",
+    villains={
+        sabretooth={
+            name="Sabretooth",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/2035118913124026079/1346FDBB47BCA704CFA9E914755A9AAF6B1CD5A3/",
+            },
+            stage1={
+                cardId="32060",
+                hitPointsPerPlayer=13
+            },
+            stage2={
+                cardId="32061",
+                hitPointsPerPlayer=15
+            },
+            stage3={
+                cardId="32062",
+                hitPointsPerPlayer=18
+            }
+        }
+    },
+    schemes={
+        main={
+            stages={
+                stage1={
+                    cardId="32063",
+                    startingThreat=0,
+                    targetThreat=0
+                },
+                stage2={
+                    cardId="32064",
+                    startingThreat=0,
+                    targetThreatPerPlayer=9
+                }
+            }
+        }
+    },
+    cards={
+        findTheSenator={
+            cardId="32065",
+            position={16.75, 1.00, 21.75},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
+            landscape=true
+        },
+        robertKelly={
+            cardId="32066",
+            position={21.75, 1.00, 21.75},
+            scale=Vector(Global.getVar("CARD_SCALE_PLAYER"))
+        }
+    },
+    counters={
+        findTheSenatorThreat={
+            type="threat",
+            position={16.37, 1.10, 20.30},
+            scale={0.48, 1.00, 0.48}
+        }
+    },
+    decks={
+        encounterDeck={
+            name="Sabretooth's Encounter Deck",
+            cards={
+                ["32067"]=1,
+                ["32068"]=1,
+                ["32069"]=2,
+                ["32070"]=4,
+                ["32071"]=1,
+                ["32072"]=1
+            }
+        }
+    },
+    modularSets={
+        brotherhood="recommended",
+        mystique="recommended"
+    }
+}

@@ -41,9 +41,9 @@
     "HideWhenFaceDown": false,
     "Hands": false,
     "CustomPDF": {
-      "PDFUrl": "http://cloud-3.steamusercontent.com/ugc/1693900926664126212/FF1274E96D3EDE3541BBA3ACDA250C278E8AC382/",
+      "PDFUrl": "http://cloud-3.steamusercontent.com/ugc/2101548510580246115/6CCEB2182BC9D54D2EC839ED3E754DB4BAD1BFFF/",
       "PDFPassword": "",
-      "PDFPage": 0,
+      "PDFPage": 15,
       "PDFPageOffset": 0
     },
     "LuaScript": "",

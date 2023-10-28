@@ -1,0 +1,45 @@
+heroes["gambit"] = {
+    name = "Gambit",
+    identityCardId = "37001",
+    flipIdentityCard = false,
+    hitPoints = 9,
+    tileImageUrl = "http://cloud-3.steamusercontent.com/ugc/1924753791401516991/8BD31B5B7A192AFCAF0D42384304D1801836F7DA/",
+    playmatImageUrl = "http://cloud-3.steamusercontent.com/ugc/2035118512673861042/98ECDF1BFE56CC95E1321E96B322ACD211AF5EA1/",
+    obligationCardId = "37025",
+    teams = "mutants",
+    decks = {
+        hero = {
+            ["37002"] = 1,
+            ["37003"] = 1,
+            ["37004"] = 1,
+            ["37005"] = 1,
+            ["37006"] = 3,
+            ["37007"] = 2,
+            ["37008"] = 2,
+            ["37009"] = 2,
+            ["37010"] = 2
+        },
+        starter = {
+            ["18020"] = 3,
+            ["32019"] = 1,
+            ["32049"] = 1,
+            ["34020"] = 2,
+            ["37011"] = 1,
+            ["37012"] = 1,
+            ["37013"] = 3,
+            ["37014"] = 3,
+            ["37015"] = 3,
+            ["37019"] = 1,
+            ["37021"] = 3,
+            ["40061"] = 1,
+            ["40062"] = 1,
+            ["40063"] = 1
+        },
+        nemesis = {
+            ["37026"] = 1,
+            ["37027"] = 1,
+            ["37028"] = 2,
+            ["37029"] = 1
+        }
+    }
+}
