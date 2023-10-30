@@ -35,79 +35,91 @@ function onload(saved_data)
  layOutHeroes()
 end
 
+function getHeroCount()
+  local allObjects = getAllObjects()
+  local playmatCount = 0
+ 
+  for _, obj in pairs(allObjects) do
+    if(obj.hasTag("Playmat")) then
+     playmatCount = playmatCount + 1
+    end
+  end
+ 
+  return playmatCount
+end
 
 function placeHeroWithStarterDeck(params)
- placeHero(params.heroKey, params.playerColor, "starter")
+  placeHero(params.heroKey, params.playerColor, "starter")
 end
 
 function placeHeroWithHeroDeck(params)
- placeHero(params.heroKey, params.playerColor, "constructed")
+  placeHero(params.heroKey, params.playerColor, "constructed")
 end
 
 function placeHero(heroKey, playerColor, deckType)
- if not confirmPlayerIsSeated(playerColor) then return end
- if not confirmSeatIsAvailable(playerColor) then return end
+  if not confirmPlayerIsSeated(playerColor) then return end
+  if not confirmSeatIsAvailable(playerColor) then return end
 
- local hero = deepCopy(heroes[heroKey])
- local playmatPosition = getPlaymatPosition(playerColor)
+  local hero = deepCopy(heroes[heroKey])
+  local playmatPosition = getPlaymatPosition(playerColor)
  
- placePlaymat(
-  playerColor, 
-  playmatPosition, 
-  hero.playmatImageUrl
- )
+  placePlaymat(
+    playerColor, 
+    playmatPosition, 
+    hero.playmatImageUrl
+  )
   
- placeHealthCounter(
-  playmatPosition,
-  hero.tileImageUrl,
-  hero.hitPoints
- )
+  placeHealthCounter(
+    playmatPosition,
+    hero.tileImageUrl,
+    hero.hitPoints
+  )
 
- placeIdentity(
-  hero,
-  playmatPosition
- )
-
- placeDeck(
-  hero,
-  deckType,
-  playmatPosition
- )
-
- Wait.frames(
-  function()
-   removeCards(hero)
-  end,
-  25
- )
-
- Wait.frames(
-  function()
-   placeCards(
-    hero,
-    playerColor,
-    playmatPosition
-   )
-  end,
-  30
- )
-
- Wait.frames(
-  function()
-   placeExtras(
+  placeIdentity(
     hero,
     playmatPosition
-   )
-  end,
-  120
- )
+  )
 
- placeObligation(hero)
+  placeDeck(
+    hero,
+    deckType,
+    playmatPosition
+  )
+
+  Wait.frames(
+    function()
+    removeCards(hero)
+    end,
+    25
+  )
+
+  Wait.frames(
+    function()
+    placeCards(
+      hero,
+      playerColor,
+      playmatPosition
+    )
+    end,
+    30
+  )
+
+  Wait.frames(
+    function()
+    placeExtras(
+      hero,
+      playmatPosition
+    )
+    end,
+    120
+  )
+
+  placeObligation(hero)
   
- selectedHeroes[playerColor] = hero
+  selectedHeroes[playerColor] = hero
 
- local saved_data = JSON.encode({selectedHeroes = selectedHeroes})
- self.script_state = saved_data
+  local saved_data = JSON.encode({selectedHeroes = selectedHeroes})
+  self.script_state = saved_data
 end
 
 function getHeroByPlayerColor(params)
@@ -289,17 +301,40 @@ function placeCards(hero, playerColor, playmatPosition)
   return
  end
 
+ local previousCardName = ""
+
  for key, card in pairs(hero.cards) do
   local cardPosition = getOffsetPosition(playmatPosition, card["offset"])
+  local delay = 0
 
-  findAndPlacePlayerCard({
-   hero = hero,
-   cardName = card["name"],
-   position = cardPosition,
-   scale = card["scale"],
-   rotation = card["rotation"],
-   flipped = card["flipped"]
-  })
+  if(card["name"] == previousCardName) then
+   delay = 1
+  end
+
+  previousCardName = card["name"]
+
+  Wait.time(
+   function()
+    findAndPlacePlayerCard({
+     hero = hero,
+     cardName = card["name"],
+     position = cardPosition,
+     scale = card["scale"],
+     rotation = card["rotation"],
+     flipped = card["flipped"]
+    })
+   end,
+   delay
+  )
+
+  -- findAndPlacePlayerCard({
+  --  hero = hero,
+  --  cardName = card["name"],
+  --  position = cardPosition,
+  --  scale = card["scale"],
+  --  rotation = card["rotation"],
+  --  flipped = card["flipped"]
+  -- })
  end
 end
 
@@ -550,10 +585,6 @@ end
 function createContextMenu()
   self.addContextMenuItem("Lay Out Heroes", layOutHeroes)
   self.addContextMenuItem("Delete Heroes", deleteHeroes)
-  self.addContextMenuItem("Lay Out Avengers", layOutAvengers)
-  self.addContextMenuItem("Lay Out Mutants", layOutMutants)
-  self.addContextMenuItem("Lay Out Guardians", layOutGuardians)
-  self.addContextMenuItem("Lay Out Web Warriors", layOutSpiders)
 end
 
 
@@ -578,36 +609,20 @@ function layOutHeroes()
   })  
 end
 
-function layOutHeroesByTeam(params)
-  local heroList = getHeroesByTeam(params.team)
+function layOutHeroSelectors(params)
+  local heroList = params.team ~= nil and getHeroesByTeam(params.team) or heroes
   local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
 
   layoutManager.call("layOutSelectorTiles", {
-      center = {0, 1.0, 0},
-      direction = "horizontal",
-      maxRowsOrColumns = 6,
-      columnGap = 6.5,
-      rowGap = 3.5,
-      selectorScale = {1.33, 1, 1.33},
+      center = params.center or {0,0.5,0},
+      direction = params.direction or "horizontal",
+      maxRowsOrColumns = params.maxRowsOrColumns or 6,
+      columnGap = params.columnGap or 6.5,
+      rowGap = params.rowGap or 3.5,
+      selectorScale = params.selectorScale or {1.33, 1, 1.33},
       items = heroList,
       itemType = "hero"
   }) 
-end
-
-function layOutAvengers()
-  layOutHeroesByTeam({team = "avengers"})
-end
-  
-function layOutMutants()
-  layOutHeroesByTeam({team = "mutants"})
-end
-
-function layOutGuardians()
-  layOutHeroesByTeam({team = "guardians"})
-end
-
-function layOutSpiders()
-  layOutHeroesByTeam({team = "spiders"})
 end
 
 function deleteHeroes()
@@ -662,3 +677,5 @@ require('!/heroes/ant_man')
 require('!/heroes/wasp')
 require('!/heroes/ironheart')
 require('!/heroes/spectrum')
+require('!/heroes/psylocke')
+require('!/heroes/angel')

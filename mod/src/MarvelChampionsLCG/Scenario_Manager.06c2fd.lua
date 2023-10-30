@@ -1,5 +1,8 @@
 preventDeletion = true
 
+local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
+local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
+
 local defaults = {
   villainHpCounter = {
     position = Global.getTable("VILLAIN_HEALTH_COUNTER_POSITION"),
@@ -43,6 +46,8 @@ local mode = ""
 local counters = {}
 local villains = {}
 
+local currentScenario = nil
+
 local assetBag = getObjectFromGUID("91eba8")
 
 function onload(saved_data)
@@ -67,10 +72,15 @@ function placeScenarioInExpertMode(params)
   placeScenario(params.scenarioKey, "expert")
 end
 
+function selectScenario(params)
+  currentScenario = scenarios[params.scenarioKey]
+  layoutManager.call("highlightSelectedSelectorTile", {itemType = "scenario", itemKey = params.scenarioKey})
+end
+
 function placeScenario(scenarioKey, mode)
   if not confirmNoScenarioIsPlaced() then return end
 
-  local heroCount = getHeroCount()
+  local heroCount = heroManager.call("getHeroCount")
   local scenario = scenarios[scenarioKey];
   local delay = 0
 
@@ -91,7 +101,7 @@ function placeScenario(scenarioKey, mode)
   end
 
   for _, scheme in pairs(scenario.schemes) do
-    placeScheme(scheme)
+    placeScheme(scheme, heroCount)
   end
 
   placeBlackHole(scenario)
@@ -231,7 +241,7 @@ function placeDeck(deck)
   createDeck({cards = deck.cards, position = deckPosition, scale = deckScale, name = deck.name})
 end
 
-function placeScheme(scheme)
+function placeScheme(scheme, heroCount)
   local schemePosition = scheme.position or defaults.mainSchemeDeck.position
   local schemeRotation = scheme.rotation or defaults.mainSchemeDeck.rotation
   local schemeScale = scheme.scale or defaults.mainSchemeDeck.scale
@@ -254,7 +264,7 @@ function placeScheme(scheme)
 
   Wait.time(
     function()
-      placeThreatCounter(counter, nil, getHeroCount())
+      placeThreatCounter(counter, nil, heroCount)
     end,
     1
   )
@@ -445,39 +455,16 @@ function configureBoostPanel(params)
   boostPanel.setLock(true)
 end
 
-function getHeroCount()
-  local allObjects = getAllObjects()
-  local playmatCount = 0
- 
-  for _, obj in pairs(allObjects) do
-    if(obj.hasTag("Playmat")) then
-     playmatCount = playmatCount + 1
-    end
-  end
- 
-  return playmatCount
- end
-
- function updateCounters()
-  local heroCount = getHeroCount()
-
-  for guid, calc in pairs(counters) do
-    local counter = getObjectFromGUID(guid)
-    newValue = calc.base + (calc.multiplier * heroCount)
-    counter.call("setValue", {value = newValue})
-  end
- end
-
- function clearScenario()
-  --TODO: call this when clearing the scenario area
-  scenarioInfo = {}
-  mode = ""
-  counters = {}
-  vilains = {}
- end
+function clearScenario()
+--TODO: call this when clearing the scenario area
+scenarioInfo = {}
+mode = ""
+counters = {}
+vilains = {}
+end
 
 function spawnNemesis(params)
-  local heroManager = getObjectFromGUID(Global.getVar("HERO_MANAGER_GUID"))
+  local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
   local hero = heroManager.call("getHeroByPlayerColor", {playerColor = params.playerColor})
 
   local deck = {
@@ -506,8 +493,6 @@ local columnGap = 5
 local rows = 12
 
 function layOutScenarios()
-  local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
-
   layoutManager.call("layOutSelectorTiles", {
       origin = originPosition,
       direction = "vertical",
@@ -515,12 +500,26 @@ function layOutScenarios()
       columnGap = columnGap,
       rowGap = rowGap,
       items = scenarios,
-      itemType = "scenario"
+      itemType = "scenario",
+      behavior = "layOut"
+  }) 
+end
+
+function layOutScenarioSelectors(params)
+  layoutManager.call("layOutSelectorTiles", {
+      center = params.center or {0,0.5,0},
+      direction = params.direction or "horizontal",
+      maxRowsOrColumns = params.maxRowsOrColumns or 6,
+      columnGap = params.columnGap or 6.5,
+      rowGap = params.rowGap or 3.5,
+      selectorScale = params.selectorScale or {1.33, 1, 1.33},
+      items = scenarios,
+      itemType = "scenario",
+      behavior = params.behavior
   }) 
 end
 
 function deleteScenarios()
-  local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
   layoutManager.call("clearSelectorTiles", {itemType = "scenario"})
 end
 

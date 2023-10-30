@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "1eb3c1",
+    "GUID": "d19a0b",
     "Name": "Custom_Token",
     "Transform": {
-      "posX": -27.2124348,
-      "posY": 10,
-      "posZ": 36.53,
-      "rotX": 45.0000038,
+      "posX": -48.75,
+      "posY": 1.0152235,
+      "posZ": 29.75,
+      "rotX": 1.08477195e-7,
       "rotY": 180,
-      "rotZ": -0.00000190363312,
-      "scaleX": 5,
+      "rotZ": -2.00034727e-8,
+      "scaleX": 0.75,
       "scaleY": 1,
-      "scaleZ": 5
+      "scaleZ": 0.75
     },
-    "Nickname": "Control Panel",
+    "Nickname": "",
     "Description": "",
     "GMNotes": "",
     "AltLookAngle": {
@@ -41,7 +41,7 @@
     "HideWhenFaceDown": false,
     "Hands": false,
     "CustomImage": {
-      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/2101548510580058886/B02752B40EB9723F5FE5D6857F34CE87010A53BE/",
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/2101548510579153058/8FC91215A449F636B80560C24ABB62C46A2AE3B0/",
       "ImageSecondaryURL": "",
       "ImageScalar": 1,
       "WidthScale": 0,
@@ -52,7 +52,7 @@
         "Stackable": false
       }
     },
-    "LuaScript": "#include ./Control_Panel.1eb3c1.lua",
+    "LuaScript": "#include ./Custom_Token.d19a0b.lua",
     "LuaScriptState": "",
     "XmlUI": ""
   },

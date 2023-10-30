@@ -18,6 +18,7 @@ function layOutSelectorTiles(params)
     local selectorRotation = params.selectorRotation or defaultSelectorRotation
     local items = params.items
     local itemType = params.itemType
+    local behavior = params.behavior
     local sortedList = getSortedListOfItems(items)
     local itemCount = #sortedList
 
@@ -56,7 +57,8 @@ function layOutSelectorTiles(params)
                     itemType = itemType,
                     itemKey = key,
                     itemName = item.name,
-                    imageUrl = item.tileImageUrl
+                    imageUrl = item.tileImageUrl,
+                    behavior = behavior
                 })
          end,
             1
@@ -144,25 +146,19 @@ function stripArticles(orig)
 end
 
 function getCoordinates(origin, column, row, columnGap, rowGap)
-    log(origin)
     if(origin == nil) then
-        log("Origin is nil")
         return
     end
     if(column == nil) then
-        log("Column is nil")
         return
     end
     if(row == nil) then
-        log("Row is nil")
         return
     end
     if(columnGap == nil) then
-        log("Column gap is nil")
         return
     end
     if(rowGap == nil) then
-        log("Row gap is nil")
         return
     end
 
@@ -182,5 +178,23 @@ function clearSelectorTiles(params)
                 v.destruct()
             end
         end
-    end     
+    end
+end
+
+function highlightSelectedSelectorTile(params)
+    local allObjects = getAllObjects()
+    local itemType = params.itemType
+    local itemKey = params.itemKey
+
+    for k,v in pairs(allObjects) do
+        if(v.hasTag(SELECTOR_TILE_TAG)) then
+            if( v.getVar("itemType") == itemType) then
+                if(v.getVar("itemKey") == itemKey) then
+                    v.highlightOn({1,1,0.5})
+                else
+                    v.highlightOff({1,1,0.5})
+                end
+            end
+        end
+    end
 end

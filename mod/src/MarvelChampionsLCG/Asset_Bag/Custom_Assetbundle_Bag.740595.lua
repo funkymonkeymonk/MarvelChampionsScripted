@@ -3,7 +3,7 @@ function onLoad()
         click_function="click_clopen", function_owner=self,
         position={0,0.5,0}, height=500, width=500, color={0,0,0,0}
     })
-    params = {assetbundle="http://chry.me/up/new_blackhole4.unity3d",material=2}
+    params = {assetbundle="https://thespecialistscomic.com/mc/new_blackhole_test.unity3d",material=2}
 end
 
 function click_clopen()
