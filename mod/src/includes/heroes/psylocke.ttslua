@@ -1,0 +1,58 @@
+heroes["psylocke"] = {
+    name = "Psylocke",
+    identityCardId = "41001",
+    hitPoints = 10,
+    tileImageUrl = "http://cloud-3.steamusercontent.com/ugc/2062140006627624137/A071764B8DDBE1D5DE4DA9B8A3B8FA0354935652/",
+    playmatImageUrl = "http://cloud-3.steamusercontent.com/ugc/2128572098618582499/8E57D23403C62FC93FDE0A8017C72018DEAD90F1/",
+    obligationCardId = "41025",
+    teams = "mutants",
+    decks = {
+        hero = {
+            ["41002"] = 2,
+            ["41003"] = 1,
+            ["41004"] = 3,
+            ["41005"] = 3,
+            ["41006"] = 2,
+            ["41007"] = 2,
+            ["41008"] = 1,
+            ["41009"] = 1,
+            ["41010"] = 1,
+            ["41011"] = 1
+        },
+        starter = {
+            ["41012"] = 1,
+            ["41013"] = 1,
+            ["41014"] = 3,
+            ["41015"] = 3,
+            ["41016"] = 1,
+            ["41017"] = 3,
+            ["41018"] = 1,
+            ["41019"] = 3,
+            ["41020"] = 1,
+            ["41021"] = 3,
+            ["41022"] = 1,
+            ["41023"] = 1,
+            ["41024"] = 3
+        },
+        nemesis = {
+            ["41026"] = 1,
+            ["41027"] = 1,
+            ["41028"] = 1,
+            ["41029"] = 2
+        }
+    },
+    cards = {
+        psiknife1 = {
+            cardId = "41002",
+            name = "Psi-Knife",
+            offset = {-4.94, 3, -0.02},
+            flipped = true
+        },
+        psiknife2 = {
+            cardId = "41002",
+            name = "Psi-Knife",
+            offset = {-2.04, 3, -0.02},
+            flipped = true
+        }
+    }    
+}

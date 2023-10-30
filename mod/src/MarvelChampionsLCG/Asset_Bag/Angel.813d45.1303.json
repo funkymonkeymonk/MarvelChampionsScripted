@@ -1,0 +1,64 @@
+{
+  "Object": {
+    "GUID": "813d45",
+    "Name": "Card",
+    "Transform": {
+      "posX": 28.3121758,
+      "posY": 2.23474,
+      "posZ": -0.5034696,
+      "rotX": 2.31872654e-8,
+      "rotY": 180,
+      "rotZ": 180,
+      "scaleX": 1.88,
+      "scaleY": 1,
+      "scaleZ": 1.88
+    },
+    "Nickname": "Angel",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": true,
+    "CardID": 1303,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "13": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/2128571377006054269/63A0E014AD44C07F375299C7C7EE165D21851D26/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/2128571377006057430/975DC6FEC36C281383313FFB88B71C3CCA186904/",
+        "NumWidth": 3,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": true,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "States": {}
+  },
+  "StatesPaths": {
+    "2": "Archangel.1c3806.1600.json"
+  }
+}

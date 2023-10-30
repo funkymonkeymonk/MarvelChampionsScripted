@@ -56,7 +56,6 @@ function findPlaymatAtLocation()
    })
 
    for _, obj in ipairs(objList) do
-      log(obj.hit_object)
       if(obj.hit_object.hasTag("Playmat")) then
          return obj.hit_object
       end

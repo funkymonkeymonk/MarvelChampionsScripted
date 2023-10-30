@@ -1,6 +1,11 @@
 itemType = ""
 itemKey = ""
 itemName = ""
+local behavior = ""
+
+local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
+local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
+local modularSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
 
 function onload(saved_data)
     if(saved_data ~= "") then
@@ -8,6 +13,7 @@ function onload(saved_data)
         itemType = loaded_data.itemType
         itemKey = loaded_data.itemKey
         itemName = loaded_data.itemName
+        behavior = loaded_data.behavior
     end
 
     if(itemType == "hero") then
@@ -25,12 +31,14 @@ function setUpTile(params)
     itemType = params.itemType
     itemKey = params.itemKey
     itemName = params.itemName
+    behavior = params.behavior or "layOut"
     imageUrl = params.imageUrl
 
     local saved_data = JSON.encode({
         itemType = itemType,
         itemKey = itemKey,
-        itemName = itemName
+        itemName = itemName,
+        behavior = behavior
     })
     self.script_state = saved_data
 
@@ -50,20 +58,29 @@ function createHeroButtons()
     self.createButton({
       label = "S|", click_function = "placeHeroWithStarterDeck", function_owner = self,
       position = {-1,0.2,-0.12}, rotation = {0,0,0}, height = 560, width = 550,
-      font_size = 600, color = {1,1,1}, font_color = {0,0,0}, tooltip = "Starter"
+      font_size = 600, color = {0,0,0,0}, font_color = {0,0,0,100}, tooltip = "Starter"
     })
     self.createButton({
       label = "C", click_function = "placeHeroWithHeroDeck", function_owner = self,
       position = {-0.24,0.2,-0.12}, rotation = {0,0,0}, height = 560, width = 550, 
-      font_size = 600, color = {1,1,1}, font_color = {0,0,0}, tooltip = "Constructed"
+      font_size = 600, color = {0,0,0,0}, font_color = {0,0,0,100}, tooltip = "Constructed"
     })
 end
 
 function createScenarioButtons()
+    if(behavior == "layOut") then
+        self.createButton({
+            label = "GO", click_function = "placeScenario", function_owner = self,
+            position = {0.85,0.2,-0.18}, rotation = {0,0,0}, height = 540, width = 875, 
+            font_size = 500, color = {0,0,0,0}, font_color = {0,0,0,100}, tooltip = "Set Up "..itemName
+        })
+        return
+    end
+
     self.createButton({
-      label = "GO", click_function = "placeScenario", function_owner = self,
-      position = {0.85,0.2,-0.18}, rotation = {0,0,0}, height = 540, width = 875, 
-      font_size = 500, color = {1,1,1}, font_color = {0,0,0}, tooltip = "Set Up Scenario"
+        label = "SELECT", click_function = "selectScenario", function_owner = self,
+        position = {0.85,0.2,-0.18}, rotation = {0,0,0}, height = 540, width = 875, 
+        font_size = 250, color = {0,0,0,0}, font_color = {0,0,0,100}, tooltip = "Select "..itemName
     })
   
     -- tile.createButton({
@@ -94,29 +111,27 @@ function createModularSetButton()
 end
 
 function placeHeroWithStarterDeck(obj, player_color)
-    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
     heroManager.call("placeHeroWithStarterDeck", {heroKey = itemKey, playerColor = player_color})
 end
 function placeHeroWithHeroDeck(obj, player_color)
-    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
     heroManager.call("placeHeroWithHeroDeck", {heroKey = itemKey, playerColor = player_color})
 end
 
 function placeScenario(obj, player_color)
-    local scenarioManager = getObjectFromGUID(Global.getVar("SCENARIO_MANAGER_GUID"))
     scenarioManager.call("placeUnscriptedScenario", {scenarioKey = itemKey})
 end
 
+function selectScenario(obj, player_color)
+    scenarioManager.call("selectScenario", {scenarioKey = itemKey})
+end
+
   --   function placeScenarioInStandardMode(obj, player_color)
-  --     local scenarioPlacer = getObjectFromGUID(Global.getVar("SCENARIO_MANAGER_GUID"))
-  --     scenarioPlacer.call("placeScenarioInStandardMode", {scenarioBagGuid = "]]..scenarioBagGuid..[["})
+  --     scenarioManager.call("placeScenarioInStandardMode", {scenarioBagGuid = "]]..scenarioBagGuid..[["})
   --   end
   --   function placeScenarioInExpertMode(obj, player_color)
-  --     local scenarioPlacer = getObjectFromGUID(Global.getVar("SCENARIO_MANAGER_GUID"))
-  --     scenarioPlacer.call("placeScenarioInExpertMode", {scenarioBagGuid = "]]..scenarioBagGuid..[["})
+  --     scenarioManager.call("placeScenarioInExpertMode", {scenarioBagGuid = "]]..scenarioBagGuid..[["})
   --   end 
 
 function placeModularSet(obj, player_color)
-    local modularSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
     modularSetManager.call("placeModularSet", {modularSetKey = itemKey})
 end

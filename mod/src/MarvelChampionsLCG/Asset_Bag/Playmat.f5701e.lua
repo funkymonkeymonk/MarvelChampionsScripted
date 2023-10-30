@@ -1,25 +1,42 @@
 DRAWN_ENCOUNTER_OFFSET = {-1.275, 0.5, -1.533}
 
-COLLISION_ENABLED = false
+local data = {}
 
-local playerColor
+function onload(saved_data)
+   loadSavedData(saved_data)
 
-function setPlayerColor(params)
-   playerColor = params.color
+   createButtons()
 
-   local saved_data = JSON.encode({playerColor = playerColor})
+   if(getValue("showSelfDestruct", true)) then
+      createSelfDestructButton()
+   end
+end
+
+function loadSavedData(saved_data)
+   if saved_data ~= "" then
+      local loaded_data = JSON.decode(saved_data)
+      data = loaded_data
+   end
+end
+
+function setValue(key, value)
+   data[key] = value
+   local saved_data = JSON.encode(data)
    self.script_state = saved_data
 end
 
-function onload(saved_data)
-   if(saved_data ~= "") then
-      local loaded_data = JSON.decode(saved_data)
-      playerColor = loaded_data.playerColor
+function getValue(key, default)
+   if data[key] == nil then
+      return default
    end
 
+   return data[key]
+end
+
+function createButtons()
    self.createButton({
       label          = "1",
-      click_function = "movePlayerone",
+      click_function = "movePlayerOne",
       function_owner = self,
       position       = {1.56,0.3,-0.52},
       rotation       = {0,0,0},
@@ -95,13 +112,13 @@ function onload(saved_data)
       color          = {0,0,0},
       tooltip        = "Summon Your Nemesis!"
    })
-
-   createSelfDestructButton()
-
-   COLLISION_ENABLED = true
 end
 
-function movePlayerone()
+function setPlayerColor(params)
+   setValue("playerColor", params.color)
+end
+
+function movePlayerOne()
    playerToken   = getObjectFromGUID(Global.getVar("FIRST_PLAYER_TOKEN_GUID"))
    boardPosition = self.getPosition()
    playerToken.setPositionSmooth(boardPosition + Vector{11.9, 0.3, 6.3}, false, false)
@@ -158,7 +175,7 @@ function drawEncounter(object, player, isRightClick)
 end
 
 function discardEncounter(object, player_color, isRightClick)
-   Global.call("discardEncounterCard", {playerColor = playerColor})
+   Global.call("discardEncounterCard", {playerColor = getValue("playerColor")})
 end
 
 function discardRandom(object, player)
@@ -199,6 +216,8 @@ function createSelfDestructButton()
       color          = {0,0,0},
       tooltip        = "Clear Playmat"
    })
+
+   setValue("showSelfDestruct", true)
 end
 
 function createConfirmAndCancelButtons()
@@ -253,6 +272,14 @@ function clearPlaymat()
 end
 
 function spawnNemesis()
-   local scenarioManager = getObjectFromGUID(Global.getVar("SCENARIO_MANAGER_GUID"))
-   scenarioManager.call("spawnNemesis", {playerColor = playerColor})
+   local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
+   scenarioManager.call("spawnNemesis", {playerColor = getValue("playerColor")})
+end
+
+function removeSelfDestructButtons()
+   removeButtonByLabel("REMOVE")
+   removeButtonByLabel("CANCEL")
+   removeButtonByLabel("CONFIRM")
+
+   setValue("showSelfDestruct", false)
 end

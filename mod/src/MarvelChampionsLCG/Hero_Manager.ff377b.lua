@@ -32,82 +32,94 @@ function onload(saved_data)
  end
  
  createContextMenu()
- --layOutHeroes()
+ layOutHeroes()
 end
 
+function getHeroCount()
+  local allObjects = getAllObjects()
+  local playmatCount = 0
+ 
+  for _, obj in pairs(allObjects) do
+    if(obj.hasTag("Playmat")) then
+     playmatCount = playmatCount + 1
+    end
+  end
+ 
+  return playmatCount
+end
 
 function placeHeroWithStarterDeck(params)
- placeHero(params.heroKey, params.playerColor, "starter")
+  placeHero(params.heroKey, params.playerColor, "starter")
 end
 
 function placeHeroWithHeroDeck(params)
- placeHero(params.heroKey, params.playerColor, "constructed")
+  placeHero(params.heroKey, params.playerColor, "constructed")
 end
 
 function placeHero(heroKey, playerColor, deckType)
- if not confirmPlayerIsSeated(playerColor) then return end
- if not confirmSeatIsAvailable(playerColor) then return end
+  if not confirmPlayerIsSeated(playerColor) then return end
+  if not confirmSeatIsAvailable(playerColor) then return end
 
- local hero = deepCopy(heroes[heroKey])
- local playmatPosition = getPlaymatPosition(playerColor)
+  local hero = deepCopy(heroes[heroKey])
+  local playmatPosition = getPlaymatPosition(playerColor)
  
- placePlaymat(
-  playerColor, 
-  playmatPosition, 
-  hero.playmatImageUrl
- )
+  placePlaymat(
+    playerColor, 
+    playmatPosition, 
+    hero.playmatImageUrl
+  )
   
- placeHealthCounter(
-  playmatPosition,
-  hero.tileImageUrl,
-  hero.hitPoints
- )
+  placeHealthCounter(
+    playmatPosition,
+    hero.tileImageUrl,
+    hero.hitPoints
+  )
 
- placeIdentity(
-  hero,
-  playmatPosition
- )
-
- placeDeck(
-  hero,
-  deckType,
-  playmatPosition
- )
-
- Wait.frames(
-  function()
-   removeCards(hero)
-  end,
-  25
- )
-
- Wait.frames(
-  function()
-   placeCards(
-    hero,
-    playerColor,
-    playmatPosition
-   )
-  end,
-  30
- )
-
- Wait.frames(
-  function()
-   placeExtras(
+  placeIdentity(
     hero,
     playmatPosition
-   )
-  end,
-  120
- )
+  )
 
- placeObligation(hero)
+  placeDeck(
+    hero,
+    deckType,
+    playmatPosition
+  )
+
+  Wait.frames(
+    function()
+    removeCards(hero)
+    end,
+    25
+  )
+
+  Wait.frames(
+    function()
+    placeCards(
+      hero,
+      playerColor,
+      playmatPosition
+    )
+    end,
+    30
+  )
+
+  Wait.frames(
+    function()
+    placeExtras(
+      hero,
+      playmatPosition
+    )
+    end,
+    120
+  )
+
+  placeObligation(hero)
   
- selectedHeroes[playerColor] = hero
+  selectedHeroes[playerColor] = hero
 
- local saved_data = JSON.encode({selectedHeroes = selectedHeroes})
- self.script_state = saved_data
+  local saved_data = JSON.encode({selectedHeroes = selectedHeroes})
+  self.script_state = saved_data
 end
 
 function getHeroByPlayerColor(params)
@@ -289,17 +301,40 @@ function placeCards(hero, playerColor, playmatPosition)
   return
  end
 
+ local previousCardName = ""
+
  for key, card in pairs(hero.cards) do
   local cardPosition = getOffsetPosition(playmatPosition, card["offset"])
+  local delay = 0
 
-  findAndPlacePlayerCard({
-   hero = hero,
-   cardName = card["name"],
-   position = cardPosition,
-   scale = card["scale"],
-   rotation = card["rotation"],
-   flipped = card["flipped"]
-  })
+  if(card["name"] == previousCardName) then
+   delay = 1
+  end
+
+  previousCardName = card["name"]
+
+  Wait.time(
+   function()
+    findAndPlacePlayerCard({
+     hero = hero,
+     cardName = card["name"],
+     position = cardPosition,
+     scale = card["scale"],
+     rotation = card["rotation"],
+     flipped = card["flipped"]
+    })
+   end,
+   delay
+  )
+
+  -- findAndPlacePlayerCard({
+  --  hero = hero,
+  --  cardName = card["name"],
+  --  position = cardPosition,
+  --  scale = card["scale"],
+  --  rotation = card["rotation"],
+  --  flipped = card["flipped"]
+  -- })
  end
 end
 
@@ -642,3 +677,5 @@ require('!/heroes/ant_man')
 require('!/heroes/wasp')
 require('!/heroes/ironheart')
 require('!/heroes/spectrum')
+require('!/heroes/psylocke')
+require('!/heroes/angel')
