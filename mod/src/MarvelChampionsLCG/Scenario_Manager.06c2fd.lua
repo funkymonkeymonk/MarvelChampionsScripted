@@ -108,25 +108,25 @@ function placeScenario(scenarioKey, mode)
 
   placeModularSets(scenario)
 
-  -- if(scenario.cards ~= nil) then
-  --   for _, card in pairs(scenario.cards) do
-  --     getCardByID(card.cardId, card.position, {scale = card.scale, name = card.name, flipped = card.flipped, landscape = card.landscape})
-  --   end
-  -- end
+  if(scenario.cards ~= nil) then
+    for _, card in pairs(scenario.cards) do
+      getCardByID(card.cardId, card.position, {scale = card.scale, name = card.name, flipped = card.flipped, landscape = card.landscape})
+    end
+  end
 
-  -- if(scenario.counters ~= nil) then
-  --   for _, counter in pairs(scenario.counters) do
-  --     Wait.time(
-  --       function()
-  --         if(counter.type == "threat") then
-  --           placeThreatCounter(counter, nil, heroCount)
-  --         else
-  --           placeGeneralCounter(counter)
-  --         end
-  --       end,
-  --       1)
-  --   end
-  -- end
+  if(scenario.counters ~= nil) then
+    for _, counter in pairs(scenario.counters) do
+      Wait.time(
+        function()
+          if(counter.type == "threat") then
+            placeThreatCounter(counter, nil, heroCount)
+          else
+            placeGeneralCounter(counter)
+          end
+        end,
+        1)
+    end
+  end
 
   --placeExtras(scenarioBag, scenarioDetails.extras)
 
