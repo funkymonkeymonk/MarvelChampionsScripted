@@ -1,12 +1,12 @@
 scenarios["magneto"] =
 {
     name="Magneto",
-    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2035118913124026079/1346FDBB47BCA704CFA9E914755A9AAF6B1CD5A3/",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473524122289/1137A4FF6D928E4227CED8F42EE9449720D521B8/",
     villains={
         magneto={
             name="Magneto",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/2035118913124026079/1346FDBB47BCA704CFA9E914755A9AAF6B1CD5A3/",
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473524122289/1137A4FF6D928E4227CED8F42EE9449720D521B8/",
             },
             stage1={
                 cardId="32138",
