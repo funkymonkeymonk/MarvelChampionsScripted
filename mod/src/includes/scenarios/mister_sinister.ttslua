@@ -1,0 +1,118 @@
+scenarios["misterSinister"] =
+{
+    name="Mister Sinister",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473524122093/56CE8F65A437E9FC78E7866B78603E2857F7DB2F/",
+    villains={
+        misterSinister={
+            name="Mister Sinister",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473524122093/56CE8F65A437E9FC78E7866B78603E2857F7DB2F/",
+            },
+            stage1={
+                cardId="40136",
+                hitPointsPerPlayer=14
+            },
+            stage2={
+                cardId="40137",
+                hitPointsPerPlayer=17
+            },
+            stage3={
+                cardId="40138",
+                hitPointsPerPlayer=21
+            }
+        }
+    },
+    schemes={
+        main={
+            stages={
+                stage1={
+                    cardId="40139",
+                    startingThreat=0,
+                    startingThreatPerPlayer=0,
+                    targetThreatPerPlayer=0
+                },
+                stage2={
+                    cardId="40140",
+                    startingThreat=0,
+                    startingThreatPerPlayer=1,
+                    targetThreatPerPlayer=5
+                },
+                stage3={
+                    cardId="40141",
+                    startingThreat=0,
+                    startingThreatPerPlayer=1,
+                    targetThreatPerPlayer=5
+                },
+                stage4={
+                    cardId="40142",
+                    startingThreat=0,
+                    startingThreatPerPlayer=1,
+                    targetThreatPerPlayer=5
+                },
+                stage5={
+                    cardId="40143",
+                    startingThreat=0,
+                    targetThreatPerPlayer=7
+                }
+            }
+        }
+    },
+    cards={
+        hopeSummers={
+            cardId="40130",
+            position={-3, 1.00, 1.25},
+            scale=Vector(Global.getVar("CARD_SCALE_PLAYER"))
+        }
+    },
+    decks={
+        encounterDeck={
+            name="Mister Sinister's Encounter Deck",
+            cards={
+                ["40144"]=1,
+                ["40145"]=2,
+                ["40146"]=1,
+                ["40147"]=2,
+                ["40148"]=1,
+                ["40149"]=1,
+                ["40150"]=1,
+                ["40131"]=1 -- Bit of a hack; adding card from Hope Summers modular set for convenience
+            }
+        },
+        flight={
+            name="Flight",
+            cards = {
+                ["40151"] = 1,
+                ["40152"] = 1,
+                ["40153"] = 1,
+                ["40154"] = 2
+            },
+            position={22.75, 0.97, 22.25},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
+        },
+        superStrength={
+            name="Super Strength",
+            cards = {
+                ["40155"] = 1,
+                ["40156"] = 1,
+                ["40157"] = 1,
+                ["40158"] = 2
+            },
+            position={27.75, 0.97, 22.25},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
+        },
+        telepathy={
+            name="Telepathy",
+            cards = {
+                ["40159"] = 1,
+                ["40160"] = 1,
+                ["40161"] = 1,
+                ["40162"] = 2
+            },
+            position={32.75, 0.97, 22.25},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
+        }
+    },
+    modularSets={
+        nastyBoys="recommended"
+    }
+}
