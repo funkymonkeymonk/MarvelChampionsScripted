@@ -1,0 +1,75 @@
+scenarios["juggernaut"] =
+{
+    name="Juggernaut",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473524122230/9B0AAEDC344754B5584F337704C51388FEDE0201/",
+    villains={
+        juggernaut={
+            name="Juggernaut",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473524122230/9B0AAEDC344754B5584F337704C51388FEDE0201/",
+            },
+            stage1={
+                cardId="40118",
+                hitPointsPerPlayer=18
+            },
+            stage2={
+                cardId="40119",
+                hitPointsPerPlayer=21
+            },
+            stage3={
+                cardId="40120",
+                hitPointsPerPlayer=25
+            }
+        }
+    },
+    schemes={
+        main={
+            stages={
+                stage1={
+                    cardId="40121",
+                    startingThreat=0,
+                    startingThreatPerPlayer=1,
+                    targetThreatPerPlayer=7
+                }
+            }
+        }
+    },
+    cards={
+        juggernautsHelmet={
+            cardId="40122",
+            position={-7.25, 1.00, 22.25},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
+        },
+        hopeSummers={
+            cardId="40130",
+            position={-3, 1.00, 1.25},
+            scale=Vector(Global.getVar("CARD_SCALE_PLAYER"))
+        }
+    },
+    counters={
+        momentum={
+            type="general",
+            position={2.37, 1.13, 21.03},
+            scale={0.52, 1.00, 0.52},
+            locked=true
+        }
+    },
+    decks={
+        encounterDeck={
+            name="On the Run Encounter Deck",
+            cards={
+                ["40123"]=1,
+                ["40124"]=1,
+                ["40125"]=2,
+                ["40126"]=2,
+                ["40127"]=2,
+                ["40128"]=2,
+                ["40129"]=3,
+                ["40131"]=1 -- Bit of a hack; adding card from Hope Summers modular set for convenience
+            }
+        }
+    },
+    modularSets={
+        blackTomCassidy="recommended"
+    }
+}

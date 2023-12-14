@@ -200,6 +200,18 @@ function placeVillain(villain)
   local villainScale = villain.deckScale or defaults.villainDeck.scale
 
   --TODO: only place the cards that are needed, based on mode
+  if(villain.stage7 ~= nil) then --TODO: Remove this after adding scripting to Morlock Siege scenario
+    getCardByID(villain.stage4.cardId, villainPosition, {scale = villainScale, name = villain.name, flipped = false})
+  end
+
+  if(villain.stage6 ~= nil) then
+    getCardByID(villain.stage4.cardId, villainPosition, {scale = villainScale, name = villain.name, flipped = false})
+  end
+
+  if(villain.stage5 ~= nil) then
+    getCardByID(villain.stage4.cardId, villainPosition, {scale = villainScale, name = villain.name, flipped = false})
+  end
+
   if(villain.stage4 ~= nil) then --TODO: Remove this after adding scripting to Mansion Attack scenario
     getCardByID(villain.stage4.cardId, villainPosition, {scale = villainScale, name = villain.name, flipped = false})
   end
@@ -561,3 +573,8 @@ require('!/scenarios/hood')
 require('!/scenarios/sinister_six')
 require('!/scenarios/venom')
 require('!/scenarios/venom_goblin')
+require('!/scenarios/morlock_siege')
+require('!/scenarios/on_the_run')
+require('!/scenarios/juggernaut')
+require('!/scenarios/mister_sinister')
+require('!/scenarios/stryfe')
