@@ -120,3 +120,17 @@ modularSets["deathstrike"] =
         ["35037"] = 2
     }
 }
+
+modularSets["dreadpool"] = 
+{
+    name="Dreadpool",
+    modular=true,
+    cards = {
+        ["44037"]=1,
+        ["44038"]=1,
+        ["44039"]=1,
+        ["44040"]=1,
+        ["44041"]=2,
+        ["44042"]=1
+    }
+}
