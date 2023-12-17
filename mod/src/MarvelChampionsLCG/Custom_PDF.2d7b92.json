@@ -43,7 +43,7 @@
     "CustomPDF": {
       "PDFUrl": "http://cloud-3.steamusercontent.com/ugc/2101548510580246115/6CCEB2182BC9D54D2EC839ED3E754DB4BAD1BFFF/",
       "PDFPassword": "",
-      "PDFPage": 15,
+      "PDFPage": 0,
       "PDFPageOffset": 0
     },
     "LuaScript": "",
