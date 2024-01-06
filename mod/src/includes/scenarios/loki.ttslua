@@ -7,7 +7,8 @@ scenarios["loki"] =
             name="Loki",
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150132430/6C8FCFC49383857A4A92407CE13656C5DE148F37/",
-            }
+            },
+            setUpFunction = "setUpLoki"
         }
     },
     schemes={
@@ -38,7 +39,9 @@ scenarios["loki"] =
         warInAsguardThreat={
             type="threat",
             position={16.37, 1.10, 20.30},
-            scale={0.48, 1.00, 0.48}
+            scale={0.48, 1.00, 0.48},
+            threat=6,
+            threatPerPlayer=1
         }
     },
     decks={
@@ -89,3 +92,8 @@ scenarios["loki"] =
         frostGiants="recommended"
     }
 }
+
+function setUpVillain_loki(params)
+    --TODO: Select a random Loki
+    placeVillainHpCounter(params.villain, params.heroCount * 20)
+end

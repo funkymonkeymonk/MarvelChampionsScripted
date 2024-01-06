@@ -66,7 +66,44 @@ function createAll()
         color = {0,0,0,0}
         })
 
+    if(CONFIG.ADVANCE_BUTTON_LABEL ~= nil) then
+        createAdvanceButton()
+    end
+
     setTooltips()
+end
+
+function createAdvanceButton()
+    self.createButton({
+        label = CONFIG.ADVANCE_BUTTON_LABEL,
+        click_function = CONFIG.ADVANCE_BUTTON_FUNCTION,
+        function_owner = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER")),
+        position = {0,0.1,-1.8},
+        rotation = {0,0,0},
+        width = 2000,
+        height = 500,
+        font_size = 400,
+        font_color = {1,1,1},
+        color = {0,0,1}
+    })    
+end
+
+function setAdvanceButtonOptions(params)
+    CONFIG.ADVANCE_BUTTON_LABEL = params.label
+    CONFIG.ADVANCE_BUTTON_FUNCTION = params.clickFunction
+    CONFIG.ADVANCE_BUTTON_PARAMS = params.params
+
+    updateSave()
+end
+
+function removeAdvanceButton()
+    self.removeButton(3)
+
+    CONFIG.ADVANCE_BUTTON_LABEL = nil
+    CONFIG.ADVANCE_BUTTON_FUNCTION = nil
+    CONFIG.ADVANCE_BUTTON_PARAMS = nil
+
+    updateSave()
 end
 
 function editName(_obj, _string, value)
@@ -109,4 +146,10 @@ function setTooltips()
         value = tostring(CONFIG.VALUE),
         tooltip = ttText
         })
+end
+
+function setValue(params)
+    CONFIG.VALUE = params.value
+    updateVal()
+    updateSave()
 end

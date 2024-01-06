@@ -64,6 +64,11 @@ function updateVal()
         })
 end
 
+function setValue(params)
+    CONFIG.VALUE = params.value
+    updateVal()
+    updateSave()
+end
 
 
 

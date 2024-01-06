@@ -1,8 +1,8 @@
 {
   "Save": {
     "SaveName": "MarvelChampionsLCG",
-    "EpochTime": 1698627579,
-    "Date": "10/29/2023 6:59:39 PM",
+    "EpochTime": 1704090052,
+    "Date": "12/31/2023 11:20:52 PM",
     "VersionNumber": "v13.2.2",
     "GameMode": "MarvelChampionsLCG",
     "GameType": "Game",
@@ -474,9 +474,6 @@
     "First_Player.d93792.json",
     "Custom_Tile.74c1d6.json",
     "Custom_Tile.ed0a82.json",
-    "3DText.48b9e8.json",
-    "3DText.4e892b.json",
-    "3DText.93e9ab.json",
     "3DText.8261c5.json",
     "Cerebro.c7ece0.json",
     "Damage_Variable.029e3b.json",
@@ -524,17 +521,12 @@
     "3DText.93a2db.json",
     "The_Rise_of_Red_Skull.e2a11c.json",
     "The_Mad_Titan_s_Shadow.6ca74f.json",
-    "3DText.59d365.json",
-    "Standard.ae4736.json",
-    "Expert.85fe67.json",
     "Custom_Token.61e7e8.json",
     "Custom_Token.71e09c.json",
     "Custom_Token.cab71a.json",
     "Custom_Token.dd5292.json",
     "Custom_Token.e6a306.json",
     "Custom_Token.e8914a.json",
-    "Standard_2.bb0fe1.json",
-    "Expert_2.733a8b.json",
     "ScriptingTrigger.489e50.json",
     "ScriptingTrigger.eacfa8.json",
     "ScriptingTrigger.546c74.json",
@@ -557,6 +549,7 @@
     "Scenario_Manager.06c2fd.json",
     "Modular_Set_Manager.608543.json",
     "Hero_Manager.ff377b.json",
-    "Custom_Token.d19a0b.json"
+    "Custom_Token.d19a0b.json",
+    "Setup_Panel.cce23d.json"
   ]
 }

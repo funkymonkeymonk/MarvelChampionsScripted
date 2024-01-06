@@ -101,13 +101,23 @@ function createModularSetButton()
     if(fontSize > 400) then fontSize = 400 end
     if(fontSize < 200) then fontSize = 200 end
 
-    self.createButton({
-        label=itemName, click_function="placeModularSet", function_owner=self,
-        position={0,0.2,0}, rotation={0,0,0}, height=1000, width=2500,
-        font_size=fontSize, color={0,0,0}, font_color={1,1,1}
-    })
-
     self.setName("")
+
+    if(behavior == "layout") then
+        self.createButton({
+            label=itemName, click_function="placeModularSet", function_owner=self,
+            position={0,0.2,0}, rotation={0,0,0}, height=1000, width=2500,
+            font_size=fontSize, color={0,0,0}, font_color={1,1,1}, hover_color={0,0,0}
+        })
+
+        return
+    end
+
+    self.createButton({
+        label=itemName, click_function="selectModularSet", function_owner=self,
+        position={0,0.2,0}, rotation={0,0,0}, height=1000, width=2500,
+        font_size=fontSize, color={0,0,0}, font_color={1,1,1}, hover_color={0,0,0}
+    })
 end
 
 function placeHeroWithStarterDeck(obj, player_color)
@@ -134,4 +144,37 @@ end
 
 function placeModularSet(obj, player_color)
     modularSetManager.call("placeModularSet", {modularSetKey = itemKey})
+end
+
+function selectModularSet(obj, player_color)
+    modularSetManager.call("selectModularSet", {modularSetKey = itemKey})
+end
+
+function showSelection(params)
+    local selected = params.selected
+
+    if(itemType == 'modular-set') then
+        if(selected) then
+            required = params.required
+            fontColor = {0,0,0}
+
+            if(required == "required") then
+                fontColor = {1,0,0}
+            elseif(required == "recommended") then
+                fontColor = {0,0,1}
+            end
+
+            self.editButton({index = 0, font_color = fontColor, color = {1,1,0}, hover_color = {1,1,0}})
+        else
+            self.editButton({index = 0, font_color = {1,1,1}, color = {0,0,0}, hover_color = {0,0,0}})
+        end
+
+        return
+    end
+
+    if(selected) then
+        self.highlightOn({0,1,0})
+    else
+        self.highlightOff()
+    end
 end

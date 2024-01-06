@@ -1,6 +1,7 @@
 preventDeletion = true
 
 local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
+local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
 local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
 
 local defaults = {
@@ -42,7 +43,9 @@ local defaults = {
 
 local scenarios = {}
 local scenarioInfo = {}
-local mode = ""
+local selectedMode = nil
+local selectedStandardSet = nil
+local selectedExpertSet = nil
 local counters = {}
 local villains = {}
 
@@ -52,7 +55,23 @@ local assetBag = getObjectFromGUID("91eba8")
 
 function onload(saved_data)
   createContextMenu()
-  layOutScenarios()
+  --layOutScenarios()
+end
+
+function clearData()
+  self.script_state = ""
+end
+
+function setMode(params)
+  selectedMode = params.mode
+end
+
+function setStandardSet(params)
+  selectedStandardSet = params.set
+end
+
+function setExpertSet(params)
+  selectedExpertSet = params.set
 end
 
 function spawnAsset(params)
@@ -73,8 +92,22 @@ function placeScenarioInExpertMode(params)
 end
 
 function selectScenario(params)
-  currentScenario = scenarios[params.scenarioKey]
+  currentScenario = deepCopy(scenarios[params.scenarioKey])
+  currentScenario.key = params.scenarioKey
+  encounterSetManager.call("preSelectEncounterSets", {sets = currentScenario.modularSets or {}})
+
   layoutManager.call("highlightSelectedSelectorTile", {itemType = "scenario", itemKey = params.scenarioKey})
+end
+
+function hideSelectors()
+  layoutManager.call("hideSelectors", {itemType = "scenario"})
+end
+
+function showSelectors()
+  selectedScenarioKey = currentScenario and currentScenario.key or nil
+
+  layoutManager.call("showSelectors", {itemType = "scenario"})
+  layoutManager.call("highlightSelectedSelectorTile", {itemType = "scenario", itemKey = selectedScenarioKey})
 end
 
 function placeScenario(scenarioKey, mode)
@@ -119,7 +152,7 @@ function placeScenario(scenarioKey, mode)
       Wait.time(
         function()
           if(counter.type == "threat") then
-            placeThreatCounter(counter, nil, heroCount)
+            placeThreatCounter(counter, 0)
           else
             placeGeneralCounter(counter)
           end
@@ -137,15 +170,138 @@ function confirmNoScenarioIsPlaced()
   return true --TODO: Implement this
 end
 
-function placeVillainHpCounter(villain, heroCount)
+function setUpScenario()
+  if(not confirmScenarioInputs(true)) then return end
+
+  local heroCount = heroManager.call("getHeroCount")
+
+  startLuaCoroutine(self, "setUpVillains")
+  startLuaCoroutine(self, "setUpSchemes")
+  startLuaCoroutine(self, "setUpDecks")
+
+  setUpCards()
+  setUpCounters(heroCount)
+
+  --placeExtras(scenarioBag, scenarioDetails.extras)
+  placeBlackHole(currentScenario)
+  placeBoostPanel(currentScenario)
+end
+
+function confirmScenarioInputs(postMessage)
+  local heroCount = heroManager.call("getHeroCount")
+
+  if heroCount == 0 then
+    if postMessage then
+      broadcastToAll("Please select at least one hero.", {1,1,1})
+    end
+    return false
+  end
+
+  if currentScenario == nil then
+    if postMessage then
+      broadcastToAll("Please select a scenario.", {1,1,1})
+    end
+    return false
+  end
+
+  local additionalEncounterSets = getRequiredEncounterSetCount() - encounterSetManager.call("getSelectedSetCount")
+
+  if additionalEncounterSets > 0 then
+    if postMessage then
+      local plural = additionalEncounterSets > 1 and "s" or ""
+      broadcastToAll("Please select at least " .. additionalEncounterSets .. " more encounter set" .. plural .. ".", {1,1,1})
+    end
+    return false
+  end
+
+  if selectedMode == nil then
+    if postMessage then
+      broadcastToAll("Please select a mode.", {1,1,1})
+    end
+    return false
+  end
+
+  if selectedStandardSet == nil then
+    if postMessage then
+      broadcastToAll("Please select a standard encounter set.", {1,1,1})
+    end
+    return false
+  end
+
+  if selectedMode == "expert" and selectedExpertSet == nil then
+    if postMessage then
+      broadcastToAll("Please select an expert encounter set.", {1,1,1})
+    end
+    return false
+  end
+
+  return true
+end
+
+function getRequiredEncounterSetCount()
+  if (currentScenario == nil or currentScenario.modulaarSets == nil) then 
+    return 0 
+  end
+
+  local sets = 0
+
+  for _, encounterSet in pairs(currentScenario.modularSets) do
+    sets = sets + 1
+  end
+
+  return sets
+end
+
+function setUpVillains()
+  local heroCount = heroManager.call("getHeroCount")
+
+  for key, villain in pairs(currentScenario.villains) do
+      villain.key = key
+      setUpVillain(villain, heroCount)
+      local count = 0
+      while count < 5 do
+          count = count + 1
+          coroutine.yield(0)
+      end
+  end
+
+  return 1
+end
+
+function setUpVillain(villain, heroCount)
+  local setUpFunction = "setUpVillain_" .. villain.key
+  if(self.getVar(setUpFunction) ~= nil) then
+    self.call(setUpFunction, {villain = villain, heroCount = heroCount})
+    return
+  end
+
+  local villainPosition = villain.deckPosition or defaults.villainDeck.position
+  local villainRotation = villain.deckRotation or defaults.villainDeck.rotation
+  local villainScale = villain.deckScale or defaults.villainDeck.scale
+
+  local stage = nil
+
+  if(selectedMode == "standard") then
+    stage = villain.stage1 or villain.stageA
+  elseif(selectedMode == "expert") then
+    stage = villain.stage2 or villain.stageB
+  end
+
+  getCardByID(
+    stage.cardId, 
+    villainPosition, 
+    {scale = villainScale, name = villain.name, flipped = false, locked=true})
+
+  placeVillainHpCounter(villain, stage.hitPointsPerPlayer * heroCount)
+end
+
+function placeVillainHpCounter(villain, hitPoints)
   local position = villain.hpCounter.position or defaults.villainHpCounter.position
   local rotation = villain.hpCounter.rotation or defaults.villainHpCounter.rotation
   local scale = villain.hpCounter.scale or defaults.villainHpCounter.scale
 
   local counterTemp
   local villainHpCounter
-
-  --local hitPoints = villain.hitPointsPerPlayer * heroCount
   local lock = true;
 
   if(villain.hpCounter.locked ~= nil) then
@@ -164,6 +320,7 @@ function placeVillainHpCounter(villain, heroCount)
       scale = scale,
       imageUrl = villain.hpCounter.imageUrl,
       lock = lock,
+      hitPoints = hitPoints,
       callback = "configureVillainHpCounter"
     })
   end
@@ -171,6 +328,7 @@ end
 
 function configureVillainHpCounter(params)
   local counter = params.spawnedObject
+  local hitPoints = params.hitPoints or 0
 
   counter.setPosition(params.position)
   counter.setName("")
@@ -180,18 +338,141 @@ function configureVillainHpCounter(params)
 
   Wait.frames(
     function()
+      counter.call("setAdvanceButtonOptions", {label = "ADVANCE", clickFunction = "advanceVillain"})
+      counter.call("setValue", {value = hitPoints})
       counter.reload()
     end,
     10
   )
+end
 
-  --counter.call("setValue", {value = hitPoints})
-  --counter.call("createAdvanceButton", {villainKey = villain.name}) --TODO: make this more dynamic, use villainKey instead of name
+function setUpSchemes()
+  local heroCount = heroManager.call("getHeroCount")
 
-  -- counters[counter.getGUID()] = {
-  --   base = 0,
-  --   multiplier = villain.hitPointsPerPlayer
-  -- }
+  for _, scheme in pairs(currentScenario.schemes) do
+      setUpScheme(scheme, heroCount)
+      local count = 0
+      while count < 5 do
+          count = count + 1
+          coroutine.yield(0)
+      end
+  end
+
+  return 1
+end
+
+function setUpScheme(scheme, heroCount)
+  local schemePosition = scheme.position or defaults.mainSchemeDeck.position
+  local schemeRotation = scheme.rotation or defaults.mainSchemeDeck.rotation
+  local schemeScale = scheme.scale or defaults.mainSchemeDeck.scale
+
+  local stage = scheme.stages["stage1"]
+
+  getCardByID(
+    stage.cardId, 
+    schemePosition, 
+    {scale = schemeScale, name = scheme.name, flipped = false, landscape = true})
+
+  local counter = scheme.counter or {}
+
+  local threat = (stage.startingThreat or 0) + ((stage.startingThreatPerPlayer or 0) * heroCount)
+
+  placeThreatCounter(counter, threat)
+end
+
+function setUpDecks()
+  for key, deck in pairs(currentScenario.decks) do
+      setUpDeck(deck, string.sub(key, 1, 9)=="encounter")
+      local count = 0
+      while count < 5 do
+          count = count + 1
+          coroutine.yield(0)
+      end
+  end
+
+  return 1  
+end
+
+function setUpDeck(deck, isEncounterDeck)
+  if(isEncounterDeck) then
+    deck = deepCopy(deck)
+
+    addEncounterSetsToEncounterDeck(deck)
+    addObligationCardsToEncounterDeck(deck)
+    addStandardEncounterSetsToEncounterDeck(deck)
+  end
+
+  placeDeck(deck)
+end
+
+function addEncounterSetsToEncounterDeck(deck)
+  local encounterSetCards = encounterSetManager.call("getCardsFromSelectedSets")
+
+  for cardId, count in pairs(encounterSetCards) do
+    deck.cards[cardId] = count
+  end
+end
+
+function addObligationCardsToEncounterDeck(deck)
+  local obligationCards = heroManager.call("getObligationCards")
+
+  for cardId, count in pairs(obligationCards) do
+    deck.cards[cardId] = count
+  end
+end
+
+function addStandardEncounterSetsToEncounterDeck(deck)
+  if(selectedStandardSet == "i") then
+    deck.cards["01186"]=2
+    deck.cards["01187"]=2
+    deck.cards["01188"]=1
+    deck.cards["01189"]=1
+    deck.cards["01190"]=1
+  else
+    deck.cards["24050"]=2
+    deck.cards["24051"]=1
+    deck.cards["24052"]=1
+    deck.cards["24053"]=1
+    deck.cards["24054"]=2
+
+    --TODO: Place environment card 24049
+  end
+
+  if(selectedExpertSet == "i") then
+    deck.cards["01191"]=1
+    deck.cards["01192"]=1
+    deck.cards["01193"]=1
+  elseif(selectedExpertSet == "ii") then
+    deck.cards["24029"]=1
+    deck.cards["24030"]=1
+    deck.cards["24031"]=1
+    deck.cards["24032"]=1
+  end
+end
+
+function setUpCards()
+  if(currentScenario.cards == nil) then return end
+
+  for _, card in pairs(currentScenario.cards) do
+    getCardByID(card.cardId, card.position, {scale = card.scale, name = card.name, flipped = card.flipped, landscape = card.landscape})
+  end
+end
+
+function setUpCounters(heroCount)
+  if(currentScenario.counters == nil) then return end
+
+  for _, counter in pairs(currentScenario.counters) do
+    Wait.time(
+      function()
+        if(counter.type == "threat") then
+          local threat = (counter.threat or 0) + ((counter.threatPerPlayer or 0) * heroCount)
+          placeThreatCounter(counter, threat)
+        else
+          placeGeneralCounter(counter)
+        end
+      end,
+      1)
+  end
 end
 
 function placeVillain(villain)
@@ -276,30 +557,16 @@ function placeScheme(scheme, heroCount)
 
   Wait.time(
     function()
-      placeThreatCounter(counter, nil, heroCount)
+      placeThreatCounter(counter, 0)
     end,
     1
   )
 end
 
-function placeThreatCounter(counter, stageNumber, heroCount)
+function placeThreatCounter(counter, threat)
   local threatCounterPosition = counter.position or defaults.mainSchemeThreatCounter.position
   local threatCounterRotation = counter.rotation or defaults.mainSchemeThreatCounter.rotation
   local threatCounterScale = counter.scale or defaults.mainSchemeThreatCounter.scale
-
-  -- local threatBase
-  -- local threatMultiplier
-  -- local initialThreat
-
-  -- if(stageNumber ~= nil) then
-  --   threatBase = scheme.stages[stageNumber].threatBase
-  --   threatMultiplier = scheme.stages[stageNumber].threatMultiplier
-  -- else
-  --   threatBase = scheme.threatBase
-  --   threatMultiplier = scheme.threatMultiplier
-  -- end
-
-  -- initialThreat = threatBase + (threatMultiplier * heroCount)
 
   local threatCounterBag = getObjectFromGUID(Global.getVar("GUID_THREAT_COUNTER_BAG"))
   local threatCounter = threatCounterBag.takeObject({position = threatCounterPosition, smooth = false})
@@ -314,15 +581,10 @@ function placeThreatCounter(counter, stageNumber, heroCount)
       threatCounter.setRotation(threatCounterRotation)
       threatCounter.setScale(threatCounterScale)
       threatCounter.setLock(locked)
-      --threatCounter.call("setValue", {value = initialThreat})
+      threatCounter.call("setValue", {value = threat})
     end,
     1
   )
-
-  -- counters[threatCounter.getGUID()] = {
-  --   base = threatBase,
-  --   multiplier = threatMultiplier
-  -- }
 end
 
 function placeGeneralCounter(counter)
@@ -488,10 +750,10 @@ function spawnNemesis(params)
   createDeck(deck)
 end
 
-
 function createContextMenu()
   self.addContextMenuItem("Lay Out Scenarios", layOutScenarios)
   self.addContextMenuItem("Delete Scenarios", deleteScenarios)
+  self.addContextMenuItem("Delete Everything", deleteEverything)
 end
 
 
@@ -519,6 +781,7 @@ end
 
 function layOutScenarioSelectors(params)
   layoutManager.call("layOutSelectorTiles", {
+      origin = params.origin,
       center = params.center or {0,0.5,0},
       direction = params.direction or "horizontal",
       maxRowsOrColumns = params.maxRowsOrColumns or 6,
@@ -527,12 +790,44 @@ function layOutScenarioSelectors(params)
       selectorScale = params.selectorScale or {1.33, 1, 1.33},
       items = scenarios,
       itemType = "scenario",
-      behavior = params.behavior
+      behavior = params.behavior,
+      hidden = params.hidden
   }) 
 end
 
 function deleteScenarios()
   layoutManager.call("clearSelectorTiles", {itemType = "scenario"})
+end
+
+function deleteEverything()
+  layoutManager.call("clearSelectorTiles", {itemType = "hero"})
+  layoutManager.call("clearSelectorTiles", {itemType = "scenario"})
+  layoutManager.call("clearSelectorTiles", {itemType = "modular-set"})
+
+  clearData()
+  heroManager.call("clearData")
+  encounterSetManager.call("clearData")
+end
+
+function deepCopy(obj, seen)
+  if type(obj) ~= 'table' then return obj end
+  if seen and seen[obj] then return seen[obj] end
+  local s = seen or {}
+  local res = setmetatable({}, getmetatable(obj))
+  s[obj] = res
+  for k, v in pairs(obj) do res[deepCopy(k, s)] = deepCopy(v, s) end
+  return res
+end
+
+function createVillainAdvanceButton(counter)
+  
+end
+
+function createSchemeAdvanceButton()
+end
+
+function advanceVillain()
+  broadcastToAll("Villain Advances!", {1,0,0})
 end
 
 require('!/Cardplacer')

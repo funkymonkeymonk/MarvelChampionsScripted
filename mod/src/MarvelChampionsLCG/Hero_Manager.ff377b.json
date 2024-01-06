@@ -54,7 +54,7 @@
       "CastShadows": true
     },
     "LuaScript": "#include ./Hero_Manager.ff377b.lua",
-    "LuaScriptState": "#include ./Hero_Manager.ff377b.state.json",
+    "LuaScriptState": "",
     "XmlUI": ""
   },
   "StatesPaths": {}

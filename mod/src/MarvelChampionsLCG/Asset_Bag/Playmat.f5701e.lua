@@ -260,6 +260,9 @@ function removeButtonByLabel(buttonLabel)
 end
 
 function clearPlaymat()
+   local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
+   heroManager.call("clearHero", {playerColor = getValue("playerColor")})
+
    local objects = findObjectsAtPosition()
 
    for _, obj in ipairs(objects) do

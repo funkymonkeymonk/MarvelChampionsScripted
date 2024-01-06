@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "ef27d7",
+    "GUID": "cce23d",
     "Name": "Custom_Token",
     "Transform": {
-      "posX": 47.71625,
-      "posY": 2.27121663,
-      "posZ": 23.4827881,
-      "rotX": -1.25686569e-7,
+      "posX": 79.35,
+      "posY": 0.55,
+      "posZ": 35.25,
+      "rotX": -1.05968894e-7,
       "rotY": 180,
-      "rotZ": -3.96375448e-8,
-      "scaleX": 0.75,
+      "rotZ": -6.82549972e-9,
+      "scaleX": 1.25,
       "scaleY": 1,
-      "scaleZ": 0.75
+      "scaleZ": 1.25
     },
-    "Nickname": "Boost Panel",
+    "Nickname": "Setup Panel",
     "Description": "",
     "GMNotes": "",
     "AltLookAngle": {
@@ -28,7 +28,7 @@
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,
-    "Locked": false,
+    "Locked": true,
     "Grid": true,
     "Snap": true,
     "IgnoreFoW": false,
@@ -52,7 +52,7 @@
         "Stackable": false
       }
     },
-    "LuaScript": "#include ./Boost_Panel.ef27d7.lua",
+    "LuaScript": "#include ./Setup_Panel.cce23d.lua",
     "LuaScriptState": "",
     "XmlUI": ""
   },

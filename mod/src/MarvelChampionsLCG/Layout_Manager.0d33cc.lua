@@ -5,6 +5,8 @@ local defaultRowGap = 2.5
 local defaultSelectorScale = {1.13, 1.00, 1.13}
 local defaultSelectorRotation = {0,180,0}
 
+local hiddenSelectorOffset = 2
+
 local SELECTOR_TILE_TAG = "selector-tile"
 
 function layOutSelectorTiles(params)
@@ -19,6 +21,7 @@ function layOutSelectorTiles(params)
     local items = params.items
     local itemType = params.itemType
     local behavior = params.behavior
+    local hidden = params.hidden
     local sortedList = getSortedListOfItems(items)
     local itemCount = #sortedList
 
@@ -29,6 +32,10 @@ function layOutSelectorTiles(params)
         end
 
         origin = calculateOrigin(center, direction, maxRowsOrColumns, columnGap, rowGap, itemCount)
+    end
+
+    if(hidden) then
+        origin.y = origin.y - hiddenSelectorOffset
     end
 
     clearSelectorTiles({itemType = itemType})
@@ -146,22 +153,6 @@ function stripArticles(orig)
 end
 
 function getCoordinates(origin, column, row, columnGap, rowGap)
-    if(origin == nil) then
-        return
-    end
-    if(column == nil) then
-        return
-    end
-    if(row == nil) then
-        return
-    end
-    if(columnGap == nil) then
-        return
-    end
-    if(rowGap == nil) then
-        return
-    end
-
     local x = origin.x + columnGap * (column - 1)
     local z = origin.z - rowGap * (row - 1)
 
@@ -190,10 +181,72 @@ function highlightSelectedSelectorTile(params)
         if(v.hasTag(SELECTOR_TILE_TAG)) then
             if( v.getVar("itemType") == itemType) then
                 if(v.getVar("itemKey") == itemKey) then
-                    v.highlightOn({1,1,0.5})
+                    v.call("showSelection", {selected = true})
                 else
-                    v.highlightOff({1,1,0.5})
+                    v.call("showSelection", {selected = false})
                 end
+            end
+        end
+    end
+end
+
+function highlightMultipleSelectorTiles(params)
+    local allObjects = getAllObjects()
+    local itemType = params.itemType
+    local items = params.items
+    --local itemKeys = getKeysFromTable(params.items)
+
+    for k,v in pairs(allObjects) do
+        if(v.hasTag(SELECTOR_TILE_TAG)) then
+            if( v.getVar("itemType") == itemType) then
+                --if(itemKeys:find(v.getVar("itemKey")) ~= nil) then
+                item = items[v.getVar("itemKey")]
+                if(item ~= nil) then
+                    v.call("showSelection", {selected = true, required = item.required})
+                else
+                    v.call("showSelection", {selected = false})
+                end
+            end
+        end
+    end
+end
+
+-- function getKeysFromTable(table)
+--     local keys = ""
+
+--     for k, v in pairs(table) do
+--         keys = keys .. k .. " "
+--     end
+
+--     return keys
+-- end
+
+function showSelectors(params)
+    local allObjects = getAllObjects()
+    local itemType = params.itemType
+
+    for k,v in pairs(allObjects) do
+        if(v.hasTag(SELECTOR_TILE_TAG)) then
+            local currentPos = v.getPosition()
+
+            if(v.getVar("itemType") == itemType and currentPos.y < 0) then
+                v.setPosition({x = currentPos.x, y = currentPos.y + hiddenSelectorOffset, z = currentPos.z})
+            end
+        end
+    end
+end
+
+function hideSelectors(params)
+    local allObjects = getAllObjects()
+    local itemType = params.itemType
+
+    for k,v in pairs(allObjects) do
+        if(v.hasTag(SELECTOR_TILE_TAG)) then
+            local currentPos = v.getPosition()
+
+            if(v.getVar("itemType") == itemType and currentPos.y >= 0) then
+                v.setPosition({x = currentPos.x, y = currentPos.y - hiddenSelectorOffset, z = currentPos.z})
+                v.call("showSelection", {selected = false})
             end
         end
     end

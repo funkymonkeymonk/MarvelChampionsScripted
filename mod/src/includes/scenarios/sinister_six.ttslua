@@ -1,7 +1,7 @@
 scenarios["sinistersix"] =
 {
     name="The Sinister Six",
-    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015309349/2164A5798EC8BE6A688434F1828DB46278042212/",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2291833843244459963/D5973D37E3AD718BB8110CEA044FE051A2C29DA8/",
     villains={
         docock={
             name="Doctor Octopus",

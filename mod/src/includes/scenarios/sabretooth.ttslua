@@ -55,7 +55,8 @@ scenarios["sabretooth"] =
         findTheSenatorThreat={
             type="threat",
             position={16.37, 1.10, 20.30},
-            scale={0.48, 1.00, 0.48}
+            scale={0.48, 1.00, 0.48},
+            threatPerPlayer=5
         }
     },
     decks={
