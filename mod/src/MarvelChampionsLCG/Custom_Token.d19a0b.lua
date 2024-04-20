@@ -21,21 +21,24 @@ function createClearButton()
 end
 
 function clearScenario()
-  local clearCards = findCardsAtPosition()
+   local clearCards = findCardsAtPosition()
 
-  for _, obj in ipairs(clearCards) do
-     if obj.getVar("preventDeletion") ~= true then
-        obj.destruct()
-     end
-  end
+   for _, obj in ipairs(clearCards) do
+      if obj.getVar("preventDeletion") ~= true then
+         obj.destruct()
+      end
+   end
 
-  local clearCards2 = findCardsAtPosition2()
+   local clearCards2 = findCardsAtPosition2()
 
-  for _, obj in ipairs(clearCards2) do
-     if obj.getVar("preventDeletion") ~= true then
-        obj.destruct()
-     end
-  end
+   for _, obj in ipairs(clearCards2) do
+      if obj.getVar("preventDeletion") ~= true then
+         obj.destruct()
+      end
+   end
+
+   local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
+   scenarioManager.call("clearScenario")
 end
 
 function findCardsAtPosition(obj)

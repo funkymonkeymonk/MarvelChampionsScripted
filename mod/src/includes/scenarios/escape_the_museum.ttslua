@@ -8,13 +8,15 @@ scenarios["escapeMuseum"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/1833526258727804015/5DDA85319568535B84FBD610334FB7C6F8BFCDF0/",
             },
-            stage1={
-                cardId="16080",
-                hitPointsPerPlayer=13
-            },
-            stage3={
-                cardId="16081",
-                hitPointsPerPlayer=18
+            stages={
+                stageA={
+                    cardId="16080",
+                    hitPointsPerPlayer=13
+                },
+                stageB={
+                    cardId="16081",
+                    hitPointsPerPlayer=18
+                }
             }
         }
     },
@@ -42,7 +44,7 @@ scenarios["escapeMuseum"] =
     cards={
         libraryLabyrinth={
             cardId="16085",
-            position={13.75, 0.97, 29.25},
+            position={15.75, 1.00, 29.25},
             scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
         },
         milano={

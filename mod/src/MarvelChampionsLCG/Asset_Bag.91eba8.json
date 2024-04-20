@@ -52,8 +52,8 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
+    "Main_Scheme_Threat_Counter.a9f7b8.json",
     "Boost_Panel.ef27d7.json",
-    "Ant-Man_Identity.cad2b0.775500.json",
     "Angel.813d45.1303.json",
     "Custom_Token.1eb3c1.json",
     "Ironheart_Identity.eaab93.973100.json",
@@ -61,6 +61,7 @@
     "Energy_Form.71bfde.963206.json",
     "Custom_Assetbundle_Bag.740595.json",
     "Villain_HP_Counter.8cf3d6.json",
+    "Ant-Man_Identity.cad2b0.775500.json",
     "Playmat.f5701e.json",
     "HP_Counter.16b5bd.json"
   ]

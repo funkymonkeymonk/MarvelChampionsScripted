@@ -30,12 +30,12 @@ end
 
 function giantForm()
  self.setState(3)
- setGiantPlaymatImage()
+ --setGiantPlaymatImage()
 end
 
 function alterEgo()
  self.setState(2)
- setNormalPlaymatImage()
+ --setNormalPlaymatImage()
 end
 
 function setGiantPlaymatImage()

@@ -8,17 +8,19 @@ scenarios["masterMold"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473524122038/ABAAC79382821670BDD7450005D1F4201A626733/",
             },
-            stage1={
-                cardId="32109",
-                hitPointsPerPlayer=12
-            },
-            stage2={
-                cardId="32109",
-                hitPointsPerPlayer=14
-            },
-            stage3={
-                cardId="32109",
-                hitPointsPerPlayer=16
+            stages={
+                stage1={
+                    cardId="32109",
+                    hitPointsPerPlayer=12
+                },
+                stage2={
+                    cardId="32110",
+                    hitPointsPerPlayer=14
+                },
+                stage3={
+                    cardId="32111",
+                    hitPointsPerPlayer=16
+                }
             }
         }
     },

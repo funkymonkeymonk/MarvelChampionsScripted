@@ -8,33 +8,35 @@ scenarios["onTheRun"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/2291833843244459602/4C2D8D4B3F7840E68D0D9E2BB30665710D441689/",
             },
-            stage1={
-                cardId="40070",
-                hitPointsPerPlayer=10
-            },
-            stage2={
-                cardId="40071",
-                hitPointsPerPlayer=11
-            },
-            stage3={
-                cardId="40072",
-                hitPointsPerPlayer=11
-            },
-            stage4={
-                cardId="40073",
-                hitPointsPerPlayer=9
-            },
-            stage5={
-                cardId="40074",
-                hitPointsPerPlayer=10
-            },
-            stage6={
-                cardId="40075",
-                hitPointsPerPlayer=9
-            },
-            stage7={
-                cardId="40076",
-                hitPointsPerPlayer=9
+            stages={
+                stage1={
+                    cardId="40070",
+                    hitPointsPerPlayer=10
+                },
+                stage2={
+                    cardId="40071",
+                    hitPointsPerPlayer=11
+                },
+                stage3={
+                    cardId="40072",
+                    hitPointsPerPlayer=11
+                },
+                stage4={
+                    cardId="40073",
+                    hitPointsPerPlayer=9
+                },
+                stage5={
+                    cardId="40074",
+                    hitPointsPerPlayer=10
+                },
+                stage6={
+                    cardId="40075",
+                    hitPointsPerPlayer=9
+                },
+                stage7={
+                    cardId="40076",
+                    hitPointsPerPlayer=9
+                }
             }
         }
     },

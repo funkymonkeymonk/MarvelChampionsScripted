@@ -8,17 +8,19 @@ scenarios["zola"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150149561/7BDA5483418FB33A377C93A60F7D06F1E3774351/",
             },
-            stage1={
-                cardId="04109",
-                hitPointsPerPlayer=12
-            },
-            stage2={
-                cardId="04110",
-                hitPointsPerPlayer=14
-            },
-            stage3={
-                cardId="04111",
-                hitPointsPerPlayer=16
+            stages={
+                stage1={
+                    cardId="04109",
+                    hitPointsPerPlayer=12
+                },
+                stage2={
+                    cardId="04110",
+                    hitPointsPerPlayer=14
+                },
+                stage3={
+                    cardId="04111",
+                    hitPointsPerPlayer=16
+                }
             }
         }
     },

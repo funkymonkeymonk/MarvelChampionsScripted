@@ -8,17 +8,19 @@ scenarios["mutagenFormula"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150126338/C91FC9CB4D7BF94C206CE46B1982DF0CE750085D/",
             },
-            stage1={
-                cardId="02014",
-                hitPointsPerPlayer=16
-            },
-            stage2={
-                cardId="02015",
-                hitPointsPerPlayer=18
-            },
-            stage3={
-                cardId="02016",
-                hitPointsPerPlayer=20
+            stages={
+                stage1={
+                    cardId="02014",
+                    hitPointsPerPlayer=16
+                },
+                stage2={
+                    cardId="02015",
+                    hitPointsPerPlayer=18
+                },
+                stage3={
+                    cardId="02016",
+                    hitPointsPerPlayer=20
+                }
             }
         }
     },

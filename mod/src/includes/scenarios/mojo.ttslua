@@ -8,17 +8,19 @@ scenarios["mojo"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473528765513/0B1849865D7DC2D609879B9D02E723B0DDE60D7F/",
             },
-            stage1={
-                cardId="39022",
-                hitPointsPerPlayer=16
-            },
-            stage2={
-                cardId="39023",
-                hitPointsPerPlayer=18
-            },
-            stage3={
-                cardId="39024",
-                hitPointsPerPlayer=25
+            stages={
+                stage1={
+                    cardId="39022",
+                    hitPointsPerPlayer=16
+                },
+                stage2={
+                    cardId="39023",
+                    hitPointsPerPlayer=18
+                },
+                stage3={
+                    cardId="39024",
+                    hitPointsPerPlayer=25
+                }
             }
         }
     },
@@ -36,7 +38,7 @@ scenarios["mojo"] =
     cards={
         wheelOfGenres={
             cardId="39026",
-            position={13.75, 0.97, 29.25},
+            position={15.75, 1.00, 29.25},
             scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
         }
     },

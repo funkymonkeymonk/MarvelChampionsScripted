@@ -8,17 +8,19 @@ scenarios["misterSinister"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473524122093/56CE8F65A437E9FC78E7866B78603E2857F7DB2F/",
             },
-            stage1={
-                cardId="40136",
-                hitPointsPerPlayer=14
-            },
-            stage2={
-                cardId="40137",
-                hitPointsPerPlayer=17
-            },
-            stage3={
-                cardId="40138",
-                hitPointsPerPlayer=21
+            stages={
+                stage1={
+                    cardId="40136",
+                    hitPointsPerPlayer=14
+                },
+                stage2={
+                    cardId="40137",
+                    hitPointsPerPlayer=17
+                },
+                stage3={
+                    cardId="40138",
+                    hitPointsPerPlayer=21
+                }
             }
         }
     },

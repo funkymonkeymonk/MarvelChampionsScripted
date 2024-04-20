@@ -11,9 +11,11 @@ scenarios["sinistersix"] =
                 scale={2.01, 1.00, 2.01},
                 locked=false
             },
-            stage1={
-                cardId="27094",
-                hitPointsPer=8
+            stages={
+                stage1={
+                    cardId="27094",
+                    hitPointsPer=8
+                }
             },
             deckPosition={49.50, 1.00, 29.75},
             deckScale={1.94, 1.00, 1.94}
@@ -26,9 +28,11 @@ scenarios["sinistersix"] =
                 scale={2.01, 1.00, 2.01},
                 locked=false
             },
-            stage1={
-                cardId="27095",
-                hitPointsPer=8
+            stages={
+                stage1={
+                    cardId="27095",
+                    hitPointsPer=8
+                }
             },
             deckPosition={49.50, 1.00, 18.75},
             deckScale={1.94, 1.00, 1.94}
@@ -41,9 +45,11 @@ scenarios["sinistersix"] =
                 scale={2.01, 1.00, 2.01},
                 locked=false
             },
-            stage1={
-                cardId="27096",
-                hitPointsPer=8
+            stages={
+                stage1={
+                    cardId="27096",
+                    hitPointsPer=8
+                }
             },
             deckPosition={49.50, 1.00, 7.75},
             deckScale={1.94, 1.00, 1.94}
@@ -56,9 +62,11 @@ scenarios["sinistersix"] =
                 scale={2.01, 1.00, 2.01},
                 locked=false
             },
-            stage1={
-                cardId="27097",
-                hitPointsPer=8
+            stages={
+                stage1={
+                    cardId="27097",
+                    hitPointsPer=8
+                }
             },
             deckPosition={49.50, 1.00, -3.25},
             deckScale={1.94, 1.00, 1.94}
@@ -71,9 +79,11 @@ scenarios["sinistersix"] =
                 scale={2.01, 1.00, 2.01},
                 locked=false
             },
-            stage1={
-                cardId="27098",
-                hitPointsPer=8
+            stages={
+                stage1={
+                    cardId="27098",
+                    hitPointsPer=8
+                }
             },
             deckPosition={49.75, 1.00, -14.25},
             deckScale={1.94, 1.00, 1.94}
@@ -86,9 +96,11 @@ scenarios["sinistersix"] =
                 scale={2.01, 1.00, 2.01},
                 locked=false
             },
-            stage1={
-                cardId="27099",
-                hitPointsPer=8
+            stages={
+                stage1={
+                    cardId="27099",
+                    hitPointsPer=8
+                }
             },
             deckPosition={49.50, 1.00, -25.25},
             deckScale={1.94, 1.00, 1.94}

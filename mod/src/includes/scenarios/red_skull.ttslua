@@ -8,17 +8,19 @@ scenarios["redSkull"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150138001/6A9EC283F45343AF8C06D9001FF6DA4DC11E99E3/",
             },
-            stage1={
-                cardId="04125",
-                hitPointsPerPlayer=12
-            },
-            stage2={
-                cardId="04126",
-                hitPointsPerPlayer=16
-            },
-            stage3={
-                cardId="04127",
-                hitPointsPerPlayer=20
+            stages={
+                stage1={
+                    cardId="04125",
+                    hitPointsPerPlayer=12
+                },
+                stage2={
+                    cardId="04126",
+                    hitPointsPerPlayer=16
+                },
+                stage3={
+                    cardId="04127",
+                    hitPointsPerPlayer=20
+                }
             }
         }
     },
@@ -75,7 +77,7 @@ scenarios["redSkull"] =
         },
         sideSchemes={
             name="Side Scheme Deck",
-            position={13.75, 0.97, 29.25},
+            position={15.75, 1.00, 29.25},
             scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
             cards={
                 ["04140"]=1,

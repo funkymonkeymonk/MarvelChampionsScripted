@@ -8,17 +8,19 @@ scenarios["juggernaut"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473524122230/9B0AAEDC344754B5584F337704C51388FEDE0201/",
             },
-            stage1={
-                cardId="40118",
-                hitPointsPerPlayer=18
-            },
-            stage2={
-                cardId="40119",
-                hitPointsPerPlayer=21
-            },
-            stage3={
-                cardId="40120",
-                hitPointsPerPlayer=25
+            stages={
+                stage1={
+                    cardId="40118",
+                    hitPointsPerPlayer=18
+                },
+                stage2={
+                    cardId="40119",
+                    hitPointsPerPlayer=21
+                },
+                stage3={
+                    cardId="40120",
+                    hitPointsPerPlayer=25
+                }
             }
         }
     },

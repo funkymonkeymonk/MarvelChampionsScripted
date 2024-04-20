@@ -8,17 +8,19 @@ scenarios["thanos"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150145079/54DEDEDC81C5F76EDB6DCFE7A64F64476AF811BF/",
             },
-            stage1={
-                cardId="21111",
-                hitPointsPerPlayer=16
-            },
-            stage2={
-                cardId="21112",
-                hitPointsPerPlayer=23
-            },
-            stage3={
-                cardId="21113",
-                hitPointsPerPlayer=28
+            stages={
+                stage1={
+                    cardId="21111",
+                    hitPointsPerPlayer=16
+                },
+                stage2={
+                    cardId="21112",
+                    hitPointsPerPlayer=23
+                },
+                stage3={
+                    cardId="21113",
+                    hitPointsPerPlayer=28
+                }
             }
         }
     },
@@ -76,7 +78,7 @@ scenarios["thanos"] =
         },
         infinityStones={
             name="Infinity Stones",
-            position={13.75, 0.97, 29.25},
+            position={15.75, 1.00, 29.25},
             scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
             cards={
                 ["21130"]=1,

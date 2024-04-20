@@ -8,21 +8,27 @@ scenarios["mansionAttack"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/2035118913124026079/1346FDBB47BCA704CFA9E914755A9AAF6B1CD5A3/",
             },
-            stage1={
-                cardId="32121",
-                hitPointsPerPlayer=15
-            },            
-            stage2={
-                cardId="32122",
-                hitPointsPerPlayer=16
-            },
-            stage3={
-                cardId="32123",
-                hitPointsPerPlayer=14
-            },
-            stage4={
-                cardId="32124",
-                hitPointsPerPlayer=13
+            stages={
+                stage1={
+                    cardId="32121",
+                    hitPointsPerPlayer=15,
+                    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473528765361/18F2EF694990DF4F62DF7275517FFBA76C43E3B7/"
+                },            
+                stage2={
+                    cardId="32122",
+                    hitPointsPerPlayer=16,
+                    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473528765412/EEBE3A1431B9DDB3BC2A8DE11FCDCA7EDD43682E/"
+                },
+                stage3={
+                    cardId="32123",
+                    hitPointsPerPlayer=14,
+                    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473528765567/4DED58EC6C41D1615634DA914E4799F9850A09F9/"
+                },
+                stage4={
+                    cardId="32124",
+                    hitPointsPerPlayer=13,
+                    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473528765637/13A26137CCD8CA92965520C2AF5E5E9EAC85D8F3/"
+                }
             }
         }
     },
@@ -60,7 +66,7 @@ scenarios["mansionAttack"] =
     cards={
         saveTheSchool={
             cardId="32130",
-            position={13.75, 0.97, 29.25},
+            position={15.75, 1.00, 29.25},
             scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
         }
     },

@@ -8,22 +8,25 @@ scenarios["venomgoblin"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015324268/4E05FFF64F4A303C0F674C9D0BB2A1EE07FC589A/",
             },
-            stage1={
-                cardId="27113",
-                hitPointsPerPlayer=16
-            },
-            stage2={
-                cardId="27114",
-                hitPointsPerPlayer=18
-            },
-            stage3={
-                cardId="27115",
-                hitPointsPerPlayer=21
+            stages={
+                stage1={
+                    cardId="27113",
+                    hitPointsPerPlayer=16
+                },
+                stage2={
+                    cardId="27114",
+                    hitPointsPerPlayer=18
+                },
+                stage3={
+                    cardId="27115",
+                    hitPointsPerPlayer=21
+                }
             }
         }
     },
     schemes={
         lowerManhattan={
+            position = {8.38, 0.97, 22.45},
             stages={
                 stage1={
                     cardId="27117",
@@ -31,8 +34,8 @@ scenarios["venomgoblin"] =
                     targetThreatPerPlayer=11
                 },
             },
-            counter={
-                position={11.19, 1.01, 20.93},
+            threatCounter={
+                position={11.19, 1.10, 20.93},
                 scale={1.00, 1.00, 1.00},
                 locked=true
             }
@@ -46,8 +49,8 @@ scenarios["venomgoblin"] =
                     targetThreatPerPlayer=12
                 }
             },
-            counter={
-                position={21.19, 1.01, 20.93},
+            threatCounter={
+                position={21.19, 1.10, 20.93},
                 scale={1.00, 1.00, 1.00},
                 locked=true
             }
@@ -61,8 +64,8 @@ scenarios["venomgoblin"] =
                     targetThreatPerPlayer=12
                 }
             },
-            counter={
-                position={31.19, 1.01, 20.93},
+            threatCounter={
+                position={31.19, 1.10, 20.93},
                 scale={1.00, 1.00, 1.00},
                 locked=true
             }
@@ -71,21 +74,22 @@ scenarios["venomgoblin"] =
     cards={
         skiesOverNewYork={
             cardId="27116",
-            position={13.75, 0.97, 29.25},
+            position={15.75, 1.00, 29.25},
             scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
             flipped=true
         }
     },            
     decks={
         encounterDeck={
-            name="Sandman's Encounter Deck",
+            name="Venom Goblin's Encounter Deck",
             cards={
-                ["27116"]=1,
-                ["27089"]=1,
-                ["27090"]=2,
-                ["27091"]=4,
-                ["27092"]=2,
-                ["27093"]=2
+                ["27120"]=1,
+                ["27121"]=2,
+                ["27122"]=2,
+                ["27123"]=4,
+                ["27124"]=1,
+                ["27125"]=1,
+                ["27126"]=2,
             }
         }
     },

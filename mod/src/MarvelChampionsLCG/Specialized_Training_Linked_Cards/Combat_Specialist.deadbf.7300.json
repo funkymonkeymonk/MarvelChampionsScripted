@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "4f4f3d",
-    "Name": "3DText",
+    "GUID": "deadbf",
+    "Name": "Card",
     "Transform": {
-      "posX": -96.2604,
-      "posY": 0.00006240607,
-      "posZ": -34.00018,
-      "rotX": 90,
-      "rotY": 0.999572039,
+      "posX": 0,
+      "posY": 5,
+      "posZ": 0,
+      "rotX": 0,
+      "rotY": 0,
       "rotZ": 0,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
     },
-    "Nickname": "",
+    "Nickname": "Combat Specialist",
     "Description": "",
     "GMNotes": "",
     "AltLookAngle": {
@@ -26,9 +26,10 @@
       "g": 1,
       "b": 1
     },
+    "Tags": [],
     "LayoutGroupSortIndex": 0,
     "Value": 0,
-    "Locked": true,
+    "Locked": false,
     "Grid": true,
     "Snap": true,
     "IgnoreFoW": false,
@@ -38,16 +39,19 @@
     "Sticky": true,
     "Tooltip": true,
     "GridProjection": false,
-    "HideWhenFaceDown": false,
-    "Hands": false,
-    "Text": {
-      "Text": "5",
-      "colorstate": {
-        "r": 1,
-        "g": 1,
-        "b": 1
-      },
-      "fontSize": 88
+    "Hands": true,
+    "CardID": 7300,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "73": {
+        "FaceURL": "https://dcqvlrey92bew.cloudfront.net/43034.jpg",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
     },
     "LuaScript": "",
     "LuaScriptState": "",

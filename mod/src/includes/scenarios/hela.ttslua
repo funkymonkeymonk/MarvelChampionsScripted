@@ -5,12 +5,19 @@
     villains={
         hela={
             name="Hela",
+            locked=false,
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150128726/5561A2846A40991CD9F774C0CA75572DC3A7C096/",
             },
-            stage1={
-                cardId="21136",
-                hitPointsPerPlayer=8
+            stages={
+                stageA={
+                    cardId="21136",
+                    hitPointsPerPlayer=8
+                },
+                stageB={
+                    cardId="21137",
+                    hitPointsPerPlayer=9
+                }
             }
         }
     },
@@ -41,11 +48,6 @@
             cardId="21139",
             position={10.75, 1.00, 22.25},
             scale=Vector(Global.getVar("CARD_SCALE_PLAYER"))
-        },
-        expertHela={
-            cardId="21137",
-            position={48.25, 0.97, 31.75},
-            scale=Vector(Global.getVar("CARD_SCALE_VILLAIN"))
         }
     },
     counters={
@@ -71,7 +73,7 @@
         },
         setAside={
             name="Set Aside Cards",
-            position={13.75, 0.97, 29.25},
+            position={15.75, 1.00, 29.25},
             scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
             cards={
                 ["21141"]=1,

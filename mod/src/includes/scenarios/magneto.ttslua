@@ -8,17 +8,19 @@ scenarios["magneto"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473524122289/1137A4FF6D928E4227CED8F42EE9449720D521B8/",
             },
-            stage1={
-                cardId="32138",
-                hitPointsPerPlayer=18
-            },
-            stage2={
-                cardId="32139",
-                hitPointsPerPlayer=20
-            },
-            stage3={
-                cardId="32140",
-                hitPointsPerPlayer=22
+            stages={
+                stage1={
+                    cardId="32138",
+                    hitPointsPerPlayer=18
+                },
+                stage2={
+                    cardId="32139",
+                    hitPointsPerPlayer=20
+                },
+                stage3={
+                    cardId="32140",
+                    hitPointsPerPlayer=22
+                }
             }
         }
     },

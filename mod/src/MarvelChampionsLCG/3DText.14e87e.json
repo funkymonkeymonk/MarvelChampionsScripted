@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "6066d3",
-    "Name": "BlockSquare",
+    "GUID": "14e87e",
+    "Name": "3DText",
     "Transform": {
-      "posX": -13,
-      "posY": 0.4,
-      "posZ": -30,
-      "rotX": 0.07270083,
-      "rotY": 0.00186857954,
-      "rotZ": 0.0000130220378,
-      "scaleX": 1.49999964,
-      "scaleY": 1.49999964,
-      "scaleZ": 1.49999964
+      "posX": -27.982214,
+      "posY": 0.9611413,
+      "posZ": 46.79895,
+      "rotX": 90,
+      "rotY": 0.666401744,
+      "rotZ": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
     },
-    "Nickname": "Blue Player",
+    "Nickname": "",
     "Description": "",
     "GMNotes": "",
     "AltLookAngle": {
@@ -22,8 +22,8 @@
       "z": 0
     },
     "ColorDiffuse": {
-      "r": 0.121554784,
-      "g": 0.5294118,
+      "r": 1,
+      "g": 1,
       "b": 1
     },
     "LayoutGroupSortIndex": 0,
@@ -40,7 +40,16 @@
     "GridProjection": false,
     "HideWhenFaceDown": false,
     "Hands": false,
-    "LuaScript": "#include ./Blue_Player.6066d3.lua",
+    "Text": {
+      "Text": "Specialized Training LInked Cards",
+      "colorstate": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "fontSize": 64
+    },
+    "LuaScript": "",
     "LuaScriptState": "",
     "XmlUI": ""
   },

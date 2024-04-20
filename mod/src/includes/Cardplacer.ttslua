@@ -17,6 +17,11 @@ function buildCardPool(packID)
         local cardpool = {}
         local CARDPOOL_OBJ = getObjectFromGUID('843931')
         local CARDPOOL_JSON = CARDPOOL_OBJ.getVar('PACK_' .. packID)
+
+        if(CARDPOOL_JSON == nil) then
+            log("Pack "..packID.." has not been added to the card pool.")
+        end
+        
         local CARDPOOL_DATA = JSON.decode(CARDPOOL_JSON)
 
         for _, cardData in pairs(CARDPOOL_DATA) do
@@ -73,6 +78,7 @@ function getCardByID(id, position, params)
     local scale = params.scale or Global.getTable("CARD_SCALE_PLAYER")
     local name = params.name or ""
     local landscape = params.landscape or false
+    local locked = params.locked
 
     local x = 0
     local y = 180
@@ -87,7 +93,13 @@ function getCardByID(id, position, params)
     local card = getCardFromCardPool(cardID)
 
     if (card.duplicate_of == nil) then
-        card:spawn({position = position, scale = scale, rotation = rotation, name = name, locked=true})
+        local spawnedCard = 
+            card:spawn({position = position, scale = scale, rotation = rotation, name = name})
+
+        if(locked) then
+            Wait.frames(function() spawnedCard.setLock(true) end, 30)
+        end
+
         clearUI()
     else
         getCardByID(card.duplicate_of, position, params)

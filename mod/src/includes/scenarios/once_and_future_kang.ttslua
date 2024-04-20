@@ -8,13 +8,15 @@ scenarios["kang"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
             },
-            stage1={
-                cardId="11001",
-                hitPointsPerPlayer=12
-            },
-            stage3={
-                cardId="11006",
-                hitPointsPerPlayer=20
+            stages={
+                stage1={
+                    cardId="11001",
+                    hitPointsPerPlayer=12
+                },
+                stage3={
+                    cardId="11006",
+                    hitPointsPerPlayer=20
+                }
             }
         }
     },
