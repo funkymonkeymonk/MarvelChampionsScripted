@@ -2266,126 +2266,6 @@ PACK_16 = [[
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16177.jpg"
   },
   {
-    "name": "Badoon Blitz",
-    "code": "16178a",
-    "type_code": "side_scheme",
-    "faction_code": "campaign",
-    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16178B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16178A.jpg"
-  },
-  {
-    "name": "Badoon Blitz",
-    "code": "16178b",
-    "type_code": "side_scheme",
-    "faction_code": "campaign",
-    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16178A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16178B.jpg"
-  },
-  {
-    "name": "Gallery of Splendor",
-    "code": "16179a",
-    "type_code": "side_scheme",
-    "faction_code": "campaign",
-    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16179B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16179A.jpg"
-  },
-  {
-    "name": "Gallery of Splendor",
-    "code": "16179b",
-    "type_code": "side_scheme",
-    "faction_code": "campaign",
-    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16179A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16179B.jpg"
-  },
-  {
-    "name": "\"There is No Escape\"",
-    "code": "16180a",
-    "type_code": "side_scheme",
-    "faction_code": "campaign",
-    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16180B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16180A.jpg"
-  },
-  {
-    "name": "\"There is No Escape\"",
-    "code": "16180b",
-    "type_code": "side_scheme",
-    "faction_code": "campaign",
-    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16180A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16180B.jpg"
-  },
-  {
-    "name": "Guerrilla Tactics",
-    "code": "16181a",
-    "type_code": "side_scheme",
-    "faction_code": "campaign",
-    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16181B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16181A.jpg"
-  },
-  {
-    "name": "Guerrilla Tactics",
-    "code": "16181b",
-    "type_code": "side_scheme",
-    "faction_code": "campaign",
-    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16181A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16181B.jpg"
-  },
-  {
-    "name": "Kree Supremacy",
-    "code": "16182a",
-    "type_code": "side_scheme",
-    "faction_code": "campaign",
-    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16182B.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16182A.jpg"
-  },
-  {
-    "name": "Kree Supremacy",
-    "code": "16182b",
-    "type_code": "side_scheme",
-    "faction_code": "campaign",
-    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16182A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16182B.jpg"
-  },
-  {
-    "name": "Badoon Headhunter",
-    "code": "16183",
-    "type_code": "minion",
-    "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16183.jpg"
-  },
-  {
-    "name": "On the Hunt",
-    "code": "16184",
-    "type_code": "treachery",
-    "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16184.jpg"
-  },
-  {
-    "name": "Dead to Rights",
-    "code": "16185",
-    "type_code": "treachery",
-    "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16185.jpg"
-  },
-  {
-    "name": "Headhunter's Henchman",
-    "code": "16186",
-    "type_code": "minion",
-    "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16186.jpg"
-  },
-  {
-    "name": "Fugitive Recovery",
-    "code": "16187",
-    "type_code": "side_scheme",
-    "faction_code": "campaign",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16187.jpg"
-  },
-  {
     "name": "Wilt",
     "code": "16025",
     "type_code": "obligation",
@@ -3296,6 +3176,126 @@ PACK_16 = [[
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16149.jpg"
+  },
+  {
+    "name": "Badoon Blitz",
+    "code": "16178a",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16178B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16178A.jpg"
+  },
+  {
+    "name": "Badoon Blitz",
+    "code": "16178b",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16178A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16178B.jpg"
+  },
+  {
+    "name": "Gallery of Splendor",
+    "code": "16179a",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16179B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16179A.jpg"
+  },
+  {
+    "name": "Gallery of Splendor",
+    "code": "16179b",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16179A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16179B.jpg"
+  },
+  {
+    "name": "\"There is No Escape\"",
+    "code": "16180a",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16180B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16180A.jpg"
+  },
+  {
+    "name": "\"There is No Escape\"",
+    "code": "16180b",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16180A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16180B.jpg"
+  },
+  {
+    "name": "Guerrilla Tactics",
+    "code": "16181a",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16181B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16181A.jpg"
+  },
+  {
+    "name": "Guerrilla Tactics",
+    "code": "16181b",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16181A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16181B.jpg"
+  },
+  {
+    "name": "Kree Supremacy",
+    "code": "16182a",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16182B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16182A.jpg"
+  },
+  {
+    "name": "Kree Supremacy",
+    "code": "16182b",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16182A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16182B.jpg"
+  },
+  {
+    "name": "Badoon Headhunter",
+    "code": "16183",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16183.jpg"
+  },
+  {
+    "name": "On the Hunt",
+    "code": "16184",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16184.jpg"
+  },
+  {
+    "name": "Dead to Rights",
+    "code": "16185",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16185.jpg"
+  },
+  {
+    "name": "Headhunter's Henchman",
+    "code": "16186",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16186.jpg"
+  },
+  {
+    "name": "Fugitive Recovery",
+    "code": "16187",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16187.jpg"
   }
 ]
 ]]
@@ -10481,12 +10481,8 @@ PACK_32 = [[
     "duplicate_of": "15030"
   },
   {
-    "name": "Perseverance",
     "code": "32016",
-    "type_code": "event",
-    "faction_code": "protection",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32016.jpg"
+    "duplicate_of": "13033"
   },
   {
     "name": "Mutant Protectors",
@@ -10720,12 +10716,8 @@ PACK_32 = [[
     "duplicate_of": "32021"
   },
   {
-    "name": "Ready to Rumble",
     "code": "32051",
-    "type_code": "upgrade",
-    "faction_code": "basic",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32051.jpg"
+    "duplicate_of": "21022"
   },
   {
     "code": "32052",
@@ -11085,36 +11077,20 @@ PACK_32 = [[
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32062.jpg"
   },
   {
-    "name": "Stalked by Sabretooth 1A",
-    "code": "32063a",
+    "name": "Stalked by Sabretooth",
+    "code": "32063",
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32063B.jpg",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32063A.jpg"
   },
   {
-    "name": "Stalked by Sabretooth 1B",
-    "code": "32063b",
-    "type_code": "main_scheme",
-    "faction_code": "encounter",
-    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32063A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32063B.jpg"
-  },
-  {
-    "name": "The Injured Senator 2A",
-    "code": "32064a",
+    "name": "The Injured Senator",
+    "code": "32064",
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32064B.jpg",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32064A.jpg"
-  },
-  {
-    "name": "The Injured Senator 2B",
-    "code": "32064b",
-    "type_code": "main_scheme",
-    "faction_code": "encounter",
-    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32064A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32064B.jpg"
   },
   {
     "name": "Find the Senator",
@@ -11165,7 +11141,7 @@ PACK_32 = [[
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32069.jpg"
   },
   {
-    "name": "Unreleting Savage",
+    "name": "Unrelenting Savage",
     "code": "32070",
     "type_code": "treachery",
     "faction_code": "encounter",
@@ -11301,20 +11277,12 @@ PACK_32 = [[
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32086.jpg"
   },
   {
-    "name": "Night of the Sentinels A",
-    "code": "32087a",
+    "name": "Night of the Sentinels",
+    "code": "32087",
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32087B.jpg",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32087A.jpg"
-  },
-  {
-    "name": "Night of the Sentinels B",
-    "code": "32087b",
-    "type_code": "main_scheme",
-    "faction_code": "encounter",
-    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32087A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32087B.jpg"
   },
   {
     "name": "Mutants at the Mall",
@@ -11522,36 +11490,20 @@ PACK_32 = [[
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32111.jpg"
   },
   {
-    "name": "The Sentinel Factory A",
-    "code": "32112a",
+    "name": "The Sentinel Factory",
+    "code": "32112",
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32112B.jpg",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32112A.jpg"
   },
   {
-    "name": "The Sentinel Factory B",
-    "code": "32112b",
-    "type_code": "main_scheme",
-    "faction_code": "encounter",
-    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32112A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32112B.jpg"
-  },
-  {
-    "name": "Master Mold's Agenda A",
-    "code": "32113a",
+    "name": "Master Mold's Agenda",
+    "code": "32113",
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32113B.jpg",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32113A.jpg"
-  },
-  {
-    "name": "Master Mold's Agenda B",
-    "code": "32113b",
-    "type_code": "main_scheme",
-    "faction_code": "encounter",
-    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32113A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32113B.jpg"
   },
   {
     "name": "Sentinel Mark VIII",
@@ -11674,84 +11626,44 @@ PACK_32 = [[
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32124B.jpg"
   },
   {
-    "name": "The Brotherhood Strikes! A",
-    "code": "32125a",
+    "name": "The Brotherhood Strikes!",
+    "code": "32125",
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32125B.jpg",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32125A.jpg"
   },
   {
-    "name": "The Brotherhood Strikes! B",
-    "code": "32125b",
-    "type_code": "main_scheme",
-    "faction_code": "encounter",
-    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32125A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32125B.jpg"
-  },
-  {
-    "name": "The Atrium A",
-    "code": "32126a",
+    "name": "The Atrium",
+    "code": "32126",
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32126B.jpg",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32126A.jpg"
   },
   {
-    "name": "The Atrium B",
-    "code": "32126b",
-    "type_code": "main_scheme",
-    "faction_code": "encounter",
-    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32126A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32126B.jpg"
-  },
-  {
-    "name": "The Cafeteria A",
-    "code": "32127a",
+    "name": "The Cafeteria",
+    "code": "32127",
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32127B.jpg",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32127A.jpg"
   },
   {
-    "name": "The Cafeteria B",
-    "code": "32127b",
-    "type_code": "main_scheme",
-    "faction_code": "encounter",
-    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32127A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32127B.jpg"
-  },
-  {
-    "name": "The Basketball Court A",
-    "code": "32128a",
+    "name": "The Basketball Court",
+    "code": "32128",
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32128B.jpg",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32128A.jpg"
   },
   {
-    "name": "The Basketball Court B",
-    "code": "32128b",
-    "type_code": "main_scheme",
-    "faction_code": "encounter",
-    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32128A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32128B.jpg"
-  },
-  {
-    "name": "The Courtyard A",
-    "code": "32129a",
+    "name": "The Courtyard",
+    "code": "32129",
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32129B.jpg",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32129A.jpg"
-  },
-  {
-    "name": "The Courtyard B",
-    "code": "32129b",
-    "type_code": "main_scheme",
-    "faction_code": "encounter",
-    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32129A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32129B.jpg"
   },
   {
     "name": "Save the School",
@@ -11842,52 +11754,28 @@ PACK_32 = [[
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32140.jpg"
   },
   {
-    "name": "Asteroid M A",
-    "code": "32141a",
+    "name": "Asteroid M",
+    "code": "32141",
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32141B.jpg",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32141A.jpg"
   },
   {
-    "name": "Asteroid M B",
-    "code": "32141b",
-    "type_code": "main_scheme",
-    "faction_code": "encounter",
-    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32141A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32141B.jpg"
-  },
-  {
-    "name": "Factory Online A",
-    "code": "32142a",
+    "name": "Factory Online",
+    "code": "32142",
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32142B.jpg",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32142A.jpg"
   },
   {
-    "name": "Factory Online B",
-    "code": "32142b",
-    "type_code": "main_scheme",
-    "faction_code": "encounter",
-    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32142A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32142B.jpg"
-  },
-  {
-    "name": "The Rule of Magnus A",
-    "code": "32143a",
+    "name": "The Rule of Magnus",
+    "code": "32143",
     "type_code": "main_scheme",
     "faction_code": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/32143B.jpg",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32143A.jpg"
-  },
-  {
-    "name": "The Rule of Magnus B",
-    "code": "32143b",
-    "type_code": "main_scheme",
-    "faction_code": "encounter",
-    "BackURL": "https://dcqvlrey92bew.cloudfront.net/32143A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/32143B.jpg"
   },
   {
     "name": "Boarding Party",
@@ -12811,12 +12699,8 @@ PACK_35 = [[
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/35014.jpg"
   },
   {
-    "name": "Battle Fury",
     "code": "35015",
-    "type_code": "upgrade",
-    "faction_code": "aggression",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/35015.jpg"
+    "duplicate_of": "06018"
   },
   {
     "name": "Warrior Skill",
@@ -12843,12 +12727,8 @@ PACK_35 = [[
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/35018.jpg"
   },
   {
-    "name": "Mean Swing",
     "code": "35019",
-    "type_code": "event",
-    "faction_code": "aggression",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/35019.jpg"
+    "duplicate_of": "06015"
   },
   {
     "code": "35020",
@@ -13175,12 +13055,8 @@ PACK_36 = [[
     "duplicate_of": "32049"
   },
   {
-    "name": "Endurance",
     "code": "36026",
-    "type_code": "upgrade",
-    "faction_code": "basic",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/36026.jpg"
+    "duplicate_of": "05023"
   },
   {
     "code": "36027",
@@ -14706,12 +14582,8 @@ PACK_40 = [[
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/40029.jpg"
   },
   {
-    "name": "Sidearm",
     "code": "40030",
-    "type_code": "upgrade",
-    "faction_code": "basic",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/40030.jpg"
+    "duplicate_of": "23035"
   },
   {
     "name": "Domino",
@@ -16553,7 +16425,7 @@ PACK_42 = [[
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/42002.jpg"
   },
   {
-    "name": "Adaptive Plummage",
+    "name": "Adaptive Plumage",
     "code": "42003",
     "type_code": "event",
     "faction_code": "hero",
@@ -16652,12 +16524,8 @@ PACK_42 = [[
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/42014.jpg"
   },
   {
-    "name": "Ever Vigilant",
     "code": "42015",
-    "type_code": "event",
-    "faction_code": "protection",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/42015.jpg"
+    "duplicate_of": "17030"
   },
   {
     "name": "Taunt",
@@ -17578,6 +17446,1698 @@ PACK_44 = [[
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/44042.jpg"
+  }
+]
+]]
+PACK_45 = [[
+[
+  {
+    "name": "Bishop",
+    "code": "45001a",
+    "type_code": "hero",
+    "faction_code": "hero",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45001B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45001A.jpg"
+  },
+  {
+    "name": "Lucas Bishop",
+    "code": "45001b",
+    "type_code": "alter_ego",
+    "faction_code": "hero",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45001A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45001B.jpg"
+  },
+  {
+    "name": "Malcolm",
+    "code": "45002",
+    "type_code": "ally",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45002.jpg"
+  },
+  {
+    "name": "Randall",
+    "code": "45003",
+    "type_code": "ally",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45003.jpg"
+  },
+  {
+    "name": "Bishop's Rifle",
+    "code": "45004",
+    "type_code": "upgrade",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45004.jpg"
+  },
+  {
+    "name": "Bishop's Uniform",
+    "code": "45005",
+    "type_code": "upgrade",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45005.jpg"
+  },
+  {
+    "name": "Super-Charged",
+    "code": "45006",
+    "type_code": "upgrade",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45006.jpg"
+  },
+  {
+    "name": "Concussive Blast",
+    "code": "45007",
+    "type_code": "event",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45007.jpg"
+  },
+  {
+    "name": "Command Authority",
+    "code": "45008",
+    "type_code": "event",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45008.jpg"
+  },
+  {
+    "name": "Energy Conversion",
+    "code": "45009",
+    "type_code": "event",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45009.jpg"
+  },
+  {
+    "name": "Stored Energy",
+    "code": "45010",
+    "type_code": "resource",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45010.jpg"
+  },
+  {
+    "name": "Cable",
+    "code": "45011",
+    "subname": "Nathan Summers",
+    "type_code": "ally",
+    "faction_code": "leadership",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45011.jpg"
+  },
+  {
+    "name": "X-23",
+    "code": "45012",
+    "subname": "Laura Kinney",
+    "type_code": "ally",
+    "faction_code": "leadership",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45012.jpg"
+  },
+  {
+    "code": "45013",
+    "duplicate_of": "04016"
+  },
+  {
+    "name": "Advanced Suit",
+    "code": "45014",
+    "type_code": "upgrade",
+    "faction_code": "leadership",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45014.jpg"
+  },
+  {
+    "name": "Sidekick",
+    "code": "45015",
+    "type_code": "upgrade",
+    "faction_code": "leadership",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45015.jpg"
+  },
+  {
+    "name": "Side-by-Side",
+    "code": "45016",
+    "type_code": "event",
+    "faction_code": "leadership",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45016.jpg"
+  },
+  {
+    "name": "Suit Up",
+    "code": "45017",
+    "type_code": "event",
+    "faction_code": "leadership",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45017.jpg"
+  },
+  {
+    "code": "45018",
+    "duplicate_of": "01070"
+  },
+  {
+    "code": "45019",
+    "duplicate_of": "01072"
+  },
+  {
+    "name": "Legion",
+    "code": "45020",
+    "subname": "David Haller",
+    "type_code": "ally",
+    "faction_code": "basic",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45020.jpg"
+  },
+  {
+    "name": "Marrow",
+    "code": "45021",
+    "subname": "Sarah",
+    "type_code": "ally",
+    "faction_code": "basic",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45021.jpg"
+  },
+  {
+    "code": "45022",
+    "duplicate_of": "01088"
+  },
+  {
+    "code": "45023",
+    "duplicate_of": "01089"
+  },
+  {
+    "code": "45024",
+    "duplicate_of": "01090"
+  },
+  {
+    "name": "Magik",
+    "code": "45030a",
+    "type_code": "hero",
+    "faction_code": "hero",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45030B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45030A.jpg"
+  },
+  {
+    "name": "Illyana Rasputin",
+    "code": "45030b",
+    "type_code": "alter_ego",
+    "faction_code": "hero",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45030A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45030B.jpg"
+  },
+  {
+    "name": "Colossus",
+    "code": "45031",
+    "subname": "Piotr Rasputin",
+    "type_code": "ally",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45031.jpg"
+  },
+  {
+    "name": "Limbo",
+    "code": "45032",
+    "type_code": "support",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45032.jpg"
+  },
+  {
+    "name": "Magik's Crown",
+    "code": "45033",
+    "type_code": "upgrade",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45033.jpg"
+  },
+  {
+    "name": "Soulsword",
+    "code": "45034",
+    "type_code": "upgrade",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45034.jpg"
+  },
+  {
+    "name": "Mystical Armor",
+    "code": "45035",
+    "type_code": "upgrade",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45035.jpg"
+  },
+  {
+    "name": "Scrying",
+    "code": "45036",
+    "type_code": "event",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45036.jpg"
+  },
+  {
+    "name": "Stepping Disc",
+    "code": "45037",
+    "type_code": "event",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45037.jpg"
+  },
+  {
+    "name": "Exorcism",
+    "code": "45038",
+    "type_code": "event",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45038.jpg"
+  },
+  {
+    "name": "Soul Strike",
+    "code": "45039",
+    "type_code": "event",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45039.jpg"
+  },
+  {
+    "name": "Magic Barrier",
+    "code": "45040",
+    "type_code": "event",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45040.jpg"
+  },
+  {
+    "name": "Goldballs",
+    "code": "45041",
+    "subname": "Fabio Medina",
+    "type_code": "ally",
+    "faction_code": "aggression",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45041.jpg"
+  },
+  {
+    "name": "Tempus",
+    "code": "45042",
+    "subname": "Eva Bell",
+    "type_code": "ally",
+    "faction_code": "aggression",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45042.jpg"
+  },
+  {
+    "name": "Blood Rage",
+    "code": "45043",
+    "type_code": "upgrade",
+    "faction_code": "aggression",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45043.jpg"
+  },
+  {
+    "name": "Test the Defense",
+    "code": "45044",
+    "type_code": "upgrade",
+    "faction_code": "aggression",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45044.jpg"
+  },
+  {
+    "name": "Full-Body Charge",
+    "code": "45045",
+    "type_code": "event",
+    "faction_code": "aggression",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45045.jpg"
+  },
+  {
+    "code": "45046",
+    "duplicate_of": "18012"
+  },
+  {
+    "code": "45047",
+    "duplicate_of": "01055"
+  },
+  {
+    "name": "Triage",
+    "code": "45048",
+    "subname": "Christopher Muse",
+    "type_code": "ally",
+    "faction_code": "basic",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45048.jpg"
+  },
+  {
+    "name": "Stepford Cuckoos",
+    "code": "45049",
+    "type_code": "support",
+    "faction_code": "basic",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45049.jpg"
+  },
+  {
+    "name": "Bloodgem",
+    "code": "45050",
+    "type_code": "upgrade",
+    "faction_code": "basic",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45050.jpg"
+  },
+  {
+    "name": "Basic Spell",
+    "code": "45051",
+    "type_code": "event",
+    "faction_code": "basic",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45051.jpg"
+  },
+  {
+    "code": "45052",
+    "duplicate_of": "15019"
+  },
+  {
+    "name": "Mission Team",
+    "code": "45171a",
+    "type_code": "support",
+    "faction_code": "campaign",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45171B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45171A.jpg"
+  },
+  {
+    "name": "Mission Team",
+    "code": "45171b",
+    "type_code": "support",
+    "faction_code": "campaign",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45171A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45171B.jpg"
+  },
+  {
+    "name": "Destiny",
+    "code": "45172",
+    "subname": "Irene Adler",
+    "type_code": "ally",
+    "faction_code": "campaign",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45172.jpg"
+  },
+  {
+    "name": "Blink",
+    "code": "45173",
+    "subname": "Clarice Ferguson",
+    "type_code": "ally",
+    "faction_code": "campaign",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45173.jpg"
+  },
+  {
+    "name": "Morph",
+    "code": "45174",
+    "subname": "Kevin Sydney",
+    "type_code": "ally",
+    "faction_code": "campaign",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45174.jpg"
+  },
+  {
+    "name": "X-Man",
+    "code": "45175",
+    "subname": "Nate Grey",
+    "type_code": "ally",
+    "faction_code": "campaign",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45175.jpg"
+  },
+  {
+    "name": "Desperate Measures",
+    "code": "45176",
+    "type_code": "upgrade",
+    "faction_code": "campaign",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45176.jpg"
+  },
+  {
+    "name": "Fear the Future",
+    "code": "45025",
+    "type_code": "obligation",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45025.jpg"
+  },
+  {
+    "name": "Trevor Fitzroy",
+    "code": "45026",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45026.jpg"
+  },
+  {
+    "name": "Portal Through Time",
+    "code": "45027",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45027.jpg"
+  },
+  {
+    "name": "Bantam",
+    "code": "45028",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45028.jpg"
+  },
+  {
+    "name": "Temporal Trickery",
+    "code": "45029",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45029.jpg"
+  },
+  {
+    "name": "Darkchilde",
+    "code": "45053",
+    "type_code": "obligation",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45053.jpg"
+  },
+  {
+    "name": "Belasco",
+    "code": "45054",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45054.jpg"
+  },
+  {
+    "name": "Ruler of Limbo",
+    "code": "45055",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45055.jpg"
+  },
+  {
+    "name": "S'ym",
+    "code": "45056",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45056.jpg"
+  },
+  {
+    "name": "Witchfire",
+    "code": "45057",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45057.jpg"
+  },
+  {
+    "name": "Battle for Limbo",
+    "code": "45058",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45058.jpg"
+  },
+  {
+    "name": "Unus",
+    "code": "45059",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45059.jpg"
+  },
+  {
+    "name": "Unus",
+    "code": "45060",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45060.jpg"
+  },
+  {
+    "name": "Unus",
+    "code": "45061",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45061.jpg"
+  },
+  {
+    "name": "Hunting Gene Traitors",
+    "code": "45062",
+    "type_code": "main_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45062B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45062A.jpg"
+  },
+  {
+    "name": "Prelate Sidearm",
+    "code": "45063",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45063.jpg"
+  },
+  {
+    "name": "Prelate Armor",
+    "code": "45064",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45064.jpg"
+  },
+  {
+    "name": "Infinite Hunter",
+    "code": "45065",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45065.jpg"
+  },
+  {
+    "name": "Genetic Experiments",
+    "code": "45066",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45066.jpg"
+  },
+  {
+    "name": "Infinite Prelate",
+    "code": "45067",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45067.jpg"
+  },
+  {
+    "name": "Endless Ranks",
+    "code": "45068",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45068.jpg"
+  },
+  {
+    "name": "Infinite Soldier",
+    "code": "45069",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45069.jpg"
+  },
+  {
+    "name": "Culling the Weak",
+    "code": "45070",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45070.jpg"
+  },
+  {
+    "name": "Gene Pool",
+    "code": "45071",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45071.jpg"
+  },
+  {
+    "name": "Hunted",
+    "code": "45072",
+    "type_code": "obligation",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45072.jpg"
+  },
+  {
+    "name": "War-Weary",
+    "code": "45073",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45073.jpg"
+  },
+  {
+    "name": "Targeted for Extermination",
+    "code": "45074",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45074.jpg"
+  },
+  {
+    "name": "Pursued by the Past",
+    "code": "45075a",
+    "type_code": "environment",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45075B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45075A.jpg"
+  },
+  {
+    "name": "Pursued by the Past",
+    "code": "45075b",
+    "type_code": "environment",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45075A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45075B.jpg"
+  },
+  {
+    "name": "Dark Design",
+    "code": "45076",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45076.jpg"
+  },
+  {
+    "name": "Sinister Strike",
+    "code": "45077",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45077.jpg"
+  },
+  {
+    "name": "Evil Alliance",
+    "code": "45078",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45078.jpg"
+  },
+  {
+    "name": "Nowhere is Safe",
+    "code": "45079",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45079.jpg"
+  },
+  {
+    "name": "Drawing Near",
+    "code": "45080",
+    "type_code": "obligation",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45080.jpg"
+  },
+  {
+    "name": "War",
+    "code": "45081a",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45081B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45081A.jpg"
+  },
+  {
+    "name": "War",
+    "code": "45081b",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45081A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45081B.jpg"
+  },
+  {
+    "name": "Famine",
+    "code": "45082a",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45082B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45082A.jpg"
+  },
+  {
+    "name": "Famine",
+    "code": "45082b",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45082A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45082B.jpg"
+  },
+  {
+    "name": "Pestilence",
+    "code": "45083a",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45083B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45083A.jpg"
+  },
+  {
+    "name": "Pestilence",
+    "code": "45083b",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45083A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45083B.jpg"
+  },
+  {
+    "name": "Death",
+    "code": "45084a",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45084B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45084A.jpg"
+  },
+  {
+    "name": "Death",
+    "code": "45084b",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45084A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45084B.jpg"
+  },
+  {
+    "name": "The Horsemen of Apocalypse",
+    "code": "45085",
+    "type_code": "main_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45085B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45085A.jpg"
+  },
+  {
+    "name": "The Ravages of War",
+    "code": "45086",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45086.jpg"
+  },
+  {
+    "name": "A Time of Famine",
+    "code": "45087",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45087.jpg"
+  },
+  {
+    "name": "Plague and Pestilence",
+    "code": "45088",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45088.jpg"
+  },
+  {
+    "name": "The Specter of Death",
+    "code": "45089",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45089.jpg"
+  },
+  {
+    "name": "Golden Horse",
+    "code": "45090",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45090.jpg"
+  },
+  {
+    "name": "Metal Wings",
+    "code": "45091",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45091.jpg"
+  },
+  {
+    "name": "Horseman of War",
+    "code": "45092",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45092.jpg"
+  },
+  {
+    "name": "Horseman of Famine",
+    "code": "45093",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45093.jpg"
+  },
+  {
+    "name": "Horseman of Pestilence",
+    "code": "45094",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45094.jpg"
+  },
+  {
+    "name": "Horseman of Death",
+    "code": "45095",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45095.jpg"
+  },
+  {
+    "name": "Rough Riders",
+    "code": "45096",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45096.jpg"
+  },
+  {
+    "name": "Ahab",
+    "code": "45097",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45097.jpg"
+  },
+  {
+    "name": "Hound",
+    "code": "45098",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45098.jpg"
+  },
+  {
+    "name": "Ahab's Energy Spear",
+    "code": "45099",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45099.jpg"
+  },
+  {
+    "name": "Release the Hounds",
+    "code": "45100",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45100.jpg"
+  },
+  {
+    "name": "Apocalypse",
+    "code": "45101a",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45101B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45101A.jpg"
+  },
+  {
+    "name": "Apocalypse",
+    "code": "45101b",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45101A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45101B.jpg"
+  },
+  {
+    "name": "Apocalypse",
+    "code": "45102a",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45102B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45102A.jpg"
+  },
+  {
+    "name": "Apocalypse",
+    "code": "45102b",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45102A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45102B.jpg"
+  },
+  {
+    "name": "The Age of Apocalypse",
+    "code": "45103",
+    "type_code": "main_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45103B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45103A.jpg"
+  },
+  {
+    "name": "Heart of the Empire",
+    "code": "45104a",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45104B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45104A.jpg"
+  },
+  {
+    "name": "The Towering Citadel",
+    "code": "45104b",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45104A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45104B.jpg"
+  },
+  {
+    "name": "The Tyrant's Throne",
+    "code": "45105a",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45105B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45105A.jpg"
+  },
+  {
+    "name": "No Longer Worthy",
+    "code": "45105b",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45105A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45105B.jpg"
+  },
+  {
+    "name": "Cyberpathy",
+    "code": "45106",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45106.jpg"
+  },
+  {
+    "name": "Biomorphing",
+    "code": "45107",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45107.jpg"
+  },
+  {
+    "name": "Molecular Control",
+    "code": "45108",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45108.jpg"
+  },
+  {
+    "name": "The Fittest",
+    "code": "45109",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45109.jpg"
+  },
+  {
+    "name": "Wolf Among Sheep",
+    "code": "45110",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45110.jpg"
+  },
+  {
+    "name": "The Apocalypse Solution",
+    "code": "45111",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45111.jpg"
+  },
+  {
+    "name": "Gauntlet",
+    "code": "45112",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45112.jpg"
+  },
+  {
+    "name": "Barrage",
+    "code": "45113",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45113.jpg"
+  },
+  {
+    "name": "Hard-Drive",
+    "code": "45114",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45114.jpg"
+  },
+  {
+    "name": "Tusk",
+    "code": "45115",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45115.jpg"
+  },
+  {
+    "name": "Psynapse",
+    "code": "45116",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45116.jpg"
+  },
+  {
+    "name": "The Dark Riders",
+    "code": "45117",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45117.jpg"
+  },
+  {
+    "name": "Dark Beast",
+    "code": "45118",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45118.jpg"
+  },
+  {
+    "name": "Dark Beast",
+    "code": "45119",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45119.jpg"
+  },
+  {
+    "name": "Dark Beast",
+    "code": "45120",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45120.jpg"
+  },
+  {
+    "name": "Dark Beast's Bogus Journey",
+    "code": "45121",
+    "type_code": "main_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45121B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45121A.jpg"
+  },
+  {
+    "name": "High-Tech Goggles",
+    "code": "45122",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45122.jpg"
+  },
+  {
+    "name": "Genetic Enhancement",
+    "code": "45123",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45123.jpg"
+  },
+  {
+    "name": "Cruel Experiment",
+    "code": "45124",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45124.jpg"
+  },
+  {
+    "name": "Evil Genius",
+    "code": "45125",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45125.jpg"
+  },
+  {
+    "name": "Time-Travel Shenanigans",
+    "code": "45126",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45126.jpg"
+  },
+  {
+    "name": "The Savage Land",
+    "code": "45127",
+    "type_code": "environment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45127.jpg"
+  },
+  {
+    "name": "Pterosaur",
+    "code": "45128",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45128.jpg"
+  },
+  {
+    "name": "Velociraptor",
+    "code": "45129",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45129.jpg"
+  },
+  {
+    "name": "Giant Ape",
+    "code": "45130",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45130.jpg"
+  },
+  {
+    "name": "Land Out of Time",
+    "code": "45131",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45131.jpg"
+  },
+  {
+    "name": "Village Under Attack",
+    "code": "45132",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45132.jpg"
+  },
+  {
+    "name": "Genosha",
+    "code": "45133",
+    "type_code": "environment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45133.jpg"
+  },
+  {
+    "name": "Magistrate",
+    "code": "45134",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45134.jpg"
+  },
+  {
+    "name": "Armored Unibike",
+    "code": "45135",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45135.jpg"
+  },
+  {
+    "name": "Genoshan Mech",
+    "code": "45136",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45136.jpg"
+  },
+  {
+    "name": "Escaped Mutant",
+    "code": "45137",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45137.jpg"
+  },
+  {
+    "name": "Police State",
+    "code": "45138",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45138.jpg"
+  },
+  {
+    "name": "Blue Area of the Moon",
+    "code": "45139",
+    "type_code": "environment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45139.jpg"
+  },
+  {
+    "name": "Gladiator",
+    "code": "45140",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45140.jpg"
+  },
+  {
+    "name": "Oracle",
+    "code": "45141",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45141.jpg"
+  },
+  {
+    "name": "Manta",
+    "code": "45142",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45142.jpg"
+  },
+  {
+    "name": "Earthquake",
+    "code": "45143",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45143.jpg"
+  },
+  {
+    "name": "Warstar",
+    "code": "45144",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45144.jpg"
+  },
+  {
+    "name": "Imperial Guardsman",
+    "code": "45145",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45145.jpg"
+  },
+  {
+    "name": "Trial by Combat",
+    "code": "45146",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45146.jpg"
+  },
+  {
+    "name": "En Sabah Nur's Pyramid",
+    "code": "45147",
+    "type_code": "main_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45147B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45147A.jpg"
+  },
+  {
+    "name": "The Rise of Apocalypse",
+    "code": "45148",
+    "type_code": "main_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45148B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45148A.jpg"
+  },
+  {
+    "name": "Staggering Strength",
+    "code": "45149",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45149.jpg"
+  },
+  {
+    "name": "Biomorphic Blast",
+    "code": "45150",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45150.jpg"
+  },
+  {
+    "name": "Technological Interface",
+    "code": "45151",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45151.jpg"
+  },
+  {
+    "name": "Giant-Sized Despot",
+    "code": "45152",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45152.jpg"
+  },
+  {
+    "name": "Source of Power",
+    "code": "45153",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45153.jpg"
+  },
+  {
+    "name": "Plugged In",
+    "code": "45154",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45154.jpg"
+  },
+  {
+    "name": "Giant Growth",
+    "code": "45155",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45155.jpg"
+  },
+  {
+    "name": "Celestial Armor",
+    "code": "45156",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45156.jpg"
+  },
+  {
+    "name": "Celestial Weapon",
+    "code": "45157",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45157.jpg"
+  },
+  {
+    "name": "Celestial Tech",
+    "code": "45158",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45158.jpg"
+  },
+  {
+    "name": "Ozymandias",
+    "code": "45159",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45159.jpg"
+  },
+  {
+    "name": "Scarab",
+    "code": "45160",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45160.jpg"
+  },
+  {
+    "name": "Clan Akkaba Zealot",
+    "code": "45161",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45161.jpg"
+  },
+  {
+    "name": "Tyrant Worship",
+    "code": "45162",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45162.jpg"
+  },
+  {
+    "name": "Ancient Ritual",
+    "code": "45163",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45163.jpg"
+  },
+  {
+    "name": "Agent of Apocalypse",
+    "code": "45164",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45164.jpg"
+  },
+  {
+    "name": "Worldwide Crisis",
+    "code": "45165",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45165.jpg"
+  },
+  {
+    "name": "Liberate the Seattle Core",
+    "code": "45166a",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45166B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45166A.jpg"
+  },
+  {
+    "name": "Liberate the Seattle Core",
+    "code": "45166b",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45166A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45166B.jpg"
+  },
+  {
+    "name": "Evacuate Survivors",
+    "code": "45167a",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45167B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45167A.jpg"
+  },
+  {
+    "name": "Evacuate Survivors",
+    "code": "45167b",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45167A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45167B.jpg"
+  },
+  {
+    "name": "Sabotage the Sea Wall",
+    "code": "45168a",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45168B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45168A.jpg"
+  },
+  {
+    "name": "Sabotage the Sea Wall",
+    "code": "45168b",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45168A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45168B.jpg"
+  },
+  {
+    "name": "Find Lost Mutants",
+    "code": "45169a",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45169B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45169A.jpg"
+  },
+  {
+    "name": "Find Lost Mutants",
+    "code": "45169b",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45169A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45169B.jpg"
+  },
+  {
+    "name": "Protect the Professor",
+    "code": "45170a",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45170B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45170A.jpg"
+  },
+  {
+    "name": "Protect the Professor",
+    "code": "45170b",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45170A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45170B.jpg"
+  },
+  {
+    "name": "North American Sea Wall",
+    "code": "45177",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45177.jpg"
+  },
+  {
+    "name": "Panicked Refugees",
+    "code": "45178",
+    "type_code": "obligation",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45178.jpg"
+  },
+  {
+    "name": "Mister Sinister",
+    "code": "45179a",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45179B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45179A.jpg"
+  },
+  {
+    "name": "Mister Sinister",
+    "code": "45179b",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45179A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45179B.jpg"
+  },
+  {
+    "name": "The Shadow King",
+    "code": "45180a",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45180B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45180A.jpg"
+  },
+  {
+    "name": "The Shadow King",
+    "code": "45180b",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45180A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45180B.jpg"
+  },
+  {
+    "name": "Abyss",
+    "code": "45181a",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45181B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45181A.jpg"
+  },
+  {
+    "name": "Abyss",
+    "code": "45181b",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45181A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45181B.jpg"
+  },
+  {
+    "name": "Sugar Man",
+    "code": "45182a",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45182B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45182A.jpg"
+  },
+  {
+    "name": "Sugar Man",
+    "code": "45182b",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45182A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45182B.jpg"
+  },
+  {
+    "name": "Mikhail Rasputin",
+    "code": "45183a",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45183B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45183A.jpg"
+  },
+  {
+    "name": "Mikhail Rasputin",
+    "code": "45183b",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45183A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45183B.jpg"
+  },
+  {
+    "name": "Apocalypse",
+    "code": "45184a",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45184B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45184A.jpg"
+  },
+  {
+    "name": "Apocalypse",
+    "code": "45184b",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45184A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45184B.jpg"
+  },
+  {
+    "name": "Apocalypse",
+    "code": "45184c",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45184C.jpg"
+  },
+  {
+    "name": "Apocalypse",
+    "code": "45185a",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45185B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45185A.jpg"
+  },
+  {
+    "name": "Apocalypse",
+    "code": "45185b",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45185A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45185B.jpg"
+  },
+  {
+    "name": "Apocalypse",
+    "code": "45185c",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45185C.jpg"
+  },
+  {
+    "name": "Apocalypse",
+    "code": "45186a",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45186B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45186A.jpg"
+  },
+  {
+    "name": "Apocalypse",
+    "code": "45186b",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/45186A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45186B.jpg"
+  },
+  {
+    "name": "Apocalypse",
+    "code": "45186c",
+    "type_code": "villain",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45186C.jpg"
   }
 ]
 ]]
@@ -19628,7 +21188,7 @@ PACK_01 = [[
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01175.jpg"
   },
   {
-    "name": "The Psych-Magnitron",
+    "name": "The Psyche-Magnitron",
     "code": "01176",
     "type_code": "side_scheme",
     "faction_code": "encounter",
