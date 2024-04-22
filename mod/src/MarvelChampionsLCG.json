@@ -1,8 +1,8 @@
 {
   "Save": {
     "SaveName": "MarvelChampionsLCG",
-    "EpochTime": 1713640240,
-    "Date": "4/20/2024 1:10:40 PM",
+    "EpochTime": 1713753236,
+    "Date": "4/21/2024 8:33:56 PM",
     "VersionNumber": "v13.2.2",
     "GameMode": "MarvelChampionsLCG",
     "GameType": "Game",
@@ -552,6 +552,8 @@
     "Custom_Token.d19a0b.json",
     "Setup_Panel.cce23d.json",
     "Specialized_Training_Linked_Cards.94f458.json",
-    "3DText.14e87e.json"
+    "3DText.14e87e.json",
+    "This_is_a_work_in_progress.e23a1b.json",
+    "Scenario_Setup.d18365.json"
   ]
 }

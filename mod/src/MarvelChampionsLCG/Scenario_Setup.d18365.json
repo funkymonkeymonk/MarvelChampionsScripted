@@ -1,20 +1,20 @@
 {
   "Object": {
-    "GUID": "368937",
-    "Name": "3DText",
+    "GUID": "d18365",
+    "Name": "Notecard",
     "Transform": {
-      "posX": -96.26042,
-      "posY": 0.00006240607,
-      "posZ": -34.00018,
-      "rotX": 90,
-      "rotY": 0.999572039,
-      "rotZ": 0,
+      "posX": 76.25,
+      "posY": 0.5650011,
+      "posZ": 40.25,
+      "rotX": -3.344193e-8,
+      "rotY": -5.717341e-11,
+      "rotZ": 4.5935824e-8,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
     },
-    "Nickname": "",
-    "Description": "",
+    "Nickname": "Scenario Setup",
+    "Description": "Use these buttons to navigate through the scenario setup process. Choose your heroes, select a scenario, add to or change the modular sets, select a mode, and click GO.\n\nAll scenarios should basically work, but some of them need some work.",
     "GMNotes": "",
     "AltLookAngle": {
       "x": 0,
@@ -28,7 +28,7 @@
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,
-    "Locked": true,
+    "Locked": false,
     "Grid": true,
     "Snap": true,
     "IgnoreFoW": false,
@@ -40,15 +40,6 @@
     "GridProjection": false,
     "HideWhenFaceDown": false,
     "Hands": false,
-    "Text": {
-      "Text": "1",
-      "colorstate": {
-        "r": 1,
-        "g": 1,
-        "b": 1
-      },
-      "fontSize": 88
-    },
     "LuaScript": "",
     "LuaScriptState": "",
     "XmlUI": ""

@@ -159,7 +159,7 @@ scenarios["wreckingCrew"] =
             },
             position={39.75, 0.97, 22.73},
             scale={2.42, 1.00, 2.42},
-            threatCounterounter={
+            threatCounter={
                 position={39.20, 1.04, 20.90},
                 scale={0.48, 1.00, 0.48}
             }

@@ -7,6 +7,7 @@ scenarios["loki"] =
             name="Loki",
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150132430/6C8FCFC49383857A4A92407CE13656C5DE148F37/",
+                primaryButtonLabel="Next!"
             },
             stages={
                 stage1={

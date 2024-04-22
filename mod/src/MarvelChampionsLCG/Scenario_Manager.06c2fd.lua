@@ -104,20 +104,28 @@ function selectScenario(params)
   currentScenario = deepCopy(scenarios[params.scenarioKey])
   currentScenario.key = params.scenarioKey
 
-  for key, villain in pairs(currentScenario.villains) do
-    villain.key = key
-
-    for stageKey, stage in pairs(villain.stages) do
-      stage.key = stageKey
-    end
+  if(currentScenario.villains) then
+    for key, villain in pairs(currentScenario.villains) do
+      villain.key = key
+  
+      if(villain.stages) then
+        for stageKey, stage in pairs(villain.stages) do
+          stage.key = stageKey
+        end        
+      end
+    end  
   end
 
-  for key, scheme in pairs(currentScenario.schemes) do
-    scheme.key = key
-    
-    for stageKey, stage in pairs(scheme.stages) do
-      stage.key = stageKey
-    end
+  if(currentScenario.schemes) then
+    for key, scheme in pairs(currentScenario.schemes) do
+      scheme.key = key
+      
+      if(scheme.stages) then
+        for stageKey, stage in pairs(scheme.stages) do
+          stage.key = stageKey
+        end
+      end
+    end      
   end
 
   encounterSetManager.call("preSelectEncounterSets", {sets = currentScenario.modularSets or {}})
@@ -950,32 +958,54 @@ end
 
 function advanceVillainStage(villainKey, heroCount)
   local villain = currentScenario.villains[villainKey]
+  local nextStage = getNextVillainStage(villain)
 
-  local advanceFunction = "advanceVillainStage_" .. villainKey
-  if(self.getVar(advanceFunction) ~= nil) then
-    self.call(advanceFunction, {villain = villain, heroCount = heroCount})
-    return
+  if(nextStage == nil) then return end
+
+  villain.currentStageNumber = string.sub(nextStage.key, -1)
+
+  placeVillainStage(villain, nextStage, heroCount)
+
+  setUpVillainStage(villain, nextStage, heroCount)
+end
+
+function getNextVillainStage(villain)
+  local functionName = "getNextVillainStage_" .. villain.key
+
+  if(self.getVar(functionName) ~= nil) then
+    return self.call(functionName, {villain = villain})
   end
 
   local currentStageNumber = villain.currentStageNumber
   local mode = currentScenario.mode
-  local newStage = nil
+  local nextStage = nil
 
   if(currentStageNumber == nil) then
     if(mode == "standard") then
-      newStage = villain.stages.stage1 or villain.stages.stageA
+      nextStage = villain.stages.stage1 or villain.stages.stageA
     elseif(mode == "expert") then
-      newStage = villain.stages.stage2 or villain.stages.stageB
+      nextStage = villain.stages.stage2 or villain.stages.stageB
     end
   elseif(currentStageNumber == "1") then
-    newStage = villain.stages.stage2
+    nextStage = villain.stages.stage2
   elseif(currentStageNumber == "2") then
-    newStage = villain.stages.stage3
+    nextStage = villain.stages.stage3
   end
 
-  if(newStage == nil) then return end
+  local showAdvanceButton = villain.currentStageNumber == "1" or 
+    (villain.currentStageNumber == "2" and currentScenario.mode == "expert")
+  
+  nextStage.showAdvanceButton = showAdvanceButton
+  return nextStage
+end
 
-  villain.currentStageNumber = string.sub(newStage.key, -1)
+function placeVillainStage(villain, stage, heroCount)
+  local functionName = "placeVillainStage_" .. villain.key
+
+  if(self.getVar(functionName) ~= nil) then
+    self.call(functionName, {villain=villain, stage=stage, heroCount=heroCount})
+    return
+  end
 
   local villainPosition = villain.deckPosition or defaults.villainDeck.position
   local villainRotation = villain.deckRotation or defaults.villainDeck.rotation
@@ -985,24 +1015,35 @@ function advanceVillainStage(villainKey, heroCount)
 
   local locked = true;
   if(villain.locked ~= nil) then
-    locked = newStage.locked
+    locked = stage.locked
   end
 
+  local flipped = stage.flipCard or false
+
   getCardByID(
-    newStage.cardId, 
+    stage.cardId, 
     villainPosition, 
-    {scale = villainScale, name = villain.name, flipped = false, locked=locked})
+    {scale = villainScale, name = villain.name, flipped = flipped, locked=locked})
   
-  local hitPoints = (newStage.hitPoints or 0) + ((newStage.hitPointsPerPlayer or 0) * heroCount)
+  local hitPoints = (stage.hitPoints or 0) + ((stage.hitPointsPerPlayer or 0) * heroCount)
   local villainHpCounter = getObjectFromGUID(villain.hpCounter.guid)
 
   Wait.frames(
     function()
       villainHpCounter.call("setValue", {value = hitPoints}) 
-      configureAdvanceVillainButton(villainHpCounter)
+      configureAdvanceVillainButton(villainHpCounter, stage.showAdvanceButton)
     end,
     20
   )
+end
+
+function setUpVillainStage(villain, stage, heroCount)
+  local functionName = "setUpVillainStage_" .. villain.key
+
+  if(self.getVar(functionName) ~= nil) then
+    self.call(functionName, {villain=villain, stage=stage, heroCount=heroCount})
+    return
+  end
 end
 
 function advanceScheme(params)
@@ -1012,86 +1053,112 @@ end
 
 function advanceSchemeStage(schemeKey, heroCount)
   local scheme = currentScenario.schemes[schemeKey]
+  local nextStage = getNextSchemeStage(scheme)
 
-  local advanceFunction = "advanceSchemeStage_" .. schemeKey
-  if(self.getVar(advanceFunction) ~= nil) then
-    self.call(advanceFunction, {scheme = scheme, heroCount = heroCount})
-    return
+  if(nextStage == nil) then return end
+
+  scheme.currentStageNumber = string.sub(nextStage.key, -1)
+
+  placeSchemeStage(scheme, nextStage, heroCount)
+
+  setUpSchemeStage(scheme, nextStage, heroCount)
+
+end
+
+function getNextSchemeStage(scheme)
+  local functionName = "getNextSchemeStage_" .. currentScenario.key .. "_" .. scheme.key
+
+  if(self.getVar(functionName) ~= nil) then
+    return self.call(functionName, {scheme = scheme})
   end
 
   local currentStageNumber = scheme.currentStageNumber or 0
   local nextStageKey = "stage" .. (tonumber(currentStageNumber) + 1)
   local nextStage = scheme.stages[nextStageKey]
 
-  if(nextStage == nil) then return end
+  return nextStage
+end
 
-  scheme.currentStageNumber = string.sub(nextStage.key, -1)
+function placeSchemeStage(scheme, stage, heroCount)
+  local functionName = "placeSchemeStage_" .. scheme.key
+
+  if(self.getVar(functionName) ~= nil) then
+    self.call(functionName, {scheme = scheme, stage=stage, heroCount=heroCount})
+    return
+  end
 
   local schemePosition = scheme.position or defaults.mainSchemeDeck.position
   local schemeRotation = scheme.rotation or defaults.mainSchemeDeck.rotation
   local schemeScale = scheme.scale or defaults.mainSchemeDeck.scale
 
+  --TODO: delete existing card, if necessary
+  
   getCardByID(
-    nextStage.cardId, 
+    stage.cardId, 
     schemePosition, 
     {scale = schemeScale, name = scheme.name, flipped = false, landscape = true})
 
   local counter = scheme.counter or {}
 
-  local threat = (nextStage.startingThreat or 0) + ((nextStage.startingThreatPerPlayer or 0) * heroCount)
+  local threat = (stage.startingThreat or 0) + ((stage.startingThreatPerPlayer or 0) * heroCount)
   local schemeThreatCounter = getObjectFromGUID(counter.guid)
 
   Wait.frames(
     function()
       schemeThreatCounter.call("setValue", {value = threat})
-      configureAdvanceSchemeButton(schemeThreatCounter)
+      configureAdvanceSchemeButton(schemeThreatCounter, stage.showAdvanceButton)
     end,
     20
   )
 end
 
-function configureAdvanceVillainButton(villainHpCounter)
+function setUpSchemeStage(scheme, stage, heroCount)
+  local functionName = "setUpSchemeStage_" .. scheme.key
+
+  if(self.getVar(functionName) ~= nil) then
+    self.call(functionName, {scheme = scheme, stage=stage, heroCount=heroCount})
+    return
+  end
+end
+
+function configureAdvanceVillainButton(villainHpCounter, showAdvanceButton)
   local villain = currentScenario.villains[villainHpCounter.call("getVillainKey")]
-  local showAdvanceButton = villain.currentStageNumber == "1" or 
-    (villain.currentStageNumber == "2" and currentScenario.mode == "expert")
 
   if(showAdvanceButton) then
+    villainHpCounter.call("setAdvanceButtonOptions", {label = villain.hpCounter.primaryButtonLabel or "ADVANCE"})
     villainHpCounter.call("showAdvanceButton")
   else
     villainHpCounter.call("hideAdvanceButton")
   end
 end
 
-function configureAdvanceSchemeButton(schemeHpCounter)
-  local scheme = currentScenario.schemes[schemeHpCounter.call("getSchemeKey")]
-  local nextStageKey = "stage" .. (tonumber(scheme.currentStageNumber) + 1)
+function configureAdvanceSchemeButton(schemeHpCounter, showAdvanceButton)
+  --local scheme = currentScenario.schemes[schemeHpCounter.call("getSchemeKey")]
+  --local nextStageKey = "stage" .. (tonumber(scheme.currentStageNumber) + 1)
 
-  if(scheme.stages[nextStageKey]) then
+  --if(scheme.stages[nextStageKey]) then
+  if(showAdvanceButton) then
     schemeHpCounter.call("showAdvanceButton")
   else
     schemeHpCounter.call("hideAdvanceButton")
   end
 end
 
-function advanceVillainStage_brotherhood(params)
-  local heroCount = params.heroCount
-  local villain = currentScenario.villains.brotherhood
-
+function getNextVillainStage_brotherhood(params)
+  local villain = currentScenario.villains[params.villain.key]
   local villainPosition = villain.deckPosition or defaults.villainDeck.position
-  local villainRotation = villain.deckRotation or defaults.villainDeck.rotation
-  local villainScale = villain.deckScale or defaults.villainDeck.scale
-
-  if(villain.currentStageNumber ~= nil) then
-    Global.call("moveCardToLocation", {origin = villainPosition, destination = vector(-49.25, 5 , 16.75)})
-    villain.stages["stage"..villain.currentStageNumber].defeated = true
-  end
-
   local remainingStages = {}
 
   for key, stage in pairs(villain.stages) do
-      if(not stage.defeated) then
-          table.insert(remainingStages, key)
-      end
+    if(not stage.defeated) then
+        table.insert(remainingStages, key)
+    end
+  end
+
+  if(villain.currentStageNumber ~= nil) then
+    local defeatedStages = 3 - #remainingStages
+    local x = -12.75 + (defeatedStages * 10)
+    Global.call("moveCardToLocation", {origin = villainPosition, destination = vector(x, 1.50, 54.25)}) --TODO: create victory display layout region
   end
 
   local newStageKey = nil
@@ -1104,37 +1171,53 @@ function advanceVillainStage_brotherhood(params)
       math.randomseed(os.time())
       newStageKey = remainingStages[math.random(#remainingStages)]
   end
-  
+
   local newStage = villain.stages[newStageKey]
+  newStage.showAdvanceButton = not lastStage
+  newStage.flipCard = (currentScenario.mode == "expert")
+  newStage.defeated = true
 
-  villain.currentStageNumber = string.sub(newStage.key, -1)
+  return newStage
+end
 
-  getCardByID(
-      newStage.cardId, 
-      villainPosition, 
-      {scale = villainScale, name = villain.name, flipped = false, locked=true})
-  
-  local hitPoints = (newStage.hitPoints or 0) + ((newStage.hitPointsPerPlayer or 0) * heroCount)
-  local villainHpCounter = getObjectFromGUID(villain.hpCounter.guid)
+function getNextSchemeStage_mansionAttack_main(params)
+  local scheme = currentScenario.schemes[params.scheme.key]
+  local schemePosition = scheme.position or defaults.mainSchemeDeck.position
+  local remainingStages = {}
 
-  Wait.frames(
-    function()
-      villainHpCounter.call("setValue", {value = hitPoints}) 
-        
-      villainHpCounter.call("setAdvanceButtonOptions", {label = "Next!"})
+  if(scheme.currentStageNumber == nil) then
+    local newStage = scheme.stages["stage1"]
+    newStage.showAdvanceButton = true
+    newStage.completed = true
+    return newStage
+  end
 
-      if(lastStage) then
-        villainHpCounter.call("hideAdvanceButton")
-      else
-        villainHpCounter.call("showAdvanceButton")
-      end
+  for key, stage in pairs(scheme.stages) do
+    if(not stage.completed) then
+        table.insert(remainingStages, key)
+    end
+  end
 
-      -- villainHpCounter.setCustomObject({image = newStage.tileImageUrl})
-      -- reloadedCounter = villainHpCounter.reload()
-      -- villain.hpCounter.guid = reloadedCounter.getGUID()      
-    end,
-    20
-  )
+  local completedStages = 4 - #remainingStages
+  local x = -12.75 + (completedStages * 10)
+  Global.call("moveCardToLocation", {origin = schemePosition, destination = vector(x, 1.50 , 43.75)}) --TODO: create victory display layout region
+
+  local newStageKey = nil
+  local lastStage = false
+
+  if(#remainingStages == 1) then
+      newStageKey = remainingStages[1]
+      lastStage = true
+  else
+      math.randomseed(os.time())
+      newStageKey = remainingStages[math.random(#remainingStages)]
+  end
+
+  local newStage = scheme.stages[newStageKey]
+  newStage.showAdvanceButton = not lastStage
+  newStage.completed = true
+
+  return newStage
 end
 
 require('!/Cardplacer')

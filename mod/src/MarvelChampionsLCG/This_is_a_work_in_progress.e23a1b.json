@@ -1,20 +1,20 @@
 {
   "Object": {
-    "GUID": "368937",
-    "Name": "3DText",
+    "GUID": "e23a1b",
+    "Name": "Notecard",
     "Transform": {
-      "posX": -96.26042,
-      "posY": 0.00006240607,
-      "posZ": -34.00018,
-      "rotX": 90,
-      "rotY": 0.999572039,
-      "rotZ": 0,
+      "posX": -0.7499999,
+      "posY": 1.03000021,
+      "posZ": 1.25,
+      "rotX": -3.308159e-7,
+      "rotY": 0.00000216185072,
+      "rotZ": -1.38781946e-8,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
     },
-    "Nickname": "",
-    "Description": "",
+    "Nickname": "This is a work in progress",
+    "Description": "There are some major changes being made to the mode, and they're not completely done.\n\nCheck out the comments in the Steam workshop for more information.\n\nBishop and Majik have been added, but I'll need a few more days for the Age of Apocalypse scenarios.",
     "GMNotes": "",
     "AltLookAngle": {
       "x": 0,
@@ -28,7 +28,7 @@
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,
-    "Locked": true,
+    "Locked": false,
     "Grid": true,
     "Snap": true,
     "IgnoreFoW": false,
@@ -40,15 +40,6 @@
     "GridProjection": false,
     "HideWhenFaceDown": false,
     "Hands": false,
-    "Text": {
-      "Text": "1",
-      "colorstate": {
-        "r": 1,
-        "g": 1,
-        "b": 1
-      },
-      "fontSize": 88
-    },
     "LuaScript": "",
     "LuaScriptState": "",
     "XmlUI": ""
