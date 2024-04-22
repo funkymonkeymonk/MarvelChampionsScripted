@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "4e892b",
-    "Name": "3DText",
+    "GUID": "deadbf",
+    "Name": "Card",
     "Transform": {
-      "posX": 90.6850739,
-      "posY": 0.4963799,
-      "posZ": 37.02397,
-      "rotX": 90,
-      "rotY": -0.0000079001,
+      "posX": 0,
+      "posY": 5,
+      "posZ": 0,
+      "rotX": 0,
+      "rotY": 0,
       "rotZ": 0,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
     },
-    "Nickname": "",
+    "Nickname": "Surveillance Specialist",
     "Description": "",
     "GMNotes": "",
     "AltLookAngle": {
@@ -26,9 +26,10 @@
       "g": 1,
       "b": 1
     },
+    "Tags": [],
     "LayoutGroupSortIndex": 0,
     "Value": 0,
-    "Locked": true,
+    "Locked": false,
     "Grid": true,
     "Snap": true,
     "IgnoreFoW": false,
@@ -38,16 +39,19 @@
     "Sticky": true,
     "Tooltip": true,
     "GridProjection": false,
-    "HideWhenFaceDown": false,
-    "Hands": false,
-    "Text": {
-      "Text": "SCENARIOS",
-      "colorstate": {
-        "r": 1,
-        "g": 1,
-        "b": 1
-      },
-      "fontSize": 120
+    "Hands": true,
+    "CardID": 7600,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "76": {
+        "FaceURL": "https://dcqvlrey92bew.cloudfront.net/43037.jpg",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
     },
     "LuaScript": "",
     "LuaScriptState": "",

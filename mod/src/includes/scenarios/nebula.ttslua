@@ -8,17 +8,19 @@ scenarios["nebula"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150133365/FA5F252C872C3D30F0F15DCEBAE68E1C60954D2A/",
             },
-            stage1={
-                cardId="16088",
-                hitPointsPerPlayer=14
-            },
-            stage2={
-                cardId="16089",
-                hitPointsPerPlayer=17
-            },
-            stage3={
-                cardId="16090",
-                hitPointsPerPlayer=20
+            stages={
+                stage1={
+                    cardId="16088",
+                    hitPointsPerPlayer=14
+                },
+                stage2={
+                    cardId="16089",
+                    hitPointsPerPlayer=17
+                },
+                stage3={
+                    cardId="16090",
+                    hitPointsPerPlayer=20
+                }
             }
         }
     },
@@ -41,7 +43,7 @@ scenarios["nebula"] =
     cards={
         nebulasShip={
             cardId="16093",
-            position={13.75, 0.97, 29.25},
+            position={15.75, 1.00, 29.25},
             scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
         },
         milano={

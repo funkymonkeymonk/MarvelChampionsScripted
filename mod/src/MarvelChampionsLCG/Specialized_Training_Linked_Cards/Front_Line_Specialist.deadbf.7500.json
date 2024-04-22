@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "443718",
+    "GUID": "deadbf",
     "Name": "Card",
     "Transform": {
-      "posX": -22.75,
-      "posY": 1.01859927,
-      "posZ": 18.25,
-      "rotX": 0.000273496262,
-      "rotY": 179.998978,
-      "rotZ": 180.000366,
-      "scaleX": 2.12,
+      "posX": 0,
+      "posY": 5,
+      "posZ": 0,
+      "rotX": 0,
+      "rotY": 0,
+      "rotZ": 0,
+      "scaleX": 1,
       "scaleY": 1,
-      "scaleZ": 2.12
+      "scaleZ": 1
     },
-    "Nickname": "Gang-Up",
+    "Nickname": "Front Line Specialist",
     "Description": "",
     "GMNotes": "",
     "AltLookAngle": {
@@ -22,10 +22,11 @@
       "z": 0
     },
     "ColorDiffuse": {
-      "r": 0.713235259,
-      "g": 0.713235259,
-      "b": 0.713235259
+      "r": 1,
+      "g": 1,
+      "b": 1
     },
+    "Tags": [],
     "LayoutGroupSortIndex": 0,
     "Value": 0,
     "Locked": false,
@@ -38,16 +39,15 @@
     "Sticky": true,
     "Tooltip": true,
     "GridProjection": false,
-    "HideWhenFaceDown": true,
     "Hands": true,
-    "CardID": 466004,
+    "CardID": 7500,
     "SidewaysCard": false,
     "CustomDeck": {
-      "4660": {
-        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/767229025789789360/DE60A74852F5BDA8DD2F3F18C158172C55BB017B/",
-        "BackURL": "http://cloud-3.steamusercontent.com/ugc/767229025789762742/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-        "NumWidth": 5,
-        "NumHeight": 5,
+      "75": {
+        "FaceURL": "https://dcqvlrey92bew.cloudfront.net/43036.jpg",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 1,
+        "NumHeight": 1,
         "BackIsHidden": false,
         "UniqueBack": false,
         "Type": 0

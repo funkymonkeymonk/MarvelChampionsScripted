@@ -8,17 +8,19 @@ scenarios["infiltrateMuseum"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/1833526258727804015/5DDA85319568535B84FBD610334FB7C6F8BFCDF0/",
             },
-            stage1={
-                cardId="16070",
-                hitPointsPerPlayer=13
-            },
-            stage2={
-                cardId="16071",
-                hitPointsPerPlayer=14
-            },
-            stage3={
-                cardId="16072",
-                hitPointsPerPlayer=18
+            stages={
+                stage1={
+                    cardId="16070",
+                    hitPointsPerPlayer=13
+                },
+                stage2={
+                    cardId="16071",
+                    hitPointsPerPlayer=14
+                },
+                stage3={
+                    cardId="16072",
+                    hitPointsPerPlayer=18
+                }
             }
         }
     },

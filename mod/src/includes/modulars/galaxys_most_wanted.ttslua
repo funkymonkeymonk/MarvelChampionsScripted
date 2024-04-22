@@ -66,7 +66,7 @@ modularSets["spacePirates"] =
 modularSets["shipCommand"] = 
 {
     name="Ship Command",
-    modular=true,
+    modular=false,
     cards = {
         ["16142"] = 1,
         ["16143"] = 1,
@@ -81,7 +81,7 @@ modularSets["shipCommand"] =
 modularSets["powerStone"] = 
 {
     name="Power Stone",
-    modular=true,
+    modular=false,
     cards = {
         ["16149"] = 1
     }

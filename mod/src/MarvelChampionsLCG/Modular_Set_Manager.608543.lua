@@ -1,5 +1,7 @@
 preventDeletion = true
 
+local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
+
 local encounterDeckPosition = {-12.75, 1.01, 22.25}
 local originPosition = {x=60.25, y=0.3, z=-6.25}
 
@@ -9,12 +11,17 @@ local rowGap = 2.5
 local columns = 7
 
 local modularSets = {}
+local selectedSets = {}
 
 function onLoad()
     createContextMenu()
-	layOutModularSets()
+	--layOutModularSets()
 end
 
+function clearData()
+    self.script_state = ""
+end
+  
 function createContextMenu()
     self.addContextMenuItem("Lay Out Modular Sets", layOutModularSets)
     self.addContextMenuItem("Delete Modular Sets", deleteModularSets)
@@ -24,6 +31,46 @@ function getModularSet(params)
     return modularSets[params.modularSetKey]
 end
 
+function getSelectedSetCount()
+    local count = 0
+
+    for k,v in pairs(selectedSets) do
+        count = count + 1
+    end
+
+    return count
+end
+
+function getCardsFromSelectedSets()
+    local cards = {}
+
+    for k,v in pairs(selectedSets) do
+        for cardId, count in pairs(v.cards) do
+            cards[cardId] = count
+        end
+    end
+
+    return cards
+end
+
+function layOutModularSetSelectors(params)
+    local sets = getEncounterSetsByType(params.modular)
+
+    layoutManager.call("layOutSelectorTiles", {
+        origin = params.origin,
+        center = params.center or {0,0.5,0},
+        direction = params.direction or "horizontal",
+        maxRowsOrColumns = params.maxRowsOrColumns or 6,
+        columnGap = params.columnGap or 6.5,
+        rowGap = params.rowGap or 3.5,
+        selectorScale = params.selectorScale or {1.33, 1, 1.33},
+        items = sets,
+        itemType = "modular-set",
+        behavior = params.behavior,
+        hidden = params.hidden
+    }) 
+end
+  
 function layOutModularSets()
     local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
 
@@ -42,6 +89,44 @@ function deleteModularSets()
     local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
     layoutManager.call("clearSelectorTiles", {itemType = "modular-set"})
 end
+
+function preSelectEncounterSets(params)
+    selectedSets = {}
+    local sets = params.sets
+
+    for key,required in pairs(sets) do
+        set = deepCopy(modularSets[key])
+        set.required = required
+        selectedSets[key] = set
+    end
+end
+
+function selectModularSet(params)
+    addRemoveSelectedSet(params.modularSetKey)
+
+    layoutManager.call("highlightMultipleSelectorTiles", {itemType = "modular-set", items = selectedSets})
+end
+
+function addRemoveSelectedSet(key)
+    for k, v in pairs(selectedSets) do
+        if(k == key) then
+            selectedSets[k] = nil
+            return
+        end
+    end
+
+    selectedSets[key] = modularSets[key]
+end
+
+function hideSelectors()
+    layoutManager.call("hideSelectors", {itemType = "modular-set"})
+end
+
+function showSelectors()
+    layoutManager.call("showSelectors", {itemType = "modular-set"})
+    layoutManager.call("highlightMultipleSelectorTiles", {itemType = "modular-set", items = selectedSets})
+end
+  
 
 function placeModularSet(params)
     local modularSet = modularSets[params.modularSetKey]
@@ -73,6 +158,28 @@ function placeModularSet(params)
     else
         createDeck({cards=modularSet.cards, position=position, rotation=rotation, scale=scale})
     end
+end
+
+function getEncounterSetsByType(modular)
+    local encounterSetList = {}
+  
+    for key, set in pairs(modularSets) do
+      if(set.modular == modular) then
+        encounterSetList[key] = set
+      end
+    end
+  
+    return encounterSetList
+end
+
+function deepCopy(obj, seen)
+    if type(obj) ~= 'table' then return obj end
+    if seen and seen[obj] then return seen[obj] end
+    local s = seen or {}
+    local res = setmetatable({}, getmetatable(obj))
+    s[obj] = res
+    for k, v in pairs(obj) do res[deepCopy(k, s)] = deepCopy(v, s) end
+    return res
 end
 
 require('!/Cardplacer')

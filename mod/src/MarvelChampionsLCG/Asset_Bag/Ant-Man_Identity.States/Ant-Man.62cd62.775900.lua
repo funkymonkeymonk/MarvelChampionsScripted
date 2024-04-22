@@ -30,12 +30,12 @@ end
 
 function alterEgo()
  self.setState(2)
- setNormalPlaymatImage()
+ --setNormalPlaymatImage()
 end
 
 function tinyForm()
  self.setState(1)
- setTinyPlaymatImage()
+ --setTinyPlaymatImage()
 end
 
 function setNormalPlaymatImage()

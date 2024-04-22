@@ -8,17 +8,19 @@ scenarios["ronan"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150140593/6ACB7C021C95822892BB77CA5BCAAF4CE7CDF49E/",
             },
-            stage1={
-                cardId="16103",
-                hitPointsPerPlayer=14
-            },
-            stage2={
-                cardId="16104",
-                hitPointsPerPlayer=18
-            },
-            stage3={
-                cardId="16105",
-                hitPointsPerPlayer=25
+            stages={
+                stage1={
+                    cardId="16103",
+                    hitPointsPerPlayer=14
+                },
+                stage2={
+                    cardId="16104",
+                    hitPointsPerPlayer=18
+                },
+                stage3={
+                    cardId="16105",
+                    hitPointsPerPlayer=25
+                }
             }
         }
     },
@@ -41,7 +43,7 @@ scenarios["ronan"] =
     cards={
         kreeCommandShip={
             cardId="16108",
-            position={13.75, 0.97, 29.25},
+            position={15.75, 1.00, 29.25},
             scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
         },
         milano={

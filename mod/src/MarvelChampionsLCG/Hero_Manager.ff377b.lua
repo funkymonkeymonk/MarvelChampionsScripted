@@ -18,6 +18,8 @@ local scale = {
   heroSelector = Global.getTable("SCALE_HERO_SELECTOR")
 }
 
+local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
+
 local heroes = {}
 local selectedHeroes = {}
 
@@ -32,20 +34,21 @@ function onload(saved_data)
  end
  
  createContextMenu()
- layOutHeroes()
+ --layOutHeroes()
+end
+
+function clearData()
+  self.script_state = ""
 end
 
 function getHeroCount()
-  local allObjects = getAllObjects()
-  local playmatCount = 0
- 
-  for _, obj in pairs(allObjects) do
-    if(obj.hasTag("Playmat")) then
-     playmatCount = playmatCount + 1
-    end
+  local heroCount = 0
+
+  for _, hero in pairs(selectedHeroes) do
+    heroCount = heroCount + 1
   end
- 
-  return playmatCount
+
+  return heroCount
 end
 
 function placeHeroWithStarterDeck(params)
@@ -114,12 +117,16 @@ function placeHero(heroKey, playerColor, deckType)
     120
   )
 
-  placeObligation(hero)
+  --placeObligation(hero)
   
   selectedHeroes[playerColor] = hero
 
   local saved_data = JSON.encode({selectedHeroes = selectedHeroes})
   self.script_state = saved_data
+end
+
+function clearHero(params)
+  selectedHeroes[params.playerColor] = nil
 end
 
 function getHeroByPlayerColor(params)
@@ -437,8 +444,8 @@ function configureAsset(params)
 end
 
 function placeObligation(hero)
- local encounterDeckPosition = Global.getTable("ENCOUNTER_DECK_SPAWN_POS")
- getCardByID(hero.obligationCardId, encounterDeckPosition, {scale = cardScale.encounter, flipped = true})
+  local encounterDeckPosition = Global.getTable("ENCOUNTER_DECK_SPAWN_POS")
+  getCardByID(hero.obligationCardId, encounterDeckPosition, {scale = cardScale.encounter, flipped = true})
 end
 
 function getHeroesByTeam(team)
@@ -466,13 +473,23 @@ function spawnAsset(params)
 end
 
 function deepCopy(obj, seen)
- if type(obj) ~= 'table' then return obj end
- if seen and seen[obj] then return seen[obj] end
- local s = seen or {}
- local res = setmetatable({}, getmetatable(obj))
- s[obj] = res
- for k, v in pairs(obj) do res[deepCopy(k, s)] = deepCopy(v, s) end
- return res
+  if type(obj) ~= 'table' then return obj end
+  if seen and seen[obj] then return seen[obj] end
+  local s = seen or {}
+  local res = setmetatable({}, getmetatable(obj))
+  s[obj] = res
+  for k, v in pairs(obj) do res[deepCopy(k, s)] = deepCopy(v, s) end
+  return res
+end
+
+function getObligationCards()
+  local cards = {}
+
+  for _, hero in pairs(selectedHeroes) do
+    cards[hero.obligationCardId] = 1
+  end
+
+  return cards
 end
 
 function findAndPlacePlayerCard(params)
@@ -596,8 +613,6 @@ local columnGap = 5
 local rows = 12
 
 function layOutHeroes()
-  local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
-
   layoutManager.call("layOutSelectorTiles", {
       origin = originPosition,
       direction = "vertical",
@@ -611,9 +626,9 @@ end
 
 function layOutHeroSelectors(params)
   local heroList = params.team ~= nil and getHeroesByTeam(params.team) or heroes
-  local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
 
   layoutManager.call("layOutSelectorTiles", {
+      origin = params.origin,
       center = params.center or {0,0.5,0},
       direction = params.direction or "horizontal",
       maxRowsOrColumns = params.maxRowsOrColumns or 6,
@@ -621,13 +636,22 @@ function layOutHeroSelectors(params)
       rowGap = params.rowGap or 3.5,
       selectorScale = params.selectorScale or {1.33, 1, 1.33},
       items = heroList,
-      itemType = "hero"
+      itemType = "hero",
+      behavior = params.behavior,
+      hidden = params.hidden
   }) 
 end
 
 function deleteHeroes()
-  local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
   layoutManager.call("clearSelectorTiles", {itemType = "hero"})
+end
+
+function hideSelectors()
+  layoutManager.call("hideSelectors", {itemType = "hero"})
+end
+
+function showSelectors()
+  layoutManager.call("showSelectors", {itemType = "hero"})
 end
 
 require('!/Cardplacer')
@@ -681,3 +705,5 @@ require('!/heroes/psylocke')
 require('!/heroes/angel')
 require('!/heroes/deadpool')
 require('!/heroes/x23')
+require('!/heroes/bishop')
+require('!/heroes/magik')

@@ -8,9 +8,11 @@ scenarios["magog"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/2294085177750683604/AE1B97BB22EE7A1937AC56C601D264AD81B35F18/",
             },
-            stage1={
-                cardId="39001",
-                hitPointsPerPlayer=10
+            stages={
+                stageA={
+                    cardId="39001",
+                    hitPointsPerPlayer=10
+                }
             }
         }
     },
@@ -28,7 +30,7 @@ scenarios["magog"] =
     cards={
         champion={
             cardId="39003",
-            position={13.75, 0.97, 29.25},
+            position={15.75, 1.00, 29.25},
             scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
         },
         challengers={

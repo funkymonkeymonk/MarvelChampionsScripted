@@ -8,17 +8,19 @@ scenarios["badoon"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/1833525990616300296/C9276570D20792F346FDE1CC56A8C6AF0DF576F3/",
             },
-            stage1={
-                cardId="16058",
-                hitPointsPerPlayer=13
-            },
-            stage2={
-                cardId="16059",
-                hitPointsPerPlayer=14
-            },
-            stage3={
-                cardId="16060",
-                hitPointsPerPlayer=18
+            stages={
+                stage1={
+                    cardId="16058",
+                    hitPointsPerPlayer=13
+                },
+                stage2={
+                    cardId="16059",
+                    hitPointsPerPlayer=14
+                },
+                stage3={
+                    cardId="16060",
+                    hitPointsPerPlayer=18
+                }
             }
         }
     },
@@ -41,7 +43,7 @@ scenarios["badoon"] =
     cards={
         badoonShip={
             cardId="16063",
-            position={13.75, 0.97, 29.25},
+            position={15.75, 1.00, 29.25},
             scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
         },
         milano={

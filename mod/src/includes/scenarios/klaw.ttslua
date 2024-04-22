@@ -8,17 +8,19 @@ scenarios["klaw"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150131516/7DC18F8C2BEC0AFE2B74AA31695A21E7B34621F1/",
             },
-            stage1={
-                cardId="01113",
-                hitPointsPerPlayer=12
-            },
-            stage2={
-                cardId="01114",
-                hitPointsPerPlayer=18
-            },
-            stage3={
-                cardId="01115",
-                hitPointsPerPlayer=22
+            stages={
+                stage1={
+                    cardId="01113",
+                    hitPointsPerPlayer=12
+                },
+                stage2={
+                    cardId="01114",
+                    hitPointsPerPlayer=18
+                },
+                stage3={
+                    cardId="01115",
+                    hitPointsPerPlayer=22
+                }
             }
         }
     },
@@ -50,7 +52,9 @@ scenarios["klaw"] =
         defenseNetworkThreat={
             type="threat",
             position={16.37, 1.10, 20.30},
-            scale={0.48, 1.00, 0.48}
+            scale={0.48, 1.00, 0.48},
+            threat=2,
+            threatPerPlayer=1
         }
     },
     decks={

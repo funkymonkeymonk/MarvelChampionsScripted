@@ -4,7 +4,7 @@ function onLoad()
 end
 
 function spawnAsset(params)
-    self.takeObject({
+    return self.takeObject({
         guid = params.guid,
         callback_function = function(spawnedObject)
             Wait.frames(function()

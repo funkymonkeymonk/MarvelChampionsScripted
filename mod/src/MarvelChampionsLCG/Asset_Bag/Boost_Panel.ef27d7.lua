@@ -1,8 +1,3 @@
-BOOST_POS = {-0.33, 1.8, 8.61}
-DISCARD_POS  = {-17.75, 1.4, 22.25}
-
---TODO: Make this configurable for different scenarios.
-
 function onload(saved_data)
     createBoostButton()
 end
@@ -34,13 +29,9 @@ function createBoostButton()
 end
 
 function drawBoost(object, player, isRightClick)
-    local toPosition = BOOST_POS
-    Global.call("drawBoostcard", {toPosition, self.getRotation(), isRightClick})
+    Global.call("drawBoostcard", {self.getRotation()})
 end
 
 function discardBoost(object, player, isRightClick)
-    local toPosition = DISCARD_POS
-    Global.call("discardBoostcard", {toPosition, self.getRotation(), isRightClick})
+    Global.call("discardBoostcard", {self.getRotation()})
 end
-
---position: {0.25, 1.00, 13.40}

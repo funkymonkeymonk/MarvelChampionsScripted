@@ -8,17 +8,19 @@ scenarios["hood"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/1833524420369390047/812F91439CB08F9A17D25523A7375B04E3D9C4A5/",
             },
-            stage1={
-                cardId="24001",
-                hitPointsPerPlayer=14
-            },
-            stage2={
-                cardId="24002",
-                hitPointsPerPlayer=16
-            },
-            stage3={
-                cardId="24003",
-                hitPointsPerPlayer=18
+            stages={
+                stage1={
+                    cardId="24001",
+                    hitPointsPerPlayer=14
+                },
+                stage2={
+                    cardId="24002",
+                    hitPointsPerPlayer=16
+                },
+                stage3={
+                    cardId="24003",
+                    hitPointsPerPlayer=18
+                }
             }
         }
     },

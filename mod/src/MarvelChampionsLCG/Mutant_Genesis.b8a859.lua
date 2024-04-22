@@ -1,7 +1,6 @@
 require('!/Cardplacer')
 
 function layoutCampaignCards()
-    log("Laying out the cards")
     local campaignCardsJSON = [[
 {
     "32171a": 1,

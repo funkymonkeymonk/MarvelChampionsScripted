@@ -8,17 +8,19 @@ scenarios["projectWideawake"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473528765479/A5B31FF328C8C26A05886D4A7DAD6BF06BA06C26/",
             },
-            stage1={
-                cardId="32084",
-                hitPointsPerPlayer=16
-            },
-            stage2={
-                cardId="32085",
-                hitPointsPerPlayer=18
-            },
-            stage3={
-                cardId="32086",
-                hitPointsPerPlayer=22
+            stages={
+                stage1={
+                    cardId="32084",
+                    hitPointsPerPlayer=16
+                },
+                stage2={
+                    cardId="32085",
+                    hitPointsPerPlayer=18
+                },
+                stage3={
+                    cardId="32086",
+                    hitPointsPerPlayer=22
+                }
             }
         }
     },
@@ -52,13 +54,15 @@ scenarios["projectWideawake"] =
             type="threat",
             position={16.37, 1.04, 20.30},
             scale={0.48, 1.00, 0.48},
-            locked=false
+            locked=false,
+            threat=4
         },
         operationZeroToleranceThreat={
             type="threat",
             position={16.32, 1.04, 15.36},
             scale={0.48, 1.00, 0.48},
-            locked=false
+            locked=false,
+            threatPerPlayer=3
         }
     },
     decks={
@@ -77,7 +81,7 @@ scenarios["projectWideawake"] =
         },
         captiveAllies={
             name="Captive Allies",
-            position={13.75, 0.97, 29.25},
+            position={15.75, 1.00, 29.25},
             scale=Vector(Global.getVar("CARD_SCALE_PLAYER")),
             cards={
                 ["32089"]=1,

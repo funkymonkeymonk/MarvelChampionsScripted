@@ -8,17 +8,19 @@ scenarios["taskmaster"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150144125/DE27C71D45C02DF05875C07D98ED6D04C0E09707/",
             },
-            stage1={
-                cardId="04093",
-                hitPointsPerPlayer=13
-            },
-            stage2={
-                cardId="04094",
-                hitPointsPerPlayer=16
-            },
-            stage3={
-                cardId="04095",
-                hitPointsPerPlayer=17
+            stages={
+                stage1={
+                    cardId="04093",
+                    hitPointsPerPlayer=13
+                },
+                stage2={
+                    cardId="04094",
+                    hitPointsPerPlayer=16
+                },
+                stage3={
+                    cardId="04095",
+                    hitPointsPerPlayer=17
+                }
             }
         }
     },
@@ -45,7 +47,8 @@ scenarios["taskmaster"] =
         hydraPatrolThreat={
             type="threat",
             position={16.37, 1.10, 20.30},
-            scale={0.48, 1.00, 0.48}
+            scale={0.48, 1.00, 0.48},
+            threatPerPlayer=2
         }
     },
     decks={

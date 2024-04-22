@@ -7,6 +7,29 @@ scenarios["loki"] =
             name="Loki",
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150132430/6C8FCFC49383857A4A92407CE13656C5DE148F37/",
+                primaryButtonLabel="Next!"
+            },
+            stages={
+                stage1={
+                    cardId="21160",
+                    hitPointsPerPlayer=20
+                },
+                stage2={
+                    cardId="21161",
+                    hitPointsPerPlayer=20
+                },
+                stage3={
+                    cardId="21162",
+                    hitPointsPerPlayer=20
+                },
+                stage4={
+                    cardId="21163",
+                    hitPointsPerPlayer=20
+                },
+                stage5={
+                    cardId="21164",
+                    hitPointsPerPlayer=20
+                }
             }
         }
     },
@@ -38,7 +61,9 @@ scenarios["loki"] =
         warInAsguardThreat={
             type="threat",
             position={16.37, 1.10, 20.30},
-            scale={0.48, 1.00, 0.48}
+            scale={0.48, 1.00, 0.48},
+            threat=6,
+            threatPerPlayer=1
         }
     },
     decks={
@@ -55,18 +80,6 @@ scenarios["loki"] =
                 ["21174"]=2,
                 ["21175"]=2,
                 ["21176"]=3
-            }
-        },
-        lokis={
-            name="Lokis",
-            position={15.25, 1.01, 31.75},
-            scale=Vector(Global.getVar("CARD_SCALE_VILLAIN")),
-            cards={
-                ["21160"]=1,
-                ["21161"]=1,
-                ["21162"]=1,
-                ["21163"]=1,
-                ["21164"]=1
             }
         },
         infinityStones={
@@ -89,3 +102,63 @@ scenarios["loki"] =
         frostGiants="recommended"
     }
 }
+
+function advanceVillainStage_loki(params)
+  local heroCount = params.heroCount
+  local villain = currentScenario.villains.loki
+
+  if(villain.currentStageNumber ~= nil) then
+      --Move current stage to victory display
+      villain.stages["stage"..villain.currentStageNumber].defeated = true
+  end
+
+  local remainingStages = {}
+
+  for key, stage in pairs(villain.stages) do
+      if(not stage.defeated) then
+          table.insert(remainingStages, key)
+      end
+  end
+
+  local newStageKey = nil
+  local lastStage = false
+
+  if(#remainingStages == 1) then
+      newStageKey = remainingStages[1]
+      lastStage = true
+  else
+      math.randomseed(os.time())
+      newStageKey = remainingStages[math.random(#remainingStages)]
+  end
+  
+  local newStage = villain.stages[newStageKey]
+
+  villain.currentStageNumber = string.sub(newStage.key, -1)
+
+  local villainPosition = villain.deckPosition or defaults.villainDeck.position
+  local villainRotation = villain.deckRotation or defaults.villainDeck.rotation
+  local villainScale = villain.deckScale or defaults.villainDeck.scale
+
+  getCardByID(
+      newStage.cardId, 
+      villainPosition, 
+      {scale = villainScale, name = villain.name, flipped = false, locked=true})
+  
+  local hitPoints = (newStage.hitPoints or 0) + ((newStage.hitPointsPerPlayer or 0) * heroCount)
+  local villainHpCounter = getObjectFromGUID(villain.hpCounter.guid)
+
+  Wait.frames(
+      function()
+          villainHpCounter.call("setValue", {value = hitPoints}) 
+          
+          villainHpCounter.call("setAdvanceButtonOptions", {label = "Next!"})
+
+          if(lastStage) then
+              villainHpCounter.call("hideAdvanceButton")
+          else
+              villainHpCounter.call("showAdvanceButton")
+          end
+      end,
+      20
+  )
+end

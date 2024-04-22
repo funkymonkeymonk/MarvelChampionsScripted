@@ -14,13 +14,15 @@ scenarios["wreckingCrew"] =
                 position={-32.25, 0.96, 29.25},
                 scale={2.88, 1.00, 2.88}
             },
-            stage1={
-                cardId="07002",
-                hitPointsPerPlayer=14
-            },
-            stage3={
-                cardId="07003",
-                hitPointsPerPlayer=18
+            stages={
+                stageA={
+                    cardId="07002",
+                    hitPointsPerPlayer=14
+                },
+                stageB={
+                    cardId="07003",
+                    hitPointsPerPlayer=18
+                }
             },
             deckPosition={-34.25, 0.97, 20.25},
             deckScale={3.64, 1.00, 3.64}
@@ -32,13 +34,15 @@ scenarios["wreckingCrew"] =
                 position={-10.25, 0.96, 29.25},
                 scale={2.88, 1.00, 2.88}
             },
-            stage1={
-                cardId="07017",
-                hitPointsPerPlayer=13
-            },
-            stage3={
-                cardId="07018",
-                hitPointsPerPlayer=16
+            stages={
+                stageA={
+                    cardId="07017",
+                    hitPointsPerPlayer=13
+                },
+                stageB={
+                    cardId="07018",
+                    hitPointsPerPlayer=16
+                }
             },
             deckPosition={-12.25, 0.97, 20.25},
             deckScale={3.64, 1.00, 3.64}
@@ -50,13 +54,15 @@ scenarios["wreckingCrew"] =
                 position={11.75, 0.96, 29.25},
                 scale={2.88, 1.00, 2.88}
             },
-            stage1={
-                cardId="07032",
-                hitPointsPerPlayer=11
-            },
-            stage3={
-                cardId="07033",
-                hitPointsPerPlayer=14
+            stages={
+                stageA={
+                    cardId="07032",
+                    hitPointsPerPlayer=11
+                },
+                stageB={
+                    cardId="07033",
+                    hitPointsPerPlayer=14
+                }
             },
             deckPosition={9.75, 0.97, 20.25},
             deckScale={3.64, 1.00, 3.64}
@@ -68,13 +74,15 @@ scenarios["wreckingCrew"] =
                 position={33.75, 0.96, 29.25},
                 scale={2.88, 1.00, 2.88}
             },
-            stage1={
-                cardId="07046",
-                hitPointsPerPlayer=12
-            },
-            stage3={
-                cardId="07047",
-                hitPointsPerPlayer=15
+            stages={
+                stageA={
+                    cardId="07046",
+                    hitPointsPerPlayer=12
+                },
+                stageB={
+                    cardId="07047",
+                    hitPointsPerPlayer=15
+                }
             },
             deckPosition={31.75, 0.97, 20.25},
             deckScale={3.64, 1.00, 3.64}
@@ -91,7 +99,7 @@ scenarios["wreckingCrew"] =
             },
             position={49.25, 0.97, 23.25},
             scale={2.93, 1.00, 2.93},
-            counter={
+            threatCounter={
                 position={48.75, 1.01, 29.25},
                 scale={1.61, 1.00, 1.61}
             }
@@ -106,7 +114,7 @@ scenarios["wreckingCrew"] =
             },
             position={-26.27, 0.97, 22.79},
             scale={2.42, 1.00, 2.42},
-            counter={
+            threatCounter={
                 position={-26.82, 1.04, 20.95},
                 scale={0.48, 1.00, 0.48}
             }
@@ -121,7 +129,7 @@ scenarios["wreckingCrew"] =
             },
             position={-4.25, 0.97, 22.78},
             scale={2.42, 1.00, 2.42},
-            counter={
+            threatCounter={
                 position={-4.79, 1.04, 20.94},
                 scale={0.48, 1.00, 0.48}
             }
@@ -136,7 +144,7 @@ scenarios["wreckingCrew"] =
             },
             position={17.75, 0.97, 22.79},
             scale={2.42, 1.00, 2.42},
-            counter={
+            threatCounter={
                 position={17.15, 1.04, 20.97},
                 scale={0.48, 1.00, 0.48}
             }
@@ -151,7 +159,7 @@ scenarios["wreckingCrew"] =
             },
             position={39.75, 0.97, 22.73},
             scale={2.42, 1.00, 2.42},
-            counter={
+            threatCounter={
                 position={39.20, 1.04, 20.90},
                 scale={0.48, 1.00, 0.48}
             }

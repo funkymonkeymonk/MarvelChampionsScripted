@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "cab71a",
+    "GUID": "cce23d",
     "Name": "Custom_Token",
     "Transform": {
-      "posX": -46.25,
-      "posY": 1.0152,
-      "posZ": -16.25,
-      "rotX": 359.792145,
-      "rotY": 179.97,
-      "rotZ": 0.554994047,
-      "scaleX": 0.577605247,
+      "posX": 79.35,
+      "posY": 0.55,
+      "posZ": 35.25,
+      "rotX": -1.05968894e-7,
+      "rotY": 180,
+      "rotZ": -6.82549972e-9,
+      "scaleX": 1.25,
       "scaleY": 1,
-      "scaleZ": 4
+      "scaleZ": 1.25
     },
-    "Nickname": "",
+    "Nickname": "Setup Panel",
     "Description": "",
     "GMNotes": "",
     "AltLookAngle": {
@@ -24,8 +24,7 @@
     "ColorDiffuse": {
       "r": 1,
       "g": 1,
-      "b": 1,
-      "a": 0
+      "b": 1
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,
@@ -42,18 +41,18 @@
     "HideWhenFaceDown": false,
     "Hands": false,
     "CustomImage": {
-      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/776227634105723337/6BF2E58AF9079335E83E51153700A279021A654D/",
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/2101548510579153058/8FC91215A449F636B80560C24ABB62C46A2AE3B0/",
       "ImageSecondaryURL": "",
       "ImageScalar": 1,
       "WidthScale": 0,
       "CustomToken": {
         "Thickness": 0.1,
-        "MergeDistancePixels": 15,
+        "MergeDistancePixels": 5,
         "StandUp": false,
         "Stackable": false
       }
     },
-    "LuaScript": "",
+    "LuaScript": "#include ./Setup_Panel.cce23d.lua",
     "LuaScriptState": "",
     "XmlUI": ""
   },

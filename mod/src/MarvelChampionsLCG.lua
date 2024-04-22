@@ -73,6 +73,7 @@ ASSET_GUID_BLACK_HOLE             = "740595"
 ASSET_GUID_PLAYMAT                = "f5701e"
 ASSET_GUID_HERO_HEALTH_COUNTER    = "16b5bd"
 ASSET_GUID_VILLAIN_HEALTH_COUNTER = "8cf3d6"
+ASSET_GUID_MAIN_THREAT_COUNTER    = "a9f7b8"
 ASSET_GUID_BOOST_PANEL            = "ef27d7"
 
 IS_RESHUFFLING = false
@@ -105,7 +106,7 @@ function findInRadiusBy(pos, radius, filter, debug)
       type         = 2,
       size         = {radius, radius, radius},
       max_distance = 0,
-      debug        = false
+      debug        = debug
    })
 
    local filteredList = {}
@@ -119,12 +120,16 @@ function findInRadiusBy(pos, radius, filter, debug)
    return filteredList
 end
 
+function isCard(x)
+   return x.tag == 'Card'
+end
+
 function isDeck(x)
    return x.tag == 'Deck'
 end
 
 function isCardOrDeck(x)
-   return x.getName() ~= '' or isDeck(x)
+   return isCard(x) or isDeck(x)
 end
 
 function drawEncountercard(params)
@@ -132,12 +137,17 @@ function drawEncountercard(params)
    local rotation = params[2]
    local isFaceUp = params[3]
    local faceUpRotation
+
    if (isFaceUp) then
       faceUpRotation = 0
    else
       faceUpRotation = 180
    end
-   local items = findInRadiusBy(ENCOUNTER_DECK_POS, 4, isCardOrDeck)
+
+   local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
+   local encounterDeckPosition = Vector(scenarioManager.call('getEncounterDeckPosition'))
+
+   local items = findInRadiusBy(encounterDeckPosition, 4, isCardOrDeck)
    if #items > 0 then
       for i, v in ipairs(items) do
          if v.tag == 'Deck' then
@@ -153,50 +163,43 @@ function drawEncountercard(params)
 end
 
 function drawBoostcard(params)
-   local position = params[1]
-   local rotation = params[2]
-   local isFaceUp = params[3]
-   local faceUpRotation
-   if (isFaceUp) then
-      faceUpRotation = 0
-   else
-      faceUpRotation = 180
-   end
-   local items = findInRadiusBy(ENCOUNTER_DECK_POS, 4, isCardOrDeck)
+   local rotation = params[1]
+   local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
+   local encounterDeckPosition = Vector(scenarioManager.call('getEncounterDeckPosition'))
+
+   local items = findInRadiusBy(encounterDeckPosition, 4, isCardOrDeck)
+
    if #items > 0 then
       for i, v in ipairs(items) do
          if v.tag == 'Deck' then
-            v.takeObject({index = 0, position = position, rotation = {0,180,faceUpRotation}})
+            v.takeObject({index = 0, position = BOOST_POS, rotation = {0,180,180}})
             return
          end
       end
-      items[1].setPositionSmooth(position, false, false)
-      items[1].setRotationSmooth({0,180,faceUpRotation}, false, false)
+      items[1].setPositionSmooth(BOOST_POS, false, false)
+      items[1].setRotationSmooth({0,180,180}, false, false)
       return
    end
-   reshuffleEncounterDeck(position, {0,rotation.y,faceUpRotation})
+
+   reshuffleEncounterDeck(BOOST_POS, {0,rotation.y,faceUpRotation})
 end
 
 function discardBoostcard(params)
-   local position = params[1]
-   local rotation = params[2]
-   local isFaceUp = params[3]
-   local faceUpRotation
-   if (isFaceUp) then
-      faceUpRotation = 0
-   else
-      faceUpRotation = 0
-   end
+   local rotation = params[1]
+   local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
+   local encounterDiscardPosition = Vector(scenarioManager.call('getEncounterDiscardPosition'))
+
    local items = findInRadiusBy(BOOST_POS, 4, isCardOrDeck)
+
    if #items > 0 then
       for i, v in ipairs(items) do
          if v.tag == 'Deck' then
-            v.takeObject({index = 0, position = position, rotation = {0,180,faceUpRotation}})
+            v.takeObject({index = 0, position = encounterDiscardPosition, rotation = {0,180,0}})
             return
          end
       end
-      items[1].setPositionSmooth(position, false, false)
-      items[1].setRotationSmooth({0,rotation.y,faceUpRotation}, false, false)
+      items[1].setPositionSmooth(encounterDiscardPosition, false, false)
+      items[1].setRotationSmooth({0,rotation.y,0}, false, false)
       return
    end
 end
@@ -221,28 +224,39 @@ function discardEncounterCard(params)
    local items = findInRadiusBy(encounterPosition, 4, isCardOrDeck)
 
    if #items > 0 then
+      local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
+      local encounterDiscardPosition = Vector(scenarioManager.call('getEncounterDiscardPosition'))
+
      for i, v in ipairs(items) do
         if v.tag == 'Deck' then
-           v.takeObject({position = ENCOUNTER_DECK_DISCARD_POSITION, rotation = {0,180,0}, top = false})
+           v.takeObject({position = encounterDiscardPosition, rotation = {0,180,0}, top = false})
            return
         end
       end
 
-      items[1].setPositionSmooth(ENCOUNTER_DECK_DISCARD_POSITION, false, false)
+      items[1].setPositionSmooth(encounterDiscardPosition, false, false)
       items[1].setRotationSmooth({0,180,0}, false, false)
    end
 end
 
-function reshuffleEncounterDeck(position, rotation)
+function reshuffleEncounterDeck(drawPosition, rotation)
+   local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
+   local encounterDiscardPosition = Vector(scenarioManager.call('getEncounterDiscardPosition'))
+   local encounterDeckPosition = Vector(scenarioManager.call('getEncounterDeckPosition'))
+   local encounterDeckSpawnPosition = {x = encounterDeckPosition.x, y = encounterDeckPosition.y + 1.5, z = encounterDeckPosition.z}
+
    local function move(deck)
-      deck.setPositionSmooth(ENCOUNTER_DECK_SPAWN_POS, true, false)
-      deck.takeObject({index = 0, position = position, rotation = rotation, flip = false})
+      deck.setPositionSmooth(encounterDeckSpawnPosition, true, false)
+      deck.takeObject({index = 0, position = drawPosition, rotation = rotation, flip = false})
       Wait.time(function() IS_RESHUFFLING = false end, 1)
    end
+
    if IS_RESHUFFLING then
       return
    end
-   local discarded = findInRadiusBy(ENCOUNTER_DECK_DISCARD_POSITION, 4, isDeck)
+
+   local discarded = findInRadiusBy(encounterDiscardPosition, 4, isDeck)
+
    if #discarded > 0 then
       IS_RESHUFFLING = true
       local deck = discarded[1]
@@ -265,6 +279,17 @@ function isFaceup(params)
       return true
    else
       return false
+   end
+end
+
+function moveCardToLocation(params)
+   local origin = params.origin
+   local destination = params.destination
+   local items = findInRadiusBy(origin, 3, isCard, true)
+
+   if(#items == 1) then
+      items[1].setLock(false)
+      items[1].setPositionSmooth(destination, false, false)
    end
 end
 

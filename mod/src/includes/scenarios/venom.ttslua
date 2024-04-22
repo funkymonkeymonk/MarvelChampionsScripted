@@ -8,17 +8,19 @@ scenarios["venom"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015321996/340B2A0AD541B66D6F2184D8E810943AC73B7553/",
             },
-            stage1={
-                cardId="27073",
-                hitPointsPerPlayer=17
-            },
-            stage2={
-                cardId="27074",
-                hitPointsPerPlayer=18
-            },
-            stage3={
-                cardId="27075",
-                hitPointsPerPlayer=20
+            stages={
+                stage1={
+                    cardId="27073",
+                    hitPointsPerPlayer=17
+                },
+                stage2={
+                    cardId="27074",
+                    hitPointsPerPlayer=18
+                },
+                stage3={
+                    cardId="27075",
+                    hitPointsPerPlayer=20
+                }
             }
         }
     },
@@ -36,7 +38,7 @@ scenarios["venom"] =
     cards={
         bellTower={
             cardId="27077",
-            position={13.75, 0.97, 29.25},
+            position={15.75, 1.00, 29.25},
             scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
         }
     },            

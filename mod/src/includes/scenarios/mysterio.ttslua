@@ -8,17 +8,19 @@ scenarios["mysterio"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015300129/E16882E32FAEAB2A523B84CFE831BE74A92BD500/",
             },
-            stage1={
-                cardId="27084",
-                hitPointsPerPlayer=15
-            },
-            stage2={
-                cardId="27085",
-                hitPointsPerPlayer=17
-            },
-            stage3={
-                cardId="27086",
-                hitPointsPerPlayer=16
+            stages={
+                stage1={
+                    cardId="27084",
+                    hitPointsPerPlayer=15
+                },
+                stage2={
+                    cardId="27085",
+                    hitPointsPerPlayer=17
+                },
+                stage3={
+                    cardId="27086",
+                    hitPointsPerPlayer=16
+                }
             }
         }
     },

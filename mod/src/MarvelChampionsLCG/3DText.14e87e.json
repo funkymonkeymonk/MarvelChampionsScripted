@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "85fe67",
-    "Name": "Bag",
+    "GUID": "14e87e",
+    "Name": "3DText",
     "Transform": {
-      "posX": 81,
-      "posY": -2.689702,
-      "posZ": 1.25000036,
-      "rotX": 0.0000503650663,
-      "rotY": 180.021042,
-      "rotZ": 0.0000430797954,
+      "posX": -27.9821987,
+      "posY": 0.9611341,
+      "posZ": 46.7989655,
+      "rotX": 90,
+      "rotY": 0.6664018,
+      "rotZ": 0,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
     },
-    "Nickname": "Expert",
+    "Nickname": "",
     "Description": "",
     "GMNotes": "",
     "AltLookAngle": {
@@ -22,9 +22,9 @@
       "z": 0
     },
     "ColorDiffuse": {
-      "r": 0.5,
-      "g": 0.5,
-      "b": 0.5
+      "r": 1,
+      "g": 1,
+      "b": 1
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,
@@ -40,18 +40,18 @@
     "GridProjection": false,
     "HideWhenFaceDown": false,
     "Hands": false,
-    "MaterialIndex": -1,
-    "MeshIndex": -1,
-    "Bag": {
-      "Order": 0
+    "Text": {
+      "Text": "Specialized Training Linked Cards",
+      "colorstate": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "fontSize": 64
     },
-    "LuaScript": "#include ./Expert.85fe67.lua",
-    "LuaScriptState": "#include ./Expert.85fe67.state.json",
-    "XmlUI": "",
-    "ContainedObjects": []
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
   },
-  "StatesPaths": {},
-  "ContainedObjectPaths": [
-    "Deck.189698.json"
-  ]
+  "StatesPaths": {}
 }

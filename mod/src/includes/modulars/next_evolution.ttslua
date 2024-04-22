@@ -81,7 +81,7 @@ modularSets["blackTomCassidy"] =
 modularSets["flight"] = 
 {
     name="Flight",
-    modular=true,
+    modular=false,
     cards = {
         ["40151"] = 1,
         ["40152"] = 1,
@@ -93,7 +93,7 @@ modularSets["flight"] =
 modularSets["superStrength"] = 
 {
     name="Super Strength",
-    modular=true,
+    modular=false,
     cards = {
         ["40155"] = 1,
         ["40156"] = 1,
@@ -105,7 +105,7 @@ modularSets["superStrength"] =
 modularSets["telepathy"] = 
 {
     name="Telepathy",
-    modular=true,
+    modular=false,
     cards = {
         ["40159"] = 1,
         ["40160"] = 1,

@@ -2,7 +2,7 @@ scenarios["towerDefense"] =
 {
     name="Tower Defense",
     tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150121236/51DE813B79BDB1100212F0F05F303100627912AC/",
-    placeBoostPanel=false,
+    --placeBoostPanel=false,
     villains={
         proximaMidnight={
             name="Proxima Midnight",
@@ -11,17 +11,19 @@ scenarios["towerDefense"] =
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150135976/E9896414070810D2509CE451A33FDFB69BD082DB/",
                 position={-6.84, 1.00, 29.16}
             },
-            stage1={
-                cardId="21092",
-                hitPointsPerPlayer=9
-            },
-            stage2={
-                cardId="21093",
-                hitPointsPerPlayer=12
-            },
-            stage3={
-                cardId="21094",
-                hitPointsPerPlayer=15
+            stages={
+                stage1={
+                    cardId="21092",
+                    hitPointsPerPlayer=9
+                },
+                stage2={
+                    cardId="21093",
+                    hitPointsPerPlayer=12
+                },
+                stage3={
+                    cardId="21094",
+                    hitPointsPerPlayer=15
+                }
             }
         },
         corvusGlaive={
@@ -31,17 +33,19 @@ scenarios["towerDefense"] =
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150124820/5FE7B3E843483F341D1E0AD49CC49C7744EA9086/",
                 position={5.25, 0.96, 29.15}
             },
-            stage1={
-                cardId="21095",
-                hitPointsPerPlayer=8
-            },
-            stage2={
-                cardId="21096",
-                hitPointsPerPlayer=11
-            },
-            stage3={
-                cardId="21097",
-                hitPointsPerPlayer=14
+            stages={
+                stage1={
+                    cardId="21095",
+                    hitPointsPerPlayer=8
+                },
+                stage2={
+                    cardId="21096",
+                    hitPointsPerPlayer=11
+                },
+                stage3={
+                    cardId="21097",
+                    hitPointsPerPlayer=14
+                }
             }
         }
     },
@@ -58,7 +62,7 @@ scenarios["towerDefense"] =
                 }
             },
             position={16.75, 0.97, 22.25},
-            counter={
+            threatCounter={
                 position={25.13, 1.01, 22.25},
                 scale={1.61, 1.00, 1.61}
             }
@@ -72,7 +76,7 @@ scenarios["towerDefense"] =
                 }
             },
             position={16.75, 0.97, 15.75},
-            counter={
+            threatCounter={
                 position={25.13, 1.01, 15.75},
                 scale={1.61, 1.00, 1.61}
             }
@@ -81,7 +85,7 @@ scenarios["towerDefense"] =
     cards={
         avengersTower={
             cardId="21100",
-            position={13.75, 0.97, 29.25},
+            position={15.75, 1.00, 29.25},
             scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
         },
         focusedDefense={
@@ -102,6 +106,7 @@ scenarios["towerDefense"] =
         encounterDeck={
             name="Tower Defense Encounter Deck",
             position={-19.25, 1.06, 22.25},
+            discardPosition={-24.75, 1.50, 22.25},
             cards={
                 ["21102"]=4,
                 ["21103"]=1,

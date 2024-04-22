@@ -1,7 +1,7 @@
 modularSets["crime"] = 
 {
     name="Crime",
-    modular=true,
+    modular=false,
     cards = {
         ["39035"] = 1,
         ["39036"] = 1,
@@ -15,7 +15,7 @@ modularSets["crime"] =
 modularSets["fantasy"] = 
 {
     name="Fantasy",
-    modular=true,
+    modular=false,
     cards = {
         ["39041"] = 1,
         ["39042"] = 1,
@@ -29,7 +29,7 @@ modularSets["fantasy"] =
 modularSets["horror"] = 
 {
     name="Horror",
-    modular=true,
+    modular=false,
     cards = {
         ["39047"] = 1,
         ["39048"] = 1,
@@ -43,7 +43,7 @@ modularSets["horror"] =
 modularSets["sciFi"] = 
 {
     name="Sci-Fi",
-    modular=true,
+    modular=false,
     cards = {
         ["39053"] = 1,
         ["39054"] = 1,
@@ -58,7 +58,7 @@ modularSets["sciFi"] =
 modularSets["sitcom"] = 
 {
     name="Sitcom",
-    modular=true,
+    modular=false,
     cards = {
         ["39060"] = 1,
         ["39061"] = 1,
@@ -72,7 +72,7 @@ modularSets["sitcom"] =
 modularSets["western"] = 
 {
     name="Western",
-    modular=true,
+    modular=false,
     cards = {
         ["39066"] = 1,
         ["39067"] = 1,
