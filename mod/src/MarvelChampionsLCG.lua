@@ -133,16 +133,9 @@ function isCardOrDeck(x)
 end
 
 function drawEncountercard(params)
-   local position = params[1]
-   local rotation = params[2]
-   local isFaceUp = params[3]
-   local faceUpRotation
-
-   if (isFaceUp) then
-      faceUpRotation = 0
-   else
-      faceUpRotation = 180
-   end
+   local drawToPosition = params[1]
+   local isFaceUp = params[2]
+   local drawToRotation = isFaceUp and {0, 180, 0} or {0, 180, 180}
 
    local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
    local encounterDeckPosition = Vector(scenarioManager.call('getEncounterDeckPosition'))
@@ -151,37 +144,39 @@ function drawEncountercard(params)
    if #items > 0 then
       for i, v in ipairs(items) do
          if v.tag == 'Deck' then
-            v.takeObject({index = 0, position = position, rotation = {0,rotation.y,faceUpRotation}})
+            v.takeObject({index = 0, position = drawToPosition, rotation = drawToRotation})
             return
          end
       end
-      items[1].setPositionSmooth(position, false, false)
-      items[1].setRotationSmooth({0,rotation.y,faceUpRotation}, false, false)
+      items[1].setPositionSmooth(drawToPosition, false, false)
+      items[1].setRotationSmooth(drawToRotation, false, false)
       return
    end
-   reshuffleEncounterDeck(position, {0,rotation.y,faceUpRotation})
+
+   reshuffleEncounterDeck(drawToPosition, drawToRotation)
 end
 
-function drawBoostcard(params)
-   local rotation = params[1]
+function drawBoostcard()
    local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
    local encounterDeckPosition = Vector(scenarioManager.call('getEncounterDeckPosition'))
-
+   local drawToPosition = Vector(scenarioManager.call('getBoostDrawPosition'))
+   local drawToRotation = {0,180,180}
    local items = findInRadiusBy(encounterDeckPosition, 4, isCardOrDeck)
 
    if #items > 0 then
       for i, v in ipairs(items) do
          if v.tag == 'Deck' then
-            v.takeObject({index = 0, position = BOOST_POS, rotation = {0,180,180}})
+            v.takeObject({index = 0, position = drawToPosition, rotation = drawToRotation})
             return
          end
       end
-      items[1].setPositionSmooth(BOOST_POS, false, false)
-      items[1].setRotationSmooth({0,180,180}, false, false)
+
+      items[1].setPositionSmooth(drawToPosition, false, false)
+      items[1].setRotationSmooth(drawToRotation, false, false)
       return
    end
 
-   reshuffleEncounterDeck(BOOST_POS, {0,rotation.y,faceUpRotation})
+   reshuffleEncounterDeck(drawToPosition, drawToRotation)
 end
 
 function discardBoostcard(params)
@@ -198,6 +193,7 @@ function discardBoostcard(params)
             return
          end
       end
+
       items[1].setPositionSmooth(encounterDiscardPosition, false, false)
       items[1].setRotationSmooth({0,rotation.y,0}, false, false)
       return
@@ -239,7 +235,7 @@ function discardEncounterCard(params)
    end
 end
 
-function reshuffleEncounterDeck(drawPosition, rotation)
+function reshuffleEncounterDeck(drawToPosition, drawToRotation)
    local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
    local encounterDiscardPosition = Vector(scenarioManager.call('getEncounterDiscardPosition'))
    local encounterDeckPosition = Vector(scenarioManager.call('getEncounterDeckPosition'))
@@ -247,8 +243,12 @@ function reshuffleEncounterDeck(drawPosition, rotation)
 
    local function move(deck)
       deck.setPositionSmooth(encounterDeckSpawnPosition, true, false)
-      deck.takeObject({index = 0, position = drawPosition, rotation = rotation, flip = false})
-      Wait.time(function() IS_RESHUFFLING = false end, 1)
+      
+      Wait.time(function()
+         deck.takeObject({index = 0, position = drawToPosition, rotation = drawToRotation})
+         IS_RESHUFFLING = false 
+      end,
+      1)
    end
 
    if IS_RESHUFFLING then

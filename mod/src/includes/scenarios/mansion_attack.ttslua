@@ -91,3 +91,79 @@ scenarios["mansionAttack"] =
         mystique="recommended"
     }
 }
+
+function getNextVillainStage_mansionAttack_brotherhood(params)
+  local villain = currentScenario.villains[params.villain.key]
+  local villainPosition = villain.deckPosition or defaults.villainDeck.position
+  local remainingStages = {}
+
+  for key, stage in pairs(villain.stages) do
+    if(not stage.defeated) then
+        table.insert(remainingStages, key)
+    end
+  end
+
+  if(villain.currentStageNumber ~= nil) then
+    local defeatedStages = 3 - #remainingStages
+    local x = -12.75 + (defeatedStages * 10)
+    Global.call("moveCardToLocation", {origin = villainPosition, destination = vector(x, 1.50, 54.25)}) --TODO: create victory display layout region
+  end
+
+  local newStageKey = nil
+  local lastStage = false
+
+  if(#remainingStages == 1) then
+      newStageKey = remainingStages[1]
+      lastStage = true
+  else
+      math.randomseed(os.time())
+      newStageKey = remainingStages[math.random(#remainingStages)]
+  end
+
+  local newStage = villain.stages[newStageKey]
+  newStage.showAdvanceButton = not lastStage
+  newStage.flipCard = (currentScenario.mode == "expert")
+  newStage.defeated = true
+
+  return newStage
+end
+
+function getNextSchemeStage_mansionAttack_main(params)
+  local scheme = currentScenario.schemes[params.scheme.key]
+  local schemePosition = scheme.position or defaults.mainSchemeDeck.position
+  local remainingStages = {}
+
+  if(scheme.currentStageNumber == nil) then
+    local newStage = scheme.stages["stage1"]
+    newStage.showAdvanceButton = true
+    newStage.completed = true
+    return newStage
+  end
+
+  for key, stage in pairs(scheme.stages) do
+    if(not stage.completed) then
+        table.insert(remainingStages, key)
+    end
+  end
+
+  local completedStages = 4 - #remainingStages
+  local x = -12.75 + (completedStages * 10)
+  Global.call("moveCardToLocation", {origin = schemePosition, destination = vector(x, 1.50 , 43.75)}) --TODO: create victory display layout region
+
+  local newStageKey = nil
+  local lastStage = false
+
+  if(#remainingStages == 1) then
+      newStageKey = remainingStages[1]
+      lastStage = true
+  else
+      math.randomseed(os.time())
+      newStageKey = remainingStages[math.random(#remainingStages)]
+  end
+
+  local newStage = scheme.stages[newStageKey]
+  newStage.showAdvanceButton = not lastStage
+  newStage.completed = true
+
+  return newStage
+end

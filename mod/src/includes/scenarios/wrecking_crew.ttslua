@@ -2,7 +2,8 @@ scenarios["wreckingCrew"] =
 {
     name="The Wrecking Crew",
     tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150148690/BBFD396544E7663BE7F363242AA077FAE4D5FA53/",
-    placeBoostPanel=false,
+    boostPanelPosition={0.25, 1.00, 9.50},
+    boostDrawPosition={-0.30, 1.10, 3.80},
     blackHole={
         position={48.58, 1.13, 33.84}
     },
@@ -12,7 +13,11 @@ scenarios["wreckingCrew"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150148690/BBFD396544E7663BE7F363242AA077FAE4D5FA53/",
                 position={-32.25, 0.96, 29.25},
-                scale={2.88, 1.00, 2.88}
+                scale={2.88, 1.00, 2.88},
+                secondaryButton={
+                    label="ACTIVATE",
+                    clickFunction="wreckingCrewActivate"
+                }
             },
             stages={
                 stageA={
@@ -32,7 +37,11 @@ scenarios["wreckingCrew"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150146633/81635C26BBCDF2281C945515041D9BF8B3E46CD9/",
                 position={-10.25, 0.96, 29.25},
-                scale={2.88, 1.00, 2.88}
+                scale={2.88, 1.00, 2.88},
+                secondaryButton={
+                    label="ACTIVATE",
+                    clickFunction="wreckingCrewActivate"
+                }
             },
             stages={
                 stageA={
@@ -52,7 +61,11 @@ scenarios["wreckingCrew"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150134663/393C22936C553E34C89EE38AD8582B33B005558B/",
                 position={11.75, 0.96, 29.25},
-                scale={2.88, 1.00, 2.88}
+                scale={2.88, 1.00, 2.88},
+                secondaryButton={
+                    label="ACTIVATE",
+                    clickFunction="wreckingCrewActivate"
+                }
             },
             stages={
                 stageA={
@@ -72,7 +85,11 @@ scenarios["wreckingCrew"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150122545/0C0159E3C74BD9B5BA30D62D9DCB9B5BDF6859FD/",
                 position={33.75, 0.96, 29.25},
-                scale={2.88, 1.00, 2.88}
+                scale={2.88, 1.00, 2.88},
+                secondaryButton={
+                    label="ACTIVATE",
+                    clickFunction="wreckingCrewActivate"
+                }
             },
             stages={
                 stageA={
@@ -183,6 +200,7 @@ scenarios["wreckingCrew"] =
                 ["07016"]=2
             },
             position={-40.75, 1.05, 22.25},
+            discardPosition={-40.75, 1.05, 15.25},
             scale={2.12, 1.00, 2.12}
         },
         thunderballDeck={
@@ -202,6 +220,7 @@ scenarios["wreckingCrew"] =
                 ["07031"]=2
             },
             position={-18.75, 1.05, 22.25},
+            discardPosition={-18.75, 1.05, 15.25},
             scale={2.12, 1.00, 2.12}
         },
         piledriverDeck={
@@ -220,6 +239,7 @@ scenarios["wreckingCrew"] =
                 ["07045"]=1
             },
             position={3.25, 1.05, 22.25},
+            discardPosition={3.25, 1.05, 15.25},
             scale={2.12, 1.00, 2.12}
         },
         bulldozerDeck={
@@ -238,7 +258,38 @@ scenarios["wreckingCrew"] =
                 ["07059"]=2
             },
             position={25.25, 1.05, 22.25},
+            discardPosition={25.25, 1.05, 15.25},
             scale={2.12, 1.00, 2.12}
         }
     }
 }
+
+function finalizeSetup_wreckingCrew()
+  --TODO: Refactor setUpScenario with coroutines to prevent having to use Wait.frames here
+  Wait.frames(
+    function()
+      wreckingCrewActivate({villainKey = "wrecker"})
+    end,
+    60
+  )
+end
+
+function wreckingCrewActivate(params)
+  local villainKey = params["villainKey"]
+  
+  for key, villain in pairs(currentScenario.villains) do
+    local hpCounter = getObjectFromGUID(villain.hpCounter.guid)
+
+    if(villain.key == villainKey) then
+      hpCounter.highlightOn({1,1,0})
+      hpCounter.call("hideSecondaryButton")
+
+      local encounterDeck = currentScenario.decks[villainKey .. "Deck"]
+      currentScenario.encounterDeckPosition = encounterDeck.position
+      currentScenario.encounterDiscardPosition = encounterDeck.discardPosition
+    else
+      hpCounter.highlightOff()
+      hpCounter.call("showSecondaryButton")
+    end
+  end  
+end
