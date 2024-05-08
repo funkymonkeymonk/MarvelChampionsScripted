@@ -1,0 +1,65 @@
+{
+  "Object": {
+    "GUID": "459648",
+    "Name": "Card",
+    "Transform": {
+      "posX": 102.613663,
+      "posY": 7.19053173,
+      "posZ": 1.56699836,
+      "rotX": -2.8161617e-8,
+      "rotY": 180.019073,
+      "rotZ": 7.171156e-8,
+      "scaleX": 1.88,
+      "scaleY": 1,
+      "scaleZ": 1.88
+    },
+    "Nickname": "Apocalypse",
+    "Description": "Scanned and imported by Unicorn",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.713235259,
+      "g": 0.713235259,
+      "b": 0.713235259
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "CardID": 400,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "4": {
+        "FaceURL": "http://cloud-3.steamusercontent.com/ugc/2527155798078887957/8A1B03FF5E6BE576CE7F3A7730641111C93C6276/",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
+        "NumWidth": 5,
+        "NumHeight": 2,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "States": {}
+  },
+  "StatesPaths": {
+    "2": "Apocalypse.65164e.401.json",
+    "3": "Apocalypse.242020.402.json"
+  }
+}

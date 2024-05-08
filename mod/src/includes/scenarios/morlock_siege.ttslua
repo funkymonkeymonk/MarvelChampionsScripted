@@ -1,6 +1,6 @@
-scenarios["morlockSeige"] =
+scenarios["morlockSiege"] =
 {
-    name="Morlock Seige",
+    name="Morlock Siege",
     tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2291833843244459544/BB1E898F0BA53ED0B68983F5215D52535D87EE68/",
     villains={
         marauders={
@@ -30,7 +30,7 @@ scenarios["morlockSeige"] =
     },
     decks={
         encounterDeck={
-            name="Morlock Seige Encounter Deck",
+            name="Morlock Siege Encounter Deck",
             cards={
                 ["40080"]=1,
                 ["40081"]=1,
@@ -59,7 +59,7 @@ scenarios["morlockSeige"] =
     }
 }
 
-function getNextVillainStage_morlockSeige_marauders(villain)
+function getNextVillainStage_morlockSiege_marauders(villain)
   return getNextMarauder(3)
 end
 

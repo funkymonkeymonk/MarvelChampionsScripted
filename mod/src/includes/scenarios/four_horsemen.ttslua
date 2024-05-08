@@ -1,0 +1,125 @@
+scenarios["fourHorsemen"] =
+{
+    name="Four Horsemen",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2517025868834704172/7E999A4ED6EB9484AF6E13E92AE0CF02C67F4B98/",
+    blackHole={
+        position={49.25, 1.13, 33.84}
+    },
+    villains={
+        war={
+            name="War",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/2517025868834704351/B2B76E9D4540357679397C2481898144C86469D7/",
+                position={-15, 0.96, 29.15}
+            },
+            stages={
+                stageA={
+                    cardId="45081",
+                    hitPointsPerPlayer=9
+                },
+                stageB={
+                    cardId="45081",
+                    hitPointsPerPlayer=12,
+                    flipCard=true
+                }
+            },
+            deckPosition={-15, 1.00, 20.44}
+        },
+        famine={
+            name="Famine",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/2517025868834704237/980CE86320B69C2BCC43970453D618B3BE989685/",
+                position={-5, 0.96, 29.15}
+            },
+            stages={
+                stageA={
+                    cardId="45082",
+                    hitPointsPerPlayer=9
+                },
+                stageB={
+                    cardId="45082",
+                    hitPointsPerPlayer=12,
+                    flipCard=true
+                }
+            },
+            deckPosition={-5, 1.00, 20.44}
+        },
+        pestilence={
+            name="Pestilence",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/2517025868834704285/1282E9DDD06242699CE2BD1C2C40A049F2E05D2C/",
+                position={5, 0.96, 29.15}
+            },
+            stages={
+                stageA={
+                    cardId="45083",
+                    hitPointsPerPlayer=9
+                },
+                stageB={
+                    cardId="45083",
+                    hitPointsPerPlayer=12,
+                    flipCard=true
+                }
+            },
+            deckPosition={5, 1.00, 20.44}
+        },
+        death={
+            name="Death",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/2517025868834704172/7E999A4ED6EB9484AF6E13E92AE0CF02C67F4B98/",
+                position={15, 0.96, 29.15}
+            },
+            stages={
+                stageA={
+                    cardId="45084",
+                    hitPointsPerPlayer=9
+                },
+                stageB={
+                    cardId="45084",
+                    hitPointsPerPlayer=12,
+                    flipCard=true
+                }
+            },
+            deckPosition={15, 1.00, 20.44}
+        }
+    },
+    schemes={
+        main={
+            stages={
+                stage1={
+                    cardId="45085",
+                    targetThreatPerPlayer=12
+                }
+            },
+            position={49.25, 0.97, 23.25},
+            threatCounter={
+                position={49.25, 1.01, 29.25},
+                scale={1.61, 1.00, 1.61}
+            }
+        }
+    },
+    decks={
+        encounterDeck={
+            name="Four Horsemen's Encounter Deck",
+            cards={
+                ["45086"]=1,
+                ["45087"]=1,
+                ["45088"]=1,
+                ["45089"]=1,
+                ["45090"]=3,
+                ["45091"]=1,
+                ["45092"]=1,
+                ["45093"]=1,
+                ["45094"]=1,
+                ["45095"]=1,
+                ["45096"]=3
+            },
+            position={46.75, 1.15, 15.75},
+            discardPosition={52.25, 0.97, 15.75}
+        }
+    },
+    modularSets={
+        hounds="optional",
+        dystopianNightmare="optional"
+    }
+}

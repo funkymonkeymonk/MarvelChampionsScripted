@@ -15,9 +15,9 @@ modularSets["armiesOfTitan"] =
     name="Armies of Titan",
     modular=true,
     cards = {
-        ["21089"] = 1,
-        ["21090"] = 1,
-        ["21091"] = 1
+        ["21089"] = 2,
+        ["21090"] = 2,
+        ["21091"] = 2
     }
 }
 

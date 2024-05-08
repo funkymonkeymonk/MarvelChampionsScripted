@@ -25,7 +25,8 @@ scenarios["misterSinister"] =
         }
     },
     schemes={
-        main={},
+        main={}
+    },
     cards={
         hopeSummers={
             cardId="40130",

@@ -1,0 +1,77 @@
+scenarios["apocalypse"] =
+{
+    name="Apocalypse",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2517025868834703987/587B38CAB721DA117272E90369EAB647655AD5DC/",
+    villains={
+        apocalypse={
+            name="Apocalypse",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/2517025868834703987/587B38CAB721DA117272E90369EAB647655AD5DC/",
+            },
+            stages={
+                stage1={
+                    cardId="45101",
+                    hitPointsPerPlayer=8
+                },
+                stage2={
+                    cardId="45101",
+                    hitPointsPerPlayer=9,
+                    flipCard=true
+                },
+                stage3={
+                    cardId="45102",
+                    hitPointsPerPlayer=10
+                },
+                stage4={
+                    cardId="45102",
+                    hitPointsPerPlayer=11,
+                    flipCard=true
+                }
+            }
+        }
+    },
+    schemes={
+        main={
+            stages={
+                stage1={
+                    cardId="45103",
+                    startingThreatPerPlayer=1,
+                    targetThreatPerPlayer=0
+                }
+            }
+        }
+    },
+    cards={
+        heartOfTheEmpire={
+            cardId="45104",
+            position={16.75, 1.00, 21.75},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
+            landscape=true
+        }
+    },
+    counters={
+        heartOfTheEmpireThreat={
+            type="threat",
+            position={16.37, 1.10, 20.30},
+            scale={0.48, 1.00, 0.48},
+            threat=2
+        }
+    },
+    decks={
+        encounterDeck={
+            name="Apocalypse's Encounter Deck",
+            cards={
+                ["45106"]=1,
+                ["45107"]=1,
+                ["45108"]=1,
+                ["45109"]=2,
+                ["45110"]=3,
+                ["45111"]=2
+            }
+        }
+    },
+    modularSets={
+        darkRiders="optional",
+        infinites="optional"
+    }
+}

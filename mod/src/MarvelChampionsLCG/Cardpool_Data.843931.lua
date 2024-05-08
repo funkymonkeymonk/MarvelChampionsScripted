@@ -20082,7 +20082,7 @@ PACK_01 = [[
     "code": "01043a",
     "type_code": "event",
     "faction_code": "hero",
-    "BackURL": "https://dcqvlrey92bew.cloudfront.net/01043B.jpg",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01043A.jpg"
   },
   {
@@ -20090,7 +20090,7 @@ PACK_01 = [[
     "code": "01043b",
     "type_code": "event",
     "faction_code": "hero",
-    "BackURL": "https://dcqvlrey92bew.cloudfront.net/01043A.jpg",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01043B.jpg"
   },
   {

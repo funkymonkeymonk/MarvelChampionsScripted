@@ -1,0 +1,138 @@
+modularSets["infinites"] = 
+{
+    name="Infinites",
+    modular=true,
+    cards = {
+        ["45069"]=5,
+        ["45070"]=2,
+        ["45071"]=1
+    }
+}
+
+modularSets["dystopianNightmare"] = 
+{
+    name="Dystopian Nightmare",
+    modular=true,
+    cards = {
+        ["45072"]=2,
+        ["45073"]=2,
+        ["45074"]=2
+    }
+}
+
+modularSets["hounds"] = 
+{
+    name="Hounds",
+    modular=true,
+    cards = {
+        ["45097"]=1,
+        ["45098"]=4,
+        ["45099"]=1,
+        ["45100"]=1
+    }
+}
+
+modularSets["darkRiders"] = 
+{
+    name="Dark Riders",
+    modular=true,
+    cards = {
+        ["45112"]=1,
+        ["45113"]=1,
+        ["45114"]=1,
+        ["45115"]=1,
+        ["45116"]=1,
+        ["45117"]=1
+    }
+}
+
+modularSets["savageLand"] = 
+{
+    name="Savage Land",
+    modular=true,
+    cards = {
+        ["45127"]=1,
+        ["45128"]=1,
+        ["45129"]=2,
+        ["45130"]=2,
+        ["45131"]=1,
+        ["45132"]=1
+    }
+}
+
+modularSets["genosha"] = 
+{
+    name="Genosha",
+    modular=true,
+    cards = {
+        ["45133"]=1,
+        ["45134"]=3,
+        ["45135"]=1,
+        ["45136"]=1,
+        ["45137"]=1,
+        ["45138"]=1
+    }
+}
+
+modularSets["blueMoon"] = 
+{
+    name="Blue Moon",
+    modular=true,
+    cards = {
+        ["45139"]=1,
+        ["45140"]=1,
+        ["45141"]=1,
+        ["45142"]=1,
+        ["45143"]=1,
+        ["45144"]=1,
+        ["45145"]=1,
+        ["45146"]=1
+    }
+}
+
+modularSets["celestialTech"] = 
+{
+    name="Celestial Tech",
+    modular=true,
+    cards = {
+        ["45156"]=1,
+        ["45157"]=1,
+        ["45158"]=2
+    }
+}
+
+modularSets["clanAkkaba"] = 
+{
+    name="Clan Akkaba",
+    modular=true,
+    cards = {
+        ["45159"]=1,
+        ["45160"]=1,
+        ["45161"]=2,
+        ["45162"]=1,
+        ["45163"]=1
+    }
+}
+
+modularSets["ageOfApocalypse"] = 
+{
+    name="Age of Apocalypse",
+    modular=true,
+    cards = {
+        ["45164"]=2,
+        ["45165"]=2
+    }
+}
+
+modularSets["overseer"] = 
+{
+    name="Overseer",
+    modular=false,
+    cards = {
+        ["45179"]=1,
+        ["45180"]=1,
+        ["45181"]=1,
+        ["45182"]=1,
+        ["45183"]=1
+    }
+}

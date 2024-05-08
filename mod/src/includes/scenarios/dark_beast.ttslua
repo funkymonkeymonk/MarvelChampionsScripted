@@ -1,0 +1,54 @@
+scenarios["darkBeast"] =
+{
+    name="Dark Beast",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2517025868834704120/5307B0499B55FF2BA1F2BC02F0CF2DA8DDFCE533/",
+    villains={
+        darkBeast={
+            name="Dark Beast",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/2517025868834704120/5307B0499B55FF2BA1F2BC02F0CF2DA8DDFCE533/",
+            },
+            stages={
+                stage1={
+                    cardId="45118",
+                    hitPointsPerPlayer=15
+                },
+                stage2={
+                    cardId="45119",
+                    hitPointsPerPlayer=18
+                },
+                stage3={
+                    cardId="45120",
+                    hitPointsPerPlayer=22
+                }
+            }
+        }
+    },
+    schemes={
+        main={
+            stages={
+                stage1={
+                    cardId="45121",
+                    startingThreatPerPlayer=1,
+                    targetThreatPerPlayer=10
+                }
+            }
+        }
+    },
+    decks={
+        encounterDeck={
+            name="Unus' Encounter Deck",
+            cards={
+                ["45122"]=1,
+                ["45123"]=1,
+                ["45124"]=2,
+                ["45125"]=3,
+                ["45126"]=2
+
+            }
+        }
+    },
+    modularSets={
+        dystopianNightmare="optional"
+    }
+}

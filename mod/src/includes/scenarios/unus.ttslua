@@ -1,0 +1,70 @@
+scenarios["unus"] =
+{
+    name="Unus",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2517025868834704318/9C1B135B9D3F8D7424E4F433E406681362B1FE98/",
+    villains={
+        unus={
+            name="Unus",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/2517025868834704318/9C1B135B9D3F8D7424E4F433E406681362B1FE98/",
+            },
+            stages={
+                stage1={
+                    cardId="45059",
+                    hitPointsPerPlayer=12
+                },
+                stage2={
+                    cardId="45060",
+                    hitPointsPerPlayer=15
+                },
+                stage3={
+                    cardId="45061",
+                    hitPointsPerPlayer=18
+                }
+            }
+        }
+    },
+    schemes={
+        main={
+            stages={
+                stage1={
+                    cardId="45062",
+                    targetThreatPerPlayer=11
+                }
+            }
+        }
+    },
+    cards={
+        genePool={
+            cardId="45071",
+            position={16.75, 1.00, 21.75},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
+            landscape=true
+        }
+    },
+    counters={
+        genePoolThreat={
+            type="threat",
+            position={16.37, 1.10, 20.30},
+            scale={0.48, 1.00, 0.48},
+            threat=4
+        }
+    },
+    decks={
+        encounterDeck={
+            name="Unus' Encounter Deck",
+            cards={
+                ["45063"]=1,
+                ["45064"]=1,
+                ["45065"]=2,
+                ["45066"]=2,
+                ["45067"]=2,
+                ["45068"]=2
+            }
+        }
+    },
+    modularSets={
+        infinites="required",
+        dystopianNightmare="optional"
+    }
+}
