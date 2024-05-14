@@ -70,19 +70,54 @@ function saveData()
   self.script_state = saved_data
 end
 
+function getCurrentScenarioKey()
+  return currentScenario and currentScenario.key or nil
+end
+
+function getMode()
+  if(currentScenario == nil) then return nil end
+
+  return currentScenario.mode
+end
+
+function getSelectedStandardSet()
+  log(currentScenario)
+  return currentScenario and currentScenario.standardSet or nil
+end
+
+function getSelectedExpertSet()
+  return currentScenario and currentScenario.expertSet or nil
+end
+
 function setMode(params)
   currentScenario.mode = params.mode
+
+  if(params.mode == "standard") then currentScenario.expertSet = nil end
+
   saveData()
 end
 
 function setStandardSet(params)
   currentScenario.standardSet = params.set
+  log(currentScenario)
   saveData()
 end
 
 function setExpertSet(params)
   currentScenario.expertSet = params.set
   saveData()
+end
+
+function useStandardEncounterSets()
+  if(currentScenario == nil) then return false end
+
+  return currentScenario.useStandardEncounterSets == nil or currentScenario.useStandardEncounterSets
+end
+
+function useModularEncounterSets()
+  if(currentScenario == nil) then return false end
+
+  return currentScenario.useModularEncounterSets == nil or currentScenario.useModularEncounterSets
 end
 
 function spawnAsset(params)
@@ -133,9 +168,6 @@ function selectScenario(params)
   encounterSetManager.call("preSelectEncounterSets", {sets = currentScenario.modularSets or {}})
 
   saveData()
-
-  --TODO: This might belong in the setup panel
-  layoutManager.call("highlightSelectedSelectorTile", {itemType = "scenario", itemKey = params.scenarioKey})
 end
 
 function hideSelectors()
@@ -228,7 +260,13 @@ function setUpScenario()
   -- )
   
   setUpCards()
-  setUpCounters(heroCount)
+
+  Wait.frames(
+    function()
+      setUpCounters(heroCount)
+    end,
+    30
+  )
 
   --placeExtras(scenarioBag, scenarioDetails.extras)
   placeBlackHole(currentScenario)
@@ -273,59 +311,89 @@ function setUpZones()
   })
 end
 
-function confirmScenarioInputs(postMessage)
-  local heroCount = heroManager.call("getHeroCount")
+function heroCountIsValid(params)
+  local heroCountIsValid = heroManager.call("getHeroCount") > 0
 
-  if heroCount == 0 then
-    if postMessage then
-      broadcastToAll("Please select at least one hero.", {1,1,1})
-    end
-    return false
+  if(params and params.postMessage and not heroCountIsValid) then
+    broadcastToAll("Please select at least one hero.", {1,1,1})
   end
 
-  if currentScenario == nil then
-    if postMessage then
-      broadcastToAll("Please select a scenario.", {1,1,1})
-    end
-    return false
+  return heroCountIsValid
+end
+
+function scenarioIsValid(params)
+  local scenarioIsValid = currentScenario ~= nil
+
+  if(params and params.postMessage and not scenarioIsValid) then
+    broadcastToAll("Please select a scenario.", {1,1,1})
   end
 
-  local additionalEncounterSets = getRequiredEncounterSetCount() - encounterSetManager.call("getSelectedSetCount")
+  return scenarioIsValid
+end
 
-  if additionalEncounterSets > 0 then
-    if postMessage then
-      local plural = additionalEncounterSets > 1 and "s" or ""
-      broadcastToAll("Please select at least " .. additionalEncounterSets .. " more encounter set" .. plural .. ".", {1,1,1})
-    end
-    return false
+function modularSetsAreValid(params)
+  local requiredEncounterSetCount = getRequiredEncounterSetCount()
+  local selectedEncounterSetCount = encounterSetManager.call("getSelectedSetCount")
+
+  log("Required: " .. requiredEncounterSetCount .. ", Selected: " .. selectedEncounterSetCount)
+  local additionalEncounterSets =  requiredEncounterSetCount - selectedEncounterSetCount
+  local modularSetsAreValid = additionalEncounterSets <= 0
+
+  if(params and params.postMessage and not modularSetsAreValid) then
+    local plural = additionalEncounterSets > 1 and "s" or ""
+    broadcastToAll("Please select at least " .. additionalEncounterSets .. " more encounter set" .. plural .. ".", {1,1,1})
   end
 
-  if currentScenario.mode == nil then
-    if postMessage then
+  return modularSetsAreValid
+end
+
+function modeAndStandardEncounterSetsAreValid(params)
+  if(currentScenario == nil) then return false end
+
+  local postMessage = params and params.postMessage
+  local modeIsValid = currentScenario.mode ~= nil
+  local scenarioUsesStandardEncounterSets = useStandardEncounterSets()
+  local standardSetIsValid = currentScenario.standardSet ~= nil or not scenarioUsesStandardEncounterSets
+  local expertSetIsValid = currentScenario.expertSet ~= nil or currentScenario.mode ~= "expert" or not scenarioUsesStandardEncounterSets
+
+  if(not modeIsValid) then
+    if(postMessage) then
       broadcastToAll("Please select a mode.", {1,1,1})
     end
+
     return false
   end
 
-  if currentScenario.standardSet == nil then
-    if postMessage then
+  if(not standardSetIsValid) then
+    if(postMessage) then
       broadcastToAll("Please select a standard encounter set.", {1,1,1})
     end
+
     return false
   end
 
-  if currentScenario.mode == "expert" and currentScenario.expertSet == nil then
-    if postMessage then
+  if(not expertSetIsValid) then
+    if(postMessage) then
       broadcastToAll("Please select an expert encounter set.", {1,1,1})
     end
+
     return false
   end
 
   return true
 end
 
+function confirmScenarioInputs(postMessage)
+  if(not heroCountIsValid({postMessage = postMessage})) then return false end
+  if(not scenarioIsValid({postMessage = postMessage})) then return false end
+  if(not modularSetsAreValid({postMessage = postMessage})) then return false end
+  if(not modeAndStandardEncounterSetsAreValid({postMessage = postMessage})) then return false end
+
+  return true
+end
+
 function getRequiredEncounterSetCount()
-  if (currentScenario == nil or currentScenario.modulaarSets == nil) then 
+  if (currentScenario == nil or currentScenario.modularSets == nil) then 
     return 0 
   end
 
@@ -537,6 +605,12 @@ function getBoostDrawPosition()
   return currentScenario.boostDrawPosition or defaults.boostDrawPosition
 end
 
+function getScenarioModularSets()
+  if(currentScenario == nil) then return {} end
+
+  return currentScenario.modularSets or {}
+end
+
 function setUpDeck(deck, isEncounterDeck)
   if(isEncounterDeck) then
     deck = deepCopy(deck)
@@ -575,13 +649,20 @@ function addStandardEncounterSetsToEncounterDeck(deck)
     deck.cards["01188"]=1
     deck.cards["01189"]=1
     deck.cards["01190"]=1
-  else
+  elseif(currentScenario.standardSet == "ii") then
     deck.cards["24049"]=1 --TODO: Place environment card 24049
     deck.cards["24050"]=2
     deck.cards["24051"]=1
     deck.cards["24052"]=1
     deck.cards["24053"]=1
     deck.cards["24054"]=2
+  elseif(currentScenario.standardSet == "iii") then
+    deck.cards["45075"]=1 --TODO: Place environment card 45075
+    deck.cards["45076"]=2
+    deck.cards["45077"]=2
+    deck.cards["45078"]=1
+    deck.cards["45079"]=1
+    deck.cards["45080"]=1
   end
 
   if(currentScenario.expertSet == "i") then
@@ -884,8 +965,59 @@ function finalizeSetUp(scenario)
 end
 
 function clearScenario()
+  local clearCards = findCardsAtPosition()
+
+  for _, obj in ipairs(clearCards) do
+     if obj.getVar("preventDeletion") ~= true then
+        obj.destruct()
+     end
+  end
+
+  local clearCards2 = findCardsAtPosition2()
+
+  for _, obj in ipairs(clearCards2) do
+     if obj.getVar("preventDeletion") ~= true then
+        obj.destruct()
+     end
+  end
+
+  local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
+
   clearData()
 end
+
+--TODO: These functions should be moved to global
+function findCardsAtPosition(obj)
+  local objList = Physics.cast({
+     origin       = {0,1.48,11},
+     direction    = {0,1,0},
+     type         = 3,
+     size         = {108,1,40},
+     max_distance = 0,
+     debug        = false,
+  })
+  local villainAssets = {}
+  for _, obj in ipairs(objList) do
+     table.insert(villainAssets, obj.hit_object)
+  end
+  return villainAssets
+end
+
+function findCardsAtPosition2(obj)
+  local objList = Physics.cast({
+     origin       = {18.00, 1.48, 33.75},
+     direction    = {0,1,0},
+     type         = 3,
+     size         = {60,1,1},
+     max_distance = 0,
+     debug        = false,
+  })
+  local villainAssets2 = {}
+  for _, obj in ipairs(objList) do
+     table.insert(villainAssets2, obj.hit_object)
+  end
+  return villainAssets2
+end 
 
 function spawnNemesis(params)
   local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))

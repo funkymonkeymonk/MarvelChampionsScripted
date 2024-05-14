@@ -31,6 +31,16 @@ function getModularSet(params)
     return modularSets[params.modularSetKey]
 end
 
+function getSelectedSetKeys()
+    local keys = {}
+
+    for k,v in pairs(selectedSets) do
+        keys[k] = v.required or "recommended"
+    end
+
+    return keys
+end
+
 function getSelectedSetCount()
     local count = 0
 
@@ -103,8 +113,6 @@ end
 
 function selectModularSet(params)
     addRemoveSelectedSet(params.modularSetKey)
-
-    layoutManager.call("highlightMultipleSelectorTiles", {itemType = "modular-set", items = selectedSets})
 end
 
 function addRemoveSelectedSet(key)
@@ -124,7 +132,7 @@ end
 
 function showSelectors()
     layoutManager.call("showSelectors", {itemType = "modular-set"})
-    layoutManager.call("highlightMultipleSelectorTiles", {itemType = "modular-set", items = selectedSets})
+    --layoutManager.call("highlightMultipleSelectorTiles", {itemType = "modular-set", items = selectedSets})
 end
   
 

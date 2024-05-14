@@ -1,8 +1,8 @@
 {
   "Save": {
     "SaveName": "MarvelChampionsLCG",
-    "EpochTime": 1715139071,
-    "Date": "5/7/2024 9:31:11 PM",
+    "EpochTime": 1715619913,
+    "Date": "5/13/2024 11:05:13 AM",
     "VersionNumber": "v13.2.2",
     "GameMode": "MarvelChampionsLCG",
     "GameType": "Game",
@@ -550,10 +550,20 @@
     "Modular_Set_Manager.608543.json",
     "Hero_Manager.ff377b.json",
     "Custom_Token.d19a0b.json",
-    "Setup_Panel.cce23d.json",
     "Specialized_Training_Linked_Cards.94f458.json",
     "3DText.14e87e.json",
-    "This_is_a_work_in_progress.e23a1b.json",
-    "Scenario_Setup.d18365.json"
+    "Layout_Button_Go.eb6963.json",
+    "Layout_Button_Heroes.08c4b0.json",
+    "Layout_Button_Mode.3bcb37.json",
+    "Layout_Button_Modulars.6979cc.json",
+    "Layout_Button_Scenario.0ea99f.json",
+    "Modular_Set_Selector_Tile.740464.json",
+    "Mode_Selector_Standard.6dbb09.json",
+    "Expert_Set_Selector_I.f640e3.json",
+    "Mode_Selector_Expert.feda03.json",
+    "Stardard_Set_Selector_I.6c0fac.json",
+    "Standard_Set_Selector_II.4a340c.json",
+    "Standard_Set_Selector_III.9e3a14.json",
+    "Expert_Set_Selector_II.e2a916.json"
   ]
 }

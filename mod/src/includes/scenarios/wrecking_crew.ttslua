@@ -7,6 +7,8 @@ scenarios["wreckingCrew"] =
     blackHole={
         position={49.25, 1.13, 33.84}
     },
+    useStandardEncounterSets=false,
+    useModularEncounterSets=false,
     villains={
         wrecker={
             name="Wrecker",

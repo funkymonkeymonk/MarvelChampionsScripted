@@ -1,20 +1,20 @@
 {
   "Object": {
-    "GUID": "c04e76",
+    "GUID": "740464",
     "Name": "Custom_Tile",
     "Transform": {
-      "posX": 72.25,
+      "posX": 70.75,
       "posY": -9.504998,
-      "posZ": 15.749999,
-      "rotX": 1.0023173e-7,
-      "rotY": -0.00403494155,
-      "rotZ": -8.1113086e-8,
-      "scaleX": 1.12515855,
+      "posZ": 11.25,
+      "rotX": -1.79700422e-7,
+      "rotY": 180.000015,
+      "rotZ": -1.31147138e-9,
+      "scaleX": 1.5,
       "scaleY": 1,
-      "scaleZ": 1.12515855
+      "scaleZ": 1.5
     },
-    "Nickname": "Selector Tile",
-    "Description": "Leave this out to speed up layouts",
+    "Nickname": "Modular Set Selector Tile",
+    "Description": "",
     "GMNotes": "",
     "AltLookAngle": {
       "x": 0,
@@ -22,9 +22,9 @@
       "z": 0
     },
     "ColorDiffuse": {
-      "r": 0.249982744,
-      "g": 0.249982744,
-      "b": 0.249982744
+      "r": 1,
+      "g": 1,
+      "b": 1
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,
@@ -41,19 +41,19 @@
     "HideWhenFaceDown": false,
     "Hands": false,
     "CustomImage": {
-      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1867319584748543443/C10AF8349C00327F6CD68B4001654610E565A6E3/",
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/2517026504447692989/2E4909F78FFF6D90D282E54207EED9EBA3328CBA/",
       "ImageSecondaryURL": "",
       "ImageScalar": 1,
       "WidthScale": 0,
       "CustomTile": {
         "Type": 3,
-        "Thickness": 0.197297364,
-        "Stackable": true,
+        "Thickness": 0.1,
+        "Stackable": false,
         "Stretch": true
       }
     },
-    "LuaScript": "#include ./Selector_Tile.c04e76.lua",
-    "LuaScriptState": "#include ./Selector_Tile.c04e76.state.json",
+    "LuaScript": "#include ./Modular_Set_Selector_Tile.740464.lua",
+    "LuaScriptState": "",
     "XmlUI": ""
   },
   "StatesPaths": {}

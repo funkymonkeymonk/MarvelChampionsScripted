@@ -6,6 +6,7 @@ local behavior = ""
 local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
 local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
 local modularSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
+local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
 
 function onload(saved_data)
     if(saved_data ~= "") then
@@ -121,10 +122,10 @@ function createModularSetButton()
 end
 
 function placeHeroWithStarterDeck(obj, player_color)
-    heroManager.call("placeHeroWithStarterDeck", {heroKey = itemKey, playerColor = player_color})
+    layoutManager.call("placeHeroWithStarterDeck", {heroKey = itemKey, playerColor = player_color})
 end
 function placeHeroWithHeroDeck(obj, player_color)
-    heroManager.call("placeHeroWithHeroDeck", {heroKey = itemKey, playerColor = player_color})
+    layoutManager.call("placeHeroWithHeroDeck", {heroKey = itemKey, playerColor = player_color})
 end
 
 function placeScenario(obj, player_color)
@@ -132,7 +133,7 @@ function placeScenario(obj, player_color)
 end
 
 function selectScenario(obj, player_color)
-    scenarioManager.call("selectScenario", {scenarioKey = itemKey})
+    layoutManager.call("selectScenario", {scenarioKey = itemKey})
 end
 
   --   function placeScenarioInStandardMode(obj, player_color)
