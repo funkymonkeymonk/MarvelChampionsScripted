@@ -1,10 +1,8 @@
 function onload(saved_data)
-    local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
-
     self.createButton({
       label = "SCENARIO",
-      click_function = "showScenarioSelection",
-      function_owner = layoutManager,
+      click_function = "buttonClick",
+      function_owner = self,
       position = {0,0.1,0},
       rotation = {0,0,0},
       width = 2470,
@@ -13,4 +11,9 @@ function onload(saved_data)
       color = {0,0,0,0},
       font_color = {1,1,1,100}
     })
+end
+
+function buttonClick()
+  local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
+  layoutManager.call("setView", {view = "scenario"})
 end

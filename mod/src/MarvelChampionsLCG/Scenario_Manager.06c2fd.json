@@ -23,7 +23,7 @@
     },
     "ColorDiffuse": {
       "r": 1.06010449,
-      "g": 0.114428155,
+      "g": 0.1144279,
       "b": 0.011552
     },
     "Tags": [
@@ -39,7 +39,7 @@
     "DragSelectable": true,
     "Autoraise": true,
     "Sticky": true,
-    "Tooltip": true,
+    "Tooltip": false,
     "GridProjection": false,
     "HideWhenFaceDown": false,
     "Hands": false,

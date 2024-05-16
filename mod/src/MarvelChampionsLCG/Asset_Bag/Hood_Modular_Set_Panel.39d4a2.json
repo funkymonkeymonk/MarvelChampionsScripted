@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "740464",
+    "GUID": "39d4a2",
     "Name": "Custom_Tile",
     "Transform": {
-      "posX": 70.75,
-      "posY": -9.504998,
-      "posZ": 11.25,
-      "rotX": -6.51029239e-8,
-      "rotY": 180.000015,
-      "rotZ": -7.60756151e-8,
-      "scaleX": 1.5,
+      "posX": 100.058983,
+      "posY": 69.551,
+      "posZ": -34.30103,
+      "rotX": -2.48305714e-8,
+      "rotY": 180.005219,
+      "rotZ": -3.445957e-8,
+      "scaleX": 6,
       "scaleY": 1,
-      "scaleZ": 1.5
+      "scaleZ": 6
     },
-    "Nickname": "Modular Set Selector Tile",
+    "Nickname": "Hood Modular Set Panel",
     "Description": "",
     "GMNotes": "",
     "AltLookAngle": {
@@ -36,12 +36,12 @@
     "DragSelectable": true,
     "Autoraise": true,
     "Sticky": true,
-    "Tooltip": true,
+    "Tooltip": false,
     "GridProjection": false,
     "HideWhenFaceDown": false,
     "Hands": false,
     "CustomImage": {
-      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/2517026504447692989/2E4909F78FFF6D90D282E54207EED9EBA3328CBA/",
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/2495635039458047004/2537FC8BDB12EB7AC2285CD95F2F0C1643781ABF/",
       "ImageSecondaryURL": "",
       "ImageScalar": 1,
       "WidthScale": 0,
@@ -52,7 +52,7 @@
         "Stretch": true
       }
     },
-    "LuaScript": "#include ./Modular_Set_Selector_Tile.740464.lua",
+    "LuaScript": "#include ./Hood_Modular_Set_Panel.39d4a2.lua",
     "LuaScriptState": "",
     "XmlUI": ""
   },

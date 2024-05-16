@@ -1,0 +1,48 @@
+{
+  "Object": {
+    "GUID": "9663bf",
+    "Name": "Notecard",
+    "Transform": {
+      "posX": -1.665335e-11,
+      "posY": 1.03000009,
+      "posZ": 1.89972482e-11,
+      "rotX": 4.89911756e-9,
+      "rotY": 7.76629861e-7,
+      "rotZ": 2.78773484e-8,
+      "scaleX": 3,
+      "scaleY": 1,
+      "scaleZ": 3
+    },
+    "Nickname": "Release Notes",
+    "Description": "I'm making progress, but slower than expected.\n\nThe Hood scenario now works. The Once and Future Kang doesn't (yet).\n\nAll Age of Apocalypse scenarios have been added, but aren't quite ready to use.\n\nA lot of groundwork has been laid, so the next update will come sooner than this one!",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -51,6 +51,8 @@ local hiddenSelectorOffset = 2
 
 local SELECTOR_TILE_TAG = "selector-tile"
 
+local currentView = "heroes"
+
 function onload(saved_data)
     heroManager.call("layOutHeroSelectors", {
         team = nil,
@@ -385,10 +387,32 @@ function hideTile(tile)
     end
 end
 
+function setView(params)
+    currentView = params.view
+    showCurrentView()
+end
+
+function showCurrentView()
+    if(currentView == "heroes") then
+        showHeroSelection()
+    end
+    if(currentView == "scenario") then
+        showScenarioSelection()
+    end
+    if(currentView == "modular-sets") then
+        showModularSetSelection()
+    end
+    if(currentView == "mode") then
+        showModeSelection()
+    end
+end
+
 function showHeroSelection()
     hideSelectors({itemType = "scenario"})
     hideSelectors({itemType = "modular-set"})
     hideModeButtons()
+
+    callCustomSetupFunction("hero")
   
     showSelectors({itemType = "hero"})
 end
@@ -397,6 +421,8 @@ function showScenarioSelection()
     hideSelectors({itemType = "hero"})
     hideSelectors({itemType = "modular-set"})
     hideModeButtons()
+
+    callCustomSetupFunction("scenario")
 
     showSelectors({itemType = "scenario"})
     highlightSelectedScenario()
@@ -418,6 +444,8 @@ function showModularSetSelection()
     hideSelectors({itemType = "scenario"})
     hideModeButtons()
 
+    callCustomSetupFunction("modular-sets")
+
     showSelectors({itemType = "modular-set"})
     highlightSelectedModularSets()
 end
@@ -432,6 +460,8 @@ function showModeSelection()
     hideSelectors({itemType = "hero"})
     hideSelectors({itemType = "scenario"})
     hideSelectors({itemType = "modular-set"})
+
+    callCustomSetupFunction("mode")
 
     showModeButtons()
     highlightSelectedMode()
@@ -614,10 +644,10 @@ function clearScenario()
     highlightSetupButtons()
 end
 
-function colorCodeModularSets()
+function colorCodeModularSets(params)
     local allObjects = getAllObjects()
     local itemType = "modular-set"
-    local scenarioModularSets = scenarioManager.call("getScenarioModularSets")
+    local scenarioModularSets = params and params.sets or scenarioManager.call("getScenarioModularSets")
 
     for k,v in pairs(allObjects) do
         if(v.hasTag(SELECTOR_TILE_TAG)) then
@@ -627,5 +657,16 @@ function colorCodeModularSets()
                 v.call("setButtonColor", {required = required})
             end
         end
+    end
+end
+
+function callCustomSetupFunction(setupStep)
+    local scenarioKey = scenarioManager.call("getCurrentScenarioKey")
+    if(not scenarioKey) then return end
+
+    local functionName = "customSetup_" .. scenarioKey
+
+    if(scenarioManager.getVar(functionName) ~= nil) then
+      return scenarioManager.call(functionName, {setupStep = setupStep})
     end
 end

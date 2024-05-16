@@ -2,6 +2,7 @@ scenarios["hood"] =
 {
     name="The Hood",
     tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1833524420369390047/812F91439CB08F9A17D25523A7375B04E3D9C4A5/",
+    requiredEncounterSetCount=7,
     villains={
         hood={
             name="The Hood",
@@ -57,6 +58,16 @@ scenarios["hood"] =
                 ["24012"]=1,
                 ["24013"]=3
             }
+        }
+    },
+    extras={
+        encounterSetPlacer={
+            name="",
+            guid="39d4a2",
+            position={34.75, 0.96, 17.25},
+            rotation={0, 180, 0},
+            scale={6,1,6},
+            locked=true
         }
     }
 }

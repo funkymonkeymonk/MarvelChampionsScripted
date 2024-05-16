@@ -1,8 +1,8 @@
 {
   "Save": {
     "SaveName": "MarvelChampionsLCG",
-    "EpochTime": 1715619913,
-    "Date": "5/13/2024 11:05:13 AM",
+    "EpochTime": 1715829529,
+    "Date": "5/15/2024 9:18:49 PM",
     "VersionNumber": "v13.2.2",
     "GameMode": "MarvelChampionsLCG",
     "GameType": "Game",
@@ -564,6 +564,7 @@
     "Stardard_Set_Selector_I.6c0fac.json",
     "Standard_Set_Selector_II.4a340c.json",
     "Standard_Set_Selector_III.9e3a14.json",
-    "Expert_Set_Selector_II.e2a916.json"
+    "Expert_Set_Selector_II.e2a916.json",
+    "Release_Notes.9663bf.json"
   ]
 }

@@ -1,6 +1,7 @@
 preventDeletion = true
 
 local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
+local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
 
 local encounterDeckPosition = {-12.75, 1.01, 22.25}
 local originPosition = {x=60.25, y=0.3, z=-6.25}
@@ -29,6 +30,10 @@ end
 
 function getModularSet(params)
     return modularSets[params.modularSetKey]
+end
+
+function getSelectedSets(params)
+    return deepCopy(selectedSets)
 end
 
 function getSelectedSetKeys()
@@ -64,7 +69,7 @@ function getCardsFromSelectedSets()
 end
 
 function layOutModularSetSelectors(params)
-    local sets = getEncounterSetsByType(params.modular)
+    local sets = getEncounterSetsByType({modular = params.modular})
 
     layoutManager.call("layOutSelectorTiles", {
         origin = params.origin,
@@ -111,6 +116,10 @@ function preSelectEncounterSets(params)
     end
 end
 
+function clearSelectedSets()
+    selectedSets = {}
+end
+
 function selectModularSet(params)
     addRemoveSelectedSet(params.modularSetKey)
 end
@@ -123,7 +132,7 @@ function addRemoveSelectedSet(key)
         end
     end
 
-    selectedSets[key] = modularSets[key]
+    selectedSets[key] = deepCopy(modularSets[key])
 end
 
 function hideSelectors()
@@ -136,9 +145,9 @@ function showSelectors()
 end
   
 
-function placeModularSet(params)
-    local modularSet = modularSets[params.modularSetKey]
-    local position = encounterDeckPosition
+function addEncounterSetToDeck(params)
+    local modularSet = modularSets[params.setKey]
+    local position = Vector(scenarioManager.call("getEncounterDeckPosition"))
     local rotation = {0,180,180}
     local scale = {2.12,3,2.12}
     
@@ -166,9 +175,20 @@ function placeModularSet(params)
     else
         createDeck({cards=modularSet.cards, position=position, rotation=rotation, scale=scale})
     end
+
+    if(position.y < 3) then
+        position.y = 3
+    end
+
+    Wait.frames(
+        function()
+            Global.call("shuffleDeck", {deckPosition = position})
+        end,
+        30)
 end
 
-function getEncounterSetsByType(modular)
+function getEncounterSetsByType(params)
+    modular = params.modular
     local encounterSetList = {}
   
     for key, set in pairs(modularSets) do

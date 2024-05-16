@@ -271,6 +271,17 @@ function reshuffleEncounterDeck(drawToPosition, drawToRotation)
    end
 end
 
+function shuffleDeck(params)
+   local items = findInRadiusBy(params.deckPosition, 4, isDeck)
+
+   if (not items) then
+      log("no deck found at position " .. params.deckPosition)
+      return
+   end
+   local deck = items[1]
+   deck.shuffle()
+end
+
 function requestBoost()
    getObjectFromGUID('e3b2e1').call('createBoostButton')
 end
