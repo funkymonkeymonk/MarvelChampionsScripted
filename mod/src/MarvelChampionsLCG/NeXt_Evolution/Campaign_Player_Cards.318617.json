@@ -1,0 +1,155 @@
+{
+  "Object": {
+    "GUID": "318617",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 73.36187,
+      "posY": 2.285392,
+      "posZ": 28.9832573,
+      "rotX": -4.714664e-8,
+      "rotY": 180,
+      "rotZ": 180,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Campaign Player Cards",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      29400,
+      29300,
+      29200,
+      29000,
+      28800,
+      28600,
+      28400,
+      28200,
+      28000
+    ],
+    "CustomDeck": {
+      "280": {
+        "FaceURL": "https://dcqvlrey92bew.cloudfront.net/40190A.jpg",
+        "BackURL": "https://dcqvlrey92bew.cloudfront.net/40190B.jpg",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "282": {
+        "FaceURL": "https://dcqvlrey92bew.cloudfront.net/40191A.jpg",
+        "BackURL": "https://dcqvlrey92bew.cloudfront.net/40191B.jpg",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "284": {
+        "FaceURL": "https://dcqvlrey92bew.cloudfront.net/40192A.jpg",
+        "BackURL": "https://dcqvlrey92bew.cloudfront.net/40192B.jpg",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "286": {
+        "FaceURL": "https://dcqvlrey92bew.cloudfront.net/40193A.jpg",
+        "BackURL": "https://dcqvlrey92bew.cloudfront.net/40193B.jpg",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "288": {
+        "FaceURL": "https://dcqvlrey92bew.cloudfront.net/40194A.jpg",
+        "BackURL": "https://dcqvlrey92bew.cloudfront.net/40194B.jpg",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "290": {
+        "FaceURL": "https://dcqvlrey92bew.cloudfront.net/40195A.jpg",
+        "BackURL": "https://dcqvlrey92bew.cloudfront.net/40195B.jpg",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "292": {
+        "FaceURL": "https://dcqvlrey92bew.cloudfront.net/40196.jpg",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "293": {
+        "FaceURL": "https://dcqvlrey92bew.cloudfront.net/40197.jpg",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "294": {
+        "FaceURL": "https://dcqvlrey92bew.cloudfront.net/40204.jpg",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Hope_Summers.cf9451.29400.json",
+    "Safehouse.63e847.29300.json",
+    "Pouches.ec7568.29200.json",
+    "Prepare_Defenses.df02fa.29000.json",
+    "Practice_Maneuvers.87cd45.28800.json",
+    "Mission_Prep.f23f77.28600.json",
+    "Gear_Up.dbbd40.28400.json",
+    "Establish_Safehouse.deadbf.28200.json",
+    "Assemble_the_Team.706dab.28000.json"
+  ]
+}

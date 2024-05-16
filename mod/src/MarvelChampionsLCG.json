@@ -1,8 +1,8 @@
 {
   "Save": {
     "SaveName": "MarvelChampionsLCG",
-    "EpochTime": 1715829529,
-    "Date": "5/15/2024 9:18:49 PM",
+    "EpochTime": 1715834278,
+    "Date": "5/15/2024 10:37:58 PM",
     "VersionNumber": "v13.2.2",
     "GameMode": "MarvelChampionsLCG",
     "GameType": "Game",
@@ -565,6 +565,7 @@
     "Standard_Set_Selector_II.4a340c.json",
     "Standard_Set_Selector_III.9e3a14.json",
     "Expert_Set_Selector_II.e2a916.json",
-    "Release_Notes.9663bf.json"
+    "Age_of_Apocalypse.a6c69c.json",
+    "NeXt_Evolution.6b15cb.json"
   ]
 }
