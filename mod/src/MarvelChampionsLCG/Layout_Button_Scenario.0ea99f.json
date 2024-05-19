@@ -3,7 +3,7 @@
     "GUID": "0ea99f",
     "Name": "Custom_Tile",
     "Transform": {
-      "posX": 69.16739,
+      "posX": 68.95,
       "posY": 0.495001376,
       "posZ": 35.750042,
       "rotX": 0.0000157410013,
@@ -22,9 +22,9 @@
       "z": 0
     },
     "ColorDiffuse": {
-      "r": 1,
-      "g": 1,
-      "b": 1
+      "r": 0.24999997,
+      "g": 0.24999997,
+      "b": 0.24999997
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,
@@ -41,7 +41,7 @@
     "HideWhenFaceDown": false,
     "Hands": false,
     "CustomImage": {
-      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/2517026504442205970/780F60E6D7AB2466E0E2BB71AC14D240850FB287/",
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/2495635126604486342/9C09A2C0AB591F0F03750EDE82FF9CD2F78BEB74/",
       "ImageSecondaryURL": "",
       "ImageScalar": 1,
       "WidthScale": 0,

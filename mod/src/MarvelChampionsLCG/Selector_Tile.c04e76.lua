@@ -9,6 +9,8 @@ local modularSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANA
 local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
 
 function onload(saved_data)
+    self.interactable = false
+
     if(saved_data ~= "") then
         local loaded_data = JSON.decode(saved_data)
         itemType = loaded_data.itemType

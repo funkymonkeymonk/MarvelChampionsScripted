@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "ed0a82",
+    "GUID": "74c1d6",
     "Name": "Custom_Tile",
     "Transform": {
-      "posX": 0,
+      "posX": -78,
       "posY": 0,
-      "posZ": 70,
-      "rotX": 0,
-      "rotY": 180,
-      "rotZ": 0,
-      "scaleX": 60,
+      "posZ": 0,
+      "rotX": 1.04220417e-10,
+      "rotY": 270.000061,
+      "rotZ": 0.00298256148,
+      "scaleX": 22.25,
       "scaleY": 1,
-      "scaleZ": 34
+      "scaleZ": 23.5
     },
-    "Nickname": "",
+    "Nickname": "Left Panel",
     "Description": "",
     "GMNotes": "",
     "AltLookAngle": {
@@ -52,7 +52,7 @@
         "Stretch": true
       }
     },
-    "LuaScript": "",
+    "LuaScript": "#include ./Left_Panel.74c1d6.lua",
     "LuaScriptState": "",
     "XmlUI": ""
   },

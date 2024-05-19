@@ -10,7 +10,11 @@ scenarios["fourHorsemen"] =
             name="War",
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/2517025868834704351/B2B76E9D4540357679397C2481898144C86469D7/",
-                position={-15, 0.96, 29.15}
+                position={-15, 0.96, 29.15},
+                secondaryButton={
+                    label="NEXT",
+                    clickFunction="advanceHorsemenQueue",
+                }
             },
             stages={
                 stageA={
@@ -29,7 +33,11 @@ scenarios["fourHorsemen"] =
             name="Famine",
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/2517025868834704237/980CE86320B69C2BCC43970453D618B3BE989685/",
-                position={-5, 0.96, 29.15}
+                position={-5, 0.96, 29.15},
+                secondaryButton={
+                    label="NEXT",
+                    clickFunction="advanceHorsemenQueue",
+                }
             },
             stages={
                 stageA={
@@ -48,7 +56,11 @@ scenarios["fourHorsemen"] =
             name="Pestilence",
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/2517025868834704285/1282E9DDD06242699CE2BD1C2C40A049F2E05D2C/",
-                position={5, 0.96, 29.15}
+                position={5, 0.96, 29.15},
+                secondaryButton={
+                    label="NEXT",
+                    clickFunction="advanceHorsemenQueue",
+                }
             },
             stages={
                 stageA={
@@ -67,7 +79,11 @@ scenarios["fourHorsemen"] =
             name="Death",
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/2517025868834704172/7E999A4ED6EB9484AF6E13E92AE0CF02C67F4B98/",
-                position={15, 0.96, 29.15}
+                position={15, 0.96, 29.15},
+                secondaryButton={
+                    label="NEXT",
+                    clickFunction="advanceHorsemenQueue",
+                }
             },
             stages={
                 stageA={

@@ -43,7 +43,7 @@ modularSets["inheritors"] =
 
 modularSets["ronanTheAccuser"] = 
 {
-    name="Ronan The Accuser",
+    name="Ronan the Accuser",
     modular=true,
     cards = {
         ["90001"] = 1,

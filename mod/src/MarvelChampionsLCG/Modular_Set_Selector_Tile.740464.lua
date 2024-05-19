@@ -2,11 +2,14 @@ itemType = ""
 itemKey = ""
 itemName = ""
 local behavior = ""
+local required = false
 
 local modularSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
 local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
 
 function onload(saved_data)
+    self.interactable = false
+
     if(saved_data ~= "") then
         local loaded_data = JSON.decode(saved_data)
         itemType = loaded_data.itemType
@@ -48,25 +51,16 @@ end
 function createModularSetButton()
     if(itemKey == "") then return end
     
-    local fontSize = 10 / string.len(itemName) * 400
+    local formatedLabel = formatLabel()
 
-    if(fontSize > 400) then fontSize = 400 end
-    if(fontSize < 200) then fontSize = 200 end
-
-    self.setName("")
-
-    if(behavior == "layout") then
-        self.createButton({
-            label=itemName, click_function="placeModularSet", function_owner=self,
-            position={0,0.2,0}, rotation={0,0,0}, height=1000, width=2500,
-            font_size=fontSize, color={0,0,0}, font_color={1,1,1}, hover_color={0,0,0}
-        })
-
-        return
+    if(formatedLabel.length <= 10) then
+        fontSize = 400
+    else
+        fontSize = 400 - (formatedLabel.length - 10) * 20
     end
 
     self.createButton({
-        label=itemName, 
+        label=formatedLabel.name, 
         click_function="selectModularSet", 
         function_owner=self,
         position={0,0.1,0}, 
@@ -79,16 +73,67 @@ function createModularSetButton()
     })
 end
 
+function formatLabel()
+    if(string.len(itemName) <= 10 or string.find(itemName, " ") == nil) then
+        return {
+            name=itemName,
+            length=string.len(itemName)
+        }
+    end
+
+    local words = getItemNameWords()
+    local firstLine = ""
+    local secondLine = ""
+    local firstLineOffset = 0
+    local secondLineOffset = 0
+
+    for i=1, #words do
+        if(string.len(firstLine) >= string.len(secondLine)) then
+            local index = #words - secondLineOffset
+            secondLineOffset = secondLineOffset + 1
+            secondLine = words[index] .. " " .. secondLine
+        else
+            local index = 1 + firstLineOffset
+            firstLineOffset = firstLineOffset + 1
+            firstLine = firstLine .. " " .. words[index]
+        end
+    end
+
+    local length = string.len(firstLine) > string.len(secondLine) and string.len(firstLine) or string.len(secondLine)
+
+    return {
+        name = trim(firstLine) .. "\n" .. trim(secondLine),
+        length = length
+    }
+end
+
+function getItemNameWords ()
+    local t={}
+
+    for str in string.gmatch(itemName, "[%w']*[%w]+") do
+        table.insert(t, str)
+    end
+
+    return t
+end
+
+function trim(s)
+    return (string.gsub(s, "^%s*(.-)%s*$", "%1"))
+end
+
 function setButtonColor(params)
-    local required = params.required
+    local requirement = params.required
     local color
 
-    if(required == "none") then
+    if(requirement == "none") then
         color = {1,1,1,100}
-    elseif(required == "required") then
-        color = {1,0,0,100}
+        required = false
+    elseif(requirement == "required") then
+        color = {0.89,0,0.55,100}
+        required = true
     else 
-        color={0,0,1,100}
+        color={1,0.886,0,100}
+        required = false
     end
 
     self.editButton({index=0, font_color=color})
@@ -99,6 +144,11 @@ function placeModularSet(obj, player_color)
 end
 
 function selectModularSet(obj, player_color)
+    if(required) then
+        broadcastToAll("This modular set is required for the selected scenario.", {1,1,1})
+        return
+    end
+
     layoutManager.call("selectModularSet", {modularSetKey = itemKey})
 end
 

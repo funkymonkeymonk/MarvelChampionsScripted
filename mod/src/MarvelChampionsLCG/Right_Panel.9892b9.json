@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "74c1d6",
+    "GUID": "9892b9",
     "Name": "Custom_Tile",
     "Transform": {
-      "posX": -78,
+      "posX": 78,
       "posY": 0,
       "posZ": 0,
-      "rotX": 1.04220417e-10,
-      "rotY": 270.000061,
-      "rotZ": 0.00298256148,
+      "rotX": 0,
+      "rotY": 270,
+      "rotZ": 0,
       "scaleX": 22.25,
       "scaleY": 1,
       "scaleZ": 23.5
     },
-    "Nickname": "",
+    "Nickname": "Right Panel",
     "Description": "",
     "GMNotes": "",
     "AltLookAngle": {
@@ -52,7 +52,7 @@
         "Stretch": true
       }
     },
-    "LuaScript": "",
+    "LuaScript": "#include ./Right_Panel.9892b9.lua",
     "LuaScriptState": "",
     "XmlUI": ""
   },

@@ -1,7 +1,7 @@
 local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
 
 function onload(saved_data)
-  --self.interactable = false
+  self.interactable = false
 
   self.createButton({
       label = "ADD\r\nENCOUNTER\r\nSET",

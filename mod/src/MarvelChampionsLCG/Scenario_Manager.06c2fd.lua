@@ -281,7 +281,7 @@ function prepareScenario()
   local functionName = "prepareScenario_" .. currentScenario.key
 
   if(self.getVar(functionName) ~= nil) then
-    return self.call(functionName)
+    self.call(functionName)
   end
 end
 
@@ -417,11 +417,12 @@ function getRequiredEncounterSetCount()
 end
 
 function setUpVillains()
+  --log(currentScenario.villains)
   local heroCount = heroManager.call("getHeroCount")
 
   for key, villain in pairs(currentScenario.villains) do
       villain.key = key
-      setUpVillain(villain, heroCount)
+      setUpVillain(villain.key, heroCount)
 
       local count = 0
       while count < 5 do
@@ -433,14 +434,16 @@ function setUpVillains()
   return 1
 end
 
-function setUpVillain(villain, heroCount)
+function setUpVillain(villainKey, heroCount)
   local setUpFunction = "setUpVillain_" .. currentScenario.key
   if(self.getVar(setUpFunction) ~= nil) then
-    self.call(setUpFunction, {villainKey = villain.key, heroCount = heroCount})
+    self.call(setUpFunction, {villainKey = villainKey, heroCount = heroCount})
     return
   end
 
-  placeVillainHpCounter(villain, 0, false)
+  local villain = currentScenario.villains[villainKey]
+
+  placeVillainHpCounter(villainKey, 0, false)
 
   Wait.frames(
     function()
@@ -450,7 +453,8 @@ function setUpVillain(villain, heroCount)
   )
 end
 
-function placeVillainHpCounter(villain, hitPoints, showAdvanceButton)
+function placeVillainHpCounter(villainKey, hitPoints, showAdvanceButton)
+  local villain = currentScenario.villains[villainKey]
   local counter = villain.hpCounter or {}
 
   local position = counter.position or defaults.villainHpCounter.position
@@ -1591,206 +1595,80 @@ function getNextSchemeStage_kang_main(params)
   return nextStage
 end
 
-function customSetup_hood(params)
-  local setupStep = params.setupStep
+function prepareScenario_fourHorsemen()
+  currentScenario.horsemenQueue = randomizeFourHorsemen()
+  currentScenario.activeHorsemanNumber = 1
 
-  if(setupStep == "modular-sets") then
-    createHoodModularSetButtons()
+  local villains = currentScenario.villains
+  log (currentScenario.horsemenQueue)
 
-    local modularSets = {}
-
-    modularSets["streetsOfMayhem"] = "recommended"
-    modularSets["brothersGrimm"] = "recommended"
-    modularSets["ransackedArmory"] = "recommended"
-    modularSets["stateOfEmergency"] = "recommended"
-    modularSets["beastyBoys"] = "recommended"
-    modularSets["misterHyde"] = "recommended"
-    modularSets["sinisterSyndicate"] = "recommended"
-    modularSets["crossfiresCrew"] = "recommended"
-    modularSets["wreckingCrew"] = "recommended"
-
-    layoutManager.call("colorCodeModularSets", {sets = modularSets})
-  else
-    removeHoodModularSetButtons()
+  for i = 1, 4, 1 do
+    local horsemanKey = currentScenario.horsemenQueue[i]
+    local x = -15 + (10 * (i - 1))
+    
+    local horseman = villains[horsemanKey]
+    horseman.deckPosition = {x, 1.00, 20.44}
+    horseman.hpCounter.position = {x, 0.96, 29.15}
   end
 end
 
-function createHoodModularSetButtons()
-  local modularSetupButton = getObjectFromGUID("6979cc")
-  local buttons = modularSetupButton.getButtons()
+function randomizeFourHorsemen()
+  local horsemenQueue = {}
 
-  if(#buttons > 1) then return end
-
-  modularSetupButton.createButton({
-    label = "EASY",
-    click_function = "selectHoodEasyModularSets",
-    function_owner = self,
-    position = {-5.5,0.1,2.5},
-    rotation = {0,0,0},
-    width = 650,
-    height = 350,
-    font_size = 275,
-    color = {0,0,0,0},
-    font_color = {1,1,1,100}
-  })
-
-  modularSetupButton.createButton({
-    label = "MEDIUM",
-    click_function = "selectHoodMediumModularSets",
-    function_owner = self,
-    position = {-3.25,0.1,2.5},
-    rotation = {0,0,0},
-    width = 1050,
-    height = 350,
-    font_size = 275,
-    color = {0,0,0,0},
-    font_color = {1,1,1,100}
-  })
-
-  modularSetupButton.createButton({
-    label = "HARD",
-    click_function = "selectHoodHardModularSets",
-    function_owner = self,
-    position = {-1.0,0.1,2.5},
-    rotation = {0,0,0},
-    width = 700,
-    height = 350,
-    font_size = 275,
-    color = {0,0,0,0},
-    font_color = {1,1,1,100}
-  })
-
-  modularSetupButton.createButton({
-    label = "RANDOM",
-    click_function = "selectHoodRandomModularSets",
-    function_owner = self,
-    position = {1.5,0.1,2.5},
-    rotation = {0,0,0},
-    width = 1150,
-    height = 350,
-    font_size = 275,
-    color = {0,0,0,0},
-    font_color = {1,1,1,100}
-  })
-end
-
-function removeHoodModularSetButtons()
-  local modularSetupButton = getObjectFromGUID("6979cc")
-  local buttons = modularSetupButton.getButtons()
-
-  if(#buttons < 5) then return end
-
-  for i = 4, 1, -1 do
-    modularSetupButton.removeButton(i)
-  end
-end
-
-function selectHoodEasyModularSets()
-  encounterSetManager.call("clearSelectedSets")
-
-  encounterSetManager.call("selectModularSet", {modularSetKey = "streetsOfMayhem"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "brothersGrimm"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "ransackedArmory"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "stateOfEmergency"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "beastyBoys"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "misterHyde"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "sinisterSyndicate"})
-
-  layoutManager.call("highlightSetupButtons")
-  layoutManager.call("showCurrentView")
-end
-
-function selectHoodMediumModularSets()
-  encounterSetManager.call("clearSelectedSets")
-
-  encounterSetManager.call("selectModularSet", {modularSetKey = "brothersGrimm"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "ransackedArmory"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "stateOfEmergency"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "beastyBoys"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "misterHyde"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "sinisterSyndicate"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "crossfiresCrew"})
-
-  layoutManager.call("highlightSetupButtons")
-  layoutManager.call("showCurrentView")
-end
-
-function selectHoodHardModularSets()
-  encounterSetManager.call("clearSelectedSets")
-
-  encounterSetManager.call("selectModularSet", {modularSetKey = "ransackedArmory"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "stateOfEmergency"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "beastyBoys"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "misterHyde"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "sinisterSyndicate"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "crossfiresCrew"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "wreckingCrew"})
-
-  layoutManager.call("highlightSetupButtons")
-  layoutManager.call("showCurrentView")
-end
-
-function selectHoodRandomModularSets()
-  encounterSetManager.call("clearSelectedSets")
-  math.randomseed(os.time())
-
-  local encounterSets = encounterSetManager.call("getEncounterSetsByType", {modular = true})
-  local selectedSets = {}
-
-  for i = 1, 7, 1 do
-    local unselectedSets = {}
-
-    for k, v in pairs(encounterSets) do
-      if(not v.selected) then
-        table.insert(unselectedSets, k)
-      end
-    end  
-  
-    local randomSetKey = unselectedSets[math.random(#unselectedSets)]
-    encounterSetManager.call("selectModularSet", {modularSetKey = randomSetKey})
+  for k, v in pairs(currentScenario.villains) do
+    table.insert(horsemenQueue, k)
   end
 
-  layoutManager.call("highlightSetupButtons")
-  layoutManager.call("showCurrentView")
+  shuffle(horsemenQueue)
+
+  return horsemenQueue
 end
 
-function prepareScenario_hood()
-  local encounterSets = encounterSetManager.call("getSelectedSets", {modular = true})
-  currentScenario.hoodEncounterSets = encounterSets
-  encounterSetManager.call("clearSelectedSets")
+function finalizeSetup_fourHorsemen()
+  --TODO: Refactor setUpScenario with coroutines to prevent having to use Wait.frames here
+  Wait.frames(
+    function()
+      updateActiveHorsemanHighlight()
+    end,
+    60
+  )
 end
 
-function addHoodEncounterSet()
-  math.randomseed(os.time())
-  local unusedSets = {}
+function advanceHorsemenQueue()
+  currentScenario.activeHorsemanNumber = currentScenario.activeHorsemanNumber + 1
+  if(currentScenario.activeHorsemanNumber > 4) then
+    currentScenario.activeHorsemanNumber = 1
+  end
 
-  for k, v in pairs(currentScenario.hoodEncounterSets) do
-    if(not v.used) then
-      table.insert(unusedSets, k)
+  updateActiveHorsemanHighlight()
+end
+
+function updateActiveHorsemanHighlight()
+  for i = 1, 4, 1 do
+    local horsemanKey = currentScenario.horsemenQueue[i]
+    local villain = currentScenario.villains[horsemanKey]
+    local hpCounter = getObjectFromGUID(villain.hpCounter.guid)
+
+    if(i == currentScenario.activeHorsemanNumber) then
+      hpCounter.highlightOn({1,1,0})
+      hpCounter.call("showSecondaryButton")
+    else
+      hpCounter.highlightOff()
+      hpCounter.call("hideSecondaryButton")
     end
   end
-
-  if(#unusedSets == 0) then
-    broadcastToAll("All modular encounter sets have been used.", {1,1,1})
-    return 0
-  end
-
-  local encounterSetKey = unusedSets[math.random(#unusedSets)]
-
-  currentScenario.hoodEncounterSets[encounterSetKey].used = true
-
-  saveData()
-
-  encounterSetManager.call("addEncounterSetToDeck", {setKey = encounterSetKey})
-
-  broadcastToAll("A random modular encounter set has been added to encounter deck.", {1,1,1})
-  return #unusedSets - 1
 end
 
--- function finalizeSetup_hood()
---   local encounterSetPlacer = getItemFromManifest({key = "encounterSetPlacer"})
---   encounterSetPlacer.call("addEncounterSet")
--- end
+function shuffle(tbl)
+  math.randomseed(os.time())
+
+  for i = #tbl, 2, -1 do
+    local j = math.random(i)
+    tbl[i], tbl[j] = tbl[j], tbl[i]
+  end
+
+  return tbl
+end
 
 require('!/Cardplacer')
 

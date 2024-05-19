@@ -3,6 +3,8 @@ preventDeletion = true
 local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
 
 function onload(saved_data)
+    self.interactable = false
+    
     self.createButton({
         label = "STANDARD I",
         click_function = "setStandardSet",

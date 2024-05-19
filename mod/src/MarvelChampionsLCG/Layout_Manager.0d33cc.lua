@@ -83,8 +83,6 @@ function onload(saved_data)
         behavior = "select",
         hidden = true
     })
-
-    highlightSetupButtons()
 end
 
 function layOutSelectorTiles(params)
@@ -171,7 +169,7 @@ function layOutSelectorTiles(params)
 end
 
 function calculateOrigin(center, direction, maxRowsOrColumns, columnGap, rowGap, itemCount)
-    local gridDimensions = calculateGridDimenstions(direction, maxRowsOrColumns, columnGap, rowGap, itemCount)
+    local gridDimensions = calculateGridDimensions(direction, maxRowsOrColumns, columnGap, rowGap, itemCount)
 
     return {
         x = center[1] - gridDimensions.width / 2,
@@ -180,7 +178,7 @@ function calculateOrigin(center, direction, maxRowsOrColumns, columnGap, rowGap,
     }
 end
 
-function calculateGridDimenstions(direction, maxRowsOrColumns, columnGap, rowGap, itemCount)
+function calculateGridDimensions(direction, maxRowsOrColumns, columnGap, rowGap, itemCount)
     local columns = 0
     local rows = 0
 
@@ -467,46 +465,6 @@ function showModeSelection()
     highlightSelectedMode()
 end
 
-function highlightSetupButtons()
-    local highlightColorYellow = {1,1,0}
-    local highlightColorGreen = {0,1,0}
-    local hightlightColorRed = {1,0,0}
-
-    local heroesAreValid = scenarioManager.call("heroCountIsValid")
-    local scenarioIsValid = scenarioManager.call("scenarioIsValid")
-    local encounterSetsAreValid = scenarioManager.call("modularSetsAreValid")
-    local modeIsValid = scenarioManager.call("modeAndStandardEncounterSetsAreValid")
-
-    local scenarioUsesModularEncounterSets = scenarioManager.call("useModularEncounterSets")
-
-    highlightColor = heroesAreValid and highlightColorGreen or highlightColorYellow
-    layoutButtonHeroes.highlightOn(highlightColor)
-
-    highlightColor = scenarioIsValid and highlightColorGreen or highlightColorYellow
-    layoutButtonScenario.highlightOn(highlightColor)
-
-    if(not scenarioIsValid or not scenarioUsesModularEncounterSets) then
-        highlightColor = hightlightColorRed
-    else
-        highlightColor = encounterSetsAreValid and highlightColorGreen or highlightColorYellow
-    end
-    layoutButtonModularSets.highlightOn(highlightColor)
-
-    if(not scenarioIsValid) then
-        highlightColor = hightlightColorRed
-    else
-        highlightColor = modeIsValid and highlightColorGreen or highlightColorYellow
-    end
-    layoutButtonMode.highlightOn(highlightColor)
-
-    if heroesAreValid and scenarioIsValid and encounterSetsAreValid and modeIsValid then
-        highlightColor = highlightColorGreen
-    else
-        highlightColor = hightlightColorRed
-    end 
-    layoutButtonGo.highlightOn(highlightColor)
-end
-
 function highlightSelectedScenario()
     local allObjects = getAllObjects()
     local itemType = "scenario"
@@ -535,7 +493,7 @@ function highlightSelectedModularSets()
             if( v.getVar("itemType") == itemType) then
                 item = items[v.getVar("itemKey")]
                 if(item ~= nil) then
-                    v.highlightOn({0,1,0})
+                    v.highlightOn({0.89,0,0.55})
                 else
                     v.highlightOff()
                 end
@@ -590,26 +548,24 @@ end
 
 function placeHeroWithStarterDeck(params)
     heroManager.call("placeHeroWithStarterDeck", {heroKey = params.heroKey, playerColor = params.playerColor})
-    highlightSetupButtons()
 end
 
 function placeHeroWithHeroDeck(params)
     heroManager.call("placeHeroWithHeroDeck", {heroKey = params.heroKey, playerColor = params.playerColor})
-    highlightSetupButtons()
 end
 
 function selectScenario(params)
     scenarioManager.call("selectScenario", {scenarioKey = params.scenarioKey})
     scenarioUsesStandardEncounterSets = scenarioManager.call("useStandardEncounterSets")
     scenarioUsesModularEncounterSets = scenarioManager.call("useModularEncounterSets")
-    highlightSetupButtons()
+
     highlightSelectedScenario()
     colorCodeModularSets()
 end
 
 function selectModularSet(params)
     modularSetManager.call("selectModularSet", {modularSetKey = params.modularSetKey})
-    highlightSetupButtons()
+
     highlightSelectedModularSets()
 end
 
@@ -622,26 +578,22 @@ function setMode(params)
         hideExpertSetButtons()
     end
 
-    highlightSetupButtons()
     highlightSelectedMode()
 end
 
 function setStandardSet(params)
     scenarioManager.call("setStandardSet", {set = params.set})
-    highlightSetupButtons()
     highlightSelectedMode()
 end
 
 function setExpertSet(params)
     scenarioManager.call("setExpertSet", {set = params.set})
-    highlightSetupButtons()
     highlightSelectedMode()
 end
 
 function clearScenario()
     scenarioManager.call("clearScenario")
     showScenarioSelection()
-    highlightSetupButtons()
 end
 
 function colorCodeModularSets(params)
