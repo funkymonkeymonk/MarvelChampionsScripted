@@ -4,7 +4,9 @@ local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
 
 function onload(saved_data)
     self.interactable = false
-    
+end
+
+function createButton()
     self.createButton({
         label = "EXPERT II",
         click_function = "setExpertSet",
@@ -21,4 +23,13 @@ end
 
 function setExpertSet()
     layoutManager.call("setExpertSet", {set = "ii"})
+end
+
+function hideTile()
+    self.clearButtons()
+    self.highlightOff()
+end
+
+function showTile()
+    createButton()
 end

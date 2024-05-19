@@ -12,6 +12,16 @@ function onload(saved_data)
     height = 970,
     font_size = 500,
     color = {0,0,0,0},
-    font_color = {1,1,1,100}
+    font_color = {1,1,1,70}
+  })
+end
+
+function updateButton(params)
+  local isEnabled = params.isEnabled
+  local fontColor = isEnabled and {1,1,1,100} or {1,1,1,70}
+
+  self.editButton({
+    index = 0,
+    font_color = fontColor
   })
 end

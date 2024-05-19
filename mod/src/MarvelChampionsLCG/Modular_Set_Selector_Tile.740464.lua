@@ -3,6 +3,10 @@ itemKey = ""
 itemName = ""
 local behavior = ""
 local required = false
+local isVisible = false
+local label = ""
+local fontSize = 0
+local fontColor = {1,1,1,100}
 
 local modularSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
 local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
@@ -16,9 +20,14 @@ function onload(saved_data)
         itemKey = loaded_data.itemKey
         itemName = loaded_data.itemName
         behavior = loaded_data.behavior
+        isVisible = loaded_data.isVisible
+        label = loaded_data.label
+        fontSize = loaded_data.fontSize
     end
 
-    createModularSetButton()
+    if(isVisible) then
+        createButton()
+    end
 end
 
 function setUpTile(params)
@@ -27,17 +36,28 @@ function setUpTile(params)
     itemName = params.itemName
     behavior = params.behavior or "layOut"
     imageUrl = params.imageUrl
+    isVisible = params.isVisible
+
+    local labelInfo = formatLabel()
+
+    label = labelInfo.text
+
+    if(labelInfo.length <= 10) then
+        fontSize = 400
+    else
+        fontSize = 400 - (labelInfo.length - 10) * 20
+    end
 
     local saved_data = JSON.encode({
         itemType = itemType,
         itemKey = itemKey,
         itemName = itemName,
-        behavior = behavior
+        behavior = behavior,
+        isVisible = isVisible,
+        label = label,
+        fontSize = fontSize
     })
     self.script_state = saved_data
-
-    self.setName(itemName)
-    self.setDescription("")
 
     if(imageUrl ~= nil) then
         self.setCustomObject({
@@ -48,19 +68,9 @@ function setUpTile(params)
     self.reload()
 end
 
-function createModularSetButton()
-    if(itemKey == "") then return end
-    
-    local formatedLabel = formatLabel()
-
-    if(formatedLabel.length <= 10) then
-        fontSize = 400
-    else
-        fontSize = 400 - (formatedLabel.length - 10) * 20
-    end
-
+function createButton()
     self.createButton({
-        label=formatedLabel.name, 
+        label=label, 
         click_function="selectModularSet", 
         function_owner=self,
         position={0,0.1,0}, 
@@ -69,14 +79,14 @@ function createModularSetButton()
         width=2500,
         font_size=fontSize, 
         color={0,0,0,0}, 
-        font_color={1,1,1,100}
+        font_color=fontColor
     })
 end
 
 function formatLabel()
     if(string.len(itemName) <= 10 or string.find(itemName, " ") == nil) then
         return {
-            name=itemName,
+            text=itemName,
             length=string.len(itemName)
         }
     end
@@ -102,7 +112,7 @@ function formatLabel()
     local length = string.len(firstLine) > string.len(secondLine) and string.len(firstLine) or string.len(secondLine)
 
     return {
-        name = trim(firstLine) .. "\n" .. trim(secondLine),
+        text = trim(firstLine) .. "\n" .. trim(secondLine),
         length = length
     }
 end
@@ -123,20 +133,21 @@ end
 
 function setButtonColor(params)
     local requirement = params.required
-    local color
 
     if(requirement == "none") then
-        color = {1,1,1,100}
+        fontColor = {1,1,1,100}
         required = false
     elseif(requirement == "required") then
-        color = {0.89,0,0.55,100}
+        fontColor = {0.89,0,0.55,100}
         required = true
     else 
-        color={1,0.886,0,100}
+        fontColor={1,0.886,0,100}
         required = false
     end
 
-    self.editButton({index=0, font_color=color})
+    if(isVisible) then
+        self.editButton({index=0, font_color=color})
+    end
 end
 
 function placeModularSet(obj, player_color)
@@ -154,9 +165,13 @@ end
 
 function showSelection(params)
     local selected = params.selected
-    -- if(selected) then
-    --     self.highlightOn({0,1,0})
-    -- else
-    --     self.highlightOff()
-    -- end
+end
+
+function hideTile()
+    self.clearButtons()
+    self.highlightOff()
+end
+
+function showTile()
+    createButton()
 end

@@ -4,7 +4,9 @@ local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
 
 function onload(saved_data)
     self.interactable = false
-    
+end
+
+function createButton()
     self.createButton({
         label = "EXPERT",
         click_function = "setMode",
@@ -21,4 +23,13 @@ end
 
 function setMode()
     layoutManager.call("setMode", {mode = "expert"})
+end
+
+function hideTile()
+    self.clearButtons()
+    self.highlightOff()
+end
+
+function showTile()
+    createButton()
 end

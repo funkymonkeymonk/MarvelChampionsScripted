@@ -4,7 +4,9 @@ local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
 
 function onload(saved_data)
     self.interactable = false
-    
+end
+
+function createButton()
     self.createButton({
         label = "STANDARD II",
         click_function = "setStandardSet",
@@ -21,4 +23,13 @@ end
 
 function setStandardSet()
     layoutManager.call("setStandardSet", {set = "ii"})
+end
+
+function hideTile()
+    self.clearButtons()
+    self.highlightOff()
+end
+
+function showTile()
+    createButton()
 end

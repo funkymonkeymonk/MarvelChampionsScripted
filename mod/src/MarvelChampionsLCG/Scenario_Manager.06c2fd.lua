@@ -417,7 +417,6 @@ function getRequiredEncounterSetCount()
 end
 
 function setUpVillains()
-  --log(currentScenario.villains)
   local heroCount = heroManager.call("getHeroCount")
 
   for key, villain in pairs(currentScenario.villains) do
@@ -1596,20 +1595,10 @@ function getNextSchemeStage_kang_main(params)
 end
 
 function prepareScenario_fourHorsemen()
-  currentScenario.horsemenQueue = randomizeFourHorsemen()
   currentScenario.activeHorsemanNumber = 1
 
-  local villains = currentScenario.villains
-  log (currentScenario.horsemenQueue)
-
-  for i = 1, 4, 1 do
-    local horsemanKey = currentScenario.horsemenQueue[i]
-    local x = -15 + (10 * (i - 1))
-    
-    local horseman = villains[horsemanKey]
-    horseman.deckPosition = {x, 1.00, 20.44}
-    horseman.hpCounter.position = {x, 0.96, 29.15}
-  end
+  randomizeFourHorsemen()
+  setUpFourHorsemenSideSchemes()
 end
 
 function randomizeFourHorsemen()
@@ -1621,7 +1610,53 @@ function randomizeFourHorsemen()
 
   shuffle(horsemenQueue)
 
-  return horsemenQueue
+  currentScenario.horsemenQueue = horsemenQueue
+
+  local villains = currentScenario.villains
+
+  for i = 1, 4, 1 do
+    local horsemanKey = currentScenario.horsemenQueue[i]
+    local x = -15 + (10 * (i - 1))
+    
+    local horseman = villains[horsemanKey]
+    horseman.deckPosition = {x, 1.00, 20.44}
+    horseman.hpCounter.position = {x, 0.96, 29.15}
+  end
+end
+
+function setUpFourHorsemenSideSchemes()
+  if(currentScenario.cards == nil) then currentScenario.cards = {} end
+  if(currentScenario.counters == nil) then currentScenario.counters = {} end
+
+  local sideSchemes = {}
+  table.insert(sideSchemes, "45086")
+  table.insert(sideSchemes, "45087")
+  table.insert(sideSchemes, "45088")
+  table.insert(sideSchemes, "45089")
+
+  shuffle(sideSchemes)
+
+  local heroCount = heroManager.call("getHeroCount")
+
+  for i = 1, 4 do
+    if(i <= heroCount) then
+      local cardKey = "sideScheme" .. i
+      local cardId = sideSchemes[i]
+      local y = 21.75 - ((i - 1) * 5)
+      local cardPosition = {25.75, 1.00, y} 
+
+      currentScenario.cards[cardKey] = {cardId = cardId, position = cardPosition, scale = Vector(Global.getVar("CARD_SCALE_ENCOUNTER")), landscape = true}
+
+      y = 20.30 - ((i - 1) * 5)
+      local counterPosition = {25.37, 1.10, y}
+
+      currentScenario.counters[cardKey.."threat"] = {type="threat", position = counterPosition, scale = {0.48, 1.00, 0.48}, threat = 6, locked=false}
+    else
+      currentScenario.decks.encounterDeck.cards[sideSchemes[i]] = 1
+      log("Adding " .. sideSchemes[i] .. " to encounter deck")
+    end
+  end
+  log(currentScenario.decks.encounterDeck)
 end
 
 function finalizeSetup_fourHorsemen()

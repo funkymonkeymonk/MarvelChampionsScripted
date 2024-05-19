@@ -83,6 +83,11 @@ function onload(saved_data)
         behavior = "select",
         hidden = true
     })
+
+    Wait.frames(function()
+        updateSetupButtons()
+    end, 
+    10)
 end
 
 function layOutSelectorTiles(params)
@@ -143,9 +148,10 @@ function layOutSelectorTiles(params)
                     itemKey = key,
                     itemName = item.name,
                     imageUrl = item.tileImageUrl,
-                    behavior = behavior
+                    behavior = behavior,
+                    isVisible = not hidden
                 })
-         end,
+            end,
             1
         )
 
@@ -309,6 +315,7 @@ function showSelectors(params)
 
             if(v.getVar("itemType") == itemType and currentPos.y < 0) then
                 v.setPosition({x = currentPos.x, y = currentPos.y + hiddenSelectorOffset, z = currentPos.z})
+                v.call("showTile")
             end
         end
     end
@@ -324,7 +331,7 @@ function hideSelectors(params)
 
             if(v.getVar("itemType") == itemType and currentPos.y >= 0) then
                 v.setPosition({x = currentPos.x, y = currentPos.y - hiddenSelectorOffset, z = currentPos.z})
-                v.highlightOff()
+                v.call("hideTile")
             end
         end
     end
@@ -373,6 +380,7 @@ function showTile(tile)
 
     if(currentPos.y < 0) then
         tile.setPosition({x = currentPos.x, y = currentPos.y + hiddenSelectorOffset, z = currentPos.z})
+        tile.call("showTile")
     end
 end
 
@@ -381,11 +389,24 @@ function hideTile(tile)
 
     if(currentPos.y >= 0) then
         tile.setPosition({x = currentPos.x, y = currentPos.y - hiddenSelectorOffset, z = currentPos.z})
-        tile.highlightOff()
+        tile.call("hideTile")
     end
 end
 
 function setView(params)
+    if(params.view == "modular-sets") then
+        local currentScenarioKey = scenarioManager.call("getCurrentScenarioKey")
+        if(currentScenarioKey == nil) then
+            broadcastToAll("Please select a scenario.", {1,1,1})
+            return
+        end
+    
+        if(not scenarioUsesModularEncounterSets) then
+            broadcastToAll("This scenario does not use modular encounter sets.", {1,1,1})
+            return
+        end        
+    end
+
     currentView = params.view
     showCurrentView()
 end
@@ -412,6 +433,7 @@ function showHeroSelection()
 
     callCustomSetupFunction("hero")
   
+    updateSetupButtons()
     showSelectors({itemType = "hero"})
 end
   
@@ -422,28 +444,19 @@ function showScenarioSelection()
 
     callCustomSetupFunction("scenario")
 
+    updateSetupButtons()
     showSelectors({itemType = "scenario"})
     highlightSelectedScenario()
 end
 
 function showModularSetSelection()
-    local currentScenarioKey = scenarioManager.call("getCurrentScenarioKey")
-    if(currentScenarioKey == nil) then
-        broadcastToAll("Please select a scenario.", {1,1,1})
-        return
-    end
-
-    if(not scenarioUsesModularEncounterSets) then
-        broadcastToAll("This scenario does not use modular encounter sets.", {1,1,1})
-        return
-    end
-
     hideSelectors({itemType = "hero"})
     hideSelectors({itemType = "scenario"})
     hideModeButtons()
 
     callCustomSetupFunction("modular-sets")
 
+    updateSetupButtons()
     showSelectors({itemType = "modular-set"})
     highlightSelectedModularSets()
 end
@@ -461,8 +474,25 @@ function showModeSelection()
 
     callCustomSetupFunction("mode")
 
+    updateSetupButtons()
     showModeButtons()
     highlightSelectedMode()
+end
+
+function updateSetupButtons()
+    local scenarioUsesModularEncounterSets = scenarioManager.call("useModularEncounterSets")
+
+    local heroesAreValid = scenarioManager.call("heroCountIsValid")
+    local scenarioIsValid = scenarioManager.call("scenarioIsValid")
+    local encounterSetsAreValid = scenarioManager.call("modularSetsAreValid")
+    local modeIsValid = scenarioManager.call("modeAndStandardEncounterSetsAreValid")
+
+    layoutButtonHeroes.call("updateButton", {isEnabled = true, isActive = currentView == "heroes"})
+    layoutButtonScenario.call("updateButton", {isEnabled = true, isActive = currentView == "scenario"})
+    layoutButtonModularSets.call("updateButton", {isEnabled = scenarioIsValid and scenarioUsesModularEncounterSets, isActive = currentView == "modular-sets"})
+    layoutButtonMode.call("updateButton", {isEnabled = scenarioIsValid, isActive = currentView == "mode"})
+
+    layoutButtonGo.call("updateButton", {isEnabled = heroesAreValid and scenarioIsValid and encounterSetsAreValid and modeIsValid})
 end
 
 function highlightSelectedScenario()
@@ -548,10 +578,12 @@ end
 
 function placeHeroWithStarterDeck(params)
     heroManager.call("placeHeroWithStarterDeck", {heroKey = params.heroKey, playerColor = params.playerColor})
+    updateSetupButtons()
 end
 
 function placeHeroWithHeroDeck(params)
     heroManager.call("placeHeroWithHeroDeck", {heroKey = params.heroKey, playerColor = params.playerColor})
+    updateSetupButtons()
 end
 
 function selectScenario(params)
@@ -559,6 +591,7 @@ function selectScenario(params)
     scenarioUsesStandardEncounterSets = scenarioManager.call("useStandardEncounterSets")
     scenarioUsesModularEncounterSets = scenarioManager.call("useModularEncounterSets")
 
+    updateSetupButtons()
     highlightSelectedScenario()
     colorCodeModularSets()
 end
@@ -566,6 +599,7 @@ end
 function selectModularSet(params)
     modularSetManager.call("selectModularSet", {modularSetKey = params.modularSetKey})
 
+    updateSetupButtons()
     highlightSelectedModularSets()
 end
 
@@ -578,21 +612,25 @@ function setMode(params)
         hideExpertSetButtons()
     end
 
+    updateSetupButtons()
     highlightSelectedMode()
 end
 
 function setStandardSet(params)
     scenarioManager.call("setStandardSet", {set = params.set})
+    updateSetupButtons()
     highlightSelectedMode()
 end
 
 function setExpertSet(params)
     scenarioManager.call("setExpertSet", {set = params.set})
+    updateSetupButtons()
     highlightSelectedMode()
 end
 
 function clearScenario()
     scenarioManager.call("clearScenario")
+
     showScenarioSelection()
 end
 
