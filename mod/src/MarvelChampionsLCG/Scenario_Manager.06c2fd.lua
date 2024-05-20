@@ -472,7 +472,7 @@ end
 function placeVillainHpCounter(villainKey, hitPoints, showAdvanceButton)
   local villain = currentScenario.villains[villainKey]
   local counter = villain.hpCounter or {}
-
+log(villainKey)
   local position = counter.position or defaults.villainHpCounter.position
   local rotation = counter.rotation or defaults.villainHpCounter.rotation
   local scale = counter.scale or defaults.villainHpCounter.scale
@@ -1390,357 +1390,249 @@ function configureAdvanceSchemeButton(schemeHpCounter, showAdvanceButton)
   end
 end
 
-
-
-function setUpVillain_kang(params)
-  local heroCount = heroManager.call("getHeroCount")
-
-  Wait.frames(
-    function()
-      advanceVillainStage(params.villainKey, heroCount)
-    end,
-    15
-  )
-end
-
-function getNextVillainStage_kang_kang(params)
-  local villain = currentScenario.villains.kang
-  local currentStageNumber = villain.currentStageNumber or 0
+function prepareScenario_kang()
   local mode = currentScenario.mode
 
-  if(currentStageNumber == 0) then
-    villain.stages = getKangStages(mode)
-  end
-
-  local nextStageNumber = currentStageNumber + 1
-
-  if(nextStageNumber == 2) then
-    return {key="stage2"}
-  end
-
-  local nextStage = villain.stages["stage" .. nextStageNumber]
-  nextStage.showAdvanceButton = nextStageNumber < 3
-
-  return nextStage
-end
-
-function placeVillainStage_kang_kang(params)
-  local villain = currentScenario.villains.kang
-  local stage = params.stage
-  local heroCount = params.heroCount
-
-  if(stage.key == "stage2") then
-    placeKangStage2()
-    return
-  end
-
-  placeKangHpCounter(defaults.villainHpCounter.position, defaults.villainHpCounter.scale, stage.key, 0, false)
-
-  Wait.frames(
-    function()
-      local villainPosition = villain.deckPosition or defaults.villainDeck.position
-      local villainRotation = villain.deckRotation or defaults.villainDeck.rotation
-      local villainScale = villain.deckScale or defaults.villainDeck.scale
-
-      --TODO: delete existing card, if necessary
-
-      Global.call("deleteCardAtPosition", {position = villainPosition})
-
-      local locked = true;
-      if(villain.locked ~= nil) then
-        locked = stage.locked
-      end
-
-      local flipped = stage.flipCard or false
-
-      getCardByID(
-        stage.cardId, 
-        villainPosition, 
-        {scale = villainScale, name = villain.name, flipped = flipped, locked=locked})
-
-      local hitPoints = (stage.hitPoints or 0) + ((stage.hitPointsPerPlayer or 0) * heroCount)
-      local villainHpCounter = getObjectFromGUID(currentScenario.villains.kang.stages[stage.key].hpCounter.guid)
-
-      villainHpCounter.call("setValue", {value = hitPoints}) 
-      configureSecondaryVillainButton(villainHpCounter, villain.hpCounter.secondaryButton)
-      configureAdvanceVillainButton(villainHpCounter, stage.showAdvanceButton)
-    end,
-    20
-  )
-end
-
-function placeKangStage2()
-  local mode = currentScenario.mode
-  local villain = currentScenario.villains.kang
-  local stages = {}
-
-  for key, villain in pairs(currentScenario.villains) do
-    if(string.sub(key, 1, 6) == "stage2") then
-      table.insert(stages, villain)
-    end
-  end
-
-  math.randomseed(os.time())
-
-  local playerColors = {"Red", "Blue", "Green", "Yellow"}
-
-  for _, playerColor in pairs(playerColors) do
-    local hero = getHeroByPlayerColor({playerColor = playerColor})
-
-    if(hero) then
-      local stage = getRandomKangStage2(stages)    
-      local layout = kangStage2Layout[playerColor]
-    
-      getCardByID(
-        stage.cardId, 
-        layout.villainPosition, 
-        {scale = layout.villainScale, name=stage.villainName, flipped=false, locked=true})
-      
-      -- local hitPoints = stage.hitPoints)
-      -- local villainHpCounter = getObjectFromGUID(villain.hpCounter.guid)
-    
-      -- Wait.frames(
-      --   function()
-      --     villainHpCounter.call("setValue", {value = hitPoints}) 
-      --     configureSecondaryVillainButton(villainHpCounter, villain.hpCounter.secondaryButton)
-      --     configureAdvanceVillainButton(villainHpCounter, stage.showAdvanceButton)
-      --   end,
-      --   20
-      -- )      
-    end
-  end
-end
-
-function getKangStages(mode)
   if(mode == "standard") then
-    return {
-      stage1 = {cardId = "11001", hitPointsPerPlayer = 12, key="stage1"},
-      stage2a = {cardId = "11002", hitPoints = 18, key="stage2a", villainName="Immortus", schemeCardId="11002"},
-      stage2b = {cardId = "11003", hitPoints = 18, key="stage2b", villainName="Iron Lad", schemeCardId="11003"},
-      stage2c = {cardId = "11004", hitPoints = 18, key="stage2c", villainName="Rama-Tut", schemeCardId="11004"},
-      stage2d = {cardId = "11005", hitPoints = 18, key="stage2d", villainName="ScarletCenturion", schemeCardId="11005"},
-      stage3 = {cardId = "11006", hitPointsPerPlayer = 20, key="stage3"}
-    }
+    currentScenario.villains.stage1 = currentScenario.standardVillains.stage1
+  else
+    currentScenario.villains.stage1 = currentScenario.expertVillains.stage1
   end
-
-  return {
-    stage1 = {cardId = "11034", hitPointsPerPlayer = 12, key="stage1"},
-    stage2a = {cardId = "11035", hitPoints = 22, key="stage2a", villainName="Immortus", schemeCardId="11035"},
-    stage2b = {cardId = "11036", hitPoints = 22, key="stage2b", villainName="Iron Lad", schemeCardId="11036"},
-    stage2c = {cardId = "11037", hitPoints = 22, key="stage2c", villainName="Rama-Tut", schemeCardId="11037"},
-    stage2d = {cardId = "11038", hitPoints = 22, key="stage2d", villainName="Scarlet Centurion", schemeCardId="11038"},
-    stage3 = {cardId = "11039", hitPointsPerPlayer = 20, key="stage3"}
-  }
-end
-
-local kangStage2Layout = {
-  Red={
-    villainPosition={-30, 1,00, 20.44},
-    villainScale={3.64, 1.00, 3.64},
-    hpCounterPosition={-30, 0.96, 29.15},
-    hpCounterScale={2.01, 1.00, 2.01},
-    schemePosition={-21.25, 0.97, 22.45},
-    schemeScale={2.93, 1.00, 2.93}
-  }, 
-  Blue={
-    villainPosition={-15, 1,00, 20.44},
-    villainScale={3.64, 1.00, 3.64},
-    hpCounterPosition={-15, 0.96, 29.15},
-    hpCounterScale={2.01, 1.00, 2.01},
-    schemePosition={-6.25, 0.97, 22.45},
-    schemeScale={2.93, 1.00, 2.93}
-  }, 
-  Green={
-    villainPosition={15, 1,00, 20.44},
-    villainScale={3.64, 1.00, 3.64},
-    hpCounterPosition={15, 0.96, 29.15},
-    hpCounterScale={2.01, 1.00, 2.01},
-    schemePosition={23.75, 0.97, 22.45},
-    schemeScale={2.93, 1.00, 2.93}
-  }, 
-  Yellow={
-    villainPosition={30, 1,00, 20.44},
-    villainScale={3.64, 1.00, 3.64},
-    hpCounterPosition={30, 0.96, 29.15},
-    hpCounterScale={2.01, 1.00, 2.01},
-    schemePosition={38.75, 0.97, 22.45},
-    schemeScale={2.93, 1.00, 2.93}
-  }
-}
-
-function placeKangHpCounter(position, scale, stageKey, hitPoints, showAdvanceButton)
-  local hpCounter = spawnAsset({
-    guid = Global.getVar("ASSET_GUID_VILLAIN_HEALTH_COUNTER"),
-    position = position,
-    rotation = defaults.villainHpCounter.rotation,
-    scale = scale,
-    imageUrl = currentScenario.villains.kang.hpCounter.imageUrl,
-    lock = true,
-    hitPoints = hitPoints,
-    showAdvanceButton = showAdvanceButton,
-    stageKey = stageKey,
-    callback = "configureKangHpCounter"
-  })
-end
-
-function configureKangHpCounter(params)
-  local counter = params.spawnedObject
-  local hitPoints = params.hitPoints or 0
-  local stageKey = params.stageKey
-
-  counter.setPosition(params.position)
-  counter.setName("")
-  counter.setDescription("")
-  counter.setLock(params.lock)
-  counter.setCustomObject({image = params.imageUrl})
-
-  Wait.frames(
-    function()
-      counter.call("setVillainKey", {villainKey = villainKey})
-      counter.call("setValue", {value = hitPoints})
-      local reloadedCounter = counter.reload()
-      currentScenario.villains.kang.stages[stageKey].hpCounter = {guid = reloadedCounter.getGUID()}
-    end,
-    10
-  )
-end
-
-function getRandomKangStage2(stages)
-  local unplacedStages = {}
-
-  for key, stage in pairs(stages) do
-    if(not stage.placed) then
-      table.insert(unplacedStages, stage)
-    end
-  end
-
-  local stage = stages[math.random(#unplacedStages)]
-  stage.placed = true
-
-  return stage
-end
-
-function getNextSchemeStage_kang_main(params)
-  local scheme = currentScenario.schemes.main
-  local currentStageNumber = scheme.currentStageNumber or 0
-  local nextStageKey = "stage" .. (tonumber(currentStageNumber) + 1)
-  local nextStage = scheme.stages[nextStageKey]
-
-  local nextNextStageKey = "stage" .. (tonumber(currentStageNumber) + 2)
-  local showAdvanceButton = scheme.stages[nextNextStageKey] ~= nil
-
-  nextStage.showAdvanceButton = false
-
-  return nextStage
 end
 
 
-function prepareScenario_darkBeast()
-  encounterSetManager.call("removeModularSet", {modularSetKey = "genosha"})
-  encounterSetManager.call("removeModularSet", {modularSetKey = "blueMoon"})
-  encounterSetManager.call("removeModularSet", {modularSetKey = "savageLand"})
+-- function getNextVillainStage_kang_kang(params)
+--   local villain = currentScenario.villains.kang
+--   local currentStageNumber = villain.currentStageNumber or 0
+--   local mode = currentScenario.mode
 
-  local environments = {}
-  table.insert(environments, "genosha")
-  table.insert(environments, "blueMoon")
-  table.insert(environments, "savageLand")
+--   if(currentStageNumber == 0) then
+--     villain.stages = getKangStages(mode)
+--   end
 
-  currentScenario.environments = Global.call("shuffleTable", {table=environments})
-  currentScenario.environmentIndex = 1
-end
+--   local nextStageNumber = currentStageNumber + 1
 
-function placeDarkBeastEnvironment()
-  if(currentScenario.environmentIndex > #currentScenario.environments) then
-    broadcastToAll("All environments have been placed.", {1,1,1})
-    return
-  end
+--   if(nextStageNumber == 2) then
+--     return {key="stage2"}
+--   end
 
-  local modularKey = currentScenario.environments[currentScenario.environmentIndex]
-  local modularSet = nil
+--   local nextStage = villain.stages["stage" .. nextStageNumber]
+--   nextStage.showAdvanceButton = nextStageNumber < 3
 
-  --TODO: refactor this to use modular set definitions
+--   return nextStage
+-- end
 
-  if(modularKey == "savageLand") then
-    modularSet = {
-      environment = {
-        cardId = "45127",
-        name = "Savage Land"
-      },
-      cards = {
-        ["45128"]=1,
-        ["45129"]=2,
-        ["45130"]=2,
-        ["45131"]=1,
-        ["45132"]=1
-      }
-    }
-  end
+-- function placeVillainStage_kang_kang(params)
+--   local villain = currentScenario.villains.kang
+--   local stage = params.stage
+--   local heroCount = params.heroCount
 
-  if(modularKey == "genosha") then
-    modularSet = {
-      environment = {
-        cardId = "45133",
-        name = "Genosha"
-      },
-      cards = {
-        ["45134"]=3,
-        ["45135"]=1,
-        ["45136"]=1,
-        ["45137"]=1,
-        ["45138"]=1
-      }
-    }
-  end
+--   if(stage.key == "stage2") then
+--     placeKangStage2()
+--     return
+--   end
 
-  if(modularKey == "blueMoon") then
-    modularSet = {
-      environment = {
-        cardId = "45139",
-        name = "Blue Moon"
-      },
-      cards = {
-        ["45140"]=1,
-        ["45141"]=1,
-        ["45142"]=1,
-        ["45143"]=1,
-        ["45144"]=1,
-        ["45145"]=1,
-        ["45146"]=1
-      }
-    }
-  end
+--   placeKangHpCounter(defaults.villainHpCounter.position, defaults.villainHpCounter.scale, stage.key, 0, false)
 
-  local deckPosition = getEncounterDeckPosition()
-  local environmentPosition = {19.50, 1.00, 30.00}
-  local rotation = {0,180,180}
-  local scale = defaults.encounterDeck.scale
+--   Wait.frames(
+--     function()
+--       local villainPosition = villain.deckPosition or defaults.villainDeck.position
+--       local villainRotation = villain.deckRotation or defaults.villainDeck.rotation
+--       local villainScale = villain.deckScale or defaults.villainDeck.scale
 
-  if(deckPosition[2] < 3) then
-    deckPosition[2] = 3
-  end
+--       --TODO: delete existing card, if necessary
 
-  Global.call("discardCardAtPosition", {position = environmentPosition})
+--       Global.call("deleteCardAtPosition", {position = villainPosition})
 
-  getCardByID(
-    modularSet.environment.cardId, 
-    environmentPosition, 
-    {
-      scale = scale, 
-      name = modularSet.environment.name, 
-      flipped = false})
- 
-  createDeck({cards=modularSet.cards, position=deckPosition, rotation=rotation, scale=scale})
+--       local locked = true;
+--       if(villain.locked ~= nil) then
+--         locked = stage.locked
+--       end
 
-  Wait.frames(
-      function()
-          Global.call("shuffleDeck", {deckPosition = deckPosition})
-      end,
-      30)
+--       local flipped = stage.flipCard or false
 
-  broadcastToAll(modularSet.environment.name.." encounter set has been added to encounter deck.", {1,1,1})
+--       getCardByID(
+--         stage.cardId, 
+--         villainPosition, 
+--         {scale = villainScale, name = villain.name, flipped = flipped, locked=locked})
 
-  currentScenario.environmentIndex = currentScenario.environmentIndex + 1
-end
+--       local hitPoints = (stage.hitPoints or 0) + ((stage.hitPointsPerPlayer or 0) * heroCount)
+--       local villainHpCounter = getObjectFromGUID(currentScenario.villains.kang.stages[stage.key].hpCounter.guid)
+
+--       villainHpCounter.call("setValue", {value = hitPoints}) 
+--       configureSecondaryVillainButton(villainHpCounter, villain.hpCounter.secondaryButton)
+--       configureAdvanceVillainButton(villainHpCounter, stage.showAdvanceButton)
+--     end,
+--     20
+--   )
+-- end
+
+-- function placeKangStage2()
+--   local mode = currentScenario.mode
+--   local villain = currentScenario.villains.kang
+--   local stages = {}
+
+--   for key, villain in pairs(currentScenario.villains) do
+--     if(string.sub(key, 1, 6) == "stage2") then
+--       table.insert(stages, villain)
+--     end
+--   end
+
+--   math.randomseed(os.time())
+
+--   local playerColors = {"Red", "Blue", "Green", "Yellow"}
+
+--   for _, playerColor in pairs(playerColors) do
+--     local hero = getHeroByPlayerColor({playerColor = playerColor})
+
+--     if(hero) then
+--       local stage = getRandomKangStage2(stages)    
+--       local layout = kangStage2Layout[playerColor]
+    
+--       getCardByID(
+--         stage.cardId, 
+--         layout.villainPosition, 
+--         {scale = layout.villainScale, name=stage.villainName, flipped=false, locked=true})
+      
+--       -- local hitPoints = stage.hitPoints)
+--       -- local villainHpCounter = getObjectFromGUID(villain.hpCounter.guid)
+    
+--       -- Wait.frames(
+--       --   function()
+--       --     villainHpCounter.call("setValue", {value = hitPoints}) 
+--       --     configureSecondaryVillainButton(villainHpCounter, villain.hpCounter.secondaryButton)
+--       --     configureAdvanceVillainButton(villainHpCounter, stage.showAdvanceButton)
+--       --   end,
+--       --   20
+--       -- )      
+--     end
+--   end
+-- end
+
+-- function getKangStages(mode)
+--   if(mode == "standard") then
+--     return {
+--       stage1 = {cardId = "11001", hitPointsPerPlayer = 12, key="stage1"},
+--       stage2a = {cardId = "11002", hitPoints = 18, key="stage2a", villainName="Immortus", schemeCardId="11002"},
+--       stage2b = {cardId = "11003", hitPoints = 18, key="stage2b", villainName="Iron Lad", schemeCardId="11003"},
+--       stage2c = {cardId = "11004", hitPoints = 18, key="stage2c", villainName="Rama-Tut", schemeCardId="11004"},
+--       stage2d = {cardId = "11005", hitPoints = 18, key="stage2d", villainName="Scarlet Centurion", schemeCardId="11005"},
+--       stage3 = {cardId = "11006", hitPointsPerPlayer = 20, key="stage3"}
+--     }
+--   end
+
+--   return {
+--     stage1 = {cardId = "11034", hitPointsPerPlayer = 12, key="stage1"},
+--     stage2a = {cardId = "11035", hitPoints = 22, key="stage2a", villainName="Immortus", schemeCardId="11035"},
+--     stage2b = {cardId = "11036", hitPoints = 22, key="stage2b", villainName="Iron Lad", schemeCardId="11036"},
+--     stage2c = {cardId = "11037", hitPoints = 22, key="stage2c", villainName="Rama-Tut", schemeCardId="11037"},
+--     stage2d = {cardId = "11038", hitPoints = 22, key="stage2d", villainName="Scarlet Centurion", schemeCardId="11038"},
+--     stage3 = {cardId = "11039", hitPointsPerPlayer = 20, key="stage3"}
+--   }
+-- end
+
+-- local kangStage2Layout = {
+--   Red={
+--     villainPosition={-30, 1,00, 20.44},
+--     villainScale={3.64, 1.00, 3.64},
+--     hpCounterPosition={-30, 0.96, 29.15},
+--     hpCounterScale={2.01, 1.00, 2.01},
+--     schemePosition={-21.25, 0.97, 22.45},
+--     schemeScale={2.93, 1.00, 2.93}
+--   }, 
+--   Blue={
+--     villainPosition={-15, 1,00, 20.44},
+--     villainScale={3.64, 1.00, 3.64},
+--     hpCounterPosition={-15, 0.96, 29.15},
+--     hpCounterScale={2.01, 1.00, 2.01},
+--     schemePosition={-6.25, 0.97, 22.45},
+--     schemeScale={2.93, 1.00, 2.93}
+--   }, 
+--   Green={
+--     villainPosition={15, 1,00, 20.44},
+--     villainScale={3.64, 1.00, 3.64},
+--     hpCounterPosition={15, 0.96, 29.15},
+--     hpCounterScale={2.01, 1.00, 2.01},
+--     schemePosition={23.75, 0.97, 22.45},
+--     schemeScale={2.93, 1.00, 2.93}
+--   }, 
+--   Yellow={
+--     villainPosition={30, 1,00, 20.44},
+--     villainScale={3.64, 1.00, 3.64},
+--     hpCounterPosition={30, 0.96, 29.15},
+--     hpCounterScale={2.01, 1.00, 2.01},
+--     schemePosition={38.75, 0.97, 22.45},
+--     schemeScale={2.93, 1.00, 2.93}
+--   }
+-- }
+
+-- function placeKangHpCounter(position, scale, stageKey, hitPoints, showAdvanceButton)
+--   local hpCounter = spawnAsset({
+--     guid = Global.getVar("ASSET_GUID_VILLAIN_HEALTH_COUNTER"),
+--     position = position,
+--     rotation = defaults.villainHpCounter.rotation,
+--     scale = scale,
+--     imageUrl = currentScenario.villains.kang.hpCounter.imageUrl,
+--     lock = true,
+--     hitPoints = hitPoints,
+--     showAdvanceButton = showAdvanceButton,
+--     stageKey = stageKey,
+--     callback = "configureKangHpCounter"
+--   })
+-- end
+
+-- function configureKangHpCounter(params)
+--   local counter = params.spawnedObject
+--   local hitPoints = params.hitPoints or 0
+--   local stageKey = params.stageKey
+
+--   counter.setPosition(params.position)
+--   counter.setName("")
+--   counter.setDescription("")
+--   counter.setLock(params.lock)
+--   counter.setCustomObject({image = params.imageUrl})
+
+--   Wait.frames(
+--     function()
+--       counter.call("setVillainKey", {villainKey = villainKey})
+--       counter.call("setValue", {value = hitPoints})
+--       local reloadedCounter = counter.reload()
+--       currentScenario.villains.kang.stages[stageKey].hpCounter = {guid = reloadedCounter.getGUID()}
+--     end,
+--     10
+--   )
+-- end
+
+-- function getRandomKangStage2(stages)
+--   local unplacedStages = {}
+
+--   for key, stage in pairs(stages) do
+--     if(not stage.placed) then
+--       table.insert(unplacedStages, stage)
+--     end
+--   end
+
+--   local stage = stages[math.random(#unplacedStages)]
+--   stage.placed = true
+
+--   return stage
+-- end
+
+-- function getNextSchemeStage_kang_main(params)
+--   local scheme = currentScenario.schemes.main
+--   local currentStageNumber = scheme.currentStageNumber or 0
+--   local nextStageKey = "stage" .. (tonumber(currentStageNumber) + 1)
+--   local nextStage = scheme.stages[nextStageKey]
+
+--   local nextNextStageKey = "stage" .. (tonumber(currentStageNumber) + 2)
+--   local showAdvanceButton = scheme.stages[nextNextStageKey] ~= nil
+
+--   nextStage.showAdvanceButton = false
+
+--   return nextStage
+-- end
+
+
 
 require('!/Cardplacer')
 
@@ -1760,7 +1652,7 @@ require('!/scenarios/nebula')
 require('!/scenarios/escape_the_museum')
 require('!/scenarios/infiltrate_the_museum')
 require('!/scenarios/brotherhood_of_badoon')
-require('!/scenarios/once_and_future_kang')
+
 require('!/scenarios/red_skull')
 require('!/scenarios/zola')
 require('!/scenarios/taskmaster')

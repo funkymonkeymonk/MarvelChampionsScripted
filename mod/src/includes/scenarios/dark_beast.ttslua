@@ -63,3 +63,110 @@ scenarios["darkBeast"] =
         }
     }
 }
+
+function prepareScenario_darkBeast()
+  encounterSetManager.call("removeModularSet", {modularSetKey = "genosha"})
+  encounterSetManager.call("removeModularSet", {modularSetKey = "blueMoon"})
+  encounterSetManager.call("removeModularSet", {modularSetKey = "savageLand"})
+
+  local environments = {}
+  table.insert(environments, "genosha")
+  table.insert(environments, "blueMoon")
+  table.insert(environments, "savageLand")
+
+  currentScenario.environments = Global.call("shuffleTable", {table=environments})
+  currentScenario.environmentIndex = 1
+end
+
+function placeDarkBeastEnvironment()
+  if(currentScenario.environmentIndex > #currentScenario.environments) then
+    broadcastToAll("All environments have been placed.", {1,1,1})
+    return
+  end
+
+  local modularKey = currentScenario.environments[currentScenario.environmentIndex]
+  local modularSet = nil
+
+  --TODO: refactor this to use modular set definitions
+
+  if(modularKey == "savageLand") then
+    modularSet = {
+      environment = {
+        cardId = "45127",
+        name = "Savage Land"
+      },
+      cards = {
+        ["45128"]=1,
+        ["45129"]=2,
+        ["45130"]=2,
+        ["45131"]=1,
+        ["45132"]=1
+      }
+    }
+  end
+
+  if(modularKey == "genosha") then
+    modularSet = {
+      environment = {
+        cardId = "45133",
+        name = "Genosha"
+      },
+      cards = {
+        ["45134"]=3,
+        ["45135"]=1,
+        ["45136"]=1,
+        ["45137"]=1,
+        ["45138"]=1
+      }
+    }
+  end
+
+  if(modularKey == "blueMoon") then
+    modularSet = {
+      environment = {
+        cardId = "45139",
+        name = "Blue Moon"
+      },
+      cards = {
+        ["45140"]=1,
+        ["45141"]=1,
+        ["45142"]=1,
+        ["45143"]=1,
+        ["45144"]=1,
+        ["45145"]=1,
+        ["45146"]=1
+      }
+    }
+  end
+
+  local deckPosition = getEncounterDeckPosition()
+  local environmentPosition = {19.50, 1.00, 30.00}
+  local rotation = {0,180,180}
+  local scale = defaults.encounterDeck.scale
+
+  if(deckPosition[2] < 3) then
+    deckPosition[2] = 3
+  end
+
+  Global.call("discardCardAtPosition", {position = environmentPosition})
+
+  getCardByID(
+    modularSet.environment.cardId, 
+    environmentPosition, 
+    {
+      scale = scale, 
+      name = modularSet.environment.name, 
+      flipped = false})
+ 
+  createDeck({cards=modularSet.cards, position=deckPosition, rotation=rotation, scale=scale})
+
+  Wait.frames(
+      function()
+          Global.call("shuffleDeck", {deckPosition = deckPosition})
+      end,
+      30)
+
+  broadcastToAll(modularSet.environment.name.." encounter set has been added to encounter deck.", {1,1,1})
+
+  currentScenario.environmentIndex = currentScenario.environmentIndex + 1
+end
