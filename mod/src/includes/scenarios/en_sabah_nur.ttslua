@@ -11,14 +11,17 @@ scenarios["enSabahNur"] =
             stages={
                 stage1={
                     cardId="45184",
+                    assetId="459648",
                     hitPointsPerPlayer=16
                 },
                 stage2={
                     cardId="45185",
+                    assetId="40ea4a",
                     hitPointsPerPlayer=20
                 },
                 stage3={
                     cardId="45186",
+                    assetId="4ad752",
                     hitPointsPerPlayer=24
                 }
             }
@@ -42,7 +45,7 @@ scenarios["enSabahNur"] =
     },
     decks={
         encounterDeck={
-            name="Unus' Encounter Deck",
+            name="En Sabah Nur's Encounter Deck",
             cards={
                 ["45149"]=2,
                 ["45150"]=2,
@@ -57,5 +60,12 @@ scenarios["enSabahNur"] =
     modularSets={
         celestialTech="optional",
         clanAkkaba="optional"
+    },
+        notes={
+        easyMode={
+            title="Apocalypse's Forms",
+            text="Apocalypse's villain cards are multi-state. To change forms, either right-click and select a different state, or place your pointer over the card and type 1, 2, or 3.",
+            position={0,0,0}
+        }
     }
 }

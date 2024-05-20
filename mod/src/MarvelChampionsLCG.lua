@@ -8,7 +8,7 @@ ENCOUNTER_DECK_POSITION = {-12.75, 1.06, 22.25}
 ENCOUNTER_DECK_ROTATION = {0.00, 180.00, 180.00}
 ENCOUNTER_DECK_SCALE    = {2.12, 1.00, 2.12}
 
-VILLAIN_POSITION = {-0.34, 2.00, 20.44}
+VILLAIN_POSITION = {-0.34, 1.00, 20.44}
 VILLAIN_ROTATION = {0.00, 180.00, 0.00}
 VILLAIN_SCALE    = {3.64, 1.00, 3.64}
 
@@ -281,6 +281,7 @@ function shuffleDeck(params)
       log("no deck found at position " .. params.deckPosition)
       return
    end
+   log(items)
    local deck = items[1]
    deck.shuffle()
 end
@@ -321,3 +322,36 @@ function onPlayerAction(player, action, targets)
 
    return true
 end
+
+function shuffleTable(params)
+   local tbl = params.table
+   math.randomseed(os.time())
+ 
+   for i = #tbl, 2, -1 do
+     local j = math.random(i)
+     tbl[i], tbl[j] = tbl[j], tbl[i]
+   end
+ 
+   return tbl
+ end
+ 
+ function deleteCardAtPosition(params)
+   local position = params.position
+   local items = findInRadiusBy(position, 3, isCard, false)
+
+   if #items > 0 then
+     items[1].destroy()
+   end
+ end
+
+ function discardCardAtPosition(params)
+   local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
+   local position = params.position
+   local discardPosition = Vector(scenarioManager.call('getEncounterDiscardPosition'))
+   local items = findInRadiusBy(position, 3, isCard, false)
+
+   if #items > 0 then
+     items[1].setPositionSmooth(discardPosition, false, false)
+     items[1].setRotationSmooth({0,180,0}, false, false)
+   end
+ end

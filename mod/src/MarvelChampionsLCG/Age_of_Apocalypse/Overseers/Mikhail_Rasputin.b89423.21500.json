@@ -1,0 +1,61 @@
+{
+  "Object": {
+    "GUID": "b89423",
+    "Name": "Card",
+    "Transform": {
+      "posX": 6.60699,
+      "posY": 0.9741905,
+      "posZ": 6.17390537,
+      "rotX": -0.0046885754,
+      "rotY": 179.99913,
+      "rotZ": 0.03871383,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Mikhail Rasputin",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 21500,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "215": {
+        "FaceURL": "https://dcqvlrey92bew.cloudfront.net/45183A.jpg",
+        "BackURL": "https://dcqvlrey92bew.cloudfront.net/45183B.jpg",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

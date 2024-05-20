@@ -4,11 +4,11 @@
     "Name": "Bag",
     "Transform": {
       "posX": -74.25,
-      "posY": 0.3114761,
-      "posZ": 29.0000153,
-      "rotX": -0.00300818635,
-      "rotY": -0.000060111015,
-      "rotZ": 5.73539637e-7,
+      "posY": 0.311476052,
+      "posZ": 28.9999771,
+      "rotX": -0.003007993,
+      "rotY": -0.0000365922133,
+      "rotZ": 2.677648e-7,
       "scaleX": 1,
       "scaleY": 1,
       "scaleZ": 1
@@ -22,8 +22,8 @@
       "z": 0
     },
     "ColorDiffuse": {
-      "r": 0.252173066,
-      "g": 0.317966342,
+      "r": 0.252172917,
+      "g": 0.3179662,
       "b": 0.757839739
     },
     "LayoutGroupSortIndex": 0,
@@ -52,6 +52,7 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
+    "Overseers.1aa5fd.json",
     "Campaign.724d47.json",
     "Mission_Player_Cards.ec251d.json",
     "Missions.c42b19.json",

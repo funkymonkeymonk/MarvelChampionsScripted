@@ -124,6 +124,10 @@ function selectModularSet(params)
     addRemoveSelectedSet(params.modularSetKey)
 end
 
+function removeModularSet(params)
+    selectedSets[params.modularSetKey] = nil
+end
+
 function addRemoveSelectedSet(key)
     for k, v in pairs(selectedSets) do
         if(k == key) then
@@ -167,6 +171,10 @@ function addEncounterSetToDeck(params)
         cardId = k
     end     
 
+    if(position.y < 3) then
+        position.y = 3
+    end
+
     if(deckCount < 2) then
         getCardByID(
             cardId,
@@ -174,10 +182,6 @@ function addEncounterSetToDeck(params)
             {scale=scale, flipped=true})
     else
         createDeck({cards=modularSet.cards, position=position, rotation=rotation, scale=scale})
-    end
-
-    if(position.y < 3) then
-        position.y = 3
     end
 
     Wait.frames(

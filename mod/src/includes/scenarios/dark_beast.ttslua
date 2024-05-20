@@ -37,18 +37,29 @@ scenarios["darkBeast"] =
     },
     decks={
         encounterDeck={
-            name="Unus' Encounter Deck",
+            name="Dark Beast's Encounter Deck",
             cards={
                 ["45122"]=1,
                 ["45123"]=1,
                 ["45124"]=2,
                 ["45125"]=3,
                 ["45126"]=2
-
             }
         }
     },
     modularSets={
-        dystopianNightmare="optional"
+        dystopianNightmare="optional",
+        blueMoon="required",
+        genosha="required",
+        savageLand="required"
+    },
+    extras={
+        darkBeastEnvironmentPanel={
+            name="",
+            guid="bc4a47",
+            position={32.75, 0.96, 19.25},
+            rotation={0, 180, 0},
+            scale={5,1,5}
+        }
     }
 }

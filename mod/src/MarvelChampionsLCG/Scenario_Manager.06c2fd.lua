@@ -272,9 +272,26 @@ function setUpScenario()
   placeBlackHole(currentScenario)
   placeBoostPanel(currentScenario)
 
+  placeNotes()
+
   finalizeSetUp(currentScenario)
 
   saveData()
+end
+
+function placeNotes()
+  if(currentScenario.notes == nil) then return end
+
+  for k, v in pairs(currentScenario.notes) do
+    spawnObject({
+      type = "Notecard",
+      position = v.position,
+      callback_function = function(spawned_object)
+        spawned_object.setName(v.title)
+        spawned_object.setDescription(v.text)
+      end
+    })
+  end
 end
 
 function prepareScenario()
@@ -1207,7 +1224,7 @@ function placeVillainStage(villain, stage, heroCount)
   local villainRotation = villain.deckRotation or defaults.villainDeck.rotation
   local villainScale = villain.deckScale or defaults.villainDeck.scale
 
-  --TODO: delete existing card, if necessary
+  Global.call("deleteCardAtPosition", {position = villainPosition})
 
   local locked = true;
   if(villain.locked ~= nil) then
@@ -1216,10 +1233,21 @@ function placeVillainStage(villain, stage, heroCount)
 
   local flipped = stage.flipCard or false
 
-  getCardByID(
-    stage.cardId, 
-    villainPosition, 
-    {scale = villainScale, name = villain.name, flipped = flipped, locked=locked})
+  if(stage.assetId ~= nil) then
+    spawnAsset({
+      guid = stage.assetId,
+      position = villainPosition,
+      rotation = villainRotation,
+      scale = villainScale,
+      locked = locked,
+      callback = "configureVillainStage"
+     })
+  else
+    getCardByID(
+      stage.cardId, 
+      villainPosition, 
+      {scale = villainScale, name = villain.name, flipped = flipped, locked=locked})  
+  end
   
   local hitPoints = (stage.hitPoints or 0) + ((stage.hitPointsPerPlayer or 0) * heroCount)
   local villainHpCounter = getObjectFromGUID(villain.hpCounter.guid)
@@ -1232,6 +1260,14 @@ function placeVillainStage(villain, stage, heroCount)
     end,
     20
   )
+end
+
+function configureVillainStage(params)
+  local villain = params.spawnedObject
+  villain.setPosition(params.position)
+  villain.setRotation(params.rotation)
+  villain.setScale(params.scale)
+  villain.setLock(params.locked)
 end
 
 function setUpVillainStage(villain, stage, heroCount)
@@ -1294,12 +1330,14 @@ function placeSchemeStage(scheme, stage, heroCount)
   local schemeRotation = scheme.rotation or defaults.mainSchemeDeck.rotation
   local schemeScale = scheme.scale or defaults.mainSchemeDeck.scale
 
+  Global.call("deleteCardAtPosition", {position = schemePosition})
   --TODO: delete existing card, if necessary
-  
+  local flipped = stage.flipCard or false
+
   getCardByID(
     stage.cardId, 
     schemePosition, 
-    {scale = schemeScale, name = scheme.name, flipped = false, landscape = true})
+    {scale = schemeScale, name = scheme.name, flipped = flipped, landscape = true})
 
   local counter = scheme.counter or {}
 
@@ -1405,6 +1443,8 @@ function placeVillainStage_kang_kang(params)
       local villainScale = villain.deckScale or defaults.villainDeck.scale
 
       --TODO: delete existing card, if necessary
+
+      Global.call("deleteCardAtPosition", {position = villainPosition})
 
       local locked = true;
       if(villain.locked ~= nil) then
@@ -1594,115 +1634,112 @@ function getNextSchemeStage_kang_main(params)
   return nextStage
 end
 
-function prepareScenario_fourHorsemen()
-  currentScenario.activeHorsemanNumber = 1
 
-  randomizeFourHorsemen()
-  setUpFourHorsemenSideSchemes()
+function prepareScenario_darkBeast()
+  encounterSetManager.call("removeModularSet", {modularSetKey = "genosha"})
+  encounterSetManager.call("removeModularSet", {modularSetKey = "blueMoon"})
+  encounterSetManager.call("removeModularSet", {modularSetKey = "savageLand"})
+
+  local environments = {}
+  table.insert(environments, "genosha")
+  table.insert(environments, "blueMoon")
+  table.insert(environments, "savageLand")
+
+  currentScenario.environments = Global.call("shuffleTable", {table=environments})
+  currentScenario.environmentIndex = 1
 end
 
-function randomizeFourHorsemen()
-  local horsemenQueue = {}
-
-  for k, v in pairs(currentScenario.villains) do
-    table.insert(horsemenQueue, k)
+function placeDarkBeastEnvironment()
+  if(currentScenario.environmentIndex > #currentScenario.environments) then
+    broadcastToAll("All environments have been placed.", {1,1,1})
+    return
   end
 
-  shuffle(horsemenQueue)
+  local modularKey = currentScenario.environments[currentScenario.environmentIndex]
+  local modularSet = nil
 
-  currentScenario.horsemenQueue = horsemenQueue
+  --TODO: refactor this to use modular set definitions
 
-  local villains = currentScenario.villains
-
-  for i = 1, 4, 1 do
-    local horsemanKey = currentScenario.horsemenQueue[i]
-    local x = -15 + (10 * (i - 1))
-    
-    local horseman = villains[horsemanKey]
-    horseman.deckPosition = {x, 1.00, 20.44}
-    horseman.hpCounter.position = {x, 0.96, 29.15}
+  if(modularKey == "savageLand") then
+    modularSet = {
+      environment = {
+        cardId = "45127",
+        name = "Savage Land"
+      },
+      cards = {
+        ["45128"]=1,
+        ["45129"]=2,
+        ["45130"]=2,
+        ["45131"]=1,
+        ["45132"]=1
+      }
+    }
   end
-end
 
-function setUpFourHorsemenSideSchemes()
-  if(currentScenario.cards == nil) then currentScenario.cards = {} end
-  if(currentScenario.counters == nil) then currentScenario.counters = {} end
-
-  local sideSchemes = {}
-  table.insert(sideSchemes, "45086")
-  table.insert(sideSchemes, "45087")
-  table.insert(sideSchemes, "45088")
-  table.insert(sideSchemes, "45089")
-
-  shuffle(sideSchemes)
-
-  local heroCount = heroManager.call("getHeroCount")
-
-  for i = 1, 4 do
-    if(i <= heroCount) then
-      local cardKey = "sideScheme" .. i
-      local cardId = sideSchemes[i]
-      local y = 21.75 - ((i - 1) * 5)
-      local cardPosition = {25.75, 1.00, y} 
-
-      currentScenario.cards[cardKey] = {cardId = cardId, position = cardPosition, scale = Vector(Global.getVar("CARD_SCALE_ENCOUNTER")), landscape = true}
-
-      y = 20.30 - ((i - 1) * 5)
-      local counterPosition = {25.37, 1.10, y}
-
-      currentScenario.counters[cardKey.."threat"] = {type="threat", position = counterPosition, scale = {0.48, 1.00, 0.48}, threat = 6, locked=false}
-    else
-      currentScenario.decks.encounterDeck.cards[sideSchemes[i]] = 1
-      log("Adding " .. sideSchemes[i] .. " to encounter deck")
-    end
+  if(modularKey == "genosha") then
+    modularSet = {
+      environment = {
+        cardId = "45133",
+        name = "Genosha"
+      },
+      cards = {
+        ["45134"]=3,
+        ["45135"]=1,
+        ["45136"]=1,
+        ["45137"]=1,
+        ["45138"]=1
+      }
+    }
   end
-  log(currentScenario.decks.encounterDeck)
-end
 
-function finalizeSetup_fourHorsemen()
-  --TODO: Refactor setUpScenario with coroutines to prevent having to use Wait.frames here
+  if(modularKey == "blueMoon") then
+    modularSet = {
+      environment = {
+        cardId = "45139",
+        name = "Blue Moon"
+      },
+      cards = {
+        ["45140"]=1,
+        ["45141"]=1,
+        ["45142"]=1,
+        ["45143"]=1,
+        ["45144"]=1,
+        ["45145"]=1,
+        ["45146"]=1
+      }
+    }
+  end
+
+  local deckPosition = getEncounterDeckPosition()
+  local environmentPosition = {19.50, 1.00, 30.00}
+  local rotation = {0,180,180}
+  local scale = defaults.encounterDeck.scale
+
+  if(deckPosition[2] < 3) then
+    deckPosition[2] = 3
+  end
+
+  Global.call("discardCardAtPosition", {position = environmentPosition})
+
+  getCardByID(
+    modularSet.environment.cardId, 
+    environmentPosition, 
+    {
+      scale = scale, 
+      name = modularSet.environment.name, 
+      flipped = false})
+ 
+  createDeck({cards=modularSet.cards, position=deckPosition, rotation=rotation, scale=scale})
+
   Wait.frames(
-    function()
-      updateActiveHorsemanHighlight()
-    end,
-    60
-  )
-end
+      function()
+          Global.call("shuffleDeck", {deckPosition = deckPosition})
+      end,
+      30)
 
-function advanceHorsemenQueue()
-  currentScenario.activeHorsemanNumber = currentScenario.activeHorsemanNumber + 1
-  if(currentScenario.activeHorsemanNumber > 4) then
-    currentScenario.activeHorsemanNumber = 1
-  end
+  broadcastToAll(modularSet.environment.name.." encounter set has been added to encounter deck.", {1,1,1})
 
-  updateActiveHorsemanHighlight()
-end
-
-function updateActiveHorsemanHighlight()
-  for i = 1, 4, 1 do
-    local horsemanKey = currentScenario.horsemenQueue[i]
-    local villain = currentScenario.villains[horsemanKey]
-    local hpCounter = getObjectFromGUID(villain.hpCounter.guid)
-
-    if(i == currentScenario.activeHorsemanNumber) then
-      hpCounter.highlightOn({1,1,0})
-      hpCounter.call("showSecondaryButton")
-    else
-      hpCounter.highlightOff()
-      hpCounter.call("hideSecondaryButton")
-    end
-  end
-end
-
-function shuffle(tbl)
-  math.randomseed(os.time())
-
-  for i = #tbl, 2, -1 do
-    local j = math.random(i)
-    tbl[i], tbl[j] = tbl[j], tbl[i]
-  end
-
-  return tbl
+  currentScenario.environmentIndex = currentScenario.environmentIndex + 1
 end
 
 require('!/Cardplacer')
