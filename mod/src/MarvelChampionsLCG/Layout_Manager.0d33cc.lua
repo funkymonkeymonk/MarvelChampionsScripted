@@ -76,8 +76,8 @@ function onload(saved_data)
     modularSetManager.call("layOutModularSetSelectors", {
         origin = originPosition,
         maxRowsOrColumns = columns,
-        columnGap = 9,
-        rowGap = 4,
+        columnGap = 8.75,
+        rowGap = 3.75,
         selectorScale = {1.6, 1, 1.6},
         modular = true,
         behavior = "select",

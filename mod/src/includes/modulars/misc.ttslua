@@ -134,3 +134,15 @@ modularSets["dreadpool"] =
         ["44042"]=1
     }
 }
+
+modularSets["sauron"] = 
+{
+    name="Sauron",
+    modular=true,
+    cards = {
+        ["46029"]=1,
+        ["46030"]=1,
+        ["46031"]=1,
+        ["46032"]=2,
+    }
+}

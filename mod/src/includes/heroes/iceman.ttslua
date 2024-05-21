@@ -1,0 +1,51 @@
+heroes["iceman"] = {
+    name = "Iceman",
+    identityCardId = "46001",
+    hitPoints = 11,
+    tileImageUrl = "http://cloud-3.steamusercontent.com/ugc/2502390525072158718/BA52456E562B5862150BBC9750AA075675208ADA/",
+    playmatImageUrl = "http://cloud-3.steamusercontent.com/ugc/2495635126627659362/D55BE602FCC9B39FA10E1CAADE60AE6586E7486D/",
+    obligationCardId = "46024",
+    teams = "mutants",
+    decks = {
+        hero = {
+            ["46003"]=2,
+            ["46004"]=1,
+            ["46005"]=1,
+            ["46006"]=1,
+            ["46007"]=2,
+            ["46008"]=1,
+            ["46009"]=2,
+            ["46010"]=2,
+            ["46011"]=3
+        },
+        starter = {
+            ["46012"]=1,
+            ["46013"]=1,
+            ["46014"]=3,
+            ["46015"]=3,
+            ["46016"]=3,
+            ["46017"]=3,
+            ["46018"]=1,
+            ["46019"]=1,
+            ["46020"]=1,
+            ["46021"]=3,
+            ["46022"]=3,
+            ["46023"]=2
+        },
+        nemesis = {
+            ["46025"]=1,
+            ["46026"]=1,
+            ["46027"]=1,
+            ["46028"]=2
+        }
+    },
+    extras = {
+        frostbit = {
+            type="deck",
+            offset = {-4.94, 3, -4.66},
+            cards = {
+                ["46002"] = 6
+            }
+        }
+    }
+}
