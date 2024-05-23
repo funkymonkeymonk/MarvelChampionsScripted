@@ -16862,7 +16862,7 @@ PACK_43 = [[
   },
   {
     "code": "43027",
-    "duplicate_of": "36026"
+    "duplicate_of": "05023"
   },
   {
     "name": "Combat Specialist",
