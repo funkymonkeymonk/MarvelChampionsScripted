@@ -43,6 +43,7 @@ heroes["iceman"] = {
         frostbit = {
             type="deck",
             offset = {-4.94, 3, -4.66},
+            flipped = true,
             cards = {
                 ["46002"] = 6
             }

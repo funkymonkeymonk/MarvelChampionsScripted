@@ -65,13 +65,13 @@ end
 function createHeroButtons()
     self.createButton({
       label = "S|", click_function = "placeHeroWithStarterDeck", function_owner = self,
-      position = {-1,0.2,-0.12}, rotation = {0,0,0}, height = 560, width = 550,
-      font_size = 600, color = {0,0,0,0}, font_color = {0,0,0,100}, tooltip = "Starter"
+      position = {-0.95,0.2,-0.07}, rotation = {0,0,0}, height = 560, width = 550,
+      font_size = 600, color = {0,0,0,0}, font_color = {0,0,0,100}, tooltip = itemName.."(starter deck)"
     })
     self.createButton({
-      label = "C", click_function = "placeHeroWithHeroDeck", function_owner = self,
-      position = {-0.24,0.2,-0.12}, rotation = {0,0,0}, height = 560, width = 550, 
-      font_size = 600, color = {0,0,0,0}, font_color = {0,0,0,100}, tooltip = "Constructed"
+      label = "H", click_function = "placeHeroWithHeroDeck", function_owner = self,
+      position = {-0.19,0.2,-0.07}, rotation = {0,0,0}, height = 560, width = 550, 
+      font_size = 600, color = {0,0,0,0}, font_color = {0,0,0,100}, tooltip = itemName.."(hero cards only)"
     })
 end
 
