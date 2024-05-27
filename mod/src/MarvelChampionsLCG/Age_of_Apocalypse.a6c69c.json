@@ -1,0 +1,61 @@
+{
+  "Object": {
+    "GUID": "a6c69c",
+    "Name": "Bag",
+    "Transform": {
+      "posX": -74.25,
+      "posY": 0.311476052,
+      "posZ": 28.9999771,
+      "rotX": -0.003007993,
+      "rotY": -0.0000365922133,
+      "rotZ": 2.677648e-7,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Age of Apocalypse",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.252172917,
+      "g": 0.3179662,
+      "b": 0.757839739
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "Bag": {
+      "Order": 0
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Overseers.1aa5fd.json",
+    "Campaign.724d47.json",
+    "Mission_Player_Cards.ec251d.json",
+    "Missions.c42b19.json",
+    "Age_of_Apocalypse_Rules.4dd1ed.json"
+  ]
+}

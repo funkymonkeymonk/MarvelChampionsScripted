@@ -1,0 +1,61 @@
+{
+  "Object": {
+    "GUID": "427b6a",
+    "Name": "Card",
+    "Transform": {
+      "posX": -5.250004,
+      "posY": 1.05807221,
+      "posZ": 1.75000012,
+      "rotX": 0.0005052761,
+      "rotY": 180.0002,
+      "rotZ": -0.002203842,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Destiny",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": true,
+    "CardID": 6300,
+    "SidewaysCard": false,
+    "CustomDeck": {
+      "63": {
+        "FaceURL": "https://dcqvlrey92bew.cloudfront.net/45172.jpg",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

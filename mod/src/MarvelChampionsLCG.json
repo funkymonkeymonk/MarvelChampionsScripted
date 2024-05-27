@@ -1,8 +1,8 @@
 {
   "Save": {
     "SaveName": "MarvelChampionsLCG",
-    "EpochTime": 1713753236,
-    "Date": "4/21/2024 8:33:56 PM",
+    "EpochTime": 1716228446,
+    "Date": "5/20/2024 12:07:26 PM",
     "VersionNumber": "v13.2.2",
     "GameMode": "MarvelChampionsLCG",
     "GameType": "Game",
@@ -276,190 +276,6 @@
     "LuaScript": "#include ./MarvelChampionsLCG.lua",
     "LuaScriptState": "",
     "XmlUI": "#include ./MarvelChampionsLCG.xml",
-    "SnapPoints": [
-      {
-        "Position": {
-          "x": -0.335001439,
-          "y": 0.9611349,
-          "z": 20.4350033
-        }
-      },
-      {
-        "Position": {
-          "x": -0.3349997,
-          "y": 0.9612171,
-          "z": 29.145
-        }
-      },
-      {
-        "Position": {
-          "x": -9.045,
-          "y": 0.9612171,
-          "z": 28.475
-        }
-      },
-      {
-        "Position": {
-          "x": 8.375,
-          "y": 0.9612171,
-          "z": 28.475
-        }
-      },
-      {
-        "Position": {
-          "x": 8.375001,
-          "y": 0.9611349,
-          "z": 22.445
-        }
-      },
-      {
-        "Position": {
-          "x": -21.1050014,
-          "y": 0.9612171,
-          "z": 35.175
-        }
-      },
-      {
-        "Position": {
-          "x": -41.2050056,
-          "y": 0.9611349,
-          "z": -17.0850029
-        }
-      },
-      {
-        "Position": {
-          "x": -13.7350006,
-          "y": 0.9611349,
-          "z": -17.755003
-        }
-      },
-      {
-        "Position": {
-          "x": 13.7350006,
-          "y": 0.9611349,
-          "z": -17.7550011
-        }
-      },
-      {
-        "Position": {
-          "x": 41.2100754,
-          "y": 0.9611349,
-          "z": -17.0850639
-        }
-      },
-      {
-        "Position": {
-          "x": 16.75,
-          "y": 0.9611349,
-          "z": 21.75
-        }
-      },
-      {
-        "Position": {
-          "x": 16.75,
-          "y": 0.9611349,
-          "z": 16.75
-        }
-      },
-      {
-        "Position": {
-          "x": 8.75,
-          "y": 0.9611349,
-          "z": 16.75
-        }
-      },
-      {
-        "Position": {
-          "x": -7.25,
-          "y": 0.9611349,
-          "z": 22.25
-        }
-      },
-      {
-        "Position": {
-          "x": -12.75,
-          "y": 0.9611349,
-          "z": 22.25
-        }
-      },
-      {
-        "Position": {
-          "x": -7.25,
-          "y": 0.9611349,
-          "z": 15.25
-        }
-      },
-      {
-        "Position": {
-          "x": -12.25,
-          "y": 0.9611349,
-          "z": 15.25
-        }
-      },
-      {
-        "Position": {
-          "x": 13.75,
-          "y": 0.9612171,
-          "z": 29.25
-        }
-      },
-      {
-        "Position": {
-          "x": -46.25,
-          "y": 0.965223134,
-          "z": -5.75
-        }
-      },
-      {
-        "Position": {
-          "x": -18.7714,
-          "y": 0.9611349,
-          "z": -6.2367
-        }
-      },
-      {
-        "Position": {
-          "x": 8.750001,
-          "y": 0.9611349,
-          "z": -6.25
-        }
-      },
-      {
-        "Position": {
-          "x": 36.2495,
-          "y": 0.9611349,
-          "z": -5.6856
-        }
-      },
-      {
-        "Position": {
-          "x": -17.75,
-          "y": 0.9611349,
-          "z": 22.24999
-        }
-      },
-      {
-        "Position": {
-          "x": -77.25,
-          "y": 0.9611349,
-          "z": -32.75001
-        }
-      },
-      {
-        "Position": {
-          "x": -59.7499924,
-          "y": 0.9611349,
-          "z": -24.2500057
-        }
-      },
-      {
-        "Position": {
-          "x": 12.25,
-          "y": 0.9612171,
-          "z": 33.75
-        }
-      }
-    ],
     "ObjectStates": []
   },
   "ObjectPaths": [
@@ -472,8 +288,8 @@
     "CardCustom.5bee48.8100.json",
     "Custom_PDF.e4d79e.json",
     "First_Player.d93792.json",
-    "Custom_Tile.74c1d6.json",
-    "Custom_Tile.ed0a82.json",
+    "Left_Panel.74c1d6.json",
+    "Back_Panel.ed0a82.json",
     "3DText.8261c5.json",
     "Cerebro.c7ece0.json",
     "Damage_Variable.029e3b.json",
@@ -501,7 +317,7 @@
     "Blue_Player.6066d3.json",
     "Green_Player.34be58.json",
     "Yellow_Player.d9c509.json",
-    "Custom_Tile.9892b9.json",
+    "Right_Panel.9892b9.json",
     "3DText.161504.json",
     "3DText.6b2a02.json",
     "3DText.25459e.json",
@@ -550,10 +366,22 @@
     "Modular_Set_Manager.608543.json",
     "Hero_Manager.ff377b.json",
     "Custom_Token.d19a0b.json",
-    "Setup_Panel.cce23d.json",
     "Specialized_Training_Linked_Cards.94f458.json",
     "3DText.14e87e.json",
-    "This_is_a_work_in_progress.e23a1b.json",
-    "Scenario_Setup.d18365.json"
+    "Layout_Button_Go.eb6963.json",
+    "Layout_Button_Heroes.08c4b0.json",
+    "Layout_Button_Mode.3bcb37.json",
+    "Layout_Button_Modulars.6979cc.json",
+    "Layout_Button_Scenario.0ea99f.json",
+    "Modular_Set_Selector_Tile.740464.json",
+    "Mode_Selector_Standard.6dbb09.json",
+    "Expert_Set_Selector_I.f640e3.json",
+    "Mode_Selector_Expert.feda03.json",
+    "Stardard_Set_Selector_I.6c0fac.json",
+    "Standard_Set_Selector_II.4a340c.json",
+    "Standard_Set_Selector_III.9e3a14.json",
+    "Expert_Set_Selector_II.e2a916.json",
+    "Age_of_Apocalypse.a6c69c.json",
+    "NeXt_Evolution.6b15cb.json"
   ]
 }

@@ -29,7 +29,7 @@ function createBoostButton()
 end
 
 function drawBoost(object, player, isRightClick)
-    Global.call("drawBoostcard", {self.getRotation()})
+    Global.call("drawBoostcard")
 end
 
 function discardBoost(object, player, isRightClick)

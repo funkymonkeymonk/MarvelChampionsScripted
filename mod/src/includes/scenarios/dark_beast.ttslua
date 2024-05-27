@@ -1,0 +1,172 @@
+scenarios["darkBeast"] =
+{
+    name="Dark Beast",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2517025868834704120/5307B0499B55FF2BA1F2BC02F0CF2DA8DDFCE533/",
+    villains={
+        darkBeast={
+            name="Dark Beast",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/2517025868834704120/5307B0499B55FF2BA1F2BC02F0CF2DA8DDFCE533/",
+            },
+            stages={
+                stage1={
+                    cardId="45118",
+                    hitPointsPerPlayer=15
+                },
+                stage2={
+                    cardId="45119",
+                    hitPointsPerPlayer=18
+                },
+                stage3={
+                    cardId="45120",
+                    hitPointsPerPlayer=22
+                }
+            }
+        }
+    },
+    schemes={
+        main={
+            stages={
+                stage1={
+                    cardId="45121",
+                    startingThreatPerPlayer=1,
+                    targetThreatPerPlayer=10
+                }
+            }
+        }
+    },
+    decks={
+        encounterDeck={
+            name="Dark Beast's Encounter Deck",
+            cards={
+                ["45122"]=1,
+                ["45123"]=1,
+                ["45124"]=2,
+                ["45125"]=3,
+                ["45126"]=2
+            }
+        }
+    },
+    modularSets={
+        dystopianNightmare="optional",
+        blueMoon="required",
+        genosha="required",
+        savageLand="required"
+    },
+    extras={
+        darkBeastEnvironmentPanel={
+            name="",
+            guid="bc4a47",
+            position={32.75, 0.96, 19.25},
+            rotation={0, 180, 0},
+            scale={5,1,5}
+        }
+    }
+}
+
+function prepareScenario_darkBeast()
+  encounterSetManager.call("removeModularSet", {modularSetKey = "genosha"})
+  encounterSetManager.call("removeModularSet", {modularSetKey = "blueMoon"})
+  encounterSetManager.call("removeModularSet", {modularSetKey = "savageLand"})
+
+  local environments = {}
+  table.insert(environments, "genosha")
+  table.insert(environments, "blueMoon")
+  table.insert(environments, "savageLand")
+
+  currentScenario.environments = Global.call("shuffleTable", {table=environments})
+  currentScenario.environmentIndex = 1
+end
+
+function placeDarkBeastEnvironment()
+  if(currentScenario.environmentIndex > #currentScenario.environments) then
+    broadcastToAll("All environments have been placed.", {1,1,1})
+    return
+  end
+
+  local modularKey = currentScenario.environments[currentScenario.environmentIndex]
+  local modularSet = nil
+
+  --TODO: refactor this to use modular set definitions
+
+  if(modularKey == "savageLand") then
+    modularSet = {
+      environment = {
+        cardId = "45127",
+        name = "Savage Land"
+      },
+      cards = {
+        ["45128"]=1,
+        ["45129"]=2,
+        ["45130"]=2,
+        ["45131"]=1,
+        ["45132"]=1
+      }
+    }
+  end
+
+  if(modularKey == "genosha") then
+    modularSet = {
+      environment = {
+        cardId = "45133",
+        name = "Genosha"
+      },
+      cards = {
+        ["45134"]=3,
+        ["45135"]=1,
+        ["45136"]=1,
+        ["45137"]=1,
+        ["45138"]=1
+      }
+    }
+  end
+
+  if(modularKey == "blueMoon") then
+    modularSet = {
+      environment = {
+        cardId = "45139",
+        name = "Blue Moon"
+      },
+      cards = {
+        ["45140"]=1,
+        ["45141"]=1,
+        ["45142"]=1,
+        ["45143"]=1,
+        ["45144"]=1,
+        ["45145"]=1,
+        ["45146"]=1
+      }
+    }
+  end
+
+  local deckPosition = getEncounterDeckPosition()
+  local environmentPosition = {19.50, 1.00, 30.00}
+  local rotation = {0,180,180}
+  local scale = defaults.encounterDeck.scale
+
+  if(deckPosition[2] < 3) then
+    deckPosition[2] = 3
+  end
+
+  Global.call("discardCardAtPosition", {position = environmentPosition})
+
+  getCardByID(
+    modularSet.environment.cardId, 
+    environmentPosition, 
+    {
+      scale = scale, 
+      name = modularSet.environment.name, 
+      flipped = false})
+ 
+  createDeck({cards=modularSet.cards, position=deckPosition, rotation=rotation, scale=scale})
+
+  Wait.frames(
+      function()
+          Global.call("shuffleDeck", {deckPosition = deckPosition})
+      end,
+      30)
+
+  broadcastToAll(modularSet.environment.name.." encounter set has been added to encounter deck.", {1,1,1})
+
+  currentScenario.environmentIndex = currentScenario.environmentIndex + 1
+end

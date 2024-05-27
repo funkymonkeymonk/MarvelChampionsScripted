@@ -1,0 +1,71 @@
+scenarios["enSabahNur"] =
+{
+    name="En Sabah Nur",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2517025868834704074/9CD8F7246CDDEBD1D4D830191E4C775D768894F4/",
+    villains={
+        aplocalypse={
+            name="Apocalypse",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/2517025868834704074/9CD8F7246CDDEBD1D4D830191E4C775D768894F4/",
+            },
+            stages={
+                stage1={
+                    cardId="45184",
+                    assetId="459648",
+                    hitPointsPerPlayer=16
+                },
+                stage2={
+                    cardId="45185",
+                    assetId="40ea4a",
+                    hitPointsPerPlayer=20
+                },
+                stage3={
+                    cardId="45186",
+                    assetId="4ad752",
+                    hitPointsPerPlayer=24
+                }
+            }
+        }
+    },
+    schemes={
+        main={
+            stages={
+                stage1={
+                    cardId="45147",
+                    startingThreatPerPlayer=1,
+                    targetThreatPerPlayer=8
+                },
+                stage2={
+                    cardId="45148",
+                    startingThreatPerPlayer=2,
+                    targetThreatPerPlayer=10
+                }
+            }
+        }
+    },
+    decks={
+        encounterDeck={
+            name="En Sabah Nur's Encounter Deck",
+            cards={
+                ["45149"]=2,
+                ["45150"]=2,
+                ["45151"]=2,
+                ["45152"]=2,
+                ["45153"]=1,
+                ["45154"]=1,
+                ["45155"]=1
+            }
+        }
+    },
+    modularSets={
+        celestialTech="optional",
+        clanAkkaba="optional"
+    },
+        notes={
+        easyMode={
+            title="Apocalypse's Forms",
+            text="Apocalypse's villain cards are multi-state. To change forms, either right-click and select a different state, or place your pointer over the card and type 1, 2, or 3.",
+            position={0,0,0}
+        }
+    }
+}

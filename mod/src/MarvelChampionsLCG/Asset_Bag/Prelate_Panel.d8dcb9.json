@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "cce23d",
-    "Name": "Custom_Token",
+    "GUID": "d8dcb9",
+    "Name": "Custom_Tile",
     "Transform": {
-      "posX": 79.35,
-      "posY": 0.55,
-      "posZ": 35.25,
-      "rotX": -1.05968894e-7,
+      "posX": 94.57179,
+      "posY": 2.22113538,
+      "posZ": 10.2550726,
+      "rotX": -1.44084723e-7,
       "rotY": 180,
-      "rotZ": -6.82549972e-9,
-      "scaleX": 1.25,
+      "rotZ": -8.04555356e-8,
+      "scaleX": 6,
       "scaleY": 1,
-      "scaleZ": 1.25
+      "scaleZ": 6
     },
-    "Nickname": "Setup Panel",
+    "Nickname": "Prelate Panel",
     "Description": "",
     "GMNotes": "",
     "AltLookAngle": {
@@ -28,7 +28,7 @@
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,
-    "Locked": true,
+    "Locked": false,
     "Grid": true,
     "Snap": true,
     "IgnoreFoW": false,
@@ -41,18 +41,18 @@
     "HideWhenFaceDown": false,
     "Hands": false,
     "CustomImage": {
-      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/2101548510579153058/8FC91215A449F636B80560C24ABB62C46A2AE3B0/",
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/2495635126622534720/A87734063858AAF6F7EAE84ACD25D3E981F8E6AE/",
       "ImageSecondaryURL": "",
       "ImageScalar": 1,
       "WidthScale": 0,
-      "CustomToken": {
+      "CustomTile": {
+        "Type": 3,
         "Thickness": 0.1,
-        "MergeDistancePixels": 5,
-        "StandUp": false,
-        "Stackable": false
+        "Stackable": false,
+        "Stretch": true
       }
     },
-    "LuaScript": "#include ./Setup_Panel.cce23d.lua",
+    "LuaScript": "#include ./Prelate_Panel.d8dcb9.lua",
     "LuaScriptState": "",
     "XmlUI": ""
   },

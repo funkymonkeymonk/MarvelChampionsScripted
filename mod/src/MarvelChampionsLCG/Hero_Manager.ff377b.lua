@@ -390,6 +390,7 @@ function placeExtras(hero, playmatPosition)
   if(item.type == "deck") then
    local deck = {
     cards = item.cards,
+    flipped = item.flipped == nil or item.flipped,
     position = itemPosition,
     scale = cardScale.player
    }
@@ -707,3 +708,4 @@ require('!/heroes/deadpool')
 require('!/heroes/x23')
 require('!/heroes/bishop')
 require('!/heroes/magik')
+require('!/heroes/iceman')

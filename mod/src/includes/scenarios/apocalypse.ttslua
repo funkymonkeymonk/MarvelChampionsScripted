@@ -1,0 +1,143 @@
+scenarios["apocalypse"] =
+{
+    name="Apocalypse",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2517025868834703987/587B38CAB721DA117272E90369EAB647655AD5DC/",
+    villains={
+        apocalypse={
+            name="Apocalypse",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/2517025868834703987/587B38CAB721DA117272E90369EAB647655AD5DC/",
+            },
+            stages={
+--                stage1={
+--                    cardId="45101",
+--                    hitPointsPerPlayer=8
+--                },
+                stage1={
+                    cardId="45101",
+                    hitPointsPerPlayer=9,
+                    flipCard=true
+                },
+                stage2={
+                    cardId="45102",
+                    hitPointsPerPlayer=10
+                },
+                stage3={
+                    cardId="45102",
+                    hitPointsPerPlayer=11,
+                    flipCard=true
+                }
+            }
+        }
+    },
+    schemes={
+        main={
+            stages={
+                stage1={
+                    cardId="45103",
+                    startingThreatPerPlayer=1,
+                    targetThreatPerPlayer=0
+                }
+            }
+        },
+        side={
+            stages={
+                stage1={
+                    cardId="45104",
+                    startingThreat=2
+                },
+                stage2={
+                    cardId="45104",
+                    flipCard=true,
+                    startingThreat=3
+                },
+                stage3={
+                    cardId="45105",
+                    startingThreat=4
+                }
+            },
+            position={18.38, 2.00, 22.45},
+            threatCounter={
+                position={18.38, 1.01, 28.48}
+            }
+
+        }
+    },
+    decks={
+        encounterDeck={
+            name="Apocalypse's Encounter Deck",
+            cards={
+                ["45106"]=1,
+                ["45107"]=1,
+                ["45108"]=1,
+                ["45109"]=2,
+                ["45110"]=3,
+                ["45111"]=2
+            }
+        }
+    },
+    cards={
+        apocalypseI={
+            name="Apocalypse",
+            cardId="45101",
+            position={-21.75, 0.97, 31.75},
+            scale=Global.getTable("VILLAIN_SCALE")
+        }
+    },
+    modularSets={
+        darkRiders="optional",
+        infinites="optional"
+    },
+    notes={
+        easyMode={
+            title="Easy Mode",
+            text="Use this Apocalypse Stage I card if you'd like an easier game.\r\n(I'll figure out a more elegant way to do this sometime soon.)",
+            position={-30.75, 1.03, 32.25}
+        }
+    },
+    extras={
+        prelatePanel={
+            name="",
+            guid="d8dcb9",
+            position={34.75, 0.96, 17.25},
+            rotation={0, 180, 0},
+            scale={6,1,6}
+        }
+    }
+}
+
+function placeApocalypsePrelate()
+  if(not currentScenario.prelates) then
+    setupApocalypsePrelates()
+  end
+
+  if(currentScenario.prelateIndex > #currentScenario.prelates) then
+    broadcastToAll("All Prelates have been summoned.")
+    return
+  end
+
+  local prelate = currentScenario.prelates[currentScenario.prelateIndex]
+
+  getCardByID(
+    prelate.cardId, 
+    {0,1,0}, 
+    {scale = defaults.encounterDeck.scale, 
+    name = prelate.name, 
+    flipped = true})
+
+  currentScenario.prelateIndex = currentScenario.prelateIndex + 1
+end
+
+function setupApocalypsePrelates()
+  local prelates = {}
+  table.insert(prelates, {cardId="45179", name="Mister Sinister"})
+  table.insert(prelates, {cardId="45180", name="The Shadow King"})
+  table.insert(prelates, {cardId="45181", name="Abyss"})
+  table.insert(prelates, {cardId="45182", name="Sugar Man"})
+  table.insert(prelates, {cardId="45183", name="Mikhail Rasputin"})
+
+  prelates = Global.call("shuffleTable", {table = prelates})
+
+  currentScenario.prelates = prelates
+  currentScenario.prelateIndex = 1
+end

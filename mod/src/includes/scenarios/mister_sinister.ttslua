@@ -25,39 +25,7 @@ scenarios["misterSinister"] =
         }
     },
     schemes={
-        main={
-            stages={
-                stage1={
-                    cardId="40139",
-                    startingThreat=0,
-                    startingThreatPerPlayer=0,
-                    targetThreatPerPlayer=0
-                },
-                stage2={
-                    cardId="40140",
-                    startingThreat=0,
-                    startingThreatPerPlayer=1,
-                    targetThreatPerPlayer=5
-                },
-                stage3={
-                    cardId="40141",
-                    startingThreat=0,
-                    startingThreatPerPlayer=1,
-                    targetThreatPerPlayer=5
-                },
-                stage4={
-                    cardId="40142",
-                    startingThreat=0,
-                    startingThreatPerPlayer=1,
-                    targetThreatPerPlayer=5
-                },
-                stage5={
-                    cardId="40143",
-                    startingThreat=0,
-                    targetThreatPerPlayer=7
-                }
-            }
-        }
+        main={}
     },
     cards={
         hopeSummers={
@@ -118,3 +86,79 @@ scenarios["misterSinister"] =
         nastyBoys="recommended"
     }
 }
+
+function getNextSchemeStage_misterSinister_main(params)
+  local scheme = params.scheme
+
+  if(not scheme.stages) then
+    populateMisterSinisterSchemeStages()
+  end
+
+  local currentStageNumber = scheme.currentStageNumber or 0
+  local nextStageNumber = currentStageNumber + 1
+  local nextStageKey = "stage" .. (currentStageNumber + 1)
+  local nextStage = currentScenario.schemes["main"].stages[nextStageNumber]
+
+  nextStage.showAdvanceButton = nextStageNumber < 4
+  return nextStage
+end
+
+function populateMisterSinisterSchemeStages()
+  local stages = {}
+  local secondStages = {
+    a={
+      cardId="40140",
+      startingThreat=0,
+      startingThreatPerPlayer=1,
+      targetThreatPerPlayer=5
+    },
+    b={
+      cardId="40141",
+      startingThreat=0,
+      startingThreatPerPlayer=1,
+      targetThreatPerPlayer=5
+    },
+    c={
+      cardId="40142",
+      startingThreat=0,
+      startingThreatPerPlayer=1,
+      targetThreatPerPlayer=5
+    } 
+  }
+
+  table.insert(stages, {
+    key = "stage1",
+    cardId = "40139",
+    startingThreat = 0,
+    startingThreatPerPlayer = 0,
+    targetThreatPerPlayer = 0
+  })
+
+  local previousStageKey = ""
+
+  for i = 2,3,1
+  do 
+    local availableStageKeys = {}
+    for key, stage in pairs(secondStages) do
+      if(key ~= previousStageKey) then
+          table.insert(availableStageKeys, key)
+      end
+    end
+
+    math.randomseed(os.time())
+    newStageKey = availableStageKeys[math.random(#availableStageKeys)]
+    previousStageKey = newStageKey
+    local nextStage = secondStages[newStageKey]
+    nextStage.key = "stage" .. i
+    table.insert(stages, nextStage)
+  end
+
+  table.insert(stages, {
+    key="stage4",
+    cardId="40143",
+    startingThreat=0,
+    targetThreatPerPlayer=7
+  })
+
+  currentScenario.schemes["main"].stages = stages
+end

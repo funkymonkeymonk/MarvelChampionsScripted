@@ -7,7 +7,7 @@ CONFIG = {
     TOOLTIP_SHOW = true,
     VALUE = 0
 }
-INJECTED_COUNTER = true
+--INJECTED_COUNTER = true
 
 
 function onload(saved_data)
@@ -41,8 +41,8 @@ function createAll()
       tooltip=ttText,
       function_owner=self,
       position={0.85, thickness/2, -0.1},
-      height=600,
-      width=1000,
+      height=440,
+      width=740,
       alignment = 3,
       scale=scale,
       font_size=CONFIG.FONT_SIZE,
@@ -76,7 +76,7 @@ end
 function createAdvanceButton()
     self.createButton({
         label = CONFIG.ADVANCE_BUTTON_LABEL or "ADVANCE",
-        click_function = "advanceVillain",
+        click_function = "primaryButtonClick",
         function_owner = self,
         position = {0,0.1,-1.8},
         rotation = {0,0,0},
@@ -85,6 +85,21 @@ function createAdvanceButton()
         font_size = 400,
         font_color = {1,1,1},
         color = {0,0,1}
+    })    
+end
+
+function createSecondaryButton()
+    self.createButton({
+        label = CONFIG.SECONDARY_BUTTON_LABEL,
+        click_function = "secondaryButtonClick",
+        function_owner = self,
+        position = {0.87,0.2,0.75},
+        rotation = {0,0,0},
+        width = 1000,
+        height = 250,
+        font_size = 175,
+        font_color = {1,1,0,100},
+        color = {0,0,0,0}
     })    
 end
 
@@ -101,6 +116,14 @@ function setAdvanceButtonOptions(params)
     CONFIG.ADVANCE_BUTTON_LABEL = params.label
     CONFIG.ADVANCE_BUTTON_FUNCTION = params.clickFunction
     CONFIG.ADVANCE_BUTTON_PARAMS = params.params
+
+    updateSave()
+end
+
+function setSecondaryButtonOptions(params)
+    CONFIG.SECONDARY_BUTTON_LABEL = params.label
+    CONFIG.SECONDARY_BUTTON_FUNCTION = params.clickFunction
+    CONFIG.SECONDARY_BUTTON_PARAMS = params.params
 
     updateSave()
 end
@@ -153,9 +176,17 @@ function setValue(params)
     updateSave()
 end
 
-function advanceVillain()
+function primaryButtonClick()
+    local functionName = CONFIG.ADVANCE_BUTTON_FUNCTION or "advanceVillain"
     local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
-    scenarioManager.call("advanceVillain", {
+    scenarioManager.call(functionName, {
+        villainKey = CONFIG.VILLAIN_KEY
+    })
+end
+
+function secondaryButtonClick()
+    local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
+    scenarioManager.call(CONFIG.SECONDARY_BUTTON_FUNCTION, {
         villainKey = CONFIG.VILLAIN_KEY
     })
 end
@@ -175,5 +206,31 @@ function hideAdvanceButton()
     CONFIG.SHOW_ADVANCE_BUTTON = false
     updateSave()
 
-    self.removeButton(1)
+    removeButtonByLabel(CONFIG.ADVANCE_BUTTON_LABEL or "ADVANCE")
 end
+
+function showSecondaryButton()
+    if(CONFIG.SHOW_SECONDARY_BUTTON) then return end
+
+    CONFIG.SHOW_SECONDARY_BUTTON = true
+    updateSave()
+
+    createSecondaryButton()
+end
+
+function hideSecondaryButton()
+    if(not CONFIG.SHOW_SECONDARY_BUTTON) then return end
+
+    CONFIG.SHOW_SECONDARY_BUTTON = false
+    updateSave()
+
+    removeButtonByLabel(CONFIG.SECONDARY_BUTTON_LABEL)
+end
+
+function removeButtonByLabel(buttonLabel)
+    for k, button in ipairs(self.getButtons()) do
+       if(button.label == buttonLabel) then
+           self.removeButton(button.index)
+       end
+   end
+ end

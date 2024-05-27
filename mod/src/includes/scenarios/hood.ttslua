@@ -2,6 +2,7 @@ scenarios["hood"] =
 {
     name="The Hood",
     tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1833524420369390047/812F91439CB08F9A17D25523A7375B04E3D9C4A5/",
+    requiredEncounterSetCount=7,
     villains={
         hood={
             name="The Hood",
@@ -58,5 +59,207 @@ scenarios["hood"] =
                 ["24013"]=3
             }
         }
+    },
+    extras={
+        encounterSetPlacer={
+            name="",
+            guid="39d4a2",
+            position={34.75, 0.96, 17.25},
+            rotation={0, 180, 0},
+            scale={6,1,6},
+            locked=true
+        }
     }
 }
+
+function customSetup_hood(params)
+  local setupStep = params.setupStep
+
+  if(setupStep == "modular-sets") then
+    createHoodModularSetButtons()
+
+    local modularSets = {}
+
+    modularSets["streetsOfMayhem"] = "recommended"
+    modularSets["brothersGrimm"] = "recommended"
+    modularSets["ransackedArmory"] = "recommended"
+    modularSets["stateOfEmergency"] = "recommended"
+    modularSets["beastyBoys"] = "recommended"
+    modularSets["misterHyde"] = "recommended"
+    modularSets["sinisterSyndicate"] = "recommended"
+    modularSets["crossfiresCrew"] = "recommended"
+    modularSets["wreckingCrew"] = "recommended"
+
+    layoutManager.call("colorCodeModularSets", {sets = modularSets})
+  else
+    removeHoodModularSetButtons()
+  end
+end
+
+function prepareScenario_hood()
+  local encounterSets = encounterSetManager.call("getSelectedSets", {modular = true})
+  currentScenario.hoodEncounterSets = encounterSets
+  encounterSetManager.call("clearSelectedSets")
+end
+
+function createHoodModularSetButtons()
+  local modularSetupButton = getObjectFromGUID("6979cc")
+  local buttons = modularSetupButton.getButtons()
+
+  if(#buttons > 1) then return end
+
+  modularSetupButton.createButton({
+    label = "EASY",
+    click_function = "selectHoodEasyModularSets",
+    function_owner = self,
+    position = {-5.5,0.1,2.5},
+    rotation = {0,0,0},
+    width = 650,
+    height = 350,
+    font_size = 275,
+    color = {0,0,0,0},
+    font_color = {1,1,1,100}
+  })
+
+  modularSetupButton.createButton({
+    label = "MEDIUM",
+    click_function = "selectHoodMediumModularSets",
+    function_owner = self,
+    position = {-3.25,0.1,2.5},
+    rotation = {0,0,0},
+    width = 1050,
+    height = 350,
+    font_size = 275,
+    color = {0,0,0,0},
+    font_color = {1,1,1,100}
+  })
+
+  modularSetupButton.createButton({
+    label = "HARD",
+    click_function = "selectHoodHardModularSets",
+    function_owner = self,
+    position = {-1.0,0.1,2.5},
+    rotation = {0,0,0},
+    width = 700,
+    height = 350,
+    font_size = 275,
+    color = {0,0,0,0},
+    font_color = {1,1,1,100}
+  })
+
+  modularSetupButton.createButton({
+    label = "RANDOM",
+    click_function = "selectHoodRandomModularSets",
+    function_owner = self,
+    position = {1.5,0.1,2.5},
+    rotation = {0,0,0},
+    width = 1150,
+    height = 350,
+    font_size = 275,
+    color = {0,0,0,0},
+    font_color = {1,1,1,100}
+  })
+end
+
+function removeHoodModularSetButtons()
+  local modularSetupButton = getObjectFromGUID("6979cc")
+  local buttons = modularSetupButton.getButtons()
+
+  if(#buttons < 5) then return end
+
+  for i = 4, 1, -1 do
+    modularSetupButton.removeButton(i)
+  end
+end
+
+function selectHoodEasyModularSets()
+  encounterSetManager.call("clearSelectedSets")
+
+  encounterSetManager.call("selectModularSet", {modularSetKey = "streetsOfMayhem"})
+  encounterSetManager.call("selectModularSet", {modularSetKey = "brothersGrimm"})
+  encounterSetManager.call("selectModularSet", {modularSetKey = "ransackedArmory"})
+  encounterSetManager.call("selectModularSet", {modularSetKey = "stateOfEmergency"})
+  encounterSetManager.call("selectModularSet", {modularSetKey = "beastyBoys"})
+  encounterSetManager.call("selectModularSet", {modularSetKey = "misterHyde"})
+  encounterSetManager.call("selectModularSet", {modularSetKey = "sinisterSyndicate"})
+
+  layoutManager.call("showCurrentView")
+end
+
+function selectHoodMediumModularSets()
+  encounterSetManager.call("clearSelectedSets")
+
+  encounterSetManager.call("selectModularSet", {modularSetKey = "brothersGrimm"})
+  encounterSetManager.call("selectModularSet", {modularSetKey = "ransackedArmory"})
+  encounterSetManager.call("selectModularSet", {modularSetKey = "stateOfEmergency"})
+  encounterSetManager.call("selectModularSet", {modularSetKey = "beastyBoys"})
+  encounterSetManager.call("selectModularSet", {modularSetKey = "misterHyde"})
+  encounterSetManager.call("selectModularSet", {modularSetKey = "sinisterSyndicate"})
+  encounterSetManager.call("selectModularSet", {modularSetKey = "crossfiresCrew"})
+
+  layoutManager.call("showCurrentView")
+end
+
+function selectHoodHardModularSets()
+  encounterSetManager.call("clearSelectedSets")
+
+  encounterSetManager.call("selectModularSet", {modularSetKey = "ransackedArmory"})
+  encounterSetManager.call("selectModularSet", {modularSetKey = "stateOfEmergency"})
+  encounterSetManager.call("selectModularSet", {modularSetKey = "beastyBoys"})
+  encounterSetManager.call("selectModularSet", {modularSetKey = "misterHyde"})
+  encounterSetManager.call("selectModularSet", {modularSetKey = "sinisterSyndicate"})
+  encounterSetManager.call("selectModularSet", {modularSetKey = "crossfiresCrew"})
+  encounterSetManager.call("selectModularSet", {modularSetKey = "wreckingCrew"})
+
+  layoutManager.call("showCurrentView")
+end
+
+function selectHoodRandomModularSets()
+  encounterSetManager.call("clearSelectedSets")
+  math.randomseed(os.time())
+
+  local encounterSets = encounterSetManager.call("getEncounterSetsByType", {modular = true})
+  local selectedSets = {}
+
+  for i = 1, 7, 1 do
+    local unselectedSets = {}
+
+    for k, v in pairs(encounterSets) do
+      if(not v.selected) then
+        table.insert(unselectedSets, k)
+      end
+    end  
+  
+    local randomSetKey = unselectedSets[math.random(#unselectedSets)]
+    encounterSetManager.call("selectModularSet", {modularSetKey = randomSetKey})
+  end
+
+  layoutManager.call("showCurrentView")
+end
+
+function addHoodEncounterSet()
+  math.randomseed(os.time())
+  local unusedSets = {}
+
+  for k, v in pairs(currentScenario.hoodEncounterSets) do
+    if(not v.used) then
+      table.insert(unusedSets, k)
+    end
+  end
+
+  if(#unusedSets == 0) then
+    broadcastToAll("All modular encounter sets have been used.", {1,1,1})
+    return 0
+  end
+
+  local encounterSetKey = unusedSets[math.random(#unusedSets)]
+
+  currentScenario.hoodEncounterSets[encounterSetKey].used = true
+
+  saveData()
+
+  encounterSetManager.call("addEncounterSetToDeck", {setKey = encounterSetKey})
+
+  broadcastToAll("A random modular encounter set has been added to encounter deck.", {1,1,1})
+  return #unusedSets - 1
+end

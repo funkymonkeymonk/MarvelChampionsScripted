@@ -27,7 +27,7 @@ modularSets["temporal"] =
 
 modularSets["masterOfTime"] = 
 {
-    name="Master Of Time",
+    name="Master of Time",
     modular=true,
     cards = {
         ["11047"] = 1,

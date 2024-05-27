@@ -1,0 +1,60 @@
+{
+  "Object": {
+    "GUID": "39d4a2",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 100.058983,
+      "posY": 69.551,
+      "posZ": -34.30103,
+      "rotX": -2.48305714e-8,
+      "rotY": 180.005219,
+      "rotZ": -3.445957e-8,
+      "scaleX": 6,
+      "scaleY": 1,
+      "scaleZ": 6
+    },
+    "Nickname": "Hood Modular Set Panel",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": false,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/2495635039458047004/2537FC8BDB12EB7AC2285CD95F2F0C1643781ABF/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.1,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Hood_Modular_Set_Panel.39d4a2.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

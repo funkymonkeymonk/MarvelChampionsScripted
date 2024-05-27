@@ -8,7 +8,7 @@ ENCOUNTER_DECK_POSITION = {-12.75, 1.06, 22.25}
 ENCOUNTER_DECK_ROTATION = {0.00, 180.00, 180.00}
 ENCOUNTER_DECK_SCALE    = {2.12, 1.00, 2.12}
 
-VILLAIN_POSITION = {-0.34, 2.00, 20.44}
+VILLAIN_POSITION = {-0.34, 1.00, 20.44}
 VILLAIN_ROTATION = {0.00, 180.00, 0.00}
 VILLAIN_SCALE    = {3.64, 1.00, 3.64}
 
@@ -58,6 +58,9 @@ PLAYMAT_OFFSET_IDENTITY       = {-9.89, 3.00, 1.00}
 PLAYMAT_OFFSET_DECK           = {-8.40, 3.00, -4.66}
 PLAYMAT_OFFSET_DISCARD        = {-11.30, 2.00, -4.66}
 
+SETUP_BUTTON_FONT_SIZE_INACTIVE = 400
+SETUP_BUTTON_FONT_SIZE_ACTIVE   = 500
+
 GUID_HERO_MANAGER              = "ff377b"
 GUID_SCENARIO_MANAGER          = "06c2fd"
 GUID_MODULAR_SET_MANAGER       = "608543"
@@ -68,6 +71,7 @@ GENERAL_COUNTER_BAG_GUID       = "aec1c4"
 GUID_LARGE_GENERAL_COUNTER_BAG = "65c1cc"
 GUID_THREAT_COUNTER_BAG        = "eb5d6d"
 GUID_SELECTOR_TILE             = "c04e76"
+GUID_MODULAR_SET_SELECTOR_TILE = "740464"
 
 ASSET_GUID_BLACK_HOLE             = "740595"
 ASSET_GUID_PLAYMAT                = "f5701e"
@@ -77,8 +81,6 @@ ASSET_GUID_MAIN_THREAT_COUNTER    = "a9f7b8"
 ASSET_GUID_BOOST_PANEL            = "ef27d7"
 
 IS_RESHUFFLING = false
-
-require('!/Cardplacer')
 
 function onLoad()
     -- Create context Menus
@@ -133,16 +135,9 @@ function isCardOrDeck(x)
 end
 
 function drawEncountercard(params)
-   local position = params[1]
-   local rotation = params[2]
-   local isFaceUp = params[3]
-   local faceUpRotation
-
-   if (isFaceUp) then
-      faceUpRotation = 0
-   else
-      faceUpRotation = 180
-   end
+   local drawToPosition = params[1]
+   local isFaceUp = params[2]
+   local drawToRotation = isFaceUp and {0, 180, 0} or {0, 180, 180}
 
    local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
    local encounterDeckPosition = Vector(scenarioManager.call('getEncounterDeckPosition'))
@@ -151,37 +146,39 @@ function drawEncountercard(params)
    if #items > 0 then
       for i, v in ipairs(items) do
          if v.tag == 'Deck' then
-            v.takeObject({index = 0, position = position, rotation = {0,rotation.y,faceUpRotation}})
+            v.takeObject({index = 0, position = drawToPosition, rotation = drawToRotation})
             return
          end
       end
-      items[1].setPositionSmooth(position, false, false)
-      items[1].setRotationSmooth({0,rotation.y,faceUpRotation}, false, false)
+      items[1].setPositionSmooth(drawToPosition, false, false)
+      items[1].setRotationSmooth(drawToRotation, false, false)
       return
    end
-   reshuffleEncounterDeck(position, {0,rotation.y,faceUpRotation})
+
+   reshuffleEncounterDeck(drawToPosition, drawToRotation)
 end
 
-function drawBoostcard(params)
-   local rotation = params[1]
+function drawBoostcard()
    local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
    local encounterDeckPosition = Vector(scenarioManager.call('getEncounterDeckPosition'))
-
+   local drawToPosition = Vector(scenarioManager.call('getBoostDrawPosition'))
+   local drawToRotation = {0,180,180}
    local items = findInRadiusBy(encounterDeckPosition, 4, isCardOrDeck)
 
    if #items > 0 then
       for i, v in ipairs(items) do
          if v.tag == 'Deck' then
-            v.takeObject({index = 0, position = BOOST_POS, rotation = {0,180,180}})
+            v.takeObject({index = 0, position = drawToPosition, rotation = drawToRotation})
             return
          end
       end
-      items[1].setPositionSmooth(BOOST_POS, false, false)
-      items[1].setRotationSmooth({0,180,180}, false, false)
+
+      items[1].setPositionSmooth(drawToPosition, false, false)
+      items[1].setRotationSmooth(drawToRotation, false, false)
       return
    end
 
-   reshuffleEncounterDeck(BOOST_POS, {0,rotation.y,faceUpRotation})
+   reshuffleEncounterDeck(drawToPosition, drawToRotation)
 end
 
 function discardBoostcard(params)
@@ -198,6 +195,7 @@ function discardBoostcard(params)
             return
          end
       end
+
       items[1].setPositionSmooth(encounterDiscardPosition, false, false)
       items[1].setRotationSmooth({0,rotation.y,0}, false, false)
       return
@@ -239,7 +237,7 @@ function discardEncounterCard(params)
    end
 end
 
-function reshuffleEncounterDeck(drawPosition, rotation)
+function reshuffleEncounterDeck(drawToPosition, drawToRotation)
    local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
    local encounterDiscardPosition = Vector(scenarioManager.call('getEncounterDiscardPosition'))
    local encounterDeckPosition = Vector(scenarioManager.call('getEncounterDeckPosition'))
@@ -247,8 +245,12 @@ function reshuffleEncounterDeck(drawPosition, rotation)
 
    local function move(deck)
       deck.setPositionSmooth(encounterDeckSpawnPosition, true, false)
-      deck.takeObject({index = 0, position = drawPosition, rotation = rotation, flip = false})
-      Wait.time(function() IS_RESHUFFLING = false end, 1)
+      
+      Wait.time(function()
+         deck.takeObject({index = 0, position = drawToPosition, rotation = drawToRotation})
+         IS_RESHUFFLING = false 
+      end,
+      1)
    end
 
    if IS_RESHUFFLING then
@@ -268,6 +270,18 @@ function reshuffleEncounterDeck(drawPosition, rotation)
    else
       printToAll("Couldn't find encounter discard pile to reshuffle", {1,0,0})
    end
+end
+
+function shuffleDeck(params)
+   local items = findInRadiusBy(params.deckPosition, 4, isDeck)
+
+   if (not items) then
+      log("no deck found at position " .. params.deckPosition)
+      return
+   end
+   log(items)
+   local deck = items[1]
+   deck.shuffle()
 end
 
 function requestBoost()
@@ -306,3 +320,49 @@ function onPlayerAction(player, action, targets)
 
    return true
 end
+
+function shuffleTable(params)
+   local tbl = params.table
+   math.randomseed(os.time())
+ 
+   for i = #tbl, 2, -1 do
+     local j = math.random(i)
+     tbl[i], tbl[j] = tbl[j], tbl[i]
+   end
+ 
+   return tbl
+end
+ 
+function deleteCardAtPosition(params)
+   local position = params.position
+   local items = findInRadiusBy(position, 3, isCard, false)
+
+   if #items > 0 then
+     items[1].destroy()
+   end
+end
+
+function discardCardAtPosition(params)
+   local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
+   local position = params.position
+   local discardPosition = Vector(scenarioManager.call('getEncounterDiscardPosition'))
+   local items = findInRadiusBy(position, 3, isCard, false)
+
+   if #items > 0 then
+     items[1].setPositionSmooth(discardPosition, false, false)
+     items[1].setRotationSmooth({0,180,0}, false, false)
+   end
+end
+
+function moveDeck(params)
+   local originPosition = params.origin
+   local destinationPosition = params.destination
+
+   local items = findInRadiusBy(originPosition, 4, isCardOrDeck)
+
+   if #items == 0 then return end
+   
+   items[1].setPositionSmooth(destinationPosition, false, false)
+end
+
+require('!/Cardplacer')

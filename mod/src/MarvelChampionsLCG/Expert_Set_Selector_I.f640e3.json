@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "9892b9",
+    "GUID": "f640e3",
     "Name": "Custom_Tile",
     "Transform": {
-      "posX": 78,
-      "posY": 0,
-      "posZ": 0,
-      "rotX": 0,
-      "rotY": 270,
-      "rotZ": 0,
-      "scaleX": 22.25,
+      "posX": 86.50001,
+      "posY": -1.5,
+      "posZ": 18,
+      "rotX": 1.00777982e-7,
+      "rotY": 180.000275,
+      "rotZ": -1.67711245e-9,
+      "scaleX": 1.3,
       "scaleY": 1,
-      "scaleZ": 23.5
+      "scaleZ": 1.3
     },
-    "Nickname": "",
+    "Nickname": "Expert Set Selector I",
     "Description": "",
     "GMNotes": "",
     "AltLookAngle": {
@@ -22,9 +22,9 @@
       "z": 0
     },
     "ColorDiffuse": {
-      "r": 0,
-      "g": 0,
-      "b": 0
+      "r": 0.249999851,
+      "g": 0.249999851,
+      "b": 0.249999851
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,
@@ -41,18 +41,18 @@
     "HideWhenFaceDown": false,
     "Hands": false,
     "CustomImage": {
-      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/273974515701259432/A09A20BE6300EAB285858E76A03BD781EE3845B5/",
-      "ImageSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/273974515701259432/A09A20BE6300EAB285858E76A03BD781EE3845B5/",
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/2495635126627742409/761DCEF808BE975BA4AD93241E951AFEB4429AE0/",
+      "ImageSecondaryURL": "",
       "ImageScalar": 1,
       "WidthScale": 0,
       "CustomTile": {
-        "Type": 0,
-        "Thickness": 0.495000154,
+        "Type": 3,
+        "Thickness": 0.1,
         "Stackable": false,
         "Stretch": true
       }
     },
-    "LuaScript": "",
+    "LuaScript": "#include ./Expert_Set_Selector_I.f640e3.lua",
     "LuaScriptState": "",
     "XmlUI": ""
   },

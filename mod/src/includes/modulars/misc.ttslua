@@ -43,7 +43,7 @@ modularSets["inheritors"] =
 
 modularSets["ronanTheAccuser"] = 
 {
-    name="Ronan The Accuser",
+    name="Ronan the Accuser",
     modular=true,
     cards = {
         ["90001"] = 1,
@@ -132,5 +132,17 @@ modularSets["dreadpool"] =
         ["44040"]=1,
         ["44041"]=2,
         ["44042"]=1
+    }
+}
+
+modularSets["sauron"] = 
+{
+    name="Sauron",
+    modular=true,
+    cards = {
+        ["46029"]=1,
+        ["46030"]=1,
+        ["46031"]=1,
+        ["46032"]=2,
     }
 }

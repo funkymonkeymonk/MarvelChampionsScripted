@@ -1,0 +1,122 @@
+{
+  "Object": {
+    "GUID": "ec251d",
+    "Name": "Deck",
+    "Transform": {
+      "posX": 31.9112511,
+      "posY": 2.27094984,
+      "posZ": 25.3884773,
+      "rotX": -3.24270957e-8,
+      "rotY": 180,
+      "rotZ": -4.64836234e-7,
+      "scaleX": 1.27,
+      "scaleY": 1,
+      "scaleZ": 1.27
+    },
+    "Nickname": "Mission Player Cards",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      6700,
+      6600,
+      6500,
+      6400,
+      6300,
+      6100
+    ],
+    "CustomDeck": {
+      "61": {
+        "FaceURL": "https://dcqvlrey92bew.cloudfront.net/45171A.jpg",
+        "BackURL": "https://dcqvlrey92bew.cloudfront.net/45171B.jpg",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "63": {
+        "FaceURL": "https://dcqvlrey92bew.cloudfront.net/45172.jpg",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "64": {
+        "FaceURL": "https://dcqvlrey92bew.cloudfront.net/45173.jpg",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "65": {
+        "FaceURL": "https://dcqvlrey92bew.cloudfront.net/45174.jpg",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "66": {
+        "FaceURL": "https://dcqvlrey92bew.cloudfront.net/45175.jpg",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "67": {
+        "FaceURL": "https://dcqvlrey92bew.cloudfront.net/45176.jpg",
+        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Desperate_Measures.bbecaa.6700.json",
+    "X-Man.c17369.6600.json",
+    "Morph.3edee7.6500.json",
+    "Blink.e1b0bb.6400.json",
+    "Destiny.427b6a.6300.json",
+    "Mission_Team.deadbf.6100.json"
+  ]
+}

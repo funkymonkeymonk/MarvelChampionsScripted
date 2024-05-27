@@ -6,9 +6,9 @@
       "posX": 72.25,
       "posY": -9.504998,
       "posZ": 15.749999,
-      "rotX": 2.04229949e-7,
-      "rotY": -0.00403494248,
-      "rotZ": -9.236342e-8,
+      "rotX": 3.009848e-8,
+      "rotY": -0.00403493829,
+      "rotZ": -1.50172568e-8,
       "scaleX": 1.12515855,
       "scaleY": 1,
       "scaleZ": 1.12515855
@@ -22,13 +22,13 @@
       "z": 0
     },
     "ColorDiffuse": {
-      "r": 0.249982953,
-      "g": 0.249982953,
-      "b": 0.249982953
+      "r": 0.249982387,
+      "g": 0.249982387,
+      "b": 0.249982387
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,
-    "Locked": true,
+    "Locked": false,
     "Grid": true,
     "Snap": true,
     "IgnoreFoW": false,
@@ -47,7 +47,7 @@
       "WidthScale": 0,
       "CustomTile": {
         "Type": 3,
-        "Thickness": 0.197297364,
+        "Thickness": 0.1,
         "Stackable": true,
         "Stretch": true
       }

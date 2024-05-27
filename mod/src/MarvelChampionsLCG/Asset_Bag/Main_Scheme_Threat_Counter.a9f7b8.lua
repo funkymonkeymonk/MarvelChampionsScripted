@@ -50,7 +50,7 @@ end
 function createAdvanceButton()
     self.createButton({
         label = CONFIG.ADVANCE_BUTTON_LABEL or "ADVANCE",
-        click_function = "advanceScheme",
+        click_function = "buttonClick",
         function_owner = self,
         position = {0,0.1,-2.2},
         rotation = {0,0,0},
@@ -102,9 +102,10 @@ function setValue(params)
     updateSave()
 end
 
-function advanceScheme()
+function buttonClick()
+    local functionName = CONFIG.ADVANCE_BUTTON_FUNCTION or "advanceScheme"
     local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
-    scenarioManager.call("advanceScheme", {
+    scenarioManager.call(functionName, {
         schemeKey = CONFIG.SCHEME_KEY
     })
 end

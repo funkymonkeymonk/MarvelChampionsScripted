@@ -1,4 +1,4 @@
-scenarios["sinistersix"] =
+scenarios["sinisterSix"] =
 {
     name="The Sinister Six",
     tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2291833843244459963/D5973D37E3AD718BB8110CEA044FE051A2C29DA8/",
@@ -18,7 +18,8 @@ scenarios["sinistersix"] =
                 }
             },
             deckPosition={49.50, 1.00, 29.75},
-            deckScale={1.94, 1.00, 1.94}
+            deckScale={1.94, 1.00, 1.94},
+            locked=false
         },
         electro={
             name="Electro",
@@ -35,7 +36,8 @@ scenarios["sinistersix"] =
                 }
             },
             deckPosition={49.50, 1.00, 18.75},
-            deckScale={1.94, 1.00, 1.94}
+            deckScale={1.94, 1.00, 1.94},
+            locked=false
         },
         hobgoblin={
             name="Hobgoblin",
@@ -52,7 +54,8 @@ scenarios["sinistersix"] =
                 }
             },
             deckPosition={49.50, 1.00, 7.75},
-            deckScale={1.94, 1.00, 1.94}
+            deckScale={1.94, 1.00, 1.94},
+            locked=false
         },
         kraven={
             name="Kraven the Hunter",
@@ -69,7 +72,8 @@ scenarios["sinistersix"] =
                 }
             },
             deckPosition={49.50, 1.00, -3.25},
-            deckScale={1.94, 1.00, 1.94}
+            deckScale={1.94, 1.00, 1.94},
+            locked=false
         },
         scorpion={
             name="Scorpion",
@@ -86,7 +90,8 @@ scenarios["sinistersix"] =
                 }
             },
             deckPosition={49.75, 1.00, -14.25},
-            deckScale={1.94, 1.00, 1.94}
+            deckScale={1.94, 1.00, 1.94},
+            locked=false
         },
         vulture={
             name="Vulture",
@@ -103,7 +108,8 @@ scenarios["sinistersix"] =
                 }
             },
             deckPosition={49.50, 1.00, -25.25},
-            deckScale={1.94, 1.00, 1.94}
+            deckScale={1.94, 1.00, 1.94},
+            locked=false
         },
     },
     schemes={
@@ -158,3 +164,29 @@ scenarios["sinistersix"] =
         guerillaTactics="required"
     }
 }
+
+function getNextVillainStage_sinisterSix_docock(params)
+  return getSinisterSixStage(params.villain)
+end
+function getNextVillainStage_sinisterSix_electro(params)
+  return getSinisterSixStage(params.villain)
+end
+function getNextVillainStage_sinisterSix_hobgoblin(params)
+  return getSinisterSixStage(params.villain)
+end
+function getNextVillainStage_sinisterSix_kraven(params)
+  return getSinisterSixStage(params.villain)
+end
+function getNextVillainStage_sinisterSix_scorpion(params)
+  return getSinisterSixStage(params.villain)
+end
+function getNextVillainStage_sinisterSix_vulture(params)
+  return getSinisterSixStage(params.villain)
+end
+
+function getSinisterSixStage(villain)
+  local nextStage = villain.stages["stage1"]
+  nextStage.showAdvanceButton = false
+
+  return nextStage
+end

@@ -1,20 +1,20 @@
 {
   "Object": {
-    "GUID": "d18365",
-    "Name": "Notecard",
+    "GUID": "4dd1ed",
+    "Name": "Custom_PDF",
     "Transform": {
-      "posX": 76.25,
-      "posY": 0.5650011,
-      "posZ": 40.25,
-      "rotX": -3.344193e-8,
-      "rotY": -5.717341e-11,
-      "rotZ": 4.5935824e-8,
-      "scaleX": 1,
+      "posX": 34.69069,
+      "posY": 2.22179961,
+      "posZ": 21.89274,
+      "rotX": 0.009511264,
+      "rotY": 180,
+      "rotZ": -0.000002489542,
+      "scaleX": 2,
       "scaleY": 1,
-      "scaleZ": 1
+      "scaleZ": 2
     },
-    "Nickname": "Scenario Setup",
-    "Description": "Use these buttons to navigate through the scenario setup process. Choose your heroes, select a scenario, add to or change the modular sets, select a mode, and click GO.\n\nAll scenarios should basically work, but some of them need some work.",
+    "Nickname": "Age of Apocalypse Rules",
+    "Description": "",
     "GMNotes": "",
     "AltLookAngle": {
       "x": 0,
@@ -40,6 +40,12 @@
     "GridProjection": false,
     "HideWhenFaceDown": false,
     "Hands": false,
+    "CustomPDF": {
+      "PDFUrl": "http://cloud-3.steamusercontent.com/ugc/2495635126601774178/0BD00E138D20A7B13CD2C8A3253BDE489B5212A9/",
+      "PDFPassword": "",
+      "PDFPage": 0,
+      "PDFPageOffset": 0
+    },
     "LuaScript": "",
     "LuaScriptState": "",
     "XmlUI": ""

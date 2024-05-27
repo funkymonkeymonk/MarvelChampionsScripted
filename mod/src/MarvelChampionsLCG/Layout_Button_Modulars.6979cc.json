@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "74c1d6",
+    "GUID": "6979cc",
     "Name": "Custom_Tile",
     "Transform": {
-      "posX": -78,
-      "posY": 0,
-      "posZ": 0,
-      "rotX": 1.04220417e-10,
-      "rotY": 270.000061,
-      "rotZ": 0.00298256148,
-      "scaleX": 22.25,
+      "posX": 80.94,
+      "posY": 0.495001435,
+      "posZ": 35.7500229,
+      "rotX": 0.0000218499936,
+      "rotY": 180,
+      "rotZ": 1.23195377e-7,
+      "scaleX": 1.95,
       "scaleY": 1,
-      "scaleZ": 23.5
+      "scaleZ": 1.95
     },
-    "Nickname": "",
+    "Nickname": "Layout Button Modulars",
     "Description": "",
     "GMNotes": "",
     "AltLookAngle": {
@@ -22,9 +22,9 @@
       "z": 0
     },
     "ColorDiffuse": {
-      "r": 0,
-      "g": 0,
-      "b": 0
+      "r": 0.249999821,
+      "g": 0.249999821,
+      "b": 0.249999821
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,
@@ -36,23 +36,23 @@
     "DragSelectable": true,
     "Autoraise": true,
     "Sticky": true,
-    "Tooltip": true,
+    "Tooltip": false,
     "GridProjection": false,
     "HideWhenFaceDown": false,
     "Hands": false,
     "CustomImage": {
-      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/273974515701259432/A09A20BE6300EAB285858E76A03BD781EE3845B5/",
-      "ImageSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/273974515701259432/A09A20BE6300EAB285858E76A03BD781EE3845B5/",
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/2495635126604486300/63B37C3CBBF028443DF58CC24AB16D587E79A2C3/",
+      "ImageSecondaryURL": "",
       "ImageScalar": 1,
       "WidthScale": 0,
       "CustomTile": {
-        "Type": 0,
-        "Thickness": 0.495000154,
+        "Type": 3,
+        "Thickness": 0.1,
         "Stackable": false,
         "Stretch": true
       }
     },
-    "LuaScript": "",
+    "LuaScript": "#include ./Layout_Button_Modulars.6979cc.lua",
     "LuaScriptState": "",
     "XmlUI": ""
   },

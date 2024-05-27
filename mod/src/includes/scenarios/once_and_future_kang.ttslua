@@ -2,20 +2,186 @@ scenarios["kang"] =
 {
     name="The Once and Future Kang",
     tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
+    useHeroObligations = false,
     villains={
-        kang={
+
+    },
+    standardVillains={
+        stage1={
             name="Kang",
+            key="stage1",
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
             },
             stages={
                 stage1={
                     cardId="11001",
-                    hitPointsPerPlayer=12
-                },
-                stage3={
+                    hitPointsPerPlayer=12,
+                    key="stage1"
+                }
+            }
+        },
+        stage2a={
+            name="Immortus",
+            key="stage2a",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
+            },
+            schemeCardId="11009",
+            stages={
+                stage1={
+                    cardId="11002",
+                    hitPoints=18,
+                    key="stage1"
+                }
+            }
+        },
+        stage2b={
+            name="Iron Lad",
+            key="stage2b",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
+            },
+            schemeCardId="11010",
+            stages={
+                stage1={
+                    cardId="11003",
+                    hitPoints=18,
+                    key="stage1"
+                }
+            }
+        },
+        stage2c={
+            name="Rama-Tut",
+            key="stage2c",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
+            },
+            schemeCardId="11011",
+            stages={
+                stage1={
+                    cardId="11004",
+                    hitPoints=18,
+                    key="stage1"
+                }
+            }
+        },
+        stage2d={
+            name="Scarlet Centurion",
+            key="stage2d",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
+            },
+            schemeCardId="11012",
+            stages={
+                stage1={
+                    cardId="11005",
+                    hitPoints=18,
+                    key="stage1"
+                }
+            }
+        },
+        stage3={
+            name="Kang",
+            key="stage3",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
+            },
+            stages={
+                stage1={
                     cardId="11006",
-                    hitPointsPerPlayer=20
+                    hitPointsPerPlayer=20,
+                    key="stage1"
+                }
+            }
+        }
+    },
+    expertVillains={
+        stage1={
+            name="Kang",
+            key="stage1",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
+            },
+            stages={
+                stage1={
+                    cardId="11034",
+                    hitPointsPerPlayer=15,
+                    key="stage1"
+                }
+            }
+        },
+        stage2a={
+            name="Immortus",
+            key="stage2a",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
+            },
+            schemeCardId="11009",
+            stages={
+                stage1={
+                    cardId="11035",
+                    hitPoints=22,
+                    key="stage1"
+                }
+            }
+        },
+        stage2b={
+            name="Iron Lad",
+            key="stage2b",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
+            },
+            schemeCardId="11010",
+            stages={
+                stage1={
+                    cardId="11036",
+                    hitPoints=22,
+                    key="stage1"
+                }
+            }
+        },
+        stage2c={
+            name="Rama-Tut",
+            key="stage2c",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
+            },
+            schemeCardId="11011",
+            stages={
+                stage1={
+                    cardId="11037",
+                    hitPoints=22,
+                    key="stage1"
+                }
+            }
+        },
+        stage2d={
+            name="Scarlet Centurion",
+            key="stage2d",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
+            },
+            schemeCardId="11012",
+            stages={
+                stage1={
+                    cardId="11038",
+                    hitPoints=22,
+                    key="stage1"
+                }
+            }
+        },
+        stage3={
+            name="Kang",
+            key="stage3",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
+            },
+            stages={
+                stage1={
+                    cardId="11039",
+                    hitPointsPerPlayer=25,
+                    key="stage1"
                 }
             }
         }
@@ -26,7 +192,8 @@ scenarios["kang"] =
                 stage1={
                     cardId="11007",
                     startingThreat=0,
-                    targetThreatPerPlayer=7
+                    targetThreatPerPlayer=7,
+                    showAdvanceButton = false
                 },
                 stage2={
                     cardId="11008",
@@ -60,49 +227,6 @@ scenarios["kang"] =
                 ["11027"]=1,
                 ["11028"]=2,
                 ["11029"]=1
-            }
-        },
-        stageTwoVillains={
-            name="Stage Two Villains",
-            position={15.75, 1.00, 31.75},
-            scale=Vector(Global.getVar("CARD_SCALE_VILLAIN")),
-            cards={
-                ["11002"]=1,
-                ["11003"]=1,
-                ["11004"]=1,
-                ["11005"]=1
-            }
-        },
-        stageTwoSchemes={
-            name="Stage Two Schemes",
-            position={22.75, 1.00, 29.25},
-            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
-            cards={
-                ["11009"]=1,
-                ["11010"]=1,
-                ["11011"]=1,
-                ["11012"]=1
-            }
-        },
-        kangsDominion={
-            name="Kang's Dominion",
-            position={28.25, 1.00, 29.25},
-            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
-            cards={
-                ["11023"]=4
-            }
-        },
-        expertVillains={
-            name="Expert Villains",
-            position={39.75, 1.01, 31.75},
-            scale=Vector(Global.getVar("CARD_SCALE_VILLAIN")),
-            cards={
-                ["11034"]=1,
-                ["11035"]=1,
-                ["11036"]=1,
-                ["11037"]=1,
-                ["11038"]=1,
-                ["11039"]=1
             }
         }
     },

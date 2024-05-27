@@ -16862,7 +16862,7 @@ PACK_43 = [[
   },
   {
     "code": "43027",
-    "duplicate_of": "36026"
+    "duplicate_of": "05023"
   },
   {
     "name": "Combat Specialist",
@@ -19138,6 +19138,266 @@ PACK_45 = [[
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1833524088514022249/7A90E704A791A39D643453A11CAA1BA6BCF50016/",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45186C.jpg"
+  }
+]
+]]
+PACK_46 = [[
+[
+  {
+    "name": "Iceman",
+    "code": "46001a",
+    "type_code": "hero",
+    "faction_code": "hero",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/46001B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/46001A.jpg"
+  },
+  {
+    "name": "Bobby Drake",
+    "code": "46001b",
+    "type_code": "alter_ego",
+    "faction_code": "hero",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/46001A.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/46001B.jpg"
+  },
+  {
+    "name": "Frostbite",
+    "code": "46002",
+    "type_code": "upgrade",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/46002.jpg"
+  },
+  {
+    "name": "Snow Clone",
+    "code": "46003",
+    "type_code": "ally",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/46003.jpg"
+  },
+  {
+    "name": "Power Belt",
+    "code": "46004",
+    "type_code": "upgrade",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/46004.jpg"
+  },
+  {
+    "name": "Cryokinetic Perception",
+    "code": "46005",
+    "type_code": "upgrade",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/46005.jpg"
+  },
+  {
+    "name": "Ice Slide",
+    "code": "46006",
+    "type_code": "upgrade",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/46006.jpg"
+  },
+  {
+    "name": "Frozen Solid",
+    "code": "46007",
+    "type_code": "upgrade",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/46007.jpg"
+  },
+  {
+    "name": "Ice Wall",
+    "code": "46008",
+    "type_code": "support",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/46008.jpg"
+  },
+  {
+    "name": "Arctic Attack",
+    "code": "46009",
+    "type_code": "event",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/46009.jpg"
+  },
+  {
+    "name": "Ice Blast",
+    "code": "46010",
+    "type_code": "event",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/46010.jpg"
+  },
+  {
+    "name": "Chill Out!",
+    "code": "46011",
+    "type_code": "event",
+    "faction_code": "hero",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/46011.jpg"
+  },
+  {
+    "name": "Shark-Girl",
+    "code": "46012",
+    "subname": "Iara Dos Santos",
+    "type_code": "ally",
+    "faction_code": "aggression",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/46012.jpg"
+  },
+  {
+    "name": "Glob",
+    "code": "46013",
+    "subname": "Robert Herman",
+    "type_code": "ally",
+    "faction_code": "aggression",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/46013.jpg"
+  },
+  {
+    "name": "Suppressing Fire",
+    "code": "46014",
+    "type_code": "upgrade",
+    "faction_code": "aggression",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/46014.jpg"
+  },
+  {
+    "name": "Surprise Move",
+    "code": "46015",
+    "type_code": "event",
+    "faction_code": "aggression",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/46015.jpg"
+  },
+  {
+    "name": "Take That!",
+    "code": "46016",
+    "type_code": "event",
+    "faction_code": "aggression",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/46016.jpg"
+  },
+  {
+    "name": "Looking for Trouble",
+    "code": "46017",
+    "type_code": "event",
+    "faction_code": "aggression",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/46017.jpg"
+  },
+  {
+    "name": "Keep Up the Pressure",
+    "code": "46018",
+    "type_code": "player_side_scheme",
+    "faction_code": "aggression",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/46018.jpg"
+  },
+  {
+    "name": "Shadowcat",
+    "code": "46019",
+    "subname": "Kitty Pryde",
+    "type_code": "ally",
+    "faction_code": "basic",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/46019.jpg"
+  },
+  {
+    "name": "Beak",
+    "code": "46020",
+    "subname": "Barnell Bohusk",
+    "type_code": "ally",
+    "faction_code": "basic",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/46020.jpg"
+  },
+  {
+    "code": "46021",
+    "duplicate_of": "12024"
+  },
+  {
+    "code": "46022",
+    "duplicate_of": "15031"
+  },
+  {
+    "code": "46023",
+    "duplicate_of": "13024"
+  },
+  {
+    "name": "Hot-Headed",
+    "code": "46024",
+    "type_code": "obligation",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/46024.jpg"
+  },
+  {
+    "name": "Pyro",
+    "code": "46025",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/46025.jpg"
+  },
+  {
+    "name": "Playing with Fire",
+    "code": "46026",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/46026.jpg"
+  },
+  {
+    "name": "Pyro's Flamethrower",
+    "code": "46027",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/46027.jpg"
+  },
+  {
+    "name": "Burn!",
+    "code": "46028",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/46028.jpg"
+  },
+  {
+    "name": "Sauron",
+    "code": "46029",
+    "type_code": "minion",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/46029.jpg"
+  },
+  {
+    "name": "Sauron Lives!",
+    "code": "46030",
+    "type_code": "side_scheme",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/46030.jpg"
+  },
+  {
+    "name": "Life Drain",
+    "code": "46031",
+    "type_code": "attachment",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/46031.jpg"
+  },
+  {
+    "name": "The Eye of Sauron",
+    "code": "46032",
+    "type_code": "treachery",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/46032.jpg"
   }
 ]
 ]]
@@ -23453,16 +23713,16 @@ PACK_04 = [[
     "code": "04097",
     "subname": "Marc Spector",
     "type_code": "ally",
-    "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04097.jpg"
   },
   {
     "name": "Shang-Chi",
     "code": "04098",
     "type_code": "ally",
-    "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04098.jpg"
   },
   {
@@ -23470,16 +23730,16 @@ PACK_04 = [[
     "code": "04099",
     "subname": "Angela Del Toro",
     "type_code": "ally",
-    "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04099.jpg"
   },
   {
     "name": "Elektra",
     "code": "04100",
     "type_code": "ally",
-    "faction_code": "hero",
-    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "faction_code": "encounter",
+    "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/04100.jpg"
   },
   {

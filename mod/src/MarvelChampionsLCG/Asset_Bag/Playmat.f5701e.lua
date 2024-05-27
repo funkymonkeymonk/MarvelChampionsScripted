@@ -171,7 +171,7 @@ end
 
 function drawEncounter(object, player, isRightClick)
    local toPosition = self.positionToWorld(DRAWN_ENCOUNTER_OFFSET)
-   Global.call("drawEncountercard", {toPosition, self.getRotation(), isRightClick})
+   Global.call("drawEncountercard", {toPosition, isRightClick})
 end
 
 function discardEncounter(object, player_color, isRightClick)

@@ -1,0 +1,60 @@
+{
+  "Object": {
+    "GUID": "6dbb09",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 69.00003,
+      "posY": -1.5,
+      "posZ": 24.5,
+      "rotX": -5.13584041e-7,
+      "rotY": 180.001541,
+      "rotZ": -1.14095329e-8,
+      "scaleX": 2,
+      "scaleY": 1,
+      "scaleZ": 2
+    },
+    "Nickname": "Mode Selector Standard",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.249999851,
+      "g": 0.249999851,
+      "b": 0.249999851
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/2495635126627742363/ADD3ACFCE49F059501001C21C824C646BC3C85B7/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.1,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Mode_Selector_Standard.6dbb09.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

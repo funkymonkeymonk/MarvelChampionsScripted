@@ -1,6 +1,7 @@
 preventDeletion = true
 
 local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
+local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
 
 local encounterDeckPosition = {-12.75, 1.01, 22.25}
 local originPosition = {x=60.25, y=0.3, z=-6.25}
@@ -31,6 +32,20 @@ function getModularSet(params)
     return modularSets[params.modularSetKey]
 end
 
+function getSelectedSets(params)
+    return deepCopy(selectedSets)
+end
+
+function getSelectedSetKeys()
+    local keys = {}
+
+    for k,v in pairs(selectedSets) do
+        keys[k] = v.required or "recommended"
+    end
+
+    return keys
+end
+
 function getSelectedSetCount()
     local count = 0
 
@@ -54,7 +69,7 @@ function getCardsFromSelectedSets()
 end
 
 function layOutModularSetSelectors(params)
-    local sets = getEncounterSetsByType(params.modular)
+    local sets = getEncounterSetsByType({modular = params.modular})
 
     layoutManager.call("layOutSelectorTiles", {
         origin = params.origin,
@@ -101,10 +116,16 @@ function preSelectEncounterSets(params)
     end
 end
 
+function clearSelectedSets()
+    selectedSets = {}
+end
+
 function selectModularSet(params)
     addRemoveSelectedSet(params.modularSetKey)
+end
 
-    layoutManager.call("highlightMultipleSelectorTiles", {itemType = "modular-set", items = selectedSets})
+function removeModularSet(params)
+    selectedSets[params.modularSetKey] = nil
 end
 
 function addRemoveSelectedSet(key)
@@ -115,7 +136,7 @@ function addRemoveSelectedSet(key)
         end
     end
 
-    selectedSets[key] = modularSets[key]
+    selectedSets[key] = deepCopy(modularSets[key])
 end
 
 function hideSelectors()
@@ -124,13 +145,13 @@ end
 
 function showSelectors()
     layoutManager.call("showSelectors", {itemType = "modular-set"})
-    layoutManager.call("highlightMultipleSelectorTiles", {itemType = "modular-set", items = selectedSets})
+    --layoutManager.call("highlightMultipleSelectorTiles", {itemType = "modular-set", items = selectedSets})
 end
   
 
-function placeModularSet(params)
-    local modularSet = modularSets[params.modularSetKey]
-    local position = encounterDeckPosition
+function addEncounterSetToDeck(params)
+    local modularSet = modularSets[params.setKey]
+    local position = Vector(scenarioManager.call("getEncounterDeckPosition"))
     local rotation = {0,180,180}
     local scale = {2.12,3,2.12}
     
@@ -150,6 +171,10 @@ function placeModularSet(params)
         cardId = k
     end     
 
+    if(position.y < 3) then
+        position.y = 3
+    end
+
     if(deckCount < 2) then
         getCardByID(
             cardId,
@@ -158,9 +183,16 @@ function placeModularSet(params)
     else
         createDeck({cards=modularSet.cards, position=position, rotation=rotation, scale=scale})
     end
+
+    Wait.frames(
+        function()
+            Global.call("shuffleDeck", {deckPosition = position})
+        end,
+        30)
 end
 
-function getEncounterSetsByType(modular)
+function getEncounterSetsByType(params)
+    modular = params.modular
     local encounterSetList = {}
   
     for key, set in pairs(modularSets) do
@@ -196,3 +228,4 @@ require('!/modulars/rise_of_the_red_skull')
 require('!/modulars/mad_titans_shadow')
 require('!/modulars/mojo_mania')
 require('!/modulars/next_evolution')
+require('!/modulars/age_of_apocalypse')

@@ -1,0 +1,235 @@
+scenarios["fourHorsemen"] =
+{
+    name="Four Horsemen",
+    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2517025868834704172/7E999A4ED6EB9484AF6E13E92AE0CF02C67F4B98/",
+    blackHole={
+        position={49.25, 1.13, 33.84}
+    },
+    villains={
+        war={
+            name="War",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/2517025868834704351/B2B76E9D4540357679397C2481898144C86469D7/",
+                position={-15, 0.96, 29.15},
+                secondaryButton={
+                    label="NEXT",
+                    clickFunction="advanceHorsemenQueue",
+                }
+            },
+            stages={
+                stageA={
+                    cardId="45081",
+                    hitPointsPerPlayer=9
+                },
+                stageB={
+                    cardId="45081",
+                    hitPointsPerPlayer=12,
+                    flipCard=true
+                }
+            },
+            deckPosition={-15, 1.00, 20.44}
+        },
+        famine={
+            name="Famine",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/2517025868834704237/980CE86320B69C2BCC43970453D618B3BE989685/",
+                position={-5, 0.96, 29.15},
+                secondaryButton={
+                    label="NEXT",
+                    clickFunction="advanceHorsemenQueue",
+                }
+            },
+            stages={
+                stageA={
+                    cardId="45082",
+                    hitPointsPerPlayer=9
+                },
+                stageB={
+                    cardId="45082",
+                    hitPointsPerPlayer=12,
+                    flipCard=true
+                }
+            },
+            deckPosition={-5, 1.00, 20.44}
+        },
+        pestilence={
+            name="Pestilence",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/2517025868834704285/1282E9DDD06242699CE2BD1C2C40A049F2E05D2C/",
+                position={5, 0.96, 29.15},
+                secondaryButton={
+                    label="NEXT",
+                    clickFunction="advanceHorsemenQueue",
+                }
+            },
+            stages={
+                stageA={
+                    cardId="45083",
+                    hitPointsPerPlayer=9
+                },
+                stageB={
+                    cardId="45083",
+                    hitPointsPerPlayer=12,
+                    flipCard=true
+                }
+            },
+            deckPosition={5, 1.00, 20.44}
+        },
+        death={
+            name="Death",
+            hpCounter={
+                imageUrl="http://cloud-3.steamusercontent.com/ugc/2517025868834704172/7E999A4ED6EB9484AF6E13E92AE0CF02C67F4B98/",
+                position={15, 0.96, 29.15},
+                secondaryButton={
+                    label="NEXT",
+                    clickFunction="advanceHorsemenQueue",
+                }
+            },
+            stages={
+                stageA={
+                    cardId="45084",
+                    hitPointsPerPlayer=9
+                },
+                stageB={
+                    cardId="45084",
+                    hitPointsPerPlayer=12,
+                    flipCard=true
+                }
+            },
+            deckPosition={15, 1.00, 20.44}
+        }
+    },
+    schemes={
+        main={
+            stages={
+                stage1={
+                    cardId="45085",
+                    targetThreatPerPlayer=12
+                }
+            },
+            position={49.25, 0.97, 23.25},
+            threatCounter={
+                position={49.25, 1.01, 29.25},
+                scale={1.61, 1.00, 1.61}
+            }
+        }
+    },
+    decks={
+        encounterDeck={
+            name="Four Horsemen's Encounter Deck",
+            cards={
+                ["45090"]=3,
+                ["45091"]=1,
+                ["45092"]=1,
+                ["45093"]=1,
+                ["45094"]=1,
+                ["45095"]=1,
+                ["45096"]=3
+            },
+            position={46.75, 1.15, 15.75},
+            discardPosition={52.25, 0.97, 15.75}
+        }
+    },
+    modularSets={
+        hounds="optional",
+        dystopianNightmare="optional"
+    }
+}
+
+function prepareScenario_fourHorsemen()
+  currentScenario.activeHorsemanNumber = 1
+
+  randomizeFourHorsemen()
+  setUpFourHorsemenSideSchemes()
+end
+
+function randomizeFourHorsemen()
+  local horsemenQueue = {}
+
+  for k, v in pairs(currentScenario.villains) do
+    table.insert(horsemenQueue, k)
+  end
+
+  horsemenQueue = Global.call("shuffleTable", {table = horsemenQueue})
+
+  currentScenario.horsemenQueue = horsemenQueue
+
+  local villains = currentScenario.villains
+
+  for i = 1, 4, 1 do
+    local horsemanKey = currentScenario.horsemenQueue[i]
+    local x = -15 + (10 * (i - 1))
+    
+    local horseman = villains[horsemanKey]
+    horseman.deckPosition = {x, 1.00, 20.44}
+    horseman.hpCounter.position = {x, 0.96, 29.15}
+  end
+end
+
+function setUpFourHorsemenSideSchemes()
+  if(currentScenario.cards == nil) then currentScenario.cards = {} end
+  if(currentScenario.counters == nil) then currentScenario.counters = {} end
+
+  local sideSchemes = {}
+  table.insert(sideSchemes, "45086")
+  table.insert(sideSchemes, "45087")
+  table.insert(sideSchemes, "45088")
+  table.insert(sideSchemes, "45089")
+
+  sideSchemes = Global.call("shuffleTable", {table = sideSchemes})
+
+  local heroCount = heroManager.call("getHeroCount")
+
+  for i = 1, 4 do
+    if(i <= heroCount) then
+      local cardKey = "sideScheme" .. i
+      local cardId = sideSchemes[i]
+      local y = 21.75 - ((i - 1) * 5)
+      local cardPosition = {25.75, 1.00, y} 
+
+      currentScenario.cards[cardKey] = {cardId = cardId, position = cardPosition, scale = Vector(Global.getVar("CARD_SCALE_ENCOUNTER")), landscape = true}
+
+      y = 20.30 - ((i - 1) * 5)
+      local counterPosition = {25.37, 1.10, y}
+
+      currentScenario.counters[cardKey.."threat"] = {type="threat", position = counterPosition, scale = {0.48, 1.00, 0.48}, threat = 6, locked=false}
+    else
+      currentScenario.decks.encounterDeck.cards[sideSchemes[i]] = 1
+    end
+  end
+end
+
+function finalizeSetup_fourHorsemen()
+  --TODO: Refactor setUpScenario with coroutines to prevent having to use Wait.frames here
+  Wait.frames(
+    function()
+      updateActiveHorsemanHighlight()
+    end,
+    60
+  )
+end
+
+function advanceHorsemenQueue()
+  currentScenario.activeHorsemanNumber = currentScenario.activeHorsemanNumber + 1
+  if(currentScenario.activeHorsemanNumber > 4) then
+    currentScenario.activeHorsemanNumber = 1
+  end
+
+  updateActiveHorsemanHighlight()
+end
+
+function updateActiveHorsemanHighlight()
+  for i = 1, 4, 1 do
+    local horsemanKey = currentScenario.horsemenQueue[i]
+    local villain = currentScenario.villains[horsemanKey]
+    local hpCounter = getObjectFromGUID(villain.hpCounter.guid)
+
+    if(i == currentScenario.activeHorsemanNumber) then
+      hpCounter.highlightOn({1,1,0})
+      hpCounter.call("showSecondaryButton")
+    else
+      hpCounter.highlightOff()
+      hpCounter.call("hideSecondaryButton")
+    end
+  end
+end
