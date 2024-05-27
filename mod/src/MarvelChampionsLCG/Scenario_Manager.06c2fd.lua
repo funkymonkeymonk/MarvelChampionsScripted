@@ -189,8 +189,48 @@ function placeScenario(scenarioKey, mode)
   for _, villain in pairs(scenario.villains) do
     Wait.frames(
       function()
-        placeVillainHpCounter(villain, heroCount)
-        placeVillain(villain)
+        placeVillainHpCounter(villain.key, heroCount)
+        placeVillain(villain.key)
+        local villainPosition = villain.deckPosition or defaults.villainDeck.position
+        local villainRotation = villain.deckRotation or defaults.villainDeck.rotation
+        local villainScale = villain.deckScale or defaults.villainDeck.scale
+      
+        Global.call("deleteCardAtPosition", {position = villainPosition})
+      
+        local locked = true;
+        if(villain.locked ~= nil) then
+          locked = stage.locked
+        end
+      
+        local flipped = stage.flipCard or false
+      
+        if(stage.assetId ~= nil) then
+          spawnAsset({
+            guid = stage.assetId,
+            position = villainPosition,
+            rotation = villainRotation,
+            scale = villainScale,
+            locked = locked,
+            callback = "configureVillainStage"
+           })
+        else
+          getCardByID(
+            stage.cardId, 
+            villainPosition, 
+            {scale = villainScale, name = villain.name, flipped = flipped, locked=locked})  
+        end
+        
+        local hitPoints = (stage.hitPoints or 0) + ((stage.hitPointsPerPlayer or 0) * heroCount)
+        local villainHpCounter = getObjectFromGUID(villain.hpCounter.guid)
+      
+        Wait.frames(
+          function()
+            villainHpCounter.call("setValue", {value = hitPoints}) 
+            configureSecondaryVillainButton(villainHpCounter, villain.hpCounter.secondaryButton)
+            configureAdvanceVillainButton(villainHpCounter, stage.showAdvanceButton)
+          end,
+          20
+        )
       end,
       delay
     )
@@ -206,7 +246,7 @@ function placeScenario(scenarioKey, mode)
     placeScheme(scheme, heroCount)
   end
 
-  placeBlackHole(scenario)
+  placeBlackHole()
 
   placeModularSets(scenario)
 
@@ -269,7 +309,7 @@ function setUpScenario()
   )
 
   placeExtras()
-  placeBlackHole(currentScenario)
+  placeBlackHole()
   placeBoostPanel(currentScenario)
 
   placeNotes()
@@ -472,7 +512,7 @@ end
 function placeVillainHpCounter(villainKey, hitPoints, showAdvanceButton)
   local villain = currentScenario.villains[villainKey]
   local counter = villain.hpCounter or {}
-log(villainKey)
+
   local position = counter.position or defaults.villainHpCounter.position
   local rotation = counter.rotation or defaults.villainHpCounter.rotation
   local scale = counter.scale or defaults.villainHpCounter.scale
@@ -506,6 +546,7 @@ function configureVillainHpCounter(params)
   local counter = params.spawnedObject
   local hitPoints = params.hitPoints or 0
   local villainKey = params.villainKey
+  local showAdvanceButton = params.showAdvanceButton
 
   counter.setPosition(params.position)
   counter.setName("")
@@ -516,9 +557,15 @@ function configureVillainHpCounter(params)
   Wait.frames(
     function()
       counter.call("setVillainKey", {villainKey = villainKey})
+
       if(hitPoints > 0) then
         counter.call("setValue", {value = hitPoints})
       end
+
+      if(showAdvanceButton) then
+        configureAdvanceVillainButton(counter, true)
+      end
+
       local reloadedCounter = counter.reload()
       currentScenario.villains[villainKey].hpCounter.guid = reloadedCounter.getGUID()
     end,
@@ -526,7 +573,8 @@ function configureVillainHpCounter(params)
   )
 end
 
-function placeMainSchemeThreatCounter(scheme, threat, showAdvanceButton)
+function placeMainSchemeThreatCounter(schemeKey, threat, showAdvanceButton)
+  local scheme = currentScenario.schemes[schemeKey]
   local counter = scheme.threatCounter or {}
 
   local position = counter.position or defaults.mainSchemeThreatCounter.position
@@ -555,6 +603,7 @@ function configureMainSchemeThreatCounter(params)
   local counter = params.spawnedObject
   local threat = params.threat or 0
   local scheme = params.scheme
+  local showAdvanceButton = params.showAdvanceButton
 
   counter.setPosition(params.position)
   counter.setRotation(params.rotation)
@@ -566,9 +615,12 @@ function configureMainSchemeThreatCounter(params)
   Wait.frames(
     function()
       counter.call("setSchemeKey", {schemeKey = scheme.key})
-      local threatCounter = currentScenario.schemes[scheme.key].counter or {}
+      if(showAdvanceButton) then
+        configureAdvanceSchemeButton(counter, true)
+      end
+      local threatCounter = currentScenario.schemes[scheme.key].threatCounter or {}
       threatCounter.guid = counter.getGUID()
-      currentScenario.schemes[scheme.key].counter = threatCounter
+      currentScenario.schemes[scheme.key].threatCounter = threatCounter
     end,
     10
   )
@@ -600,7 +652,7 @@ function setUpScheme(scheme, heroCount)
   local schemeRotation = scheme.rotation or defaults.mainSchemeDeck.rotation
   local schemeScale = scheme.scale or defaults.mainSchemeDeck.scale
 
-  placeMainSchemeThreatCounter(scheme, 0, false)
+  placeMainSchemeThreatCounter(scheme.key, 0, false)
 
   Wait.frames(
     function()
@@ -665,6 +717,9 @@ function addEncounterSetsToEncounterDeck(deck)
 end
 
 function addObligationCardsToEncounterDeck(deck)
+  local useHeroObligations = currentScenario.useHeroObligations == nil or currentScenario.useHeroObligations
+  if(not useHeroObligations) then return end
+
   local obligationCards = heroManager.call("getObligationCards")
 
   for cardId, count in pairs(obligationCards) do
@@ -732,54 +787,29 @@ function setUpCounters(heroCount)
   end
 end
 
-function placeVillain(villain)
+function placeVillain(villainKey)
+  local villain = currentScenario.villains[villainKey]
   local villainPosition = villain.deckPosition or defaults.villainDeck.position
   local villainRotation = villain.deckRotation or defaults.villainDeck.rotation
   local villainScale = villain.deckScale or defaults.villainDeck.scale
 
-  --TODO: only place the cards that are needed, based on mode
-  if(villain.stage7 ~= nil) then --TODO: Remove this after adding scripting to Morlock Siege scenario
-    getCardByID(villain.stage4.cardId, villainPosition, {scale = villainScale, name = villain.name, flipped = false})
+  local stageCount = 0
+  local cardId = ""
+  local villainCards = {}
+
+  for k, v in pairs(villain.stages) do
+    stageCount = stageCount + 1
+    cardId = v.cardId
+    villainCards[cardId] = 1
   end
 
-  if(villain.stage6 ~= nil) then
-    getCardByID(villain.stage4.cardId, villainPosition, {scale = villainScale, name = villain.name, flipped = false})
-  end
-
-  if(villain.stage5 ~= nil) then
-    getCardByID(villain.stage4.cardId, villainPosition, {scale = villainScale, name = villain.name, flipped = false})
-  end
-
-  if(villain.stage4 ~= nil) then --TODO: Remove this after adding scripting to Mansion Attack scenario
-    getCardByID(villain.stage4.cardId, villainPosition, {scale = villainScale, name = villain.name, flipped = false})
-  end
-
-  if(villain.stage3 ~= nil) then
-    getCardByID(villain.stage3.cardId, villainPosition, {scale = villainScale, name = villain.name, flipped = false})
-  end
-
-  if(villain.stage2 ~= nil) then
-    
-    Wait.time(
-      function()
-        getCardByID(
-          villain.stage2.cardId, 
-          villainPosition, 
-          {scale = villainScale, name = villain.name, flipped = false}) 
-      end,
-      .5)
-    
-  end
-  
-  if(villain.stage1 ~= nil) then
-    Wait.time(
-      function()
-        getCardByID(
-          villain.stage1.cardId, 
-          villainPosition, 
-          {scale = villainScale, name = villain.name, flipped = false})
-      end,
-      1)
+  if(stageCount == 1) then
+    getCardByID(
+      cardId, 
+      villainPosition, 
+      {scale = villainScale, name = villain.name, flipped = false}) 
+  else
+    createDeck({cards = villainCards, position = villainPosition, rotation = villainRotation, scale = villainScale})
   end
 end
 
@@ -791,33 +821,30 @@ function placeDeck(deck)
   createDeck({cards = deck.cards, position = deckPosition, scale = deckScale, name = deck.name})
 end
 
-function placeScheme(scheme, heroCount)
+function placeScheme(schemeKey)
+  local scheme = currentScenario.schemes[schemeKey]
   local schemePosition = scheme.position or defaults.mainSchemeDeck.position
   local schemeRotation = scheme.rotation or defaults.mainSchemeDeck.rotation
   local schemeScale = scheme.scale or defaults.mainSchemeDeck.scale
 
-  --There may be a better way to iterate over the stages backward
-  local delay = 0
-  for i = 5, 1, -1 do
-    if(scheme.stages["stage"..i] ~= nil) then
-      Wait.time(
-        function()
-          getCardByID(scheme.stages["stage"..i].cardId, schemePosition, {scale = schemeScale, name = scheme.name, flipped = false, landscape = true})
-        end,
-        delay
-      )
-      delay = delay + 0.5
-    end
+  local stageCount = 0
+  local cardId = ""
+  local schemeCards = {}
+
+  for k, v in pairs(scheme.stages) do
+    stageCount = stageCount + 1
+    cardId = v.cardId
+    schemeCards[cardId] = 1
   end
 
-  -- local counter = scheme.counter or {}
-
-  -- Wait.time(
-  --   function()
-  --     placeThreatCounter(counter, 0)
-  --   end,
-  --   1
-  -- )
+  if(stageCount == 1) then
+    getCardByID(
+      cardId, 
+      schemePosition, 
+      {scale = schemeScale, landscape=true, flipped = false}) 
+  else
+    createDeck({cards = schemeCards, position = schemePosition, rotation = schemeRotation, scale = schemeScale})
+  end
 end
 
 function placeThreatCounter(counter, threat)
@@ -915,7 +942,8 @@ function getItemFromManifest(params)
   return getObjectFromGUID(itemGuid)
 end
 
-function placeBlackHole(scenario)
+function placeBlackHole()
+  local scenario = currentScenario
   local position = scenario.blackHole and scenario.blackHole.position or defaults.blackHole.position
   local rotation = scenario.blackHole and scenario.blackHole.rotation or defaults.blackHole.rotation
   local scale = scenario.blackHole and scenario.blackHole.scale or defaults.blackHole.scale
@@ -934,6 +962,7 @@ function configureBlackHole(params)
   blackHole.setPosition(params.position)
   blackHole.setScale(params.scale) --Shouldn't have to do this, but the scale wasn't being applied in the takeObject call
   blackHole.setLock(true)
+  addItemToManifest("blackHole", blackHole)
 end
 
 function placeModularSets(scenario)
@@ -1168,7 +1197,7 @@ end
 
 function advanceVillainStage(villainKey, heroCount)
   local villain = currentScenario.villains[villainKey]
-  local nextStage = getNextVillainStage(villain)
+  local nextStage = getNextVillainStage(villainKey)
 
   if(nextStage == nil) then return end
 
@@ -1181,13 +1210,14 @@ function advanceVillainStage(villainKey, heroCount)
   saveData()
 end
 
-function getNextVillainStage(villain)
-  local functionName = "getNextVillainStage_" .. currentScenario.key .. "_" .. villain.key
+function getNextVillainStage(villainKey)
+  local functionName = "getNextVillainStage_" .. currentScenario.key
 
   if(self.getVar(functionName) ~= nil) then
-    return self.call(functionName, {villain = villain})
+    return self.call(functionName, {villainKey = villainKey})
   end
 
+  local villain = currentScenario.villains[villainKey]
   local currentStageNumber = villain.currentStageNumber
   local mode = currentScenario.mode
   local nextStage = nil
@@ -1213,10 +1243,10 @@ function getNextVillainStage(villain)
 end
 
 function placeVillainStage(villain, stage, heroCount)
-  local functionName = "placeVillainStage_" .. currentScenario.key .. "_" .. villain.key
+  local functionName = "placeVillainStage_" .. currentScenario.key
 
   if(self.getVar(functionName) ~= nil) then
-    self.call(functionName, {villain=villain, stage=stage, heroCount=heroCount})
+    self.call(functionName, {villainKey=villain.key, stage=stage, heroCount=heroCount})
     return
   end
 
@@ -1292,7 +1322,7 @@ function advanceSchemeStage(schemeKey, heroCount)
 
   scheme.currentStageNumber = string.sub(nextStage.key, -1)
 
-  placeSchemeStage(scheme, nextStage, heroCount)
+  placeSchemeStage(schemeKey, nextStage, heroCount)
 
   setUpSchemeStage(scheme, nextStage, heroCount)
 
@@ -1310,15 +1340,18 @@ function getNextSchemeStage(scheme)
   local nextStageKey = "stage" .. (tonumber(currentStageNumber) + 1)
   local nextStage = scheme.stages[nextStageKey]
 
-  local nextNextStageKey = "stage" .. (tonumber(currentStageNumber) + 2)
-  local showAdvanceButton = scheme.stages[nextNextStageKey] ~= nil
+  if(nextStage.showAdvanceButton == nil) then
+    local nextNextStageKey = "stage" .. (tonumber(currentStageNumber) + 2)
+    local showAdvanceButton = scheme.stages[nextNextStageKey] ~= nil
 
-  nextStage.showAdvanceButton = showAdvanceButton
+    nextStage.showAdvanceButton = showAdvanceButton
+  end
 
   return nextStage
 end
 
-function placeSchemeStage(scheme, stage, heroCount)
+function placeSchemeStage(schemeKey, stage, heroCount)
+  local scheme = currentScenario.schemes[schemeKey]
   local functionName = "placeSchemeStage_" .. currentScenario.key .. "_" .. scheme.key
 
   if(self.getVar(functionName) ~= nil) then
@@ -1339,7 +1372,9 @@ function placeSchemeStage(scheme, stage, heroCount)
     schemePosition, 
     {scale = schemeScale, name = scheme.name, flipped = flipped, landscape = true})
 
-  local counter = scheme.counter or {}
+  local counter = scheme.threatCounter or {}
+
+  if(not counter.guid) then return end
 
   local threat = (stage.startingThreat or 0) + ((stage.startingThreatPerPlayer or 0) * heroCount)
   local schemeThreatCounter = getObjectFromGUID(counter.guid)
@@ -1366,7 +1401,10 @@ function configureAdvanceVillainButton(villainHpCounter, showAdvanceButton)
   local villain = currentScenario.villains[villainHpCounter.call("getVillainKey")]
 
   if(showAdvanceButton) then
-    villainHpCounter.call("setAdvanceButtonOptions", {label = villain.hpCounter.primaryButtonLabel or "ADVANCE"})
+    villainHpCounter.call("setAdvanceButtonOptions", {
+      label = villain.hpCounter.primaryButtonLabel or "ADVANCE",
+      clickFunction = villain.hpCounter.primaryButtonClickFunction
+    })
     villainHpCounter.call("showAdvanceButton")
   else
     villainHpCounter.call("hideAdvanceButton")
@@ -1382,255 +1420,336 @@ function configureSecondaryVillainButton(villainHpCounter, secondaryButton)
   end
 end
 
-function configureAdvanceSchemeButton(schemeHpCounter, showAdvanceButton)
+function configureAdvanceSchemeButton(threatCounter, showAdvanceButton)
+  local scheme = currentScenario.schemes[threatCounter.call("getSchemeKey")]
+
   if(showAdvanceButton) then
-    schemeHpCounter.call("showAdvanceButton")
+    threatCounter.call("setAdvanceButtonOptions", {
+      label = scheme.threatCounter.advanceButtonLabel or "ADVANCE",
+      clickFunction = scheme.threatCounter.advanceButtonClickFunction
+    })
+    threatCounter.call("showAdvanceButton")
   else
-    schemeHpCounter.call("hideAdvanceButton")
+    threatCounter.call("hideAdvanceButton")
   end
 end
 
 function prepareScenario_kang()
   local mode = currentScenario.mode
+  local villain = mode == "standard" and currentScenario.standardVillains.stage1 or currentScenario.expertVillains.stage1
 
-  if(mode == "standard") then
-    currentScenario.villains.stage1 = currentScenario.standardVillains.stage1
-  else
-    currentScenario.villains.stage1 = currentScenario.expertVillains.stage1
+  villain.hpCounter.primaryButtonLabel = "TIME WARP"
+
+  currentScenario.villains.stage1 = villain
+end
+
+function setUpVillain_kang(params)
+  advanceVillainStage("stage1", params.heroCount)
+end
+
+function getNextVillainStage_kang(params)
+  local currentStageNumber = currentScenario.currentStage or 0
+  local nextStageNumber = currentStageNumber + 1
+
+  local nextStage = {
+    key = "stage1",
+    stageNumber = nextStageNumber,
+    showAdvanceButton = nextStageNumber < 3
+  }
+
+  currentScenario.currentStage = nextStageNumber
+
+  return nextStage
+end
+
+function placeVillainStage_kang(params)
+  local stage = params.stage
+
+  if(stage.stageNumber == 1) then
+    placeKangStage1(params.heroCount)
+    return
+  end
+
+  if(stage.stageNumber == 2) then
+    placeKangStage2()
+    return
+  end
+
+  if(stage.stageNumber == 3) then
+    placeKangStage3(params.heroCount)
   end
 end
 
+function placeKangStage1(heroCount)
+  local stage = currentScenario.villains.stage1.stages.stage1
+  local hitPoints = (stage.hitPoints or 0) + ((stage.hitPointsPerPlayer or 0) * heroCount)
 
--- function getNextVillainStage_kang_kang(params)
---   local villain = currentScenario.villains.kang
---   local currentStageNumber = villain.currentStageNumber or 0
---   local mode = currentScenario.mode
+  placeVillainHpCounter("stage1", hitPoints, true)
+  placeVillain("stage1")
+end
 
---   if(currentStageNumber == 0) then
---     villain.stages = getKangStages(mode)
---   end
+function placeKangStage2()
+  local villainPosition = defaults.villainDeck.position
+  local mainSchemePosition = defaults.mainSchemeDeck.position
 
---   local nextStageNumber = currentStageNumber + 1
+  Global.call("deleteCardAtPosition", {position = villainPosition})
+  Global.call("deleteCardAtPosition", {position = mainSchemePosition})
 
---   if(nextStageNumber == 2) then
---     return {key="stage2"}
---   end
+  local hpCounter = getObjectFromGUID(currentScenario.villains.stage1.hpCounter.guid)
+  hpCounter.destruct()
 
---   local nextStage = villain.stages["stage" .. nextStageNumber]
---   nextStage.showAdvanceButton = nextStageNumber < 3
+  local schemeCounter = getObjectFromGUID(currentScenario.schemes.main.threatCounter.guid)
+  schemeCounter.destruct()
 
---   return nextStage
--- end
+  local encounterDeckOrigin = getEncounterDeckPosition()
+  local encounterDeckDestination = {46.75, 1.15, 15.75}
+  currentScenario.encounterDeckPosition = encounterDeckDestination
+  Global.call("moveDeck", {origin = encounterDeckOrigin, destination = encounterDeckDestination})
 
--- function placeVillainStage_kang_kang(params)
---   local villain = currentScenario.villains.kang
---   local stage = params.stage
---   local heroCount = params.heroCount
+  local encounterDiscardOrigin = getEncounterDiscardPosition()
+  local encounterDiscardDestination = {52.25, 0.97, 15.75}
+  currentScenario.encounterDiscardPosition = encounterDiscardDestination
+  Global.call("moveDeck", {origin = encounterDiscardOrigin, destination = encounterDiscardDestination})
 
---   if(stage.key == "stage2") then
---     placeKangStage2()
---     return
---   end
+  local blackHole = getItemFromManifest({key = "blackHole"})
+  blackHole.destruct()
 
---   placeKangHpCounter(defaults.villainHpCounter.position, defaults.villainHpCounter.scale, stage.key, 0, false)
+  currentScenario.villains = {}
 
---   Wait.frames(
---     function()
---       local villainPosition = villain.deckPosition or defaults.villainDeck.position
---       local villainRotation = villain.deckRotation or defaults.villainDeck.rotation
---       local villainScale = villain.deckScale or defaults.villainDeck.scale
+  local mode = currentScenario.mode
+  local villains = mode == "standard" and currentScenario.standardVillains or currentScenario.expertVillains
+  local villainQueue = {}
 
---       --TODO: delete existing card, if necessary
+  for key, villain in pairs(villains) do
+    if(string.sub(key, 1, 6) == "stage2") then
+      table.insert(villainQueue, villain)
+    end
+  end
 
---       Global.call("deleteCardAtPosition", {position = villainPosition})
+  villainQueue = Global.call("shuffleTable", {table = villainQueue})
 
---       local locked = true;
---       if(villain.locked ~= nil) then
---         locked = stage.locked
---       end
+  local seats = {"Red", "Blue", "Green", "Yellow"}
 
---       local flipped = stage.flipCard or false
+  for k, v in ipairs(seats) do
+    local hero = heroManager.call("getHeroByPlayerColor", {playerColor = v})
+    if(hero) then
+      local villain = villainQueue[k]
+      local layout = getKangStage2Layout(v)
 
---       getCardByID(
---         stage.cardId, 
---         villainPosition, 
---         {scale = villainScale, name = villain.name, flipped = flipped, locked=locked})
+      villain.deckPosition = layout.villainPosition
+      villain.deckScale = layout.villainScale
+      villain.hpCounter.position = layout.hpCounterPosition
+      villain.hpCounter.scale = layout.hpCounterScale
+      villain.hpCounter.primaryButtonLabel = "DEFEAT"
+      villain.hpCounter.primaryButtonClickFunction = "defeatKangStage2Villain"
 
---       local hitPoints = (stage.hitPoints or 0) + ((stage.hitPointsPerPlayer or 0) * heroCount)
---       local villainHpCounter = getObjectFromGUID(currentScenario.villains.kang.stages[stage.key].hpCounter.guid)
+      currentScenario.villains[villain.key] = villain
 
---       villainHpCounter.call("setValue", {value = hitPoints}) 
---       configureSecondaryVillainButton(villainHpCounter, villain.hpCounter.secondaryButton)
---       configureAdvanceVillainButton(villainHpCounter, stage.showAdvanceButton)
---     end,
---     20
---   )
--- end
-
--- function placeKangStage2()
---   local mode = currentScenario.mode
---   local villain = currentScenario.villains.kang
---   local stages = {}
-
---   for key, villain in pairs(currentScenario.villains) do
---     if(string.sub(key, 1, 6) == "stage2") then
---       table.insert(stages, villain)
---     end
---   end
-
---   math.randomseed(os.time())
-
---   local playerColors = {"Red", "Blue", "Green", "Yellow"}
-
---   for _, playerColor in pairs(playerColors) do
---     local hero = getHeroByPlayerColor({playerColor = playerColor})
-
---     if(hero) then
---       local stage = getRandomKangStage2(stages)    
---       local layout = kangStage2Layout[playerColor]
-    
---       getCardByID(
---         stage.cardId, 
---         layout.villainPosition, 
---         {scale = layout.villainScale, name=stage.villainName, flipped=false, locked=true})
+      local scheme = {
+        key = villain.key,
+        position = layout.schemePosition,
+        scale = layout.schemeScale,
+        threatCounter = {
+          position = layout.threatCounterPosition,
+          advanceButtonLabel = "COMPLETE",
+          advanceButtonClickFunction = "completeKangStage2Scheme"
+        },
+        stages = {
+          stage1 = {
+            cardId = villain.schemeCardId,
+            startingThreat = 0,
+            targetThreat = 9
+          }
+        }
+      }
       
---       -- local hitPoints = stage.hitPoints)
---       -- local villainHpCounter = getObjectFromGUID(villain.hpCounter.guid)
-    
---       -- Wait.frames(
---       --   function()
---       --     villainHpCounter.call("setValue", {value = hitPoints}) 
---       --     configureSecondaryVillainButton(villainHpCounter, villain.hpCounter.secondaryButton)
---       --     configureAdvanceVillainButton(villainHpCounter, stage.showAdvanceButton)
---       --   end,
---       --   20
---       -- )      
---     end
---   end
--- end
+      currentScenario.schemes[villain.key] = scheme
+    end
+  end
 
--- function getKangStages(mode)
---   if(mode == "standard") then
---     return {
---       stage1 = {cardId = "11001", hitPointsPerPlayer = 12, key="stage1"},
---       stage2a = {cardId = "11002", hitPoints = 18, key="stage2a", villainName="Immortus", schemeCardId="11002"},
---       stage2b = {cardId = "11003", hitPoints = 18, key="stage2b", villainName="Iron Lad", schemeCardId="11003"},
---       stage2c = {cardId = "11004", hitPoints = 18, key="stage2c", villainName="Rama-Tut", schemeCardId="11004"},
---       stage2d = {cardId = "11005", hitPoints = 18, key="stage2d", villainName="Scarlet Centurion", schemeCardId="11005"},
---       stage3 = {cardId = "11006", hitPointsPerPlayer = 20, key="stage3"}
---     }
---   end
+  currentScenario.schemes.main.position = {49.25, 0.97, 23.25}
+  currentScenario.schemes.main.threatCounter = nil
+  
+  advanceSchemeStage("main", 0)
 
---   return {
---     stage1 = {cardId = "11034", hitPointsPerPlayer = 12, key="stage1"},
---     stage2a = {cardId = "11035", hitPoints = 22, key="stage2a", villainName="Immortus", schemeCardId="11035"},
---     stage2b = {cardId = "11036", hitPoints = 22, key="stage2b", villainName="Iron Lad", schemeCardId="11036"},
---     stage2c = {cardId = "11037", hitPoints = 22, key="stage2c", villainName="Rama-Tut", schemeCardId="11037"},
---     stage2d = {cardId = "11038", hitPoints = 22, key="stage2d", villainName="Scarlet Centurion", schemeCardId="11038"},
---     stage3 = {cardId = "11039", hitPointsPerPlayer = 20, key="stage3"}
---   }
--- end
+  currentScenario.blackHole = {
+    position = {49.25, 1.13, 33.84}
+  }
+  placeBlackHole()
 
--- local kangStage2Layout = {
---   Red={
---     villainPosition={-30, 1,00, 20.44},
---     villainScale={3.64, 1.00, 3.64},
---     hpCounterPosition={-30, 0.96, 29.15},
---     hpCounterScale={2.01, 1.00, 2.01},
---     schemePosition={-21.25, 0.97, 22.45},
---     schemeScale={2.93, 1.00, 2.93}
---   }, 
---   Blue={
---     villainPosition={-15, 1,00, 20.44},
---     villainScale={3.64, 1.00, 3.64},
---     hpCounterPosition={-15, 0.96, 29.15},
---     hpCounterScale={2.01, 1.00, 2.01},
---     schemePosition={-6.25, 0.97, 22.45},
---     schemeScale={2.93, 1.00, 2.93}
---   }, 
---   Green={
---     villainPosition={15, 1,00, 20.44},
---     villainScale={3.64, 1.00, 3.64},
---     hpCounterPosition={15, 0.96, 29.15},
---     hpCounterScale={2.01, 1.00, 2.01},
---     schemePosition={23.75, 0.97, 22.45},
---     schemeScale={2.93, 1.00, 2.93}
---   }, 
---   Yellow={
---     villainPosition={30, 1,00, 20.44},
---     villainScale={3.64, 1.00, 3.64},
---     hpCounterPosition={30, 0.96, 29.15},
---     hpCounterScale={2.01, 1.00, 2.01},
---     schemePosition={38.75, 0.97, 22.45},
---     schemeScale={2.93, 1.00, 2.93}
---   }
--- }
+  startLuaCoroutine(self, "placeKangStage2Villains")
+end
 
--- function placeKangHpCounter(position, scale, stageKey, hitPoints, showAdvanceButton)
---   local hpCounter = spawnAsset({
---     guid = Global.getVar("ASSET_GUID_VILLAIN_HEALTH_COUNTER"),
---     position = position,
---     rotation = defaults.villainHpCounter.rotation,
---     scale = scale,
---     imageUrl = currentScenario.villains.kang.hpCounter.imageUrl,
---     lock = true,
---     hitPoints = hitPoints,
---     showAdvanceButton = showAdvanceButton,
---     stageKey = stageKey,
---     callback = "configureKangHpCounter"
---   })
--- end
+function placeKangStage2Villains()
+  for key, villain in pairs(currentScenario.villains) do
+    placeVillainHpCounter(key, villain.stages.stage1.hitPoints, true)
+    placeVillain(key)
 
--- function configureKangHpCounter(params)
---   local counter = params.spawnedObject
---   local hitPoints = params.hitPoints or 0
---   local stageKey = params.stageKey
+    placeMainSchemeThreatCounter(key, 0, true)
 
---   counter.setPosition(params.position)
---   counter.setName("")
---   counter.setDescription("")
---   counter.setLock(params.lock)
---   counter.setCustomObject({image = params.imageUrl})
+    Wait.frames(
+      function()
+        placeScheme(key)
+      end,
+      20
+    )
 
---   Wait.frames(
---     function()
---       counter.call("setVillainKey", {villainKey = villainKey})
---       counter.call("setValue", {value = hitPoints})
---       local reloadedCounter = counter.reload()
---       currentScenario.villains.kang.stages[stageKey].hpCounter = {guid = reloadedCounter.getGUID()}
---     end,
---     10
---   )
--- end
+    for i=1, 5 do
+      coroutine.yield(0)
+    end
+  end
 
--- function getRandomKangStage2(stages)
---   local unplacedStages = {}
+  return 1
+end
 
---   for key, stage in pairs(stages) do
---     if(not stage.placed) then
---       table.insert(unplacedStages, stage)
---     end
---   end
+function defeatKangStage2Villain(params)
+  deleteKangStage2PlayArea(params.villainKey)
+end
 
---   local stage = stages[math.random(#unplacedStages)]
---   stage.placed = true
+function completeKangStage2Scheme(params)
+  local schemesCompleted = currentScenario.stage2SchemesCompleted or 0
+  schemesCompleted = schemesCompleted + 1
+  currentScenario.stage2SchemesCompleted = schemesCompleted
 
---   return stage
--- end
+  deleteKangStage2PlayArea(params.schemeKey)
+end
 
--- function getNextSchemeStage_kang_main(params)
---   local scheme = currentScenario.schemes.main
---   local currentStageNumber = scheme.currentStageNumber or 0
---   local nextStageKey = "stage" .. (tonumber(currentStageNumber) + 1)
---   local nextStage = scheme.stages[nextStageKey]
+function deleteKangStage2PlayArea(villainKey)
+  local villain = currentScenario.villains[villainKey]
+  local hpCounter = getObjectFromGUID(villain.hpCounter.guid)
+  hpCounter.destruct()
 
---   local nextNextStageKey = "stage" .. (tonumber(currentStageNumber) + 2)
---   local showAdvanceButton = scheme.stages[nextNextStageKey] ~= nil
+  Global.call("deleteCardAtPosition", {position = villain.deckPosition})
 
---   nextStage.showAdvanceButton = false
+  local scheme = currentScenario.schemes[villainKey]
+  local threatCounter = getObjectFromGUID(scheme.threatCounter.guid)
+  threatCounter.destruct()
 
---   return nextStage
--- end
+  Global.call("deleteCardAtPosition", {position = scheme.position})
+
+  local defeatedStage2Villains = currentScenario.defeatedStage2Villains or 0
+  defeatedStage2Villains = defeatedStage2Villains + 1
+  currentScenario.defeatedStage2Villains = defeatedStage2Villains
+
+  local heroCount = heroManager.call("getHeroCount")
+  if(defeatedStage2Villains >= heroCount) then
+    advanceVillainStage(villainKey, heroCount)
+  end
+end
+
+function placeKangStage3(heroCount)
+  local mainSchemePosition = defaults.mainSchemeDeck.position
+  Global.call("deleteCardAtPosition", {position = mainSchemePosition})
+
+  local blackHole = getItemFromManifest({key = "blackHole"})
+  blackHole.destruct()
+
+  local encounterDeckOrigin = getEncounterDeckPosition()
+  local encounterDeckDestination = defaults.encounterDeck.position
+  currentScenario.encounterDeckPosition = encounterDeckDestination
+  Global.call("moveDeck", {origin = encounterDeckOrigin, destination = encounterDeckDestination})
+
+  local encounterDiscardOrigin = getEncounterDiscardPosition()
+  local encounterDiscardDestination = defaults.encounterDeck.discardPosition
+  currentScenario.encounterDiscardPosition = encounterDiscardDestination
+  Global.call("moveDeck", {origin = encounterDiscardOrigin, destination = encounterDiscardDestination})
+
+  Global.call("deleteCardAtPosition", {position = currentScenario.schemes.main.position})
+
+  currentScenario.schemes.main.position = defaults.mainSchemeDeck.position
+  currentScenario.schemes.main.threatCounter = nil
+
+  advanceSchemeStage("main", heroCount)
+
+  currentScenario.blackHole = {
+    position = defaults.blackHole.position
+  }
+  placeBlackHole()
+
+  local mode = currentScenario.mode
+  local villains = mode == "standard" and currentScenario.standardVillains or currentScenario.expertVillains
+  currentScenario.villains.stage3 = villains.stage3
+
+  local stage = currentScenario.villains.stage3.stages.stage1
+  local hitPoints = (stage.hitPoints or 0) + ((stage.hitPointsPerPlayer or 0) * heroCount)
+
+  placeVillainHpCounter("stage3", hitPoints, false)
+  placeVillain("stage3")
+
+  placeMainSchemeThreatCounter("main", 0, false)
+
+  placeKangsDominion(heroCount)
+end
+
+function placeKangsDominion(heroCount)
+  local schemesCompleted = currentScenario.stage2SchemesCompleted or 0
+  local firstSchemePosition = {16.75, 1.00, 21.75}
+  local firstCounterPosition = {16.37, 1.10, 20.30}
+
+  for i=1, schemesCompleted do
+    local position = {firstSchemePosition[1], firstSchemePosition[2], firstSchemePosition[3] + ((i - 1) * -5)}
+    local scale = Global.getTable("CARD_SCALE_ENCOUNTER")
+
+    getCardByID("11023", position, {scale = scale, landscape = true})
+
+    Wait.frames(
+      function()
+        local position = {firstCounterPosition[1], firstCounterPosition[2], firstCounterPosition[3] + ((i - 1) * -5)}
+        local scale = {0.48, 1.00, 0.48}
+        local threat = 3 * heroCount
+
+        placeThreatCounter(
+          {position = position, scale = scale},
+          threat
+        )
+      end,
+      10
+    )
+  end
+end
+
+function getKangStage2Layout(playerColor)
+  local kangStage2Layout = {
+    Red={
+      villainPosition={-39, 1.00, 20.44},
+      villainScale={3.64, 1.00, 3.64},
+      hpCounterPosition={-39, 0.96, 29.15},
+      hpCounterScale={2.01, 1.00, 2.01},
+      schemePosition={-30.25, 0.97, 22.45},
+      schemeScale={2.93, 1.00, 2.93},
+      threatCounterPosition={-30.25, 1.01, 28.48}
+    }, 
+    Blue={
+      villainPosition={-16, 1.00, 20.44},
+      villainScale={3.64, 1.00, 3.64},
+      hpCounterPosition={-16, 0.96, 29.15},
+      hpCounterScale={2.01, 1.00, 2.01},
+      schemePosition={-7.25, 0.97, 22.45},
+      schemeScale={2.93, 1.00, 2.93},
+      threatCounterPosition={-7.25, 1.01, 28.48}
+    }, 
+    Green={
+      villainPosition={7, 1.00, 20.44},
+      villainScale={3.64, 1.00, 3.64},
+      hpCounterPosition={7, 0.96, 29.15},
+      hpCounterScale={2.01, 1.00, 2.01},
+      schemePosition={15.75, 0.97, 22.45},
+      schemeScale={2.93, 1.00, 2.93},
+      threatCounterPosition={15.75, 1.01, 28.48}
+    }, 
+    Yellow={
+      villainPosition={30, 1.00, 20.44},
+      villainScale={3.64, 1.00, 3.64},
+      hpCounterPosition={30, 0.96, 29.15},
+      hpCounterScale={2.01, 1.00, 2.01},
+      schemePosition={38.75, 0.97, 22.45},
+      schemeScale={2.93, 1.00, 2.93},
+      threatCounterPosition={38.75, 1.01, 28.48}
+    }
+  }  
+
+  return kangStage2Layout[playerColor]
+end
 
 
 
@@ -1652,7 +1771,7 @@ require('!/scenarios/nebula')
 require('!/scenarios/escape_the_museum')
 require('!/scenarios/infiltrate_the_museum')
 require('!/scenarios/brotherhood_of_badoon')
-
+require('!/scenarios/once_and_future_kang')
 require('!/scenarios/red_skull')
 require('!/scenarios/zola')
 require('!/scenarios/taskmaster')

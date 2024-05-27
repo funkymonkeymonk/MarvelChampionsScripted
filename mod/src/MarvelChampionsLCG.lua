@@ -82,8 +82,6 @@ ASSET_GUID_BOOST_PANEL            = "ef27d7"
 
 IS_RESHUFFLING = false
 
-require('!/Cardplacer')
-
 function onLoad()
     -- Create context Menus
     addContextMenuItem("Random First Player", randomFirstPlayer)
@@ -333,18 +331,18 @@ function shuffleTable(params)
    end
  
    return tbl
- end
+end
  
- function deleteCardAtPosition(params)
+function deleteCardAtPosition(params)
    local position = params.position
    local items = findInRadiusBy(position, 3, isCard, false)
 
    if #items > 0 then
      items[1].destroy()
    end
- end
+end
 
- function discardCardAtPosition(params)
+function discardCardAtPosition(params)
    local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
    local position = params.position
    local discardPosition = Vector(scenarioManager.call('getEncounterDiscardPosition'))
@@ -354,4 +352,17 @@ function shuffleTable(params)
      items[1].setPositionSmooth(discardPosition, false, false)
      items[1].setRotationSmooth({0,180,0}, false, false)
    end
- end
+end
+
+function moveDeck(params)
+   local originPosition = params.origin
+   local destinationPosition = params.destination
+
+   local items = findInRadiusBy(originPosition, 4, isCardOrDeck)
+
+   if #items == 0 then return end
+   
+   items[1].setPositionSmooth(destinationPosition, false, false)
+end
+
+require('!/Cardplacer')

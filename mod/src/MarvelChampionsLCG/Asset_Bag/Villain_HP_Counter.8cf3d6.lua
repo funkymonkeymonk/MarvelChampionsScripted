@@ -76,7 +76,7 @@ end
 function createAdvanceButton()
     self.createButton({
         label = CONFIG.ADVANCE_BUTTON_LABEL or "ADVANCE",
-        click_function = "advanceVillain",
+        click_function = "primaryButtonClick",
         function_owner = self,
         position = {0,0.1,-1.8},
         rotation = {0,0,0},
@@ -176,9 +176,10 @@ function setValue(params)
     updateSave()
 end
 
-function advanceVillain()
+function primaryButtonClick()
+    local functionName = CONFIG.ADVANCE_BUTTON_FUNCTION or "advanceVillain"
     local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
-    scenarioManager.call("advanceVillain", {
+    scenarioManager.call(functionName, {
         villainKey = CONFIG.VILLAIN_KEY
     })
 end

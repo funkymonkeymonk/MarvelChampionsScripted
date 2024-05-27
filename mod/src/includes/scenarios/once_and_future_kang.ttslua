@@ -2,6 +2,7 @@ scenarios["kang"] =
 {
     name="The Once and Future Kang",
     tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
+    useHeroObligations = false,
     villains={
 
     },
@@ -26,6 +27,7 @@ scenarios["kang"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
             },
+            schemeCardId="11009",
             stages={
                 stage1={
                     cardId="11002",
@@ -40,6 +42,7 @@ scenarios["kang"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
             },
+            schemeCardId="11010",
             stages={
                 stage1={
                     cardId="11003",
@@ -54,6 +57,7 @@ scenarios["kang"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
             },
+            schemeCardId="11011",
             stages={
                 stage1={
                     cardId="11004",
@@ -68,6 +72,7 @@ scenarios["kang"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
             },
+            schemeCardId="11012",
             stages={
                 stage1={
                     cardId="11005",
@@ -112,6 +117,7 @@ scenarios["kang"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
             },
+            schemeCardId="11009",
             stages={
                 stage1={
                     cardId="11035",
@@ -126,6 +132,7 @@ scenarios["kang"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
             },
+            schemeCardId="11010",
             stages={
                 stage1={
                     cardId="11036",
@@ -140,6 +147,7 @@ scenarios["kang"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
             },
+            schemeCardId="11011",
             stages={
                 stage1={
                     cardId="11037",
@@ -154,6 +162,7 @@ scenarios["kang"] =
             hpCounter={
                 imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
             },
+            schemeCardId="11012",
             stages={
                 stage1={
                     cardId="11038",
@@ -183,7 +192,8 @@ scenarios["kang"] =
                 stage1={
                     cardId="11007",
                     startingThreat=0,
-                    targetThreatPerPlayer=7
+                    targetThreatPerPlayer=7,
+                    showAdvanceButton = false
                 },
                 stage2={
                     cardId="11008",
