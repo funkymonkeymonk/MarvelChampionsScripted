@@ -87,7 +87,6 @@ scenarios["loki"] =
             position={22.75, 1.01, 29.75},
             scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
             cards={
-                ["21129"]=1,
                 ["21130"]=1,
                 ["21131"]=1,
                 ["21132"]=1,
@@ -98,67 +97,9 @@ scenarios["loki"] =
         }
     },
     modularSets={
+        infinityGauntlet="required",
         enchantress="recommended",
         frostGiants="recommended"
     }
 }
 
-function advanceVillainStage_loki(params)
-  local heroCount = params.heroCount
-  local villain = currentScenario.villains.loki
-
-  if(villain.currentStageNumber ~= nil) then
-      --Move current stage to victory display
-      villain.stages["stage"..villain.currentStageNumber].defeated = true
-  end
-
-  local remainingStages = {}
-
-  for key, stage in pairs(villain.stages) do
-      if(not stage.defeated) then
-          table.insert(remainingStages, key)
-      end
-  end
-
-  local newStageKey = nil
-  local lastStage = false
-
-  if(#remainingStages == 1) then
-      newStageKey = remainingStages[1]
-      lastStage = true
-  else
-      math.randomseed(os.time())
-      newStageKey = remainingStages[math.random(#remainingStages)]
-  end
-  
-  local newStage = villain.stages[newStageKey]
-
-  villain.currentStageNumber = string.sub(newStage.key, -1)
-
-  local villainPosition = villain.deckPosition or defaults.villainDeck.position
-  local villainRotation = villain.deckRotation or defaults.villainDeck.rotation
-  local villainScale = villain.deckScale or defaults.villainDeck.scale
-
-  getCardByID(
-      newStage.cardId, 
-      villainPosition, 
-      {scale = villainScale, name = villain.name, flipped = false, locked=true})
-  
-  local hitPoints = (newStage.hitPoints or 0) + ((newStage.hitPointsPerPlayer or 0) * heroCount)
-  local villainHpCounter = getObjectFromGUID(villain.hpCounter.guid)
-
-  Wait.frames(
-      function()
-          villainHpCounter.call("setValue", {value = hitPoints}) 
-          
-          villainHpCounter.call("setAdvanceButtonOptions", {label = "Next!"})
-
-          if(lastStage) then
-              villainHpCounter.call("hideAdvanceButton")
-          else
-              villainHpCounter.call("showAdvanceButton")
-          end
-      end,
-      20
-  )
-end

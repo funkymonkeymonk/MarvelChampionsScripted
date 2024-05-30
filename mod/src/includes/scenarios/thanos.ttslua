@@ -96,3 +96,7 @@ scenarios["thanos"] =
         childrenOfThanos="recommended"
     }
 }
+
+function prepareScenario_thanos()
+  encounterSetManager.call("removeModularSet", {modularSetKey = "infinityGauntlet"})
+end

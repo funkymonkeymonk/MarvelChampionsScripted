@@ -5550,7 +5550,7 @@ PACK_21 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21141.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21142.jpg"
   },
   {
     "name": "Gjallerbru",
@@ -5558,7 +5558,7 @@ PACK_21 = [[
     "type_code": "side_scheme",
     "faction_code": "encounter",
     "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21142.jpg"
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21141.jpg"
   },
   {
     "name": "Garm",

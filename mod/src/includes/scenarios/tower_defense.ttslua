@@ -85,19 +85,19 @@ scenarios["towerDefense"] =
     cards={
         avengersTower={
             cardId="21100",
-            position={15.75, 1.00, 29.25},
+            position={15.50, 1.25, 30.00},
             scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
         },
         focusedDefense={
             cardId="21101",
-            position={19.25, 1.00, 15.75},
+            position={19.25, 3.00, 15.75},
             scale=Vector(Global.getVar("CARD_SCALE_PLAYER"))
         }
     },            
     counters={
         damage={
             type="general",
-            position={15.26, 1.06, 26.74},
+            position={14.70, 1.10, 30.90},
             scale={0.50, 1.00, 0.50},
             locked=true
         }

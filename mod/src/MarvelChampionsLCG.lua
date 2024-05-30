@@ -361,7 +361,7 @@ function moveDeck(params)
    local items = findInRadiusBy(originPosition, 4, isCardOrDeck)
 
    if #items == 0 then return end
-   
+
    items[1].setPositionSmooth(destinationPosition, false, false)
 end
 

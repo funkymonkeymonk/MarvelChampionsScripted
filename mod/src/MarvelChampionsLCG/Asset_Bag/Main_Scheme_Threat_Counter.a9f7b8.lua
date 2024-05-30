@@ -45,6 +45,9 @@ function createAll()
       color={0,0,0,0}
       })
 
+    if(CONFIG.SHOW_ADVANCE_BUTTON) then
+        createAdvanceButton()
+    end
 end
 
 function createAdvanceButton()

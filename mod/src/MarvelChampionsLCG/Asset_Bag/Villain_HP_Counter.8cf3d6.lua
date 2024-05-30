@@ -15,7 +15,12 @@ function onload(saved_data)
         local loaded_data = JSON.decode(saved_data)
         CONFIG = loaded_data
     end
+
     createAll()
+
+    if CONFIG.SHOW_HIGHLIGHT then
+        self.highlightOn(CONFIG.HIGHLIGHT_COLOR)
+    end
 end
 
 function updateSave()
@@ -68,6 +73,10 @@ function createAll()
 
     if(CONFIG.SHOW_ADVANCE_BUTTON) then
         createAdvanceButton()
+    end
+
+    if(CONFIG.SHOW_SECONDARY_BUTTON) then
+        createSecondaryButton()
     end
 
     setTooltips()
@@ -233,4 +242,20 @@ function removeButtonByLabel(buttonLabel)
            self.removeButton(button.index)
        end
    end
+ end
+
+ function showHighlight(params)
+    local highlightColor = params.highlightColor or {1,1,1}
+    CONFIG.HIGHLIGHT_COLOR = highlightColor
+    CONFIG.SHOW_HIGHLIGHT = true
+    updateSave()
+
+    self.highlightOn(CONFIG.HIGHLIGHT_COLOR)
+ end
+
+ function hideHighlight()
+    CONFIG.SHOW_HIGHLIGHT = false
+    updateSave()
+
+    self.highlightOff()
  end
