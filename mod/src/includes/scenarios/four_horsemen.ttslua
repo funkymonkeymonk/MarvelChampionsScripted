@@ -225,10 +225,10 @@ function updateActiveHorsemanHighlight()
     local hpCounter = getObjectFromGUID(villain.hpCounter.guid)
 
     if(i == currentScenario.activeHorsemanNumber) then
-      hpCounter.highlightOn({1,1,0})
+      hpCounter.call("showHighlight", {highlightColor = {1,1,0}})
       hpCounter.call("showSecondaryButton")
     else
-      hpCounter.highlightOff()
+      hpCounter.call("hideHighlight")
       hpCounter.call("hideSecondaryButton")
     end
   end

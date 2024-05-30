@@ -283,14 +283,14 @@ function wreckingCrewActivate(params)
     local hpCounter = getObjectFromGUID(villain.hpCounter.guid)
 
     if(villain.key == villainKey) then
-      hpCounter.highlightOn({1,1,0})
+      hpCounter.call("showHighlight", {highlightColor = {1,1,0}})
       hpCounter.call("hideSecondaryButton")
 
       local encounterDeck = currentScenario.decks[villainKey .. "Deck"]
       currentScenario.encounterDeckPosition = encounterDeck.position
       currentScenario.encounterDiscardPosition = encounterDeck.discardPosition
     else
-      hpCounter.highlightOff()
+      hpCounter.call("hideHighlight")
       hpCounter.call("showSecondaryButton")
     end
   end  

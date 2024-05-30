@@ -46,7 +46,7 @@
         },
         odin={
             cardId="21139",
-            position={10.75, 1.00, 22.25},
+            position={10.75, 4.00, 22.25},
             scale=Vector(Global.getVar("CARD_SCALE_PLAYER"))
         }
     },
