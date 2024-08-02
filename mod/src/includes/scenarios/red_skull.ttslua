@@ -43,22 +43,14 @@ scenarios["redSkull"] =
     cards={
         sleeper={
             cardId="04130",
-            position={19.75, 0.97, 29.25},
+            position={-13.75, 0.97, 30.25},
             scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
         },
         redHouse={
             cardId="04139",
-            position={16.75, 1.00, 21.75},
+            position={7.25, 0.97, 16.75},
             scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
             landscape=true
-        }
-    },
-    counters={
-        redHouseThreat={
-            type="threat",
-            position={16.37, 1.10, 20.30},
-            scale={0.48, 1.00, 0.48},
-            threatPerPlayer=3
         }
     },
     decks={
@@ -77,7 +69,7 @@ scenarios["redSkull"] =
         },
         sideSchemes={
             name="Side Scheme Deck",
-            position={15.75, 1.00, 29.25},
+            position={-19.25, 1.01, 30.75},
             scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
             cards={
                 ["04140"]=1,

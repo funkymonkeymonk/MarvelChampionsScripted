@@ -10,43 +10,71 @@ function setCardID(_, value, _)
     CARD_ID = value
 end
 
+function random_guid()
+  local value = math.random(0, 2^24)
+  return string.format('%x', value)
+end
+
+function mapCardData(cardData)
+    local card = {}
+
+    for k,v in pairs(cardData) do
+        if(k~="FrontURL" and k~="BackURL" and k~="flavor" and k~="text" and k~="backText") then
+            card[k] = string.gsub(tostring(v), "\"", "\\\"")
+        end
+    end
+
+    local json = JSON.encode(card)
+
+    return json
+end
 
 -- Fix card pool to deal with duplicates
 function buildCardPool(packID)
-    if (CARDPOOL_BY_PACK_ID[packID] == nil) then
-        local cardpool = {}
-        local CARDPOOL_OBJ = getObjectFromGUID('843931')
-        local CARDPOOL_JSON = CARDPOOL_OBJ.getVar('PACK_' .. packID)
-
-        if(CARDPOOL_JSON == nil) then
-            log("Pack "..packID.." has not been added to the card pool.")
-        end
-        
-        local CARDPOOL_DATA = JSON.decode(CARDPOOL_JSON)
-
-        for _, cardData in pairs(CARDPOOL_DATA) do
-            if (cardData.duplicate_of == nil) then
-                local cardFace = cardData.FrontURL
-                local cardBack = cardData.BackURL
-                local cardAsset = Decker.Asset(cardFace, cardBack)
-                local sideways = string.sub(cardData.type_code, -6, -1) == "scheme"
-
-                local card = Decker.Card(cardAsset, 1, 1, { name=cardData.name, sideways=sideways, tags={type_code=cardData.type_code, code=cardData.code, subname=cardData.subname, faction_code=cardData.faction_code}})
-                cardpool[cardData.code] = card
-            else
-                cardpool[cardData.code] = {duplicate_of = cardData.duplicate_of}
-            end
-        end
-        CARDPOOL_BY_PACK_ID[packID] = cardpool
-        return cardpool
-    else
+    if (CARDPOOL_BY_PACK_ID[packID] != nil) then
         return CARDPOOL_BY_PACK_ID[packID]
     end
+
+    local cardpool = {}
+    local CARDPOOL_OBJ = getObjectFromGUID('843931')
+    local CARDPOOL_JSON = CARDPOOL_OBJ.getVar('PACK_' .. packID)
+
+    if(CARDPOOL_JSON == nil) then
+        log("Pack "..packID.." has not been added to the card pool.")
+    end
+    
+    local CARDPOOL_DATA = JSON.decode(CARDPOOL_JSON)
+
+    for _, cardData in pairs(CARDPOOL_DATA) do
+        if (cardData.duplicate_of == nil) then
+            local cardFace = cardData.FrontURL
+            local cardBack = cardData.BackURL
+            local cardAsset = Decker.Asset(cardFace, cardBack)
+            local sideways = string.sub(cardData.type, -6, -1) == "scheme"
+
+            --local card = Decker.Card(cardAsset, 1, 1, { guid=random_guid(), name=cardData.name, sideways=sideways, tags={cardData.type}, GMNotes=mapCardData(cardData) })
+            local card = Decker.Card(cardAsset, 1, 1, { guid=random_guid(), name=cardData.name, sideways=sideways, tags={cardData.type}, GMNotes=cardData.code })
+
+            for k,v in pairs(cardData) do
+                if(k~="FrontURL" and k~="BackURL" and k~="flavor" and k~="text" and k~="backText") then
+                    card[k] = string.gsub(tostring(v), "\"", "\\\"")
+                end
+            end
+            
+            cardpool[cardData.code] = card
+        else
+            cardpool[cardData.code] = {duplicate_of = cardData.duplicate_of}
+        end
+    end
+    
+    CARDPOOL_BY_PACK_ID[packID] = cardpool
+    return cardpool
 end
 
 function getCardFromCardPool(cardID)
     local packID = string.sub(cardID, 1,2)
     local cardpool = buildCardPool(packID)
+    log(cardpool)
     local card = cardpool[cardID]
 
     --Temporary work-around for cardpool issue
@@ -131,7 +159,7 @@ function createDeck(params)
             end
         end
     end
-    newDeck = Decker.Deck(deck)
+    newDeck = Decker.Deck(deck, {name = name})
     newDeck:spawn({position = position, scale = scale, rotation = rotation, name = name})
 end
 

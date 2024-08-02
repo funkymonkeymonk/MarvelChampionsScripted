@@ -48,19 +48,9 @@ scenarios["stryfe"] =
         },
         stryfesGrasp={
             cardId="40168",
-            position={16.75, 1.00, 21.75},
+            position={7.25, 0.97, 16.75},
             scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
             landscape=true
-        }
-
-    },
-    counters={
-        stryfesGraspThreat={
-            type="threat",
-            position={16.37, 1.10, 20.30},
-            scale={0.48, 1.00, 0.48},
-            threat=4,
-            threatPerPlayer=6
         }
     },
     decks={

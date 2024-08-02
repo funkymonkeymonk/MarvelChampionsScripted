@@ -43,22 +43,14 @@ scenarios["sabretooth"] =
     cards={
         findTheSenator={
             cardId="32065",
-            position={16.75, 1.00, 21.75},
+            position={7.25, 0.97, 16.75},
             scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
             landscape=true
         },
         robertKelly={
             cardId="32066",
-            position={21.75, 1.00, 21.75},
+            position={14.75, 0.97, 21.25},
             scale=Vector(Global.getVar("CARD_SCALE_PLAYER"))
-        }
-    },
-    counters={
-        findTheSenatorThreat={
-            type="threat",
-            position={16.37, 1.10, 20.30},
-            scale={0.48, 1.00, 0.48},
-            threatPerPlayer=5
         }
     },
     decks={

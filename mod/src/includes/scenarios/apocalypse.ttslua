@@ -103,6 +103,18 @@ scenarios["apocalypse"] =
             rotation={0, 180, 0},
             scale={6,1,6}
         }
+    },
+    zones={
+        environment = {
+            position = {30.00, 1.00, 29.75},
+            scale = {15.00, 1.00, 7.00},
+            firstCardPosition = {25.25, 0.97, 29.75},
+            horizontalGap = 5,
+            verticalGap = 0,
+            layoutDirection = "horizontal",
+            width = 3,
+            height = 1
+        }        
     }
 }
 

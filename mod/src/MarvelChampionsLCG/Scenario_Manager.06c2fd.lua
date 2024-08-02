@@ -41,6 +41,11 @@ local defaults = {
     position = Global.getTable("SIDE_SCHEME_POSITION"),
     rotation = Global.getTable("SIDE_SCHEME_ROTATION")
   },
+  zones = {
+    sideScheme = Global.getTable("ZONE_SIDE_SCHEME"),
+    environment = Global.getTable("ZONE_ENVIRONMENT"),
+    attachment = Global.getTable("ZONE_ATTACHMENT")
+  },
   boostDrawPosition = Global.getTable("BOOST_POS")
 }
 
@@ -284,7 +289,8 @@ function setUpScenario()
 
   prepareScenario()
 
-  --setUpZones()
+  setUpZones()
+  setUpSnapPoints()
 
   local heroCount = heroManager.call("getHeroCount")
 
@@ -360,25 +366,85 @@ function initiateFirstStages(heroCount)
 end
 
 function setUpZones()
-  local environmentZone = spawnObject({
-    type = "LayoutZone",
-    position = {19.50, 1.50, 30.00},
-    scale = {15.00, 3.00, 7.00},
-    sound = false,
-    callback_function = function(zone)
-      zone.LayoutZone.setOptions({
-        combine_into_decks = false,
-        horizontal_group_padding = 0.5,
-        instant_refill = true,
-        manual_only = false,
-        max_objects_per_group = 1,
-        new_object_facing = 0,
-        trigger_for_face_down = true,
-        trigger_for_face_up = true,
-        trigger_for_non_cards = false
-      })
-    end
-  })
+  if(not currentScenario.zones) then currentScenario.zones = {} end
+
+  currentScenario.zones.sideScheme = currentScenario.zones.sideScheme or defaults.zones.sideScheme
+  currentScenario.zones.environment = currentScenario.zones.environment or defaults.zones.environment
+  currentScenario.zones.attachment = currentScenario.zones.attachment or defaults.zones.attachment
+
+  local sideSchemeZoneDef = currentScenario.zones.sideScheme
+  local environmentZoneDef = currentScenario.zones.environment
+  local attachmentZoneDef = currentScenario.zones.attachment
+
+  if(sideSchemeZoneDef.position) then
+    spawnObject({
+      type="ScriptingTrigger",
+      position = sideSchemeZoneDef.position,
+      scale = sideSchemeZoneDef.scale,
+      sound = false,
+      callback_function = function(spawned_object)
+        spawned_object.addTag("side_scheme")
+        spawned_object.addTag("player_side_scheme")
+        spawned_object.setVar("zoneType", "sideScheme")
+        currentScenario.zones.sideScheme.guid = spawned_object.getGUID()
+      end
+    })
+  end
+
+  if(environmentZoneDef.position) then
+    spawnObject({
+      type="ScriptingTrigger",
+      position = environmentZoneDef.position,
+      scale = environmentZoneDef.scale,
+      sound = false,
+      callback_function = function(spawned_object)
+        spawned_object.addTag("environment")
+        spawned_object.setVar("zoneType", "environment")
+        currentScenario.zones.environment.guid = spawned_object.getGUID()
+      end
+    })
+  end
+
+  if(attachmentZoneDef.position) then
+    spawnObject({
+      type="ScriptingTrigger",
+      position = attachmentZoneDef.position,
+      scale = attachmentZoneDef.scale,
+      sound = false,
+      callback_function = function(spawned_object)
+        spawned_object.addTag("attachment")
+        spawned_object.setVar("zoneType", "attachment")
+        currentScenario.zones.attachment.guid = spawned_object.getGUID()
+      end
+    })
+  end
+end
+
+function setUpSnapPoints()
+  local snapPoints = {}
+  local deckPos = getEncounterDeckPosition()
+  local discardPos = getEncounterDiscardPosition()
+
+  deckPos = {deckPos[1], 0.75, deckPos[3]}
+  discardPos = {discardPos[1], 0.75, discardPos[3]}
+
+  table.insert(snapPoints, {position = deckPos})
+  table.insert(snapPoints, {position = discardPos})
+  Global.setSnapPoints(snapPoints)
+end
+
+function getZoneGuid(params)
+  if(not currentScenario.zones) then return nil end
+  local zone = currentScenario.zones[params.zoneType]
+  return zone.guid
+end
+
+function getZoneDefinition(params)
+  local zoneType = params.zoneType
+
+  if(not currentScenario) then return nil end
+
+  return currentScenario.zones[zoneType]
 end
 
 function heroCountIsValid(params)
@@ -1059,25 +1125,38 @@ function finalizeSetUp(scenario)
 end
 
 function clearScenario()
-  local clearCards = findCardsAtPosition()
-
-  for _, obj in ipairs(clearCards) do
-     if obj.getVar("preventDeletion") ~= true then
-        obj.destruct()
-     end
+  if(currentScenario.zones) then
+    for _, zone in pairs(currentScenario.zones) do
+      if(zone.guid) then
+        getObjectFromGUID(zone.guid).destruct()
+      end
+    end
   end
 
-  local clearCards2 = findCardsAtPosition2()
-
-  for _, obj in ipairs(clearCards2) do
-     if obj.getVar("preventDeletion") ~= true then
-        obj.destruct()
-     end
-  end
-
-  local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
+  Global.setSnapPoints({})
 
   clearData()
+
+  Wait.frames(
+    function()
+      local clearCards = findCardsAtPosition()
+
+      for _, obj in ipairs(clearCards) do
+         if obj.getVar("preventDeletion") ~= true then
+            obj.destruct()
+         end
+      end
+    
+      local clearCards2 = findCardsAtPosition2()
+    
+      for _, obj in ipairs(clearCards2) do
+         if obj.getVar("preventDeletion") ~= true then
+            obj.destruct()
+         end
+      end
+    end,
+    30
+  )
 end
 
 --TODO: These functions should be moved to global
@@ -1310,10 +1389,10 @@ function configureVillainStage(params)
 end
 
 function setUpVillainStage(villain, stage, heroCount)
-  local functionName = "setUpVillainStage_" .. currentScenario.key .. "_" .. villain.key
+  local functionName = "setUpVillainStage_" .. currentScenario.key
 
   if(self.getVar(functionName) ~= nil) then
-    self.call(functionName, {villain=villain, stage=stage, heroCount=heroCount})
+    self.call(functionName, {villainKey=villain.key, stage=stage, heroCount=heroCount})
     return
   end
 end
@@ -1447,70 +1526,27 @@ function configureAdvanceSchemeButton(threatCounter, showAdvanceButton)
   end
 end
 
+function setUpVillainStage_rhino(params)
+  local stage = params.stage
+  local stageNumber = string.sub(stage.key, -1)
 
-function prepareScenario_loki()
-  encounterSetManager.call("removeModularSet", {modularSetKey = "infinityGauntlet"})
-
-  local villain = currentScenario.villains.loki
-  local villainStages = {}
-
-  for key, stage in pairs(villain.stages) do
-      table.insert(villainStages, key)
+  if(stageNumber == "2") then
+    local breakinAndTakinCardId = "01107"
+    Global.call(
+      "moveCardFromEncounterDeckById", 
+      {
+        cardId = breakinAndTakinCardId, 
+        searchInDiscard = true,
+        zoneType = "sideScheme"
+      })
+    return
   end
 
-  villainStages = Global.call("shuffleTable", {table = villainStages})
-
-  currentScenario.lokiQueue = villainStages
-  currentScenario.lokiStageIndex = 1
+  if(stageNumber == "3") then
+    --TODO: Give villain tough status, give each hero stunned status
+  end
 end
 
-function getNextVillainStage_loki(params)
-  local nextStage = currentScenario.villains.loki.stages[currentScenario.lokiQueue[currentScenario.lokiStageIndex]]
-  currentScenario.lokiStageIndex = currentScenario.lokiStageIndex + 1
-  local lastStage = currentScenario.lokiStageIndex > #currentScenario.lokiQueue
-
-  nextStage.showAdvanceButton = not lastStage
-
-  return nextStage
-end
-
-function placeVillainStage_loki(params)
-  local heroCount = params.heroCount
-  local villain = currentScenario.villains.loki
-  local stage = params.stage
-  
-  local villainPosition = villain.deckPosition or defaults.villainDeck.position
-  local villainRotation = villain.deckRotation or defaults.villainDeck.rotation
-  local villainScale = villain.deckScale or defaults.villainDeck.scale
-
-  local stageIndex = currentScenario.lokiStageIndex
-  local x = -11.25 + ((stageIndex - 3) * 9)
-
-  Global.call("moveDeck", {origin = villainPosition, destination = {x, 1.00, 45.75}})
-
-  getCardByID(
-    stage.cardId, 
-      villainPosition, 
-      {scale = villainScale, name = villain.name, flipped = false, locked=true})
-  
-  local hitPoints = (stage.hitPoints or 0) + ((stage.hitPointsPerPlayer or 0) * heroCount)
-  local villainHpCounter = getObjectFromGUID(villain.hpCounter.guid)
-
-  Wait.frames(
-      function()
-          villainHpCounter.call("setValue", {value = hitPoints}) 
-          
-          villainHpCounter.call("setAdvanceButtonOptions", {label = "Next!"})
-
-          if(stage.showAdvanceButton) then
-              villainHpCounter.call("showAdvanceButton")
-          else
-              villainHpCounter.call("hideAdvanceButton")
-          end
-      end,
-      20
-  )
-end
 
 require('!/Cardplacer')
 

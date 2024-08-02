@@ -54,17 +54,5 @@ heroes["x23"] = {
             offset = {-4.94, 3, -0.02},
             flipped = true
         }
-    },
-    extras = {
-        linkedCards = {
-            type="deck",
-            offset = {-4.94, 3, -4.66},
-            cards = {
-                ["43034"] = 1,
-                ["43035"] = 1,
-                ["43036"] = 1,
-                ["43037"] = 1
-            }
-        }
     }
 } 

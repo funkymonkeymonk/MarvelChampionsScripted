@@ -48,6 +48,10 @@ function FormatPackData(responses) {
     return IMG_ROOT + card.code.toUpperCase() + ".jpg"
   }
 
+  function ScrubDoubleBrackets(text) {
+    return text.replace(/\[\[/g, '[').replace(/\]\]/g, ']')
+  }
+
   function GetCardBack(card) {
     const cardBack = {
       "player": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
@@ -87,11 +91,46 @@ function FormatPackData(responses) {
           name: card.name,
           code: card.code,
           ...card.subname && {subname: card.subname},
-          type_code: card.type_code,
-          faction_code: card.faction_code,
+          type: card.type_code,
+          aspect: card.faction_code,
           ...!card.duplicate_of && { BackURL: GetCardBack(card)},
           ...!card.duplicate_of && { FrontURL: GetCardFront(card)},
           duplicate_of: card.duplicate_of,
+          ...card.text && {text: ScrubDoubleBrackets(card.text)},
+          ...card.flavor && {flavor: card.flavor},
+          ...card.health && {health: card.health},
+          ...card.health_per_hero && {healthPerHero: card.health_per_hero},
+          ...card.is_unique && {isUnique: card.is_unique},
+          ...card.traits && {traits: card.traits},
+          ...card.thwart && {thwart: card.thwart},
+          ...card.attack && {attack: card.attack},
+          ...card.defense && {defense: card.defense},
+          ...card.recover && {recover: card.recover},
+          ...card.hand_size && {handSize: card.hand_size},
+          ...card.cost && {cost: card.cost},
+          ...card.deck_limit && {deckLimit: card.deck_limit},
+          ...card.resource_energy && {resourceEnergy: card.resource_energy},
+          ...card.resource_mental && {resourceMental: card.resource_mental},
+          ...card.resource_physical && {resourcePhysical: card.resource_physical},
+          ...card.resource_wild && {resourceWild: card.resource_wild},
+          ...card.thwart_cost && {thwartCost: card.thwart_cost},
+          ...card.attack_cost && {attackCost: card.attack_cost},
+          ...card.base_threat && {baseThreat: card.base_threat},
+          ...card.base_threat_fixed && {baseThreatIsFixed: card.base_threat_fixed},
+          ...card.scheme && {scheme: card.scheme},
+          ...card.attack_star && {attackStar: card.attack_star},
+          ...card.scheme_star && {schemeStar: card.scheme_star},
+          ...card.boost && {boost: card.boost},
+          ...card.boost_star && {boostStar: card.boost_star},
+          ...card.scheme_acceleration && {acceleration: card.scheme_acceleration},
+          ...card.scheme_crisis && {crisis: card.scheme_crisis},
+          ...card.scheme_hazard && {hazard: card.scheme_hazard},
+          ...card.scheme_amplify && {amplify: card.scheme_amplify},
+          ...card.back_text && {backText: ScrubDoubleBrackets(card.back_text)},
+          ...card.escalation_threat && {escalationThreat: card.escalation_threat},
+          ...card.escalation_threat_star && {escalationStar: card.escalation_threat_star},
+          ...card.stage && {stage: card.stage},
+          ...card.threat && {threat: card.threat}
         }
       })
 }
@@ -125,5 +164,7 @@ async function start() {
   const sortedCards = sortCards(packData)
   WriteToMod(sortedCards)
 }
+
+
 
 start()

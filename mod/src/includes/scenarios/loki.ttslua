@@ -47,7 +47,7 @@ scenarios["loki"] =
     cards={
         warInAsgard={
             cardId="21167",
-            position={16.75, 1.00, 21.75},
+            position={7.25, 1.00, 16.75},
             scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
             landscape=true
         },
@@ -55,15 +55,6 @@ scenarios["loki"] =
             cardId="21129",
             position={-7.25, 0.97, 22.25},
             scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
-        }
-    },
-    counters={
-        warInAsguardThreat={
-            type="threat",
-            position={16.37, 1.10, 20.30},
-            scale={0.48, 1.00, 0.48},
-            threat=6,
-            threatPerPlayer=1
         }
     },
     decks={
@@ -84,7 +75,7 @@ scenarios["loki"] =
         },
         infinityStones={
             name="Infinity Stones",
-            position={22.75, 1.01, 29.75},
+            position={-15.25, 1.25, 30.25},
             scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
             cards={
                 ["21130"]=1,
@@ -103,3 +94,66 @@ scenarios["loki"] =
     }
 }
 
+function prepareScenario_loki()
+  encounterSetManager.call("removeModularSet", {modularSetKey = "infinityGauntlet"})
+
+  local villain = currentScenario.villains.loki
+  local villainStages = {}
+
+  for key, stage in pairs(villain.stages) do
+      table.insert(villainStages, key)
+  end
+
+  villainStages = Global.call("shuffleTable", {table = villainStages})
+
+  currentScenario.lokiQueue = villainStages
+  currentScenario.lokiStageIndex = 1
+end
+
+function getNextVillainStage_loki(params)
+  local nextStage = currentScenario.villains.loki.stages[currentScenario.lokiQueue[currentScenario.lokiStageIndex]]
+  currentScenario.lokiStageIndex = currentScenario.lokiStageIndex + 1
+  local lastStage = currentScenario.lokiStageIndex > #currentScenario.lokiQueue
+
+  nextStage.showAdvanceButton = not lastStage
+
+  return nextStage
+end
+
+function placeVillainStage_loki(params)
+  local heroCount = params.heroCount
+  local villain = currentScenario.villains.loki
+  local stage = params.stage
+  
+  local villainPosition = villain.deckPosition or defaults.villainDeck.position
+  local villainRotation = villain.deckRotation or defaults.villainDeck.rotation
+  local villainScale = villain.deckScale or defaults.villainDeck.scale
+
+  local stageIndex = currentScenario.lokiStageIndex
+  local x = -11.25 + ((stageIndex - 3) * 9)
+
+  Global.call("moveDeck", {origin = villainPosition, destination = {x, 1.00, 45.75}})
+
+  getCardByID(
+    stage.cardId, 
+      villainPosition, 
+      {scale = villainScale, name = villain.name, flipped = false, locked=true})
+  
+  local hitPoints = (stage.hitPoints or 0) + ((stage.hitPointsPerPlayer or 0) * heroCount)
+  local villainHpCounter = getObjectFromGUID(villain.hpCounter.guid)
+
+  Wait.frames(
+      function()
+          villainHpCounter.call("setValue", {value = hitPoints}) 
+          
+          villainHpCounter.call("setAdvanceButtonOptions", {label = "Next!"})
+
+          if(stage.showAdvanceButton) then
+              villainHpCounter.call("showAdvanceButton")
+          else
+              villainHpCounter.call("hideAdvanceButton")
+          end
+      end,
+      20
+  )
+end
