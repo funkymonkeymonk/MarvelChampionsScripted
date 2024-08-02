@@ -22,9 +22,9 @@
       "z": 0
     },
     "ColorDiffuse": {
-      "r": 0.249999851,
-      "g": 0.249999851,
-      "b": 0.249999851
+      "r": 0.2499997,
+      "g": 0.2499997,
+      "b": 0.2499997
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,
@@ -41,7 +41,7 @@
     "HideWhenFaceDown": false,
     "Hands": false,
     "CustomImage": {
-      "ImageURL": "http://cloud-3.steamusercontent.com/ugc/2495635126605062299/ED34056EEED2DF9377AC685838FE26883196A54A/",
+      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/2495635126605062299/ED34056EEED2DF9377AC685838FE26883196A54A/",
       "ImageSecondaryURL": "",
       "ImageScalar": 1,
       "WidthScale": 0,

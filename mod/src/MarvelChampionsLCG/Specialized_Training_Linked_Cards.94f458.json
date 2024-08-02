@@ -6,7 +6,7 @@
       "posX": -27.75,
       "posY": 0.53518784,
       "posZ": 43.25,
-      "rotX": 6.778699e-8,
+      "rotX": -8.9519574e-8,
       "rotY": 180,
       "rotZ": 180,
       "scaleX": 1.27,
@@ -50,7 +50,7 @@
     "CustomDeck": {
       "73": {
         "FaceURL": "https://dcqvlrey92bew.cloudfront.net/43034.jpg",
-        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
         "NumWidth": 1,
         "NumHeight": 1,
         "BackIsHidden": false,
@@ -59,7 +59,7 @@
       },
       "74": {
         "FaceURL": "https://dcqvlrey92bew.cloudfront.net/43035.jpg",
-        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
         "NumWidth": 1,
         "NumHeight": 1,
         "BackIsHidden": false,
@@ -68,7 +68,7 @@
       },
       "75": {
         "FaceURL": "https://dcqvlrey92bew.cloudfront.net/43036.jpg",
-        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
         "NumWidth": 1,
         "NumHeight": 1,
         "BackIsHidden": false,
@@ -77,7 +77,7 @@
       },
       "76": {
         "FaceURL": "https://dcqvlrey92bew.cloudfront.net/43037.jpg",
-        "BackURL": "http://cloud-3.steamusercontent.com/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+        "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
         "NumWidth": 1,
         "NumHeight": 1,
         "BackIsHidden": false,

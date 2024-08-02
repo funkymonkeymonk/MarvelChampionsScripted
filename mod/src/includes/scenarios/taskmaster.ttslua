@@ -56,6 +56,17 @@ scenarios["taskmaster"] =
                 ["04107"]=4,
                 ["04108"]=1
             }
+        },
+        captiveAllies={
+            name="Captive Allies",
+            cards={
+                ["04097"]=1,
+                ["04098"]=1,
+                ["04099"]=1,
+                ["04100"]=1
+            },
+            position={18.25, 0.97, 22.25},
+            scale=Vector(Global.getVar("CARD_SCALE_PLAYER"))
         }
     },
     modularSets={

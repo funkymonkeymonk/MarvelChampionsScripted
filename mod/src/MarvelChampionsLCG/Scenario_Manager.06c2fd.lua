@@ -1125,7 +1125,7 @@ function finalizeSetUp(scenario)
 end
 
 function clearScenario()
-  if(currentScenario.zones) then
+  if(currentScenario and currentScenario.zones) then
     for _, zone in pairs(currentScenario.zones) do
       if(zone.guid) then
         getObjectFromGUID(zone.guid).destruct()

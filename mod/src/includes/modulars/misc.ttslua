@@ -146,3 +146,16 @@ modularSets["sauron"] =
         ["46032"]=2,
     }
 }
+
+modularSets["arcade"] = 
+{
+    name="Arcade",
+    modular=true,
+    cards = {
+        ["47030"]=1,
+        ["47031"]=1,
+        ["47032"]=1,
+        ["47033"]=1,
+        ["47034"]=1
+    }
+}
