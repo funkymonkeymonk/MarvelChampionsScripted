@@ -15,7 +15,7 @@
     },
     "Nickname": "Surveillance Specialist",
     "Description": "",
-    "GMNotes": "",
+    "GMNotes": "{\"name\":\"Surveillance Specialist\",\"code\":\"43037\",\"type\":\"upgrade\",\"aspect\":\"basic\",\"isUnique\":\"true\",\"traits\":\"Specialization.\",\"cost\":\"2\",\"deckLimit\":\"1\",\"resourceWild\":\"1\"}",
     "AltLookAngle": {
       "x": 0,
       "y": 0,

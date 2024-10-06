@@ -157,6 +157,10 @@ scenarios["fourHorsemen"] =
         },
         attachment = {
             position = nil
+        },
+        encounterDeck = {
+            position = {49.25, 1.00, 15.75},
+            scale = {10.25, 2.00, 7.00}
         }
     }
 }
@@ -217,7 +221,7 @@ function setUpFourHorsemenSideSchemes()
       y = 20.30 - ((i - 1) * 5)
       local counterPosition = {25.37, 1.10, y}
 
-      currentScenario.counters[cardKey.."threat"] = {type="threat", position = counterPosition, scale = {0.48, 1.00, 0.48}, threat = 6, locked=false}
+      --currentScenario.counters[cardKey.."threat"] = {type="threat", position = counterPosition, scale = {0.48, 1.00, 0.48}, threat = 6, locked=false}
     else
       currentScenario.decks.encounterDeck.cards[sideSchemes[i]] = 1
     end

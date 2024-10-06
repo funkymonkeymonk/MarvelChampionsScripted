@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "f578ca",
-    "Name": "Custom_Token",
+    "GUID": "998f2b",
+    "Name": "Custom_Tile",
     "Transform": {
-      "posX": 4.25,
-      "posY": 1.21536422,
-      "posZ": 35.75,
-      "rotX": 2.76302842e-7,
-      "rotY": 0.004715682,
-      "rotZ": -3.223537e-7,
-      "scaleX": 1.15,
+      "posX": 106.80291,
+      "posY": 2.22113538,
+      "posZ": -15.8030825,
+      "rotX": 3.536882e-9,
+      "rotY": 180,
+      "rotZ": -1.04990512e-7,
+      "scaleX": 3,
       "scaleY": 1,
-      "scaleZ": 1.15
+      "scaleZ": 3
     },
-    "Nickname": "",
+    "Nickname": "Wheel of Genres",
     "Description": "",
     "GMNotes": "",
     "AltLookAngle": {
@@ -26,14 +26,11 @@
       "g": 1,
       "b": 1
     },
-    "Tags": [
-      "confused-status"
-    ],
     "LayoutGroupSortIndex": 0,
     "Value": 0,
     "Locked": false,
-    "Grid": false,
-    "Snap": false,
+    "Grid": true,
+    "Snap": true,
     "IgnoreFoW": false,
     "MeasureMovement": false,
     "DragSelectable": true,
@@ -44,18 +41,18 @@
     "HideWhenFaceDown": false,
     "Hands": false,
     "CustomImage": {
-      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/1779509151657477132/AEEDF874D38C106500BC358581636D31FCB95ED1/",
+      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/2470877924519444775/974CBAEABF0621804DF8E565E6DA719947894FE4/",
       "ImageSecondaryURL": "",
       "ImageScalar": 1,
       "WidthScale": 0,
-      "CustomToken": {
+      "CustomTile": {
+        "Type": 3,
         "Thickness": 0.1,
-        "MergeDistancePixels": 25,
-        "StandUp": false,
-        "Stackable": false
+        "Stackable": false,
+        "Stretch": true
       }
     },
-    "LuaScript": "",
+    "LuaScript": "#include ./Wheel_of_Genres.998f2b.lua",
     "LuaScriptState": "",
     "XmlUI": ""
   },

@@ -15,7 +15,7 @@
     },
     "Nickname": "Combat Specialist",
     "Description": "",
-    "GMNotes": "",
+    "GMNotes": "{\"name\":\"Combat Specialist\",\"code\":\"43034\",\"type\":\"upgrade\",\"aspect\":\"basic\",\"isUnique\":\"true\",\"traits\":\"Specialization.\",\"cost\":\"2\",\"deckLimit\":\"1\",\"resourceWild\":\"1\"}",
     "AltLookAngle": {
       "x": 0,
       "y": 0,

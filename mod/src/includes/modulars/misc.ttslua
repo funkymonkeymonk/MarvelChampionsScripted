@@ -159,3 +159,17 @@ modularSets["arcade"] =
         ["47034"]=1
     }
 }
+
+modularSets["crazyGang"] = 
+{
+    name="The Crazy Gang",
+    modular=true,
+    cards = {
+        ["48033"]=1,
+        ["48034"]=1,
+        ["48035"]=1,
+        ["48036"]=1,
+        ["48037"]=1,
+        ["48038"]=1
+    }
+}

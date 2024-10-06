@@ -11,15 +11,18 @@ scenarios["spiral"] =
             stages={
                 stage1={
                     cardId="39012",
-                    hitPointsPerPlayer=13
+                    hitPointsPerPlayer=13,
+                    locked=false
                 },
                 stage2={
                     cardId="39013",
-                    hitPointsPerPlayer=15
+                    hitPointsPerPlayer=15,
+                    locked=false
                 },
                 stage3={
                     cardId="39014",
-                    hitPointsPerPlayer=17
+                    hitPointsPerPlayer=17,
+                    locked=false
                 }
             }
         }
@@ -41,22 +44,49 @@ scenarios["spiral"] =
             position={7.25, 0.97, 16.75},
             scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
             landscape=true
-        },
-        cornered={
-            cardId="39017",
-            position={-13.75, 0.97, 30.25},
-            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
         }
     },            
     decks={
         encounterDeck={
-            name="Rhino's Encounter Deck",
+            name="Spiral's Encounter Deck",
             cards={
                 ["39018"] = 2,
                 ["39019"] = 2,
                 ["39020"] = 1,
                 ["39021"] = 1
             }
+        },
+        showDeck={
+            name="Show Deck",
+            position={15.75, 0.97, 22.25},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
+            cards={
+                ["39017"] = 1
+            }
         }
-    }
+    },
+    modularSets={}
 }
+
+function prepareScenario_spiral()
+  buildGenreQueue()
+  local firstGenreSetKey = currentScenario.genreQueue[2].modularSetKey
+  local firstGenreEnvironmentCardId = currentScenario.genreQueue[2].environmentCardId
+  local firstGenreSet = encounterSetManager.call("getModularSet", {modularSetKey = firstGenreSetKey})
+
+  currentScenario.cards.firstGenreEnvironment ={
+    cardId=firstGenreEnvironmentCardId,
+    position={15.75, 1.25, 29.75},
+    scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
+  }
+
+  local secondGenreEnvironmentCardId = currentScenario.genreQueue[3].environmentCardId
+  local thirdGenreEnvironmentCardId = currentScenario.genreQueue[4].environmentCardId
+  
+  currentScenario.decks.showDeck.cards[secondGenreEnvironmentCardId]=1
+  currentScenario.decks.showDeck.cards[thirdGenreEnvironmentCardId]=1
+end
+
+function onCardEnterZone_spiral(params)
+  placeGenreSetFromEnvironment(params.zone, params.card)
+end

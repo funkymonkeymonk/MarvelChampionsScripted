@@ -1,4 +1,6 @@
+require('!/json')
 require('!/Decker')
+
 
 --TODO: Put all of this into an object for namespace purposes
 Cardplacer = {}
@@ -19,18 +21,20 @@ function mapCardData(cardData)
     local card = {}
 
     for k,v in pairs(cardData) do
-        if(k~="FrontURL" and k~="BackURL" and k~="flavor" and k~="text" and k~="backText") then
+        if(k~="FrontURL" and k~="BackURL" and k~="flavor" and k~="text" and k~="backText" and k~="steady" and k~="stalwart" and k~="toughness") then
             card[k] = string.gsub(tostring(v), "\"", "\\\"")
         end
     end
 
-    local json = JSON.encode(card)
+    local cardjson = json.encode(card)
 
-    return json
+    return cardjson
 end
 
 -- Fix card pool to deal with duplicates
 function buildCardPool(packID)
+    if(not packID) then return {} end
+
     if (CARDPOOL_BY_PACK_ID[packID] != nil) then
         return CARDPOOL_BY_PACK_ID[packID]
     end
@@ -41,9 +45,10 @@ function buildCardPool(packID)
 
     if(CARDPOOL_JSON == nil) then
         log("Pack "..packID.." has not been added to the card pool.")
+        return nil;
     end
     
-    local CARDPOOL_DATA = JSON.decode(CARDPOOL_JSON)
+    local CARDPOOL_DATA = json.decode(CARDPOOL_JSON)
 
     for _, cardData in pairs(CARDPOOL_DATA) do
         if (cardData.duplicate_of == nil) then
@@ -51,9 +56,14 @@ function buildCardPool(packID)
             local cardBack = cardData.BackURL
             local cardAsset = Decker.Asset(cardFace, cardBack)
             local sideways = string.sub(cardData.type, -6, -1) == "scheme"
+            local tags={cardData.type}
 
-            --local card = Decker.Card(cardAsset, 1, 1, { guid=random_guid(), name=cardData.name, sideways=sideways, tags={cardData.type}, GMNotes=mapCardData(cardData) })
-            local card = Decker.Card(cardAsset, 1, 1, { guid=random_guid(), name=cardData.name, sideways=sideways, tags={cardData.type}, GMNotes=cardData.code })
+            if(cardData.steady) then table.insert(tags, "steady") end
+            if(cardData.stalwart) then table.insert(tags, "stalwart") end
+            if(cardData.toughness) then table.insert(tags, "toughness") end
+
+            local card = Decker.Card(cardAsset, 1, 1, { guid=random_guid(), name=cardData.name, sideways=sideways, tags=tags, GMNotes=mapCardData(cardData) })
+            --local card = Decker.Card(cardAsset, 1, 1, { guid=random_guid(), name=cardData.name, sideways=sideways, tags={cardData.type}, GMNotes=cardData.code })
 
             for k,v in pairs(cardData) do
                 if(k~="FrontURL" and k~="BackURL" and k~="flavor" and k~="text" and k~="backText") then
@@ -74,7 +84,9 @@ end
 function getCardFromCardPool(cardID)
     local packID = string.sub(cardID, 1,2)
     local cardpool = buildCardPool(packID)
-    log(cardpool)
+
+    if(cardpool == nil) then return nil end
+
     local card = cardpool[cardID]
 
     --Temporary work-around for cardpool issue
@@ -120,18 +132,20 @@ function getCardByID(id, position, params)
 
     local card = getCardFromCardPool(cardID)
 
-    if (card.duplicate_of == nil) then
-        local spawnedCard = 
-            card:spawn({position = position, scale = scale, rotation = rotation, name = name})
-
-        if(locked) then
-            Wait.frames(function() spawnedCard.setLock(true) end, 30)
-        end
-
-        clearUI()
-    else
-        getCardByID(card.duplicate_of, position, params)
+    if (card.duplicate_of ~= nil) then
+        return getCardByID(card.duplicate_of, position, params)
     end
+
+    local spawnedCard = 
+        card:spawn({position = position, scale = scale, rotation = rotation, name = name})
+
+    if(locked) then
+        Wait.frames(function() spawnedCard.setLock(true) end, 30)
+    end
+
+    clearUI()
+
+    return spawnedCard
 end
 
 

@@ -15,7 +15,7 @@
     },
     "Nickname": "Defense Specialist",
     "Description": "",
-    "GMNotes": "",
+    "GMNotes": "{\"name\":\"Defense Specialist\",\"code\":\"43035\",\"type\":\"upgrade\",\"aspect\":\"basic\",\"isUnique\":\"true\",\"traits\":\"Specialization.\",\"cost\":\"2\",\"deckLimit\":\"1\",\"resourceWild\":\"1\"}",
     "AltLookAngle": {
       "x": 0,
       "y": 0,

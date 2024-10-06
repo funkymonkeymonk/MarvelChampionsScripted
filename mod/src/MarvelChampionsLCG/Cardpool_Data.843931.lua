@@ -447,7 +447,8 @@ PACK_11 = [[
     "attack": 2,
     "deckLimit": 1,
     "scheme": 2,
-    "stage": 2
+    "stage": 2,
+    "toughness": true
   },
   {
     "name": "Kang (Iron Lad)",
@@ -463,7 +464,8 @@ PACK_11 = [[
     "attack": 2,
     "deckLimit": 1,
     "scheme": 1,
-    "stage": 2
+    "stage": 2,
+    "toughness": true
   },
   {
     "name": "Kang (Rama-Tut)",
@@ -480,7 +482,8 @@ PACK_11 = [[
     "deckLimit": 1,
     "scheme": 1,
     "attackStar": true,
-    "stage": 2
+    "stage": 2,
+    "toughness": true
   },
   {
     "name": "Kang (Scarlet Centurion)",
@@ -496,7 +499,8 @@ PACK_11 = [[
     "attack": 3,
     "deckLimit": 1,
     "attackStar": true,
-    "stage": 2
+    "stage": 2,
+    "toughness": true
   },
   {
     "name": "Kang (The Conqueror)",
@@ -514,7 +518,8 @@ PACK_11 = [[
     "deckLimit": 1,
     "scheme": 2,
     "attackStar": true,
-    "stage": 3
+    "stage": 3,
+    "toughness": true
   },
   {
     "name": "Kang's Arrival",
@@ -873,7 +878,8 @@ PACK_11 = [[
     "attack": 3,
     "deckLimit": 1,
     "attackStar": true,
-    "boost": 3
+    "boost": 3,
+    "toughness": true
   },
   {
     "name": "Time Portal",
@@ -904,7 +910,8 @@ PACK_11 = [[
     "deckLimit": 1,
     "scheme": 1,
     "attackStar": true,
-    "stage": 1
+    "stage": 1,
+    "toughness": true
   },
   {
     "name": "Kang (Immortus)",
@@ -920,7 +927,8 @@ PACK_11 = [[
     "attack": 2,
     "deckLimit": 1,
     "scheme": 3,
-    "stage": 2
+    "stage": 2,
+    "toughness": true
   },
   {
     "name": "Kang (Iron Lad)",
@@ -936,7 +944,8 @@ PACK_11 = [[
     "attack": 3,
     "deckLimit": 1,
     "scheme": 2,
-    "stage": 2
+    "stage": 2,
+    "toughness": true
   },
   {
     "name": "Kang (Rama-Tut)",
@@ -953,7 +962,8 @@ PACK_11 = [[
     "deckLimit": 1,
     "scheme": 2,
     "attackStar": true,
-    "stage": 2
+    "stage": 2,
+    "toughness": true
   },
   {
     "name": "Kang (Scarlet Centurion)",
@@ -970,7 +980,8 @@ PACK_11 = [[
     "deckLimit": 1,
     "scheme": 1,
     "attackStar": true,
-    "stage": 2
+    "stage": 2,
+    "toughness": true
   },
   {
     "name": "Kang (The Conqueror)",
@@ -988,7 +999,8 @@ PACK_11 = [[
     "deckLimit": 1,
     "scheme": 3,
     "attackStar": true,
-    "stage": 3
+    "stage": 3,
+    "toughness": true
   },
   {
     "name": "Apocryphus",
@@ -1020,7 +1032,8 @@ PACK_11 = [[
     "attack": 1,
     "deckLimit": 1,
     "scheme": 1,
-    "boostStar": true
+    "boostStar": true,
+    "toughness": true
   },
   {
     "name": "Sir Raston",
@@ -1109,7 +1122,8 @@ PACK_11 = [[
     "attack": 1,
     "deckLimit": 1,
     "scheme": 1,
-    "boost": 2
+    "boost": 2,
+    "toughness": true
   },
   {
     "name": "Time-Displaced Soldier",
@@ -4679,7 +4693,8 @@ PACK_16 = [[
     "scheme": 2,
     "attackStar": true,
     "schemeStar": true,
-    "stage": 1
+    "stage": 1,
+    "toughness": true
   },
   {
     "name": "Ronan the Accuser",
@@ -4697,7 +4712,8 @@ PACK_16 = [[
     "scheme": 2,
     "attackStar": true,
     "schemeStar": true,
-    "stage": 2
+    "stage": 2,
+    "toughness": true
   },
   {
     "name": "Ronan the Accuser",
@@ -4715,7 +4731,8 @@ PACK_16 = [[
     "scheme": 3,
     "attackStar": true,
     "schemeStar": true,
-    "stage": 3
+    "stage": 3,
+    "toughness": true
   },
   {
     "name": "Interception Imminent",
@@ -5111,7 +5128,8 @@ PACK_16 = [[
     "traits": "Kree. Soldier.",
     "attack": 1,
     "scheme": 2,
-    "boostStar": true
+    "boostStar": true,
+    "stalwart": true
   },
   {
     "name": "Kree Private",
@@ -7315,7 +7333,8 @@ PACK_21 = [[
     "deckLimit": 1,
     "resourcePhysical": 1,
     "thwartCost": 1,
-    "attackCost": 1
+    "attackCost": 1,
+    "toughness": true
   },
   {
     "name": "Power Man",
@@ -7516,7 +7535,8 @@ PACK_21 = [[
     "deckLimit": 1,
     "resourceWild": 1,
     "thwartCost": 1,
-    "attackCost": 1
+    "attackCost": 1,
+    "toughness": true
   },
   {
     "name": "Soul World",
@@ -7839,7 +7859,8 @@ PACK_21 = [[
     "deckLimit": 1,
     "resourcePhysical": 1,
     "thwartCost": 1,
-    "attackCost": 1
+    "attackCost": 1,
+    "toughness": true
   },
   {
     "name": "The Gardener",
@@ -7976,7 +7997,8 @@ PACK_21 = [[
     "traits": "Black Order. Elite.",
     "attack": 2,
     "scheme": 2,
-    "victory": 2
+    "victory": 2,
+    "toughness": true
   },
   {
     "name": "Shawarma",
@@ -8252,7 +8274,8 @@ PACK_21 = [[
     "scheme": 2,
     "attackStar": true,
     "schemeStar": true,
-    "boost": 2
+    "boost": 2,
+    "toughness": true
   },
   {
     "name": "Universal Church of Truth",
@@ -8839,7 +8862,8 @@ PACK_21 = [[
     "traits": "Black Order. Titan.",
     "attack": 2,
     "scheme": 1,
-    "stage": 1
+    "stage": 1,
+    "stalwart": true
   },
   {
     "name": "Thanos",
@@ -8855,7 +8879,9 @@ PACK_21 = [[
     "traits": "Black Order. Titan.",
     "attack": 3,
     "scheme": 2,
-    "stage": 2
+    "stage": 2,
+    "stalwart": true,
+    "toughness": true
   },
   {
     "name": "Thanos",
@@ -8871,7 +8897,9 @@ PACK_21 = [[
     "traits": "Black Order. Titan.",
     "attack": 4,
     "scheme": 2,
-    "stage": 3
+    "stage": 3,
+    "stalwart": true,
+    "toughness": true
   },
   {
     "name": "The Infinity Stones",
@@ -9016,7 +9044,8 @@ PACK_21 = [[
     "traits": "Black Order. Elite.",
     "attack": 2,
     "scheme": 2,
-    "boostStar": true
+    "boostStar": true,
+    "toughness": true
   },
   {
     "name": "Proxima Midnight",
@@ -9307,7 +9336,8 @@ PACK_21 = [[
     "attack": 2,
     "scheme": 1,
     "boost": 2,
-    "victory": 2
+    "victory": 2,
+    "toughness": true
   },
   {
     "name": "Skurge",
@@ -9325,7 +9355,8 @@ PACK_21 = [[
     "scheme": 1,
     "attackStar": true,
     "boost": 3,
-    "victory": 3
+    "victory": 3,
+    "toughness": true
   },
   {
     "name": "Nidhogg",
@@ -9343,7 +9374,8 @@ PACK_21 = [[
     "scheme": 1,
     "attackStar": true,
     "boost": 4,
-    "victory": 4
+    "victory": 4,
+    "toughness": true
   },
   {
     "name": "Nightsword",
@@ -9479,7 +9511,8 @@ PACK_21 = [[
     "attack": 4,
     "scheme": 2,
     "attackStar": true,
-    "boost": 4
+    "boost": 4,
+    "toughness": true
   },
   {
     "name": "Frost Giant",
@@ -9494,7 +9527,8 @@ PACK_21 = [[
     "attack": 3,
     "scheme": 1,
     "boost": 1,
-    "boostStar": true
+    "boostStar": true,
+    "toughness": true
   },
   {
     "name": "Frozen",
@@ -9567,7 +9601,8 @@ PACK_21 = [[
     "attack": 3,
     "scheme": 1,
     "stage": 1,
-    "victory": 1
+    "victory": 1,
+    "stalwart": true
   },
   {
     "name": "Loki",
@@ -9584,7 +9619,8 @@ PACK_21 = [[
     "attack": 1,
     "scheme": 3,
     "stage": 1,
-    "victory": 1
+    "victory": 1,
+    "stalwart": true
   },
   {
     "name": "Loki",
@@ -11180,7 +11216,8 @@ PACK_24 = [[
     "health": 3,
     "traits": "Mercenary.",
     "attack": 1,
-    "boost": 1
+    "boost": 1,
+    "toughness": true
   },
   {
     "name": "Crime Pays",
@@ -11761,7 +11798,8 @@ PACK_25 = [[
     "deckLimit": 1,
     "resourceEnergy": 1,
     "thwartCost": 1,
-    "attackCost": 2
+    "attackCost": 2,
+    "toughness": true
   },
   {
     "name": "Throg",
@@ -12408,7 +12446,8 @@ PACK_26 = [[
     "attack": 2,
     "scheme": 2,
     "attackStar": true,
-    "boost": 2
+    "boost": 2,
+    "toughness": true
   },
   {
     "name": "Ultron Unleashed",
@@ -13512,7 +13551,8 @@ PACK_27 = [[
     "traits": "Criminal.",
     "attack": 2,
     "scheme": 1,
-    "boost": 2
+    "boost": 2,
+    "stalwart": true
   },
   {
     "name": "Razor Claws",
@@ -13710,7 +13750,8 @@ PACK_27 = [[
     "traits": "Symbiote.",
     "attack": 2,
     "scheme": 1,
-    "stage": 1
+    "stage": 1,
+    "toughness": true
   },
   {
     "name": "Venom",
@@ -13726,7 +13767,9 @@ PACK_27 = [[
     "traits": "Symbiote.",
     "attack": 2,
     "scheme": 2,
-    "stage": 2
+    "stage": 2,
+    "steady": true,
+    "toughness": true
   },
   {
     "name": "Venom",
@@ -13742,7 +13785,9 @@ PACK_27 = [[
     "traits": "Symbiote.",
     "attack": 3,
     "scheme": 2,
-    "stage": 3
+    "stage": 3,
+    "steady": true,
+    "toughness": true
   },
   {
     "name": "\"Leave Us Alone!\"",
@@ -14281,7 +14326,8 @@ PACK_27 = [[
     "scheme": 2,
     "attackStar": true,
     "schemeStar": true,
-    "stage": 1
+    "stage": 1,
+    "steady": true
   },
   {
     "name": "Venom Goblin",
@@ -14299,7 +14345,9 @@ PACK_27 = [[
     "scheme": 2,
     "attackStar": true,
     "schemeStar": true,
-    "stage": 2
+    "stage": 2,
+    "steady": true,
+    "toughness": true
   },
   {
     "name": "Venom Goblin",
@@ -14317,7 +14365,9 @@ PACK_27 = [[
     "scheme": 3,
     "attackStar": true,
     "schemeStar": true,
-    "stage": 3
+    "stage": 3,
+    "stalwart": true,
+    "toughness": true
   },
   {
     "name": "Skies Over New York",
@@ -14443,7 +14493,9 @@ PACK_27 = [[
     "attack": 2,
     "scheme": 2,
     "boost": 3,
-    "boostStar": true
+    "boostStar": true,
+    "steady": true,
+    "toughness": true
   },
   {
     "name": "Symbiotic Thrall",
@@ -14522,7 +14574,8 @@ PACK_27 = [[
     "traits": "Criminal. Elite.",
     "attack": 3,
     "attackStar": true,
-    "boost": 3
+    "boost": 3,
+    "steady": true
   },
   {
     "name": "Calling in Favors",
@@ -14924,7 +14977,8 @@ PACK_27 = [[
     "attack": 2,
     "scheme": 1,
     "attackStar": true,
-    "boost": 3
+    "boost": 3,
+    "steady": true
   },
   {
     "name": "Scorpion",
@@ -14939,7 +14993,8 @@ PACK_27 = [[
     "attack": 3,
     "scheme": 1,
     "attackStar": true,
-    "boost": 3
+    "boost": 3,
+    "toughness": true
   },
   {
     "name": "Vulture",
@@ -15474,7 +15529,8 @@ PACK_28 = [[
     "scheme": 1,
     "attackStar": true,
     "schemeStar": true,
-    "boost": 3
+    "boost": 3,
+    "toughness": true
   },
   {
     "name": "Rollin', Rollin'",
@@ -17151,7 +17207,8 @@ PACK_31 = [[
     "attack": 2,
     "scheme": 2,
     "attackStar": true,
-    "boost": 3
+    "boost": 3,
+    "toughness": true
   },
   {
     "name": "Sandman",
@@ -17792,7 +17849,8 @@ PACK_32 = [[
     "deckLimit": 1,
     "resourcePhysical": 1,
     "thwartCost": 1,
-    "attackCost": 2
+    "attackCost": 2,
+    "toughness": true
   },
   {
     "name": "X-Mansion",
@@ -18179,7 +18237,9 @@ PACK_32 = [[
     "attack": 4,
     "scheme": 1,
     "boost": 2,
-    "boostStar": true
+    "boostStar": true,
+    "stalwart": true,
+    "toughness": true
   },
   {
     "name": "Rampaging Juggernaut",
@@ -18317,7 +18377,8 @@ PACK_32 = [[
     "scheme": 2,
     "attackStar": true,
     "schemeStar": true,
-    "stage": 2
+    "stage": 2,
+    "toughness": true
   },
   {
     "name": "Sabretooth",
@@ -18335,7 +18396,8 @@ PACK_32 = [[
     "scheme": 2,
     "attackStar": true,
     "schemeStar": true,
-    "stage": 3
+    "stage": 3,
+    "toughness": true
   },
   {
     "name": "Stalked by Sabretooth",
@@ -18588,7 +18650,8 @@ PACK_32 = [[
     "traits": "Brotherhood of Mutants. Elite.",
     "attackStar": true,
     "schemeStar": true,
-    "boost": 3
+    "boost": 3,
+    "toughness": true
   },
   {
     "name": "Metamorphic Mayhem",
@@ -18638,7 +18701,8 @@ PACK_32 = [[
     "traits": "Sentinel.",
     "attack": 2,
     "scheme": 2,
-    "stage": 1
+    "stage": 1,
+    "toughness": true
   },
   {
     "name": "Sentinel",
@@ -18653,7 +18717,9 @@ PACK_32 = [[
     "traits": "Sentinel.",
     "attack": 3,
     "scheme": 2,
-    "stage": 2
+    "stage": 2,
+    "steady": true,
+    "toughness": true
   },
   {
     "name": "Sentinel",
@@ -18668,7 +18734,9 @@ PACK_32 = [[
     "traits": "Sentinel.",
     "attack": 3,
     "scheme": 3,
-    "stage": 3
+    "stage": 3,
+    "stalwart": true,
+    "toughness": true
   },
   {
     "name": "Night of the Sentinels",
@@ -18920,7 +18988,8 @@ PACK_32 = [[
     "traits": "Sentinel.",
     "attack": 3,
     "scheme": 2,
-    "boostStar": true
+    "boostStar": true,
+    "toughness": true
   },
   {
     "name": "Energy Barrier",
@@ -19012,7 +19081,9 @@ PACK_32 = [[
     "attack": 2,
     "scheme": 1,
     "schemeStar": true,
-    "stage": 1
+    "stage": 1,
+    "stalwart": true,
+    "toughness": true
   },
   {
     "name": "Master Mold",
@@ -19029,7 +19100,9 @@ PACK_32 = [[
     "attack": 3,
     "scheme": 2,
     "schemeStar": true,
-    "stage": 2
+    "stage": 2,
+    "stalwart": true,
+    "toughness": true
   },
   {
     "name": "Master Mold",
@@ -19046,7 +19119,9 @@ PACK_32 = [[
     "attack": 4,
     "scheme": 3,
     "schemeStar": true,
-    "stage": 3
+    "stage": 3,
+    "stalwart": true,
+    "toughness": true
   },
   {
     "name": "The Sentinel Factory",
@@ -19167,7 +19242,7 @@ PACK_32 = [[
     "victory": 1
   },
   {
-    "name": "Avalanche A",
+    "name": "Avalanche",
     "code": "32121a",
     "type": "villain",
     "aspect": "encounter",
@@ -19182,10 +19257,11 @@ PACK_32 = [[
     "attack": 3,
     "scheme": 2,
     "attackStar": true,
-    "victory": 2
+    "victory": 2,
+    "toughness": true
   },
   {
-    "name": "Avalanche B",
+    "name": "Avalanche",
     "code": "32121b",
     "type": "villain",
     "aspect": "encounter",
@@ -19200,10 +19276,11 @@ PACK_32 = [[
     "attack": 4,
     "scheme": 2,
     "attackStar": true,
-    "victory": 2
+    "victory": 2,
+    "toughness": true
   },
   {
-    "name": "Blob A",
+    "name": "Blob",
     "code": "32122a",
     "type": "villain",
     "aspect": "encounter",
@@ -19218,10 +19295,11 @@ PACK_32 = [[
     "attack": 2,
     "scheme": 1,
     "attackStar": true,
-    "victory": 2
+    "victory": 2,
+    "toughness": true
   },
   {
-    "name": "Blob B",
+    "name": "Blob",
     "code": "32122b",
     "type": "villain",
     "aspect": "encounter",
@@ -19236,10 +19314,11 @@ PACK_32 = [[
     "attack": 2,
     "scheme": 2,
     "attackStar": true,
-    "victory": 2
+    "victory": 2,
+    "toughness": true
   },
   {
-    "name": "Pyro A",
+    "name": "Pyro",
     "code": "32123a",
     "type": "villain",
     "aspect": "encounter",
@@ -19252,10 +19331,11 @@ PACK_32 = [[
     "traits": "Brotherhood of Mutants.",
     "scheme": 2,
     "attackStar": true,
-    "victory": 2
+    "victory": 2,
+    "toughness": true
   },
   {
-    "name": "Pyro B",
+    "name": "Pyro",
     "code": "32123b",
     "type": "villain",
     "aspect": "encounter",
@@ -19269,10 +19349,11 @@ PACK_32 = [[
     "attack": 1,
     "scheme": 2,
     "attackStar": true,
-    "victory": 2
+    "victory": 2,
+    "toughness": true
   },
   {
-    "name": "Toad A",
+    "name": "Toad",
     "code": "32124a",
     "type": "villain",
     "aspect": "encounter",
@@ -19287,10 +19368,11 @@ PACK_32 = [[
     "attack": 2,
     "scheme": 2,
     "attackStar": true,
-    "victory": 2
+    "victory": 2,
+    "toughness": true
   },
   {
-    "name": "Toad B",
+    "name": "Toad",
     "code": "32124b",
     "type": "villain",
     "aspect": "encounter",
@@ -19305,7 +19387,8 @@ PACK_32 = [[
     "attack": 2,
     "scheme": 3,
     "attackStar": true,
-    "victory": 2
+    "victory": 2,
+    "toughness": true
   },
   {
     "name": "The Brotherhood Strikes!",
@@ -19480,7 +19563,9 @@ PACK_32 = [[
     "attack": 2,
     "scheme": 2,
     "attackStar": true,
-    "stage": 1
+    "stage": 1,
+    "steady": true,
+    "toughness": true
   },
   {
     "name": "Magneto",
@@ -19497,7 +19582,9 @@ PACK_32 = [[
     "attack": 3,
     "scheme": 2,
     "attackStar": true,
-    "stage": 2
+    "stage": 2,
+    "steady": true,
+    "toughness": true
   },
   {
     "name": "Magneto",
@@ -19514,7 +19601,9 @@ PACK_32 = [[
     "attack": 3,
     "scheme": 3,
     "attackStar": true,
-    "stage": 3
+    "stage": 3,
+    "steady": true,
+    "toughness": true
   },
   {
     "name": "Asteroid M",
@@ -19792,7 +19881,8 @@ PACK_32 = [[
     "traits": "Acolyte.",
     "attack": 1,
     "scheme": 2,
-    "boost": 2
+    "boost": 2,
+    "stalwart": true
   },
   {
     "name": "Senyaka",
@@ -19838,7 +19928,8 @@ PACK_32 = [[
     "traits": "Acolyte.",
     "attack": 2,
     "scheme": 2,
-    "boost": 2
+    "boost": 2,
+    "toughness": true
   },
   {
     "name": "Zeal for the Cause",
@@ -19877,7 +19968,8 @@ PACK_32 = [[
     "attack": 3,
     "scheme": 2,
     "boost": 3,
-    "victory": 1
+    "victory": 1,
+    "stalwart": true
   },
   {
     "name": "Bastion",
@@ -19894,7 +19986,8 @@ PACK_32 = [[
     "attack": 2,
     "scheme": 2,
     "boostStar": true,
-    "victory": 1
+    "victory": 1,
+    "toughness": true
   },
   {
     "name": "Nimrod's Portal",
@@ -20369,7 +20462,9 @@ PACK_33 = [[
     "attack": 1,
     "scheme": 1,
     "boost": 2,
-    "boostStar": true
+    "boostStar": true,
+    "stalwart": true,
+    "toughness": true
   },
   {
     "name": "Genetic Manipulation",
@@ -20842,7 +20937,9 @@ PACK_34 = [[
     "attack": 2,
     "scheme": 2,
     "schemeStar": true,
-    "boost": 3
+    "boost": 3,
+    "steady": true,
+    "toughness": true
   },
   {
     "name": "Consume the World",
@@ -21243,7 +21340,8 @@ PACK_35 = [[
     "attack": 2,
     "scheme": 1,
     "attackStar": true,
-    "boost": 3
+    "boost": 3,
+    "steady": true
   },
   {
     "name": "The Carbonadium Synthesizer",
@@ -21866,7 +21964,8 @@ PACK_37 = [[
     "deckLimit": 1,
     "resourceWild": 1,
     "thwartCost": 1,
-    "attackCost": 1
+    "attackCost": 1,
+    "toughness": true
   },
   {
     "name": "The Thieves Guild",
@@ -22149,7 +22248,8 @@ PACK_37 = [[
     "attack": 3,
     "scheme": 2,
     "attackStar": true,
-    "boost": 3
+    "boost": 3,
+    "toughness": true
   },
   {
     "name": "The Assassins Guild",
@@ -22445,7 +22545,8 @@ PACK_38 = [[
     "deckLimit": 1,
     "resourcePhysical": 1,
     "thwartCost": 1,
-    "attackCost": 1
+    "attackCost": 1,
+    "toughness": true
   },
   {
     "code": "38013",
@@ -22563,7 +22664,8 @@ PACK_38 = [[
     "traits": "Brotherhood of Mutants. Elite.",
     "attack": 1,
     "scheme": 1,
-    "boost": 3
+    "boost": 3,
+    "toughness": true
   },
   {
     "name": "Mystique's Manipulations",
@@ -22617,7 +22719,8 @@ PACK_38 = [[
     "isUnique": true,
     "traits": "Reaver.",
     "attack": 2,
-    "scheme": 2,
+    "scheme": 2,,
+    "toughness": true
     "boost": 2
   },
   {
@@ -22634,7 +22737,8 @@ PACK_38 = [[
     "traits": "Reaver.",
     "attack": 3,
     "scheme": 1,
-    "boost": 2
+    "boost": 2,
+    "toughness": true
   },
   {
     "name": "Wade Cole",
@@ -23301,7 +23405,7 @@ PACK_39 = [[
     "aspect": "encounter",
     "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/39039.jpg",
-    "text": "Hinder 1[per_hero].\The villain cannot take damage.\n<b>Hero Action:</b> Spend X[physical] resources → remove X threat from this scheme.",
+    "text": "Hinder 1[per_hero].\nThe villain cannot take damage.\n<b>Hero Action:</b> Spend X[physical] resources → remove X threat from this scheme.",
     "flavor": "\"I was never here.\" - Boss Mojo",
     "baseThreat": 5,
     "baseThreatIsFixed": true,
@@ -23339,7 +23443,8 @@ PACK_39 = [[
     "traits": "Dragon. Elite.",
     "attack": 3,
     "scheme": 1,
-    "boost": 4
+    "boost": ,
+    "toughness": true
   },
   {
     "name": "Goblin",
@@ -23365,7 +23470,8 @@ PACK_39 = [[
     "health": 7,
     "traits": "Brute. Troll.",
     "attack": 2,
-    "boost": 2
+    "boost": 2,
+    "toughness": true
   },
   {
     "name": "Fetch Quest",
@@ -24213,7 +24319,8 @@ PACK_40 = [[
     "resourceWild": 1,
     "thwartCost": 1,
     "attackCost": 1,
-    "attackStar": true
+    "attackStar": true,
+    "toughness": true
   },
   {
     "name": "A Good Workout",
@@ -25614,7 +25721,8 @@ PACK_40 = [[
     "attack": 1,
     "scheme": 1,
     "attackStar": true,
-    "boost": 2
+    "boost": 2,
+    "toughness": true
   },
   {
     "name": "Get Nasty",
@@ -26383,7 +26491,8 @@ PACK_40 = [[
     "traits": "Mutant Liberation Front.",
     "attack": 1,
     "scheme": 1,
-    "boost": 1
+    "boost": 1,
+    "toughness": true
   },
   {
     "name": "Cerebral Erasure",
@@ -27415,7 +27524,8 @@ PACK_42 = [[
     "deckLimit": 1,
     "resourceEnergy": 1,
     "thwartCost": 2,
-    "attackCost": 1
+    "attackCost": 1,
+    "toughness": true
   },
   {
     "name": "Aerial Intervention",
@@ -28367,7 +28477,8 @@ PACK_44 = [[
     "cost": 3,
     "deckLimit": 1,
     "resourcePhysical": 1,
-    "acceleration": 1
+    "acceleration": 1,
+    "toughness": true
   },
   {
     "name": "Headpool",
@@ -28667,7 +28778,8 @@ PACK_44 = [[
     "cost": 4,
     "deckLimit": 1,
     "resourcePhysical": 1,
-    "hazard": 1
+    "hazard": 1,
+    "toughness": true
   },
   {
     "name": "Break Time",
@@ -28908,7 +29020,8 @@ PACK_44 = [[
     "scheme": 1,
     "attackStar": true,
     "schemeStar": true,
-    "boost": 2
+    "boost": 2,
+    "toughness": true
   },
   {
     "name": "Crisis of Infinite Deadpools",
@@ -29362,7 +29475,8 @@ PACK_45 = [[
     "deckLimit": 1,
     "resourceWild": 1,
     "thwartCost": 1,
-    "attackCost": 1
+    "attackCost": 1,
+    "toughness": true
   },
   {
     "name": "Limbo",
@@ -29930,7 +30044,8 @@ PACK_45 = [[
     "traits": "Prelate.",
     "attack": 2,
     "scheme": 1,
-    "stage": 1
+    "stage": 1,
+    "toughness": true
   },
   {
     "name": "Unus",
@@ -29946,7 +30061,8 @@ PACK_45 = [[
     "traits": "Prelate.",
     "attack": 2,
     "scheme": 2,
-    "stage": 2
+    "stage": 2,
+    "toughness": true
   },
   {
     "name": "Unus",
@@ -29962,7 +30078,8 @@ PACK_45 = [[
     "traits": "Prelate.",
     "attack": 3,
     "scheme": 2,
-    "stage": 3
+    "stage": 3,
+    "toughness": true
   },
   {
     "name": "Hunting Gene Traitors",
@@ -30488,7 +30605,8 @@ PACK_45 = [[
     "traits": "Cyborg. Tracker.",
     "attack": 3,
     "scheme": 2,
-    "boost": 3
+    "boost": 3,
+    "toughness": true
   },
   {
     "name": "Hound",
@@ -30546,7 +30664,8 @@ PACK_45 = [[
     "traits": "Mutant.",
     "attack": 2,
     "scheme": 1,
-    "stage": 1
+    "stage": 1,
+    "toughness": true
   },
   {
     "name": "Apocalypse",
@@ -30563,7 +30682,9 @@ PACK_45 = [[
     "traits": "Mutant.",
     "attack": 2,
     "scheme": 2,
-    "stage": 2
+    "stage": 2,
+    "steady": true,
+    "toughness": true
   },
   {
     "name": "Apocalypse",
@@ -30580,7 +30701,9 @@ PACK_45 = [[
     "traits": "Mutant.",
     "attack": 3,
     "scheme": 2,
-    "stage": 3
+    "stage": 3,
+    "steady": true,
+    "toughness": true
   },
   {
     "name": "Apocalypse",
@@ -30598,7 +30721,9 @@ PACK_45 = [[
     "attack": 3,
     "scheme": 3,
     "attackStar": true,
-    "stage": 4
+    "stage": 4,
+    "stalwart": true,
+    "toughness": true
   },
   {
     "name": "The Age of Apocalypse",
@@ -31095,7 +31220,8 @@ PACK_45 = [[
     "attack": 3,
     "scheme": 2,
     "attackStar": true,
-    "boost": 2
+    "boost": 2,
+    "toughness": true
   },
   {
     "name": "Escaped Mutant",
@@ -31401,7 +31527,8 @@ PACK_45 = [[
     "attack": 1,
     "scheme": 1,
     "schemeStar": true,
-    "boostStar": true
+    "boostStar": true,
+    "toughness": true
   },
   {
     "name": "Scarab",
@@ -31640,7 +31767,8 @@ PACK_45 = [[
     "attack": 1,
     "scheme": 1,
     "boost": 3,
-    "victory": 3
+    "victory": 3,
+    "toughness": true
   },
   {
     "name": "The Shadow King",
@@ -31672,7 +31800,8 @@ PACK_45 = [[
     "scheme": 3,
     "attackStar": true,
     "boost": 3,
-    "victory": 3
+    "victory": 3,
+    "toughness": true
   },
   {
     "name": "Abyss",
@@ -31703,7 +31832,8 @@ PACK_45 = [[
     "attackStar": true,
     "schemeStar": true,
     "boost": 3,
-    "victory": 3
+    "victory": 3,
+    "toughness": true
   },
   {
     "name": "Sugar Man",
@@ -31735,7 +31865,8 @@ PACK_45 = [[
     "scheme": 1,
     "attackStar": true,
     "boost": 3,
-    "victory": 3
+    "victory": 3,
+    "toughness": true
   },
   {
     "name": "Mikhail Rasputin",
@@ -31765,7 +31896,8 @@ PACK_45 = [[
     "scheme": 2,
     "attackStar": true,
     "boost": 3,
-    "victory": 3
+    "victory": 3,
+    "toughness": true
   },
   {
     "name": "Apocalypse",
@@ -31817,7 +31949,8 @@ PACK_45 = [[
     "traits": "Mutant. Giant.",
     "attack": 2,
     "scheme": 2,
-    "stage": 1
+    "stage": 1,
+    "stalwart": true
   },
   {
     "name": "Apocalypse",
@@ -31869,7 +32002,8 @@ PACK_45 = [[
     "traits": "Mutant. Giant.",
     "attack": 3,
     "scheme": 2,
-    "stage": 2
+    "stage": 2,
+    "stalwart": true
   },
   {
     "name": "Apocalypse",
@@ -31921,7 +32055,8 @@ PACK_45 = [[
     "traits": "Mutant. Giant.",
     "attack": 3,
     "scheme": 3,
-    "stage": 3
+    "stage": 3,
+    "stalwart": true
   }
 ]
 ]]
@@ -32828,7 +32963,8 @@ PACK_47 = [[
     "attack": 1,
     "scheme": 2,
     "attackStar": true,
-    "boost": 2
+    "boost": 2,
+    "toughness": true
   },
   {
     "name": "Naughty Children",
@@ -32898,7 +33034,8 @@ PACK_47 = [[
     "baseThreat": 2,
     "baseThreatIsFixed": true,
     "boost": 2,
-    "hazard": 1
+    "hazard": 1,
+    "hinder": 1
   },
   {
     "name": "Arcade's Funhouse",
@@ -32912,7 +33049,8 @@ PACK_47 = [[
     "baseThreat": 2,
     "baseThreatIsFixed": true,
     "boost": 2,
-    "amplify": 1
+    "amplify": 1,
+    "hinder": 1
   },
   {
     "name": "Hall of Mirrors",
@@ -32926,7 +33064,8 @@ PACK_47 = [[
     "baseThreat": 2,
     "baseThreatIsFixed": true,
     "boost": 2,
-    "crisis": 1
+    "crisis": 1,
+    "hinder": 1
   },
   {
     "name": "Elaborate Trap",
@@ -32937,6 +33076,506 @@ PACK_47 = [[
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/47034.jpg",
     "text": "<b>When Revealed</b>: Resolve the \"<b>When Defeated</b>\" ability on each [Trap!] side scheme as if you defeated it. If no abilities were resolved this way, discard cards from the top of the encounter deck until a [Trap!] side scheme is discarded and reveal it.",
     "flavor": "\"Because overkill is underrated.\" —Arcade",
+    "boost": 1
+  }
+]
+]]
+PACK_48 = [[
+[
+  {
+    "name": "Nightcrawler",
+    "code": "48001a",
+    "type": "hero",
+    "aspect": "hero",
+    "BackURL": "https://thespecialistscomic.com/marvel-champions/nightcrawler/48001B.jpg",
+    "FrontURL": "https://thespecialistscomic.com/marvel-champions/nightcrawler/48001A.jpg",
+    "text": "<i>Rapid Teleportation</i> — <b>Action</b>: Spend 1 resource of any type → return a copy of Bamf! from your discard pile to your hand. (Limit once per phase.)",
+    "flavor": "\"Verzeihung! Mind if I cut in?\"",
+    "health": 9,
+    "isUnique": true,
+    "traits": "X-Men.",
+    "thwart": 2,
+    "attack": 1,
+    "defense": 3,
+    "handSize": 5
+  },
+  {
+    "name": "Kurt Wagner",
+    "code": "48001b",
+    "type": "alter_ego",
+    "aspect": "hero",
+    "BackURL": "https://thespecialistscomic.com/marvel-champions/nightcrawler/48001A.jpg",
+    "FrontURL": "https://thespecialistscomic.com/marvel-champions/nightcrawler/48001B.jpg",
+    "text": "<b>Action</b>: Search your deck for a copy of Bamf! and add it to your hand. (Limit once per round.)",
+    "flavor": "\"Even in dark times, there is beauty and peace to be found.\"",
+    "health": 9,
+    "isUnique": true,
+    "traits": "Mutant.",
+    "recover": 3,
+    "handSize": 6
+  },
+  {
+    "name": "Daytripper",
+    "code": "48002",
+    "subname": "Amanda Sefton",
+    "type": "ally",
+    "aspect": "hero",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://thespecialistscomic.com/marvel-champions/nightcrawler/48002.jpg",
+    "text": "<b>Response</b>: After Daytripper enters play, search your deck and discard pile for a copy of Bamf! and attach it to an enemy. Deal 1 damage to each enemy with a copy of Bamf! attached.",
+    "health": 2,
+    "isUnique": true,
+    "traits": "Mystic.",
+    "thwart": 2,
+    "attack": 2,
+    "cost": 2,
+    "deckLimit": 1,
+    "resourceWild": 1,
+    "thwartCost": 1,
+    "attackCost": 1
+  },
+  {
+    "name": "Kurt's Chapel",
+    "code": "48003",
+    "type": "support",
+    "aspect": "hero",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://thespecialistscomic.com/marvel-champions/nightcrawler/48003.jpg",
+    "text": "Kurt Wagner gets +1 REC.\n<b>Alter-Ego Response</b>: After you make a basic recovery, exhaust Kurt's Chapel and choose a player → that player draws 1 card.",
+    "isUnique": true,
+    "traits": "Location.",
+    "cost": 1,
+    "deckLimit": 1,
+    "resourceMental": 1
+  },
+  {
+    "name": "Kurt's Cutlasses",
+    "code": "48004",
+    "type": "upgrade",
+    "aspect": "hero",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://thespecialistscomic.com/marvel-champions/nightcrawler/48004.jpg",
+    "text": "Counts as 2 restricted cards.\nNightcrawler gets +1 ATK, +1 DEF, and gains retaliate 1.",
+    "flavor": "\"I've got two swords: one for each of you!\"",
+    "isUnique": true,
+    "traits": "Weapon.",
+    "cost": 2,
+    "deckLimit": 1,
+    "resourcePhysical": 1
+  },
+  {
+    "name": "Prehensile Tail",
+    "code": "48005",
+    "type": "upgrade",
+    "aspect": "hero",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://thespecialistscomic.com/marvel-champions/nightcrawler/48005.jpg",
+    "text": "You can control 1 additional upgrade that has the restricted keyword.\n<b>Resource</b>: Exhaust Prehensile Tail → generate a [wild] resource for an event.",
+    "flavor": "Nightcrawler's tail allows him to perform attacks others cannot.",
+    "isUnique": true,
+    "traits": "Superpower.",
+    "cost": 1,
+    "deckLimit": 1,
+    "resourcePhysical": 1
+  },
+  {
+    "name": "Bamf!",
+    "code": "48006",
+    "type": "upgrade",
+    "aspect": "hero",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://thespecialistscomic.com/marvel-champions/nightcrawler/48006.jpg",
+    "text": "Attach to an enemy. Max 1 per enemy.\n<b>Hero Interrupt</b> <i>(defense)</i>: When attached enemy attacks, discard this card → declare Nightcrawler as the defender without exhausting him.",
+    "deckLimit": 3,
+    "resourcePhysical": 1
+  },
+  {
+    "name": "'Port and Punch",
+    "code": "48007",
+    "type": "event",
+    "aspect": "hero",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://thespecialistscomic.com/marvel-champions/nightcrawler/48007.jpg",
+    "text": "<b>Hero Action</b> <i>(attack)</i>: Deal 3 damage to an enemy. Deal 3 damage to each enemy with Bamf! attached.",
+    "flavor": "Nightcrawler can engage several enemies at once by teleporting as fast as he can strike.",
+    "traits": "Attack. Superpower.",
+    "cost": 2,
+    "deckLimit": 2,
+    "resourceEnergy": 1
+  },
+  {
+    "name": "Teleport Drop",
+    "code": "48008",
+    "type": "event",
+    "aspect": "hero",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://thespecialistscomic.com/marvel-champions/nightcrawler/48008.jpg",
+    "text": "<b>Hero Action</b> <i>(attack)</i>: Discard a copy of Bamf! from an enemy → deal 8 damage to that enemy and stun it.",
+    "flavor": "\"When you look like a demon, it can be tempting to play the part.\" —Nightcrawler",
+    "traits": "Attack. Superpower.",
+    "cost": 2,
+    "deckLimit": 1,
+    "resourceEnergy": 1
+  },
+  {
+    "name": "Scout Ahead",
+    "code": "48009",
+    "type": "event",
+    "aspect": "hero",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://thespecialistscomic.com/marvel-champions/nightcrawler/48009.jpg",
+    "text": "<b>Hero Action</b> <i>(thwart)</i>: Remove 3 threat from a scheme. You may discard a copy of Bamf! from your hand to remove 3 threat from another scheme.",
+    "flavor": "\"One moment, liebchen — let me make sure it's safe.\" —Nightcrawler",
+    "traits": "Superpower. Thwart.",
+    "cost": 1,
+    "deckLimit": 2,
+    "resourceEnergy": 1
+  },
+  {
+    "name": "'Port Away",
+    "code": "48010",
+    "type": "event",
+    "aspect": "hero",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://thespecialistscomic.com/marvel-champions/nightcrawler/48010.jpg",
+    "text": "<b>Action</b>: Discard a copy of Bamf! from your hand → change forms and ready your identity.",
+    "flavor": "\"I'll be back!\" —Nightcrawler",
+    "traits": "Superpower.",
+    "deckLimit": 1,
+    "resourceEnergy": 1
+  },
+  {
+    "name": "Tally Ho!",
+    "code": "48011",
+    "type": "event",
+    "aspect": "hero",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://thespecialistscomic.com/marvel-champions/nightcrawler/48011.jpg",
+    "text": "<b>Hero Response</b> <i>(defense)</i>: After Bamf! makes Nightcrawler the defender of an attack, return that copy of Bamf! to your hand. Deal 3 damage to the attacking enemy.",
+    "traits": "Defense. Superpower.",
+    "cost": 1,
+    "deckLimit": 2,
+    "resourceEnergy": 1
+  },
+  {
+    "name": "Rogue",
+    "code": "48012",
+    "subname": "Anna Marie",
+    "type": "ally",
+    "aspect": "protection",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://thespecialistscomic.com/marvel-champions/nightcrawler/48012.jpg",
+    "text": "<b>Action</b>: Deal 1 damage to another friendly character → until the end of the round, Rogue gains each of that character's [Traits] and adds that character's printed THW and ATK to her matching powers. (Limit once per round.)",
+    "health": 3,
+    "isUnique": true,
+    "traits": "X-Men.",
+    "thwart": 2,
+    "attack": 2,
+    "cost": 4,
+    "deckLimit": 1,
+    "resourcePhysical": 1,
+    "thwartCost": 1,
+    "attackCost": 1
+  },
+  {
+    "name": "Northstar",
+    "code": "48013",
+    "subname": "Jean-Paul Beaubier",
+    "type": "ally",
+    "aspect": "protection",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://thespecialistscomic.com/marvel-champions/nightcrawler/48013.jpg",
+    "text": "<b>Interrupt</b>: When a boost card is turned faceup during an attack, deal 1 damage to Northstar → cancel all boost icons ([boost]) on that card.",
+    "flavor": "\"Bad guys aren't so scary when you move faster than they blink.\"",
+    "health": 3,
+    "isUnique": true,
+    "traits": "X-Men.",
+    "thwart": 1,
+    "attack": 2,
+    "cost": 3,
+    "deckLimit": 1,
+    "resourceEnergy": 1,
+    "thwartCost": 1,
+    "attackCost": 1
+  },
+  {
+    "name": "Change of Fortune",
+    "code": "48014",
+    "type": "upgrade",
+    "aspect": "protection",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://thespecialistscomic.com/marvel-champions/nightcrawler/48014.jpg",
+    "text": "Play under any player's control. Max 1 per player.\n<b>Response</b>: After you defeat an enemy during the villain phase, exhaust this card → draw 2 cards.",
+    "cost": 1,
+    "deckLimit": 3,
+    "resourceMental": 1
+  },
+  {
+    "name": "Under Control",
+    "code": "48015",
+    "type": "upgrade",
+    "aspect": "protection",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://thespecialistscomic.com/marvel-champions/nightcrawler/48015.jpg",
+    "text": "Attach to a minion. Max 1 per minion.\n<b>Response</b>: After a hero defends against attached minion's attack and takes no damage, deal 4 damage to attached minion.",
+    "traits": "Tactic.",
+    "deckLimit": 3,
+    "resourceEnergy": 1
+  },
+  {
+    "name": "\"Come Get Me, Bub!\"",
+    "code": "48016",
+    "type": "event",
+    "aspect": "protection",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://thespecialistscomic.com/marvel-champions/nightcrawler/48016.jpg",
+    "text": "<b>Hero Action</b>: Discard cards from the encounter deck until you discard a minion. Put that minion into play engaged with you → heal 3 damage from your identity and give your identity a tough status card.",
+    "traits": "Tactic.",
+    "deckLimit": 3,
+    "resourceMental": 1
+  },
+  {
+    "code": "48017",
+    "duplicate_of": "32014"
+  },
+  {
+    "name": "Riposte",
+    "code": "48018",
+    "type": "event",
+    "aspect": "protection",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://thespecialistscomic.com/marvel-champions/nightcrawler/48018.jpg",
+    "text": "<b>Hero Interrupt</b> <i>(defense)</i>: When your hero defends against an attack, it gets +2 DEF for that attack. If you take no damage from that attack, deal 3 damage to the attacking enemy.",
+    "traits": "Defense.",
+    "cost": 1,
+    "deckLimit": 3,
+    "resourceEnergy": 1
+  },
+  {
+    "code": "48019",
+    "duplicate_of": "01079"
+  },
+  {
+    "name": "Astonishing X-Men",
+    "code": "48020",
+    "type": "player_side_scheme",
+    "aspect": "protection",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://thespecialistscomic.com/marvel-champions/nightcrawler/48020.jpg",
+    "text": "Victory 0.\n<b>Response</b>: After an [X-Men] character defends against an enemy attack and takes no damage, remove 1 threat from this scheme.\n<b>When Defeated</b>: Stun and confuse each enemy in play.",
+    "isUnique": true,
+    "cost": 1,
+    "deckLimit": 1,
+    "resourcePhysical": 1,
+    "baseThreat": 5,
+    "baseThreatIsFixed": true
+  },
+  {
+    "name": "Gambit",
+    "code": "48021",
+    "subname": "Remy LeBeau",
+    "type": "ally",
+    "aspect": "basic",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://thespecialistscomic.com/marvel-champions/nightcrawler/48021.jpg",
+    "text": "X is the number of boost icons ([boost]) on the card under Gambit.\n<b>Response</b>: After Gambit enters play, look at the top 3 cards of the encounter deck and tuck one under him so that only the boost field is visible.",
+    "health": 3,
+    "isUnique": true,
+    "traits": "Thief. X-Men.",
+    "thwart": -1,
+    "attack": -1,
+    "cost": 3,
+    "deckLimit": 1,
+    "resourceEnergy": 1,
+    "thwartCost": 1,
+    "attackCost": 1
+  },
+  {
+    "code": "48022",
+    "duplicate_of": "38018"
+  },
+  {
+    "code": "48023",
+    "duplicate_of": "01088"
+  },
+  {
+    "code": "48024",
+    "duplicate_of": "01089"
+  },
+  {
+    "code": "48025",
+    "duplicate_of": "01090"
+  },
+  {
+    "name": "Combine Forces",
+    "code": "48031",
+    "type": "event",
+    "aspect": "aggression",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://thespecialistscomic.com/marvel-champions/nightcrawler/48031.jpg",
+    "text": "Alliance.\n<b>Hero Action</b>: Exhaust an [X-Force] character and an [X-Men] character → defeat a non-[Elite] minion.",
+    "flavor": "\"Boy, did you ever choose the wrong mutants on the wrong day!\"—Cyclops",
+    "cost": 1,
+    "deckLimit": 3,
+    "resourceEnergy": 1
+  },
+  {
+    "name": "Gunboat Diplomacy",
+    "code": "48032",
+    "type": "event",
+    "aspect": "justice",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "FrontURL": "https://thespecialistscomic.com/marvel-champions/nightcrawler/48032.jpg",
+    "text": "Alliance.\n<b>Hero Action</b> <i>(attack/thwart)</i>: Exhaust an [X-Force] character and an [X-Men] character → remove X threat from among schemes in play and deal X damage among enemies in play, where X is the combined THW of the two exhausted characters.",
+    "traits": "Attack. Thwart.",
+    "cost": 1,
+    "deckLimit": 3,
+    "resourceEnergy": 1
+  },
+  {
+    "name": "Crisis of Faith",
+    "code": "48026",
+    "type": "obligation",
+    "aspect": "encounter",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://thespecialistscomic.com/marvel-champions/nightcrawler/48026.jpg",
+    "text": "<b><i>Give to the Kurt Wagner player.</i></b>\nYou may flip to alter-ego form. Choose:\n• Exhaust Kurt Wagner → remove Crisis of Faith from the game.\n• Discard each [Attack] and [Defense] event from your hand. Discard this obligation.",
+    "boost": 2
+  },
+  {
+    "name": "Azazel",
+    "code": "48027",
+    "type": "minion",
+    "aspect": "encounter",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://thespecialistscomic.com/marvel-champions/nightcrawler/48027.jpg",
+    "text": "Quickstrike.\nAzazel cannot have upgrades attached.\n<hr />\n[star] <b>Boost</b>: Deal Azazel to the Kurt Wagner player as a facedown encounter card.",
+    "health": 3,
+    "isUnique": true,
+    "traits": "Elite. Neyaphem.",
+    "attack": 3,
+    "scheme": 2,
+    "boostStar": true
+  },
+  {
+    "name": "Brimstone Dimension",
+    "code": "48028",
+    "type": "side_scheme",
+    "aspect": "encounter",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://thespecialistscomic.com/marvel-champions/nightcrawler/48028.jpg",
+    "text": "<b>When Defeated</b>: The player who defeated this scheme finds Azazel and deals him to themself as a facedown encounter card.",
+    "flavor": "\"All of this could be yours, if you'd only join me!\"—Azazel",
+    "baseThreat": 5,
+    "baseThreatIsFixed": true,
+    "boost": 3
+  },
+  {
+    "name": "Azazel's Sword",
+    "code": "48029",
+    "type": "attachment",
+    "aspect": "encounter",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://thespecialistscomic.com/marvel-champions/nightcrawler/48029.jpg",
+    "text": "Attach to Azazel. Otherwise, attach to the villain.\n[star] Attached enemy's attacks gain piercing.\n<b>Hero Response</b>: After attached enemy attacks you, discard 1 random card from your hand → discard this card.",
+    "traits": "Weapon.",
+    "attack": 1,
+    "attackStar": true,
+    "boost": 2
+  },
+  {
+    "name": "Brimstone Strike",
+    "code": "48030",
+    "type": "treachery",
+    "aspect": "encounter",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://thespecialistscomic.com/marvel-champions/nightcrawler/48030.jpg",
+    "text": "<b>When Revealed (Alter-Ego)</b>: Find Azazel and reveal him. He schemes.\n<b>When Revealed (Hero)</b>: Find Azazel and reveal him.",
+    "flavor": "Azazel delights in frustrating his opponents by teleporting in and out of combat.",
+    "boost": 1
+  },
+  {
+    "name": "The Crazy Gang",
+    "code": "48033",
+    "type": "side_scheme",
+    "aspect": "encounter",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://thespecialistscomic.com/marvel-champions/nightcrawler/48033.jpg",
+    "text": "<b>Forced Response</b>: After a non-[Elite] minion schemes against a player, deal that minion to that player as a facedown encounter card. Then, if there is more than 1 player in the game, pass that facedown encounter card to the next player.",
+    "baseThreat": 2,
+    "baseThreatIsFixed": true,
+    "boost": 2,
+    "acceleration": 1
+  },
+  {
+    "name": "Queen of Hearts",
+    "code": "48034",
+    "type": "minion",
+    "aspect": "encounter",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://thespecialistscomic.com/marvel-champions/nightcrawler/48034.jpg",
+    "text": "<b>When Revealed</b>: Search the encounter deck and discard pile for The Crazy Gang side scheme and reveal it. If it is already in play, deal yourself a facedown encounter card. <i>(Shuffle.)</i>",
+    "flavor": "\"Off with his head!\"",
+    "health": 4,
+    "isUnique": true,
+    "traits": "Criminal. Queen.",
+    "attack": 1,
+    "boost": 3
+  },
+  {
+    "name": "Jester",
+    "code": "48035",
+    "type": "minion",
+    "aspect": "encounter",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://thespecialistscomic.com/marvel-champions/nightcrawler/48035.jpg",
+    "text": "<b>When Revealed</b>: You are confused. If you were already confused, discard a support you control.",
+    "flavor": "\"I'll kick you in the face with fun!\"",
+    "health": 5,
+    "isUnique": true,
+    "traits": "Criminal.",
+    "attack": 1,
+    "boost": 1
+  },
+  {
+    "name": "Executioner",
+    "code": "48036",
+    "type": "minion",
+    "aspect": "encounter",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://thespecialistscomic.com/marvel-champions/nightcrawler/48036.jpg",
+    "text": "<b>When Revealed</b>: Executioner attacks the friendly character with the fewest remaining hit points. If this attack defeats an ally, remove that ally from the game.",
+    "flavor": "The Queen of Hearts keeps him busy with her catchphrase.",
+    "health": 4,
+    "isUnique": true,
+    "traits": "Criminal.",
+    "attack": 2,
+    "boost": 2
+  },
+  {
+    "name": "Tweedledope",
+    "code": "48037",
+    "type": "minion",
+    "aspect": "encounter",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://thespecialistscomic.com/marvel-champions/nightcrawler/48037.jpg",
+    "text": "<b>When Revealed</b>: You are stunned. If you were already stunned, discard an upgrade you control.",
+    "flavor": "\"Hyuk hyuk hyuk!\"",
+    "health": 6,
+    "isUnique": true,
+    "traits": "Criminal.",
+    "attack": 2,
+    "boost": 1
+  },
+  {
+    "name": "\"Off with His Head!\"",
+    "code": "48038",
+    "type": "treachery",
+    "aspect": "encounter",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://thespecialistscomic.com/marvel-champions/nightcrawler/48038.jpg",
+    "text": "<b>When Revealed</b>: Each minion activates against the player it is engaged with. If no minion activates this way, discard cards from the top of the encounter deck until a minion is discarded and reveal that minion.",
+    "flavor": "It's basically all she ever says.",
     "boost": 1
   }
 ]
@@ -32957,7 +33596,8 @@ PACK_90 = [[
     "traits": "Accuser Corps. Elite. Kree.",
     "attack": 3,
     "scheme": 3,
-    "boostStar": true
+    "boostStar": true,
+    "toughness": true
   },
   {
     "name": "Judge, Jury, Executioner",
@@ -35118,7 +35758,8 @@ PACK_01 = [[
     "deckLimit": 1,
     "resourceEnergy": 1,
     "thwartCost": 1,
-    "attackCost": 1
+    "attackCost": 1,
+    "toughness": true
   },
   {
     "name": "Counter-Punch",
@@ -35399,7 +36040,8 @@ PACK_01 = [[
     "traits": "Brute. Criminal.",
     "attack": 4,
     "scheme": 1,
-    "stage": 3
+    "stage": 3,
+    "toughness": true
   },
   {
     "name": "The Break-In!",
@@ -35478,7 +36120,8 @@ PACK_01 = [[
     "traits": "Criminal. Elite.",
     "attack": 3,
     "scheme": 2,
-    "boost": 2
+    "boost": 2,
+    "toughness": true
   },
   {
     "name": "Shocker",
@@ -35654,7 +36297,8 @@ PACK_01 = [[
     "attack": 2,
     "scheme": 3,
     "attackStar": true,
-    "stage": 3
+    "stage": 3,
+    "toughness": true
   },
   {
     "name": "Underground Distribution",
@@ -35723,7 +36367,8 @@ PACK_01 = [[
     "health": 3,
     "traits": "Mercenary.",
     "attack": 1,
-    "boost": 1
+    "boost": 1,
+    "toughness": true
   },
   {
     "name": "Weapons Runner",
@@ -38742,7 +39387,8 @@ PACK_06 = [[
     "attack": 3,
     "scheme": 1,
     "boost": 1,
-    "boostStar": true
+    "boostStar": true,
+    "toughness": true
   },
   {
     "name": "Trickster",
@@ -39076,7 +39722,8 @@ PACK_04 = [[
     "resourceMental": 1,
     "thwartCost": 1,
     "attackCost": 1,
-    "attackStar": true
+    "attackStar": true,
+    "toughness": true
   },
   {
     "code": "04021",
@@ -40533,7 +41180,8 @@ PACK_04 = [[
     "deckLimit": 4,
     "scheme": 1,
     "attackStar": true,
-    "boostStar": true
+    "boostStar": true,
+    "toughness": true
   },
   {
     "name": "Zola's Mutate",
@@ -40769,7 +41417,8 @@ PACK_04 = [[
     "attack": 3,
     "deckLimit": 1,
     "scheme": 1,
-    "boost": 1
+    "boost": 1,
+    "toughness": true
   },
   {
     "name": "Hydra Exo-Soldier",
@@ -40785,7 +41434,8 @@ PACK_04 = [[
     "attack": 2,
     "deckLimit": 3,
     "scheme": 2,
-    "boostStar": true
+    "boostStar": true,
+    "toughness": true
   },
   {
     "name": "Red Skull's Luger",

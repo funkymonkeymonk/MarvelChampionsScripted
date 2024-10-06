@@ -1,17 +1,17 @@
 {
   "Object": {
-    "GUID": "f578ca",
+    "GUID": "53db77",
     "Name": "Custom_Token",
     "Transform": {
-      "posX": 4.25,
-      "posY": 1.21536422,
-      "posZ": 35.75,
-      "rotX": 2.76302842e-7,
-      "rotY": 0.004715682,
-      "rotZ": -3.223537e-7,
-      "scaleX": 1.15,
+      "posX": 28.2499962,
+      "posY": 1.26411641,
+      "posZ": 0.250000268,
+      "rotX": -0.000154890382,
+      "rotY": 359.98172,
+      "rotZ": -0.000333905,
+      "scaleX": 1,
       "scaleY": 1,
-      "scaleZ": 1.15
+      "scaleZ": 1
     },
     "Nickname": "",
     "Description": "",
@@ -26,14 +26,11 @@
       "g": 1,
       "b": 1
     },
-    "Tags": [
-      "confused-status"
-    ],
     "LayoutGroupSortIndex": 0,
     "Value": 0,
     "Locked": false,
-    "Grid": false,
-    "Snap": false,
+    "Grid": true,
+    "Snap": true,
     "IgnoreFoW": false,
     "MeasureMovement": false,
     "DragSelectable": true,
@@ -44,13 +41,13 @@
     "HideWhenFaceDown": false,
     "Hands": false,
     "CustomImage": {
-      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/1779509151657477132/AEEDF874D38C106500BC358581636D31FCB95ED1/",
+      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/770610524581021345/A90559FB440A03EEF48B4341400FA7C9B0EF4F4C/",
       "ImageSecondaryURL": "",
       "ImageScalar": 1,
       "WidthScale": 0,
       "CustomToken": {
-        "Thickness": 0.1,
-        "MergeDistancePixels": 25,
+        "Thickness": 0.2,
+        "MergeDistancePixels": 15,
         "StandUp": false,
         "Stackable": false
       }

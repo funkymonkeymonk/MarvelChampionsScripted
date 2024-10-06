@@ -41,6 +41,10 @@ function clearData()
   self.script_state = ""
 end
 
+function getSelectedHeroes()
+  return selectedHeroes
+end
+
 function getHeroCount()
   local heroCount = 0
 
@@ -64,7 +68,7 @@ function placeHero(heroKey, playerColor, deckType)
   if not confirmSeatIsAvailable(playerColor) then return end
 
   local hero = deepCopy(heroes[heroKey])
-  local playmatPosition = getPlaymatPosition(playerColor)
+  local playmatPosition = getPlaymatPosition({playerColor = playerColor})
  
   placePlaymat(
     playerColor, 
@@ -171,24 +175,31 @@ function confirmSeatIsAvailable(playerColor)
  return true
 end
 
-function getPlaymatPosition(playerColor)
- if(playerColor == 'Red') then
-  return Global.getTable("PLAYMAT_POSITION_RED")
- end
+function getPlaymatPosition(params)
+  local playerColor = params.playerColor
 
- if(playerColor == 'Blue') then
-  return	Global.getTable("PLAYMAT_POSITION_BLUE")
- end
+  if(playerColor == 'Red') then
+    return Global.getTable("PLAYMAT_POSITION_RED")
+  end
 
- if(playerColor == 'Green') then
-  return Global.getTable("PLAYMAT_POSITION_GREEN")
- end
+  if(playerColor == 'Blue') then
+    return	Global.getTable("PLAYMAT_POSITION_BLUE")
+  end
 
- if(playerColor == 'Yellow') then
-  return Global.getTable("PLAYMAT_POSITION_YELLOW")
- end
+  if(playerColor == 'Green') then
+    return Global.getTable("PLAYMAT_POSITION_GREEN")
+  end
 
- return nil
+  if(playerColor == 'Yellow') then
+    return Global.getTable("PLAYMAT_POSITION_YELLOW")
+  end
+
+  return nil
+end
+
+function getIdentityPosition(params)
+  local playmatPosition = getPlaymatPosition(params)
+  return getOffsetPosition(playmatPosition, offset.identity)
 end
 
 function placePlaymat(playerColor, position, imageUrl)
@@ -264,17 +275,20 @@ function placeIdentity(hero, playmatPosition)
    position = position,
    rotation = defaultRotation,
    scale = scale,
+   hero = hero,
    callback = "configureIdentity"
   })
   return
  end
  
- getCardByID(hero.identityCardId, position, {scale = scale, flipped = hero.flipIdentityCard == nil or hero.flipIdentityCard})
+ heroCard = getCardByID(hero.identityCardId, position, {scale = scale, flipped = hero.flipIdentityCard == nil or hero.flipIdentityCard})
+ hero.identityGuid = heroCard.getGUID()
 end
 
 function configureIdentity(params)
  local identity = params.spawnedObject
  identity.setPosition(params.position)
+ hero.identityGuid = identity.getGUID()
 end
 
 function placeDeck(hero, deckType, playmatPosition)
@@ -710,3 +724,4 @@ require('!/heroes/bishop')
 require('!/heroes/magik')
 require('!/heroes/iceman')
 require('!/heroes/jubilee')
+require('!/heroes/nightcrawler')

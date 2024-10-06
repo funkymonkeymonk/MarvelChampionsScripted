@@ -12,6 +12,11 @@ scenarios["magog"] =
                 stageA={
                     cardId="39001",
                     hitPointsPerPlayer=10
+                },
+                stageB={
+                    cardId="39001",
+                    flipCard=true,
+                    hitPointsPerPlayer=10
                 }
             }
         }
@@ -42,13 +47,13 @@ scenarios["magog"] =
     counters={
         championRatings={
             type="general",
-            position={15.26, 1.06, 26.74},
+            position={14.50, 1.10, 30.80},
             scale={0.50, 1.00, 0.50},
             locked=true
         },
         challengerRatings={
             type="general",
-            position={20.26, 1.06, 26.74},
+            position={19.50, 1.10, 30.80},
             scale={0.50, 1.00, 0.50},
             locked=true
         }
@@ -68,3 +73,9 @@ scenarios["magog"] =
         }
     }
 }
+
+function prepareScenario_magog()
+  buildGenreQueue()
+  local modularSetKey = currentScenario.genreQueue[1].modularSetKey
+  encounterSetManager.call("selectModularSet", {modularSetKey = modularSetKey})
+end
