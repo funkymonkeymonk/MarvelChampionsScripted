@@ -1,3 +1,6 @@
+require('!/Cardplacer')
+require('!/json')
+
 DEFAULT_ROTATION = {0.00, 180.00, 0.00}
 
 VILLAIN_HEALTH_COUNTER_POSITION = {-0.34, 0.96, 29.15}
@@ -54,8 +57,8 @@ PLAYMAT_POSITION_GREEN  = {13.74, 1.04, -17.76}
 PLAYMAT_POSITION_YELLOW = {41.21, 1.04, -17.08}
 
 PLAYMAT_OFFSET_HEALTH_COUNTER = {-10.42, 0.10, 5.50}
-PLAYMAT_OFFSET_IDENTITY       = {-9.89, 3.00, 1.00}
-PLAYMAT_OFFSET_DECK           = {-8.40, 3.00, -4.66}
+PLAYMAT_OFFSET_IDENTITY       = {-9.89, 0.15, 1.00}
+PLAYMAT_OFFSET_DECK           = {-8.40, 0.30, -4.66}
 PLAYMAT_OFFSET_DISCARD        = {-11.30, 2.00, -4.66}
 
 SETUP_BUTTON_FONT_SIZE_INACTIVE = 400
@@ -74,13 +77,60 @@ GUID_SELECTOR_TILE             = "c04e76"
 GUID_MODULAR_SET_SELECTOR_TILE = "740464"
 
 ASSET_GUID_BLACK_HOLE             = "740595"
-ASSET_GUID_PLAYMAT                = "f5701e"
+ASSET_GUID_PLAYMAT                = "f5701e" 
 ASSET_GUID_HERO_HEALTH_COUNTER    = "16b5bd"
 ASSET_GUID_VILLAIN_HEALTH_COUNTER = "8cf3d6"
 ASSET_GUID_MAIN_THREAT_COUNTER    = "a9f7b8"
 ASSET_GUID_BOOST_PANEL            = "ef27d7"
 
+ZONE_SIDE_SCHEME = {
+   position = {14.25, 1.00, 11.75},
+   scale = {21.00, 1.00, 15.00},
+   firstCardPosition = {7.25, 0.98, 16.75},
+   horizontalGap = 7,
+   verticalGap = 5,
+   layoutDirection = "vertical",
+   width = 3,
+   height = 3
+}
+
+ZONE_ENVIRONMENT = {
+   position = {20.75, 2.00, 29.75},
+   scale = {15.00, 4.00, 7.00},
+   firstCardPosition = {15.75, 0.97, 29.75},
+   horizontalGap = 5,
+   verticalGap = 0,
+   layoutDirection = "horizontal",
+   width = 3,
+   height = 1   
+}
+
+ZONE_ATTACHMENT = {
+   position = {-7.25, 1.00, 15.25},
+   scale = {5.60, 1.00, 21.00},
+   firstCardPosition = {-7.25, 0.97, 22.25},
+   horizontalGap = 0,
+   verticalGap = 7,
+   layoutDirection = "vertical",
+   width = 1,
+   height = 3
+}
+
+ZONE_ENCOUNTER_DECK = {
+   position = {-15.25, 1.00, 22.00},
+   scale = {9.75, 2.00, 7.00}
+}
+
 IS_RESHUFFLING = false
+supressZoneInteractions = false
+
+function supressZones()
+   supressZoneInteractions = true
+
+   Wait.time(function()
+      supressZoneInteractions = false
+   end, 3)
+end
 
 function onLoad()
     -- Create context Menus
@@ -146,10 +196,12 @@ function drawEncountercard(params)
    if #items > 0 then
       for i, v in ipairs(items) do
          if v.tag == 'Deck' then
+            supressZones()
             v.takeObject({index = 0, position = drawToPosition, rotation = drawToRotation})
             return
          end
       end
+      supressZones()
       items[1].setPositionSmooth(drawToPosition, false, false)
       items[1].setRotationSmooth(drawToRotation, false, false)
       return
@@ -168,11 +220,13 @@ function drawBoostcard()
    if #items > 0 then
       for i, v in ipairs(items) do
          if v.tag == 'Deck' then
+            supressZones()
             v.takeObject({index = 0, position = drawToPosition, rotation = drawToRotation})
             return
          end
       end
 
+      supressZones()
       items[1].setPositionSmooth(drawToPosition, false, false)
       items[1].setRotationSmooth(drawToRotation, false, false)
       return
@@ -196,6 +250,7 @@ function discardBoostcard(params)
          end
       end
 
+      supressZones()
       items[1].setPositionSmooth(encounterDiscardPosition, false, false)
       items[1].setRotationSmooth({0,rotation.y,0}, false, false)
       return
@@ -232,6 +287,7 @@ function discardEncounterCard(params)
         end
       end
 
+      supressZones()
       items[1].setPositionSmooth(encounterDiscardPosition, false, false)
       items[1].setRotationSmooth({0,180,0}, false, false)
    end
@@ -279,27 +335,22 @@ function shuffleDeck(params)
       log("no deck found at position " .. params.deckPosition)
       return
    end
-   log(items)
+
    local deck = items[1]
    deck.shuffle()
 end
 
-function requestBoost()
-   getObjectFromGUID('e3b2e1').call('createBoostButton')
-end
+function isFaceUp(params)
+   local object = params.object
+   local z = object.getRotation()["z"]
 
-function isFaceup(params)
-   if params.getRotation()[3] > -5 and params.getRotation()[3] < 5 then
-      return true
-   else
-      return false
-   end
+   return z > -5 and z < 5
 end
 
 function moveCardToLocation(params)
    local origin = params.origin
    local destination = params.destination
-   local items = findInRadiusBy(origin, 3, isCard, true)
+   local items = findInRadiusBy(origin, 4, isCard, true)
 
    if(#items == 1) then
       items[1].setLock(false)
@@ -308,7 +359,7 @@ function moveCardToLocation(params)
 end
 
 function onPlayerAction(player, action, targets)
-   if action == Player.Action.Delete then
+   if(action == Player.Action.Delete) then
       for _, target in ipairs(targets) do
          if not target.getVar("preventDeletion") then
             target.destroy()
@@ -316,6 +367,38 @@ function onPlayerAction(player, action, targets)
       end
 
       return false
+   end
+
+   if(action == Player.Action.PickUp) then
+      if(#targets > 1) then return true end
+      local card = targets[1]
+
+      if(not isCard(card)) then return true end
+
+      if(not isFaceUp({object = card})) then return true end
+
+      local zones = card.getZones()
+      if #zones > 0 then return true end
+
+      local cardType = getCardProperty({card = card, property = "type"}) or ""
+      local zoneType = nil
+
+      if(string.sub(cardType, -11) == "side_scheme") then
+         zoneType = "sideScheme"
+      elseif(cardType == "attachment") then
+         zoneType = "attachment"
+      elseif(cardType == "environment") then
+         zoneType = "environment"
+      end
+
+      if(not zoneType) then return true end
+
+      local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
+      pingPosition = getNewZoneCardPosition({zoneType = zoneType, forNextCard = true})
+
+      if(pingPosition) then
+         player.pingTable(pingPosition)
+      end
    end
 
    return true
@@ -365,4 +448,378 @@ function moveDeck(params)
    items[1].setPositionSmooth(destinationPosition, false, false)
 end
 
-require('!/Cardplacer')
+function getCardId(params)
+   return getCardProperty({card = params.card, property = "code"})
+end
+
+function getCardData(params)
+   local card = params.card
+   local cardData = ""
+
+   if(type(card) == "table") then
+      cardData = card.gm_notes or ""
+      --return getPropertyFromCardTable(card, property)
+   else
+      cardData = card.getGMNotes() or ""
+      --return getPropertyFromCardObject(card, property)
+   end
+
+   return json.decode(cardData)
+
+   --local cardId = getCardId(params)
+   --return getCardFromCardPool(cardId)
+end
+
+function getCardProperty(params)
+   local card = params.card
+   local property = params.property
+
+   local cardData = getCardData({card = card})
+
+   return cardData[property]
+
+   -- local cardData = getCardData(params)
+   -- if (not cardData) then return nil end
+   -- return cardData[params.property]
+end
+
+-- function getPropertyFromCardTable(card, property)
+--    local cardData = card.gm_notes or ""
+-- end
+
+-- function getPropertyFromCardObject(card, property)
+--    local cardId = card.getVar("code")
+
+--    if(not cardId) then
+--       local cardData = card.getGMNotes() or ""
+--       --Decode data into object, then setVar for all properties
+--    end
+
+--    return card.getVar(property)
+-- end
+
+function moveCardFromDeckById(params)
+   local cardId = params.cardId
+   local deckPosition = params.deckPosition
+   local destinationPosition = Vector(params.destinationPosition)
+   local destinationRotation = params.destinationRotation and Vector(params.destinationRotation) or {0,180,0}
+   local items = findInRadiusBy(deckPosition, 4, isCardOrDeck, false)
+   local cardFound = false
+
+   for i, v in ipairs(items) do
+      if(v.tag == "Card") then
+         local id = getCardId({card = v})
+
+         if(id == cardId) then
+            v.setPositionSmooth(destinationPosition, false, false)
+            v.setRotationSmooth(destinationRotation, false, false)
+            cardFound = true
+         end
+      elseif(v.tag == "Deck") then
+         for i, card in ipairs(v.getObjects()) do
+            local id = getCardId({card = card})
+
+            if(id == cardId) then
+               v.takeObject({
+                  guid = card.guid,
+                  position = destinationPosition,
+                  rotation = destinationRotation,
+                  smooth = true
+               })
+               cardFound = true
+            end
+         end
+      end
+   end
+
+   return cardFound
+end
+
+function moveCardFromEncounterDeckById(params)
+   local cardId = params.cardId
+   local searchInDiscard = params.searchInDiscard or false
+   local destinationPosition = nil
+   local destinationRotation = nil
+   local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
+
+   if(params.zoneType) then
+      destinationPosition = ensureMinimumYPosition(getNewZoneCardPosition({zoneType = params.zoneType, forNextCard = true}), 3)
+      destinationRotation = params.zoneType == "sideScheme" and {0,90,0} or {0,180,0}
+   else
+      destinationPosition = ensureMinimumYPosition(Vector(params.destinationPosition), 3)
+      destinationRotation = params.destinationRotation and Vector(params.destinationRotation) or {0,180,0}
+   end
+
+   if searchInDiscard then
+      local discardPosition = Vector(scenarioManager.call('getEncounterDiscardPosition'))
+
+      if moveCardFromDeckById({
+         cardId = cardId,
+         deckPosition = discardPosition,
+         destinationPosition = destinationPosition,
+         destinationRotation = destinationRotation
+      }) then
+         return
+      end
+   end
+
+   local deckPosition = Vector(scenarioManager.call('getEncounterDeckPosition'))
+
+   moveCardFromDeckById({
+      cardId = cardId,
+      deckPosition = deckPosition,
+      destinationPosition = destinationPosition,
+      destinationRotation = destinationRotation
+   })
+
+end
+
+function ensureMinimumYPosition(position, minimumY)
+   if(position.y ~= nil) then
+      if(position.y < minimumY) then
+         position.y = minimumY
+      end
+   else
+      if(position[2] < minimumY) then
+         position[2] = minimumY
+      end
+   end
+
+   return position
+end
+
+function onObjectEnterZone(zone, card)
+   if(supressZoneInteractions) then return end
+   if(not isCard(card)) then return end
+
+   local zoneType = zone.getVar("zoneType")
+
+   if(not zoneType) then return end
+
+   local cardType = getCardProperty({card = card, property = "type"})
+   if(cardType == "hero" or cardType == "villain" or cardType == "main_scheme") then
+      return
+   end
+
+   resizeCardOnEnterZone(card, zoneType)
+   positionCardOnEnterZone(card, zoneType)
+
+   scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
+   scenarioManager.call("onCardEnterZone", {zone=zone, card = card})
+
+   Wait.frames(function()
+         if(zoneType == "sideScheme") then
+            addThreatCounterToSideScheme(card)
+         end
+
+      end, 
+      40)
+end
+
+function resizeCardOnEnterZone(card, zoneType)
+   local newScale = nil
+
+   if(zoneType == "hero") then
+      newScale = CARD_SCALE_PLAYER
+   elseif(zoneType == "sideScheme" or zoneType == "encounterDeck" or zoneType == "attachment" or zoneType == "environment") then
+      newScale = CARD_SCALE_ENCOUNTER
+   end
+
+   if(newScale) then
+      card.setScale(newScale)
+   end
+end
+
+function positionCardOnEnterZone(card, zoneType)
+   if(zoneType != "sideScheme" and zoneType != "attachment" and zoneType != "environment") then
+      return
+   end
+
+   local newCardPosition = getNewZoneCardPosition({zoneType = zoneType})
+   local originalRotation = card.getRotation()
+   local cardRotation = zoneType == "sideScheme" and {0,90,originalRotation[3]} or {0,180,originalRotation[3]}
+
+   card.setPositionSmooth(newCardPosition)
+   card.setRotationSmooth(cardRotation)
+   card.setScale(ENCOUNTER_DECK_SCALE)
+end
+
+function addThreatCounterToSideScheme(card)
+   local threatCounterBag = getObjectFromGUID(GUID_THREAT_COUNTER_BAG)
+   local cardPosition = card.getPosition()
+   local counterPosition = {cardPosition[1] - 0.38, cardPosition[2] + 0.07, cardPosition[3] - 1.45}
+   local threatCounter = threatCounterBag.takeObject({position = counterPosition, smooth = false})
+   card.setVar("counterGuid", threatCounter.getGUID())
+   
+   --TODO: Extract this calculation into a function?
+   local cardData = getCardData({card = card})
+   local baseThreat = cardData.baseThreat and tonumber(cardData.baseThreat) or 0
+   local baseThreatIsFixed = cardData.baseThreatIsFixed == "true"
+   local hinder = cardData.hinder and tonumber(cardData.hinder) or 0
+   local heroManager = getObjectFromGUID(GUID_HERO_MANAGER)
+   local heroCount = heroManager.call("getHeroCount")
+   local threat = 0
+
+   if baseThreatIsFixed then
+      threat = baseThreat + (heroCount * hinder)
+   else
+      threat = baseThreat * heroCount
+   end
+ 
+   Wait.frames(
+      function()
+         threatCounter.setScale({0.48, 1.00, 0.48})
+         threatCounter.call("setValue", {value = threat})
+     end,
+     1
+   ) 
+end
+
+function onObjectLeaveZone(zone, card)
+   if(supressZoneInteractions) then return end
+   if(not isCard(card)) then return end
+
+   local zoneType = zone.getVar("zoneType")
+   if(not zoneType) then return end
+
+   local cardData = getCardData({card = card})
+   local cardType = cardData.type or ""
+   local cardAspect = cardData.aspect or ""
+
+   if(cardType == "hero" or cardType == "villain" or cardType == "main_scheme") then
+      return
+   end   
+
+   removeCounterFromCard(card)
+   resizeCardOnLeaveZone(card, cardAspect)
+   repositionCardsInZone({zone = zone, zoneType = zoneType})
+end
+
+function removeCounterFromCard(card)
+   local counterGuid = card.getVar("counterGuid")
+
+   if(counterGuid) then
+      local counter = getObjectFromGUID(counterGuid)
+      if(counter) then counter.destruct() end
+      card.setVar("counterGuid", nil)
+   end
+end
+
+function resizeCardOnLeaveZone(card, cardAspect)
+   if(cardAspect == "encounter") then
+      card.setScale(CARD_SCALE_ENCOUNTER)
+   else
+      card.setScale(CARD_SCALE_PLAYER)
+   end
+end
+
+function repositionCardsInZone(params)
+   local zone = params.zone
+   local zoneType = params.zoneType
+
+   if(zoneType != "sideScheme" and zoneType != "attachment" and zoneType != "environment") then
+      return
+   end
+
+   local items = zone.getObjects()
+   local zoneDef = getZoneDefinitionByType({zoneType = zoneType})
+   local cardNumber = 0
+
+   for i, v in ipairs(items) do
+      if(v.tag == "Card") then
+         cardNumber = cardNumber + 1
+         local newPosition = getZoneCardPosition({zoneDef = zoneDef, cardNumber = cardNumber})
+
+         if(newPosition) then
+            local counterPosition = {newPosition[1] - 0.38, newPosition[2] + 0.07, newPosition[3] - 1.45}
+            local counter = getObjectFromGUID(v.getVar("counterGuid"))
+
+            v.setPositionSmooth(newPosition, false, false)
+            if(counter) then 
+               counter.setPositionSmooth(counterPosition, false, false)
+            end
+         end
+      end
+   end
+end
+
+function getZoneDefinitionByType(params)
+   local zoneType = params.zoneType
+   local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
+
+   return scenarioManager.call("getZoneDefinition", {zoneType = zoneType})
+end
+
+function getZoneCardCount(params)
+   local zoneType = params.zoneType
+   local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
+   local zoneGuid = scenarioManager.call("getZoneGuid", {zoneType = zoneType})
+   local zone = getObjectFromGUID(zoneGuid)
+
+   if(not zone) then return nil end
+
+   local items = zone.getObjects()
+   local cardCount = 0
+
+   for i, v in ipairs(items) do
+      if(v.tag == "Card") then cardCount = cardCount + 1 end
+   end
+   --TODO: Filter out cards of the wrong type
+
+   return cardCount
+end
+
+function getNewZoneCardPosition(params)
+   local zoneDef = getZoneDefinitionByType({zoneType = params.zoneType})
+
+   if(not zoneDef) then return nil end
+   
+   local cardNumber = getZoneCardCount({zoneType = params.zoneType})
+
+   if(cardNumber == nil) then return nil end
+
+   if(params.forNextCard) then cardNumber = cardNumber + 1 end
+
+   return getZoneCardPosition({zoneDef = zoneDef, cardNumber = cardNumber})
+end
+
+function getZoneCardPosition(params)
+   local zoneDef = params.zoneDef
+   local cardNumber = params.cardNumber
+
+   if(not zoneDef) then return nil end
+
+   local origin = zoneDef.firstCardPosition
+   local horizontalGap = zoneDef.horizontalGap
+   local verticalGap = zoneDef.verticalGap
+   local layoutDirection = zoneDef.layoutDirection
+   local width = zoneDef.width
+   local height = zoneDef.height
+
+   local column = 0
+   local row = 0
+
+   if(layoutDirection == "horizontal") then
+      if(cardNumber % width == 0) then
+         column = width
+         row = cardNumber / width
+      else
+         column = cardNumber % width
+         row = math.floor(cardNumber / width) + 1
+      end
+   else
+      if(cardNumber % height == 0) then
+         column = cardNumber / height
+         row = height
+      else
+         column = math.floor(cardNumber / height) + 1
+         row = cardNumber % height
+      end
+   end
+
+   local x = origin[1] + horizontalGap * (column - 1)
+   local z = origin[3] - verticalGap * (row - 1)
+
+   return {x, origin[2], z}
+end
+

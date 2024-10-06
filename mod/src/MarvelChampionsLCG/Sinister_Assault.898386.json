@@ -1,0 +1,125 @@
+{
+  "Object": {
+    "GUID": "898386",
+    "Name": "Deck",
+    "Transform": {
+      "posX": -81.25,
+      "posY": 0.5448159,
+      "posZ": 57.75,
+      "rotX": 7.162927e-8,
+      "rotY": 180,
+      "rotZ": 180,
+      "scaleX": 2.12,
+      "scaleY": 1,
+      "scaleZ": 2.12
+    },
+    "Nickname": "Sinister Assault",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "Tags": [
+      "minion"
+    ],
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": true,
+    "Hands": false,
+    "SidewaysCard": false,
+    "DeckIDs": [
+      21100,
+      21000,
+      20900,
+      20800,
+      20700,
+      20600
+    ],
+    "CustomDeck": {
+      "206": {
+        "FaceURL": "https://dcqvlrey92bew.cloudfront.net/27158.jpg",
+        "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "207": {
+        "FaceURL": "https://dcqvlrey92bew.cloudfront.net/27159.jpg",
+        "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "208": {
+        "FaceURL": "https://dcqvlrey92bew.cloudfront.net/27160.jpg",
+        "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "209": {
+        "FaceURL": "https://dcqvlrey92bew.cloudfront.net/27161.jpg",
+        "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "210": {
+        "FaceURL": "https://dcqvlrey92bew.cloudfront.net/27162.jpg",
+        "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      },
+      "211": {
+        "FaceURL": "https://dcqvlrey92bew.cloudfront.net/27163.jpg",
+        "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+        "NumWidth": 1,
+        "NumHeight": 1,
+        "BackIsHidden": false,
+        "UniqueBack": false,
+        "Type": 0
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Vulture.9e3319.21100.json",
+    "Scorpion.211a5e.21000.json",
+    "Kraven_the_Hunter.874e0c.20900.json",
+    "Hobgoblin.96f603.20800.json",
+    "Electro.13bb70.20700.json",
+    "Doctor_Octopus.276e41.20600.json"
+  ]
+}

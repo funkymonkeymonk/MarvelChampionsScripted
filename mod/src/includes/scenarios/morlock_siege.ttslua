@@ -49,7 +49,7 @@ scenarios["morlockSiege"] =
             cards={
                 ["40079"]=4
             },
-            position={18.74, 1.00, 29.20},
+            position={-15.25, 1.25, 30.25},
             scale=Vector(Global.getVar("CARD_SCALE_PLAYER"))
         }
     },
@@ -59,7 +59,7 @@ scenarios["morlockSiege"] =
     }
 }
 
-function getNextVillainStage_morlockSiege_marauders(villain)
+function getNextVillainStage_morlockSiege(villain)
   return getNextMarauder(3)
 end
 

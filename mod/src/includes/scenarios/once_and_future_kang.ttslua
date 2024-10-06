@@ -312,6 +312,14 @@ function placeKangStage2()
   currentScenario.encounterDiscardPosition = encounterDiscardDestination
   Global.call("moveDeck", {origin = encounterDiscardOrigin, destination = encounterDiscardDestination})
 
+  Global.setSnapPoints({})
+  setUpSnapPoints()
+
+  local encounterDeckZoneGuid = getZoneGuid({zoneType="encounterDeck"})
+  local encounterDeckZone = getObjectFromGUID(encounterDeckZoneGuid)
+  encounterDeckZone.setPosition({49.25, 1.00, 15.75})
+  encounterDeckZone.setScale({10.25, 2.00, 7.00})
+
   local blackHole = getItemFromManifest({key = "blackHole"})
   blackHole.destruct()
 
@@ -454,6 +462,14 @@ function placeKangStage3(heroCount)
   local encounterDiscardDestination = defaults.encounterDeck.discardPosition
   currentScenario.encounterDiscardPosition = encounterDiscardDestination
   Global.call("moveDeck", {origin = encounterDiscardOrigin, destination = encounterDiscardDestination})
+
+  Global.setSnapPoints({})
+  setUpSnapPoints()
+
+  local encounterDeckZoneGuid = getZoneGuid({zoneType="encounterDeck"})
+  local encounterDeckZone = getObjectFromGUID(encounterDeckZoneGuid)
+  encounterDeckZone.setPosition({-15.25, 1.00, 22.00})
+  encounterDeckZone.setScale({9.75, 2.00, 7.00})
 
   Global.call("deleteCardAtPosition", {position = currentScenario.schemes.main.position})
 

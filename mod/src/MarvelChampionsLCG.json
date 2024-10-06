@@ -1,9 +1,9 @@
 {
   "Save": {
     "SaveName": "MarvelChampionsLCG",
-    "EpochTime": 1716228446,
-    "Date": "5/20/2024 12:07:26 PM",
-    "VersionNumber": "v13.2.2",
+    "EpochTime": 1727916301,
+    "Date": "10/2/2024 6:45:01 PM",
+    "VersionNumber": "v13.3",
     "GameMode": "MarvelChampionsLCG",
     "GameType": "Game",
     "GameComplexity": "Low Complexity",
@@ -22,7 +22,7 @@
     "Gravity": 0.5,
     "PlayArea": 0.5,
     "Table": "Table_Custom",
-    "TableURL": "http://cloud-3.steamusercontent.com/ugc/1484453085526915756/8D76F40C34245458F5C9506BCAFA236A5067E285/",
+    "TableURL": "https://steamusercontent-a.akamaihd.net/ugc/1484453085526915756/8D76F40C34245458F5C9506BCAFA236A5067E285/",
     "Sky": "Sky_Regal",
     "SkyURL": "http://kelexo.thedailypos.org/games/tabletop/backgrounds/TTSBG6.jpg",
     "Note": "",
@@ -164,10 +164,10 @@
       "RepeatSong": false,
       "PlaylistEntry": 1,
       "CurrentAudioTitle": "Rogue One Imperial Suite",
-      "CurrentAudioURL": "http://cloud-3.steamusercontent.com/ugc/763848311381194911/EDAA86C3B5E9489233900020C4A1001A42CF8179/",
+      "CurrentAudioURL": "https://steamusercontent-a.akamaihd.net/ugc/763848311381194911/EDAA86C3B5E9489233900020C4A1001A42CF8179/",
       "AudioLibrary": [
         {
-          "Item1": "http://cloud-3.steamusercontent.com/ugc/763848311381194911/EDAA86C3B5E9489233900020C4A1001A42CF8179/",
+          "Item1": "https://steamusercontent-a.akamaihd.net/ugc/763848311381194911/EDAA86C3B5E9489233900020C4A1001A42CF8179/",
           "Item2": "Rogue One Imperial Suite"
         }
       ]
@@ -259,6 +259,18 @@
         {
           "displayed": "selector-tile",
           "normalized": "selector-tile"
+        },
+        {
+          "displayed": "minion",
+          "normalized": "minion"
+        },
+        {
+          "displayed": "attachment",
+          "normalized": "attachment"
+        },
+        {
+          "displayed": "Green",
+          "normalized": "green"
         }
       ]
     },
@@ -382,6 +394,9 @@
     "Standard_Set_Selector_III.9e3a14.json",
     "Expert_Set_Selector_II.e2a916.json",
     "Age_of_Apocalypse.a6c69c.json",
-    "NeXt_Evolution.6b15cb.json"
+    "NeXt_Evolution.6b15cb.json",
+    "Release_Notes.ec4436.json",
+    "Sinister_Assault.898386.json",
+    "Osborn_Tech.b7a784.json"
   ]
 }

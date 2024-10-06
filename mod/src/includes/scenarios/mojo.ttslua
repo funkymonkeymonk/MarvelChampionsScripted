@@ -56,5 +56,102 @@ scenarios["mojo"] =
                 ["39034"]=1
             }
         }
+    },
+    modularSets={},
+    extras={
+        wheelOfGenres={
+            name="Wheel of Genres",
+            guid="998f2b",
+            position={31.25, 0.96, 19.75},
+            rotation={0, 180, 0},
+            scale={3,1,3},
+            locked=true
+        }
     }
 }
+
+function prepareScenario_mojo()
+  buildGenreQueue()
+  currentScenario.genreIndex = 0
+end
+
+function finalizeSetup_mojo()
+  addNextGenre()
+end
+
+function buildGenreQueue()
+  local genreQueue = {}
+
+  table.insert(genreQueue, {modularSetKey="crime", environmentCardId="39035"})
+  table.insert(genreQueue, {modularSetKey="fantasy", environmentCardId="39041"})
+  table.insert(genreQueue, {modularSetKey="horror", environmentCardId="39047"})
+  table.insert(genreQueue, {modularSetKey="sciFi", environmentCardId="39053"})
+  table.insert(genreQueue, {modularSetKey="sitcom", environmentCardId="39060"})
+  table.insert(genreQueue, {modularSetKey="western", environmentCardId="39066"})
+
+  genreQueue = Global.call("shuffleTable", {table = genreQueue})
+
+  currentScenario.genreQueue = genreQueue
+end
+
+function addNextGenre()
+  currentScenario.genreIndex = currentScenario.genreIndex + 1
+  local heroCount = heroManager.call("getHeroCount")
+
+  if(currentScenario.genreIndex > (heroCount + 1)) then
+    broadcastToAll("There's nothing good on!", {1,1,1})
+    return
+  end
+
+  genreEnvironmentCardId = currentScenario.genreQueue[currentScenario.genreIndex].environmentCardId
+  getCardByID(
+    genreEnvironmentCardId, 
+    {20.75, 2.00, 29.75}, --TODO: create a constant (or better yet, add functionality for moving cards to a specific zone)
+    {scale = defaults.encounterDeck.scale})  
+end
+
+function onCardEnterZone_mojo(params)
+  placeGenreSetFromEnvironment(params.zone, params.card)
+end
+
+function placeGenreSetFromEnvironment(zone, card)
+  if(zone.getVar("zoneType") != "environment") then return end
+
+  local cardId = Global.call("getCardProperty", {card = card, property = "code"})
+
+  local modularSetKey = ""
+
+  for _, genre in ipairs(currentScenario.genreQueue) do
+    if(genre.environmentCardId == cardId) then
+      modularSetKey = genre.modularSetKey
+      break
+    end
+  end
+
+  if(modularSetKey == "") then return end
+
+  for key, _ in pairs(currentScenario.modularSets) do
+    if(key == modularSetKey) then
+      return
+    end
+  end
+
+  currentScenario.modularSets[modularSetKey] = "required"
+
+  local newGenreSet = encounterSetManager.call("getModularSet", {modularSetKey = modularSetKey})
+
+  newGenreSet = deepCopy(newGenreSet)
+
+  newGenreSet.cards[cardId] = nil
+
+  local encounterDeckPos = Vector(getEncounterDeckPosition())
+  local spawnPosition = encounterDeckPos + Vector(0, 1, 0)
+
+  createDeck({cards = newGenreSet.cards, position = spawnPosition, scale = defaults.encounterDeck.scale})
+
+  Wait.frames(function() 
+    Global.call("shuffleDeck", {deckPosition = encounterDeckPos})
+    broadcastToAll(newGenreSet.name.." encounter set added to encounter deck.", {1,1,1})
+  end,
+  30)
+end

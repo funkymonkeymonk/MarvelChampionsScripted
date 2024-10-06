@@ -49,7 +49,7 @@ scenarios["escapeMuseum"] =
         },
         milano={
             cardId="16142",
-            position={26.25, 0.97, 29.25},
+            position={-14.75, 1.0, 30.25},
             scale=Vector(Global.getVar("CARD_SCALE_PLAYER"))
         }
     },            
@@ -64,10 +64,9 @@ scenarios["escapeMuseum"] =
         },
         shipCommand={
             name="Ship Command",
-            position={21.25, 1.01, 29.25},
+            position={-20.75, 1.1, 30.75},
             scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
             cards={
-                ["16142"]=1,
                 ["16143"]=1,
                 ["16144"]=1,
                 ["16145"]=1,

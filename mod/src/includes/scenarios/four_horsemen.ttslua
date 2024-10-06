@@ -133,6 +133,35 @@ scenarios["fourHorsemen"] =
     modularSets={
         hounds="optional",
         dystopianNightmare="optional"
+    },
+    zones={
+        sideScheme = {
+            position = {31.25, 1.00, 18.00},
+            scale = {21.00, 1.00, 15.00},
+            firstCardPosition = {24.25, 1.00, 23.25},
+            horizontalGap = 7,
+            verticalGap = 5,
+            layoutDirection = "vertical",
+            width = 3,
+            height = 3
+        },
+        environment = {
+            position = {28.00, 1.00, 29.75},
+            scale = {15.00, 1.00, 7.00},
+            firstCardPosition = {23.25, 0.97, 29.75},
+            horizontalGap = 5,
+            verticalGap = 0,
+            layoutDirection = "horizontal",
+            width = 3,
+            height = 1
+        },
+        attachment = {
+            position = nil
+        },
+        encounterDeck = {
+            position = {49.25, 1.00, 15.75},
+            scale = {10.25, 2.00, 7.00}
+        }
     }
 }
 
@@ -192,7 +221,7 @@ function setUpFourHorsemenSideSchemes()
       y = 20.30 - ((i - 1) * 5)
       local counterPosition = {25.37, 1.10, y}
 
-      currentScenario.counters[cardKey.."threat"] = {type="threat", position = counterPosition, scale = {0.48, 1.00, 0.48}, threat = 6, locked=false}
+      --currentScenario.counters[cardKey.."threat"] = {type="threat", position = counterPosition, scale = {0.48, 1.00, 0.48}, threat = 6, locked=false}
     else
       currentScenario.decks.encounterDeck.cards[sideSchemes[i]] = 1
     end

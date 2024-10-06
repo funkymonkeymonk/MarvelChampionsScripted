@@ -1,0 +1,74 @@
+{
+  "Object": {
+    "GUID": "be0acf",
+    "Name": "Custom_Model_Infinite_Bag",
+    "Transform": {
+      "posX": 101.784149,
+      "posY": 63.4718933,
+      "posZ": -69.87556,
+      "rotX": 6.08364843e-8,
+      "rotY": 180.010223,
+      "rotZ": -3.0267114e-7,
+      "scaleX": 1.54999959,
+      "scaleY": 1,
+      "scaleZ": 1.54999959
+    },
+    "Nickname": "",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "MaterialIndex": -1,
+    "MeshIndex": -1,
+    "CustomMesh": {
+      "MeshURL": "https://pastebin.com/raw/ALrYhQGb",
+      "DiffuseURL": "https://steamusercontent-a.akamaihd.net/ugc/1861691839689049590/603FA0880CB541EF2A77E8063B3F8CF78D961D4E/",
+      "NormalURL": "",
+      "ColliderURL": "",
+      "Convex": true,
+      "MaterialIndex": 3,
+      "TypeIndex": 7,
+      "CustomShader": {
+        "SpecularColor": {
+          "r": 1,
+          "g": 1,
+          "b": 1
+        },
+        "SpecularIntensity": 0,
+        "SpecularSharpness": 2,
+        "FresnelStrength": 0
+      },
+      "CastShadows": true
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ContainedObjects": []
+  },
+  "StatesPaths": {},
+  "ContainedObjectPaths": [
+    "Custom_Token.3646e2.json"
+  ]
+}

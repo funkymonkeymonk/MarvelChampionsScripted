@@ -35,7 +35,7 @@
     cards={
         gnipahellir={
             cardId="21140",
-            position={16.75, 1.00, 21.75},
+            position={7.25, 1.00, 16.75},
             scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
             landscape=true
         },
@@ -50,18 +50,9 @@
             scale=Vector(Global.getVar("CARD_SCALE_PLAYER"))
         }
     },
-    counters={
-        gnipahellirThreat={
-            type="threat",
-            position={16.37, 1.10, 20.30},
-            scale={0.48, 1.00, 0.48},
-            threat=2,
-            threatPerPlayer=1
-        }
-    },
     decks={
         encounterDeck={
-            name="Rhino's Encounter Deck",
+            name="Hela's Encounter Deck",
             cards={
                 ["21146"]=1,
                 ["21147"]=1,
@@ -73,7 +64,7 @@
         },
         setAside={
             name="Set Aside Cards",
-            position={15.75, 1.00, 29.25},
+            position={-15.25, 1.25, 30.25},
             scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
             cards={
                 ["21141"]=1,

@@ -61,7 +61,7 @@ scenarios["crossbones"] =
         },
         experimentalWeapons={
             name="Experimental Weapons",
-            position={15.75, 1.00, 29.25},
+            position={-17.25, 1.25, 32.25},
             scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
             cards={
                 ["04072"]=1,

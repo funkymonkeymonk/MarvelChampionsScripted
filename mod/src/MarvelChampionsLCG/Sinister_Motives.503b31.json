@@ -44,7 +44,7 @@
     "MeshIndex": -1,
     "CustomMesh": {
       "MeshURL": "https://raw.githubusercontent.com/RobMayer/TTSLibrary/master/advboxes/core_h_MSH.obj",
-      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1775004563403355246/082BADA0D27826B509B06C3BA42583113CFAE997/",
+      "DiffuseURL": "https://steamusercontent-a.akamaihd.net/ugc/1775004563403355246/082BADA0D27826B509B06C3BA42583113CFAE997/",
       "NormalURL": "",
       "ColliderURL": "",
       "Convex": true,
@@ -72,12 +72,12 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
+    "Sinister_Motives_Bad_Publicity.e38fee.json",
+    "Sinister_Motives_Community_Service.717afd.json",
+    "Snitches_Get_Stitches.9dd8b9.972500.json",
     "Sinister_Motives_S.H.I.E.L.D._Tech.6948b2.json",
     "Custom_PDF.16c9b3.json",
     "Sinister_Motives_Campaign_Log_1.07c6c4.json",
-    "Sinister_Motives_Campaign_Log_2.38061c.json",
-    "Sinister_Motives_Bad_Publicity.e38fee.json",
-    "Sinister_Motives_Community_Service.717afd.json",
-    "Snitches_Get_Stitches.9dd8b9.972500.json"
+    "Sinister_Motives_Campaign_Log_2.38061c.json"
   ]
 }

@@ -1,0 +1,48 @@
+{
+  "Object": {
+    "GUID": "ec4436",
+    "Name": "Notecard",
+    "Transform": {
+      "posX": -1.69232753e-10,
+      "posY": 1.03000009,
+      "posZ": 4.34748459e-10,
+      "rotX": 7.63061e-8,
+      "rotY": 0.00000195426287,
+      "rotZ": 5.420142e-8,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "Release Notes",
+    "Description": "The latest update includes all cards from the Nightcrawler hero pack (including the Crazy Gang modular encounter set), as well as several bug fixes.\n\nBut the big innovation is the scripting zones. Check the comment in the mod's page for details.",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

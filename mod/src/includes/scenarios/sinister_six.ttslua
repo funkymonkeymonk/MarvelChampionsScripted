@@ -131,16 +131,9 @@ scenarios["sinisterSix"] =
     cards={
         lightAtTheEnd={
             cardId="27102",
-            position={16.75, 1.00, 21.75},
+            position={7.25, 0.97, 16.75},
             scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
             landscape=true
-        }
-    },
-    counters={
-        lightAtTheEndThreat={
-            type="threat",
-            position={16.37, 1.10, 20.30},
-            scale={0.48, 1.00, 0.48}
         }
     },
     decks={
@@ -165,26 +158,12 @@ scenarios["sinisterSix"] =
     }
 }
 
-function getNextVillainStage_sinisterSix_docock(params)
-  return getSinisterSixStage(params.villain)
-end
-function getNextVillainStage_sinisterSix_electro(params)
-  return getSinisterSixStage(params.villain)
-end
-function getNextVillainStage_sinisterSix_hobgoblin(params)
-  return getSinisterSixStage(params.villain)
-end
-function getNextVillainStage_sinisterSix_kraven(params)
-  return getSinisterSixStage(params.villain)
-end
-function getNextVillainStage_sinisterSix_scorpion(params)
-  return getSinisterSixStage(params.villain)
-end
-function getNextVillainStage_sinisterSix_vulture(params)
-  return getSinisterSixStage(params.villain)
+function getNextVillainStage_sinisterSix(params)
+  return getSinisterSixStage(params.villainKey)
 end
 
-function getSinisterSixStage(villain)
+function getSinisterSixStage(villainKey)
+  local villain = currentScenario.villains[villainKey]
   local nextStage = villain.stages["stage1"]
   nextStage.showAdvanceButton = false
 

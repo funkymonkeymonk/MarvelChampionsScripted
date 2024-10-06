@@ -36,33 +36,17 @@ scenarios["projectWideawake"] =
         }
     },
     cards={
-        mutantsAtTheMall={
-            cardId="32088",
-            position={16.75, 0.97, 21.74},
-            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
-            landscape=true
-        },
         operationZeroTolerance={
             cardId="32104",
-            position={16.75, 0.97, 16.75},
+            position={7.25, 0.97, 16.75},
             scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
             landscape=true
-        }
-    },
-    counters={
-        mutantsAtTheMallThreat={
-            type="threat",
-            position={16.37, 1.04, 20.30},
-            scale={0.48, 1.00, 0.48},
-            locked=false,
-            threat=4
         },
-        operationZeroToleranceThreat={
-            type="threat",
-            position={16.32, 1.04, 15.36},
-            scale={0.48, 1.00, 0.48},
-            locked=false,
-            threatPerPlayer=3
+        mutantsAtTheMall={
+            cardId="32088",
+            position={7.25, 0.97, 11.75},
+            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
+            landscape=true
         }
     },
     decks={
@@ -81,7 +65,7 @@ scenarios["projectWideawake"] =
         },
         captiveAllies={
             name="Captive Allies",
-            position={15.75, 1.00, 29.25},
+            position={-15.25, 1.25, 30.25},
             scale=Vector(Global.getVar("CARD_SCALE_PLAYER")),
             cards={
                 ["32089"]=1,

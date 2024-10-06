@@ -122,5 +122,24 @@ scenarios["towerDefense"] =
     },
     modularSets={
         armiesOfTitan="recommended"
+    },
+    zones={
+        sideScheme = {
+            position = {22.00, 1.00, 7.00},
+            scale = {21.00, 1.00, 10.00},
+            firstCardPosition = {15.25, 0.97, 9.75},
+            horizontalGap = 7,
+            verticalGap = 5,
+            layoutDirection = "vertical",
+            width = 3,
+            height = 2
+        },
+        attachment = {
+            position = nil
+        },
+        encounterDeck = {
+            position = {-22.10, 1.00, 22.25},
+            scale = {10.25, 2.00, 7.00}
+        },
     }
 }

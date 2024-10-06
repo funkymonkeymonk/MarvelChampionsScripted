@@ -41,6 +41,12 @@ local defaults = {
     position = Global.getTable("SIDE_SCHEME_POSITION"),
     rotation = Global.getTable("SIDE_SCHEME_ROTATION")
   },
+  zones = {
+    sideScheme = Global.getTable("ZONE_SIDE_SCHEME"),
+    environment = Global.getTable("ZONE_ENVIRONMENT"),
+    attachment = Global.getTable("ZONE_ATTACHMENT"),
+    encounterDeck = Global.getTable("ZONE_ENCOUNTER_DECK"),
+  },
   boostDrawPosition = Global.getTable("BOOST_POS")
 }
 
@@ -284,13 +290,15 @@ function setUpScenario()
 
   prepareScenario()
 
-  --setUpZones()
-
+  setUpZones()
+  
   local heroCount = heroManager.call("getHeroCount")
 
   startLuaCoroutine(self, "setUpVillains")
   startLuaCoroutine(self, "setUpSchemes")
   startLuaCoroutine(self, "setUpDecks")
+
+  setUpSnapPoints()
 
   -- Wait.frames(
   --   function()
@@ -360,25 +368,126 @@ function initiateFirstStages(heroCount)
 end
 
 function setUpZones()
-  local environmentZone = spawnObject({
-    type = "LayoutZone",
-    position = {19.50, 1.50, 30.00},
-    scale = {15.00, 3.00, 7.00},
-    sound = false,
-    callback_function = function(zone)
-      zone.LayoutZone.setOptions({
-        combine_into_decks = false,
-        horizontal_group_padding = 0.5,
-        instant_refill = true,
-        manual_only = false,
-        max_objects_per_group = 1,
-        new_object_facing = 0,
-        trigger_for_face_down = true,
-        trigger_for_face_up = true,
-        trigger_for_non_cards = false
+  if(not currentScenario.zones) then currentScenario.zones = {} end
+
+  currentScenario.zones.sideScheme = currentScenario.zones.sideScheme or defaults.zones.sideScheme
+  currentScenario.zones.environment = currentScenario.zones.environment or defaults.zones.environment
+  currentScenario.zones.attachment = currentScenario.zones.attachment or defaults.zones.attachment
+  currentScenario.zones.encounterDeck = currentScenario.zones.encounterDeck or defaults.zones.encounterDeck
+
+  local sideSchemeZoneDef = currentScenario.zones.sideScheme
+  local environmentZoneDef = currentScenario.zones.environment
+  local attachmentZoneDef = currentScenario.zones.attachment
+  local encounterDeckZoneDef = currentScenario.zones.encounterDeck
+
+  if(sideSchemeZoneDef.position) then
+    spawnObject({
+      type="ScriptingTrigger",
+      position = sideSchemeZoneDef.position,
+      scale = sideSchemeZoneDef.scale,
+      sound = false,
+      callback_function = function(spawned_object)
+        spawned_object.addTag("side_scheme")
+        spawned_object.addTag("player_side_scheme")
+        spawned_object.setVar("zoneType", "sideScheme")
+        currentScenario.zones.sideScheme.guid = spawned_object.getGUID()
+      end
+    })
+  end
+
+  if(environmentZoneDef.position) then
+    spawnObject({
+      type="ScriptingTrigger",
+      position = environmentZoneDef.position,
+      scale = environmentZoneDef.scale,
+      sound = false,
+      callback_function = function(spawned_object)
+        spawned_object.addTag("environment")
+        spawned_object.setVar("zoneType", "environment")
+        currentScenario.zones.environment.guid = spawned_object.getGUID()
+      end
+    })
+  end
+
+  if(attachmentZoneDef.position) then
+    spawnObject({
+      type="ScriptingTrigger",
+      position = attachmentZoneDef.position,
+      scale = attachmentZoneDef.scale,
+      sound = false,
+      callback_function = function(spawned_object)
+        spawned_object.addTag("attachment")
+        spawned_object.setVar("zoneType", "attachment")
+        currentScenario.zones.attachment.guid = spawned_object.getGUID()
+      end
+    })
+  end
+
+  if(encounterDeckZoneDef.position) then
+    spawnObject({
+      type="ScriptingTrigger",
+      position = encounterDeckZoneDef.position,
+      scale = encounterDeckZoneDef.scale,
+      sound = false,
+      callback_function = function(spawned_object)
+        spawned_object.setVar("zoneType", "encounterDeck")
+        currentScenario.zones.encounterDeck.guid = spawned_object.getGUID()
+      end
+    })
+  end
+
+  local selectedHeroes = heroManager.call("getSelectedHeroes")
+
+  for color, hero in pairs(selectedHeroes) do
+    local zonePosition = Vector(heroManager.call("getPlaymatPosition", {playerColor = color}))
+
+    local heroZoneDef = {
+      position = Vector({ zonePosition.x, 2, zonePosition.z }),
+      scale = {27.25, 4.00, 16.00}
+    }
+
+    currentScenario.zones["player"..color] = heroZoneDef
+
+    if(heroZoneDef.position) then
+      spawnObject({
+        type="ScriptingTrigger",
+        position = heroZoneDef.position,
+        scale = heroZoneDef.scale,
+        sound = false,
+        callback_function = function(spawned_object)
+          spawned_object.setVar("zoneType", "hero")
+          currentScenario.zones["player"..color].guid = spawned_object.getGUID()
+        end
       })
     end
-  })
+  end
+end
+
+function setUpSnapPoints()
+  local snapPoints = {}
+  local deckPos = getEncounterDeckPosition()
+  local discardPos = getEncounterDiscardPosition()
+
+  deckPos = {deckPos[1], 0.75, deckPos[3]}
+  discardPos = {discardPos[1], 0.75, discardPos[3]}
+
+  table.insert(snapPoints, {position = deckPos})
+  table.insert(snapPoints, {position = discardPos})
+  Global.setSnapPoints(snapPoints)
+end
+
+function getZoneGuid(params)
+  if(not currentScenario.zones) then return nil end
+  local zone = currentScenario.zones[params.zoneType]
+  return zone.guid
+end
+
+function getZoneDefinition(params)
+  local zoneType = params.zoneType
+
+  if(not currentScenario) then return nil end
+
+  return currentScenario.zones[zoneType]
 end
 
 function heroCountIsValid(params)
@@ -1059,25 +1168,33 @@ function finalizeSetUp(scenario)
 end
 
 function clearScenario()
+  if(currentScenario and currentScenario.zones) then
+    for _, zone in pairs(currentScenario.zones) do
+      if(zone.guid) then
+        getObjectFromGUID(zone.guid).destruct()
+      end
+    end
+  end
+
+  Global.setSnapPoints({})
+
+  clearData()
+
   local clearCards = findCardsAtPosition()
 
   for _, obj in ipairs(clearCards) do
-     if obj.getVar("preventDeletion") ~= true then
+      if obj.getVar("preventDeletion") ~= true then
         obj.destruct()
-     end
+      end
   end
 
   local clearCards2 = findCardsAtPosition2()
 
   for _, obj in ipairs(clearCards2) do
-     if obj.getVar("preventDeletion") ~= true then
+      if obj.getVar("preventDeletion") ~= true then
         obj.destruct()
-     end
+      end
   end
-
-  local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
-
-  clearData()
 end
 
 --TODO: These functions should be moved to global
@@ -1266,7 +1383,7 @@ function placeVillainStage(villain, stage, heroCount)
   end
 
   local locked = true;
-  if(villain.locked ~= nil) then
+  if(stage.locked ~= nil) then
     locked = stage.locked
   end
 
@@ -1282,10 +1399,19 @@ function placeVillainStage(villain, stage, heroCount)
       callback = "configureVillainStage"
      })
   else
-    getCardByID(
+    villainCard = getCardByID(
       stage.cardId, 
       villainPosition, 
-      {scale = villainScale, name = villain.name, flipped = flipped, locked=locked})  
+      {scale = villainScale, name = villain.name, flipped = flipped, locked=locked})
+
+    villain.cardGuid = villainCard.getGUID()
+
+    Wait.frames(function()
+      if(villainCard.hasTag("toughness")) then
+        addStatusToVillain({villainKey = villain.key, statusType = "tough"})
+      end
+    end,
+    30)
   end
   
   local hitPoints = (stage.hitPoints or 0) + ((stage.hitPointsPerPlayer or 0) * heroCount)
@@ -1310,10 +1436,10 @@ function configureVillainStage(params)
 end
 
 function setUpVillainStage(villain, stage, heroCount)
-  local functionName = "setUpVillainStage_" .. currentScenario.key .. "_" .. villain.key
+  local functionName = "setUpVillainStage_" .. currentScenario.key
 
   if(self.getVar(functionName) ~= nil) then
-    self.call(functionName, {villain=villain, stage=stage, heroCount=heroCount})
+    self.call(functionName, {villainKey=villain.key, stage=stage, heroCount=heroCount})
     return
   end
 end
@@ -1447,69 +1573,170 @@ function configureAdvanceSchemeButton(threatCounter, showAdvanceButton)
   end
 end
 
+function onCardEnterZone(params)
+  local functionName = "onCardEnterZone_" .. currentScenario.key
 
-function prepareScenario_loki()
-  encounterSetManager.call("removeModularSet", {modularSetKey = "infinityGauntlet"})
+  if(self.getVar(functionName) ~= nil) then
+    self.call(functionName, {zone=params.zone, card=params.card})
+    return
+  end
+end
 
-  local villain = currentScenario.villains.loki
-  local villainStages = {}
+function setUpVillainStage_rhino(params)
+  local villainKey = params.villainKey
+  local stage = params.stage
+  local stageNumber = string.sub(stage.key, -1)
 
-  for key, stage in pairs(villain.stages) do
-      table.insert(villainStages, key)
+  if(stageNumber == "2") then
+    local breakinAndTakinCardId = "01107"
+    Global.call(
+      "moveCardFromEncounterDeckById", 
+      {
+        cardId = breakinAndTakinCardId, 
+        searchInDiscard = true,
+        zoneType = "sideScheme"
+      })
+    return
   end
 
-  villainStages = Global.call("shuffleTable", {table = villainStages})
-
-  currentScenario.lokiQueue = villainStages
-  currentScenario.lokiStageIndex = 1
+  if(stageNumber == "3") then
+    addStatusToAllHeroes({statusType = "stunned"})
+  end
 end
 
-function getNextVillainStage_loki(params)
-  local nextStage = currentScenario.villains.loki.stages[currentScenario.lokiQueue[currentScenario.lokiStageIndex]]
-  currentScenario.lokiStageIndex = currentScenario.lokiStageIndex + 1
-  local lastStage = currentScenario.lokiStageIndex > #currentScenario.lokiQueue
+function addStatusToVillain(params)
+  local villainKey = params.villainKey
+  local statusType = params.statusType
+  local villain = currentScenario.villains[villainKey]
+  local villainCard = getObjectFromGUID(villain.cardGuid)
 
-  nextStage.showAdvanceButton = not lastStage
+  if not cardCanHaveStatus({card = villainCard, statusType = statusType}) then
+    return
+  end
 
-  return nextStage
+  placeStatusToken({card = villainCard, statusType = statusType})
 end
 
-function placeVillainStage_loki(params)
-  local heroCount = params.heroCount
-  local villain = currentScenario.villains.loki
-  local stage = params.stage
+function addStatusToAllHeroes(params)
+  local statusType = params.statusType
+  local heroes = heroManager.call("getSelectedHeroes")
+
+  for color, _ in pairs(heroes) do
+    addStatusToHero({playerColor = color, statusType = statusType})
+  end
+end
+
+function addStatusToHero(params)
+  local playerColor = params.playerColor
+  local statusType = params.statusType
+  local hero = heroManager.call("getHeroByPlayerColor", {playerColor = playerColor})
+  local heroCard = getObjectFromGUID(hero.identityGuid)
+
+  if not cardCanHaveStatus({card = heroCard, statusType = statusType}) then
+    return
+  end
+
+  placeStatusToken({card = heroCard, statusType = statusType, playerColor = playerColor})
+end
+
+function cardCanHaveStatus(params)
+  local card = params.card
+  local cardPosition = card.getPosition()
+  local cardName = card.getName()
+  local targetType = Global.call("getCardProperty", {card = card, property = "type"})
+  local statusType = params.statusType
+
+  statusCount = getStatusCount({targetPosition = cardPosition, targetType = targetType, statusType = statusType})
+
+  if(statusType == "tough") then
+    local maxToughCount = cardName == "Colossus" and 2 or 1
+    if(statusCount >= maxToughCount) then
+      broadcastToAll(cardName .. " is already tough.")
+      return false
+    end
+  else
+    if(card.hasTag("stalwart")) then
+      broadcastToAll(cardName .. " is stalwart and cannot be " .. statusType .. ".")
+      return false
+    end
+    
+    local maxStatusCount = card.hasTag("steady") and 2 or 1
+
+    if(statusCount >= maxStatusCount) then
+      broadcastToAll(cardName .. " is already " .. statusType .. ".")
+      return false
+    end
+  end
+
+  return true
+end
+
+function getStatusCount(params)
+  local targetPosition = params.targetPosition
+  local targetType = params.targetType
+  local statusType = params.statusType
+
+  local castSize = targetType == "villain" and {7.5, 2, 9.5} or {4, 2, 5}
+
+  local objList = Physics.cast({
+      origin       = targetPosition,
+      direction    = {0,1,0},
+      type         = 3,
+      size         = castSize,
+      max_distance = 0,
+      debug        = true
+  })
+ 
+  local statusCount = 0
+
+  for _, obj in ipairs(objList) do
+    if obj.hit_object.hasTag(statusType.."-status") then
+      statusCount = statusCount + 1
+    end
+  end
   
-  local villainPosition = villain.deckPosition or defaults.villainDeck.position
-  local villainRotation = villain.deckRotation or defaults.villainDeck.rotation
-  local villainScale = villain.deckScale or defaults.villainDeck.scale
+  return statusCount
+end
 
-  local stageIndex = currentScenario.lokiStageIndex
-  local x = -11.25 + ((stageIndex - 3) * 9)
+function placeStatusToken(params)
+  local card = params.card
+  local statusPosition = Vector(card.getPosition())
+  statusPosition.y = statusPosition.y + 1
+  local targetType = Global.call("getCardProperty", {card = card, property = "type"})
+  local statusType = params.statusType
 
-  Global.call("moveDeck", {origin = villainPosition, destination = {x, 1.00, 45.75}})
+  local statusBagGuid = ""
 
-  getCardByID(
-    stage.cardId, 
-      villainPosition, 
-      {scale = villainScale, name = villain.name, flipped = false, locked=true})
-  
-  local hitPoints = (stage.hitPoints or 0) + ((stage.hitPointsPerPlayer or 0) * heroCount)
-  local villainHpCounter = getObjectFromGUID(villain.hpCounter.guid)
+  --TODO: Use constants for status bag guids
+  if(targetType == "villain") then
+    statusBagGuid = statusType == "tough" and "35b809"
+      or statusType == "stunned" and "882e12"
+      or statusType == "confused" and "50c501"
+  else
+    statusBagGuid = statusType == "tough" and "53a9f2"
+      or statusType == "stunned" and "c46ad4"
+      or statusType == "confused" and "0b8743"
+  end
 
-  Wait.frames(
-      function()
-          villainHpCounter.call("setValue", {value = hitPoints}) 
-          
-          villainHpCounter.call("setAdvanceButtonOptions", {label = "Next!"})
+  local statusBag = getObjectFromGUID(statusBagGuid)
+  local statusToken = statusBag.takeObject({position = statusPosition, smooth = false})
 
-          if(stage.showAdvanceButton) then
-              villainHpCounter.call("showAdvanceButton")
-          else
-              villainHpCounter.call("hideAdvanceButton")
-          end
-      end,
-      20
-  )
+  local message = card.getName() .. " is " .. statusType .. "!"
+
+  if(statusType == "stunned" or statusType == "confused") then
+    message = message .. " (If there an effect in play that makes " .. card.getName() .. " steady or stalwart, you may need to remove this status token.)"
+  end
+
+  if(targetType == "villain") then
+    broadcastToAll(message, {1,1,1})
+  else
+    local playerColor = params.playerColor
+    local messageTint = playerColor == "Red" and {1,0,0}
+      or playerColor == "Blue" and {0,0,1}
+      or playerColor == "Green" and {0,1,0}
+      or playerColor == "Yellow" and {1,1,0}
+    broadcastToColor(message, playerColor, messageTint)
+  end
 end
 
 require('!/Cardplacer')

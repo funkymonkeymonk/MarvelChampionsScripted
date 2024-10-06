@@ -55,6 +55,6 @@ scenarios["onTheRun"] =
     }
 }
 
-function getNextVillainStage_onTheRun_marauders(villain)
+function getNextVillainStage_onTheRun(villain)
   return getNextMarauder(1)
 end

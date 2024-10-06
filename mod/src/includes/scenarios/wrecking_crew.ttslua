@@ -215,7 +215,7 @@ scenarios["wreckingCrew"] =
                 ["07024"]=1,
                 ["07025"]=1,
                 ["07026"]=1,
-                ["07027"]=1,
+                ["07027"]=2,
                 ["07028"]=1,
                 ["07029"]=1,
                 ["07030"]=2,
@@ -263,6 +263,20 @@ scenarios["wreckingCrew"] =
             discardPosition={25.25, 1.05, 15.25},
             scale={2.12, 1.00, 2.12}
         }
+    },
+    zones={
+        sideScheme={
+            position=nil
+        },
+        attachment={
+            position=nil
+        },
+        environment={
+            position=nil
+        },
+        encounterDeck={
+            position=nil
+        }
     }
 }
 
@@ -271,6 +285,7 @@ function finalizeSetup_wreckingCrew()
   Wait.frames(
     function()
       wreckingCrewActivate({villainKey = "wrecker"})
+      Global.setSnapPoints({})
     end,
     60
   )

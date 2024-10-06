@@ -92,78 +92,64 @@ scenarios["mansionAttack"] =
     }
 }
 
-function getNextVillainStage_mansionAttack_brotherhood(params)
-  local villain = currentScenario.villains[params.villain.key]
-  local villainPosition = villain.deckPosition or defaults.villainDeck.position
-  local remainingStages = {}
+function prepareScenario_mansionAttack()
+  local villain = currentScenario.villains.brotherhood
+  local villainStages = {}
 
   for key, stage in pairs(villain.stages) do
-    if(not stage.defeated) then
-        table.insert(remainingStages, key)
-    end
+      table.insert(villainStages, key)
   end
 
-  if(villain.currentStageNumber ~= nil) then
-    local defeatedStages = 3 - #remainingStages
-    local x = -12.75 + (defeatedStages * 10)
-    Global.call("moveCardToLocation", {origin = villainPosition, destination = vector(x, 1.50, 54.25)}) --TODO: create victory display layout region
-  end
+  villainStages = Global.call("shuffleTable", {table = villainStages})
 
-  local newStageKey = nil
-  local lastStage = false
-
-  if(#remainingStages == 1) then
-      newStageKey = remainingStages[1]
-      lastStage = true
-  else
-      math.randomseed(os.time())
-      newStageKey = remainingStages[math.random(#remainingStages)]
-  end
-
-  local newStage = villain.stages[newStageKey]
-  newStage.showAdvanceButton = not lastStage
-  newStage.flipCard = (currentScenario.mode == "expert")
-  newStage.defeated = true
-
-  return newStage
+  currentScenario.brotherhoodQueue = villainStages
+  currentScenario.brotherhoodStageIndex = 1
 end
 
-function getNextSchemeStage_mansionAttack_main(params)
-  local scheme = currentScenario.schemes[params.scheme.key]
-  local schemePosition = scheme.position or defaults.mainSchemeDeck.position
-  local remainingStages = {}
+function getNextVillainStage_mansionAttack(params)
+  local nextStage = currentScenario.villains.brotherhood.stages[currentScenario.brotherhoodQueue[currentScenario.brotherhoodStageIndex]]
+  currentScenario.brotherhoodStageIndex = currentScenario.brotherhoodStageIndex + 1
+  local lastStage = currentScenario.brotherhoodStageIndex > #currentScenario.brotherhoodQueue
 
-  if(scheme.currentStageNumber == nil) then
-    local newStage = scheme.stages["stage1"]
-    newStage.showAdvanceButton = true
-    newStage.completed = true
-    return newStage
-  end
+  nextStage.showAdvanceButton = not lastStage
 
-  for key, stage in pairs(scheme.stages) do
-    if(not stage.completed) then
-        table.insert(remainingStages, key)
-    end
-  end
+  return nextStage
+end
 
-  local completedStages = 4 - #remainingStages
-  local x = -12.75 + (completedStages * 10)
-  Global.call("moveCardToLocation", {origin = schemePosition, destination = vector(x, 1.50 , 43.75)}) --TODO: create victory display layout region
+function placeVillainStage_mansionAttack(params)
+  local heroCount = params.heroCount
+  local villain = currentScenario.villains.brotherhood
+  local stage = params.stage
+  
+  local villainPosition = villain.deckPosition or defaults.villainDeck.position
+  local villainRotation = villain.deckRotation or defaults.villainDeck.rotation
+  local villainScale = villain.deckScale or defaults.villainDeck.scale
 
-  local newStageKey = nil
-  local lastStage = false
+  local stageIndex = currentScenario.brotherhoodStageIndex
+  local x = -11.25 + ((stageIndex - 3) * 9)
 
-  if(#remainingStages == 1) then
-      newStageKey = remainingStages[1]
-      lastStage = true
-  else
-      math.randomseed(os.time())
-      newStageKey = remainingStages[math.random(#remainingStages)]
-  end
+  Global.call("moveDeck", {origin = villainPosition, destination = {x, 1.00, 45.75}})
 
-  local newStage = scheme.stages[newStageKey]
-  newStage.showAdvanceButton = not lastStage
-  newStage.completed = true
+  getCardByID(
+    stage.cardId, 
+      villainPosition, 
+      {scale = villainScale, name = villain.name, flipped = false, locked=true})
+  
+  local hitPoints = (stage.hitPoints or 0) + ((stage.hitPointsPerPlayer or 0) * heroCount)
+  local villainHpCounter = getObjectFromGUID(villain.hpCounter.guid)
 
-  return newStage
+  Wait.frames(
+      function()
+          villainHpCounter.call("setValue", {value = hitPoints}) 
+          
+          villainHpCounter.call("setAdvanceButtonOptions", {label = "Next!"})
+
+          if(stage.showAdvanceButton) then
+              villainHpCounter.call("showAdvanceButton")
+          else
+              villainHpCounter.call("hideAdvanceButton")
+          end
+      end,
+      20
+  )
 end

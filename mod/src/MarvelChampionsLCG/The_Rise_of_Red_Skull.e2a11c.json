@@ -44,7 +44,7 @@
     "MeshIndex": -1,
     "CustomMesh": {
       "MeshURL": "https://raw.githubusercontent.com/RobMayer/TTSLibrary/master/advboxes/core_h_MSH.obj",
-      "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1625192833983660998/73C257EF31D218E09E65415DE0943799F624FD02/",
+      "DiffuseURL": "https://steamusercontent-a.akamaihd.net/ugc/1625192833983660998/73C257EF31D218E09E65415DE0943799F624FD02/",
       "NormalURL": "",
       "ColliderURL": "",
       "Convex": true,
