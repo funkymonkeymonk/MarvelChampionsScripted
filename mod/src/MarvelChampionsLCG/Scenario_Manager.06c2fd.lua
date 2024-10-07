@@ -390,6 +390,7 @@ function setUpZones()
         spawned_object.addTag("side_scheme")
         spawned_object.addTag("player_side_scheme")
         spawned_object.setVar("zoneType", "sideScheme")
+        spawned_object.setVar("zoneIndex", "sideScheme")
         currentScenario.zones.sideScheme.guid = spawned_object.getGUID()
       end
     })
@@ -404,6 +405,7 @@ function setUpZones()
       callback_function = function(spawned_object)
         spawned_object.addTag("environment")
         spawned_object.setVar("zoneType", "environment")
+        spawned_object.setVar("zoneIndex", "environment")
         currentScenario.zones.environment.guid = spawned_object.getGUID()
       end
     })
@@ -418,6 +420,7 @@ function setUpZones()
       callback_function = function(spawned_object)
         spawned_object.addTag("attachment")
         spawned_object.setVar("zoneType", "attachment")
+        spawned_object.setVar("zoneIndex", "attachment")
         currentScenario.zones.attachment.guid = spawned_object.getGUID()
       end
     })
@@ -431,6 +434,7 @@ function setUpZones()
       sound = false,
       callback_function = function(spawned_object)
         spawned_object.setVar("zoneType", "encounterDeck")
+        spawned_object.setVar("zoneIndex", "encounterDeck")
         currentScenario.zones.encounterDeck.guid = spawned_object.getGUID()
       end
     })
@@ -439,27 +443,54 @@ function setUpZones()
   local selectedHeroes = heroManager.call("getSelectedHeroes")
 
   for color, hero in pairs(selectedHeroes) do
-    local zonePosition = Vector(heroManager.call("getPlaymatPosition", {playerColor = color}))
+    local playerZonePosition = Vector(heroManager.call("getPlaymatPosition", {playerColor = color}))
 
     local heroZoneDef = {
-      position = Vector({ zonePosition.x, 2, zonePosition.z }),
+      position = Vector({ playerZonePosition.x, 2, playerZonePosition.z }),
       scale = {27.25, 4.00, 16.00}
     }
 
-    currentScenario.zones["player"..color] = heroZoneDef
+    local heroZoneIndex = "hero-"..color
+    currentScenario.zones[heroZoneIndex] = heroZoneDef
 
-    if(heroZoneDef.position) then
-      spawnObject({
-        type="ScriptingTrigger",
-        position = heroZoneDef.position,
-        scale = heroZoneDef.scale,
-        sound = false,
-        callback_function = function(spawned_object)
-          spawned_object.setVar("zoneType", "hero")
-          currentScenario.zones["player"..color].guid = spawned_object.getGUID()
-        end
-      })
-    end
+    spawnObject({
+      type="ScriptingTrigger",
+      position = heroZoneDef.position,
+      scale = heroZoneDef.scale,
+      sound = false,
+      callback_function = function(spawned_object)
+        spawned_object.setVar("zoneType", "hero")
+        spawned_object.setVar("zoneIndex", heroZoneIndex)
+        currentScenario.zones[heroZoneIndex].guid = spawned_object.getGUID()
+      end
+    })
+
+    local minionZoneDef = {
+      position = Vector({ playerZonePosition.x - 3, 1, playerZonePosition.z + 12.10 }),
+      scale = {20.00, 1.00, 6.75},
+      firstCardPosition = Vector({ playerZonePosition.x - 11, 1, playerZonePosition.z + 12 }),
+      horizontalGap = 5,
+      verticalGap = 0,
+      layoutDirection = "horizontal",
+      width = 4,
+      height = 1
+    }
+
+    local minionZoneIndex = "minion-"..color
+    currentScenario.zones[minionZoneIndex] = minionZoneDef
+
+    spawnObject({
+      type="ScriptingTrigger",
+      position = minionZoneDef.position,
+      scale = minionZoneDef.scale,
+      sound = false,
+      callback_function = function(spawned_object)
+        spawned_object.addTag("minion")
+        spawned_object.setVar("zoneType", "minion")
+        spawned_object.setVar("zoneIndex", minionZoneIndex)
+        currentScenario.zones[minionZoneIndex].guid = spawned_object.getGUID()
+      end
+    })
   end
 end
 
@@ -478,16 +509,16 @@ end
 
 function getZoneGuid(params)
   if(not currentScenario.zones) then return nil end
-  local zone = currentScenario.zones[params.zoneType]
+  local zone = currentScenario.zones[params.zoneIndex]
   return zone.guid
 end
 
 function getZoneDefinition(params)
-  local zoneType = params.zoneType
+  local zoneIndex = params.zoneIndex
 
   if(not currentScenario) then return nil end
 
-  return currentScenario.zones[zoneType]
+  return currentScenario.zones[zoneIndex]
 end
 
 function heroCountIsValid(params)
@@ -1408,7 +1439,7 @@ function placeVillainStage(villain, stage, heroCount)
 
     Wait.frames(function()
       if(villainCard.hasTag("toughness")) then
-        addStatusToVillain({villainKey = villain.key, statusType = "tough"})
+        Global.call("addStatusToVillain", {villain = villain, statusType = "tough"})
       end
     end,
     30)
@@ -1594,150 +1625,17 @@ function setUpVillainStage_rhino(params)
       {
         cardId = breakinAndTakinCardId, 
         searchInDiscard = true,
-        zoneType = "sideScheme"
+        zoneIndex = "sideScheme"
       })
     return
   end
 
   if(stageNumber == "3") then
-    addStatusToAllHeroes({statusType = "stunned"})
+    Global.call("addStatusToAllHeroes", {statusType = "stunned"})
   end
 end
 
-function addStatusToVillain(params)
-  local villainKey = params.villainKey
-  local statusType = params.statusType
-  local villain = currentScenario.villains[villainKey]
-  local villainCard = getObjectFromGUID(villain.cardGuid)
 
-  if not cardCanHaveStatus({card = villainCard, statusType = statusType}) then
-    return
-  end
-
-  placeStatusToken({card = villainCard, statusType = statusType})
-end
-
-function addStatusToAllHeroes(params)
-  local statusType = params.statusType
-  local heroes = heroManager.call("getSelectedHeroes")
-
-  for color, _ in pairs(heroes) do
-    addStatusToHero({playerColor = color, statusType = statusType})
-  end
-end
-
-function addStatusToHero(params)
-  local playerColor = params.playerColor
-  local statusType = params.statusType
-  local hero = heroManager.call("getHeroByPlayerColor", {playerColor = playerColor})
-  local heroCard = getObjectFromGUID(hero.identityGuid)
-
-  if not cardCanHaveStatus({card = heroCard, statusType = statusType}) then
-    return
-  end
-
-  placeStatusToken({card = heroCard, statusType = statusType, playerColor = playerColor})
-end
-
-function cardCanHaveStatus(params)
-  local card = params.card
-  local cardPosition = card.getPosition()
-  local cardName = card.getName()
-  local targetType = Global.call("getCardProperty", {card = card, property = "type"})
-  local statusType = params.statusType
-
-  statusCount = getStatusCount({targetPosition = cardPosition, targetType = targetType, statusType = statusType})
-
-  if(statusType == "tough") then
-    local maxToughCount = cardName == "Colossus" and 2 or 1
-    if(statusCount >= maxToughCount) then
-      broadcastToAll(cardName .. " is already tough.")
-      return false
-    end
-  else
-    if(card.hasTag("stalwart")) then
-      broadcastToAll(cardName .. " is stalwart and cannot be " .. statusType .. ".")
-      return false
-    end
-    
-    local maxStatusCount = card.hasTag("steady") and 2 or 1
-
-    if(statusCount >= maxStatusCount) then
-      broadcastToAll(cardName .. " is already " .. statusType .. ".")
-      return false
-    end
-  end
-
-  return true
-end
-
-function getStatusCount(params)
-  local targetPosition = params.targetPosition
-  local targetType = params.targetType
-  local statusType = params.statusType
-
-  local castSize = targetType == "villain" and {7.5, 2, 9.5} or {4, 2, 5}
-
-  local objList = Physics.cast({
-      origin       = targetPosition,
-      direction    = {0,1,0},
-      type         = 3,
-      size         = castSize,
-      max_distance = 0,
-      debug        = true
-  })
- 
-  local statusCount = 0
-
-  for _, obj in ipairs(objList) do
-    if obj.hit_object.hasTag(statusType.."-status") then
-      statusCount = statusCount + 1
-    end
-  end
-  
-  return statusCount
-end
-
-function placeStatusToken(params)
-  local card = params.card
-  local statusPosition = Vector(card.getPosition())
-  statusPosition.y = statusPosition.y + 1
-  local targetType = Global.call("getCardProperty", {card = card, property = "type"})
-  local statusType = params.statusType
-
-  local statusBagGuid = ""
-
-  --TODO: Use constants for status bag guids
-  if(targetType == "villain") then
-    statusBagGuid = statusType == "tough" and "35b809"
-      or statusType == "stunned" and "882e12"
-      or statusType == "confused" and "50c501"
-  else
-    statusBagGuid = statusType == "tough" and "53a9f2"
-      or statusType == "stunned" and "c46ad4"
-      or statusType == "confused" and "0b8743"
-  end
-
-  local statusBag = getObjectFromGUID(statusBagGuid)
-  local statusToken = statusBag.takeObject({position = statusPosition, smooth = false})
-
-  local message = card.getName() .. " is " .. statusType .. "!"
-
-  if(statusType == "stunned" or statusType == "confused") then
-    message = message .. " (If there an effect in play that makes " .. card.getName() .. " steady or stalwart, you may need to remove this status token.)"
-  end
-
-  if(targetType == "villain") then
-    broadcastToAll(message, {1,1,1})
-  else
-    local playerColor = params.playerColor
-    local messageTint = playerColor == "Red" and {1,0,0}
-      or playerColor == "Blue" and {0,0,1}
-      or playerColor == "Green" and {0,1,0}
-      or playerColor == "Yellow" and {1,1,0}
-    broadcastToColor(message, playerColor, messageTint)
-  end
-end
 
 require('!/Cardplacer')
 
