@@ -602,11 +602,14 @@ function onObjectEnterZone(zone, card)
 
    if(not zoneType) then return end
 
-   local playerColor = zone.getVar("playerColor")
    local cardType = getCardProperty({card = card, property = "type"})
    if(cardType == "hero" or cardType == "villain" or cardType == "main_scheme") then
       return
    end
+
+   local playerColor = zone.getVar("playerColor")
+
+   if(playerColor) then card.setVar("playerColor", playerColor) end
 
    resizeCardOnEnterZone(card, zoneType)
    positionCardOnEnterZone(card, zoneType, zoneIndex)
@@ -727,7 +730,9 @@ function onObjectLeaveZone(zone, card)
 
    if(cardType == "hero" or cardType == "villain" or cardType == "main_scheme") then
       return
-   end   
+   end
+
+   card.setVar("playerColor", nil)
 
    removeCounterFromCard(card)
    resizeCardOnLeaveZone(card, cardAspect)
@@ -770,27 +775,31 @@ function repositionCardsInZone(params)
          cardNumber = cardNumber + 1
          local origCardPosition = Vector(v.getPosition())
          local newCardPosition = Vector(getZoneCardPosition({zoneDef = zoneDef, cardNumber = cardNumber}))
-         local counterGuid = v.getVar("counterGuid")
-         local counter = nil
-         local origCounterPosition = Vector(0,0,0)
-         local newCounterPosition = Vector(0,0,0)
-         local counterOffset = nil
 
-         if(counterGuid) then
-            counter = getObjectFromGUID(counterGuid)
-            origCounterPosition = counter.getPosition()
-            counterOffset = origCardPosition - origCounterPosition
-            newCounterPosition = newCardPosition - counterOffset
+         if(newCardPosition == origCardPosition) then goto continue end
+
+         local itemsOnCard = getItemsOnCard({card = v})
+         local itemsToReposition = {}
+         local cardGuid = v.getGUID()
+
+         for i, item in ipairs(itemsOnCard) do
+            if(item.tag == "Tile" or (item.tag == "Card" and item.getGUID() ~= cardGuid)) then
+               local origItemPosition = item.getPosition()
+               local itemOffset = origCardPosition - origItemPosition
+               local newItemPosition = newCardPosition - itemOffset   
+               table.insert(itemsToReposition, {item = item, newPosition = newItemPosition})
+            end
          end
 
          if(newCardPosition) then
             v.setPositionSmooth(newCardPosition, false, false)
 
-            if(counter) then             
-               counter.setPositionSmooth(newCounterPosition, false, false)
+            for i, item in ipairs(itemsToReposition) do
+               item.item.setPositionSmooth(item.newPosition, false, false)
             end
          end
       end
+      ::continue::
    end
 end
 
@@ -927,24 +936,28 @@ function addStatusToVillain(params)
    local targetType = Global.call("getCardProperty", {card = card, property = "type"})
    local statusType = params.statusType
  
-   statusCount = getStatusCount({targetPosition = cardPosition, targetType = targetType, statusType = statusType})
+   --statusCount = getStatusCount({targetPosition = cardPosition, targetType = targetType, statusType = statusType})
+   statusCount = getStatusCount({card = card, statusType = statusType})
  
+   local playerColor = card.getVar("playerColor")
+   local messageType = playerColor and MESSAGE_TYPE_PLAYER or MESSAGE_TYPE_INFO
+
    if(statusType == "tough") then
-     local maxToughCount = cardName == "Colossus" and 2 or 1
+     local maxToughCount = (targetType == "hero" and cardName == "Colossus") and 2 or 1
      if(statusCount >= maxToughCount) then
-       broadcastToAll(cardName .. " is already tough.")
+       displayMessage({message = cardName .. " is already tough.", messageType = messageType, playerColor = playerColor})
        return false
      end
    else
      if(card.hasTag("stalwart")) then
-       broadcastToAll(cardName .. " is stalwart and cannot be " .. statusType .. ".")
+       displayMessage({message = cardName .. " is stalwart and cannot be " .. statusType .. ".", messageType = messageType, playerColor = playerColor})
        return false
      end
      
      local maxStatusCount = card.hasTag("steady") and 2 or 1
  
      if(statusCount >= maxStatusCount) then
-       broadcastToAll(cardName .. " is already " .. statusType .. ".")
+       displayMessage({message = cardName .. " is already " .. statusType .. ".\n(If there is an effect in play that makes this character steady, please give them a second " .. statusType .. " card manually.)", messageType = messageType, playerColor = playerColor})
        return false
      end
    end
@@ -953,31 +966,17 @@ function addStatusToVillain(params)
  end
  
  function getStatusCount(params)
-   local targetPosition = params.targetPosition
-   local targetType = params.targetType
+   local card = params.card
    local statusType = params.statusType
- 
-   local castSize = targetType == "villain" and {7.5, 2, 9.5} 
-      or targetType == "minion" and {4.35, 2, 5.5}
-      or {4, 2, 5}
- 
-   local objList = Physics.cast({
-       origin       = targetPosition,
-       direction    = {0,1,0},
-       type         = 3,
-       size         = castSize,
-       max_distance = 0,
-       debug        = true
-   })
-  
+   local items = getItemsOnCard({card = card})
    local statusCount = 0
- 
-   for _, obj in ipairs(objList) do
-     if obj.hit_object.hasTag(statusType.."-status") then
-       statusCount = statusCount + 1
-     end
+    
+   for _, item in ipairs(items) do
+      if item.hasTag(statusType.."-status") then
+        statusCount = statusCount + 1
+      end
    end
-   
+
    return statusCount
  end
  
@@ -991,6 +990,7 @@ function addStatusToVillain(params)
    local statusBagGuid = ""
 
    --TODO: Use constants for status bag guids
+   --TODO: Use one status bag for all target types, but change the scale appropriately
    if(targetType == "villain") then
      statusBagGuid = statusType == "tough" and "35b809"
        or statusType == "stunned" and "882e12"
@@ -1007,17 +1007,90 @@ function addStatusToVillain(params)
    local message = card.getName() .. " is " .. statusType .. "!"
  
    if(statusType == "stunned" or statusType == "confused") then
-     message = message .. " (If there is an effect in play that makes " .. card.getName() .. " steady or stalwart, you may need to remove this status token.)"
+     message = message .. "\n(If there is an effect in play that makes this character steady, they may need another status card to actually be " .. statusType .. ".\nIf they are stalwart, you may need to remove this status card.)"
    end
  
-   if(targetType == "villain" or targetType == "minion") then --TODO: make minion notifications user-specific
-     broadcastToAll(message, {1,1,1})
-   else
-     local playerColor = params.playerColor
-     local messageTint = playerColor == "Red" and {1,0,0} --TODO: use constants for player colors and tints (and adjust tings for readability)
-       or playerColor == "Blue" and {0,0,1}
-       or playerColor == "Green" and {0,1,0}
-       or playerColor == "Yellow" and {1,1,0}
-     broadcastToColor(message, playerColor, messageTint)
-   end
+   local playerColor = params.playerColor or card.getVar("playerColor")
+   local messageType = playerColor and MESSAGE_TYPE_PLAYER or MESSAGE_TYPE_INFO
+
+   displayMessage({message = message, messageType = messageType, playerColor = playerColor})
  end
+
+function getItemsOnCard(params)
+   card = params.card
+   local cardPosition = card.getPosition()
+   local castSize= getCastSizeForCard({card = card})
+
+   local objList = Physics.cast({
+      origin       = cardPosition,
+      direction    = {0,1,0},
+      type         = 3,
+      size         = castSize,
+      max_distance = 0,
+      debug        = false
+   })
+
+   local items = {}
+   
+   for _, obj in ipairs(objList) do
+      table.insert(items, obj.hit_object)
+   end
+
+   return items
+end
+
+function getCastSizeForCard(params)
+   local card = params.card
+   local cardRotation = card.getRotation()
+   local cardScale = card.getScale()
+   local y = cardRotation.y
+   local orientation = (y >= 0 and y <= 5) or (y >= 355 and y <= 360) or (y >= 175 and y <= 185) and "vertical" or "horizontal"
+   local longDimension = cardScale.x * 2.61
+   local shortDimension = cardScale.x * 2.06
+
+   return orientation == "vertical" and {shortDimension, 2, longDimension} or {longDimension, 2, shortDimension}
+end
+
+
+PLAYER_COLOR_RED = "Red"
+PLAYER_COLOR_BLUE = "Blue"
+PLAYER_COLOR_GREEN = "Green"
+PLAYER_COLOR_YELLOW = "Yellow"
+
+MESSAGE_TINT_RED = {.7804, .0902, .0824}
+MESSAGE_TINT_BLUE = {.1020, .4784, .9098}
+MESSAGE_TINT_GREEN = {.1725, .6392, .1490}
+MESSAGE_TINT_YELLOW = {.8235, .8157, .1529}
+MESSAGE_TINT_FLAVOR = {0.5, 0.5, 0.5}
+MESSAGE_TINT_INSTRUCTION = {1, 1, 1}
+MESSAGE_TINT_INFO = {1, 1, 1}
+
+MESSAGE_TYPE_FLAVOR_TEXT = "flavor"
+MESSAGE_TYPE_INSTRUCTION = "instruction"
+MESSAGE_TYPE_INFO = "info"
+MESSAGE_TYPE_PLAYER = "player"
+
+
+function displayMessage(params)
+   local message = params.message
+   local messageType = params.messageType
+   local playerColor = params.playerColor
+
+   if messageType == MESSAGE_TYPE_PLAYER then
+      local messageTint = 
+         playerColor == PLAYER_COLOR_RED and MESSAGE_TINT_RED
+         or playerColor == PLAYER_COLOR_BLUE and MESSAGE_TINT_BLUE
+         or playerColor == PLAYER_COLOR_GREEN and MESSAGE_TINT_GREEN
+         or playerColor == PLAYER_COLOR_YELLOW and MESSAGE_TINT_YELLOW
+
+      broadcastToColor(message, playerColor, messageTint)
+      return
+   end
+   
+   local messageTint = 
+      messageType == MESSAGE_TYPE_FLAVOR_TEXT and MESSAGE_TINT_FLAVOR
+      or messageType == MESSAGE_TYPE_INSTRUCTION and MESSAGE_TINT_INSTRUCTION
+      or messageType == MESSAGE_TYPE_INFO and MESSAGE_TINT_INFO
+   
+   broadcastToAll(message, messageTint)
+end

@@ -14,7 +14,7 @@
       "scaleZ": 1
     },
     "Nickname": "Release Notes",
-    "Description": "The latest update includes all cards from the Nightcrawler hero pack (including the Crazy Gang modular encounter set), as well as several bug fixes.\n\nBut the big innovation is the scripting zones. Check the comment in the mod's page for details.",
+    "Description": "Two big changes in the latest update:\nFirst, the Rhino scenario is now fully scripted. Check out the new automation when the villain stage is advanced. I'll get all of the scenarios scripted eventually.\n\nAlso, I've added a scripting zone above each play mat for minions. Move a minion into this area, and a health counter (and Tough card, if necessary) will be automatically placed.",
     "GMNotes": "",
     "AltLookAngle": {
       "x": 0,

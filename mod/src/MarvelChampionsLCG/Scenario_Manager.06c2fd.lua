@@ -488,6 +488,7 @@ function setUpZones()
         spawned_object.addTag("minion")
         spawned_object.setVar("zoneType", "minion")
         spawned_object.setVar("zoneIndex", minionZoneIndex)
+        spawned_object.setVar("playerColor", color)
         currentScenario.zones[minionZoneIndex].guid = spawned_object.getGUID()
       end
     })
@@ -1537,10 +1538,12 @@ function placeSchemeStage(schemeKey, stage, heroCount)
   
   local flipped = stage.flipCard or false
 
+  if(currentScenario.fullyScripted) then flipped = true end
+
   getCardByID(
     stage.cardId, 
     schemePosition, 
-    {scale = schemeScale, name = scheme.name, flipped = flipped, landscape = true})
+    {scale = schemeScale, name = scheme.name, flipped = flipped, landscape = true, locked = currentScenario.fullyScripted})
 
   local counter = scheme.threatCounter or {}
 
@@ -1548,6 +1551,10 @@ function placeSchemeStage(schemeKey, stage, heroCount)
 
   local threat = (stage.startingThreat or 0) + ((stage.startingThreatPerPlayer or 0) * heroCount)
   local schemeThreatCounter = getObjectFromGUID(counter.guid)
+
+  if(stage.flavorText) then
+    Global.call("displayMessage", {message = stage.flavorText, messageType = "flavor"})
+  end
 
   Wait.frames(
     function()
