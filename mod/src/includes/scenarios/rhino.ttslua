@@ -1,6 +1,7 @@
 scenarios["rhino"] =
 {
     name="Rhino",
+    fullyScripted = true,
     tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150139401/E2896A47115742CDF42EE2F473039970D5D27329/",
     villains={
         rhino={
@@ -30,7 +31,8 @@ scenarios["rhino"] =
                 stage1={
                     cardId="01097",
                     startingThreat=0,
-                    targetThreatPerPlayer=7
+                    targetThreatPerPlayer=7,
+                    flavorText="Rhino is attacking a S.H.I.E.L.D. facility!\nRhino is trying to smash through the facility wall and steal a shipment of vibranium. You must stop him!",
                 }
             }
         }

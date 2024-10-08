@@ -73,6 +73,7 @@ FIRST_PLAYER_TOKEN_GUID        = "d93792"
 GENERAL_COUNTER_BAG_GUID       = "aec1c4"
 GUID_LARGE_GENERAL_COUNTER_BAG = "65c1cc"
 GUID_THREAT_COUNTER_BAG        = "eb5d6d"
+GUID_HEALTH_COUNTER_BAG        = "029e3b"
 GUID_SELECTOR_TILE             = "c04e76"
 GUID_MODULAR_SET_SELECTOR_TILE = "740464"
 
@@ -124,6 +125,8 @@ ZONE_ENCOUNTER_DECK = {
 IS_RESHUFFLING = false
 supressZoneInteractions = false
 
+local heroManager = nil
+
 function supressZones()
    supressZoneInteractions = true
 
@@ -136,6 +139,8 @@ function onLoad()
     -- Create context Menus
     addContextMenuItem("Random First Player", randomFirstPlayer)
     addContextMenuItem("Spawn Card", createUI)
+
+    heroManager = getObjectFromGUID(GUID_HERO_MANAGER)
 end
 
 function randomFirstPlayer()
@@ -381,20 +386,20 @@ function onPlayerAction(player, action, targets)
       if #zones > 0 then return true end
 
       local cardType = getCardProperty({card = card, property = "type"}) or ""
-      local zoneType = nil
+      local zoneIndex = nil
 
       if(string.sub(cardType, -11) == "side_scheme") then
-         zoneType = "sideScheme"
+         zoneIndex = "sideScheme"
       elseif(cardType == "attachment") then
-         zoneType = "attachment"
+         zonezoneIndexType = "attachment"
       elseif(cardType == "environment") then
-         zoneType = "environment"
+         zoneIndex = "environment"
       end
 
-      if(not zoneType) then return true end
+      if(not zoneIndex) then return true end
 
       local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
-      pingPosition = getNewZoneCardPosition({zoneType = zoneType, forNextCard = true})
+      pingPosition = getNewZoneCardPosition({zoneIndex = zoneIndex, forNextCard = true})
 
       if(pingPosition) then
          player.pingTable(pingPosition)
@@ -541,10 +546,11 @@ function moveCardFromEncounterDeckById(params)
    local destinationPosition = nil
    local destinationRotation = nil
    local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
+   local zoneIndex = params.zoneIndex
 
-   if(params.zoneType) then
-      destinationPosition = ensureMinimumYPosition(getNewZoneCardPosition({zoneType = params.zoneType, forNextCard = true}), 3)
-      destinationRotation = params.zoneType == "sideScheme" and {0,90,0} or {0,180,0}
+   if(zoneIndex) then
+      destinationPosition = ensureMinimumYPosition(getNewZoneCardPosition({zoneIndex = zoneIndex, forNextCard = true}), 3)
+      destinationRotation = zoneIndex == "sideScheme" and {0,90,0} or {0,180,0}
    else
       destinationPosition = ensureMinimumYPosition(Vector(params.destinationPosition), 3)
       destinationRotation = params.destinationRotation and Vector(params.destinationRotation) or {0,180,0}
@@ -571,7 +577,6 @@ function moveCardFromEncounterDeckById(params)
       destinationPosition = destinationPosition,
       destinationRotation = destinationRotation
    })
-
 end
 
 function ensureMinimumYPosition(position, minimumY)
@@ -593,6 +598,7 @@ function onObjectEnterZone(zone, card)
    if(not isCard(card)) then return end
 
    local zoneType = zone.getVar("zoneType")
+   local zoneIndex = zone.getVar("zoneIndex")
 
    if(not zoneType) then return end
 
@@ -601,8 +607,12 @@ function onObjectEnterZone(zone, card)
       return
    end
 
+   local playerColor = zone.getVar("playerColor")
+
+   if(playerColor) then card.setVar("playerColor", playerColor) end
+
    resizeCardOnEnterZone(card, zoneType)
-   positionCardOnEnterZone(card, zoneType)
+   positionCardOnEnterZone(card, zoneType, zoneIndex)
 
    scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
    scenarioManager.call("onCardEnterZone", {zone=zone, card = card})
@@ -610,8 +620,12 @@ function onObjectEnterZone(zone, card)
    Wait.frames(function()
          if(zoneType == "sideScheme") then
             addThreatCounterToSideScheme(card)
+         elseif(zoneType == "minion") then
+            addHealthCounterToMinion(card)
+            if(card.hasTag("toughness")) then
+               addStatusToMinion({card = card, statusType = "tough"})
+            end
          end
-
       end, 
       40)
 end
@@ -621,7 +635,7 @@ function resizeCardOnEnterZone(card, zoneType)
 
    if(zoneType == "hero") then
       newScale = CARD_SCALE_PLAYER
-   elseif(zoneType == "sideScheme" or zoneType == "encounterDeck" or zoneType == "attachment" or zoneType == "environment") then
+   elseif(zoneType == "sideScheme" or zoneType == "encounterDeck" or zoneType == "attachment" or zoneType == "environment" or zoneType == "minion") then
       newScale = CARD_SCALE_ENCOUNTER
    end
 
@@ -630,12 +644,12 @@ function resizeCardOnEnterZone(card, zoneType)
    end
 end
 
-function positionCardOnEnterZone(card, zoneType)
-   if(zoneType != "sideScheme" and zoneType != "attachment" and zoneType != "environment") then
+function positionCardOnEnterZone(card, zoneType, zoneIndex)
+   if(zoneType != "sideScheme" and zoneType != "attachment" and zoneType != "environment" and zoneType != "minion") then
       return
    end
 
-   local newCardPosition = getNewZoneCardPosition({zoneType = zoneType})
+   local newCardPosition = getNewZoneCardPosition({zoneIndex = zoneIndex})
    local originalRotation = card.getRotation()
    local cardRotation = zoneType == "sideScheme" and {0,90,originalRotation[3]} or {0,180,originalRotation[3]}
 
@@ -675,6 +689,34 @@ function addThreatCounterToSideScheme(card)
    ) 
 end
 
+function addHealthCounterToMinion(card)
+   local healthCounterBag = getObjectFromGUID(GUID_HEALTH_COUNTER_BAG)
+   local cardPosition = card.getPosition()
+   local counterPosition = {cardPosition[1] + 1.55, cardPosition[2] + 0.07, cardPosition[3] - 0.30}
+   local healthCounter = healthCounterBag.takeObject({position = counterPosition, smooth = false})
+   card.setVar("counterGuid", healthCounter.getGUID())
+   
+   --TODO: Extract this calculation into a function?
+   local cardData = getCardData({card = card})
+   local health = 0
+
+   if(cardData.healthPerHero) then
+      local heroManager = getObjectFromGUID(GUID_HERO_MANAGER)
+      local heroCount = heroManager.call("getHeroCount")
+      health = cardData.health * heroManager.call("getHeroCount")
+   else
+      health = cardData.health
+   end
+ 
+   Wait.frames(
+      function()
+         healthCounter.setScale({0.31, 1.00, 0.31})
+         healthCounter.call("setValue", {value = health})
+     end,
+     1
+   ) 
+end
+
 function onObjectLeaveZone(zone, card)
    if(supressZoneInteractions) then return end
    if(not isCard(card)) then return end
@@ -688,11 +730,13 @@ function onObjectLeaveZone(zone, card)
 
    if(cardType == "hero" or cardType == "villain" or cardType == "main_scheme") then
       return
-   end   
+   end
+
+   card.setVar("playerColor", nil)
 
    removeCounterFromCard(card)
    resizeCardOnLeaveZone(card, cardAspect)
-   repositionCardsInZone({zone = zone, zoneType = zoneType})
+   repositionCardsInZone({zone = zone})
 end
 
 function removeCounterFromCard(card)
@@ -715,45 +759,62 @@ end
 
 function repositionCardsInZone(params)
    local zone = params.zone
-   local zoneType = params.zoneType
+   local zoneType = zone.getVar("zoneType")
+   local zoneIndex = zone.getVar("zoneIndex")
 
-   if(zoneType != "sideScheme" and zoneType != "attachment" and zoneType != "environment") then
+   if(zoneType != "sideScheme" and zoneType != "attachment" and zoneType != "environment" and zoneType != "minion") then
       return
    end
 
    local items = zone.getObjects()
-   local zoneDef = getZoneDefinitionByType({zoneType = zoneType})
+   local zoneDef = getZoneDefinitionByIndex({zoneIndex = zoneIndex})
    local cardNumber = 0
 
    for i, v in ipairs(items) do
       if(v.tag == "Card") then
          cardNumber = cardNumber + 1
-         local newPosition = getZoneCardPosition({zoneDef = zoneDef, cardNumber = cardNumber})
+         local origCardPosition = Vector(v.getPosition())
+         local newCardPosition = Vector(getZoneCardPosition({zoneDef = zoneDef, cardNumber = cardNumber}))
 
-         if(newPosition) then
-            local counterPosition = {newPosition[1] - 0.38, newPosition[2] + 0.07, newPosition[3] - 1.45}
-            local counter = getObjectFromGUID(v.getVar("counterGuid"))
+         if(newCardPosition == origCardPosition) then goto continue end
 
-            v.setPositionSmooth(newPosition, false, false)
-            if(counter) then 
-               counter.setPositionSmooth(counterPosition, false, false)
+         local itemsOnCard = getItemsOnCard({card = v})
+         local itemsToReposition = {}
+         local cardGuid = v.getGUID()
+
+         for i, item in ipairs(itemsOnCard) do
+            if(item.tag == "Tile" or (item.tag == "Card" and item.getGUID() ~= cardGuid)) then
+               local origItemPosition = item.getPosition()
+               local itemOffset = origCardPosition - origItemPosition
+               local newItemPosition = newCardPosition - itemOffset   
+               table.insert(itemsToReposition, {item = item, newPosition = newItemPosition})
+            end
+         end
+
+         if(newCardPosition) then
+            v.setPositionSmooth(newCardPosition, false, false)
+
+            for i, item in ipairs(itemsToReposition) do
+               item.item.setPositionSmooth(item.newPosition, false, false)
             end
          end
       end
+      ::continue::
    end
 end
 
-function getZoneDefinitionByType(params)
-   local zoneType = params.zoneType
+function getZoneDefinitionByIndex(params)
+   local zoneIndex = params.zoneIndex
+   
    local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
 
-   return scenarioManager.call("getZoneDefinition", {zoneType = zoneType})
+   return scenarioManager.call("getZoneDefinition", {zoneIndex = zoneIndex})
 end
 
 function getZoneCardCount(params)
-   local zoneType = params.zoneType
+   local zoneIndex = params.zoneIndex
    local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
-   local zoneGuid = scenarioManager.call("getZoneGuid", {zoneType = zoneType})
+   local zoneGuid = scenarioManager.call("getZoneGuid", {zoneIndex = zoneIndex})
    local zone = getObjectFromGUID(zoneGuid)
 
    if(not zone) then return nil end
@@ -770,11 +831,11 @@ function getZoneCardCount(params)
 end
 
 function getNewZoneCardPosition(params)
-   local zoneDef = getZoneDefinitionByType({zoneType = params.zoneType})
+   local zoneDef = getZoneDefinitionByIndex({zoneIndex = params.zoneIndex})
 
    if(not zoneDef) then return nil end
    
-   local cardNumber = getZoneCardCount({zoneType = params.zoneType})
+   local cardNumber = getZoneCardCount({zoneIndex = params.zoneIndex})
 
    if(cardNumber == nil) then return nil end
 
@@ -823,3 +884,213 @@ function getZoneCardPosition(params)
    return {x, origin[2], z}
 end
 
+function addStatusToVillain(params)
+   local villain = params.villain
+   local statusType = params.statusType
+   local villainCard = getObjectFromGUID(villain.cardGuid)
+ 
+   if not cardCanHaveStatus({card = villainCard, statusType = statusType}) then
+     return
+   end
+ 
+   placeStatusToken({card = villainCard, statusType = statusType})
+ end
+ 
+ function addStatusToMinion(params)
+   local minionCard = params.card
+   local statusType = params.statusType
+ 
+   if not cardCanHaveStatus({card = minionCard, statusType = statusType}) then
+     return
+   end
+ 
+   placeStatusToken({card = minionCard, statusType = statusType})
+ end
+
+ function addStatusToAllHeroes(params)
+   local statusType = params.statusType
+   local heroes = heroManager.call("getSelectedHeroes")
+ 
+   for color, _ in pairs(heroes) do
+     addStatusToHero({playerColor = color, statusType = statusType})
+   end
+ end
+ 
+ function addStatusToHero(params)
+   local playerColor = params.playerColor
+   local statusType = params.statusType
+   local hero = heroManager.call("getHeroByPlayerColor", {playerColor = playerColor})
+   local heroCard = getObjectFromGUID(hero.identityGuid)
+ 
+   if not cardCanHaveStatus({card = heroCard, statusType = statusType}) then
+     return
+   end
+ 
+   placeStatusToken({card = heroCard, statusType = statusType, playerColor = playerColor})
+ end
+ 
+ function cardCanHaveStatus(params)
+   local card = params.card
+   local cardPosition = card.getPosition()
+   local cardName = card.getName()
+   local targetType = Global.call("getCardProperty", {card = card, property = "type"})
+   local statusType = params.statusType
+ 
+   --statusCount = getStatusCount({targetPosition = cardPosition, targetType = targetType, statusType = statusType})
+   statusCount = getStatusCount({card = card, statusType = statusType})
+ 
+   local playerColor = card.getVar("playerColor")
+   local messageType = playerColor and MESSAGE_TYPE_PLAYER or MESSAGE_TYPE_INFO
+
+   if(statusType == "tough") then
+     local maxToughCount = (targetType == "hero" and cardName == "Colossus") and 2 or 1
+     if(statusCount >= maxToughCount) then
+       displayMessage({message = cardName .. " is already tough.", messageType = messageType, playerColor = playerColor})
+       return false
+     end
+   else
+     if(card.hasTag("stalwart")) then
+       displayMessage({message = cardName .. " is stalwart and cannot be " .. statusType .. ".", messageType = messageType, playerColor = playerColor})
+       return false
+     end
+     
+     local maxStatusCount = card.hasTag("steady") and 2 or 1
+ 
+     if(statusCount >= maxStatusCount) then
+       displayMessage({message = cardName .. " is already " .. statusType .. ".\n(If there is an effect in play that makes this character steady, please give them a second " .. statusType .. " card manually.)", messageType = messageType, playerColor = playerColor})
+       return false
+     end
+   end
+ 
+   return true
+ end
+ 
+ function getStatusCount(params)
+   local card = params.card
+   local statusType = params.statusType
+   local items = getItemsOnCard({card = card})
+   local statusCount = 0
+    
+   for _, item in ipairs(items) do
+      if item.hasTag(statusType.."-status") then
+        statusCount = statusCount + 1
+      end
+   end
+
+   return statusCount
+ end
+ 
+ function placeStatusToken(params)
+   local card = params.card
+   local statusPosition = Vector(card.getPosition())
+   statusPosition.y = statusPosition.y + 1
+   local targetType = Global.call("getCardProperty", {card = card, property = "type"})
+   local statusType = params.statusType
+ 
+   local statusBagGuid = ""
+
+   --TODO: Use constants for status bag guids
+   --TODO: Use one status bag for all target types, but change the scale appropriately
+   if(targetType == "villain") then
+     statusBagGuid = statusType == "tough" and "35b809"
+       or statusType == "stunned" and "882e12"
+       or statusType == "confused" and "50c501"
+   else
+     statusBagGuid = statusType == "tough" and "53a9f2"
+       or statusType == "stunned" and "c46ad4"
+       or statusType == "confused" and "0b8743"
+   end
+ 
+   local statusBag = getObjectFromGUID(statusBagGuid)
+   local statusToken = statusBag.takeObject({position = statusPosition, smooth = false})
+ 
+   local message = card.getName() .. " is " .. statusType .. "!"
+ 
+   if(statusType == "stunned" or statusType == "confused") then
+     message = message .. "\n(If there is an effect in play that makes this character steady, they may need another status card to actually be " .. statusType .. ".\nIf they are stalwart, you may need to remove this status card.)"
+   end
+ 
+   local playerColor = params.playerColor or card.getVar("playerColor")
+   local messageType = playerColor and MESSAGE_TYPE_PLAYER or MESSAGE_TYPE_INFO
+
+   displayMessage({message = message, messageType = messageType, playerColor = playerColor})
+ end
+
+function getItemsOnCard(params)
+   card = params.card
+   local cardPosition = card.getPosition()
+   local castSize= getCastSizeForCard({card = card})
+
+   local objList = Physics.cast({
+      origin       = cardPosition,
+      direction    = {0,1,0},
+      type         = 3,
+      size         = castSize,
+      max_distance = 0,
+      debug        = false
+   })
+
+   local items = {}
+   
+   for _, obj in ipairs(objList) do
+      table.insert(items, obj.hit_object)
+   end
+
+   return items
+end
+
+function getCastSizeForCard(params)
+   local card = params.card
+   local cardRotation = card.getRotation()
+   local cardScale = card.getScale()
+   local y = cardRotation.y
+   local orientation = (y >= 0 and y <= 5) or (y >= 355 and y <= 360) or (y >= 175 and y <= 185) and "vertical" or "horizontal"
+   local longDimension = cardScale.x * 2.61
+   local shortDimension = cardScale.x * 2.06
+
+   return orientation == "vertical" and {shortDimension, 2, longDimension} or {longDimension, 2, shortDimension}
+end
+
+
+PLAYER_COLOR_RED = "Red"
+PLAYER_COLOR_BLUE = "Blue"
+PLAYER_COLOR_GREEN = "Green"
+PLAYER_COLOR_YELLOW = "Yellow"
+
+MESSAGE_TINT_RED = {.7804, .0902, .0824}
+MESSAGE_TINT_BLUE = {.1020, .4784, .9098}
+MESSAGE_TINT_GREEN = {.1725, .6392, .1490}
+MESSAGE_TINT_YELLOW = {.8235, .8157, .1529}
+MESSAGE_TINT_FLAVOR = {0.5, 0.5, 0.5}
+MESSAGE_TINT_INSTRUCTION = {1, 1, 1}
+MESSAGE_TINT_INFO = {1, 1, 1}
+
+MESSAGE_TYPE_FLAVOR_TEXT = "flavor"
+MESSAGE_TYPE_INSTRUCTION = "instruction"
+MESSAGE_TYPE_INFO = "info"
+MESSAGE_TYPE_PLAYER = "player"
+
+
+function displayMessage(params)
+   local message = params.message
+   local messageType = params.messageType
+   local playerColor = params.playerColor
+
+   if messageType == MESSAGE_TYPE_PLAYER then
+      local messageTint = 
+         playerColor == PLAYER_COLOR_RED and MESSAGE_TINT_RED
+         or playerColor == PLAYER_COLOR_BLUE and MESSAGE_TINT_BLUE
+         or playerColor == PLAYER_COLOR_GREEN and MESSAGE_TINT_GREEN
+         or playerColor == PLAYER_COLOR_YELLOW and MESSAGE_TINT_YELLOW
+
+      broadcastToColor(message, playerColor, messageTint)
+      return
+   end
+   
+   local messageTint = 
+      messageType == MESSAGE_TYPE_FLAVOR_TEXT and MESSAGE_TINT_FLAVOR
+      or messageType == MESSAGE_TYPE_INSTRUCTION and MESSAGE_TINT_INSTRUCTION
+      or messageType == MESSAGE_TYPE_INFO and MESSAGE_TINT_INFO
+   
+   broadcastToAll(message, messageTint)
+end
