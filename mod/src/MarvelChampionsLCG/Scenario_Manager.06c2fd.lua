@@ -514,6 +514,22 @@ function getZoneGuid(params)
   return zone.guid
 end
 
+function getZonesByType(params)
+  local zoneType = params.zoneType
+  local zones = {}
+
+  if(not currentScenario.zones) then return zones end
+
+  for key, zoneDef in pairs(currentScenario.zones) do
+    local zone = getObjectFromGUID(zoneDef.guid)
+    if(zone.getVar("zoneType") == zoneType) then
+      table.insert(zones, zone)
+    end
+  end
+
+  return zones
+end
+
 function getZoneDefinition(params)
   local zoneIndex = params.zoneIndex
 

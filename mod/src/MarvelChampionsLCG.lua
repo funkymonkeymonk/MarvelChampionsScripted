@@ -386,23 +386,29 @@ function onPlayerAction(player, action, targets)
       if #zones > 0 then return true end
 
       local cardType = getCardProperty({card = card, property = "type"}) or ""
-      local zoneIndex = nil
+      local zoneType = nil
 
       if(string.sub(cardType, -11) == "side_scheme") then
-         zoneIndex = "sideScheme"
+         zoneType = "sideScheme"
       elseif(cardType == "attachment") then
-         zonezoneIndexType = "attachment"
+         zoneType = "attachment"
       elseif(cardType == "environment") then
-         zoneIndex = "environment"
+         zoneType = "environment"
+      elseif(cardType == "minion") then
+         zoneType = "minion"
       end
 
-      if(not zoneIndex) then return true end
+      if(not zoneType) then return true end
 
       local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
-      pingPosition = getNewZoneCardPosition({zoneIndex = zoneIndex, forNextCard = true})
+      local zones = scenarioManager.call("getZonesByType", {zoneType = zoneType})
+      
+      for _, zone in ipairs(zones) do
+         local pingPosition = getNewZoneCardPosition({zoneIndex = zone.getVar("zoneIndex"), forNextCard = true})
 
-      if(pingPosition) then
-         player.pingTable(pingPosition)
+         if(pingPosition) then
+            player.pingTable(pingPosition)
+         end
       end
    end
 
