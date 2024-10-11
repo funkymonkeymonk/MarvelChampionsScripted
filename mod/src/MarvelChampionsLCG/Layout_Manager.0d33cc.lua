@@ -28,6 +28,7 @@ local STANDARD_SET_II_SELECTOR_GUID = "4a340c"
 local STANDARD_SET_III_SELECTOR_GUID = "9e3a14"
 local EXPERT_SET_I_SELECTOR_GUID = "f640e3"
 local EXPERT_SET_II_SELECTOR_GUID = "e2a916"
+local FIRST_PLAYER_PANEL_GUID = "63b27d"
 
 local modeSelectorStandard = getObjectFromGUID(MODE_SELECTOR_STANDARD_GUID)
 local modeSelectorExpert = getObjectFromGUID(MODE_SELECTOR_EXPERT_GUID)
@@ -36,6 +37,7 @@ local standardSetIISelector = getObjectFromGUID(STANDARD_SET_II_SELECTOR_GUID)
 local standardSetIIISelector = getObjectFromGUID(STANDARD_SET_III_SELECTOR_GUID)
 local expertSetISelector = getObjectFromGUID(EXPERT_SET_I_SELECTOR_GUID)
 local expertSetIISelector = getObjectFromGUID(EXPERT_SET_II_SELECTOR_GUID)
+local firstPlayerPanel = getObjectFromGUID(FIRST_PLAYER_PANEL_GUID)
 
 local scenarioUsesStandardEncounterSets
 local scenarioUsesModularEncounterSets
@@ -353,6 +355,19 @@ function showModeButtons()
     if(showExpertSets) then
         showExpertSetButtons()
     end
+
+    if(heroManager.call("getHeroCount") > 1) then
+        showTile(firstPlayerPanel, true)
+        Wait.frames(
+            function()
+                local selectedFirstPlayer = scenarioManager.call("getFirstPlayer")
+                log(selectedFirstPlayer)
+                firstPlayerPanel.call("showSelection", {firstPlayer = selectedFirstPlayer})                
+            end,
+            10)
+    else
+        hideTile(firstPlayerPanel)
+    end
 end
 
 function hideModeButtons()
@@ -363,6 +378,7 @@ function hideModeButtons()
     hideTile(standardSetIIISelector)
     hideTile(expertSetISelector)
     hideTile(expertSetIISelector)
+    hideTile(firstPlayerPanel)
 end
 
 function showExpertSetButtons()
@@ -375,12 +391,24 @@ function hideExpertSetButtons()
     hideTile(expertSetIISelector)
 end
 
-function showTile(tile)
+function showTile(tile, sendHeroes)
     local currentPos = tile.getPosition()
 
     if(currentPos.y < 0) then
         tile.setPosition({x = currentPos.x, y = currentPos.y + hiddenSelectorOffset, z = currentPos.z})
-        tile.call("showTile")
+
+        if(sendHeroes) then
+            local selectedHeroes = heroManager.call("getSelectedHeroes")
+            local heroNames = {}
+
+            for color, hero in pairs(selectedHeroes) do
+                heroNames[color] = hero.name
+            end
+
+            tile.call("showTile", {selectedHeroes = heroNames})
+        else
+            tile.call("showTile")
+        end
     end
 end
 
@@ -626,6 +654,13 @@ function setExpertSet(params)
     scenarioManager.call("setExpertSet", {set = params.set})
     updateSetupButtons()
     highlightSelectedMode()
+end
+
+function setFirstPlayer(params)
+    local firstPlayer = params.firstPlayer
+    scenarioManager.call("setFirstPlayer", {firstPlayer = firstPlayer})
+
+    firstPlayerPanel.call("showSelection", {firstPlayer = firstPlayer or "Random"})
 end
 
 function clearScenario()

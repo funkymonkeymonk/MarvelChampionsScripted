@@ -22,6 +22,7 @@ local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
 
 local heroes = {}
 local selectedHeroes = {}
+local firstPlayer = nil
 
 local defaultRotation = {0, 180, 0}
 
@@ -31,6 +32,7 @@ function onload(saved_data)
  if(saved_data ~= "") then
    local loaded_data = JSON.decode(saved_data)
    selectedHeroes = loaded_data.selectedHeroes
+   firstPlayer = loaded_data.firstPlayer
  end
  
  createContextMenu()
@@ -125,7 +127,15 @@ function placeHero(heroKey, playerColor, deckType)
   
   selectedHeroes[playerColor] = hero
 
-  local saved_data = JSON.encode({selectedHeroes = selectedHeroes})
+  saveData()
+end
+
+function saveData()
+  local saved_data = JSON.encode({
+    selectedHeroes = selectedHeroes,
+    firstPlayer = firstPlayer
+  })
+
   self.script_state = saved_data
 end
 
@@ -286,9 +296,10 @@ function placeIdentity(hero, playmatPosition)
 end
 
 function configureIdentity(params)
- local identity = params.spawnedObject
- identity.setPosition(params.position)
- hero.identityGuid = identity.getGUID()
+  local hero = params.hero
+  local identity = params.spawnedObject
+  identity.setPosition(params.position)
+  hero.identityGuid = identity.getGUID()
 end
 
 function placeDeck(hero, deckType, playmatPosition)
@@ -667,6 +678,54 @@ end
 
 function showSelectors()
   layoutManager.call("showSelectors", {itemType = "hero"})
+end
+
+function getPlaymat(params)
+  local playerColor = params.playerColor
+  local objects = getAllObjects()
+  for _, object in pairs(objects) do
+    if(object.hasTag("Playmat") and object.hasTag(playerColor)) then
+      return object
+    end
+  end
+  return nil
+end
+
+function getFirstPlayer()
+  return firstPlayer
+end
+
+function setFirstPlayer(params)
+  local playerColor = params.playerColor or "Random"
+  local playerToken = getObjectFromGUID(Global.getVar("FIRST_PLAYER_TOKEN_GUID"))
+
+  if(playerColor == "Random") then
+    playerColor = getRandomPlayerColor()
+  end
+
+  local playmat = getPlaymat({playerColor = playerColor})
+  if(playmat == nil) then 
+    broadcastToAll("No playmat found for " .. playerColor, {1,1,1})
+    return 
+  end
+
+  playmatPosition = playmat.getPosition()
+  playerToken.setPositionSmooth(playmatPosition + Vector{11.9, 0.3, 6.3}, false, false)
+  
+  local turnCounter = getObjectFromGUID("turncounter")
+  turnCounter.call('add_subtract')
+
+  Global.call("displayMessage", {message = playerColor .. " is the first player!", messageType = Global.getVar("MESSAGE_TYPE_INFO")})
+  saveData()
+end
+
+function getRandomPlayerColor()
+  local playerColors = {}
+  for color,_ in pairs(selectedHeroes) do
+    table.insert(playerColors, color)
+  end
+
+  return playerColors[math.random(#playerColors)]
 end
 
 require('!/Cardplacer')

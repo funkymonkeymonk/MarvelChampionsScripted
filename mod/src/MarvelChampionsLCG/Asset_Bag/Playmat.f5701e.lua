@@ -119,11 +119,9 @@ function setPlayerColor(params)
 end
 
 function movePlayerOne()
-   playerToken   = getObjectFromGUID(Global.getVar("FIRST_PLAYER_TOKEN_GUID"))
-   boardPosition = self.getPosition()
-   playerToken.setPositionSmooth(boardPosition + Vector{11.9, 0.3, 6.3}, false, false)
-   local turn_counter = getObjectFromGUID("turncounter")
-   turn_counter.call('add_subtract')
+   local playerColor = getValue("playerColor")
+   local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
+   heroManager.call("setFirstPlayer", {playerColor = playerColor})
 end
 
 function untapAll()

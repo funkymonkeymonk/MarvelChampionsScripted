@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "6979cc",
+    "GUID": "63b27d",
     "Name": "Custom_Tile",
     "Transform": {
-      "posX": 80.94,
-      "posY": 0.495001435,
-      "posZ": 35.7500229,
-      "rotX": 0.0000218499936,
+      "posX": 77.99987,
+      "posY": -1.5,
+      "posZ": 0,
+      "rotX": 1.01368487e-8,
       "rotY": 180,
-      "rotZ": 1.23195377e-7,
-      "scaleX": 1.95,
+      "rotZ": -5.92385252e-9,
+      "scaleX": 2,
       "scaleY": 1,
-      "scaleZ": 1.95
+      "scaleZ": 2
     },
-    "Nickname": "Layout Button Modulars",
+    "Nickname": "First Player Panel",
     "Description": "",
     "GMNotes": "",
     "AltLookAngle": {
@@ -22,9 +22,9 @@
       "z": 0
     },
     "ColorDiffuse": {
-      "r": 0.2499994,
-      "g": 0.2499994,
-      "b": 0.2499994
+      "r": 0.25,
+      "g": 0.25,
+      "b": 0.25
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,
@@ -36,12 +36,12 @@
     "DragSelectable": true,
     "Autoraise": true,
     "Sticky": true,
-    "Tooltip": false,
+    "Tooltip": true,
     "GridProjection": false,
     "HideWhenFaceDown": false,
     "Hands": false,
     "CustomImage": {
-      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/2495635126604486300/63B37C3CBBF028443DF58CC24AB16D587E79A2C3/",
+      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/2470878647719402909/1C603670A537CE3FE7F4B171197EE7513510A788/",
       "ImageSecondaryURL": "",
       "ImageScalar": 1,
       "WidthScale": 0,
@@ -52,7 +52,7 @@
         "Stretch": true
       }
     },
-    "LuaScript": "#include ./Layout_Button_Modulars.6979cc.lua",
+    "LuaScript": "#include ./First_Player_Panel.63b27d.lua",
     "LuaScriptState": "",
     "XmlUI": ""
   },

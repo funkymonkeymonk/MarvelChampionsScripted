@@ -84,6 +84,25 @@ ASSET_GUID_VILLAIN_HEALTH_COUNTER = "8cf3d6"
 ASSET_GUID_MAIN_THREAT_COUNTER    = "a9f7b8"
 ASSET_GUID_BOOST_PANEL            = "ef27d7"
 
+PLAYER_COLOR_RED = "Red"
+PLAYER_COLOR_BLUE = "Blue"
+PLAYER_COLOR_GREEN = "Green"
+PLAYER_COLOR_YELLOW = "Yellow"
+
+MESSAGE_TINT_RED = {.7804, .0902, .0824}
+MESSAGE_TINT_BLUE = {.1020, .4784, .9098}
+MESSAGE_TINT_GREEN = {.1725, .6392, .1490}
+MESSAGE_TINT_YELLOW = {.8235, .8157, .1529}
+MESSAGE_TINT_FLAVOR = {0.5, 0.5, 0.5}
+MESSAGE_TINT_INSTRUCTION = {1, 1, 1}
+MESSAGE_TINT_INFO = {1, 1, 1}
+
+MESSAGE_TYPE_FLAVOR_TEXT = "flavor"
+MESSAGE_TYPE_INSTRUCTION = "instruction"
+MESSAGE_TYPE_INFO = "info"
+MESSAGE_TYPE_PLAYER = "player"
+
+
 ZONE_SIDE_SCHEME = {
    position = {14.25, 1.00, 11.75},
    scale = {21.00, 1.00, 15.00},
@@ -126,6 +145,7 @@ IS_RESHUFFLING = false
 supressZoneInteractions = false
 
 local heroManager = nil
+local scenarioManager = nil
 
 function supressZones()
    supressZoneInteractions = true
@@ -136,23 +156,11 @@ function supressZones()
 end
 
 function onLoad()
-    -- Create context Menus
-    addContextMenuItem("Random First Player", randomFirstPlayer)
-    addContextMenuItem("Spawn Card", createUI)
+   -- Create context Menus
+   addContextMenuItem("Spawn Card", createUI)
 
-    heroManager = getObjectFromGUID(GUID_HERO_MANAGER)
-end
-
-function randomFirstPlayer()
-    local sittingPlayers = {}
-    for k,v in pairs({'White','Brown','Red','Orange','Yellow','Green','Teal','Blue','Purple','Pink','Black'}) do
-        if Player[v].seated then
-            table.insert(sittingPlayers,v)
-        end
-    end
-
-    local pickedColor = sittingPlayers[math.random(#sittingPlayers)]
-    broadcastToAll('The first player is ' .. Player[pickedColor].steam_name .. ' (' ..  pickedColor ..')')
+   heroManager = getObjectFromGUID(GUID_HERO_MANAGER)
+   scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
 end
 
 function findInRadiusBy(pos, radius, filter, debug)
@@ -193,8 +201,6 @@ function drawEncountercard(params)
    local drawToPosition = params[1]
    local isFaceUp = params[2]
    local drawToRotation = isFaceUp and {0, 180, 0} or {0, 180, 180}
-
-   local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
    local encounterDeckPosition = Vector(scenarioManager.call('getEncounterDeckPosition'))
 
    local items = findInRadiusBy(encounterDeckPosition, 4, isCardOrDeck)
@@ -216,7 +222,6 @@ function drawEncountercard(params)
 end
 
 function drawBoostcard()
-   local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
    local encounterDeckPosition = Vector(scenarioManager.call('getEncounterDeckPosition'))
    local drawToPosition = Vector(scenarioManager.call('getBoostDrawPosition'))
    local drawToRotation = {0,180,180}
@@ -242,7 +247,6 @@ end
 
 function discardBoostcard(params)
    local rotation = params[1]
-   local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
    local encounterDiscardPosition = Vector(scenarioManager.call('getEncounterDiscardPosition'))
 
    local items = findInRadiusBy(BOOST_POS, 4, isCardOrDeck)
@@ -282,7 +286,6 @@ function discardEncounterCard(params)
    local items = findInRadiusBy(encounterPosition, 4, isCardOrDeck)
 
    if #items > 0 then
-      local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
       local encounterDiscardPosition = Vector(scenarioManager.call('getEncounterDiscardPosition'))
 
      for i, v in ipairs(items) do
@@ -299,7 +302,6 @@ function discardEncounterCard(params)
 end
 
 function reshuffleEncounterDeck(drawToPosition, drawToRotation)
-   local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
    local encounterDiscardPosition = Vector(scenarioManager.call('getEncounterDiscardPosition'))
    local encounterDeckPosition = Vector(scenarioManager.call('getEncounterDeckPosition'))
    local encounterDeckSpawnPosition = {x = encounterDeckPosition.x, y = encounterDeckPosition.y + 1.5, z = encounterDeckPosition.z}
@@ -400,7 +402,6 @@ function onPlayerAction(player, action, targets)
 
       if(not zoneType) then return true end
 
-      local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
       local zones = scenarioManager.call("getZonesByType", {zoneType = zoneType})
       
       for _, zone in ipairs(zones) do
@@ -437,7 +438,6 @@ function deleteCardAtPosition(params)
 end
 
 function discardCardAtPosition(params)
-   local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
    local position = params.position
    local discardPosition = Vector(scenarioManager.call('getEncounterDiscardPosition'))
    local items = findInRadiusBy(position, 3, isCard, false)
@@ -551,7 +551,6 @@ function moveCardFromEncounterDeckById(params)
    local searchInDiscard = params.searchInDiscard or false
    local destinationPosition = nil
    local destinationRotation = nil
-   local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
    local zoneIndex = params.zoneIndex
 
    if(zoneIndex) then
@@ -620,7 +619,6 @@ function onObjectEnterZone(zone, card)
    resizeCardOnEnterZone(card, zoneType)
    positionCardOnEnterZone(card, zoneType, zoneIndex)
 
-   scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
    scenarioManager.call("onCardEnterZone", {zone=zone, card = card})
 
    Wait.frames(function()
@@ -676,7 +674,6 @@ function addThreatCounterToSideScheme(card)
    local baseThreat = cardData.baseThreat and tonumber(cardData.baseThreat) or 0
    local baseThreatIsFixed = cardData.baseThreatIsFixed == "true"
    local hinder = cardData.hinder and tonumber(cardData.hinder) or 0
-   local heroManager = getObjectFromGUID(GUID_HERO_MANAGER)
    local heroCount = heroManager.call("getHeroCount")
    local threat = 0
 
@@ -707,7 +704,6 @@ function addHealthCounterToMinion(card)
    local health = 0
 
    if(cardData.healthPerHero) then
-      local heroManager = getObjectFromGUID(GUID_HERO_MANAGER)
       local heroCount = heroManager.call("getHeroCount")
       health = cardData.health * heroManager.call("getHeroCount")
    else
@@ -811,15 +807,12 @@ end
 
 function getZoneDefinitionByIndex(params)
    local zoneIndex = params.zoneIndex
-   
-   local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
 
    return scenarioManager.call("getZoneDefinition", {zoneIndex = zoneIndex})
 end
 
 function getZoneCardCount(params)
    local zoneIndex = params.zoneIndex
-   local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
    local zoneGuid = scenarioManager.call("getZoneGuid", {zoneIndex = zoneIndex})
    local zone = getObjectFromGUID(zoneGuid)
 
@@ -1056,26 +1049,6 @@ function getCastSizeForCard(params)
 
    return orientation == "vertical" and {shortDimension, 2, longDimension} or {longDimension, 2, shortDimension}
 end
-
-
-PLAYER_COLOR_RED = "Red"
-PLAYER_COLOR_BLUE = "Blue"
-PLAYER_COLOR_GREEN = "Green"
-PLAYER_COLOR_YELLOW = "Yellow"
-
-MESSAGE_TINT_RED = {.7804, .0902, .0824}
-MESSAGE_TINT_BLUE = {.1020, .4784, .9098}
-MESSAGE_TINT_GREEN = {.1725, .6392, .1490}
-MESSAGE_TINT_YELLOW = {.8235, .8157, .1529}
-MESSAGE_TINT_FLAVOR = {0.5, 0.5, 0.5}
-MESSAGE_TINT_INSTRUCTION = {1, 1, 1}
-MESSAGE_TINT_INFO = {1, 1, 1}
-
-MESSAGE_TYPE_FLAVOR_TEXT = "flavor"
-MESSAGE_TYPE_INSTRUCTION = "instruction"
-MESSAGE_TYPE_INFO = "info"
-MESSAGE_TYPE_PLAYER = "player"
-
 
 function displayMessage(params)
    local message = params.message
