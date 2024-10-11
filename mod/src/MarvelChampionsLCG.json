@@ -1,8 +1,8 @@
 {
   "Save": {
     "SaveName": "MarvelChampionsLCG",
-    "EpochTime": 1727916301,
-    "Date": "10/2/2024 6:45:01 PM",
+    "EpochTime": 1728498598,
+    "Date": "10/9/2024 12:29:58 PM",
     "VersionNumber": "v13.3",
     "GameMode": "MarvelChampionsLCG",
     "GameType": "Game",
@@ -397,6 +397,7 @@
     "NeXt_Evolution.6b15cb.json",
     "Release_Notes.ec4436.json",
     "Sinister_Assault.898386.json",
-    "Osborn_Tech.b7a784.json"
+    "Osborn_Tech.b7a784.json",
+    "First_Player_Panel.63b27d.json"
   ]
 }

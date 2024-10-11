@@ -94,6 +94,10 @@ function getSelectedExpertSet()
   return currentScenario and currentScenario.expertSet or nil
 end
 
+function getFirstPlayer()
+  return currentScenario and currentScenario.firstPlayer or "Random"
+end
+
 function setMode(params)
   currentScenario.mode = params.mode
 
@@ -109,6 +113,11 @@ end
 
 function setExpertSet(params)
   currentScenario.expertSet = params.set
+  saveData()
+end
+
+function setFirstPlayer(params)
+  currentScenario.firstPlayer = params.firstPlayer
   saveData()
 end
 
@@ -329,7 +338,13 @@ function setUpScenario()
 
   finalizeSetUp(currentScenario)
 
+  setInitialFirstPlayer()
+
   saveData()
+end
+
+function setInitialFirstPlayer()
+  heroManager.call("setFirstPlayer", {playerColor = currentScenario.firstPlayer})
 end
 
 function placeNotes()
@@ -1243,6 +1258,9 @@ function clearScenario()
         obj.destruct()
       end
   end
+
+  local turnCounter = getObjectFromGUID("turncounter")
+  turnCounter.call('setValue', {value = 0})
 end
 
 --TODO: These functions should be moved to global
