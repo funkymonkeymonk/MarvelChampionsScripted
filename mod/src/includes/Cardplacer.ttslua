@@ -150,6 +150,7 @@ end
 
 
 function createDeck(params)
+
     local cards = params.cards
     local position = Vector(params.position)
     local scale = params.scale or Global.getTable("CARD_SCALE_PLAYER")
@@ -173,7 +174,9 @@ function createDeck(params)
             end
         end
     end
+
     newDeck = Decker.Deck(deck, {name = name})
+
     newDeck:spawn({position = position, scale = scale, rotation = rotation, name = name})
 end
 

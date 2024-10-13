@@ -13,6 +13,8 @@ INJECTED_COUNTER = true
 
 
 function onload(saved_data)
+    self.interactable = false
+    
     if saved_data ~= "" then
         local loaded_data = JSON.decode(saved_data)
         CONFIG = loaded_data
@@ -117,4 +119,11 @@ function setValue(params)
     CONFIG.VALUE = params.value
     updateVal()
     updateSave()
+end
+
+--These are here simply for convenience (so that the layout manager can use the showTile and hideTile functions on the turn counter).
+--Could create and destroy the button here, if necessary.
+function showTile()
+end
+function hideTile()
 end

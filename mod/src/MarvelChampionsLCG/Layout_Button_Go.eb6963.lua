@@ -1,7 +1,21 @@
 function onload(saved_data)
   self.interactable = false
-  local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
+  
+  createButton()
+end
 
+function updateButton(params)
+  local isEnabled = params.isEnabled
+  local fontColor = isEnabled and {1,1,1,100} or {1,1,1,70}
+
+  self.editButton({
+    index = 0,
+    font_color = fontColor
+  })
+end
+
+function createButton()
+  local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
   self.createButton({
     label = "GO",
     click_function = "setUpScenario",
@@ -16,12 +30,10 @@ function onload(saved_data)
   })
 end
 
-function updateButton(params)
-  local isEnabled = params.isEnabled
-  local fontColor = isEnabled and {1,1,1,100} or {1,1,1,70}
+function showTile()
+  createButton()
+end
 
-  self.editButton({
-    index = 0,
-    font_color = fontColor
-  })
+function hideTile()
+  self.clearButtons()
 end

@@ -357,6 +357,7 @@ local deckMeta = {
         -- [new_asset_ID] -> [new_asset_data]
         local idReplace = {}
         local assets = {}
+
         for oldAsset, newAsset in pairs(replaceTable) do
             assets[newAsset.id] = newAsset.data
             idReplace[oldAsset.id] = newAsset.id

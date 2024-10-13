@@ -361,7 +361,6 @@ function showModeButtons()
         Wait.frames(
             function()
                 local selectedFirstPlayer = scenarioManager.call("getFirstPlayer")
-                log(selectedFirstPlayer)
                 firstPlayerPanel.call("showSelection", {firstPlayer = selectedFirstPlayer})                
             end,
             10)
@@ -389,6 +388,40 @@ end
 function hideExpertSetButtons()
     hideTile(expertSetISelector)
     hideTile(expertSetIISelector)
+end
+
+function hideLayoutButtons()
+    local allObjects = getAllObjects()
+
+    for k,v in pairs(allObjects) do
+        if(v.hasTag("layout-ui")) then
+            hideTile(v)
+        end
+        if(v.hasTag("game-ui")) then
+            showTile(v, false)
+        end
+    end
+end
+
+function showLayoutButtons()
+    local allObjects = getAllObjects()
+
+    for k,v in pairs(allObjects) do
+        if(v.hasTag("game-ui")) then
+            hideTile(v)
+        end
+        if(v.hasTag("layout-ui")) then
+            showTile(v, false)
+        end
+    end
+end
+
+function hideSetupUI()
+    hideLayoutButtons()
+    hideSelectors({itemType = "hero"})
+    hideSelectors({itemType = "scenario"})
+    hideSelectors({itemType = "modular-set"})
+    hideModeButtons()
 end
 
 function showTile(tile, sendHeroes)
@@ -455,6 +488,8 @@ function showCurrentView()
 end
 
 function showHeroSelection()
+    showLayoutButtons()
+
     hideSelectors({itemType = "scenario"})
     hideSelectors({itemType = "modular-set"})
     hideModeButtons()
@@ -464,8 +499,10 @@ function showHeroSelection()
     updateSetupButtons()
     showSelectors({itemType = "hero"})
 end
-  
+
 function showScenarioSelection()
+    showLayoutButtons()
+
     hideSelectors({itemType = "hero"})
     hideSelectors({itemType = "modular-set"})
     hideModeButtons()
@@ -478,6 +515,8 @@ function showScenarioSelection()
 end
 
 function showModularSetSelection()
+    showLayoutButtons()
+
     hideSelectors({itemType = "hero"})
     hideSelectors({itemType = "scenario"})
     hideModeButtons()
@@ -490,6 +529,8 @@ function showModularSetSelection()
 end
 
 function showModeSelection()
+    showLayoutButtons()
+
     local currentScenarioKey = scenarioManager.call("getCurrentScenarioKey")
     if(currentScenarioKey == nil) then
         broadcastToAll("Please select a scenario.", {1,1,1})

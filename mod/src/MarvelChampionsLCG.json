@@ -1,8 +1,8 @@
 {
   "Save": {
     "SaveName": "MarvelChampionsLCG",
-    "EpochTime": 1728498598,
-    "Date": "10/9/2024 12:29:58 PM",
+    "EpochTime": 1728771947,
+    "Date": "10/12/2024 4:25:47 PM",
     "VersionNumber": "v13.3",
     "GameMode": "MarvelChampionsLCG",
     "GameType": "Game",
@@ -271,6 +271,18 @@
         {
           "displayed": "Green",
           "normalized": "green"
+        },
+        {
+          "displayed": "immobile",
+          "normalized": "immobile"
+        },
+        {
+          "displayed": "layout-ui",
+          "normalized": "layout-ui"
+        },
+        {
+          "displayed": "game-ui",
+          "normalized": "game-ui"
         }
       ]
     },
@@ -377,7 +389,6 @@
     "Scenario_Manager.06c2fd.json",
     "Modular_Set_Manager.608543.json",
     "Hero_Manager.ff377b.json",
-    "Custom_Token.d19a0b.json",
     "Specialized_Training_Linked_Cards.94f458.json",
     "3DText.14e87e.json",
     "Layout_Button_Go.eb6963.json",
@@ -398,6 +409,7 @@
     "Release_Notes.ec4436.json",
     "Sinister_Assault.898386.json",
     "Osborn_Tech.b7a784.json",
-    "First_Player_Panel.63b27d.json"
+    "First_Player_Panel.63b27d.json",
+    "Game_Button_Clear.c7aa04.json"
   ]
 }

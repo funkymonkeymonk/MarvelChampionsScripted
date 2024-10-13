@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "d19a0b",
-    "Name": "Custom_Token",
+    "GUID": "c7aa04",
+    "Name": "Custom_Tile",
     "Transform": {
-      "posX": -48.75,
-      "posY": 1.0152235,
-      "posZ": 29.75,
-      "rotX": 1.08477195e-7,
+      "posX": 59.55,
+      "posY": -1.5,
+      "posZ": 35.75,
+      "rotX": 0,
       "rotY": 180,
-      "rotZ": -2.00034727e-8,
-      "scaleX": 0.75,
+      "rotZ": 0,
+      "scaleX": 1.95,
       "scaleY": 1,
-      "scaleZ": 0.75
+      "scaleZ": 1.95
     },
-    "Nickname": "",
+    "Nickname": "Game Button Clear",
     "Description": "",
     "GMNotes": "",
     "AltLookAngle": {
@@ -22,10 +22,13 @@
       "z": 0
     },
     "ColorDiffuse": {
-      "r": 1,
-      "g": 1,
-      "b": 1
+      "r": 0.25,
+      "g": 0.25,
+      "b": 0.25
     },
+    "Tags": [
+      "game-ui"
+    ],
     "LayoutGroupSortIndex": 0,
     "Value": 0,
     "Locked": true,
@@ -41,18 +44,18 @@
     "HideWhenFaceDown": false,
     "Hands": false,
     "CustomImage": {
-      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/2101548510579153058/8FC91215A449F636B80560C24ABB62C46A2AE3B0/",
+      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/2476508329238019024/F96C056CE02B90986413B56023F34DFA544164B2/",
       "ImageSecondaryURL": "",
       "ImageScalar": 1,
       "WidthScale": 0,
-      "CustomToken": {
+      "CustomTile": {
+        "Type": 3,
         "Thickness": 0.1,
-        "MergeDistancePixels": 5,
-        "StandUp": false,
-        "Stackable": false
+        "Stackable": false,
+        "Stretch": true
       }
     },
-    "LuaScript": "#include ./Custom_Token.d19a0b.lua",
+    "LuaScript": "#include ./Game_Button_Clear.c7aa04.lua",
     "LuaScriptState": "",
     "XmlUI": ""
   },
