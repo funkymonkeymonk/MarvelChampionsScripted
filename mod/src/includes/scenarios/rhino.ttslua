@@ -59,3 +59,25 @@ scenarios["rhino"] =
         bombScare="recommended"
     }
 }
+
+function setUpVillainStage_rhino(params)
+  local villainKey = params.villainKey
+  local stage = params.stage
+  local stageNumber = string.sub(stage.key, -1)
+
+  if(stageNumber == "2") then
+    local breakinAndTakinCardId = "01107"
+    Global.call(
+      "moveCardFromEncounterDeckById", 
+      {
+        cardId = breakinAndTakinCardId, 
+        searchInDiscard = true,
+        zoneIndex = "sideScheme"
+      })
+    return
+  end
+
+  if(stageNumber == "3") then
+    Global.call("addStatusToAllHeroes", {statusType = "stunned"})
+  end
+end

@@ -141,6 +141,17 @@ ZONE_ENCOUNTER_DECK = {
    scale = {9.75, 2.00, 7.00}
 }
 
+ZONE_VICTORY_DISPLAY = {
+   position = {78.00, 0.50, 10.75},
+   scale = {33.00, 1.00, 23.50},
+   firstCardPosition = {66.75, 0.51, 18.25},
+   horizontalGap = 7.5,
+   verticalGap = 7.5,
+   layoutDirection = "horizontal",
+   width = 4,
+   height = 3
+}
+
 IS_RESHUFFLING = false
 supressZoneInteractions = false
 
@@ -354,17 +365,6 @@ function isFaceUp(params)
    return z > -5 and z < 5
 end
 
-function moveCardToLocation(params)
-   local origin = params.origin
-   local destination = params.destination
-   local items = findInRadiusBy(origin, 4, isCard, true)
-
-   if(#items == 1) then
-      items[1].setLock(false)
-      items[1].setPositionSmooth(destination, false, false)
-   end
-end
-
 function onPlayerAction(player, action, targets)
    if(action == Player.Action.Delete) then
       for _, target in ipairs(targets) do
@@ -469,16 +469,11 @@ function getCardData(params)
 
    if(type(card) == "table") then
       cardData = card.gm_notes or ""
-      --return getPropertyFromCardTable(card, property)
    else
       cardData = card.getGMNotes() or ""
-      --return getPropertyFromCardObject(card, property)
    end
 
    return json.decode(cardData)
-
-   --local cardId = getCardId(params)
-   --return getCardFromCardPool(cardId)
 end
 
 function getCardProperty(params)
@@ -488,26 +483,41 @@ function getCardProperty(params)
    local cardData = getCardData({card = card})
 
    return cardData[property]
-
-   -- local cardData = getCardData(params)
-   -- if (not cardData) then return nil end
-   -- return cardData[params.property]
 end
 
--- function getPropertyFromCardTable(card, property)
---    local cardData = card.gm_notes or ""
--- end
+function moveCardFromPosition(params)
+   local originPosition = params.origin
+   local destinationPosition = nil
+   local destinationRotation = nil
+   local zoneIndex = params.zoneIndex
 
--- function getPropertyFromCardObject(card, property)
---    local cardId = card.getVar("code")
+   if(zoneIndex) then
+      destinationPosition = ensureMinimumYPosition(getNewZoneCardPosition({zoneIndex = zoneIndex, forNextCard = true}), 3)
+      destinationRotation = zoneIndex == "sideScheme" and {0,90,0} or {0,180,0}
+   else
+      destinationPosition = ensureMinimumYPosition(Vector(params.destinationPosition), 3)
+      destinationRotation = params.destinationRotation and Vector(params.destinationRotation) or {0,180,0}
+   end
 
---    if(not cardId) then
---       local cardData = card.getGMNotes() or ""
---       --Decode data into object, then setVar for all properties
---    end
+   local items = findInRadiusBy(originPosition, 2, isCard)
 
---    return card.getVar(property)
--- end
+   if(#items == 1) then
+      items[1].setLock(false)
+      items[1].setPositionSmooth(destinationPosition, false, false)
+      items[1].setRotationSmooth(destinationRotation, false, false)
+   end
+end
+
+function moveCardToLocation(params)
+   local origin = params.origin
+   local destination = params.destination
+   local items = findInRadiusBy(origin, 4, isCard, true)
+
+   if(#items == 1) then
+      items[1].setLock(false)
+      items[1].setPositionSmooth(destination, false, false)
+   end
+end
 
 function moveCardFromDeckById(params)
    local cardId = params.cardId
@@ -608,7 +618,7 @@ function onObjectEnterZone(zone, card)
    if(not zoneType) then return end
 
    local cardType = getCardProperty({card = card, property = "type"})
-   if(cardType == "hero" or cardType == "villain" or cardType == "main_scheme") then
+   if(cardType == "hero" or ((cardType == "villain" or cardType == "main_scheme") and zoneType ~= "victoryDisplay")) then
       return
    end
 
@@ -620,6 +630,10 @@ function onObjectEnterZone(zone, card)
    positionCardOnEnterZone(card, zoneType, zoneIndex)
 
    scenarioManager.call("onCardEnterZone", {zone=zone, card = card})
+
+   if(zoneType == "victoryDisplay") then
+      updateVictoryDisplayDetails()
+   end
 
    Wait.frames(function()
          if(zoneType == "sideScheme") then
@@ -639,7 +653,7 @@ function resizeCardOnEnterZone(card, zoneType)
 
    if(zoneType == "hero") then
       newScale = CARD_SCALE_PLAYER
-   elseif(zoneType == "sideScheme" or zoneType == "encounterDeck" or zoneType == "attachment" or zoneType == "environment" or zoneType == "minion") then
+   elseif(zoneType == "sideScheme" or zoneType == "encounterDeck" or zoneType == "attachment" or zoneType == "environment" or zoneType == "minion" or zoneType == "victoryDisplay") then
       newScale = CARD_SCALE_ENCOUNTER
    end
 
@@ -649,13 +663,14 @@ function resizeCardOnEnterZone(card, zoneType)
 end
 
 function positionCardOnEnterZone(card, zoneType, zoneIndex)
-   if(zoneType != "sideScheme" and zoneType != "attachment" and zoneType != "environment" and zoneType != "minion") then
+   if(zoneType != "sideScheme" and zoneType != "attachment" and zoneType != "environment" and zoneType != "minion" and zoneType != "victoryDisplay") then
       return
    end
 
+   local cardType = getCardProperty({card = card, property = "type"})
    local newCardPosition = getNewZoneCardPosition({zoneIndex = zoneIndex})
    local originalRotation = card.getRotation()
-   local cardRotation = zoneType == "sideScheme" and {0,90,originalRotation[3]} or {0,180,originalRotation[3]}
+   local cardRotation = string.sub(cardType, -6, -1) == "scheme" and {0,90,originalRotation[3]} or {0,180,originalRotation[3]}
 
    card.setPositionSmooth(newCardPosition)
    card.setRotationSmooth(cardRotation)
@@ -739,6 +754,10 @@ function onObjectLeaveZone(zone, card)
    removeCounterFromCard(card)
    resizeCardOnLeaveZone(card, cardAspect)
    repositionCardsInZone({zone = zone})
+
+   if(zoneType == "victoryDisplay") then
+      updateVictoryDisplayDetails()
+   end
 end
 
 function removeCounterFromCard(card)
@@ -764,7 +783,7 @@ function repositionCardsInZone(params)
    local zoneType = zone.getVar("zoneType")
    local zoneIndex = zone.getVar("zoneIndex")
 
-   if(zoneType != "sideScheme" and zoneType != "attachment" and zoneType != "environment" and zoneType != "minion") then
+   if(zoneType != "sideScheme" and zoneType != "attachment" and zoneType != "environment" and zoneType != "minion" and zoneType != "victoryDisplay") then
       return
    end
 
@@ -785,11 +804,14 @@ function repositionCardsInZone(params)
          local cardGuid = v.getGUID()
 
          for i, item in ipairs(itemsOnCard) do
-            if(item.tag == "Tile" or (item.tag == "Card" and item.getGUID() ~= cardGuid)) then
-               local origItemPosition = item.getPosition()
-               local itemOffset = origCardPosition - origItemPosition
-               local newItemPosition = newCardPosition - itemOffset   
-               table.insert(itemsToReposition, {item = item, newPosition = newItemPosition})
+            --if(not item.hasTag("immobile")) then
+            if(item.interactable) then
+               if(item.tag == "Tile" or (item.tag == "Card" and item.getGUID() ~= cardGuid)) then
+                  local origItemPosition = item.getPosition()
+                  local itemOffset = origCardPosition - origItemPosition
+                  local newItemPosition = newCardPosition - itemOffset   
+                  table.insert(itemsToReposition, {item = item, newPosition = newItemPosition})
+               end
             end
          end
 
@@ -883,6 +905,32 @@ function getZoneCardPosition(params)
    return {x, origin[2], z}
 end
 
+function updateVictoryDisplayDetails()
+   local zoneGuid = scenarioManager.call("getZoneGuid", {zoneIndex = "victoryDisplay"})
+   local zone = getObjectFromGUID(zoneGuid)
+
+   if(not zone) then return nil end
+
+   local items = zone.getObjects()
+   local cardCount = 0
+   local victoryPoints = 0
+
+   for i, v in ipairs(items) do
+      if(v.tag == "Card") then 
+         cardCount = cardCount + 1
+
+         local cardData = getCardData({card = v})
+         victoryPoints = victoryPoints + (cardData.victory or 0)
+      end
+   end
+
+   local victoryPointsReadout = scenarioManager.call("getItemFromManifest", {key = "victoryPointsReadout"})
+   local victoryDisplayItemCountReadout = scenarioManager.call("getItemFromManifest", {key = "victoryDisplayItemCountReadout"})
+
+   victoryPointsReadout.TextTool.setValue("Victory Points: " .. victoryPoints)
+   victoryDisplayItemCountReadout.TextTool.setValue("Items: " .. cardCount)
+end
+
 function addStatusToVillain(params)
    local villain = params.villain
    local statusType = params.statusType
@@ -969,7 +1017,7 @@ function addStatusToVillain(params)
    local statusType = params.statusType
    local items = getItemsOnCard({card = card})
    local statusCount = 0
-    
+
    for _, item in ipairs(items) do
       if item.hasTag(statusType.."-status") then
         statusCount = statusCount + 1

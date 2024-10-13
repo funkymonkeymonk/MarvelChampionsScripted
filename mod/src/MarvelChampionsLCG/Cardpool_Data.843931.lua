@@ -9297,14 +9297,15 @@ PACK_21 = [[
     "type": "side_scheme",
     "aspect": "encounter",
     "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21141.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21142.jpg",
     "text": "Hinder 1[per_hero]. Victory 4.\n<b> When Defeated: </b> The first player detaches Odin from the main scheme and takes control of him. Deal each player 1 facedown encounter card.",
     "baseThreat": 4,
     "baseThreatIsFixed": true,
     "boost": 4,
     "hazard": 1,
     "hinder": 1,
-    "victory": 4
+    "victory": 4,
+    "note": "change front url to 21141"
   },
   {
     "name": "Gjallerbru",
@@ -9312,14 +9313,15 @@ PACK_21 = [[
     "type": "side_scheme",
     "aspect": "encounter",
     "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21142.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/21141.jpg",
     "text": "Hinder 1[per_hero]. Victory 3.\n<b> When Defeated: </b> The first player reveals Hall of Nastrond and Nidhogg, and puts them into play. Deal each other player 1 facedown encounter card.",
     "baseThreat": 3,
     "baseThreatIsFixed": true,
     "boost": 3,
     "amplify": 1,
     "hinder": 1,
-    "victory": 3
+    "victory": 3,
+    "note": "change front url to 21142"
   },
   {
     "name": "Garm",
@@ -22719,8 +22721,8 @@ PACK_38 = [[
     "isUnique": true,
     "traits": "Reaver.",
     "attack": 2,
-    "scheme": 2,,
-    "toughness": true
+    "scheme": 2,
+    "toughness": true,
     "boost": 2
   },
   {

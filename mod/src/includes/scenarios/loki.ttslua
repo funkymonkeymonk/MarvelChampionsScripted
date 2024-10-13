@@ -129,10 +129,7 @@ function placeVillainStage_loki(params)
   local villainRotation = villain.deckRotation or defaults.villainDeck.rotation
   local villainScale = villain.deckScale or defaults.villainDeck.scale
 
-  local stageIndex = currentScenario.lokiStageIndex
-  local x = -11.25 + ((stageIndex - 3) * 9)
-
-  Global.call("moveDeck", {origin = villainPosition, destination = {x, 1.00, 45.75}})
+  Global.call("moveCardFromPosition", {origin = villainPosition, zoneIndex = "victoryDisplay"})
 
   getCardByID(
     stage.cardId, 

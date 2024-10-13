@@ -46,6 +46,7 @@ local defaults = {
     environment = Global.getTable("ZONE_ENVIRONMENT"),
     attachment = Global.getTable("ZONE_ATTACHMENT"),
     encounterDeck = Global.getTable("ZONE_ENCOUNTER_DECK"),
+    victoryDisplay = Global.getTable("ZONE_VICTORY_DISPLAY")
   },
   boostDrawPosition = Global.getTable("BOOST_POS")
 }
@@ -297,6 +298,7 @@ end
 function setUpScenario()
   if(not confirmScenarioInputs(true)) then return end
 
+  layoutManager.call("hideSetupUI")
   prepareScenario()
 
   setUpZones()
@@ -389,11 +391,13 @@ function setUpZones()
   currentScenario.zones.environment = currentScenario.zones.environment or defaults.zones.environment
   currentScenario.zones.attachment = currentScenario.zones.attachment or defaults.zones.attachment
   currentScenario.zones.encounterDeck = currentScenario.zones.encounterDeck or defaults.zones.encounterDeck
+  currentScenario.zones.victoryDisplay = currentScenario.zones.victoryDisplay or defaults.zones.victoryDisplay
 
   local sideSchemeZoneDef = currentScenario.zones.sideScheme
   local environmentZoneDef = currentScenario.zones.environment
   local attachmentZoneDef = currentScenario.zones.attachment
   local encounterDeckZoneDef = currentScenario.zones.encounterDeck
+  local victoryDisplayZoneDef = currentScenario.zones.victoryDisplay
 
   if(sideSchemeZoneDef.position) then
     spawnObject({
@@ -453,6 +457,62 @@ function setUpZones()
         currentScenario.zones.encounterDeck.guid = spawned_object.getGUID()
       end
     })
+
+    if(victoryDisplayZoneDef.position) then
+      spawnObject({
+        type = "3DText",
+        position = {78.25, 0.55, 26.25},
+        rotation = {90, 0, 0},
+        callback_function = function(spawned_object)
+          spawned_object.TextTool.setValue("Victory Display")
+          spawned_object.TextTool.setFontSize(250)
+          spawned_object.TextTool.setFontColor({1,1,1})
+          spawned_object.interactable = false
+          spawned_object.addTag("delete-with-scenario")
+          addItemToManifest("victoryDisplayHeading", spawned_object)
+        end
+      })
+
+      spawnObject({
+        type = "3DText",
+        position = {69.25, 0.51, -2.25},
+        rotation = {90, 0, 0},
+        callback_function = function(spawned_object)
+          spawned_object.TextTool.setValue("Victory Points: 0")
+          spawned_object.TextTool.setFontSize(200)
+          spawned_object.TextTool.setFontColor({1,1,1})
+          spawned_object.interactable = false
+          spawned_object.addTag("delete-with-scenario")
+          addItemToManifest("victoryPointsReadout", spawned_object)
+        end
+      })
+
+      spawnObject({
+        type = "3DText",
+        position = {87.25, 0.51, -2.25},
+        rotation = {90, 0, 0},
+        callback_function = function(spawned_object)
+          spawned_object.TextTool.setValue("Items: 0")
+          spawned_object.TextTool.setFontSize(200)
+          spawned_object.TextTool.setFontColor({1,1,1})
+          spawned_object.interactable = false
+          spawned_object.addTag("delete-with-scenario")
+          addItemToManifest("victoryDisplayItemCountReadout", spawned_object)
+        end
+      })
+
+      spawnObject({
+        type="ScriptingTrigger",
+        position = victoryDisplayZoneDef.position,
+        scale = victoryDisplayZoneDef.scale,
+        sound = false,
+        callback_function = function(spawned_object)
+          spawned_object.setVar("zoneType", "victoryDisplay")
+          spawned_object.setVar("zoneIndex", "victoryDisplay")
+          currentScenario.zones.victoryDisplay.guid = spawned_object.getGUID()
+        end
+      })
+    end
   end
 
   local selectedHeroes = heroManager.call("getSelectedHeroes")
@@ -524,6 +584,7 @@ function setUpSnapPoints()
 end
 
 function getZoneGuid(params)
+  if(not currentScenario) then return nil end
   if(not currentScenario.zones) then return nil end
   local zone = currentScenario.zones[params.zoneIndex]
   return zone.guid
@@ -533,6 +594,7 @@ function getZonesByType(params)
   local zoneType = params.zoneType
   local zones = {}
 
+  if(not currentScenario) then return zones end
   if(not currentScenario.zones) then return zones end
 
   for key, zoneDef in pairs(currentScenario.zones) do
@@ -1112,6 +1174,7 @@ function addItemToManifest(key, item)
 end
 
 function getItemFromManifest(params)
+  if(not currentScenario) then return nil end
   if(not currentScenario.manifest) then return nil end
 
   local itemGuid = currentScenario.manifest[params.key]
@@ -1234,14 +1297,30 @@ function clearScenario()
   if(currentScenario and currentScenario.zones) then
     for _, zone in pairs(currentScenario.zones) do
       if(zone.guid) then
-        getObjectFromGUID(zone.guid).destruct()
+        local zoneObject = getObjectFromGUID(zone.guid)
+        if(zoneObject) then zoneObject.destruct() end
       end
     end
   end
 
-  Global.setSnapPoints({})
+  local allObjects = getAllObjects()
+log("deleting objects woth \"delete-with-scenario\" tag") 
+  for _, obj in ipairs(allObjects) do
+    if obj.hasTag("delete-with-scenario") then
+      log("deleting " .. obj.getName())
+      obj.destruct()
+    end
+  end
 
-  clearData()
+  -- local victoryDisplayHeading = getItemFromManifest({key = "victoryDisplayHeading"})
+  -- local victoryPointsReadout = getItemFromManifest({key = "victoryPointsReadout"})
+  -- local victoryDisplayItemCountReadout = getItemFromManifest({key = "victoryDisplayItemCountReadout"})
+
+  -- victoryDisplayHeading.destruct()
+  -- victoryPointsReadout.destruct()
+  -- victoryDisplayItemCountReadout.destruct()
+
+  Global.setSnapPoints({})
 
   local clearCards = findCardsAtPosition()
 
@@ -1259,8 +1338,18 @@ function clearScenario()
       end
   end
 
+  local clearCards3 = findCardsAtPosition3()
+
+  for _, obj in ipairs(clearCards3) do
+      if obj.getVar("preventDeletion") ~= true then
+        obj.destruct()
+      end
+  end
+
   local turnCounter = getObjectFromGUID("turncounter")
   turnCounter.call('setValue', {value = 0})
+
+  clearData()
 end
 
 --TODO: These functions should be moved to global
@@ -1294,6 +1383,33 @@ function findCardsAtPosition2(obj)
      table.insert(villainAssets2, obj.hit_object)
   end
   return villainAssets2
+end 
+
+function findCardsAtPosition3(obj)
+  local objList = Physics.cast({
+     origin       = {78.00, 1.00, 0.00},
+     direction    = {0,1,0},
+     type         = 3,
+     size         = {46.00, 1.50  , 75.00},
+     max_distance = 0,
+     debug        = false,
+  })
+
+  local encounterCards = {}
+
+  for _, obj in ipairs(objList) do
+    local hitObject = obj.hit_object
+
+    if(hitObject.tag == "Card") then
+      local aspect = Global.call("getCardProperty", {card = hitObject, property = "aspect"})
+
+      if(aspect == "encounter") then
+        table.insert(encounterCards, hitObject)
+      end
+    end
+  end
+
+  return encounterCards
 end 
 
 function spawnNemesis(params)
@@ -1654,30 +1770,40 @@ function onCardEnterZone(params)
   end
 end
 
-function setUpVillainStage_rhino(params)
-  local villainKey = params.villainKey
+function placeVillainStage_mansionAttack(params)
+  local heroCount = params.heroCount
+  local villain = currentScenario.villains.brotherhood
   local stage = params.stage
-  local stageNumber = string.sub(stage.key, -1)
+  
+  local villainPosition = villain.deckPosition or defaults.villainDeck.position
+  local villainRotation = villain.deckRotation or defaults.villainDeck.rotation
+  local villainScale = villain.deckScale or defaults.villainDeck.scale
 
-  if(stageNumber == "2") then
-    local breakinAndTakinCardId = "01107"
-    Global.call(
-      "moveCardFromEncounterDeckById", 
-      {
-        cardId = breakinAndTakinCardId, 
-        searchInDiscard = true,
-        zoneIndex = "sideScheme"
-      })
-    return
-  end
+  Global.call("moveCardFromPosition", {origin = villainPosition, zoneIndex = "victoryDisplay"})
 
-  if(stageNumber == "3") then
-    Global.call("addStatusToAllHeroes", {statusType = "stunned"})
-  end
+  getCardByID(
+    stage.cardId, 
+      villainPosition, 
+      {scale = villainScale, name = villain.name, flipped = false, locked=true})
+  
+  local hitPoints = (stage.hitPoints or 0) + ((stage.hitPointsPerPlayer or 0) * heroCount)
+  local villainHpCounter = getObjectFromGUID(villain.hpCounter.guid)
+
+  Wait.frames(
+      function()
+          villainHpCounter.call("setValue", {value = hitPoints}) 
+          
+          villainHpCounter.call("setAdvanceButtonOptions", {label = "Next!"})
+
+          if(stage.showAdvanceButton) then
+              villainHpCounter.call("showAdvanceButton")
+          else
+              villainHpCounter.call("hideAdvanceButton")
+          end
+      end,
+      20
+  )
 end
-
-
-
 require('!/Cardplacer')
 
 require('!/scenarios/rhino')
