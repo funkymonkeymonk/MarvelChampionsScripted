@@ -15,7 +15,7 @@
     },
     "Nickname": "Wasp Identity",
     "Description": "",
-    "GMNotes": "",
+    "GMNotes": "{\"name\":\"Wasp\",\"code\":\"13001a\",\"type\":\"hero\",\"aspect\":\"hero\",\"health\":\"11\",\"isUnique\":\"true\",\"traits\":\"Avenger. Tiny.\",\"thwart\":\"1\",\"attack\":\"1\",\"defense\":\"2\",\"handSize\":\"5\",\"deckLimit\":\"1\"}",
     "AltLookAngle": {
       "x": 0,
       "y": 0,

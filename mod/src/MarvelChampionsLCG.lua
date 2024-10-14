@@ -320,11 +320,13 @@ function reshuffleEncounterDeck(drawToPosition, drawToRotation)
    local function move(deck)
       deck.setPositionSmooth(encounterDeckSpawnPosition, true, false)
       
-      Wait.time(function()
-         deck.takeObject({index = 0, position = drawToPosition, rotation = drawToRotation})
-         IS_RESHUFFLING = false 
-      end,
-      1)
+      if(drawToPosition) then
+         Wait.time(function()
+            deck.takeObject({index = 0, position = drawToPosition, rotation = drawToRotation})
+            IS_RESHUFFLING = false 
+         end,
+         1)
+      end
    end
 
    if IS_RESHUFFLING then
@@ -487,24 +489,14 @@ end
 
 function moveCardFromPosition(params)
    local originPosition = params.origin
-   local destinationPosition = nil
-   local destinationRotation = nil
-   local zoneIndex = params.zoneIndex
-
-   if(zoneIndex) then
-      destinationPosition = ensureMinimumYPosition(getNewZoneCardPosition({zoneIndex = zoneIndex, forNextCard = true}), 3)
-      destinationRotation = zoneIndex == "sideScheme" and {0,90,0} or {0,180,0}
-   else
-      destinationPosition = ensureMinimumYPosition(Vector(params.destinationPosition), 3)
-      destinationRotation = params.destinationRotation and Vector(params.destinationRotation) or {0,180,0}
-   end
+   local destination = calculateDestination(params)
 
    local items = findInRadiusBy(originPosition, 2, isCard)
 
    if(#items == 1) then
       items[1].setLock(false)
-      items[1].setPositionSmooth(destinationPosition, false, false)
-      items[1].setRotationSmooth(destinationRotation, false, false)
+      items[1].setPositionSmooth(destination.position, false, false)
+      items[1].setRotationSmooth(destination.rotation, false, false)
    end
 end
 
@@ -559,17 +551,8 @@ end
 function moveCardFromEncounterDeckById(params)
    local cardId = params.cardId
    local searchInDiscard = params.searchInDiscard or false
-   local destinationPosition = nil
-   local destinationRotation = nil
-   local zoneIndex = params.zoneIndex
 
-   if(zoneIndex) then
-      destinationPosition = ensureMinimumYPosition(getNewZoneCardPosition({zoneIndex = zoneIndex, forNextCard = true}), 3)
-      destinationRotation = zoneIndex == "sideScheme" and {0,90,0} or {0,180,0}
-   else
-      destinationPosition = ensureMinimumYPosition(Vector(params.destinationPosition), 3)
-      destinationRotation = params.destinationRotation and Vector(params.destinationRotation) or {0,180,0}
-   end
+   local destination = calculateDestination(params)
 
    if searchInDiscard then
       local discardPosition = Vector(scenarioManager.call('getEncounterDiscardPosition'))
@@ -577,8 +560,8 @@ function moveCardFromEncounterDeckById(params)
       if moveCardFromDeckById({
          cardId = cardId,
          deckPosition = discardPosition,
-         destinationPosition = destinationPosition,
-         destinationRotation = destinationRotation
+         destinationPosition = destination.position,
+         destinationRotation = destination.rotation
       }) then
          return
       end
@@ -589,8 +572,8 @@ function moveCardFromEncounterDeckById(params)
    moveCardFromDeckById({
       cardId = cardId,
       deckPosition = deckPosition,
-      destinationPosition = destinationPosition,
-      destinationRotation = destinationRotation
+      destinationPosition = destination.position,
+      destinationRotation = destination.rotation
    })
 end
 
@@ -1110,7 +1093,12 @@ function displayMessage(params)
          or playerColor == PLAYER_COLOR_GREEN and MESSAGE_TINT_GREEN
          or playerColor == PLAYER_COLOR_YELLOW and MESSAGE_TINT_YELLOW
 
-      broadcastToColor(message, playerColor, messageTint)
+      if(Player[playerColor].seated) then
+         broadcastToColor(message, playerColor, messageTint)
+      else
+         broadcastToAll(message, messageTint)
+      end
+
       return
    end
    
@@ -1120,4 +1108,121 @@ function displayMessage(params)
       or messageType == MESSAGE_TYPE_INFO and MESSAGE_TINT_INFO
    
    broadcastToAll(message, messageTint)
+end
+
+function calculateDestination(params)
+   local zoneIndex = params.zoneIndex
+   local minimumY = params.minimumY or 3
+   local destination = {}
+
+   if(zoneIndex) then
+      destination.position = ensureMinimumYPosition(getNewZoneCardPosition({zoneIndex = zoneIndex, forNextCard = true}), minimumY)
+      destination.rotation = zoneIndex == "sideScheme" and {0,90,0} or {0,180,0}
+   else
+      destination.position = ensureMinimumYPosition(Vector(params.destinationPosition), minimumY)
+      destination.rotation = params.destinationRotation and Vector(params.destinationRotation) or {0,180,0}
+   end
+
+   return destination
+end
+
+function getDeckOrCardAtLocation(position)
+   local objects = findInRadiusBy(position, 2, isCardOrDeck, false)
+   for _, object in pairs(objects) do
+    if(object.tag == "Deck" or object.tag == "Card") then
+     return object
+    end
+   end
+  
+   return nil
+end
+  
+function discardUntilCardFound(params)
+   local deckPosition = params.deckPosition
+   local discardPosition = params.discardPosition
+   local searchProperty = params.searchProperty
+   local searchValue = params.searchValue
+   params.minimumY = 2.5
+   local destination = calculateDestination(params)
+
+   local deck = getDeckOrCardAtLocation(deckPosition)
+
+   if not deck then
+      displayMessage({message = "No " .. searchValue .. " found in the encounter deck.", messageType = MESSAGE_TYPE_INFO})
+      reshuffleEncounterDeck()
+      return
+   end
+
+   local cardCount = deck.tag == "Deck" and #deck.getObjects() or 1
+
+   local cardFound = false
+
+   function discardCoroutine()
+      for i = 1, cardCount do
+         local card = discardCardFromDeck({
+            deckPosition = deckPosition,
+            discardPosition = discardPosition,
+            discardRotation = destination.rotation
+         })
+           
+         local cardData = getCardData({card = card})
+
+         if cardData[searchProperty] == searchValue then
+            card.setPositionSmooth(destination.position, false, false)
+            card.setRotationSmooth(destination.rotation, false, false)
+            cardFound = true
+            return 1
+         end
+
+         local count = 0
+         while count < 40 do
+            count = count + 1
+            coroutine.yield(0)
+         end   
+      end
+
+      displayMessage({message = "No " .. searchValue .. " found in the encounter deck.", messageType = MESSAGE_TYPE_INFO})
+
+      Wait.frames(function()
+         reshuffleEncounterDeck()
+      end, 
+      30)
+
+      return 1
+   end
+   
+   startLuaCoroutine(self, "discardCoroutine")   
+end
+
+
+function discardCard(params)
+   local card = params.card
+   local discardPosition = ensureMinimumYPosition(params.discardPosition, 2.5)
+
+   card.setPositionSmooth(encounterDiscardPosition, false, false)
+   card.setRotationSmooth({0,180,0}, false, false)
+end
+
+function discardCardFromDeck(params)
+   local deckPosition = params.deckPosition
+   local discardPosition = ensureMinimumYPosition(params.discardPosition, 2.5)
+   local discardRotation = params.discardRotation or {0,180,0}
+
+   local deckOrCard = getDeckOrCardAtLocation(deckPosition)
+
+   if not deckOrCard then
+      return
+   end
+
+   local card = nil
+
+   if(deckOrCard.tag == "Deck") then
+      card = deckOrCard.takeObject({position = discardPosition, rotation = discardRotation, smooth = true})
+   else
+      card = deckOrCard
+      card.setPositionSmooth(discardPosition, false, false)
+      card.setRotationSmooth(discardRotation, false, false)
+   end
+
+   return card
 end

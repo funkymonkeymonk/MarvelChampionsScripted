@@ -1,6 +1,7 @@
 scenarios["klaw"] =
 {
     name="Klaw",
+    fullyScripted = true,
     tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150131516/7DC18F8C2BEC0AFE2B74AA31695A21E7B34621F1/",
     villains={
         klaw={
@@ -15,6 +16,7 @@ scenarios["klaw"] =
                 },
                 stage2={
                     cardId="01114",
+                    hitPoints=10, -- Represents the ten hit points granted by "The Immortal Klaw" side scheme
                     hitPointsPerPlayer=18
                 },
                 stage3={
@@ -30,22 +32,16 @@ scenarios["klaw"] =
                 stage1={
                     cardId="01116",
                     startingThreat=0,
-                    targetThreatPerPlayer=6
+                    targetThreatPerPlayer=6,
+                    flavorText="The attack on the S.H.I.E.L.D. facility has been linked to an underground weapons network.\nYour investigation reveals that the criminal enterprise is operated by Klaw, an old rival of the Avengers!"
                 },
                 stage2={
                     cardId="01117",
                     startingThreat=0,
-                    targetThreatPerPlayer=8
+                    targetThreatPerPlayer=8,
+                    flavorText="Klaw has found a buyer for his illegal weapons. It's up to you to stop the sale but the meeting is surrounded by Klaw's cronies!\nKlaw is meeting with the Crimson Cowl. Klaw and the mysterious figure dart into the shadows when you confront them, and KLaw's minions move to cover their escape."
                 }
             }
-        }
-    },
-    cards={
-        defenseNetwork={
-            cardId="01125",
-            position={7.25, 1.00, 16.75},
-            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
-            landscape=true
         }
     },
     decks={
@@ -59,6 +55,7 @@ scenarios["klaw"] =
                 ["01122"]=2,
                 ["01123"]=2,
                 ["01124"]=2,
+                ["01125"]=1,
                 ["01126"]=1,
                 ["01127"]=1
             }
@@ -68,3 +65,59 @@ scenarios["klaw"] =
         mastersOfEvil="recommended"
     }
 }
+
+function setUpSchemeStage_klaw_main(params)
+  local stage = params.stage
+  local stageNumber = string.sub(stage.key, -1)
+  local frameDelay = 0
+
+  if(stageNumber == "1") then
+    frameDelay = 30
+    local defensiveNetworkCardId = "01125"
+    Global.call(
+      "moveCardFromEncounterDeckById", 
+      {
+        cardId = defensiveNetworkCardId, 
+        searchInDiscard = true,
+        zoneIndex = "sideScheme"
+      })
+  end
+
+  local firstPlayerColor = heroManager.call("getFirstPlayer")
+  local minionZoneIndex = "minion-" .. firstPlayerColor
+  local deckPosition = getEncounterDeckPosition()
+  local discardPosition = getEncounterDiscardPosition()
+
+  Wait.frames(function() 
+      Global.call("discardUntilCardFound", 
+        {deckPosition = deckPosition, 
+        discardPosition = discardPosition, 
+        searchProperty = "type", 
+        searchValue = "minion", 
+        zoneIndex = minionZoneIndex})
+    end, 
+    frameDelay)
+end
+
+function setUpVillainStage_klaw(params)
+  local stage = params.stage
+  local stageNumber = string.sub(stage.key, -1)
+
+  if(stageNumber == "2") then
+    local delayFrames = 0
+    if(getMode() == "expert") then delayFrames = 70 end
+    local immortalKlawCardId = "01127"
+
+    Wait.frames(function() 
+        Global.call(
+          "moveCardFromEncounterDeckById", 
+          {
+            cardId = immortalKlawCardId, 
+            searchInDiscard = true,
+            zoneIndex = "sideScheme"
+          })
+      end, 
+      delayFrames)
+    return
+  end
+end

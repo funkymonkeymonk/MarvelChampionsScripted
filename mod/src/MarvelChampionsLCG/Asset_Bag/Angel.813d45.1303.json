@@ -15,7 +15,7 @@
     },
     "Nickname": "Angel",
     "Description": "Scanned and imported by Unicorn",
-    "GMNotes": "",
+    "GMNotes": "{\"name\":\"Angel\",\"code\":\"42001a\",\"type\":\"hero\",\"aspect\":\"hero\",\"health\":\"12\",\"isUnique\":\"true\",\"traits\":\"Aerial. X-Force.\",\"thwart\":\"2\",\"attack\":\"1\",\"defense\":\"2\",\"handSize\":\"5\",\"deckLimit\":\"1\"}",
     "AltLookAngle": {
       "x": 0,
       "y": 0,

@@ -305,9 +305,13 @@ function setUpScenario()
   
   local heroCount = heroManager.call("getHeroCount")
 
+  setInitialFirstPlayer()
+
   startLuaCoroutine(self, "setUpVillains")
   startLuaCoroutine(self, "setUpSchemes")
   startLuaCoroutine(self, "setUpDecks")
+
+  Global.call("shuffleDeck", {deckPosition = getEncounterDeckPosition()})
 
   setUpSnapPoints()
 
@@ -339,8 +343,6 @@ function setUpScenario()
   placeNotes()
 
   finalizeSetUp(currentScenario)
-
-  setInitialFirstPlayer()
 
   saveData()
 end
@@ -1304,21 +1306,12 @@ function clearScenario()
   end
 
   local allObjects = getAllObjects()
-log("deleting objects woth \"delete-with-scenario\" tag") 
+
   for _, obj in ipairs(allObjects) do
     if obj.hasTag("delete-with-scenario") then
-      log("deleting " .. obj.getName())
       obj.destruct()
     end
   end
-
-  -- local victoryDisplayHeading = getItemFromManifest({key = "victoryDisplayHeading"})
-  -- local victoryPointsReadout = getItemFromManifest({key = "victoryPointsReadout"})
-  -- local victoryDisplayItemCountReadout = getItemFromManifest({key = "victoryDisplayItemCountReadout"})
-
-  -- victoryDisplayHeading.destruct()
-  -- victoryPointsReadout.destruct()
-  -- victoryDisplayItemCountReadout.destruct()
 
   Global.setSnapPoints({})
 
@@ -1770,40 +1763,6 @@ function onCardEnterZone(params)
   end
 end
 
-function placeVillainStage_mansionAttack(params)
-  local heroCount = params.heroCount
-  local villain = currentScenario.villains.brotherhood
-  local stage = params.stage
-  
-  local villainPosition = villain.deckPosition or defaults.villainDeck.position
-  local villainRotation = villain.deckRotation or defaults.villainDeck.rotation
-  local villainScale = villain.deckScale or defaults.villainDeck.scale
-
-  Global.call("moveCardFromPosition", {origin = villainPosition, zoneIndex = "victoryDisplay"})
-
-  getCardByID(
-    stage.cardId, 
-      villainPosition, 
-      {scale = villainScale, name = villain.name, flipped = false, locked=true})
-  
-  local hitPoints = (stage.hitPoints or 0) + ((stage.hitPointsPerPlayer or 0) * heroCount)
-  local villainHpCounter = getObjectFromGUID(villain.hpCounter.guid)
-
-  Wait.frames(
-      function()
-          villainHpCounter.call("setValue", {value = hitPoints}) 
-          
-          villainHpCounter.call("setAdvanceButtonOptions", {label = "Next!"})
-
-          if(stage.showAdvanceButton) then
-              villainHpCounter.call("showAdvanceButton")
-          else
-              villainHpCounter.call("hideAdvanceButton")
-          end
-      end,
-      20
-  )
-end
 require('!/Cardplacer')
 
 require('!/scenarios/rhino')

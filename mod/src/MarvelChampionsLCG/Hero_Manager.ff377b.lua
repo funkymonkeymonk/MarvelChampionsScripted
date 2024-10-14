@@ -86,7 +86,8 @@ function placeHero(heroKey, playerColor, deckType)
 
   placeIdentity(
     hero,
-    playmatPosition
+    playmatPosition,
+    playerColor
   )
 
   placeDeck(
@@ -276,7 +277,7 @@ function configureHealthCounter(params)
  )
 end
 
-function placeIdentity(hero, playmatPosition)
+function placeIdentity(hero, playmatPosition, playerColor)
  local position = getOffsetPosition(playmatPosition, offset.identity)
  local scale = cardScale.identity
  if(hero.identityAssetGuid ~= nil) then
@@ -285,7 +286,7 @@ function placeIdentity(hero, playmatPosition)
    position = position,
    rotation = defaultRotation,
    scale = scale,
-   hero = hero,
+   playerColor = playerColor,
    callback = "configureIdentity"
   })
   return
@@ -296,7 +297,8 @@ function placeIdentity(hero, playmatPosition)
 end
 
 function configureIdentity(params)
-  local hero = params.hero
+  local playerColor = params.playerColor
+  local hero = selectedHeroes[playerColor]
   local identity = params.spawnedObject
   identity.setPosition(params.position)
   hero.identityGuid = identity.getGUID()
@@ -597,17 +599,6 @@ function placeCardFromDeck(deck, cardGuid, position, scale, rotation, flipped, d
  )
 end
 
-function getDeckOrCardAtLocation(position)
- local objects = findObjectsAtPosition(position)
- for _, object in pairs(objects) do
-  if(object.tag == "Deck" or object.tag == "Card") then
-   return object
-  end
- end
-
- return nil
-end
-
 function findObjectsAtPosition(position)
  local objList = Physics.cast({
    origin    = position,
@@ -702,7 +693,7 @@ function setFirstPlayer(params)
   if(playerColor == "Random") then
     playerColor = getRandomPlayerColor()
   end
-
+  
   local playmat = getPlaymat({playerColor = playerColor})
   if(playmat == nil) then 
     broadcastToAll("No playmat found for " .. playerColor, {1,1,1})
@@ -716,6 +707,7 @@ function setFirstPlayer(params)
   turnCounter.call('add_subtract')
 
   Global.call("displayMessage", {message = playerColor .. " is the first player!", messageType = Global.getVar("MESSAGE_TYPE_INFO")})
+  firstPlayer = playerColor
   saveData()
 end
 
