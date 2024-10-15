@@ -459,62 +459,62 @@ function setUpZones()
         currentScenario.zones.encounterDeck.guid = spawned_object.getGUID()
       end
     })
+  end
 
-    if(victoryDisplayZoneDef.position) then
-      spawnObject({
-        type = "3DText",
-        position = {78.25, 0.55, 26.25},
-        rotation = {90, 0, 0},
-        callback_function = function(spawned_object)
-          spawned_object.TextTool.setValue("Victory Display")
-          spawned_object.TextTool.setFontSize(250)
-          spawned_object.TextTool.setFontColor({1,1,1})
-          spawned_object.interactable = false
-          spawned_object.addTag("delete-with-scenario")
-          addItemToManifest("victoryDisplayHeading", spawned_object)
-        end
-      })
+  if(victoryDisplayZoneDef.position) then
+    spawnObject({
+      type = "3DText",
+      position = {78.25, 0.55, 26.25},
+      rotation = {90, 0, 0},
+      callback_function = function(spawned_object)
+        spawned_object.TextTool.setValue("Victory Display")
+        spawned_object.TextTool.setFontSize(250)
+        spawned_object.TextTool.setFontColor({1,1,1})
+        spawned_object.interactable = false
+        spawned_object.addTag("delete-with-scenario")
+        addItemToManifest("victoryDisplayHeading", spawned_object)
+      end
+    })
 
-      spawnObject({
-        type = "3DText",
-        position = {69.25, 0.51, -2.25},
-        rotation = {90, 0, 0},
-        callback_function = function(spawned_object)
-          spawned_object.TextTool.setValue("Victory Points: 0")
-          spawned_object.TextTool.setFontSize(200)
-          spawned_object.TextTool.setFontColor({1,1,1})
-          spawned_object.interactable = false
-          spawned_object.addTag("delete-with-scenario")
-          addItemToManifest("victoryPointsReadout", spawned_object)
-        end
-      })
+    spawnObject({
+      type = "3DText",
+      position = {69.25, 0.51, -2.25},
+      rotation = {90, 0, 0},
+      callback_function = function(spawned_object)
+        spawned_object.TextTool.setValue("Victory Points: 0")
+        spawned_object.TextTool.setFontSize(200)
+        spawned_object.TextTool.setFontColor({1,1,1})
+        spawned_object.interactable = false
+        spawned_object.addTag("delete-with-scenario")
+        addItemToManifest("victoryPointsReadout", spawned_object)
+      end
+    })
 
-      spawnObject({
-        type = "3DText",
-        position = {87.25, 0.51, -2.25},
-        rotation = {90, 0, 0},
-        callback_function = function(spawned_object)
-          spawned_object.TextTool.setValue("Items: 0")
-          spawned_object.TextTool.setFontSize(200)
-          spawned_object.TextTool.setFontColor({1,1,1})
-          spawned_object.interactable = false
-          spawned_object.addTag("delete-with-scenario")
-          addItemToManifest("victoryDisplayItemCountReadout", spawned_object)
-        end
-      })
+    spawnObject({
+      type = "3DText",
+      position = {87.25, 0.51, -2.25},
+      rotation = {90, 0, 0},
+      callback_function = function(spawned_object)
+        spawned_object.TextTool.setValue("Items: 0")
+        spawned_object.TextTool.setFontSize(200)
+        spawned_object.TextTool.setFontColor({1,1,1})
+        spawned_object.interactable = false
+        spawned_object.addTag("delete-with-scenario")
+        addItemToManifest("victoryDisplayItemCountReadout", spawned_object)
+      end
+    })
 
-      spawnObject({
-        type="ScriptingTrigger",
-        position = victoryDisplayZoneDef.position,
-        scale = victoryDisplayZoneDef.scale,
-        sound = false,
-        callback_function = function(spawned_object)
-          spawned_object.setVar("zoneType", "victoryDisplay")
-          spawned_object.setVar("zoneIndex", "victoryDisplay")
-          currentScenario.zones.victoryDisplay.guid = spawned_object.getGUID()
-        end
-      })
-    end
+    spawnObject({
+      type="ScriptingTrigger",
+      position = victoryDisplayZoneDef.position,
+      scale = victoryDisplayZoneDef.scale,
+      sound = false,
+      callback_function = function(spawned_object)
+        spawned_object.setVar("zoneType", "victoryDisplay")
+        spawned_object.setVar("zoneIndex", "victoryDisplay")
+        currentScenario.zones.victoryDisplay.guid = spawned_object.getGUID()
+      end
+    })
   end
 
   local selectedHeroes = heroManager.call("getSelectedHeroes")
@@ -601,7 +601,7 @@ function getZonesByType(params)
 
   for key, zoneDef in pairs(currentScenario.zones) do
     local zone = getObjectFromGUID(zoneDef.guid)
-    if(zone.getVar("zoneType") == zoneType) then
+    if(zone and zone.getVar("zoneType") == zoneType) then
       table.insert(zones, zone)
     end
   end
@@ -1681,7 +1681,7 @@ function placeSchemeStage(schemeKey, stage, heroCount)
   
   local flipped = stage.flipCard or false
 
-  if(currentScenario.fullyScripted) then flipped = true end
+  if(currentScenario.fullyScripted) then flipped = stage.flipCard == nil and true or stage.flipCard end
 
   getCardByID(
     stage.cardId, 
@@ -1762,6 +1762,8 @@ function onCardEnterZone(params)
     return
   end
 end
+
+
 
 require('!/Cardplacer')
 

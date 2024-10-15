@@ -357,6 +357,9 @@ function shuffleDeck(params)
    end
 
    local deck = items[1]
+
+   if(not deck) then return end
+
    deck.shuffle()
 end
 

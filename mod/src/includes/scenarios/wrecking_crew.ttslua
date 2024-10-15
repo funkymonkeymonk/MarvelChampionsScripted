@@ -1,6 +1,7 @@
 scenarios["wreckingCrew"] =
 {
     name="The Wrecking Crew",
+    fullyScripted = true,
     tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150148690/BBFD396544E7663BE7F363242AA077FAE4D5FA53/",
     boostPanelPosition={0.25, 1.00, 9.50},
     boostDrawPosition={-0.30, 1.10, 3.80},
@@ -128,7 +129,8 @@ scenarios["wreckingCrew"] =
                 stage1={
                     cardId="07004",
                     startingThreat=6,
-                    targetThreat=0
+                    targetThreat=0,
+                    flipCard = false
                 }
             },
             position={-26.27, 0.97, 22.79},
@@ -143,7 +145,8 @@ scenarios["wreckingCrew"] =
                 stage1={
                     cardId="07019",
                     startingThreat=5,
-                    targetThreat=0
+                    targetThreat=0,
+                    flipCard = false
                 }
             },
             position={-4.25, 0.97, 22.78},
@@ -158,7 +161,8 @@ scenarios["wreckingCrew"] =
                 stage1={
                     cardId="07034",
                     startingThreat=3,
-                    targetThreat=0
+                    targetThreat=0,
+                    flipCard = false
                 }
             },
             position={17.75, 0.97, 22.79},
@@ -173,7 +177,8 @@ scenarios["wreckingCrew"] =
                 stage1={
                     cardId="07048",
                     startingThreat=4,
-                    targetThreat=0
+                    targetThreat=0,
+                    flipCard = false 
                 }
             },
             position={39.75, 0.97, 22.73},
@@ -285,7 +290,17 @@ function finalizeSetup_wreckingCrew()
   Wait.frames(
     function()
       wreckingCrewActivate({villainKey = "wrecker"})
-      Global.setSnapPoints({})
+      
+      local snapPoints = {}
+      local decks = currentScenario.decks
+
+      for key, deck in pairs(decks) do
+        Global.call("shuffleDeck", {deckPosition = deck.position})
+        table.insert(snapPoints, {position = deck.position})
+        table.insert(snapPoints, {position = deck.discardPosition})
+      end
+
+      Global.setSnapPoints(snapPoints)
     end,
     60
   )
