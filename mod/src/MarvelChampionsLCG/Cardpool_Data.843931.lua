@@ -14374,7 +14374,7 @@ PACK_27 = [[
   {
     "name": "Skies Over New York",
     "code": "27116a",
-    "type": "main_scheme",
+    "type": "environment",
     "aspect": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/27116B.jpg",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27116A.jpg",

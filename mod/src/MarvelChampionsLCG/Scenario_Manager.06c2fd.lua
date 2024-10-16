@@ -1092,7 +1092,7 @@ function placeThreatCounter(counter, threat)
   local threatCounterPosition = counter.position or defaults.mainSchemeThreatCounter.position
   local threatCounterRotation = counter.rotation or defaults.mainSchemeThreatCounter.rotation
   local threatCounterScale = counter.scale or defaults.mainSchemeThreatCounter.scale
-
+  local counterName = counter.name or ""
   local threatCounterBag = getObjectFromGUID(Global.getVar("GUID_THREAT_COUNTER_BAG"))
   local threatCounter = threatCounterBag.takeObject({position = threatCounterPosition, smooth = false})
 
@@ -1106,6 +1106,7 @@ function placeThreatCounter(counter, threat)
       threatCounter.setRotation(threatCounterRotation)
       threatCounter.setScale(threatCounterScale)
       threatCounter.setLock(locked)
+      threatCounter.setName(counterName)
       threatCounter.call("setValue", {value = threat})
     end,
     1
@@ -1116,7 +1117,7 @@ function placeGeneralCounter(counter)
   local counterPosition = counter.position or defaults.mainSchemeThreatCounter.position
   local counterRotation = counter.rotation or defaults.mainSchemeThreatCounter.rotation
   local counterScale = counter.scale or defaults.mainSchemeThreatCounter.scale
-
+  local counterName = counter.name or ""
   local counterBag = getObjectFromGUID(Global.getVar("GUID_LARGE_GENERAL_COUNTER_BAG"))
   local generalCounter = counterBag.takeObject({position = counterPosition, smooth = false})
 
@@ -1131,6 +1132,7 @@ function placeGeneralCounter(counter)
       generalCounter.setRotation(counterRotation)
       generalCounter.setScale(counterScale)
       generalCounter.setLock(locked)
+      generalCounter.setName(counterName)
       --threatCounter.call("setValue", {value = initialThreat})
     end,
     1
@@ -1686,7 +1688,7 @@ function placeSchemeStage(schemeKey, stage, heroCount)
   getCardByID(
     stage.cardId, 
     schemePosition, 
-    {scale = schemeScale, name = scheme.name, flipped = flipped, landscape = true, locked = currentScenario.fullyScripted})
+    {scale = schemeScale, flipped = flipped, landscape = true, locked = currentScenario.fullyScripted})
 
   local counter = scheme.threatCounter or {}
 
@@ -1762,7 +1764,6 @@ function onCardEnterZone(params)
     return
   end
 end
-
 
 
 require('!/Cardplacer')

@@ -1,6 +1,7 @@
 scenarios["absorbingMan"] =
 {
     name="Absorbing Man",
+    fullyScripted = true,
     tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1833525541771241261/A31710FDD358F30518B36A6113BE984D88FA6D1A/",
     villains={
         absorbingMan={
@@ -38,6 +39,7 @@ scenarios["absorbingMan"] =
     counters={
         delay={
             type="general",
+            name="Delay",
             position={11.78, 1.09, 20.38},
             scale={0.52, 1.00, 0.52},
             locked=true
@@ -67,3 +69,59 @@ scenarios["absorbingMan"] =
         hydraPatrol="required"
     }
 }
+
+function setUpSchemeStage_absorbingMan_main(params)
+  local stage = params.stage
+  local stageNumber = string.sub(stage.key, -1)
+
+  if(stageNumber ~= "1") then return end
+
+  local deckPosition = getEncounterDeckPosition()
+  local discardPosition = getEncounterDiscardPosition()
+
+  Global.call("discardUntilCardFound", 
+    {
+      deckPosition = deckPosition, 
+      discardPosition = discardPosition, 
+      searchProperty = "type", 
+      searchValue = "environment", 
+      zoneIndex = "environment",
+      callBackFunction = "completeAbsorbingManSetup",
+      callBackTarget = self
+    })
+end
+
+function completeAbsorbingManSetup()
+  Wait.frames(
+    function()
+      local deckPosition = getEncounterDeckPosition()
+      local discardPosition = getEncounterDiscardPosition()
+
+      Global.call("moveDeck",
+      {
+        origin = discardPosition,
+        destinationPosition = Global.call("ensureMinimumYPosition", {position = deckPosition, minimumY = 2}),
+        destinationRotation = {0,180,180},
+      })
+
+      Wait.frames(
+        function()
+          Global.call("shuffleDeck", {deckPosition = deckPosition})
+        end,
+        90)
+    end,
+    60)
+end
+
+function setUpVillainStage_absorbingMan(params)
+  local stage = params.stage
+  local stageNumber = string.sub(stage.key, -1)
+
+  if(stageNumber == "2") then
+    if(Global.call("cardIsInPlay", {cardId = "04092"})) then
+      Global.call("dealEncounterCardsToAllPlayers", {numberOfCards = 1})
+    else
+      Global.call("moveCardFromEncounterDeckById", {cardId = "04092", searchInDiscard = true, zoneIndex = "sideScheme"})
+    end
+  end
+end

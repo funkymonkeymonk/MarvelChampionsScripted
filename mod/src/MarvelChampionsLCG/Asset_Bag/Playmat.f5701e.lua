@@ -169,7 +169,7 @@ end
 
 function drawEncounter(object, player, isRightClick)
    local toPosition = self.positionToWorld(DRAWN_ENCOUNTER_OFFSET)
-   Global.call("drawEncountercard", {toPosition, isRightClick})
+   Global.call("dealEncounterCardToPlayer", {playerColor = getValue("playerColor"), faceUp = isRightClick})
 end
 
 function discardEncounter(object, player_color, isRightClick)
@@ -283,4 +283,8 @@ function removeSelfDestructButtons()
    removeButtonByLabel("CONFIRM")
 
    setValue("showSelfDestruct", false)
+end
+
+function getEncounterCardPosition()
+   return self.positionToWorld(DRAWN_ENCOUNTER_OFFSET)
 end

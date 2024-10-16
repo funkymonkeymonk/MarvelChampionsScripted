@@ -208,28 +208,53 @@ function isCardOrDeck(x)
    return isCard(x) or isDeck(x)
 end
 
-function drawEncountercard(params)
-   local drawToPosition = params[1]
-   local isFaceUp = params[2]
-   local drawToRotation = isFaceUp and {0, 180, 0} or {0, 180, 180}
+function dealEncounterCardsToAllPlayers(params)
+   local numberOfCards = params.numberOfCards
+   local selectedHeroes = heroManager.call("getSelectedHeroes")
+
+   function dealCardsCoroutine()
+      for i = 1, numberOfCards do
+         for color, _ in pairs(selectedHeroes) do
+            dealEncounterCardToPlayer({playerColor = color})
+
+            for i = 1, 5 do
+               coroutine.yield(0)
+            end
+         end
+      end
+
+      return 1
+   end
+
+   startLuaCoroutine(self, "dealCardsCoroutine")
+end
+
+function dealEncounterCardToPlayer(params)
+   local playerColor = params.playerColor
+   local playmat = heroManager.call("getPlaymat", {playerColor = playerColor})
+   local faceUp = params.faceUp ~= nil and params.faceUp or false
+   local dealToPosition = Vector(playmat.call("getEncounterCardPosition"))
+   local dealToRotation = faceUp and {0, 180, 0} or {0, 180, 180}
    local encounterDeckPosition = Vector(scenarioManager.call('getEncounterDeckPosition'))
 
    local items = findInRadiusBy(encounterDeckPosition, 4, isCardOrDeck)
-   if #items > 0 then
-      for i, v in ipairs(items) do
-         if v.tag == 'Deck' then
-            supressZones()
-            v.takeObject({index = 0, position = drawToPosition, rotation = drawToRotation})
-            return
-         end
-      end
-      supressZones()
-      items[1].setPositionSmooth(drawToPosition, false, false)
-      items[1].setRotationSmooth(drawToRotation, false, false)
+
+   if #items == 0 then
+      reshuffleEncounterDeck(dealToPosition, dealToRotation)
       return
    end
 
-   reshuffleEncounterDeck(drawToPosition, drawToRotation)
+   for i, v in ipairs(items) do
+      if v.tag == 'Deck' then
+         supressZones()
+         v.takeObject({index = 0, position = dealToPosition, rotation = dealToRotation})
+         return
+      end
+   end
+
+   supressZones()
+   items[1].setPositionSmooth(dealToPosition, false, false)
+   items[1].setRotationSmooth(dealToRotation, false, false)
 end
 
 function drawBoostcard()
@@ -455,13 +480,18 @@ end
 
 function moveDeck(params)
    local originPosition = params.origin
-   local destinationPosition = params.destination
+   local destinationPosition = params.destinationPosition
+   local destinationRotation = params.destinationRotation
 
    local items = findInRadiusBy(originPosition, 4, isCardOrDeck)
 
    if #items == 0 then return end
 
    items[1].setPositionSmooth(destinationPosition, false, false)
+
+   if(destinationRotation) then
+      items[1].setRotationSmooth(destinationRotation, false, false)
+   end
 end
 
 function getCardId(params)
@@ -477,6 +507,8 @@ function getCardData(params)
    else
       cardData = card.getGMNotes() or ""
    end
+
+   if(cardData == "") then return {} end
 
    return json.decode(cardData)
 end
@@ -580,7 +612,10 @@ function moveCardFromEncounterDeckById(params)
    })
 end
 
-function ensureMinimumYPosition(position, minimumY)
+function ensureMinimumYPosition(params)
+   position = Vector(params.position)
+   minimumY = params.minimumY
+
    if(position.y ~= nil) then
       if(position.y < minimumY) then
          position.y = minimumY
@@ -1119,10 +1154,10 @@ function calculateDestination(params)
    local destination = {}
 
    if(zoneIndex) then
-      destination.position = ensureMinimumYPosition(getNewZoneCardPosition({zoneIndex = zoneIndex, forNextCard = true}), minimumY)
+      destination.position = ensureMinimumYPosition({position = getNewZoneCardPosition({zoneIndex = zoneIndex, forNextCard = true}), minimumY = minimumY})
       destination.rotation = zoneIndex == "sideScheme" and {0,90,0} or {0,180,0}
    else
-      destination.position = ensureMinimumYPosition(Vector(params.destinationPosition), minimumY)
+      destination.position = ensureMinimumYPosition({position = params.destinationPosition, minimumY = minimumY})
       destination.rotation = params.destinationRotation and Vector(params.destinationRotation) or {0,180,0}
    end
 
@@ -1146,8 +1181,11 @@ function discardUntilCardFound(params)
    local searchProperty = params.searchProperty
    local searchValue = params.searchValue
    params.minimumY = 2.5
-   local destination = calculateDestination(params)
 
+   local callBackFunction = params.callBackFunction
+   local callBackTarget = params.callBackTarget
+
+   local destination = calculateDestination(params)
    local deck = getDeckOrCardAtLocation(deckPosition)
 
    if not deck then
@@ -1174,6 +1212,11 @@ function discardUntilCardFound(params)
             card.setPositionSmooth(destination.position, false, false)
             card.setRotationSmooth(destination.rotation, false, false)
             cardFound = true
+
+            if callBackFunction then
+               callBackTarget.call(callBackFunction)
+            end
+
             return 1
          end
 
@@ -1197,10 +1240,9 @@ function discardUntilCardFound(params)
    startLuaCoroutine(self, "discardCoroutine")   
 end
 
-
 function discardCard(params)
    local card = params.card
-   local discardPosition = ensureMinimumYPosition(params.discardPosition, 2.5)
+   local discardPosition = ensureMinimumYPosition({position = params.discardPosition, minimumY = 2.5})
 
    card.setPositionSmooth(encounterDiscardPosition, false, false)
    card.setRotationSmooth({0,180,0}, false, false)
@@ -1208,7 +1250,7 @@ end
 
 function discardCardFromDeck(params)
    local deckPosition = params.deckPosition
-   local discardPosition = ensureMinimumYPosition(params.discardPosition, 2.5)
+   local discardPosition = ensureMinimumYPosition({position = params.discardPosition, minimumY = 2.5})
    local discardRotation = params.discardRotation or {0,180,0}
 
    local deckOrCard = getDeckOrCardAtLocation(deckPosition)
@@ -1228,4 +1270,19 @@ function discardCardFromDeck(params)
    end
 
    return card
+end
+
+function cardIsInPlay(params)
+   local cardId = params.cardId
+   
+   local allObjects = getAllObjects()
+
+   for _, object in pairs(allObjects) do
+      if object.tag == "Card" then
+         local cardData = getCardData({card = object})
+         if cardData.code == cardId and isFaceUp({object = object}) then
+            return true
+         end
+      end
+   end
 end
