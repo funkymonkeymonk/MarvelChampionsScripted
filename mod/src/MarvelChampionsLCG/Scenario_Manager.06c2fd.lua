@@ -1060,6 +1060,23 @@ function placeDeck(deck)
   local deckScale = deck.scale or defaults.encounterDeck.scale
 
   createDeck({cards = deck.cards, position = deckPosition, scale = deckScale, name = deck.name})
+
+  if(deck.label) then
+    --TODO: make label position more dynamic (based on deck size and presence of carriage returns); consider allowing for customization of font size and color, and placement of label (above, below, etc.)
+    local labelPosition = Vector(deckPosition) + Vector({0,0,4})
+    spawnObject({
+      type = "3DText",
+      position = labelPosition,
+      rotation = {90, 0, 0},
+      callback_function = function(spawned_object)
+        spawned_object.TextTool.setValue(deck.label)
+        spawned_object.TextTool.setFontSize(60)
+        spawned_object.TextTool.setFontColor({1,1,1})
+        spawned_object.interactable = false
+        spawned_object.addTag("delete-with-scenario")
+      end
+    })
+  end
 end
 
 function placeScheme(schemeKey)

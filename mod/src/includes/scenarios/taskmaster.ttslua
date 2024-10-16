@@ -1,6 +1,7 @@
 scenarios["taskmaster"] =
 {
     name="Taskmaster",
+    fullyScripted = true,
     tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150144125/DE27C71D45C02DF05875C07D98ED6D04C0E09707/",
     villains={
         taskmaster={
@@ -30,17 +31,10 @@ scenarios["taskmaster"] =
                 stage1={
                     cardId="04096",
                     startingThreatPerPlayer=1,
-                    targetThreatPerPlayer=12
+                    targetThreatPerPlayer=12,
+                    flavorText="The notorious Taskmaster has been appointed Hydra's chief of police. His top priority is hunting down the outlaw heroes."
                 }
             }
-        }
-    },
-    cards={
-        hydraPatrol={
-            cardId="04154",
-            position={7.25, 0.97, 16.75},
-            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
-            landscape=true
         }
     },
     decks={
@@ -59,13 +53,14 @@ scenarios["taskmaster"] =
         },
         captiveAllies={
             name="Captive Allies",
+            label="Captive\nAllies",
             cards={
                 ["04097"]=1,
                 ["04098"]=1,
                 ["04099"]=1,
                 ["04100"]=1
             },
-            position={18.25, 0.97, 22.25},
+            position={-17.25, 1.10, 29.25},
             scale=Vector(Global.getVar("CARD_SCALE_PLAYER"))
         }
     },
@@ -74,3 +69,21 @@ scenarios["taskmaster"] =
         weaponMaster="recommended"
     }
 }
+
+function setUpSchemeStage_taskmaster_main(params)
+  local stage = params.stage
+  local stageNumber = string.sub(stage.key, -1)
+
+  if(stageNumber ~= "1") then return end
+
+  Global.call("moveCardFromEncounterDeckById", {cardId = "04154", searchInDiscard = true, zoneIndex = "sideScheme"})
+end
+
+function setUpVillainStage_taskmaster(params)
+  local stage = params.stage
+  local stageNumber = string.sub(stage.key, -1)
+
+  if(stageNumber == "1") then return end
+
+  Global.call("dealEncounterCardsToAllPlayers", {numberOfCards = 1})
+end
