@@ -1,12 +1,12 @@
 scenarios["nebula"] =
 {
     name="Nebula",
-    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150133365/FA5F252C872C3D30F0F15DCEBAE68E1C60954D2A/",
+    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/1849305905150133365/FA5F252C872C3D30F0F15DCEBAE68E1C60954D2A/",
     villains={
         nebula={
             name="Nebula",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150133365/FA5F252C872C3D30F0F15DCEBAE68E1C60954D2A/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/1849305905150133365/FA5F252C872C3D30F0F15DCEBAE68E1C60954D2A/",
             },
             stages={
                 stage1={

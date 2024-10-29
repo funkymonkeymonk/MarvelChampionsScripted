@@ -1,12 +1,12 @@
 scenarios["morlockSiege"] =
 {
     name="Morlock Siege",
-    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2291833843244459544/BB1E898F0BA53ED0B68983F5215D52535D87EE68/",
+    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/2291833843244459544/BB1E898F0BA53ED0B68983F5215D52535D87EE68/",
     villains={
         marauders={
             name="Marauders",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/2291833843244459544/BB1E898F0BA53ED0B68983F5215D52535D87EE68/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/2291833843244459544/BB1E898F0BA53ED0B68983F5215D52535D87EE68/",
                 primaryButtonLabel="Next!"
             },
         }

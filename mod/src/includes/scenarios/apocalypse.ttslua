@@ -1,12 +1,12 @@
 scenarios["apocalypse"] =
 {
     name="Apocalypse",
-    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2517025868834703987/587B38CAB721DA117272E90369EAB647655AD5DC/",
+    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/2517025868834703987/587B38CAB721DA117272E90369EAB647655AD5DC/",
     villains={
         apocalypse={
             name="Apocalypse",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/2517025868834703987/587B38CAB721DA117272E90369EAB647655AD5DC/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/2517025868834703987/587B38CAB721DA117272E90369EAB647655AD5DC/",
             },
             stages={
 --                stage1={

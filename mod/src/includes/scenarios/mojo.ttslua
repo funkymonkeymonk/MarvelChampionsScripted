@@ -1,12 +1,12 @@
 scenarios["mojo"] =
 {
     name="Mojo",
-    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473528765513/0B1849865D7DC2D609879B9D02E723B0DDE60D7F/",
+    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/2292958473528765513/0B1849865D7DC2D609879B9D02E723B0DDE60D7F/",
     villains={
         mojo={
             name="Mojo",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473528765513/0B1849865D7DC2D609879B9D02E723B0DDE60D7F/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/2292958473528765513/0B1849865D7DC2D609879B9D02E723B0DDE60D7F/",
             },
             stages={
                 stage1={

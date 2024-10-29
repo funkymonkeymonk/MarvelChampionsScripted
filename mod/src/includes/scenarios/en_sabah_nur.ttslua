@@ -1,12 +1,12 @@
 scenarios["enSabahNur"] =
 {
     name="En Sabah Nur",
-    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2517025868834704074/9CD8F7246CDDEBD1D4D830191E4C775D768894F4/",
+    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/2517025868834704074/9CD8F7246CDDEBD1D4D830191E4C775D768894F4/",
     villains={
         aplocalypse={
             name="Apocalypse",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/2517025868834704074/9CD8F7246CDDEBD1D4D830191E4C775D768894F4/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/2517025868834704074/9CD8F7246CDDEBD1D4D830191E4C775D768894F4/",
             },
             stages={
                 stage1={

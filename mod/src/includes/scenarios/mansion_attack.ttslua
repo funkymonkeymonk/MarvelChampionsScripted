@@ -1,34 +1,34 @@
 scenarios["mansionAttack"] =
 {
     name="Mansion Attack",
-    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473528765412/EEBE3A1431B9DDB3BC2A8DE11FCDCA7EDD43682E/",
+    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/2292958473528765412/EEBE3A1431B9DDB3BC2A8DE11FCDCA7EDD43682E/",
     villains={
         brotherhood={
             name="Brotherhood of Mutants",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/2035118913124026079/1346FDBB47BCA704CFA9E914755A9AAF6B1CD5A3/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/2035118913124026079/1346FDBB47BCA704CFA9E914755A9AAF6B1CD5A3/",
                 primaryButtonLabel="Next!"
             },
             stages={
                 stage1={
                     cardId="32121",
                     hitPointsPerPlayer=15,
-                    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473528765361/18F2EF694990DF4F62DF7275517FFBA76C43E3B7/"
+                    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/2292958473528765361/18F2EF694990DF4F62DF7275517FFBA76C43E3B7/"
                 },            
                 stage2={
                     cardId="32122",
                     hitPointsPerPlayer=16,
-                    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473528765412/EEBE3A1431B9DDB3BC2A8DE11FCDCA7EDD43682E/"
+                    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/2292958473528765412/EEBE3A1431B9DDB3BC2A8DE11FCDCA7EDD43682E/"
                 },
                 stage3={
                     cardId="32123",
                     hitPointsPerPlayer=14,
-                    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473528765567/4DED58EC6C41D1615634DA914E4799F9850A09F9/"
+                    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/2292958473528765567/4DED58EC6C41D1615634DA914E4799F9850A09F9/"
                 },
                 stage4={
                     cardId="32124",
                     hitPointsPerPlayer=13,
-                    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473528765637/13A26137CCD8CA92965520C2AF5E5E9EAC85D8F3/"
+                    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/2292958473528765637/13A26137CCD8CA92965520C2AF5E5E9EAC85D8F3/"
                 }
             }
         }

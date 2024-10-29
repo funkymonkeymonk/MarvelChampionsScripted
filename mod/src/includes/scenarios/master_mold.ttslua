@@ -1,12 +1,12 @@
 scenarios["masterMold"] =
 {
     name="Master Mold",
-    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473524122038/ABAAC79382821670BDD7450005D1F4201A626733/",
+    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/2292958473524122038/ABAAC79382821670BDD7450005D1F4201A626733/",
     villains={
         masterMold={
             name="Master Mold",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473524122038/ABAAC79382821670BDD7450005D1F4201A626733/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/2292958473524122038/ABAAC79382821670BDD7450005D1F4201A626733/",
             },
             stages={
                 stage1={

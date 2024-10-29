@@ -1,12 +1,12 @@
 scenarios["projectWideawake"] =
 {
     name="Project Wideawake",
-    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473528765479/A5B31FF328C8C26A05886D4A7DAD6BF06BA06C26/",
+    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/2292958473528765479/A5B31FF328C8C26A05886D4A7DAD6BF06BA06C26/",
     villains={
         sentinel={
             name="Sentinel",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473528765479/A5B31FF328C8C26A05886D4A7DAD6BF06BA06C26/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/2292958473528765479/A5B31FF328C8C26A05886D4A7DAD6BF06BA06C26/",
             },
             stages={
                 stage1={

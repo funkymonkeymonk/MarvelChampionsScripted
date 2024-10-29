@@ -1,12 +1,12 @@
 scenarios["onTheRun"] =
 {
     name="On the Run",
-    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2291833843244459602/4C2D8D4B3F7840E68D0D9E2BB30665710D441689/",
+    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/2291833843244459602/4C2D8D4B3F7840E68D0D9E2BB30665710D441689/",
     villains={
         marauders={
             name="Marauders",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/2291833843244459602/4C2D8D4B3F7840E68D0D9E2BB30665710D441689/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/2291833843244459602/4C2D8D4B3F7840E68D0D9E2BB30665710D441689/",
                 primaryButtonLabel="Next!"
             },
         }

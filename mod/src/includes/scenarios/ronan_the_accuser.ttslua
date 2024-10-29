@@ -1,12 +1,12 @@
 scenarios["ronan"] =
 {
     name="Ronan the Accuser",
-    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150140593/6ACB7C021C95822892BB77CA5BCAAF4CE7CDF49E/",
+    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/1849305905150140593/6ACB7C021C95822892BB77CA5BCAAF4CE7CDF49E/",
     villains={
         ronan={
             name="Ronan the Accuser",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150140593/6ACB7C021C95822892BB77CA5BCAAF4CE7CDF49E/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/1849305905150140593/6ACB7C021C95822892BB77CA5BCAAF4CE7CDF49E/",
             },
             stages={
                 stage1={

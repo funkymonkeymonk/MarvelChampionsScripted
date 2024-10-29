@@ -11,7 +11,7 @@
 3. Use https://compresspng.com/ to minimize the file size. 
 4. Upload the compressed image to Steam cloud. 
 5. Preview the image and make a note of the url.
-6. (If a playmat image isn't available yet, you can use this url for a plain gray background until the playmat is designed: http://cloud-3.steamusercontent.com/ugc/1867319584748543443/C10AF8349C00327F6CD68B4001654610E565A6E3/ )
+6. (If a playmat image isn't available yet, you can use this url for a plain gray background until the playmat is designed: https://steamusercontent-a.akamaihd.net/ugc/1867319584748543443/C10AF8349C00327F6CD68B4001654610E565A6E3/ )
 
 ### Prepare the decks 
 1. Go to https://marvelcdb.com and log in with the mod account

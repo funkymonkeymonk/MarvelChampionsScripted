@@ -1,14 +1,14 @@
 scenarios["towerDefense"] =
 {
     name="Tower Defense",
-    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150121236/51DE813B79BDB1100212F0F05F303100627912AC/",
+    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/1849305905150121236/51DE813B79BDB1100212F0F05F303100627912AC/",
     --placeBoostPanel=false,
     villains={
         proximaMidnight={
             name="Proxima Midnight",
             deckPosition={-6.84, 1.00, 20.44},
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150135976/E9896414070810D2509CE451A33FDFB69BD082DB/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/1849305905150135976/E9896414070810D2509CE451A33FDFB69BD082DB/",
                 position={-6.84, 1.00, 29.16}
             },
             stages={
@@ -30,7 +30,7 @@ scenarios["towerDefense"] =
             name="Corvus Glaive",
             deckPosition={5.25, 1.00, 20.43},
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150124820/5FE7B3E843483F341D1E0AD49CC49C7744EA9086/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/1849305905150124820/5FE7B3E843483F341D1E0AD49CC49C7744EA9086/",
                 position={5.25, 0.96, 29.15}
             },
             stages={

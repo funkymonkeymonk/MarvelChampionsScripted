@@ -1,12 +1,12 @@
 scenarios["stryfe"] =
 {
     name="Stryfe",
-    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473524122369/72E77A2041618A13050055D730149707949E2DBC/",
+    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/2292958473524122369/72E77A2041618A13050055D730149707949E2DBC/",
     villains={
         stryfe={
             name="Stryfe",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473524122369/72E77A2041618A13050055D730149707949E2DBC/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/2292958473524122369/72E77A2041618A13050055D730149707949E2DBC/",
             },
             stages={
                 stage1={

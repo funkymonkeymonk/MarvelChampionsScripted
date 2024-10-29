@@ -2,12 +2,12 @@ scenarios["taskmaster"] =
 {
     name="Taskmaster",
     fullyScripted = true,
-    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150144125/DE27C71D45C02DF05875C07D98ED6D04C0E09707/",
+    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/1849305905150144125/DE27C71D45C02DF05875C07D98ED6D04C0E09707/",
     villains={
         taskmaster={
             name="Taskmaster",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150144125/DE27C71D45C02DF05875C07D98ED6D04C0E09707/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/1849305905150144125/DE27C71D45C02DF05875C07D98ED6D04C0E09707/",
             },
             stages={
                 stage1={

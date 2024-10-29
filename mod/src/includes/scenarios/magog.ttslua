@@ -1,12 +1,12 @@
 scenarios["magog"] =
 {
     name="Magog",
-    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2294085177750683604/AE1B97BB22EE7A1937AC56C601D264AD81B35F18/",
+    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/2294085177750683604/AE1B97BB22EE7A1937AC56C601D264AD81B35F18/",
     villains={
         magog={
             name="Magog",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/2294085177750683604/AE1B97BB22EE7A1937AC56C601D264AD81B35F18/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/2294085177750683604/AE1B97BB22EE7A1937AC56C601D264AD81B35F18/",
             },
             stages={
                 stageA={

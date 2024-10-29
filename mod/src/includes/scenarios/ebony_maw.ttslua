@@ -1,12 +1,12 @@
 scenarios["ebonyMaw"] =
 {
     name="Ebony Maw",
-    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1833526625011328103/BF2ACCCB17F3483D19BD641EAC011EFD20ECF9B3/",
+    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/1833526625011328103/BF2ACCCB17F3483D19BD641EAC011EFD20ECF9B3/",
     villains={
         ebonyMaw={
             name="Ebony Maw",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/1833526625011328103/BF2ACCCB17F3483D19BD641EAC011EFD20ECF9B3/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/1833526625011328103/BF2ACCCB17F3483D19BD641EAC011EFD20ECF9B3/",
             },
             stages={
                 stage1={

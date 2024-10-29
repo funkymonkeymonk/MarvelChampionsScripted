@@ -2,12 +2,12 @@ scenarios["mutagenFormula"] =
 {
     name="Mutagen Formula",
     fullyScripted=true,
-    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150126338/C91FC9CB4D7BF94C206CE46B1982DF0CE750085D/",
+    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/1849305905150126338/C91FC9CB4D7BF94C206CE46B1982DF0CE750085D/",
     villains={
         greenGoblin={
             name="Green Goblin",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150126338/C91FC9CB4D7BF94C206CE46B1982DF0CE750085D/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/1849305905150126338/C91FC9CB4D7BF94C206CE46B1982DF0CE750085D/",
             },
             stages={
                 stage1={
