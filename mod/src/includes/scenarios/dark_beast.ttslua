@@ -1,12 +1,12 @@
 scenarios["darkBeast"] =
 {
     name="Dark Beast",
-    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2517025868834704120/5307B0499B55FF2BA1F2BC02F0CF2DA8DDFCE533/",
+    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/2517025868834704120/5307B0499B55FF2BA1F2BC02F0CF2DA8DDFCE533/",
     villains={
         darkBeast={
             name="Dark Beast",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/2517025868834704120/5307B0499B55FF2BA1F2BC02F0CF2DA8DDFCE533/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/2517025868834704120/5307B0499B55FF2BA1F2BC02F0CF2DA8DDFCE533/",
             },
             stages={
                 stage1={

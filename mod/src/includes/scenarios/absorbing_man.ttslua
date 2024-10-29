@@ -2,12 +2,12 @@ scenarios["absorbingMan"] =
 {
     name="Absorbing Man",
     fullyScripted = true,
-    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1833525541771241261/A31710FDD358F30518B36A6113BE984D88FA6D1A/",
+    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/1833525541771241261/A31710FDD358F30518B36A6113BE984D88FA6D1A/",
     villains={
         absorbingMan={
             name="Absorbing Man",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/1833525541771241261/A31710FDD358F30518B36A6113BE984D88FA6D1A/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/1833525541771241261/A31710FDD358F30518B36A6113BE984D88FA6D1A/",
             },
             stages={
                 stage1={

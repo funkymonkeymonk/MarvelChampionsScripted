@@ -1,12 +1,12 @@
 scenarios["misterSinister"] =
 {
     name="Mister Sinister",
-    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473524122093/56CE8F65A437E9FC78E7866B78603E2857F7DB2F/",
+    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/2292958473524122093/56CE8F65A437E9FC78E7866B78603E2857F7DB2F/",
     villains={
         misterSinister={
             name="Mister Sinister",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473524122093/56CE8F65A437E9FC78E7866B78603E2857F7DB2F/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/2292958473524122093/56CE8F65A437E9FC78E7866B78603E2857F7DB2F/",
             },
             stages={
                 stage1={

@@ -1,12 +1,12 @@
 scenarios["juggernaut"] =
 {
     name="Juggernaut",
-    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473524122230/9B0AAEDC344754B5584F337704C51388FEDE0201/",
+    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/2292958473524122230/9B0AAEDC344754B5584F337704C51388FEDE0201/",
     villains={
         juggernaut={
             name="Juggernaut",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473524122230/9B0AAEDC344754B5584F337704C51388FEDE0201/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/2292958473524122230/9B0AAEDC344754B5584F337704C51388FEDE0201/",
             },
             stages={
                 stage1={

@@ -1,12 +1,12 @@
 scenarios["venom"] =
 {
     name="Venom",
-    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015321996/340B2A0AD541B66D6F2184D8E810943AC73B7553/",
+    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/1834662762015321996/340B2A0AD541B66D6F2184D8E810943AC73B7553/",
     villains={
         venom={
             name="Venom",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/1834662762015321996/340B2A0AD541B66D6F2184D8E810943AC73B7553/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/1834662762015321996/340B2A0AD541B66D6F2184D8E810943AC73B7553/",
             },
             stages={
                 stage1={

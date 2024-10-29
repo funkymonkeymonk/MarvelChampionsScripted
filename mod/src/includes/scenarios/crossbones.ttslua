@@ -1,12 +1,12 @@
 scenarios["crossbones"] =
 {
     name="Crossbones",
-    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1833526625011331024/2436BF66FF5980186D51FFDBA4D6E4DA16CBA24C/",
+    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/1833526625011331024/2436BF66FF5980186D51FFDBA4D6E4DA16CBA24C/",
     villains={
         crossbones={
             name="Crossbones",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/1833526625011331024/2436BF66FF5980186D51FFDBA4D6E4DA16CBA24C/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/1833526625011331024/2436BF66FF5980186D51FFDBA4D6E4DA16CBA24C/",
             },
             stages={
                 stage1={

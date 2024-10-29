@@ -1,12 +1,12 @@
 scenarios["badoon"] =
 {
     name="Brotherhood of Badoon",
-    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1833525990616300296/C9276570D20792F346FDE1CC56A8C6AF0DF576F3/",
+    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/1833525990616300296/C9276570D20792F346FDE1CC56A8C6AF0DF576F3/",
     villains={
         drang={
             name="Drang",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/1833525990616300296/C9276570D20792F346FDE1CC56A8C6AF0DF576F3/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/1833525990616300296/C9276570D20792F346FDE1CC56A8C6AF0DF576F3/",
             },
             stages={
                 stage1={

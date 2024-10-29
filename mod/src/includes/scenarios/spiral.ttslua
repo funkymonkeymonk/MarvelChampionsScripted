@@ -1,12 +1,12 @@
 scenarios["spiral"] =
 {
     name="Spiral",
-    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473528765604/FDFCD5C252498E09082C204894EC5834E1B8B584/",
+    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/2292958473528765604/FDFCD5C252498E09082C204894EC5834E1B8B584/",
     villains={
         spiral={
             name="Spiral",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473528765604/FDFCD5C252498E09082C204894EC5834E1B8B584/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/2292958473528765604/FDFCD5C252498E09082C204894EC5834E1B8B584/",
             },
             stages={
                 stage1={

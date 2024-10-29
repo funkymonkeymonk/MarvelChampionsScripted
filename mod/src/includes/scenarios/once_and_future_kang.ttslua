@@ -1,7 +1,7 @@
 scenarios["kang"] =
 {
     name="The Once and Future Kang",
-    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
+    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
     useHeroObligations = false,
     villains={
 
@@ -11,7 +11,7 @@ scenarios["kang"] =
             name="Kang",
             key="stage1",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
             },
             stages={
                 stage1={
@@ -25,7 +25,7 @@ scenarios["kang"] =
             name="Immortus",
             key="stage2a",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
             },
             schemeCardId="11009",
             stages={
@@ -40,7 +40,7 @@ scenarios["kang"] =
             name="Iron Lad",
             key="stage2b",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
             },
             schemeCardId="11010",
             stages={
@@ -55,7 +55,7 @@ scenarios["kang"] =
             name="Rama-Tut",
             key="stage2c",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
             },
             schemeCardId="11011",
             stages={
@@ -70,7 +70,7 @@ scenarios["kang"] =
             name="Scarlet Centurion",
             key="stage2d",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
             },
             schemeCardId="11012",
             stages={
@@ -85,7 +85,7 @@ scenarios["kang"] =
             name="Kang",
             key="stage3",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
             },
             stages={
                 stage1={
@@ -101,7 +101,7 @@ scenarios["kang"] =
             name="Kang",
             key="stage1",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
             },
             stages={
                 stage1={
@@ -115,7 +115,7 @@ scenarios["kang"] =
             name="Immortus",
             key="stage2a",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
             },
             schemeCardId="11009",
             stages={
@@ -130,7 +130,7 @@ scenarios["kang"] =
             name="Iron Lad",
             key="stage2b",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
             },
             schemeCardId="11010",
             stages={
@@ -145,7 +145,7 @@ scenarios["kang"] =
             name="Rama-Tut",
             key="stage2c",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
             },
             schemeCardId="11011",
             stages={
@@ -160,7 +160,7 @@ scenarios["kang"] =
             name="Scarlet Centurion",
             key="stage2d",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
             },
             schemeCardId="11012",
             stages={
@@ -175,7 +175,7 @@ scenarios["kang"] =
             name="Kang",
             key="stage3",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
             },
             stages={
                 stage1={

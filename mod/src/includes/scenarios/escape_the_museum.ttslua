@@ -1,12 +1,12 @@
 scenarios["escapeMuseum"] =
 {
     name="Escape the Museum",
-    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1833526258727804015/5DDA85319568535B84FBD610334FB7C6F8BFCDF0/",
+    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/1833526258727804015/5DDA85319568535B84FBD610334FB7C6F8BFCDF0/",
     villains={
         collector={
             name="Collector",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/1833526258727804015/5DDA85319568535B84FBD610334FB7C6F8BFCDF0/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/1833526258727804015/5DDA85319568535B84FBD610334FB7C6F8BFCDF0/",
             },
             stages={
                 stageA={

@@ -1,12 +1,12 @@
 scenarios["thanos"] =
 {
     name="Thanos",
-    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150145079/54DEDEDC81C5F76EDB6DCFE7A64F64476AF811BF/",
+    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/1849305905150145079/54DEDEDC81C5F76EDB6DCFE7A64F64476AF811BF/",
     villains={
         thanos={
             name="Thanos",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150145079/54DEDEDC81C5F76EDB6DCFE7A64F64476AF811BF/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/1849305905150145079/54DEDEDC81C5F76EDB6DCFE7A64F64476AF811BF/",
             },
             stages={
                 stage1={

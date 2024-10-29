@@ -1,12 +1,12 @@
 scenarios["zola"] =
 {
     name="Zola",
-    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150149561/7BDA5483418FB33A377C93A60F7D06F1E3774351/",
+    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/1849305905150149561/7BDA5483418FB33A377C93A60F7D06F1E3774351/",
     villains={
         zola={
             name="Zola",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150149561/7BDA5483418FB33A377C93A60F7D06F1E3774351/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/1849305905150149561/7BDA5483418FB33A377C93A60F7D06F1E3774351/",
             },
             stages={
                 stage1={

@@ -1,12 +1,12 @@
 scenarios["sabretooth"] =
 {
     name="Sabretooth",
-    tileImageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473524122178/A5FC09EBFFC2BE3443F4440C4BBD5DB32594D468/",
+    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/2292958473524122178/A5FC09EBFFC2BE3443F4440C4BBD5DB32594D468/",
     villains={
         sabretooth={
             name="Sabretooth",
             hpCounter={
-                imageUrl="http://cloud-3.steamusercontent.com/ugc/2292958473524122178/A5FC09EBFFC2BE3443F4440C4BBD5DB32594D468/",
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/2292958473524122178/A5FC09EBFFC2BE3443F4440C4BBD5DB32594D468/",
             },
             stages={
                 stage1={
