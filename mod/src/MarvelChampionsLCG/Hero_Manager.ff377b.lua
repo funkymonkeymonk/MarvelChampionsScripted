@@ -18,7 +18,7 @@ local scale = {
   heroSelector = Global.getTable("SCALE_HERO_SELECTOR")
 }
 
-local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
+local playerColors = {"Red", "Blue", "Green", "Yellow"}
 
 local heroes = {}
 local selectedHeroes = {}
@@ -41,6 +41,29 @@ end
 
 function clearData()
   self.script_state = ""
+end
+
+function getPlayersInPlayerOrder()
+  local players = {}
+
+  for _, playerColor in pairs(playerColors) do
+    if(selectedHeroes[playerColor] ~= nil) then
+      table.insert(players, {playerColor = playerColor, hero = selectedHeroes[playerColor]})
+    end
+  end
+
+  for i = 1, 4, 1 do
+    local player = players[1]
+
+    if(player.playerColor ~= firstPlayer) then
+      table.remove(players, 1)
+      table.insert(players, player)
+    else
+      break
+    end
+  end
+
+  return players
 end
 
 function getSelectedHeroes()
@@ -389,7 +412,7 @@ function placeExtras(hero, playmatPosition)
    local counterBag
 
    if(item.counterType == "general") then
-    counterBag = getObjectFromGUID(Global.getVar("GENERAL_COUNTER_BAG_GUID"))
+    counterBag = getObjectFromGUID(Global.getVar("GUID_GENERAL_COUNTER_BAG"))
    end
    --get a different counter bag for other types
 
@@ -630,6 +653,7 @@ local columnGap = 5
 local rows = 12
 
 function layOutHeroes()
+  local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
   layoutManager.call("layOutSelectorTiles", {
       origin = originPosition,
       direction = "vertical",
@@ -643,6 +667,7 @@ end
 
 function layOutHeroSelectors(params)
   local heroList = params.team ~= nil and getHeroesByTeam(params.team) or heroes
+  local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
 
   layoutManager.call("layOutSelectorTiles", {
       origin = params.origin,
@@ -660,14 +685,17 @@ function layOutHeroSelectors(params)
 end
 
 function deleteHeroes()
+  local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
   layoutManager.call("clearSelectorTiles", {itemType = "hero"})
 end
 
 function hideSelectors()
+  local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
   layoutManager.call("hideSelectors", {itemType = "hero"})
 end
 
 function showSelectors()
+  local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
   layoutManager.call("showSelectors", {itemType = "hero"})
 end
 

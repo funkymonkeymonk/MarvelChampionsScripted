@@ -1,6 +1,5 @@
 preventDeletion = true
 
-local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
 local buttons = {}
 local heroes = {}
 
@@ -126,22 +125,27 @@ function createButtons(params)
 end
 
 function setFirstPlayerRandom()
+    local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
     layoutManager.call("setFirstPlayer", {firstPlayer = nil})
 end
 
 function setFirstPlayerRed()
+    local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
     layoutManager.call("setFirstPlayer", {firstPlayer = "Red"})
 end
 
 function setFirstPlayerBlue()
+    local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
     layoutManager.call("setFirstPlayer", {firstPlayer = "Blue"})
 end
 
 function setFirstPlayerGreen()
+    local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
     layoutManager.call("setFirstPlayer", {firstPlayer = "Green"})
 end
 
 function setFirstPlayerYellow()
+    local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
     layoutManager.call("setFirstPlayer", {firstPlayer = "Yellow"})
 end
 

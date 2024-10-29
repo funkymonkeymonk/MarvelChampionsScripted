@@ -72,3 +72,7 @@ function setValue(params)
   updateDisplay()
   updateSave()
 end
+
+function getValue()
+    return value
+end

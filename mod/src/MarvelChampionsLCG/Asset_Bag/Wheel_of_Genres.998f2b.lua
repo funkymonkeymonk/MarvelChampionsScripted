@@ -1,11 +1,10 @@
-local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
-
 function onload()
     self.interactable = false
     createButton()
 end
 
 function createButton()
+    local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
     local button = {
         click_function = "addNextGenre",
         function_owner = scenarioManager,

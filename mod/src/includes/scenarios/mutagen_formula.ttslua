@@ -1,6 +1,7 @@
 scenarios["mutagenFormula"] =
 {
     name="Mutagen Formula",
+    fullyScripted=true,
     tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150126338/C91FC9CB4D7BF94C206CE46B1982DF0CE750085D/",
     villains={
         greenGoblin={
@@ -30,12 +31,14 @@ scenarios["mutagenFormula"] =
                 stage1={
                     cardId="02017",
                     startingThreatPerPlayer=2,
-                    targetThreatPerPlayer=7
+                    targetThreatPerPlayer=7,
+                    flavorText="Green Goblin has released a toxic mutagen gas on New York City."
                 },
                 stage2={
                     cardId="02018",
                     startingThreatPerPlayer=4,
-                    targetThreatPerPlayer=11
+                    targetThreatPerPlayer=11,
+                    flavorText="As the cloud engulfs the city, those unfortunate enough to be caught in the vapors begin to shiver and shift, mutating into hideous goblin creatures.\nThe goblin creatures serve Green Goblin's every command. Stop Green Goblin before his monstrous militia overruns the city!"
                 }
             }
         }
@@ -65,3 +68,107 @@ scenarios["mutagenFormula"] =
         goblinGimmicks="recommended"
     }
 }
+
+function setUpSchemeStage_mutagenFormula_main(params)
+  local stage = params.stage
+  local stageNumber = string.sub(stage.key, -1)
+
+  if(stageNumber == "1") then
+    local goblinThrallCardId = "02024"
+    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
+    local players = heroManager.call("getPlayersInPlayerOrder")
+
+    function dealGoblinThrallsCoroutine()
+      for _, player in ipairs(players) do
+        Global.call("moveCardFromEncounterDeckById", {cardId = goblinThrallCardId, zoneIndex = "minion-" .. player.playerColor})
+
+        for i = 1, 25 do
+          coroutine.yield(0)
+        end
+      end
+
+      return 1
+    end
+
+    startLuaCoroutine(self, "dealGoblinThrallsCoroutine")
+  end
+
+  if(stageNumber == "2") then
+    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
+    local players = heroManager.call("getPlayersInPlayerOrder")
+
+    function placeGoblinMinionCoroutine()
+      for _, player in ipairs(players) do
+        local goblinMinionPresent = false
+        local minionZone = getZoneByIndex({zoneIndex = "minion-" .. player.playerColor})
+        local objects = minionZone.getObjects()
+
+        for _, object in ipairs(objects) do
+          if(object.tag == "Card") then
+            local cardData = Global.call("getCardData", {card = object})
+            local cardType = cardData.type
+            local traits = cardData.traits and string.lower(cardData.traits)
+
+            if(cardType == "minion" and traits and traits:find("goblin.")) then
+              goblinMinionPresent = true
+              break
+            end
+          end
+        end
+
+        if(not goblinMinionPresent) then
+          Global.call("discardFromEncounterDeck", {
+            searchFunction = "isGoblinMinion",
+            searchFunctionTarget = self,
+            zoneIndex = "minion-" .. player.playerColor,
+            cardsToDiscard = 3,
+            cardsToFind = 1,
+            stopWhenCardsFound = false,
+            notFoundMessage = "No goblin minions found for ".. player.hero.name .. ".",
+            notFoundMessageType = Global.getVar("MESSAGE_TYPE_PLAYER"),
+            playerColor = player.playerColor
+          })
+
+          for i = 1, 170 do
+            coroutine.yield(0)
+          end
+        end
+      end
+
+      return 1
+    end
+
+    startLuaCoroutine(self, "placeGoblinMinionCoroutine")
+  end
+end
+
+function isGoblinMinion (params)
+  local card = params.card
+  local cardData = Global.call("getCardData", {card = card})
+  local cardType = cardData.type
+  local traits = cardData.traits and string.lower(cardData.traits)
+
+  return cardType == "minion" and traits and traits:find("goblin.")
+end
+
+function setUpVillainStage_mutagenFormula(params)
+  local stage = params.stage
+  local stageNumber = string.sub(stage.key, -1)
+  local mode = getMode()
+  local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
+  local heroCount = heroManager.call("getHeroCount")
+  local delay = mode == "expert" and (heroCount * 60) or 0
+
+  Wait.frames(
+    function()
+      if(stageNumber == "2") then
+        Global.call("dealEncounterCardsToAllPlayers", {numberOfCards = 2})
+      end
+    end,
+    delay
+  )
+
+  if(stageNumber == "3") then
+    Global.call("dealEncounterCardsToAllPlayers", {numberOfCards = 3})
+  end
+end

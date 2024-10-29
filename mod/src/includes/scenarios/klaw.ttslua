@@ -83,20 +83,27 @@ function setUpSchemeStage_klaw_main(params)
       })
   end
 
+  local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
   local firstPlayerColor = heroManager.call("getFirstPlayer")
   local minionZoneIndex = "minion-" .. firstPlayerColor
-  local deckPosition = getEncounterDeckPosition()
-  local discardPosition = getEncounterDiscardPosition()
 
   Wait.frames(function() 
-      Global.call("discardUntilCardFound", 
-        {deckPosition = deckPosition, 
-        discardPosition = discardPosition, 
-        searchProperty = "type", 
-        searchValue = "minion", 
+      Global.call("discardFromEncounterDeck", {
+        searchFunction = "isMinion",
+        searchFunctionTarget = self,
+        cardsToFind = 1,
+        stopWhenCardsFound = true,
         zoneIndex = minionZoneIndex})
     end, 
     frameDelay)
+end
+
+function isMinion(params)
+  local card = params.card
+  local cardData = Global.call("getCardData", {card = card})
+  local cardType = cardData.type
+
+  return cardType == "minion"
 end
 
 function setUpVillainStage_klaw(params)

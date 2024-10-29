@@ -1,5 +1,3 @@
-local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
-
 function onload(saved_data)
   self.interactable = false
 
@@ -31,6 +29,7 @@ function onload(saved_data)
 end
 
 function addEncounterSet()
+  local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
   local remainingSets = scenarioManager.call("addHoodEncounterSet")
   self.editButton({index=1, label = remainingSets.." SETS REMAINING"})
 end

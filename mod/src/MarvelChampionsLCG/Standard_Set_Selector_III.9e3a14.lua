@@ -1,7 +1,5 @@
 preventDeletion = true
 
-local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
-
 function onload(saved_data)
     self.interactable = false
 end
@@ -22,6 +20,7 @@ function createButton()
 end
 
 function setStandardSet()
+    local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
     layoutManager.call("setStandardSet", {set = "iii"})
 end
 

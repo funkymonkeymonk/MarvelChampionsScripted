@@ -30257,7 +30257,9 @@ PACK_45 = [[
     "aspect": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/45075B.jpg",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45075A.jpg",
-    "text": "Permanent. Setup.\n<b>Forced Response</b>: After you place a pursuit counter here, if the number of counters here is at least 3 more than the number of players, remove each counter here → if your nemesis minion is in play, it activates against you. Otherwise, flip this card over."
+    "text": "Permanent. Setup.\n<b>Forced Response</b>: After you place a pursuit counter here, if the number of counters here is at least 3 more than the number of players, remove each counter here → if your nemesis minion is in play, it activates against you. Otherwise, flip this card over.",
+    "counter": "general",
+    "counterName": "Pursuit"
   },
   {
     "name": "Pursued by the Past",
@@ -37953,7 +37955,10 @@ PACK_02 = [[
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/02006B.jpg",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/02006A.jpg",
     "text": "Criminal Enterprise enter play with 2[per_hero] infamy counters on it. If there are no infamy counters here, flip Norman Osborn and Criminal Enterprise.",
-    "flavor": "\"Business. Is. Good.\""
+    "flavor": "\"Business. Is. Good.\"",
+    "counter": "general",
+    "counterName": "Infamy",
+    "counterValuePerHero": 2
   },
   {
     "name": "State of Madness",

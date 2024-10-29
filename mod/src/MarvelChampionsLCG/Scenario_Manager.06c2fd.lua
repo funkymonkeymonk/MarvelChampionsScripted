@@ -1,10 +1,5 @@
 preventDeletion = true
 
-local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
-local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
-local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
-local assetBag = getObjectFromGUID("91eba8")
-
 local defaults = {
   villainHpCounter = {
     position = Global.getTable("VILLAIN_HEALTH_COUNTER_POSITION"),
@@ -135,6 +130,7 @@ function useModularEncounterSets()
 end
 
 function spawnAsset(params)
+  local assetBag = getObjectFromGUID(Global.getVar("ASSET_BAG_GUID"))
   params.caller = self
   return assetBag.call("spawnAsset", params)
 end
@@ -179,18 +175,21 @@ function selectScenario(params)
     end      
   end
 
+  local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
   encounterSetManager.call("preSelectEncounterSets", {sets = currentScenario.modularSets or {}})
 
   saveData()
 end
 
 function hideSelectors()
+  local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
   layoutManager.call("hideSelectors", {itemType = "scenario"})
 end
 
 function showSelectors()
   selectedScenarioKey = currentScenario and currentScenario.key or nil
 
+  local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
   layoutManager.call("showSelectors", {itemType = "scenario"})
   layoutManager.call("highlightSelectedSelectorTile", {itemType = "scenario", itemKey = selectedScenarioKey})
 end
@@ -198,6 +197,7 @@ end
 function placeScenario(scenarioKey, mode)
   if not confirmNoScenarioIsPlaced() then return end
 
+  local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
   local heroCount = heroManager.call("getHeroCount")
   local scenario = scenarios[scenarioKey];
   local delay = 0
@@ -298,6 +298,9 @@ end
 function setUpScenario()
   if(not confirmScenarioInputs(true)) then return end
 
+  local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
+  local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
+
   layoutManager.call("hideSetupUI")
   prepareScenario()
 
@@ -321,7 +324,14 @@ function setUpScenario()
   --   end,
   --   30
   -- )
-  
+
+  Wait.frames(
+    function()
+      placeStandardSetEnvironments()
+    end,
+    15
+  )
+
   Wait.frames(
     function()
       setUpCards()
@@ -348,6 +358,7 @@ function setUpScenario()
 end
 
 function setInitialFirstPlayer()
+  local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
   heroManager.call("setFirstPlayer", {playerColor = currentScenario.firstPlayer})
 end
 
@@ -388,6 +399,8 @@ end
 
 function setUpZones()
   if(not currentScenario.zones) then currentScenario.zones = {} end
+
+  local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
 
   currentScenario.zones.sideScheme = currentScenario.zones.sideScheme or defaults.zones.sideScheme
   currentScenario.zones.environment = currentScenario.zones.environment or defaults.zones.environment
@@ -609,6 +622,15 @@ function getZonesByType(params)
   return zones
 end
 
+function getZoneByIndex(params)
+  local zoneIndex = params.zoneIndex
+
+  if(not currentScenario) then return nil end
+
+  local zoneDef = currentScenario.zones[zoneIndex]
+  return getObjectFromGUID(zoneDef.guid)
+end
+
 function getZoneDefinition(params)
   local zoneIndex = params.zoneIndex
 
@@ -618,6 +640,7 @@ function getZoneDefinition(params)
 end
 
 function heroCountIsValid(params)
+  local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
   local heroCountIsValid = heroManager.call("getHeroCount") > 0
 
   if(params and params.postMessage and not heroCountIsValid) then
@@ -639,6 +662,7 @@ end
 
 function modularSetsAreValid(params)
   local requiredEncounterSetCount = getRequiredEncounterSetCount()
+  local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
   local selectedEncounterSetCount = encounterSetManager.call("getSelectedSetCount")
   local additionalEncounterSets =  requiredEncounterSetCount - selectedEncounterSetCount
   local modularSetsAreValid = additionalEncounterSets <= 0
@@ -715,6 +739,7 @@ function getRequiredEncounterSetCount()
 end
 
 function setUpVillains()
+  local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
   local heroCount = heroManager.call("getHeroCount")
 
   for key, villain in pairs(currentScenario.villains) do
@@ -868,6 +893,7 @@ function configureMainSchemeThreatCounter(params)
 end
 
 function setUpSchemes()
+  local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
   local heroCount = heroManager.call("getHeroCount")
 
   for _, scheme in pairs(currentScenario.schemes) do
@@ -950,6 +976,7 @@ function setUpDeck(deck, isEncounterDeck)
 end
 
 function addEncounterSetsToEncounterDeck(deck)
+  local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
   local encounterSetCards = encounterSetManager.call("getCardsFromSelectedSets")
 
   for cardId, count in pairs(encounterSetCards) do
@@ -961,6 +988,7 @@ function addObligationCardsToEncounterDeck(deck)
   local useHeroObligations = currentScenario.useHeroObligations == nil or currentScenario.useHeroObligations
   if(not useHeroObligations) then return end
 
+  local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
   local obligationCards = heroManager.call("getObligationCards")
 
   for cardId, count in pairs(obligationCards) do
@@ -1001,6 +1029,16 @@ function addStandardEncounterSetsToEncounterDeck(deck)
     deck.cards["24031"]=1
     deck.cards["24032"]=1
   end
+end
+
+function placeStandardSetEnvironments()
+  local encounterDeckPosition = getEncounterDeckPosition()
+  local formidableFoeCardId = "24049"
+  local pursuedByThePastCardId = "45075"
+  local mode = getMode()
+
+  Global.call("moveCardFromEncounterDeckById", {cardId = formidableFoeCardId, searchInDiscard = true, zoneIndex = "environment", flipCard = mode == "expert"})
+  Global.call("moveCardFromEncounterDeckById", {cardId = pursuedByThePastCardId, searchInDiscard = true, zoneIndex = "environment"})
 end
 
 function setUpCards()
@@ -1454,6 +1492,7 @@ local columnGap = 5
 local rows = 12
 
 function layOutScenarios()
+  local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
   layoutManager.call("layOutSelectorTiles", {
       origin = originPosition,
       direction = "vertical",
@@ -1467,6 +1506,7 @@ function layOutScenarios()
 end
 
 function layOutScenarioSelectors(params)
+  local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
   layoutManager.call("layOutSelectorTiles", {
       origin = params.origin,
       center = params.center or {0,0.5,0},
@@ -1483,16 +1523,22 @@ function layOutScenarioSelectors(params)
 end
 
 function deleteScenarios()
+  local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
   layoutManager.call("clearSelectorTiles", {itemType = "scenario"})
 end
 
 function deleteEverything()
+  local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
   layoutManager.call("clearSelectorTiles", {itemType = "hero"})
   layoutManager.call("clearSelectorTiles", {itemType = "scenario"})
   layoutManager.call("clearSelectorTiles", {itemType = "modular-set"})
 
   clearData()
+
+  local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
   heroManager.call("clearData")
+
+  local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
   encounterSetManager.call("clearData")
 end
 
@@ -1507,6 +1553,7 @@ function deepCopy(obj, seen)
 end
 
 function advanceVillain(params)
+  local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
   local heroCount = heroManager.call("getHeroCount")
   advanceVillainStage(params.villainKey, heroCount)
 end
@@ -1639,6 +1686,7 @@ function setUpVillainStage(villain, stage, heroCount)
 end
 
 function advanceScheme(params)
+  local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
   local heroCount = heroManager.call("getHeroCount")
   advanceSchemeStage(params.schemeKey, heroCount)
 end
@@ -1729,7 +1777,7 @@ end
 
 function setUpSchemeStage(scheme, stage, heroCount)
   local functionName = "setUpSchemeStage_" .. currentScenario.key .. "_" .. scheme.key
-
+  
   if(self.getVar(functionName) ~= nil) then
     self.call(functionName, {scheme = scheme, stage=stage, heroCount=heroCount})
     return
@@ -1781,6 +1829,7 @@ function onCardEnterZone(params)
     return
   end
 end
+
 
 
 require('!/Cardplacer')
