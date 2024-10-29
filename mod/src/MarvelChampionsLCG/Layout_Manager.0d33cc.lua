@@ -1,9 +1,5 @@
 preventDeletion = true
 
-local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
-local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
-local modularSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
-
 local defaultColumnGap = 5
 local defaultRowGap = 2.5
 local defaultSelectorScale = {1.13, 1.00, 1.13}
@@ -56,6 +52,7 @@ local SELECTOR_TILE_TAG = "selector-tile"
 local currentView = "heroes"
 
 function onload(saved_data)
+    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
     heroManager.call("layOutHeroSelectors", {
         team = nil,
         origin = originPosition,
@@ -65,6 +62,7 @@ function onload(saved_data)
         selectorScale = {2, 1, 2}
     })
   
+    local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
     scenarioManager.call("layOutScenarioSelectors", {
         origin = originPosition,
         maxRowsOrColumns = columns,
@@ -75,6 +73,7 @@ function onload(saved_data)
         hidden = true
     })
 
+    local modularSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
     modularSetManager.call("layOutModularSetSelectors", {
         origin = originPosition,
         maxRowsOrColumns = columns,
@@ -86,10 +85,10 @@ function onload(saved_data)
         hidden = true
     })
 
-    Wait.frames(function()
-        updateSetupButtons()
-    end, 
-    10)
+    -- Wait.frames(function()
+    --     updateSetupButtons()
+    -- end, 
+    -- 10)
 end
 
 function layOutSelectorTiles(params)
@@ -172,7 +171,6 @@ function layOutSelectorTiles(params)
                 currentColumn = currentColumn + 1
             end            
         end
-
     end    
 end
 
@@ -340,6 +338,8 @@ function hideSelectors(params)
 end
 
 function showModeButtons()
+    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
+    local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
     local showStandardSets = scenarioUsesStandardEncounterSets
     local showExpertSets = scenarioUsesStandardEncounterSets and (scenarioManager.call("getMode") == "expert")
 
@@ -431,6 +431,7 @@ function showTile(tile, sendHeroes)
         tile.setPosition({x = currentPos.x, y = currentPos.y + hiddenSelectorOffset, z = currentPos.z})
 
         if(sendHeroes) then
+            local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
             local selectedHeroes = heroManager.call("getSelectedHeroes")
             local heroNames = {}
 
@@ -456,6 +457,7 @@ end
 
 function setView(params)
     if(params.view == "modular-sets") then
+        local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
         local currentScenarioKey = scenarioManager.call("getCurrentScenarioKey")
         if(currentScenarioKey == nil) then
             broadcastToAll("Please select a scenario.", {1,1,1})
@@ -531,6 +533,7 @@ end
 function showModeSelection()
     showLayoutButtons()
 
+    local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
     local currentScenarioKey = scenarioManager.call("getCurrentScenarioKey")
     if(currentScenarioKey == nil) then
         broadcastToAll("Please select a scenario.", {1,1,1})
@@ -549,6 +552,7 @@ function showModeSelection()
 end
 
 function updateSetupButtons()
+    local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
     local scenarioUsesModularEncounterSets = scenarioManager.call("useModularEncounterSets")
 
     local heroesAreValid = scenarioManager.call("heroCountIsValid")
@@ -567,6 +571,7 @@ end
 function highlightSelectedScenario()
     local allObjects = getAllObjects()
     local itemType = "scenario"
+    local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
     local itemKey = scenarioManager.call("getCurrentScenarioKey")
 
     for k,v in pairs(allObjects) do
@@ -585,6 +590,7 @@ end
 function highlightSelectedModularSets()
     local allObjects = getAllObjects()
     local itemType = "modular-set"
+    local modularSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
     local items = modularSetManager.call("getSelectedSetKeys")
 
     for k,v in pairs(allObjects) do
@@ -602,6 +608,7 @@ function highlightSelectedModularSets()
 end
 
 function highlightSelectedMode()
+    local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
     local selectedMode = scenarioManager.call("getMode")
     local selectedStandardSet = scenarioManager.call("getSelectedStandardSet")
     local selectedExpertSet = scenarioManager.call("getSelectedExpertSet")
@@ -642,20 +649,24 @@ function highlightSelectedMode()
 end
 
 function setupScenario()
+    local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
     scenarioManager.call("setUpScenario")
 end
 
 function placeHeroWithStarterDeck(params)
+    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
     heroManager.call("placeHeroWithStarterDeck", {heroKey = params.heroKey, playerColor = params.playerColor})
     updateSetupButtons()
 end
 
 function placeHeroWithHeroDeck(params)
+    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
     heroManager.call("placeHeroWithHeroDeck", {heroKey = params.heroKey, playerColor = params.playerColor})
     updateSetupButtons()
 end
 
 function selectScenario(params)
+    local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
     scenarioManager.call("selectScenario", {scenarioKey = params.scenarioKey})
     scenarioUsesStandardEncounterSets = scenarioManager.call("useStandardEncounterSets")
     scenarioUsesModularEncounterSets = scenarioManager.call("useModularEncounterSets")
@@ -666,6 +677,7 @@ function selectScenario(params)
 end
 
 function selectModularSet(params)
+    local modularSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
     modularSetManager.call("selectModularSet", {modularSetKey = params.modularSetKey})
 
     updateSetupButtons()
@@ -673,6 +685,7 @@ function selectModularSet(params)
 end
 
 function setMode(params)
+    local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
     scenarioManager.call("setMode", {mode = params.mode})
 
     if(params.mode == "expert" and scenarioUsesStandardEncounterSets) then
@@ -686,31 +699,36 @@ function setMode(params)
 end
 
 function setStandardSet(params)
+    local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
     scenarioManager.call("setStandardSet", {set = params.set})
     updateSetupButtons()
     highlightSelectedMode()
 end
 
 function setExpertSet(params)
+    local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
     scenarioManager.call("setExpertSet", {set = params.set})
     updateSetupButtons()
     highlightSelectedMode()
 end
 
 function setFirstPlayer(params)
+    local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
     local firstPlayer = params.firstPlayer
-    scenarioManager.call("setFirstPlayer", {firstPlayer = firstPlayer})
 
+    scenarioManager.call("setFirstPlayer", {firstPlayer = firstPlayer})
     firstPlayerPanel.call("showSelection", {firstPlayer = firstPlayer or "Random"})
 end
 
 function clearScenario()
-    scenarioManager.call("clearScenario")
+    local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
 
+    scenarioManager.call("clearScenario")
     showScenarioSelection()
 end
 
 function colorCodeModularSets(params)
+    local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
     local allObjects = getAllObjects()
     local itemType = "modular-set"
     local scenarioModularSets = params and params.sets or scenarioManager.call("getScenarioModularSets")
@@ -727,6 +745,7 @@ function colorCodeModularSets(params)
 end
 
 function callCustomSetupFunction(setupStep)
+    local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
     local scenarioKey = scenarioManager.call("getCurrentScenarioKey")
     if(not scenarioKey) then return end
 

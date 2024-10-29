@@ -60,6 +60,7 @@ PLAYMAT_OFFSET_HEALTH_COUNTER = {-10.42, 0.10, 5.50}
 PLAYMAT_OFFSET_IDENTITY       = {-9.89, 0.15, 1.00}
 PLAYMAT_OFFSET_DECK           = {-8.40, 0.30, -4.66}
 PLAYMAT_OFFSET_DISCARD        = {-11.30, 2.00, -4.66}
+PLAYMAT_OFFSET_ENCOUNTER_CARD = {-1.275, 0.5, -1.533}
 
 SETUP_BUTTON_FONT_SIZE_INACTIVE = 400
 SETUP_BUTTON_FONT_SIZE_ACTIVE   = 500
@@ -70,7 +71,7 @@ GUID_MODULAR_SET_MANAGER       = "608543"
 GUID_LAYOUT_MANAGER            = "0d33cc"
 ASSET_BAG_GUID                 = "91eba8"
 FIRST_PLAYER_TOKEN_GUID        = "d93792"
-GENERAL_COUNTER_BAG_GUID       = "aec1c4"
+GUID_GENERAL_COUNTER_BAG       = "aec1c4"
 GUID_LARGE_GENERAL_COUNTER_BAG = "65c1cc"
 GUID_THREAT_COUNTER_BAG        = "eb5d6d"
 GUID_HEALTH_COUNTER_BAG        = "029e3b"
@@ -101,7 +102,6 @@ MESSAGE_TYPE_FLAVOR_TEXT = "flavor"
 MESSAGE_TYPE_INSTRUCTION = "instruction"
 MESSAGE_TYPE_INFO = "info"
 MESSAGE_TYPE_PLAYER = "player"
-
 
 ZONE_SIDE_SCHEME = {
    position = {14.25, 1.00, 11.75},
@@ -155,9 +155,6 @@ ZONE_VICTORY_DISPLAY = {
 IS_RESHUFFLING = false
 supressZoneInteractions = false
 
-local heroManager = nil
-local scenarioManager = nil
-
 function supressZones()
    supressZoneInteractions = true
 
@@ -169,9 +166,6 @@ end
 function onLoad()
    -- Create context Menus
    addContextMenuItem("Spawn Card", createUI)
-
-   heroManager = getObjectFromGUID(GUID_HERO_MANAGER)
-   scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
 end
 
 function findInRadiusBy(pos, radius, filter, debug)
@@ -208,31 +202,60 @@ function isCardOrDeck(x)
    return isCard(x) or isDeck(x)
 end
 
-function drawEncountercard(params)
-   local drawToPosition = params[1]
-   local isFaceUp = params[2]
-   local drawToRotation = isFaceUp and {0, 180, 0} or {0, 180, 180}
+function dealEncounterCardsToAllPlayers(params)
+   local numberOfCards = params.numberOfCards
+   local heroManager = getObjectFromGUID(GUID_HERO_MANAGER)
+   local selectedHeroes = heroManager.call("getSelectedHeroes")
+
+   function dealCardsCoroutine()
+      for i = 1, numberOfCards do
+         for color, _ in pairs(selectedHeroes) do
+            dealEncounterCardToPlayer({playerColor = color})
+
+            for i = 1, 5 do
+               coroutine.yield(0)
+            end
+         end
+      end
+
+      return 1
+   end
+
+   startLuaCoroutine(self, "dealCardsCoroutine")
+end
+
+function dealEncounterCardToPlayer(params)
+   local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
+   local heroManager = getObjectFromGUID(GUID_HERO_MANAGER)
+   local playerColor = params.playerColor
+   local playmat = heroManager.call("getPlaymat", {playerColor = playerColor})
+   local faceUp = params.faceUp ~= nil and params.faceUp or false
+   local dealToPosition = Vector(playmat.call("getEncounterCardPosition"))
+   local dealToRotation = faceUp and {0, 180, 0} or {0, 180, 180}
    local encounterDeckPosition = Vector(scenarioManager.call('getEncounterDeckPosition'))
 
    local items = findInRadiusBy(encounterDeckPosition, 4, isCardOrDeck)
-   if #items > 0 then
-      for i, v in ipairs(items) do
-         if v.tag == 'Deck' then
-            supressZones()
-            v.takeObject({index = 0, position = drawToPosition, rotation = drawToRotation})
-            return
-         end
-      end
-      supressZones()
-      items[1].setPositionSmooth(drawToPosition, false, false)
-      items[1].setRotationSmooth(drawToRotation, false, false)
+
+   if #items == 0 then
+      reshuffleEncounterDeck(dealToPosition, dealToRotation)
       return
    end
 
-   reshuffleEncounterDeck(drawToPosition, drawToRotation)
+   for i, v in ipairs(items) do
+      if v.tag == 'Deck' then
+         supressZones()
+         v.takeObject({index = 0, position = dealToPosition, rotation = dealToRotation})
+         return
+      end
+   end
+
+   supressZones()
+   items[1].setPositionSmooth(dealToPosition, false, false)
+   items[1].setRotationSmooth(dealToRotation, false, false)
 end
 
 function drawBoostcard()
+   local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
    local encounterDeckPosition = Vector(scenarioManager.call('getEncounterDeckPosition'))
    local drawToPosition = Vector(scenarioManager.call('getBoostDrawPosition'))
    local drawToRotation = {0,180,180}
@@ -258,6 +281,7 @@ end
 
 function discardBoostcard(params)
    local rotation = params[1]
+   local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
    local encounterDiscardPosition = Vector(scenarioManager.call('getEncounterDiscardPosition'))
 
    local items = findInRadiusBy(BOOST_POS, 4, isCardOrDeck)
@@ -297,6 +321,7 @@ function discardEncounterCard(params)
    local items = findInRadiusBy(encounterPosition, 4, isCardOrDeck)
 
    if #items > 0 then
+      local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
       local encounterDiscardPosition = Vector(scenarioManager.call('getEncounterDiscardPosition'))
 
      for i, v in ipairs(items) do
@@ -313,19 +338,25 @@ function discardEncounterCard(params)
 end
 
 function reshuffleEncounterDeck(drawToPosition, drawToRotation)
+   local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
    local encounterDiscardPosition = Vector(scenarioManager.call('getEncounterDiscardPosition'))
    local encounterDeckPosition = Vector(scenarioManager.call('getEncounterDeckPosition'))
    local encounterDeckSpawnPosition = {x = encounterDeckPosition.x, y = encounterDeckPosition.y + 1.5, z = encounterDeckPosition.z}
 
    local function move(deck)
       deck.setPositionSmooth(encounterDeckSpawnPosition, true, false)
+
+      Wait.frames(
+         function()
+            IS_RESHUFFLING = false 
+         end, 
+         15)
       
       if(drawToPosition) then
          Wait.time(function()
             deck.takeObject({index = 0, position = drawToPosition, rotation = drawToRotation})
-            IS_RESHUFFLING = false 
          end,
-         1)
+         15)
       end
    end
 
@@ -343,6 +374,7 @@ function reshuffleEncounterDeck(drawToPosition, drawToRotation)
       end
       deck.shuffle()
       Wait.time(function() move(deck) end, 0.3)
+      displayMessage({message = "Reshuffling the encounter deck. Add an accelleration token.", messageType = MESSAGE_TYPE_INSTRUCTION})
    else
       printToAll("Couldn't find encounter discard pile to reshuffle", {1,0,0})
    end
@@ -357,6 +389,9 @@ function shuffleDeck(params)
    end
 
    local deck = items[1]
+
+   if(not deck) then return end
+
    deck.shuffle()
 end
 
@@ -404,6 +439,7 @@ function onPlayerAction(player, action, targets)
 
       if(not zoneType) then return true end
 
+      local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
       local zones = scenarioManager.call("getZonesByType", {zoneType = zoneType})
       
       for _, zone in ipairs(zones) do
@@ -441,6 +477,7 @@ end
 
 function discardCardAtPosition(params)
    local position = params.position
+   local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
    local discardPosition = Vector(scenarioManager.call('getEncounterDiscardPosition'))
    local items = findInRadiusBy(position, 3, isCard, false)
 
@@ -452,13 +489,18 @@ end
 
 function moveDeck(params)
    local originPosition = params.origin
-   local destinationPosition = params.destination
+   local destinationPosition = params.destinationPosition
+   local destinationRotation = params.destinationRotation
 
    local items = findInRadiusBy(originPosition, 4, isCardOrDeck)
 
    if #items == 0 then return end
 
    items[1].setPositionSmooth(destinationPosition, false, false)
+
+   if(destinationRotation) then
+      items[1].setRotationSmooth(destinationRotation, false, false)
+   end
 end
 
 function getCardId(params)
@@ -474,6 +516,8 @@ function getCardData(params)
    else
       cardData = card.getGMNotes() or ""
    end
+
+   if(cardData == "") then return {} end
 
    return json.decode(cardData)
 end
@@ -515,9 +559,12 @@ function moveCardFromDeckById(params)
    local cardId = params.cardId
    local deckPosition = params.deckPosition
    local destinationPosition = Vector(params.destinationPosition)
-   local destinationRotation = params.destinationRotation and Vector(params.destinationRotation) or {0,180,0}
+   local flipCard = params.flipCard or false
+   local destinationRotation = params.destinationRotation and Vector(params.destinationRotation) or Vector({0,180,0})
    local items = findInRadiusBy(deckPosition, 4, isCardOrDeck, false)
    local cardFound = false
+
+   if(flipCard) then destinationRotation["z"] = 180 end
 
    for i, v in ipairs(items) do
       if(v.tag == "Card") then
@@ -531,7 +578,6 @@ function moveCardFromDeckById(params)
       elseif(v.tag == "Deck") then
          for i, card in ipairs(v.getObjects()) do
             local id = getCardId({card = card})
-
             if(id == cardId) then
                v.takeObject({
                   guid = card.guid,
@@ -540,6 +586,7 @@ function moveCardFromDeckById(params)
                   smooth = true
                })
                cardFound = true
+               break
             end
          end
       end
@@ -551,8 +598,9 @@ end
 function moveCardFromEncounterDeckById(params)
    local cardId = params.cardId
    local searchInDiscard = params.searchInDiscard or false
-
+   local flipCard = params.flipCard or false
    local destination = calculateDestination(params)
+   local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
 
    if searchInDiscard then
       local discardPosition = Vector(scenarioManager.call('getEncounterDiscardPosition'))
@@ -561,7 +609,8 @@ function moveCardFromEncounterDeckById(params)
          cardId = cardId,
          deckPosition = discardPosition,
          destinationPosition = destination.position,
-         destinationRotation = destination.rotation
+         destinationRotation = destination.rotation,
+         flipCard = flipCard
       }) then
          return
       end
@@ -573,11 +622,15 @@ function moveCardFromEncounterDeckById(params)
       cardId = cardId,
       deckPosition = deckPosition,
       destinationPosition = destination.position,
-      destinationRotation = destination.rotation
+      destinationRotation = destination.rotation,
+      flipCard = flipCard
    })
 end
 
-function ensureMinimumYPosition(position, minimumY)
+function ensureMinimumYPosition(params)
+   position = Vector(params.position)
+   minimumY = params.minimumY
+
    if(position.y ~= nil) then
       if(position.y < minimumY) then
          position.y = minimumY
@@ -600,7 +653,9 @@ function onObjectEnterZone(zone, card)
 
    if(not zoneType) then return end
 
-   local cardType = getCardProperty({card = card, property = "type"})
+   local cardData = getCardData({card = card})
+   local cardType = cardData.type
+
    if(cardType == "hero" or ((cardType == "villain" or cardType == "main_scheme") and zoneType ~= "victoryDisplay")) then
       return
    end
@@ -612,13 +667,18 @@ function onObjectEnterZone(zone, card)
    resizeCardOnEnterZone(card, zoneType)
    positionCardOnEnterZone(card, zoneType, zoneIndex)
 
+   local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
    scenarioManager.call("onCardEnterZone", {zone=zone, card = card})
 
    if(zoneType == "victoryDisplay") then
       updateVictoryDisplayDetails()
    end
 
-   Wait.frames(function()
+   --TODO: Refactor these counter placement functions
+   Wait.condition(
+      function()
+         if(card.isDestroyed()) then return end
+
          if(zoneType == "sideScheme") then
             addThreatCounterToSideScheme(card)
          elseif(zoneType == "minion") then
@@ -627,8 +687,21 @@ function onObjectEnterZone(zone, card)
                addStatusToMinion({card = card, statusType = "tough"})
             end
          end
-      end, 
-      40)
+   
+         local counter = cardData.counter
+   
+         if(counter) then
+            if (counter == "general") then
+               addGeneralCounterToCard(card, cardData)
+            end
+         end   
+      end,
+      function()
+         return card.isDestroyed() or card.resting
+      end,
+      2
+   )
+
 end
 
 function resizeCardOnEnterZone(card, zoneType)
@@ -672,6 +745,7 @@ function addThreatCounterToSideScheme(card)
    local baseThreat = cardData.baseThreat and tonumber(cardData.baseThreat) or 0
    local baseThreatIsFixed = cardData.baseThreatIsFixed == "true"
    local hinder = cardData.hinder and tonumber(cardData.hinder) or 0
+   local heroManager = getObjectFromGUID(GUID_HERO_MANAGER)
    local heroCount = heroManager.call("getHeroCount")
    local threat = 0
 
@@ -690,6 +764,33 @@ function addThreatCounterToSideScheme(card)
    ) 
 end
 
+function addGeneralCounterToCard(card, cardData)
+   if(card.getVar("counterGuid")) then return end
+   if (not cardData) then cardData = getCardData({card = card}) end
+
+   local counterBag = getObjectFromGUID(GUID_GENERAL_COUNTER_BAG)
+   local cardPosition = card.getPosition()
+   local counterPosition = {cardPosition[1] + 1.30, cardPosition[2] + 0.10, cardPosition[3] + 0.70}
+   local counter = counterBag.takeObject({position = counterPosition, smooth = false})
+   card.setVar("counterGuid", counter.getGUID())
+   
+   --TODO: Extract this calculation into a function?
+   local baseValue = cardData.counterValue and tonumber(cardData.counterValue) or 0
+   local valuePerHero = cardData.counterValuePerHero and tonumber(cardData.counterValuePerHero) or 0
+   local heroManager = getObjectFromGUID(GUID_HERO_MANAGER)
+   local heroCount = heroManager.call("getHeroCount")
+   local value = baseValue + (heroCount * valuePerHero)
+ 
+   Wait.frames(
+      function()
+         counter.setScale({0.45, 1.00, 0.45})
+         counter.setName(cardData.counterName or "")
+         counter.call("setValue", {value = value})
+     end,
+     1
+   )    
+end
+
 function addHealthCounterToMinion(card)
    local healthCounterBag = getObjectFromGUID(GUID_HEALTH_COUNTER_BAG)
    local cardPosition = card.getPosition()
@@ -702,8 +803,9 @@ function addHealthCounterToMinion(card)
    local health = 0
 
    if(cardData.healthPerHero) then
+      local heroManager = getObjectFromGUID(GUID_HERO_MANAGER)
       local heroCount = heroManager.call("getHeroCount")
-      health = cardData.health * heroManager.call("getHeroCount")
+      health = cardData.health * heroCount
    else
       health = cardData.health
    end
@@ -812,12 +914,14 @@ end
 
 function getZoneDefinitionByIndex(params)
    local zoneIndex = params.zoneIndex
+   local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
 
    return scenarioManager.call("getZoneDefinition", {zoneIndex = zoneIndex})
 end
 
 function getZoneCardCount(params)
    local zoneIndex = params.zoneIndex
+   local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
    local zoneGuid = scenarioManager.call("getZoneGuid", {zoneIndex = zoneIndex})
    local zone = getObjectFromGUID(zoneGuid)
 
@@ -889,6 +993,7 @@ function getZoneCardPosition(params)
 end
 
 function updateVictoryDisplayDetails()
+   local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
    local zoneGuid = scenarioManager.call("getZoneGuid", {zoneIndex = "victoryDisplay"})
    local zone = getObjectFromGUID(zoneGuid)
 
@@ -939,6 +1044,7 @@ function addStatusToVillain(params)
 
  function addStatusToAllHeroes(params)
    local statusType = params.statusType
+   local heroManager = getObjectFromGUID(GUID_HERO_MANAGER)
    local heroes = heroManager.call("getSelectedHeroes")
  
    for color, _ in pairs(heroes) do
@@ -949,6 +1055,7 @@ function addStatusToVillain(params)
  function addStatusToHero(params)
    local playerColor = params.playerColor
    local statusType = params.statusType
+   local heroManager = getObjectFromGUID(GUID_HERO_MANAGER)
    local hero = heroManager.call("getHeroByPlayerColor", {playerColor = playerColor})
    local heroCard = getObjectFromGUID(hero.identityGuid)
  
@@ -1101,12 +1208,12 @@ function displayMessage(params)
 
       return
    end
-   
+
    local messageTint = 
       messageType == MESSAGE_TYPE_FLAVOR_TEXT and MESSAGE_TINT_FLAVOR
       or messageType == MESSAGE_TYPE_INSTRUCTION and MESSAGE_TINT_INSTRUCTION
       or messageType == MESSAGE_TYPE_INFO and MESSAGE_TINT_INFO
-   
+
    broadcastToAll(message, messageTint)
 end
 
@@ -1116,10 +1223,10 @@ function calculateDestination(params)
    local destination = {}
 
    if(zoneIndex) then
-      destination.position = ensureMinimumYPosition(getNewZoneCardPosition({zoneIndex = zoneIndex, forNextCard = true}), minimumY)
+      destination.position = ensureMinimumYPosition({position = getNewZoneCardPosition({zoneIndex = zoneIndex, forNextCard = true}), minimumY = minimumY})
       destination.rotation = zoneIndex == "sideScheme" and {0,90,0} or {0,180,0}
    else
-      destination.position = ensureMinimumYPosition(Vector(params.destinationPosition), minimumY)
+      destination.position = ensureMinimumYPosition({position = params.destinationPosition, minimumY = minimumY})
       destination.rotation = params.destinationRotation and Vector(params.destinationRotation) or {0,180,0}
    end
 
@@ -1127,7 +1234,11 @@ function calculateDestination(params)
 end
 
 function getDeckOrCardAtLocation(position)
-   local objects = findInRadiusBy(position, 2, isCardOrDeck, false)
+   --TODO: this is hacky
+   position = Vector(position)
+   position["y"] = 0
+
+   local objects = findInRadiusBy(position, 3, isCardOrDeck, false)
    for _, object in pairs(objects) do
     if(object.tag == "Deck" or object.tag == "Card") then
      return object
@@ -1136,68 +1247,116 @@ function getDeckOrCardAtLocation(position)
   
    return nil
 end
-  
-function discardUntilCardFound(params)
-   local deckPosition = params.deckPosition
-   local discardPosition = params.discardPosition
-   local searchProperty = params.searchProperty
-   local searchValue = params.searchValue
+
+function discardFromEncounterDeck(params)
+   local searchFunction = params.searchFunction
+   local searchFunctionTarget = params.searchFunctionTarget
+   local searchForCards = searchFunction ~= nil
+   local cardsToDiscard = params.cardsToDiscard or 0
+   local cardsToFind = params.cardsToFind or 0
+   local stopWhenCardsFound = params.stopWhenCardsFound
    params.minimumY = 2.5
+
+   local callBackFunction = params.callBackFunction
+   local callBackTarget = params.callBackTarget
+
+   local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
+   local deckPosition = Vector(scenarioManager.call("getEncounterDeckPosition"))
+   local discardPosition = Vector(scenarioManager.call("getEncounterDiscardPosition"))
+
    local destination = calculateDestination(params)
+   local deckDepleted = false
+   local cardsDiscarded = 0
+   local cardsFound = 0
+   local stopDiscarding = false
 
    local deck = getDeckOrCardAtLocation(deckPosition)
+   local discardPile = getDeckOrCardAtLocation(discardPosition)
 
    if not deck then
-      displayMessage({message = "No " .. searchValue .. " found in the encounter deck.", messageType = MESSAGE_TYPE_INFO})
       reshuffleEncounterDeck()
-      return
    end
 
-   local cardCount = deck.tag == "Deck" and #deck.getObjects() or 1
-
-   local cardFound = false
+   Wait.condition(
+      function()
+         startLuaCoroutine(self, "discardCoroutine")
+      end, 
+      function()
+         return discardPile == nil or discardPile.isDestroyed() or discardPile.resting
+      end, 
+      3, 
+      function()
+         startLuaCoroutine(self, "discardCoroutine")
+      end
+   )
 
    function discardCoroutine()
-      for i = 1, cardCount do
+      while not stopDiscarding do
          local card = discardCardFromDeck({
             deckPosition = deckPosition,
             discardPosition = discardPosition,
             discardRotation = destination.rotation
          })
-           
-         local cardData = getCardData({card = card})
 
-         if cardData[searchProperty] == searchValue then
-            card.setPositionSmooth(destination.position, false, false)
-            card.setRotationSmooth(destination.rotation, false, false)
-            cardFound = true
-            return 1
+         cardsDiscarded = cardsDiscarded + 1
+
+         if not card then
+            deckDepleted = true
+            break
          end
 
-         local count = 0
-         while count < 40 do
-            count = count + 1
-            coroutine.yield(0)
-         end   
+         if(searchForCards and cardsFound < cardsToFind) then
+            local cardIsMatch = searchFunctionTarget.call(searchFunction, {card = card})
+            if (cardIsMatch) then
+               card.setPositionSmooth(destination.position, false, false)
+               card.setRotationSmooth(destination.rotation, false, false)
+               cardsFound = cardsFound + 1
+            end
+         end
+
+         stopDiscarding = 
+            deckDepleted 
+            or (stopWhenCardsFound and cardsFound >= cardsToFind )
+            or (cardsToDiscard > 0 and cardsDiscarded >= cardsToDiscard)
+
+         if(not stopDiscarding) then
+            for i = 1, 40 do
+               coroutine.yield(0)
+            end
+         end
       end
 
-      displayMessage({message = "No " .. searchValue .. " found in the encounter deck.", messageType = MESSAGE_TYPE_INFO})
+      if callBackFunction then
+         callBackTarget.call(callBackFunction)
+      end
 
-      Wait.frames(function()
-         reshuffleEncounterDeck()
-      end, 
-      30)
+      if searchForCards and cardsFound < cardsToFind then
+         message = params.notFoundMessage
+         messageType = params.notFoundMessageType or MESSAGE_TYPE_INFO
+         playerColor = params.playerColor
+
+         if(message) then
+            displayMessage({message = message, messageType = messageType, playerColor = playerColor})
+         end
+      end
+
+      Wait.frames(
+         function()
+            local deck = getDeckOrCardAtLocation(deckPosition)
+            if(not deck) then
+               reshuffleEncounterDeck()
+            end      
+         end,
+         30
+      )
 
       return 1
-   end
-   
-   startLuaCoroutine(self, "discardCoroutine")   
+   end   
 end
-
 
 function discardCard(params)
    local card = params.card
-   local discardPosition = ensureMinimumYPosition(params.discardPosition, 2.5)
+   local discardPosition = ensureMinimumYPosition({position = params.discardPosition, minimumY = 2.5})
 
    card.setPositionSmooth(encounterDiscardPosition, false, false)
    card.setRotationSmooth({0,180,0}, false, false)
@@ -1205,13 +1364,12 @@ end
 
 function discardCardFromDeck(params)
    local deckPosition = params.deckPosition
-   local discardPosition = ensureMinimumYPosition(params.discardPosition, 2.5)
+   local discardPosition = ensureMinimumYPosition({position = params.discardPosition, minimumY = 2.5})
    local discardRotation = params.discardRotation or {0,180,0}
-
    local deckOrCard = getDeckOrCardAtLocation(deckPosition)
 
    if not deckOrCard then
-      return
+      return nil
    end
 
    local card = nil
@@ -1225,4 +1383,103 @@ function discardCardFromDeck(params)
    end
 
    return card
+end
+
+function cardIsInPlay(params)
+   local card = findCard(params)
+   if not card then return false end
+   return isFaceUp({object = card})
+end
+
+function findCard(params)
+   local cardId = params.cardId
+   local allObjects = getAllObjects()
+
+   for _, object in pairs(allObjects) do
+      if object.tag == "Card" then
+         local cardData = getCardData({card = object})
+         if (cardData.code == cardId) then
+            return object
+         end
+      end
+   end
+
+   return nil
+end
+
+function discardFromPlayerDeck(params)
+   local playerColor = params.playerColor
+   local numberOfCards = params.numberOfCards
+   local heroManager = getObjectFromGUID(GUID_HERO_MANAGER)
+   local playmat = heroManager.call("getPlaymat", {playerColor = playerColor})
+   local deckPosition = Vector(playmat.call("getPlayerDeckPosition"))
+   local discardPosition = Vector(playmat.call("getPlayerDiscardPosition"))
+
+   local destination = calculateDestination({
+      destinationPosition = discardPosition,
+      destinationRotation = {0,180,0},
+      minimumY = 2.5
+   })
+
+   function discardCoroutine()
+      for i = 1, numberOfCards do
+         local card = discardCardFromDeck({
+            deckPosition = deckPosition,
+            discardPosition = destination.position,
+            discardRotation = destination.rotation
+         })
+
+         if(not card) then
+            Wait.frames(function()
+               refreshDeck({deckPosition = deckPosition, discardPosition = discardPosition})
+               displayMessage({message = "You cycled your deck. Time for an encounter card!", messageType = MESSAGE_TYPE_INFO, playerColor = playerColor})
+               dealEncounterCardToPlayer({playerColor = playerColor})
+            end, 
+            30)
+
+            return 1
+         end
+           
+         local count = 0
+         while count < 40 do
+            count = count + 1
+            coroutine.yield(0)
+         end   
+      end
+
+      return 1
+   end
+   
+   startLuaCoroutine(self, "discardCoroutine") 
+end
+
+function discardFromAllPlayerDecks(params)
+   local numberOfCards = params.numberOfCards
+   local heroManager = getObjectFromGUID(GUID_HERO_MANAGER)
+   local selectedHeroes = heroManager.call("getSelectedHeroes")
+
+   for color, _ in pairs(selectedHeroes) do
+      discardFromPlayerDeck({playerColor = color, numberOfCards = numberOfCards})
+   end
+end
+
+function refreshDeck(params)
+   local deckPosition = params.deckPosition
+   local discardPosition = params.discardPosition
+   local deck = getDeckOrCardAtLocation(discardPosition)
+
+   if(not deck) then return end
+
+   deck.setPositionSmooth(deckPosition, false, false)
+   deck.setRotationSmooth({0,180,180}, false, false)
+
+   Wait.condition(
+      function()
+         deck.shuffle()
+      end,
+      function()
+         return deck.resting
+      end,
+      2
+   )
 end

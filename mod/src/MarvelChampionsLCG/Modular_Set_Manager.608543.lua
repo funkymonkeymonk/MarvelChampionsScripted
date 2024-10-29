@@ -1,8 +1,5 @@
 preventDeletion = true
 
-local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
-local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
-
 local encounterDeckPosition = {-12.75, 1.01, 22.25}
 local originPosition = {x=60.25, y=0.3, z=-6.25}
 
@@ -69,6 +66,7 @@ function getCardsFromSelectedSets()
 end
 
 function layOutModularSetSelectors(params)
+    local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
     local sets = getEncounterSetsByType({modular = params.modular})
 
     layoutManager.call("layOutSelectorTiles", {
@@ -140,10 +138,12 @@ function addRemoveSelectedSet(key)
 end
 
 function hideSelectors()
+    local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
     layoutManager.call("hideSelectors", {itemType = "modular-set"})
 end
 
 function showSelectors()
+    local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
     layoutManager.call("showSelectors", {itemType = "modular-set"})
     --layoutManager.call("highlightMultipleSelectorTiles", {itemType = "modular-set", items = selectedSets})
 end
@@ -151,6 +151,7 @@ end
 
 function addEncounterSetToDeck(params)
     local modularSet = modularSets[params.setKey]
+    local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
     local position = Vector(scenarioManager.call("getEncounterDeckPosition"))
     local rotation = {0,180,180}
     local scale = {2.12,3,2.12}

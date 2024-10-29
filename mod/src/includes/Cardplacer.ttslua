@@ -22,7 +22,11 @@ function mapCardData(cardData)
 
     for k,v in pairs(cardData) do
         if(k~="FrontURL" and k~="BackURL" and k~="flavor" and k~="text" and k~="backText" and k~="steady" and k~="stalwart" and k~="toughness") then
-            card[k] = string.gsub(tostring(v), "\"", "\\\"")
+            if(k=="code") then
+                card[k] = string.sub(tostring(v), 1, 5)
+            else
+                card[k] = string.gsub(tostring(v), "\"", "\\\"")
+            end
         end
     end
 

@@ -1,10 +1,5 @@
 preventDeletion = true
 
-local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
-local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
-local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
-local assetBag = getObjectFromGUID("91eba8")
-
 local defaults = {
   villainHpCounter = {
     position = Global.getTable("VILLAIN_HEALTH_COUNTER_POSITION"),
@@ -135,6 +130,7 @@ function useModularEncounterSets()
 end
 
 function spawnAsset(params)
+  local assetBag = getObjectFromGUID(Global.getVar("ASSET_BAG_GUID"))
   params.caller = self
   return assetBag.call("spawnAsset", params)
 end
@@ -179,18 +175,21 @@ function selectScenario(params)
     end      
   end
 
+  local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
   encounterSetManager.call("preSelectEncounterSets", {sets = currentScenario.modularSets or {}})
 
   saveData()
 end
 
 function hideSelectors()
+  local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
   layoutManager.call("hideSelectors", {itemType = "scenario"})
 end
 
 function showSelectors()
   selectedScenarioKey = currentScenario and currentScenario.key or nil
 
+  local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
   layoutManager.call("showSelectors", {itemType = "scenario"})
   layoutManager.call("highlightSelectedSelectorTile", {itemType = "scenario", itemKey = selectedScenarioKey})
 end
@@ -198,6 +197,7 @@ end
 function placeScenario(scenarioKey, mode)
   if not confirmNoScenarioIsPlaced() then return end
 
+  local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
   local heroCount = heroManager.call("getHeroCount")
   local scenario = scenarios[scenarioKey];
   local delay = 0
@@ -298,6 +298,9 @@ end
 function setUpScenario()
   if(not confirmScenarioInputs(true)) then return end
 
+  local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
+  local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
+
   layoutManager.call("hideSetupUI")
   prepareScenario()
 
@@ -321,7 +324,14 @@ function setUpScenario()
   --   end,
   --   30
   -- )
-  
+
+  Wait.frames(
+    function()
+      placeStandardSetEnvironments()
+    end,
+    15
+  )
+
   Wait.frames(
     function()
       setUpCards()
@@ -348,6 +358,7 @@ function setUpScenario()
 end
 
 function setInitialFirstPlayer()
+  local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
   heroManager.call("setFirstPlayer", {playerColor = currentScenario.firstPlayer})
 end
 
@@ -388,6 +399,8 @@ end
 
 function setUpZones()
   if(not currentScenario.zones) then currentScenario.zones = {} end
+
+  local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
 
   currentScenario.zones.sideScheme = currentScenario.zones.sideScheme or defaults.zones.sideScheme
   currentScenario.zones.environment = currentScenario.zones.environment or defaults.zones.environment
@@ -459,62 +472,62 @@ function setUpZones()
         currentScenario.zones.encounterDeck.guid = spawned_object.getGUID()
       end
     })
+  end
 
-    if(victoryDisplayZoneDef.position) then
-      spawnObject({
-        type = "3DText",
-        position = {78.25, 0.55, 26.25},
-        rotation = {90, 0, 0},
-        callback_function = function(spawned_object)
-          spawned_object.TextTool.setValue("Victory Display")
-          spawned_object.TextTool.setFontSize(250)
-          spawned_object.TextTool.setFontColor({1,1,1})
-          spawned_object.interactable = false
-          spawned_object.addTag("delete-with-scenario")
-          addItemToManifest("victoryDisplayHeading", spawned_object)
-        end
-      })
+  if(victoryDisplayZoneDef.position) then
+    spawnObject({
+      type = "3DText",
+      position = {78.25, 0.55, 26.25},
+      rotation = {90, 0, 0},
+      callback_function = function(spawned_object)
+        spawned_object.TextTool.setValue("Victory Display")
+        spawned_object.TextTool.setFontSize(250)
+        spawned_object.TextTool.setFontColor({1,1,1})
+        spawned_object.interactable = false
+        spawned_object.addTag("delete-with-scenario")
+        addItemToManifest("victoryDisplayHeading", spawned_object)
+      end
+    })
 
-      spawnObject({
-        type = "3DText",
-        position = {69.25, 0.51, -2.25},
-        rotation = {90, 0, 0},
-        callback_function = function(spawned_object)
-          spawned_object.TextTool.setValue("Victory Points: 0")
-          spawned_object.TextTool.setFontSize(200)
-          spawned_object.TextTool.setFontColor({1,1,1})
-          spawned_object.interactable = false
-          spawned_object.addTag("delete-with-scenario")
-          addItemToManifest("victoryPointsReadout", spawned_object)
-        end
-      })
+    spawnObject({
+      type = "3DText",
+      position = {69.25, 0.51, -2.25},
+      rotation = {90, 0, 0},
+      callback_function = function(spawned_object)
+        spawned_object.TextTool.setValue("Victory Points: 0")
+        spawned_object.TextTool.setFontSize(200)
+        spawned_object.TextTool.setFontColor({1,1,1})
+        spawned_object.interactable = false
+        spawned_object.addTag("delete-with-scenario")
+        addItemToManifest("victoryPointsReadout", spawned_object)
+      end
+    })
 
-      spawnObject({
-        type = "3DText",
-        position = {87.25, 0.51, -2.25},
-        rotation = {90, 0, 0},
-        callback_function = function(spawned_object)
-          spawned_object.TextTool.setValue("Items: 0")
-          spawned_object.TextTool.setFontSize(200)
-          spawned_object.TextTool.setFontColor({1,1,1})
-          spawned_object.interactable = false
-          spawned_object.addTag("delete-with-scenario")
-          addItemToManifest("victoryDisplayItemCountReadout", spawned_object)
-        end
-      })
+    spawnObject({
+      type = "3DText",
+      position = {87.25, 0.51, -2.25},
+      rotation = {90, 0, 0},
+      callback_function = function(spawned_object)
+        spawned_object.TextTool.setValue("Items: 0")
+        spawned_object.TextTool.setFontSize(200)
+        spawned_object.TextTool.setFontColor({1,1,1})
+        spawned_object.interactable = false
+        spawned_object.addTag("delete-with-scenario")
+        addItemToManifest("victoryDisplayItemCountReadout", spawned_object)
+      end
+    })
 
-      spawnObject({
-        type="ScriptingTrigger",
-        position = victoryDisplayZoneDef.position,
-        scale = victoryDisplayZoneDef.scale,
-        sound = false,
-        callback_function = function(spawned_object)
-          spawned_object.setVar("zoneType", "victoryDisplay")
-          spawned_object.setVar("zoneIndex", "victoryDisplay")
-          currentScenario.zones.victoryDisplay.guid = spawned_object.getGUID()
-        end
-      })
-    end
+    spawnObject({
+      type="ScriptingTrigger",
+      position = victoryDisplayZoneDef.position,
+      scale = victoryDisplayZoneDef.scale,
+      sound = false,
+      callback_function = function(spawned_object)
+        spawned_object.setVar("zoneType", "victoryDisplay")
+        spawned_object.setVar("zoneIndex", "victoryDisplay")
+        currentScenario.zones.victoryDisplay.guid = spawned_object.getGUID()
+      end
+    })
   end
 
   local selectedHeroes = heroManager.call("getSelectedHeroes")
@@ -601,12 +614,21 @@ function getZonesByType(params)
 
   for key, zoneDef in pairs(currentScenario.zones) do
     local zone = getObjectFromGUID(zoneDef.guid)
-    if(zone.getVar("zoneType") == zoneType) then
+    if(zone and zone.getVar("zoneType") == zoneType) then
       table.insert(zones, zone)
     end
   end
 
   return zones
+end
+
+function getZoneByIndex(params)
+  local zoneIndex = params.zoneIndex
+
+  if(not currentScenario) then return nil end
+
+  local zoneDef = currentScenario.zones[zoneIndex]
+  return getObjectFromGUID(zoneDef.guid)
 end
 
 function getZoneDefinition(params)
@@ -618,6 +640,7 @@ function getZoneDefinition(params)
 end
 
 function heroCountIsValid(params)
+  local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
   local heroCountIsValid = heroManager.call("getHeroCount") > 0
 
   if(params and params.postMessage and not heroCountIsValid) then
@@ -639,6 +662,7 @@ end
 
 function modularSetsAreValid(params)
   local requiredEncounterSetCount = getRequiredEncounterSetCount()
+  local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
   local selectedEncounterSetCount = encounterSetManager.call("getSelectedSetCount")
   local additionalEncounterSets =  requiredEncounterSetCount - selectedEncounterSetCount
   local modularSetsAreValid = additionalEncounterSets <= 0
@@ -715,6 +739,7 @@ function getRequiredEncounterSetCount()
 end
 
 function setUpVillains()
+  local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
   local heroCount = heroManager.call("getHeroCount")
 
   for key, villain in pairs(currentScenario.villains) do
@@ -868,6 +893,7 @@ function configureMainSchemeThreatCounter(params)
 end
 
 function setUpSchemes()
+  local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
   local heroCount = heroManager.call("getHeroCount")
 
   for _, scheme in pairs(currentScenario.schemes) do
@@ -950,6 +976,7 @@ function setUpDeck(deck, isEncounterDeck)
 end
 
 function addEncounterSetsToEncounterDeck(deck)
+  local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
   local encounterSetCards = encounterSetManager.call("getCardsFromSelectedSets")
 
   for cardId, count in pairs(encounterSetCards) do
@@ -961,6 +988,7 @@ function addObligationCardsToEncounterDeck(deck)
   local useHeroObligations = currentScenario.useHeroObligations == nil or currentScenario.useHeroObligations
   if(not useHeroObligations) then return end
 
+  local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
   local obligationCards = heroManager.call("getObligationCards")
 
   for cardId, count in pairs(obligationCards) do
@@ -1001,6 +1029,16 @@ function addStandardEncounterSetsToEncounterDeck(deck)
     deck.cards["24031"]=1
     deck.cards["24032"]=1
   end
+end
+
+function placeStandardSetEnvironments()
+  local encounterDeckPosition = getEncounterDeckPosition()
+  local formidableFoeCardId = "24049"
+  local pursuedByThePastCardId = "45075"
+  local mode = getMode()
+
+  Global.call("moveCardFromEncounterDeckById", {cardId = formidableFoeCardId, searchInDiscard = true, zoneIndex = "environment", flipCard = mode == "expert"})
+  Global.call("moveCardFromEncounterDeckById", {cardId = pursuedByThePastCardId, searchInDiscard = true, zoneIndex = "environment"})
 end
 
 function setUpCards()
@@ -1060,6 +1098,23 @@ function placeDeck(deck)
   local deckScale = deck.scale or defaults.encounterDeck.scale
 
   createDeck({cards = deck.cards, position = deckPosition, scale = deckScale, name = deck.name})
+
+  if(deck.label) then
+    --TODO: make label position more dynamic (based on deck size and presence of carriage returns); consider allowing for customization of font size and color, and placement of label (above, below, etc.)
+    local labelPosition = Vector(deckPosition) + Vector({0,0,4})
+    spawnObject({
+      type = "3DText",
+      position = labelPosition,
+      rotation = {90, 0, 0},
+      callback_function = function(spawned_object)
+        spawned_object.TextTool.setValue(deck.label)
+        spawned_object.TextTool.setFontSize(60)
+        spawned_object.TextTool.setFontColor({1,1,1})
+        spawned_object.interactable = false
+        spawned_object.addTag("delete-with-scenario")
+      end
+    })
+  end
 end
 
 function placeScheme(schemeKey)
@@ -1092,7 +1147,7 @@ function placeThreatCounter(counter, threat)
   local threatCounterPosition = counter.position or defaults.mainSchemeThreatCounter.position
   local threatCounterRotation = counter.rotation or defaults.mainSchemeThreatCounter.rotation
   local threatCounterScale = counter.scale or defaults.mainSchemeThreatCounter.scale
-
+  local counterName = counter.name or ""
   local threatCounterBag = getObjectFromGUID(Global.getVar("GUID_THREAT_COUNTER_BAG"))
   local threatCounter = threatCounterBag.takeObject({position = threatCounterPosition, smooth = false})
 
@@ -1106,6 +1161,7 @@ function placeThreatCounter(counter, threat)
       threatCounter.setRotation(threatCounterRotation)
       threatCounter.setScale(threatCounterScale)
       threatCounter.setLock(locked)
+      threatCounter.setName(counterName)
       threatCounter.call("setValue", {value = threat})
     end,
     1
@@ -1116,7 +1172,7 @@ function placeGeneralCounter(counter)
   local counterPosition = counter.position or defaults.mainSchemeThreatCounter.position
   local counterRotation = counter.rotation or defaults.mainSchemeThreatCounter.rotation
   local counterScale = counter.scale or defaults.mainSchemeThreatCounter.scale
-
+  local counterName = counter.name or ""
   local counterBag = getObjectFromGUID(Global.getVar("GUID_LARGE_GENERAL_COUNTER_BAG"))
   local generalCounter = counterBag.takeObject({position = counterPosition, smooth = false})
 
@@ -1131,6 +1187,7 @@ function placeGeneralCounter(counter)
       generalCounter.setRotation(counterRotation)
       generalCounter.setScale(counterScale)
       generalCounter.setLock(locked)
+      generalCounter.setName(counterName)
       --threatCounter.call("setValue", {value = initialThreat})
     end,
     1
@@ -1435,6 +1492,7 @@ local columnGap = 5
 local rows = 12
 
 function layOutScenarios()
+  local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
   layoutManager.call("layOutSelectorTiles", {
       origin = originPosition,
       direction = "vertical",
@@ -1448,6 +1506,7 @@ function layOutScenarios()
 end
 
 function layOutScenarioSelectors(params)
+  local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
   layoutManager.call("layOutSelectorTiles", {
       origin = params.origin,
       center = params.center or {0,0.5,0},
@@ -1464,16 +1523,22 @@ function layOutScenarioSelectors(params)
 end
 
 function deleteScenarios()
+  local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
   layoutManager.call("clearSelectorTiles", {itemType = "scenario"})
 end
 
 function deleteEverything()
+  local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
   layoutManager.call("clearSelectorTiles", {itemType = "hero"})
   layoutManager.call("clearSelectorTiles", {itemType = "scenario"})
   layoutManager.call("clearSelectorTiles", {itemType = "modular-set"})
 
   clearData()
+
+  local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
   heroManager.call("clearData")
+
+  local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
   encounterSetManager.call("clearData")
 end
 
@@ -1488,6 +1553,7 @@ function deepCopy(obj, seen)
 end
 
 function advanceVillain(params)
+  local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
   local heroCount = heroManager.call("getHeroCount")
   advanceVillainStage(params.villainKey, heroCount)
 end
@@ -1620,6 +1686,7 @@ function setUpVillainStage(villain, stage, heroCount)
 end
 
 function advanceScheme(params)
+  local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
   local heroCount = heroManager.call("getHeroCount")
   advanceSchemeStage(params.schemeKey, heroCount)
 end
@@ -1681,12 +1748,12 @@ function placeSchemeStage(schemeKey, stage, heroCount)
   
   local flipped = stage.flipCard or false
 
-  if(currentScenario.fullyScripted) then flipped = true end
+  if(currentScenario.fullyScripted) then flipped = stage.flipCard == nil and true or stage.flipCard end
 
   getCardByID(
     stage.cardId, 
     schemePosition, 
-    {scale = schemeScale, name = scheme.name, flipped = flipped, landscape = true, locked = currentScenario.fullyScripted})
+    {scale = schemeScale, flipped = flipped, landscape = true, locked = currentScenario.fullyScripted})
 
   local counter = scheme.threatCounter or {}
 
@@ -1710,7 +1777,7 @@ end
 
 function setUpSchemeStage(scheme, stage, heroCount)
   local functionName = "setUpSchemeStage_" .. currentScenario.key .. "_" .. scheme.key
-
+  
   if(self.getVar(functionName) ~= nil) then
     self.call(functionName, {scheme = scheme, stage=stage, heroCount=heroCount})
     return
@@ -1762,6 +1829,8 @@ function onCardEnterZone(params)
     return
   end
 end
+
+
 
 require('!/Cardplacer')
 

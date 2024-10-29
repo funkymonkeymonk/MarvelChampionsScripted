@@ -8,9 +8,6 @@ local label = ""
 local fontSize = 0
 local fontColor = {1,1,1,100}
 
-local modularSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
-local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
-
 function onload(saved_data)
     self.interactable = false
 
@@ -151,7 +148,9 @@ function setButtonColor(params)
 end
 
 function placeModularSet(obj, player_color)
+    local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
     layoutManager.call("placeModularSet", {modularSetKey = itemKey})
+    layoutManager = nil
 end
 
 function selectModularSet(obj, player_color)
@@ -160,7 +159,9 @@ function selectModularSet(obj, player_color)
         return
     end
 
+    local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
     layoutManager.call("selectModularSet", {modularSetKey = itemKey})
+    layoutManager = nil
 end
 
 function showSelection(params)

@@ -14,7 +14,7 @@
       "scaleZ": 1
     },
     "Nickname": "Release Notes",
-    "Description": "A new Victory Display area has been added to the right panel. It will appear when you start a game, and will keep track of how many items are in it, as well as the total Victory Points.\n\nAlso, note that the Clear button and Turn Counter will only be visible when a game is in progress; they will appear in the upper-right, in place of the setup buttons.",
+    "Description": "The following scenarios are now fully scripted: Absorbing Man, Klaw, Mutagen Formula, Rhino, Risky Business, Taskmaster, and Wrecking Crew. More to come!\n\nAlso, the mod's memory usage has been reduced, but there's more to be done. The next update will be a major improvement in memory usage, for smoother play on low-RAM machines.",
     "GMNotes": "",
     "AltLookAngle": {
       "x": 0,

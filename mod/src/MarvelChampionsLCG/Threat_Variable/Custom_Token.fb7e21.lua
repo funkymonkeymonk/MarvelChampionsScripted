@@ -70,6 +70,6 @@ function setValue(params)
     updateSave()
 end
 
-
-
-
+function getValue()
+    return CONFIG.VALUE
+end

@@ -4,9 +4,6 @@ itemName = ""
 local behavior = ""
 local isVisible = false
 
-local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
-local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
-
 function onload(saved_data)
     self.interactable = false
 
@@ -93,26 +90,26 @@ function createScenarioButtons()
 end
 
 function placeHeroWithStarterDeck(obj, player_color)
+    local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
     layoutManager.call("placeHeroWithStarterDeck", {heroKey = itemKey, playerColor = player_color})
+    layoutManager = nil
 end
 function placeHeroWithHeroDeck(obj, player_color)
+    local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
     layoutManager.call("placeHeroWithHeroDeck", {heroKey = itemKey, playerColor = player_color})
+    layoutManager = nil
 end
 
 function placeScenario(obj, player_color)
+    local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
     scenarioManager.call("placeUnscriptedScenario", {scenarioKey = itemKey})
+    scenarioManager = nil
 end
 
 function selectScenario(obj, player_color)
+    local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
     layoutManager.call("selectScenario", {scenarioKey = itemKey})
-end
-
-function placeModularSet(obj, player_color)
-    modularSetManager.call("placeModularSet", {modularSetKey = itemKey})
-end
-
-function selectModularSet(obj, player_color)
-    modularSetManager.call("selectModularSet", {modularSetKey = itemKey})
+    layoutManager = nil
 end
 
 function showSelection(params)

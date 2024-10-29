@@ -305,12 +305,12 @@ function placeKangStage2()
   local encounterDeckOrigin = getEncounterDeckPosition()
   local encounterDeckDestination = {46.75, 1.15, 15.75}
   currentScenario.encounterDeckPosition = encounterDeckDestination
-  Global.call("moveDeck", {origin = encounterDeckOrigin, destination = encounterDeckDestination})
+  Global.call("moveDeck", {origin = encounterDeckOrigin, destinationPosition = encounterDeckDestination})
 
   local encounterDiscardOrigin = getEncounterDiscardPosition()
   local encounterDiscardDestination = {52.25, 0.97, 15.75}
   currentScenario.encounterDiscardPosition = encounterDiscardDestination
-  Global.call("moveDeck", {origin = encounterDiscardOrigin, destination = encounterDiscardDestination})
+  Global.call("moveDeck", {origin = encounterDiscardOrigin, destinationPosition = encounterDiscardDestination})
 
   Global.setSnapPoints({})
   setUpSnapPoints()
@@ -456,12 +456,12 @@ function placeKangStage3(heroCount)
   local encounterDeckOrigin = getEncounterDeckPosition()
   local encounterDeckDestination = defaults.encounterDeck.position
   currentScenario.encounterDeckPosition = encounterDeckDestination
-  Global.call("moveDeck", {origin = encounterDeckOrigin, destination = encounterDeckDestination})
+  Global.call("moveDeck", {origin = encounterDeckOrigin, destinationPosition = encounterDeckDestination})
 
   local encounterDiscardOrigin = getEncounterDiscardPosition()
   local encounterDiscardDestination = defaults.encounterDeck.discardPosition
   currentScenario.encounterDiscardPosition = encounterDiscardDestination
-  Global.call("moveDeck", {origin = encounterDiscardOrigin, destination = encounterDiscardDestination})
+  Global.call("moveDeck", {origin = encounterDiscardOrigin, destinationPosition = encounterDiscardDestination})
 
   Global.setSnapPoints({})
   setUpSnapPoints()

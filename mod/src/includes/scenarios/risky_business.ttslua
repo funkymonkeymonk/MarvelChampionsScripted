@@ -1,6 +1,7 @@
 scenarios["riskyBusiness"] =
 {
     name="Risky Business",
+    fullyScripted = true,
     tileImageUrl="http://cloud-3.steamusercontent.com/ugc/1849305905150126338/C91FC9CB4D7BF94C206CE46B1982DF0CE750085D/",
     villains={
         greenGoblin={
@@ -11,15 +12,18 @@ scenarios["riskyBusiness"] =
             stages={
                 stage1={
                     cardId="02001",
-                    hitPointsPerPlayer=14
+                    hitPointsPerPlayer=14,
+                    locked=false
                 },
                 stage2={
                     cardId="02002",
-                    hitPointsPerPlayer=18
+                    hitPointsPerPlayer=18,
+                    locked=false
                 },
                 stage3={
                     cardId="02003",
-                    hitPointsPerPlayer=22
+                    hitPointsPerPlayer=22,
+                    locked=false
                 }
             }
         }
@@ -30,36 +34,31 @@ scenarios["riskyBusiness"] =
                 stage1={
                     cardId="02004",
                     startingThreatPerPlayer=2,
-                    targetThreatPerPlayer=7
+                    targetThreatPerPlayer=7,
+                    flavorText="Norman Osborn holds a board meeting, plotting to take over a branch of Stark Industries."
                 },
                 stage2={
                     cardId="02005",
                     startingThreatPerPlayer=1,
-                    targetThreatPerPlayer=10
+                    targetThreatPerPlayer=10,
+                    flavorText="If Norman Osborn succeeds, nothing will stand in the way of his tehnological domination."
                 }
             }
         }
     },
-    cards={
-        criminalEnterprise={
-            cardId="02006",
-            position={15.75, 1.00, 29.25},
-            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
-        }
-    },            
-    counters={
-        infamy={
-            type="general",
-            position={15.26, 1.06, 26.74},
-            scale={0.50, 1.00, 0.50},
-            locked=true
-        }
-    },
+--    counters={
+--        infamy={
+--            type="general",
+--            position={15.26, 1.06, 26.74},
+--            scale={0.50, 1.00, 0.50},
+--            locked=true
+--        }
+--    },
     decks={
         encounterDeck={
             name="Green Goblin's Encounter Deck",
             cards={
-                --["02006"]=1,
+                ["02006"]=1,
                 ["02007"]=3,
                 ["02008"]=4,
                 ["02009"]=1,
@@ -74,3 +73,71 @@ scenarios["riskyBusiness"] =
         goblinGimmicks="recommended"
     }
 }
+
+function setUpSchemeStage_riskyBusiness_main(params)
+  local stage = params.stage
+  local stageNumber = string.sub(stage.key, -1)
+
+  if(stageNumber == "1") then
+    Global.call("moveCardFromEncounterDeckById", {cardId = "02006", searchInDiscard = true, zoneIndex = "environment"})
+    return
+  end
+
+  if(stageNumber == "2") then
+    local criminalEnterprise = Global.call("findCard", {cardId = "02006"})
+    if(not criminalEnterprise) then return end
+    if(not Global.call("isFaceUp", {object = criminalEnterprise})) then return end
+
+    local counterGuid = criminalEnterprise.getVar("counterGuid")
+    if(not counterGuid) then return end
+
+    local infamyCounter = getObjectFromGUID(counterGuid)
+    if(not infamyCounter) then return end
+
+    local currentInfamy = infamyCounter.call("getValue")
+    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
+    local heroCount = heroManager.call("getHeroCount")
+    local newInfamy = currentInfamy + heroCount
+
+    infamyCounter.call("setValue", {value = newInfamy})
+    Global.call("discardFromAllPlayerDecks", {numberOfCards = newInfamy})
+  end
+end
+
+function getNextVillainStage_riskyBusiness(params)
+  local villain = currentScenario.villains[params.villainKey]
+  local currentStageNumber = villain.currentStageNumber
+  local mode = currentScenario.mode
+  local nextStage = nil
+
+  if(currentStageNumber == nil) then
+      nextStage = mode == "standard" and 
+        villain.stages.stage1 or 
+        villain.stages.stage2
+
+    nextStage.showAdvanceButton = true
+  elseif(currentStageNumber == "1") then
+    nextStage = villain.stages.stage2
+    nextStage.flipCard = mode=="standard"
+    nextStage.showAdvanceButton = mode == "expert"
+  elseif(currentStageNumber == "2") then
+    nextStage = villain.stages.stage3
+    nextStage.flipCard = true
+  end
+
+  return nextStage
+end
+
+function setUpVillainStage_riskyBusiness(params)
+  local stage = params.stage
+  local stageNumber = string.sub(stage.key, -1)
+  local mode = getMode()
+
+  if(stageNumber == "2" and mode == "standard") then
+    Global.call("displayMessage", {message = "Each player takes 4 indirect damage.", messageType = Global.getVar("MESSAGE_TYPE_INSTRUCTION")})
+  end
+
+  if(stageNumber == "3") then
+    Global.call("displayMessage", {message = "Each player takes 4 damage.", messageType = Global.getVar("MESSAGE_TYPE_INSTRUCTION")})
+  end
+end

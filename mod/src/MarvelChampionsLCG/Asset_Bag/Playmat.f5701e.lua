@@ -1,8 +1,14 @@
-DRAWN_ENCOUNTER_OFFSET = {-1.275, 0.5, -1.533}
+local OFFSET_ENCOUNTER_DRAW = {}
+local OFFSET_PLAYER_DECK = {}
+local OFFSET_PLAYER_DISCARD = {}
 
 local data = {}
 
 function onload(saved_data)
+   OFFSET_ENCOUNTER_DRAW = Global.getTable("PLAYMAT_OFFSET_ENCOUNTER_CARD")
+   OFFSET_PLAYER_DECK = Global.getTable("PLAYMAT_OFFSET_DECK")
+   OFFSET_PLAYER_DISCARD = Global.getTable("PLAYMAT_OFFSET_DISCARD")
+
    loadSavedData(saved_data)
 
    createButtons()
@@ -168,8 +174,7 @@ function findObjectsAtPosition()
 end
 
 function drawEncounter(object, player, isRightClick)
-   local toPosition = self.positionToWorld(DRAWN_ENCOUNTER_OFFSET)
-   Global.call("drawEncountercard", {toPosition, isRightClick})
+   Global.call("dealEncounterCardToPlayer", {playerColor = getValue("playerColor"), faceUp = isRightClick})
 end
 
 function discardEncounter(object, player_color, isRightClick)
@@ -283,4 +288,18 @@ function removeSelfDestructButtons()
    removeButtonByLabel("CONFIRM")
 
    setValue("showSelfDestruct", false)
+end
+
+function getEncounterCardPosition()
+   return self.positionToWorld(Vector(OFFSET_ENCOUNTER_DRAW))
+end
+
+function getPlayerDeckPosition()
+   return self.getPosition() + Vector(OFFSET_PLAYER_DECK)
+   --return self.positionToWorld(Vector(OFFSET_PLAYER_DECK))
+end
+
+function getPlayerDiscardPosition()
+   return self.getPosition() + Vector(OFFSET_PLAYER_DISCARD)
+   --return self.positionToWorld(Vector(OFFSET_PLAYER_DISCARD))
 end
