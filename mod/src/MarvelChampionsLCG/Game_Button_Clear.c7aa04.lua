@@ -21,7 +21,6 @@ end
 function clearScenario()
   local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
    layoutManager.call("clearScenario")
-   --asyncTest()
 end
 
 function showTile()
@@ -30,34 +29,4 @@ end
 
 function hideTile()
   self.clearButtons()
-end
-
-
-function asyncTest()
-  log("about to call other function")
-  otherFunction()
-  log("returned from other function")
-end
-
-function otherFunction()
-  log("other function started")
-  local done = nil
-
-  function pauseCoroutine()
-    for i=1, 500 do
-      coroutine.yield(0)
-    end
-    log("coroutine done")
-    done = true
-    return 1
-  end
-
-  startLuaCoroutine(self, "pauseCoroutine")
-  
-  Wait.condition(
-    function() log("pause loop completed") end,
-    function() return done ~= nil end,
-    10,
-    function() log("timeout") end
-  )
 end

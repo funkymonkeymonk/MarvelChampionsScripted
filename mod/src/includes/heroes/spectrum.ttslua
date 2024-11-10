@@ -43,18 +43,42 @@ heroes["spectrum"] = {
             ["21030"] = 1
         }
     },
-    extras = {
-        energyForm = {
-            type = "asset",
-            assetGuid = "71bfde",
+    cards = {
+        gamma = {
+            cardId = "21002",
+            name = "Gamma",
             offset = {-4.95, 2, 4.64},
-            rotation = {0, 180, 0},
-            locked = false
+            flipped = true,
+            settings = {
+                hideWhenFaceDown = false
+            }
+        },
+        photon = {
+            cardId = "21003",
+            name = "Photon",
+            offset = {-4.95, 2, 0},
+            flipped = true,
+            settings = {
+                hideWhenFaceDown = false
+            }
+        },
+        pulsar = {
+            cardId = "21004",
+            name = "Pulsar",
+            offset = {-4.95, 2, -4.64},
+            flipped = true,
+            settings = {
+                hideWhenFaceDown = false
+            }
         }
     },
-    removeCards = {
-        ["21002"] = "Gamma",
-        ["21003"] = "Photon",
-        ["21004"] = "Pulsar"
-    }
+--    extras = {
+--        energyForm = {
+--            type = "asset",
+--            assetGuid = "71bfde",
+--            offset = {0, 2, 0},
+--            rotation = {0, 180, 0},
+--            locked = false
+--        }
+--    }
 }

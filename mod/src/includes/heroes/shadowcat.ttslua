@@ -47,8 +47,7 @@ heroes["shadowCat"] = {
         solid = {
             cardId = "32031",
             name = "Solid",
-            offset = {-4.94, 3, -0.02},
-            flipped = true
+            offset = {-4.94, 3, -0.02}
         }
     }
 }

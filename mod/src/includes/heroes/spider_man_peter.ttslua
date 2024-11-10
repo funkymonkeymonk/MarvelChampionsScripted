@@ -1,5 +1,6 @@
 heroes["spiderManPeterParker"] = {
     name = "Spider-Man (Peter Parker)",
+    label = "Spider-Man (Parker)",
     identityCardId = "01001",
     hitPoints = 10,
     tileImageUrl = "https://steamusercontent-a.akamaihd.net/ugc/1833524706207154737/3D289302F9B746908080D450E6A80185128A84A5/",

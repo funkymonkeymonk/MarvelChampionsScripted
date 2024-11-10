@@ -203,12 +203,9 @@ function discardRandom(object, player)
 end
 
 function createSelfDestructButton()
-   removeButtonByLabel("CANCEL")
-   removeButtonByLabel("CONFIRM")
-
    self.createButton({
       label          = "REMOVE",
-      click_function = "createConfirmAndCancelButtons",
+      click_function = "clearPlaymat",
       function_owner = self,
       position       = {1.3,0.1,1.05},
       rotation       = {0,0,0},
@@ -221,37 +218,6 @@ function createSelfDestructButton()
    })
 
    setValue("showSelfDestruct", true)
-end
-
-function createConfirmAndCancelButtons()
-   removeButtonByLabel("REMOVE")
-
-   self.createButton({
-      label          = "CANCEL",
-      click_function = "createSelfDestructButton",
-      function_owner = self,
-      position       = {1.3,0.1,1.05},
-      rotation       = {0,0,0},
-      width          = 150,
-      height         = 50,
-      font_size      = 30,
-      font_color     = {0,0,0},
-      color          = {0,1,0}
-   })
-
-   self.createButton({
-      label          = "CONFIRM",
-      click_function = "clearPlaymat",
-      function_owner = self,
-      position       = {1.6,0.1,1.05},
-      rotation       = {0,0,0},
-      width          = 150,
-      height         = 50,
-      font_size      = 30,
-      font_color     = {0,0,0},
-      color          = {1,0,0}
-   })
-
 end
 
 function removeButtonByLabel(buttonLabel)
@@ -284,8 +250,6 @@ end
 
 function removeSelfDestructButtons()
    removeButtonByLabel("REMOVE")
-   removeButtonByLabel("CANCEL")
-   removeButtonByLabel("CONFIRM")
 
    setValue("showSelfDestruct", false)
 end
@@ -296,10 +260,8 @@ end
 
 function getPlayerDeckPosition()
    return self.getPosition() + Vector(OFFSET_PLAYER_DECK)
-   --return self.positionToWorld(Vector(OFFSET_PLAYER_DECK))
 end
 
 function getPlayerDiscardPosition()
    return self.getPosition() + Vector(OFFSET_PLAYER_DISCARD)
-   --return self.positionToWorld(Vector(OFFSET_PLAYER_DISCARD))
 end

@@ -48,8 +48,7 @@ heroes["vision"] = {
         massForm = {
             cardId = "26002",
             name = "Intangible",
-            offset = {-4.94, 3, -0.02},
-            flipped = true
+            offset = {-4.94, 3, -0.02}
         }
     }    
 }

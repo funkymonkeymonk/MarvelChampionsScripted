@@ -38,15 +38,15 @@ function setUpTile(params)
     })
     self.script_state = saved_data
 
-    self.setName(itemName)
-    self.setDescription("")
+    --self.setName(itemName)
+    --self.setDescription("")
 
     if(imageUrl ~= nil) then
         self.setCustomObject({
             image = imageUrl
         })
     end
-    
+
     self.reload()
 end
 

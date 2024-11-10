@@ -14,7 +14,7 @@
       "scaleZ": 1
     },
     "Nickname": "Release Notes",
-    "Description": "The following scenarios are now fully scripted: Absorbing Man, Klaw, Mutagen Formula, Rhino, Risky Business, Taskmaster, and Wrecking Crew. More to come!\n\nAlso, the mod's memory usage has been reduced, but there's more to be done. The next update will be a major improvement in memory usage, for smoother play on low-RAM machines.",
+    "Description": "Check out the new \"Suit Up!\" buttons! These will streamline and simplify hero setup.\n\nPlease use this new method to set up your heroes and let me know if you have any problems. Once I'm satisfied that these work well, I'll be removing the hero buttons to reduce memory usage.",
     "GMNotes": "",
     "AltLookAngle": {
       "x": 0,

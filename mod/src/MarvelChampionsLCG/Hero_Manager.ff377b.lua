@@ -18,6 +18,13 @@ local scale = {
   heroSelector = Global.getTable("SCALE_HERO_SELECTOR")
 }
 
+local playerControlGuids = {
+  Red = Global.getVar("PLAYER_CONTROL_GUID_RED"),
+  Blue = Global.getVar("PLAYER_CONTROL_GUID_BLUE"),
+  Green = Global.getVar("PLAYER_CONTROL_GUID_GREEN"),
+  Yellow = Global.getVar("PLAYER_CONTROL_GUID_YELLOW")
+}
+
 local playerColors = {"Red", "Blue", "Green", "Yellow"}
 
 local heroes = {}
@@ -29,6 +36,10 @@ local defaultRotation = {0, 180, 0}
 local assetBag = getObjectFromGUID(Global.getVar("ASSET_BAG_GUID"))
 
 function onload(saved_data)
+  for key, hero in pairs(heroes) do
+    hero.key = key
+  end
+
  if(saved_data ~= "") then
    local loaded_data = JSON.decode(saved_data)
    selectedHeroes = loaded_data.selectedHeroes
@@ -70,6 +81,11 @@ function getSelectedHeroes()
   return selectedHeroes
 end
 
+function getSelectedHero(params)
+  local positionColor = params.positionColor
+  return selectedHeroes[positionColor]
+end
+
 function getHeroCount()
   local heroCount = 0
 
@@ -80,6 +96,63 @@ function getHeroCount()
   return heroCount
 end
 
+function heroIsSelected(params)
+  heroKey = params.heroKey
+
+  for _, hero in pairs(selectedHeroes) do
+    if(hero.key == heroKey) then
+      return true
+    end
+  end
+
+  return false
+end
+
+function placeRandomHero(params)
+  --TODO: Add ability to filter by team
+  local heroList = getHeroesByTeam({team = params.team})
+  local orderedList = Global.call("getSortedListOfItems", {items = heroList})
+
+  local heroKeys = {}
+
+  for index, hero in ipairs(orderedList) do
+    if(not heroIsSelected({heroKey = hero.key})) then
+      table.insert(heroKeys, hero.key)
+    end
+  end
+
+  local randomKey = heroKeys[math.random(#heroKeys)]
+
+  placeHero(randomKey, params.positionColor, "starter")
+end
+
+function placeHeroWithImportedDeck(params)
+  local deckInfo = params.deckInfo
+  local positionColor = params.positionColor
+                                             
+  local heroIdentityId = string.sub(deckInfo.investigator_code, 1, 5)
+  local heroKey = findHeroKeyByIdentityId({identityId = heroIdentityId})
+  
+  if(heroKey == nil) then
+    broadcastToAll("Hero not found for deck: " .. deckInfo.investigator_code, {1,1,1})
+    return
+  end
+
+  placeHero(heroKey, positionColor, "imported", deckInfo.slots)
+end
+
+function findHeroKeyByIdentityId(params)
+  local identityId = params.identityId
+
+  for key, hero in pairs(heroes) do
+    if(hero.identityCardId == identityId) then
+      return key
+    end
+  end
+
+  return nil
+end
+
 function placeHeroWithStarterDeck(params)
   placeHero(params.heroKey, params.playerColor, "starter")
 end
@@ -88,11 +161,12 @@ function placeHeroWithHeroDeck(params)
   placeHero(params.heroKey, params.playerColor, "constructed")
 end
 
-function placeHero(heroKey, playerColor, deckType)
+function placeHero(heroKey, playerColor, deckType, importedDeck)
   if not confirmPlayerIsSeated(playerColor) then return end
   if not confirmSeatIsAvailable(playerColor) then return end
 
   local hero = deepCopy(heroes[heroKey])
+  hero.key = heroKey
   local playmatPosition = getPlaymatPosition({playerColor = playerColor})
  
   placePlaymat(
@@ -116,14 +190,8 @@ function placeHero(heroKey, playerColor, deckType)
   placeDeck(
     hero,
     deckType,
-    playmatPosition
-  )
-
-  Wait.frames(
-    function()
-    removeCards(hero)
-    end,
-    25
+    playmatPosition,
+    importedDeck
   )
 
   Wait.frames(
@@ -165,6 +233,41 @@ end
 
 function clearHero(params)
   selectedHeroes[params.playerColor] = nil
+  local playerControl = getPlayerControl({playerColor = params.playerColor})
+
+  playerControl.call("createSuitUpButton")
+end
+
+function hideHeroSelection()
+  local objects = getAllObjects()
+
+  for _, object in pairs(objects) do
+    if(object.hasTag("Playmat")) then
+      object.call("removeSelfDestructButtons")
+    end
+    if(object.hasTag("player-control")) then
+      object.call("hideSuitUpButton")
+    end
+  end
+end
+
+function showHeroSelection()
+  local objects = getAllObjects()
+
+  for _, object in pairs(objects) do
+    if(object.hasTag("Playmat")) then
+      object.call("createSelfDestructButton")
+    end
+    if(object.hasTag("player-control")) then
+      object.call("createSuitUpButton")
+    end
+  end
+end
+
+function getPlayerControl(params)
+  local playerColor = params.playerColor
+  local guid = playerControlGuids[playerColor]
+  return getObjectFromGUID(guid)
 end
 
 function getHeroByPlayerColor(params)
@@ -280,24 +383,31 @@ function placeHealthCounter(playmatPosition, imageUrl, hitPoints)
 end
 
 function configureHealthCounter(params)
- local counter = params.spawnedObject
- local imageUrl = params.imageUrl
- local hitPoints = params.hitPoints
+  local counter = params.spawnedObject
+  local imageUrl = params.imageUrl
+  local hitPoints = params.hitPoints
  
- counter.setName("")
- counter.setDescription("")
- counter.setLock(true)
- counter.setPosition(params.position)
- counter.setCustomObject({image = imageUrl})
+  counter.setName("")
+  counter.setDescription("")
+  counter.setLock(true)
+  counter.setPosition(params.position)
+  counter.setCustomObject({image = imageUrl})
 
- local reloadedCounter = counter.reload()
+  local reloadedCounter = nil
+  
+  Wait.frames(
+    function()
+      reloadedCounter = counter.reload()
+    end,
+    30
+  )
 
- Wait.frames(
-  function()
-   reloadedCounter.call("setValue", {value = hitPoints})
-  end,
-  60
- )
+  Wait.frames(
+    function()
+      reloadedCounter.call("setValue", {value = hitPoints})
+    end,
+    60
+  )
 end
 
 function placeIdentity(hero, playmatPosition, playerColor)
@@ -327,7 +437,7 @@ function configureIdentity(params)
   hero.identityGuid = identity.getGUID()
 end
 
-function placeDeck(hero, deckType, playmatPosition)
+function placeDeck(hero, deckType, playmatPosition, importedDeck)
  local deckPosition = getOffsetPosition(playmatPosition, offset.deck)
  local discardPostition = getOffsetPosition(playmatPosition, offset.discard)
 
@@ -340,14 +450,20 @@ function placeDeck(hero, deckType, playmatPosition)
   scale = cardScale.player
  }
 
- for k, v in pairs(hero.decks.hero) do
-  deck.cards[k] = v
- end
-
- if (deckType == "starter") then
-  for k, v in pairs(hero.decks.starter) do
+ if(deckType == "imported") then
+  for k, v in pairs(importedDeck) do
    deck.cards[k] = v
   end
+ else
+  for k, v in pairs(hero.decks.hero) do
+    deck.cards[k] = v
+   end
+  
+   if (deckType == "starter") then
+    for k, v in pairs(hero.decks.starter) do
+     deck.cards[k] = v
+    end
+   end  
  end
 
  createDeck(deck)
@@ -374,24 +490,16 @@ function placeCards(hero, playerColor, playmatPosition)
    function()
     findAndPlacePlayerCard({
      hero = hero,
-     cardName = card["name"],
+     cardId = card["cardId"],
      position = cardPosition,
      scale = card["scale"],
      rotation = card["rotation"],
-     flipped = card["flipped"]
+     flipped = card["flipped"],
+     settings = card["settings"]
     })
    end,
    delay
   )
-
-  -- findAndPlacePlayerCard({
-  --  hero = hero,
-  --  cardName = card["name"],
-  --  position = cardPosition,
-  --  scale = card["scale"],
-  --  rotation = card["rotation"],
-  --  flipped = card["flipped"]
-  -- })
  end
 end
 
@@ -459,32 +567,6 @@ function placeExtras(hero, playmatPosition)
  end
 end
 
-function removeCards(hero)
- --Bit of a kludge, but I can't think of a better way to deal with things like Spectrum's energy form cards, 
- --which has been replaced with a single multi-state card.
- if(hero.removeCards == nil) then return end
-
- for _, cardName in pairs(hero.removeCards) do
-  local cardPosition = {0, -50, 0}
-
-  Wait.frames(
-   function()
-    findAndPlacePlayerCard({
-     hero = hero,
-     cardName = cardName,
-     position = cardPosition,
-     scale = {1, 1, 1},
-     rotation = {0, 180, 180},
-     flipped = false,
-     deleteCard = true
-    })
-   end,
-   1
-  )
-
- end
-end
-
 function configureAsset(params)
  local asset = params.spawnedObject
  asset.setPosition(params.position)
@@ -494,25 +576,29 @@ function configureAsset(params)
  end
 end
 
+
 function placeObligation(hero)
   local encounterDeckPosition = Global.getTable("ENCOUNTER_DECK_SPAWN_POS")
   getCardByID(hero.obligationCardId, encounterDeckPosition, {scale = cardScale.encounter, flipped = true})
 end
 
-function getHeroesByTeam(team)
+function getHeroesByTeam(params)
+  local team = params.team
   local heroList = {}
 
-  for key, hero in pairs(heroes) do
-    teams = hero.teams or ""
-    if(string.match(teams, team)) then
-      heroList[key] = hero
-    end
+  if(team == nil) then
+    heroList = heroes
+  else
+    for key, hero in pairs(heroes) do
+      teams = hero.teams or ""
+      if(string.match(teams, team)) then
+        heroList[key] = hero
+      end
+    end  
   end
 
   return heroList
 end
-
---Utility functions - move to global?
 
 function getOffsetPosition(origPosition, offset)
   return {origPosition[1] + offset[1], origPosition[2] + offset[2], origPosition[3] + offset[3]}
@@ -544,42 +630,36 @@ function getObligationCards()
 end
 
 function findAndPlacePlayerCard(params)
- local hero = params.hero
- local cardName = params.cardName
- local position = params.position
- local scale = params.scale or cardScale.player
- local deckPositions = getPlayerDeckPositions({hero = hero, includeDiscard = true})
- local decks = {}
+  local hero = params.hero
+  local cardId = params.cardId
+  local position = params.position
+  local scale = params.scale or cardScale.player
+  local flipCard = params.flipped or false
+  local settings = params.settings or {}
+  local deckPositions = getPlayerDeckPositions({hero = hero, includeDiscard = true})
+  local decks = {}
+  rotation = params.rotation or {0, 180, 0}
 
- for _, deckPosition in pairs(deckPositions) do
-  local deckOrCard = getDeckOrCardAtLocation(deckPosition)
-  if(deckOrCard ~= nil) then
-   if(deckOrCard.tag == "Deck") then
-    table.insert(decks, deckOrCard)
-   else
-    if(deckOrCard.getName() == cardName) then
-     rotation = params.rotation or {0, 180, 180}
-
-     if(params.flipped) then
-      rotation = {rotation[1], rotation[2], 0}
-     end
-
-     deckOrCard.setPositionSmooth(position)
-     deckOrCard.setRotationSmooth(rotation)
-     deckOrCard.setScale(scale)
-     return
+  function moveCardCoroutine()
+    for _, deckPosition in pairs(deckPositions) do
+      Global.call("moveCardFromDeckById", {
+        cardId = cardId, 
+        deckPosition = deckPosition, 
+        destinationPosition = position, 
+        destinationScale = scale, 
+        flipCard = flipCard, 
+        destinationRotation = rotation,
+        settings = settings})
+      
+      for i = 1, 3 do
+        coroutine.yield(0)
+      end
     end
-   end
+
+    return 1
   end
- end
 
- local cardInDeck = findCardInDecks(decks, cardName)
- 
- if(cardInDeck ~= nil) then
-  placeCardFromDeck(cardInDeck.deck, cardInDeck.cardGuid, position, scale, params.rotation, params.flipped, params.deleteCard)
-  return
- end
-
+  startLuaCoroutine(self, "moveCardCoroutine")
 end
 
 function findCardInDecks(decks, cardName)
@@ -666,7 +746,7 @@ function layOutHeroes()
 end
 
 function layOutHeroSelectors(params)
-  local heroList = params.team ~= nil and getHeroesByTeam(params.team) or heroes
+  local heroList = params.team ~= nil and getHeroesByTeam({team = params.team}) or heroes
   local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
 
   layoutManager.call("layOutSelectorTiles", {

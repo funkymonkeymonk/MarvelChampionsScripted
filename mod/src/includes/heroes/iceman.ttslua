@@ -40,7 +40,7 @@ heroes["iceman"] = {
         }
     },
     extras = {
-        frostbit = {
+        frostbite = {
             type="deck",
             offset = {-4.94, 3, -4.66},
             flipped = true,

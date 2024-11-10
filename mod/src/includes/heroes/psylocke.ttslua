@@ -45,14 +45,12 @@ heroes["psylocke"] = {
         psiknife1 = {
             cardId = "41002",
             name = "Psi-Knife",
-            offset = {-4.94, 3, -0.02},
-            flipped = true
+            offset = {-4.94, 3, -0.02}
         },
         psiknife2 = {
             cardId = "41002",
             name = "Psi-Knife",
-            offset = {-2.04, 3, -0.02},
-            flipped = true
+            offset = {-2.04, 3, -0.02}
         }
     }    
 }
