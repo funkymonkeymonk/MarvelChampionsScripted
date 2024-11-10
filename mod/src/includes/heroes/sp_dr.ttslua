@@ -1,6 +1,7 @@
 heroes["spdr"] = {
     name = "SP//dr",
     identityCardId = "31002",
+    flipIdentityCard = false,
     hitPoints = 14,
     tileImageUrl = "https://steamusercontent-a.akamaihd.net/ugc/1897721393463027391/971F5CA033F0BD7AFF157E3716D3BD6B745A946C/",
     playmatImageUrl = "https://steamusercontent-a.akamaihd.net/ugc/1861691130254392381/73723523D39B54A9710C85B5D8CF6DE445E4E317/",
@@ -41,12 +42,12 @@ heroes["spdr"] = {
         }
     },
     cards = {
-        wolverinesClaws = {
-            cardId = "31002",
+        spdrSuit = {
+            cardId = "31001",
             name = "SP//dr Suit",
             offset = {-4.94, 1.5, 1.0},
             scale = Vector(Global.getVar("CARD_SCALE_IDENTITY")),
-            flipped = false
+            flipped = true
         }
     }
 }

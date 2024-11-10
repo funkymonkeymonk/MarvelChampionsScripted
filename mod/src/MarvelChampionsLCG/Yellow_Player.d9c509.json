@@ -6,9 +6,9 @@
       "posX": 39,
       "posY": 0.4,
       "posZ": -30,
-      "rotX": -8.17101238e-7,
-      "rotY": 359.689117,
-      "rotZ": -0.00000458874456,
+      "rotX": 0,
+      "rotY": 0,
+      "rotZ": 0,
       "scaleX": 1.49999964,
       "scaleY": 1.49999964,
       "scaleZ": 1.49999964
@@ -26,6 +26,9 @@
       "g": 0.898,
       "b": 0.171985835
     },
+    "Tags": [
+      "player-control"
+    ],
     "LayoutGroupSortIndex": 0,
     "Value": 0,
     "Locked": true,

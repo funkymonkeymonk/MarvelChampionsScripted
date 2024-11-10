@@ -85,10 +85,10 @@ function onload(saved_data)
         hidden = true
     })
 
-    -- Wait.frames(function()
-    --     updateSetupButtons()
-    -- end, 
-    -- 10)
+    Wait.frames(function()
+        updateSetupButtons()
+    end, 
+    10)
 end
 
 function layOutSelectorTiles(params)
@@ -104,7 +104,7 @@ function layOutSelectorTiles(params)
     local itemType = params.itemType
     local behavior = params.behavior
     local hidden = params.hidden
-    local sortedList = getSortedListOfItems(items)
+    local sortedList = Global.call("getSortedListOfItems", {items = items})
     local itemCount = #sortedList
 
     if(origin == nil) then
@@ -128,9 +128,8 @@ function layOutSelectorTiles(params)
     local currentRow = 1
     local currentColumn = 1
 
-    for _, listItem in ipairs(sortedList) do
-        local key = listItem.key
-        local item = listItem.value
+    for _, item in ipairs(sortedList) do
+        local key = item.key
         local position = getCoordinates(origin, currentColumn, currentRow, columnGap, rowGap)
 
         local tile = baseTile.clone({
@@ -204,38 +203,6 @@ function calculateGridDimensions(direction, maxRowsOrColumns, columnGap, rowGap,
     return {width = width, height = height}
 end
 
-function getSortedListOfItems(items)
-    local itemList = {}
-
-    for key, value in pairs(items) do
-        table.insert(itemList, {key = key, value = value})
-    end
-
-    function compareNames(a, b)
-        return stripArticles(a.value.name) < stripArticles(b.value.name) 
-    end
-    
-    return table.sort(itemList, compareNames)
-end
-
-function stripArticles(orig)
-    local lower = string.lower(orig)
-
-    if(string.sub(lower, 1, 4) == "the ") then
-        return string.sub(orig, 5, -1)
-    end
-
-    if(string.sub(lower, 1, 2) == "a ") then
-        return string.sub(orig, 3, -1)
-    end
-
-    if(string.sub(lower, 1, 3) == "an ") then
-        return string.sub(orig, 4, -1)
-    end
-
-    return orig
-end
-
 function getCoordinates(origin, column, row, columnGap, rowGap)
     local x = origin.x + columnGap * (column - 1)
     local z = origin.z - rowGap * (row - 1)
@@ -294,16 +261,6 @@ function highlightMultipleSelectorTiles(params)
         end
     end
 end
-
--- function getKeysFromTable(table)
---     local keys = ""
-
---     for k, v in pairs(table) do
---         keys = keys .. k .. " "
---     end
-
---     return keys
--- end
 
 function showSelectors(params)
     local allObjects = getAllObjects()

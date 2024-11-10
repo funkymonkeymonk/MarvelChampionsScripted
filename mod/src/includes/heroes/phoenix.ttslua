@@ -48,8 +48,7 @@ heroes["phoenix"] = {
         phoenixForce = {
             cardId = "34002",
             name = "Phoenix Force",
-            offset = {-4.94, 3, -0.02},
-            flipped = true
+            offset = {-4.94, 3, -0.02}
         }
     },
     extras = {

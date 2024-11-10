@@ -44,8 +44,7 @@ heroes["rogue"] = {
         touched = {
             cardId = "38002",
             name = "Touched",
-            offset = {-4.95, 2, 4.64},
-            flipped = true
+            offset = {-4.95, 2, 4.64}
         }        
     }
 }

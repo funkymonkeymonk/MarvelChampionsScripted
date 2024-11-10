@@ -72,6 +72,10 @@ function saveData()
   self.script_state = saved_data
 end
 
+function isScenarioInProgress()
+  return currentScenario and currentScenario.inProgress
+end
+
 function getCurrentScenarioKey()
   return currentScenario and currentScenario.key or nil
 end
@@ -298,8 +302,12 @@ end
 function setUpScenario()
   if(not confirmScenarioInputs(true)) then return end
 
+  currentScenario.inProgress = true
+
   local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
   local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
+
+  heroManager.call("hideHeroSelection")
 
   layoutManager.call("hideSetupUI")
   prepareScenario()
@@ -1400,6 +1408,9 @@ function clearScenario()
   turnCounter.call('setValue', {value = 0})
 
   clearData()
+
+  local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
+  heroManager.call("showHeroSelection")
 end
 
 --TODO: These functions should be moved to global

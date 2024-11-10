@@ -48,8 +48,7 @@ heroes["wolverine"] = {
         wolverinesClaws = {
             cardId = "35002",
             name = "Wolverine's Claws",
-            offset = {-4.94, 3, -0.02},
-            flipped = true
+            offset = {-4.94, 3, -0.02}
         }
     }
 }

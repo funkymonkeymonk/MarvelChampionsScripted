@@ -51,6 +51,11 @@ ENCOUNTER_BLUE_POS   = {-3.75,1.1,-5.75}
 ENCOUNTER_GREEN_POS  = {23.75,1.1,-5.75}
 ENCOUNTER_YELLOW_POS = {51.25,1.1,-5.25}
 
+PLAYER_CONTROL_GUID_RED    = "faa6bd"
+PLAYER_CONTROL_GUID_BLUE   = "6066d3"
+PLAYER_CONTROL_GUID_GREEN  = "34be58"
+PLAYER_CONTROL_GUID_YELLOW = "d9c509"
+
 PLAYMAT_POSITION_RED    = {-41.19, 1.04, -17.12}
 PLAYMAT_POSITION_BLUE   = {-13.75, 1.04, -17.75}
 PLAYMAT_POSITION_GREEN  = {13.74, 1.04, -17.76}
@@ -90,13 +95,13 @@ PLAYER_COLOR_BLUE = "Blue"
 PLAYER_COLOR_GREEN = "Green"
 PLAYER_COLOR_YELLOW = "Yellow"
 
-MESSAGE_TINT_RED = {.7804, .0902, .0824}
-MESSAGE_TINT_BLUE = {.1020, .4784, .9098}
-MESSAGE_TINT_GREEN = {.1725, .6392, .1490}
-MESSAGE_TINT_YELLOW = {.8235, .8157, .1529}
-MESSAGE_TINT_FLAVOR = {0.5, 0.5, 0.5}
-MESSAGE_TINT_INSTRUCTION = {1, 1, 1}
-MESSAGE_TINT_INFO = {1, 1, 1}
+MESSAGE_TINT_RED = {.7804, .0902, .0824, 100}
+MESSAGE_TINT_BLUE = {.1020, .4784, .9098, 100}
+MESSAGE_TINT_GREEN = {.1725, .6392, .1490, 100}
+MESSAGE_TINT_YELLOW = {.8235, .8157, .1529, 100}
+MESSAGE_TINT_FLAVOR = {0.5, 0.5, 0.5, 100}
+MESSAGE_TINT_INSTRUCTION = {1, 1, 1, 100}
+MESSAGE_TINT_INFO = {1, 1, 1, 100}
 
 MESSAGE_TYPE_FLAVOR_TEXT = "flavor"
 MESSAGE_TYPE_INSTRUCTION = "instruction"
@@ -559,8 +564,10 @@ function moveCardFromDeckById(params)
    local cardId = params.cardId
    local deckPosition = params.deckPosition
    local destinationPosition = Vector(params.destinationPosition)
-   local flipCard = params.flipCard or false
    local destinationRotation = params.destinationRotation and Vector(params.destinationRotation) or Vector({0,180,0})
+   local destinationScale = params.destinationScale and Vector(params.destinationScale) or nil
+   local flipCard = params.flipCard or false
+   local settings = params.settings or {}
    local items = findInRadiusBy(deckPosition, 4, isCardOrDeck, false)
    local cardFound = false
 
@@ -573,6 +580,7 @@ function moveCardFromDeckById(params)
          if(id == cardId) then
             v.setPositionSmooth(destinationPosition, false, false)
             v.setRotationSmooth(destinationRotation, false, false)
+            if(destinationScale) then v.setScale(destinationScale) end
             cardFound = true
          end
       elseif(v.tag == "Deck") then
@@ -583,7 +591,14 @@ function moveCardFromDeckById(params)
                   guid = card.guid,
                   position = destinationPosition,
                   rotation = destinationRotation,
-                  smooth = true
+                  smooth = true,
+                  callback_function = function(obj)
+                     if(destinationScale) then obj.setScale(destinationScale) end
+
+                     if(settings.hideWhenFaceDown ~= nil) then
+                        obj.hide_when_face_down = settings.hideWhenFaceDown
+                     end
+                  end
                })
                cardFound = true
                break
@@ -1233,9 +1248,9 @@ function calculateDestination(params)
    return destination
 end
 
-function getDeckOrCardAtLocation(position)
+function getDeckOrCardAtLocation(params)
    --TODO: this is hacky
-   position = Vector(position)
+   position = Vector(params.position)
    position["y"] = 0
 
    local objects = findInRadiusBy(position, 3, isCardOrDeck, false)
@@ -1270,8 +1285,8 @@ function discardFromEncounterDeck(params)
    local cardsFound = 0
    local stopDiscarding = false
 
-   local deck = getDeckOrCardAtLocation(deckPosition)
-   local discardPile = getDeckOrCardAtLocation(discardPosition)
+   local deck = getDeckOrCardAtLocation({position=deckPosition})
+   local discardPile = getDeckOrCardAtLocation({position=discardPosition})
 
    if not deck then
       reshuffleEncounterDeck()
@@ -1342,7 +1357,7 @@ function discardFromEncounterDeck(params)
 
       Wait.frames(
          function()
-            local deck = getDeckOrCardAtLocation(deckPosition)
+            local deck = getDeckOrCardAtLocation({position=deckPosition})
             if(not deck) then
                reshuffleEncounterDeck()
             end      
@@ -1366,7 +1381,7 @@ function discardCardFromDeck(params)
    local deckPosition = params.deckPosition
    local discardPosition = ensureMinimumYPosition({position = params.discardPosition, minimumY = 2.5})
    local discardRotation = params.discardRotation or {0,180,0}
-   local deckOrCard = getDeckOrCardAtLocation(deckPosition)
+   local deckOrCard = getDeckOrCardAtLocation({position=deckPosition})
 
    if not deckOrCard then
       return nil
@@ -1466,7 +1481,7 @@ end
 function refreshDeck(params)
    local deckPosition = params.deckPosition
    local discardPosition = params.discardPosition
-   local deck = getDeckOrCardAtLocation(discardPosition)
+   local deck = getDeckOrCardAtLocation({position=discardPosition})
 
    if(not deck) then return end
 
@@ -1482,4 +1497,140 @@ function refreshDeck(params)
       end,
       2
    )
+end
+
+local MARVEL_CDB_PUBLIC_DECK_URL="https://marvelcdb.com/api/public/decklist/"
+local MARVEL_CDB_PRIVATE_DECK_URL="https://marvelcdb.com/api/public/deck/"
+
+function importDeck(params)
+   local deckId = params.deckId
+   local isPrivateDeck = params.isPrivateDeck
+   local callbackFunction = params.callbackFunction
+   local callbackTarget = params.callbackTarget
+
+   local apiURL = isPrivateDeck and MARVEL_CDB_PRIVATE_DECK_URL or MARVEL_CDB_PUBLIC_DECK_URL
+
+   WebRequest.get(apiURL .. deckId, function(res) 
+     local deckInfo = nil
+ 
+     if res.is_done and not res.is_error then
+       if string.find(res.text, "<!DOCTYPE html>") then
+         broadcastToAll("Deck "..deckId.." is not shared", {0.5,0.5,0.5})
+         return
+       end
+   
+       deckInfo = JSON.decode(res.text)
+     else
+       print (res.error)
+       return
+     end
+   
+     if (deckInfo == nil) then
+       broadcastToAll("Deck not found!", {0.5,0.5,0.5})
+       return
+     else
+       print("Found decklist: "..deckInfo.name)
+     end
+     
+     callbackTarget.call(callbackFunction, {deckInfo = deckInfo})
+   end)
+ end
+
+ function getSortedListOfItems(params)
+   local items = params.items
+   local itemList = {}
+ 
+   for key, item in pairs(items) do
+      item.key = key
+      table.insert(itemList, item)
+   end
+ 
+   function compareNames(a, b)
+       return stripArticles(a.name) < stripArticles(b.name) 
+   end
+   
+   return table.sort(itemList, compareNames)
+ end
+ 
+ function stripArticles(orig)
+   local lower = string.lower(orig)
+ 
+   if(string.sub(lower, 1, 4) == "the ") then
+       return string.sub(orig, 5, -1)
+   end
+ 
+   if(string.sub(lower, 1, 2) == "a ") then
+       return string.sub(orig, 3, -1)
+   end
+ 
+   if(string.sub(lower, 1, 3) == "an ") then
+       return string.sub(orig, 4, -1)
+   end
+ 
+   return orig
+ end
+ 
+ function breakLabel(params)
+   local label = params.label
+   local maxWidth = params.maxWidth or 10
+   local hasSpaces = string.find(label, " ") ~= nil
+   local hasHyphens = string.find(label, "-") ~= nil
+   local isBreakable = hasSpaces or hasHyphens
+
+   if(string.len(label) <= maxWidth or not isBreakable) then
+       return {
+           text=label,
+           length=string.len(label)
+       }
+   end
+
+   local breakCharacter = hasSpaces and " " or "-"
+   local words = getWords(label, breakCharacter)
+   local firstLine = ""
+   local secondLine = ""
+   local firstLineOffset = 0
+   local secondLineOffset = 0
+
+   for i=1, #words do
+       if(string.len(firstLine) >= string.len(secondLine)) then
+           local index = #words - secondLineOffset
+           secondLineOffset = secondLineOffset + 1
+           secondLine = words[index] .. " " .. secondLine
+       else
+           local index = 1 + firstLineOffset
+           firstLineOffset = firstLineOffset + 1
+           firstLine = firstLine .. " " .. words[index]
+       end
+   end
+
+   local length = string.len(firstLine) > string.len(secondLine) and string.len(firstLine) or string.len(secondLine)
+   local hyphen = breakCharacter == "-" and "-" or ""
+
+   return {
+       text = trim(firstLine) .. hyphen .. "\n" .. trim(secondLine),
+       length = length
+   }
+end
+
+function getWords (text, breakCharacter)
+   local t={}
+
+   if(breakCharacter == " ") then
+      -- for str in string.gmatch(text, "[%w']*[%w]+") do
+      --    table.insert(t, str)
+      -- end
+      for str in string.gmatch(text, "[^%s]+") do
+         table.insert(t, str)
+      end
+   else
+      for str in string.gmatch(text, "[^%-]+") do
+         table.insert(t, str)
+      end      
+   end
+
+   return t
+end
+
+function trim(s)
+   return (string.gsub(s, "^%s*(.-)%s*$", "%1"))
 end
