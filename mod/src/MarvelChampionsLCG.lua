@@ -231,6 +231,8 @@ end
 
 function dealEncounterCardToPlayer(params)
    local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
+   if(not scenarioManager.call("isScenarioInProgress")) then return end
+
    local heroManager = getObjectFromGUID(GUID_HERO_MANAGER)
    local playerColor = params.playerColor
    local playmat = heroManager.call("getPlaymat", {playerColor = playerColor})
@@ -679,7 +681,11 @@ function onObjectEnterZone(zone, card)
 
    if(playerColor) then card.setVar("playerColor", playerColor) end
 
-   resizeCardOnEnterZone(card, zoneType)
+   Wait.frames(function()
+      resizeCardOnEnterZone(card, zoneType)
+   end, 
+   15)
+   
    positionCardOnEnterZone(card, zoneType, zoneIndex)
 
    local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
@@ -720,6 +726,8 @@ function onObjectEnterZone(zone, card)
 end
 
 function resizeCardOnEnterZone(card, zoneType)
+   if(card.isDestroyed()) then return end
+
    local newScale = nil
 
    if(zoneType == "hero") then
@@ -763,7 +771,9 @@ function addThreatCounterToSideScheme(card)
    local heroManager = getObjectFromGUID(GUID_HERO_MANAGER)
    local heroCount = heroManager.call("getHeroCount")
    local threat = 0
-
+log("baseThreat: " .. baseThreat)
+log("heroCount: " .. heroCount)
+log("hinder: " .. hinder)
    if baseThreatIsFixed then
       threat = baseThreat + (heroCount * hinder)
    else
@@ -852,7 +862,12 @@ function onObjectLeaveZone(zone, card)
    card.setVar("playerColor", nil)
 
    removeCounterFromCard(card)
-   resizeCardOnLeaveZone(card, cardAspect)
+
+   Wait.frames(function()
+      resizeCardOnLeaveZone(card, cardAspect)
+   end,
+   15)
+
    repositionCardsInZone({zone = zone})
 
    if(zoneType == "victoryDisplay") then
@@ -871,6 +886,8 @@ function removeCounterFromCard(card)
 end
 
 function resizeCardOnLeaveZone(card, cardAspect)
+   if(card.isDestroyed()) then return end
+
    if(cardAspect == "encounter") then
       card.setScale(CARD_SCALE_ENCOUNTER)
    else

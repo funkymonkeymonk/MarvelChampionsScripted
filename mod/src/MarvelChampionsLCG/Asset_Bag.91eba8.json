@@ -52,6 +52,8 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
+    "Custom_Token.1eb3c1.json",
+    "Layout_Button_Heroes.08c4b0.json",
     "Wheel_of_Genres.998f2b.json",
     "Custom_Model_Infinite_Bag.be0acf.json",
     "Custom_Model_Infinite_Bag.fb7d65.json",
@@ -64,7 +66,6 @@
     "Main_Scheme_Threat_Counter.a9f7b8.json",
     "Boost_Panel.ef27d7.json",
     "Angel.813d45.1303.json",
-    "Custom_Token.1eb3c1.json",
     "Ironheart_Identity.eaab93.973100.json",
     "Wasp_Identity.0f11ab.799100.json",
     "Energy_Form.71bfde.963206.json",

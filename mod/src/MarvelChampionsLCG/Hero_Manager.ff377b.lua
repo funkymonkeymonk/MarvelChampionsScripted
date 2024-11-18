@@ -243,7 +243,7 @@ function hideHeroSelection()
 
   for _, object in pairs(objects) do
     if(object.hasTag("Playmat")) then
-      object.call("removeSelfDestructButtons")
+      object.call("hideRemoveButton")
     end
     if(object.hasTag("player-control")) then
       object.call("hideSuitUpButton")
@@ -256,7 +256,7 @@ function showHeroSelection()
 
   for _, object in pairs(objects) do
     if(object.hasTag("Playmat")) then
-      object.call("createSelfDestructButton")
+      object.call("showRemoveButton")
     end
     if(object.hasTag("player-control")) then
       object.call("createSuitUpButton")

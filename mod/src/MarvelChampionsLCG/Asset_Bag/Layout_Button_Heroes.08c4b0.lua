@@ -2,7 +2,7 @@ local fontSizeInactive = Global.getVar("SETUP_BUTTON_FONT_SIZE_INACTIVE")
 local fontSizeActive = Global.getVar("SETUP_BUTTON_FONT_SIZE_ACTIVE")
 
 function onload(saved_data)
-  self.interactable = false
+  --self.interactable = false
   
   createButton()
 end
