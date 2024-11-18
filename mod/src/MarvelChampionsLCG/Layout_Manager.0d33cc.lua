@@ -5,13 +5,13 @@ local defaultRowGap = 2.5
 local defaultSelectorScale = {1.13, 1.00, 1.13}
 local defaultSelectorRotation = {0,180,0}
 
-local LAYOUT_BUTTON_HEROES = "08c4b0"
+--local LAYOUT_BUTTON_HEROES = "08c4b0"
 local LAYOUT_BUTTON_SCENARIO = "0ea99f"
 local LAYOUT_BUTTON_MODULAR_SETS = "6979cc"
 local LAYOUT_BUTTON_MODE = "3bcb37"
 local LAYOUT_BUTTON_GO = "eb6963"
 
-local layoutButtonHeroes = getObjectFromGUID(LAYOUT_BUTTON_HEROES)
+--local layoutButtonHeroes = getObjectFromGUID(LAYOUT_BUTTON_HEROES)
 local layoutButtonScenario = getObjectFromGUID(LAYOUT_BUTTON_SCENARIO)
 local layoutButtonModularSets = getObjectFromGUID(LAYOUT_BUTTON_MODULAR_SETS)
 local layoutButtonMode = getObjectFromGUID(LAYOUT_BUTTON_MODE)
@@ -52,15 +52,15 @@ local SELECTOR_TILE_TAG = "selector-tile"
 local currentView = "heroes"
 
 function onload(saved_data)
-    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
-    heroManager.call("layOutHeroSelectors", {
-        team = nil,
-        origin = originPosition,
-        maxRowsOrColumns = columns,
-        columnGap = columnGap,
-        rowGap = rowGap,
-        selectorScale = {2, 1, 2}
-    })
+    -- local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
+    -- heroManager.call("layOutHeroSelectors", {
+    --     team = nil,
+    --     origin = originPosition,
+    --     maxRowsOrColumns = columns,
+    --     columnGap = columnGap,
+    --     rowGap = rowGap,
+    --     selectorScale = {2, 1, 2}
+    -- })
   
     local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
     scenarioManager.call("layOutScenarioSelectors", {
@@ -69,8 +69,7 @@ function onload(saved_data)
         columnGap = columnGap,
         rowGap = rowGap,
         selectorScale = {2, 1, 2},
-        behavior = "select",
-        hidden = true
+        behavior = "select"
     })
 
     local modularSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
@@ -517,7 +516,7 @@ function updateSetupButtons()
     local encounterSetsAreValid = scenarioManager.call("modularSetsAreValid")
     local modeIsValid = scenarioManager.call("modeAndStandardEncounterSetsAreValid")
 
-    layoutButtonHeroes.call("updateButton", {isEnabled = true, isActive = currentView == "heroes"})
+    --layoutButtonHeroes.call("updateButton", {isEnabled = true, isActive = currentView == "heroes"})
     layoutButtonScenario.call("updateButton", {isEnabled = true, isActive = currentView == "scenario"})
     layoutButtonModularSets.call("updateButton", {isEnabled = scenarioIsValid and scenarioUsesModularEncounterSets, isActive = currentView == "modular-sets"})
     layoutButtonMode.call("updateButton", {isEnabled = scenarioIsValid, isActive = currentView == "mode"})

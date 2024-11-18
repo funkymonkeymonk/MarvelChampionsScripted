@@ -11,11 +11,7 @@ function onload(saved_data)
 
    loadSavedData(saved_data)
 
-   createButtons()
-
-   if(getValue("showSelfDestruct", true)) then
-      createSelfDestructButton()
-   end
+   setUpUI(getValue("showRemoveButton", true))
 end
 
 function loadSavedData(saved_data)
@@ -39,85 +35,293 @@ function getValue(key, default)
    return data[key]
 end
 
-function createButtons()
-   self.createButton({
-      label          = "1",
-      click_function = "movePlayerOne",
-      function_owner = self,
-      position       = {1.56,0.3,-0.52},
-      rotation       = {0,0,0},
-      width          = 100,
-      height         = 100,
-      font_size      = 50,
-      color          = {0,1,0},
-      tooltip        = "Take First Player"
-   })
+function setUpUI(showRemoveButton)
+   local ui = 
+   {
+      {
+         tag="Panel",
+         attributes={            
+            height="200",
+            width="350",
+            color="rgba(0,0,0,0)",
+            position="0 0 -12",
+            rotation="0 0 180"
+         },
+         children={
+            {
+               tag="Button",
+               value="1",
+               attributes={
+                  id="firstPLayerButton",
+                  rectAlignment="UpperRight",
+                  onClick="movePlayerOne",
+                  textColor="rgb(0,0,0)",
+                  color="rgb(0,1,0)",
+                  scale="0.25 0.25",
+                  height="80",
+                  width="80",
+                  fontSize="60",
+                  fontStyle="Bold",
+                  offsetXY="-10 -40",
+                  onMouseEnter="showTooltip",
+                  onMouseExit="hideTooltip"
+               }
+            },
+            {
+               tag="Panel",
+               attributes={
+                  id="firstPLayerButtonTooltip",
+                  scale="0.25 0.25",
+                  padding="20 20 10 10",
+                  color="rgba(0,0,0,0.75)",
+                  contentSizeFitter="both",
+                  position="155 50 -100",
+                  visibility="invisible"
+               },
+               children={
+                  {
+                     tag="Text",
+                     value="Take First Player",
+                     attributes={
+                        fontSize="24",
+                        color="rgb(1,1,1)",
+                        alignment="MiddleLeft"
+                     }
+                  }
+               }
+            },
+            {
+               tag="Button",
+               value="R",
+               attributes={
+                  id="readyAllButton",
+                  rectAlignment="UpperRight",
+                  onClick="untapAll",
+                  textColor="rgb(0,0,0)",
+                  color="rgb(0.3,0.6,1)",
+                  scale="0.25 0.25",
+                  height="80",
+                  width="80",
+                  fontSize="60",
+                  fontStyle="Bold",
+                  offsetXY="-10 -65",
+                  onMouseEnter="showTooltip",
+                  onMouseExit="hideTooltip"
+               }
+            },
+            {
+               tag="Panel",
+               attributes={
+                  id="readyAllButtonTooltip",
+                  scale="0.25 0.25",
+                  padding="20 20 10 10",
+                  color="rgba(0,0,0,0.75)",
+                  contentSizeFitter="both",
+                  position="155 25 -100",
+                  visibility="invisible"
+               },
+               children={
+                  {
+                     tag="Text",
+                     value="Ready All Cards",
+                     attributes={
+                        fontSize="24",
+                        color="rgb(1,1,1)",
+                        alignment="MiddleLeft"
+                     }
+                  }
+               }
+            },
+            {
+               tag="Button",
+               value="D",
+               attributes={
+                  id="discardRandomButton",
+                  rectAlignment="UpperRight",
+                  onClick="discardRandom",
+                  textColor="rgb(0,0,0)",
+                  color="rgb(1,0.5, 1)",
+                  scale="0.25 0.25",
+                  height="80",
+                  width="80",
+                  fontSize="60",
+                  fontStyle="Bold",
+                  offsetXY="-10 -90",
+                  onMouseEnter="showTooltip",
+                  onMouseExit="hideTooltip"
+               }
+            },
+            {
+               tag="Panel",
+               attributes={
+                  id="discardRandomButtonTooltip",
+                  scale="0.25 0.25",
+                  padding="20 20 10 10",
+                  color="rgba(0,0,0,0.75)",
+                  contentSizeFitter="both",
+                  position="155 0 -100",
+                  visibility="invisible"
+               },
+               children={
+                  {
+                     tag="Text",
+                     value="Discard a Random Card",
+                     attributes={
+                        fontSize="24",
+                        color="rgb(1,1,1)",
+                        alignment="MiddleLeft"
+                     }
+                  }
+               }
+            },
+            {
+               tag="Button",
+               value="!!",
+               attributes={
+                  id="drawEncounterButton",
+                  rectAlignment="UpperRight",
+                  onClick="drawEncounter",
+                  textColor="rgb(0,0,0)",
+                  color="rgb(1,1,0)",
+                  scale="0.25 0.25",
+                  height="80",
+                  width="80",
+                  fontSize="60",
+                  fontStyle="Bold",
+                  offsetXY="-10 -115",
+                  onMouseEnter="showTooltip",
+                  onMouseExit="hideTooltip"
+               }
+            },
+            {
+               tag="Panel",
+               attributes={
+                  id="drawEncounterButtonTooltip",
+                  scale="0.25 0.25",
+                  padding="20 20 10 10",
+                  color="rgba(0,0,0,0.75)",
+                  contentSizeFitter="both",
+                  position="155 -25 -100",
+                  visibility="invisible"
+               },
+               children={
+                  {
+                     tag="Text",
+                     value="Draw an Encounter Card",
+                     attributes={
+                        fontSize="24",
+                        color="rgb(1,1,1)",
+                        alignment="MiddleLeft"
+                     }
+                  }
+               }
+            },
+            {
+               tag="Button",
+               value="X",
+               attributes={
+                  id="discardEncounterButton",
+                  rectAlignment="UpperRight",
+                  onClick="discardEncounter",
+                  textColor="rgb(0,0,0)",
+                  color="rgb(1,0,0)",
+                  scale="0.25 0.25",
+                  height="80",
+                  width="80",
+                  fontSize="60",
+                  fontStyle="Bold",
+                  offsetXY="-10 -140",
+                  onMouseEnter="showTooltip",
+                  onMouseExit="hideTooltip"
+               }
+            },
+            {
+               tag="Panel",
+               attributes={
+                  id="discardEncounterButtonTooltip",
+                  scale="0.25 0.25",
+                  padding="20 20 10 10",
+                  color="rgba(0,0,0,0.75)",
+                  contentSizeFitter="both",
+                  position="155 -50 -100",
+                  visibility="invisible"
+               },
+               children={
+                  {
+                     tag="Text",
+                     value="Discard Encounter Card",
+                     attributes={
+                        fontSize="24",
+                        color="rgb(1,1,1)",
+                        alignment="MiddleLeft"
+                     }
+                  }
+               }
+            },
+            {
+               tag="Button",
+               value="N",
+               attributes={
+                  id="spawnNemesisButton",
+                  rectAlignment="UpperRight",
+                  onClick="spawnNemesis",
+                  textColor="rgb(1,1,1)",
+                  color="rgb(0,0,0)",
+                  scale="0.25 0.25",
+                  height="80",
+                  width="80",
+                  fontSize="60",
+                  fontStyle="Bold",
+                  offsetXY="-10 -170",
+                  onMouseEnter="showTooltip",
+                  onMouseExit="hideTooltip"
+               }
+            },
+            {
+               tag="Panel",
+               attributes={
+                  id="spawnNemesisButtonTooltip",
+                  scale="0.25 0.25",
+                  padding="20 20 10 10",
+                  color="rgba(0,0,0,0.75)",
+                  contentSizeFitter="both",
+                  position="155 -80 -100",
+                  visibility="invisible"
+               },
+               children={
+                  {
+                     tag="Text",
+                     value="Summon Your Nemesis!",
+                     attributes={
+                        fontSize="24",
+                        color="rgb(1,1,1)",
+                        alignment="MiddleLeft"
+                     }
+                  }
+               }
+            },
+            {
+               tag="Button",
+               value="REMOVE",
+               attributes={
+                  id="removeButton",
+                  active=showRemoveButton,
+                  onClick="clearPlaymat",
+                  textColor="rgb(1,0,0)",
+                  color="rgb(0,0,0)",
+                  scale="0.25 0.25",
+                  height="60",
+                  width="220",
+                  fontSize="40",
+                  rectAlignment="LowerCenter",
+                  offsetXY="0 10"
+               }
+            }
+         }
+      }
+   }
 
-   self.createButton({
-      label          = "R",
-      click_function = "untapAll",
-      function_owner = self,
-      position       = {1.56,0.3,-0.27},
-      rotation       = {0,0,0},
-      width          = 100,
-      height         = 100,
-      font_size      = 50,
-      color          = {0.3,0.6,1},
-      tooltip        = "Ready All Cards"
-   })
-
-   self.createButton({
-      label          = "D",
-      click_function = "discardRandom",
-      function_owner = self,
-      position       = {1.56,0.3,-0.02},
-      rotation       = {0,0,0},
-      width          = 100,
-      height         = 100,
-      font_size      = 50,
-      color          = {1,0.5,1},
-      tooltip        = "Discard a Random Card"
-   })
-
-   self.createButton({
-      label          = "!!",
-      click_function = "drawEncounter",
-      function_owner = self,
-      position       = {1.56,0.3,0.23},
-      rotation       = {0,0,0},
-      width          = 100,
-      height         = 100,
-      font_size      = 50,
-      color          = {1,1,0},
-      tooltip        = "Draw an Encounter Card"
-   })
-
-   self.createButton({
-      label          = "X",
-      click_function = "discardEncounter",
-      function_owner = self,
-      position       = {1.56,0.3,0.48},
-      rotation       = {0,0,0},
-      width          = 100,
-      height         = 100,
-      font_size      = 50,
-      color          = {1,0,0},
-      tooltip        = "Discard Encounter Card"
-   })
-
-   self.createButton({
-      label          = "N",
-      click_function = "spawnNemesis",
-      function_owner = self,
-      position       = {1.56,0.3,0.78},
-      rotation       = {0,0,0},
-      width          = 100,
-      height         = 100,
-      font_size      = 50,
-      font_color     = {1,1,1},
-      color          = {0,0,0},
-      tooltip        = "Summon Your Nemesis!"
-   })
+   self.UI.setXmlTable(ui)   
 end
 
 function setPlayerColor(params)
@@ -173,59 +377,42 @@ function findObjectsAtPosition()
    return objects
 end
 
-function drawEncounter(object, player, isRightClick)
-   Global.call("dealEncounterCardToPlayer", {playerColor = getValue("playerColor"), faceUp = isRightClick})
+function drawEncounter(player, value, id)
+   Global.call("dealEncounterCardToPlayer", {playerColor = getValue("playerColor"), faceUp = value == "-2"})
 end
 
-function discardEncounter(object, player_color, isRightClick)
+function discardEncounter()
    Global.call("discardEncounterCard", {playerColor = getValue("playerColor")})
 end
 
 function discardRandom(object, player)
-   numCardsToDiscard = 1
-   if player == "Red" then
+   playerColor = getValue("playerColor")
+
+   if playerColor == "Red" then
     pos = {-52.50, 2, -21.72}
    end
-   if player == "Blue" then
+   if playerColor == "Blue" then
     pos = {-25.03, 2, -22.40}
    end
-   if player == "Green" then
+   if playerColor == "Green" then
     pos = {2.44, 2, -22.40}
    end
-   if player == "Yellow" then
+   if playerColor == "Yellow" then
     pos = {29.92, 2, -21.73}
    end
-   if #Player[player].getHandObjects() >= numCardsToDiscard then
-    count = #Player[player].getHandObjects()
-    rand = math.random(count)
-    Player[player].getHandObjects()[rand].setPosition(pos)
+
+   local cardsInHand = Player[playerColor].getHandObjects()
+   local handCount = #cardsInHand
+
+   if(handCount == 0) then return end
+
+   if(handCount == 1) then
+      cardsInHand[1].setPosition(pos)
+      return
    end
-end
 
-function createSelfDestructButton()
-   self.createButton({
-      label          = "REMOVE",
-      click_function = "clearPlaymat",
-      function_owner = self,
-      position       = {1.3,0.1,1.05},
-      rotation       = {0,0,0},
-      width          = 150,
-      height         = 50,
-      font_size      = 30,
-      font_color     = {1,0,0},
-      color          = {0,0,0},
-      tooltip        = "Clear Playmat"
-   })
-
-   setValue("showSelfDestruct", true)
-end
-
-function removeButtonByLabel(buttonLabel)
-   for k, button in ipairs(self.getButtons()) do
-      if(button.label == buttonLabel) then
-          self.removeButton(button.index)
-      end
-  end
+   rand = math.random(handCount)
+   cardsInHand[rand].setPosition(pos)
 end
 
 function clearPlaymat()
@@ -248,10 +435,15 @@ function spawnNemesis()
    scenarioManager.call("spawnNemesis", {playerColor = getValue("playerColor")})
 end
 
-function removeSelfDestructButtons()
-   removeButtonByLabel("REMOVE")
+function hideRemoveButton()
+   self.UI.setAttribute("removeButton", "active", false)
 
-   setValue("showSelfDestruct", false)
+   setValue("showRemoveButton", false)
+end
+
+function showRemoveButton()
+   self.UI.setAttribute("removeButton", "active", true)
+   self.UI.setAttribute("removeButton", "textColor", "rgb(1,0,0)")
 end
 
 function getEncounterCardPosition()
@@ -264,4 +456,24 @@ end
 
 function getPlayerDiscardPosition()
    return self.getPosition() + Vector(OFFSET_PLAYER_DISCARD)
+end
+
+function showTooltip(player, value, id)
+   local tooltipId = id .. "Tooltip"
+   local playerColor = player.color
+   local visibility = self.UI.getAttribute(tooltipId, "visibility")
+
+   if string.find(visibility, playerColor) then return end
+
+   self.UI.setAttribute(tooltipId, "visibility", visibility.."|"..playerColor)
+end
+
+function hideTooltip(player, value, id)
+   local tooltipId = id .. "Tooltip"
+   local playerColor = player.color
+   local visibility = self.UI.getAttribute(tooltipId, "visibility")
+
+   if not string.find(visibility, playerColor) then return end
+
+   self.UI.setAttribute(tooltipId, "visibility", visibility:gsub("|"..playerColor, ""))
 end

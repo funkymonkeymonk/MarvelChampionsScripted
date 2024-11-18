@@ -1,8 +1,8 @@
 {
   "Save": {
     "SaveName": "MarvelChampionsLCG",
-    "EpochTime": 1728771947,
-    "Date": "10/12/2024 4:25:47 PM",
+    "EpochTime": 1731950123,
+    "Date": "11/18/2024 10:15:23 AM",
     "VersionNumber": "v13.3",
     "GameMode": "MarvelChampionsLCG",
     "GameType": "Game",
@@ -283,6 +283,10 @@
         {
           "displayed": "game-ui",
           "normalized": "game-ui"
+        },
+        {
+          "displayed": "player-control",
+          "normalized": "player-control"
         }
       ]
     },
@@ -315,7 +319,6 @@
     "Left_Panel.74c1d6.json",
     "Back_Panel.ed0a82.json",
     "3DText.8261c5.json",
-    "Cerebro.c7ece0.json",
     "Damage_Variable.029e3b.json",
     "Acceleration.2604fd.json",
     "Counter_Variable.65c1cc.json",
@@ -392,7 +395,6 @@
     "Specialized_Training_Linked_Cards.94f458.json",
     "3DText.14e87e.json",
     "Layout_Button_Go.eb6963.json",
-    "Layout_Button_Heroes.08c4b0.json",
     "Layout_Button_Mode.3bcb37.json",
     "Layout_Button_Modulars.6979cc.json",
     "Layout_Button_Scenario.0ea99f.json",
@@ -410,6 +412,7 @@
     "Sinister_Assault.898386.json",
     "Osborn_Tech.b7a784.json",
     "First_Player_Panel.63b27d.json",
-    "Game_Button_Clear.c7aa04.json"
+    "Game_Button_Clear.c7aa04.json",
+    "Cerebro.c7ece0.json"
   ]
 }
