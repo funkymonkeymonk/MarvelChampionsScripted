@@ -399,14 +399,14 @@ function configureHealthCounter(params)
     function()
       reloadedCounter = counter.reload()
     end,
-    30
+    60
   )
 
   Wait.frames(
     function()
       reloadedCounter.call("setValue", {value = hitPoints})
     end,
-    60
+    90
   )
 end
 
@@ -466,7 +466,34 @@ function placeDeck(hero, deckType, playmatPosition, importedDeck)
    end  
  end
 
- createDeck(deck)
+  local spawnedDeck = createDeck(deck)
+  local linkedCards = spawnedDeck.getGMNotes()
+
+  if(linkedCards) then
+    linkedCardPosition = getOffsetPosition(playmatPosition, {9.56, 3, -4.66})
+
+    function moveLinkedCardCoroutine()
+      for linkedCardId in string.gmatch(linkedCards, "([^,]+)") do
+        findAndPlacePlayerCard({
+          hero = hero,
+          cardId = linkedCardId,
+          position = linkedCardPosition,
+          flipped = true
+        })
+
+        coroutine.yield(0)
+      end
+
+      Wait.frames(function()
+        Global.call("nameDeck", {deckPosition = linkedCardPosition, name = "Linked Cards"})
+      end,
+      120)
+
+      return 1
+    end
+
+    startLuaCoroutine(self, "moveLinkedCardCoroutine")
+  end
 end
 
 function placeCards(hero, playerColor, playmatPosition)
@@ -474,17 +501,17 @@ function placeCards(hero, playerColor, playmatPosition)
   return
  end
 
- local previousCardName = ""
+ local previousCardId = ""
 
  for key, card in pairs(hero.cards) do
   local cardPosition = getOffsetPosition(playmatPosition, card["offset"])
   local delay = 0
 
-  if(card["name"] == previousCardName) then
+  if(card["cardId"] == previousCardId) then
    delay = 1
   end
 
-  previousCardName = card["name"]
+  previousCardId = card["cardId"]
 
   Wait.time(
    function()

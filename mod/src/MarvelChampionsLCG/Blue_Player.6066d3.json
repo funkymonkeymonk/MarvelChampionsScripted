@@ -22,13 +22,13 @@
       "z": 0
     },
     "ColorDiffuse": {
-      "r": 0.121553682,
+      "r": 0.121553652,
       "g": 0.5294118,
       "b": 1
     },
     "Tags": [
       "player-control"
-    ],    
+    ],
     "LayoutGroupSortIndex": 0,
     "Value": 0,
     "Locked": true,

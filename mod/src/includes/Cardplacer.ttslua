@@ -67,7 +67,6 @@ function buildCardPool(packID)
             if(cardData.toughness) then table.insert(tags, "toughness") end
 
             local card = Decker.Card(cardAsset, 1, 1, { guid=random_guid(), name=cardData.name, sideways=sideways, tags=tags, GMNotes=mapCardData(cardData) })
-            --local card = Decker.Card(cardAsset, 1, 1, { guid=random_guid(), name=cardData.name, sideways=sideways, tags={cardData.type}, GMNotes=cardData.code })
 
             for k,v in pairs(cardData) do
                 if(k~="FrontURL" and k~="BackURL" and k~="flavor" and k~="text" and k~="backText") then
@@ -144,7 +143,7 @@ function getCardByID(id, position, params)
         card:spawn({position = position, scale = scale, rotation = rotation, name = name})
 
     if(locked) then
-        Wait.frames(function() spawnedCard.setLock(true) end, 30)
+        Wait.frames(function() spawnedCard.setLock(true) end, 60)
     end
 
     clearUI()
@@ -154,11 +153,11 @@ end
 
 
 function createDeck(params)
-
     local cards = params.cards
     local position = Vector(params.position)
     local scale = params.scale or Global.getTable("CARD_SCALE_PLAYER")
     local name = params.name or ""
+    local linkedCards = {}
 
     -- Default face down
     local rotation = {0, 180, 180}
@@ -171,6 +170,16 @@ function createDeck(params)
         for i = 1, number, 1 do
             local card = getCardFromCardPool(cardID)
 
+            if(card.linked) then
+                for linkedCardId in string.gmatch(card.linked, "([^,]+)") do
+                    if(linkedCards[linkedCardId] == nil) then
+                        linkedCards[linkedCardId] = 1
+                    else
+                        linkedCards[linkedCardId] = linkedCards[linkedCardId] + 1
+                    end
+                end
+            end
+
             if (card.duplicate_of == nil) then
                 table.insert(deck, card)
             else
@@ -179,9 +188,27 @@ function createDeck(params)
         end
     end
 
-    newDeck = Decker.Deck(deck, {name = name})
+    local linkedCardList = ""
 
-    newDeck:spawn({position = position, scale = scale, rotation = rotation, name = name})
+    for cardId,number in pairs(linkedCards) do
+        linkedCardList = linkedCardList .. cardId .. ","
+
+        if(cards[cardId] == nil) then
+            for i = 1, number, 1 do
+                local card = getCardFromCardPool(cardId)
+
+                if (card.duplicate_of == nil) then
+                    table.insert(deck, card)
+                else
+                    table.insert(deck, getCardFromCardPool(card.duplicate_of))
+                end
+            end
+        end
+    end
+
+    newDeck = Decker.Deck(deck, {name = name, GMNotes = linkedCardList})
+
+    return newDeck:spawn({position = position, scale = scale, rotation = rotation, name = name})
 end
 
 function createUI(_, menu_position)
