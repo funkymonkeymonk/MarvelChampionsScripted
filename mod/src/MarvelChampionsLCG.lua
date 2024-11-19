@@ -387,6 +387,17 @@ function reshuffleEncounterDeck(drawToPosition, drawToRotation)
    end
 end
 
+function nameDeck(params)
+   local deckPosition = Vector(params.deckPosition)
+   local name = params.name
+
+   local items = findInRadiusBy(deckPosition, 6, isDeck)
+
+   if #items > 0 then
+      items[1].setName(name)
+   end
+end
+
 function shuffleDeck(params)
    local items = findInRadiusBy(params.deckPosition, 4, isDeck)
 

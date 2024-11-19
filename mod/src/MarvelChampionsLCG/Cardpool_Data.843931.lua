@@ -28085,7 +28085,8 @@ PACK_43 = [[
     "deckLimit": 1,
     "resourceMental": 1,
     "baseThreat": 5,
-    "victory": 0
+    "victory": 0,
+    "linked": "43034,43035,43036,43037"
   },
   {
     "code": "43022",
@@ -36695,7 +36696,7 @@ PACK_01 = [[
     "code": "01144a",
     "type": "treachery",
     "aspect": "encounter",
-    "BackURL": "https://dcqvlrey92bew.cloudfront.net/01144B.jpg",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01144A.jpg",
     "text": "<b>When Revealed</b>: Each player puts the top card of their deck into play facedown, engaged with them as a [Drone] minion.\n<hr />\n[star] <b>Boost</b>: Choose to either spend a [energy] resource or put the top card of the deck into play facedown, engaged with you as a [Drone] minion.",
     "boostStar": true
@@ -36705,7 +36706,7 @@ PACK_01 = [[
     "code": "01144b",
     "type": "treachery",
     "aspect": "encounter",
-    "BackURL": "https://dcqvlrey92bew.cloudfront.net/01144A.jpg",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01144B.jpg",
     "text": "<b>When Revealed</b>: Each player puts the top card of their deck into play facedown, engaged with them as a [Drone] minion.\n<hr />\n[star] <b>Boost</b>: Choose to either spend a [mental] resource or put the top card of the deck into play facedown, engaged with you as a [Drone] minion.",
     "boostStar": true

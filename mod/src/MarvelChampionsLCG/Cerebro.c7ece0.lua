@@ -79,5 +79,11 @@ function spawnDeck(params)
   local deckScale = Vector(Global.getVar("CARD_SCALE_PLAYER"))
   local slots = params.deckInfo.slots
 
-  Global.call("createDeck", {cards = slots, position = deckPosition, scale = deckScale})
+  local deck = Global.call("createDeck", {cards = slots, position = deckPosition, scale = deckScale})
+
+  local linkedCards = deck.getGMNotes()
+
+  if(#linkedCards > 0) then
+    Global.call("displayMessage", {message="This deck includes linked cards.", messageType=Global.getVar("MESSAGE_TYPE_INFO")})
+  end
 end
