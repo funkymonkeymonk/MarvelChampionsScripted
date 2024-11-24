@@ -3,15 +3,15 @@
     "GUID": "2d7b92",
     "Name": "Custom_PDF",
     "Transform": {
-      "posX": -62.25,
-      "posY": 0.493296623,
-      "posZ": -32.7500076,
-      "rotX": 0.00298267021,
-      "rotY": 180,
-      "rotZ": 7.268571e-8,
-      "scaleX": 2,
+      "posX": -34.75,
+      "posY": 0.495001465,
+      "posZ": 49.25,
+      "rotX": 1.83800157e-8,
+      "rotY": 179.999939,
+      "rotZ": -3.1716894e-8,
+      "scaleX": 5,
       "scaleY": 1,
-      "scaleZ": 2
+      "scaleZ": 5
     },
     "Nickname": "",
     "Description": "",
@@ -41,7 +41,7 @@
     "HideWhenFaceDown": false,
     "Hands": false,
     "CustomPDF": {
-      "PDFUrl": "https://steamusercontent-a.akamaihd.net/ugc/2101548510580246115/6CCEB2182BC9D54D2EC839ED3E754DB4BAD1BFFF/",
+      "PDFUrl": "https://steamusercontent-a.akamaihd.net/ugc/6287472043373228/A27D00C7BFCDEBA14020D60773B88204004BE740/",
       "PDFPassword": "",
       "PDFPage": 0,
       "PDFPageOffset": 0
