@@ -555,6 +555,9 @@ function placeExtras(hero, playmatPosition)
     position = itemPosition,
     smooth = false,
     callback_function = function(counter) 
+      if(item.scale ~= nil) then
+       counter.setScale(item.scale)
+      end
      counter.setPosition(itemPosition)
      counter.setLock(lockItem)
      counter.setName(item.name)

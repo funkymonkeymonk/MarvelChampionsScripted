@@ -48,7 +48,8 @@ heroes["ironheart"] = {
             type = "counter",
             counterType = "general",
             name = "Progress",
-            offset = {-12.57, .28, 3.28},
+            offset = Global.getTable("HERO_MAIN_COUNTER_OFFSET"),
+            scale = Global.getTable("HERO_MAIN_COUNTER_SCALE"),
             locked = true
         }
     }
