@@ -41,5 +41,16 @@ heroes["gambit"] = {
             ["37028"] = 2,
             ["37029"] = 1
         }
-    }
+    },
+    extras = {
+        ammoCounter = {
+            name="Charge",
+            type = "counter",
+            counterType = "general",
+            offset = Global.getTable("HERO_MAIN_COUNTER_OFFSET"),
+            scale = Global.getTable("HERO_MAIN_COUNTER_SCALE"),
+            value = 0,
+            locked = true
+        }
+    }     
 }

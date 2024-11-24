@@ -67,6 +67,9 @@ PLAYMAT_OFFSET_DECK           = {-8.40, 0.30, -4.66}
 PLAYMAT_OFFSET_DISCARD        = {-11.30, 2.00, -4.66}
 PLAYMAT_OFFSET_ENCOUNTER_CARD = {-1.275, 0.5, -1.533}
 
+HERO_MAIN_COUNTER_SCALE = {0.58, 1.00, 0.58}
+HERO_MAIN_COUNTER_OFFSET = {-6.85, 0.2, 5.50}
+
 SETUP_BUTTON_FONT_SIZE_INACTIVE = 400
 SETUP_BUTTON_FONT_SIZE_ACTIVE   = 500
 
@@ -672,6 +675,25 @@ function ensureMinimumYPosition(params)
    return position
 end
 
+function onObjectNumberTyped(object, playerColor, number)
+   if(object.type ~= "Deck" and object.type ~= "Card") then return false end
+
+   local nearbyObjects = findInRadiusBy(object.getPosition(), 4)
+   local playmat = nil
+
+   for _, obj in ipairs(nearbyObjects) do
+      if obj.hasTag("playmat") then
+         playmat = obj
+         break
+      end
+   end
+
+   if(playmat) then
+      playmat.call("drawCards", {objectToDrawFrom = object, numberToDraw = number})
+      return true
+   end
+end
+
 function onObjectEnterZone(zone, card)
    if(supressZoneInteractions) then return end
    if(not isCard(card)) then return end
@@ -770,7 +792,7 @@ end
 function addThreatCounterToSideScheme(card)
    local threatCounterBag = getObjectFromGUID(GUID_THREAT_COUNTER_BAG)
    local cardPosition = card.getPosition()
-   local counterPosition = {cardPosition[1] - 0.38, cardPosition[2] + 0.07, cardPosition[3] - 1.45}
+   local counterPosition = {cardPosition[1] - 0.76, cardPosition[2] + 0.07, cardPosition[3] - 1.08}
    local threatCounter = threatCounterBag.takeObject({position = counterPosition, smooth = false})
    card.setVar("counterGuid", threatCounter.getGUID())
    
@@ -782,9 +804,7 @@ function addThreatCounterToSideScheme(card)
    local heroManager = getObjectFromGUID(GUID_HERO_MANAGER)
    local heroCount = heroManager.call("getHeroCount")
    local threat = 0
-log("baseThreat: " .. baseThreat)
-log("heroCount: " .. heroCount)
-log("hinder: " .. hinder)
+
    if baseThreatIsFixed then
       threat = baseThreat + (heroCount * hinder)
    else
@@ -793,7 +813,7 @@ log("hinder: " .. hinder)
  
    Wait.frames(
       function()
-         threatCounter.setScale({0.48, 1.00, 0.48})
+         threatCounter.setScale({0.75, 1.00, 0.75})
          threatCounter.call("setValue", {value = threat})
      end,
      1

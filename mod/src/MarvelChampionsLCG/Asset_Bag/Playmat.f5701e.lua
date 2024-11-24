@@ -477,3 +477,44 @@ function hideTooltip(player, value, id)
 
    self.UI.setAttribute(tooltipId, "visibility", visibility:gsub("|"..playerColor, ""))
 end
+
+function drawCards(params)
+   local objectToDrawFrom = params.objectToDrawFrom
+   local numberToDraw = params.numberToDraw
+   local positionColor = getValue("playerColor")
+
+   local isDeck = objectToDrawFrom.tag == "Deck"
+   local availableCards = isDeck and objectToDrawFrom.getQuantity() or 1
+   local numberForSecondDraw = numberToDraw > availableCards and numberToDraw - availableCards or 0
+   local isPlayerDeck = isPlayerDeck(objectToDrawFrom)
+   local handPosition = Player[positionColor].getHandTransform().position
+
+   objectToDrawFrom.deal(numberToDraw, getValue("playerColor"))
+
+   if(isPlayerDeck and numberToDraw >= availableCards) then
+      local deckPosition = getPlayerDeckPosition()
+      local discardPosition = getPlayerDiscardPosition()
+
+      Global.call("refreshDeck", {deckPosition = deckPosition, discardPosition = discardPosition})
+      Global.call("displayMessage", {message = "You cycled your deck. Time for an encounter card!", messageType = Global.getVar("MESSAGE_TYPE_INFO"), playerColor = positionColor})
+      Global.call("dealEncounterCardToPlayer", {playerColor = positionColor})
+
+      Wait.frames(function()
+         local playerDeck = Global.call("getDeckOrCardAtLocation", {position = deckPosition})
+         drawCards({objectToDrawFrom = playerDeck, numberToDraw = numberForSecondDraw})
+      end, 
+      30)
+   end
+end
+
+function isPlayerDeck(deck)
+   local deckPosition = deck.getPosition()
+   local playerDeckPosition = getPlayerDeckPosition()
+
+   local xDiff = math.abs(deckPosition.x - playerDeckPosition.x)
+   local zDiff = math.abs(deckPosition.z - playerDeckPosition.z)
+
+   if(xDiff < 0.5 and zDiff < 0.5) then
+      return true
+   end
+end
