@@ -1,0 +1,60 @@
+{
+  "Object": {
+    "GUID": "38061c",
+    "Name": "Custom_Token",
+    "Transform": {
+      "posX": 101.285942,
+      "posY": 24.130188,
+      "posZ": -45.3779144,
+      "rotX": 3.0145145e-8,
+      "rotY": 180.011078,
+      "rotZ": -6.037083e-8,
+      "scaleX": 2.05,
+      "scaleY": 1,
+      "scaleZ": 2.05
+    },
+    "Nickname": "Mutant Genesis Campaign Log",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/1796397839025803063/B0402C065B7B42EF81C597CEE5396D8D3FD4BB5D/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomToken": {
+        "Thickness": 0.2,
+        "MergeDistancePixels": 15,
+        "StandUp": false,
+        "Stackable": false
+      }
+    },
+    "LuaScript": "#include ./Mutant_Genesis_Campaign_Log.38061c.lua",
+    "LuaScriptState": "#include ./Mutant_Genesis_Campaign_Log.38061c.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}
