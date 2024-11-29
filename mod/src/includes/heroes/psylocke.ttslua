@@ -6,6 +6,7 @@ heroes["psylocke"] = {
     playmatImageUrl = "https://steamusercontent-a.akamaihd.net/ugc/2128572098618582499/8E57D23403C62FC93FDE0A8017C72018DEAD90F1/",
     obligationCardId = "41025",
     teams = "mutants",
+    artVariant = "mutant",
     decks = {
         hero = {
             ["41002"] = 2,

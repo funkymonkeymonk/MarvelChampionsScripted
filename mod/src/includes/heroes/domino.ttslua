@@ -6,6 +6,7 @@ heroes["domino"] = {
     playmatImageUrl = "https://steamusercontent-a.akamaihd.net/ugc/2035118512673860953/BC9AC409F2BB180F4594115B5A3E499C3B676A2D/",
     obligationCardId = "40065",
     teams = "mutants",
+    artVariant = "mutant",
     decks = {
         hero = {
             ["40038"] = 1,

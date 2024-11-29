@@ -6,6 +6,7 @@ heroes["nightcrawler"] = {
     playmatImageUrl = "https://steamusercontent-a.akamaihd.net/ugc/2470877290310506612/96DD5D8DD6D0674C4FEDE2735FBACB3C1795B4DD/",
     obligationCardId = "48026",
     teams = "mutants",
+    artVariant = "mutant",
     decks = {
         hero = {
             ["48002"]=1,

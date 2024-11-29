@@ -7,6 +7,7 @@ heroes["rogue"] = {
     playmatImageUrl = "https://steamusercontent-a.akamaihd.net/ugc/2035118512673864953/9F191D57829E59CE767A055C9D3F6D0A08729D0B/",
     obligationCardId = "38024",
     teams = "mutants",
+    artVariant = "mutant",
     decks = {
         hero = {
             ["38002"] = 1,

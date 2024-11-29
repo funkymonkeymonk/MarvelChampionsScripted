@@ -21,7 +21,7 @@ function mapCardData(cardData)
     local card = {}
 
     for k,v in pairs(cardData) do
-        if(k~="FrontURL" and k~="BackURL" and k~="flavor" and k~="text" and k~="backText" and k~="steady" and k~="stalwart" and k~="toughness") then
+        if(k~="FrontURL" and k~="FrontURL_mutant" and k~="BackURL" and k~="flavor" and k~="text" and k~="backText" and k~="steady" and k~="stalwart" and k~="toughness") then
             if(k=="code") then
                 card[k] = string.sub(tostring(v), 1, 5)
             else
@@ -66,15 +66,17 @@ function buildCardPool(packID)
             if(cardData.stalwart) then table.insert(tags, "stalwart") end
             if(cardData.toughness) then table.insert(tags, "toughness") end
 
-            local card = Decker.Card(cardAsset, 1, 1, { guid=random_guid(), name=cardData.name, sideways=sideways, tags=tags, GMNotes=mapCardData(cardData) })
+            local gmNotes = mapCardData(cardData)
 
-            for k,v in pairs(cardData) do
-                if(k~="FrontURL" and k~="BackURL" and k~="flavor" and k~="text" and k~="backText") then
-                    card[k] = string.gsub(tostring(v), "\"", "\\\"")
-                end
-            end
+            local card = Decker.Card(cardAsset, 1, 1, { guid=random_guid(), name=cardData.name, sideways=sideways, tags=tags, GMNotes=gmNotes })
             
             cardpool[cardData.code] = card
+
+            if(cardData.FrontURL_mutant) then
+                local mutantCardAsset = Decker.Asset(cardData.FrontURL_mutant, cardData.BackURL)
+                local mutantCard = Decker.Card(mutantCardAsset, 1, 1, { guid=random_guid(), name=cardData.name, sideways=sideways, tags=tags, GMNotes=gmNotes })
+                cardpool[cardData.code.."_mutant"] = mutantCard
+            end
         else
             cardpool[cardData.code] = {duplicate_of = cardData.duplicate_of}
         end
@@ -84,13 +86,13 @@ function buildCardPool(packID)
     return cardpool
 end
 
-function getCardFromCardPool(cardID)
+function getCardFromCardPool(cardID, artVariant)
     local packID = string.sub(cardID, 1,2)
     local cardpool = buildCardPool(packID)
 
     if(cardpool == nil) then return nil end
 
-    local card = cardpool[cardID]
+    local card = artVariant ~= nil and cardpool[cardID.."_"..artVariant] or cardpool[cardID]
 
     --Temporary work-around for cardpool issue
     if(card == nil) then card = getCardFromCardPool(cardID.."a") end
@@ -122,6 +124,7 @@ function getCardByID(id, position, params)
     local name = params.name or ""
     local landscape = params.landscape or false
     local locked = params.locked
+    local artVariant = params.artVariant
     local tags = params.tags or {}
 
     local x = 0
@@ -134,7 +137,7 @@ function getCardByID(id, position, params)
     -- Default face up
     local rotation = {x, y, z}
 
-    local card = getCardFromCardPool(cardID)
+    local card = getCardFromCardPool(cardID, artVariant)
 
     if (card.duplicate_of ~= nil) then
         return getCardByID(card.duplicate_of, position, params)
@@ -171,13 +174,13 @@ function createDeck(params)
     local y = landscape and 90 or 180
     local z = flipped and 0 or 180
     local cardTags = params.cardTags or {}
-
+    local artVariant = params.artVariant
     local rotation = {0, y, z}
 
     deck = {}
     for cardID,number in pairs(cards) do
         for i = 1, number, 1 do
-            local card = getCardFromCardPool(cardID)
+            local card = getCardFromCardPool(cardID, artVariant)
 
             if(card.linked) then
                 for linkedCardId in string.gmatch(card.linked, "([^,]+)") do
@@ -193,7 +196,7 @@ function createDeck(params)
                 addTagsToCard(card, cardTags)
                 table.insert(deck, card)
             else
-                table.insert(deck, getCardFromCardPool(card.duplicate_of))
+                table.insert(deck, getCardFromCardPool(card.duplicate_of, artVariant))
             end
         end
     end
@@ -205,13 +208,13 @@ function createDeck(params)
 
         if(cards[cardId] == nil) then
             for i = 1, number, 1 do
-                local card = getCardFromCardPool(cardId)
+                local card = getCardFromCardPool(cardId, artVariant)
 
                 if (card.duplicate_of == nil) then
                     addTagsToCard(card, cardTags)
                     table.insert(deck, card)
                 else
-                    table.insert(deck, getCardFromCardPool(card.duplicate_of))
+                    table.insert(deck, getCardFromCardPool(card.duplicate_of, artVariant))
                 end
             end
         end
