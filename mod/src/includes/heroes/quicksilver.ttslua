@@ -6,6 +6,7 @@ heroes["quicksilver"] = {
     playmatImageUrl = "https://steamusercontent-a.akamaihd.net/ugc/2035118512670981741/04EDC113211C59BF4303762A535E1636969F7719/",
     obligationCardId = "14024",
     teams = "avengers,mutants",
+    artVariant = "mutant",
     decks = {
         hero = {
             ["14002"] = 1,

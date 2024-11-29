@@ -6,6 +6,7 @@ heroes["cable"] = {
     playmatImageUrl = "https://steamusercontent-a.akamaihd.net/ugc/2035118512673860832/7C99C64CA39F116D98F0CF5CC6D63BA550FB572E/",
     obligationCardId = "40031",
     teams = "mutants",
+    artVariant = "mutant",
     decks = {
         hero = {
             ["40002"] = 1,

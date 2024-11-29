@@ -7,6 +7,7 @@ heroes["deadpool"] = {
     playmatImageUrl = "https://steamusercontent-a.akamaihd.net/ugc/2294085177750887857/6EB427262D139B13AF7C6079D5397B4CE9AFEFCC/",
     obligationCardId = "44032",
     teams = "mutants",
+    artVariant = "mutant",
     decks = {
         hero = {
             ["44002"]=1,

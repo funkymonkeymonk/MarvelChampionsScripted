@@ -7,6 +7,7 @@ heroes["gambit"] = {
     playmatImageUrl = "https://steamusercontent-a.akamaihd.net/ugc/2035118512673861042/98ECDF1BFE56CC95E1321E96B322ACD211AF5EA1/",
     obligationCardId = "37025",
     teams = "mutants",
+    artVariant = "mutant",
     decks = {
         hero = {
             ["37002"] = 1,

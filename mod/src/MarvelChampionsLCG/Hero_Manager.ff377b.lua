@@ -466,6 +466,10 @@ function placeDeck(hero, deckType, playmatPosition, importedDeck)
    end  
  end
 
+  if(hero.artVariant) then
+    deck.artVariant = hero.artVariant
+  end
+
   local spawnedDeck = createDeck(deck)
   local linkedCards = spawnedDeck.getGMNotes()
 
