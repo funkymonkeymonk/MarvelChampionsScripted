@@ -1,0 +1,61 @@
+{
+  "Object": {
+    "GUID": "71f4e2",
+    "Name": "Custom_Model",
+    "Transform": {
+      "posX": -4.93,
+      "posY": 24.8581066,
+      "posZ": 42,
+      "rotX": 90,
+      "rotY": 180,
+      "rotZ": 0,
+      "scaleX": 1.33,
+      "scaleY": 1.33,
+      "scaleZ": 1.33
+    },
+    "Nickname": "Campaign Manager",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.134740055,
+      "g": 0.114426143,
+      "b": 0.981260955
+    },
+    "Tags": [
+      "Infinity Stone"
+    ],
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": false,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomMesh": {
+      "MeshURL": "https://steamusercontent-a.akamaihd.net/ugc/1845916597512125954/FAE69064A19616699BB85DB7B61CA0A4C39E137E/",
+      "DiffuseURL": "",
+      "NormalURL": "",
+      "ColliderURL": "https://steamusercontent-a.akamaihd.net/ugc/1845916597512126821/F1C00D82CF3AA0D79F1993967BC72A4AD4C42B8B/",
+      "Convex": true,
+      "MaterialIndex": 2,
+      "TypeIndex": 1,
+      "CastShadows": true
+    },
+    "LuaScript": "#include ./Campaign_Manager.71f4e2.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

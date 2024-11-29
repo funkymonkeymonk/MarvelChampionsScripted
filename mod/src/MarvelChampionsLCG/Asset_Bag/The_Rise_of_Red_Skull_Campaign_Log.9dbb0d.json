@@ -1,0 +1,60 @@
+{
+  "Object": {
+    "GUID": "9dbb0d",
+    "Name": "Custom_Token",
+    "Transform": {
+      "posX": 85.00899,
+      "posY": 2.32133484,
+      "posZ": -84.15838,
+      "rotX": 0.00298267161,
+      "rotY": 180.027481,
+      "rotZ": 0.00000144213516,
+      "scaleX": 2.04894447,
+      "scaleY": 1,
+      "scaleZ": 2.04894447
+    },
+    "Nickname": "The Rise of Red Skull Campaign Log",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/1625193014910783394/BE558557F487347266680CCDBA3394914E7840B3/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomToken": {
+        "Thickness": 0.2,
+        "MergeDistancePixels": 15,
+        "StandUp": false,
+        "Stackable": false
+      }
+    },
+    "LuaScript": "#include ./The_Rise_of_Red_Skull_Campaign_Log.9dbb0d.lua",
+    "LuaScriptState": "#include ./The_Rise_of_Red_Skull_Campaign_Log.9dbb0d.state.json",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

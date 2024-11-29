@@ -61,7 +61,7 @@ function onload(saved_data)
     --     rowGap = rowGap,
     --     selectorScale = {2, 1, 2}
     -- })
-  
+    
     local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
     scenarioManager.call("layOutScenarioSelectors", {
         origin = originPosition,

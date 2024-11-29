@@ -1,0 +1,60 @@
+{
+  "Object": {
+    "GUID": "932f87",
+    "Name": "Custom_Token",
+    "Transform": {
+      "posX": 59.32896,
+      "posY": 2.3213346,
+      "posZ": -65.79331,
+      "rotX": 0.00293933135,
+      "rotY": 180.0036,
+      "rotZ": 0.0000456407579,
+      "scaleX": 2.05,
+      "scaleY": 1,
+      "scaleZ": 2.05
+    },
+    "Nickname": "The Galaxy's Most Wanted Campaign Log 1",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/1754690801638242503/13E9F36F21577A7C9B5660FE2A542C964D8F5DB6/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomToken": {
+        "Thickness": 0.2,
+        "MergeDistancePixels": 15,
+        "StandUp": false,
+        "Stackable": false
+      }
+    },
+    "LuaScript": "#include ./The_Galaxy_s_Most_Wanted_Campaign_Log_1.932f87.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

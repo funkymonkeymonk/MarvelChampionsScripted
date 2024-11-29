@@ -1,0 +1,271 @@
+campaigns[2] = {
+    name="The Galaxy's Most Wanted",
+    thumbnailUrl="https://steamusercontent-a.akamaihd.net/ugc/6288106005742706/90F3A14A1DBF6FB363E97DF94AD27BCD89BD1D32/",
+    imageUrl="",
+    text={
+        {
+            text="The Market",
+            position={-92.50, 0.96, 18.00},
+            color={1,1,1},
+            fontSize=88
+        },
+        {
+            text="1",
+            position={-94.75, 0.96, 14.25},
+            color={1,1,1},
+            fontSize=88
+        },
+        {
+            text="2",
+            position={-76.75, 0.96, 14.25},
+            color={1,1,1},
+            fontSize=88
+        },
+        {
+            text="3",
+            position={-94.75, 0.96, 9.25},
+            color={1,1,1},
+            fontSize=88
+        },
+        {
+            text="4",
+            position={-76.75, 0.96, 9.25},
+            color={1,1,1},
+            fontSize=88
+        },
+        {
+            text="5",
+            position={-94.75, 0.96, 4.25},
+            color={1,1,1},
+            fontSize=88
+        },
+        {
+            text="6",
+            position={-76.75, 0.96, 4.25},
+            color={1,1,1},
+            fontSize=88
+        },
+        {
+            text="7",
+            position={-85.75, 0.96, -0.75},
+            color={1,1,1},
+            fontSize=88
+        },
+        {
+            text="Badoon Headhunter",
+            position={-92.00, 0.96, -5.00},
+            color={1,1,1},
+            fontSize=88
+        },
+        {
+            text="Campaign Challenges",
+            position={-64.00, 0.96, -5.00},
+            color={1,1,1},
+            fontSize=88
+        },
+
+    },
+    cards={
+        {
+            cardId="16150",
+            position={-92.25, 0.51, 13.75},
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="16151",
+            position={-88.75, 0.51, 13.75},
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="16152",
+            position={-85.25, 0.51, 13.75},
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="16153",
+            position={-81.75, 0.51, 13.75},
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="16154",
+            position={-74.25, 0.51, 13.75},
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="16155",
+            position={-70.75, 0.51, 13.75},
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="16156",
+            position={-67.25, 0.51, 13.75},
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="16157",
+            position={-63.75, 0.51, 13.75},
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="16158",
+            position={-92.25, 0.51, 8.75},
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="16159",
+            position={-88.75, 0.51, 8.75},
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="16160",
+            position={-85.25, 0.51, 8.75},
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="16161",
+            position={-81.75, 0.51, 8.75},
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="16162",
+            position={-74.25, 0.51, 8.75},
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="16163",
+            position={-70.75, 0.51, 8.75},
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="16164",
+            position={-67.25, 0.51, 8.75},
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="16165",
+            position={-63.75, 0.51, 8.75},
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="16166",
+            position={-92.25, 0.51, 3.75},
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="16167",
+            position={-88.75, 0.51, 3.75},
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="16168",
+            position={-85.25, 0.51, 3.75},
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="16169",
+            position={-81.75, 0.51, 3.75},
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="16170",
+            position={-74.25, 0.51, 3.75},
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="16171",
+            position={-70.75, 0.51, 3.75},
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="16172",
+            position={-67.25, 0.51, 3.75},
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="16173",
+            position={-63.75, 0.51, 3.75},
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="16174",
+            position={-83.25, 0.51, -1.25},
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="16175",
+            position={-79.75, 0.51, -1.25},
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="16176",
+            position={-76.25, 0.51, -1.25},
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="16177",
+            position={-72.75, 0.51, -1.25},
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="16183",
+            position={-94.75, 0.51, -10.75},
+            scale = Global.getTable("CARD_SCALE_ENCOUNTER")
+        },
+        {
+            cardId="16184",
+            position={-89.25, 0.51, -10.75},
+            scale = Global.getTable("CARD_SCALE_ENCOUNTER")
+        },
+        {
+            cardId="16185",
+            position={-83.75, 0.51, -10.75},
+            scale = Global.getTable("CARD_SCALE_ENCOUNTER")
+        },
+        {
+            cardId="16186",
+            position={-78.25, 0.51, -10.75},
+            scale = Global.getTable("CARD_SCALE_ENCOUNTER")
+        },
+        {
+            cardId="16187",
+            position={-93.75, 0.51, -16.75},
+            scale = Global.getTable("CARD_SCALE_ENCOUNTER"),
+            landscape=true
+        }
+    },
+    decks={
+        {
+            name="Challenges",
+            position={-65.25, 0.54, -9.75},
+            scale=Global.getTable("CARD_SCALE_ENCOUNTER"),
+            landscape=true,
+            flipped=true,
+            cards={
+                ["16178"] = 1,
+                ["16179"] = 1,
+                ["16180"] = 1,
+                ["16181"] = 1,
+                ["16182"] = 1
+            }
+        }
+    },
+    pdfs={
+        {
+            url="https://steamusercontent-a.akamaihd.net/ugc/6287472046110947/3DC78F0B24075B8E0C8EC71923EEC213EFF2B71E/",
+            position={-78.00, 0.50, 30.00},
+            scale={4, 1.00, 4}
+        }
+    },
+    logs={
+        {
+            guid="932f87",
+            position={-86.00, 0.59, -28.25},
+            scale={4.30, 1.00, 4.30}
+        },
+        {
+            guid="b8da77",
+            position={-69.95, 0.59, -28.25},
+            scale={4.30, 1.00, 4.30}
+        }
+    }
+}

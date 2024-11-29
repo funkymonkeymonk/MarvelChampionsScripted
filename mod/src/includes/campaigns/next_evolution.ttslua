@@ -1,0 +1,125 @@
+campaigns[7] = {
+    name="NeXt Evolution",
+    thumbnailUrl="https://steamusercontent-a.akamaihd.net/ugc/6288106005742853/21D3416EB7DA5C4F03EB15C1CFB27D8C949E1D71/",
+    imageUrl="",
+    text={
+        {
+            text="Campaign Player Side Schemes",
+            position={-78.00, 0.96, 18.25},
+            color={1,1,1},
+            fontSize=88
+        },
+        {
+            text="Miscellaneous",
+            position={-78.00, 0.96, -10.50},
+            color={1,1,1},
+            fontSize=88
+        }
+    },
+    cards={
+        {
+            cardId="40190",
+            position={-90.25, 0.51, 12.00},
+            landscape=true,
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="40191",
+            position={-90.25, 0.51, 3.50},
+            landscape=true,
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="40192",
+            position={-90.25, 0.51, -5.00},
+            landscape=true,
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="40193",
+            position={-73.75, 0.51, 12.00},
+            landscape=true,
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="40194",
+            position={-73.75, 0.51, 3.50},
+            landscape=true,
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="40195",
+            position={-73.75, 0.51, -5.00},
+            landscape=true,
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="40199",
+            position={-84.25, 0.51, 12.00},
+            scale = Global.getTable("CARD_SCALE_ENCOUNTER")
+        },
+        {
+            cardId="40201",
+            position={-84.25, 0.51, 3.50},
+            scale = Global.getTable("CARD_SCALE_ENCOUNTER")
+        },
+        {
+            cardId="40203",
+            position={-84.25, 0.51, -5.00},
+            scale = Global.getTable("CARD_SCALE_ENCOUNTER")
+        },
+        {
+            cardId="40200",
+            position={-67.75, 0.51, 12.00},
+            scale = Global.getTable("CARD_SCALE_ENCOUNTER")
+        },
+        {
+            cardId="40198",
+            position={-67.75, 0.51, 3.50},
+            scale = Global.getTable("CARD_SCALE_ENCOUNTER")
+        },
+        {
+            cardId="40202",
+            position={-67.75, 0.51, -5.00},
+            landscape=true,
+            scale = Global.getTable("CARD_SCALE_ENCOUNTER")
+        },
+        {
+            cardId="40197",
+            position={-81.25, 0.96, -15.00},
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        }
+    },
+    decks={
+        {
+            name="Pouches",
+            position={-74.75, 0.51, -15.00},
+            scale=Global.getTable("CARD_SCALE_PLAYER"),
+            flipped=true,
+            cards={
+                ["40196"]=4
+            }
+        }
+    },
+    pdfs={
+        {
+            url="https://steamusercontent-a.akamaihd.net/ugc/6288106000343312/565079AE445090AE15F017A395F84D9AF9CD7895/",
+            position={-78.00, 0.50, 30.00},
+            scale={4, 1.00, 4}
+        }
+    },
+    logs={
+        {
+            guid="868463",
+            position={-78.00, 0.59, -28.25},
+            scale={4.30, 1.00, 4.30}
+        }
+    },
+        notes={
+        incompleteLog={
+            title="Campaign Log",
+            text="This campaign log is not yet interactive. This will be remedied in the near future.",
+            position={-91.25, 0.56, -23.75}
+        }
+    }
+}

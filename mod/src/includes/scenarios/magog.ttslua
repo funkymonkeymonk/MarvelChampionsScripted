@@ -77,5 +77,6 @@ scenarios["magog"] =
 function prepareScenario_magog()
   buildGenreQueue()
   local modularSetKey = currentScenario.genreQueue[1].modularSetKey
+  local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
   encounterSetManager.call("selectModularSet", {modularSetKey = modularSetKey})
 end

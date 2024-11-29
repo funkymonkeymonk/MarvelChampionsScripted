@@ -1,0 +1,60 @@
+{
+  "Object": {
+    "GUID": "2139f4",
+    "Name": "Custom_Token",
+    "Transform": {
+      "posX": 59.8837,
+      "posY": 2.271554,
+      "posZ": -75.36764,
+      "rotX": 0.00298253587,
+      "rotY": 180,
+      "rotZ": 1.846836e-8,
+      "scaleX": 4.3,
+      "scaleY": 1,
+      "scaleZ": 4.3
+    },
+    "Nickname": "Age of Apocalypse Campaign Log",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/6288106000335460/3431C5A2A75B7FA998A4F4E85E560CFBC1F145DB/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomToken": {
+        "Thickness": 0.1,
+        "MergeDistancePixels": 15,
+        "StandUp": false,
+        "Stackable": false
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

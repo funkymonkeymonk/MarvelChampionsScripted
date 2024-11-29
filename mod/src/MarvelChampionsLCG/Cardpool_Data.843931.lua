@@ -13204,7 +13204,7 @@ PACK_27 = [[
     "code": "27175",
     "type": "treachery",
     "aspect": "campaign",
-    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27175.jpg",
     "boost": 3
   },
@@ -13213,7 +13213,7 @@ PACK_27 = [[
     "code": "27176",
     "type": "side_scheme",
     "aspect": "campaign",
-    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27176.jpg",
     "text": "Surge.\nVictory 1. (When defeated, add this card to the victory display.)\n<b>Forced Response:</b> After you thwart this scheme, choose to either spend a [physcial] resource or discard 1 random card from your hand.",
     "baseThreat": 2,
@@ -13225,7 +13225,7 @@ PACK_27 = [[
     "code": "27177",
     "type": "side_scheme",
     "aspect": "campaign",
-    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27177.jpg",
     "text": "Surge.\nVictory 1. (When defeated, add this card to the victory display.)\nAs an additional cost to thwart this scheme, take 2 indirect damage.",
     "baseThreat": 3,
@@ -13237,7 +13237,7 @@ PACK_27 = [[
     "code": "27178",
     "type": "side_scheme",
     "aspect": "campaign",
-    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27178.jpg",
     "text": "Surge.\nVictory 1. (When defeated, add this card to the victory display.)\n<b>Forced Response:</b> After any amount of threat is removed from this scheme, place an equal amount of threat on the main scheme.",
     "baseThreat": 3,
@@ -13249,7 +13249,7 @@ PACK_27 = [[
     "code": "27179",
     "type": "side_scheme",
     "aspect": "campaign",
-    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27179.jpg",
     "text": "Surge.\nVictory 1. (When defeated, add this card to the victory display.)\n<b>Forced Interrupt:</b> When the villain phase begins, place 1 speed counter here. If ther are at least 2 speed counters here, remove this card from the game and discard the top 3 cards of each player's deck.",
     "baseThreat": 3,
@@ -13261,7 +13261,7 @@ PACK_27 = [[
     "code": "27180",
     "type": "side_scheme",
     "aspect": "campaign",
-    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27180.jpg",
     "text": "Surge.\nVictory 1. (When defeated, add this card to the victory display.)\n<b>Interrupt:</b> When a character makes a basic thwart against this side scheme, (they may) use their ATK instead of their THW.",
     "baseThreat": 5,
@@ -13273,7 +13273,7 @@ PACK_27 = [[
     "code": "27181",
     "type": "attachment",
     "aspect": "campaign",
-    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066035592/AEE6A404260E9B5DEE79D2B19CB39F982DCA574D/",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27181.jpg",
     "boost": 3
   },
@@ -23445,7 +23445,7 @@ PACK_39 = [[
     "traits": "Dragon. Elite.",
     "attack": 3,
     "scheme": 1,
-    "boost": ,
+    "boost": 4,
     "toughness": true
   },
   {
@@ -28110,7 +28110,7 @@ PACK_43 = [[
   },
   {
     "code": "43027",
-    "duplicate_of": "36026"
+    "duplicate_of": "05023"
   },
   {
     "name": "Combat Specialist",
