@@ -95,6 +95,7 @@ scenarios["loki"] =
 }
 
 function prepareScenario_loki()
+  local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
   encounterSetManager.call("removeModularSet", {modularSetKey = "infinityGauntlet"})
 
   local villain = currentScenario.villains.loki

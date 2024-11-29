@@ -1,0 +1,138 @@
+campaigns[8] = {
+    name="Age of Apocalypse",
+    thumbnailUrl="https://steamusercontent-a.akamaihd.net/ugc/6288106005742644/4A377E28845328E1B98B1C3109FFB264D2C0A8F6/",
+    imageUrl="",
+    text={
+        {
+            text="Missions",
+            position={-78.00, 0.96, 17.00},
+            color={1,1,1},
+            fontSize=88
+        },
+        {
+            text="Mission-Related Cards",
+            position={-78.00, 0.96, 7.25},
+            color={1,1,1},
+            fontSize=88
+        },
+        {
+            text="Overseers",
+            position={-83.25, 0.96, -5.25},
+            color={1,1,1},
+            fontSize=88
+        },
+        {
+            text="Age of\nApocalypse",
+            position={-71.75, 0.96, -4.00},
+            color={1,1,1},
+            fontSize=88
+        }
+    },
+    cards={
+        {
+            cardId="45171",
+            position={-84.75, 0.51, 12.25},
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="45170",
+            position={-71.75, 0.51, 12.25},
+            landscape=true,
+            scale = Global.getTable("CARD_SCALE_ENCOUNTER")
+        },
+        {
+            cardId="45177",
+            position={-83.75, 0.51, 2.25},
+            landscape=true,
+            scale = Global.getTable("CARD_SCALE_ENCOUNTER")
+        }
+    },
+    decks={
+        {
+            name="Age of Apocalypse",
+            position={-71.75, 0.53, -10.25},
+            scale=Global.getTable("CARD_SCALE_ENCOUNTER"),
+            cards = {
+                ["45164"]=2,
+                ["45165"]=2
+            }
+        },
+        {
+            name="Missions 1-4",
+            position={-79.23, 0.54, 12.26},
+            scale=Global.getTable("CARD_SCALE_ENCOUNTER"),
+            landscape=true,
+            flipped=true,
+            cards = {
+                ["45166"]=1,
+                ["45167"]=1,
+                ["45168"]=1,
+                ["45169"]=1
+            }
+        },
+        {
+            name="Overseers",
+            position={-83.25, 0.54, -10.25},
+            scale=Global.getTable("CARD_SCALE_ENCOUNTER"),
+            flipped=true,
+            cards = {
+                ["45179"]=1,
+                ["45180"]=1,
+                ["45181"]=1,
+                ["45182"]=1,
+                ["45183"]=1
+            }
+        },
+        {
+            name="Allies",
+            position={-69.75, 0.54, 2.25},
+            scale=Global.getTable("CARD_SCALE_PLAYER"),
+            flipped=true,
+            cards = {
+                ["45172"]=1,
+                ["45173"]=1,
+                ["45174"]=1,
+                ["45175"]=1
+            }
+        },
+        {
+            name="Desperate Measures",
+            position={-77.75, 0.54, 2.25},
+            scale=Global.getTable("CARD_SCALE_PLAYER"),
+            flipped=true,
+            cards = {
+                ["45176"]=4
+            }
+        },
+        {
+            name="Panicked Refugees",
+            position={-73.75, 0.54, 2.25},
+            scale=Global.getTable("CARD_SCALE_PLAYER"),
+            flipped=true,
+            cards = {
+                ["45178"]=4
+            }
+        }
+    },
+    pdfs={
+        {
+            url="https://steamusercontent-a.akamaihd.net/ugc/6288106000342602/0BD00E138D20A7B13CD2C8A3253BDE489B5212A9/",
+            position={-78.00, 0.50, 30.00},
+            scale={4, 1.00, 4}
+        }
+    },
+    logs={
+        {
+            guid="2139f4",
+            position={-78, 0.59, -28.25},
+            scale={4.30, 1.00, 4.30}
+        }
+    },
+        notes={
+        incompleteLog={
+            title="Campaign Log",
+            text="This campaign log is not yet interactive. This will be remedied in the near future.",
+            position={-91.25, 0.56, -23.75}
+        }
+    }
+}

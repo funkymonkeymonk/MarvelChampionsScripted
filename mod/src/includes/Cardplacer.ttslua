@@ -122,6 +122,7 @@ function getCardByID(id, position, params)
     local name = params.name or ""
     local landscape = params.landscape or false
     local locked = params.locked
+    local tags = params.tags or {}
 
     local x = 0
     local y = 180
@@ -139,6 +140,8 @@ function getCardByID(id, position, params)
         return getCardByID(card.duplicate_of, position, params)
     end
 
+    addTagsToCard(card, tags)
+
     local spawnedCard = 
         card:spawn({position = position, scale = scale, rotation = rotation, name = name})
 
@@ -151,19 +154,25 @@ function getCardByID(id, position, params)
     return spawnedCard
 end
 
+function addTagsToCard(card, tags)
+    for _, tag in ipairs(tags) do
+        table.insert(card.data.Tags, tag)
+    end
+end
 
 function createDeck(params)
     local cards = params.cards
     local position = Vector(params.position)
+    local landscape = params.landscape or false
+    local flipped = params.flipped or false
     local scale = params.scale or Global.getTable("CARD_SCALE_PLAYER")
     local name = params.name or ""
     local linkedCards = {}
+    local y = landscape and 90 or 180
+    local z = flipped and 0 or 180
+    local cardTags = params.cardTags or {}
 
-    -- Default face down
-    local rotation = {0, 180, 180}
-    if (params.flipped) then
-        rotation = {0, 180, 0}
-    end
+    local rotation = {0, y, z}
 
     deck = {}
     for cardID,number in pairs(cards) do
@@ -181,6 +190,7 @@ function createDeck(params)
             end
 
             if (card.duplicate_of == nil) then
+                addTagsToCard(card, cardTags)
                 table.insert(deck, card)
             else
                 table.insert(deck, getCardFromCardPool(card.duplicate_of))
@@ -198,6 +208,7 @@ function createDeck(params)
                 local card = getCardFromCardPool(cardId)
 
                 if (card.duplicate_of == nil) then
+                    addTagsToCard(card, cardTags)
                     table.insert(deck, card)
                 else
                     table.insert(deck, getCardFromCardPool(card.duplicate_of))

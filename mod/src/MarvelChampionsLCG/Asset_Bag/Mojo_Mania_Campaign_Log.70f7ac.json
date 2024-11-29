@@ -1,0 +1,60 @@
+{
+  "Object": {
+    "GUID": "70f7ac",
+    "Name": "Custom_Token",
+    "Transform": {
+      "posX": 98.55535,
+      "posY": 2.52916574,
+      "posZ": -72.80117,
+      "rotX": 1.02289706e-8,
+      "rotY": 180,
+      "rotZ": -3.58097019e-8,
+      "scaleX": 4,
+      "scaleY": 1,
+      "scaleZ": 4
+    },
+    "Nickname": "Mojo Mania Campaign Log",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/6288106000296897/E42A922D180DEFAD52DE385EEA74A403DB68F905/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomToken": {
+        "Thickness": 0.1,
+        "MergeDistancePixels": 15,
+        "StandUp": false,
+        "Stackable": false
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

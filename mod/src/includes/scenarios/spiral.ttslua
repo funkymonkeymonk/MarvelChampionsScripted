@@ -72,6 +72,7 @@ function prepareScenario_spiral()
   buildGenreQueue()
   local firstGenreSetKey = currentScenario.genreQueue[2].modularSetKey
   local firstGenreEnvironmentCardId = currentScenario.genreQueue[2].environmentCardId
+  local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
   local firstGenreSet = encounterSetManager.call("getModularSet", {modularSetKey = firstGenreSetKey})
 
   currentScenario.cards.firstGenreEnvironment ={

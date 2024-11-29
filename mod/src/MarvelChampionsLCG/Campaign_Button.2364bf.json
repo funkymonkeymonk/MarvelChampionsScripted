@@ -1,0 +1,60 @@
+{
+  "Object": {
+    "GUID": "2364bf",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": -78,
+      "posY": 0.495001256,
+      "posZ": 42,
+      "rotX": -1.013396e-8,
+      "rotY": 180,
+      "rotZ": -1.011788e-8,
+      "scaleX": 1.95,
+      "scaleY": 1,
+      "scaleZ": 1.95
+    },
+    "Nickname": "Campaign Button",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/6288106005913802/4B4674B9920B438A0862A7192D8994C9380696C8/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.1,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Campaign_Button.2364bf.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

@@ -207,6 +207,7 @@ function setUpFourHorsemenSideSchemes()
 
   sideSchemes = Global.call("shuffleTable", {table = sideSchemes})
 
+  local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
   local heroCount = heroManager.call("getHeroCount")
 
   for i = 1, 4 do

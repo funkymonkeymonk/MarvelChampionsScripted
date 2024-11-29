@@ -1,0 +1,124 @@
+campaigns[4] = {
+    name="Sinister Motives",
+    thumbnailUrl="https://steamusercontent-a.akamaihd.net/ugc/6288106005742938/A6A7681D69DECCF726EA1F35233771677B8F3A90/",
+    imageUrl="",
+    text={
+        {
+            text="All Scenarios",
+            position={-89.34, 0.50, 18.00},
+            color={1,1,1},
+            fontSize=88
+        },
+        {
+            text="Scenarios #3 and #4",
+            position={-87.09, 0.50, 8.50},
+            color={1,1,1},
+            fontSize=88
+        },
+        {
+            text="Scenario #5",
+            position={-89.43, 0.50, -1.00},
+            color={1,1,1},
+            fontSize=88
+        }
+    },
+    cards={
+        {
+            cardId="27174",
+            position={-89.25, 0.51, 12.75},
+            scale = Global.getTable("CARD_SCALE_ENCOUNTER")
+        },
+        {
+            cardId="27175",
+            position={-83.75, 0.51, 12.75},
+            scale = Global.getTable("CARD_SCALE_ENCOUNTER")
+        },
+        {
+            cardId="27190",
+            position={-89.25, 0.51, 3.25},
+            scale = Global.getTable("CARD_SCALE_PLAYER")
+        },
+        {
+            cardId="27181",
+            position={-83.75, 0.51, 3.25},
+            scale = Global.getTable("CARD_SCALE_ENCOUNTER")
+        }
+    },
+    decks={
+        {
+            name="Community Service",
+            position={-77.25, 0.54, 12.75},
+            scale=Global.getTable("CARD_SCALE_ENCOUNTER"),
+            landscape=true,
+            flipped=true,
+            cards={
+                ["27176"] = 1,
+                ["27177"] = 1,
+                ["27178"] = 1,
+                ["27179"] = 1,
+                ["27180"] = 1
+            }
+        },
+        {
+            name="Osborn Tech",
+            position={-70.75, 0.55, 12.75},
+            scale=Global.getTable("CARD_SCALE_ENCOUNTER"),
+            cards={
+                ["27147"] = 1,
+                ["27148"] = 1,
+                ["27149"] = 1,
+                ["27150"] = 1,
+                ["27151"] = 1,
+                ["27152"] = 1
+            }
+        },
+        {
+            name="S.H.I.E.D. Tech",
+            position={-66.25, 0.56, 12.75},
+            scale=Global.getTable("CARD_SCALE_PLAYER"),
+            flipped=true,
+            cards={
+                ["27182"] = 1,
+                ["27183"] = 1,
+                ["27184"] = 1,
+                ["27185"] = 1,
+                ["27186"] = 1,
+                ["27187"] = 1,
+                ["27188"] = 1,
+                ["27189"] = 1
+            }
+        },
+        {
+            name="Sinister Assault",
+            position={-88.75, 0.54, -6.25},
+            scale=Global.getTable("CARD_SCALE_ENCOUNTER"),
+            cards={
+                ["27158"] = 1,
+                ["27159"] = 1,
+                ["27160"] = 1,
+                ["27161"] = 1,
+                ["27162"] = 1,
+                ["27163"] = 1
+            }
+        }
+    },
+    pdfs={
+        {
+            url="https://steamusercontent-a.akamaihd.net/ugc/1811020040247472533/2F33A84EC473B5E9A093B640723453147D775F97/",
+            position={-78.00, 0.50, 30.00},
+            scale={4, 1.00, 4}
+        }
+    },
+    logs={
+        {
+            guid="07c6c4",
+            position={-86.00, 0.59, -28.25},
+            scale={4.30, 1.00, 4.30}
+        },
+        {
+            guid="b35b08",
+            position={-69.95, 0.59, -28.25},
+            scale={4.30, 1.00, 4.30}
+        }
+    }
+}

@@ -338,6 +338,7 @@ function placeKangStage2()
   villainQueue = Global.call("shuffleTable", {table = villainQueue})
 
   local seats = {"Red", "Blue", "Green", "Yellow"}
+  local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
 
   for k, v in ipairs(seats) do
     local hero = heroManager.call("getHeroByPlayerColor", {playerColor = v})
@@ -440,6 +441,7 @@ function deleteKangStage2PlayArea(villainKey)
   defeatedStage2Villains = defeatedStage2Villains + 1
   currentScenario.defeatedStage2Villains = defeatedStage2Villains
 
+  local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
   local heroCount = heroManager.call("getHeroCount")
   if(defeatedStage2Villains >= heroCount) then
     advanceVillainStage(villainKey, heroCount)

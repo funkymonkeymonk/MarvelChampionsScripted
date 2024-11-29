@@ -96,6 +96,7 @@ end
 
 function addNextGenre()
   currentScenario.genreIndex = currentScenario.genreIndex + 1
+  local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
   local heroCount = heroManager.call("getHeroCount")
 
   if(currentScenario.genreIndex > (heroCount + 1)) then
@@ -138,6 +139,7 @@ function placeGenreSetFromEnvironment(zone, card)
 
   currentScenario.modularSets[modularSetKey] = "required"
 
+  local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
   local newGenreSet = encounterSetManager.call("getModularSet", {modularSetKey = modularSetKey})
 
   newGenreSet = deepCopy(newGenreSet)

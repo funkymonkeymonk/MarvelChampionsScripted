@@ -13,7 +13,7 @@
       "scaleY": 1.33,
       "scaleZ": 1.33
     },
-    "Nickname": "Space Stone",
+    "Nickname": "Campaign Manager",
     "Description": "",
     "GMNotes": "",
     "AltLookAngle": {
@@ -22,8 +22,8 @@
       "z": 0
     },
     "ColorDiffuse": {
-      "r": 0.1347403,
-      "g": 0.1144264,
+      "r": 0.134740055,
+      "g": 0.114426143,
       "b": 0.981260955
     },
     "Tags": [
@@ -53,7 +53,7 @@
       "TypeIndex": 1,
       "CastShadows": true
     },
-    "LuaScript": "",
+    "LuaScript": "#include ./Campaign_Manager.71f4e2.lua",
     "LuaScriptState": "",
     "XmlUI": ""
   },
