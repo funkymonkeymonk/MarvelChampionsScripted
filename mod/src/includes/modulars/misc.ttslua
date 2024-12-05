@@ -173,3 +173,16 @@ modularSets["crazyGang"] =
         ["48038"]=1
     }
 }
+
+modularSets["hellfire"] = 
+{
+    name="Hellfire",
+    modular=true,
+    cards = {
+        ["49038"]=1,
+        ["49039"]=1,
+        ["49040"]=1,
+        ["49041"]=1,
+        ["49042"]=1
+    }
+}
