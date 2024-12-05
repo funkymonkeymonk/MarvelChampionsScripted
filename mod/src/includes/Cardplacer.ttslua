@@ -70,6 +70,10 @@ function buildCardPool(packID)
 
             local card = Decker.Card(cardAsset, 1, 1, { guid=random_guid(), name=cardData.name, sideways=sideways, tags=tags, GMNotes=gmNotes })
             
+            if(cardData.linked) then
+                card.linked = cardData.linked
+            end
+
             cardpool[cardData.code] = card
 
             if(cardData.FrontURL_mutant) then
@@ -181,7 +185,7 @@ function createDeck(params)
     for cardID,number in pairs(cards) do
         for i = 1, number, 1 do
             local card = getCardFromCardPool(cardID, artVariant)
-
+                log(card)
             if(card.linked) then
                 for linkedCardId in string.gmatch(card.linked, "([^,]+)") do
                     if(linkedCards[linkedCardId] == nil) then
