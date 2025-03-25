@@ -39,7 +39,7 @@ end
 function buildCardPool(packID)
     if(not packID) then return {} end
 
-    if (CARDPOOL_BY_PACK_ID[packID] != nil) then
+    if (CARDPOOL_BY_PACK_ID[packID] ~= nil) then
         return CARDPOOL_BY_PACK_ID[packID]
     end
 

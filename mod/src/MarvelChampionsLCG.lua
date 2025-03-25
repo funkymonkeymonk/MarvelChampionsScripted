@@ -776,7 +776,7 @@ function resizeCardOnEnterZone(card, zoneType)
 end
 
 function positionCardOnEnterZone(card, zoneType, zoneIndex)
-   if(zoneType != "sideScheme" and zoneType != "attachment" and zoneType != "environment" and zoneType != "minion" and zoneType != "victoryDisplay") then
+   if(zoneType ~= "sideScheme" and zoneType ~= "attachment" and zoneType ~= "environment" and zoneType ~= "minion" and zoneType ~= "victoryDisplay") then
       return
    end
 
@@ -932,7 +932,7 @@ function repositionCardsInZone(params)
    local zoneType = zone.getVar("zoneType")
    local zoneIndex = zone.getVar("zoneIndex")
 
-   if(zoneType != "sideScheme" and zoneType != "attachment" and zoneType != "environment" and zoneType != "minion" and zoneType != "victoryDisplay") then
+   if(zoneType ~= "sideScheme" and zoneType ~= "attachment" and zoneType ~= "environment" and zoneType ~= "minion" and zoneType ~= "victoryDisplay") then
       return
    end
 

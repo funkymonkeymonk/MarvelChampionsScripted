@@ -72,6 +72,14 @@ function saveData()
   self.script_state = saved_data
 end
 
+function getScenario(params)
+  return scenarios[params.scenarioKey]
+end
+
+function getScenarios()
+  return scenarios
+end
+
 function isScenarioInProgress()
   return currentScenario and currentScenario.inProgress
 end
@@ -1630,7 +1638,7 @@ function placeVillainStage(villain, stage, heroCount)
 
   local stageNumber = string.sub(stage.key, -1)
 
-  if(stageNumber != "1" and stageNumber != "a") then
+  if(stageNumber ~= "1" and stageNumber ~= "a") then
     Global.call("deleteCardAtPosition", {position = villainPosition})
   end
 
@@ -1753,7 +1761,7 @@ function placeSchemeStage(schemeKey, stage, heroCount)
 
   local stageNumber = string.sub(stage.key, -1)
 
-  if(stageNumber != "1" and stageNumber != "a") then
+  if(stageNumber ~= "1" and stageNumber ~= "a") then
     Global.call("deleteCardAtPosition", {position = schemePosition})  
   end
   

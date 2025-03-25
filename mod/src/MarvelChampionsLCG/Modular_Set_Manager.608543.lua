@@ -205,6 +205,10 @@ function getEncounterSetsByType(params)
     return encounterSetList
 end
 
+function getEncounterSets()
+    return deepCopy(modularSets)
+end
+
 function deepCopy(obj, seen)
     if type(obj) ~= 'table' then return obj end
     if seen and seen[obj] then return seen[obj] end

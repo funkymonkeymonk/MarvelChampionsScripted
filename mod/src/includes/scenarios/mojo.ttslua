@@ -116,7 +116,7 @@ function onCardEnterZone_mojo(params)
 end
 
 function placeGenreSetFromEnvironment(zone, card)
-  if(zone.getVar("zoneType") != "environment") then return end
+  if(zone.getVar("zoneType") ~= "environment") then return end
 
   local cardId = Global.call("getCardProperty", {card = card, property = "code"})
 
