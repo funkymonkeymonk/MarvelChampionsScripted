@@ -21,7 +21,7 @@ function mapCardData(cardData)
     local card = {}
 
     for k,v in pairs(cardData) do
-        if(k~="FrontURL" and k~="FrontURL_mutant" and k~="BackURL" and k~="flavor" and k~="text" and k~="backText" and k~="steady" and k~="stalwart" and k~="toughness") then
+        if(k~="FrontURL" and k~="FrontURL_mutant" and k~="FrontURL_shield" and k~="BackURL" and k~="flavor" and k~="text" and k~="backText" and k~="steady" and k~="stalwart" and k~="toughness") then
             if(k=="code") then
                 card[k] = string.sub(tostring(v), 1, 5)
             else
@@ -68,7 +68,9 @@ function buildCardPool(packID)
 
             local gmNotes = mapCardData(cardData)
 
-            local card = Decker.Card(cardAsset, 1, 1, { guid=random_guid(), name=cardData.name, sideways=sideways, tags=tags, GMNotes=gmNotes })
+            local cardName = cardData.name.." - "..cardData.type
+
+            local card = Decker.Card(cardAsset, 1, 1, { guid=random_guid(), name=cardName, sideways=sideways, tags=tags, GMNotes=gmNotes })
             
             if(cardData.linked) then
                 card.linked = cardData.linked
@@ -78,8 +80,14 @@ function buildCardPool(packID)
 
             if(cardData.FrontURL_mutant) then
                 local mutantCardAsset = Decker.Asset(cardData.FrontURL_mutant, cardData.BackURL)
-                local mutantCard = Decker.Card(mutantCardAsset, 1, 1, { guid=random_guid(), name=cardData.name, sideways=sideways, tags=tags, GMNotes=gmNotes })
+                local mutantCard = Decker.Card(mutantCardAsset, 1, 1, { guid=random_guid(), name=cardName, sideways=sideways, tags=tags, GMNotes=gmNotes })
                 cardpool[cardData.code.."_mutant"] = mutantCard
+            end
+
+            if(cardData.FrontURL_shield) then
+                local shieldCardAsset = Decker.Asset(cardData.FrontURL_shield, cardData.BackURL)
+                local shieldCard = Decker.Card(shieldCardAsset, 1, 1, { guid=random_guid(), name=cardName, sideways=sideways, tags=tags, GMNotes=gmNotes })
+                cardpool[cardData.code.."_shield"] = shieldCard
             end
         else
             cardpool[cardData.code] = {duplicate_of = cardData.duplicate_of}

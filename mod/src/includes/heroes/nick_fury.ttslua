@@ -1,0 +1,54 @@
+heroes["nickFury"] = {
+    name = "Nick Fury",
+    identityCardId = "50034",
+    hitPoints = 10,
+    tileImageUrl = "https://steamusercontent-a.akamaihd.net/ugc/32194128399684634/FEB76FE4C81E22E636B1C84C36CB357FE68F1D11/",
+    playmatImageUrl = "https://steamusercontent-a.akamaihd.net/ugc/6298430545635845/EBF2433DA303FC182D8459E7F9A2867811B65719/",
+    obligationCardId = "50059",
+    artVariant = "shield",
+    decks = {
+        hero = {
+            ["50035"]=1,
+            ["50036"]=1,
+            ["50037"]=2,
+            ["50038"]=3,
+            ["50039"]=2,
+            ["50040"]=1,
+            ["50041"]=1,
+            ["50042"]=1,
+            ["50043"]=1,
+            ["50044"]=1,
+            ["50045"]=1,
+            ["50046"]=1
+        },
+        starter = {
+            ["50024"]=1,
+            ["50047"]=1,
+            ["50048"]=1,
+            ["50049"]=3,
+            ["50050"]=3,
+            ["50051"]=3,
+            ["50052"]=3,
+            ["50053"]=3,
+            ["50054"]=1,
+            ["50055"]=1,
+            ["50056"]=1,
+            ["50057"]=1,
+            ["50058"]=3
+        },
+        nemesis = {
+            ["50060"] = 1,
+            ["50061"] = 1,
+            ["50062"] = 2,
+            ["50063"] = 1
+        }
+    },
+    cards = {
+        suitForm = {
+            cardId = "50035",
+            name = "Suit Form",
+            offset = {-4.94, 3, -0.02},
+            flipCard = true
+        }
+    }
+}
