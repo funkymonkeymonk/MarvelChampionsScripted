@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "40c742",
-    "Name": "Custom_Tile",
+    "GUID": "043571",
+    "Name": "Custom_Token",
     "Transform": {
-      "posX": -1.24999166,
-      "posY": -2,
-      "posZ": -29.2500172,
-      "rotX": -1.11090159e-7,
+      "posX": 84.1745148,
+      "posY": 2.54552722,
+      "posZ": -50.3062477,
+      "rotX": 5.356236e-9,
       "rotY": 180,
-      "rotZ": -3.98837727e-8,
-      "scaleX": 1.95,
+      "rotZ": -4.49286048e-8,
+      "scaleX": 4.3,
       "scaleY": 1,
-      "scaleZ": 1.95
+      "scaleZ": 4.3
     },
-    "Nickname": "Scenario Button",
+    "Nickname": "Agents of S.H.I.E.L.D. Campaign Log",
     "Description": "",
     "GMNotes": "",
     "AltLookAngle": {
@@ -22,13 +22,13 @@
       "z": 0
     },
     "ColorDiffuse": {
-      "r": 0.249999642,
-      "g": 0.249999642,
-      "b": 0.249999642
+      "r": 1,
+      "g": 1,
+      "b": 1
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,
-    "Locked": true,
+    "Locked": false,
     "Grid": true,
     "Snap": true,
     "IgnoreFoW": false,
@@ -36,23 +36,23 @@
     "DragSelectable": true,
     "Autoraise": true,
     "Sticky": true,
-    "Tooltip": false,
+    "Tooltip": true,
     "GridProjection": false,
     "HideWhenFaceDown": false,
     "Hands": false,
     "CustomImage": {
-      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/2495635126604486342/9C09A2C0AB591F0F03750EDE82FF9CD2F78BEB74/",
+      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/13237779929823188723/7E8B50C7D483BAC550686524A867172078088BFB/",
       "ImageSecondaryURL": "",
       "ImageScalar": 1,
       "WidthScale": 0,
-      "CustomTile": {
-        "Type": 3,
+      "CustomToken": {
         "Thickness": 0.1,
-        "Stackable": false,
-        "Stretch": true
+        "MergeDistancePixels": 15,
+        "StandUp": false,
+        "Stackable": false
       }
     },
-    "LuaScript": "#include ./Scenario_Button.40c742.lua",
+    "LuaScript": "",
     "LuaScriptState": "",
     "XmlUI": ""
   },

@@ -1,0 +1,162 @@
+modularSets["aimAbduction"] = 
+{
+    name="A.I.M. Abduction",
+    modular=true,
+    cards = {
+        ["50080"]=2,
+        ["50081"]=1,
+        ["50082"]=2
+    }
+}
+
+modularSets["aimScience"] = 
+{
+    name="A.I.M. Science",
+    modular=true,
+    cards = {
+        ["50083"]=1,
+        ["50084"]=3,
+        ["50085"]=1
+    }
+}
+
+modularSets["batrocsBrigade"] = 
+{
+    name="Batroc's Brigade",
+    modular=true,
+    cards = {
+        ["50098"]=1,
+        ["50099"]=1,
+        ["50100"]=1,
+        ["50101"]=1,
+        ["50102"]=1
+    }
+}
+
+modularSets["scientistSupreme"] = 
+{
+    name="Scientist Supreme",
+    modular=true,
+    cards = {
+        ["50125"]=1,
+        ["50126"]=1,
+        ["50127"]=1,
+        ["50128"]=2
+    }
+}
+
+modularSets["gravitationalPull"] = 
+{
+    name="Gravitational Pull",
+    modular=true,
+    cards = {
+        ["50139"]=1,
+        ["50140"]=1,
+        ["50141"]=2,
+        ["50142"]=2
+    }
+}
+
+modularSets["hardSound"] = 
+{
+    name="Hard Sound",
+    modular=true,
+    cards = {
+        ["50143"]=1,
+        ["50144"]=1,
+        ["50145"]=1,
+        ["50146"]=1,
+        ["50147"]=2
+    }
+}
+
+modularSets["paleLittleSpider"] = 
+{
+    name="Pale Little Spider",
+    modular=true,
+    cards = {
+        ["50148"]=1,
+        ["50149"]=2,
+        ["50150"]=1,
+        ["50151"]=2
+    }
+}
+
+modularSets["powerOfTheAtom"] = 
+{
+    name="Power of the Atom",
+    modular=true,
+    cards = {
+        ["50152"]=1,
+        ["50153"]=2,
+        ["50154"]=1,
+        ["50155"]=2
+    }
+}
+
+modularSets["supersonic"] = 
+{
+    name="Supersonic",
+    modular=true,
+    cards = {
+        ["50156"]=1,
+        ["50157"]=1,
+        ["50158"]=1,
+        ["50159"]=1,
+        ["50160"]=2
+    }
+}
+
+modularSets["theLeaper"] = 
+{
+    name="The Leaper",
+    modular=true,
+    cards = {
+        ["50161"]=1,
+        ["50162"]=1,
+        ["50163"]=2,
+        ["50164"]=2
+    }
+}
+
+modularSets["shield"] = 
+{
+    name="S.H.I.E.L.D.",
+    modular=true,
+    cards = {
+        ["50178"]=3,
+        ["50179"]=1,
+        ["50180"]=1
+    }
+}
+
+modularSets["shieldExecutiveBoard"] = 
+{
+    name="S.H.I.E.L.D. Executive Board",
+    modular=true,
+    cards = {
+        ["50181"]=1,
+        ["50182"]=1,
+        ["50183"]=1,
+        ["50184A"]=1,
+        ["50184B"]=1,
+        ["50184C"]=1
+    }
+}
+
+modularSets["executiveBoardEvidence"] = 
+{
+    name="Executive Board Evidence",
+    modular=false,
+    cards = {
+        ["50185"]=1,
+        ["50186"]=1,
+        ["50187"]=1,
+        ["50188"]=1,
+        ["50189"]=1,
+        ["50190"]=1,
+        ["50191"]=1,
+        ["50192"]=1,
+        ["50193"]=1
+    }
+}

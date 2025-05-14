@@ -578,7 +578,7 @@ function setUpZones()
       horizontalGap = 5,
       verticalGap = 0,
       layoutDirection = "horizontal",
-      width = 4,
+      width = 2,
       height = 1
     }
 
@@ -596,6 +596,34 @@ function setUpZones()
         spawned_object.setVar("zoneIndex", minionZoneIndex)
         spawned_object.setVar("playerColor", color)
         currentScenario.zones[minionZoneIndex].guid = spawned_object.getGUID()
+      end
+    })
+  end
+
+  local customZones = currentScenario.customZones or {}
+  for key, zoneDef in pairs(customZones) do
+    currentScenario.zones[key] = zoneDef
+    local onEnterFunction = zoneDef.onEnterFunction or nil
+    local zoneType = zoneDef.zoneType or nil
+    local zoneTags = zoneDef.tags or {}
+
+    spawnObject({
+      type="ScriptingTrigger",
+      position = zoneDef.position,
+      scale = zoneDef.scale,
+      sound = false,
+      callback_function = function(spawned_object)
+        spawned_object.setVar("zoneIndex", key)
+        if(onEnterFunction) then
+          spawned_object.setVar("onEnterFunction", onEnterFunction)
+        end
+        if(zoneType) then
+          spawned_object.setVar("zoneType", zoneType)
+        end
+        for _, tag in pairs(zoneTags) do
+          spawned_object.addTag(tag)
+        end
+        currentScenario.zones[key].guid = spawned_object.getGUID()
       end
     })
   end
@@ -677,6 +705,14 @@ function scenarioIsValid(params)
 end
 
 function modularSetsAreValid(params)
+  if(currentScenario == nil) then return false end
+
+  local functionName = "modularSetsAreValid_" .. currentScenario.key
+
+  if(self.getVar(functionName) ~= nil) then
+    return self.call(functionName, params)
+  end
+
   local requiredEncounterSetCount = getRequiredEncounterSetCount()
   local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
   local selectedEncounterSetCount = encounterSetManager.call("getSelectedSetCount")
@@ -781,7 +817,7 @@ function setUpVillain(villainKey, heroCount)
 
   local villain = currentScenario.villains[villainKey]
 
-  placeVillainHpCounter(villainKey, 0, false)
+  placeVillainHpCounter(villainKey, 0)
 
   Wait.frames(
     function()
@@ -791,13 +827,14 @@ function setUpVillain(villainKey, heroCount)
   )
 end
 
-function placeVillainHpCounter(villainKey, hitPoints, showAdvanceButton)
+function placeVillainHpCounter(villainKey, hitPoints)
   local villain = currentScenario.villains[villainKey]
   local counter = villain.hpCounter or {}
 
   local position = counter.position or defaults.villainHpCounter.position
   local rotation = counter.rotation or defaults.villainHpCounter.rotation
   local scale = counter.scale or defaults.villainHpCounter.scale
+  local showAdvanceButton = counter.showAdvanceButton or false
 
   local locked = true;
   if(counter.locked ~= nil) then
@@ -1112,12 +1149,14 @@ function placeDeck(deck)
   local deckPosition = deck.position or defaults.encounterDeck.position
   local deckRotation = deck.rotation or defaults.encounterDeck.rotation
   local deckScale = deck.scale or defaults.encounterDeck.scale
+  local labelOffset = deckScale[3] > 2 and 5 or 4
 
   createDeck({cards = deck.cards, position = deckPosition, scale = deckScale, name = deck.name})
 
   if(deck.label) then
     --TODO: make label position more dynamic (based on deck size and presence of carriage returns); consider allowing for customization of font size and color, and placement of label (above, below, etc.)
-    local labelPosition = Vector(deckPosition) + Vector({0,0,4})
+    local labelPosition = Vector(deckPosition) + Vector({0,0,labelOffset})
+
     spawnObject({
       type = "3DText",
       position = labelPosition,
@@ -1616,11 +1655,14 @@ function getNextVillainStage(villainKey)
     nextStage = villain.stages.stage3
   end
 
-  local nextStageNumber = string.sub(nextStage.key, -1)
-  local showAdvanceButton = nextStageNumber == "1" or 
-    (nextStageNumber == "2" and mode == "expert")
+  if(nextStage.showAdvanceButton == nil) then
+    local nextStageNumber = string.sub(nextStage.key, -1)
+    local showAdvanceButton = nextStageNumber == "1" or 
+      (nextStageNumber == "2" and mode == "expert")
+  
+    nextStage.showAdvanceButton = showAdvanceButton    
+  end
 
-  nextStage.showAdvanceButton = showAdvanceButton
   return nextStage
 end
 
@@ -1829,10 +1871,14 @@ end
 function configureAdvanceSchemeButton(threatCounter, showAdvanceButton)
   local scheme = currentScenario.schemes[threatCounter.call("getSchemeKey")]
 
+  if(scheme.threatCounter.showAdvanceButton ~= nil) then
+    showAdvanceButton = scheme.threatCounter.showAdvanceButton
+  end
+
   if(showAdvanceButton) then
     threatCounter.call("setAdvanceButtonOptions", {
-      label = scheme.threatCounter.advanceButtonLabel or "ADVANCE",
-      clickFunction = scheme.threatCounter.advanceButtonClickFunction
+      label = scheme.threatCounter.primaryButtonLabel or "ADVANCE",
+      clickFunction = scheme.threatCounter.primaryButtonClickFunction
     })
     threatCounter.call("showAdvanceButton")
   else
@@ -1847,6 +1893,11 @@ function onCardEnterZone(params)
     self.call(functionName, {zone=params.zone, card=params.card})
     return
   end
+end
+
+function getHeroCount()
+  local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
+  return heroManager.call("getHeroCount")            
 end
 
 
@@ -1899,3 +1950,8 @@ require('!/scenarios/four_horsemen')
 require('!/scenarios/apocalypse')
 require('!/scenarios/dark_beast')
 require('!/scenarios/en_sabah_nur')
+require('!/scenarios/black_widow')
+require('!/scenarios/batroc')
+require('!/scenarios/modok')
+require('!/scenarios/thunderbolts')
+require('!/scenarios/baron_zemo')

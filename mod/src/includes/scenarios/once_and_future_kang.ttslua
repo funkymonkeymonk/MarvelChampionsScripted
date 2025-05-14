@@ -361,8 +361,8 @@ function placeKangStage2()
         scale = layout.schemeScale,
         threatCounter = {
           position = layout.threatCounterPosition,
-          advanceButtonLabel = "COMPLETE",
-          advanceButtonClickFunction = "completeKangStage2Scheme"
+          primaryButtonLabel = "COMPLETE",
+          primaryButtonClickFunction = "completeKangStage2Scheme"
         },
         stages = {
           stage1 = {

@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "63b27d",
-    "Name": "Custom_Tile",
+    "GUID": "ea1d2b",
+    "Name": "Custom_Token",
     "Transform": {
-      "posX": 77.99987,
-      "posY": -1.5,
-      "posZ": 0,
-      "rotX": 1.01368487e-8,
-      "rotY": 180,
-      "rotZ": -5.92385252e-9,
+      "posX": -27.24929,
+      "posY": 2.59576321,
+      "posZ": -72.0024261,
+      "rotX": 0.002983016,
+      "rotY": 179.999786,
+      "rotZ": -2.11904947e-7,
       "scaleX": 2,
       "scaleY": 1,
       "scaleZ": 2
     },
-    "Nickname": "First Player Panel",
+    "Nickname": "A.I.M. Envelope",
     "Description": "",
     "GMNotes": "",
     "AltLookAngle": {
@@ -22,13 +22,13 @@
       "z": 0
     },
     "ColorDiffuse": {
-      "r": 0.249999613,
-      "g": 0.249999613,
-      "b": 0.249999613
+      "r": 1,
+      "g": 1,
+      "b": 1
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,
-    "Locked": true,
+    "Locked": false,
     "Grid": true,
     "Snap": true,
     "IgnoreFoW": false,
@@ -41,18 +41,18 @@
     "HideWhenFaceDown": false,
     "Hands": false,
     "CustomImage": {
-      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/2470878647719402909/1C603670A537CE3FE7F4B171197EE7513510A788/",
+      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/17877501909819117317/9334F955A6378EFF8F457F7EB71CE5F6AC925FB8/",
       "ImageSecondaryURL": "",
       "ImageScalar": 1,
       "WidthScale": 0,
-      "CustomTile": {
-        "Type": 3,
-        "Thickness": 0.1,
-        "Stackable": false,
-        "Stretch": true
+      "CustomToken": {
+        "Thickness": 0.2,
+        "MergeDistancePixels": 5,
+        "StandUp": false,
+        "Stackable": false
       }
     },
-    "LuaScript": "#include ./First_Player_Panel.63b27d.lua",
+    "LuaScript": "#include ./A.I.M._Envelope.ea1d2b.lua",
     "LuaScriptState": "",
     "XmlUI": ""
   },

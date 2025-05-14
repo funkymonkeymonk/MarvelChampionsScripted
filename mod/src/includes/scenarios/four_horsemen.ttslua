@@ -131,8 +131,8 @@ scenarios["fourHorsemen"] =
         }
     },
     modularSets={
-        hounds="optional",
-        dystopianNightmare="optional"
+        hounds="recommended",
+        dystopianNightmare="recommended"
     },
     zones={
         sideScheme = {

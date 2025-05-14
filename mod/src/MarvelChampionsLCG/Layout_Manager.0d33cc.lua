@@ -74,11 +74,11 @@ function onload(saved_data)
 
     local modularSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
     modularSetManager.call("layOutModularSetSelectors", {
-        origin = originPosition,
-        maxRowsOrColumns = columns,
-        columnGap = 8.75,
-        rowGap = 3.75,
-        selectorScale = {1.6, 1, 1.6},
+        origin = {x = 59.50, y = 0.60, z = 26.25},
+        maxRowsOrColumns = 6,
+        columnGap = 7.5,
+        rowGap = 3.5,
+        selectorScale = {1.4, 1, 1.4},
         modular = true,
         behavior = "select",
         hidden = true

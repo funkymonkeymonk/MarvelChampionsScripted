@@ -1,8 +1,8 @@
 {
   "Save": {
     "SaveName": "MarvelChampionsLCG",
-    "EpochTime": 1733359955,
-    "Date": "12/4/2024 5:52:35 PM",
+    "EpochTime": 1747181237,
+    "Date": "5/13/2025 6:07:17 PM",
     "VersionNumber": "v13.3",
     "GameMode": "MarvelChampionsLCG",
     "GameType": "Game",
@@ -287,6 +287,50 @@
         {
           "displayed": "player-control",
           "normalized": "player-control"
+        },
+        {
+          "displayed": "side_scheme",
+          "normalized": "side_scheme"
+        },
+        {
+          "displayed": "player_side_scheme",
+          "normalized": "player_side_scheme"
+        },
+        {
+          "displayed": "environment",
+          "normalized": "environment"
+        },
+        {
+          "displayed": "delete-with-scenario",
+          "normalized": "delete-with-scenario"
+        },
+        {
+          "displayed": "villain",
+          "normalized": "villain"
+        },
+        {
+          "displayed": "main_scheme",
+          "normalized": "main_scheme"
+        },
+        {
+          "displayed": "treachery",
+          "normalized": "treachery"
+        },
+        {
+          "displayed": "obligation",
+          "normalized": "obligation"
+        },
+        {
+          "displayed": "ally",
+          "normalized": "ally"
+        },
+        {
+          "displayed": "support",
+          "normalized": "support"
+        },
+        {
+          "displayed": "shield-envelope",
+          "normalized": "shield-envelope"
         }
       ]
     },
@@ -312,7 +356,6 @@
     "HandTrigger.b0eff5.json",
     "HandTrigger.cabb0d.json",
     "Custom_Board.321cd7.json",
-    "First_Player.d93792.json",
     "Left_Panel.74c1d6.json",
     "Back_Panel.ed0a82.json",
     "Damage_Variable.029e3b.json",
@@ -372,11 +415,11 @@
     "Standard_Set_Selector_II.4a340c.json",
     "Standard_Set_Selector_III.9e3a14.json",
     "Expert_Set_Selector_II.e2a916.json",
-    "Release_Notes.ec4436.json",
     "First_Player_Panel.63b27d.json",
     "Game_Button_Clear.c7aa04.json",
     "Cerebro.c7ece0.json",
     "Campaign_Button.2364bf.json",
-    "Scenario_Button.40c742.json"
+    "Scenario_Button.40c742.json",
+    "First_Player.d93792.json"
   ]
 }

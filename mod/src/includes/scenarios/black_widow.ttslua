@@ -1,0 +1,106 @@
+scenarios["blackWidow"] =
+{
+    name="Black Widow",
+    fullyScripted = true,
+    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/6301420264312925/6EAE321200A219DA4719490ACA81D1EC355F7B06/",
+    villains={
+        blackWidow={
+            name="Black Widow",
+            hpCounter={
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/6301420264312925/6EAE321200A219DA4719490ACA81D1EC355F7B06/",
+            },
+            stages={
+                stage1={
+                    cardId="50064",
+                    hitPointsPerPlayer=13
+                },
+                stage2={
+                    cardId="50065",
+                    hitPointsPerPlayer=16
+                },
+                stage3={
+                    cardId="50066",
+                    hitPointsPerPlayer=20
+                }
+            }
+        }
+    },
+    schemes={
+        main={
+            stages={
+                stage1={
+                    cardId="50067",
+                    startingThreat=0,
+                    startingThreatPerPlayer=2,
+                    targetThreatPerPlayer=10,
+                    flavorText="You track the missing S.H.I.E.L.D. specialist to a decommissioned stretch of subway tunnel and discover her kidnappers' base of operations.",
+                }
+            }
+        }
+    },
+    decks={
+        encounterDeck={
+            name="Black Widow's Encounter Deck",
+            cards={
+                ["50068"]=2,
+                ["50069"]=1,
+                ["50070"]=1,
+                ["50071"]=1,
+                ["50072"]=2,
+                ["50073"]=2,
+                ["50074"]=1,
+                ["50075"]=1,
+                ["50076"]=2,
+                ["50077"]=2,
+                ["50078"]=2,
+                ["50079"]=2
+            }
+        }
+    },
+    modularSets={
+        aimAbduction="recommended",
+        aimScience="recommended"
+    }
+}
+
+function setUpSchemeStage_blackWidow_main(params)
+    local stage = params.stage
+    local stageNumber = string.sub(stage.key, -1)
+
+    if(stageNumber == "1") then
+        Global.call("displayMessage", {message = "Each player searches the encounter deck for a minion and puts it into play engaged with them. Shuffle the deck.", messageType = Global.getVar("MESSAGE_TYPE_INSTRUCTION")})
+    end
+end
+
+function setUpVillainStage_blackWidow(params)
+    local stage = params.stage
+    local stageNumber = string.sub(stage.key, -1)
+    local mode = getMode()
+    local threatCounter = getObjectFromGUID(currentScenario.schemes["main"].threatCounter.guid)
+    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
+    local heroCount = heroManager.call("getHeroCount")
+
+    if(stageNumber == "2") then
+        if(mode == "expert") then            
+            Wait.condition(
+                function()
+                    local currentThreat = threatCounter.call("getValue")
+                    local addedThreat = heroCount * 2
+        
+                    threatCounter.call("setValue", {value = currentThreat + addedThreat})
+                    Global.call("displayMessage", {message = addedThreat .. " threat (2 per player) added to the main scheme.", messageType = Global.getVar("MESSAGE_TYPE_INFO")})
+                end, 
+                function()
+                    return threatCounter.call("getValue") > 0
+                end,
+                5)
+            else
+
+            Global.call("displayMessage", {message = "Place " .. heroCount * 2 .. " threat (2 per player) on the main scheme.", messageType = Global.getVar("MESSAGE_TYPE_INSTRUCTION")})
+        end        
+    end
+
+    if(stageNumber == "3") then
+        Global.call("displayMessage", {message = "Place " .. heroCount * 3 .. " threat (3 per player) on the main scheme.", messageType = Global.getVar("MESSAGE_TYPE_INSTRUCTION")})
+    end
+end

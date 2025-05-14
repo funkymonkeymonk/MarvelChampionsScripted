@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "40c742",
+    "GUID": "e91ddb",
     "Name": "Custom_Tile",
     "Transform": {
-      "posX": -1.24999166,
-      "posY": -2,
-      "posZ": -29.2500172,
-      "rotX": -1.11090159e-7,
-      "rotY": 180,
-      "rotZ": -3.98837727e-8,
-      "scaleX": 1.95,
+      "posX": 48.8322945,
+      "posY": 2.872939,
+      "posZ": -38.0666161,
+      "rotX": 8.66947858e-7,
+      "rotY": 180.012589,
+      "rotZ": -5.44618466e-8,
+      "scaleX": 5,
       "scaleY": 1,
-      "scaleZ": 1.95
+      "scaleZ": 5
     },
-    "Nickname": "Scenario Button",
+    "Nickname": "Holding Cell",
     "Description": "",
     "GMNotes": "",
     "AltLookAngle": {
@@ -22,13 +22,13 @@
       "z": 0
     },
     "ColorDiffuse": {
-      "r": 0.249999642,
-      "g": 0.249999642,
-      "b": 0.249999642
+      "r": 1,
+      "g": 1,
+      "b": 1
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,
-    "Locked": true,
+    "Locked": false,
     "Grid": true,
     "Snap": true,
     "IgnoreFoW": false,
@@ -41,19 +41,19 @@
     "HideWhenFaceDown": false,
     "Hands": false,
     "CustomImage": {
-      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/2495635126604486342/9C09A2C0AB591F0F03750EDE82FF9CD2F78BEB74/",
+      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/6300785515626713/DF2E56EB8891782583EDD250D444CD8FA4CF1B1F/",
       "ImageSecondaryURL": "",
       "ImageScalar": 1,
       "WidthScale": 0,
       "CustomTile": {
-        "Type": 3,
+        "Type": 0,
         "Thickness": 0.1,
         "Stackable": false,
         "Stretch": true
       }
     },
-    "LuaScript": "#include ./Scenario_Button.40c742.lua",
-    "LuaScriptState": "",
+    "LuaScript": "#include ./Holding_Cell.e91ddb.lua",
+    "LuaScriptState": "#include ./Holding_Cell.e91ddb.state.json",
     "XmlUI": ""
   },
   "StatesPaths": {}

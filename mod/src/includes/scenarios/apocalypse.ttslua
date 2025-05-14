@@ -85,8 +85,8 @@ scenarios["apocalypse"] =
         }
     },
     modularSets={
-        darkRiders="optional",
-        infinites="optional"
+        darkRiders="recommended",
+        infinites="recommended"
     },
     notes={
         easyMode={

@@ -46,14 +46,6 @@ scenarios["riskyBusiness"] =
             }
         }
     },
---    counters={
---        infamy={
---            type="general",
---            position={15.26, 1.06, 26.74},
---            scale={0.50, 1.00, 0.50},
---            locked=true
---        }
---    },
     decks={
         encounterDeck={
             name="Green Goblin's Encounter Deck",
