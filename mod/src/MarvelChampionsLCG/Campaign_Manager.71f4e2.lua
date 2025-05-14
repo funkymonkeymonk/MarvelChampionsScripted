@@ -209,6 +209,7 @@ function placeLogs(campaign)
 end
 
 function configureLog(params)
+    local log = params.spawnedObject
     log.setPosition(params.position)
     log.setScale(params.scale)
     log.setLock(true)
