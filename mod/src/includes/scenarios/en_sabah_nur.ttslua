@@ -58,10 +58,10 @@ scenarios["enSabahNur"] =
         }
     },
     modularSets={
-        celestialTech="optional",
-        clanAkkaba="optional"
+        celestialTech="recommended",
+        clanAkkaba="recommended"
     },
-        notes={
+    notes={
         easyMode={
             title="Apocalypse's Forms",
             text="Apocalypse's villain cards are multi-state. To change forms, either right-click and select a different state, or place your pointer over the card and type 1, 2, or 3.",

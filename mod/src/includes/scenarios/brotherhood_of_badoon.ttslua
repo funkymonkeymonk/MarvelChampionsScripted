@@ -76,6 +76,6 @@ scenarios["badoon"] =
     },
     modularSets={
         shipCommand="required",
-        bandOfBadoon="recommended",
+        bandOfBadoon="recommended"
     }
 }

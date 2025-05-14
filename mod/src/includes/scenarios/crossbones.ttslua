@@ -72,7 +72,7 @@ scenarios["crossbones"] =
         }
     },
     modularSets={
-        hydraPatrol="recommended",
+        hydraAssault="recommended",
         weaponMaster="recommended",
         legionsOfHydra="recommended"
     }

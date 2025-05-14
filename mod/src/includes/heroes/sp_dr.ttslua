@@ -1,6 +1,7 @@
 heroes["spdr"] = {
     name = "SP//dr",
     identityCardId = "31002",
+    heroCode = "31001",
     flipIdentityCard = false,
     hitPoints = 14,
     tileImageUrl = "https://steamusercontent-a.akamaihd.net/ugc/1897721393463027391/971F5CA033F0BD7AFF157E3716D3BD6B745A946C/",

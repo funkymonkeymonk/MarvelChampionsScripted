@@ -40,6 +40,7 @@ function placeCampaign(params)
     placePdfs(campaign)
     placeLogs(campaign)
     placeNotes(campaign)
+    placeAssets(campaign)
 
     campaignPlaced = true
     saveData()
@@ -105,13 +106,13 @@ function placeText(campaign)
             position = text.position,
             rotation = text.rotation or {90, 0, 0},
             callback_function = function(spawned_object)
-              spawned_object.TextTool.setValue(text.text)
-              spawned_object.TextTool.setFontSize(text.fontSize or 100)
-              spawned_object.TextTool.setFontColor(text.fontColor or {1,1,1})
-              spawned_object.interactable = false
-              spawned_object.addTag("delete-with-campaign")
+                spawned_object.TextTool.setValue(text.text)
+                spawned_object.TextTool.setFontSize(text.fontSize or 100)
+                spawned_object.TextTool.setFontColor(text.fontColor or {1,1,1})
+                spawned_object.interactable = false
+                spawned_object.addTag("delete-with-campaign")
             end
-          })
+        })
     end
 end
 
@@ -208,7 +209,6 @@ function placeLogs(campaign)
 end
 
 function configureLog(params)
-    local log = params.spawnedObject
     log.setPosition(params.position)
     log.setScale(params.scale)
     log.setLock(true)
@@ -229,7 +229,43 @@ function placeNotes(campaign)
         end
       })
     end
-  end
+end
+
+function placeAssets(campaign)
+    if(campaign.assets == nil) then return end
+        
+    for key, asset in pairs(campaign.assets) do
+        local assetGuid = asset.guid
+        local assetPosition = asset.position
+        local assetRotation = asset.rotation
+        local assetScale = asset.scale or {1, 1, 1}
+        local lockAsset = asset.locked ~= nil and asset.locked or false
+        local assetBag = getObjectFromGUID(Global.getVar("ASSET_BAG_GUID"))
+
+        assetBag.call("spawnAsset", {
+            guid = assetGuid,
+            position = assetPosition,
+            scale = assetScale,
+            rotation = assetRotation,
+            locked = lockAsset,
+            caller = self,
+            callback = "configureAsset"
+        })
+    end
+end
+
+function configureAsset(params)
+    local asset = params.spawnedObject
+
+    asset.setPosition(params.position)
+    asset.setScale(params.scale)
+    asset.setLock(params.locked)
+    asset.addTag("delete-with-campaign")
+   
+    if(params.rotation ~= nil) then
+        asset.setRotation(params.rotation)
+    end
+end
 
 require('!/Cardplacer')
 
@@ -241,3 +277,4 @@ require('!/campaigns/mutant_genesis')
 require('!/campaigns/mojo_mania')
 require('!/campaigns/next_evolution')
 require('!/campaigns/age_of_apocalypse')
+require('!/campaigns/agents_of_shield')

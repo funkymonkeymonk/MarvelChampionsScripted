@@ -106,10 +106,12 @@ MESSAGE_TINT_YELLOW = {.8235, .8157, .1529, 100}
 MESSAGE_TINT_FLAVOR = {0.5, 0.5, 0.5, 100}
 MESSAGE_TINT_INSTRUCTION = {1, 1, 1, 100}
 MESSAGE_TINT_INFO = {1, 1, 1, 100}
+MESSAGE_TINT_ALERT = {1, 0.5, 0.5, 100}
 
 MESSAGE_TYPE_FLAVOR_TEXT = "flavor"
 MESSAGE_TYPE_INSTRUCTION = "instruction"
 MESSAGE_TYPE_INFO = "info"
+MESSAGE_TYPE_ALERT = "alert"
 MESSAGE_TYPE_PLAYER = "player"
 
 ZONE_SIDE_SCHEME = {
@@ -553,17 +555,29 @@ function getCardProperty(params)
    return cardData[property]
 end
 
+function setCardProperty(params)
+   local card = params.card
+   local cardData = getCardData({card = card})
+   cardData[params.property] = params.value
+   card.setGMNotes(json.encode(cardData))
+end
+
 function moveCardFromPosition(params)
    local originPosition = params.origin
    local destination = calculateDestination(params)
 
    local items = findInRadiusBy(originPosition, 2, isCard)
 
-   if(#items == 1) then
-      items[1].setLock(false)
-      items[1].setPositionSmooth(destination.position, false, false)
-      items[1].setRotationSmooth(destination.rotation, false, false)
+   if(#items ~= 1) then
+      return nil
    end
+
+   local card = items[1]
+   card.setLock(false)
+   card.setPositionSmooth(destination.position, false, false)
+   card.setRotationSmooth(destination.rotation, false, false)
+
+   return card
 end
 
 function moveCardToLocation(params)
@@ -585,6 +599,8 @@ function moveCardFromDeckById(params)
    local destinationScale = params.destinationScale and Vector(params.destinationScale) or nil
    local flipCard = params.flipCard or false
    local settings = params.settings or {}
+   local values = params.values or {}
+   local tags = params.tags or {}
    local items = findInRadiusBy(deckPosition, 4, isCardOrDeck, false)
    local cardFound = false
 
@@ -615,6 +631,14 @@ function moveCardFromDeckById(params)
                      if(settings.hideWhenFaceDown ~= nil) then
                         obj.hide_when_face_down = settings.hideWhenFaceDown
                      end
+
+                     for key, value in pairs(values) do
+                        obj.setVar(key, value)
+                     end
+
+                     for key, tag in pairs(tags) do
+                        obj.addTag(tag)
+                     end
                   end
                })
                cardFound = true
@@ -634,29 +658,27 @@ function moveCardFromEncounterDeckById(params)
    local destination = calculateDestination(params)
    local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
 
-   if searchInDiscard then
-      local discardPosition = Vector(scenarioManager.call('getEncounterDiscardPosition'))
+   local moveCardParams = {
+      cardId = cardId,
+      destinationPosition = destination.position,
+      destinationRotation = destination.rotation,
+      flipCard = flipCard,
+      values = params.values,
+      tags = params.tags,
+      settings = params.settings
+   }
 
-      if moveCardFromDeckById({
-         cardId = cardId,
-         deckPosition = discardPosition,
-         destinationPosition = destination.position,
-         destinationRotation = destination.rotation,
-         flipCard = flipCard
-      }) then
+   if searchInDiscard then
+      moveCardParams.deckPosition = Vector(scenarioManager.call('getEncounterDiscardPosition'))
+
+      if moveCardFromDeckById(moveCardParams) then
          return
       end
    end
 
-   local deckPosition = Vector(scenarioManager.call('getEncounterDeckPosition'))
+   moveCardParams.deckPosition = Vector(scenarioManager.call('getEncounterDeckPosition'))
 
-   moveCardFromDeckById({
-      cardId = cardId,
-      deckPosition = deckPosition,
-      destinationPosition = destination.position,
-      destinationRotation = destination.rotation,
-      flipCard = flipCard
-   })
+   moveCardFromDeckById(moveCardParams)
 end
 
 function ensureMinimumYPosition(params)
@@ -693,9 +715,21 @@ function onObjectNumberTyped(object, playerColor, number)
       playmat.call("drawCards", {objectToDrawFrom = object, numberToDraw = number})
       return true
    end
+
+   return false
 end
 
 function onObjectEnterZone(zone, card)
+   local retain = card.getVar("retainValue")
+   local retainedValue = card.getVar("retainedValue")
+   local onEnterFunction = zone.getVar("onEnterFunction")
+
+   if(onEnterFunction) then
+      local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
+      scenarioManager.call(onEnterFunction, {zone = zone, item = card})
+      return
+   end
+
    if(supressZoneInteractions) then return end
    if(not isCard(card)) then return end
 
@@ -719,7 +753,7 @@ function onObjectEnterZone(zone, card)
       resizeCardOnEnterZone(card, zoneType)
    end, 
    15)
-   
+
    positionCardOnEnterZone(card, zoneType, zoneIndex)
 
    local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
@@ -748,6 +782,8 @@ function onObjectEnterZone(zone, card)
          if(counter) then
             if (counter == "general") then
                addGeneralCounterToCard(card, cardData)
+            elseif (counter == "threat") then
+               addThreatCounterToCard(card, cardData)
             end
          end   
       end,
@@ -776,7 +812,7 @@ function resizeCardOnEnterZone(card, zoneType)
 end
 
 function positionCardOnEnterZone(card, zoneType, zoneIndex)
-   if(zoneType != "sideScheme" and zoneType != "attachment" and zoneType != "environment" and zoneType != "minion" and zoneType != "victoryDisplay") then
+   if(zoneType ~= "sideScheme" and zoneType ~= "attachment" and zoneType ~= "environment" and zoneType ~= "minion" and zoneType ~= "victoryDisplay") then
       return
    end
 
@@ -831,12 +867,18 @@ function addGeneralCounterToCard(card, cardData)
    local counter = counterBag.takeObject({position = counterPosition, smooth = false})
    card.setVar("counterGuid", counter.getGUID())
    
-   --TODO: Extract this calculation into a function?
-   local baseValue = cardData.counterValue and tonumber(cardData.counterValue) or 0
-   local valuePerHero = cardData.counterValuePerHero and tonumber(cardData.counterValuePerHero) or 0
-   local heroManager = getObjectFromGUID(GUID_HERO_MANAGER)
-   local heroCount = heroManager.call("getHeroCount")
-   local value = baseValue + (heroCount * valuePerHero)
+   local value = 0
+   local retainedValue = card.getVar("retainedValue")
+   if(retainedValue) then
+      value = retainedValue
+   else
+      --TODO: Extract this calculation into a function?
+      local baseValue = cardData.counterValue and tonumber(cardData.counterValue) or 0
+      local valuePerHero = cardData.counterValuePerHero and tonumber(cardData.counterValuePerHero) or 0
+      local heroManager = getObjectFromGUID(GUID_HERO_MANAGER)
+      local heroCount = heroManager.call("getHeroCount")
+      value = baseValue + (heroCount * valuePerHero)   
+   end
  
    Wait.frames(
       function()
@@ -848,23 +890,57 @@ function addGeneralCounterToCard(card, cardData)
    )    
 end
 
+function addThreatCounterToCard(card, cardData)
+   if(card.getVar("counterGuid")) then return end
+   if (not cardData) then cardData = getCardData({card = card}) end
+
+   local counterBag = getObjectFromGUID(GUID_THREAT_COUNTER_BAG)
+   local cardPosition = card.getPosition()
+   local counterPosition = {cardPosition[1] + 1.30, cardPosition[2] + 0.10, cardPosition[3] + 0.70}
+   local counter = counterBag.takeObject({position = counterPosition, smooth = false})
+   card.setVar("counterGuid", counter.getGUID())
+   
+   --TODO: Extract this calculation into a function?
+   local baseValue = cardData.counterValue and tonumber(cardData.counterValue) or 0
+   local valuePerHero = cardData.counterValuePerHero and tonumber(cardData.counterValuePerHero) or 0
+   local heroManager = getObjectFromGUID(GUID_HERO_MANAGER)
+   local heroCount = heroManager.call("getHeroCount")
+   local value = baseValue + (heroCount * valuePerHero)
+ 
+   Wait.frames(
+      function()
+         counter.setScale({0.56, 1.00, 0.56})
+         counter.setName(cardData.counterName or "")
+         counter.call("setValue", {value = value})
+     end,
+     1
+   )    
+end
+
 function addHealthCounterToMinion(card)
    local healthCounterBag = getObjectFromGUID(GUID_HEALTH_COUNTER_BAG)
+   local yOffset = - 0.3 + (card.getVar("counterOffset") or 0)
+
    local cardPosition = card.getPosition()
-   local counterPosition = {cardPosition[1] + 1.55, cardPosition[2] + 0.07, cardPosition[3] - 0.30}
+   local counterPosition = {cardPosition[1] + 1.55, cardPosition[2] + 0.07, cardPosition[3] + yOffset}
    local healthCounter = healthCounterBag.takeObject({position = counterPosition, smooth = false})
    card.setVar("counterGuid", healthCounter.getGUID())
    
    --TODO: Extract this calculation into a function?
    local cardData = getCardData({card = card})
    local health = 0
+   local retainedValue = card.getVar("retainedValue")
 
-   if(cardData.healthPerHero) then
-      local heroManager = getObjectFromGUID(GUID_HERO_MANAGER)
-      local heroCount = heroManager.call("getHeroCount")
-      health = cardData.health * heroCount
+   if(retainedValue) then
+      health = retainedValue
    else
-      health = cardData.health
+      if(cardData.healthPerHero) then
+         local heroManager = getObjectFromGUID(GUID_HERO_MANAGER)
+         local heroCount = heroManager.call("getHeroCount")
+         health = cardData.health * heroCount
+      else
+         health = cardData.health
+      end         
    end
  
    Wait.frames(
@@ -912,7 +988,14 @@ function removeCounterFromCard(card)
 
    if(counterGuid) then
       local counter = getObjectFromGUID(counterGuid)
-      if(counter) then counter.destruct() end
+      if(counter) then 
+         if(card.getVar("retainValue")) then
+            local value = counter.call("getValue")
+            card.setVar("retainedValue", value)
+         end
+   
+         counter.destruct()
+      end
       card.setVar("counterGuid", nil)
    end
 end
@@ -932,7 +1015,7 @@ function repositionCardsInZone(params)
    local zoneType = zone.getVar("zoneType")
    local zoneIndex = zone.getVar("zoneIndex")
 
-   if(zoneType != "sideScheme" and zoneType != "attachment" and zoneType != "environment" and zoneType != "minion" and zoneType != "victoryDisplay") then
+   if(zoneType ~= "sideScheme" and zoneType ~= "attachment" and zoneType ~= "environment" and zoneType ~= "minion" and zoneType ~= "victoryDisplay") then
       return
    end
 
@@ -1008,7 +1091,7 @@ function getNewZoneCardPosition(params)
    if(not zoneDef) then return nil end
    
    local cardNumber = getZoneCardCount({zoneIndex = params.zoneIndex})
-
+   
    if(cardNumber == nil) then return nil end
 
    if(params.forNextCard) then cardNumber = cardNumber + 1 end
@@ -1023,9 +1106,9 @@ function getZoneCardPosition(params)
    if(not zoneDef) then return nil end
 
    local origin = zoneDef.firstCardPosition
-   local horizontalGap = zoneDef.horizontalGap
-   local verticalGap = zoneDef.verticalGap
-   local layoutDirection = zoneDef.layoutDirection
+   local horizontalGap = zoneDef.horizontalGap or 0
+   local verticalGap = zoneDef.verticalGap or 0
+   local layoutDirection = zoneDef.layoutDirection or "horizontal"
    local width = zoneDef.width
    local height = zoneDef.height
 
@@ -1277,6 +1360,7 @@ function displayMessage(params)
       messageType == MESSAGE_TYPE_FLAVOR_TEXT and MESSAGE_TINT_FLAVOR
       or messageType == MESSAGE_TYPE_INSTRUCTION and MESSAGE_TINT_INSTRUCTION
       or messageType == MESSAGE_TYPE_INFO and MESSAGE_TINT_INFO
+      or messageType == MESSAGE_TYPE_ALERT and MESSAGE_TINT_ALERT
 
    broadcastToAll(message, messageTint)
 end
@@ -1302,11 +1386,12 @@ function getDeckOrCardAtLocation(params)
    position = Vector(params.position)
    position["y"] = 0
 
-   local objects = findInRadiusBy(position, 3, isCardOrDeck, false)
+   local objects = findInRadiusBy(position, 3, isCardOrDeck, true)
+
    for _, object in pairs(objects) do
-    if(object.tag == "Deck" or object.tag == "Card") then
-     return object
-    end
+      if(object.tag == "Deck" or object.tag == "Card") then
+         return object
+      end
    end
   
    return nil
@@ -1682,4 +1767,39 @@ end
 
 function trim(s)
    return (string.gsub(s, "^%s*(.-)%s*$", "%1"))
+end
+
+function isCardInDeck(params)
+   local deck = params.deck
+   local cardId = params.cardId
+   local cards = deck.getObjects()
+
+   for i, card in ipairs(cards) do
+      local cardData = getCardData({card = card})
+
+      if(cardData.code == cardId) then
+         return true
+      end
+   end
+
+   return false
+end
+
+function getEncounterDeck()
+   local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
+   local deckPosition = Vector(scenarioManager.call("getEncounterDeckPosition"))
+   return getDeckOrCardAtLocation({position=deckPosition})
+end
+
+function findObjectByTag(params)
+   local tag = params.tag
+   local objects = getAllObjects()
+
+   for _, object in pairs(objects) do
+      if object.hasTag(tag) then
+         return object
+      end
+   end
+
+   return nil
 end

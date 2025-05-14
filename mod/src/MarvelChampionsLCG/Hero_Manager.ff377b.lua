@@ -129,12 +129,11 @@ end
 function placeHeroWithImportedDeck(params)
   local deckInfo = params.deckInfo
   local positionColor = params.positionColor
-                                             
-  local heroIdentityId = string.sub(deckInfo.investigator_code, 1, 5)
+  local heroIdentityId = deckInfo.hero_code
   local heroKey = findHeroKeyByIdentityId({identityId = heroIdentityId})
   
   if(heroKey == nil) then
-    broadcastToAll("Hero not found for deck: " .. deckInfo.investigator_code, {1,1,1})
+    broadcastToAll("Hero not found for deck: " .. deckInfo.hero_code, {1,1,1})
     return
   end
 
@@ -142,10 +141,12 @@ function placeHeroWithImportedDeck(params)
 end
 
 function findHeroKeyByIdentityId(params)
-  local identityId = params.identityId
+  local identityId = string.sub(params.identityId, 1, 5)
 
   for key, hero in pairs(heroes) do
-    if(hero.identityCardId == identityId) then
+    local heroCode = hero.heroCode or hero.identityCardId
+
+    if(heroCode == identityId) then
       return key
     end
   end
@@ -672,11 +673,13 @@ function findAndPlacePlayerCard(params)
   local settings = params.settings or {}
   local deckPositions = getPlayerDeckPositions({hero = hero, includeDiscard = true})
   local decks = {}
-  rotation = params.rotation or {0, 180, 0}
+  local rotation = params.rotation or {0, 180, 0}
 
   function moveCardCoroutine()
+    local cardFound = false
+
     for _, deckPosition in pairs(deckPositions) do
-      Global.call("moveCardFromDeckById", {
+      cardFound = cardFound or Global.call("moveCardFromDeckById", {
         cardId = cardId, 
         deckPosition = deckPosition, 
         destinationPosition = position, 
@@ -688,6 +691,17 @@ function findAndPlacePlayerCard(params)
       for i = 1, 3 do
         coroutine.yield(0)
       end
+    end
+
+    if(not cardFound) then
+      getCardByID(cardId, position, {scale = scale, flipped = flipCard})
+      -- local card = getCardFromCardPool(cardId)
+
+      -- if (card.duplicate_of ~= nil) then
+      --   card = getCardFromCardPool(card.duplicate_of)
+      -- end
+
+      -- card:spawn({position = position, scale = scale, rotation = rotation, flipped = flipCard})
     end
 
     return 1
@@ -919,3 +933,5 @@ require('!/heroes/iceman')
 require('!/heroes/jubilee')
 require('!/heroes/nightcrawler')
 require('!/heroes/magneto')
+require('!/heroes/maria_hill')
+require('!/heroes/nick_fury')

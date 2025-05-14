@@ -1,0 +1,366 @@
+scenarios["modok"] =
+{
+    name="M.O.D.O.K.",
+    fullyScripted = true,
+    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/6301420264312880/35ABE42651DDF1E6BDF9C02FEC9FE37E7B85F64E/",
+    villains={
+        modok={
+            name="M.O.D.O.K.",
+            hpCounter={
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/6301420264312880/35ABE42651DDF1E6BDF9C02FEC9FE37E7B85F64E/",
+                primaryButtonLabel = "RESET",
+                primaryButtonClickFunction = "modokResetVillain"
+            },
+            stages={
+                stageA={
+                    cardId="50103",
+                    hitPoints=10,
+                    showAdvanceButton=true
+                },
+                stageB={
+                    cardId="50103",
+                    hitPoints=14,
+                    showAdvanceButton=true,
+                    flipCard=true
+                }
+            }
+        }
+    },
+    schemes={
+        main={
+            stages={
+                stage1={
+                    cardId="50104",
+                    startingThreat=0,
+                    startingThreatPerPlayer=1,
+                    targetThreatPerPlayer=7
+                }
+            },
+            threatCounter={
+                showAdvanceButton=true,
+                primaryButtonLabel = "RESET",
+                primaryButtonClickFunction = "modokResetScheme"
+            }
+        }
+    },
+    decks={
+        encounterDeck={
+            name="M.O.D.O.K.'s Encounter Deck",
+            cards={
+                ["50113"]=4,
+                ["50114"]=1,
+                ["50115"]=1,
+                ["50116"]=1,
+                ["50117"]=1,
+                ["50118"]=1,
+                ["50119"]=1,
+                ["50120"]=2,
+                ["50121"]=1,
+                ["50122"]=1,
+                ["50123"]=1,
+                ["50124"]=2
+            }
+        }
+    },
+    modularSets={
+        scientistSupreme="recommended"
+    },
+    notes={
+        holdingCell={
+            title="Holding Cell",
+            text="When allies from the Holding Cell are removed from play, drop them on the Holding Cell to add them back to the \"deck\".",
+            position={31.75, 1.03, 19.75}
+        }
+    },
+    extras={
+        holdingCellPanel={
+            name="",
+            guid="e91ddb",
+            position={20.75, 0.96, 20.25},
+            rotation={0, 180, 0},
+            scale={5,1,5}
+        }
+    },
+    zones={
+        sideScheme = {
+            position = {7.25, 1.00, 9.00},
+            scale = {7.00, 1.00, 20.00},
+            firstCardPosition = {7.25, 0.98, 16.75},
+            horizontalGap = 7,
+            verticalGap = 5,
+            layoutDirection = "vertical",
+            width = 1,
+            height = 4
+        },
+        environment = {
+            position = {25.75, 2.00, 29.75},
+            scale = {25.00, 4.00, 7.00},
+            firstCardPosition = {15.75, 0.97, 29.75},
+            horizontalGap = 5,
+            verticalGap = 0,
+            layoutDirection = "horizontal",
+            width = 5,
+            height = 1 
+        }
+    },
+    customZones = {
+        holdingCell = {
+            position = {20.75, 1.00, 20.25},
+            scale = {13.50, 1.00, 10.00},
+            onEnterFunction = "modokItemEnterHoldingCellZone"
+        }
+    }
+}
+
+function prepareScenario_modok()
+    local adaptoidEnvironments = {}
+    table.insert(adaptoidEnvironments, "50109")
+    table.insert(adaptoidEnvironments, "50110")
+    table.insert(adaptoidEnvironments, "50111")
+    table.insert(adaptoidEnvironments, "50112")
+    
+    adaptoidEnvironments = Global.call("shuffleTable", {table = adaptoidEnvironments})
+  
+    currentScenario.adaptoidEnvironmentQueue = adaptoidEnvironments
+    currentScenario.adaptoidEnvironmentIndex = 1
+
+    local holdingCellPrisoners = {}
+    table.insert(holdingCellPrisoners, "50105")
+    table.insert(holdingCellPrisoners, "50106")
+    table.insert(holdingCellPrisoners, "50107")
+    table.insert(holdingCellPrisoners, "50108")
+
+    holdingCellPrisoners = Global.call("shuffleTable", {table = holdingCellPrisoners})
+
+    currentScenario.holdingCellPrisonerQueue = holdingCellPrisoners
+  end
+
+function setUpSchemeStage_modok_main(params)
+    local adaptoidCardId = "50113"
+    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
+    local players = heroManager.call("getPlayersInPlayerOrder")
+    local mode = getMode()
+
+    function dealAdaptoidsCoroutine()
+      for _, player in ipairs(players) do
+        Global.call("moveCardFromEncounterDeckById", {cardId = adaptoidCardId, zoneIndex = "minion-" .. player.playerColor})
+
+        for i = 1, 25 do
+          coroutine.yield(0)
+        end
+      end
+
+      return 1
+    end
+
+    startLuaCoroutine(self, "dealAdaptoidsCoroutine")
+
+    modokPlaceAdaptoidEnvironment()
+
+    if(mode == "expert") then
+        Wait.frames(function()
+            modokPlaceAdaptoidEnvironment()
+        end,
+        30)
+    end
+
+    modokPlaceHoldingCellPrisoner()
+end
+
+function modokResetVillain()
+    local villainHpCounter = getObjectFromGUID(currentScenario.villains.modok.hpCounter.guid)
+    local mode = currentScenario.mode
+    local stage = mode == "standard" 
+        and currentScenario.villains.modok.stages.stageA 
+        or currentScenario.villains.modok.stages.stageB
+
+    villainHpCounter.call("setValue", {value = stage.hitPoints})
+
+    if(#currentScenario.holdingCellPrisonerQueue == 0)then
+        Global.call("displayMessage", {message = "No prisoners in the holding cell. The heroes win!", messageType = Global.getVar("MESSAGE_TYPE_INFO")})
+        return
+    end
+
+    local holdingCellPanel = getItemFromManifest({key="holdingCellPanel"})
+    local lockValue = holdingCellPanel.call("getLockValue")
+    local newLockValue = lockValue - 2
+
+    if(newLockValue <= 0) then
+        modokFreeHoldingCellPrisoner()
+        return
+    end
+
+    holdingCellPanel.call("setLockValue", {value = newLockValue})
+end
+
+function modokResetScheme()
+    modokPlaceAdaptoidEnvironment()
+
+    if(currentScenario.adaptoidEnvironmentIndex > #currentScenario.adaptoidEnvironmentQueue) then
+        return
+    end
+
+    local threatCounter = getObjectFromGUID(currentScenario.schemes.main.threatCounter.guid)
+    threatCounter.call("setValue", {value = 0})
+
+    function moveAdaptoid()
+        local adaptoidFound = false
+        local searchComplete = false
+        local encounterDiscardPosition = getEncounterDiscardPosition()
+        local encounterDeckPosition = getEncounterDeckPosition()
+        dropPosition = {
+            encounterDeckPosition[1],
+            encounterDeckPosition[2] + 2,
+            encounterDeckPosition[3]
+        }
+
+        while not searchComplete do
+            local found = Global.call("moveCardFromDeckById", {
+                cardId = "50113", 
+                deckPosition = encounterDiscardPosition, 
+                destinationPosition = dropPosition,
+                flipCard = true})
+
+            if(found) then
+                adaptoidFound = true
+            else
+                searchComplete = true 
+            end
+
+            for i = 1, 35 do
+                coroutine.yield(0)
+            end 
+        end
+
+        if(adaptoidFound) then
+            for i = 1, 35 do
+                coroutine.yield(0)
+            end
+
+            Global.call("shuffleDeck", {deckPosition = encounterDeckPosition})
+            Global.call("displayMessage", {message = "Adaptoid minions have been shuffled back into the encounter deck.", messageType = Global.getVar("MESSAGE_TYPE_INFO")})
+        end
+
+        return 1
+    end
+
+    startLuaCoroutine(self, "moveAdaptoid")
+end
+
+function modokPlaceAdaptoidEnvironment()
+    if(currentScenario.adaptoidEnvironmentIndex > #currentScenario.adaptoidEnvironmentQueue) then
+        return
+    end
+
+    local environmentCardId = currentScenario.adaptoidEnvironmentQueue[currentScenario.adaptoidEnvironmentIndex]
+    local encounterDeckPosition = getEncounterDeckPosition()
+    
+    getCardByID(
+        environmentCardId, 
+        encounterDeckPosition, 
+        {scale = Global.getTable("CARD_SCALE_ENCOUNTER")})
+    
+    Wait.frames(function()
+        Global.call(
+            "moveCardFromEncounterDeckById", 
+            {
+              cardId = environmentCardId, 
+              searchInDiscard = false,
+              zoneIndex = "environment"
+            })
+    end, 
+    15)
+
+    currentScenario.adaptoidEnvironmentIndex = currentScenario.adaptoidEnvironmentIndex + 1
+    saveData()
+
+    if(currentScenario.adaptoidEnvironmentIndex > #currentScenario.adaptoidEnvironmentQueue) then
+        Global.call("displayMessage", {message = "All Adaptoid environments have been placed. The heroes lose!", messageType = Global.getVar("MESSAGE_TYPE_ALERT")})
+    end
+end
+
+function modokPlaceHoldingCellPrisoner()
+    if #currentScenario.holdingCellPrisonerQueue == 0 then
+        return
+    end
+
+    local holdingCellCardId = currentScenario.holdingCellPrisonerQueue[1]
+    local holdingCellPanel = getItemFromManifest({key="holdingCellPanel"})
+    local holdingCellPosition = holdingCellPanel.getPosition()
+    local prisonerCardPosition = {holdingCellPosition[1], holdingCellPosition[2] + 0.25, holdingCellPosition[3]}
+    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
+    local heroCount = heroManager.call("getHeroCount")
+
+    getCardByID(
+        holdingCellCardId, 
+        prisonerCardPosition, 
+        {scale = Global.getTable("CARD_SCALE_ENCOUNTER"), locked = true})
+
+    holdingCellPanel.call("setLockValue", {value = heroCount * 2})
+end
+
+function modokFreeHoldingCellPrisoner()
+    local holdingCellPanel = getItemFromManifest({key="holdingCellPanel"})
+    local holdingCellPosition = holdingCellPanel.getPosition()
+    local destinationPosition = {holdingCellPosition[1], holdingCellPosition[2], holdingCellPosition[3] - 8.75}
+    local destinationRotation = {0, 180, 180}
+    local prisonerCard = Global.call("moveCardFromPosition", {origin = holdingCellPosition, destinationPosition = destinationPosition, destinationRotation = destinationRotation})
+
+    if(not prisonerCard) then
+        return
+    end
+
+    local cardId = Global.call("getCardId", {card = prisonerCard})
+    local allyName = ""
+    
+    if (cardId == "50105") then
+        allyName = "Flying Inhuman"
+    elseif (cardId == "50106") then
+        allyName = "Psionic Inhuman"
+    elseif (cardId == "50107") then
+        allyName = "Sarah Garza"
+    elseif (cardId == "50108") then
+        allyName = "Strong Inhuman"
+    end
+
+    prisonerCard.setName(allyName .. " - ally")
+    prisonerCard.setLock(false)
+    prisonerCard.setScale(Global.getTable("CARD_SCALE_PLAYER"))
+    prisonerCard.removeTag("environment")
+    prisonerCard.addTag("ally")
+    prisonerCard.hide_when_face_down = false
+    Global.call("setCardProperty", {card = prisonerCard, property = "type", value = "ally"})
+
+    table.remove(currentScenario.holdingCellPrisonerQueue, 1)
+    saveData()
+
+    holdingCellPanel.call("setPrisonerCount", {value = #currentScenario.holdingCellPrisonerQueue})
+    Global.call("displayMessage", {message = allyName .. " is free!", messageType = Global.getVar("MESSAGE_TYPE_INFO")})
+
+    Wait.frames(modokPlaceHoldingCellPrisoner, 30)
+end
+
+function modokItemEnterHoldingCellZone(params)
+    local zone = params.zone
+    local item = params.item
+
+    if (item.tag == "Card" and item.hasTag("ally")) then
+        local cardId = Global.call("getCardId", {card = item})
+        if (cardId == "50105"
+            or cardId == "50106"
+            or cardId == "50107"
+            or cardId == "50108") then
+                item.destruct()
+                table.insert(currentScenario.holdingCellPrisonerQueue, cardId)
+                
+                saveData()
+                
+                local holdingCellPanel = getItemFromManifest({key="holdingCellPanel"})
+                holdingCellPanel.call("setPrisonerCount", {value = #currentScenario.holdingCellPrisonerQueue})
+                
+                if(#currentScenario.holdingCellPrisonerQueue == 1) then
+                    modokPlaceHoldingCellPrisoner()
+                end
+            end
+    end
+end

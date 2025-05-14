@@ -1,0 +1,63 @@
+{
+  "Object": {
+    "GUID": "575250",
+    "Name": "Custom_Token",
+    "Transform": {
+      "posX": -10.9326849,
+      "posY": 2.59576368,
+      "posZ": -73.08985,
+      "rotX": 0.002982651,
+      "rotY": 179.998352,
+      "rotZ": -4.033495e-7,
+      "scaleX": 2,
+      "scaleY": 1,
+      "scaleZ": 2
+    },
+    "Nickname": "S.H.I.E.L.D. Envelope",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "Tags": [
+      "shield-envelope"
+    ],
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/15321638028207039510/F5C29A8F524D713C7B20D9221F19E87514E97822/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomToken": {
+        "Thickness": 0.2,
+        "MergeDistancePixels": 5,
+        "StandUp": false,
+        "Stackable": false
+      }
+    },
+    "LuaScript": "#include ./S.H.I.E.L.D._Envelope.575250.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

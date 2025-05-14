@@ -1,0 +1,60 @@
+{
+  "Object": {
+    "GUID": "40c742",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": -1.24999166,
+      "posY": -2,
+      "posZ": -29.2500172,
+      "rotX": -1.11090159e-7,
+      "rotY": 180,
+      "rotZ": -3.98837727e-8,
+      "scaleX": 1.95,
+      "scaleY": 1,
+      "scaleZ": 1.95
+    },
+    "Nickname": "Scenario Button",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.249999642,
+      "g": 0.249999642,
+      "b": 0.249999642
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": false,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/2495635126604486342/9C09A2C0AB591F0F03750EDE82FF9CD2F78BEB74/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.1,
+        "Stackable": false,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./Scenario_Button.40c742.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

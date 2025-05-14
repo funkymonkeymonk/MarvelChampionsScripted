@@ -57,6 +57,6 @@ scenarios["unus"] =
     },
     modularSets={
         infinites="required",
-        dystopianNightmare="optional"
+        dystopianNightmare="recommended"
     }
 }

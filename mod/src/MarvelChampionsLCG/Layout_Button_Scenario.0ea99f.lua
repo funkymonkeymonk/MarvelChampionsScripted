@@ -35,7 +35,7 @@ function createButton()
     rotation = {0,0,0},
     width = 2470,
     height = 970,
-    font_size = fontSizeInactive,
+    font_size = fontSizeActive,
     color = {0,0,0,0},
     font_color = {1,1,1,100}
   })

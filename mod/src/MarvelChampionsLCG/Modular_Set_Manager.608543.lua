@@ -73,7 +73,7 @@ function layOutModularSetSelectors(params)
         origin = params.origin,
         center = params.center or {0,0.5,0},
         direction = params.direction or "horizontal",
-        maxRowsOrColumns = params.maxRowsOrColumns or 6,
+        maxRowsOrColumns = params.maxRowsOrColumns or 7,
         columnGap = params.columnGap or 6.5,
         rowGap = params.rowGap or 3.5,
         selectorScale = params.selectorScale or {1.33, 1, 1.33},
@@ -205,6 +205,10 @@ function getEncounterSetsByType(params)
     return encounterSetList
 end
 
+function getEncounterSets()
+    return deepCopy(modularSets)
+end
+
 function deepCopy(obj, seen)
     if type(obj) ~= 'table' then return obj end
     if seen and seen[obj] then return seen[obj] end
@@ -230,3 +234,4 @@ require('!/modulars/mad_titans_shadow')
 require('!/modulars/mojo_mania')
 require('!/modulars/next_evolution')
 require('!/modulars/age_of_apocalypse')
+require('!/modulars/agents_of_shield')

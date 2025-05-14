@@ -7,7 +7,11 @@ scenarios["loki"] =
             name="Loki",
             hpCounter={
                 imageUrl="https://steamusercontent-a.akamaihd.net/ugc/1849305905150132430/6C8FCFC49383857A4A92407CE13656C5DE148F37/",
-                primaryButtonLabel="Next!"
+                primaryButtonLabel="NEXT!",
+                secondaryButton={
+                    label="SWAP",
+                    clickFunction="lokiSwapVillain",
+                }
             },
             stages={
                 stage1={
@@ -108,17 +112,17 @@ function prepareScenario_loki()
   villainStages = Global.call("shuffleTable", {table = villainStages})
 
   currentScenario.lokiQueue = villainStages
-  currentScenario.lokiStageIndex = 1
 end
 
 function getNextVillainStage_loki(params)
-  local nextStage = currentScenario.villains.loki.stages[currentScenario.lokiQueue[currentScenario.lokiStageIndex]]
-  currentScenario.lokiStageIndex = currentScenario.lokiStageIndex + 1
-  local lastStage = currentScenario.lokiStageIndex > #currentScenario.lokiQueue
+    currentScenario.currentLokiStage = currentScenario.lokiQueue[1]
+    table.remove(currentScenario.lokiQueue, 1)
+    local nextStage = currentScenario.villains.loki.stages[currentScenario.currentLokiStage]
+    local lastStage = #currentScenario.lokiQueue == 0
 
-  nextStage.showAdvanceButton = not lastStage
+    nextStage.showAdvanceButton = not lastStage
 
-  return nextStage
+    return nextStage
 end
 
 function placeVillainStage_loki(params)
@@ -140,18 +144,48 @@ function placeVillainStage_loki(params)
   local hitPoints = (stage.hitPoints or 0) + ((stage.hitPointsPerPlayer or 0) * heroCount)
   local villainHpCounter = getObjectFromGUID(villain.hpCounter.guid)
 
-  Wait.frames(
-      function()
-          villainHpCounter.call("setValue", {value = hitPoints}) 
+    Wait.frames(
+        function()
+            villainHpCounter.call("setValue", {value = hitPoints}) 
           
-          villainHpCounter.call("setAdvanceButtonOptions", {label = "Next!"})
+            villainHpCounter.call("setAdvanceButtonOptions", {label = "Next!"})
+            villainHpCounter.call("setSecondaryButtonOptions", {label = "Swap!", clickFunction = "lokiSwapVillain"})
 
-          if(stage.showAdvanceButton) then
-              villainHpCounter.call("showAdvanceButton")
-          else
-              villainHpCounter.call("hideAdvanceButton")
-          end
-      end,
-      20
-  )
+            if(stage.showAdvanceButton) then
+                villainHpCounter.call("showAdvanceButton")
+                villainHpCounter.call("showSecondaryButton")
+            else
+                villainHpCounter.call("hideAdvanceButton")
+                villainHpCounter.call("hideSecondaryButton")
+            end
+        end,
+        20
+    )
+end
+
+function lokiSwapVillain(params)
+    if(#currentScenario.lokiQueue  == 0) then
+        Global.call("showMessage", {message = "No more Lokis!"})
+        return
+    end
+    local villain = currentScenario.villains.loki
+
+    currentScenario.lokiQueue = Global.call("shuffleTable", {table = currentScenario.lokiQueue})
+
+    local currentStage = currentScenario.currentLokiStage
+    local swappedStage = currentScenario.lokiQueue[1]
+    table.remove(currentScenario.lokiQueue, 1)
+    table.insert(currentScenario.lokiQueue, currentStage)
+    currentScenario.currentLokiStage = swappedStage
+
+    local stage = currentScenario.villains.loki.stages[swappedStage]
+    local villainPosition = villain.deckPosition or defaults.villainDeck.position
+    local villainScale = villain.deckScale or defaults.villainDeck.scale
+
+    Global.call("deleteCardAtPosition", {position = villainPosition})
+  
+    getCardByID(
+        stage.cardId, 
+          villainPosition, 
+          {scale = villainScale, name = villain.name, flipped = false, locked=true})
 end

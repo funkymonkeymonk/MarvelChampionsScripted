@@ -1,0 +1,156 @@
+scenarios["batroc"] =
+{
+    name="Batroc",
+    fullyScripted = true,
+    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/6301420264312745/DEB4FB8CF4132C489E3A42B5259669D2BB01C900/",
+    villains={
+        batroc={
+            name="Batroc",
+            hpCounter={
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/6301420264312745/DEB4FB8CF4132C489E3A42B5259669D2BB01C900/",
+                primaryButtonLabel = "RESET",
+                primaryButtonClickFunction = "resetBatroc"
+            },
+            stages={
+                stageA={
+                    cardId="50086",
+                    hitPoints=8,
+                    showAdvanceButton=true
+                },
+                stageB={
+                    cardId="50086",
+                    hitPoints=12,
+                    showAdvanceButton=true,
+                    flipCard=true
+                }
+            }
+        }
+    },
+    schemes={
+        main={
+            stages={
+                stage1={
+                    cardId="50087",
+                    startingThreat=0,
+                    startingThreatPerPlayer=6,
+                    targetThreatPerPlayer=12,
+                    flavorText="You sneak into the A.I.M. island embassy in search of the abducted S.H.I.E.L.D. specialist Sarah Garza. There you come face to face with the mercenary known as Batroc the Leaper. ",
+                },
+                stage2={
+                    cardId="50088",
+                    startingThreat=0,
+                    startingThreatPerPlayer=3,
+                    targetThreatPerPlayer=10,
+                    flavorText="Now that you've penetrated the embassy, you need to locate Garza. You discover several holding cells in the embassy's basement. Hopefully one of them holds the kidnapped tech."
+                },
+                stage3={
+                    cardId="50089",
+                    startingThreat=0,
+                    startingThreatPerPlayer=12,
+                    targetThreatPerPlayer=18,
+                    flavorText="You didn't find Garza, but you did find several other civilian prisoners. You must get them out safely. "
+                }
+            }
+        }
+    },
+    decks={
+        encounterDeck={
+            name="Batroc's Encounter Deck",
+            cards={
+                ["50090"]=1,
+                ["50092"]=1,
+                ["50093"]=2,
+                ["50094"]=2,
+                ["50095"]=1,
+                ["50096"]=2,
+                ["50097"]=4
+            }
+        },
+        rescuedCaptives={
+            name="Rescued Captives",
+            label="Rescued\nCaptives",
+            cards={
+                ["50091"]=4
+            },
+            position={-17.25, 1.10, 29.25},
+            scale=Vector(Global.getVar("CARD_SCALE_PLAYER"))
+        }
+    },
+    modularSets={
+        aimScience="recommended",
+        batrocsBrigade="recommended"
+    }
+}
+
+function setUpSchemeStage_batroc_main(params)
+    local stage = params.stage
+    local stageNumber = string.sub(stage.key, -1)
+    local mode = currentScenario.mode
+
+    if(stageNumber == "1") then
+        Global.call("moveCardFromEncounterDeckById", {cardId = "50090", searchInDiscard = true, zoneIndex = "environment"})
+
+        if(mode == "expert") then
+            Wait.frames(function()
+                local alertLevelCard = Global.call("findCard", {cardId = "50090"})
+                local counterGuid = alertLevelCard.getVar("counterGuid")
+                local counter = getObjectFromGUID(counterGuid)
+                local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
+                local heroCount = heroManager.call("getHeroCount")            
+
+                if(counter) then
+                    counter.call("setValue", {value = heroCount * 2})
+                else
+                    Global.call("displayMessage", {message = "Add two threat to the Alert Level environment.", messageType = Global.getVar("MESSAGE_TYPE_INSTRUCTION")})
+                end
+            end,
+            150)
+        end
+
+        return
+    end
+
+    if(stageNumber == "3") then
+        local alertLevelCard = Global.call("findCard", {cardId = "50090"})
+        local counterGuid = alertLevelCard.getVar("counterGuid")
+        local counter = getObjectFromGUID(counterGuid)
+        local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
+        local heroCount = heroManager.call("getHeroCount")            
+        local mode = currentScenario.mode
+
+        if(Global.call("isFaceUp", {object = alertLevelCard})) then
+            counter.call("setValue", {value = 0})
+            alertLevelCard.flip()
+        else
+            Global.call("dealEncounterCardsToAllPlayers", {numberOfCards = 1})            
+        end
+
+        if(mode == "expert") then
+            local currentThreat = counter.call("getValue")
+            local newThreat = currentThreat + (2 * heroCount)
+            counter.call("setValue", {value = newThreat})
+
+            if(newThreat >= (heroCount * 4)) then
+                Global.call("displayMessage", {message = "Threat on Alert Level is at least 4 per player!", messageType = Global.getVar("MESSAGE_TYPE_ALERT")})
+            end
+        end
+    end
+end
+
+function resetBatroc()
+    local villainHpCounter = getObjectFromGUID(currentScenario.villains.batroc.hpCounter.guid)
+    local mode = currentScenario.mode
+    local stage = mode == "standard" 
+        and currentScenario.villains.batroc.stages.stageA 
+        or currentScenario.villains.batroc.stages.stageB
+
+    villainHpCounter.call("setValue", {value = stage.hitPoints})
+
+    local threatCounter = getObjectFromGUID(currentScenario.schemes["main"].threatCounter.guid)
+    local currentThreat = threatCounter.call("getValue")
+    local newThreat = currentThreat - 6
+
+    if(newThreat < 0) then newThreat = 0 end
+
+    threatCounter.call("setValue", {value = newThreat})
+end

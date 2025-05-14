@@ -1,0 +1,60 @@
+{
+  "Object": {
+    "GUID": "043571",
+    "Name": "Custom_Token",
+    "Transform": {
+      "posX": 84.1745148,
+      "posY": 2.54552722,
+      "posZ": -50.3062477,
+      "rotX": 5.356236e-9,
+      "rotY": 180,
+      "rotZ": -4.49286048e-8,
+      "scaleX": 4.3,
+      "scaleY": 1,
+      "scaleZ": 4.3
+    },
+    "Nickname": "Agents of S.H.I.E.L.D. Campaign Log",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/13237779929823188723/7E8B50C7D483BAC550686524A867172078088BFB/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomToken": {
+        "Thickness": 0.1,
+        "MergeDistancePixels": 15,
+        "StandUp": false,
+        "Stackable": false
+      }
+    },
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

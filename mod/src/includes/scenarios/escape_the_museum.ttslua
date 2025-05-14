@@ -78,6 +78,6 @@ scenarios["escapeMuseum"] =
     },
     modularSets={
         galacticArtifacts="required",
-        menagerieMedley="recommended",
+        menagerieMedley="recommended"
     }
 }

@@ -1,0 +1,190 @@
+scenarios["thunderbolts"] =
+{
+    name="Thunderbolts",
+    fullyScripted = true,
+    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/6301420264312827/19ADA7D5B629A3B8B723B1E30EA7AB112C06FA0F/",
+    villains={
+        citizenV={
+            name="Citizen V",
+            hpCounter={
+                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/6301420264312827/19ADA7D5B629A3B8B723B1E30EA7AB112C06FA0F/",
+            },
+            stages={
+                stageA={
+                    cardId="50129",
+                    hitPointsPerPlayer=12
+                },
+                stageB={
+                    cardId="50129",
+                    hitPointsPerPlayer=16,
+                    flipCard=true
+                }
+            }
+        }
+    },
+    schemes={
+        main={
+            stages={
+                stage1={
+                    cardId="50130",
+                    startingThreat=0,
+                    startingThreatPerPlayer=1,
+                    targetThreatPerPlayer=11
+                }
+            }
+        }
+    },
+    decks={
+        encounterDeck={
+            name="Citizen V's Encounter Deck",
+            cards={
+                ["50131"]=1,
+                ["50132"]=1,
+                ["50133"]=1,
+                ["50134"]=3,
+                ["50135"]=1,
+                ["50136"]=1,
+                ["50137"]=2,
+                ["50138"]=2
+            }
+        }
+    },
+    zones={
+        sideScheme = {
+            position = {7.25, 1.00, 9.00},
+            scale = {7.00, 1.00, 20.00},
+            firstCardPosition = {7.25, 0.98, 16.75},
+            horizontalGap = 7,
+            verticalGap = 5,
+            layoutDirection = "vertical",
+            width = 1,
+            height = 4
+        }
+    },
+    customZones = {
+        thunderboltBackup = {
+            position = {24.25, 1.00, 22.25},
+            scale = {10, 1, 7},
+            firstCardPosition = {21.75, 0.98, 22.25},
+            width = 2,
+            height = 1,
+            horizontalGap = 5,
+            zoneType="minion",
+            tags = {"minion"}
+        }
+    },
+    notes={
+        minions={
+            title="Thunderbolt Minions",
+            text="The Thunderbolt Backup environment instructs you to swap minions based on how much damage they've take, rather than how many hit points they have remaining. Therefore, the HP counters for these minions will start at zero, instead of the minion's printed HP. They are also positioned higher on the card, so that you can see the printed HP.",
+            position={0, 1, 0}
+        }
+    },    
+    thunderboltsModularSets={
+        gravitationalPull="recommended",
+        hardSound="recommended",
+        paleLittleSpider="recommended",
+        powerOfTheAtom="recommended",
+        supersonic="recommended",
+        theLeaper="recommended"
+    }
+}
+
+function customSetup_thunderbolts(params)
+    local setupStep = params.setupStep
+  
+    if(setupStep == "modular-sets") then   
+      local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
+      layoutManager.call("colorCodeModularSets", {sets = currentScenario.thunderboltsModularSets})
+    end
+end
+
+function modularSetsAreValid_thunderbolts(params)
+    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
+    local heroCount = heroManager.call("getHeroCount")
+    local minimumThunderboltEncounterSets = heroCount + 1
+
+    local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
+    local selectedModularSets = encounterSetManager.call("getSelectedSets")
+    local thunderBoltScenarioCount = 0
+
+    for key, value in pairs(selectedModularSets) do
+        if(currentScenario.thunderboltsModularSets[key] ~= nil) then
+            thunderBoltScenarioCount = thunderBoltScenarioCount + 1
+        end
+    end
+
+    local modularSetsAreValid = thunderBoltScenarioCount >= minimumThunderboltEncounterSets
+
+    if(params and params.postMessage and not modularSetsAreValid) then
+      broadcastToAll("Please select at least " .. minimumThunderboltEncounterSets .. " Thunderbolt encounter sets.", {1,1,1})
+    end
+  
+    return modularSetsAreValid
+end
+
+function setUpSchemeStage_thunderbolts_main(params)
+    Global.call("moveCardFromEncounterDeckById", {
+        cardId = "50131", 
+        searchInDiscard = true, 
+        destinationPosition = {16.75, 0.97, 22.25}, 
+        flipCard = true, 
+        locked = true})
+
+    function placeThunderboltMinionCoroutine()
+        for i = 1, 25 do
+            coroutine.yield(0)
+        end
+
+        local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
+        local players = heroManager.call("getPlayersInPlayerOrder")
+        local encounterDeck = Global.call("getEncounterDeck")
+
+        local thunderboltsMinions={
+            gravitationalPull="50139",
+            hardSound="50143",
+            paleLittleSpider="50148",
+            powerOfTheAtom="50152",
+            supersonic="50156",
+            theLeaper="50161"
+        }
+    
+        local thunderboltsInDeck = {}
+    
+        for key, minionId in pairs(thunderboltsMinions) do
+            if(Global.call("isCardInDeck", {cardId = minionId, deck=encounterDeck})) then
+                table.insert(thunderboltsInDeck, minionId)
+            end
+        end
+    
+        thunderboltsInDeck = Global.call("shuffleTable", {table = thunderboltsInDeck})
+
+        local minionCardValues = {
+            retainValue = true,
+            retainedValue = 0,
+            counterOffset = 1
+        }
+        local index = 0
+
+        for _, player in ipairs(players) do    
+            index = index + 1
+            local minionId = thunderboltsInDeck[index]
+            Global.call("moveCardFromEncounterDeckById", {cardId = minionId, zoneIndex="minion-" .. player.playerColor, values=minionCardValues})
+
+            for i = 1, 25 do
+                coroutine.yield(0)
+            end
+        end
+
+        for i = 1, 25 do
+            coroutine.yield(0)
+        end
+
+        local minionId = thunderboltsInDeck[#thunderboltsInDeck]
+        Global.call("moveCardFromEncounterDeckById", {cardId = minionId, destinationPosition={21.75, 0.97, 22.25}, values=minionCardValues})
+  
+        return 1
+    end
+  
+    startLuaCoroutine(self, "placeThunderboltMinionCoroutine")
+end

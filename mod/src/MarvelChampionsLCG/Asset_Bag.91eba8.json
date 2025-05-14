@@ -52,6 +52,10 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
+    "A.I.M._Envelope.ea1d2b.json",
+    "S.H.I.E.L.D._Envelope.575250.json",
+    "Agents_of_S.H.I.E.L.D._Campaign_Log.043571.json",
+    "Holding_Cell.e91ddb.json",
     "Secure_the_Landing_Pad.8c6bb3.8300.json",
     "Age_of_Apocalypse_Campaign_Log.2139f4.json",
     "NeXt_Evolution_Campaign_Log.868463.json",
@@ -74,16 +78,16 @@
     "Apocalypse.4ad752.406.json",
     "Apocalypse.40ea4a.403.json",
     "Apocalypse.459648.400.json",
-    "Main_Scheme_Threat_Counter.a9f7b8.json",
-    "Boost_Panel.ef27d7.json",
     "Angel.813d45.1303.json",
     "Ironheart_Identity.eaab93.973100.json",
     "Wasp_Identity.0f11ab.799100.json",
     "Energy_Form.71bfde.963206.json",
-    "Custom_Assetbundle_Bag.740595.json",
-    "Villain_HP_Counter.8cf3d6.json",
-    "Ant-Man_Identity.cad2b0.775500.json",
     "Playmat.f5701e.json",
-    "HP_Counter.16b5bd.json"
+    "HP_Counter.16b5bd.json",
+    "Ant-Man_Identity.cad2b0.775500.json",
+    "Villain_HP_Counter.8cf3d6.json",
+    "Main_Scheme_Threat_Counter.a9f7b8.json",
+    "Custom_Assetbundle_Bag.740595.json",
+    "Boost_Panel.ef27d7.json"
   ]
 }

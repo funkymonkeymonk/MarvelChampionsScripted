@@ -51,6 +51,8 @@ function createAll()
 end
 
 function createAdvanceButton()
+    local label = CONFIG.ADVANCE_BUTTON_LABEL or "ADVANCE"
+
     self.createButton({
         label = CONFIG.ADVANCE_BUTTON_LABEL or "ADVANCE",
         click_function = "buttonClick",
@@ -97,6 +99,10 @@ function updateVal()
         index = 0,
         label = tostring(CONFIG.VALUE)
         })
+end
+
+function getValue()
+    return CONFIG.VALUE
 end
 
 function setValue(params)
