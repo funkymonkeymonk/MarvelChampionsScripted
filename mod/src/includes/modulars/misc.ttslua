@@ -186,3 +186,26 @@ modularSets["hellfire"] =
         ["49042"]=1
     }
 }
+
+modularSets["extremeRisk"] = 
+{
+    name="Extreme Risk",
+    modular=true,
+    cards = {
+        ["51039"]=1,
+        ["51040"]=2,
+        ["51041"]=1,
+        ["51042"]=2
+    }
+}
+
+modularSets["growingStrong"] = 
+{
+    name="Growing Strong",
+    modular=true,
+    cards = {
+        ["52035"]=1,
+        ["52036"]=1,
+        ["52037"]=4
+    }
+}
