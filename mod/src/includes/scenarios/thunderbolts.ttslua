@@ -86,7 +86,9 @@ scenarios["thunderbolts"] =
         paleLittleSpider="recommended",
         powerOfTheAtom="recommended",
         supersonic="recommended",
-        theLeaper="recommended"
+        theLeaper="recommended",
+        extremeRisk="recommended",
+        growingStrong="recommended",
     }
 }
 
