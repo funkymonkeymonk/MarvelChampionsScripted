@@ -165,7 +165,7 @@ end
 
 function lokiSwapVillain(params)
     if(#currentScenario.lokiQueue  == 0) then
-        Global.call("showMessage", {message = "No more Lokis!"})
+        Global.call("displayMessage", {message = "No more Lokis!", messageType = Global.getVar("MESSAGE_TYPE_INFO")})
         return
     end
     local villain = currentScenario.villains.loki

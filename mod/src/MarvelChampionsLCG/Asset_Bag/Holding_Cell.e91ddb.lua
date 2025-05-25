@@ -1,10 +1,6 @@
 local data = {}
 
 function onload(saved_data)
-    OFFSET_ENCOUNTER_DRAW = Global.getTable("PLAYMAT_OFFSET_ENCOUNTER_CARD")
-    OFFSET_PLAYER_DECK = Global.getTable("PLAYMAT_OFFSET_DECK")
-    OFFSET_PLAYER_DISCARD = Global.getTable("PLAYMAT_OFFSET_DISCARD")
- 
     loadSavedData(saved_data)
 
     heroCount = getValue("heroCount", 0)
@@ -123,7 +119,7 @@ function setUpUI()
                           }
                        }
                     }
-                },     
+                },
                 {
                     tag="Button",
                     value="RELEASE",

@@ -46158,7 +46158,8 @@ PACK_51 = [[
     "deckLimit": 1,
     "resourceEnergy": 1,
     "baseThreat": 6,
-    "baseThreatIsFixed": true
+    "baseThreatIsFixed": true,
+    "linked": "51036"
   },
   {
     "name": "The Raft",

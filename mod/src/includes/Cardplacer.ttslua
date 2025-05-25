@@ -200,10 +200,8 @@ function getCardByID(id, position, params) --deprecated
 end
 
 function spawnCard(params)
-    local position = params.position
     local cardID = params.cardId
-
-    local params = params or {}
+    local position = params.position
     local scale = params.scale or Global.getTable("CARD_SCALE_PLAYER")
     local name = params.name or ""
     local landscape = params.landscape or false
@@ -233,7 +231,19 @@ function spawnCard(params)
         card:spawn({position = position, scale = scale, rotation = rotation, name = name})
 
     if(locked) then
-        Wait.frames(function() spawnedCard.setLock(true) end, 60)
+        Wait.frames(
+            function()
+                Wait.condition(
+                    function()
+                        if(spawnedCard.isDestroyed()) then return end
+                            spawnedCard.setLock(true)
+                    end, 
+                    function()
+                        return spawnedCard.isDestroyed() or spawnedCard.resting
+                    end,
+                    5)
+            end,
+            10)
     end
 
     clearUI()
