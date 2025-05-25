@@ -3,6 +3,7 @@ scenarios["kang"] =
     name="The Once and Future Kang",
     tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
     useHeroObligations = false,
+    fullyScripted = true,
     villains={
 
     },
@@ -12,6 +13,7 @@ scenarios["kang"] =
             key="stage1",
             hpCounter={
                 imageUrl="https://steamusercontent-a.akamaihd.net/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
+                showAdvanceButton = true
             },
             stages={
                 stage1={
@@ -102,6 +104,7 @@ scenarios["kang"] =
             key="stage1",
             hpCounter={
                 imageUrl="https://steamusercontent-a.akamaihd.net/ugc/1849305905150130102/77D8CE52F17C6E5701C2D06D67440F0943663838/",
+                showAdvanceButton = true
             },
             stages={
                 stage1={
@@ -248,6 +251,10 @@ function setUpVillain_kang(params)
   advanceVillainStage("stage1", params.heroCount)
 end
 
+function getNextSchemeStage_kang_main(params)
+  return nil
+end
+
 function getNextVillainStage_kang(params)
   local currentStageNumber = currentScenario.currentStage or 0
   local nextStageNumber = currentStageNumber + 1
@@ -267,21 +274,31 @@ function placeVillainStage_kang(params)
   local stage = params.stage
 
   if(stage.stageNumber == 1) then
-    placeKangStage1(params.heroCount)
+    kangPlaceStage1(params.heroCount)
     return
   end
 
   if(stage.stageNumber == 2) then
-    placeKangStage2()
+    kangPlaceStage2()
     return
   end
 
   if(stage.stageNumber == 3) then
-    placeKangStage3(params.heroCount)
+    kangPlaceStage3(params.heroCount)
   end
 end
 
-function placeKangStage1(heroCount)
+
+function kangPlaceStage1(heroCount)
+  kangStage1PlaceVillainAndHPCounter()
+  kangStage1DealEncounterCardsToAllPlayers()
+  kangStage1PlaceSchemeCard()
+
+  saveData()
+end
+
+function kangStage1PlaceVillainAndHPCounter()
+  local heroCount = getHeroCount()
   local stage = currentScenario.villains.stage1.stages.stage1
   local hitPoints = (stage.hitPoints or 0) + ((stage.hitPointsPerPlayer or 0) * heroCount)
 
@@ -289,7 +306,99 @@ function placeKangStage1(heroCount)
   placeVillain("stage1")
 end
 
-function placeKangStage2()
+function kangStage1DealEncounterCardsToAllPlayers()
+    -- TODO: Can this check for the encounter deck be moved to a more generic place?
+    Wait.condition(
+      function()
+        Global.call("dealEncounterCardsToAllPlayers", {numberOfCards = 1})
+      end,
+      function()
+        local deckOrCard = Global.call("getDeckOrCardAtLocation", {position = Vector(getEncounterDeckPosition())})
+        return deckOrCard ~= nil
+      end,
+      5,
+      function()
+        Global.call("displayMessage", {message = "Encounter deck not found."})
+      end
+    )  
+end
+
+function kangStage1PlaceSchemeCard()
+  Wait.frames(
+    function()
+      placeSchemeStage("main", currentScenario.schemes.main.stages.stage1, getHeroCount())
+    end,
+    120
+  )
+end
+
+
+function kangPlaceStage2()
+  kangStage2DefineLayout()
+  kangStage2DeleteStage1VillainAndScheme()
+  kangStage2SetUpZones()
+  kangStage2MoveEncounterDeck()
+  kangStage2DiscardSideSchemes()
+  kangStage2DealEncounterCardsToAllPlayers()
+  kangStage2MoveBlackHole()
+  kangStage2SetUpVillainQueue()
+  kangStage2SetUpPlayAreas()
+  kangStage2PlaceMainSchemeCard()
+  kangStage2PlaceVillains()
+
+  saveData()
+end
+
+function kangStage2DefineLayout()
+  currentScenario.stage2Layouts = {
+    Red={
+      villainPosition={-39, 1.00, 20.44},
+      villainScale={3.64, 1.00, 3.64},
+      hpCounterPosition={-39, 0.96, 29.15},
+      hpCounterScale={2.01, 1.00, 2.01},
+      schemePosition={-30.25, 0.97, 22.45},
+      schemeScale={2.93, 1.00, 2.93},
+      threatCounterPosition={-30.25, 1.01, 28.48},
+      sideSchemeZonePosition={-31.50, 1.00, 14.25},
+      sideSchemeFirstCardPosition={-31.50, 0.97, 16.75}
+    }, 
+    Blue={
+      villainPosition={-16, 1.00, 20.44},
+      villainScale={3.64, 1.00, 3.64},
+      hpCounterPosition={-16, 0.96, 29.15},
+      hpCounterScale={2.01, 1.00, 2.01},
+      schemePosition={-7.25, 0.97, 22.45},
+      schemeScale={2.93, 1.00, 2.93},
+      threatCounterPosition={-7.25, 1.01, 28.48},
+      sideSchemeZonePosition={-8.50, 1.00, 14.25},
+      sideSchemeFirstCardPosition={-8.50, 0.97, 16.75}
+    }, 
+    Green={
+      villainPosition={7, 1.00, 20.44},
+      villainScale={3.64, 1.00, 3.64},
+      hpCounterPosition={7, 0.96, 29.15},
+      hpCounterScale={2.01, 1.00, 2.01},
+      schemePosition={15.75, 0.97, 22.45},
+      schemeScale={2.93, 1.00, 2.93},
+      threatCounterPosition={15.75, 1.01, 28.48},
+      sideSchemeZonePosition={14.50, 1.00, 14.25},
+      sideSchemeFirstCardPosition={14.50, 0.97, 16.75}
+    }, 
+    Yellow={
+      villainPosition={30, 1.00, 20.44},
+      villainScale={3.64, 1.00, 3.64},
+      hpCounterPosition={30, 0.96, 29.15},
+      hpCounterScale={2.01, 1.00, 2.01},
+      schemePosition={38.75, 0.97, 22.45},
+      schemeScale={2.93, 1.00, 2.93},
+      threatCounterPosition={38.75, 1.01, 28.48},
+      sideSchemeZonePosition={37.50, 1.00, 14.25},
+      sideSchemeFirstCardPosition={37.50, 0.97, 16.75}
+    }
+  }
+end
+
+function kangStage2DeleteStage1VillainAndScheme()
   local villainPosition = defaults.villainDeck.position
   local mainSchemePosition = defaults.mainSchemeDeck.position
 
@@ -301,7 +410,9 @@ function placeKangStage2()
 
   local schemeCounter = getObjectFromGUID(currentScenario.schemes.main.threatCounter.guid)
   schemeCounter.destruct()
+end
 
+function kangStage2MoveEncounterDeck()
   local encounterDeckOrigin = getEncounterDeckPosition()
   local encounterDeckDestination = {46.75, 1.15, 15.75}
   currentScenario.encounterDeckPosition = encounterDeckDestination
@@ -320,9 +431,127 @@ function placeKangStage2()
   encounterDeckZone.setPosition({49.25, 1.00, 15.75})
   encounterDeckZone.setScale({10.25, 2.00, 7.00})
 
-  local blackHole = getItemFromManifest({key = "blackHole"})
-  blackHole.destruct()
+  local boostPanel = Global.call("findObjectByTag", {tag="boost-panel"})
+  if(boostPanel) then
+    boostPanel.setPosition({49.75, 1.00, 10.25})
+  end
 
+  currentScenario.boostDrawPosition = {49.2, 1.10, 4.55}
+end
+
+function kangStage2DiscardSideSchemes()
+  Wait.frames(function()
+    local zoneGuid = getZoneGuid({zoneIndex="sideScheme"})
+    local zoneObject = getObjectFromGUID(zoneGuid)
+    zoneObject.setVar("zoneType", nil)
+  
+    local sideSchemeZoneGuid = getZoneGuid({zoneIndex="sideScheme"})
+    local sideSchemeZone = getObjectFromGUID(sideSchemeZoneGuid)
+  
+    local sideSchemes = sideSchemeZone.getObjects()
+    local encounterDiscardPosition = getEncounterDiscardPosition()
+    local sideSchemeCount = 0
+  
+    for i, sideScheme in ipairs(sideSchemes) do
+      sideSchemeCount = sideSchemeCount + 1
+      local counterGuid = sideScheme.getVar("counterGuid")
+      local counter = counterGuid ~= nil and getObjectFromGUID(counterGuid)
+      if(counter) then counter.destruct() end
+      sideScheme.setVar("counterGuid", nil)
+  
+      sideScheme.setPositionSmooth(encounterDiscardPosition, false, false)
+      sideScheme.setRotationSmooth({0,180,0}, false, false)
+    end
+  
+    kangStage2AddAccelerationForSideSchemes(sideSchemeCount)    
+  end,
+  30)
+end
+
+function kangStage2AddAccelerationForSideSchemes(sideSchemeCount)
+  if(sideSchemeCount == 0) then return end
+
+  local accelerationCounter = Global.call("getAccelerationCounter", {createIfNotFound=true, overridePosition={49.25, 1.01, 28.75}})
+
+  Wait.frames(function()
+    accelerationCounter.setPositionSmooth({49.25, 1.01, 28.75}, false, false)
+    accelerationCounter.call("addToValue", {valueToAdd = sideSchemeCount})
+  end,
+  30)
+end
+
+function kangStage2SetUpZones()
+  Wait.frames(
+    function()
+      local zones = {
+        "attachment",
+        "sideScheme",
+        "environment"
+      }
+    
+      for i=1, #zones do
+        local zoneGuid = getZoneGuid({zoneIndex=zones[i]})
+        local zoneObject = getObjectFromGUID(zoneGuid)
+        if(zoneObject) then zoneObject.destruct() end
+        currentScenario.zones[zones[i]] = nil
+      end
+    
+      local seats = {"Red", "Blue", "Green", "Yellow"}
+      local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
+    
+      for _, v in ipairs(seats) do
+        local hero = heroManager.call("getHeroByPlayerColor", {playerColor = v})
+        if(hero) then
+          local layout = currentScenario.stage2Layouts[v]
+          local zoneIndex = "sideScheme-".. v
+    
+          local zoneDef = {
+            position = layout.sideSchemeZonePosition,
+            scale = {7.00, 1.00, 10.00},
+            firstCardPosition = layout.sideSchemeFirstCardPosition,
+            layoutDirection = "horizontal",
+            verticalGap = 5,
+            width = 1,
+            height = 2
+          }
+    
+          currentScenario.zones[zoneIndex] = zoneDef
+    
+          spawnObject({
+            type="ScriptingTrigger",
+            position = zoneDef.position,
+            scale = zoneDef.scale,
+            sound = false,
+            callback_function = function(spawned_object)
+              spawned_object.addTag("side_scheme")
+              spawned_object.addTag("player_side_scheme")
+              spawned_object.setVar("zoneType", "sideScheme")
+              spawned_object.setVar("zoneIndex", zoneIndex)
+              currentScenario.zones[zoneIndex].guid = spawned_object.getGUID()
+            end
+          })
+        end
+      end      
+    end,
+    60
+  )
+end
+
+function kangStage2DealEncounterCardsToAllPlayers()
+  Wait.frames(
+    function()
+      Global.call("dealEncounterCardsToAllPlayers", {numberOfCards = 1})
+    end,
+    60
+  )
+end
+
+function kangStage2MoveBlackHole()
+  local blackHole = getItemFromManifest({key = "blackHole"})
+  blackHole.setPosition({49.25, 1.13, 33.84})
+end
+
+function kangStage2SetUpVillainQueue()
   currentScenario.villains = {}
 
   local mode = currentScenario.mode
@@ -335,23 +564,26 @@ function placeKangStage2()
     end
   end
 
-  villainQueue = Global.call("shuffleTable", {table = villainQueue})
+  currentScenario.villainQueue = Global.call("shuffleTable", {table = villainQueue})
+end
 
+function kangStage2SetUpPlayAreas()
   local seats = {"Red", "Blue", "Green", "Yellow"}
   local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
 
   for k, v in ipairs(seats) do
     local hero = heroManager.call("getHeroByPlayerColor", {playerColor = v})
     if(hero) then
-      local villain = villainQueue[k]
-      local layout = getKangStage2Layout(v)
+      local villain = currentScenario.villainQueue[k]
+      local layout = currentScenario.stage2Layouts[v]
 
       villain.deckPosition = layout.villainPosition
       villain.deckScale = layout.villainScale
       villain.hpCounter.position = layout.hpCounterPosition
       villain.hpCounter.scale = layout.hpCounterScale
       villain.hpCounter.primaryButtonLabel = "DEFEAT"
-      villain.hpCounter.primaryButtonClickFunction = "defeatKangStage2Villain"
+      villain.hpCounter.primaryButtonClickFunction = "kangStage2DefeatVillain"
+      villain.hpCounter.showAdvanceButton = true
 
       currentScenario.villains[villain.key] = villain
 
@@ -362,7 +594,7 @@ function placeKangStage2()
         threatCounter = {
           position = layout.threatCounterPosition,
           primaryButtonLabel = "COMPLETE",
-          primaryButtonClickFunction = "completeKangStage2Scheme"
+          primaryButtonClickFunction = "kangStage2CompleteScheme"
         },
         stages = {
           stage1 = {
@@ -376,55 +608,61 @@ function placeKangStage2()
       currentScenario.schemes[villain.key] = scheme
     end
   end
+end
 
+function kangStage2PlaceMainSchemeCard()
   currentScenario.schemes.main.position = {49.25, 0.97, 23.25}
   currentScenario.schemes.main.threatCounter = nil
   
-  advanceSchemeStage("main", 0)
-
-  currentScenario.blackHole = {
-    position = {49.25, 1.13, 33.84}
-  }
-  placeBlackHole()
-
-  startLuaCoroutine(self, "placeKangStage2Villains")
+  placeSchemeStage("main", currentScenario.schemes.main.stages.stage2, getHeroCount())  
 end
 
-function placeKangStage2Villains()
-  for key, villain in pairs(currentScenario.villains) do
-    placeVillainHpCounter(key, villain.stages.stage1.hitPoints, true)
-    placeVillain(key)
-
-    placeMainSchemeThreatCounter(key, 0, true)
-
-    Wait.frames(
-      function()
-        placeScheme(key)
-      end,
-      20
-    )
-
-    for i=1, 5 do
-      coroutine.yield(0)
+function kangStage2PlaceVillains()
+  function kangStage2PlaceVillainsCorouting()
+    for key, villain in pairs(currentScenario.villains) do
+      placeVillainHpCounter(key, villain.stages.stage1.hitPoints, true)
+      placeVillain(key)
+  
+      placeMainSchemeThreatCounter(key, 0, true)
+  
+      Wait.frames(
+        function()
+          local scheme = currentScenario.schemes[key]
+          local schemePosition = scheme.position or defaults.mainSchemeDeck.position
+          local schemeScale = scheme.scale or defaults.mainSchemeDeck.scale
+  
+          getCardByID(
+            scheme.stages.stage1.cardId, 
+            schemePosition, 
+            {scale = schemeScale, landscape=true, flipped = true, locked = true})
+        end,
+        20
+      )
+  
+      for i=1, 5 do
+        coroutine.yield(0)
+      end
     end
+  
+    return 1    
   end
 
-  return 1
+  startLuaCoroutine(self, "kangStage2PlaceVillainsCorouting")
 end
 
-function defeatKangStage2Villain(params)
-  deleteKangStage2PlayArea(params.villainKey)
+function kangStage2DefeatVillain(params)
+  kangStage2DeletePlayArea(params.villainKey)
 end
 
-function completeKangStage2Scheme(params)
+function kangStage2CompleteScheme(params)
   local schemesCompleted = currentScenario.stage2SchemesCompleted or 0
   schemesCompleted = schemesCompleted + 1
   currentScenario.stage2SchemesCompleted = schemesCompleted
 
-  deleteKangStage2PlayArea(params.schemeKey)
+  kangStage2DeletePlayArea(params.schemeKey)
 end
 
-function deleteKangStage2PlayArea(villainKey)
+function kangStage2DeletePlayArea(villainKey)
   local villain = currentScenario.villains[villainKey]
   local hpCounter = getObjectFromGUID(villain.hpCounter.guid)
   hpCounter.destruct()
@@ -441,20 +679,144 @@ function deleteKangStage2PlayArea(villainKey)
   defeatedStage2Villains = defeatedStage2Villains + 1
   currentScenario.defeatedStage2Villains = defeatedStage2Villains
 
-  local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
-  local heroCount = heroManager.call("getHeroCount")
+  local heroCount = getHeroCount()
   if(defeatedStage2Villains >= heroCount) then
     advanceVillainStage(villainKey, heroCount)
   end
 end
 
-function placeKangStage3(heroCount)
-  local mainSchemePosition = defaults.mainSchemeDeck.position
-  Global.call("deleteCardAtPosition", {position = mainSchemePosition})
 
+function kangPlaceStage3(heroCount)
+  local sideSchemes = kangStage3GetSideSchemesInPlay()
+  kangStage3SetUpZones()
+  kangStage3MoveSideSchemes(sideSchemes)
+  kangStage3DeleteStage2MainSchemeCard()
+  kangStage3MoveBlackHole()
+  kangStage3MoveEncounterDeck()
+  kangStage3MoveAccelerationCounter()
+  kangStage3PlaceMainSchemeCardAndThreatCounter()
+  kangStage3PlaceVillainAndHPCounter()
+  kangStage3PlaceKangsDominion()
+  kangStage3PlaceNemesisMinions()
+
+  saveData()
+end
+
+function kangStage3GetSideSchemesInPlay()
+  local seats = {"Red", "Blue", "Green", "Yellow"}
+  local sideSchemes = {}
+
+  for _, v in ipairs(seats) do
+    local zoneIndex = "sideScheme-" .. v
+    local zoneGuid = getZoneGuid({zoneIndex=zoneIndex})
+    local zoneObject = getObjectFromGUID(zoneGuid)
+
+    if(zoneObject) then
+      local objects = zoneObject.getObjects()
+      for _, obj in ipairs(objects) do
+        if(obj.hasTag("side_scheme") or obj.hasTag("player_side_scheme")) then
+          obj.setVar("retainValue", true)
+          Global.call("removeCounterFromCard", {card=obj})
+          table.insert(sideSchemes, obj.getGUID())
+        end
+      end
+    end
+  end
+
+  return sideSchemes
+end
+
+function kangStage3SetUpZones()
+  local seats = {"Red", "Blue", "Green", "Yellow"}
+
+  for _, v in ipairs(seats) do
+    local zoneIndex = "sideScheme-" .. v
+    local zoneGuid = getZoneGuid({zoneIndex=zoneIndex})
+    local zoneObject = getObjectFromGUID(zoneGuid)
+    if(zoneObject) then zoneObject.destruct() end
+    currentScenario.zones[zoneIndex] = nil
+  end
+
+  currentScenario.zones.sideScheme = currentScenario.zones.sideScheme or defaults.zones.sideScheme
+  currentScenario.zones.environment = currentScenario.zones.environment or defaults.zones.environment
+  currentScenario.zones.attachment = currentScenario.zones.attachment or defaults.zones.attachment
+
+  local sideSchemeZoneDef = currentScenario.zones.sideScheme
+  local environmentZoneDef = currentScenario.zones.environment
+  local attachmentZoneDef = currentScenario.zones.attachment
+
+  spawnObject({
+    type="ScriptingTrigger",
+    position = sideSchemeZoneDef.position,
+    scale = sideSchemeZoneDef.scale,
+    sound = false,
+    callback_function = function(spawned_object)
+      spawned_object.addTag("side_scheme")
+      spawned_object.addTag("player_side_scheme")
+      spawned_object.setVar("zoneType", "sideScheme")
+      spawned_object.setVar("zoneIndex", "sideScheme")
+      currentScenario.zones.sideScheme.guid = spawned_object.getGUID()
+    end
+  })
+
+  spawnObject({
+    type="ScriptingTrigger",
+    position = environmentZoneDef.position,
+    scale = environmentZoneDef.scale,
+    sound = false,
+    callback_function = function(spawned_object)
+      spawned_object.addTag("environment")
+      spawned_object.setVar("zoneType", "environment")
+      spawned_object.setVar("zoneIndex", "environment")
+      currentScenario.zones.environment.guid = spawned_object.getGUID()
+    end
+  })
+
+  spawnObject({
+    type="ScriptingTrigger",
+    position = attachmentZoneDef.position,
+    scale = attachmentZoneDef.scale,
+    sound = false,
+    callback_function = function(spawned_object)
+      spawned_object.addTag("attachment")
+      spawned_object.setVar("zoneType", "attachment")
+      spawned_object.setVar("zoneIndex", "attachment")
+      currentScenario.zones.attachment.guid = spawned_object.getGUID()
+    end
+  })
+end
+
+function kangStage3MoveSideSchemes(sideSchemes)
+  if(sideSchemes == nil or #sideSchemes == 0) then
+    return
+  end
+
+  Wait.frames(function()
+    for _, sideSchemeGuid in ipairs(sideSchemes) do
+      local sideScheme = getObjectFromGUID(sideSchemeGuid)
+  
+      if(sideScheme) then
+        Global.call("moveCard", {
+          card=sideScheme,
+          zoneIndex="sideScheme"
+        })
+      end
+    end  
+  end,
+  30)
+end
+
+function kangStage3DeleteStage2MainSchemeCard()
+  --Global.call("deleteCardAtPosition", {position = defaults.mainSchemeDeck.position})
+  Global.call("deleteCardAtPosition", {position = currentScenario.schemes.main.position})
+end
+
+function kangStage3MoveBlackHole()
   local blackHole = getItemFromManifest({key = "blackHole"})
-  blackHole.destruct()
+  blackHole.setPosition(defaults.blackHole.position)
+end
 
+function kangStage3MoveEncounterDeck()
   local encounterDeckOrigin = getEncounterDeckPosition()
   local encounterDeckDestination = defaults.encounterDeck.position
   currentScenario.encounterDeckPosition = encounterDeckDestination
@@ -473,18 +835,41 @@ function placeKangStage3(heroCount)
   encounterDeckZone.setPosition({-15.25, 1.00, 22.00})
   encounterDeckZone.setScale({9.75, 2.00, 7.00})
 
-  Global.call("deleteCardAtPosition", {position = currentScenario.schemes.main.position})
+  local boostPanel = Global.call("findObjectByTag", {tag="boost-panel"})
+  if(boostPanel) then
+    boostPanel.setPosition(Global.getTable("BOOST_PANEL_POSITION"))
+  end
 
+  currentScenario.boostDrawPosition = Global.getTable("BOOST_POS")
+end
+
+function kangStage3MoveAccelerationCounter()
+  local accelerationCounter = Global.call("getAccelerationCounter", {createIfNotFound=false})
+
+  if(accelerationCounter) then
+    accelerationCounter.setPositionSmooth({11.25, 1.00, 29.75}, false, false)
+  end
+end
+
+function kangStage3PlaceMainSchemeCardAndThreatCounter()
+  local heroCount = getHeroCount()
   currentScenario.schemes.main.position = defaults.mainSchemeDeck.position
   currentScenario.schemes.main.threatCounter = nil
 
   advanceSchemeStage("main", heroCount)
 
-  currentScenario.blackHole = {
-    position = defaults.blackHole.position
-  }
-  placeBlackHole()
+  Wait.frames(
+    function()
+      placeSchemeStage("main", currentScenario.schemes.main.stages.stage3, heroCount)
+    end,
+    120
+  )
 
+  placeMainSchemeThreatCounter("main", 0, false)
+end
+
+function kangStage3PlaceVillainAndHPCounter()
+  local heroCount = getHeroCount()
   local mode = currentScenario.mode
   local villains = mode == "standard" and currentScenario.standardVillains or currentScenario.expertVillains
   currentScenario.villains.stage3 = villains.stage3
@@ -494,78 +879,50 @@ function placeKangStage3(heroCount)
 
   placeVillainHpCounter("stage3", hitPoints, false)
   placeVillain("stage3")
-
-  placeMainSchemeThreatCounter("main", 0, false)
-
-  placeKangsDominion(heroCount)
 end
 
-function placeKangsDominion(heroCount)
+function kangStage3PlaceKangsDominion()
+  local heroCount = getHeroCount()
   local schemesCompleted = currentScenario.stage2SchemesCompleted or 0
-  local firstSchemePosition = {16.75, 1.00, 21.75}
-  local firstCounterPosition = {16.37, 1.10, 20.30}
+  local encounterDeckPosition = getEncounterDeckPosition()
 
-  for i=1, schemesCompleted do
-    local position = {firstSchemePosition[1], firstSchemePosition[2], firstSchemePosition[3] + ((i - 1) * -5)}
-    local scale = Global.getTable("CARD_SCALE_ENCOUNTER")
+  function placeKangsDominionCoroutine()
+    for i=1, 60 do
+      coroutine.yield(0)
+    end
 
-    getCardByID("11023", position, {scale = scale, landscape = true})
+    for i=1, schemesCompleted do
+      Global.call("spawnCard", {
+        cardId = "11023",
+        position = encounterDeckPosition,
+        scale = Global.getTable("CARD_SCALE_ENCOUNTER"),
+        flipped = true
+      })
+    end
+ 
+    for i=1, 30 do
+      coroutine.yield(0)
+    end
 
-    Wait.frames(
-      function()
-        local position = {firstCounterPosition[1], firstCounterPosition[2], firstCounterPosition[3] + ((i - 1) * -5)}
-        local scale = {0.48, 1.00, 0.48}
-        local threat = 3 * heroCount
+    for i=1, schemesCompleted do
+      Global.call("moveCardFromEncounterDeckById", {
+        cardId = "11023",
+        zoneIndex = "sideScheme",
+        scale = Global.getTable("CARD_SCALE_ENCOUNTER"),
+        flipped = true
+      })
 
-        placeThreatCounter(
-          {position = position, scale = scale},
-          threat
-        )
-      end,
-      10
-    )
+      for i=1, 120 do
+        coroutine.yield(0)
+      end
+    end
+
+    return 1
   end
+
+  startLuaCoroutine(self, "placeKangsDominionCoroutine")
 end
 
-function getKangStage2Layout(playerColor)
-  local kangStage2Layout = {
-    Red={
-      villainPosition={-39, 1.00, 20.44},
-      villainScale={3.64, 1.00, 3.64},
-      hpCounterPosition={-39, 0.96, 29.15},
-      hpCounterScale={2.01, 1.00, 2.01},
-      schemePosition={-30.25, 0.97, 22.45},
-      schemeScale={2.93, 1.00, 2.93},
-      threatCounterPosition={-30.25, 1.01, 28.48}
-    }, 
-    Blue={
-      villainPosition={-16, 1.00, 20.44},
-      villainScale={3.64, 1.00, 3.64},
-      hpCounterPosition={-16, 0.96, 29.15},
-      hpCounterScale={2.01, 1.00, 2.01},
-      schemePosition={-7.25, 0.97, 22.45},
-      schemeScale={2.93, 1.00, 2.93},
-      threatCounterPosition={-7.25, 1.01, 28.48}
-    }, 
-    Green={
-      villainPosition={7, 1.00, 20.44},
-      villainScale={3.64, 1.00, 3.64},
-      hpCounterPosition={7, 0.96, 29.15},
-      hpCounterScale={2.01, 1.00, 2.01},
-      schemePosition={15.75, 0.97, 22.45},
-      schemeScale={2.93, 1.00, 2.93},
-      threatCounterPosition={15.75, 1.01, 28.48}
-    }, 
-    Yellow={
-      villainPosition={30, 1.00, 20.44},
-      villainScale={3.64, 1.00, 3.64},
-      hpCounterPosition={30, 0.96, 29.15},
-      hpCounterScale={2.01, 1.00, 2.01},
-      schemePosition={38.75, 0.97, 22.45},
-      schemeScale={2.93, 1.00, 2.93},
-      threatCounterPosition={38.75, 1.01, 28.48}
-    }
-  }  
-
-  return kangStage2Layout[playerColor]
+function kangStage3PlaceNemesisMinions()
+  Global.call("displayMessage", {message = "Manual step: Find each hero's nemesis minion and put it in play engaged with them.", messageType = Global.getVar("MESSAGE_TYPE_INSTRUCTION")})
 end

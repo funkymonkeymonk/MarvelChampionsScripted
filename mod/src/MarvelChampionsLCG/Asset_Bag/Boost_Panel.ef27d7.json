@@ -26,6 +26,10 @@
       "g": 1,
       "b": 1
     },
+    "Tags": [
+      "boost-panel",
+      "delete-with-scenario"
+    ],
     "LayoutGroupSortIndex": 0,
     "Value": 0,
     "Locked": false,

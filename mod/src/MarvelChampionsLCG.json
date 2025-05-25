@@ -1,8 +1,8 @@
 {
   "Save": {
     "SaveName": "MarvelChampionsLCG",
-    "EpochTime": 1747181237,
-    "Date": "5/13/2025 6:07:17 PM",
+    "EpochTime": 1747678924,
+    "Date": "5/19/2025 12:22:04 PM",
     "VersionNumber": "v13.3",
     "GameMode": "MarvelChampionsLCG",
     "GameType": "Game",
@@ -331,6 +331,26 @@
         {
           "displayed": "shield-envelope",
           "normalized": "shield-envelope"
+        },
+        {
+          "displayed": "hero",
+          "normalized": "hero"
+        },
+        {
+          "displayed": "toughness",
+          "normalized": "toughness"
+        },
+        {
+          "displayed": "tough-status",
+          "normalized": "tough-status"
+        },
+        {
+          "displayed": "counter",
+          "normalized": "counter"
+        },
+        {
+          "displayed": "acceleration",
+          "normalized": "acceleration"
         }
       ]
     },

@@ -162,12 +162,16 @@ function setUpSchemeStage_baronZemo_main(params)
 
         Global.call("moveCardFromEncounterDeckById", {cardId = "50170", zoneIndex = "attachment", searchInDiscard = true})
 
+        local shieldEnvelope = Global.call("findObjectByTag", {tag = "shield-envelope"})
+        local mole = shieldEnvelope.call("getMole")
+        local executiveBoard = shieldEnvelope.call("getExecutiveBoard")
+
         Wait.frames(function()
-            baronZemoAttachBoardMemberToVillain()
+            baronZemoAttachBoardMemberToVillain(mole.officerCardId)
         end, 15)
 
         Wait.frames(function()
-            baronZemoConvertSecretsToThreat()
+            baronZemoConvertSecretsToThreat(executiveBoard)
         end, 60)
     end
 end
@@ -179,10 +183,9 @@ function configureEvidenceEnvelope(params)
     envelope.addTag("delete-with-scenario")
 end
 
-function baronZemoAttachBoardMemberToVillain()
+function baronZemoAttachBoardMemberToVillain(moleCardId)
     local zoneGuid = getZoneGuid({zoneIndex = "attachment"})
     local attachmentZone = getObjectFromGUID(zoneGuid)
-    local moleCardId = currentScenario.mole.officerCardId
     local cardsInZone = attachmentZone.getObjects()
 
     for i, card in ipairs(cardsInZone) do
@@ -199,10 +202,9 @@ function baronZemoAttachBoardMemberToVillain()
     moleCard.SetRotationSmooth({0, 180, 180}, false, false)
 end
 
-function baronZemoConvertSecretsToThreat()
+function baronZemoConvertSecretsToThreat(executiveBoard)
     local threat = 0
-    local executiveBoard = baronZemoGetExecutiveBoard()
-
+    
     for _, officer in ipairs(executiveBoard) do
         local officerCard = Global.call("findCard", {cardId = officer.officerCardId})
 

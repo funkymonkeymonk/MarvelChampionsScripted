@@ -1,3 +1,4 @@
+require('!/global/counters_and_tokens')
 require('!/Cardplacer')
 require('!/json')
 
@@ -82,6 +83,7 @@ ASSET_BAG_GUID                 = "91eba8"
 FIRST_PLAYER_TOKEN_GUID        = "d93792"
 GUID_GENERAL_COUNTER_BAG       = "aec1c4"
 GUID_LARGE_GENERAL_COUNTER_BAG = "65c1cc"
+GUID_ACCELERATION_COUNTER_BAG  = "2604fd"
 GUID_THREAT_COUNTER_BAG        = "eb5d6d"
 GUID_HEALTH_COUNTER_BAG        = "029e3b"
 GUID_SELECTOR_TILE             = "c04e76"
@@ -295,9 +297,10 @@ end
 function discardBoostcard(params)
    local rotation = params[1]
    local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
+   local boostPosition = Vector(scenarioManager.call('getBoostDrawPosition'))
    local encounterDiscardPosition = Vector(scenarioManager.call('getEncounterDiscardPosition'))
 
-   local items = findInRadiusBy(BOOST_POS, 4, isCardOrDeck)
+   local items = findInRadiusBy(boostPosition, 4, isCardOrDeck)
 
    if #items > 0 then
       for i, v in ipairs(items) do
@@ -387,7 +390,7 @@ function reshuffleEncounterDeck(drawToPosition, drawToRotation)
       end
       deck.shuffle()
       Wait.time(function() move(deck) end, 0.3)
-      displayMessage({message = "Reshuffling the encounter deck. Add an accelleration token.", messageType = MESSAGE_TYPE_INSTRUCTION})
+      displayMessage({message = "Reshuffling the encounter deck. Add an acceleration token.", messageType = MESSAGE_TYPE_INSTRUCTION})
    else
       printToAll("Couldn't find encounter discard pile to reshuffle", {1,0,0})
    end
@@ -562,10 +565,17 @@ function setCardProperty(params)
    card.setGMNotes(json.encode(cardData))
 end
 
-function moveCardFromPosition(params)
-   local originPosition = params.origin
+function moveCard(params)
+   local card = params.card
    local destination = calculateDestination(params)
 
+   card.setLock(false)
+   card.setPositionSmooth(destination.position, false, false)
+   card.setRotationSmooth(destination.rotation, false, false)
+end
+
+function moveCardFromPosition(params)
+   local originPosition = params.origin
    local items = findInRadiusBy(originPosition, 2, isCard)
 
    if(#items ~= 1) then
@@ -573,9 +583,10 @@ function moveCardFromPosition(params)
    end
 
    local card = items[1]
-   card.setLock(false)
-   card.setPositionSmooth(destination.position, false, false)
-   card.setRotationSmooth(destination.rotation, false, false)
+
+   params.card = card
+
+   moveCard(params)
 
    return card
 end
@@ -660,7 +671,7 @@ function moveCardFromEncounterDeckById(params)
 
    local moveCardParams = {
       cardId = cardId,
-      destinationPosition = destination.position,
+      destinationPosition = ensureMinimumYPosition({position = destination.position, minimumY = 4.0}),
       destinationRotation = destination.rotation,
       flipCard = flipCard,
       values = params.values,
@@ -792,7 +803,6 @@ function onObjectEnterZone(zone, card)
       end,
       2
    )
-
 end
 
 function resizeCardOnEnterZone(card, zoneType)
@@ -833,19 +843,24 @@ function addThreatCounterToSideScheme(card)
    local threatCounter = threatCounterBag.takeObject({position = counterPosition, smooth = false})
    card.setVar("counterGuid", threatCounter.getGUID())
    
-   --TODO: Extract this calculation into a function?
-   local cardData = getCardData({card = card})
-   local baseThreat = cardData.baseThreat and tonumber(cardData.baseThreat) or 0
-   local baseThreatIsFixed = cardData.baseThreatIsFixed == "true"
-   local hinder = cardData.hinder and tonumber(cardData.hinder) or 0
-   local heroManager = getObjectFromGUID(GUID_HERO_MANAGER)
-   local heroCount = heroManager.call("getHeroCount")
    local threat = 0
-
-   if baseThreatIsFixed then
-      threat = baseThreat + (heroCount * hinder)
+   local retainedValue = card.getVar("retainedValue")
+   if(retainedValue) then
+      threat = retainedValue
    else
-      threat = baseThreat * heroCount
+      --TODO: Extract this calculation into a function?
+      local cardData = getCardData({card = card})
+      local baseThreat = cardData.baseThreat and tonumber(cardData.baseThreat) or 0
+      local baseThreatIsFixed = cardData.baseThreatIsFixed == "true"
+      local hinder = cardData.hinder and tonumber(cardData.hinder) or 0
+      local heroManager = getObjectFromGUID(GUID_HERO_MANAGER)
+      local heroCount = heroManager.call("getHeroCount")
+
+      if baseThreatIsFixed then
+         threat = baseThreat + (heroCount * hinder)
+      else
+         threat = baseThreat * heroCount
+      end   
    end
  
    Wait.frames(
@@ -891,7 +906,10 @@ function addGeneralCounterToCard(card, cardData)
 end
 
 function addThreatCounterToCard(card, cardData)
-   if(card.getVar("counterGuid")) then return end
+   log("addThreatCounterToCard")
+   local counterGuid = card.getVar("counterGuid")
+   if(counterGuid and getObjectFromGUID(counterGuid)) then return end
+
    if (not cardData) then cardData = getCardData({card = card}) end
 
    local counterBag = getObjectFromGUID(GUID_THREAT_COUNTER_BAG)
@@ -900,12 +918,19 @@ function addThreatCounterToCard(card, cardData)
    local counter = counterBag.takeObject({position = counterPosition, smooth = false})
    card.setVar("counterGuid", counter.getGUID())
    
-   --TODO: Extract this calculation into a function?
-   local baseValue = cardData.counterValue and tonumber(cardData.counterValue) or 0
-   local valuePerHero = cardData.counterValuePerHero and tonumber(cardData.counterValuePerHero) or 0
-   local heroManager = getObjectFromGUID(GUID_HERO_MANAGER)
-   local heroCount = heroManager.call("getHeroCount")
-   local value = baseValue + (heroCount * valuePerHero)
+   local value = 0
+   local retainedValue = card.getVar("retainedValue")
+   log(retainedValue)
+   if(retainedValue) then
+      value = retainedValue
+   else
+      --TODO: Extract this calculation into a function?
+      local baseValue = cardData.counterValue and tonumber(cardData.counterValue) or 0
+      local valuePerHero = cardData.counterValuePerHero and tonumber(cardData.counterValuePerHero) or 0
+      local heroManager = getObjectFromGUID(GUID_HERO_MANAGER)
+      local heroCount = heroManager.call("getHeroCount")
+      value = baseValue + (heroCount * valuePerHero)
+   end
  
    Wait.frames(
       function()
@@ -969,7 +994,7 @@ function onObjectLeaveZone(zone, card)
 
    card.setVar("playerColor", nil)
 
-   removeCounterFromCard(card)
+   removeCounterFromCard({card = card})
 
    Wait.frames(function()
       resizeCardOnLeaveZone(card, cardAspect)
@@ -980,23 +1005,6 @@ function onObjectLeaveZone(zone, card)
 
    if(zoneType == "victoryDisplay") then
       updateVictoryDisplayDetails()
-   end
-end
-
-function removeCounterFromCard(card)
-   local counterGuid = card.getVar("counterGuid")
-
-   if(counterGuid) then
-      local counter = getObjectFromGUID(counterGuid)
-      if(counter) then 
-         if(card.getVar("retainValue")) then
-            local value = counter.call("getValue")
-            card.setVar("retainedValue", value)
-         end
-   
-         counter.destruct()
-      end
-      card.setVar("counterGuid", nil)
    end
 end
 

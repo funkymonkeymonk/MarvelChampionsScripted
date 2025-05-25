@@ -578,7 +578,7 @@ function setUpZones()
       horizontalGap = 5,
       verticalGap = 0,
       layoutDirection = "horizontal",
-      width = 2,
+      width = 4,
       height = 1
     }
 
@@ -646,7 +646,7 @@ function getZoneGuid(params)
   if(not currentScenario) then return nil end
   if(not currentScenario.zones) then return nil end
   local zone = currentScenario.zones[params.zoneIndex]
-  return zone.guid
+  return zone and zone.guid or nil
 end
 
 function getZonesByType(params)
@@ -1136,10 +1136,19 @@ function placeVillain(villainKey)
   end
 
   if(stageCount == 1) then
-    getCardByID(
+    local villainCard = getCardByID(
       cardId, 
       villainPosition, 
-      {scale = villainScale, name = villain.name, flipped = false}) 
+      {scale = villainScale, name = villain.name, flipped = false, locked=true}) 
+
+      villain.cardGuid = villainCard.getGUID()
+
+      Wait.frames(function()
+        if(villainCard.hasTag("toughness")) then
+          Global.call("addStatusToVillain", {villain = villain, statusType = "tough"})
+        end
+      end,
+      30)
   else
     createDeck({cards = villainCards, position = villainPosition, rotation = villainRotation, scale = villainScale})
   end
@@ -1701,7 +1710,7 @@ function placeVillainStage(villain, stage, heroCount)
       callback = "configureVillainStage"
      })
   else
-    villainCard = getCardByID(
+    local villainCard = getCardByID(
       stage.cardId, 
       villainPosition, 
       {scale = villainScale, name = villain.name, flipped = flipped, locked=locked})
@@ -1798,7 +1807,7 @@ function placeSchemeStage(schemeKey, stage, heroCount)
   end
 
   local schemePosition = scheme.position or defaults.mainSchemeDeck.position
-  local schemeRotation = scheme.rotation or defaults.mainSchemeDeck.rotation
+  --local schemeRotation = scheme.rotation or defaults.mainSchemeDeck.rotation
   local schemeScale = scheme.scale or defaults.mainSchemeDeck.scale
 
   local stageNumber = string.sub(stage.key, -1)
@@ -1811,10 +1820,14 @@ function placeSchemeStage(schemeKey, stage, heroCount)
 
   if(currentScenario.fullyScripted) then flipped = stage.flipCard == nil and true or stage.flipCard end
 
-  getCardByID(
-    stage.cardId, 
-    schemePosition, 
-    {scale = schemeScale, flipped = flipped, landscape = true, locked = currentScenario.fullyScripted})
+  Global.call("spawnCard", {
+    cardId = stage.cardId,
+    position = schemePosition,
+    scale = schemeScale,
+    flipped = flipped,
+    landscape = true,
+    locked = currentScenario.fullyScripted
+  })
 
   local counter = scheme.threatCounter or {}
 

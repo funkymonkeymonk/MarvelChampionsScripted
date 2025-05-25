@@ -1,0 +1,72 @@
+function getAccelerationCounter(params)
+    local createIfNotFound = params.createIfNotFound or false
+    local overridePosition = params.overridePosition or nil
+    local allObjects = getAllObjects()
+
+    for _, obj in ipairs(allObjects) do
+        if obj.hasTag("counter") and obj.hasTag("acceleration") then
+            return obj
+        end
+    end
+
+    if(not createIfNotFound) then
+        return nil
+    end
+
+    local accelerationCounterPosition = overridePosition
+
+    if(accelerationCounterPosition == nil) then
+        local mainSchemeThreatCounter = getMainSchemeThreatCounter()
+
+        if(mainSchemeThreatCounter == nil) then
+            broadcastToAll("No main scheme threat counter found. Cannot create acceleration token.", {1, 0, 0})
+            return nil
+        end
+    
+        local threatCounterPosition = mainSchemeThreatCounter.getPosition()
+        accelerationCounterPosition = threatCounterPosition + Vector(2.5, 0, 2.5)    
+    end
+
+    local accelerationCounterBag = getObjectFromGUID(Global.getVar("GUID_ACCELERATION_COUNTER_BAG"))
+    local accelerationCounter = accelerationCounterBag.takeObject(
+        {
+            position = accelerationCounterPosition, 
+            smooth = false,
+            callback_function=function(obj)
+                obj.setScale({0.5, 1.00, 0.5})
+                obj.setLock(true)
+            end
+        })
+
+    return accelerationCounter
+end
+
+function getMainSchemeThreatCounter(params)
+    local allObjects = getAllObjects()
+
+    for _, obj in ipairs(allObjects) do
+        --TODO: this assumes that there will only be one main scheme threat counter; need to make it more robust
+        if obj.hasTag("counter") and obj.hasTag("threat") and obj.hasTag("main-scheme") then
+            return obj
+        end
+    end
+
+    return nil
+end
+
+function removeCounterFromCard(params)
+    local card = params.card
+    local counterGuid = card.getVar("counterGuid")
+    local counter = counterGuid and getObjectFromGUID(counterGuid) or nil
+
+    if(counter) then 
+        --if(card.getVar("retainValue")) then
+            local value = counter.call("getValue")
+            card.setVar("retainedValue", value)
+        --end
+
+        counter.destruct()
+    end
+
+    card.setVar("counterGuid", nil)
+end
