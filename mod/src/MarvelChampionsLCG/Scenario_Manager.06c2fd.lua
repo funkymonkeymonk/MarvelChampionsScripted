@@ -242,10 +242,13 @@ function placeScenario(scenarioKey, mode)
             callback = "configureVillainStage"
            })
         else
-          getCardByID(
-            stage.cardId, 
-            villainPosition, 
-            {scale = villainScale, name = villain.name, flipped = flipped, locked=locked})  
+          Global.call("spawnCard", {
+            cardId = stage.cardId, 
+            position = villainPosition, 
+            name = villain.name, 
+            scale = villainScale, 
+            locked = locked, 
+            flipped = flipped}) 
         end
         
         local hitPoints = (stage.hitPoints or 0) + ((stage.hitPointsPerPlayer or 0) * heroCount)
@@ -280,7 +283,14 @@ function placeScenario(scenarioKey, mode)
 
   if(scenario.cards ~= nil) then
     for _, card in pairs(scenario.cards) do
-      getCardByID(card.cardId, card.position, {scale = card.scale, name = card.name, flipped = card.flipped, landscape = card.landscape})
+      Global.call("spawnCard", {
+        cardId = card.cardId,
+        position = card.position,
+        name = card.name,
+        scale = card.scale,
+        flipped = card.flipped,
+        landscape = card.landscape
+      })
     end
   end
 
@@ -1098,7 +1108,14 @@ function setUpCards()
   if(currentScenario.cards == nil) then return end
 
   for _, card in pairs(currentScenario.cards) do
-    getCardByID(card.cardId, card.position, {scale = card.scale, name = card.name, flipped = card.flipped, landscape = card.landscape})
+    Global.call("spawnCard", {
+      cardId = card.cardId,
+      position = card.position,
+      name = card.name,
+      scale = card.scale,
+      flipped = card.flipped,
+      landscape = card.landscape
+    })
   end
 end
 
@@ -1136,11 +1153,16 @@ function placeVillain(villainKey)
   end
 
   if(stageCount == 1) then
-    local villainCard = getCardByID(
-      cardId, 
-      villainPosition, 
-      {scale = villainScale, name = villain.name, flipped = false, locked=true}) 
-
+    local villainCard = Global.call("spawnCard", {
+      cardId = cardId,
+      position = villainPosition,
+      rotation = villainRotation,
+      scale = villainScale,
+      name = villain.name,
+      flipped = false,
+      locked = true
+    })
+    
       villain.cardGuid = villainCard.getGUID()
 
       Wait.frames(function()
@@ -1150,7 +1172,11 @@ function placeVillain(villainKey)
       end,
       30)
   else
-    createDeck({cards = villainCards, position = villainPosition, rotation = villainRotation, scale = villainScale})
+    Global.call("spawnDeck", {
+      cards = villainCards, 
+      position = villainPosition, 
+      rotation = villainRotation, 
+      scale = villainScale})
   end
 end
 
@@ -1160,7 +1186,11 @@ function placeDeck(deck)
   local deckScale = deck.scale or defaults.encounterDeck.scale
   local labelOffset = deckScale[3] > 2 and 5 or 4
 
-  createDeck({cards = deck.cards, position = deckPosition, scale = deckScale, name = deck.name})
+  Global.call("spawnDeck", {
+    cards = deck.cards, 
+    position = deckPosition, 
+    scale = deckScale, 
+    name = deck.name})
 
   if(deck.label) then
     --TODO: make label position more dynamic (based on deck size and presence of carriage returns); consider allowing for customization of font size and color, and placement of label (above, below, etc.)
@@ -1198,12 +1228,19 @@ function placeScheme(schemeKey)
   end
 
   if(stageCount == 1) then
-    getCardByID(
-      cardId, 
-      schemePosition, 
-      {scale = schemeScale, landscape=true, flipped = false}) 
+    Global.call("spawnCard", {
+      cardId = cardId, 
+      position = schemePosition, 
+      scale = schemeScale, 
+      landscape = true,
+      flipped = false
+    })
   else
-    createDeck({cards = schemeCards, position = schemePosition, rotation = schemeRotation, scale = schemeScale})
+    Global.call("spawnDeck", {
+      cards = schemeCards, 
+      position = schemePosition, 
+      rotation = schemeRotation, 
+      scale = schemeScale})
   end
 end
 
@@ -1364,7 +1401,11 @@ function placeModularSets(scenario)
   if(cardCount == 1) then
     --TODO: place single card
   elseif(cardCount > 1) then
-    createDeck({cards = cards, position = deckPosition, rotation = deckRotation, scale = deckScale})
+    Global.call("spawnDeck", {
+      cards = cards, 
+      position = deckPosition, 
+      rotation = deckRotation, 
+      scale = deckScale})
   end
 
   local message = ""
@@ -1533,13 +1574,11 @@ function spawnNemesis(params)
   local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
   local hero = heroManager.call("getHeroByPlayerColor", {playerColor = params.playerColor})
 
-  local deck = {
+  Global.call("spawnDeck", {
+    cards = hero.decks.nemesis,
     position = {0,1,0},
-    scale = Global.getTable("CARD_SCALE_ENCOUNTER"),
-    cards = hero.decks.nemesis
-  }
-
-  createDeck(deck)
+    scale = Global.getTable("CARD_SCALE_ENCOUNTER")
+  })
 end
 
 function createContextMenu()
@@ -1547,7 +1586,6 @@ function createContextMenu()
   self.addContextMenuItem("Delete Scenarios", deleteScenarios)
   self.addContextMenuItem("Delete Everything", deleteEverything)
 end
-
 
 --Layout functions - move to central layout manager
 
@@ -1710,11 +1748,15 @@ function placeVillainStage(villain, stage, heroCount)
       callback = "configureVillainStage"
      })
   else
-    local villainCard = getCardByID(
-      stage.cardId, 
-      villainPosition, 
-      {scale = villainScale, name = villain.name, flipped = flipped, locked=locked})
-
+    local villainCard = Global.call("spawnCard", {
+      cardId = stage.cardId, 
+      position = villainPosition, 
+      scale = villainScale,
+      name = villain.name,
+      flipped = flipped,
+      locked = locked
+    })
+    
     villain.cardGuid = villainCard.getGUID()
 
     Wait.frames(function()
@@ -1913,9 +1955,6 @@ function getHeroCount()
   return heroManager.call("getHeroCount")            
 end
 
-
-
-require('!/Cardplacer')
 
 require('!/scenarios/rhino')
 require('!/scenarios/klaw')

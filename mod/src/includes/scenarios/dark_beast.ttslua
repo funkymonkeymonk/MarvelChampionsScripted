@@ -151,15 +151,18 @@ function placeDarkBeastEnvironment()
 
   Global.call("discardCardAtPosition", {position = environmentPosition})
 
-  getCardByID(
-    modularSet.environment.cardId, 
-    environmentPosition, 
-    {
-      scale = scale, 
-      name = modularSet.environment.name, 
-      flipped = false})
+  Global.call("spawnCard", {
+    cardId = modularSet.environment.cardId, 
+    position = environmentPosition, 
+    scale = scale, 
+    name = modularSet.environment.name, 
+    flipped = false})
  
-  createDeck({cards=modularSet.cards, position=deckPosition, rotation=rotation, scale=scale})
+  Global.call("spawnDeck", {
+    cards=modularSet.cards, 
+    position=deckPosition, 
+    rotation=rotation, 
+    scale=scale})
 
   Wait.frames(
       function()

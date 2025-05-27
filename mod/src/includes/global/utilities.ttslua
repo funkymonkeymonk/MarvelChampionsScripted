@@ -1,0 +1,208 @@
+function ensureMinimumYPosition(params)
+    position = Vector(params.position)
+    minimumY = params.minimumY
+ 
+    if(position.y ~= nil) then
+       if(position.y < minimumY) then
+          position.y = minimumY
+       end
+    else
+       if(position[2] < minimumY) then
+          position[2] = minimumY
+       end
+    end
+ 
+    return position
+end
+  
+function findInRadiusBy(pos, radius, filter, debug)
+    local radius = (radius or 1)
+    local objList = Physics.cast({
+       origin       = pos,
+       direction    = {0,1,0},
+       type         = 2,
+       size         = {radius, radius, radius},
+       max_distance = 0,
+       debug        = debug
+    })
+ 
+    local filteredList = {}
+    for _, obj in ipairs(objList) do
+       if filter == nil then
+          table.insert(filteredList, obj.hit_object)
+       elseif filter and filter(obj.hit_object) then
+          table.insert(filteredList, obj.hit_object)
+       end
+    end
+    return filteredList
+end 
+
+function shuffleTable(params)
+    local tbl = params.table
+    math.randomseed(os.time())
+  
+    for i = #tbl, 2, -1 do
+      local j = math.random(i)
+      tbl[i], tbl[j] = tbl[j], tbl[i]
+    end
+  
+    return tbl
+end
+
+function displayMessage(params)
+    local message = params.message
+    local messageType = params.messageType
+    local playerColor = params.playerColor
+ 
+    if messageType == MESSAGE_TYPE_PLAYER then
+       local messageTint = 
+          playerColor == PLAYER_COLOR_RED and MESSAGE_TINT_RED
+          or playerColor == PLAYER_COLOR_BLUE and MESSAGE_TINT_BLUE
+          or playerColor == PLAYER_COLOR_GREEN and MESSAGE_TINT_GREEN
+          or playerColor == PLAYER_COLOR_YELLOW and MESSAGE_TINT_YELLOW
+ 
+       if(Player[playerColor].seated) then
+          broadcastToColor(message, playerColor, messageTint)
+       else
+          broadcastToAll(message, messageTint)
+       end
+ 
+       return
+    end
+ 
+    local messageTint = 
+       messageType == MESSAGE_TYPE_FLAVOR_TEXT and MESSAGE_TINT_FLAVOR
+       or messageType == MESSAGE_TYPE_INSTRUCTION and MESSAGE_TINT_INSTRUCTION
+       or messageType == MESSAGE_TYPE_INFO and MESSAGE_TINT_INFO
+       or messageType == MESSAGE_TYPE_ALERT and MESSAGE_TINT_ALERT
+ 
+    broadcastToAll(message, messageTint)
+end
+ 
+function calculateDestination(params)
+    local zoneIndex = params.zoneIndex
+    local minimumY = params.minimumY or 3
+    local destination = {}
+ 
+    if(zoneIndex) then
+       destination.position = ensureMinimumYPosition({position = getNewZoneCardPosition({zoneIndex = zoneIndex, forNextCard = true}), minimumY = minimumY})
+       destination.rotation = zoneIndex == "sideScheme" and {0,90,0} or {0,180,0}
+    else
+       destination.position = ensureMinimumYPosition({position = params.destinationPosition, minimumY = minimumY})
+       destination.rotation = params.destinationRotation and Vector(params.destinationRotation) or {0,180,0}
+    end
+ 
+    return destination
+end
+
+function findObjectByTag(params)
+    local tag = params.tag
+    local objects = getAllObjects()
+ 
+    for _, object in pairs(objects) do
+       if object.hasTag(tag) then
+          return object
+       end
+    end
+ 
+    return nil
+end
+
+function getSortedListOfItems(params)
+    local items = params.items
+    local itemList = {}
+  
+    for key, item in pairs(items) do
+       item.key = key
+       table.insert(itemList, item)
+    end
+  
+    function compareNames(a, b)
+        return stripArticles(a.name) < stripArticles(b.name) 
+    end
+    
+    return table.sort(itemList, compareNames)
+  end
+  
+  function stripArticles(orig)
+    local lower = string.lower(orig)
+  
+    if(string.sub(lower, 1, 4) == "the ") then
+        return string.sub(orig, 5, -1)
+    end
+  
+    if(string.sub(lower, 1, 2) == "a ") then
+        return string.sub(orig, 3, -1)
+    end
+  
+    if(string.sub(lower, 1, 3) == "an ") then
+        return string.sub(orig, 4, -1)
+    end
+  
+    return orig
+end
+  
+function breakLabel(params)
+    local label = params.label
+    local maxWidth = params.maxWidth or 10
+    local hasSpaces = string.find(label, " ") ~= nil
+    local hasHyphens = string.find(label, "-") ~= nil
+    local isBreakable = hasSpaces or hasHyphens
+ 
+    if(string.len(label) <= maxWidth or not isBreakable) then
+        return {
+            text=label,
+            length=string.len(label)
+        }
+    end
+ 
+    local breakCharacter = hasSpaces and " " or "-"
+    local words = getWords(label, breakCharacter)
+    local firstLine = ""
+    local secondLine = ""
+    local firstLineOffset = 0
+    local secondLineOffset = 0
+ 
+    for i=1, #words do
+        if(string.len(firstLine) >= string.len(secondLine)) then
+            local index = #words - secondLineOffset
+            secondLineOffset = secondLineOffset + 1
+            secondLine = words[index] .. " " .. secondLine
+        else
+            local index = 1 + firstLineOffset
+            firstLineOffset = firstLineOffset + 1
+            firstLine = firstLine .. " " .. words[index]
+        end
+    end
+ 
+    local length = string.len(firstLine) > string.len(secondLine) and string.len(firstLine) or string.len(secondLine)
+    local hyphen = breakCharacter == "-" and "-" or ""
+ 
+    return {
+        text = trim(firstLine) .. hyphen .. "\n" .. trim(secondLine),
+        length = length
+    }
+end
+ 
+function getWords (text, breakCharacter)
+    local t={}
+ 
+    if(breakCharacter == " ") then
+       -- for str in string.gmatch(text, "[%w']*[%w]+") do
+       --    table.insert(t, str)
+       -- end
+       for str in string.gmatch(text, "[^%s]+") do
+          table.insert(t, str)
+       end
+    else
+       for str in string.gmatch(text, "[^%-]+") do
+          table.insert(t, str)
+       end      
+    end
+ 
+    return t
+end
+ 
+function trim(s)
+    return (string.gsub(s, "^%s*(.-)%s*$", "%1"))
+end

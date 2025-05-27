@@ -120,7 +120,15 @@ function placeCards(campaign)
     if(campaign.cards == nil) then return end
 
     for _, card in ipairs(campaign.cards) do
-        getCardByID(card.cardId, card.position, {scale = card.scale, name = card.name, flipped = card.flipped, landscape = card.landscape, tags = {"delete-with-campaign"}})
+        Global.call("spawnCard", {
+            cardId = card.cardId,
+            position = card.position,
+            scale = card.scale or {1, 1, 1},
+            name = card.name,
+            flipped = card.flipped or false,
+            landscape = card.landscape or false,
+            tags = {"delete-with-campaign"}
+        })
     end
 end
 
@@ -129,7 +137,7 @@ function placeDecks(campaign)
 
     for _, deck in ipairs(campaign.decks) do
         deck.cardTags = {"delete-with-campaign"}
-        createDeck(deck)
+        Global.call("spawnDeck", deck)
     end
 end
 
@@ -267,8 +275,6 @@ function configureAsset(params)
         asset.setRotation(params.rotation)
     end
 end
-
-require('!/Cardplacer')
 
 require('!/campaigns/rise_of_red_skull')
 require('!/campaigns/galaxys_most_wanted')

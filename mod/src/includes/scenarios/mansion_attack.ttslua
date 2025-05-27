@@ -1,152 +1,162 @@
-scenarios["mansionAttack"] =
-{
-    name="Mansion Attack",
-    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/2292958473528765412/EEBE3A1431B9DDB3BC2A8DE11FCDCA7EDD43682E/",
-    villains={
-        brotherhood={
-            name="Brotherhood of Mutants",
-            hpCounter={
-                imageUrl="https://steamusercontent-a.akamaihd.net/ugc/2035118913124026079/1346FDBB47BCA704CFA9E914755A9AAF6B1CD5A3/",
-                primaryButtonLabel="Next!"
+scenarios["mansionAttack"] = {
+    name = "Mansion Attack",
+    tileImageUrl = "https://steamusercontent-a.akamaihd.net/ugc/2292958473528765412/EEBE3A1431B9DDB3BC2A8DE11FCDCA7EDD43682E/",
+    villains = {
+        brotherhood = {
+            name = "Brotherhood of Mutants",
+            hpCounter = {
+                imageUrl = "https://steamusercontent-a.akamaihd.net/ugc/2035118913124026079/1346FDBB47BCA704CFA9E914755A9AAF6B1CD5A3/",
+                primaryButtonLabel = "Next!"
             },
-            stages={
-                stage1={
-                    cardId="32121",
-                    hitPointsPerPlayer=15,
-                    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/2292958473528765361/18F2EF694990DF4F62DF7275517FFBA76C43E3B7/"
-                },            
-                stage2={
-                    cardId="32122",
-                    hitPointsPerPlayer=16,
-                    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/2292958473528765412/EEBE3A1431B9DDB3BC2A8DE11FCDCA7EDD43682E/"
+            stages = {
+                stage1 = {
+                    cardId = "32121",
+                    hitPointsPerPlayer = 15,
+                    tileImageUrl = "https://steamusercontent-a.akamaihd.net/ugc/2292958473528765361/18F2EF694990DF4F62DF7275517FFBA76C43E3B7/"
                 },
-                stage3={
-                    cardId="32123",
-                    hitPointsPerPlayer=14,
-                    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/2292958473528765567/4DED58EC6C41D1615634DA914E4799F9850A09F9/"
+                stage2 = {
+                    cardId = "32122",
+                    hitPointsPerPlayer = 16,
+                    tileImageUrl = "https://steamusercontent-a.akamaihd.net/ugc/2292958473528765412/EEBE3A1431B9DDB3BC2A8DE11FCDCA7EDD43682E/"
                 },
-                stage4={
-                    cardId="32124",
-                    hitPointsPerPlayer=13,
-                    tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/2292958473528765637/13A26137CCD8CA92965520C2AF5E5E9EAC85D8F3/"
+                stage3 = {
+                    cardId = "32123",
+                    hitPointsPerPlayer = 14,
+                    tileImageUrl = "https://steamusercontent-a.akamaihd.net/ugc/2292958473528765567/4DED58EC6C41D1615634DA914E4799F9850A09F9/"
+                },
+                stage4 = {
+                    cardId = "32124",
+                    hitPointsPerPlayer = 13,
+                    tileImageUrl = "https://steamusercontent-a.akamaihd.net/ugc/2292958473528765637/13A26137CCD8CA92965520C2AF5E5E9EAC85D8F3/"
                 }
             }
         }
     },
-    schemes={
-        main={
-            stages={
-                stage1={
-                    cardId="32125",
-                    startingThreat=0,
-                    targetThreat=0
+    schemes = {
+        main = {
+            stages = {
+                stage1 = {
+                    cardId = "32125",
+                    startingThreat = 0,
+                    targetThreat = 0
                 },
-                stage2={
-                    cardId="32126",
-                    startingThreatPerPlayer=1,
-                    targetThreatPerPlayer=7
+                stage2 = {
+                    cardId = "32126",
+                    startingThreatPerPlayer = 1,
+                    targetThreatPerPlayer = 7
                 },
-                stage3={
-                    cardId="32127",
-                    startingThreatPerPlayer=1,
-                    targetThreatPerPlayer=7
+                stage3 = {
+                    cardId = "32127",
+                    startingThreatPerPlayer = 1,
+                    targetThreatPerPlayer = 7
                 },
-                stage4={
-                    cardId="32128",
-                    startingThreatPerPlayer=1,
-                    targetThreatPerPlayer=7
+                stage4 = {
+                    cardId = "32128",
+                    startingThreatPerPlayer = 1,
+                    targetThreatPerPlayer = 7
                 },
-                stage5={
-                    cardId="32129",
-                    startingThreatPerPlayer=1,
-                    targetThreatPerPlayer=7
+                stage5 = {
+                    cardId = "32129",
+                    startingThreatPerPlayer = 1,
+                    targetThreatPerPlayer = 7
                 }
             }
         }
     },
-    cards={
-        saveTheSchool={
-            cardId="32130",
-            position={15.75, 1.00, 29.25},
-            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
+    cards = {
+        saveTheSchool = {
+            cardId = "32130",
+            position = {15.75, 1.00, 29.25},
+            scale = Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
         }
     },
-    decks={
-        encounterDeck={
-            name="Mansion Attack Encounter Deck",
-            cards={
-                ["32130"]=1,
-                ["32131"]=3,
-                ["32132"]=2,
-                ["32133"]=2,
-                ["32134"]=2,
-                ["32135"]=2,
-                ["32136"]=2,
-                ["32137"]=2
+    decks = {
+        encounterDeck = {
+            name = "Mansion Attack Encounter Deck",
+            cards = {
+                ["32130"] = 1,
+                ["32131"] = 3,
+                ["32132"] = 2,
+                ["32133"] = 2,
+                ["32134"] = 2,
+                ["32135"] = 2,
+                ["32136"] = 2,
+                ["32137"] = 2
             }
         }
     },
-    modularSets={
-        brotherhood="required",
-        mystique="recommended"
+    modularSets = {
+        brotherhood = "required",
+        mystique = "recommended"
     }
 }
 
 function prepareScenario_mansionAttack()
-  local villain = currentScenario.villains.brotherhood
-  local villainStages = {}
+    local villain = currentScenario.villains.brotherhood
+    local villainStages = {}
 
-  for key, stage in pairs(villain.stages) do
-      table.insert(villainStages, key)
-  end
+    for key, stage in pairs(villain.stages) do
+        table.insert(villainStages, key)
+    end
 
-  villainStages = Global.call("shuffleTable", {table = villainStages})
+    villainStages = Global.call("shuffleTable", {
+        table = villainStages
+    })
 
-  currentScenario.brotherhoodQueue = villainStages
-  currentScenario.brotherhoodStageIndex = 1
+    currentScenario.brotherhoodQueue = villainStages
+    currentScenario.brotherhoodStageIndex = 1
 end
 
 function getNextVillainStage_mansionAttack(params)
-  local nextStage = currentScenario.villains.brotherhood.stages[currentScenario.brotherhoodQueue[currentScenario.brotherhoodStageIndex]]
-  currentScenario.brotherhoodStageIndex = currentScenario.brotherhoodStageIndex + 1
-  local lastStage = currentScenario.brotherhoodStageIndex > #currentScenario.brotherhoodQueue
+    local nextStage =
+        currentScenario.villains.brotherhood.stages[currentScenario.brotherhoodQueue[currentScenario.brotherhoodStageIndex]]
+    currentScenario.brotherhoodStageIndex = currentScenario.brotherhoodStageIndex + 1
+    local lastStage = currentScenario.brotherhoodStageIndex > #currentScenario.brotherhoodQueue
 
-  nextStage.showAdvanceButton = not lastStage
+    nextStage.showAdvanceButton = not lastStage
 
-  return nextStage
+    return nextStage
 end
 
 function placeVillainStage_mansionAttack(params)
-  local heroCount = params.heroCount
-  local villain = currentScenario.villains.brotherhood
-  local stage = params.stage
-  
-  local villainPosition = villain.deckPosition or defaults.villainDeck.position
-  local villainRotation = villain.deckRotation or defaults.villainDeck.rotation
-  local villainScale = villain.deckScale or defaults.villainDeck.scale
+    local heroCount = params.heroCount
+    local villain = currentScenario.villains.brotherhood
+    local stage = params.stage
 
-  Global.call("moveCardFromPosition", {origin = villainPosition, zoneIndex = "victoryDisplay"})
+    local villainPosition = villain.deckPosition or defaults.villainDeck.position
+    local villainRotation = villain.deckRotation or defaults.villainDeck.rotation
+    local villainScale = villain.deckScale or defaults.villainDeck.scale
 
-  getCardByID(
-    stage.cardId, 
-      villainPosition, 
-      {scale = villainScale, name = villain.name, flipped = false, locked=true})
-  
-  local hitPoints = (stage.hitPoints or 0) + ((stage.hitPointsPerPlayer or 0) * heroCount)
-  local villainHpCounter = getObjectFromGUID(villain.hpCounter.guid)
+    Global.call("moveCardFromPosition", {
+        origin = villainPosition,
+        zoneIndex = "victoryDisplay"
+    })
 
-  Wait.frames(
-      function()
-          villainHpCounter.call("setValue", {value = hitPoints}) 
-          
-          villainHpCounter.call("setAdvanceButtonOptions", {label = "Next!"})
+    Global.call("spawnCard", {
+        cardId = stage.cardId,
+        position = villainPosition,
+        scale = villainScale,
+        name = villain.name,
+        flipped = false,
+        locked = true
+    })
 
-          if(stage.showAdvanceButton) then
-              villainHpCounter.call("showAdvanceButton")
-          else
-              villainHpCounter.call("hideAdvanceButton")
-          end
-      end,
-      20
-  )
+    local hitPoints = (stage.hitPoints or 0) + ((stage.hitPointsPerPlayer or 0) * heroCount)
+    local villainHpCounter = getObjectFromGUID(villain.hpCounter.guid)
+
+    Wait.frames(function()
+        villainHpCounter.call("setValue", {
+            value = hitPoints
+        })
+
+        villainHpCounter.call("setAdvanceButtonOptions", {
+            label = "Next!"
+        })
+
+        if (stage.showAdvanceButton) then
+            villainHpCounter.call("showAdvanceButton")
+        else
+            villainHpCounter.call("hideAdvanceButton")
+        end
+    end, 20)
 end

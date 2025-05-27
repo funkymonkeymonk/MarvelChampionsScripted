@@ -107,7 +107,7 @@ function revealMoleClicked(player, value, id)
     evidenceDeckList[mole.motiveCardId] = 1
     evidenceDeckList[mole.opportunityCardId] = 1
 
-    local evidenceDeck = Global.call("createDeck", {
+    local evidenceDeck = Global.call("spawnDeck", {
         cards = evidenceDeckList, 
         position = evidenceStartPosition, 
         scale = Global.getTable("CARD_SCALE_ENCOUNTER"), 

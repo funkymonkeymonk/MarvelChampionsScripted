@@ -1,0 +1,167 @@
+supressZoneInteractions = false
+
+function supressZones()
+   supressZoneInteractions = true
+
+   Wait.time(function()
+      supressZoneInteractions = false
+   end, 3)
+end
+
+
+function repositionCardsInZone(params)
+    local zone = params.zone
+    local zoneType = zone.getVar("zoneType")
+    local zoneIndex = zone.getVar("zoneIndex")
+ 
+    if(zoneType ~= "sideScheme" and zoneType ~= "attachment" and zoneType ~= "environment" and zoneType ~= "minion" and zoneType ~= "victoryDisplay") then
+       return
+    end
+ 
+    local items = zone.getObjects()
+    local zoneDef = getZoneDefinitionByIndex({zoneIndex = zoneIndex})
+    local cardNumber = 0
+ 
+    for i, v in ipairs(items) do
+       if(v.tag == "Card") then
+          cardNumber = cardNumber + 1
+          local origCardPosition = Vector(v.getPosition())
+          local newCardPosition = Vector(getZoneCardPosition({zoneDef = zoneDef, cardNumber = cardNumber}))
+ 
+          if(newCardPosition == origCardPosition) then goto continue end
+ 
+          local itemsOnCard = getItemsOnCard({card = v})
+          local itemsToReposition = {}
+          local cardGuid = v.getGUID()
+ 
+          for i, item in ipairs(itemsOnCard) do
+             --if(not item.hasTag("immobile")) then
+             if(item.interactable) then
+                if(item.tag == "Tile" or (item.tag == "Card" and item.getGUID() ~= cardGuid)) then
+                   local origItemPosition = item.getPosition()
+                   local itemOffset = origCardPosition - origItemPosition
+                   local newItemPosition = newCardPosition - itemOffset   
+                   table.insert(itemsToReposition, {item = item, newPosition = newItemPosition})
+                end
+             end
+          end
+ 
+          if(newCardPosition) then
+             v.setPositionSmooth(newCardPosition, false, false)
+ 
+             for i, item in ipairs(itemsToReposition) do
+                item.item.setPositionSmooth(item.newPosition, false, false)
+             end
+          end
+       end
+       ::continue::
+    end
+ end
+ 
+ function getZoneDefinitionByIndex(params)
+    local zoneIndex = params.zoneIndex
+    local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
+ 
+    return scenarioManager.call("getZoneDefinition", {zoneIndex = zoneIndex})
+ end
+ 
+ function getZoneCardCount(params)
+    local zoneIndex = params.zoneIndex
+    local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
+    local zoneGuid = scenarioManager.call("getZoneGuid", {zoneIndex = zoneIndex})
+    local zone = getObjectFromGUID(zoneGuid)
+ 
+    if(not zone) then return nil end
+ 
+    local items = zone.getObjects()
+    local cardCount = 0
+ 
+    for i, v in ipairs(items) do
+       if(v.tag == "Card") then cardCount = cardCount + 1 end
+    end
+    --TODO: Filter out cards of the wrong type
+ 
+    return cardCount
+ end
+ 
+ function getNewZoneCardPosition(params)
+    local zoneDef = getZoneDefinitionByIndex({zoneIndex = params.zoneIndex})
+ 
+    if(not zoneDef) then return nil end
+    
+    local cardNumber = getZoneCardCount({zoneIndex = params.zoneIndex})
+    
+    if(cardNumber == nil) then return nil end
+ 
+    if(params.forNextCard) then cardNumber = cardNumber + 1 end
+ 
+    return getZoneCardPosition({zoneDef = zoneDef, cardNumber = cardNumber})
+ end
+ 
+ function getZoneCardPosition(params)
+    local zoneDef = params.zoneDef
+    local cardNumber = params.cardNumber
+ 
+    if(not zoneDef) then return nil end
+ 
+    local origin = zoneDef.firstCardPosition
+    local horizontalGap = zoneDef.horizontalGap or 0
+    local verticalGap = zoneDef.verticalGap or 0
+    local layoutDirection = zoneDef.layoutDirection or "horizontal"
+    local width = zoneDef.width
+    local height = zoneDef.height
+ 
+    local column = 0
+    local row = 0
+ 
+    if(layoutDirection == "horizontal") then
+       if(cardNumber % width == 0) then
+          column = width
+          row = cardNumber / width
+       else
+          column = cardNumber % width
+          row = math.floor(cardNumber / width) + 1
+       end
+    else
+       if(cardNumber % height == 0) then
+          column = cardNumber / height
+          row = height
+       else
+          column = math.floor(cardNumber / height) + 1
+          row = cardNumber % height
+       end
+    end
+ 
+    local x = origin[1] + horizontalGap * (column - 1)
+    local z = origin[3] - verticalGap * (row - 1)
+ 
+    return {x, origin[2], z}
+ end
+ 
+ function updateVictoryDisplayDetails()
+    local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
+    local zoneGuid = scenarioManager.call("getZoneGuid", {zoneIndex = "victoryDisplay"})
+    local zone = getObjectFromGUID(zoneGuid)
+ 
+    if(not zone) then return nil end
+ 
+    local items = zone.getObjects()
+    local cardCount = 0
+    local victoryPoints = 0
+ 
+    for i, v in ipairs(items) do
+       if(v.tag == "Card") then 
+          cardCount = cardCount + 1
+ 
+          local cardData = getCardData({card = v})
+          victoryPoints = victoryPoints + (cardData.victory or 0)
+       end
+    end
+ 
+    local victoryPointsReadout = scenarioManager.call("getItemFromManifest", {key = "victoryPointsReadout"})
+    local victoryDisplayItemCountReadout = scenarioManager.call("getItemFromManifest", {key = "victoryDisplayItemCountReadout"})
+ 
+    victoryPointsReadout.TextTool.setValue("Victory Points: " .. victoryPoints)
+    victoryDisplayItemCountReadout.TextTool.setValue("Items: " .. cardCount)
+ end
+ 
