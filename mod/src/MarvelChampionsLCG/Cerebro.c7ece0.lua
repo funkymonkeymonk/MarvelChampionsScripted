@@ -79,7 +79,7 @@ function spawnDeck(params)
   local deckScale = Vector(Global.getVar("CARD_SCALE_PLAYER"))
   local slots = params.deckInfo.slots
 
-  local deck = Global.call("createDeck", {cards = slots, position = deckPosition, scale = deckScale})
+  local deck = Global.call("spawnDeck", {cards = slots, position = deckPosition, scale = deckScale})
 
   local linkedCards = deck.getGMNotes()
 

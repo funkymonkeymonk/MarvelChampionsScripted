@@ -161,10 +161,7 @@ function addEncounterSetToDeck(params)
     local deckCount = 0
     local cardId = nil
 
-    --Oh god, this is hacky. The createDeck function only works with two or more cards, so
-    --we have to use getCardByID for single-card sets. But there doesn't seem to be a way to 
-    --get the length of a table in Lua, so we have to iterate through the table to determine
-    --which function to use.
+    --TODO: Modify spawnDeck to spawn a single card, if the deck list only contains one card
     for k,v in pairs(cards) do
         if(deckCount > 1) then break end
 
@@ -177,12 +174,17 @@ function addEncounterSetToDeck(params)
     end
 
     if(deckCount < 2) then
-        getCardByID(
-            cardId,
-            position, 
-            {scale=scale, flipped=true})
+        Global.call("spawnCard", {
+            cardId = cardId, 
+            position = position, 
+            scale = scale,
+            flipped = true})
     else
-        createDeck({cards=modularSet.cards, position=position, rotation=rotation, scale=scale})
+        Global.call("spawnDeck", {
+            cards = modularSet.cards, 
+            position = position, 
+            rotation = rotation, 
+            scale = scale})
     end
 
     Wait.frames(
@@ -218,8 +220,6 @@ function deepCopy(obj, seen)
     for k, v in pairs(obj) do res[deepCopy(k, s)] = deepCopy(v, s) end
     return res
 end
-
-require('!/Cardplacer')
 
 require('!/modulars/kang')
 require('!/modulars/mutant_genesis')

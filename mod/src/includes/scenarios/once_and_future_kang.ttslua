@@ -631,10 +631,13 @@ function kangStage2PlaceVillains()
           local schemePosition = scheme.position or defaults.mainSchemeDeck.position
           local schemeScale = scheme.scale or defaults.mainSchemeDeck.scale
   
-          getCardByID(
-            scheme.stages.stage1.cardId, 
-            schemePosition, 
-            {scale = schemeScale, landscape=true, flipped = true, locked = true})
+          Global.call("spawnCard", 
+            {cardId = scheme.stages.stage1.cardId, 
+            position = schemePosition, 
+            scale = schemeScale, 
+            landscape = true,
+            flipped = true, 
+            locked = true})
         end,
         20
       )

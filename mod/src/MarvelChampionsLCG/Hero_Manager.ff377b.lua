@@ -426,7 +426,13 @@ function placeIdentity(hero, playmatPosition, playerColor)
   return
  end
  
- heroCard = getCardByID(hero.identityCardId, position, {scale = scale, flipped = hero.flipIdentityCard == nil or hero.flipIdentityCard})
+ heroCard = Global.call("spawnCard", {
+  cardId = hero.identityCardId,
+  position = position,
+  scale = scale,
+  flipped = hero.flipIdentityCard == nil or hero.flipIdentityCard
+ })
+
  hero.identityGuid = heroCard.getGUID()
 end
 
@@ -471,7 +477,7 @@ function placeDeck(hero, deckType, playmatPosition, importedDeck)
     deck.artVariant = hero.artVariant
   end
 
-  local spawnedDeck = createDeck(deck)
+  local spawnedDeck = Global.call("spawnDeck", deck)
   local linkedCards = spawnedDeck.getGMNotes()
 
   if(linkedCards) then
@@ -588,7 +594,7 @@ function placeExtras(hero, playmatPosition)
     scale = cardScale.player
    }
 
-   createDeck(deck)
+   Global.call("spawnDeck", deck)
   end
 
   if(item.type == "asset") then
@@ -614,7 +620,12 @@ end
 
 function placeObligation(hero)
   local encounterDeckPosition = Global.getTable("ENCOUNTER_DECK_SPAWN_POS")
-  getCardByID(hero.obligationCardId, encounterDeckPosition, {scale = cardScale.encounter, flipped = true})
+  Global.call("spawnCard", {
+    cardId = hero.obligationCardId,
+    position = encounterDeckPosition,
+    scale = cardScale.encounter,
+    flipped = true
+  })
 end
 
 function getHeroesByTeam(params)
@@ -694,14 +705,12 @@ function findAndPlacePlayerCard(params)
     end
 
     if(not cardFound) then
-      getCardByID(cardId, position, {scale = scale, flipped = flipCard})
-      -- local card = getCardFromCardPool(cardId)
-
-      -- if (card.duplicate_of ~= nil) then
-      --   card = getCardFromCardPool(card.duplicate_of)
-      -- end
-
-      -- card:spawn({position = position, scale = scale, rotation = rotation, flipped = flipCard})
+      Global.call("spawnCard", {
+        cardId = cardId,
+        position = position,
+        scale = scale,
+        flipped = flipCard
+      })
     end
 
     return 1
@@ -875,8 +884,6 @@ function getRandomPlayerColor()
 
   return playerColors[math.random(#playerColors)]
 end
-
-require('!/Cardplacer')
 
 require('!/heroes/adam_warlock')
 require('!/heroes/wolverine')

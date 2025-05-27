@@ -255,10 +255,11 @@ function modokPlaceAdaptoidEnvironment()
     local environmentCardId = currentScenario.adaptoidEnvironmentQueue[currentScenario.adaptoidEnvironmentIndex]
     local encounterDeckPosition = getEncounterDeckPosition()
     
-    getCardByID(
-        environmentCardId, 
-        encounterDeckPosition, 
-        {scale = Global.getTable("CARD_SCALE_ENCOUNTER")})
+    Global.call("spawnCard", {
+        cardId = environmentCardId, 
+        position = encounterDeckPosition, 
+        scale = Global.getTable("CARD_SCALE_ENCOUNTER")
+    })
     
     Wait.frames(function()
         Global.call(
@@ -291,10 +292,12 @@ function modokPlaceHoldingCellPrisoner()
     local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
     local heroCount = heroManager.call("getHeroCount")
 
-    getCardByID(
-        holdingCellCardId, 
-        prisonerCardPosition, 
-        {scale = Global.getTable("CARD_SCALE_ENCOUNTER"), locked = true})
+    Global.call("spawnCard", {
+        cardId = holdingCellCardId, 
+        position = prisonerCardPosition, 
+        scale = Global.getTable("CARD_SCALE_ENCOUNTER"), 
+        locked = true
+    })
 
     holdingCellPanel.call("setLockValue", {value = heroCount * 2})
 end

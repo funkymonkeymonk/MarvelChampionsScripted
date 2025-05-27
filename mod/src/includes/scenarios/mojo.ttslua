@@ -104,11 +104,12 @@ function addNextGenre()
     return
   end
 
-  genreEnvironmentCardId = currentScenario.genreQueue[currentScenario.genreIndex].environmentCardId
-  getCardByID(
-    genreEnvironmentCardId, 
-    {20.75, 2.00, 29.75}, --TODO: create a constant (or better yet, add functionality for moving cards to a specific zone)
-    {scale = defaults.encounterDeck.scale})  
+  local genreEnvironmentCardId = currentScenario.genreQueue[currentScenario.genreIndex].environmentCardId
+  Global.call("spawnCard", {
+    cardId = genreEnvironmentCardId, 
+    position = {20.75, 2.00, 29.75},  --TODO: create a constant (or better yet, add functionality for moving cards to a specific zone)
+    scale = defaults.encounterDeck.scale
+  })
 end
 
 function onCardEnterZone_mojo(params)
@@ -149,7 +150,10 @@ function placeGenreSetFromEnvironment(zone, card)
   local encounterDeckPos = Vector(getEncounterDeckPosition())
   local spawnPosition = encounterDeckPos + Vector(0, 1, 0)
 
-  createDeck({cards = newGenreSet.cards, position = spawnPosition, scale = defaults.encounterDeck.scale})
+  Global.call("spawnDeck", {
+    cards = newGenreSet.cards, 
+    position = spawnPosition, 
+    scale = defaults.encounterDeck.scale})
 
   Wait.frames(function() 
     Global.call("shuffleDeck", {deckPosition = encounterDeckPos})

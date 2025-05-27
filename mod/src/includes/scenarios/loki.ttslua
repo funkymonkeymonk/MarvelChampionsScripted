@@ -136,10 +136,14 @@ function placeVillainStage_loki(params)
 
   Global.call("moveCardFromPosition", {origin = villainPosition, zoneIndex = "victoryDisplay"})
 
-  getCardByID(
-    stage.cardId, 
-      villainPosition, 
-      {scale = villainScale, name = villain.name, flipped = false, locked=true})
+  Global.call("spawnCard", {
+    cardId = stage.cardId,
+    position = villainPosition,
+    scale = villainScale,
+    name = villain.name,
+    flipped = false,
+    locked = true
+  })
   
   local hitPoints = (stage.hitPoints or 0) + ((stage.hitPointsPerPlayer or 0) * heroCount)
   local villainHpCounter = getObjectFromGUID(villain.hpCounter.guid)
@@ -184,8 +188,12 @@ function lokiSwapVillain(params)
 
     Global.call("deleteCardAtPosition", {position = villainPosition})
   
-    getCardByID(
-        stage.cardId, 
-          villainPosition, 
-          {scale = villainScale, name = villain.name, flipped = false, locked=true})
+    Global.call("spawnCard", {
+        cardId = stage.cardId, 
+        position = villainPosition, 
+        scale = villainScale, 
+        name = villain.name, 
+        flipped = false, 
+        locked = true
+    })
 end

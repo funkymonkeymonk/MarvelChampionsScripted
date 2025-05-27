@@ -130,12 +130,13 @@ function placeApocalypsePrelate()
 
   local prelate = currentScenario.prelates[currentScenario.prelateIndex]
 
-  getCardByID(
-    prelate.cardId, 
-    {0,1,0}, 
-    {scale = defaults.encounterDeck.scale, 
+  Global.call("spawnCard", {
+    cardId = prelate.cardId, 
+    position = {0, 1, 0}, 
+    scale = defaults.encounterDeck.scale, 
     name = prelate.name, 
-    flipped = true})
+    flipped = true
+  })
 
   currentScenario.prelateIndex = currentScenario.prelateIndex + 1
 end
