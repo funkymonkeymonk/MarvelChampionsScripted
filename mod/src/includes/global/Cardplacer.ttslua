@@ -283,12 +283,12 @@ end
 
 function createUI(_, menu_position)
     local xml = [[
-<Panel width="250" height="150">
-    <VerticalLayout childAlignment="UpperCenter" color="#CCCCCC" outline="#000000">
-        <Text>Type in a card id</Text>
-        <Text color="#444444">ex 01006 will spawn Aunt May.</Text>
-        <InputField id="INPUT_CARD_ID" onValueChanged="setCardID"></InputField>
-        <Button onClick="getCard">Spawn Card</Button>
+<Panel width="250" height="350">
+    <VerticalLayout childAlignment="UpperCenter" color="#CCCCCC" outline="#000000" childForceExpandHeight="false">
+        <Text height="100">Type in a card id</Text>
+        <Text height="100" color="#444444">ex 01006 will spawn Aunt May.</Text>
+        <InputField height="150" id="INPUT_CARD_ID" onValueChanged="setCardID"></InputField>
+        <Button height="200" onClick="getCard">Spawn Card</Button>
     </VerticalLayout>
 </Panel>
 ]]

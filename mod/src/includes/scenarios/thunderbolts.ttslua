@@ -148,7 +148,9 @@ function setUpSchemeStage_thunderbolts_main(params)
             paleLittleSpider="50148",
             powerOfTheAtom="50152",
             supersonic="50156",
-            theLeaper="50161"
+            theLeaper="50161",
+            extremeRisk="51039",
+            growingStrong="52035"
         }
     
         local thunderboltsInDeck = {}

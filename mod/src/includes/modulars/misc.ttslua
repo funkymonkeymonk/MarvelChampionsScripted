@@ -209,3 +209,28 @@ modularSets["growingStrong"] =
         ["52037"]=4
     }
 }
+
+modularSets["techno"] = 
+{
+    name="Techno",
+    modular=true,
+    cards = {
+        ["53038"]=1,
+        ["53039"]=1,
+        ["53040"]=1,
+        ["53041"]=1,
+        ["53042"]=2
+    }
+}
+
+modularSets["whiteout"] = 
+{
+    name="Whiteout",
+    modular=true,
+    cards = {
+        ["54034"]=1,
+        ["54035"]=2,
+        ["54036"]=1,
+        ["54037"]=2
+    }
+}

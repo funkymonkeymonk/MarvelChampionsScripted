@@ -4,221 +4,285 @@ function onLoad()
 end
 
 function onObjectNumberTyped(object, playerColor, number)
-    if(object.type ~= "Deck" and object.type ~= "Card") then return false end
- 
+    if (object.type ~= "Deck" and object.type ~= "Card") then
+        return false
+    end
+
     local nearbyObjects = findInRadiusBy(object.getPosition(), 4)
     local playmat = nil
- 
+
     for _, obj in ipairs(nearbyObjects) do
-       if obj.hasTag("playmat") then
-          playmat = obj
-          break
-       end
+        if obj.hasTag("playmat") then
+            playmat = obj
+            break
+        end
     end
- 
-    if(playmat) then
-       playmat.call("drawCards", {objectToDrawFrom = object, numberToDraw = number})
-       return true
+
+    if (playmat) then
+        playmat.call("drawCards", {
+            objectToDrawFrom = object,
+            numberToDraw = number
+        })
+        -- return true
     end
- 
-    return false
+
+    return true
 end
- 
+
 function onObjectEnterZone(zone, card)
     local retain = card.getVar("retainValue")
     local retainedValue = card.getVar("retainedValue")
     local onEnterFunction = zone.getVar("onEnterFunction")
- 
-    if(onEnterFunction) then
-       local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
-       scenarioManager.call(onEnterFunction, {zone = zone, item = card})
-       return
+
+    if (onEnterFunction) then
+        local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
+        scenarioManager.call(onEnterFunction, {
+            zone = zone,
+            item = card
+        })
+        return
     end
- 
-    if(supressZoneInteractions) then return end
-    if(not isCard(card)) then return end
- 
+
+    if (supressZoneInteractions) then
+        return
+    end
+    if (not isCard(card)) then
+        return
+    end
+
     local zoneType = zone.getVar("zoneType")
     local zoneIndex = zone.getVar("zoneIndex")
- 
-    if(not zoneType) then return end
- 
-    local cardData = getCardData({card = card})
+
+    if (not zoneType) then
+        return
+    end
+
+    local cardData = getCardData({
+        card = card
+    })
     local cardType = cardData.type
- 
-    if(cardType == "hero" or ((cardType == "villain" or cardType == "main_scheme") and zoneType ~= "victoryDisplay")) then
-       return
+
+    if (cardType == "hero" or ((cardType == "villain" or cardType == "main_scheme") and zoneType ~= "victoryDisplay")) then
+        return
     end
- 
+
     local playerColor = zone.getVar("playerColor")
- 
-    if(playerColor) then card.setVar("playerColor", playerColor) end
- 
+
+    if (playerColor) then
+        card.setVar("playerColor", playerColor)
+    end
+
     Wait.frames(function()
-       resizeCardOnEnterZone(card, zoneType)
-    end, 
-    15)
- 
+        resizeCardOnEnterZone(card, zoneType)
+    end, 15)
+
     positionCardOnEnterZone(card, zoneType, zoneIndex)
- 
+
     local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
-    scenarioManager.call("onCardEnterZone", {zone=zone, card = card})
- 
-    if(zoneType == "victoryDisplay") then
-       updateVictoryDisplayDetails()
+    scenarioManager.call("onCardEnterZone", {
+        zone = zone,
+        card = card
+    })
+
+    if (zoneType == "victoryDisplay") then
+        updateVictoryDisplayDetails()
     end
- 
-    --TODO: Refactor these counter placement functions
-    Wait.condition(
-       function()
-          if(card.isDestroyed()) then return end
- 
-          if(zoneType == "sideScheme") then
-             addThreatCounterToSideScheme(card)
-          elseif(zoneType == "minion") then
-             addHealthCounterToMinion(card)
-             if(card.hasTag("toughness")) then
-                addStatusToMinion({card = card, statusType = "tough"})
-             end
-          end
-    
-          local counter = cardData.counter
-    
-          if(counter) then
-             if (counter == "general") then
+
+    -- TODO: Refactor these counter placement functions
+    Wait.condition(function()
+        if (card.isDestroyed()) then
+            return
+        end
+
+        if (zoneType == "sideScheme") then
+            addThreatCounterToSideScheme(card)
+        elseif (zoneType == "minion") then
+            addHealthCounterToMinion(card)
+            if (card.hasTag("toughness")) then
+                addStatusToMinion({
+                    card = card,
+                    statusType = "tough"
+                })
+            end
+        end
+
+        local counter = cardData.counter
+
+        if (counter) then
+            if (counter == "general") then
                 addGeneralCounterToCard(card, cardData)
-             elseif (counter == "threat") then
+            elseif (counter == "threat") then
                 addThreatCounterToCard(card, cardData)
-             end
-          end   
-       end,
-       function()
-          return card.isDestroyed() or card.resting
-       end,
-       2
-    )
+            end
+        end
+    end, function()
+        return card.isDestroyed() or card.resting
+    end, 2)
 end
- 
+
 function resizeCardOnEnterZone(card, zoneType)
-    if(card.isDestroyed()) then return end
- 
-    local newScale = nil
- 
-    if(zoneType == "hero") then
-       newScale = CARD_SCALE_PLAYER
-    elseif(zoneType == "sideScheme" or zoneType == "encounterDeck" or zoneType == "attachment" or zoneType == "environment" or zoneType == "minion" or zoneType == "victoryDisplay") then
-       newScale = CARD_SCALE_ENCOUNTER
+    if (card.isDestroyed()) then
+        return
     end
- 
-    if(newScale) then
-       card.setScale(newScale)
+
+    local newScale = nil
+
+    if (zoneType == "hero") then
+        newScale = CARD_SCALE_PLAYER
+    elseif (zoneType == "sideScheme" or zoneType == "encounterDeck" or zoneType == "attachment" or zoneType ==
+        "environment" or zoneType == "minion" or zoneType == "victoryDisplay") then
+        newScale = CARD_SCALE_ENCOUNTER
+    end
+
+    if (newScale) then
+        card.setScale(newScale)
     end
 end
- 
+
 function positionCardOnEnterZone(card, zoneType, zoneIndex)
-    if(zoneType ~= "sideScheme" and zoneType ~= "attachment" and zoneType ~= "environment" and zoneType ~= "minion" and zoneType ~= "victoryDisplay") then
-       return
+    if (zoneType ~= "sideScheme" and zoneType ~= "attachment" and zoneType ~= "environment" and zoneType ~= "minion" and
+        zoneType ~= "victoryDisplay") then
+        return
     end
- 
-    local cardType = getCardProperty({card = card, property = "type"})
-    local newCardPosition = getNewZoneCardPosition({zoneIndex = zoneIndex})
+
+    local cardType = getCardProperty({
+        card = card,
+        property = "type"
+    })
+    local newCardPosition = getNewZoneCardPosition({
+        zoneIndex = zoneIndex
+    })
     local originalRotation = card.getRotation()
-    local cardRotation = string.sub(cardType, -6, -1) == "scheme" and {0,90,originalRotation[3]} or {0,180,originalRotation[3]}
- 
+    local cardRotation = string.sub(cardType, -6, -1) == "scheme" and {0, 90, originalRotation[3]} or
+                             {0, 180, originalRotation[3]}
+
     card.setPositionSmooth(newCardPosition)
     card.setRotationSmooth(cardRotation)
     card.setScale(ENCOUNTER_DECK_SCALE)
 end
 
 function onObjectLeaveZone(zone, card)
-    if(supressZoneInteractions) then return end
-    if(not isCard(card)) then return end
- 
+    if (supressZoneInteractions) then
+        return
+    end
+    if (not isCard(card)) then
+        return
+    end
+
     local zoneType = zone.getVar("zoneType")
-    if(not zoneType) then return end
- 
-    local cardData = getCardData({card = card})
+    if (not zoneType) then
+        return
+    end
+
+    local cardData = getCardData({
+        card = card
+    })
     local cardType = cardData.type or ""
     local cardAspect = cardData.aspect or ""
- 
-    if(cardType == "hero" or cardType == "villain" or cardType == "main_scheme") then
-       return
+
+    if (cardType == "hero" or cardType == "villain" or cardType == "main_scheme") then
+        return
     end
- 
+
     card.setVar("playerColor", nil)
- 
-    removeCounterFromCard({card = card})
- 
+
+    removeCounterFromCard({
+        card = card
+    })
+
     Wait.frames(function()
-       resizeCardOnLeaveZone(card, cardAspect)
-    end,
-    15)
- 
-    repositionCardsInZone({zone = zone})
- 
-    if(zoneType == "victoryDisplay") then
-       updateVictoryDisplayDetails()
+        resizeCardOnLeaveZone(card, cardAspect)
+    end, 15)
+
+    repositionCardsInZone({
+        zone = zone
+    })
+
+    if (zoneType == "victoryDisplay") then
+        updateVictoryDisplayDetails()
     end
 end
- 
+
 function resizeCardOnLeaveZone(card, cardAspect)
-    if(card.isDestroyed()) then return end
- 
-    if(cardAspect == "encounter") then
-       card.setScale(CARD_SCALE_ENCOUNTER)
+    if (card.isDestroyed()) then
+        return
+    end
+
+    if (cardAspect == "encounter") then
+        card.setScale(CARD_SCALE_ENCOUNTER)
     else
-       card.setScale(CARD_SCALE_PLAYER)
+        card.setScale(CARD_SCALE_PLAYER)
     end
 end
- 
+
 function onPlayerAction(player, action, targets)
-    if(action == Player.Action.Delete) then
-       for _, target in ipairs(targets) do
-          if not target.getVar("preventDeletion") then
-             target.destroy()
-          end
-       end
- 
-       return false
+    if (action == Player.Action.Delete) then
+        for _, target in ipairs(targets) do
+            if not target.getVar("preventDeletion") then
+                target.destroy()
+            end
+        end
+
+        return false
     end
- 
-    if(action == Player.Action.PickUp) then
-       if(#targets > 1) then return true end
-       local card = targets[1]
- 
-       if(not isCard(card)) then return true end
- 
-       if(not isFaceUp({object = card})) then return true end
- 
-       local zones = card.getZones()
-       if #zones > 0 then return true end
- 
-       local cardType = getCardProperty({card = card, property = "type"}) or ""
-       local zoneType = nil
- 
-       if(string.sub(cardType, -11) == "side_scheme") then
-          zoneType = "sideScheme"
-       elseif(cardType == "attachment") then
-          zoneType = "attachment"
-       elseif(cardType == "environment") then
-          zoneType = "environment"
-       elseif(cardType == "minion") then
-          zoneType = "minion"
-       end
- 
-       if(not zoneType) then return true end
- 
-       local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
-       local zones = scenarioManager.call("getZonesByType", {zoneType = zoneType})
-       
-       for _, zone in ipairs(zones) do
-          local pingPosition = getNewZoneCardPosition({zoneIndex = zone.getVar("zoneIndex"), forNextCard = true})
- 
-          if(pingPosition) then
-             player.pingTable(pingPosition)
-          end
-       end
+
+    if (action == Player.Action.PickUp) then
+        if (#targets > 1) then
+            return true
+        end
+        local card = targets[1]
+
+        if (not isCard(card)) then
+            return true
+        end
+
+        if (not isFaceUp({
+            object = card
+        })) then
+            return true
+        end
+
+        local zones = card.getZones()
+        if #zones > 0 then
+            return true
+        end
+
+        local cardType = getCardProperty({
+            card = card,
+            property = "type"
+        }) or ""
+        local zoneType = nil
+
+        if (string.sub(cardType, -11) == "side_scheme") then
+            zoneType = "sideScheme"
+        elseif (cardType == "attachment") then
+            zoneType = "attachment"
+        elseif (cardType == "environment") then
+            zoneType = "environment"
+        elseif (cardType == "minion") then
+            zoneType = "minion"
+        end
+
+        if (not zoneType) then
+            return true
+        end
+
+        local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
+        local zones = scenarioManager.call("getZonesByType", {
+            zoneType = zoneType
+        })
+
+        for _, zone in ipairs(zones) do
+            local pingPosition = getNewZoneCardPosition({
+                zoneIndex = zone.getVar("zoneIndex"),
+                forNextCard = true
+            })
+
+            if (pingPosition) then
+                player.pingTable(pingPosition)
+            end
+        end
     end
- 
+
     return true
-end 
+end

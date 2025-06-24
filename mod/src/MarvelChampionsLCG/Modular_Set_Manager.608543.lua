@@ -208,7 +208,7 @@ function getEncounterSetsByType(params)
 end
 
 function getEncounterSets()
-    return deepCopy(modularSets)
+    return modularSets
 end
 
 function deepCopy(obj, seen)
