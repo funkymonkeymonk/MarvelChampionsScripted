@@ -4,14 +4,14 @@ local selectedScenario = {}
 local encounterSetButtonIds = {}
 
 function onload(saved_data)
-    -- self.interactable = false
-    local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
-    local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
+    self.interactable = false
+    -- local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
+    -- local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
 
-    allScenarios = scenarioManager.call("getScenarios", {})
-    allEncounterSets = encounterSetManager.call("getEncounterSets", {})
+    -- allScenarios = scenarioManager.call("getScenarios", {})
+    -- allEncounterSets = encounterSetManager.call("getEncounterSets", {})
 
-    createButton()
+    -- createButton()
 end
 
 function createButton()
