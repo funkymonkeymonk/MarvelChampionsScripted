@@ -481,7 +481,7 @@ function placeDeck(hero, deckType, playmatPosition, importedDeck)
   local linkedCards = spawnedDeck.getGMNotes()
 
   if(linkedCards) then
-    linkedCardPosition = getOffsetPosition(playmatPosition, {9.56, 3, -4.66})
+    local linkedCardPosition = getOffsetPosition(playmatPosition, {9.56, 3, -4.66})
 
     function moveLinkedCardCoroutine()
       for linkedCardId in string.gmatch(linkedCards, "([^,]+)") do
@@ -669,7 +669,8 @@ function getObligationCards()
   local cards = {}
 
   for _, hero in pairs(selectedHeroes) do
-    cards[hero.obligationCardId] = 1
+    local obligationCount = hero.obligationCount or 1
+    cards[hero.obligationCardId] = obligationCount
   end
 
   return cards

@@ -234,6 +234,13 @@ function deleteCardAtPosition(params)
     local items = findInRadiusBy(position, 3, isCard, false)
  
     if #items > 0 then
+      local card = items[1]
+      local counter = getCounterFromCard({card = card})
+
+      if counter then
+          counter.destroy()
+      end
+
       items[1].destroy()
     end
 end
@@ -419,13 +426,13 @@ function moveCardFromEncounterDeckById(params)
        moveCardParams.deckPosition = Vector(scenarioManager.call('getEncounterDiscardPosition'))
  
        if moveCardFromDeckById(moveCardParams) then
-          return
+          return true
        end
     end
  
     moveCardParams.deckPosition = Vector(scenarioManager.call('getEncounterDeckPosition'))
  
-    moveCardFromDeckById(moveCardParams)
+    return moveCardFromDeckById(moveCardParams)
 end
 
 function getItemsOnCard(params)
@@ -463,7 +470,7 @@ function getCastSizeForCard(params)
     return orientation == "vertical" and {shortDimension, 2, longDimension} or {longDimension, 2, shortDimension}
 end
  
-function getDeckOrCardAtLocation(params)
+function getDeckOrCardAtPosition(params)
     --TODO: this is hacky
     position = Vector(params.position)
     position["y"] = 0
@@ -501,8 +508,8 @@ function discardFromEncounterDeck(params)
     local cardsFound = 0
     local stopDiscarding = false
  
-    local deck = getDeckOrCardAtLocation({position=deckPosition})
-    local discardPile = getDeckOrCardAtLocation({position=discardPosition})
+    local deck = getDeckOrCardAtPosition({position=deckPosition})
+    local discardPile = getDeckOrCardAtPosition({position=discardPosition})
  
     if not deck then
        reshuffleEncounterDeck()
@@ -510,18 +517,18 @@ function discardFromEncounterDeck(params)
  
     Wait.condition(
        function()
-          startLuaCoroutine(self, "discardCoroutine")
+          startLuaCoroutine(self, "discardEncounterCoroutine")
        end, 
        function()
           return discardPile == nil or discardPile.isDestroyed() or discardPile.resting
        end, 
        3, 
        function()
-          startLuaCoroutine(self, "discardCoroutine")
+          startLuaCoroutine(self, "discardEncounterCoroutine")
        end
     )
  
-    function discardCoroutine()
+    function discardEncounterCoroutine()
        while not stopDiscarding do
           local card = discardCardFromDeck({
              deckPosition = deckPosition,
@@ -573,7 +580,7 @@ function discardFromEncounterDeck(params)
  
        Wait.frames(
           function()
-             local deck = getDeckOrCardAtLocation({position=deckPosition})
+             local deck = getDeckOrCardAtPosition({position=deckPosition})
              if(not deck) then
                 reshuffleEncounterDeck()
              end      
@@ -597,7 +604,7 @@ function discardCardFromDeck(params)
     local deckPosition = params.deckPosition
     local discardPosition = ensureMinimumYPosition({position = params.discardPosition, minimumY = 2.5})
     local discardRotation = params.discardRotation or {0,180,0}
-    local deckOrCard = getDeckOrCardAtLocation({position=deckPosition})
+    local deckOrCard = getDeckOrCardAtPosition({position=deckPosition})
  
     if not deckOrCard then
        return nil
@@ -620,6 +627,24 @@ function cardIsInPlay(params)
     local card = findCard(params)
     if not card then return false end
     return isFaceUp({object = card})
+end
+
+function cardIsInZone(params)
+    local card = params.card
+    if not card then return false end
+
+    local zoneIndex = params.zoneIndex
+    local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
+    local zoneGuid = scenarioManager.call("getZoneGuid", {zoneIndex = zoneIndex})
+    local zones = card.getZones()
+
+    for _, zone in pairs(zones) do
+       if zone.getGUID() == zoneGuid then
+          return true
+       end
+    end
+
+    return false
 end
  
 function findCard(params)
@@ -697,7 +722,7 @@ end
 function refreshDeck(params)
     local deckPosition = params.deckPosition
     local discardPosition = params.discardPosition
-    local deck = getDeckOrCardAtLocation({position=discardPosition})
+    local deck = getDeckOrCardAtPosition({position=discardPosition})
  
     if(not deck) then return end
  
@@ -768,5 +793,5 @@ end
 function getEncounterDeck()
     local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
     local deckPosition = Vector(scenarioManager.call("getEncounterDeckPosition"))
-    return getDeckOrCardAtLocation({position=deckPosition})
+    return getDeckOrCardAtPosition({position=deckPosition})
 end

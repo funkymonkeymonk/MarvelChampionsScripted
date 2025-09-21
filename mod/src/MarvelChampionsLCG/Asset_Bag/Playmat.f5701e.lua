@@ -500,7 +500,7 @@ function drawCards(params)
       Global.call("dealEncounterCardToPlayer", {playerColor = positionColor})
 
       Wait.frames(function()
-         local playerDeck = Global.call("getDeckOrCardAtLocation", {position = deckPosition})
+         local playerDeck = Global.call("getDeckOrCardAtPosition", {position = deckPosition})
          drawCards({objectToDrawFrom = playerDeck, numberToDraw = numberForSecondDraw})
       end, 
       30)

@@ -313,7 +313,7 @@ function kangStage1DealEncounterCardsToAllPlayers()
         Global.call("dealEncounterCardsToAllPlayers", {numberOfCards = 1})
       end,
       function()
-        local deckOrCard = Global.call("getDeckOrCardAtLocation", {position = Vector(getEncounterDeckPosition())})
+        local deckOrCard = Global.call("getDeckOrCardAtPosition", {position = Vector(getEncounterDeckPosition())})
         return deckOrCard ~= nil
       end,
       5,

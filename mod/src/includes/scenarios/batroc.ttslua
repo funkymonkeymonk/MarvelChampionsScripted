@@ -101,7 +101,7 @@ function setUpSchemeStage_batroc_main(params)
                 if(counter) then
                     counter.call("setValue", {value = heroCount * 2})
                 else
-                    Global.call("displayMessage", {message = "Add two threat to the Alert Level environment.", messageType = Global.getVar("MESSAGE_TYPE_INSTRUCTION")})
+                        
                 end
             end,
             150)
