@@ -1,0 +1,251 @@
+scenarios["enchantress"] = {
+    name = "Enchantress",
+    fullyScripted = true,
+    tileImageUrl = "https://steamusercontent-a.akamaihd.net/ugc/16609010405340647217/9B443103DF09B25A59E921AC09464766602917E3/",
+    villains = {
+        enchantress = {
+            name = "Enchantress",
+            hpCounter = {
+                imageUrl = "https://steamusercontent-a.akamaihd.net/ugc/16609010405340647217/9B443103DF09B25A59E921AC09464766602917E3/"
+            },
+            stages = {
+                stage1 = {
+                    cardId = "55001",
+                    hitPointsPerPlayer = 15
+                },
+                stage2 = {
+                    cardId = "55002",
+                    hitPointsPerPlayer = 16
+                },
+                stage3 = {
+                    cardId = "55003",
+                    hitPointsPerPlayer = 18
+                }
+            }
+        }
+    },
+    schemes = {
+        main = {
+            stages = {
+                stage1 = {
+                    cardId = "55004",
+                    startingThreatPerPlayer = 1,
+                    targetThreatPerPlayer = 6,
+                    flavorText = "Enchantress sets out to conquer South America by turning all who oppose her into her enthralled lackeys."
+                },
+                stage2 = {
+                    cardId = "55005",
+                    startingThreatPerPlayer = 2,
+                    targetThreatPerPlayer = 9
+                }
+
+            }
+        }
+    },
+    decks = {
+        encounterDeck = {
+            name = "Enchantress' Encounter Deck",
+            cards = {
+                ["55012"] = 1,
+                ["55013"] = 1,
+                ["55014"] = 1,
+                ["55015"] = 1,
+                ["55016"] = 1,
+                ["55017"] = 2,
+                ["55018"] = 2,
+                ["55019"] = 1,
+                ["55020"] = 1,
+                ["55021"] = 2,
+                ["55022"] = 2,
+                ["55023"] = 1,
+                ["55024"] = 2,
+                ["55025"] = 2,
+                ["55026"] = 1
+            }
+        }
+    },
+    modularSets = {
+        tricksterTango = "recommended"
+    }
+}
+
+function setUpSchemeStage_enchantress_main(params)
+    local stage = params.stage
+    local stageNumber = string.sub(stage.key, -1)
+    local mode = getMode()
+
+    if (stageNumber == "1") then
+        enchantressPlaceHypnoticTrances()
+    end
+
+    if (stageNumber == "2") then
+        enchantressPlaceCrownOfTheEnchantress()
+    end
+end
+
+function setUpVillainStage_enchantress(params)
+    local villainKey = params.villainKey
+    local stage = params.stage
+    local stageNumber = string.sub(stage.key, -1)
+    local mode = getMode()
+
+    if (stageNumber == "2" and mode == "standard") then
+        enchantressPlaceFutureOfDespair(3)
+    end
+
+    if (stageNumber == "3") then
+        enchantressPlaceFutureOfDespair(4)
+    end
+
+end
+
+function enchantressPlaceHypnoticTrances()
+    local hypnoticTranceCardIds = {"55007", "55008", "55009", "55010", "55011"}
+    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
+    local players = heroManager.call("getPlayersInPlayerOrder")
+    local cardScale = Global.getTable("CARD_SCALE_PLAYER")
+
+    hypnoticTranceCardIds = Global.call("shuffleTable", {
+        table = hypnoticTranceCardIds
+    })
+
+    for index, player in ipairs(players) do
+        local hypnoticTranceCardId = hypnoticTranceCardIds[index]
+        local playmatPosition = Vector(heroManager.call("getPlaymatPosition", {
+            playerColor = player.playerColor
+        }))
+        local cardPosition = playmatPosition + Vector(0.86, 0.1, 0)
+        local counterPosition = cardPosition + Vector(0.68, 0.12, 0.71)
+
+        Global.call("spawnCard", {
+            cardId = hypnoticTranceCardId,
+            position = cardPosition,
+            scale = cardScale,
+            flipped = true
+        })
+
+        Wait.frames(function()
+            placeGeneralCounter({
+                position = counterPosition,
+                scale = {0.3, 1, 0.3},
+                name = "Charm",
+                locked = false,
+                tags = {"charm-counter"}
+            })
+        end, 10)
+    end
+end
+
+function enchantressPlaceCrownOfTheEnchantress()
+    local crownOfTheEnchantressCardId = "55016"
+    local cardInPlay = Global.call("findCard", {
+        cardId = crownOfTheEnchantressCardId
+    })
+    local cardFound = false
+    local cardAlreadyAttached = false
+    local message = "Enchantress now has her crown!"
+
+    if (cardInPlay and Global.call("isFaceUp", {
+        object = cardInPlay
+    })) then
+        cardFound = true
+
+        cardAlreadyAttached = Global.call("cardIsInZone", {
+            card = cardInPlay,
+            zoneIndex = "attachment"
+        })
+
+        if (cardAlreadyAttached) then
+            message = "Enchantress already has her crown, so all heroes are stunned!"
+        else
+            Global.call("moveCard", {
+                card = cardInPlay,
+                zoneIndex = "attachment"
+            })
+        end
+    end
+
+    if (not cardFound) then
+        cardFound = Global.call("moveCardFromEncounterDeckById", {
+            cardId = crownOfTheEnchantressCardId,
+            searchInDiscard = true,
+            zoneIndex = "attachment"
+        })
+    end
+
+    if (not cardFound or cardAlreadyAttached) then
+        Global.call("addStatusToAllHeroes", {
+            statusType = "stunned"
+        })
+    end
+
+    if (not cardFound) then
+        message = "The Crown of the Enchantress could not be found, so all heroes are stunned!"
+    end
+
+    Global.call("displayMessage", {
+        message = message,
+        messageType = Global.getVar("MESSAGE_TYPE_INFO")
+    })
+end
+
+function enchantressPlaceFutureOfDespair(extraThreatPerHero)
+    local futureOfDespairCardId = "55006"
+    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
+    local heroCount = heroManager.call("getHeroCount")
+    local threatPerHero = 2 + extraThreatPerHero
+
+    local newSideSchemePosition = Global.call("getNewZoneCardPosition", {
+        zoneIndex = "sideScheme",
+        forNextCard = true
+    })
+
+    local futureOfDespair = Global.call("spawnCard", {
+        cardId = futureOfDespairCardId,
+        position = newSideSchemePosition,
+        scale = Global.getTable("CARD_SCALE_ENCOUNTER"),
+        landscape = true,
+        flipped = false
+    })
+
+    Wait.frames(function()
+        local threatCounter = Global.call("getCounterFromCard", {
+            card = futureOfDespair
+        })
+
+        if (threatCounter) then
+            local threat = threatPerHero * heroCount
+            threatCounter.call("setValue", {
+                value = threat
+            })
+        end
+    end, 10)
+
+    enchantressIncrementEnchantmentCounters()
+end
+
+function enchantressIncrementEnchantmentCounters()
+    local objects = getAllObjects()
+    local heroesAreEnchanted = false
+
+    for _, obj in pairs(objects) do
+        if (obj.hasTag("charm-counter")) then
+            local currentValue = obj.call("getValue")
+            local newValue = currentValue + 1
+            obj.call("setValue", {
+                value = newValue
+            })
+
+            if (newValue >= 5) then
+                heroesAreEnchanted = true
+            end
+        end
+    end
+
+    if (heroesAreEnchanted) then
+        Global.call("displayMessage", {
+            message = "Check each Hypnotic Gaze attachment. If Charm counter is 5 or more, remove the counter and flip the card!",
+            messageType = Global.getVar("MESSAGE_TYPE_INSTRUCTION")
+        })
+    end
+end

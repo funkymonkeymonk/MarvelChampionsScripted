@@ -179,6 +179,10 @@ function setTooltips()
         })
 end
 
+function getValue()
+    return CONFIG.VALUE
+end
+
 function setValue(params)
     CONFIG.VALUE = params.value
     updateVal()

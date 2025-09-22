@@ -1,0 +1,554 @@
+scenarios["lokiGodOfLies"] = {
+    name = "Loki, God of Lies",
+    fullyScripted = true,
+    tileImageUrl = "https://steamusercontent-a.akamaihd.net/ugc/1849305905150132430/6C8FCFC49383857A4A92407CE13656C5DE148F37/",
+    villains = {
+        lokiGodOfLies = {
+            name = "Loki, God of Lies",
+            deckPosition = {-37.75, 0.97, 20.44},
+            hpCounter = {
+                imageUrl = "https://steamusercontent-a.akamaihd.net/ugc/1849305905150132430/6C8FCFC49383857A4A92407CE13656C5DE148F37/",
+                position = {-37.75, 0.96, 29.15}
+            },
+            stages = {
+                stage1 = {
+                    cardId = "55027",
+                    hitPointsPerPlayer = 20
+                }
+            }
+        },
+        avatarOfLoki = {
+            name = "Avatar of Loki",
+            hpCounter = {
+                imageUrl = "https://steamusercontent-a.akamaihd.net/ugc/1849305905150132430/6C8FCFC49383857A4A92407CE13656C5DE148F37/",
+                primaryButtonLabel = "SHATTER",
+                -- primaryButtonClickFunction = "lokiGodOfLiesShatterTheIllusion",
+                secondaryButton = {
+                    label = "SWAP",
+                    clickFunction = "lokiGodOfLiesSwapAvatar"
+                }
+            },
+            stages = {
+                stage1 = {
+                    cardId = "55029",
+                    name = "Loki the Rascal",
+                    hitPointsPerPlayer = 15,
+                    associatedEnvironment = {
+                        cardId = "55055",
+                        name = "Unified Front"
+                    }
+                },
+                stage2 = {
+                    cardId = "55030",
+                    name = "Loki the Miscreant",
+                    hitPointsPerPlayer = 15,
+                    associatedEnvironment = {
+                        cardId = "55054",
+                        name = "Mounting Resistance"
+                    }
+                },
+                stage3 = {
+                    cardId = "55031",
+                    name = "Loki the Knave",
+                    hitPointsPerPlayer = 15,
+                    associatedEnvironment = {
+                        cardId = "55052",
+                        name = "Domineering Force"
+                    }
+                },
+                stage4 = {
+                    cardId = "55032",
+                    name = "Loki the Wretch",
+                    hitPointsPerPlayer = 15,
+                    associatedEnvironment = {
+                        cardId = "55053",
+                        name = "Feigned Retreat"
+                    }
+                }
+            }
+        }
+    },
+    schemes = {
+        worldsCollide = {
+            stages = {
+                stage1 = {
+                    cardId = "55028",
+                    startingThreat = 0,
+                    targetThreat = 2
+                }
+            },
+            position = {-29.03, 0.97, 22.45},
+            threatCounter = {
+                position = {-29.03, 1.01, 28.48}
+            }
+        },
+        main = {
+            stages = {
+                stage1 = {
+                    cardId = "55033",
+                    startingThreatPerPlayer = 0,
+                    targetThreatPerPlayer = 8
+                }
+            },
+            threatCounter = {
+                showAdvanceButton = true,
+                primaryButtonLabel = "RESET",
+                primaryButtonClickFunction = "lokiGodOfLiesResetScheme"
+            }
+
+        }
+    },
+    decks = {
+        encounterDeck = {
+            name = "Loki's Encounter Deck",
+            cards = {
+                ["55035"] = 1,
+                ["55036"] = 1,
+                ["55037"] = 2,
+                ["55038"] = 1,
+                ["55039"] = 1,
+                ["55040"] = 1,
+                ["55041"] = 1,
+                ["55042"] = 1,
+                ["55043"] = 1,
+                ["55044"] = 1,
+                ["55045"] = 1,
+                ["55046"] = 1,
+                ["55047"] = 2,
+                ["55048"] = 1,
+                ["55049"] = 2,
+                ["55050"] = 1,
+                ["55051"] = 3,
+                ["55052"] = 1,
+                ["55053"] = 1,
+                ["55054"] = 1,
+                ["55055"] = 1
+            }
+        }
+    },
+    modularSets = {
+        tricksterTango = "recommended"
+    },
+    zones = {
+        environment = {
+            position = {28.25, 2.00, 29.75},
+            scale = {30.00, 4.00, 7.00},
+            firstCardPosition = {15.75, 0.97, 29.75},
+            horizontalGap = 5,
+            verticalGap = 0,
+            layoutDirection = "horizontal",
+            width = 6,
+            height = 1
+        }
+    }
+}
+
+function prepareScenario_lokiGodOfLies()
+    local villain = currentScenario.villains.avatarOfLoki
+    local villainStages = {}
+
+    for key, stage in pairs(villain.stages) do
+        table.insert(villainStages, key)
+    end
+
+    villainStages = Global.call("shuffleTable", {
+        table = villainStages
+    })
+
+    currentScenario.avatarOfLokiQueue = villainStages
+end
+
+function getNextVillainStage_lokiGodOfLies(params)
+    if (params.villainKey == "lokiGodOfLies") then
+        return currentScenario.villains.lokiGodOfLies.stages.stage1
+    end
+
+    if (#currentScenario.avatarOfLokiQueue < 4) then
+        lokiGodOfLiesShatterTheIllusion()
+    end
+
+    currentScenario.avatarOfLokiQueue = Global.call("shuffleTable", {
+        table = currentScenario.avatarOfLokiQueue
+    })
+
+    if (#currentScenario.avatarOfLokiQueue == 0) then
+        return nil
+    end
+
+    local newStage = currentScenario.avatarOfLokiQueue[1]
+    table.remove(currentScenario.avatarOfLokiQueue, 1)
+    currentScenario.currentAvatarOfLokiStage = newStage
+
+    local stage = currentScenario.villains.avatarOfLoki.stages[newStage]
+    stage.showAdvanceButton = true
+
+    local lokiHpBonus = 0
+    local focus = lokiGodOfLiesGetFocusAttachment()
+
+    if (focus == "intense") then
+        lokiHpBonus = 2
+    end
+    if (focus == "total") then
+        lokiHpBonus = 3
+    end
+
+    stage.hitPointsPerPlayer = stage.hitPointsPerPlayer + lokiHpBonus
+
+    return stage
+end
+
+function setUpSchemeStage_lokiGodOfLies_main(params)
+    local stage = params.stage
+    local stageNumber = string.sub(stage.key, -1)
+    local mode = getMode()
+
+    lokiGodOfLiesPlaceSynergyEnvironments()
+
+    if (mode == "expert") then
+        lokiGodOfLiesPlaceFocusAttachment()
+    end
+end
+
+function lokiGodOfLiesPlaceSynergyEnvironments()
+    local environmentCardIds = {"55052", "55053", "55054", "55055"}
+
+    function placeSynergyEnvironmentsCoroutine()
+        for _, cardId in ipairs(environmentCardIds) do
+            Global.call("moveCardFromEncounterDeckById", {
+                cardId = cardId,
+                zoneIndex = "environment"
+            })
+
+            for i = 1, 10 do
+                coroutine.yield(0)
+            end
+        end
+
+        return 1
+    end
+
+    startLuaCoroutine(self, "placeSynergyEnvironmentsCoroutine")
+end
+
+function lokiGodOfLiesPlaceFocusAttachment()
+    local intenseFocusCardId = "55034"
+    local newAttachmentPosition = Global.call("getNewZoneCardPosition", {
+        zoneIndex = "attachment",
+        forNextCard = true
+    })
+    local mode = getMode()
+    local heroCount = getHeroCount()
+
+    Global.call("spawnCard", {
+        cardId = intenseFocusCardId,
+        position = newAttachmentPosition,
+        scale = Global.getTable("CARD_SCALE_ENCOUNTER"),
+        flipped = false
+    })
+
+    if (mode == "standard") then
+        Global.call("discardFromEncounterDeck", {
+            cardsToDiscard = heroCount * 2
+        })
+        Global.call("discardFromAllPlayerDecks", {
+            numberOfCards = 5
+        })
+    end
+end
+
+function lokiGodOfLiesFlipFocusAttachment()
+    local focusAttachmentCard = Global.call("findCard", {
+        cardId = "55034"
+    })
+    local heroCount = getHeroCount()
+
+    if (focusAttachmentCard == nil) then
+        Global.call("displayMessage", {
+            message = "Intense Focus attachment not found!",
+            messageType = Global.getVar("MESSAGE_TYPE_ALERT")
+        })
+        return
+    end
+
+    focusAttachmentCard.flip()
+
+    Global.call("displayMessage", {
+        message = "Loki's Intense Focus attachment has been flipped to its Total Focus side!",
+        messageType = Global.getVar("MESSAGE_TYPE_ALERT")
+    })
+
+    Global.call("discardFromEncounterDeck", {
+        cardsToDiscard = heroCount * 2
+    })
+    Global.call("discardFromAllPlayerDecks", {
+        numberOfCards = 5
+    })
+
+    lokiGodOfWarPlaceDarkScepter()
+end
+
+function lokiGodOfLiesResetScheme()
+    local worldsCollideThreatCounterGuid = currentScenario.schemes.worldsCollide.threatCounter.guid
+    local worldsCollideThreatCounter = getObjectFromGUID(worldsCollideThreatCounterGuid)
+    local mischiefAndMayhemThreatCounterGuid = currentScenario.schemes.main.threatCounter.guid
+    local mischiefAndMayhemThreatCounter = getObjectFromGUID(mischiefAndMayhemThreatCounterGuid)
+    local newWorldsCollideThreat = tonumber(worldsCollideThreatCounter.call("getValue")) + 1
+
+    worldsCollideThreatCounter.call("setValue", {
+        value = newWorldsCollideThreat
+    })
+    mischiefAndMayhemThreatCounter.call("setValue", {
+        value = 0
+    })
+
+    Global.call("displayMessage", {
+        message = "Placing 1 threat on Worlds Collide.",
+        messageType = Global.getVar("MESSAGE_TYPE_INFO")
+    })
+
+    if (newWorldsCollideThreat >= 2) then
+        Global.call("displayMessage", {
+            message = "Worlds Collide scheme has been completed. The players lose!",
+            messageType = Global.getVar("MESSAGE_TYPE_ALERT")
+        })
+    end
+end
+
+function lokiGodOfLiesShatterTheIllusion()
+    local heroCount = getHeroCount()
+    local avatarOfLokiCard = Global.call("getDeckOrCardAtPosition", {
+        position = Global.getTable("VILLAIN_POSITION")
+    })
+    local shatterCounter = Global.call("getCounterFromCard", {
+        card = avatarOfLokiCard
+    })
+    local newShatter = tonumber(shatterCounter.call("getValue")) + (heroCount * 5)
+    local godOfLiesHpCounter = getHpCounterForVillain({
+        villainKey = "lokiGodOfLies"
+    })
+    local origGodOfLiesHp = tonumber(godOfLiesHpCounter.call("getValue"))
+    local newGodOfLiesHp = origGodOfLiesHp - newShatter
+
+    if (newGodOfLiesHp < 0) then
+        newGodOfLiesHp = 0
+    end
+
+    godOfLiesHpCounter.call("setValue", {
+        value = newGodOfLiesHp
+    })
+
+    if (newGodOfLiesHp == 0) then
+        Global.call("displayMessage", {
+            message = "Loki, God of Lies has been defeated! The players win!",
+            messageType = Global.getVar("MESSAGE_TYPE_ALERT")
+        })
+
+        return
+    end
+
+    Global.call("displayMessage", {
+        message = newShatter .. " HP removed from Loki, God of Lies.",
+        messageType = Global.getVar("MESSAGE_TYPE_INFO")
+    })
+
+    local godOfLiesFlipThreshold = heroCount * 10
+
+    lokiGodOfLiesAddSynergyToEnvironment()
+
+    if (origGodOfLiesHp > godOfLiesFlipThreshold and newGodOfLiesHp <= godOfLiesFlipThreshold) then
+        lokiGodOfLiesFlipGodOfLies()
+    end
+
+    Global.call("dealEncounterCardsToAllPlayers", {
+        numberOfCards = 1
+    })
+
+    Global.call("displayMessage", {
+        message = "Dealing each hero a face-down encounter card.",
+        messageType = Global.getVar("MESSAGE_TYPE_INFO")
+    })
+end
+
+function lokiGodOfLiesAddSynergyToEnvironment()
+    local currentStage = currentScenario.currentAvatarOfLokiStage
+    local stage = currentScenario.villains.avatarOfLoki.stages[currentStage]
+    local heroCount = getHeroCount()
+    local environmentCard = Global.call("findCard", {
+        cardId = stage.associatedEnvironment.cardId
+    })
+    local counterGuid = environmentCard.getVar("counterGuid")
+    local synergyCounter = getObjectFromGUID(counterGuid)
+    local synergyToAdd = heroCount - synergyCounter.call("getValue")
+
+    if (synergyToAdd <= 0) then
+        Global.call("displayMessage", {
+            message = "The " .. stage.associatedEnvironment.name .. " environment already has maximum synergy.",
+            messageType = Global.getVar("MESSAGE_TYPE_INFO")
+        })
+        return
+    end
+
+    synergyCounter.call("setValue", {
+        value = synergyCounter.call("getValue") + synergyToAdd
+    })
+
+    Global.call("displayMessage", {
+        message = synergyToAdd .. " synergy added to the " .. stage.associatedEnvironment.name .. " environment.",
+        messageType = Global.getVar("MESSAGE_TYPE_INFO")
+    })
+end
+
+function lokiGodOfLiesSwapAvatar(params)
+    if (#currentScenario.avatarOfLokiQueue == 0) then
+        Global.call("displayMessage", {
+            message = "No more Loki Avatars!",
+            messageType = Global.getVar("MESSAGE_TYPE_INFO")
+        })
+        return
+    end
+
+    local villain = currentScenario.villains.avatarOfLoki
+
+    currentScenario.avatarOfLokiQueue = Global.call("shuffleTable", {
+        table = currentScenario.avatarOfLokiQueue
+    })
+
+    local currentStage = currentScenario.currentAvatarOfLokiStage
+    local swappedStage = currentScenario.avatarOfLokiQueue[1]
+
+    table.remove(currentScenario.avatarOfLokiQueue, 1)
+    table.insert(currentScenario.avatarOfLokiQueue, currentStage)
+    currentScenario.currentAvatarOfLokiStage = swappedStage
+
+    local stage = currentScenario.villains.avatarOfLoki.stages[swappedStage]
+    local villainPosition = villain.deckPosition or defaults.villainDeck.position
+    local villainScale = villain.deckScale or defaults.villainDeck.scale
+
+    local oldAvatarCard = Global.call("getDeckOrCardAtPosition", {
+        position = villainPosition
+    })
+    local oldShatterCounter = Global.call("getCounterFromCard", {
+        card = oldAvatarCard
+    })
+    local currentShatter = tonumber(oldShatterCounter.call("getValue"))
+
+    Global.call("deleteCardAtPosition", {
+        position = villainPosition
+    })
+
+    local newAvatarCard = placeVillainCard({
+        villain = villain,
+        cardId = stage.cardId,
+        name = villain.name,
+        position = villainPosition,
+        scale = villainScale,
+        flipped = false,
+        locked = true
+    })
+
+    Wait.frames(function()
+        local newShatterCounter = Global.call("getCounterFromCard", {
+            card = newAvatarCard
+        })
+        newShatterCounter.call("setValue", {
+            value = currentShatter
+        })
+    end, 30)
+end
+
+function lokiGodOfLiesFlipGodOfLies()
+    local godOfLiesCard = Global.call("getDeckOrCardAtPosition", {
+        position = currentScenario.villains.lokiGodOfLies.deckPosition
+    })
+
+    godOfLiesCard.setLock(false)
+    godOfLiesCard.flip()
+
+    Wait.frames(function()
+        godOfLiesCard.setLock(true)
+    end, 60)
+
+    local mode = getMode()
+
+    if (mode == "standard") then
+        lokiGodOfLiesPlaceFocusAttachment()
+    else
+        lokiGodOfLiesFlipFocusAttachment()
+    end
+end
+
+function lokiGodOfLiesGetFocusAttachment()
+    local mode = getMode()
+    local godOfLiesHpCounter = getHpCounterForVillain({
+        villainKey = "lokiGodOfLies"
+    })
+    local godOfLiesHP = tonumber(godOfLiesHpCounter.call("getValue"))
+    local heroCount = getHeroCount()
+    if (godOfLiesHP == 0) then
+        godOfLiesHP = heroCount * 20
+    end -- Handle potential timing issue at start of game
+    local godOfLiesPhase = godOfLiesHP > (heroCount * 10) and 1 or 2
+
+    if (mode == "standard" and godOfLiesPhase < 2) then
+        return nil
+    end
+
+    if (mode == "expert" and godOfLiesPhase == 2) then
+        return "total"
+    end
+
+    return "intense"
+end
+
+function lokiGodOfWarPlaceDarkScepter()
+    local darkScepterCardId = "55036"
+    local cardInPlay = Global.call("findCard", {
+        cardId = darkScepterCardId
+    })
+    local cardFound = false
+    local cardAlreadyAttached = false
+    local message = "Loki has the Dark Scepter!"
+
+    if (cardInPlay and Global.call("isFaceUp", {object = cardInPlay})) then
+        cardFound = true
+
+        cardAlreadyAttached = Global.call("cardIsInZone", {
+            card = cardInPlay,
+            zoneIndex = "attachment"
+        })
+
+        if(cardAlreadyAttached) then
+            message = "Loki already has the Dark Scepter, so he becomes tough!"
+        else
+            Global.call("moveCard", {
+                card = cardInPlay,
+                zoneIndex = "attachment"
+            })
+        end
+    end
+
+    if(not cardFound) then
+        cardFound = Global.call("moveCardFromEncounterDeckById", {
+            cardId = darkScepterCardId,
+            searchInDiscard = true,
+            zoneIndex = "attachment"
+        })
+    end
+
+    if (not cardFound or cardAlreadyAttached) then
+        local avatar = currentScenario.villains.avatarOfLoki
+        Global.call("addStatusToVillain", {
+            villain = avatar,
+            statusType = "tough"
+        })
+    end
+
+    if(not cardFound) then
+        message = "The Dark Scepter could not be found, so Loki becomes tough!"
+    end
+
+    Global.call("displayMessage", {
+        message = message,
+        messageType = Global.getVar("MESSAGE_TYPE_INFO")
+    })
+end

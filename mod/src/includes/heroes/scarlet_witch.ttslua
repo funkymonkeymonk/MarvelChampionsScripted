@@ -5,6 +5,7 @@ heroes["scarletWitch"] = {
     tileImageUrl = "https://steamusercontent-a.akamaihd.net/ugc/1833524706207155774/8D15A1F0160D6D0A006D3FE4F19C1C48421CB454/",
     playmatImageUrl = "https://steamusercontent-a.akamaihd.net/ugc/1861691130254392480/906FA8E7529470D9EFA630D485B3C6C3D3C0C5AC/",
     obligationCardId = "15023",
+    obligationCount = 2,
     teams = "avengers,mutants",
     artVariant = "mutant",
     decks = {

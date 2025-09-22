@@ -54,18 +54,24 @@ function getMainSchemeThreatCounter(params)
     return nil
 end
 
+function getCounterFromCard(params)
+    local card = params.card
+    local counterGuid = card.getVar("counterGuid")
+    local counter = counterGuid and getObjectFromGUID(counterGuid) or nil
+
+    return counter
+end
+
 function removeCounterFromCard(params)
     local card = params.card
     local counterGuid = card.getVar("counterGuid")
     local counter = counterGuid and getObjectFromGUID(counterGuid) or nil
 
     if(counter) then 
-        --if(card.getVar("retainValue")) then
-            local value = counter.call("getValue")
-            card.setVar("retainedValue", value)
-        --end
+      local value = counter.call("getValue")
+      card.setVar("retainedValue", value)
 
-        counter.destruct()
+      counter.destruct()
     end
 
     card.setVar("counterGuid", nil)
@@ -107,7 +113,7 @@ function addThreatCounterToSideScheme(card)
     ) 
 end
  
-function addGeneralCounterToCard(card, cardData)
+function addGeneralCounterToCard(card, cardData) 
     if(card.getVar("counterGuid")) then return end
     if (not cardData) then cardData = getCardData({card = card}) end
  
@@ -141,7 +147,6 @@ function addGeneralCounterToCard(card, cardData)
 end
  
 function addThreatCounterToCard(card, cardData)
-    log("addThreatCounterToCard")
     local counterGuid = card.getVar("counterGuid")
     if(counterGuid and getObjectFromGUID(counterGuid)) then return end
  
@@ -155,7 +160,7 @@ function addThreatCounterToCard(card, cardData)
     
     local value = 0
     local retainedValue = card.getVar("retainedValue")
-    log(retainedValue)
+
     if(retainedValue) then
        value = retainedValue
     else
@@ -176,7 +181,7 @@ function addThreatCounterToCard(card, cardData)
       1
     )    
 end
- 
+
 function addHealthCounterToMinion(card)
     local healthCounterBag = getObjectFromGUID(GUID_HEALTH_COUNTER_BAG)
     local yOffset = - 0.3 + (card.getVar("counterOffset") or 0)
@@ -211,12 +216,62 @@ function addHealthCounterToMinion(card)
       1
     ) 
 end
- 
+
+function addConfiguredCounterToCard(params)
+  local card = params.card
+  local cardData = params.cardData or getCardData({card = card})
+
+  if(not cardData or not cardData.counter) then
+    return
+  end
+
+  addCounterToCard({card = card, counterType = cardData.counter, counterName = cardData.counterName})
+end
+
+function addCounterToCard(params)
+  local card = params.card
+  local counterType = params.counterType
+  local counterName = params.counterName or ""
+  local counterBag
+  local baseScale
+  local baseOffset
+
+  if(counterType == "threat") then
+      counterBag = getObjectFromGUID(GUID_THREAT_COUNTER_BAG)
+  elseif(counterType == "general") then
+      counterBag = getObjectFromGUID(GUID_GENERAL_COUNTER_BAG)
+      baseScale = {0.25, 1.00, 0.25}
+      baseOffset = {0.78, 0.10, 0.42}
+  elseif(counterType == "health") then
+      counterBag = getObjectFromGUID(GUID_HEALTH_COUNTER_BAG)
+  end
+
+  local playerCardScale = Global.getTable("CARD_SCALE_PLAYER")
+  local cardScale = card.getScale()
+  local scaleFactor = cardScale[1] / playerCardScale[1]
+  local counterScale = Vector({baseScale[1] * scaleFactor, baseScale[2], baseScale[3] * scaleFactor})
+  local offset = Vector({baseOffset[1] * scaleFactor, baseOffset[2], baseOffset[3] * scaleFactor})
+  local cardPosition = card.getPosition()
+  local counterPosition = Vector({cardPosition[1] + offset[1], cardPosition[2] + offset[2], cardPosition[3] + offset[3]})
+  
+  local counter = counterBag.takeObject(
+    {
+      position = counterPosition, 
+      smooth = false,
+      callback_function=function(obj)
+          obj.setScale(counterScale)
+          obj.setName(counterName)
+      end
+    })
+
+  card.setVar("counterGuid", counter.getGUID())
+end
+
 function addStatusToVillain(params)
     local villain = params.villain
     local statusType = params.statusType
     local villainCard = getObjectFromGUID(villain.cardGuid)
-  
+  log(villainCard)
     if not cardCanHaveStatus({card = villainCard, statusType = statusType}) then
       return
     end
@@ -234,7 +289,7 @@ function addStatusToMinion(params)
   
     placeStatusToken({card = minionCard, statusType = statusType})
 end
- 
+
 function addStatusToAllHeroes(params)
     local statusType = params.statusType
     local heroManager = getObjectFromGUID(GUID_HERO_MANAGER)
@@ -244,7 +299,7 @@ function addStatusToAllHeroes(params)
       addStatusToHero({playerColor = color, statusType = statusType})
     end
 end
-  
+
 function addStatusToHero(params)
     local playerColor = params.playerColor
     local statusType = params.statusType
@@ -258,7 +313,7 @@ function addStatusToHero(params)
   
     placeStatusToken({card = heroCard, statusType = statusType, playerColor = playerColor})
 end
-  
+
 function cardCanHaveStatus(params)
     local card = params.card
     local cardPosition = card.getPosition()
@@ -266,7 +321,6 @@ function cardCanHaveStatus(params)
     local targetType = Global.call("getCardProperty", {card = card, property = "type"})
     local statusType = params.statusType
   
-    --statusCount = getStatusCount({targetPosition = cardPosition, targetType = targetType, statusType = statusType})
     statusCount = getStatusCount({card = card, statusType = statusType})
   
     local playerColor = card.getVar("playerColor")
@@ -294,7 +348,7 @@ function cardCanHaveStatus(params)
   
     return true
 end
-  
+
 function getStatusCount(params)
     local card = params.card
     local statusType = params.statusType
