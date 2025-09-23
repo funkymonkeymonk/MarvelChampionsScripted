@@ -66,11 +66,6 @@ campaigns[9] = {
         }
     },
     notes={
-        incompleteLog={
-            title="Campaign Log",
-            text="This campaign log is not yet interactive. This will be remedied in the near future.",
-            position={-91.25, 0.56, -23.75}
-        },
         executiveBoard={
             title="Executive Board and A.I.M. Interference",
             text="Copy these cards when starting each new scenario, or they will be deleted when the scenario is cleared.",

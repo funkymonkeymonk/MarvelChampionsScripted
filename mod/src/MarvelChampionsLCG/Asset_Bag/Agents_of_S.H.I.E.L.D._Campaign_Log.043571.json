@@ -3,12 +3,12 @@
     "GUID": "043571",
     "Name": "Custom_Token",
     "Transform": {
-      "posX": 84.1745148,
+      "posX": 95.84912,
       "posY": 2.54552722,
-      "posZ": -50.3062477,
-      "rotX": 5.356236e-9,
+      "posZ": -65.37321,
+      "rotX": -3.12787352e-10,
       "rotY": 180,
-      "rotZ": -4.49286048e-8,
+      "rotZ": -1.3450987e-8,
       "scaleX": 4.3,
       "scaleY": 1,
       "scaleZ": 4.3
@@ -52,7 +52,7 @@
         "Stackable": false
       }
     },
-    "LuaScript": "",
+    "LuaScript": "#include ./Agents_of_S.H.I.E.L.D._Campaign_Log.043571.lua",
     "LuaScriptState": "",
     "XmlUI": ""
   },
