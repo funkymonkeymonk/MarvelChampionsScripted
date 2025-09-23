@@ -3,12 +3,12 @@
     "GUID": "2139f4",
     "Name": "Custom_Token",
     "Transform": {
-      "posX": 59.8837,
-      "posY": 2.271554,
-      "posZ": -75.36764,
-      "rotX": 0.00298253587,
+      "posX": 73.48809,
+      "posY": 2.54552722,
+      "posZ": -62.5242,
+      "rotX": 1.71789154e-7,
       "rotY": 180,
-      "rotZ": 1.846836e-8,
+      "rotZ": -1.172483e-7,
       "scaleX": 4.3,
       "scaleY": 1,
       "scaleZ": 4.3
@@ -52,7 +52,7 @@
         "Stackable": false
       }
     },
-    "LuaScript": "",
+    "LuaScript": "#include ./Age_of_Apocalypse_Campaign_Log.2139f4.lua",
     "LuaScriptState": "",
     "XmlUI": ""
   },
