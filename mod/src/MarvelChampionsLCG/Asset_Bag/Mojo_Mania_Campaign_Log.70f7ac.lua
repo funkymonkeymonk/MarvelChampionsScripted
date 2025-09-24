@@ -127,7 +127,21 @@ function setUpUI()
                 id = "hitPoints3",
                 class = "campaignLogField",
 				characterValidation = "Integer",
-                offsetXY = "-78.5 -10"
+                offsetXY = "-78.5 -1.25"
+            }
+        }, {
+            tag = "InputField",
+            attributes = {
+                id = "supportUpgrade1_3",
+                class = "campaignLogField",
+                offsetXY = "-78.5 -31.25"
+            }
+        }, {
+            tag = "InputField",
+            attributes = {
+                id = "supportUpgrade2_3",
+                class = "campaignLogField",
+                offsetXY = "-78.5 -61.25"
             }
         }, {
             tag = "InputField",
@@ -142,7 +156,21 @@ function setUpUI()
                 id = "hitPoints4",
                 class = "campaignLogField",
 				characterValidation = "Integer",
-                offsetXY = "80 -10"
+                offsetXY = "80 -1.25"
+            }
+        }, {
+            tag = "InputField",
+            attributes = {
+                id = "supportUpgrade1_4",
+                class = "campaignLogField",
+                offsetXY = "80 -31.25"
+            }
+        }, {
+            tag = "InputField",
+            attributes = {
+                id = "supportUpgrade2_4",
+                class = "campaignLogField",
+                offsetXY = "80 -61.25"
             }
         }, {
             tag = "Toggle",
@@ -168,6 +196,13 @@ function setUpUI()
         }, {
             tag = "Toggle",
             attributes = {
+                id = "genreEnvironmentSciFi",
+                class = "campaignLogField",
+                offsetXY = "95.8 -119"
+            }
+        }, {
+            tag = "Toggle",
+            attributes = {
                 id = "genreEnvironmentFantasy",
                 class = "campaignLogField",
                 offsetXY = "22 -145"
@@ -175,9 +210,23 @@ function setUpUI()
         }, {
             tag = "Toggle",
             attributes = {
+                id = "genreEnvironmentSitcom",
+                class = "campaignLogField",
+                offsetXY = "95.8 -145"
+            }
+        }, {
+            tag = "Toggle",
+            attributes = {
                 id = "genreEnvironmentHorror",
                 class = "campaignLogField",
                 offsetXY = "22 -171.6"
+            }
+        }, {
+            tag = "Toggle",
+            attributes = {
+                id = "genreEnvironmentWestern",
+                class = "campaignLogField",
+                offsetXY = "95.8 -171.6"
             }
         }}
     }}
