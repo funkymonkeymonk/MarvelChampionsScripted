@@ -52,7 +52,7 @@
         "Stackable": false
       }
     },
-    "LuaScript": "",
+    "LuaScript": "#include ./Mojo_Mania_Campaign_Log.70f7ac.lua",
     "LuaScriptState": "",
     "XmlUI": ""
   },
