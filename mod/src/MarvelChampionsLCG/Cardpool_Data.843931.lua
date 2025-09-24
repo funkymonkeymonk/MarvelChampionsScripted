@@ -48790,7 +48790,8 @@ PACK_55 = [[
     "attackStar": true,
     "scheme": 2,
     "boost": 2,
-    "linked": "55063"
+    "linked": "55063",
+    "victory": 1
   },
   {
     "name": "Titania",
@@ -48807,7 +48808,8 @@ PACK_55 = [[
     "attackStar": true,
     "scheme": 1,
     "boost": 3,
-    "linked": "55064"
+    "linked": "55064",
+    "victory": 1
   },
   {
     "name": "Whirlwind",
@@ -48824,7 +48826,8 @@ PACK_55 = [[
     "attackStar": true,
     "scheme": 2,
     "boost": 1,
-    "linked": "55065"
+    "linked": "55065",
+    "victory": 1
   },
   {
     "name": "Zzzax",
@@ -48840,7 +48843,8 @@ PACK_55 = [[
     "attack": 2,
     "scheme": 1,
     "boost": 2,
-    "linked": "55066"
+    "linked": "55066",
+    "victory": 1
   },
   {
     "name": "The Trickster Tango",
