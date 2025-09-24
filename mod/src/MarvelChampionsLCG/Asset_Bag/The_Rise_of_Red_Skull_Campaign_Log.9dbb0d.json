@@ -46,14 +46,14 @@
       "ImageScalar": 1,
       "WidthScale": 0,
       "CustomToken": {
-        "Thickness": 0.2,
+        "Thickness": 0.1,
         "MergeDistancePixels": 15,
         "StandUp": false,
         "Stackable": false
       }
     },
     "LuaScript": "#include ./The_Rise_of_Red_Skull_Campaign_Log.9dbb0d.lua",
-    "LuaScriptState": "#include ./The_Rise_of_Red_Skull_Campaign_Log.9dbb0d.state.json",
+    "LuaScriptState": "",
     "XmlUI": ""
   },
   "StatesPaths": {}
