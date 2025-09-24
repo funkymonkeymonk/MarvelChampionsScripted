@@ -52,7 +52,7 @@
         "Stackable": false
       }
     },
-    "LuaScript": "",
+    "LuaScript": "#include ./NeXt_Evolution_Campaign_Log.868463.lua",
     "LuaScriptState": "",
     "XmlUI": ""
   },
