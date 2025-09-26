@@ -46,7 +46,7 @@
       "ImageScalar": 1,
       "WidthScale": 0,
       "CustomToken": {
-        "Thickness": 0.2,
+        "Thickness": 0.1,
         "MergeDistancePixels": 15,
         "StandUp": false,
         "Stackable": false
