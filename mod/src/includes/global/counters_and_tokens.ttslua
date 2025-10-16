@@ -112,77 +112,8 @@ function addThreatCounterToSideScheme(card)
       1
     ) 
 end
- 
-function addGeneralCounterToCard(card, cardData) 
-    if(card.getVar("counterGuid")) then return end
-    if (not cardData) then cardData = getCardData({card = card}) end
- 
-    local counterBag = getObjectFromGUID(GUID_GENERAL_COUNTER_BAG)
-    local cardPosition = card.getPosition()
-    local counterPosition = {cardPosition[1] + 1.30, cardPosition[2] + 0.10, cardPosition[3] + 0.70}
-    local counter = counterBag.takeObject({position = counterPosition, smooth = false})
-    card.setVar("counterGuid", counter.getGUID())
-    
-    local value = 0
-    local retainedValue = card.getVar("retainedValue")
-    if(retainedValue) then
-       value = retainedValue
-    else
-       --TODO: Extract this calculation into a function?
-       local baseValue = cardData.counterValue and tonumber(cardData.counterValue) or 0
-       local valuePerHero = cardData.counterValuePerHero and tonumber(cardData.counterValuePerHero) or 0
-       local heroManager = getObjectFromGUID(GUID_HERO_MANAGER)
-       local heroCount = heroManager.call("getHeroCount")
-       value = baseValue + (heroCount * valuePerHero)   
-    end
-  
-    Wait.frames(
-       function()
-          counter.setScale({0.45, 1.00, 0.45})
-          counter.setName(cardData.counterName or "")
-          counter.call("setValue", {value = value})
-      end,
-      1
-    )    
-end
- 
-function addThreatCounterToCard(card, cardData)
-    local counterGuid = card.getVar("counterGuid")
-    if(counterGuid and getObjectFromGUID(counterGuid)) then return end
- 
-    if (not cardData) then cardData = getCardData({card = card}) end
- 
-    local counterBag = getObjectFromGUID(GUID_THREAT_COUNTER_BAG)
-    local cardPosition = card.getPosition()
-    local counterPosition = {cardPosition[1] + 1.30, cardPosition[2] + 0.10, cardPosition[3] + 0.70}
-    local counter = counterBag.takeObject({position = counterPosition, smooth = false})
-    card.setVar("counterGuid", counter.getGUID())
-    
-    local value = 0
-    local retainedValue = card.getVar("retainedValue")
 
-    if(retainedValue) then
-       value = retainedValue
-    else
-       --TODO: Extract this calculation into a function?
-       local baseValue = cardData.counterValue and tonumber(cardData.counterValue) or 0
-       local valuePerHero = cardData.counterValuePerHero and tonumber(cardData.counterValuePerHero) or 0
-       local heroManager = getObjectFromGUID(GUID_HERO_MANAGER)
-       local heroCount = heroManager.call("getHeroCount")
-       value = baseValue + (heroCount * valuePerHero)
-    end
-  
-    Wait.frames(
-       function()
-          counter.setScale({0.56, 1.00, 0.56})
-          counter.setName(cardData.counterName or "")
-          counter.call("setValue", {value = value})
-      end,
-      1
-    )    
-end
-
-function addHealthCounterToMinion(card)
+  function addHealthCounterToMinion(card)
     local healthCounterBag = getObjectFromGUID(GUID_HEALTH_COUNTER_BAG)
     local yOffset = - 0.3 + (card.getVar("counterOffset") or 0)
  
@@ -219,13 +150,30 @@ end
 
 function addConfiguredCounterToCard(params)
   local card = params.card
+
+  local counterGuid = card.getVar("counterGuid")
+  if(counterGuid and getObjectFromGUID(counterGuid)) then return end
+
   local cardData = params.cardData or getCardData({card = card})
 
   if(not cardData or not cardData.counter) then
     return
   end
 
-  addCounterToCard({card = card, counterType = cardData.counter, counterName = cardData.counterName})
+  local value = 0
+  local retainedValue = card.getVar("retainedValue")
+
+  if(retainedValue) then
+      value = retainedValue
+  else
+      local baseValue = cardData.counterValue and tonumber(cardData.counterValue) or 0
+      local valuePerHero = cardData.counterValuePerHero and tonumber(cardData.counterValuePerHero) or 0
+      local heroManager = getObjectFromGUID(GUID_HERO_MANAGER)
+      local heroCount = heroManager.call("getHeroCount")
+      value = baseValue + (heroCount * valuePerHero)
+  end
+
+  addCounterToCard({card = card, counterType = cardData.counter, counterName = cardData.counterName, value = value})
 end
 
 function addCounterToCard(params)
@@ -235,15 +183,20 @@ function addCounterToCard(params)
   local counterBag
   local baseScale
   local baseOffset
+  local value = params.value or 0
 
   if(counterType == "threat") then
       counterBag = getObjectFromGUID(GUID_THREAT_COUNTER_BAG)
+      baseScale = {0.34, 1.00, 0.34}
+      baseOffset = {0.78, 0.10, 0.47}
   elseif(counterType == "general") then
       counterBag = getObjectFromGUID(GUID_GENERAL_COUNTER_BAG)
-      baseScale = {0.25, 1.00, 0.25}
-      baseOffset = {0.78, 0.10, 0.42}
+      baseScale = {0.27, 1.00, 0.27}
+      baseOffset = {0.78, 0.10, 0.47}
   elseif(counterType == "health") then
       counterBag = getObjectFromGUID(GUID_HEALTH_COUNTER_BAG)
+      baseScale = {0.31, 1.00, 0.31}
+      baseOffset = {0.78, 0.10, 0.42}
   end
 
   local playerCardScale = Global.getTable("CARD_SCALE_PLAYER")
@@ -259,8 +212,12 @@ function addCounterToCard(params)
       position = counterPosition, 
       smooth = false,
       callback_function=function(obj)
+        Wait.frames(function() 
           obj.setScale(counterScale)
           obj.setName(counterName)
+          obj.call("setValue", {value = value})
+        end, 
+        1)
       end
     })
 
@@ -271,7 +228,7 @@ function addStatusToVillain(params)
     local villain = params.villain
     local statusType = params.statusType
     local villainCard = getObjectFromGUID(villain.cardGuid)
-  log(villainCard)
+  
     if not cardCanHaveStatus({card = villainCard, statusType = statusType}) then
       return
     end

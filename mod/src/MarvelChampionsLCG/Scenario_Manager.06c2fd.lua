@@ -53,6 +53,7 @@ function onload(saved_data)
     loadSavedData(saved_data)
     createContextMenu()
     -- layOutScenarios()
+    self.setVar("loaded", true)
 end
 
 function clearData()
@@ -81,7 +82,8 @@ function getScenarios()
 end
 
 function isScenarioInProgress()
-    return currentScenario and currentScenario.inProgress
+    log("currentScenario: " .. tostring(currentScenario) .. ", inProgress: " .. tostring(currentScenario and currentScenario.inProgress))
+    return currentScenario and currentScenario.inProgress or false
 end
 
 function getCurrentScenarioKey()
@@ -1323,7 +1325,7 @@ function placeDeck(deck)
 
     local linkedCards = spawnedDeck.getGMNotes()
 
-    if (linkedCards) then
+    if (linkedCards and string.len(linkedCards) > 0) then
         local linkedCardPosition = {-12.75, 0.51, 42.75}
         local labelPosition = Vector(linkedCardPosition) + Vector({0, 0, -2.25})
 

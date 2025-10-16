@@ -106,14 +106,8 @@ function onObjectEnterZone(zone, card)
             end
         end
 
-        local counter = cardData.counter
-
-        if (counter) then
-            if (counter == "general") then
-                addGeneralCounterToCard(card, cardData)
-            elseif (counter == "threat") then
-                addThreatCounterToCard(card, cardData)
-            end
+        if (cardData.counter) then
+            addConfiguredCounterToCard({card = card, cardData = cardData})
         end
     end, function()
         return card.isDestroyed() or card.resting

@@ -48,14 +48,6 @@ scenarios["juggernaut"] =
             scale=Vector(Global.getVar("CARD_SCALE_PLAYER"))
         }
     },
-    counters={
-        momentum={
-            type="general",
-            position={2.37, 1.13, 21.03},
-            scale={0.52, 1.00, 0.52},
-            locked=true
-        }
-    },
     decks={
         encounterDeck={
             name="On the Run Encounter Deck",

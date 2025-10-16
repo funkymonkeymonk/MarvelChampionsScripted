@@ -564,7 +564,6 @@ function displayScenarioUI()
 
     Global.UI.setXmlTable(scenarioUI)
     local xml = Global.UI.getXml()
-    log("xml: " .. xml)
 end
 
 function selectScenario(scenarioKey)

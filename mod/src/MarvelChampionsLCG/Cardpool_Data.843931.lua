@@ -1628,11 +1628,14 @@ PACK_12 = [[
     "aspect": "encounter",
     "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/12028.jpg",
-    "text": "Attach to Yellowjacket, if able. If you cannot, attach to the villain.\nUses (3 counters).\n[star] <b>Forced Response:</b> After attached enemy activates, remove 1 size counter from here.",
+    "text": "Attach to Yellowjacket, if able. If you cannot, attach to the villain.\nUses (3 size counters).\n[star] <b>Forced Response:</b> After attached enemy activates, remove 1 size counter from here.",
     "attack": 2,
     "deckLimit": 2,
     "scheme": 2,
-    "attackStar": true
+    "attackStar": true,
+    "counter": "general",
+    "counterName": "Size",
+    "counterValue": 3
   },
   {
     "name": "Yellowjacket's Plan",
@@ -3495,7 +3498,10 @@ PACK_16 = [[
     "traits": "Tech. Weapon.",
     "cost": 2,
     "deckLimit": 3,
-    "resourcePhysical": 1
+    "resourcePhysical": 1,
+    "counter": "general",
+    "counterName": "Charge",
+    "counterValue": 3
   },
   {
     "name": "Groot",
@@ -4828,7 +4834,11 @@ PACK_16 = [[
     "traits": "Condition.",
     "attack": 1,
     "attackStar": true,
-    "boost": 2
+    "boost": 2,
+    "counter": "general",
+    "counterName": "Fury",
+    "counterValue": 1,
+    "counterValuePerHero": 1
   },
   {
     "name": "Cut the Power",
@@ -7014,7 +7024,10 @@ PACK_20 = [[
     "traits": "Tech. Weapon.",
     "cost": 3,
     "deckLimit": 3,
-    "resourceMental": 1
+    "resourceMental": 1,
+    "counter": "general",
+    "counterName": "Charge",
+    "counterValue": 2
   },
   {
     "name": "Star-Lord",
@@ -7077,7 +7090,10 @@ PACK_20 = [[
     "traits": "Tech. Weapon.",
     "cost": 2,
     "deckLimit": 3,
-    "resourceEnergy": 1
+    "resourceEnergy": 1,
+    "counter": "general",
+    "counterName": "Charge",
+    "counterValue": 3
   },
   {
     "name": "Fusillade",
@@ -10188,7 +10204,10 @@ PACK_22 = [[
     "traits": "Condition.",
     "cost": 1,
     "deckLimit": 2,
-    "resourceMental": 1
+    "resourceMental": 1,
+    "counter": "general",
+    "counterName": "Training",
+    "counterValue": 2
   },
   {
     "name": "Honorary Guardian",
@@ -10503,7 +10522,10 @@ PACK_23 = [[
     "traits": "S.H.I.E.L.D.",
     "cost": 2,
     "deckLimit": 3,
-    "resourceEnergy": 1
+    "resourceEnergy": 1,
+    "counter": "general",
+    "counterName": "Command",
+    "counterValue": 3
   },
   {
     "name": "Sneak Attack",
@@ -10610,7 +10632,10 @@ PACK_23 = [[
     "traits": "Condition.",
     "cost": 1,
     "deckLimit": 2,
-    "resourceMental": 1
+    "resourceMental": 1,
+    "counter": "general",
+    "counterName": "Training",
+    "counterValue": 2
   },
   {
     "name": "Stand Together",
@@ -11962,7 +11987,10 @@ PACK_25 = [[
     "traits": "Condition.",
     "cost": 1,
     "deckLimit": 2,
-    "resourceMental": 1
+    "resourceMental": 1,
+    "counter": "general",
+    "counterName": "Training",
+    "counterValue": 2
   },
   {
     "name": "Anticipation",
@@ -12401,7 +12429,10 @@ PACK_26 = [[
     "traits": "Condition.",
     "cost": 1,
     "deckLimit": 2,
-    "resourceMental": 1
+    "resourceMental": 1,
+    "counter": "general",
+    "counterName": "Assault",
+    "counterValue": 2
   },
   {
     "name": "Chance Encounter",
@@ -12983,7 +13014,10 @@ PACK_27 = [[
     "traits": "Item. Tech.",
     "cost": 1,
     "deckLimit": 2,
-    "resourcePhysical": 1
+    "resourcePhysical": 1,
+    "counter": "general",
+    "counterName": "Web",
+    "counterValue": 3
   },
   {
     "name": "Monica Chang",
@@ -13061,7 +13095,10 @@ PACK_27 = [[
     "traits": "Persona. S.H.I.E.L.D.",
     "cost": 1,
     "deckLimit": 3,
-    "resourceEnergy": 1
+    "resourceEnergy": 1,
+    "counter": "general",
+    "counterName": "Backup",
+    "counterValue": 3
   },
   {
     "code": "27045",
@@ -13836,7 +13873,10 @@ PACK_27 = [[
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/27077B.jpg",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27077A.jpg",
     "text": "If there are at least 3[per_hero] chime counters here, flip this card.\n<b>Interrupt: </b> When any amount of damage would be dealt to Venom by an attack, (you may) place that many chime counters here instead.",
-    "traits": "Location. Quiet."
+    "traits": "Location. Quiet.",
+    "counter": "general",
+    "counterName": "Chime",
+    "counterValue": 0
   },
   {
     "name": "Bell Tower",
@@ -13859,7 +13899,10 @@ PACK_27 = [[
     "traits": "Condition.",
     "attack": 1,
     "attackStar": true,
-    "boostStar": true
+    "boostStar": true,
+    "counter": "general",
+    "counterName": "Rage",
+    "counterValue": 2
   },
   {
     "name": "Guard the Bell Tower",
@@ -14691,7 +14734,10 @@ PACK_27 = [[
     "traits": "Tech. Weapon.",
     "attack": 1,
     "attackStar": true,
-    "boost": 2
+    "boost": 2,
+    "counter": "general",
+    "counterName": "Bomb",
+    "counterValue": 2
   },
   {
     "name": "Incendiary Bombs",
@@ -14704,7 +14750,10 @@ PACK_27 = [[
     "traits": "Tech. Weapon.",
     "attack": 1,
     "attackStar": true,
-    "boost": 1
+    "boost": 1,
+    "counter": "general",
+    "counterName": "Bomb",
+    "counterValue": 2
   },
   {
     "name": "Smoke Bombs",
@@ -14717,7 +14766,10 @@ PACK_27 = [[
     "traits": "Tech. Weapon.",
     "attack": 1,
     "attackStar": true,
-    "boost": 1
+    "boost": 1,
+    "counter": "general",
+    "counterName": "Bomb",
+    "counterValue": 2
   },
   {
     "name": "Limitless Supply",
@@ -15923,7 +15975,10 @@ PACK_29 = [[
     "traits": "Location. S.H.I.E.L.D.",
     "cost": 3,
     "deckLimit": 3,
-    "resourceMental": 1
+    "resourceMental": 1,
+    "counter": "general",
+    "counterName": "Research",
+    "counterValue": 3
   },
   {
     "code": "29021",
@@ -17006,7 +17061,10 @@ PACK_31 = [[
     "traits": "Tech.",
     "cost": 3,
     "deckLimit": 3,
-    "resourceEnergy": 1
+    "resourceEnergy": 1,
+    "counter": "general",
+    "counterName": "Energy",
+    "counterValue": 6
   },
   {
     "name": "Spider-Tingle",
@@ -17375,7 +17433,10 @@ PACK_32 = [[
     "traits": "Superpower.",
     "cost": 2,
     "deckLimit": 2,
-    "resourceEnergy": 1
+    "resourceEnergy": 1,
+    "counter": "general",
+    "counterName": "Steel",
+    "counterValue": 2
   },
   {
     "name": "Made of Rage",
@@ -21222,7 +21283,10 @@ PACK_35 = [[
     "traits": "Skill.",
     "cost": 2,
     "deckLimit": 3,
-    "resourceMental": 1
+    "resourceMental": 1,
+    "counter": "general",
+    "counterName": "Warrior",
+    "counterValue": 3
   },
   {
     "name": "Outta My Way!",
@@ -21742,7 +21806,10 @@ PACK_36 = [[
     "traits": "Skill.",
     "cost": 1,
     "deckLimit": 3,
-    "resourcePhysical": 1
+    "resourcePhysical": 1,
+    "counter": "general",
+    "counterName": "Leadership",
+    "counterValue": 3
   },
   {
     "name": "\"To Me, My X-Men!\"",
@@ -22147,7 +22214,10 @@ PACK_37 = [[
     "traits": "Skill.",
     "cost": 2,
     "deckLimit": 3,
-    "resourceEnergy": 1
+    "resourceEnergy": 1,
+    "counter": "general",
+    "counterName": "Operative",
+    "counterValue": 3
   },
   {
     "code": "37014",
@@ -22582,7 +22652,10 @@ PACK_38 = [[
     "traits": "Skill.",
     "cost": 2,
     "deckLimit": 3,
-    "resourcePhysical": 1
+    "resourcePhysical": 1,
+    "counter": "general",
+    "counterName": "Judo",
+    "counterValue": 3
   },
   {
     "code": "38015",
@@ -23151,7 +23224,10 @@ PACK_39 = [[
     "text": "Attach to Spiral.\nUses (3 sword counters).\n[star] Spiral gets +1 ATK for each sword counter on this card.\n<b>Hero Action</b>: If Spiral is on her [Cornered] side, spend [physical] [physical] resources → remove 1 sword counter from this card.",
     "traits": "Weapon.",
     "attackStar": true,
-    "boost": 3
+    "boost": 3,
+    "counter": "general",
+    "counterName": "Sword",
+    "counterValue": 3
   },
   {
     "name": "Erratic Teleportation",
@@ -23532,7 +23608,10 @@ PACK_39 = [[
     "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/39048.jpg",
     "text": "Surge. Uses (3 stake counters).",
-    "traits": "Item."
+    "traits": "Item.",
+    "counter": "general",
+    "counterName": "Stake",
+    "counterValue": 3
   },
   {
     "name": "Cultist",
@@ -25772,7 +25851,10 @@ PACK_40 = [[
     "attack": 2,
     "scheme": 1,
     "attackStar": true,
-    "stage": 1
+    "stage": 1,
+    "counter": "general",
+    "counterName": "Momentum",
+    "counterValue": 1
   },
   {
     "name": "Juggernaut",
@@ -25789,7 +25871,10 @@ PACK_40 = [[
     "attack": 3,
     "scheme": 1,
     "attackStar": true,
-    "stage": 2
+    "stage": 2,
+    "counter": "general",
+    "counterName": "Momentum",
+    "counterValue": 1
   },
   {
     "name": "Juggernaut",
@@ -29748,7 +29833,10 @@ PACK_45 = [[
     "traits": "Persona. Psionic.",
     "cost": 3,
     "deckLimit": 1,
-    "resourceMental": 1
+    "resourceMental": 1,
+    "counter": "general",
+    "counterName": "Psi",
+    "counterValue": 3
   },
   {
     "name": "Bloodgem",
@@ -30874,7 +30962,7 @@ PACK_45 = [[
   {
     "name": "The Apocalypse Solution",
     "code": "45111",
-    "type": "attachment",
+    "type": "side_scheme",
     "aspect": "encounter",
     "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/45111.jpg",
@@ -32905,7 +32993,10 @@ PACK_47 = [[
     "traits": "Item.",
     "cost": 2,
     "deckLimit": 3,
-    "resourceEnergy": 1
+    "resourceEnergy": 1,
+    "counter": "general",
+    "counterName": "Charge",
+    "counterValue": 3
   },
   {
     "code": "47020",
@@ -35082,7 +35173,10 @@ PACK_03 = [[
     "traits": "Condition.",
     "cost": 2,
     "deckLimit": 3,
-    "resourceMental": 1
+    "resourceMental": 1,
+    "counter": "general",
+    "counterName": "Mental",
+    "counterValue": 3
   },
   {
     "name": "Man Out of Time",
@@ -35284,7 +35378,10 @@ PACK_01 = [[
     "traits": "Item. Tech.",
     "cost": 1,
     "deckLimit": 2,
-    "resourcePhysical": 1
+    "resourcePhysical": 1,
+    "counter": "general",
+    "counterName": "Web",
+    "counterValue": 3
   },
   {
     "name": "Webbed Up",
@@ -36092,7 +36189,10 @@ PACK_01 = [[
     "traits": "S.H.I.E.L.D.",
     "cost": 3,
     "deckLimit": 3,
-    "resourceEnergy": 1
+    "resourceEnergy": 1,
+    "counter": "general",
+    "counterName": "Attack",
+    "counterValue": 3
   },
   {
     "name": "Combat Training",
@@ -36211,7 +36311,10 @@ PACK_01 = [[
     "traits": "S.H.I.E.L.D.",
     "cost": 2,
     "deckLimit": 3,
-    "resourceMental": 1
+    "resourceMental": 1,
+    "counter": "general",
+    "counterName": "Snoop",
+    "counterValue": 3
   },
   {
     "name": "Heroic Intuition",
@@ -36456,7 +36559,10 @@ PACK_01 = [[
     "traits": "S.H.I.E.L.D.",
     "cost": 3,
     "deckLimit": 3,
-    "resourceEnergy": 1
+    "resourceEnergy": 1,
+    "counter": "general",
+    "counterName": "Medical",
+    "counterValue": 3
   },
   {
     "name": "Armored Vest",
@@ -36719,7 +36825,10 @@ PACK_01 = [[
     "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/01098.jpg",
     "text": "Attach to Rhino.\n<b>Forced Interrupt</b>: When any amount of damage would be dealt to Rhino, place it here instead. Then, if there is at least 5 damage here, discard Armored Rhino Suit.",
-    "traits": "Armor."
+    "traits": "Armor.",
+    "counter": "health",
+    "counterName": "Damage",
+    "counterValue": 0
   },
   {
     "name": "Charge",
@@ -38243,7 +38352,10 @@ PACK_09 = [[
     "traits": "Persona.",
     "cost": 1,
     "deckLimit": 1,
-    "resourceMental": 1
+    "resourceMental": 1,
+    "counter": "general",
+    "counterName": "Medical",
+    "counterValue": 3
   },
   {
     "name": "Unflappable",
@@ -39427,7 +39539,10 @@ PACK_05 = [[
     "traits": "Item. Tech.",
     "cost": 2,
     "deckLimit": 3,
-    "resourceEnergy": 1
+    "resourceEnergy": 1,
+    "counter": "general",
+    "counterName": "Reflection",
+    "counterValue": 3
   },
   {
     "name": "Lockjaw",
@@ -39490,7 +39605,10 @@ PACK_05 = [[
     "traits": "Condition.",
     "cost": 2,
     "deckLimit": 3,
-    "resourceEnergy": 1
+    "resourceEnergy": 1,
+    "counter": "general",
+    "counterName": "Energy",
+    "counterValue": 3
   },
   {
     "name": "Melee",
@@ -39995,7 +40113,10 @@ PACK_06 = [[
     "traits": "Condition.",
     "cost": 2,
     "deckLimit": 3,
-    "resourcePhysical": 1
+    "resourcePhysical": 1,
+    "counter": "general",
+    "counterName": "Physical",
+    "counterValue": 3
   },
   {
     "name": "Odin's Anger",
@@ -41119,7 +41240,10 @@ PACK_04 = [[
     "traits": "Weapon.",
     "deckLimit": 1,
     "attackStar": true,
-    "boost": 3
+    "boost": 3,
+    "counter": "general",
+    "counterName": "Ammo",
+    "counterValuePerHero": 2
   },
   {
     "name": "Crossbones' Armor",
@@ -43246,7 +43370,10 @@ PACK_50 = [[
     "traits": "Persona. S.H.I.E.L.D.",
     "cost": 1,
     "deckLimit": 1,
-    "resourceMental": 1
+    "resourceMental": 1,
+    "counter": "general",
+    "counterName": "Staff",
+    "counterValue": 3
   },
   {
     "name": "The Iliad",
@@ -43260,7 +43387,10 @@ PACK_50 = [[
     "traits": "S.H.I.E.L.D. Vehicle.",
     "cost": 6,
     "deckLimit": 1,
-    "resourceEnergy": 1
+    "resourceEnergy": 1,
+    "counter": "general",
+    "counterName": "Mission",
+    "counterValue": 3
   },
   {
     "name": "Life Model Decoy",
@@ -43371,7 +43501,10 @@ PACK_50 = [[
     "traits": "S.H.I.E.L.D. Vehicle.",
     "cost": 6,
     "deckLimit": 1,
-    "resourcePhysical": 1
+    "resourcePhysical": 1,
+    "counter": "general",
+    "counterName": "Deploy",
+    "counterValue": 2
   },
   {
     "name": "The Bellerophon",
@@ -43385,7 +43518,10 @@ PACK_50 = [[
     "traits": "S.H.I.E.L.D. Vehicle.",
     "cost": 6,
     "deckLimit": 1,
-    "resourceEnergy": 1
+    "resourceEnergy": 1,
+    "counter": "general",
+    "counterName": "Missile",
+    "counterValue": 3
   },
   {
     "name": "The Douglass",
@@ -43399,7 +43535,10 @@ PACK_50 = [[
     "traits": "S.H.I.E.L.D. Vehicle.",
     "cost": 6,
     "deckLimit": 1,
-    "resourceMental": 1
+    "resourceMental": 1,
+    "counter": "general",
+    "counterName": "Operation",
+    "counterValue": 3
   },
   {
     "name": "The Pericles",
@@ -43413,7 +43552,10 @@ PACK_50 = [[
     "traits": "S.H.I.E.L.D. Vehicle.",
     "cost": 6,
     "deckLimit": 1,
-    "resourceEnergy": 1
+    "resourceEnergy": 1,
+    "counter": "general",
+    "counterName": "Supply",
+    "counterValue": 2
   },
   {
     "code": "50021",
@@ -44383,7 +44525,10 @@ PACK_50 = [[
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/50092.jpg",
     "text": "Attach to Batroc.\nUses (4 leap counters).\n<b>Forced Interrupt</b>: When Batroc would take any amount of damage, prevent 2 of that damage and remove 1 leap counter from here.\n<hr />\n[star] <b>Boost</b>: Attach this card to Batroc.",
     "traits": "Condition.",
-    "boostStar": true
+    "boostStar": true,
+    "counter": "general",
+    "counterName": "Leap",
+    "counterValue": 4
   },
   {
     "name": "Embassy Guard",
@@ -44781,7 +44926,10 @@ PACK_50 = [[
     "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/50117.jpg",
     "text": "Attach to M.O.D.O.K.\nAttached enemy gains stalwart.\n<b>Forced Interrupt</b>: When attached enemy would take any amount of damage, place it here instead. Then, if there is at least 5 damage here, discard this card.\n<hr />\n[star] <b>Boost</b>: Attach this card to the activating enemy.",
-    "boostStar": true
+    "boostStar": true,
+    "counter": "health",
+    "counterName": "Damage",
+    "counterValue": 0
   },
   {
     "name": "Psionic Machetes",
@@ -45039,7 +45187,10 @@ PACK_50 = [[
     "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/50134.jpg",
     "text": "Uses (4 bystander counters).\n<b>Forced Response</b>: After you attack an enemy or an enemy attacks you, either spend 1 resource of any type or place 1 threat on the main scheme (2 threat instead in expert mode). Remove 1 bystander counter from here.",
-    "boost": 2
+    "boost": 2,
+    "counter": "general",
+    "counterName": "Bystander",
+    "counterValue": 4
   },
   {
     "name": "The Coming Storm",
@@ -45349,7 +45500,10 @@ PACK_50 = [[
     "text": "Attach to MACH-IV. Otherwise, attach to the villain.\nUses (4 missile counters).\n[star] <b>Forced Response</b>: After attached enemy attacks you, remove 1 missile counter from here and take 2 indirect damage.",
     "traits": "Tech. Weapon.",
     "attackStar": true,
-    "boost": 2
+    "boost": 2,
+    "counter": "general",
+    "counterName": "Missile",
+    "counterValue": 4
   },
   {
     "name": "Aerial Dogfight",
@@ -46318,7 +46472,10 @@ PACK_51 = [[
     "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/51031.jpg",
     "text": "<b><i>Give to the Shuri player.</i></b>\nUses (4 doubt counters). Victory 0.\nIncrease the resource cost of each card you play by 1.\n<b>Forced Response</b>:After you thwart, attack, or defend, remove 1 doubt counter from here.",
-    "boost": 2
+    "boost": 2,
+    "counter": "general",
+    "counterName": "Doubt",
+    "counterValue": 4
   },
   {
     "name": "Klaw",
@@ -46417,7 +46574,10 @@ PACK_51 = [[
     "traits": "Persona. S.H.I.E.L.D.",
     "cost": 1,
     "deckLimit": 3,
-    "resourceMental": 1
+    "resourceMental": 1,
+    "counter": "general",
+    "counterName": "Target",
+    "counterValue": 2
   },
   {
     "name": "Joystick",
@@ -46760,7 +46920,10 @@ PACK_52 = [[
     "traits": "Tech. Weapon.",
     "cost": 2,
     "deckLimit": 3,
-    "resourceEnergy": 1
+    "resourceEnergy": 1,
+    "counter": "general",
+    "counterName": "Charge",
+    "counterValue": 2
   },
   {
     "name": "Madame Web",
@@ -47065,7 +47228,10 @@ PACK_53 = [[
     "traits": "Aerial. Bird.",
     "cost": 2,
     "deckLimit": 1,
-    "resourceEnergy": 1
+    "resourceEnergy": 1,
+    "counter": "general",
+    "counterName": "Bird",
+    "counterValue": 5
   },
   {
     "name": "Soup Kitchen",
@@ -47377,7 +47543,10 @@ PACK_53 = [[
     "traits": "S.H.I.E.L.D.",
     "cost": 2,
     "deckLimit": 3,
-    "resourceEnergy": 1
+    "resourceEnergy": 1,
+    "counter": "general",
+    "counterName": "Alert",
+    "counterValue": 3
   },
   {
     "name": "Harlem's Protector",
@@ -47388,7 +47557,10 @@ PACK_53 = [[
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/53029.jpg",
     "text": "<b><i>Give to the Sam Wilson player.</i></b>\nUses (3 emergency counters). Victory 0.\n<b>Alter-Ego Action</b>: Spend 1 resource of any type → remove 1 emergency counter from here.",
     "boost": 2,
-    "hazard": 1
+    "hazard": 1,
+    "counter": "general",
+    "counterName": "Emergency",
+    "counterValue": 3
   },
   {
     "name": "Viper",
@@ -47789,7 +47961,10 @@ PACK_54 = [[
     "traits": "Tech. Weapon.",
     "cost": 3,
     "deckLimit": 1,
-    "resourceEnergy": 1
+    "resourceEnergy": 1,
+    "counter": "general",
+    "counterName": "Ammo",
+    "counterValue": 3
   },
   {
     "name": "Man on the Wall",
@@ -47816,7 +47991,10 @@ PACK_54 = [[
     "traits": "Weapon.",
     "cost": 1,
     "deckLimit": 3,
-    "resourceMental": 1
+    "resourceMental": 1,
+    "counter": "general",
+    "counterName": "Ammo",
+    "counterValue": 3
   },
   {
     "code": "54021",

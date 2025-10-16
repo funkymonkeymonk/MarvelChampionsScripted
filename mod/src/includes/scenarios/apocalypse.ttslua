@@ -118,6 +118,15 @@ scenarios["apocalypse"] =
     }
 }
 
+function setUpSchemeStage_apocalypse_main(params)
+  local stage = params.stage
+  local stageNumber = string.sub(stage.key, -1)
+
+  if(stageNumber ~= "1") then return end
+
+  Global.call("moveCardFromEncounterDeckById", {cardId="45071", zoneIndex="sideScheme"})
+end
+
 function placeApocalypsePrelate()
   if(not currentScenario.prelates) then
     setupApocalypsePrelates()

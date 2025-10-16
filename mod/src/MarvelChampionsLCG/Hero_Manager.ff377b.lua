@@ -867,7 +867,7 @@ function setFirstPlayer(params)
   end
 
   playmatPosition = playmat.getPosition()
-  playerToken.setPositionSmooth(playmatPosition + Vector{11.9, 0.3, 6.3}, false, false)
+  playerToken.setPositionSmooth(playmatPosition + Vector{12.05, 0.3, 6.45}, false, false)
   
   local turnCounter = getObjectFromGUID("turncounter")
   turnCounter.call('add_subtract')
