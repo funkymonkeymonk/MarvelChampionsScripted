@@ -30,12 +30,14 @@ function onObjectNumberTyped(object, playerColor, number)
 end
 
 function onObjectEnterZone(zone, card)
-    local retain = card.getVar("retainValue")
-    local retainedValue = card.getVar("retainedValue")
-    local onEnterFunction = zone.getVar("onEnterFunction")
+    local zoneDef = getZoneDefinition({zone = zone})
+    if (not zoneDef) then return end
+
+    local retain = getCardValue({cardGuid = card.getGUID(), property = "retainValue"})
+    local retainedValue = getCardValue({cardGuid = card.getGUID(), property = "retainedValue"})
+    local onEnterFunction = zoneDef.onEnterFunction
 
     if (onEnterFunction) then
-        local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
         scenarioManager.call(onEnterFunction, {
             zone = zone,
             item = card
@@ -50,8 +52,8 @@ function onObjectEnterZone(zone, card)
         return
     end
 
-    local zoneType = zone.getVar("zoneType")
-    local zoneIndex = zone.getVar("zoneIndex")
+    local zoneType = zoneDef.zoneType or zoneDef.zoneIndex
+    local zoneIndex = zoneDef.zoneIndex
 
     if (not zoneType) then
         return
@@ -66,10 +68,10 @@ function onObjectEnterZone(zone, card)
         return
     end
 
-    local playerColor = zone.getVar("playerColor")
+    local playerColor = zoneDef.playerColor
 
     if (playerColor) then
-        card.setVar("playerColor", playerColor)
+        setCardValue({cardGuid = card.getGUID(), property = "playerColor", value = playerColor})
     end
 
     Wait.frames(function()
@@ -106,14 +108,8 @@ function onObjectEnterZone(zone, card)
             end
         end
 
-        local counter = cardData.counter
-
-        if (counter) then
-            if (counter == "general") then
-                addGeneralCounterToCard(card, cardData)
-            elseif (counter == "threat") then
-                addThreatCounterToCard(card, cardData)
-            end
+        if (cardData.counter) then
+            addConfiguredCounterToCard({card = card, cardData = cardData})
         end
     end, function()
         return card.isDestroyed() or card.resting
@@ -169,7 +165,10 @@ function onObjectLeaveZone(zone, card)
         return
     end
 
-    local zoneType = zone.getVar("zoneType")
+    local zoneDef = getZoneDefinition({zone = zone})
+    if (not zoneDef) then return end
+
+    local zoneType = zoneDef.zoneType or zoneDef.zoneIndex
     if (not zoneType) then
         return
     end
@@ -184,7 +183,7 @@ function onObjectLeaveZone(zone, card)
         return
     end
 
-    card.setVar("playerColor", nil)
+    setCardValue({cardGuid = card.getGUID(), property = "retainValue", value = nil})
 
     removeCounterFromCard({
         card = card
@@ -268,13 +267,13 @@ function onPlayerAction(player, action, targets)
         end
 
         local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
-        local zones = scenarioManager.call("getZonesByType", {
+        local zoneDefs = scenarioManager.call("getZoneDefsByType", {
             zoneType = zoneType
         })
 
-        for _, zone in ipairs(zones) do
+        for _, zoneDef in ipairs(zoneDefs) do
             local pingPosition = getNewZoneCardPosition({
-                zoneIndex = zone.getVar("zoneIndex"),
+                zoneIndex = zoneDef.zoneIndex,
                 forNextCard = true
             })
 
@@ -285,4 +284,10 @@ function onPlayerAction(player, action, targets)
     end
 
     return true
+end
+
+function onObjectDestroy(object)
+    if (not isCard(object)) then return end
+
+    setCardValue({cardGuid = object.getGUID(), property = "retainedValue", value = nil})
 end

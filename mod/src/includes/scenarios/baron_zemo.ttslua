@@ -209,7 +209,7 @@ function baronZemoConvertSecretsToThreat(executiveBoard)
         local officerCard = Global.call("findCard", {cardId = officer.officerCardId})
 
         if(not Global.call("isFaceUp", {object = officerCard})) then
-            local counterGuid = officerCard.getVar("counterGuid")
+            local counterGuid = getCardValue({cardGuid = officerCard.getGUID(), property = "counterGuid"})
             local counter = nil
 
             if(counterGuid) then
@@ -217,10 +217,10 @@ function baronZemoConvertSecretsToThreat(executiveBoard)
             end
 
             if(counter) then
-                local counterValue = counter.getVar("value") or 0
+                local counterValue = counter.call("getValue") -- counter.getVar("value") or 0
                 threat = threat + counterValue
             else
-                threat = threat + officerCard.getVar("retainedValue") or 0
+                threat = threat + getCardValue({cardGuid = officerCard.getGUID(), property = "retainedValue"}) or 0
             end
         end
     end

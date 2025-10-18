@@ -376,7 +376,7 @@ function lokiGodOfLiesAddSynergyToEnvironment()
     local environmentCard = Global.call("findCard", {
         cardId = stage.associatedEnvironment.cardId
     })
-    local counterGuid = environmentCard.getVar("counterGuid")
+    local counterGuid = getCardValue({cardGuid = environmentCard.getGUID(), property = "counterGuid"})
     local synergyCounter = getObjectFromGUID(counterGuid)
     local synergyToAdd = heroCount - synergyCounter.call("getValue")
 

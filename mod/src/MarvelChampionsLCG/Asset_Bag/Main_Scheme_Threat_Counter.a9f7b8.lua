@@ -112,7 +112,6 @@ function setValue(params)
 end
 
 function buttonClick()
-    log(CONFIG.ADVANCE_BUTTON_FUNCTION)
     local functionName = CONFIG.ADVANCE_BUTTON_FUNCTION or "advanceScheme"
     local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
     scenarioManager.call(functionName, {

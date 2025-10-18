@@ -93,7 +93,7 @@ function setUpSchemeStage_batroc_main(params)
         if(mode == "expert") then
             Wait.frames(function()
                 local alertLevelCard = Global.call("findCard", {cardId = "50090"})
-                local counterGuid = alertLevelCard.getVar("counterGuid")
+                local counterGuid =  getCardValue({cardGuid = alertLevelCard.getGUID(), property = "counterGuid"})
                 local counter = getObjectFromGUID(counterGuid)
                 local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
                 local heroCount = heroManager.call("getHeroCount")            
@@ -112,7 +112,7 @@ function setUpSchemeStage_batroc_main(params)
 
     if(stageNumber == "3") then
         local alertLevelCard = Global.call("findCard", {cardId = "50090"})
-        local counterGuid = alertLevelCard.getVar("counterGuid")
+        local counterGuid =  getCardValue({cardGuid = alertLevelCard.getGUID(), property = "counterGuid"})
         local counter = getObjectFromGUID(counterGuid)
         local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
         local heroCount = heroManager.call("getHeroCount")            

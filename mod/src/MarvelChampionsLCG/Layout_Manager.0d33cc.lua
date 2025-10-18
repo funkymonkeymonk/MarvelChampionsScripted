@@ -49,9 +49,40 @@ local hiddenSelectorOffset = 2
 
 local SELECTOR_TILE_TAG = "selector-tile"
 
-local currentView = "heroes"
+local currentView = "scenario"
 
-function onload(saved_data)
+function onload(saved_data)    
+    loadSavedData(saved_data)
+
+    local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
+
+    Wait.condition(
+        function()
+            local scenarioIsInProgress = scenarioManager.call("isScenarioInProgress")
+            layOutAllSelectors(scenarioIsInProgress)
+        end, 
+        function()
+            return scenarioManager.getVar("loaded") == true
+        end,
+        7,
+        function()
+            layOutAllSelectors(false)
+        end)
+end
+
+function loadSavedData(saved_data)
+    if saved_data ~= "" then
+        local loaded_data = JSON.decode(saved_data)
+        currentView = loaded_data.currentView or "scenario"
+    end
+end
+
+function saveData()
+    local saved_data = JSON.encode({currentView = currentView})
+    self.script_state = saved_data
+end
+
+function layOutAllSelectors(scenarioIsInProgress)
     -- local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
     -- heroManager.call("layOutHeroSelectors", {
     --     team = nil,
@@ -61,7 +92,7 @@ function onload(saved_data)
     --     rowGap = rowGap,
     --     selectorScale = {2, 1, 2}
     -- })
-    
+
     local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
     scenarioManager.call("layOutScenarioSelectors", {
         origin = originPosition,
@@ -69,7 +100,8 @@ function onload(saved_data)
         columnGap = columnGap,
         rowGap = rowGap,
         selectorScale = {2, 1, 2},
-        behavior = "select"
+        behavior = "select",
+        hidden = scenarioIsInProgress
     })
 
     local modularSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
@@ -87,7 +119,7 @@ function onload(saved_data)
     Wait.frames(function()
         updateSetupButtons()
     end, 
-    10)
+    10)    
 end
 
 function layOutSelectorTiles(params)
@@ -427,6 +459,7 @@ function setView(params)
     end
 
     currentView = params.view
+    saveData()
     showCurrentView()
 end
 
@@ -680,6 +713,8 @@ function clearScenario()
     local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
 
     scenarioManager.call("clearScenario")
+    currentView = "scenario"
+    saveData()
     showScenarioSelection()
 end
 

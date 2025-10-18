@@ -8,94 +8,91 @@ function supressZones()
    end, 3)
 end
 
-
 function repositionCardsInZone(params)
-    local zone = params.zone
-    local zoneType = zone.getVar("zoneType")
-    local zoneIndex = zone.getVar("zoneIndex")
+   local zone = params.zone
+   local zoneDef = getZoneDefinition({zone = zone})
+   local zoneType = zoneDef.zoneType or zoneDef.zoneIndex
+
+   if(zoneType ~= "sideScheme" and zoneType ~= "attachment" and zoneType ~= "environment" and zoneType ~= "minion" and zoneType ~= "victoryDisplay") then
+      return
+   end
  
-    if(zoneType ~= "sideScheme" and zoneType ~= "attachment" and zoneType ~= "environment" and zoneType ~= "minion" and zoneType ~= "victoryDisplay") then
-       return
-    end
+   local items = zone.getObjects()
+   local cardNumber = 0
  
-    local items = zone.getObjects()
-    local zoneDef = getZoneDefinitionByIndex({zoneIndex = zoneIndex})
-    local cardNumber = 0
+   for i, v in ipairs(items) do
+      if(v.tag == "Card") then
+         cardNumber = cardNumber + 1
+         local origCardPosition = Vector(v.getPosition())
+         local newCardPosition = Vector(getZoneCardPosition({zoneDef = zoneDef, cardNumber = cardNumber}))
  
-    for i, v in ipairs(items) do
-       if(v.tag == "Card") then
-          cardNumber = cardNumber + 1
-          local origCardPosition = Vector(v.getPosition())
-          local newCardPosition = Vector(getZoneCardPosition({zoneDef = zoneDef, cardNumber = cardNumber}))
+         if(newCardPosition == origCardPosition) then goto continue end
  
-          if(newCardPosition == origCardPosition) then goto continue end
+         local itemsOnCard = getItemsOnCard({card = v})
+         local itemsToReposition = {}
+         local cardGuid = v.getGUID()
+
+         for i, item in ipairs(itemsOnCard) do
+            if(item.interactable) then
+               if(item.tag == "Tile" or (item.tag == "Card" and item.getGUID() ~= cardGuid)) then
+                  local origItemPosition = item.getPosition()
+                  local itemOffset = origCardPosition - origItemPosition
+                  local newItemPosition = newCardPosition - itemOffset   
+                  table.insert(itemsToReposition, {item = item, newPosition = newItemPosition})
+               end
+            end
+         end
  
-          local itemsOnCard = getItemsOnCard({card = v})
-          local itemsToReposition = {}
-          local cardGuid = v.getGUID()
+         if(newCardPosition) then
+            v.setPositionSmooth(newCardPosition, false, false)
+
+            for i, item in ipairs(itemsToReposition) do
+               item.item.setPositionSmooth(item.newPosition, false, false)
+            end
+         end
+      end
+      ::continue::
+   end
+end
+
+function getZoneDefinition(params)
+   local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
  
-          for i, item in ipairs(itemsOnCard) do
-             --if(not item.hasTag("immobile")) then
-             if(item.interactable) then
-                if(item.tag == "Tile" or (item.tag == "Card" and item.getGUID() ~= cardGuid)) then
-                   local origItemPosition = item.getPosition()
-                   local itemOffset = origCardPosition - origItemPosition
-                   local newItemPosition = newCardPosition - itemOffset   
-                   table.insert(itemsToReposition, {item = item, newPosition = newItemPosition})
-                end
-             end
-          end
+   return scenarioManager.call("getZoneDefinition", params)
+end
  
-          if(newCardPosition) then
-             v.setPositionSmooth(newCardPosition, false, false)
+function getZoneCardCount(params)
+   local zoneIndex = params.zoneIndex
+   local zoneDef = getZoneDefinition({zoneIndex = zoneIndex})
+   if(not zoneDef) then return {0,1,0} end
+
+   local zone = getObjectFromGUID(zoneDef.guid)
+
+   if(not zone) then return nil end
+
+   local items = zone.getObjects()
+   local cardCount = 0
+
+   for i, v in ipairs(items) do
+      if(v.tag == "Card") then cardCount = cardCount + 1 end
+   end
+   --TODO: Filter out cards of the wrong type
  
-             for i, item in ipairs(itemsToReposition) do
-                item.item.setPositionSmooth(item.newPosition, false, false)
-             end
-          end
-       end
-       ::continue::
-    end
+   return cardCount
  end
  
- function getZoneDefinitionByIndex(params)
-    local zoneIndex = params.zoneIndex
-    local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
- 
-    return scenarioManager.call("getZoneDefinition", {zoneIndex = zoneIndex})
- end
- 
- function getZoneCardCount(params)
-    local zoneIndex = params.zoneIndex
-    local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
-    local zoneGuid = scenarioManager.call("getZoneGuid", {zoneIndex = zoneIndex})
-    local zone = getObjectFromGUID(zoneGuid)
- 
-    if(not zone) then return nil end
- 
-    local items = zone.getObjects()
-    local cardCount = 0
- 
-    for i, v in ipairs(items) do
-       if(v.tag == "Card") then cardCount = cardCount + 1 end
-    end
-    --TODO: Filter out cards of the wrong type
- 
-    return cardCount
- end
- 
- function getNewZoneCardPosition(params)
-    local zoneDef = getZoneDefinitionByIndex({zoneIndex = params.zoneIndex})
- 
-    if(not zoneDef) then return nil end
-    
-    local cardNumber = getZoneCardCount({zoneIndex = params.zoneIndex})
-    
-    if(cardNumber == nil) then return nil end
- 
-    if(params.forNextCard) then cardNumber = cardNumber + 1 end
- 
-    return getZoneCardPosition({zoneDef = zoneDef, cardNumber = cardNumber})
+function getNewZoneCardPosition(params)
+   local zoneDef = getZoneDefinition({zoneIndex = params.zoneIndex})
+
+   if(not zoneDef) then return nil end
+
+   local cardNumber = getZoneCardCount({zoneIndex = params.zoneIndex})
+
+   if(cardNumber == nil) then return nil end
+
+   if(params.forNextCard) then cardNumber = cardNumber + 1 end
+
+   return getZoneCardPosition({zoneDef = zoneDef, cardNumber = cardNumber})
  end
  
  function getZoneCardPosition(params)
@@ -104,7 +101,7 @@ function repositionCardsInZone(params)
  
     if(not zoneDef) then return nil end
  
-    local origin = zoneDef.firstCardPosition
+    local origin = Vector(zoneDef.firstCardPosition)
     local horizontalGap = zoneDef.horizontalGap or 0
     local verticalGap = zoneDef.verticalGap or 0
     local layoutDirection = zoneDef.layoutDirection or "horizontal"
@@ -132,10 +129,10 @@ function repositionCardsInZone(params)
        end
     end
  
-    local x = origin[1] + horizontalGap * (column - 1)
-    local z = origin[3] - verticalGap * (row - 1)
+    local x = origin.x + horizontalGap * (column - 1) --XXX error
+    local z = origin.z - verticalGap * (row - 1)
  
-    return {x, origin[2], z}
+    return {x, origin.y, z}
  end
  
  function updateVictoryDisplayDetails()
