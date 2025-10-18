@@ -82,7 +82,6 @@ function getScenarios()
 end
 
 function isScenarioInProgress()
-    log("currentScenario: " .. tostring(currentScenario) .. ", inProgress: " .. tostring(currentScenario and currentScenario.inProgress))
     return currentScenario and currentScenario.inProgress or false
 end
 
@@ -447,132 +446,14 @@ function setUpZones()
 
     local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
 
-    currentScenario.zones.sideScheme = currentScenario.zones.sideScheme or defaults.zones.sideScheme
-    currentScenario.zones.environment = currentScenario.zones.environment or defaults.zones.environment
-    currentScenario.zones.attachment = currentScenario.zones.attachment or defaults.zones.attachment
-    currentScenario.zones.encounterDeck = currentScenario.zones.encounterDeck or defaults.zones.encounterDeck
-    currentScenario.zones.victoryDisplay = currentScenario.zones.victoryDisplay or defaults.zones.victoryDisplay
+    createZone({zoneDef = combineZoneDefinitions(currentScenario.zones.sideScheme, defaults.zones.sideScheme)})
+    createZone({zoneDef = combineZoneDefinitions(currentScenario.zones.environment, defaults.zones.environment)})
+    createZone({zoneDef = combineZoneDefinitions(currentScenario.zones.attachment, defaults.zones.attachment)})
+    createZone({zoneDef = combineZoneDefinitions(currentScenario.zones.encounterDeck, defaults.zones.encounterDeck)})
+    local victoryDisplayZone = createZone({zoneDef = combineZoneDefinitions(currentScenario.zones.victoryDisplay, defaults.zones.victoryDisplay)})
 
-    local sideSchemeZoneDef = currentScenario.zones.sideScheme
-    local environmentZoneDef = currentScenario.zones.environment
-    local attachmentZoneDef = currentScenario.zones.attachment
-    local encounterDeckZoneDef = currentScenario.zones.encounterDeck
-    local victoryDisplayZoneDef = currentScenario.zones.victoryDisplay
-
-    if (sideSchemeZoneDef.position) then
-        spawnObject({
-            type = "ScriptingTrigger",
-            position = sideSchemeZoneDef.position,
-            scale = sideSchemeZoneDef.scale,
-            sound = false,
-            callback_function = function(spawned_object)
-                spawned_object.addTag("side_scheme")
-                spawned_object.addTag("player_side_scheme")
-                spawned_object.setVar("zoneType", "sideScheme")
-                spawned_object.setVar("zoneIndex", "sideScheme")
-                currentScenario.zones.sideScheme.guid = spawned_object.getGUID()
-            end
-        })
-    end
-
-    if (environmentZoneDef.position) then
-        spawnObject({
-            type = "ScriptingTrigger",
-            position = environmentZoneDef.position,
-            scale = environmentZoneDef.scale,
-            sound = false,
-            callback_function = function(spawned_object)
-                spawned_object.addTag("environment")
-                spawned_object.setVar("zoneType", "environment")
-                spawned_object.setVar("zoneIndex", "environment")
-                currentScenario.zones.environment.guid = spawned_object.getGUID()
-            end
-        })
-    end
-
-    if (attachmentZoneDef.position) then
-        spawnObject({
-            type = "ScriptingTrigger",
-            position = attachmentZoneDef.position,
-            scale = attachmentZoneDef.scale,
-            sound = false,
-            callback_function = function(spawned_object)
-                spawned_object.addTag("attachment")
-                spawned_object.setVar("zoneType", "attachment")
-                spawned_object.setVar("zoneIndex", "attachment")
-                currentScenario.zones.attachment.guid = spawned_object.getGUID()
-            end
-        })
-    end
-
-    if (encounterDeckZoneDef.position) then
-        spawnObject({
-            type = "ScriptingTrigger",
-            position = encounterDeckZoneDef.position,
-            scale = encounterDeckZoneDef.scale,
-            sound = false,
-            callback_function = function(spawned_object)
-                spawned_object.setVar("zoneType", "encounterDeck")
-                spawned_object.setVar("zoneIndex", "encounterDeck")
-                currentScenario.zones.encounterDeck.guid = spawned_object.getGUID()
-            end
-        })
-    end
-
-    if (victoryDisplayZoneDef.position) then
-        spawnObject({
-            type = "3DText",
-            position = {78.25, 0.55, 26.25},
-            rotation = {90, 0, 0},
-            callback_function = function(spawned_object)
-                spawned_object.TextTool.setValue("Victory Display")
-                spawned_object.TextTool.setFontSize(250)
-                spawned_object.TextTool.setFontColor({1, 1, 1})
-                spawned_object.interactable = false
-                spawned_object.addTag("delete-with-scenario")
-                addItemToManifest("victoryDisplayHeading", spawned_object)
-            end
-        })
-
-        spawnObject({
-            type = "3DText",
-            position = {69.25, 0.51, -2.25},
-            rotation = {90, 0, 0},
-            callback_function = function(spawned_object)
-                spawned_object.TextTool.setValue("Victory Points: 0")
-                spawned_object.TextTool.setFontSize(200)
-                spawned_object.TextTool.setFontColor({1, 1, 1})
-                spawned_object.interactable = false
-                spawned_object.addTag("delete-with-scenario")
-                addItemToManifest("victoryPointsReadout", spawned_object)
-            end
-        })
-
-        spawnObject({
-            type = "3DText",
-            position = {87.25, 0.51, -2.25},
-            rotation = {90, 0, 0},
-            callback_function = function(spawned_object)
-                spawned_object.TextTool.setValue("Items: 0")
-                spawned_object.TextTool.setFontSize(200)
-                spawned_object.TextTool.setFontColor({1, 1, 1})
-                spawned_object.interactable = false
-                spawned_object.addTag("delete-with-scenario")
-                addItemToManifest("victoryDisplayItemCountReadout", spawned_object)
-            end
-        })
-
-        spawnObject({
-            type = "ScriptingTrigger",
-            position = victoryDisplayZoneDef.position,
-            scale = victoryDisplayZoneDef.scale,
-            sound = false,
-            callback_function = function(spawned_object)
-                spawned_object.setVar("zoneType", "victoryDisplay")
-                spawned_object.setVar("zoneIndex", "victoryDisplay")
-                currentScenario.zones.victoryDisplay.guid = spawned_object.getGUID()
-            end
-        })
+    if (victoryDisplayZone) then
+        createVictoryDisplayText()
     end
 
     local selectedHeroes = heroManager.call("getSelectedHeroes")
@@ -583,26 +464,19 @@ function setUpZones()
         }))
 
         local heroZoneDef = {
+            zoneIndex = "hero-" .. color,
+            zoneType = "hero",
+            playerColor = color,
             position = Vector({playerZonePosition.x, 2, playerZonePosition.z}),
             scale = {27.25, 4.00, 16.00}
         }
-
-        local heroZoneIndex = "hero-" .. color
-        currentScenario.zones[heroZoneIndex] = heroZoneDef
-
-        spawnObject({
-            type = "ScriptingTrigger",
-            position = heroZoneDef.position,
-            scale = heroZoneDef.scale,
-            sound = false,
-            callback_function = function(spawned_object)
-                spawned_object.setVar("zoneType", "hero")
-                spawned_object.setVar("zoneIndex", heroZoneIndex)
-                currentScenario.zones[heroZoneIndex].guid = spawned_object.getGUID()
-            end
-        })
+        createZone({zoneDef = heroZoneDef})
 
         local minionZoneDef = {
+            zoneIndex = "minion-" .. color,
+            zoneType = "minion",
+            tags = {"minion"},
+            playerColor = color,
             position = Vector({playerZonePosition.x - 3, 1, playerZonePosition.z + 12.10}),
             scale = {20.00, 1.00, 6.75},
             firstCardPosition = Vector({playerZonePosition.x - 11, 1, playerZonePosition.z + 12}),
@@ -612,23 +486,7 @@ function setUpZones()
             width = 4,
             height = 1
         }
-
-        local minionZoneIndex = "minion-" .. color
-        currentScenario.zones[minionZoneIndex] = minionZoneDef
-
-        spawnObject({
-            type = "ScriptingTrigger",
-            position = minionZoneDef.position,
-            scale = minionZoneDef.scale,
-            sound = false,
-            callback_function = function(spawned_object)
-                spawned_object.addTag("minion")
-                spawned_object.setVar("zoneType", "minion")
-                spawned_object.setVar("zoneIndex", minionZoneIndex)
-                spawned_object.setVar("playerColor", color)
-                currentScenario.zones[minionZoneIndex].guid = spawned_object.getGUID()
-            end
-        })
+        createZone({zoneDef = minionZoneDef})
     end
 
     local customZones = currentScenario.customZones or {}
@@ -660,6 +518,91 @@ function setUpZones()
     end
 end
 
+function combineZoneDefinitions(zoneDef, defaultDef)
+    local combinedDefinition = {}
+    
+    for k, v in pairs(defaultDef) do
+        combinedDefinition[k] = v
+    end
+
+    if (not zoneDef) then
+        return combinedDefinition
+    end
+
+    for k, v in pairs(zoneDef) do
+        combinedDefinition[k] = v
+    end
+
+    return combinedDefinition
+end
+
+function createZone(params)
+    local zoneDef = params.zoneDef
+
+    if(zoneDef.supressCreation) then
+        return nil
+    end
+
+    return spawnObject({
+        type = "ScriptingTrigger",
+        position = zoneDef.position,
+        scale = zoneDef.scale,
+        sound = false,
+        callback_function = function(zone)
+            for _, tag in pairs(zoneDef.tags or {}) do
+                zone.addTag(tag)
+            end
+            local zoneGuid = zone.getGUID()
+            zoneDef.guid = zoneGuid
+            currentScenario.zones[zoneGuid] = zoneDef
+        end
+    })
+end
+
+function createVictoryDisplayText()
+    spawnObject({
+        type = "3DText",
+        position = {78.25, 0.55, 26.25},
+        rotation = {90, 0, 0},
+        callback_function = function(spawned_object)
+            spawned_object.TextTool.setValue("Victory Display")
+            spawned_object.TextTool.setFontSize(250)
+            spawned_object.TextTool.setFontColor({1, 1, 1})
+            spawned_object.interactable = false
+            spawned_object.addTag("delete-with-scenario")
+            addItemToManifest("victoryDisplayHeading", spawned_object)
+        end
+    })
+
+    spawnObject({
+        type = "3DText",
+        position = {69.25, 0.51, -2.25},
+        rotation = {90, 0, 0},
+        callback_function = function(spawned_object)
+            spawned_object.TextTool.setValue("Victory Points: 0")
+            spawned_object.TextTool.setFontSize(200)
+            spawned_object.TextTool.setFontColor({1, 1, 1})
+            spawned_object.interactable = false
+            spawned_object.addTag("delete-with-scenario")
+            addItemToManifest("victoryPointsReadout", spawned_object)
+        end
+    })
+
+    spawnObject({
+        type = "3DText",
+        position = {87.25, 0.51, -2.25},
+        rotation = {90, 0, 0},
+        callback_function = function(spawned_object)
+            spawned_object.TextTool.setValue("Items: 0")
+            spawned_object.TextTool.setFontSize(200)
+            spawned_object.TextTool.setFontColor({1, 1, 1})
+            spawned_object.interactable = false
+            spawned_object.addTag("delete-with-scenario")
+            addItemToManifest("victoryDisplayItemCountReadout", spawned_object)
+        end
+    })
+end
+
 function setUpSnapPoints()
     local snapPoints = {}
     local deckPos = getEncounterDeckPosition()
@@ -689,25 +632,26 @@ function getZoneGuid(params)
     return zone and zone.guid or nil
 end
 
-function getZonesByType(params)
+function getZoneDefsByType(params)
     local zoneType = params.zoneType
-    local zones = {}
+    local zoneDefs = {}
 
     if (not currentScenario) then
-        return zones
+        return zoneDefs
     end
     if (not currentScenario.zones) then
-        return zones
+        return zoneDefs
     end
 
     for key, zoneDef in pairs(currentScenario.zones) do
-        local zone = getObjectFromGUID(zoneDef.guid)
-        if (zone and zone.getVar("zoneType") == zoneType) then
-            table.insert(zones, zone)
+        local zoneDefType = zoneDef.zoneType or zoneDef.zoneIndex
+
+        if (zoneDefType == zoneType) then
+            table.insert(zoneDefs, zoneDef)
         end
     end
 
-    return zones
+    return zoneDefs
 end
 
 function getZoneByIndex(params)
@@ -722,13 +666,23 @@ function getZoneByIndex(params)
 end
 
 function getZoneDefinition(params)
-    local zoneIndex = params.zoneIndex
+   local zone = params.zone
+   local zoneGuid = zone and zone.getGUID() or params.zoneGuid
+   local zoneIndex = params.zoneIndex
 
-    if (not currentScenario) then
+    if (not currentScenario or not currentScenario.zones) then
         return nil
     end
 
-    return currentScenario.zones[zoneIndex]
+    if(zoneGuid) then
+        return currentScenario.zones[zoneGuid]
+    end
+    
+    for _, zoneDef in pairs(currentScenario.zones) do
+        if(zoneDef.zoneIndex == zoneIndex) then
+            return zoneDef
+        end
+    end
 end
 
 function heroCountIsValid(params)
@@ -1794,6 +1748,7 @@ function createContextMenu()
     self.addContextMenuItem("Lay Out Scenarios", layOutScenarios)
     self.addContextMenuItem("Delete Scenarios", deleteScenarios)
     self.addContextMenuItem("Delete Everything", deleteEverything)
+    self.addContextMenuItem("Build Card Image List", buildCardImageList)
 end
 
 -- Layout functions - move to central layout manager
@@ -2219,6 +2174,79 @@ function getHpCounterForVillain(params)
 
     return getObjectFromGUID(villain.hpCounter.guid)
 end
+
+function setCardValue(params)
+    if(not currentScenario) then
+        Global.call("displayMessage", {
+            message = "No scenario is currently loaded.",
+            messageType = "error"
+        })
+        return
+    end
+
+    if(not currentScenario.cards) then
+        currentScenario.cards = {}
+    end
+
+    local cardGuid = params.cardGuid
+    local property = params.property
+    local value = params.value
+
+    local card = currentScenario.cards[cardGuid] or {}
+    card[property] = value
+    currentScenario.cards[cardGuid] = card
+
+    saveData()
+end
+
+function getCardValue(params)
+    if(not currentScenario or not currentScenario.cards) then
+        return nil
+    end
+
+    local cardGuid = params.cardGuid
+    local property = params.property
+
+    local card = currentScenario.cards[cardGuid]
+
+    if(not card) then
+        return nil
+    end
+
+    return card[property]
+end
+
+require('!/lib/json')
+
+function buildCardImageList()
+    local cardpool = getObjectFromGUID('843931')
+    local cloudfront = "cloudfront"
+
+    for i = 1, 99 do
+        local packId = string.format("%02d", i)
+        local cardJson = cardpool.getVar('PACK_' .. packId)
+
+        if(cardJson == nil) then
+            log("Pack "..packId.." has not been added to the card pool.")
+        else
+            local cardData = json.decode(cardJson)
+
+            for _, card in pairs(cardData) do
+                local frontUrl = card.FrontURL
+                local backUrl = card.BackURL
+                
+                if(frontUrl and string.find(frontUrl, cloudfront, 1, true)) then
+                    log(frontUrl)
+                end
+                if(backUrl and string.find(backUrl, cloudfront, 1, true)) then
+                    log(backUrl)
+                end            
+            end
+        end
+    end
+end
+
+
 
 require('!/scenarios/rhino')
 require('!/scenarios/klaw')

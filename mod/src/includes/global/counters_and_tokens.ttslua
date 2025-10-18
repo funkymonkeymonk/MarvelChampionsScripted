@@ -56,7 +56,7 @@ end
 
 function getCounterFromCard(params)
     local card = params.card
-    local counterGuid = card.getVar("counterGuid")
+    local counterGuid = getCardValue({cardGuid = card.getGUID(), property = "counterGuid"})
     local counter = counterGuid and getObjectFromGUID(counterGuid) or nil
 
     return counter
@@ -64,17 +64,17 @@ end
 
 function removeCounterFromCard(params)
     local card = params.card
-    local counterGuid = card.getVar("counterGuid")
+    local counterGuid = getCardValue({cardGuid = card.getGUID(), property = "counterGuid"})
     local counter = counterGuid and getObjectFromGUID(counterGuid) or nil
 
     if(counter) then 
       local value = counter.call("getValue")
-      card.setVar("retainedValue", value)
+      setCardValue({cardGuid = card.getGUID(), property = "retainedValue", value = value})
 
       counter.destruct()
     end
 
-    card.setVar("counterGuid", nil)
+    setCardValue({cardGuid = card.getGUID(), property = "counterGuid", value = nil})
 end
 
 function addThreatCounterToSideScheme(card)
@@ -82,10 +82,10 @@ function addThreatCounterToSideScheme(card)
     local cardPosition = card.getPosition()
     local counterPosition = {cardPosition[1] - 0.76, cardPosition[2] + 0.07, cardPosition[3] - 1.08}
     local threatCounter = threatCounterBag.takeObject({position = counterPosition, smooth = false})
-    card.setVar("counterGuid", threatCounter.getGUID())
-    
+    setCardValue({cardGuid = card.getGUID(), property = "counterGuid", value = threatCounter.getGUID()})
+
     local threat = 0
-    local retainedValue = card.getVar("retainedValue")
+    local retainedValue = getCardValue({cardGuid = card.getGUID(), property = "retainedValue"})
     if(retainedValue) then
        threat = retainedValue
     else
@@ -115,17 +115,17 @@ end
 
   function addHealthCounterToMinion(card)
     local healthCounterBag = getObjectFromGUID(GUID_HEALTH_COUNTER_BAG)
-    local yOffset = - 0.3 + (card.getVar("counterOffset") or 0)
+    local yOffset = - 0.3 + (getCardValue({cardGuid = card.getGUID(), property = "counterOffset"}) or 0)
  
     local cardPosition = card.getPosition()
     local counterPosition = {cardPosition[1] + 1.55, cardPosition[2] + 0.07, cardPosition[3] + yOffset}
     local healthCounter = healthCounterBag.takeObject({position = counterPosition, smooth = false})
-    card.setVar("counterGuid", healthCounter.getGUID())
+    setCardValue({cardGuid = card.getGUID(), property = "counterGuid", value = healthCounter.getGUID()})
     
     --TODO: Extract this calculation into a function?
     local cardData = getCardData({card = card})
     local health = 0
-    local retainedValue = card.getVar("retainedValue")
+    local retainedValue = getCardValue({cardGuid = card.getGUID(), property = "retainedValue"})
  
     if(retainedValue) then
        health = retainedValue
@@ -151,7 +151,7 @@ end
 function addConfiguredCounterToCard(params)
   local card = params.card
 
-  local counterGuid = card.getVar("counterGuid")
+  local counterGuid = getCardValue({cardGuid = card.getGUID(), property = "counterGuid"})
   if(counterGuid and getObjectFromGUID(counterGuid)) then return end
 
   local cardData = params.cardData or getCardData({card = card})
@@ -161,7 +161,7 @@ function addConfiguredCounterToCard(params)
   end
 
   local value = 0
-  local retainedValue = card.getVar("retainedValue")
+  local retainedValue = getCardValue({cardGuid = card.getGUID(), property = "retainedValue"})
 
   if(retainedValue) then
       value = retainedValue
@@ -220,8 +220,7 @@ function addCounterToCard(params)
         1)
       end
     })
-
-  card.setVar("counterGuid", counter.getGUID())
+    setCardValue({cardGuid = card.getGUID(), property = "counterGuid", value = counter.getGUID()})
 end
 
 function addStatusToVillain(params)
@@ -280,7 +279,7 @@ function cardCanHaveStatus(params)
   
     statusCount = getStatusCount({card = card, statusType = statusType})
   
-    local playerColor = card.getVar("playerColor")
+    local playerColor = getCardValue({cardGuid = card.getGUID(), property = "playerColor"})
     local messageType = playerColor and MESSAGE_TYPE_PLAYER or MESSAGE_TYPE_INFO
  
     if(statusType == "tough") then
@@ -350,8 +349,8 @@ function placeStatusToken(params)
     if(statusType == "stunned" or statusType == "confused") then
       message = message .. "\n(If there is an effect in play that makes this character steady, they may need another status card to actually be " .. statusType .. ".\nIf they are stalwart, you may need to remove this status card.)"
     end
-  
-    local playerColor = params.playerColor or card.getVar("playerColor")
+
+    local playerColor = params.playerColor or getCardValue({cardGuid = card.getGUID(), property = "playerColor"})
     local messageType = playerColor and MESSAGE_TYPE_PLAYER or MESSAGE_TYPE_INFO
  
     displayMessage({message = message, messageType = messageType, playerColor = playerColor})

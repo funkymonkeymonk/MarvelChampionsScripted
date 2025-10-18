@@ -454,7 +454,7 @@ function kangStage2DiscardSideSchemes()
   
     for i, sideScheme in ipairs(sideSchemes) do
       sideSchemeCount = sideSchemeCount + 1
-      local counterGuid = sideScheme.getVar("counterGuid")
+      local counterGuid = getCardValue({cardGuid = sideScheme.getGUID(), property = "counterGuid"})
       local counter = counterGuid ~= nil and getObjectFromGUID(counterGuid)
       if(counter) then counter.destruct() end
       sideScheme.setVar("counterGuid", nil)
@@ -718,7 +718,7 @@ function kangStage3GetSideSchemesInPlay()
       local objects = zoneObject.getObjects()
       for _, obj in ipairs(objects) do
         if(obj.hasTag("side_scheme") or obj.hasTag("player_side_scheme")) then
-          obj.setVar("retainValue", true)
+          setCardValue({cardGuid = obj.getGUID(), property = "retainValue", value = true})
           Global.call("removeCounterFromCard", {card=obj})
           table.insert(sideSchemes, obj.getGUID())
         end

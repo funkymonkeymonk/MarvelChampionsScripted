@@ -113,6 +113,8 @@ MESSAGE_TYPE_ALERT = "alert"
 MESSAGE_TYPE_PLAYER = "player"
 
 ZONE_SIDE_SCHEME = {
+   zoneIndex = "sideScheme",
+   tags = {"side_scheme", "player_side_scheme"},
    position = {14.25, 1.00, 11.75},
    scale = {21.00, 1.00, 15.00},
    firstCardPosition = {7.25, 0.98, 16.75},
@@ -124,6 +126,8 @@ ZONE_SIDE_SCHEME = {
 }
 
 ZONE_ENVIRONMENT = {
+   zoneIndex = "environment",
+   tags = {"environment"},
    position = {20.75, 2.00, 29.75},
    scale = {15.00, 4.00, 7.00},
    firstCardPosition = {15.75, 0.97, 29.75},
@@ -135,6 +139,8 @@ ZONE_ENVIRONMENT = {
 }
 
 ZONE_ATTACHMENT = {
+   zoneIndex = "attachment",
+   tags = {"attachment"},
    position = {-7.25, 1.00, 15.25},
    scale = {5.60, 1.00, 21.00},
    firstCardPosition = {-7.25, 0.97, 22.25},
@@ -146,11 +152,13 @@ ZONE_ATTACHMENT = {
 }
 
 ZONE_ENCOUNTER_DECK = {
+   zoneIndex = "encounterDeck",
    position = {-15.25, 1.00, 22.00},
    scale = {9.75, 2.00, 7.00}
 }
 
 ZONE_VICTORY_DISPLAY = {
+   zoneIndex = "victoryDisplay",
    position = {78.00, 0.50, 10.75},
    scale = {33.00, 1.00, 23.50},
    firstCardPosition = {66.75, 0.51, 18.25},

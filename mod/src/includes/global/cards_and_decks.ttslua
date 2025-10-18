@@ -387,7 +387,7 @@ function moveCardFromDeckById(params)
                       end
  
                       for key, value in pairs(values) do
-                         obj.setVar(key, value)
+                         setCardValue({cardGuid = obj.getGUID(), property = key, value = value})
                       end
  
                       for key, tag in pairs(tags) do
@@ -794,4 +794,14 @@ function getEncounterDeck()
     local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
     local deckPosition = Vector(scenarioManager.call("getEncounterDeckPosition"))
     return getDeckOrCardAtPosition({position=deckPosition})
+end
+
+function setCardValue(params)
+   local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
+   scenarioManager.call("setCardValue", params)
+end
+
+function getCardValue(params)
+   local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
+   return scenarioManager.call("getCardValue", params)
 end
