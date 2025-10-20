@@ -41,7 +41,11 @@ local defaults = {
         environment = Global.getTable("ZONE_ENVIRONMENT"),
         attachment = Global.getTable("ZONE_ATTACHMENT"),
         encounterDeck = Global.getTable("ZONE_ENCOUNTER_DECK"),
-        victoryDisplay = Global.getTable("ZONE_VICTORY_DISPLAY")
+        victoryDisplay = Global.getTable("ZONE_VICTORY_DISPLAY"),
+        hero = Global.getTable("ZONE_HERO"),
+        heroCounters = Global.getTable("ZONE_HERO_COUNTERS"),
+        heroExit = Global.getTable("ZONE_HERO_EXIT"),
+        minion = Global.getTable("ZONE_MINION")
     },
     boostDrawPosition = Global.getTable("BOOST_POS")
 }
@@ -50,6 +54,7 @@ local scenarios = {}
 local currentScenario = nil
 
 function onload(saved_data)
+    self.interactable = false
     loadSavedData(saved_data)
     createContextMenu()
     -- layOutScenarios()
@@ -463,29 +468,37 @@ function setUpZones()
             playerColor = color
         }))
 
-        local heroZoneDef = {
+        local heroZoneDef = combineZoneDefinitions({
             zoneIndex = "hero-" .. color,
-            zoneType = "hero",
             playerColor = color,
-            position = Vector({playerZonePosition.x, 2, playerZonePosition.z}),
-            scale = {27.25, 4.00, 16.00}
-        }
+            position = Vector({playerZonePosition.x, 2, playerZonePosition.z})
+        },
+        defaults.zones.hero)
         createZone({zoneDef = heroZoneDef})
 
-        local minionZoneDef = {
+        local heroCountersZoneDef = combineZoneDefinitions({
+            zoneIndex = "heroCounters-" .. color,
+            playerColor = color,
+            position = Vector({playerZonePosition.x + 3.25, 1.5, playerZonePosition.z})
+        },
+        defaults.zones.heroCounters)
+        createZone({zoneDef = heroCountersZoneDef})
+
+        local heroExitZoneDef = combineZoneDefinitions({
+            zoneIndex = "heroExit-" .. color,
+            playerColor = color,
+            position = Vector({playerZonePosition.x, 2, playerZonePosition.z})
+        },
+        defaults.zones.heroExit)
+        createZone({zoneDef = heroExitZoneDef})
+
+        local minionZoneDef = combineZoneDefinitions({
             zoneIndex = "minion-" .. color,
-            zoneType = "minion",
-            tags = {"minion"},
             playerColor = color,
             position = Vector({playerZonePosition.x - 3, 1, playerZonePosition.z + 12.10}),
-            scale = {20.00, 1.00, 6.75},
-            firstCardPosition = Vector({playerZonePosition.x - 11, 1, playerZonePosition.z + 12}),
-            horizontalGap = 5,
-            verticalGap = 0,
-            layoutDirection = "horizontal",
-            width = 4,
-            height = 1
-        }
+            firstCardPosition = Vector({playerZonePosition.x - 11, 1, playerZonePosition.z + 12})
+        },
+        defaults.zones.minion)
         createZone({zoneDef = minionZoneDef})
     end
 
@@ -2176,13 +2189,7 @@ function getHpCounterForVillain(params)
 end
 
 function setCardValue(params)
-    if(not currentScenario) then
-        Global.call("displayMessage", {
-            message = "No scenario is currently loaded.",
-            messageType = "error"
-        })
-        return
-    end
+    if(not currentScenario) then return end
 
     if(not currentScenario.cards) then
         currentScenario.cards = {}

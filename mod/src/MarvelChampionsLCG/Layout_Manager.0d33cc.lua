@@ -51,7 +51,8 @@ local SELECTOR_TILE_TAG = "selector-tile"
 
 local currentView = "scenario"
 
-function onload(saved_data)    
+function onload(saved_data)
+    self.interactable = false
     loadSavedData(saved_data)
 
     local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))

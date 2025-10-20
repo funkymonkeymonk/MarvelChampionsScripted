@@ -335,9 +335,12 @@ function movePlayerOne()
 end
 
 function untapAll()
-   untapCards = findCardsAtPosition()
-      for _, obj in ipairs(untapCards) do
+   local untapCards = findCardsAtPosition()
+   
+   for _, obj in ipairs(untapCards) do
+      local oldSpin = obj.getRotation().y
       obj.setRotationSmooth({0,180,obj.getRotation().z})
+      Global.call("rotateCountersWithCard", {card = obj, spin = 180, oldSpin = oldSpin})
    end
 end
 
@@ -491,20 +494,25 @@ function drawCards(params)
 
    objectToDrawFrom.deal(numberToDraw, getValue("playerColor"))
 
-   if(isPlayerDeck and numberToDraw >= availableCards) then
-      local deckPosition = getPlayerDeckPosition()
-      local discardPosition = getPlayerDiscardPosition()
+   Global.call("supressZones")
+   
+   Wait.frames(function()
+      if(isPlayerDeck and numberToDraw >= availableCards) then
+         local deckPosition = getPlayerDeckPosition()
+         local discardPosition = getPlayerDiscardPosition()
 
-      Global.call("refreshDeck", {deckPosition = deckPosition, discardPosition = discardPosition})
-      Global.call("displayMessage", {message = "You cycled your deck. Time for an encounter card!", messageType = Global.getVar("MESSAGE_TYPE_INFO"), playerColor = positionColor})
-      Global.call("dealEncounterCardToPlayer", {playerColor = positionColor})
+         Global.call("refreshDeck", {deckPosition = deckPosition, discardPosition = discardPosition})
+         Global.call("displayMessage", {message = "You cycled your deck. Time for an encounter card!", messageType = Global.getVar("MESSAGE_TYPE_INFO"), playerColor = positionColor})
+         Global.call("dealEncounterCardToPlayer", {playerColor = positionColor})
 
-      Wait.frames(function()
-         local playerDeck = Global.call("getDeckOrCardAtPosition", {position = deckPosition})
-         drawCards({objectToDrawFrom = playerDeck, numberToDraw = numberForSecondDraw})
-      end, 
-      30)
-   end
+         Wait.frames(function()
+            local playerDeck = Global.call("getDeckOrCardAtPosition", {position = deckPosition})
+            drawCards({objectToDrawFrom = playerDeck, numberToDraw = numberForSecondDraw})
+         end, 
+         30)
+      end
+   end,
+   1)
 end
 
 function isPlayerDeck(deck)

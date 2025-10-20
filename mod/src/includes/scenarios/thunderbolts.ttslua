@@ -164,7 +164,7 @@ function setUpSchemeStage_thunderbolts_main(params)
         thunderboltsInDeck = Global.call("shuffleTable", {table = thunderboltsInDeck})
 
         local minionCardValues = {
-            retainValue = true,
+            --retainValue = true,
             retainedValue = 0,
             counterOffset = 1
         }

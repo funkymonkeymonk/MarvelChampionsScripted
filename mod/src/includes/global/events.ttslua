@@ -23,17 +23,19 @@ function onObjectNumberTyped(object, playerColor, number)
             objectToDrawFrom = object,
             numberToDraw = number
         })
-        -- return true
+        
+        return true
     end
-
-    return true
 end
 
 function onObjectEnterZone(zone, card)
+    if (supressZoneInteractions) then return end
+
     local zoneDef = getZoneDefinition({zone = zone})
     if (not zoneDef) then return end
+    if (not isCard(card)) then return end
+    if (not isFaceUp({object = card})) then return end
 
-    local retain = getCardValue({cardGuid = card.getGUID(), property = "retainValue"})
     local retainedValue = getCardValue({cardGuid = card.getGUID(), property = "retainedValue"})
     local onEnterFunction = zoneDef.onEnterFunction
 
@@ -42,13 +44,6 @@ function onObjectEnterZone(zone, card)
             zone = zone,
             item = card
         })
-        return
-    end
-
-    if (supressZoneInteractions) then
-        return
-    end
-    if (not isCard(card)) then
         return
     end
 
@@ -62,23 +57,31 @@ function onObjectEnterZone(zone, card)
     local cardData = getCardData({
         card = card
     })
-    local cardType = cardData.type
 
+    local cardType = cardData.type
     if (cardType == "hero" or ((cardType == "villain" or cardType == "main_scheme") and zoneType ~= "victoryDisplay")) then
         return
     end
 
     local playerColor = zoneDef.playerColor
-
     if (playerColor) then
         setCardValue({cardGuid = card.getGUID(), property = "playerColor", value = playerColor})
     end
 
-    Wait.frames(function()
-        resizeCardOnEnterZone(card, zoneType)
-    end, 15)
+    if(zoneDef.rescaleOnEnterTo) then
+        resizeCardOnEnterZone(card, zoneDef.rescaleOnEnterTo)
+    end
 
-    positionCardOnEnterZone(card, zoneType, zoneIndex)
+    if(zoneDef.repositionCards) then
+        positionCardOnEnterZone(card, zoneType, zoneIndex)
+    end
+
+    if(zoneDef.addCountersAndTokens) then
+        addCountersAndTokensToCard({
+            card = card,
+            cardData = cardData
+        })
+    end
 
     local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
     scenarioManager.call("onCardEnterZone", {
@@ -88,51 +91,37 @@ function onObjectEnterZone(zone, card)
 
     if (zoneType == "victoryDisplay") then
         updateVictoryDisplayDetails()
-    end
+    end    
+    -- Wait.condition(function()
+    --     if (card.isDestroyed()) then
+    --         return
+    --     end
 
-    -- TODO: Refactor these counter placement functions
-    Wait.condition(function()
-        if (card.isDestroyed()) then
-            return
-        end
+    --     if (zoneType == "sideScheme") then
+    --         addThreatCounterToSideScheme(card)
+    --     elseif (zoneType == "minion") then
+    --         addHealthCounterToMinion(card)
+    --         if (card.hasTag("toughness")) then
+    --             addStatusToMinion({
+    --                 card = card,
+    --                 statusType = "tough"
+    --             })
+    --         end
+    --     end
 
-        if (zoneType == "sideScheme") then
-            addThreatCounterToSideScheme(card)
-        elseif (zoneType == "minion") then
-            addHealthCounterToMinion(card)
-            if (card.hasTag("toughness")) then
-                addStatusToMinion({
-                    card = card,
-                    statusType = "tough"
-                })
-            end
-        end
-
-        if (cardData.counter) then
-            addConfiguredCounterToCard({card = card, cardData = cardData})
-        end
-    end, function()
-        return card.isDestroyed() or card.resting
-    end, 2)
+    --     if (cardData.counter) then
+    --         addConfiguredCounterToCard({card = card, cardData = cardData})
+    --     end
+    -- end, function()
+    --     return card.isDestroyed() or card.resting
+    -- end, 2)
 end
 
-function resizeCardOnEnterZone(card, zoneType)
-    if (card.isDestroyed()) then
-        return
-    end
+function resizeCardOnEnterZone(card, scale)
+    if (card.isDestroyed()) then return end
+    if( not scale ) then return end
 
-    local newScale = nil
-
-    if (zoneType == "hero") then
-        newScale = CARD_SCALE_PLAYER
-    elseif (zoneType == "sideScheme" or zoneType == "encounterDeck" or zoneType == "attachment" or zoneType ==
-        "environment" or zoneType == "minion" or zoneType == "victoryDisplay") then
-        newScale = CARD_SCALE_ENCOUNTER
-    end
-
-    if (newScale) then
-        card.setScale(newScale)
-    end
+    card.setScale(scale)
 end
 
 function positionCardOnEnterZone(card, zoneType, zoneIndex)
@@ -158,53 +147,53 @@ function positionCardOnEnterZone(card, zoneType, zoneIndex)
 end
 
 function onObjectLeaveZone(zone, card)
-    if (supressZoneInteractions) then
-        return
-    end
-    if (not isCard(card)) then
-        return
-    end
+    if (supressZoneInteractions) then return end
+    if (not isCard(card)) then return end
 
     local zoneDef = getZoneDefinition({zone = zone})
     if (not zoneDef) then return end
 
     local zoneType = zoneDef.zoneType or zoneDef.zoneIndex
-    if (not zoneType) then
-        return
-    end
+    if (not zoneType) then return end
 
     local cardData = getCardData({
         card = card
     })
-    local cardType = cardData.type or ""
-    local cardAspect = cardData.aspect or ""
 
+    local cardType = cardData.type or ""
     if (cardType == "hero" or cardType == "villain" or cardType == "main_scheme") then
         return
     end
 
-    setCardValue({cardGuid = card.getGUID(), property = "retainValue", value = nil})
-
-    removeCounterFromCard({
+    removeCountersFromCard({
         card = card
     })
 
-    Wait.frames(function()
-        resizeCardOnLeaveZone(card, cardAspect)
-    end, 15)
+    if(zoneDef.rescaleOnExit) then
+        resizeCardOnLeaveZone(card, cardData.aspect or "")
+    end
 
-    repositionCardsInZone({
-        zone = zone
-    })
-
+    if(zoneDef.repositionCards) then
+        repositionCardsInZone({
+            zone = zone
+        })
+    end
+log(zoneType)
     if (zoneType == "victoryDisplay") then
         updateVictoryDisplayDetails()
     end
 end
 
 function resizeCardOnLeaveZone(card, cardAspect)
-    if (card.isDestroyed()) then
-        return
+    if (card.isDestroyed()) then return end
+
+    local zones = card.getZones()
+
+    for _, zone in ipairs(zones) do
+        local zoneDef = getZoneDefinition({zone = zone})
+        if (zoneDef and zoneDef.rescaleOnEnterTo) then
+            return
+        end
     end
 
     if (cardAspect == "encounter") then
@@ -290,4 +279,11 @@ function onObjectDestroy(object)
     if (not isCard(object)) then return end
 
     setCardValue({cardGuid = object.getGUID(), property = "retainedValue", value = nil})
+end
+
+function onObjectRotate(object, spin, flip, player_color, old_spin, old_flip)
+    if (not isCard(object)) then return end
+    if (spin == old_spin) then return end
+
+    rotateCountersWithCard({card = object, spin = spin, oldSpin = old_spin})
 end

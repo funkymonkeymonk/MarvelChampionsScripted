@@ -718,8 +718,8 @@ function kangStage3GetSideSchemesInPlay()
       local objects = zoneObject.getObjects()
       for _, obj in ipairs(objects) do
         if(obj.hasTag("side_scheme") or obj.hasTag("player_side_scheme")) then
-          setCardValue({cardGuid = obj.getGUID(), property = "retainValue", value = true})
-          Global.call("removeCounterFromCard", {card=obj})
+          --setCardValue({cardGuid = obj.getGUID(), property = "retainValue", value = true})
+          Global.call("removeCountersFromCard", {card=obj})
           table.insert(sideSchemes, obj.getGUID())
         end
       end

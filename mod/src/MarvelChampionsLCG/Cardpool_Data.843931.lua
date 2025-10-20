@@ -1,3 +1,7 @@
+function onload()
+  self.interactable = false
+end
+
 PACK_10 = [[
 [
   {
@@ -320,7 +324,9 @@ PACK_10 = [[
     "traits": "Persona.",
     "cost": 3,
     "deckLimit": 3,
-    "resourcePhysical": 1
+    "resourcePhysical": 1,
+    "counter": "threat",
+    "counterValue": 0
   },
   {
     "name": "Inspiring Presence",
@@ -35079,7 +35085,10 @@ PACK_03 = [[
     "traits": "Avenger. Vehicle.",
     "cost": 1,
     "deckLimit": 3,
-    "resourceEnergy": 1
+    "resourceEnergy": 1,
+    "counter": "general",
+    "counterName": "Time",
+    "counterValue": 0
   },
   {
     "code": "03020",
@@ -36347,7 +36356,10 @@ PACK_01 = [[
     "deckLimit": 1,
     "resourceEnergy": 1,
     "thwartCost": 1,
-    "attackCost": 1
+    "attackCost": 1,
+    "counter": "general", 
+    "counterName": "Arrows",
+    "counterValue": 4
   },
   {
     "name": "Maria Hill",

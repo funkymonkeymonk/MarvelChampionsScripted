@@ -46,7 +46,6 @@ function createBtns()
   width=w,
   font_size=f_size,
   scale={x=3, y=3, z=3},
-  color=f_size,
   font_color=f_color, 
   color = bg_color
 })

@@ -107,7 +107,7 @@ function setUpSchemeStage_baronZemo_main(params)
         table.insert(environments, "50183")
 
         local environmentCardValues = {
-            retainValue = true,
+            --retainValue = true,
             overrideFaceUp = true
         }
         local environmentCardTags = {"attachment"}

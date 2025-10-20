@@ -12,10 +12,6 @@ function repositionCardsInZone(params)
    local zone = params.zone
    local zoneDef = getZoneDefinition({zone = zone})
    local zoneType = zoneDef.zoneType or zoneDef.zoneIndex
-
-   if(zoneType ~= "sideScheme" and zoneType ~= "attachment" and zoneType ~= "environment" and zoneType ~= "minion" and zoneType ~= "victoryDisplay") then
-      return
-   end
  
    local items = zone.getObjects()
    local cardNumber = 0
@@ -57,7 +53,8 @@ end
 
 function getZoneDefinition(params)
    local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
- 
+   if(not scenarioManager) then return end
+   
    return scenarioManager.call("getZoneDefinition", params)
 end
  
@@ -135,30 +132,32 @@ function getNewZoneCardPosition(params)
     return {x, origin.y, z}
  end
  
- function updateVictoryDisplayDetails()
-    local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
-    local zoneGuid = scenarioManager.call("getZoneGuid", {zoneIndex = "victoryDisplay"})
-    local zone = getObjectFromGUID(zoneGuid)
+function updateVictoryDisplayDetails()
+   local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
+   if(not scenarioManager) then return nil end
+
+   local zoneDef = scenarioManager.call("getZoneDefinition", {zoneIndex = "victoryDisplay"})
+   if(not zoneDef) then return nil end
+
+   local zone = getObjectFromGUID(zoneDef.guid)
+   if(not zone) then return nil end
  
-    if(not zone) then return nil end
+   local items = zone.getObjects()
+   local cardCount = 0
+   local victoryPoints = 0
  
-    local items = zone.getObjects()
-    local cardCount = 0
-    local victoryPoints = 0
+   for i, v in ipairs(items) do
+      if(v.tag == "Card") then 
+         cardCount = cardCount + 1
  
-    for i, v in ipairs(items) do
-       if(v.tag == "Card") then 
-          cardCount = cardCount + 1
+         local cardData = getCardData({card = v})
+         victoryPoints = victoryPoints + (cardData.victory or 0)
+      end
+   end
  
-          local cardData = getCardData({card = v})
-          victoryPoints = victoryPoints + (cardData.victory or 0)
-       end
-    end
+   local victoryPointsReadout = scenarioManager.call("getItemFromManifest", {key = "victoryPointsReadout"})
+   local victoryDisplayItemCountReadout = scenarioManager.call("getItemFromManifest", {key = "victoryDisplayItemCountReadout"})
  
-    local victoryPointsReadout = scenarioManager.call("getItemFromManifest", {key = "victoryPointsReadout"})
-    local victoryDisplayItemCountReadout = scenarioManager.call("getItemFromManifest", {key = "victoryDisplayItemCountReadout"})
- 
-    victoryPointsReadout.TextTool.setValue("Victory Points: " .. victoryPoints)
-    victoryDisplayItemCountReadout.TextTool.setValue("Items: " .. cardCount)
- end
- 
+   victoryPointsReadout.TextTool.setValue("Victory Points: " .. victoryPoints)
+   victoryDisplayItemCountReadout.TextTool.setValue("Items: " .. cardCount)
+end
