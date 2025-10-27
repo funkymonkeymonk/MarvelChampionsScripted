@@ -12,7 +12,7 @@ VILLAIN_POSITION = {-0.34, 1.00, 20.44}
 VILLAIN_ROTATION = {0.00, 180.00, 0.00}
 VILLAIN_SCALE    = {3.64, 1.00, 3.64}
 
-MAIN_SCHEME_POSITION = {8.38, 2.00, 22.45}
+MAIN_SCHEME_POSITION = {8.38, 0.97, 22.45}
 MAIN_SCHEME_ROTATION = {0.00, 90.00, 180.00}
 MAIN_SCHEME_SCALE    = {2.93, 1.00, 2.93}
 
@@ -126,7 +126,8 @@ ZONE_SIDE_SCHEME = {
    rescaleOnEnterTo = CARD_SCALE_ENCOUNTER,
    rescaleOnExit = true,
    repositionCards = true,
-   addCountersAndTokens = true
+   addCountersAndTokens = true,
+   group = "scenario"
 }
 
 ZONE_ENVIRONMENT = {
@@ -143,7 +144,8 @@ ZONE_ENVIRONMENT = {
    rescaleOnEnterTo = CARD_SCALE_ENCOUNTER,
    rescaleOnExit = true,
    repositionCards = true,
-   addCountersAndTokens = true
+   addCountersAndTokens = true,
+   group = "scenario"
 }
 
 ZONE_ATTACHMENT = {
@@ -160,7 +162,8 @@ ZONE_ATTACHMENT = {
    rescaleOnEnterTo = CARD_SCALE_ENCOUNTER,
    rescaleOnExit = true,
    repositionCards = true,
-   addCountersAndTokens = true
+   addCountersAndTokens = true,
+   group = "scenario"
 }
 
 ZONE_ENCOUNTER_DECK = {
@@ -170,7 +173,8 @@ ZONE_ENCOUNTER_DECK = {
    rescaleOnEnterTo = CARD_SCALE_ENCOUNTER,
    rescaleOnExit = true,
    repositionCards = false,
-   addCountersAndTokens = false
+   addCountersAndTokens = false,
+   group = "scenario"
 }
 
 ZONE_VICTORY_DISPLAY = {
@@ -186,7 +190,10 @@ ZONE_VICTORY_DISPLAY = {
    rescaleOnEnterTo = CARD_SCALE_ENCOUNTER,
    rescaleOnExit = true,
    repositionCards = true,
-   addCountersAndTokens = false
+   addCountersAndTokens = false,
+   onEnterFunction = "updateVictoryDisplayDetails",
+   onLeaveFunction = "updateVictoryDisplayDetails",
+   group = "scenario"
 }
 
 ZONE_HERO = {
@@ -200,7 +207,7 @@ ZONE_HERO = {
 
 ZONE_HERO_COUNTERS = {
    zoneType = "heroCounters",
-   scale = {20.00, 1.50, 14.00},
+   scale = {20.00, 1.25, 14.00},
    rescaleOnEnterTo = nil,
    rescaleOnExit = false,
    repositionCards = false,

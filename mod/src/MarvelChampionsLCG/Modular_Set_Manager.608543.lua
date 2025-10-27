@@ -12,7 +12,6 @@ local modularSets = {}
 local selectedSets = {}
 
 function onLoad()
-    self.interactable = false
     createContextMenu()
 	--layOutModularSets()
 end

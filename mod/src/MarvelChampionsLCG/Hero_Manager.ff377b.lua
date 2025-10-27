@@ -36,8 +36,6 @@ local defaultRotation = {0, 180, 0}
 local assetBag = getObjectFromGUID(Global.getVar("ASSET_BAG_GUID"))
 
 function onload(saved_data)
-  self.interactable = false
-  
   for key, hero in pairs(heroes) do
     hero.key = key
   end

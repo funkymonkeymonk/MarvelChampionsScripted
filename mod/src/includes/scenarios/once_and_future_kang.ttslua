@@ -426,8 +426,8 @@ function kangStage2MoveEncounterDeck()
   Global.setSnapPoints({})
   setUpSnapPoints()
 
-  local encounterDeckZoneGuid = getZoneGuid({zoneIndex="encounterDeck"})
-  local encounterDeckZone = getObjectFromGUID(encounterDeckZoneGuid)
+  local encounterDeckZoneDef = Global.call("getZoneDefinition", {zoneIndex="encounterDeck"})
+  local encounterDeckZone = getObjectFromGUID(encounterDeckZoneDef.guid)
   encounterDeckZone.setPosition({49.25, 1.00, 15.75})
   encounterDeckZone.setScale({10.25, 2.00, 7.00})
 
@@ -441,13 +441,10 @@ end
 
 function kangStage2DiscardSideSchemes()
   Wait.frames(function()
-    local zoneGuid = getZoneGuid({zoneIndex="sideScheme"})
-    local zoneObject = getObjectFromGUID(zoneGuid)
-    zoneObject.setVar("zoneType", nil)
-  
-    local sideSchemeZoneGuid = getZoneGuid({zoneIndex="sideScheme"})
-    local sideSchemeZone = getObjectFromGUID(sideSchemeZoneGuid)
-  
+    local sideSchemeZoneDef = Global.call("getZoneDefinition", {zoneIndex="sideScheme"})
+    local sideSchemeZone = getObjectFromGUID(sideSchemeZoneDef.guid)
+    sideSchemeZone.setVar("zoneType", nil) --XXX what's going on here?
+
     local sideSchemes = sideSchemeZone.getObjects()
     local encounterDiscardPosition = getEncounterDiscardPosition()
     local sideSchemeCount = 0
@@ -490,10 +487,7 @@ function kangStage2SetUpZones()
       }
     
       for i=1, #zones do
-        local zoneGuid = getZoneGuid({zoneIndex=zones[i]})
-        local zoneObject = getObjectFromGUID(zoneGuid)
-        if(zoneObject) then zoneObject.destruct() end
-        currentScenario.zones[zones[i]] = nil
+        Global.call("deleteZone", {zoneIndex=zones[i]})
       end
     
       local seats = {"Red", "Blue", "Green", "Yellow"}
@@ -505,7 +499,8 @@ function kangStage2SetUpZones()
           local layout = currentScenario.stage2Layouts[v]
           local zoneIndex = "sideScheme-".. v
     
-          local zoneDef = {
+          Global.call("createZone", {zoneDef = Global.call("combineZoneDefinitions", {zoneDef = {
+            zoneIndex = zoneIndex,
             position = layout.sideSchemeZonePosition,
             scale = {7.00, 1.00, 10.00},
             firstCardPosition = layout.sideSchemeFirstCardPosition,
@@ -513,25 +508,10 @@ function kangStage2SetUpZones()
             verticalGap = 5,
             width = 1,
             height = 2
-          }
-    
-          currentScenario.zones[zoneIndex] = zoneDef
-    
-          spawnObject({
-            type="ScriptingTrigger",
-            position = zoneDef.position,
-            scale = zoneDef.scale,
-            sound = false,
-            callback_function = function(spawned_object)
-              spawned_object.addTag("side_scheme")
-              spawned_object.addTag("player_side_scheme")
-              spawned_object.setVar("zoneType", "sideScheme")
-              spawned_object.setVar("zoneIndex", zoneIndex)
-              currentScenario.zones[zoneIndex].guid = spawned_object.getGUID()
-            end
-          })
+          }, 
+          defaultDef = Global.getTable("ZONE_SIDE_SCHEME")})})
         end
-      end      
+      end
     end,
     60
   )
@@ -691,6 +671,7 @@ end
 
 function kangPlaceStage3(heroCount)
   local sideSchemes = kangStage3GetSideSchemesInPlay()
+
   kangStage3SetUpZones()
   kangStage3MoveSideSchemes(sideSchemes)
   kangStage3DeleteStage2MainSchemeCard()
@@ -711,16 +692,18 @@ function kangStage3GetSideSchemesInPlay()
 
   for _, v in ipairs(seats) do
     local zoneIndex = "sideScheme-" .. v
-    local zoneGuid = getZoneGuid({zoneIndex=zoneIndex})
-    local zoneObject = getObjectFromGUID(zoneGuid)
+    local zoneDef = Global.call("getZoneDefinition", {zoneIndex=zoneIndex})
+    
+    if(zoneDef) then
+      local zoneObject = getObjectFromGUID(zoneDef.guid)
 
-    if(zoneObject) then
-      local objects = zoneObject.getObjects()
-      for _, obj in ipairs(objects) do
-        if(obj.hasTag("side_scheme") or obj.hasTag("player_side_scheme")) then
-          --setCardValue({cardGuid = obj.getGUID(), property = "retainValue", value = true})
-          Global.call("removeCountersFromCard", {card=obj})
-          table.insert(sideSchemes, obj.getGUID())
+      if(zoneObject) then
+        local objects = zoneObject.getObjects()
+        for _, obj in ipairs(objects) do
+          if(obj.hasTag("side_scheme") or obj.hasTag("player_side_scheme")) then
+            Global.call("removeCountersFromCard", {card=obj})
+            table.insert(sideSchemes, obj.getGUID())
+          end
         end
       end
     end
@@ -734,59 +717,12 @@ function kangStage3SetUpZones()
 
   for _, v in ipairs(seats) do
     local zoneIndex = "sideScheme-" .. v
-    local zoneGuid = getZoneGuid({zoneIndex=zoneIndex})
-    local zoneObject = getObjectFromGUID(zoneGuid)
-    if(zoneObject) then zoneObject.destruct() end
-    currentScenario.zones[zoneIndex] = nil
+    Global.call("deleteZone", {zoneIndex=zoneIndex})
   end
 
-  currentScenario.zones.sideScheme = currentScenario.zones.sideScheme or defaults.zones.sideScheme
-  currentScenario.zones.environment = currentScenario.zones.environment or defaults.zones.environment
-  currentScenario.zones.attachment = currentScenario.zones.attachment or defaults.zones.attachment
-
-  local sideSchemeZoneDef = currentScenario.zones.sideScheme
-  local environmentZoneDef = currentScenario.zones.environment
-  local attachmentZoneDef = currentScenario.zones.attachment
-
-  spawnObject({
-    type="ScriptingTrigger",
-    position = sideSchemeZoneDef.position,
-    scale = sideSchemeZoneDef.scale,
-    sound = false,
-    callback_function = function(spawned_object)
-      spawned_object.addTag("side_scheme")
-      spawned_object.addTag("player_side_scheme")
-      spawned_object.setVar("zoneType", "sideScheme")
-      spawned_object.setVar("zoneIndex", "sideScheme")
-      currentScenario.zones.sideScheme.guid = spawned_object.getGUID()
-    end
-  })
-
-  spawnObject({
-    type="ScriptingTrigger",
-    position = environmentZoneDef.position,
-    scale = environmentZoneDef.scale,
-    sound = false,
-    callback_function = function(spawned_object)
-      spawned_object.addTag("environment")
-      spawned_object.setVar("zoneType", "environment")
-      spawned_object.setVar("zoneIndex", "environment")
-      currentScenario.zones.environment.guid = spawned_object.getGUID()
-    end
-  })
-
-  spawnObject({
-    type="ScriptingTrigger",
-    position = attachmentZoneDef.position,
-    scale = attachmentZoneDef.scale,
-    sound = false,
-    callback_function = function(spawned_object)
-      spawned_object.addTag("attachment")
-      spawned_object.setVar("zoneType", "attachment")
-      spawned_object.setVar("zoneIndex", "attachment")
-      currentScenario.zones.attachment.guid = spawned_object.getGUID()
-    end
-  })
+  Global.call("createZone", {zoneDef = Global.getTable("ZONE_SIDE_SCHEME")})
+  Global.call("createZone", {zoneDef = Global.getTable("ZONE_ENVIRONMENT")})
+  Global.call("createZone", {zoneDef = Global.getTable("ZONE_ATTACHMENT")})
 end
 
 function kangStage3MoveSideSchemes(sideSchemes)
@@ -833,8 +769,8 @@ function kangStage3MoveEncounterDeck()
   Global.setSnapPoints({})
   setUpSnapPoints()
 
-  local encounterDeckZoneGuid = getZoneGuid({zoneIndex="encounterDeck"})
-  local encounterDeckZone = getObjectFromGUID(encounterDeckZoneGuid)
+  local encounterDeckZoneDef = Global.call("getZoneDefinition", {zoneIndex="encounterDeck"})
+  local encounterDeckZone = getObjectFromGUID(encounterDeckZoneDef.guid)
   encounterDeckZone.setPosition({-15.25, 1.00, 22.00})
   encounterDeckZone.setScale({9.75, 2.00, 7.00})
 

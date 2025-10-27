@@ -261,7 +261,7 @@ function isFaceUp(params)
     local object = params.object
     local z = object.getRotation()["z"]
 
-    return z > -5 and z < 5 or not object.hide_when_face_down
+    return z > 355 or z < 5 or not object.hide_when_face_down
 end
 
 function deleteCardAtPosition(params)
@@ -587,13 +587,18 @@ function discardFromEncounterDeck(params)
         reshuffleEncounterDeck()
     end
 
-    Wait.condition(function()
-        startLuaCoroutine(self, "discardEncounterCoroutine")
-    end, function()
-        return discardPile == nil or discardPile.isDestroyed() or discardPile.resting
-    end, 3, function()
-        startLuaCoroutine(self, "discardEncounterCoroutine")
-    end)
+    Wait.condition(
+        function()
+            startLuaCoroutine(self, "discardEncounterCoroutine")
+        end, 
+        function()
+            return discardPile == nil or discardPile.isDestroyed() or discardPile.resting
+        end, 
+        3, 
+        function()
+            startLuaCoroutine(self, "discardEncounterCoroutine")
+        end
+    )
 
     function discardEncounterCoroutine()
         while not stopDiscarding do
@@ -722,14 +727,11 @@ function cardIsInZone(params)
     end
 
     local zoneIndex = params.zoneIndex
-    local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
-    local zoneGuid = scenarioManager.call("getZoneGuid", {
-        zoneIndex = zoneIndex
-    })
+    local zoneDef = getZoneDefinition({zoneIndex = zoneIndex})
     local zones = card.getZones()
-
+    
     for _, zone in pairs(zones) do
-        if zone.getGUID() == zoneGuid then
+        if zone.getGUID() == zoneDef.guid then
             return true
         end
     end
@@ -859,21 +861,27 @@ function importDeck(params)
         if res.is_done and not res.is_error then
             if string.find(res.text, "<!DOCTYPE html>") then
                 broadcastToAll("Deck " .. deckId .. " is not shared", {0.5, 0.5, 0.5})
+
+                callbackTarget.call(callbackFunction, { deckInfo = nil })
                 return
             end
 
             deckInfo = JSON.decode(res.text)
         else
             print(res.error)
+
+            callbackTarget.call(callbackFunction, { deckInfo = nil })
             return
         end
 
         if (deckInfo == nil) then
             broadcastToAll("Deck not found!", {0.5, 0.5, 0.5})
+
+            callbackTarget.call(callbackFunction, { deckInfo = nil })
             return
-        else
-            print("Found decklist: " .. deckInfo.name)
         end
+
+        print("Found decklist: " .. deckInfo.name)
 
         callbackTarget.call(callbackFunction, {
             deckInfo = deckInfo
@@ -907,14 +915,23 @@ function getEncounterDeck()
     })
 end
 
+
+--Zone Manager pass-throughs
+
 function setCardValue(params)
-    local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
-    if(not scenarioManager) then return nil end
-    scenarioManager.call("setCardValue", params)
+    local layoutManager = getObjectFromGUID(GUID_LAYOUT_MANAGER)
+    if(not layoutManager) then return nil end
+    layoutManager.call("setCardValue", params)
 end
 
 function getCardValue(params)
-    local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
-    if(not scenarioManager) then return nil end
-    return scenarioManager.call("getCardValue", params)
+    local layoutManager = getObjectFromGUID(GUID_LAYOUT_MANAGER)
+    if(not layoutManager) then return nil end
+    return layoutManager.call("getCardValue", params)
+end
+
+function getAllCardValues(params)
+    local layoutManager = getObjectFromGUID(GUID_LAYOUT_MANAGER)
+    if(not layoutManager) then return nil end
+    return layoutManager.call("getAllCardValues", params)
 end

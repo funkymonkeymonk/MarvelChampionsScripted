@@ -184,8 +184,8 @@ function configureEvidenceEnvelope(params)
 end
 
 function baronZemoAttachBoardMemberToVillain(moleCardId)
-    local zoneGuid = getZoneGuid({zoneIndex = "attachment"})
-    local attachmentZone = getObjectFromGUID(zoneGuid)
+    local zoneDef = Global.call("getZoneDefinition", {zoneIndex = "attachment"})
+    local attachmentZone = getObjectFromGUID(zoneDef.guid)
     local cardsInZone = attachmentZone.getObjects()
 
     for i, card in ipairs(cardsInZone) do
@@ -220,7 +220,7 @@ function baronZemoConvertSecretsToThreat(executiveBoard)
                 local counterValue = counter.call("getValue") -- counter.getVar("value") or 0
                 threat = threat + counterValue
             else
-                threat = threat + getCardValue({cardGuid = officerCard.getGUID(), property = "retainedValue"}) or 0
+                threat = threat + getCardValue({cardGuid = officerCard.getGUID(), property = "configuredRetainedValue"}) or 0
             end
         end
     end

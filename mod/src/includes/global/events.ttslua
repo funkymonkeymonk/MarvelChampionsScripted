@@ -8,6 +8,10 @@ function onObjectNumberTyped(object, playerColor, number)
         return false
     end
 
+    if(object.type == "Card") then
+        removeCountersFromCard({card = object})
+    end
+
     local nearbyObjects = findInRadiusBy(object.getPosition(), 4)
     local playmat = nil
 
@@ -36,32 +40,13 @@ function onObjectEnterZone(zone, card)
     if (not isCard(card)) then return end
     if (not isFaceUp({object = card})) then return end
 
-    local retainedValue = getCardValue({cardGuid = card.getGUID(), property = "retainedValue"})
-    local onEnterFunction = zoneDef.onEnterFunction
-
-    if (onEnterFunction) then
-        scenarioManager.call(onEnterFunction, {
-            zone = zone,
-            item = card
-        })
-        return
-    end
-
-    local zoneType = zoneDef.zoneType or zoneDef.zoneIndex
-    local zoneIndex = zoneDef.zoneIndex
-
-    if (not zoneType) then
-        return
-    end
-
     local cardData = getCardData({
         card = card
     })
 
     local cardType = cardData.type
-    if (cardType == "hero" or ((cardType == "villain" or cardType == "main_scheme") and zoneType ~= "victoryDisplay")) then
-        return
-    end
+
+    if (cardType == "hero") then return end
 
     local playerColor = zoneDef.playerColor
     if (playerColor) then
@@ -73,48 +58,27 @@ function onObjectEnterZone(zone, card)
     end
 
     if(zoneDef.repositionCards) then
-        positionCardOnEnterZone(card, zoneType, zoneIndex)
+        positionCardOnEnterZone(card, zoneDef.zoneIndex)
     end
 
     if(zoneDef.addCountersAndTokens) then
-        addCountersAndTokensToCard({
-            card = card,
-            cardData = cardData
-        })
+        addCountersAndTokensToCard({card = card, cardData = cardData})
     end
 
     local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
+
+    if (zoneDef.onEnterFunction) then
+        scenarioManager.call(zoneDef.onEnterFunction, {
+            zone = zone,
+            item = card
+        })
+        return
+    end
+
     scenarioManager.call("onCardEnterZone", {
         zone = zone,
         card = card
     })
-
-    if (zoneType == "victoryDisplay") then
-        updateVictoryDisplayDetails()
-    end    
-    -- Wait.condition(function()
-    --     if (card.isDestroyed()) then
-    --         return
-    --     end
-
-    --     if (zoneType == "sideScheme") then
-    --         addThreatCounterToSideScheme(card)
-    --     elseif (zoneType == "minion") then
-    --         addHealthCounterToMinion(card)
-    --         if (card.hasTag("toughness")) then
-    --             addStatusToMinion({
-    --                 card = card,
-    --                 statusType = "tough"
-    --             })
-    --         end
-    --     end
-
-    --     if (cardData.counter) then
-    --         addConfiguredCounterToCard({card = card, cardData = cardData})
-    --     end
-    -- end, function()
-    --     return card.isDestroyed() or card.resting
-    -- end, 2)
 end
 
 function resizeCardOnEnterZone(card, scale)
@@ -124,12 +88,7 @@ function resizeCardOnEnterZone(card, scale)
     card.setScale(scale)
 end
 
-function positionCardOnEnterZone(card, zoneType, zoneIndex)
-    if (zoneType ~= "sideScheme" and zoneType ~= "attachment" and zoneType ~= "environment" and zoneType ~= "minion" and
-        zoneType ~= "victoryDisplay") then
-        return
-    end
-
+function positionCardOnEnterZone(card, zoneIndex)
     local cardType = getCardProperty({
         card = card,
         property = "type"
@@ -153,21 +112,18 @@ function onObjectLeaveZone(zone, card)
     local zoneDef = getZoneDefinition({zone = zone})
     if (not zoneDef) then return end
 
-    local zoneType = zoneDef.zoneType or zoneDef.zoneIndex
-    if (not zoneType) then return end
-
     local cardData = getCardData({
         card = card
     })
 
     local cardType = cardData.type or ""
-    if (cardType == "hero" or cardType == "villain" or cardType == "main_scheme") then
+    if (cardType == "hero") then
         return
     end
 
-    removeCountersFromCard({
-        card = card
-    })
+    if(zoneDef.addCountersAndTokens) then
+        removeCountersFromCard({ card = card })
+    end
 
     if(zoneDef.rescaleOnExit) then
         resizeCardOnLeaveZone(card, cardData.aspect or "")
@@ -178,9 +134,14 @@ function onObjectLeaveZone(zone, card)
             zone = zone
         })
     end
-log(zoneType)
-    if (zoneType == "victoryDisplay") then
-        updateVictoryDisplayDetails()
+
+    if (zoneDef.onLeaveFunction) then
+        local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
+        scenarioManager.call(zoneDef.onLeaveFunction, {
+            zone = zone,
+            item = card
+        })
+        return
     end
 end
 
@@ -251,12 +212,9 @@ function onPlayerAction(player, action, targets)
             zoneType = "minion"
         end
 
-        if (not zoneType) then
-            return true
-        end
+        if (not zoneType) then return true end
 
-        local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
-        local zoneDefs = scenarioManager.call("getZoneDefsByType", {
+        local zoneDefs = getZoneDefinitionsByType({
             zoneType = zoneType
         })
 
@@ -278,7 +236,8 @@ end
 function onObjectDestroy(object)
     if (not isCard(object)) then return end
 
-    setCardValue({cardGuid = object.getGUID(), property = "retainedValue", value = nil})
+    setCardValue({cardGuid = object.getGUID(), property = "standardRetainedValue", value = nil})
+    setCardValue({cardGuid = object.getGUID(), property = "configuredRetainedValue", value = nil})
 end
 
 function onObjectRotate(object, spin, flip, player_color, old_spin, old_flip)

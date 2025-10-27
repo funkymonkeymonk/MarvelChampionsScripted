@@ -52,10 +52,10 @@ function repositionCardsInZone(params)
 end
 
 function getZoneDefinition(params)
-   local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
-   if(not scenarioManager) then return end
+   local layoutManager = getObjectFromGUID(GUID_LAYOUT_MANAGER)
+   if(not layoutManager) then return nil end
    
-   return scenarioManager.call("getZoneDefinition", params)
+   return layoutManager.call("getZoneDefinition", params)
 end
  
 function getZoneCardCount(params)
@@ -129,35 +129,61 @@ function getNewZoneCardPosition(params)
     local x = origin.x + horizontalGap * (column - 1) --XXX error
     local z = origin.z - verticalGap * (row - 1)
  
-    return {x, origin.y, z}
- end
- 
-function updateVictoryDisplayDetails()
-   local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
-   if(not scenarioManager) then return nil end
+   return {x, origin.y, z}
+end
 
-   local zoneDef = scenarioManager.call("getZoneDefinition", {zoneIndex = "victoryDisplay"})
-   if(not zoneDef) then return nil end
+function combineZoneDefinitions(params)
+   local zoneDef = params.zoneDef
+   local defaultDef = params.defaultDef
+   local combinedDefinition = {}
 
-   local zone = getObjectFromGUID(zoneDef.guid)
-   if(not zone) then return nil end
- 
-   local items = zone.getObjects()
-   local cardCount = 0
-   local victoryPoints = 0
- 
-   for i, v in ipairs(items) do
-      if(v.tag == "Card") then 
-         cardCount = cardCount + 1
- 
-         local cardData = getCardData({card = v})
-         victoryPoints = victoryPoints + (cardData.victory or 0)
-      end
+   for k, v in pairs(defaultDef) do
+      combinedDefinition[k] = v
    end
- 
-   local victoryPointsReadout = scenarioManager.call("getItemFromManifest", {key = "victoryPointsReadout"})
-   local victoryDisplayItemCountReadout = scenarioManager.call("getItemFromManifest", {key = "victoryDisplayItemCountReadout"})
- 
-   victoryPointsReadout.TextTool.setValue("Victory Points: " .. victoryPoints)
-   victoryDisplayItemCountReadout.TextTool.setValue("Items: " .. cardCount)
+   if (not zoneDef) then
+      return combinedDefinition
+   end
+
+   for k, v in pairs(zoneDef) do
+      combinedDefinition[k] = v
+   end
+
+   return combinedDefinition
+end
+
+
+--Zone Manager pass-throughs
+function createZone(params)
+   local layoutManager = getObjectFromGUID(GUID_LAYOUT_MANAGER)
+   if(not layoutManager) then return nil end
+
+   return layoutManager.call("createZone", params)
+end
+
+function deleteZone(params)
+   local layoutManager = getObjectFromGUID(GUID_LAYOUT_MANAGER)
+   if(not layoutManager) then return nil end
+
+   return layoutManager.call("deleteZone", params)
+end
+
+function deleteZoneGroup(params)
+   local layoutManager = getObjectFromGUID(GUID_LAYOUT_MANAGER)
+   if(not layoutManager) then return nil end
+
+   return layoutManager.call("deleteZoneGroup", params)
+end
+
+function getZoneDefinition(params)
+   local layoutManager = getObjectFromGUID(GUID_LAYOUT_MANAGER)
+   if(not layoutManager) then return nil end
+
+   return layoutManager.call("getZoneDefinition", params)
+end
+
+function getZoneDefinitionsByType(params)
+   local layoutManager = getObjectFromGUID(GUID_LAYOUT_MANAGER)
+   if(not layoutManager) then return nil end
+
+   return layoutManager.call("getZoneDefinitionsByType", params)
 end
