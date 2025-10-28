@@ -14,12 +14,12 @@ scenarios["sinisterSix"] =
             stages={
                 stage1={
                     cardId="27094",
-                    hitPointsPer=8
+                    hitPointsPer=8,
+                    locked=false
                 }
             },
             deckPosition={49.50, 1.00, 29.75},
-            deckScale={1.94, 1.00, 1.94},
-            locked=false
+            deckScale={1.94, 1.00, 1.94}
         },
         electro={
             name="Electro",
@@ -32,12 +32,12 @@ scenarios["sinisterSix"] =
             stages={
                 stage1={
                     cardId="27095",
-                    hitPointsPer=8
+                    hitPointsPer=8,
+                    locked=false
                 }
             },
             deckPosition={49.50, 1.00, 18.75},
-            deckScale={1.94, 1.00, 1.94},
-            locked=false
+            deckScale={1.94, 1.00, 1.94}
         },
         hobgoblin={
             name="Hobgoblin",
@@ -50,12 +50,12 @@ scenarios["sinisterSix"] =
             stages={
                 stage1={
                     cardId="27096",
-                    hitPointsPer=8
+                    hitPointsPer=8,
+                    locked=false
                 }
             },
             deckPosition={49.50, 1.00, 7.75},
-            deckScale={1.94, 1.00, 1.94},
-            locked=false
+            deckScale={1.94, 1.00, 1.94}
         },
         kraven={
             name="Kraven the Hunter",
@@ -68,12 +68,12 @@ scenarios["sinisterSix"] =
             stages={
                 stage1={
                     cardId="27097",
-                    hitPointsPer=8
+                    hitPointsPer=8,
+                    locked=false
                 }
             },
             deckPosition={49.50, 1.00, -3.25},
-            deckScale={1.94, 1.00, 1.94},
-            locked=false
+            deckScale={1.94, 1.00, 1.94}
         },
         scorpion={
             name="Scorpion",
@@ -86,12 +86,12 @@ scenarios["sinisterSix"] =
             stages={
                 stage1={
                     cardId="27098",
-                    hitPointsPer=8
+                    hitPointsPer=8,
+                    locked=false
                 }
             },
             deckPosition={49.75, 1.00, -14.25},
-            deckScale={1.94, 1.00, 1.94},
-            locked=false
+            deckScale={1.94, 1.00, 1.94}
         },
         vulture={
             name="Vulture",
@@ -104,12 +104,12 @@ scenarios["sinisterSix"] =
             stages={
                 stage1={
                     cardId="27099",
-                    hitPointsPer=8
+                    hitPointsPer=8,
+                    locked=false
                 }
             },
             deckPosition={49.50, 1.00, -25.25},
-            deckScale={1.94, 1.00, 1.94},
-            locked=false
+            deckScale={1.94, 1.00, 1.94}
         },
     },
     schemes={

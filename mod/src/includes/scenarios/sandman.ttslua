@@ -35,26 +35,11 @@ scenarios["sandman"] =
             }
         }
     },
-    cards={
-        cityStreets={
-            cardId="27065",
-            position={15.75, 1.00, 29.25},
-            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
-            locked=true
-        }
-    },
-    counters={
-        findTheSenatorThreat={
-            type="general",
-            position={17.26, 1.06, 26.74},
-            scale={0.50, 1.00, 0.50},
-            locked=true
-        }
-    },
     decks={
         encounterDeck={
             name="Sandman's Encounter Deck",
             cards={
+                ["27065"]=1,
                 ["27066"]=2,
                 ["27067"]=2,
                 ["27068"]=2,
@@ -70,3 +55,14 @@ scenarios["sandman"] =
         downToEarth="recommended"
     }
 }
+
+function setUpSchemeStage_sandman_main(params)
+    local stage = params.stage
+    local stageNumber = string.sub(stage.key, -1)
+
+    if(stageNumber == "1") then
+        Global.call("moveCardFromEncounterDeckById", {cardId = "27065", searchInDiscard = true, zoneIndex = "environment"})
+
+        return
+    end
+end

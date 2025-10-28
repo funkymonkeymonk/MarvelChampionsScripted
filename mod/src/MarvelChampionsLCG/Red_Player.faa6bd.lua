@@ -347,14 +347,12 @@ function importDeck()
         return
     end
 
-    hideHeroUI(false)
-
     local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
 
     local params = {
         deckId = importDeckId,
         isPrivateDeck = isPrivateDeck,
-        callbackFunction = "placeHero",
+        callbackFunction = "importDeckCallback",
         callbackTarget = self
     }
 
@@ -365,7 +363,14 @@ function setDeckId(player, value, id)
     importDeckId = value
 end
 
-function placeHero(params)
+function importDeckCallback(params)
+    if(not params.deckInfo) then
+        hideHeroUI(true)
+        return
+    end
+
+    hideHeroUI(false)
+    
     local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
     heroManager.call("placeHeroWithImportedDeck", {deckInfo = params.deckInfo, positionColor=positionColor})
 end

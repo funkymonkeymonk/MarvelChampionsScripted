@@ -53,7 +53,7 @@
       }
     },
     "LuaScript": "#include ./Playmat.f5701e.lua",
-    "LuaScriptState": "#include ./Playmat.f5701e.state.json",
+    "LuaScriptState": "",
     "XmlUI": "",
     "AttachedSnapPoints": [
       {
@@ -163,9 +163,9 @@
       },
       {
         "Position": {
-          "x": -1.51671052,
+          "x": -1.53895274,
           "y": 0.09999776,
-          "z": -0.814672
+          "z": -0.82375478
         }
       },
       {

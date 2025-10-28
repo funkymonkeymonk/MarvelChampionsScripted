@@ -177,13 +177,13 @@ function spawnCard(params)
     if (card.duplicate_of ~= nil) then
         return spawnCard({
             cardId = card.duplicate_of,
-            position = params.position,
-            scale = params.scale,
-            name = params.name,
-            landscape = params.landscape,
-            locked = params.locked,
-            artVariant = params.artVariant,
-            tags = params.tags
+            position = position,
+            scale = scale,
+            name = name,
+            landscape = landscape,
+            locked = locked,
+            artVariant = artVariant,
+            tags = tags
         })
     end
 
@@ -198,12 +198,12 @@ function spawnCard(params)
                 Wait.condition(
                     function()
                         if(spawnedCard.isDestroyed()) then return end
-                            spawnedCard.setLock(true)
+                        spawnedCard.setLock(true)
                     end, 
                     function()
                         return spawnedCard.isDestroyed() or spawnedCard.resting
                     end,
-                    5)
+                    15)
             end,
             10)
     end

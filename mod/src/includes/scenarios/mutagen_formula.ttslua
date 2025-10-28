@@ -100,7 +100,8 @@ function setUpSchemeStage_mutagenFormula_main(params)
     function placeGoblinMinionCoroutine()
       for _, player in ipairs(players) do
         local goblinMinionPresent = false
-        local minionZone = getZoneByIndex({zoneIndex = "minion-" .. player.playerColor})
+        local minionZoneDef = Global.call("getZoneDefinition", {zoneIndex = "minion-" .. player.playerColor})
+        local minionZone = getObjectFromGUID(minionZoneDef.guid)
         local objects = minionZone.getObjects()
 
         for _, object in ipairs(objects) do

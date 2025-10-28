@@ -135,7 +135,7 @@ scenarios["towerDefense"] =
             height = 2
         },
         attachment = {
-            position = nil
+            supressCreation = true
         },
         encounterDeck = {
             position = {-22.10, 1.00, 22.25},

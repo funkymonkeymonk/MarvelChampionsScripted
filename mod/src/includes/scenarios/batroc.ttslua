@@ -112,10 +112,8 @@ function setUpSchemeStage_batroc_main(params)
 
     if(stageNumber == "3") then
         local alertLevelCard = Global.call("findCard", {cardId = "50090"})
-        local counterGuid =  getCardValue({cardGuid = alertLevelCard.getGUID(), property = "counterGuid"})
-        local counter = getObjectFromGUID(counterGuid)
-        local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
-        local heroCount = heroManager.call("getHeroCount")            
+        local counter = Global.call("getCounterFromCard", {card = alertLevelCard, counterClass = "configured"})
+        local heroCount = getHeroCount()
         local mode = currentScenario.mode
 
         if(Global.call("isFaceUp", {object = alertLevelCard})) then

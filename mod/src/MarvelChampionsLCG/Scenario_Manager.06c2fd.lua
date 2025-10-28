@@ -444,119 +444,20 @@ function setUpZones()
         currentScenario.zones = {}
     end
 
-    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
-
-    createZone({zoneDef = combineZoneDefinitions(currentScenario.zones.sideScheme, defaults.zones.sideScheme)})
-    createZone({zoneDef = combineZoneDefinitions(currentScenario.zones.environment, defaults.zones.environment)})
-    createZone({zoneDef = combineZoneDefinitions(currentScenario.zones.attachment, defaults.zones.attachment)})
-    createZone({zoneDef = combineZoneDefinitions(currentScenario.zones.encounterDeck, defaults.zones.encounterDeck)})
-    local victoryDisplayZone = createZone({zoneDef = combineZoneDefinitions(currentScenario.zones.victoryDisplay, defaults.zones.victoryDisplay)})
-
+    Global.call("createZone", {zoneDef = Global.call("combineZoneDefinitions", {zoneDef = currentScenario.zones.sideScheme, defaultDef = defaults.zones.sideScheme})})
+    Global.call("createZone", {zoneDef = Global.call("combineZoneDefinitions", {zoneDef = currentScenario.zones.environment, defaultDef = defaults.zones.environment})})
+    Global.call("createZone", {zoneDef = Global.call("combineZoneDefinitions", {zoneDef = currentScenario.zones.attachment, defaultDef = defaults.zones.attachment})})
+    Global.call("createZone", {zoneDef = Global.call("combineZoneDefinitions", {zoneDef = currentScenario.zones.encounterDeck, defaultDef = defaults.zones.encounterDeck})})
+    local victoryDisplayZone = Global.call("createZone", {zoneDef = Global.call("combineZoneDefinitions", {zoneDef = currentScenario.zones.victoryDisplay, defaultDef = defaults.zones.victoryDisplay})})
+    
     if (victoryDisplayZone) then
         createVictoryDisplayText()
     end
 
-    local selectedHeroes = heroManager.call("getSelectedHeroes")
-
-    for color, hero in pairs(selectedHeroes) do
-        local playerZonePosition = Vector(heroManager.call("getPlaymatPosition", {
-            playerColor = color
-        }))
-
-        local heroZoneDef = {
-            zoneIndex = "hero-" .. color,
-            zoneType = "hero",
-            playerColor = color,
-            position = Vector({playerZonePosition.x, 2, playerZonePosition.z}),
-            scale = {27.25, 4.00, 16.00}
-        }
-        createZone({zoneDef = heroZoneDef})
-
-        local minionZoneDef = {
-            zoneIndex = "minion-" .. color,
-            zoneType = "minion",
-            tags = {"minion"},
-            playerColor = color,
-            position = Vector({playerZonePosition.x - 3, 1, playerZonePosition.z + 12.10}),
-            scale = {20.00, 1.00, 6.75},
-            firstCardPosition = Vector({playerZonePosition.x - 11, 1, playerZonePosition.z + 12}),
-            horizontalGap = 5,
-            verticalGap = 0,
-            layoutDirection = "horizontal",
-            width = 4,
-            height = 1
-        }
-        createZone({zoneDef = minionZoneDef})
-    end
-
     local customZones = currentScenario.customZones or {}
     for key, zoneDef in pairs(customZones) do
-        currentScenario.zones[key] = zoneDef
-        local onEnterFunction = zoneDef.onEnterFunction or nil
-        local zoneType = zoneDef.zoneType or nil
-        local zoneTags = zoneDef.tags or {}
-
-        spawnObject({
-            type = "ScriptingTrigger",
-            position = zoneDef.position,
-            scale = zoneDef.scale,
-            sound = false,
-            callback_function = function(spawned_object)
-                spawned_object.setVar("zoneIndex", key)
-                if (onEnterFunction) then
-                    spawned_object.setVar("onEnterFunction", onEnterFunction)
-                end
-                if (zoneType) then
-                    spawned_object.setVar("zoneType", zoneType)
-                end
-                for _, tag in pairs(zoneTags) do
-                    spawned_object.addTag(tag)
-                end
-                currentScenario.zones[key].guid = spawned_object.getGUID()
-            end
-        })
+        Global.call("createZone", {zoneDef = zoneDef})
     end
-end
-
-function combineZoneDefinitions(zoneDef, defaultDef)
-    local combinedDefinition = {}
-    
-    for k, v in pairs(defaultDef) do
-        combinedDefinition[k] = v
-    end
-
-    if (not zoneDef) then
-        return combinedDefinition
-    end
-
-    for k, v in pairs(zoneDef) do
-        combinedDefinition[k] = v
-    end
-
-    return combinedDefinition
-end
-
-function createZone(params)
-    local zoneDef = params.zoneDef
-
-    if(zoneDef.supressCreation) then
-        return nil
-    end
-
-    return spawnObject({
-        type = "ScriptingTrigger",
-        position = zoneDef.position,
-        scale = zoneDef.scale,
-        sound = false,
-        callback_function = function(zone)
-            for _, tag in pairs(zoneDef.tags or {}) do
-                zone.addTag(tag)
-            end
-            local zoneGuid = zone.getGUID()
-            zoneDef.guid = zoneGuid
-            currentScenario.zones[zoneGuid] = zoneDef
-        end
-    })
 end
 
 function createVictoryDisplayText()
@@ -618,71 +519,6 @@ function setUpSnapPoints()
         position = discardPos
     })
     Global.setSnapPoints(snapPoints)
-end
-
-function getZoneGuid(params)
-    if (not currentScenario) then
-        return nil
-    end
-    if (not currentScenario.zones) then
-        return nil
-    end
-    local zone = currentScenario.zones[params.zoneIndex]
-
-    return zone and zone.guid or nil
-end
-
-function getZoneDefsByType(params)
-    local zoneType = params.zoneType
-    local zoneDefs = {}
-
-    if (not currentScenario) then
-        return zoneDefs
-    end
-    if (not currentScenario.zones) then
-        return zoneDefs
-    end
-
-    for key, zoneDef in pairs(currentScenario.zones) do
-        local zoneDefType = zoneDef.zoneType or zoneDef.zoneIndex
-
-        if (zoneDefType == zoneType) then
-            table.insert(zoneDefs, zoneDef)
-        end
-    end
-
-    return zoneDefs
-end
-
-function getZoneByIndex(params)
-    local zoneIndex = params.zoneIndex
-
-    if (not currentScenario) then
-        return nil
-    end
-
-    local zoneDef = currentScenario.zones[zoneIndex]
-    return getObjectFromGUID(zoneDef.guid)
-end
-
-function getZoneDefinition(params)
-   local zone = params.zone
-   local zoneGuid = zone and zone.getGUID() or params.zoneGuid
-   local zoneIndex = params.zoneIndex
-
-    if (not currentScenario or not currentScenario.zones) then
-        return nil
-    end
-
-    if(zoneGuid) then
-        return currentScenario.zones[zoneGuid]
-    end
-    
-    for _, zoneDef in pairs(currentScenario.zones) do
-        if(zoneDef.zoneIndex == zoneIndex) then
-            return zoneDef
-        end
-    end
 end
 
 function heroCountIsValid(params)
@@ -1612,16 +1448,7 @@ function finalizeSetUp(scenario)
 end
 
 function clearScenario()
-    if (currentScenario and currentScenario.zones) then
-        for _, zone in pairs(currentScenario.zones) do
-            if (zone.guid) then
-                local zoneObject = getObjectFromGUID(zone.guid)
-                if (zoneObject) then
-                    zoneObject.destruct()
-                end
-            end
-        end
-    end
+    Global.call("deleteZoneGroup", {group = "scenario"})
 
     local allObjects = getAllObjects()
 
@@ -2149,6 +1976,8 @@ function configureAdvanceSchemeButton(threatCounter, showAdvanceButton)
 end
 
 function onCardEnterZone(params)
+    if(not currentScenario) then return end
+
     local functionName = "onCardEnterZone_" .. currentScenario.key
 
     if (self.getVar(functionName) ~= nil) then
@@ -2175,45 +2004,31 @@ function getHpCounterForVillain(params)
     return getObjectFromGUID(villain.hpCounter.guid)
 end
 
-function setCardValue(params)
-    if(not currentScenario) then
-        Global.call("displayMessage", {
-            message = "No scenario is currently loaded.",
-            messageType = "error"
-        })
-        return
-    end
+function updateVictoryDisplayDetails()
+   local zoneDef = Global.call("getZoneDefinition", {zoneIndex = "victoryDisplay"})
+   if(not zoneDef) then return nil end
 
-    if(not currentScenario.cards) then
-        currentScenario.cards = {}
-    end
+   local zone = getObjectFromGUID(zoneDef.guid)
+   if(not zone) then return nil end
+ 
+   local items = zone.getObjects()
+   local cardCount = 0
+   local victoryPoints = 0
+ 
+   for i, v in ipairs(items) do
+      if(v.tag == "Card") then 
+         cardCount = cardCount + 1
 
-    local cardGuid = params.cardGuid
-    local property = params.property
-    local value = params.value
-
-    local card = currentScenario.cards[cardGuid] or {}
-    card[property] = value
-    currentScenario.cards[cardGuid] = card
-
-    saveData()
-end
-
-function getCardValue(params)
-    if(not currentScenario or not currentScenario.cards) then
-        return nil
-    end
-
-    local cardGuid = params.cardGuid
-    local property = params.property
-
-    local card = currentScenario.cards[cardGuid]
-
-    if(not card) then
-        return nil
-    end
-
-    return card[property]
+         local cardData = Global.call("getCardData", {card = v})
+         victoryPoints = victoryPoints + (cardData.victory or 0)
+      end
+   end
+ 
+   local victoryPointsReadout = getItemFromManifest({key = "victoryPointsReadout"})
+   local victoryDisplayItemCountReadout = getItemFromManifest({key = "victoryDisplayItemCountReadout"})
+ 
+   victoryPointsReadout.TextTool.setValue("Victory Points: " .. victoryPoints)
+   victoryDisplayItemCountReadout.TextTool.setValue("Items: " .. cardCount)
 end
 
 require('!/lib/json')

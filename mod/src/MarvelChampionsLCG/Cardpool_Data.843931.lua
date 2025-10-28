@@ -1,3 +1,7 @@
+function onload()
+  self.interactable = false
+end
+
 PACK_10 = [[
 [
   {
@@ -320,7 +324,9 @@ PACK_10 = [[
     "traits": "Persona.",
     "cost": 3,
     "deckLimit": 3,
-    "resourcePhysical": 1
+    "resourcePhysical": 1,
+    "counter": "threat",
+    "counterValue": 0
   },
   {
     "name": "Inspiring Presence",
@@ -4592,7 +4598,9 @@ PACK_16 = [[
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16093.jpg",
     "text": "<b>Forced Interrupt:</b> When the villain phase begins, place 1 evasion counter here.\n<i>Shoot the Thrusters!</i> - <b>First Player Action:</b> Exhaust the Milano and spend up to 2 resources of any type → remove 1 evasion counter from here for each resource spent this way.",
     "isUnique": true,
-    "traits": "Aerial. Vehicle."
+    "traits": "Aerial. Vehicle.",
+    "counter": "general",
+    "counterName": "Evasion"
   },
   {
     "name": "Cutthroat Ambition",
@@ -5351,12 +5359,27 @@ PACK_16 = [[
   },
   {
     "name": "Badoon Blitz",
-    "code": "16178a",
+    "code": "16178",
     "type": "side_scheme",
     "aspect": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/16178B.jpg",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16178A.jpg",
     "text": "<b>Standard Mode Only.</b>\nHinder 3[per_hero]. <i>(When revealed, place 3[per_hero] threat here.)</i>\nVictory 1. <i>(When defeated, add this card to the victory display.)</i>\n<b>When Defeated</b>: Each player may draw 1 card.",
+    "baseThreat": 2,
+    "baseThreatIsFixed": true,
+    "hinder": 3,
+    "victory": 1
+  },
+  {
+    "name": "Badoon Blitz",
+    "code": "16178a",
+    "type": "side_scheme",
+    "aspect": "encounter",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16178A.jpg",
+    "text": "<b>Standard Mode Only.</b>\nHinder 3[per_hero]. <i>(When revealed, place 3[per_hero] threat here.)</i>\nVictory 1. <i>(When defeated, add this card to the victory display.)</i>\n<b>When Defeated</b>: Each player may draw 1 card.",
+    "baseThreat": 2,
+    "baseThreatIsFixed": true,
     "hinder": 3,
     "victory": 1
   },
@@ -5365,8 +5388,10 @@ PACK_16 = [[
     "code": "16178b",
     "type": "side_scheme",
     "aspect": "encounter",
-    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16178A.jpg",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16178B.jpg",
+    "baseThreat": 3,
+    "baseThreatIsFixed": true,
     "text": "<b>Expert Mode Only.</b>\nHinder 4[per_hero]. Victory 1.\n<b>When Defeated</b>: Each player must choose and discard 1 card from their hand.",
     "acceleration": 1,
     "hinder": 4,
@@ -5374,12 +5399,27 @@ PACK_16 = [[
   },
   {
     "name": "Gallery of Splendor",
-    "code": "16179a",
+    "code": "16179",
     "type": "side_scheme",
     "aspect": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/16179B.jpg",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16179A.jpg",
     "text": "<b>Standard Mode Only.</b>\nHinder 3[per_hero]. Victory 1.\n<b>When Defeated</b>: Place the top card of each player's deck faceup into the Collection.",
+    "baseThreat": 3,
+    "baseThreatIsFixed": true,
+    "hinder": 3,
+    "victory": 1
+  },
+  {
+    "name": "Gallery of Splendor",
+    "code": "16179a",
+    "type": "side_scheme",
+    "aspect": "encounter",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16179A.jpg",
+    "text": "<b>Standard Mode Only.</b>\nHinder 3[per_hero]. Victory 1.\n<b>When Defeated</b>: Place the top card of each player's deck faceup into the Collection.",
+    "baseThreat": 3,
+    "baseThreatIsFixed": true,
     "hinder": 3,
     "victory": 1
   },
@@ -5388,11 +5428,26 @@ PACK_16 = [[
     "code": "16179b",
     "type": "side_scheme",
     "aspect": "encounter",
-    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16179A.jpg",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16179B.jpg",
     "text": "<b>Expert Mode Only.</b>\nHinder 4[per_hero]. Victory 1.\n<b>When Defeated</b>: Each player must place 1 card at random from their hand faceup into The Collection.",
+    "baseThreat": 4,
+    "baseThreatIsFixed": true,
     "hazard": 1,
     "hinder": 4,
+    "victory": 1
+  },
+  {
+    "name": "\"There is No Escape\"",
+    "code": "16180",
+    "type": "side_scheme",
+    "aspect": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16180B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16180A.jpg",
+    "text": "<b>Standard Mode Only.</b>\nHinder 3[per_hero]. Victory 1.\n<b>When Defeated</b>: Deal 1 damage to each player.",
+    "baseThreat": 4,
+    "baseThreatIsFixed": true,
+    "hinder": 3,
     "victory": 1
   },
   {
@@ -5400,9 +5455,11 @@ PACK_16 = [[
     "code": "16180a",
     "type": "side_scheme",
     "aspect": "encounter",
-    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16180B.jpg",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16180A.jpg",
     "text": "<b>Standard Mode Only.</b>\nHinder 3[per_hero]. Victory 1.\n<b>When Defeated</b>: Deal 1 damage to each player.",
+    "baseThreat": 4,
+    "baseThreatIsFixed": true,
     "hinder": 3,
     "victory": 1
   },
@@ -5411,10 +5468,26 @@ PACK_16 = [[
     "code": "16180b",
     "type": "side_scheme",
     "aspect": "encounter",
-    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16180A.jpg",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16180B.jpg",
     "text": "<b>Expert Mode Only.</b>\nHinder 4[per_hero]. Victory 1.\n<b>When Defeated</b>: Deal 2 damage to each player.",
+    "baseThreat": 5,
+    "baseThreatIsFixed": true,
+    "amplify": 1,
     "hinder": 4,
+    "victory": 1
+  },
+  {
+    "name": "Guerrilla Tactics",
+    "code": "16181",
+    "type": "side_scheme",
+    "aspect": "encounter",
+    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16181B.jpg",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16181A.jpg",
+    "text": "<b>Standard Mode Only.</b>\nHinder 3[per_hero]. Victory 1.\n<b>When Defeated</b>: Place 2 evasion counters on Nebula's Ship.",
+    "baseThreat": 5,
+    "baseThreatIsFixed": true,
+    "hinder": 3,
     "victory": 1
   },
   {
@@ -5422,9 +5495,11 @@ PACK_16 = [[
     "code": "16181a",
     "type": "side_scheme",
     "aspect": "encounter",
-    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16181B.jpg",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16181A.jpg",
     "text": "<b>Standard Mode Only.</b>\nHinder 3[per_hero]. Victory 1.\n<b>When Defeated</b>: Place 2 evasion counters on Nebula's Ship.",
+    "baseThreat": 5,
+    "baseThreatIsFixed": true,
     "hinder": 3,
     "victory": 1
   },
@@ -5433,9 +5508,11 @@ PACK_16 = [[
     "code": "16181b",
     "type": "side_scheme",
     "aspect": "encounter",
-    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16181A.jpg",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16181B.jpg",
     "text": "<b>Expert Mode Only.</b>\nHinder 4[per_hero]. Victory 1.\n<b>When Defeated</b>: Place 3 evasion counters on Nebula's Ship.",
+    "baseThreat": 6,
+    "baseThreatIsFixed": true,
     "acceleration": 1,
     "hazard": 1,
     "hinder": 4,
@@ -5443,12 +5520,28 @@ PACK_16 = [[
   },
   {
     "name": "Kree Supremacy",
-    "code": "16182a",
+    "code": "16182",
     "type": "side_scheme",
     "aspect": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/16182B.jpg",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16182A.jpg",
     "text": "<b>Standard Mode Only.</b>\nHinder 3[per_hero]. Victory 1.",
+    "baseThreat": 6,
+    "baseThreatIsFixed": true,
+    "hazard": 1,
+    "hinder": 3,
+    "victory": 1
+  },
+  {
+    "name": "Kree Supremacy",
+    "code": "16182a",
+    "type": "side_scheme",
+    "aspect": "encounter",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
+    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16182A.jpg",
+    "text": "<b>Standard Mode Only.</b>\nHinder 3[per_hero]. Victory 1.",
+    "baseThreat": 6,
+    "baseThreatIsFixed": true,    
     "hazard": 1,
     "hinder": 3,
     "victory": 1
@@ -5458,10 +5551,13 @@ PACK_16 = [[
     "code": "16182b",
     "type": "side_scheme",
     "aspect": "encounter",
-    "BackURL": "https://dcqvlrey92bew.cloudfront.net/16182A.jpg",
+    "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/16182B.jpg",
     "text": "<b>Expert Mode Only.</b>\nHinder 4[per_hero]. Victory 1.",
+    "baseThreat": 7,
+    "baseThreatIsFixed": true,    
     "acceleration": 1,
+    "amplify": 1,
     "hazard": 1,
     "hinder": 4,
     "victory": 1
@@ -13705,7 +13801,10 @@ PACK_27 = [[
     "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1795242553066038474/9D6A5F30D060027FFBCF84FF100993FA5AA476DA/",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/27065.jpg",
     "text": "<i>Surging Sands</i> — <b>Special</b>: Place 1 sand counter here. Discard cards from the top of the encounter deck equal to the number of sand counters here.\n<b>Hero Action</b>: Exhaust a character you control → remove sand counters from here equal to that character's ATK. (Limit once per round per player.)",
-    "traits": "Location."
+    "traits": "Location.",
+    "counter": "general",
+    "counterName": "Sand",
+    "counterValue": 4
   },
   {
     "name": "Sand Form",
@@ -35079,7 +35178,10 @@ PACK_03 = [[
     "traits": "Avenger. Vehicle.",
     "cost": 1,
     "deckLimit": 3,
-    "resourceEnergy": 1
+    "resourceEnergy": 1,
+    "counter": "general",
+    "counterName": "Time",
+    "counterValue": 0
   },
   {
     "code": "03020",
@@ -36347,7 +36449,10 @@ PACK_01 = [[
     "deckLimit": 1,
     "resourceEnergy": 1,
     "thwartCost": 1,
-    "attackCost": 1
+    "attackCost": 1,
+    "counter": "general", 
+    "counterName": "Arrows",
+    "counterValue": 4
   },
   {
     "name": "Maria Hill",
@@ -45652,26 +45757,17 @@ PACK_50 = [[
   },
   {
     "name": "Zemo's Manipulations",
-    "code": "50167a",
+    "code": "50167",
     "type": "main_scheme",
     "aspect": "encounter",
     "BackURL": "https://dcqvlrey92bew.cloudfront.net/50167B.jpg",
     "FrontURL": "https://dcqvlrey92bew.cloudfront.net/50167A.jpg",
     "text": "<b>Contents</b>: Baron Zemo (A1). <i>(Baron Zemo (B1) instead for expert mode.)</i> Baron Zemo, S.H.I.E.L.D. Executive Board, Executive Board Evidence, and Standard encounter sets. Two modular encounter sets <i>(Scientist Supreme and S.H.I.E.L.D.)</i>.\n<b>Setup</b>: Prepare the evidence <i>(see rulebook p. 18)</i>. Put each [Board Member] environment into play. If not playing campaign mode, place 2 secret counters on each [Board Member] environment.",
-    "stage": 1
-  },
-  {
-    "name": "Zemo's Manipulations",
-    "code": "50167b",
-    "type": "main_scheme",
-    "aspect": "encounter",
-    "BackURL": "https://dcqvlrey92bew.cloudfront.net/50167A.jpg",
-    "FrontURL": "https://dcqvlrey92bew.cloudfront.net/50167B.jpg",
-    "text": "<b>Response</b>: After the player phase ends, the first player may place 2 secret counters on a [Board Member] environment that has no secret counters on it to gain 2 cards from the S.H.I.E.L.D. envelope (1 card instead in campaign mode). The players may advance to stage 2A to make their accusation.\n<b>If this stage is completed, the players lose the game.</b>",
+    "backText": "<b>Response</b>: After the player phase ends, the first player may place 2 secret counters on a [Board Member] environment that has no secret counters on it to gain 2 cards from the S.H.I.E.L.D. envelope (1 card instead in campaign mode). The players may advance to stage 2A to make their accusation.\n<b>If this stage is completed, the players lose the game.</b>",
     "baseThreat": 2,
     "escalationThreat": 2,
-    "stage": 1,
-    "threat": 12
+    "threat": 12,
+    "stage": 1
   },
   {
     "name": "The Accusation",

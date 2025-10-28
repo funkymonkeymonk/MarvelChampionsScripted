@@ -1,14 +1,16 @@
-local OFFSET_ENCOUNTER_DRAW = {}
-local OFFSET_PLAYER_DECK = {}
-local OFFSET_PLAYER_DISCARD = {}
+local OFFSET_ENCOUNTER_DRAW = Global.getTable("PLAYMAT_OFFSET_ENCOUNTER_CARD")
+local OFFSET_PLAYER_DECK = Global.getTable("PLAYMAT_OFFSET_DECK")
+local OFFSET_PLAYER_DISCARD = Global.getTable("PLAYMAT_OFFSET_DISCARD")
+local zoneDefaults = {
+   hero = Global.getTable("ZONE_HERO"),
+   heroCounters = Global.getTable("ZONE_HERO_COUNTERS"),
+   heroExit = Global.getTable("ZONE_HERO_EXIT"),
+   minion = Global.getTable("ZONE_MINION")
+}
 
 local data = {}
 
 function onload(saved_data)
-   OFFSET_ENCOUNTER_DRAW = Global.getTable("PLAYMAT_OFFSET_ENCOUNTER_CARD")
-   OFFSET_PLAYER_DECK = Global.getTable("PLAYMAT_OFFSET_DECK")
-   OFFSET_PLAYER_DISCARD = Global.getTable("PLAYMAT_OFFSET_DISCARD")
-
    loadSavedData(saved_data)
 
    setUpUI(getValue("showRemoveButton", true))
@@ -325,7 +327,51 @@ function setUpUI(showRemoveButton)
 end
 
 function setPlayerColor(params)
-   setValue("playerColor", params.color)
+   local matPosition = self.getPosition()
+   local color = params.color
+
+   setValue("playerColor", color)
+
+   local heroZoneDef = Global.call("combineZoneDefinitions", {
+      zoneDef = {
+         zoneIndex = "hero-" .. color,
+         playerColor = color,
+         position = Vector({matPosition.x, 2, matPosition.z}),
+         group = "player" .. color
+      },
+      defaultDef = zoneDefaults.hero})
+   Global.call("createZone", {zoneDef = heroZoneDef})
+
+   local heroCountersZoneDef = Global.call("combineZoneDefinitions", {
+      zoneDef = {
+         zoneIndex = "heroCounters-" .. color,
+         playerColor = color,
+         position = Vector({matPosition.x + 3.25, 1.25, matPosition.z}),
+         group = "player" .. color
+      },
+      defaultDef = zoneDefaults.heroCounters})
+   Global.call("createZone", {zoneDef = heroCountersZoneDef})
+
+   local heroExitZoneDef = Global.call("combineZoneDefinitions", {
+      zoneDef = {
+         zoneIndex = "heroExit-" .. color,
+         playerColor = color,
+         position = Vector({matPosition.x, 2, matPosition.z}),
+         group = "player" .. color
+      },
+      defaultDef = zoneDefaults.heroExit})
+   Global.call("createZone", {zoneDef = heroExitZoneDef})
+
+   local minionZoneDef = Global.call("combineZoneDefinitions", {
+      zoneDef = {
+         zoneIndex = "minion-" .. color,
+         playerColor = color,
+         position = Vector({matPosition.x - 3, 1, matPosition.z + 12.10}),
+         firstCardPosition = Vector({matPosition.x - 11, 1, matPosition.z + 12}),
+         group = "player" .. color
+      },
+      defaultDef = zoneDefaults.minion})
+   Global.call("createZone", {zoneDef = minionZoneDef})
 end
 
 function movePlayerOne()
@@ -335,9 +381,12 @@ function movePlayerOne()
 end
 
 function untapAll()
-   untapCards = findCardsAtPosition()
-      for _, obj in ipairs(untapCards) do
+   local untapCards = findCardsAtPosition()
+   
+   for _, obj in ipairs(untapCards) do
+      local oldSpin = obj.getRotation().y
       obj.setRotationSmooth({0,180,obj.getRotation().z})
+      Global.call("rotateCountersWithCard", {card = obj, spin = 180, oldSpin = oldSpin})
    end
 end
 
@@ -417,7 +466,14 @@ end
 
 function clearPlaymat()
    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
-   heroManager.call("clearHero", {playerColor = getValue("playerColor")})
+   local group = "player" .. getValue("playerColor")
+   local deleteWith = "delete-with-" .. group
+
+   if(heroManager) then
+      heroManager.call("clearHero", {playerColor = getValue("playerColor")})
+   end
+
+   Global.call("deleteZoneGroup", {group = group})
 
    local objects = findObjectsAtPosition()
 
@@ -426,6 +482,14 @@ function clearPlaymat()
          obj.destruct()
       end
    end
+
+   -- local allObjects = getAllObjects()
+
+   -- for _, obj in ipairs(allObjects) do
+   --    if(obj.hasTag(deleteWith)) then
+   --       obj.destruct()
+   --    end
+   -- end
 
    self.destruct()
 end
@@ -491,20 +555,25 @@ function drawCards(params)
 
    objectToDrawFrom.deal(numberToDraw, getValue("playerColor"))
 
-   if(isPlayerDeck and numberToDraw >= availableCards) then
-      local deckPosition = getPlayerDeckPosition()
-      local discardPosition = getPlayerDiscardPosition()
+   Global.call("supressZones")
+   
+   Wait.frames(function()
+      if(isPlayerDeck and numberToDraw >= availableCards) then
+         local deckPosition = getPlayerDeckPosition()
+         local discardPosition = getPlayerDiscardPosition()
 
-      Global.call("refreshDeck", {deckPosition = deckPosition, discardPosition = discardPosition})
-      Global.call("displayMessage", {message = "You cycled your deck. Time for an encounter card!", messageType = Global.getVar("MESSAGE_TYPE_INFO"), playerColor = positionColor})
-      Global.call("dealEncounterCardToPlayer", {playerColor = positionColor})
+         Global.call("refreshDeck", {deckPosition = deckPosition, discardPosition = discardPosition})
+         Global.call("displayMessage", {message = "You cycled your deck. Time for an encounter card!", messageType = Global.getVar("MESSAGE_TYPE_INFO"), playerColor = positionColor})
+         Global.call("dealEncounterCardToPlayer", {playerColor = positionColor})
 
-      Wait.frames(function()
-         local playerDeck = Global.call("getDeckOrCardAtPosition", {position = deckPosition})
-         drawCards({objectToDrawFrom = playerDeck, numberToDraw = numberForSecondDraw})
-      end, 
-      30)
-   end
+         Wait.frames(function()
+            local playerDeck = Global.call("getDeckOrCardAtPosition", {position = deckPosition})
+            drawCards({objectToDrawFrom = playerDeck, numberToDraw = numberForSecondDraw})
+         end, 
+         30)
+      end
+   end,
+   1)
 end
 
 function isPlayerDeck(deck)

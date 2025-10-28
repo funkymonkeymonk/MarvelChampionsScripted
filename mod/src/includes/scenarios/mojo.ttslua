@@ -117,7 +117,10 @@ function onCardEnterZone_mojo(params)
 end
 
 function placeGenreSetFromEnvironment(zone, card)
-  if(zone.getVar("zoneType") ~= "environment") then return end
+  local zoneDef = Global.call("getZoneDefinition", {zone = zone})
+
+  if (not zoneDef) then return end
+  if (zoneDef.zoneIndex ~= "environment") then return end
 
   local cardId = Global.call("getCardProperty", {card = card, property = "code"})
 
@@ -160,4 +163,6 @@ function placeGenreSetFromEnvironment(zone, card)
     broadcastToAll(newGenreSet.name.." encounter set added to encounter deck.", {1,1,1})
   end,
   30)
+
+  saveData()
 end

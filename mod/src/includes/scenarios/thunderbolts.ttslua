@@ -63,14 +63,19 @@ scenarios["thunderbolts"] =
     },
     customZones = {
         thunderboltBackup = {
-            position = {24.25, 1.00, 22.25},
+            zoneType="minion",
+            tags = {"minion"},
             scale = {10, 1, 7},
+            position = {24.25, 1.00, 22.25},
+            horizontalGap = 5,
+            layoutDirection = "horizontal",
             firstCardPosition = {21.75, 0.98, 22.25},
             width = 2,
             height = 1,
-            horizontalGap = 5,
-            zoneType="minion",
-            tags = {"minion"}
+            rescaleOnEnterTo = CARD_SCALE_ENCOUNTER,
+            rescaleOnExit = true,
+            repositionCards = true,
+            addCountersAndTokens = true
         }
     },
     notes={
@@ -89,6 +94,8 @@ scenarios["thunderbolts"] =
         theLeaper="recommended",
         extremeRisk="recommended",
         growingStrong="recommended",
+        whiteout="recommended",
+        techno="recommended"
     }
 }
 
@@ -126,6 +133,8 @@ function modularSetsAreValid_thunderbolts(params)
 end
 
 function setUpSchemeStage_thunderbolts_main(params)
+    setupThunderboltMinions()
+
     Global.call("moveCardFromEncounterDeckById", {
         cardId = "50131", 
         searchInDiscard = true, 
@@ -150,7 +159,9 @@ function setUpSchemeStage_thunderbolts_main(params)
             supersonic="50156",
             theLeaper="50161",
             extremeRisk="51039",
-            growingStrong="52035"
+            growingStrong="52035",
+            whiteout="54034",
+            techno="53038"
         }
     
         local thunderboltsInDeck = {}
@@ -163,17 +174,12 @@ function setUpSchemeStage_thunderbolts_main(params)
     
         thunderboltsInDeck = Global.call("shuffleTable", {table = thunderboltsInDeck})
 
-        local minionCardValues = {
-            retainValue = true,
-            retainedValue = 0,
-            counterOffset = 1
-        }
         local index = 0
 
         for _, player in ipairs(players) do    
             index = index + 1
             local minionId = thunderboltsInDeck[index]
-            Global.call("moveCardFromEncounterDeckById", {cardId = minionId, zoneIndex="minion-" .. player.playerColor, values=minionCardValues})
+            Global.call("moveCardFromEncounterDeckById", {cardId = minionId, zoneIndex="minion-" .. player.playerColor})
 
             for i = 1, 25 do
                 coroutine.yield(0)
@@ -185,10 +191,32 @@ function setUpSchemeStage_thunderbolts_main(params)
         end
 
         local minionId = thunderboltsInDeck[#thunderboltsInDeck]
-        Global.call("moveCardFromEncounterDeckById", {cardId = minionId, destinationPosition={21.75, 0.97, 22.25}, values=minionCardValues})
+        Global.call("moveCardFromEncounterDeckById", {cardId = minionId, destinationPosition={21.75, 0.97, 22.25}})
   
         return 1
     end
   
     startLuaCoroutine(self, "placeThunderboltMinionCoroutine")
+end
+
+function setupThunderboltMinions()
+    local encounterDeck = Global.call("getEncounterDeck")
+    local cards = encounterDeck.getObjects()
+
+    for _, card in ipairs(cards) do
+        local cardData = Global.call("getCardData", {card = card})
+        local traits = cardData.traits or ""
+        if(string.find(traits, "Thunderbolt.", 1, true)) then
+            Global.call("setCardValue", {
+                cardGuid = card.guid,
+                property = "standardCounterBaseOffset",
+                value = {0.9, 0.10, 0.4}
+            })
+            Global.call("setCardValue", {
+                cardGuid = card.guid,
+                property = "standardCounterValueOverride",
+                value = "0"
+            })
+        end
+    end
 end

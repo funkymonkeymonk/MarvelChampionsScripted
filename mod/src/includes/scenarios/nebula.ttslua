@@ -39,32 +39,7 @@ scenarios["nebula"] =
                 }
             }
         }
-    },
-    cards={
-        nebulasShip={
-            cardId="16093",
-            position={15.75, 1.00, 29.25},
-            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
-        },
-        milano={
-            cardId="16142",
-            position={0, 1.00, 1.25},
-            scale=Vector(Global.getVar("CARD_SCALE_PLAYER"))
-        },
-        powerStone={
-            cardId="16149",
-            position={-7.25, 0.97, 22.25},
-            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
-        }
-    },            
-    counters={
-        evasion={
-            type="general",
-            position={15.26, 1.06, 26.74},
-            scale={0.50, 1.00, 0.50},
-            locked=true
-        }
-    },
+    },         
     decks={
         encounterDeck={
             name="Nebula's Encounter Deck",
@@ -88,3 +63,17 @@ scenarios["nebula"] =
         spacePirates="recommended"
     }
 }
+
+function setUpSchemeStage_nebula_main(params)
+    local stage = params.stage
+    local stageNumber = string.sub(stage.key, -1)
+    local mode = currentScenario.mode
+
+    if(stageNumber == "1") then
+        Global.call("moveCardFromEncounterDeckById", {cardId = "16093", searchInDiscard = true, zoneIndex = "environment"})
+        Global.call("moveCardFromEncounterDeckById", {cardId = "16142", searchInDiscard = true})
+        Global.call("moveCardFromEncounterDeckById", {cardId = "16149", searchInDiscard = true, zoneIndex = "attachment"})
+
+        return
+    end
+end

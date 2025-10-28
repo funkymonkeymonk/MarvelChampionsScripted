@@ -63,7 +63,18 @@ campaigns[2] = {
             color={1,1,1},
             fontSize=88
         },
-
+        {
+            text="Standard",
+            position={-58.75, 0.51, -9.75},
+            color={1,1,1},
+            fontSize=70
+        },
+        {
+            text="Expert",
+            position={-58.75, 0.51, -14.75},
+            color={1,1,1},
+            fontSize=70
+        }
     },
     cards={
         {
@@ -235,17 +246,31 @@ campaigns[2] = {
     },
     decks={
         {
-            name="Challenges",
+            name="Standard Challenges",
             position={-65.25, 0.54, -9.75},
             scale=Global.getTable("CARD_SCALE_ENCOUNTER"),
             landscape=true,
             flipped=true,
             cards={
-                ["16178"] = 1,
-                ["16179"] = 1,
-                ["16180"] = 1,
-                ["16181"] = 1,
-                ["16182"] = 1
+                ["16178a"] = 1,
+                ["16179a"] = 1,
+                ["16180a"] = 1,
+                ["16181a"] = 1,
+                ["16182a"] = 1
+            }
+        },
+        {
+            name="Expert Challenges",
+            position={-65.25, 0.54, -14.75},
+            scale=Global.getTable("CARD_SCALE_ENCOUNTER"),
+            landscape=true,
+            flipped=true,
+            cards={
+                ["16178b"] = 1,
+                ["16179b"] = 1,
+                ["16180b"] = 1,
+                ["16181b"] = 1,
+                ["16182b"] = 1
             }
         }
     },
