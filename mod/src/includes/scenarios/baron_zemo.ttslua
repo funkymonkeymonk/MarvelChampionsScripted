@@ -107,7 +107,6 @@ function setUpSchemeStage_baronZemo_main(params)
         table.insert(environments, "50183")
 
         local environmentCardValues = {
-            --retainValue = true,
             overrideFaceUp = true
         }
         local environmentCardTags = {"attachment"}
@@ -115,16 +114,26 @@ function setUpSchemeStage_baronZemo_main(params)
             hideWhenFaceDown = false
         }
 
+        local tempExecPosition = getEncounterDeckPosition()
+
         function placeExecutiveBoardCoroutine()
             for i = 1,3 do
+                local execCardId = environments[i]
                 Global.call("moveCardFromEncounterDeckById", {
-                    cardId = environments[i], 
-                    zoneIndex = "environment",
+                    cardId = execCardId, 
+                    destinationPosition = tempExecPosition,
+                    destinationRotation = {0,180,0},
                     values = environmentCardValues,
                     tags = environmentCardTags,
                     settings = environmentCardSettings
                 })
-                for i = 1, 25 do
+
+                Wait.frames(function()
+                    local execCard = Global.call("findCard", {cardId = execCardId})
+                    Global.call("moveCard", {card = execCard, zoneIndex = "environment"})
+                end, 20)
+
+                for i = 1, 50 do
                     coroutine.yield(0)
                 end
             end

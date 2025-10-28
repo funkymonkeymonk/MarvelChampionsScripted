@@ -144,7 +144,7 @@ function addCountersAndTokensToCard(params)
         return
       end
 
-      Wait.frames(function()         
+      Wait.frames(function()
         addStandardCounterToCard(params)
         addConfiguredCounterToCard(params)
 
@@ -155,16 +155,20 @@ function addCountersAndTokensToCard(params)
             })
         end
       end, 15)
-    end, function()
-        return card.isDestroyed() or card.resting
-    end, 3)
+    end, 
+    function()
+      return card.isDestroyed() or card.resting
+    end, 
+    3)
 end
 
 function addStandardCounterToCard(params)
   local card = params.card
 
   local counterGuid = getCardValue({cardGuid = card.getGUID(), property = "standardCounterGuid"})
-  if(counterGuid and getObjectFromGUID(counterGuid)) then return end
+  if(counterGuid and getObjectFromGUID(counterGuid)) then
+    return
+  end
 
   local cardData = params.cardData or getCardData({card = card})
   if(not cardData) then return end
@@ -223,7 +227,9 @@ function addConfiguredCounterToCard(params)
   local card = params.card
 
   local counterGuid = getCardValue({cardGuid = card.getGUID(), property = "configuredCounterGuid"})
-  if(counterGuid and getObjectFromGUID(counterGuid)) then return end
+  if(counterGuid and getObjectFromGUID(counterGuid)) then 
+    return
+  end
 
   local cardData = params.cardData or getCardData({card = card})
   if(not cardData or not cardData.counter) then return end

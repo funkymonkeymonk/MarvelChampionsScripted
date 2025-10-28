@@ -270,14 +270,7 @@ function deleteCardAtPosition(params)
 
     if #items > 0 then
         local card = items[1]
-        local counter = getCounterFromCard({
-            card = card
-        })
-
-        if counter then
-            counter.destroy()
-        end
-
+        removeCountersFromCard({card = card})
         items[1].destroy()
     end
 end
@@ -669,12 +662,14 @@ end
 
 function discardCard(params)
     local card = params.card
+    local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
+    local encounterDiscardPosition = Vector(scenarioManager.call('getEncounterDiscardPosition'))
     local discardPosition = ensureMinimumYPosition({
-        position = params.discardPosition,
+        position = encounterDiscardPosition,
         minimumY = 2.5
     })
 
-    card.setPositionSmooth(encounterDiscardPosition, false, false)
+    card.setPositionSmooth(discardPosition, false, false)
     card.setRotationSmooth({0, 180, 0}, false, false)
 end
 

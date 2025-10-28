@@ -36,9 +36,13 @@ function onObjectEnterZone(zone, card)
     if (supressZoneInteractions) then return end
 
     local zoneDef = getZoneDefinition({zone = zone})
-    if (not zoneDef) then return end
+    if (not zoneDef) then
+        return
+    end
     if (not isCard(card)) then return end
-    if (not isFaceUp({object = card})) then return end
+    if (not isFaceUp({object = card})) then
+        return
+    end
 
     local cardData = getCardData({
         card = card

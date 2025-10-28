@@ -35,24 +35,15 @@ scenarios["projectWideawake"] =
             }
         }
     },
-    cards={
-        operationZeroTolerance={
-            cardId="32104",
-            position={7.25, 0.97, 16.75},
-            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
-            landscape=true
-        },
-        mutantsAtTheMall={
-            cardId="32088",
-            position={7.25, 0.97, 11.75},
-            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
-            landscape=true
-        }
-    },
     decks={
         encounterDeck={
             name="Project Wideawake Encounter Deck",
             cards={
+                ["32088"]=1,
+                -- ["32089"]=2,
+                -- ["32090"]=2,
+                -- ["32091"]=2,
+                -- ["32092"]=2,
                 ["32093"]=2,
                 ["32094"]=2,
                 ["32095"]=1,
@@ -80,3 +71,28 @@ scenarios["projectWideawake"] =
         sentinels="recommended"
     }
 }
+
+function setUpSchemeStage_projectWideawake_main(params)
+    projectWideawakePlaceSideschemes()
+end
+
+function projectWideawakePlaceSideschemes()
+    local sideSchemeCardIds = {"32104", "32088"}
+
+    function placeProjectWideawakeSideSchemesCoroutine()
+        for _, cardId in ipairs(sideSchemeCardIds) do
+            Global.call("moveCardFromEncounterDeckById", {
+                cardId = cardId,
+                zoneIndex = "sideScheme"
+            })
+
+            for i = 1, 100 do
+                coroutine.yield(0)
+            end
+        end
+
+        return 1
+    end
+
+    startLuaCoroutine(self, "placeProjectWideawakeSideSchemesCoroutine")
+end

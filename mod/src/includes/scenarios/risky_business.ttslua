@@ -80,15 +80,11 @@ function setUpSchemeStage_riskyBusiness_main(params)
     if(not criminalEnterprise) then return end
     if(not Global.call("isFaceUp", {object = criminalEnterprise})) then return end
 
-    local counterGuid = getCardValue({cardGuid = criminalEnterprise.getGUID(), property = "counterGuid"})
-    if(not counterGuid) then return end
-
-    local infamyCounter = getObjectFromGUID(counterGuid)
+    local infamyCounter = Global.call("getCounterFromCard", {card = criminalEnterprise, counterClass = "configured"})
     if(not infamyCounter) then return end
 
     local currentInfamy = infamyCounter.call("getValue")
-    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
-    local heroCount = heroManager.call("getHeroCount")
+    local heroCount = getHeroCount()
     local newInfamy = currentInfamy + heroCount
 
     infamyCounter.call("setValue", {value = newInfamy})

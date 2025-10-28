@@ -53,6 +53,11 @@ scenarios["darkBeast"] =
         genosha="required",
         savageLand="required"
     },
+    zones={
+        environment={
+            onEnterFunction="darkBeastDiscardSettingEnvironments"
+        }
+    },
     extras={
         darkBeastEnvironmentPanel={
             name="",
@@ -85,92 +90,67 @@ function placeDarkBeastEnvironment()
     return
   end
 
-  local modularKey = currentScenario.environments[currentScenario.environmentIndex]
-  local modularSet = nil
+  local encounterSetKey = currentScenario.environments[currentScenario.environmentIndex]
+  local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
+  encounterSetManager.call("addEncounterSetToDeck", {setKey = encounterSetKey})
+  local environmentCardId = ""
 
-  --TODO: refactor this to use modular set definitions
-
-  if(modularKey == "savageLand") then
-    modularSet = {
-      environment = {
-        cardId = "45127",
-        name = "Savage Land"
-      },
-      cards = {
-        ["45128"]=1,
-        ["45129"]=2,
-        ["45130"]=2,
-        ["45131"]=1,
-        ["45132"]=1
-      }
-    }
+  if(encounterSetKey == "savageLand") then
+    environmentCardId = "45127"
   end
 
-  if(modularKey == "genosha") then
-    modularSet = {
-      environment = {
-        cardId = "45133",
-        name = "Genosha"
-      },
-      cards = {
-        ["45134"]=3,
-        ["45135"]=1,
-        ["45136"]=1,
-        ["45137"]=1,
-        ["45138"]=1
-      }
-    }
+  if(encounterSetKey == "genosha") then
+    environmentCardId = "45133"
   end
 
-  if(modularKey == "blueMoon") then
-    modularSet = {
-      environment = {
-        cardId = "45139",
-        name = "Blue Moon"
-      },
-      cards = {
-        ["45140"]=1,
-        ["45141"]=1,
-        ["45142"]=1,
-        ["45143"]=1,
-        ["45144"]=1,
-        ["45145"]=1,
-        ["45146"]=1
-      }
-    }
+  if(encounterSetKey == "blueMoon") then
+    environmentCardId = "45139"
   end
 
-  local deckPosition = getEncounterDeckPosition()
-  local environmentPosition = {19.50, 1.00, 30.00}
-  local rotation = {0,180,180}
-  local scale = defaults.encounterDeck.scale
+  Wait.frames(function()
+    Global.call("moveCardFromEncounterDeckById", {cardId = environmentCardId, searchInDiscard = false, zoneIndex = "environment"})
+  end,
+  30)
 
-  if(deckPosition[2] < 3) then
-    deckPosition[2] = 3
-  end
+  local encounterSet = encounterSetManager.call("getModularSet", {modularSetKey = encounterSetKey})
 
-  Global.call("discardCardAtPosition", {position = environmentPosition})
-
-  Global.call("spawnCard", {
-    cardId = modularSet.environment.cardId, 
-    position = environmentPosition, 
-    scale = scale, 
-    name = modularSet.environment.name, 
-    flipped = false})
- 
-  Global.call("spawnDeck", {
-    cards=modularSet.cards, 
-    position=deckPosition, 
-    rotation=rotation, 
-    scale=scale})
-
-  Wait.frames(
-      function()
-          Global.call("shuffleDeck", {deckPosition = deckPosition})
-      end,
-      30)
-
-  broadcastToAll(modularSet.environment.name.." encounter set has been added to encounter deck.", {1,1,1})
+  broadcastToAll(encounterSet.name .. " encounter set has been added to encounter deck.", {1,1,1})
 
   currentScenario.environmentIndex = currentScenario.environmentIndex + 1
+end
+
+function darkBeastDiscardSettingEnvironments(params)
+  local zone = params.zone
+  local card = params.item
+
+   Wait.condition(
+    function()
+      if (card.isDestroyed()) then return end
+
+      local cardData = Global.call("getCardData", {card = card})
+
+      if(not cardData) then return end
+
+      local traits = cardData.traits or ""
+      if (not string.find(traits, "Setting.", 1, true)) then return end
+
+      local cardId = cardData.code
+      local zoneItems = zone.getObjects()
+      
+      for i, v in ipairs(zoneItems) do
+        if(v.tag == "Card") then
+          local vCardData = Global.call("getCardData", {card = v})
+          if(not vCardData) then return end
+
+          local vCardId = vCardData.code
+          local vTraits = vCardData.traits or ""
+
+          if (vCardId ~= cardId and string.find(vTraits, "Setting.", 1, true)) then
+            Global.call("discardCard", {card = v})
+          end
+        end
+      end
+    end,
+    function() return card.isDestroyed() or card.resting end,
+    5)
 end
