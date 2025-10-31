@@ -5,13 +5,13 @@ local encounterSetButtonIds = {}
 
 function onload(saved_data)
     self.interactable = false
-    -- local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
-    -- local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
+    local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
+    local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
 
-    -- allScenarios = scenarioManager.call("getScenarios", {})
-    -- allEncounterSets = encounterSetManager.call("getEncounterSets", {})
+    allScenarios = scenarioManager.call("getScenarios", {})
+    allEncounterSets = encounterSetManager.call("getEncounterSets", {})
 
-    -- createButton()
+    createButton()
 end
 
 function createButton()
@@ -136,6 +136,9 @@ function getEncounterSetButtons(guid)
     return encounterSetButtons
 end
 
+function getFirstPlayerSection()
+end
+
 function displayScenarioUI()
     local guid = self.getGUID()
 
@@ -159,19 +162,20 @@ function displayScenarioUI()
         tag = "Defaults",
         children = {
             {
-                tag = "ToggleButton",
+                tag = "Toggle",
                 attributes = {
                     class = "mode",
-                    fontSize = "20",
+                    rectAlignment = "UpperLeft",
+                    --fontSize = "20",
                     textColor = "rgba(1,1,1,1)",
-                    colors = "rgba(0,0,1,1)|rgba(0,0,1,1)|rgba(0,0,1,1)|rgba(0,0,1,1)",
-                    selectedBackgroundColor = "rgba(0,0,1,1)",
-                    deselectedBackgroundColor = "rgba(0,0,0,1)",
-                    minimumHeight = "40",
-                    preferredHeight = "40",
-                    minimumWidth = "150",
-                    preferredWidth = "150",
-                    contentSizeFitter = "both"
+                    --colors = "rgba(0,0,1,1)|rgba(0,0,1,1)|rgba(0,0,1,1)|rgba(0,0,1,1)",
+                    --selectedBackgroundColor = "rgba(0,0,1,1)",
+                    --deselectedBackgroundColor = "rgba(0,0,0,1)",
+                    --minimumHeight = "100",
+                    preferredHeight = "100",
+                    --minimumWidth = "200",
+                    preferredWidth = "200",
+                    --contentSizeFitter = "both"
                 }
             },
             {
@@ -203,7 +207,11 @@ function displayScenarioUI()
                     preferredHeight = "40",
                     minimumWidth = "150",
                     preferredWidth = "150",
-                    --contentSizeFitter = "both"
+                    color = "rgba(0,0,0,1)",
+                    textColor = "rgba(1,1,1,1)",
+                    arrowColor = "rgba(1,1,1,1)",
+                    itemBackgroundColors = "rgba(0,0,0,1)|rgba(0,0,0,1)|rgba(0,0,0,1)|rgba(0,0,0,1)",
+                    contentSizeFitter = "both"
                 }
             }
         }},
@@ -373,34 +381,42 @@ function displayScenarioUI()
                         {
                             tag = "ToggleGroup",
                             attributes = {
-                                minimumHeight = "40",
-                                preferredHeight = "40",
-                                contentSizeFitter = "vertical"
+                                --minimumHeight = "40",
+                                --preferredHeight = "40",
+                                contentSizeFitter = "vertical",
+                                color = "rgba(0,1,0,1)"
                             },
                             children = {
                                 {
                                     tag = "HorizontalLayout",
                                     attributes = {
                                         height = "40",
-                                        contentSizeFitter = "vertical",
-                                        spacing = "5",
-                                        childAlignment = "UpperCenter",
-                                        childForceExpandHeight = "false",
-                                        childForceExpandWidth = "false"
+                                        --contentSizeFitter = "vertical",
+                                        color = "rgba(1,0,0,1)",
+                                        rectAlignment = "UpperLeft"
+                                        --spacing = "5",
+                                        --childAlignment = "UpperCenter",
+                                        --childForceExpandHeight = "false",
+                                        --childForceExpandWidth = "false"
                                     },
                                     children = {
                                         {
-                                            tag = "ToggleButton",
+                                            tag = "Toggle",
                                             value = "Standard",
                                             attributes = {
-                                                class = "mode"
+                                                id = "standardModeToggle",
+                                                class = "mode",
+                                                offsetXY = "10 0"
                                             }
                                         },
                                         {
-                                            tag = "ToggleButton",
+                                            tag = "Toggle",
                                             value = "Expert",
                                             attributes = {
-                                                class = "mode"
+                                                id = "expertModeToggle",
+                                                class = "mode",
+                                                offsetXY = "150 0",
+                                                onValueChanged = guid .. "/" .. "expertModeChanged"
                                             }
                                         }
                                     }
@@ -422,20 +438,13 @@ function displayScenarioUI()
                                 }
                             }
                         },
-                        {
-                            tag = "ToggleGroup",
-                            attributes = {
-                                minimumHeight = "40",
-                                preferredHeight = "40",
-                                contentSizeFitter = "vertical"
-                            },
-                            children = {
+
                                 {
-                                    tag = "Panel",
+                                    tag = "HorizontalLayout",
                                     attributes = {
                                         height = "40",
-                                        --contentSizeFitter = "vertical",
-                                        color = "rgba(0,1,0,1)",
+                                        contentSizeFitter = "vertical",
+                                        --color = "rgba(0,1,0,1)",
                                         spacing = "5",
                                         childAlignment = "UpperCenter",
                                         childForceExpandHeight = "false",
@@ -445,7 +454,8 @@ function displayScenarioUI()
                                         {
                                             tag = "Dropdown",
                                             attributes = {
-                                                mode = "standardEncounterSet"
+                                                id = "standardEncounterSetDropdown",
+                                                class = "standardEncounterSet",
                                             },
                                             children = {
                                                 {
@@ -465,29 +475,30 @@ function displayScenarioUI()
                                                 }
                                             }
                                         },
-                                        -- {
-                                        --     tag = "Dropdown",
-                                        --     attributes = {
-                                        --         mode = "standardEncounterSet"
-                                        --     },
-                                        --     children = {
-                                        --         {
-                                        --             tag = "Option",
-                                        --             value = "Expert 1",
-                                        --             attributes = {
-                                        --                 selected = "true"
-                                        --             }
-                                        --         },
-                                        --         {
-                                        --             tag = "Option",
-                                        --             value = "Expert 2"
-                                        --         }
-                                        --     }
-                                        -- }
+                                        {
+                                            tag = "Dropdown",
+                                            attributes = {
+                                                id = "expertEncounterSetDropdown",
+                                                class = "standardEncounterSet",
+                                                active = "false"
+                                            },
+                                            children = {
+                                                {
+                                                    tag = "Option",
+                                                    value = "Expert 1",
+                                                    attributes = {
+                                                        selected = "true"
+                                                    }
+                                                },
+                                                {
+                                                    tag = "Option",
+                                                    value = "Expert 2"
+                                                }
+                                            }
+                                        }
                                     }
                                 }
-                            }
-                        },
+                            
                     }
                 }
             }
@@ -741,4 +752,15 @@ function deepCopy(obj, seen)
     s[obj] = res
     for k, v in pairs(obj) do res[deepCopy(k, s)] = deepCopy(v, s) end
     return res
+end
+
+function expertModeChanged(player, value, id)
+    if(value == "True") then
+        selectedScenario.mode = "expert"
+        Global.UI.show("expertEncounterSetDropdown")
+        Global.UI.setAttribute("expertEncounterSetDropdown", "active", "true")
+    else
+        selectedScenario.mode = "standard"
+        Global.UI.hide("expertEncounterSetDropdown")
+    end
 end
