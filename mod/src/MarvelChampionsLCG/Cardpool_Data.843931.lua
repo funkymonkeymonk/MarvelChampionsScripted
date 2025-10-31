@@ -3366,7 +3366,10 @@ PACK_16 = [[
     "traits": "Item. Tech.",
     "cost": 1,
     "deckLimit": 2,
-    "resourceEnergy": 1
+    "resourceEnergy": 1,
+    "counter": "general",
+    "counterName": "Charge",
+    "counterValue": 2
   },
   {
     "name": "Cybernetic Skeleton",
@@ -3393,7 +3396,10 @@ PACK_16 = [[
     "traits": "Tech. Weapon.",
     "cost": 3,
     "deckLimit": 1,
-    "resourceMental": 1
+    "resourceMental": 1,
+    "counter": "general",
+    "counterName": "Charge",
+    "counterValue": 2
   },
   {
     "name": "Rocket Launcher",
@@ -3406,7 +3412,10 @@ PACK_16 = [[
     "traits": "Tech. Weapon.",
     "cost": 3,
     "deckLimit": 1,
-    "resourcePhysical": 1
+    "resourcePhysical": 1,
+    "counter": "general",
+    "counterName": "Charge",
+    "counterValue": 2
   },
   {
     "name": "Rocket's Pistol",
@@ -3419,7 +3428,10 @@ PACK_16 = [[
     "traits": "Tech. Weapon.",
     "cost": 1,
     "deckLimit": 2,
-    "resourceEnergy": 1
+    "resourceEnergy": 1,
+    "counter": "general",
+    "counterName": "Charge",
+    "counterValue": 3
   },
   {
     "name": "Thruster Boots",
@@ -7076,7 +7088,9 @@ PACK_20 = [[
     "deckLimit": 1,
     "resourceEnergy": 1,
     "thwartCost": 1,
-    "attackCost": 1
+    "attackCost": 1,
+    "counter": "general",
+    "counterName": "Ammo"
   },
   {
     "name": "Scare Tactic",
@@ -7478,7 +7492,10 @@ PACK_21 = [[
     "deckLimit": 1,
     "resourceMental": 1,
     "thwartCost": 1,
-    "attackCost": 2
+    "attackCost": 2,
+    "counter": "general",
+    "counterName": "Chi",
+    "counterValue": 2
   },
   {
     "name": "White Tiger",
@@ -8532,7 +8549,10 @@ PACK_21 = [[
     "FrontURL": "/card-faces/21076.jpg",
     "text": "Surge.\nEnters play with 4 invocation counters on it.\n<b>Forced Response:</b> After the last invocation counter is removed from Fireball, discard it → deal 4 damage to your identity.",
     "traits": "Spell.",
-    "boost": 2
+    "boost": 2,
+    "counter": "general",
+    "counterName": "Invocation",
+    "counterValue": 4
   },
   {
     "name": "Manipulation",
@@ -8543,7 +8563,10 @@ PACK_21 = [[
     "FrontURL": "/card-faces/21077.jpg",
     "text": "Surge.\nEnters play with 2 invocation counters on it.\n<b>Forced Response:</b> After the last invocation counter is removed from Manipulation, discard it → discard 1 card at random from your hand. You are confused.",
     "traits": "Spell.",
-    "boost": 2
+    "boost": 2,
+    "counter": "general",
+    "counterName": "Invocation",
+    "counterValue": 2
   },
   {
     "name": "Pacification",
@@ -8554,7 +8577,10 @@ PACK_21 = [[
     "FrontURL": "/card-faces/21078.jpg",
     "text": "Surge.\nEnters play with 3 invocation counters on it.\n<b>Forced Response:</b> After the last invocation counter is removed from Pacification, discard it → exhaust each upgrade you control. You are stunned.",
     "traits": "Spell.",
-    "boost": 2
+    "boost": 2,
+    "counter": "general",
+    "counterName": "Invocation",
+    "counterValue": 3
   },
   {
     "name": "Rubblestorm",
@@ -8565,7 +8591,10 @@ PACK_21 = [[
     "FrontURL": "/card-faces/21079.jpg",
     "text": "Surge.\nEnters play with 3 invocation counters on it.\n<b>Forced Response:</b> After the last invocation counter is removed from Rubblestorm, discard it → deal 2 damage to each character you control.",
     "traits": "Spell.",
-    "boost": 2
+    "boost": 2,
+    "counter": "general",
+    "counterName": "Invocation",
+    "counterValue": 3
   },
   {
     "name": "Agent of Thanos",
@@ -21343,7 +21372,10 @@ PACK_35 = [[
     "resourceMental": 1,
     "thwartCost": 1,
     "attackCost": 1,
-    "attackStar": true
+    "attackStar": true,
+    "counter": "general",
+    "counterName": "Psionic",
+    "counterValue": 2
   },
   {
     "name": "Sunfire",
@@ -22594,7 +22626,10 @@ PACK_38 = [[
     "resourceWild": 1,
     "thwartCost": 1,
     "attackCost": 1,
-    "attackStar": true
+    "attackStar": true,
+    "counter": "general",
+    "counterName": "Charge",
+    "counterValue": 3
   },
   {
     "name": "Rogue's Jacket",
@@ -22692,7 +22727,10 @@ PACK_38 = [[
     "deckLimit": 1,
     "resourceMental": 1,
     "thwartCost": 1,
-    "attackCost": 1
+    "attackCost": 1,
+    "counter": "general",
+    "counterName": "Freeze",
+    "counterValue": 3
   },
   {
     "name": "Karma",
@@ -24848,7 +24886,10 @@ PACK_40 = [[
     "aspect": "campaign",
     "BackURL": "/card-faces/40190A.jpg",
     "FrontURL": "/card-faces/40190B.jpg",
-    "text": "Enters play with 1 assembly counter on it.\n<b>Action</b>: Remove 1 assembly counter from here → each player may search their deck and discard pile for an ally with a printed cost of 3 or less and put it into play. <i>(Any player can do this.)</i>"
+    "text": "Enters play with 1 assembly counter on it.\n<b>Action</b>: Remove 1 assembly counter from here → each player may search their deck and discard pile for an ally with a printed cost of 3 or less and put it into play. <i>(Any player can do this.)</i>",
+    "counter": "general",
+    "counterName": "Assembly",
+    "counterValue": 1
   },
   {
     "name": "Establish Safehouse",
@@ -24868,7 +24909,10 @@ PACK_40 = [[
     "aspect": "campaign",
     "BackURL": "/card-faces/40191A.jpg",
     "FrontURL": "/card-faces/40191B.jpg",
-    "text": "Enters play with 1 safehouse counter on it.\n<b>Action</b>: Remove 1 safehouse counter from here → the first player puts the Safehouse support into play under their control. <i>(Safehouse is a campaign card.)</i>"
+    "text": "Enters play with 1 safehouse counter on it.\n<b>Action</b>: Remove 1 safehouse counter from here → the first player puts the Safehouse support into play under their control. <i>(Safehouse is a campaign card.)</i>",
+    "counter": "general",
+    "counterName": "Safehouse",
+    "counterValue": 1
   },
   {
     "name": "Gear Up",
@@ -24888,7 +24932,10 @@ PACK_40 = [[
     "aspect": "campaign",
     "BackURL": "/card-faces/40192A.jpg",
     "FrontURL": "/card-faces/40192B.jpg",
-    "text": "Enters play with 1 pouch counter on it.\n<b>Action</b>: Remove 1 pouch counter from here → each player shuffles 1 copy of the Pouches resource card into their deck. <i>(Pouches is a campaign card.)</i>"
+    "text": "Enters play with 1 pouch counter on it.\n<b>Action</b>: Remove 1 pouch counter from here → each player shuffles 1 copy of the Pouches resource card into their deck. <i>(Pouches is a campaign card.)</i>",
+    "counter": "general",
+    "counterName": "Pouch",
+    "counterValue": 1
   },
   {
     "name": "Mission Prep",
@@ -24908,7 +24955,10 @@ PACK_40 = [[
     "aspect": "campaign",
     "BackURL": "/card-faces/40193A.jpg",
     "FrontURL": "/card-faces/40193B.jpg",
-    "text": "Enters play with 1 prep counter on it.\n<b>Action</b>: Remove 1 prep counter from here → each player searches their deck and discard pile for 1 upgrade with a printed cost of 2 or less and puts it into play. <i>(Any player can do this.)</i>"
+    "text": "Enters play with 1 prep counter on it.\n<b>Action</b>: Remove 1 prep counter from here → each player searches their deck and discard pile for 1 upgrade with a printed cost of 2 or less and puts it into play. <i>(Any player can do this.)</i>",
+    "counter": "general",
+    "counterName": "Prep",
+    "counterValue": 1
   },
   {
     "name": "Practice Maneuvers",
@@ -38406,7 +38456,10 @@ PACK_09 = [[
     "deckLimit": 1,
     "resourcePhysical": 1,
     "thwartCost": 1,
-    "attackCost": 1
+    "attackCost": 1,
+    "counter": "general",
+    "counterName": "Mystic",
+    "counterValue": 2
   },
   {
     "name": "Desperate Defense",
