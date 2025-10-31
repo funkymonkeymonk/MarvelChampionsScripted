@@ -1,5 +1,6 @@
 Cardplacer = {}
 local CARDPOOL_BY_PACK_ID = {}
+local baseUrl = "https://d2xdqryaauvaie.cloudfront.net"
 
 CARD_ID = 0
 
@@ -81,8 +82,8 @@ function buildCardPool(packId)
 
     for _, cardData in pairs(CARDPOOL_DATA) do
         if (cardData.duplicate_of == nil) then
-            local cardFace = cardData.FrontURL
-            local cardBack = cardData.BackURL
+            local cardFace = baseUrl .. cardData.FrontURL
+            local cardBack = baseUrl .. cardData.BackURL
             local cardAsset = Decker.Asset(cardFace, cardBack)
             local sideways = string.sub(cardData.type, -6, -1) == "scheme"
             local tags={cardData.type}
@@ -104,13 +105,13 @@ function buildCardPool(packId)
             cardpool[cardData.code] = card
 
             if(cardData.FrontURL_mutant) then
-                local mutantCardAsset = Decker.Asset(cardData.FrontURL_mutant, cardData.BackURL)
+                local mutantCardAsset = Decker.Asset(baseUrl .. cardData.FrontURL_mutant, baseUrl .. cardData.BackURL)
                 local mutantCard = Decker.Card(mutantCardAsset, 1, 1, { guid=random_guid(), name=cardName, sideways=sideways, tags=tags, GMNotes=gmNotes })
                 cardpool[cardData.code.."_mutant"] = mutantCard
             end
 
             if(cardData.FrontURL_shield) then
-                local shieldCardAsset = Decker.Asset(cardData.FrontURL_shield, cardData.BackURL)
+                local shieldCardAsset = Decker.Asset(baseUrl .. cardData.FrontURL_shield, baseUrl .. cardData.BackURL)
                 local shieldCard = Decker.Card(shieldCardAsset, 1, 1, { guid=random_guid(), name=cardName, sideways=sideways, tags=tags, GMNotes=gmNotes })
                 cardpool[cardData.code.."_shield"] = shieldCard
             end
