@@ -98,10 +98,9 @@ function customSetup_hood(params)
 end
 
 function prepareScenario_hood()
-  local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
-  local encounterSets = encounterSetManager.call("getSelectedSets", {modular = true})
+  local encounterSets = getSelectedSets()
   currentScenario.hoodEncounterSets = encounterSets
-  encounterSetManager.call("clearSelectedSets")
+  clearSelectedSets()
 end
 
 function createHoodModularSetButtons()
@@ -175,58 +174,55 @@ function removeHoodModularSetButtons()
 end
 
 function selectHoodEasyModularSets()
-  local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
-  encounterSetManager.call("clearSelectedSets")
+  clearSelectedSets()
 
-  encounterSetManager.call("selectModularSet", {modularSetKey = "streetsOfMayhem"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "brothersGrimm"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "ransackedArmory"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "stateOfEmergency"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "beastyBoys"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "misterHyde"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "sinisterSyndicate"})
+  addRemoveSelectedSet({encounterSetKey = "streetsOfMayhem"})
+  addRemoveSelectedSet({encounterSetKey = "brothersGrimm"})
+  addRemoveSelectedSet({encounterSetKey = "ransackedArmory"})
+  addRemoveSelectedSet({encounterSetKey = "stateOfEmergency"})
+  addRemoveSelectedSet({encounterSetKey = "beastyBoys"})
+  addRemoveSelectedSet({encounterSetKey = "misterHyde"})
+  addRemoveSelectedSet({encounterSetKey = "sinisterSyndicate"})
 
   local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
   layoutManager.call("showCurrentView")
 end
 
 function selectHoodMediumModularSets()
-  local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
-  encounterSetManager.call("clearSelectedSets")
+  clearSelectedSets()
 
-  encounterSetManager.call("selectModularSet", {modularSetKey = "brothersGrimm"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "ransackedArmory"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "stateOfEmergency"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "beastyBoys"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "misterHyde"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "sinisterSyndicate"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "crossfiresCrew"})
+  addRemoveSelectedSet({encounterSetKey = "brothersGrimm"})
+  addRemoveSelectedSet({encounterSetKey = "ransackedArmory"})
+  addRemoveSelectedSet({encounterSetKey = "stateOfEmergency"})
+  addRemoveSelectedSet({encounterSetKey = "beastyBoys"})
+  addRemoveSelectedSet({encounterSetKey = "misterHyde"})
+  addRemoveSelectedSet({encounterSetKey = "sinisterSyndicate"})
+  addRemoveSelectedSet({encounterSetKey = "crossfiresCrew"})
 
   local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
   layoutManager.call("showCurrentView")
 end
 
 function selectHoodHardModularSets()
-  local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
-  encounterSetManager.call("clearSelectedSets")
+  clearSelectedSets()
 
-  encounterSetManager.call("selectModularSet", {modularSetKey = "ransackedArmory"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "stateOfEmergency"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "beastyBoys"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "misterHyde"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "sinisterSyndicate"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "crossfiresCrew"})
-  encounterSetManager.call("selectModularSet", {modularSetKey = "wreckingCrew"})
+  addRemoveSelectedSet({encounterSetKey = "ransackedArmory"})
+  addRemoveSelectedSet({encounterSetKey = "stateOfEmergency"})
+  addRemoveSelectedSet({encounterSetKey = "beastyBoys"})
+  addRemoveSelectedSet({encounterSetKey = "misterHyde"})
+  addRemoveSelectedSet({encounterSetKey = "sinisterSyndicate"})
+  addRemoveSelectedSet({encounterSetKey = "crossfiresCrew"})
+  addRemoveSelectedSet({encounterSetKey = "wreckingCrew"})
 
   local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
   layoutManager.call("showCurrentView")
 end
 
 function selectHoodRandomModularSets()
-  local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
-  encounterSetManager.call("clearSelectedSets")
+  clearSelectedSets()
   math.randomseed(os.time())
 
+  local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
   local encounterSets = encounterSetManager.call("getEncounterSetsByType", {modular = true})
   local selectedSets = {}
 
@@ -240,7 +236,7 @@ function selectHoodRandomModularSets()
     end  
   
     local randomSetKey = unselectedSets[math.random(#unselectedSets)]
-    encounterSetManager.call("selectModularSet", {modularSetKey = randomSetKey})
+    addRemoveSelectedSet({encounterSetKey = randomSetKey})
   end
 
   local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))

@@ -196,10 +196,7 @@ function selectScenario(params)
         end
     end
 
-    local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
-    encounterSetManager.call("preSelectEncounterSets", {
-        sets = currentScenario.modularSets or {}
-    })
+    preSelectEncounterSets()
 
     saveData()
 end
@@ -334,6 +331,36 @@ function confirmNoScenarioIsPlaced()
     return true -- TODO: Implement this
 end
 
+function setUpConfiguredScenario(params)
+    currentScenario = deepCopy(params.scenario)
+
+    if (currentScenario.villains) then
+        for key, villain in pairs(currentScenario.villains) do
+            villain.key = key
+
+            if (villain.stages) then
+                for stageKey, stage in pairs(villain.stages) do
+                    stage.key = stageKey
+                end
+            end
+        end
+    end
+
+    if (currentScenario.schemes) then
+        for key, scheme in pairs(currentScenario.schemes) do
+            scheme.key = key
+
+            if (scheme.stages) then
+                for stageKey, stage in pairs(scheme.stages) do
+                    stage.key = stageKey
+                end
+            end
+        end
+    end
+
+    setUpScenario()
+end
+
 function setUpScenario()
     if (not confirmScenarioInputs(true)) then
         return
@@ -351,12 +378,13 @@ function setUpScenario()
 
     setUpZones()
 
-    local heroCount = heroManager.call("getHeroCount")
+    local heroCount = getHeroCount()
 
     setInitialFirstPlayer()
 
     startLuaCoroutine(self, "setUpVillains")
     startLuaCoroutine(self, "setUpSchemes")
+
     startLuaCoroutine(self, "setUpDecks")
 
     Global.call("shuffleDeck", {
@@ -554,8 +582,9 @@ function modularSetsAreValid(params)
     end
 
     local requiredEncounterSetCount = getRequiredEncounterSetCount()
-    local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
-    local selectedEncounterSetCount = encounterSetManager.call("getSelectedSetCount")
+
+    local selectedEncounterSetCount = getSelectedSetCount()
+
     local additionalEncounterSets = requiredEncounterSetCount - selectedEncounterSetCount
     local modularSetsAreValid = additionalEncounterSets <= 0
 
@@ -613,16 +642,19 @@ function confirmScenarioInputs(postMessage)
     })) then
         return false
     end
+
     if (not scenarioIsValid({
         postMessage = postMessage
     })) then
         return false
     end
+
     if (not modularSetsAreValid({
         postMessage = postMessage
     })) then
         return false
     end
+
     if (not modeAndStandardEncounterSetsAreValid({
         postMessage = postMessage
     })) then
@@ -898,7 +930,7 @@ end
 
 function addEncounterSetsToEncounterDeck(deck)
     local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
-    local encounterSetCards = encounterSetManager.call("getCardsFromSelectedSets")
+    local encounterSetCards = encounterSetManager.call("getCardsFromSelectedSets", {encounterSets = currentScenario.selectedEncounterSets})
 
     for cardId, count in pairs(encounterSetCards) do
         deck.cards[cardId] = count
@@ -1575,7 +1607,6 @@ function createContextMenu()
     self.addContextMenuItem("Lay Out Scenarios", layOutScenarios)
     self.addContextMenuItem("Delete Scenarios", deleteScenarios)
     self.addContextMenuItem("Delete Everything", deleteEverything)
-    self.addContextMenuItem("Build Card Image List", buildCardImageList)
 end
 
 -- Layout functions - move to central layout manager
@@ -2031,35 +2062,74 @@ function updateVictoryDisplayDetails()
    victoryDisplayItemCountReadout.TextTool.setValue("Items: " .. cardCount)
 end
 
-require('!/lib/json')
 
-function buildCardImageList()
-    local cardpool = getObjectFromGUID('843931')
-    local cloudfront = "cloudfront"
+function preSelectEncounterSets()
+    local selectedSets = {}
+    local scenarioSets = currentScenario.modularSets or {}
+    local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
 
-    for i = 1, 99 do
-        local packId = string.format("%02d", i)
-        local cardJson = cardpool.getVar('PACK_' .. packId)
+    for key,required in pairs(scenarioSets) do
+        local set = encounterSetManager.call("getModularSet", {
+            modularSetKey = key
+        })
 
-        if(cardJson == nil) then
-            log("Pack "..packId.." has not been added to the card pool.")
-        else
-            local cardData = json.decode(cardJson)
+        set.required = required
+        selectedSets[key] = deepCopy(set)
+    end
 
-            for _, card in pairs(cardData) do
-                local frontUrl = card.FrontURL
-                local backUrl = card.BackURL
-                
-                if(frontUrl and string.find(frontUrl, cloudfront, 1, true)) then
-                    log(frontUrl)
-                end
-                if(backUrl and string.find(backUrl, cloudfront, 1, true)) then
-                    log(backUrl)
-                end            
-            end
+    currentScenario.selectedEncounterSets = selectedSets
+end
+
+function clearSelectedSets()
+    currentScenario.selectedEncounterSets = {}
+end
+
+function removeModularSet(params)
+    currentScenario.selectedEncounterSets[params.modularSetKey] = nil
+end
+
+function addRemoveSelectedSet(params)
+    local key = params.encounterSetKey
+
+    for k, v in pairs(currentScenario.selectedEncounterSets) do
+        if(k == key) then
+            currentScenario.selectedEncounterSets[k] = nil
+            return
         end
     end
+
+    local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
+    local encounterSet = encounterSetManager.call("getModularSet", {
+        modularSetKey = key
+    })
+    currentScenario.selectedEncounterSets[key] = deepCopy(encounterSet)
 end
+
+function getSelectedSets(params)
+    return deepCopy(currentScenario.selectedEncounterSets)
+end
+
+function getSelectedSetKeys()
+    local keys = {}
+
+    for k,v in pairs(currentScenario.selectedEncounterSets) do
+        keys[k] = v.required or "recommended"
+    end
+
+    return keys
+end
+
+function getSelectedSetCount()
+    local count = 0
+    local selectedSets = currentScenario.selectedEncounterSets or {}
+
+    for k,v in pairs(selectedSets) do
+        count = count + 1
+    end
+
+    return count
+end
+
 
 
 

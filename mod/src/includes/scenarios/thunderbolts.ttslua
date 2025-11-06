@@ -81,7 +81,7 @@ scenarios["thunderbolts"] =
     notes={
         minions={
             title="Thunderbolt Minions",
-            text="The Thunderbolt Backup environment instructs you to swap minions based on how much damage they've take, rather than how many hit points they have remaining. Therefore, the HP counters for these minions will start at zero, instead of the minion's printed HP. They are also positioned higher on the card, so that you can see the printed HP.",
+            text="The Thunderbolt Backup environment instructs you to swap minions based on how much damage they've taken, rather than how many hit points they have remaining. Therefore, the HP counters for these minions will start at zero, instead of the minion's printed HP. They are also positioned higher on the card, so that you can see the printed HP.",
             position={0, 1, 0}
         }
     },    
@@ -113,8 +113,7 @@ function modularSetsAreValid_thunderbolts(params)
     local heroCount = heroManager.call("getHeroCount")
     local minimumThunderboltEncounterSets = heroCount + 1
 
-    local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
-    local selectedModularSets = encounterSetManager.call("getSelectedSets")
+    local selectedModularSets = getSelectedSets()
     local thunderBoltScenarioCount = 0
 
     for key, value in pairs(selectedModularSets) do

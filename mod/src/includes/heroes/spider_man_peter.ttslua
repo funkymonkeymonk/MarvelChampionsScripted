@@ -1,5 +1,5 @@
 heroes["spiderManPeterParker"] = {
-    name = "Spider-Man (Peter Parker)",
+    name = "Spider-Man",
     label = "Spider-Man (Parker)",
     identityCardId = "01001",
     hitPoints = 10,

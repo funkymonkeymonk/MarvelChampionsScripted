@@ -82,12 +82,12 @@ end
 function buildGenreQueue()
   local genreQueue = {}
 
-  table.insert(genreQueue, {modularSetKey="crime", environmentCardId="39035"})
-  table.insert(genreQueue, {modularSetKey="fantasy", environmentCardId="39041"})
-  table.insert(genreQueue, {modularSetKey="horror", environmentCardId="39047"})
-  table.insert(genreQueue, {modularSetKey="sciFi", environmentCardId="39053"})
-  table.insert(genreQueue, {modularSetKey="sitcom", environmentCardId="39060"})
-  table.insert(genreQueue, {modularSetKey="western", environmentCardId="39066"})
+  table.insert(genreQueue, {genreSetKey="crime", environmentCardId="39035"})
+  table.insert(genreQueue, {genreSetKey="fantasy", environmentCardId="39041"})
+  table.insert(genreQueue, {genreSetKey="horror", environmentCardId="39047"})
+  table.insert(genreQueue, {genreSetKey="sciFi", environmentCardId="39053"})
+  table.insert(genreQueue, {genreSetKey="sitcom", environmentCardId="39060"})
+  table.insert(genreQueue, {genreSetKey="western", environmentCardId="39066"})
 
   genreQueue = Global.call("shuffleTable", {table = genreQueue})
 
@@ -124,27 +124,27 @@ function placeGenreSetFromEnvironment(zone, card)
 
   local cardId = Global.call("getCardProperty", {card = card, property = "code"})
 
-  local modularSetKey = ""
+  local genreSetKey = ""
 
   for _, genre in ipairs(currentScenario.genreQueue) do
     if(genre.environmentCardId == cardId) then
-      modularSetKey = genre.modularSetKey
+      genreSetKey = genre.genreSetKey
       break
     end
   end
 
-  if(modularSetKey == "") then return end
+  if(genreSetKey == "") then return end
 
   for key, _ in pairs(currentScenario.modularSets) do
-    if(key == modularSetKey) then
+    if(key == genreSetKey) then
       return
     end
   end
 
-  currentScenario.modularSets[modularSetKey] = "required"
+  currentScenario.modularSets[genreSetKey] = "required"
 
   local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
-  local newGenreSet = encounterSetManager.call("getModularSet", {modularSetKey = modularSetKey})
+  local newGenreSet = encounterSetManager.call("getModularSet", {modularSetKey = genreSetKey})
 
   newGenreSet = deepCopy(newGenreSet)
 
