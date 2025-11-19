@@ -216,6 +216,11 @@ function setupThunderboltMinions()
                 property = "standardCounterValueOverride",
                 value = "0"
             })
+            Global.call("setCardValue", {
+                cardGuid = card.guid,
+                property = "keepInRegistry",
+                value = true
+            })
         end
     end
 end

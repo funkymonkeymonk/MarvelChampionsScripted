@@ -14,6 +14,14 @@ function onload(saved_data)
    loadSavedData(saved_data)
 
    setUpUI(getValue("showRemoveButton", true))
+
+   self.addContextMenuItem("Print Card Registry", printCardRegistry)
+end
+
+function printCardRegistry(playerColor)
+   local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
+   local cardRegistry = layoutManager.call("getCardRegistry")
+   log(cardRegistry)
 end
 
 function loadSavedData(saved_data)

@@ -110,7 +110,7 @@ function positionCardOnEnterZone(card, zoneIndex)
 end
 
 function onObjectLeaveZone(zone, card)
-    if (supressZoneInteractions) then return end
+    --if (supressZoneInteractions) then return end
     if (not isCard(card)) then return end
 
     local zoneDef = getZoneDefinition({zone = zone})
@@ -121,16 +121,14 @@ function onObjectLeaveZone(zone, card)
     })
 
     local cardType = cardData.type or ""
-    if (cardType == "hero") then
-        return
-    end
+    if (cardType == "hero") then return end
 
     if(zoneDef.addCountersAndTokens) then
         removeCountersFromCard({ card = card })
     end
 
     if(zoneDef.rescaleOnExit) then
-        resizeCardOnLeaveZone(card, cardData.aspect or "")
+        resizeCardOnLeaveZone(card, cardData.type or "")
     end
 
     if(zoneDef.repositionCards) then
@@ -149,7 +147,7 @@ function onObjectLeaveZone(zone, card)
     end
 end
 
-function resizeCardOnLeaveZone(card, cardAspect)
+function resizeCardOnLeaveZone(card, cardType)
     if (card.isDestroyed()) then return end
 
     local zones = card.getZones()
@@ -161,11 +159,31 @@ function resizeCardOnLeaveZone(card, cardAspect)
         end
     end
 
-    if (cardAspect == "encounter") then
-        card.setScale(CARD_SCALE_ENCOUNTER)
-    else
-        card.setScale(CARD_SCALE_PLAYER)
-    end
+    local cardScale = getCardScaleByType(cardType)
+    card.setScale(cardScale)
+end
+
+function getCardScaleByType(cardType)
+    local cardScalesByType = {
+        villain = CARD_SCALE_VILLAIN,
+        attachment = CARD_SCALE_ENCOUNTER,
+        environment = CARD_SCALE_ENCOUNTER,
+        main_scheme = CARD_SCALE_MAIN_SCHEME,
+        minion = CARD_SCALE_ENCOUNTER,
+        obligation = CARD_SCALE_ENCOUNTER,
+        side_scheme = CARD_SCALE_ENCOUNTER,
+
+        hero = CARD_SCALE_IDENTITY,
+        ally = CARD_SCALE_PLAYER,
+        event = CARD_SCALE_PLAYER,
+        player_side_scheme = CARD_SCALE_PLAYER,
+        resource = CARD_SCALE_PLAYER,
+        support = CARD_SCALE_PLAYER,
+        treachery = CARD_SCALE_ENCOUNTER,
+        upgrade = CARD_SCALE_PLAYER
+    }
+
+    return cardScalesByType[cardType] or CARD_SCALE_PLAYER
 end
 
 function onPlayerAction(player, action, targets)
@@ -239,9 +257,21 @@ end
 
 function onObjectDestroy(object)
     if (not isCard(object)) then return end
+    local cardGuid = object.getGUID()
 
-    setCardValue({cardGuid = object.getGUID(), property = "standardRetainedValue", value = nil})
-    setCardValue({cardGuid = object.getGUID(), property = "configuredRetainedValue", value = nil})
+    local keepInRegistry = getCardValue({
+        cardGuid = cardGuid,
+        property = "keepInRegistry"
+    })
+
+    if(keepInRegistry) then
+        setCardValue({cardGuid = cardGuid, property = "standardCounterGuid", value = nil})
+        setCardValue({cardGuid = cardGuid, property = "standardRetainedValue", value = nil})
+        setCardValue({cardGuid = cardGuid, property = "configuredCounterGuid", value = nil})
+        setCardValue({cardGuid = cardGuid, property = "configuredRetainedValue", value = nil})
+    else
+        deleteCardFromRegistry({cardGuid = cardGuid})
+    end
 end
 
 function onObjectRotate(object, spin, flip, player_color, old_spin, old_flip)

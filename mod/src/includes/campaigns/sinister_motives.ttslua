@@ -24,13 +24,18 @@ campaigns[4] = {
     },
     cards={
         {
-            cardId="27174",
+            cardId="27174a",
             position={-89.25, 0.51, 12.75},
             scale = Global.getTable("CARD_SCALE_ENCOUNTER")
         },
         {
-            cardId="27175",
+            cardId="27174b",
             position={-83.75, 0.51, 12.75},
+            scale = Global.getTable("CARD_SCALE_ENCOUNTER")
+        },
+        {
+            cardId="27175",
+            position={-78.25, 0.51, 12.75},
             scale = Global.getTable("CARD_SCALE_ENCOUNTER")
         },
         {
@@ -47,7 +52,7 @@ campaigns[4] = {
     decks={
         {
             name="Community Service",
-            position={-77.25, 0.54, 12.75},
+            position={-71.75, 0.54, 12.75},
             scale=Global.getTable("CARD_SCALE_ENCOUNTER"),
             landscape=true,
             flipped=true,
@@ -61,7 +66,7 @@ campaigns[4] = {
         },
         {
             name="Osborn Tech",
-            position={-70.75, 0.55, 12.75},
+            position={-65.25, 0.55, 12.75},
             scale=Global.getTable("CARD_SCALE_ENCOUNTER"),
             cards={
                 ["27147"] = 1,
@@ -74,7 +79,7 @@ campaigns[4] = {
         },
         {
             name="S.H.I.E.D. Tech",
-            position={-66.25, 0.56, 12.75},
+            position={-60.75, 0.56, 12.75},
             scale=Global.getTable("CARD_SCALE_PLAYER"),
             flipped=true,
             cards={

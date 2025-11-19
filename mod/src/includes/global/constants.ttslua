@@ -112,6 +112,8 @@ MESSAGE_TYPE_INFO = "info"
 MESSAGE_TYPE_ALERT = "alert"
 MESSAGE_TYPE_PLAYER = "player"
 
+CDN_URL = "https://d2xdqryaauvaie.cloudfront.net"
+
 ZONE_SIDE_SCHEME = {
    zoneIndex = "sideScheme",
    tags = {"side_scheme", "player_side_scheme"},

@@ -1,22 +1,4 @@
-local logData = {}
-
-function onload(saved_data)
-    self.interactable = false
-
-    loadSavedData(saved_data)
-    setUpUI()
-end
-
-function loadSavedData(saved_data)
-    if saved_data ~= "" then
-        logData = JSON.decode(saved_data)
-    end
-end
-
-function saveData()
-    local saved_data = JSON.encode(logData)
-    self.script_state = saved_data
-end
+require('!/components/campaign_log')
 
 function setUpUI()
     local ui = {{
@@ -371,21 +353,4 @@ function setUpUI()
     Wait.frames(function()
         populateLog()
     end, 30)
-end
-
-function populateLog()
-    if (logData.textValues) then
-        for id, value in pairs(logData.textValues) do
-            self.UI.setAttribute(id, "text", value)
-        end
-    end
-end
-
-function textValueChanged(player, value, id)
-    if (not logData.textValues) then
-        logData.textValues = {}
-    end
-
-    logData.textValues[id] = value
-    saveData()
 end

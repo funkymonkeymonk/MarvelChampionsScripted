@@ -874,3 +874,27 @@ function getAllCardValues(params)
 
     return cards[cardGuid]
 end
+
+function getCardRegistry()
+    return cards
+end
+
+function deleteCardFromRegistry(params)
+    local cardGuid = params.cardGuid
+
+    cards[cardGuid] = nil
+
+    scrubCardRegistry()
+    saveData()
+end
+
+function scrubCardRegistry()
+    local scrubbedCards = {}
+    for guid, cardData in pairs(cards) do
+        if(cardData ~= nil) then
+            scrubbedCards[guid] = cardData
+        end
+    end
+
+    cards = scrubbedCards
+end

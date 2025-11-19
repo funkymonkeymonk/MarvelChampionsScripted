@@ -4,22 +4,27 @@ campaigns[8] = {
     imageUrl = "",
     text = {{
         text = "Missions",
-        position = {-78.00, 0.96, 17.00},
+        position = {-78.00, 0.5, 17.00},
         color = {1, 1, 1},
         fontSize = 88
     }, {
         text = "Mission-Related Cards",
-        position = {-78.00, 0.96, 7.25},
+        position = {-78.00, 0.5, 7.25},
         color = {1, 1, 1},
         fontSize = 88
     }, {
         text = "Overseers",
-        position = {-83.25, 0.96, -5.25},
+        position = {-85.00, 0.5, -5.25},
+        color = {1, 1, 1},
+        fontSize = 88
+    }, {
+        text = "Prelates",
+        position = {-78.00, 0.5, -5.25},
         color = {1, 1, 1},
         fontSize = 88
     }, {
         text = "Age of\nApocalypse",
-        position = {-71.75, 0.96, -4.00},
+        position = {-71.00, 0.5, -4.00},
         color = {1, 1, 1},
         fontSize = 88
     }},
@@ -40,7 +45,7 @@ campaigns[8] = {
     }},
     decks = {{
         name = "Age of Apocalypse",
-        position = {-71.75, 0.53, -10.25},
+        position = {-71.00, 0.53, -10.25},
         scale = Global.getTable("CARD_SCALE_ENCOUNTER"),
         cards = {
             ["45164"] = 2,
@@ -60,15 +65,27 @@ campaigns[8] = {
         }
     }, {
         name = "Overseers",
-        position = {-83.25, 0.54, -10.25},
+        position = {-85.00, 0.54, -10.25},
         scale = Global.getTable("CARD_SCALE_ENCOUNTER"),
         flipped = true,
         cards = {
-            ["45179"] = 1,
-            ["45180"] = 1,
-            ["45181"] = 1,
-            ["45182"] = 1,
-            ["45183"] = 1
+            ["45183a"] = 1,
+            ["45182a"] = 1,
+            ["45181a"] = 1,
+            ["45180a"] = 1,
+            ["45179a"] = 1
+        }
+    }, {
+        name = "Prelates",
+        position = {-78.00, 0.54, -10.25},
+        scale = Global.getTable("CARD_SCALE_ENCOUNTER"),
+        flipped = true,
+        cards = {
+            ["45183b"] = 1,
+            ["45182b"] = 1,
+            ["45181b"] = 1,
+            ["45180b"] = 1,
+            ["45179b"] = 1
         }
     }, {
         name = "Allies",

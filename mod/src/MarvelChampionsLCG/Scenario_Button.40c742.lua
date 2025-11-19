@@ -1,28 +1,32 @@
 local allScenarios = {}
 local allEncounterSets = {}
 local selectedScenario = {}
-local encounterSetButtonIds = {}
 
-local encounterSetButtonWidth = 245 --327
-local encounterSetButtonHeight = 30 --50
-local encounterSetColumns = 4 --3
+local scenarioButtonWidth = 362
+local scenarioButtonHeight = 181
+local scenarioColumns = 4
+local scenarioButtonSpacing = 10
+
+local encounterSetButtonWidth = 245
+local encounterSetButtonHeight = 30
+local encounterSetColumns = 4
 local encounterSetButtonSpacing = 0
 
 function onload(saved_data)
-    self.interactable = false
-    local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
-    local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
+    -- self.interactable = false
+    -- local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
+    -- local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
 
-    allScenarios = scenarioManager.call("getScenarios", {})
-    allEncounterSets = encounterSetManager.call("getEncounterSets", {})
+    -- allScenarios = scenarioManager.call("getScenarios", {})
+    -- allEncounterSets = encounterSetManager.call("getEncounterSets", {})
 
-    createButton()
+    -- createButton()
 end
 
 function createButton()
     self.createButton({
         label = "SCENARIO",
-        click_function = "displayScenarioUI",
+        click_function = "displayScenarioSelectionUI",
         function_owner = self,
         position = {0, 0.1, 0},
         rotation = {0, 0, 0},
@@ -57,12 +61,6 @@ function getScenarioButtons(guid)
 
         _G[functionName] = function()
             selectScenario(scenario.key)
-            -- scenarioUsesStandardEncounterSets = scenarioManager.call("useStandardEncounterSets")
-            -- scenarioUsesModularEncounterSets = scenarioManager.call("useModularEncounterSets")
-        
-            -- updateSetupButtons()
-            -- highlightSelectedScenario()
-            -- colorCodeModularSets()
         end
 
         local scenarioButton = {
@@ -78,12 +76,12 @@ function getScenarioButtons(guid)
                 value = labelInfo.text,
                 attributes = {
                     onClick = guid .. "/" .. functionName,
-                    height = "140",
-                    width = "240",
+                    height = tostring(scenarioButtonHeight * 0.875),
+                    width = tostring(scenarioButtonWidth * 0.75),
                     fontSize = tostring(fontSize),
                     textColor = "rgba(0,0,0,1)",
                     color = "rgba(0,0,0,0)",
-                    offsetXY = "65 15"
+                    offsetXY = tostring(scenarioButtonWidth * 0.2) .. " " .. tostring(scenarioButtonHeight * 0.09)
                 }
             }}
         }
@@ -97,26 +95,35 @@ function getEncounterSetButtons(guid)
     local orderedList = Global.call("getSortedListOfItems", {
         items = allEncounterSets
     })
+
+    local textColorDefault = "rgba(1,1,1,1)"
+    local textColorRequired = "rgba(1,0,0,1)"
+    local textColorRecommended = "rgba(1,1,0,1)"
     
-    encounterSetButtonIds = {}
+    local scenarioSets = selectedScenario.modularSets or {}
+    local selectedSets = selectedScenario.selectedEncounterSets or {}
+
     local encounterSetButtons = {}
 
     for i, encounterSet in ipairs(orderedList) do
-        local functionName = "selectEncounterSet-" .. encounterSet.key
-        local buttonId = "encounterSetToggle-" .. encounterSet.key
+        local encounterKey = encounterSet.key
+        local setInScenario = scenarioSets[encounterKey] or "no"
+        local setIsSelected = selectedSets[encounterKey] ~= nil and "true" or "false"
+        local textColor = textColorDefault
+
+        if(setInScenario == "required") then
+            textColor = textColorRequired
+        elseif(setInScenario == "recommended") then
+            textColor = textColorRecommended
+        end
+
+        local functionName = "selectEncounterSet-" .. encounterKey
+        local buttonId = "encounterSetToggle-" .. encounterKey
         local label = encounterSet.label or encounterSet.name
         local fontSize = 15
 
-        table.insert(encounterSetButtonIds, buttonId)
-
         _G[functionName] = function(player, value, id)
-            selectEncounterSet(encounterSet.key, value)
-            -- scenarioUsesStandardEncounterSets = scenarioManager.call("useStandardEncounterSets")
-            -- scenarioUsesModularEncounterSets = scenarioManager.call("useModularEncounterSets")
-        
-            -- updateSetupButtons()
-            -- highlightSelectedScenario()
-            -- colorCodeModularSets()
+            selectEncounterSet(encounterKey, value)
         end
 
         local encounterSetButton = {
@@ -133,8 +140,9 @@ function getEncounterSetButtons(guid)
                     height = tostring(encounterSetButtonHeight),
                     width = tostring(encounterSetButtonWidth),
                     fontSize = tostring(fontSize),
-                    textColor = "rgba(1,1,1,1)",
-                    colors = "rgba(1,1,1,1)|rgba(1,1,1,1)|rgba(1,1,1,1)|rgba(1,1,1,1)"
+                    textColor = textColor,
+                    colors = "rgba(1,1,1,1)|rgba(1,1,1,1)|rgba(1,1,1,1)|rgba(1,1,1,1)",
+                    isOn = setIsSelected
                 }
             }}
         }
@@ -203,43 +211,49 @@ function getFirstPlayerToggles(heroes)
     return toggles
 end
 
-function displayScenarioUI()
-    local guid = self.getGUID()
-    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
-    local selectedHeroes = heroManager.call("getSelectedHeroes")
-    local heroNames = {}
-    local heroCount = 0
-
-    for color, hero in pairs(selectedHeroes) do
-        heroNames[color] = hero.name
-        heroCount = heroCount + 1
-    end
-
-    if(heroCount < 1) then
-        Global.call("displayMessage", {
-            message = "Please select at least one hero before selecting a scenario.",
-            messageType = Global.getVar("MESSAGE_TYPE_INSTRUCTION")
-        })
-
-        return
-    end
-
-    local showFirstPlayerSection = heroCount > 1
-    local firstPlayerToggles = getFirstPlayerToggles(heroNames)
-    local scenarioButtons = getScenarioButtons(guid)
-    local encounterSetButtons = getEncounterSetButtons(guid)
-
-    local scenarioButtonWidth = 320
-    local scenarioButtonHeight = 160
-    local scenarioButtonSpacing = 10
-    local scenarioSelectPanelHeight = math.ceil(#scenarioButtons / 3) * (scenarioButtonHeight + scenarioButtonSpacing) -
-                                      scenarioButtonSpacing
-
-    local encounterSetButtonRowCount = math.ceil(#encounterSetButtons / encounterSetColumns)
-    local encounterSetSelectPanelHeight = encounterSetButtonRowCount * (encounterSetButtonHeight + encounterSetButtonSpacing) -
-                                    encounterSetButtonSpacing
-
+function getScenarioUIBase(headerText)
     local scenarioUI = {{
+        tag = "Panel",
+        attributes = {
+            height = "1000",
+            width = "1500",
+            color = "rgba(0,0,0,1)"
+        },
+        children = {{
+            tag = "Panel",
+            attributes = {
+                height = "75",
+                rectAlignment = "UpperCenter"
+            },
+            children = {{
+                tag = "Text",
+                value = headerText,
+                attributes = {
+                    alignment = "MiddleLeft",
+                    fontSize = "50",
+                    color = "rgba(1,1,1,1)",
+                    offsetXY = "10 0"
+                }
+            }, 
+            {
+                tag = "Image",
+                attributes = {
+                    image = Global.getVar("CDN_URL") .. "/assets/ui-close-button.png",
+                    rectAlignment = "UpperRight",
+                    offsetXY = "-10 -10",
+                    height = "50",
+                    width = "50",
+                    onClick = self.getGUID() .. "/" .. "hideScenarioUI"
+                }
+            }}
+        }}
+    }}
+
+    return scenarioUI
+end
+
+function getUIDefaults()
+    local defaults = {
         tag = "Defaults",
         children = {
             {
@@ -312,76 +326,106 @@ function displayScenarioUI()
                     fontSize = "20",
                     fontStyle = "Bold"
                 }
-            }        }},
-        {
-        tag = "Panel",
-        attributes = {
-            height = "1000",
-            width = "1500",
-            color = "rgba(0,0,0,1)"
-        },
-        children = {{
+            }
+        }}
+
+    return defaults
+end
+
+function displayScenarioSelectionUI()
+    local guid = self.getGUID()
+    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
+    local heroCount = heroManager.call("getHeroCount")
+
+    if(heroCount < 1) then
+        Global.call("displayMessage", {
+            message = "Please select at least one hero before selecting a scenario.",
+            messageType = Global.getVar("MESSAGE_TYPE_INSTRUCTION")
+        })
+
+        return
+    end
+
+    local scenarioButtons = getScenarioButtons(guid)
+    local scenarioSelectPanelHeight = 
+        math.ceil(#scenarioButtons / scenarioColumns) * (scenarioButtonHeight + scenarioButtonSpacing) - scenarioButtonSpacing
+
+    local scenarioUI = getScenarioUIBase("SELECT A SCENARIO")
+    local selectScenarioPanel = {
             tag = "Panel",
             attributes = {
-                id = "scenarioHeaderPanel",
-                height = "75",
-                rectAlignment = "UpperCenter"
+                rectAlignment = "UpperRight",
+                offsetXY = "0 -75"
             },
             children = {{
-                tag = "Text",
-                value = "SCENARIO SETUP",
+                tag = "VerticalScrollView",
                 attributes = {
-                    alignment = "MiddleLeft",
-                    fontSize = "50",
-                    color = "rgba(1,1,1,1)",
-                    offsetXY = "10 0"
-                }
-            }, {
-                tag = "Button",
-                value = "X",
-                attributes = {
+                    height = "925",
+                    width = "1500",
                     rectAlignment = "UpperRight",
-                    onClick = guid .. "/" .. "hideScenarioUI",
-                    textColor = "rgba(1,0,0,1)",
-                    color = "rgba(0,0,0,0)",
-                    fontSize = "50",
-                    height = "60",
-                    width = "60",
-                    offsetXY = "-10 -10"
-                }
-            }}
-        }, {
-            tag = "Panel",
-            attributes = {
-                id = "setupDetailsPlaceholderPanel",
-                height = "925",
-                width = "500",
-                rectAlignment = "LowerLeft",
-                active = "true"
-            },
-            children = {
-                {
-                    tag = "Text",
-                    value = "Select a Scenario",
+                    verticalScrollbarVisibility = "AutoHideAndExpandView",
+                    horizontalScrollbarVisibility = "AutoHideAndExpandViewport",
+                    scrollSensitivity = "75",
+                    raycastTarget = "true",
+                    color = "rgba(0,0,0,1)"
+                },
+                children = {{
+                    tag = "GridLayout",
                     attributes = {
-                        alignment = "UpperCenter",
-                        offsetXY = "0 -200",
-                        fontSize = "40",
-                        color = "rgba(1,1,1,1)"
-                    }
-                }
-            }
-        },
-        {
+                        width = "1475",
+                        height = tostring(scenarioSelectPanelHeight),
+                        spacing = scenarioButtonSpacing .. " " .. scenarioButtonSpacing,
+                        cellSize = scenarioButtonWidth .. " " .. scenarioButtonHeight,
+                        constraint = "FixedColumnCount",
+                        constraintCount = tostring(scenarioColumns)
+                    },
+                    children = scenarioButtons
+                }}
+            }}
+        }
+
+    table.insert(scenarioUI[1].children, selectScenarioPanel)
+
+    Global.UI.setXmlTable(scenarioUI)
+    local xml = Global.UI.getXml()
+end
+
+function displayEncounterSetSelectionUI()
+    local guid = self.getGUID()
+    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
+    local selectedHeroes = heroManager.call("getSelectedHeroes")
+    local heroNames = {}
+    local heroCount = 0
+
+    for color, hero in pairs(selectedHeroes) do
+        heroNames[color] = hero.name
+        heroCount = heroCount + 1
+    end
+
+    local showFirstPlayerSection = heroCount > 1
+    local firstPlayerToggles = getFirstPlayerToggles(heroNames)
+    local useStandardEncounterSets = selectedScenario.useStandardEncounterSets ~= null and selectedScenario.useStandardEncounterSets or true
+    local useModularEncounterSets = selectedScenario.useModularEncounterSets ~= null and selectedScenario.useModularEncounterSets or true
+    local encounterSetButtons = getEncounterSetButtons(guid)
+    local selectedEncounterSetColumns = getSelectedEncounterSetColumns()
+
+    local encounterSetButtonRowCount = math.ceil(#encounterSetButtons / encounterSetColumns)
+    local encounterSetSelectPanelHeight = encounterSetButtonRowCount * (encounterSetButtonHeight + encounterSetButtonSpacing) -
+                                    encounterSetButtonSpacing
+
+    local scenarioUI = getScenarioUIBase("SCENARIO SETUP")
+    local defaults = getUIDefaults()
+    
+    table.insert(scenarioUI, 1, defaults)
+
+    local scenarioSettingsPanels = {{
             tag = "Panel",
             attributes = {
-                id = "setupDetailsPanel",
                 height = "825",
                 width = "500",
                 padding = "10 10 0 10",
                 rectAlignment = "UpperLeft",
-                offsetXY = "0 -75",
-                active = "false"
+                offsetXY = "0 -75"
             },
             children = {
                 {
@@ -406,7 +450,8 @@ function displayScenarioUI()
                                     attributes = {
                                         id = "selectedScenarioImage",
                                         height = "240",
-                                        width = "480"
+                                        width = "480",
+                                        image = selectedScenario.tileImageUrl
                                     }
                                 },
                                 {
@@ -418,7 +463,8 @@ function displayScenarioUI()
                                         alignment = "MiddleCenter",
                                         resizeTextForBestFit = "true",
                                         color = "rgba(0,0,0,1)",
-                                        offsetXY = "103 22"
+                                        offsetXY = "103 22",
+                                        text = selectedScenario.label or selectedScenario.name
                                     }
                                 }
                             }
@@ -457,7 +503,8 @@ function displayScenarioUI()
                                         alignment = "UpperLeft",
                                         fontSize = "20",
                                         color = "rgba(1,1,1,1)",
-                                        contentSizeFitter = "vertical"
+                                        contentSizeFitter = "vertical",
+                                        text = selectedEncounterSetColumns[1]
                                     }
                                 },
                                 {
@@ -468,7 +515,8 @@ function displayScenarioUI()
                                         fontSize = "20",
                                         color = "rgba(1,1,1,1)",
                                         minimumHeight = "20",
-                                        flexibleHeight = "1"
+                                        flexibleHeight = "1",
+                                        text = selectedEncounterSetColumns[2]
                                     }
                                 }
                             }
@@ -535,7 +583,8 @@ function displayScenarioUI()
                         {
                             tag="Panel",
                             attributes = {
-                                class = "sectionHeading"
+                                class = "sectionHeading",
+                                active = tostring(useStandardEncounterSets)
                             },
                             children = {
                                 {
@@ -550,7 +599,8 @@ function displayScenarioUI()
                         {
                             tag = "HorizontalLayout",
                             attributes = {
-                                class = "togglePanelContainer"
+                                class = "togglePanelContainer",
+                                active = tostring(useStandardEncounterSets)
                             },
                             children = {
                                 {
@@ -732,40 +782,42 @@ function displayScenarioUI()
                                 {
                                     tag = "Image",
                                     attributes = {
-                                        image = "https://d2xdqryaauvaie.cloudfront.net/assets/scenario-launch-button.jpg",
+                                        image = Global.getVar("CDN_URL") .. "/assets/scenario-launch-button.jpg",
                                         height = "100",
                                         width = "480"
                                     }
-                                },
-                                -- {
-                                --     tag = "Text",
-                                --     value = "GO!",
-                                --     attributes = {
-                                --         alignment = "MiddleCenter",
-                                --         fontSize = "50",
-                                --         fontStyle = "Bold",
-                                --         color = "rgba(1, 0.27, 0.2, 1)"
-                                --     }
-                                -- }
+                                }
                             }
                         }
                     }
                 }
             }
-        }, 
+        },
         {
             tag = "Panel",
             attributes = {
-                id = "selectScenarioPanel",
+                id = "encounterSetControlPanel",
+                height = "100",
+                width = "990",
                 rectAlignment = "UpperRight",
-                offsetXY = "0 -75",
-                active = "true"
+                offsetXY = "-10 -75",
+                color = "rgba(0,0,0,1)",
+                outline = "rgba(0.5,0.5,0.5,1)",
+                outlineSize = "1 1",
+            },
+        },
+        {
+            tag = "Panel",
+            attributes = {
+                id = "selectEncounterSetsPanel", 
+                rectAlignment = "UpperRight",
+                offsetXY = "-10 -185"
             },
             children = {{
                 tag = "VerticalScrollView",
                 attributes = {
-                    height = "925",
-                    width = "1000",
+                    height = "805",
+                    width = "990",
                     rectAlignment = "UpperRight",
                     verticalScrollbarVisibility = "AutoHideAndExpandView",
                     horizontalScrollbarVisibility = "AutoHideAndExpandViewport",
@@ -776,40 +828,7 @@ function displayScenarioUI()
                 children = {{
                     tag = "GridLayout",
                     attributes = {
-                        width = "975",
-                        height = tostring(scenarioSelectPanelHeight),
-                        spacing = scenarioButtonSpacing .. " " .. scenarioButtonSpacing,
-                        cellSize = scenarioButtonWidth .. " " .. scenarioButtonHeight,
-                        constraint = "FixedColumnCount",
-                        constraintCount = "3"
-                    },
-                    children = scenarioButtons
-                }}
-            }}
-        }, 
-        {
-            tag = "Panel",
-            attributes = {
-                id = "selectEncounterSetsPanel", 
-                rectAlignment = "UpperRight",
-                offsetXY = "0 -75",
-                active = "false"
-            },
-            children = {{
-                tag = "VerticalScrollView",
-                attributes = {
-                    height = "925",
-                    width = "1000",
-                    rectAlignment = "UpperRight",
-                    verticalScrollbarVisibility = "AutoHideAndExpandView",
-                    horizontalScrollbarVisibility = "AutoHideAndExpandViewport",
-                    scrollSensitivity = "75",
-                    raycastTarget = "true"
-                },
-                children = {{
-                    tag = "GridLayout",
-                    attributes = {
-                        width = "975",
+                        width = "955",
                         height = tostring(encounterSetSelectPanelHeight),
                         spacing = encounterSetButtonSpacing .. " " .. encounterSetButtonSpacing,
                         cellSize = encounterSetButtonWidth .. " " .. encounterSetButtonHeight,
@@ -823,10 +842,12 @@ function displayScenarioUI()
              }}
         }
     }
-    }}
+
+    for _, panel in ipairs(scenarioSettingsPanels) do
+        table.insert(scenarioUI[2].children, panel)
+    end
 
     Global.UI.setXmlTable(scenarioUI)
-    local xml = Global.UI.getXml()
 end
 
 function selectScenario(scenarioKey)
@@ -837,15 +858,8 @@ function selectScenario(scenarioKey)
     selectedScenario.key = scenarioKey
 
     preSelectEncounterSets()
-    updateEncounterSetButtons()
-    updateSelectedEncounterSetList()
 
-    Global.UI.hide("setupDetailsPlaceholderPanel")
-    Global.UI.show("setupDetailsPanel")
-    Global.UI.setAttribute("selectedScenarioImage", "image", scenario.tileImageUrl)
-    Global.UI.setAttribute("selectedScenarioLabel", "text", scenario.label or scenario.name)
-
-    showEncounterSetsPanel()
+    displayEncounterSetSelectionUI()
 end
 
 function selectEncounterSet(encounterSetKey, isSelected)
@@ -877,59 +891,35 @@ function preSelectEncounterSets()
     selectedScenario.selectedEncounterSets = selectedSets
 end
 
-function updateEncounterSetButtons()
-    local textColorDefault = "rgba(1,1,1,1)"
-    local textColorRequired = "rgba(1,0,0,1)"
-    local textColorRecommended = "rgb(1, 1, 0)"
-    local scenarioSets = selectedScenario.modularSets or {}
-    local selectedSets = selectedScenario.selectedEncounterSets or {}
+function updateSelectedEncounterSetList()
+    local columns = getSelectedEncounterSetColumns()
 
-    for _, buttonId in ipairs(encounterSetButtonIds) do
-        local encounterKey = string.match(buttonId, "%-(.+)")
-        local setInScenario = scenarioSets[encounterKey] or "no"
-        local setIsSelected = selectedSets[encounterKey] ~= nil and "true" or "false"
-        local textColor = textColorDefault
-
-        if(setInScenario == "required") then
-            textColor = textColorRequired
-        elseif(setInScenario == "recommended") then
-            textColor = textColorRecommended
-        end
-
-        Global.UI.setAttribute(buttonId, "textColor", textColor)
-        Global.UI.setAttribute(buttonId, "isOn", setIsSelected)
-    end
+    Global.UI.setAttribute("selectedEncounterSetsColumn1", "text", columns[1])
+    Global.UI.setAttribute("selectedEncounterSetsColumn2", "text", columns[2])
 end
 
-function updateSelectedEncounterSetList()
+function getSelectedEncounterSetColumns()
     local selectedSets = selectedScenario.selectedEncounterSets or {}
     local sortedList = Global.call("getSortedListOfItems", {
         items = selectedSets
     })
     local setsPerColumn = math.ceil(#sortedList / 2)
-    local setLists = {"", ""}
+    local columns = {"", ""}
+
+    if(#sortedList == 0) then
+        columns[1] = "(none selected)"
+        return columns
+    end
 
     for i, set in ipairs(sortedList) do
         local setName = set.label or set.name
         local columnIndex = i <= setsPerColumn and 1 or 2
-        if(setLists[columnIndex] ~= "") then
-            setLists[columnIndex] = setLists[columnIndex] .. "\n"
+        if(columns[columnIndex] ~= "") then
+            columns[columnIndex] = columns[columnIndex] .. "\n"
         end
-        setLists[columnIndex] = setLists[columnIndex] .. setName
+        columns[columnIndex] = columns[columnIndex] .. setName
     end
-
-    Global.UI.setAttribute("selectedEncounterSetsColumn1", "text", setLists[1])
-    Global.UI.setAttribute("selectedEncounterSetsColumn2", "text", setLists[2])
-end
-
-function showScenarioPanel()
-    Global.UI.hide("selectEncounterSetsPanel")
-    Global.UI.show("selectScenarioPanel")
-end
-
-function showEncounterSetsPanel()
-    Global.UI.hide("selectScenarioPanel")
-    Global.UI.show("selectEncounterSetsPanel")
+    return columns
 end
 
 function hideScenarioUI()

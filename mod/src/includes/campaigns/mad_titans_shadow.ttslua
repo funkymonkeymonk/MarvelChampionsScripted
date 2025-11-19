@@ -5,93 +5,119 @@ campaigns[3] = {
     text={
         {
             text="Scenario #1",
-            position={-94.50, 0.50, 18.00},
+            position={-95.50, 0.5, 18.00},
             color={1,1,1},
             fontSize=88
         },
         {
             text="Scenario #2",
-            position={-94.50, 0.50, 8.50},
+            position={-78.50, 0.5, 18.25},
             color={1,1,1},
             fontSize=88
         },
         {
             text="Scenario #3",
-            position={-94.50, 0.50, -1.00},
+            position={-65.50, 0.5, 18.27},
             color={1,1,1},
             fontSize=88
         },
         {
             text="Scenario #4",
-            position={-74.40, 0.50, 18.00},
+            position={-91.50, 0.5, 0.00},
             color={1,1,1},
             fontSize=88
         },
         {
             text="Scenario #5",
-            position={-74.40, 0.96, 8.50},
+            position={-74.50, 0.5, 0.00},
             color={1,1,1},
             fontSize=88
         }
     },
     cards={
         {
-            cardId="21180",
-            position={-93.25, 0.51, 13.75},
+            cardId="21180a",
+            position={-95.25, 0.51, 13.75},
             scale = Global.getTable("CARD_SCALE_ENCOUNTER"),
             landscape=true
+        },
+        {
+            cardId="21180b",
+            position={-95.25, 0.51, 8.75},
+            scale = Global.getTable("CARD_SCALE_PLAYER")
         },
         {
             cardId="21181",
-            position={-85.75, 0.51, 13.75},
+            position={-87.25, 0.51, 13.75},
             scale = Global.getTable("CARD_SCALE_ENCOUNTER"),
             landscape=true
         },
         {
-            cardId="21182",
-            position={-93.25, 0.51, 4.25},
+            cardId="21182a",
+            position={-78.25, 0.51, 13.75},
             scale = Global.getTable("CARD_SCALE_ENCOUNTER"),
             landscape=true
         },
         {
-            cardId="21184",
-            position={-93.25, 0.51, -5.25},
+            cardId="21182b",
+            position={-78.25, 0.51, 7.25},
+            scale = Global.getTable("CARD_SCALE_ENCOUNTER")
+        },
+        {
+            cardId="21184a",
+            position={-65.25, 0.51, 13.75},
+            scale = Global.getTable("CARD_SCALE_ENCOUNTER"),
+            landscape=true
+        },
+        {
+            cardId="21184b",
+            position={-65.25, 0.51, 8.25},
+            scale = Global.getTable("CARD_SCALE_ENCOUNTER"),
+            landscape=true
+        },
+        {
+            cardId="21186a",
+            position={-91.25, 0.51, -4.25},
+            scale = Global.getTable("CARD_SCALE_ENCOUNTER"),
+            landscape=true
+        },
+        {
+            cardId="21186b",
+            position={-91.25, 0.51, -9.75},
             scale = Global.getTable("CARD_SCALE_ENCOUNTER"),
             landscape=true
         },
         {
             cardId="21188",
-            position={-74.25, 0.51, 12.75},
+            position={-84.25, 0.51, -5.25},
             scale = Global.getTable("CARD_SCALE_ENCOUNTER")
         },
         {
-            cardId="21186",
-            position={-67.25, 0.51, 13.75},
+            cardId="21189a",
+            position={-74.25, 0.51, -4.25},
             scale = Global.getTable("CARD_SCALE_ENCOUNTER"),
             landscape=true
+        },
+        {
+            cardId="21189b",
+            position={-74.25, 0.51, -10.75},
+            scale = Global.getTable("CARD_SCALE_ENCOUNTER")
         },
         {
             cardId="21188",
-            position={-74.25, 0.51, 3.25},
+            position={-67.25, 0.51, -5.25},
             scale = Global.getTable("CARD_SCALE_ENCOUNTER")
-        },
-        {
-            cardId="21189",
-            position={-67.25, 0.51, 4.25},
-            scale = Global.getTable("CARD_SCALE_ENCOUNTER"),
-            landscape=true
         },
         {
             cardId="21139",
-            position={-58.25, 0.51, 4.25},
-            scale = Global.getTable("CARD_SCALE_PLAYER"),
-            flipped=true
+            position={-62.25, 1.94, -4.25},
+            scale = Global.getTable("CARD_SCALE_PLAYER")
         }
     },
     decks={
         {
             name="Shawarma",
-            position={-87.75, 0.54, 4.25},
+            position={-72.25, 0.54, 13.75},
             scale=Global.getTable("CARD_SCALE_PLAYER"),
             flipped=true,
             cards={
@@ -100,7 +126,7 @@ campaigns[3] = {
         },
         {
             name="System Shock",
-            position={-87.75, 0.53, -5.25},
+            position={-59.25, 0.54, 13.75},
             scale=Global.getTable("CARD_SCALE_PLAYER"),
             flipped=true,
             cards={
@@ -109,7 +135,7 @@ campaigns[3] = {
         },
         {
             name="Norn Stone",
-            position={-61.75, 0.54, 13.75},
+            position={-84.25, 0.53, -11.75},
             scale=Global.getTable("CARD_SCALE_PLAYER"),
             flipped=true,
             cards={
@@ -118,7 +144,7 @@ campaigns[3] = {
         },
         {
             name="Captive Allies",
-            position={-61.75, 0.54, 4.25}   ,
+            position={-62.25, 0.53, -9.25},
             scale=Global.getTable("CARD_SCALE_PLAYER"),
             flipped=true,
             cards={
@@ -142,5 +168,12 @@ campaigns[3] = {
             position={-78.00, 0.59, -28.25},
             scale={4.30, 1.00, 4.30}
         }
+    },
+    notes={
+        sideSchemes={
+            title="Side Schemes",
+            text="These campaign side schemes instruct you to flip the card when the scheme is defeated. Instead, the flip side of each scheme is represented as a separate card (located below the scheme card).",
+            position={-62.75, 0.57, 26.25}
+        }        
     }
 }
