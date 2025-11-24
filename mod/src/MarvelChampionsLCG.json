@@ -1,8 +1,8 @@
 {
   "Save": {
     "SaveName": "MarvelChampionsLCG",
-    "EpochTime": 1758659118,
-    "Date": "9/23/2025 2:25:18 PM",
+    "EpochTime": 1763992178,
+    "Date": "11/24/2025 6:49:38 AM",
     "VersionNumber": "v13.3",
     "GameMode": "MarvelChampionsLCG",
     "GameType": "Game",
@@ -451,6 +451,7 @@
     "Cerebro.c7ece0.json",
     "Campaign_Button.2364bf.json",
     "Scenario_Button.40c742.json",
-    "First_Player.d93792.json"
+    "First_Player.d93792.json",
+    "New_Scenario_Setup_UI.1f0008.json"
   ]
 }

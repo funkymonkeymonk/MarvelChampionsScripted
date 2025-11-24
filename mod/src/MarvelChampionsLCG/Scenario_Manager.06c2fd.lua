@@ -365,11 +365,14 @@ function setUpConfiguredScenario(params)
         end
     end
 
+    currentScenario.skipValidation = true
     setUpScenario()
 end
 
 function setUpScenario()
-    if (not confirmScenarioInputs(true)) then
+    local skipValidation = currentScenario.skipValidation or false
+    
+    if (not skipValidation and not confirmScenarioInputs(true)) then
         return
     end
 
@@ -2098,6 +2101,10 @@ end
 function addRemoveSelectedSet(params)
     local key = params.encounterSetKey
 
+    if(not currentScenario.selectedEncounterSets) then
+        currentScenario.selectedEncounterSets = {}
+    end
+    
     for k, v in pairs(currentScenario.selectedEncounterSets) do
         if(k == key) then
             currentScenario.selectedEncounterSets[k] = nil
@@ -2119,7 +2126,7 @@ end
 function getSelectedSetKeys()
     local keys = {}
 
-    for k,v in pairs(currentScenario.selectedEncounterSets) do
+    for k,v in pairs(currentScenario.selectedEncounterSets or {}) do
         keys[k] = v.required or "recommended"
     end
 

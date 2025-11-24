@@ -114,7 +114,7 @@ function modularSetsAreValid_thunderbolts(params)
     local heroCount = heroManager.call("getHeroCount")
     local minimumThunderboltEncounterSets = heroCount + 1
 
-    local selectedModularSets = getSelectedSets()
+    local selectedModularSets = getSelectedSets() or {}
     local thunderBoltScenarioCount = 0
 
     for key, value in pairs(selectedModularSets) do

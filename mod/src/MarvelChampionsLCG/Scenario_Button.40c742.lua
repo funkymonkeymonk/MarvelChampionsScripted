@@ -13,6 +13,14 @@ local encounterSetButtonHeight = 30
 local encounterSetColumns = 4
 local encounterSetButtonSpacing = 0
 
+function showTile() --TODO: delete
+  createButton()
+end
+
+function hideTile() -- TODO: delete
+  self.clearButtons()
+end
+
 function onload(saved_data)
     self.interactable = false
     local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
@@ -382,7 +390,8 @@ function getScenarioUIDefaults()
                     flexibleHeight = "0",
                     color = "rgba(0,0,0,1)",
                     outline = "rgba(0.5,0.5,0.5,1)",
-                    outlineSize = "1 1"
+                    outlineSize = "1 1",
+                    padding = "10 10 10 10"
                 }
             }
         }}
@@ -706,7 +715,8 @@ function getScenarioDetailsLeftColumn()
                 {
                     tag="Panel",
                     attributes = {
-                        class = "sectionHeading"
+                        class = "sectionHeading",
+                        active = tostring(useStandardEncounterSets)
                     },
                     children = {
                         {
@@ -725,7 +735,8 @@ function getScenarioDetailsLeftColumn()
                         flexibleHeight = "0",
                         padding = "20 0 0 0",
                         spacing = "10",
-                        contentSizeFitter = "vertical"
+                        contentSizeFitter = "vertical",
+                        active = tostring(useStandardEncounterSets)
                     },
                     children = {
                         {
@@ -756,11 +767,27 @@ function getScenarioDetailsLeftColumn()
                 {
                     tag = "Panel",
                     attributes = {
+                        padding = "0 0 0 0",
+                        preferredHeight = "35"
+                    },
+                    children = {
+                        {
+                            tag = "Text",
+                            value = "Selected Encounter Sets:",
+                            attributes = {
+                                class = "sectionHeading"
+                            }
+                        }
+                    }
+                },
+                {
+                    tag = "Panel",
+                    attributes = {
                         preferredHeight = "120",
                         preferredWidth = "480",
                         padding = "0 0 20 0",
                         contentSizeFitter = "Both",
-                        onClick = guid .. "/" .. "setupScenario"
+                        onClick = guid .. "/setupScenario"
                     },
                     children = {
                         {
@@ -920,6 +947,10 @@ function selectScenario(scenarioKey)
 end
 
 function clearSelectedModularEncounterSets()
+    for k,v in pairs(selectedScenario.selectedEncounterSets or {}) do
+        Global.UI.setAttribute(k, "isOn", "False")
+    end
+
     selectedScenario.selectedEncounterSets = {}
     updateSelectedEncounterSetList()
 end
@@ -1093,6 +1124,8 @@ function styleTogglePanel(panelId, isSelected)
 end
 
 function setupScenario()
+    hideScenarioUI()
+
     if(not selectedScenario.mode) then
         selectedScenario.mode = "standard"
     end
@@ -1105,10 +1138,13 @@ function setupScenario()
         selectedScenario.expertSet = "i"
     end
 
+    if(selectedScenario.selectedEncounterSets == nil) then
+        selectedScenario.selectedEncounterSets = {}
+    end
+
     local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
-    
+
     scenarioManager.call("setUpConfiguredScenario", {scenario = selectedScenario})
-    hideScenarioUI()
 end
 
 
@@ -1116,7 +1152,29 @@ function getEncounterSetControlPanel_hood()
     local guid = self.getGUID()
     local encounterSetControlPanel = {
         tag = "Panel",
+        attributes = {
+            preferredHeight = "100",
+        },
         children = {
+            {
+                tag = "VerticalLayout",
+                attributes = {
+                    rectAlignment = "UpperLeft",
+                    childAlignment = "UpperCenter",
+                    childForceExpandHeight = "false",
+                    spacing = "10",
+                    contentSizeFitter = "vertical"
+                },
+                children = {
+            {
+                tag = "Text",
+                value = "Select at least seven modular encounter sets. Click the Easy, Medium, or Hard buttons for preselected combinations, use the Random button for a completely random selection, or choose whatever sets you'd like.",
+                attributes = {
+                    rectAlignment = "UpperLeft",
+                    alignment = "UpperLeft",
+                    color = "rgba(1,1,1,1)"
+                }
+            },
             {
                 tag = "HorizontalLayout",
                 attributes = {
@@ -1126,16 +1184,14 @@ function getEncounterSetControlPanel_hood()
                     {
                         tag = "Panel",
                         attributes = {
-                            id = "modeToggleStandard",
                             class = "togglePanel",
-                            onClick = guid .. "/" .. "selectHoodEasyModularSets"
+                            onClick = guid .. "/selectHoodEasyModularSets"
                         },
                         children = {
                             {
                                 tag="Text",
                                 value = "Easy",
                                 attributes = {
-                                    id = "modeToggleStandardLabel",
                                     class = "togglePanelLabel"
                                 }
                             }
@@ -1144,17 +1200,15 @@ function getEncounterSetControlPanel_hood()
                     {
                         tag = "Panel",
                         attributes = {
-                            id = "modeToggleExpert",
                             class = "togglePanel",
-                            onClick = guid .. "/" .. "selectHoodMediumModularSets"
+                            onClick = guid .. "/selectHoodMediumModularSets"
                         },
                         children = {
                             {
                                 tag="Text",
                                 value = "Medium",
                                 attributes = {
-                                    class = "togglePanelLabel",
-                                    id = "modeToggleExpertLabel"
+                                    class = "togglePanelLabel"
                                 }
                             }
                         }
@@ -1162,17 +1216,15 @@ function getEncounterSetControlPanel_hood()
                     {
                         tag = "Panel",
                         attributes = {
-                            id = "modeToggleExpert",
                             class = "togglePanel",
-                            onClick = guid .. "/" .. "selectHoodHardModularSets"
+                            onClick = guid .. "/selectHoodHardModularSets"
                         },
                         children = {
                             {
                                 tag="Text",
                                 value = "Hard",
                                 attributes = {
-                                    class = "togglePanelLabel",
-                                    id = "modeToggleExpertLabel"
+                                    class = "togglePanelLabel"
                                 }
                             }
                         }
@@ -1180,21 +1232,21 @@ function getEncounterSetControlPanel_hood()
                     {
                         tag = "Panel",
                         attributes = {
-                            id = "modeToggleExpert",
                             class = "togglePanel",
-                            onClick = guid .. "/" .. "selectHoodRandomModularSets"
+                            onClick = guid .. "/selectHoodRandomModularSets"
                         },
                         children = {
                             {
                                 tag="Text",
                                 value = "Random",
                                 attributes = {
-                                    class = "togglePanelLabel",
-                                    id = "modeToggleExpertLabel"
+                                    class = "togglePanelLabel"
                                 }
                             }
                         }
                     }
+                }
+            }
                 }
             }
         }
@@ -1278,6 +1330,30 @@ function getEncounterSetControlPanel_wreckingCrew()
                 fontSize = "50"
             }
         }}
+    }
+
+    return encounterSetControlPanel
+end
+
+function getEncounterSetControlPanel_thunderbolts()
+    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
+    local heroCount = heroManager.call("getHeroCount")
+    local encounterSetControlPanel = {
+        tag = "Panel",
+        attributes = {
+            
+        },
+        children = {
+            {
+                tag = "Text",
+                value = "Select at least " .. (heroCount + 1) .. " Thunderbolt modular encounter sets (highlighted in yellow).",
+                attributes = {
+                    rectAlignment = "UpperLeft",
+                    alignment = "UpperLeft",
+                    color = "rgba(1,1,1,1)"
+                }
+            }
+        }
     }
 
     return encounterSetControlPanel
