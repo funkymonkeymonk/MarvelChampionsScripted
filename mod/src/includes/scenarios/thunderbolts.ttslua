@@ -2,6 +2,7 @@ scenarios["thunderbolts"] =
 {
     name="Thunderbolts",
     fullyScripted = true,
+    preselectModularEncounterSets = false,
     tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/6301420264312827/19ADA7D5B629A3B8B723B1E30EA7AB112C06FA0F/",
     villains={
         citizenV={
@@ -77,15 +78,8 @@ scenarios["thunderbolts"] =
             repositionCards = true,
             addCountersAndTokens = true
         }
-    },
-    notes={
-        minions={
-            title="Thunderbolt Minions",
-            text="The Thunderbolt Backup environment instructs you to swap minions based on how much damage they've taken, rather than how many hit points they have remaining. Therefore, the HP counters for these minions will start at zero, instead of the minion's printed HP. They are also positioned higher on the card, so that you can see the printed HP.",
-            position={0, 1, 0}
-        }
     },    
-    thunderboltsModularSets={
+    modularSets={
         gravitationalPull="recommended",
         hardSound="recommended",
         paleLittleSpider="recommended",
@@ -96,17 +90,24 @@ scenarios["thunderbolts"] =
         growingStrong="recommended",
         whiteout="recommended",
         techno="recommended"
+    },
+    notes={
+        minions={
+            title="Thunderbolt Minions",
+            text="The Thunderbolt Backup environment instructs you to swap minions based on how much damage they've taken, rather than how many hit points they have remaining. Therefore, the HP counters for these minions will start at zero, instead of the minion's printed HP. They are also positioned higher on the card, so that you can see the printed HP.",
+            position={0, 1, 0}
+        }
     }
 }
 
-function customSetup_thunderbolts(params)
-    local setupStep = params.setupStep
+-- function customSetup_thunderbolts(params)
+--     local setupStep = params.setupStep
   
-    if(setupStep == "modular-sets") then   
-      local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
-      layoutManager.call("colorCodeModularSets", {sets = currentScenario.thunderboltsModularSets})
-    end
-end
+--     if(setupStep == "modular-sets") then   
+--       local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
+--       layoutManager.call("colorCodeModularSets", {sets = currentScenario.thunderboltsModularSets})
+--     end
+-- end
 
 function modularSetsAreValid_thunderbolts(params)
     local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
@@ -117,7 +118,7 @@ function modularSetsAreValid_thunderbolts(params)
     local thunderBoltScenarioCount = 0
 
     for key, value in pairs(selectedModularSets) do
-        if(currentScenario.thunderboltsModularSets[key] ~= nil) then
+        if(currentScenario.modularSets[key] ~= nil) then
             thunderBoltScenarioCount = thunderBoltScenarioCount + 1
         end
     end

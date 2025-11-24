@@ -1,3 +1,4 @@
+require('!/lib/json')
 local allScenarios = {}
 local allEncounterSets = {}
 local selectedScenario = {}
@@ -13,14 +14,14 @@ local encounterSetColumns = 4
 local encounterSetButtonSpacing = 0
 
 function onload(saved_data)
-    -- self.interactable = false
-    -- local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
-    -- local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
+    self.interactable = false
+    local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
+    local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
 
-    -- allScenarios = scenarioManager.call("getScenarios", {})
-    -- allEncounterSets = encounterSetManager.call("getEncounterSets", {})
+    allScenarios = scenarioManager.call("getScenarios", {})
+    allEncounterSets = encounterSetManager.call("getEncounterSets", {})
 
-    -- createButton()
+    createButton()
 end
 
 function createButton()
@@ -118,13 +119,8 @@ function getEncounterSetButtons(guid)
         end
 
         local functionName = "selectEncounterSet-" .. encounterKey
-        local buttonId = "encounterSetToggle-" .. encounterKey
         local label = encounterSet.label or encounterSet.name
         local fontSize = 15
-
-        _G[functionName] = function(player, value, id)
-            selectEncounterSet(encounterKey, value)
-        end
 
         local encounterSetButton = {
             tag = "Panel",
@@ -135,8 +131,8 @@ function getEncounterSetButtons(guid)
                 tag = "Toggle",
                 value = label,
                 attributes = {
-                    id = buttonId,
-                    onValueChanged = guid .. "/" .. functionName,
+                    id = encounterKey,
+                    onValueChanged = guid .. "/modularEncounterSetToggleChanged",
                     height = tostring(encounterSetButtonHeight),
                     width = tostring(encounterSetButtonWidth),
                     fontSize = tostring(fontSize),
@@ -211,7 +207,14 @@ function getFirstPlayerToggles(heroes)
     return toggles
 end
 
-function getScenarioUIBase(headerText)
+function displayScenarioUI(headerText, panels)
+    local uiPanels = {}
+    table.insert(uiPanels, getScenarioUIHeader(headerText))
+    
+    for i, panel in ipairs(panels) do
+        table.insert(uiPanels, panel)
+    end
+
     local scenarioUI = {{
         tag = "Panel",
         attributes = {
@@ -219,40 +222,85 @@ function getScenarioUIBase(headerText)
             width = "1500",
             color = "rgba(0,0,0,1)"
         },
-        children = {{
-            tag = "Panel",
-            attributes = {
-                height = "75",
-                rectAlignment = "UpperCenter"
-            },
-            children = {{
-                tag = "Text",
-                value = headerText,
-                attributes = {
-                    alignment = "MiddleLeft",
-                    fontSize = "50",
-                    color = "rgba(1,1,1,1)",
-                    offsetXY = "10 0"
-                }
-            }, 
-            {
-                tag = "Image",
-                attributes = {
-                    image = Global.getVar("CDN_URL") .. "/assets/ui-close-button.png",
-                    rectAlignment = "UpperRight",
-                    offsetXY = "-10 -10",
-                    height = "50",
-                    width = "50",
-                    onClick = self.getGUID() .. "/" .. "hideScenarioUI"
-                }
-            }}
-        }}
+        children = uiPanels
     }}
 
-    return scenarioUI
+    Global.UI.setXmlTable(scenarioUI)
 end
 
-function getUIDefaults()
+function getScenarioUIHeader(headerText)
+    return {
+        tag = "Panel",
+        attributes = {
+            height = "75",
+            rectAlignment = "UpperCenter"
+        },
+        children = {{
+            tag = "Text",
+            value = headerText,
+            attributes = {
+                alignment = "MiddleLeft",
+                fontSize = "50",
+                color = "rgba(1,1,1,1)",
+                offsetXY = "10 0"
+            }
+        }, 
+        {
+            tag = "Image",
+            attributes = {
+                image = Global.getVar("CDN_URL") .. "/assets/ui-close-button.png",
+                rectAlignment = "UpperRight",
+                offsetXY = "-10 -10",
+                height = "50",
+                width = "50",
+                onClick = self.getGUID() .. "/" .. "hideScenarioUI"
+            }
+        }}
+    }
+end
+
+function getScenarioSelectionPanel(guid)
+    local scenarioButtons = getScenarioButtons(guid)
+    local scenarioSelectPanelHeight = 
+        math.ceil(#scenarioButtons / scenarioColumns) * (scenarioButtonHeight + scenarioButtonSpacing) - scenarioButtonSpacing
+
+    local selectScenarioPanel = {
+            tag = "Panel",
+            attributes = {
+                rectAlignment = "UpperRight",
+                offsetXY = "0 -75"
+            },
+            children = {{
+                tag = "VerticalScrollView",
+                attributes = {
+                    height = "925",
+                    width = "1500",
+                    rectAlignment = "UpperRight",
+                    verticalScrollbarVisibility = "AutoHideAndExpandView",
+                    horizontalScrollbarVisibility = "AutoHideAndExpandViewport",
+                    scrollSensitivity = "75",
+                    raycastTarget = "true",
+                    color = "rgba(0,0,0,1)"
+                },
+                children = {{
+                    tag = "GridLayout",
+                    attributes = {
+                        width = "1475",
+                        height = tostring(scenarioSelectPanelHeight),
+                        spacing = scenarioButtonSpacing .. " " .. scenarioButtonSpacing,
+                        cellSize = scenarioButtonWidth .. " " .. scenarioButtonHeight,
+                        constraint = "FixedColumnCount",
+                        constraintCount = tostring(scenarioColumns)
+                    },
+                    children = scenarioButtons
+                }}
+            }}
+        }
+
+    return selectScenarioPanel
+end
+
+function getScenarioUIDefaults()
     local defaults = {
         tag = "Defaults",
         children = {
@@ -262,8 +310,7 @@ function getUIDefaults()
                     class = "sectionHeading",
                     preferredHeight = "65",
                     flexibleHeight = "0",
-                    padding = "0 0 20 15",
-                    contentSizeFitter = "vertical"
+                    padding = "0 0 20 15"
                 }
             },
             {
@@ -326,10 +373,502 @@ function getUIDefaults()
                     fontSize = "20",
                     fontStyle = "Bold"
                 }
+            },
+            {
+                tag = "Panel",
+                attributes = {
+                    class = "encounterSetControlPanel",
+                    preferredHeight = "50",
+                    flexibleHeight = "0",
+                    color = "rgba(0,0,0,1)",
+                    outline = "rgba(0.5,0.5,0.5,1)",
+                    outlineSize = "1 1"
+                }
             }
         }}
 
     return defaults
+end
+
+function getScenarioDetailsLeftColumn()
+    local guid = self.getGUID()
+    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
+    local selectedHeroes = heroManager.call("getSelectedHeroes")
+    local heroNames = {}
+    local heroCount = 0
+
+    for color, hero in pairs(selectedHeroes) do
+        heroNames[color] = hero.name
+        heroCount = heroCount + 1
+    end
+
+    local showFirstPlayerSection = heroCount > 1
+    local firstPlayerToggles = getFirstPlayerToggles(heroNames)
+    local useStandardEncounterSets = true
+    if(selectedScenario.useStandardEncounterSets ~= nil) then useStandardEncounterSets = selectedScenario.useStandardEncounterSets end
+
+    local selectedEncounterSetColumns = getSelectedEncounterSetColumns()
+
+    local leftColumn = 
+            {
+            tag="VerticalLayout",
+            attributes = {
+                rectAlignment = "UpperLeft",
+                offsetXY = "0 -75",
+                height = "825",
+                width = "500",
+                padding = "10 10 0 10",
+                childAlignment = "UpperCenter",
+                childForceExpandHeight = "false",
+                spacing = "0",
+                contentSizeFitter = "vertical"
+            },
+            children = {
+                {
+                    tag = "Panel",
+                    attributes = {
+                        preferredHeight = "240",
+                        flexibleHeight = "0"
+                    },
+                    children = {
+                        {
+                            tag = "Image",
+                            attributes = {
+                                id = "selectedScenarioImage",
+                                height = "240",
+                                width = "480",
+                                image = selectedScenario.tileImageUrl
+                            }
+                        },
+                        {
+                            tag = "Text",
+                            attributes = {
+                                id="selectedScenarioLabel",
+                                height = "130",
+                                width = "220",
+                                alignment = "MiddleCenter",
+                                resizeTextForBestFit = "true",
+                                color = "rgba(0,0,0,1)",
+                                offsetXY = "103 22",
+                                text = selectedScenario.label or selectedScenario.name
+                            }
+                        }
+                    }
+                },
+                {
+                    tag="Panel",
+                    attributes = {
+                        class = "sectionHeading",
+                    },
+                    children = {
+                        {
+                            tag="Text",
+                            value = "Mode:",
+                            attributes = {
+                                class = "sectionHeading"
+                            }
+                        }
+                    }
+                },
+                {
+                    tag = "HorizontalLayout",
+                    attributes = {
+                        class = "togglePanelContainer"
+                    },
+                    children = {
+                        {
+                            tag = "Panel",
+                            attributes = {
+                                id = "modeToggleStandard",
+                                class = "togglePanelSelected",
+                                onClick = guid .. "/" .. "modeToggleClicked"
+                            },
+                            children = {
+                                {
+                                    tag="Text",
+                                    value = "Standard",
+                                    attributes = {
+                                        id = "modeToggleStandardLabel",
+                                        class = "togglePanelLabelSelected"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            tag = "Panel",
+                            attributes = {
+                                id = "modeToggleExpert",
+                                class = "togglePanel",
+                                onClick = guid .. "/" .. "modeToggleClicked"
+                            },
+                            children = {
+                                {
+                                    tag="Text",
+                                    value = "Expert",
+                                    attributes = {
+                                        class = "togglePanelLabel",
+                                        id = "modeToggleExpertLabel"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    tag="Panel",
+                    attributes = {
+                        class = "sectionHeading",
+                        active = tostring(useStandardEncounterSets)
+                    },
+                    children = {
+                        {
+                            tag="Text",
+                            value = "Standard Encounter Sets:",
+                            attributes = {
+                                class = "sectionHeading"
+                            }
+                        }
+                    }
+                },
+                {
+                    tag = "HorizontalLayout",
+                    attributes = {
+                        class = "togglePanelContainer",
+                        active = tostring(useStandardEncounterSets)
+                    },
+                    children = {
+                        {
+                            tag = "Panel",
+                            attributes = {
+                                id = "standardEncounterSetToggleI",
+                                class = "togglePanelSelected",
+                                onClick = guid .. "/" .. "standardEncounterSetToggleClicked"
+                            },
+                            children = {
+                                {
+                                    tag="Text",
+                                    value = "Standard I",
+                                    attributes = {
+                                        id = "standardEncounterSetToggleILabel",
+                                        class = "togglePanelLabelSelected"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            tag = "Panel",
+                            attributes = {
+                                id = "standardEncounterSetToggleII",
+                                class = "togglePanel",
+                                onClick = guid .. "/" .. "standardEncounterSetToggleClicked"
+                            },
+                            children = {
+                                {
+                                    tag="Text",
+                                    value = "Standard II",
+                                    attributes = {
+                                        id = "standardEncounterSetToggleIILabel",
+                                        class = "togglePanelLabel"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            tag = "Panel",
+                            attributes = {
+                                id = "standardEncounterSetToggleIII",
+                                class = "togglePanel",
+                                onClick = guid .. "/" .. "standardEncounterSetToggleClicked"
+                            },
+                            children = {
+                                {
+                                    tag="Text",
+                                    value = "Standard III",
+                                    attributes = {
+                                        id = "standardEncounterSetToggleIIILabel",
+                                        class = "togglePanelLabel"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    tag = "HorizontalLayout",
+                    attributes = {
+                        id = "expertEncounterSetToggleContainer",
+                        class = "togglePanelContainer",
+                        active = "false"
+                    },
+                    children = {
+                        {
+                            tag = "Panel",
+                            attributes = {
+                                id = "expertEncounterSetToggleI",
+                                class = "togglePanelSelected",
+                                onClick = guid .. "/" .. "expertEncounterSetToggleClicked"
+                            },
+                            children = {
+                                {
+                                    tag="Text",
+                                    value = "Expert I",
+                                    attributes = {
+                                        id = "expertEncounterSetToggleILabel",
+                                        class = "togglePanelLabelSelected"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            tag = "Panel",
+                            attributes = {
+                                id = "expertEncounterSetToggleII",
+                                class = "togglePanel",
+                                onClick = guid .. "/" .. "expertEncounterSetToggleClicked"
+                            },
+                            children = {
+                                {
+                                    tag="Text",
+                                    value = "Expert II",
+                                    attributes = {
+                                        id = "expertEncounterSetToggleIILabel",
+                                        class = "togglePanelLabel"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            tag = "Panel",
+                            attributes = {}
+                        }
+                    }
+                },
+                {
+                    tag="Panel",
+                    attributes = {
+                        class = "sectionHeading",
+                        active = tostring(showFirstPlayerSection)
+                    },
+                    children = {
+                        {
+                            tag="Text",
+                            value = "First Player:",
+                            attributes = {
+                                class = "sectionHeading"
+                            }
+                        }
+                    }
+                },
+                {
+                    tag = "HorizontalLayout",
+                    attributes = {
+                        class = "togglePanelContainer",
+                        preferredHeight = "30",
+                        active = tostring(showFirstPlayerSection)
+                    },
+                    children = {
+                        {
+                            tag = "Panel",
+                            attributes = {
+                                id = "firstPlayerToggleRandom",
+                                preferredHeight = "30",
+                                flexibleHeight = "0",
+                                color = "rgba(1,1,1,1)",
+                                outline = "rgba(1,1,1,1)",
+                                outlineSize = "1 1",
+                                onClick = guid .. "/" .. "firstPlayerToggleClicked"
+                            },
+                            children = {
+                                {
+                                    tag = "Text",
+                                    value = "Random",
+                                    attributes = {
+                                        id = "firstPlayerToggleRandomLabel",
+                                        color = "rgba(0,0,0,1)",
+                                        fontSize = "15",
+                                        fontStyle = "Bold"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    tag = "HorizontalLayout",
+                    attributes = {
+                        class = "togglePanelContainer",
+                        preferredHeight = "30",
+                        spacing = "10",
+                        active = tostring(showFirstPlayerSection)
+                    },
+                    children = firstPlayerToggles
+                },
+                {
+                    tag="Panel",
+                    attributes = {
+                        class = "sectionHeading"
+                    },
+                    children = {
+                        {
+                            tag="Text",
+                            value = "Selected Encounter Sets:",
+                            attributes = {
+                                class = "sectionHeading"
+                            }
+                        }
+                    }
+                },
+                {
+                    tag = "HorizontalLayout",
+                    attributes = {
+                        minimumHeight = "30",
+                        flexibleHeight = "0",
+                        padding = "20 0 0 0",
+                        spacing = "10",
+                        contentSizeFitter = "vertical"
+                    },
+                    children = {
+                        {
+                            tag = "Text",
+                            attributes = {
+                                id = "selectedEncounterSetsColumn1",
+                                alignment = "UpperLeft",
+                                fontSize = "20",
+                                color = "rgba(1,1,1,1)",
+                                contentSizeFitter = "vertical",
+                                text = selectedEncounterSetColumns[1]
+                            }
+                        },
+                        {
+                            tag = "Text",
+                            attributes = {
+                                id = "selectedEncounterSetsColumn2",
+                                alignment = "UpperLeft",
+                                fontSize = "20",
+                                color = "rgba(1,1,1,1)",
+                                minimumHeight = "20",
+                                flexibleHeight = "1",
+                                text = selectedEncounterSetColumns[2]
+                            }
+                        }
+                    }
+                },
+                {
+                    tag = "Panel",
+                    attributes = {
+                        preferredHeight = "120",
+                        preferredWidth = "480",
+                        padding = "0 0 20 0",
+                        contentSizeFitter = "Both",
+                        onClick = guid .. "/" .. "setupScenario"
+                    },
+                    children = {
+                        {
+                            tag = "Image",
+                            attributes = {
+                                image = Global.getVar("CDN_URL") .. "/assets/scenario-launch-button.jpg",
+                                height = "100",
+                                width = "480"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    return leftColumn
+end
+
+function getScenarioDetailsRightColumn()
+    local guid = self.getGUID()
+    local encounterSetButtons = getEncounterSetButtons(guid)
+
+    local useModularEncounterSets = true
+    if(selectedScenario.useModularEncounterSets ~= nil) then useModularEncounterSets = selectedScenario.useModularEncounterSets end
+
+
+    local encounterSetButtonRowCount = math.ceil(#encounterSetButtons / encounterSetColumns)
+    local encounterSetSelectPanelHeight = encounterSetButtonRowCount * (encounterSetButtonHeight + encounterSetButtonSpacing) -
+                                     encounterSetButtonSpacing
+
+    local encounterSetControlPanelFunction = "getEncounterSetControlPanel_" .. selectedScenario.key
+    local encounterSetControlPanel = {
+            tag = "Panel",
+            attributes = {
+                active = "false"
+            }
+        }
+
+    if (self.getVar(encounterSetControlPanelFunction) ~= nil) then
+        encounterSetControlPanel = self.call(encounterSetControlPanelFunction)
+        if(encounterSetControlPanel.attributes == nil) then
+            encounterSetControlPanel.attributes = {}
+        end
+        encounterSetControlPanel.attributes.class = "encounterSetControlPanel"
+    end
+
+    local rightColumn =
+        {
+            tag = "VerticalLayout",
+            attributes = {
+                rectAlignment = "UpperRight",
+                offsetXY = "0 -75",
+                height = "925",
+                width = "1000",
+                childAlignment = "UpperCenter",
+                childForceExpandHeight = "false",
+                spacing = "10"
+            },
+            children = {
+                {
+                    tag="Panel",
+                    attributes = {
+                        class = "sectionHeading",
+                        padding = "0 0 0 0",
+                        preferredHeight = "35"
+                    },
+                    children = {
+                        {
+                            tag="Text",
+                            value = "Modular Encounter Sets:",
+                            attributes = {
+                                class = "sectionHeading"
+                            }
+                        }
+                    }
+                },
+                encounterSetControlPanel,
+                {
+                    tag = "VerticalScrollView",
+                    attributes = {
+                        preferredHeight = "100",
+                        flexibleHeight = "1",
+                        verticalScrollbarVisibility = "AutoHideAndExpandView",
+                        horizontalScrollbarVisibility = "AutoHideAndExpandViewport",
+                        scrollSensitivity = "75",
+                        raycastTarget = "true",
+                        color = "rgba(0,0,0,1)",
+                        active = tostring(useModularEncounterSets)
+                    },
+                    children = {{
+                        tag = "GridLayout",
+                        attributes = {
+                            width = "955",
+                            height = tostring(encounterSetSelectPanelHeight),
+                            spacing = encounterSetButtonSpacing .. " " .. encounterSetButtonSpacing,
+                            cellSize = encounterSetButtonWidth .. " " .. encounterSetButtonHeight,
+                            startAxis = "Vertical",
+                            constraint = "FixedRowCount",
+                            constraintCount = tostring(encounterSetButtonRowCount),
+                            color = "rgba(0,0,0,1)"
+                        },
+                        children = encounterSetButtons
+                    }}
+                }
+            }
+        }
+    
+    return rightColumn
 end
 
 function displayScenarioSelectionUI()
@@ -346,508 +885,18 @@ function displayScenarioSelectionUI()
         return
     end
 
-    local scenarioButtons = getScenarioButtons(guid)
-    local scenarioSelectPanelHeight = 
-        math.ceil(#scenarioButtons / scenarioColumns) * (scenarioButtonHeight + scenarioButtonSpacing) - scenarioButtonSpacing
-
-    local scenarioUI = getScenarioUIBase("SELECT A SCENARIO")
-    local selectScenarioPanel = {
-            tag = "Panel",
-            attributes = {
-                rectAlignment = "UpperRight",
-                offsetXY = "0 -75"
-            },
-            children = {{
-                tag = "VerticalScrollView",
-                attributes = {
-                    height = "925",
-                    width = "1500",
-                    rectAlignment = "UpperRight",
-                    verticalScrollbarVisibility = "AutoHideAndExpandView",
-                    horizontalScrollbarVisibility = "AutoHideAndExpandViewport",
-                    scrollSensitivity = "75",
-                    raycastTarget = "true",
-                    color = "rgba(0,0,0,1)"
-                },
-                children = {{
-                    tag = "GridLayout",
-                    attributes = {
-                        width = "1475",
-                        height = tostring(scenarioSelectPanelHeight),
-                        spacing = scenarioButtonSpacing .. " " .. scenarioButtonSpacing,
-                        cellSize = scenarioButtonWidth .. " " .. scenarioButtonHeight,
-                        constraint = "FixedColumnCount",
-                        constraintCount = tostring(scenarioColumns)
-                    },
-                    children = scenarioButtons
-                }}
-            }}
-        }
-
-    table.insert(scenarioUI[1].children, selectScenarioPanel)
-
-    Global.UI.setXmlTable(scenarioUI)
-    local xml = Global.UI.getXml()
+    local uiPanels = {}
+    table.insert(uiPanels, getScenarioSelectionPanel(guid))
+    displayScenarioUI("SELECT SCENARIO", uiPanels)
 end
 
-function displayEncounterSetSelectionUI()
-    local guid = self.getGUID()
-    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
-    local selectedHeroes = heroManager.call("getSelectedHeroes")
-    local heroNames = {}
-    local heroCount = 0
+function displayScenarioDetailsUI()
+    local uiPanels = {}
+    table.insert(uiPanels, getScenarioUIDefaults())
+    table.insert(uiPanels, getScenarioDetailsLeftColumn())
+    table.insert(uiPanels, getScenarioDetailsRightColumn())
 
-    for color, hero in pairs(selectedHeroes) do
-        heroNames[color] = hero.name
-        heroCount = heroCount + 1
-    end
-
-    local showFirstPlayerSection = heroCount > 1
-    local firstPlayerToggles = getFirstPlayerToggles(heroNames)
-    local useStandardEncounterSets = selectedScenario.useStandardEncounterSets ~= null and selectedScenario.useStandardEncounterSets or true
-    local useModularEncounterSets = selectedScenario.useModularEncounterSets ~= null and selectedScenario.useModularEncounterSets or true
-    local encounterSetButtons = getEncounterSetButtons(guid)
-    local selectedEncounterSetColumns = getSelectedEncounterSetColumns()
-
-    local encounterSetButtonRowCount = math.ceil(#encounterSetButtons / encounterSetColumns)
-    local encounterSetSelectPanelHeight = encounterSetButtonRowCount * (encounterSetButtonHeight + encounterSetButtonSpacing) -
-                                    encounterSetButtonSpacing
-
-    local scenarioUI = getScenarioUIBase("SCENARIO SETUP")
-    local defaults = getUIDefaults()
-    
-    table.insert(scenarioUI, 1, defaults)
-
-    local scenarioSettingsPanels = {{
-            tag = "Panel",
-            attributes = {
-                height = "825",
-                width = "500",
-                padding = "10 10 0 10",
-                rectAlignment = "UpperLeft",
-                offsetXY = "0 -75"
-            },
-            children = {
-                {
-                    tag="VerticalLayout",
-                    attributes = {
-                        rectAlignment = "UpperCenter",
-                        childAlignment = "UpperCenter",
-                        childForceExpandHeight = "false",
-                        spacing = "0",
-                        contentSizeFitter = "vertical"
-                    },
-                    children = {
-                        {
-                            tag = "Panel",
-                            attributes = {
-                                preferredHeight = "240",
-                                flexibleHeight = "0"
-                            },
-                            children = {
-                                {
-                                    tag = "Image",
-                                    attributes = {
-                                        id = "selectedScenarioImage",
-                                        height = "240",
-                                        width = "480",
-                                        image = selectedScenario.tileImageUrl
-                                    }
-                                },
-                                {
-                                    tag = "Text",
-                                    attributes = {
-                                        id="selectedScenarioLabel",
-                                        height = "130",
-                                        width = "220",
-                                        alignment = "MiddleCenter",
-                                        resizeTextForBestFit = "true",
-                                        color = "rgba(0,0,0,1)",
-                                        offsetXY = "103 22",
-                                        text = selectedScenario.label or selectedScenario.name
-                                    }
-                                }
-                            }
-                        },
-                        {
-                            tag="Panel",
-                            attributes = {
-                                class = "sectionHeading",
-                                padding = "0 0 10 10",
-                                preferredHeight = "50"
-                            },
-                            children = {
-                                {
-                                    tag="Text",
-                                    value = "Encounter Sets:",
-                                    attributes = {
-                                        class = "sectionHeading"
-                                    }
-                                }
-                            }
-                        },
-                        {
-                            tag = "HorizontalLayout",
-                            attributes = {
-                                minimumHeight = "30",
-                                flexibleHeight = "0",
-                                padding = "20 0 0 0",
-                                spacing = "10",
-                                contentSizeFitter = "vertical"
-                            },
-                            children = {
-                                {
-                                    tag = "Text",
-                                    attributes = {
-                                        id = "selectedEncounterSetsColumn1",
-                                        alignment = "UpperLeft",
-                                        fontSize = "20",
-                                        color = "rgba(1,1,1,1)",
-                                        contentSizeFitter = "vertical",
-                                        text = selectedEncounterSetColumns[1]
-                                    }
-                                },
-                                {
-                                    tag = "Text",
-                                    attributes = {
-                                        id = "selectedEncounterSetsColumn2",
-                                        alignment = "UpperLeft",
-                                        fontSize = "20",
-                                        color = "rgba(1,1,1,1)",
-                                        minimumHeight = "20",
-                                        flexibleHeight = "1",
-                                        text = selectedEncounterSetColumns[2]
-                                    }
-                                }
-                            }
-                        },
-                        {
-                            tag="Panel",
-                            attributes = {
-                                class = "sectionHeading"
-                            },
-                            children = {
-                                {
-                                    tag="Text",
-                                    value = "Mode:",
-                                    attributes = {
-                                        class = "sectionHeading"
-                                    }
-                                }
-                            }
-                        },
-                        {
-                            tag = "HorizontalLayout",
-                            attributes = {
-                                class = "togglePanelContainer"
-                            },
-                            children = {
-                                {
-                                    tag = "Panel",
-                                    attributes = {
-                                        id = "modeToggleStandard",
-                                        class = "togglePanelSelected",
-                                        onClick = guid .. "/" .. "modeToggleClicked"
-                                    },
-                                    children = {
-                                        {
-                                            tag="Text",
-                                            value = "Standard",
-                                            attributes = {
-                                                id = "modeToggleStandardLabel",
-                                                class = "togglePanelLabelSelected"
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    tag = "Panel",
-                                    attributes = {
-                                        id = "modeToggleExpert",
-                                        class = "togglePanel",
-                                        onClick = guid .. "/" .. "modeToggleClicked"
-                                    },
-                                    children = {
-                                        {
-                                            tag="Text",
-                                            value = "Expert",
-                                            attributes = {
-                                                class = "togglePanelLabel",
-                                                id = "modeToggleExpertLabel"
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        },
-                        {
-                            tag="Panel",
-                            attributes = {
-                                class = "sectionHeading",
-                                active = tostring(useStandardEncounterSets)
-                            },
-                            children = {
-                                {
-                                    tag="Text",
-                                    value = "Standard Encounter Sets:",
-                                    attributes = {
-                                        class = "sectionHeading"
-                                    }
-                                }
-                            }
-                        },
-                        {
-                            tag = "HorizontalLayout",
-                            attributes = {
-                                class = "togglePanelContainer",
-                                active = tostring(useStandardEncounterSets)
-                            },
-                            children = {
-                                {
-                                    tag = "Panel",
-                                    attributes = {
-                                        id = "standardEncounterSetToggleI",
-                                        class = "togglePanelSelected",
-                                        onClick = guid .. "/" .. "standardEncounterSetToggleClicked"
-                                    },
-                                    children = {
-                                        {
-                                            tag="Text",
-                                            value = "Standard I",
-                                            attributes = {
-                                                id = "standardEncounterSetToggleILabel",
-                                                class = "togglePanelLabelSelected"
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    tag = "Panel",
-                                    attributes = {
-                                        id = "standardEncounterSetToggleII",
-                                        class = "togglePanel",
-                                        onClick = guid .. "/" .. "standardEncounterSetToggleClicked"
-                                    },
-                                    children = {
-                                        {
-                                            tag="Text",
-                                            value = "Standard II",
-                                            attributes = {
-                                                id = "standardEncounterSetToggleIILabel",
-                                                class = "togglePanelLabel"
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    tag = "Panel",
-                                    attributes = {
-                                        id = "standardEncounterSetToggleIII",
-                                        class = "togglePanel",
-                                        onClick = guid .. "/" .. "standardEncounterSetToggleClicked"
-                                    },
-                                    children = {
-                                        {
-                                            tag="Text",
-                                            value = "Standard III",
-                                            attributes = {
-                                                id = "standardEncounterSetToggleIIILabel",
-                                                class = "togglePanelLabel"
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        },
-                        {
-                            tag = "HorizontalLayout",
-                            attributes = {
-                                id = "expertEncounterSetToggleContainer",
-                                class = "togglePanelContainer",
-                                active = "false"
-                            },
-                            children = {
-                                {
-                                    tag = "Panel",
-                                    attributes = {
-                                        id = "expertEncounterSetToggleI",
-                                        class = "togglePanelSelected",
-                                        onClick = guid .. "/" .. "expertEncounterSetToggleClicked"
-                                    },
-                                    children = {
-                                        {
-                                            tag="Text",
-                                            value = "Expert I",
-                                            attributes = {
-                                                id = "expertEncounterSetToggleILabel",
-                                                class = "togglePanelLabelSelected"
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    tag = "Panel",
-                                    attributes = {
-                                        id = "expertEncounterSetToggleII",
-                                        class = "togglePanel",
-                                        onClick = guid .. "/" .. "expertEncounterSetToggleClicked"
-                                    },
-                                    children = {
-                                        {
-                                            tag="Text",
-                                            value = "Expert II",
-                                            attributes = {
-                                                id = "expertEncounterSetToggleIILabel",
-                                                class = "togglePanelLabel"
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    tag = "Panel",
-                                    attributes = {}
-                                }
-                            }
-                        },
-                        {
-                            tag="Panel",
-                            attributes = {
-                                class = "sectionHeading",
-                                active = tostring(showFirstPlayerSection)
-                            },
-                            children = {
-                                {
-                                    tag="Text",
-                                    value = "First Player:",
-                                    attributes = {
-                                        class = "sectionHeading"
-                                    }
-                                }
-                            }
-                        },
-                        {
-                            tag = "HorizontalLayout",
-                            attributes = {
-                                class = "togglePanelContainer",
-                                preferredHeight = "30",
-                                active = tostring(showFirstPlayerSection)
-                            },
-                            children = {
-                                {
-                                    tag = "Panel",
-                                    attributes = {
-                                        id = "firstPlayerToggleRandom",
-                                        preferredHeight = "30",
-                                        flexibleHeight = "0",
-                                        color = "rgba(1,1,1,1)",
-                                        outline = "rgba(1,1,1,1)",
-                                        outlineSize = "1 1",
-                                        onClick = guid .. "/" .. "firstPlayerToggleClicked"
-                                    },
-                                    children = {
-                                        {
-                                            tag = "Text",
-                                            value = "Random",
-                                            attributes = {
-                                                id = "firstPlayerToggleRandomLabel",
-                                                color = "rgba(0,0,0,1)",
-                                                fontSize = "15",
-                                                fontStyle = "Bold"
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        },
-                        {
-                            tag = "HorizontalLayout",
-                            attributes = {
-                                class = "togglePanelContainer",
-                                preferredHeight = "30",
-                                spacing = "10",
-                                active = tostring(showFirstPlayerSection)
-                            },
-                            children = firstPlayerToggles
-                        },
-                        {
-                            tag = "Panel",
-                            attributes = {
-                                preferredHeight = "120",
-                                preferredWidth = "480",
-                                padding = "0 0 20 0",
-                                contentSizeFitter = "Both",
-                                onClick = guid .. "/" .. "setupScenario"
-                            },
-                            children = {
-                                {
-                                    tag = "Image",
-                                    attributes = {
-                                        image = Global.getVar("CDN_URL") .. "/assets/scenario-launch-button.jpg",
-                                        height = "100",
-                                        width = "480"
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        {
-            tag = "Panel",
-            attributes = {
-                id = "encounterSetControlPanel",
-                height = "100",
-                width = "990",
-                rectAlignment = "UpperRight",
-                offsetXY = "-10 -75",
-                color = "rgba(0,0,0,1)",
-                outline = "rgba(0.5,0.5,0.5,1)",
-                outlineSize = "1 1",
-            },
-        },
-        {
-            tag = "Panel",
-            attributes = {
-                id = "selectEncounterSetsPanel", 
-                rectAlignment = "UpperRight",
-                offsetXY = "-10 -185"
-            },
-            children = {{
-                tag = "VerticalScrollView",
-                attributes = {
-                    height = "805",
-                    width = "990",
-                    rectAlignment = "UpperRight",
-                    verticalScrollbarVisibility = "AutoHideAndExpandView",
-                    horizontalScrollbarVisibility = "AutoHideAndExpandViewport",
-                    scrollSensitivity = "75",
-                    raycastTarget = "true",
-                    color = "rgba(0,0,0,1)"
-                },
-                children = {{
-                    tag = "GridLayout",
-                    attributes = {
-                        width = "955",
-                        height = tostring(encounterSetSelectPanelHeight),
-                        spacing = encounterSetButtonSpacing .. " " .. encounterSetButtonSpacing,
-                        cellSize = encounterSetButtonWidth .. " " .. encounterSetButtonHeight,
-                        startAxis = "Vertical",
-                        constraint = "FixedRowCount",
-                        constraintCount = tostring(encounterSetButtonRowCount),
-                        color = "rgba(0,0,0,1)"
-                    },
-                    children = encounterSetButtons
-                }}
-             }}
-        }
-    }
-
-    for _, panel in ipairs(scenarioSettingsPanels) do
-        table.insert(scenarioUI[2].children, panel)
-    end
-
-    Global.UI.setXmlTable(scenarioUI)
+    displayScenarioUI("SCENARIO SETUP", uiPanels)
 end
 
 function selectScenario(scenarioKey)
@@ -857,12 +906,28 @@ function selectScenario(scenarioKey)
     selectedScenario = deepCopy(scenario)
     selectedScenario.key = scenarioKey
 
-    preSelectEncounterSets()
+    local preselectModularSets = true
 
-    displayEncounterSetSelectionUI()
+    if(selectedScenario.preselectModularEncounterSets ~= nil ) then
+        preselectModularSets = selectedScenario.preselectModularEncounterSets
+    end
+
+    if(preselectModularSets) then
+        preSelectEncounterSets()
+    end
+
+    displayScenarioDetailsUI()
+end
+
+function clearSelectedModularEncounterSets()
+    selectedScenario.selectedEncounterSets = {}
+    updateSelectedEncounterSetList()
 end
 
 function selectEncounterSet(encounterSetKey, isSelected)
+    if(isSelected == nil) then
+        isSelected = "True"
+    end
     if(not selectedScenario.selectedEncounterSets) then
         selectedScenario.selectedEncounterSets = {}
     end
@@ -874,6 +939,8 @@ function selectEncounterSet(encounterSetKey, isSelected)
     else
         selectedSets[encounterSetKey] = nil
     end
+
+    Global.UI.setAttribute(encounterSetKey, "isOn", isSelected)
 
     updateSelectedEncounterSetList()
 end
@@ -936,18 +1003,28 @@ function deepCopy(obj, seen)
     return res
 end
 
+function modularEncounterSetToggleChanged(player, value, id)
+    selectEncounterSet(id, value)
+end
+
 function modeToggleClicked(player, value, id)
     if(id == "modeToggleStandard") then
         selectedScenario.mode = "standard"
-        Global.UI.hide("expertEncounterSetToggleContainer")
         styleTogglePanel("modeToggleStandard", true)
         styleTogglePanel("modeToggleExpert", false)
+        Global.UI.hide("expertEncounterSetToggleContainer")
 
     elseif(id == "modeToggleExpert") then
         selectedScenario.mode = "expert"
-        Global.UI.show("expertEncounterSetToggleContainer")
         styleTogglePanel("modeToggleStandard", false)
         styleTogglePanel("modeToggleExpert", true)
+
+        local useStandardEncounterSets = true
+        if(selectedScenario.useStandardEncounterSets ~= nil) then useStandardEncounterSets = selectedScenario.useStandardEncounterSets end
+
+        if(useStandardEncounterSets) then
+            Global.UI.show("expertEncounterSetToggleContainer")
+        end
     end
 end
 
@@ -1032,4 +1109,176 @@ function setupScenario()
     
     scenarioManager.call("setUpConfiguredScenario", {scenario = selectedScenario})
     hideScenarioUI()
+end
+
+
+function getEncounterSetControlPanel_hood()
+    local guid = self.getGUID()
+    local encounterSetControlPanel = {
+        tag = "Panel",
+        children = {
+            {
+                tag = "HorizontalLayout",
+                attributes = {
+                    class = "togglePanelContainer"
+                },
+                children = {
+                    {
+                        tag = "Panel",
+                        attributes = {
+                            id = "modeToggleStandard",
+                            class = "togglePanel",
+                            onClick = guid .. "/" .. "selectHoodEasyModularSets"
+                        },
+                        children = {
+                            {
+                                tag="Text",
+                                value = "Easy",
+                                attributes = {
+                                    id = "modeToggleStandardLabel",
+                                    class = "togglePanelLabel"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        tag = "Panel",
+                        attributes = {
+                            id = "modeToggleExpert",
+                            class = "togglePanel",
+                            onClick = guid .. "/" .. "selectHoodMediumModularSets"
+                        },
+                        children = {
+                            {
+                                tag="Text",
+                                value = "Medium",
+                                attributes = {
+                                    class = "togglePanelLabel",
+                                    id = "modeToggleExpertLabel"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        tag = "Panel",
+                        attributes = {
+                            id = "modeToggleExpert",
+                            class = "togglePanel",
+                            onClick = guid .. "/" .. "selectHoodHardModularSets"
+                        },
+                        children = {
+                            {
+                                tag="Text",
+                                value = "Hard",
+                                attributes = {
+                                    class = "togglePanelLabel",
+                                    id = "modeToggleExpertLabel"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        tag = "Panel",
+                        attributes = {
+                            id = "modeToggleExpert",
+                            class = "togglePanel",
+                            onClick = guid .. "/" .. "selectHoodRandomModularSets"
+                        },
+                        children = {
+                            {
+                                tag="Text",
+                                value = "Random",
+                                attributes = {
+                                    class = "togglePanelLabel",
+                                    id = "modeToggleExpertLabel"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    return encounterSetControlPanel
+end
+
+function selectHoodEasyModularSets()
+    clearSelectedModularEncounterSets()
+
+    selectEncounterSet("streetsOfMayhem")
+    selectEncounterSet("brothersGrimm")
+    selectEncounterSet("ransackedArmory")
+    selectEncounterSet("stateOfEmergency")
+    selectEncounterSet("beastyBoys")
+    selectEncounterSet("misterHyde")
+    selectEncounterSet("sinisterSyndicate")
+end
+
+function selectHoodMediumModularSets()
+    clearSelectedModularEncounterSets()
+
+    selectEncounterSet("brothersGrimm")
+    selectEncounterSet("ransackedArmory")
+    selectEncounterSet("stateOfEmergency")
+    selectEncounterSet("beastyBoys")
+    selectEncounterSet("misterHyde")
+    selectEncounterSet("sinisterSyndicate")
+    selectEncounterSet("crossfiresCrew")
+end
+
+function selectHoodHardModularSets()
+    clearSelectedModularEncounterSets()
+
+    selectEncounterSet("ransackedArmory")
+    selectEncounterSet("stateOfEmergency")
+    selectEncounterSet("beastyBoys")
+    selectEncounterSet("misterHyde")
+    selectEncounterSet("sinisterSyndicate")
+    selectEncounterSet("crossfiresCrew")
+    selectEncounterSet("wreckingCrew")
+end
+
+function selectHoodRandomModularSets()
+  clearSelectedModularEncounterSets()
+  math.randomseed(os.time())
+
+  local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
+  local encounterSets = encounterSetManager.call("getEncounterSetsByType", {modular = true})
+  local selectedSets = {}
+
+  for i = 1, 7, 1 do
+    local unselectedSets = {}
+
+    for k, v in pairs(encounterSets) do
+      if(not v.selected) then
+        table.insert(unselectedSets, k)
+      end
+    end  
+  
+    local randomSetKey = unselectedSets[math.random(#unselectedSets)]
+    selectEncounterSet(randomSetKey)
+  end
+end
+
+
+function getEncounterSetControlPanel_wreckingCrew()
+    local encounterSetControlPanel = {
+        tag = "Panel",
+        attributes = {
+            flexibleHeight = "1"
+        },
+        children = {{
+            tag="Text",
+            value = "This scenario does not use modular encounter sets.",
+            attributes = {
+                rectAlignment = "MiddleCenter",
+                alignment = "MiddleCenter",
+                color = "rgba(1,1,1,1)",
+                fontSize = "50"
+            }
+        }}
+    }
+
+    return encounterSetControlPanel
 end

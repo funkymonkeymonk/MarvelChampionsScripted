@@ -3,6 +3,7 @@ scenarios["hood"] =
     name="The Hood",
     tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/1833524420369390047/812F91439CB08F9A17D25523A7375B04E3D9C4A5/",
     requiredEncounterSetCount=7,
+    preselectModularEncounterSets=false,
     villains={
         hood={
             name="The Hood",
@@ -59,6 +60,17 @@ scenarios["hood"] =
                 ["24013"]=3
             }
         }
+    },
+    modularSets={
+        streetsOfMayhem="recommended",
+        brothersGrimm="recommended",
+        ransackedArmory="recommended",
+        stateOfEmergency="recommended",
+        beastyBoys="recommended",
+        misterHyde="recommended",
+        sinisterSyndicate="recommended",
+        crossfiresCrew="recommended",
+        wreckingCrew="recommended"
     },
     extras={
         encounterSetPlacer={

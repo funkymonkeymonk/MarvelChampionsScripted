@@ -196,7 +196,14 @@ function selectScenario(params)
         end
     end
 
-    preSelectEncounterSets()
+    local preselectModularSets = true
+    if(currentScenario.preselectModularEncounterSets ~= nil ) then
+        preselectModularSets = currentScenario.preselectModularEncounterSets
+    end
+
+    if(preselectModularSets) then
+        preSelectEncounterSets()
+    end
 
     saveData()
 end
