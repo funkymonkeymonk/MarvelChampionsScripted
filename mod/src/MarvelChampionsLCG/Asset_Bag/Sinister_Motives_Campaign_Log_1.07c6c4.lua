@@ -3,8 +3,6 @@ local logData = {
 }
 
 function onload(saved_data)
-    self.interactable = false
-
     loadSavedData(saved_data)
     setUpUI()
 end

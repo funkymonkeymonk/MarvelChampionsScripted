@@ -69,34 +69,29 @@ function removeCountersFromCard(params)
   local cardValues = getAllCardValues({cardGuid = cardGuid})
 
   if(not cardValues) then return end
+
   local counterClasses = {"standard", "configured"}
 
   for _, counterClass in ipairs(counterClasses) do
     local counterGuid = cardValues[counterClass .. "CounterGuid"]
-    if (counterGuid) then
-      local counter = nil
-      
-      Wait.condition(
-        function()
-          Wait.frames(
-            function()
-              local value = counter.call("getValue")
-              setCardValue({cardGuid = cardGuid, property = counterClass .. "RetainedValue", value = value})
 
-              counter.destruct()
-          end, 1)
-        end,
-        function()
-          counter = getObjectFromGUID(counterGuid)
-          return counter ~= nil
-        end,
-        3,
-        function()
-          setCardValue({cardGuid = cardGuid, property = counterClass .. "CounterGuid", value = nil})
-        end
-      )
+    if (counterGuid) then
+      removeCounterFromCard({cardGuid = cardGuid, counterGuid = counterGuid, counterClass = counterClass})
     end
   end
+end
+
+function removeCounterFromCard(params)
+  local cardGuid = params.cardGuid
+  local counterGuid = params.counterGuid
+  local counterClass = params.counterClass or "standard"
+  local counter = getObjectFromGUID(counterGuid)
+  local value = counter.call("getValue")
+
+  setCardValue({cardGuid = cardGuid, property = counterClass .. "RetainedValue", value = value})
+  setCardValue({cardGuid = cardGuid, property = counterClass .. "CounterGuid", value = nil})
+
+  counter.destruct()
 end
 
 function calculateSideSchemeThreat(params)

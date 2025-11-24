@@ -1,5 +1,6 @@
 heroes["blackPantherTchalla"] = {
-    name = "Black Panther (T'Challa)",
+    name = "Black Panther",
+    label = "Black Panther (T'Challa)",
     identityCardId = "01040",
     hitPoints = 11,
     tileImageUrl = "https://steamusercontent-a.akamaihd.net/ugc/1833524420371656502/9AC2F6C2AA67D66F1C38D32EEFDDA981586445C0/",

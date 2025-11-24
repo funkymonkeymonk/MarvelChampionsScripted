@@ -89,6 +89,5 @@ scenarios["thanos"] =
 }
 
 function prepareScenario_thanos()
-  local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
-  encounterSetManager.call("removeModularSet", {modularSetKey = "infinityGauntlet"})
+  removeModularSet({modularSetKey = "infinityGauntlet"})
 end

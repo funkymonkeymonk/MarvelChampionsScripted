@@ -585,8 +585,8 @@ end
 function highlightSelectedModularSets()
     local allObjects = getAllObjects()
     local itemType = "modular-set"
-    local modularSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
-    local items = modularSetManager.call("getSelectedSetKeys")
+    local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
+    local items = scenarioManager.call("getSelectedSetKeys")
 
     for k,v in pairs(allObjects) do
         if(v.hasTag(SELECTOR_TILE_TAG)) then
@@ -672,8 +672,8 @@ function selectScenario(params)
 end
 
 function selectModularSet(params)
-    local modularSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
-    modularSetManager.call("selectModularSet", {modularSetKey = params.modularSetKey})
+    local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
+    scenarioManager.call("addRemoveSelectedSet", {encounterSetKey = params.modularSetKey})
 
     updateSetupButtons()
     highlightSelectedModularSets()
@@ -873,4 +873,28 @@ function getAllCardValues(params)
     local cardGuid = params.cardGuid
 
     return cards[cardGuid]
+end
+
+function getCardRegistry()
+    return cards
+end
+
+function deleteCardFromRegistry(params)
+    local cardGuid = params.cardGuid
+
+    cards[cardGuid] = nil
+
+    scrubCardRegistry()
+    saveData()
+end
+
+function scrubCardRegistry()
+    local scrubbedCards = {}
+    for guid, cardData in pairs(cards) do
+        if(cardData ~= nil) then
+            scrubbedCards[guid] = cardData
+        end
+    end
+
+    cards = scrubbedCards
 end

@@ -222,6 +222,7 @@ function configureLog(params)
     log.setScale(params.scale)
     log.setLock(true)
     log.addTag("delete-with-campaign")
+    log.tooltip = false
 end
 
 function placeNotes(campaign)

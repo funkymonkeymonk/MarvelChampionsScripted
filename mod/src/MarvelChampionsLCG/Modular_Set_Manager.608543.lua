@@ -29,34 +29,11 @@ function getModularSet(params)
     return modularSets[params.modularSetKey]
 end
 
-function getSelectedSets(params)
-    return deepCopy(selectedSets)
-end
-
-function getSelectedSetKeys()
-    local keys = {}
-
-    for k,v in pairs(selectedSets) do
-        keys[k] = v.required or "recommended"
-    end
-
-    return keys
-end
-
-function getSelectedSetCount()
-    local count = 0
-
-    for k,v in pairs(selectedSets) do
-        count = count + 1
-    end
-
-    return count
-end
-
-function getCardsFromSelectedSets()
+function getCardsFromSelectedSets(params)
+    local sets = params.encounterSets
     local cards = {}
 
-    for k,v in pairs(selectedSets) do
+    for k,v in pairs(sets) do
         for cardId, count in pairs(v.cards) do
             cards[cardId] = count
         end
@@ -101,40 +78,6 @@ end
 function deleteModularSets()
     local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
     layoutManager.call("clearSelectorTiles", {itemType = "modular-set"})
-end
-
-function preSelectEncounterSets(params)
-    selectedSets = {}
-    local sets = params.sets
-
-    for key,required in pairs(sets) do
-        set = deepCopy(modularSets[key])
-        set.required = required
-        selectedSets[key] = set
-    end
-end
-
-function clearSelectedSets()
-    selectedSets = {}
-end
-
-function selectModularSet(params)
-    addRemoveSelectedSet(params.modularSetKey)
-end
-
-function removeModularSet(params)
-    selectedSets[params.modularSetKey] = nil
-end
-
-function addRemoveSelectedSet(key)
-    for k, v in pairs(selectedSets) do
-        if(k == key) then
-            selectedSets[k] = nil
-            return
-        end
-    end
-
-    selectedSets[key] = deepCopy(modularSets[key])
 end
 
 function hideSelectors()

@@ -70,10 +70,9 @@ scenarios["darkBeast"] =
 }
 
 function prepareScenario_darkBeast()
-  local encounterSetManager = getObjectFromGUID(Global.getVar("GUID_MODULAR_SET_MANAGER"))
-  encounterSetManager.call("removeModularSet", {modularSetKey = "genosha"})
-  encounterSetManager.call("removeModularSet", {modularSetKey = "blueMoon"})
-  encounterSetManager.call("removeModularSet", {modularSetKey = "savageLand"})
+  removeModularSet({modularSetKey = "genosha"})
+  removeModularSet({modularSetKey = "blueMoon"})
+  removeModularSet({modularSetKey = "savageLand"})
 
   local environments = {}
   table.insert(environments, "genosha")

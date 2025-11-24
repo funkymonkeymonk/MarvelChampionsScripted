@@ -1,0 +1,48 @@
+{
+  "Object": {
+    "GUID": "1f0008",
+    "Name": "Notecard",
+    "Transform": {
+      "posX": 9.75,
+      "posY": 1.03,
+      "posZ": 0.25,
+      "rotX": 6.492411e-8,
+      "rotY": 4.493611e-9,
+      "rotZ": 3.51114e-8,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1
+    },
+    "Nickname": "New Scenario Setup UI",
+    "Description": "Please use this \"Scenario\" button to set up your scenario. The old buttons are still there if you have problems, but I'll be removing them soon, which will make the mod load faster and use a lot less memory. ",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

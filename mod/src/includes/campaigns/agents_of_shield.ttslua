@@ -5,19 +5,19 @@ campaigns[9] = {
     text={
         {
             text="Evidence",
-            position={-78.00, 0.96, 16.00},
+            position={-78.00, 0.5, 16.00},
             color={1,1,1},
             fontSize=100
         },
         {
             text="S.H.I.E.L.D. Executive Board",
-            position={-82.73, 0.96, -6.00},
+            position={-82.73, 0.5, -6.00},
             color={1,1,1},
             fontSize=88
         },
         {
             text="A.I.M\nInterference",
-            position={-70.25, 0.96, -4.63},
+            position={-70.25, 0.5, -4.63},
             color={1,1,1},
             fontSize=88
         }

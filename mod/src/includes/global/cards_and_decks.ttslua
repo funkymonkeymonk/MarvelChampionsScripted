@@ -930,3 +930,9 @@ function getAllCardValues(params)
     if(not layoutManager) then return nil end
     return layoutManager.call("getAllCardValues", params)
 end
+
+function deleteCardFromRegistry(params)
+    local layoutManager = getObjectFromGUID(GUID_LAYOUT_MANAGER)
+    if(not layoutManager) then return nil end
+    layoutManager.call("deleteCardFromRegistry", params)
+end
