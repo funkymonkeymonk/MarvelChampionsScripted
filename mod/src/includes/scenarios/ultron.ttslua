@@ -1,6 +1,7 @@
 scenarios["ultron"] =
 {
     name="Ultron",
+    fullyScripted = true,
     tileImageUrl="https://steamusercontent-a.akamaihd.net/ugc/1849305905150147610/D43024CA72F4372B28AF86672D67286730C6CE72/",
     villains={
         ultron={
@@ -45,17 +46,11 @@ scenarios["ultron"] =
             }
         }
     },
-    cards={
-        ultronDrones={
-            cardId="01140",
-            position={19.50, 1.00, 30.00},
-            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
-        }
-    },
     decks={
         encounterDeck={
             name="Ultron's Encounter Deck",
             cards={
+                ["01140"]=1,
                 ["01141"]=1,
                 ["01142"]=2,
                 ["01143"]=3,
@@ -74,22 +69,385 @@ scenarios["ultron"] =
     modularSets={
         underAttack="recommended"
     },
-    extras={
-        droneCounterBag={
-            name="Drone Counters",
-            guid="be0acf",
-            position={31, 1.06, 33.25},
-            rotation={0, 180, 0},
-            scale={1.55, 1.00, 1.55},
-            locked=true
-        },
-        upgradedDroneCounterBag={
-            name="Upgraded Drone Counters",
-            guid="fb7d65",
-            position={31, 1.06, 29.25},
-            rotation={0, 180, 0},
-            scale={1.55, 1.00, 1.55},
-            locked=true
+    zones={
+         environment = {
+            position = {25.75, 2.00, 29.75},
+            scale = {25.00, 4.00, 7.00},
+            firstCardPosition = {15.75, 0.97, 29.75},
+            width = 5,
+            height = 1,
+            onEnterFunction = "ultronCardEnterEnvironmentZone",
+            onLeaveFunction = "ultronCardLeaveEnvironmentZone"
+         },
+         sideScheme = {
+            onEnterFunction = "ultronCardEnterSideSchemeZone"
+         }
+    }
+    -- extras={
+    --     droneCounterBag={
+    --         name="Drone Counters",
+    --         guid="be0acf",
+    --         position={31, 1.06, 33.25},
+    --         rotation={0, 180, 0},
+    --         scale={1.55, 1.00, 1.55},
+    --         locked=true
+    --     },
+    --     upgradedDroneCounterBag={
+    --         name="Upgraded Drone Counters",
+    --         guid="fb7d65",
+    --         position={31, 1.06, 29.25},
+    --         rotation={0, 180, 0},
+    --         scale={1.55, 1.00, 1.55},
+    --         locked=true
+    --     }
+    -- }
+}
+
+function prepareScenario_ultron()
+    currentScenario.droneDefinition = {
+            name = "Ultron Drone",
+            type = "minion",
+            aspect = "encounter",
+            health = "1",
+            attack = "1",
+            scheme = "1"
+        }
+
+    currentScenario.droneDecalUrl = Global.getVar("CDN_URL") .. "/assets/ultron-drone-i-decal.png"
+
+    local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
+    local heroZones = layoutManager.call("getZoneDefinitionsByType", {zoneType="hero"})
+    for _, zoneDef in pairs(heroZones) do
+        zoneDef.onEnterFunction = "ultronConvertDroneToPlayerCard"
+    end
+    layoutManager.call("updateZoneDefinitions", {zoneDefinitions=heroZones})
+end
+
+function setUpSchemeStage_ultron_main(params)
+    local stage = params.stage
+    local stageNumber = string.sub(stage.key, -1)
+
+    ultronAllPlayersDiscardCardsAsDrones(1)
+
+    if(stageNumber == "1") then
+        local ultronDronesCardId = "01140"
+        Global.call(
+        "moveCardFromEncounterDeckById", 
+        {
+            cardId = ultronDronesCardId, 
+            searchInDiscard = true,
+            zoneIndex = "environment"
+        })
+    end
+end
+
+function setUpVillainStage_ultron(params)
+    local stage = params.stage
+    local stageNumber = string.sub(stage.key, -1)
+
+    if(stageNumber == "3") then
+        local ultronsImperativeCardId = "01150"
+        Global.call(
+        "moveCardFromEncounterDeckById", 
+        {
+            cardId = ultronsImperativeCardId, 
+            searchInDiscard = true,
+            zoneIndex = "sideScheme"
+        })
+    end
+end
+
+function ultronAllPlayersDiscardCardsAsDrones(droneCount)
+    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
+    local players = heroManager.call("getPlayersInPlayerOrder")
+
+    for index, player in ipairs(players) do
+        ultronDiscardPlayerCardsAsDrones({
+            playerColor = player.playerColor,
+            droneCount = droneCount
+        })
+    end
+end
+
+function ultronDiscardPlayerCardsAsDrones(params)
+    local playerColor = params.playerColor
+    local droneCount = params.droneCount or 1
+    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
+    local playmat = heroManager.call("getPlaymat", {
+        playerColor = playerColor
+    })
+    local deckPosition = Vector(playmat.call("getPlayerDeckPosition"))
+    local tempDestination = Vector({deckPosition[1], deckPosition[2] + 3, deckPosition[3]})
+
+    function discardUltronDroneCoroutine()
+        for i = 1, droneCount do
+            local card = Global.call("discardCardFromDeck", {
+                deckPosition = deckPosition,
+                discardPosition = tempDestination,
+                discardRotation = {0,180,180}
+            })
+
+            if(not card) then
+                local discardPosition = Vector(playmat.call("getPlayerDiscardPosition"))
+                Global.call("refreshPlayerDeck",{
+                    deckPosition = deckPosition,
+                    discardPosition = discardPosition,
+                    playerColor = playerColor
+                })
+
+                for i = 1, 100 do
+                    coroutine.yield(0)
+                end
+
+                card = Global.call("discardCardFromDeck", {
+                    deckPosition = deckPosition,
+                    discardPosition = tempDestination,
+                    discardRotation = {0,180,180}
+                })
+            end
+
+            local cardGuid = card.getGUID()
+
+            Wait.frames(function()
+                ultronConvertPlayerCardToDrone({
+                    card = card,
+                    playerColor = playerColor
+                })
+
+                Global.call("moveCard", {
+                    card = card,
+                    zoneIndex = "minion-"..playerColor,
+                    destinationRotation = {0,180,180}
+                })
+            end,
+            10)
+
+            for i = 1, 80 do
+                coroutine.yield(0)
+            end
+        end
+
+        return 1
+    end
+
+    startLuaCoroutine(self, "discardUltronDroneCoroutine")
+end
+
+function ultronConvertPlayerCardToDrone(params)
+    local card = params.card
+    local playerColor = params.playerColor
+    local cardGuid = card.getGUID()
+
+    card.hide_when_face_down = false
+    card.addTag("minion")
+    card.addTag("ultron-drone")
+
+    if(card.hasTag("toughness")) then
+        card.removeTag("toughness")
+        card.addTag("toughness-removed")
+    end
+
+    Global.call("setCardValue", {
+        cardGuid = cardGuid,
+        property = "name",
+        value = card.getName()
+    })
+    Global.call("setCardValue", {
+        cardGuid = cardGuid,
+        property = "gmNotes",
+        value = card.getGMNotes()
+    })
+    Global.call("setCardValue", {
+        cardGuid = cardGuid,
+        property = "playerColor",
+        value = playerColor
+    })
+
+    card.setName("Ultron Drone")
+    card.setGMNotes(JSON.encode(currentScenario.droneDefinition))
+
+    ultronSetCardDecal(card)
+end
+
+function ultronConvertDroneToPlayerCard(params)
+    local card = params.item
+
+    if(not card.hasTag("ultron-drone")) then
+        return
+    end
+
+    local zone = params.zone
+    local zoneDef = Global.call("getZoneDefinition", {zone = zone})
+    local playerColor = zoneDef.playerColor
+    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
+    local playmat = heroManager.call("getPlaymat", {
+        playerColor = playerColor
+    })
+    local deckPosition = Vector(playmat.call("getPlayerDeckPosition"))
+
+    if(Global.call("objectIsAtPosition", {object = card, position = deckPosition, tolerance = 0.5})) then
+        return
+    end
+
+    local cardGuid = card.getGUID()
+
+    card.hide_when_face_down = true
+    card.removeTag("minion")
+    card.removeTag("ultron-drone")
+
+    if(card.hasTag("toughness-removed")) then
+        card.removeTag("toughness-removed")
+        card.addTag("toughness")
+    end
+
+    local originalName = Global.call("getCardValue", {
+        cardGuid = cardGuid,
+        property = "name"
+    })
+
+    local originalGMNotes = Global.call("getCardValue", {
+        cardGuid = cardGuid,
+        property = "gmNotes"
+    })
+
+    card.setName(originalName)
+    card.setGMNotes(originalGMNotes)
+
+    card.setDecals({})
+end
+
+function ultronModifyDrones(adjustment)
+    local currentDroneHealth = tonumber(currentScenario.droneDefinition.health)
+    local newDroneHealth = currentDroneHealth + adjustment
+    currentScenario.droneDefinition.health = tostring(newDroneHealth)
+    currentScenario.droneDefinition.attack = tostring(newDroneHealth)
+    currentScenario.droneDecalUrl = Global.getVar("CDN_URL") .. "/assets/ultron-drone-" .. string.rep("i", newDroneHealth) .. "-decal.png"
+    local allObjects = getAllObjects()
+    local defeatedDrones = {}
+
+    for _, object in pairs(allObjects) do
+        if(object.hasTag("ultron-drone")) then
+            object.setGMNotes(JSON.encode(currentScenario.droneDefinition))
+            ultronSetCardDecal(object)
+
+            local hpCounter = Global.call("getCounterFromCard", {card = object})
+
+            if(hpCounter) then
+                local adjustedHp = hpCounter.call("adjustValue", {adjustment = adjustment})
+                if(adjustedHp <= 0) then
+                    table.insert(defeatedDrones, object)
+                end
+            end
+        end
+    end
+
+    saveData()
+
+    function ultronDiscardDefeatedDronesCoroutine()
+        for _, drone in pairs(defeatedDrones) do
+            for i=1, 20 do
+                coroutine.yield(0)
+            end
+            Global.call("discardPlayerCard", {card = drone})
+        end
+
+        return 1
+    end
+
+    if(#defeatedDrones > 0) then
+        startLuaCoroutine(self, "ultronDiscardDefeatedDronesCoroutine")
+    end
+end
+
+function ultronSetCardDecal(card)
+    local upgradedDroneDecal = {
+        {
+            name     = "Drone",
+            url      = currentScenario.droneDecalUrl,
+            position = {0, -1, 0},
+            rotation = {270, 180, 180},
+            scale    = {3.1, 3.1, 1}
         }
     }
-}
+
+    card.setDecals(upgradedDroneDecal)
+end
+
+function ultronCardEnterEnvironmentZone(params)
+    local upgradedDronesCardId = "01142"
+    local card = params.item
+
+    if(Global.call("getCardId", {card = card}) ~= upgradedDronesCardId) then
+        return
+    end
+
+    ultronModifyDrones(1)
+end
+
+function ultronCardLeaveEnvironmentZone(params)
+    local upgradedDronesCardId = "01142"
+    local card = params.item
+    if(Global.call("getCardId", {card = card}) ~= upgradedDronesCardId) then
+        return
+    end
+
+    ultronModifyDrones(-1)
+end
+
+function ultronCardEnterSideSchemeZone(params)
+    local droneFactoryCardId = "01148"
+    local ultronsImperativeCardId = "01150"
+    local card = params.item
+    local cardId = Global.call("getCardId", {card = card})
+
+    if(cardId == droneFactoryCardId) then
+        ultronDroneFactoryEntersPlay(card)
+
+    elseif(cardId == ultronsImperativeCardId) then
+        local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
+        local firstPlayerColor = heroManager.call("getFirstPlayer")
+
+        ultronDiscardPlayerCardsAsDrones({
+            playerColor = firstPlayerColor,
+            droneCount = 2
+        })
+    end
+end
+
+function ultronDiscardDefeatedDrones()
+    local allObjects = getAllObjects()
+    for _, object in pairs(allObjects) do
+        if(object.hasTag("ultron-drone")) then
+            
+        end
+    end
+end
+
+function ultronDroneFactoryEntersPlay(droneFactoryCard)
+    ultronAllPlayersDiscardCardsAsDrones(1)
+
+    Wait.condition(
+    function()
+        if(droneFactoryCard.isDestroyed()) then return end
+        Wait.frames(function()
+            local droneCount = 0
+            local allObjects = getAllObjects()
+            for _, object in pairs(allObjects) do
+                if(object.hasTag("ultron-drone")) then
+                    droneCount = droneCount + 1
+                end
+            end
+    
+            local threatCounter = Global.call("getCounterFromCard", {card = droneFactoryCard})
+    
+            if(threatCounter) then
+                threatCounter.call("adjustValue", {adjustment = droneCount})
+            end
+        end, 
+        30)
+    end,
+    function()
+        return droneFactoryCard.isDestroyed() or droneFactoryCard.resting
+    end,
+    15)
+end

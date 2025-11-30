@@ -37,6 +37,16 @@ function findInRadiusBy(pos, radius, filter, debug)
     return filteredList
 end 
 
+function objectIsAtPosition(params)
+    local object = params.object
+    local position = Vector(params.position)
+    local tolerance = params.tolerance or 0.1
+    local objectPosition = object.getPosition()
+ 
+    return (math.abs(objectPosition.x - position.x) <= tolerance and
+            math.abs(objectPosition.z - position.z) <= tolerance)
+end
+
 function shuffleTable(params)
     local tbl = params.table
     math.randomseed(os.time())
@@ -78,7 +88,7 @@ function displayMessage(params)
  
     broadcastToAll(message, messageTint)
 end
- 
+
 function calculateDestination(params)
     local zoneIndex = params.zoneIndex
     local minimumY = params.minimumY or 3
@@ -86,12 +96,12 @@ function calculateDestination(params)
  
     if(zoneIndex) then
        destination.position = ensureMinimumYPosition({position = getNewZoneCardPosition({zoneIndex = zoneIndex, forNextCard = true}), minimumY = minimumY})
-       destination.rotation = zoneIndex == "sideScheme" and {0,90,0} or {0,180,0}
+       destination.rotation = params.destinationRotation or (zoneIndex == "sideScheme" and {0,90,0} or {0,180,0})
     else
        destination.position = ensureMinimumYPosition({position = params.destinationPosition, minimumY = minimumY})
        destination.rotation = params.destinationRotation and Vector(params.destinationRotation) or {0,180,0}
     end
- 
+
     return destination
 end
 

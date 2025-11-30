@@ -54,7 +54,14 @@ function onObjectEnterZone(zone, card)
 
     local playerColor = zoneDef.playerColor
     if (playerColor) then
-        setCardValue({cardGuid = card.getGUID(), property = "playerColor", value = playerColor})
+        local currentPlayerColor = getCardValue({
+            cardGuid = card.getGUID(),
+            property = "playerColor"
+        })
+
+        if(not currentPlayerColor) then
+            setCardValue({cardGuid = card.getGUID(), property = "playerColor", value = playerColor})
+        end
     end
 
     if(zoneDef.rescaleOnEnterTo) then

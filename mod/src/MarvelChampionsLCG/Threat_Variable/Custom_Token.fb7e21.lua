@@ -1,4 +1,4 @@
-CONFIG = {
+local CONFIG = {
     MIN_VALUE = 0,
     MAX_VALUE = 30,
     FONT_COLOR = {0,0,0,95},
@@ -68,6 +68,16 @@ function setValue(params)
     CONFIG.VALUE = params.value
     updateVal()
     updateSave()
+end
+
+function adjustValue(params)
+    local adjustment = params.adjustment or 0
+    local newValue = math.min(math.max(CONFIG.VALUE + adjustment, CONFIG.MIN_VALUE), CONFIG.MAX_VALUE)
+    CONFIG.VALUE = newValue
+    updateVal()
+    updateSave()
+
+    return CONFIG.VALUE
 end
 
 function getValue()
