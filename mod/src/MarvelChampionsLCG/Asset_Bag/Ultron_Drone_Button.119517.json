@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "0ea99f",
-    "Name": "Custom_Tile",
+    "GUID": "119517",
+    "Name": "Custom_Token",
     "Transform": {
-      "posX": 68.95,
-      "posY": -2.0,
-      "posZ": 35.75,
-      "rotX": 0,
+      "posX": 91.48269,
+      "posY": 2.5455277,
+      "posZ": -50.43733,
+      "rotX": 3.70434918e-8,
       "rotY": 180,
-      "rotZ": 0,
-      "scaleX": 1.95,
+      "rotZ": -0.000006723359,
+      "scaleX": 1,
       "scaleY": 1,
-      "scaleZ": 1.95
+      "scaleZ": 1
     },
-    "Nickname": "Layout Button Scenario",
+    "Nickname": "Ultron Drone Button",
     "Description": "",
     "GMNotes": "",
     "AltLookAngle": {
@@ -22,16 +22,13 @@
       "z": 0
     },
     "ColorDiffuse": {
-      "r": 0.249999583,
-      "g": 0.249999583,
-      "b": 0.249999583
+      "r": 1,
+      "g": 1,
+      "b": 1
     },
-    "Tags": [
-      "layout-ui"
-    ],
     "LayoutGroupSortIndex": 0,
     "Value": 0,
-    "Locked": true,
+    "Locked": false,
     "Grid": true,
     "Snap": true,
     "IgnoreFoW": false,
@@ -39,23 +36,23 @@
     "DragSelectable": true,
     "Autoraise": true,
     "Sticky": true,
-    "Tooltip": false,
+    "Tooltip": true,
     "GridProjection": false,
     "HideWhenFaceDown": false,
     "Hands": false,
     "CustomImage": {
-      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/2495635126604486342/9C09A2C0AB591F0F03750EDE82FF9CD2F78BEB74/",
+      "ImageURL": "https://d2xdqryaauvaie.cloudfront.net/assets/ultron-drone-button.png",
       "ImageSecondaryURL": "",
       "ImageScalar": 1,
       "WidthScale": 0,
-      "CustomTile": {
-        "Type": 3,
+      "CustomToken": {
         "Thickness": 0.1,
-        "Stackable": false,
-        "Stretch": true
+        "MergeDistancePixels": 5,
+        "StandUp": false,
+        "Stackable": false
       }
     },
-    "LuaScript": "#include ./Layout_Button_Scenario.0ea99f.lua",
+    "LuaScript": "#include ./Ultron_Drone_Button.119517.lua",
     "LuaScriptState": "",
     "XmlUI": ""
   },

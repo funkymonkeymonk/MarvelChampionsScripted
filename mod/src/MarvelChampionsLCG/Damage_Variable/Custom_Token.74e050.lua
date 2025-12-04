@@ -1,5 +1,6 @@
-MIN_VALUE = 0
-MAX_VALUE = 30
+local MIN_VALUE = 0
+local MAX_VALUE = 30
+local value = 0
 
 function updateSave()
     local data_to_save = {value}
@@ -73,5 +74,15 @@ function setValue(params)
 end
 
 function getValue()
+    return value
+end
+
+function adjustValue(params)
+    local adjustment = params.adjustment or 0
+    local newValue = math.min(math.max(value + adjustment, MIN_VALUE), MAX_VALUE)
+    value = newValue
+    updateDisplay()
+    updateSave()
+
     return value
 end

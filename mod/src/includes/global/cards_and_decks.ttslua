@@ -752,6 +752,22 @@ function findCard(params)
     return nil
 end
 
+function discardPlayerCard(params)
+    local card = params.card
+    local playerColor = getCardValue({
+        cardGuid = card.getGUID(),
+        property = "playerColor"
+    })
+    local heroManager = getObjectFromGUID(GUID_HERO_MANAGER)
+    local playmat = heroManager.call("getPlaymat", {
+        playerColor = playerColor
+    })
+    local discardPosition = Vector(playmat.call("getPlayerDiscardPosition"))
+
+    card.setPositionSmooth(discardPosition, false, false)
+    card.setRotationSmooth({0, 180, 0}, false, false)
+end
+
 function discardFromPlayerDeck(params)
     local playerColor = params.playerColor
     local numberOfCards = params.numberOfCards
@@ -778,16 +794,9 @@ function discardFromPlayerDeck(params)
 
             if (not card) then
                 Wait.frames(function()
-                    refreshDeck({
+                    refreshPlayerDeck({
                         deckPosition = deckPosition,
-                        discardPosition = discardPosition
-                    })
-                    displayMessage({
-                        message = "You cycled your deck. Time for an encounter card!",
-                        messageType = MESSAGE_TYPE_INFO,
-                        playerColor = playerColor
-                    })
-                    dealEncounterCardToPlayer({
+                        discardPosition = discardPosition,
                         playerColor = playerColor
                     })
                 end, 30)
@@ -806,6 +815,25 @@ function discardFromPlayerDeck(params)
     end
 
     startLuaCoroutine(self, "discardCoroutine")
+end
+
+function refreshPlayerDeck(params)
+    local deckPosition = params.deckPosition
+    local discardPosition = params.discardPosition
+    local playerColor = params.playerColor
+
+    refreshDeck({
+        deckPosition = deckPosition,
+        discardPosition = discardPosition
+    })
+    displayMessage({
+        message = "You cycled your deck. Time for an encounter card!",
+        messageType = MESSAGE_TYPE_INFO,
+        playerColor = playerColor
+    })
+    dealEncounterCardToPlayer({
+        playerColor = playerColor
+    })
 end
 
 function discardFromAllPlayerDecks(params)
