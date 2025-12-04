@@ -374,7 +374,7 @@ function setPlayerColor(params)
       zoneDef = {
          zoneIndex = "minion-" .. color,
          playerColor = color,
-         position = Vector({matPosition.x - 3, 1, matPosition.z + 12.10}),
+         position = Vector({matPosition.x - 3.25, 1, matPosition.z + 13.25}),
          firstCardPosition = Vector({matPosition.x - 11, 1, matPosition.z + 12}),
          group = "player" .. color
       },

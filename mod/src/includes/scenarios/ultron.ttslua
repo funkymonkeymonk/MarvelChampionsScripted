@@ -121,6 +121,55 @@ function prepareScenario_ultron()
         zoneDef.onEnterFunction = "ultronConvertDroneToPlayerCard"
     end
     layoutManager.call("updateZoneDefinitions", {zoneDefinitions=heroZones})
+
+    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
+    local players = heroManager.call("getPlayersInPlayerOrder")
+
+    function placeUltronDroneButtonsCoroutine()
+        for index, player in ipairs(players) do
+            local playerColor = player.playerColor
+            local playmat = heroManager.call("getPlaymat", {
+                playerColor = playerColor
+            })
+            local playmatPosition = Vector(playmat.getPosition())
+            local droneButtonPosition = {
+                playmatPosition.x,
+                playmatPosition.y + 0.13,
+                playmatPosition.z - 8
+            }
+
+            spawnAsset({
+                guid = "119517",
+                position = droneButtonPosition,
+                rotation = {0, 180, 0},
+                scale = {0.75, 1.00, 0.75},
+                callback = "configureUltronDroneButton",
+                playerColor = playerColor,
+            })
+
+            for i = 1, 20 do
+                coroutine.yield(0)
+            end
+        end
+
+        return 1
+    end
+
+    startLuaCoroutine(self, "placeUltronDroneButtonsCoroutine")
+end
+
+function configureUltronDroneButton(params)
+    local droneButton = params.spawnedObject
+    local playerColor = params.playerColor
+
+    droneButton.setPosition(params.position)
+    droneButton.setName("")
+    droneButton.setLock(true)
+    droneButton.addTag("delete-with-scenario")
+
+    Wait.frames(function()
+        droneButton.call("setPlayerColor", {playerColor = playerColor})
+    end, 10)
 end
 
 function setUpSchemeStage_ultron_main(params)
@@ -319,6 +368,10 @@ end
 function ultronModifyDrones(adjustment)
     local currentDroneHealth = tonumber(currentScenario.droneDefinition.health)
     local newDroneHealth = currentDroneHealth + adjustment
+
+    if(newDroneHealth < 1) then newDroneHealth = 1 end
+    if(newDroneHealth > 3) then newDroneHealth = 3 end
+
     currentScenario.droneDefinition.health = tostring(newDroneHealth)
     currentScenario.droneDefinition.attack = tostring(newDroneHealth)
     currentScenario.droneDecalUrl = Global.getVar("CDN_URL") .. "/assets/ultron-drone-" .. string.rep("i", newDroneHealth) .. "-decal.png"
@@ -345,7 +398,7 @@ function ultronModifyDrones(adjustment)
 
     function ultronDiscardDefeatedDronesCoroutine()
         for _, drone in pairs(defeatedDrones) do
-            for i=1, 20 do
+            for i=1, 30 do
                 coroutine.yield(0)
             end
             Global.call("discardPlayerCard", {card = drone})

@@ -14,7 +14,7 @@
       "scaleZ": 1
     },
     "Nickname": "New Scenario Setup UI",
-    "Description": "Please use this \"Scenario\" button to set up your scenario. The old buttons are still there if you have problems, but I'll be removing them soon, which will make the mod load faster and use a lot less memory. ",
+    "Description": "Use this \"Scenario\" button to set up your scenario. Please report any issues you run into and they'll be addressed as soon as possible.\n\nThis UI is a work in progress and may change in future updates.",
     "GMNotes": "",
     "AltLookAngle": {
       "x": 0,

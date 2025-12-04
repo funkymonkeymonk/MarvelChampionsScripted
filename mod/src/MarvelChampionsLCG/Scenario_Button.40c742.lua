@@ -767,22 +767,6 @@ function getScenarioDetailsLeftColumn()
                 {
                     tag = "Panel",
                     attributes = {
-                        padding = "0 0 0 0",
-                        preferredHeight = "35"
-                    },
-                    children = {
-                        {
-                            tag = "Text",
-                            value = "Selected Encounter Sets:",
-                            attributes = {
-                                class = "sectionHeading"
-                            }
-                        }
-                    }
-                },
-                {
-                    tag = "Panel",
-                    attributes = {
                         preferredHeight = "120",
                         preferredWidth = "480",
                         padding = "0 0 20 0",
