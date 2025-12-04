@@ -55,8 +55,8 @@
         "Stretch": true
       }
     },
-    "LuaScript": "#include ./Turn_Counter.turncounter.lua",
-    "LuaScriptState": "#include ./Turn_Counter.turncounter.state.json",
+    "LuaScript": "#include ./TurnCounter.turncounter.lua",
+    "LuaScriptState": "#include ./TurnCounter.turncounter.state.json",
     "XmlUI": ""
   },
   "StatesPaths": {}

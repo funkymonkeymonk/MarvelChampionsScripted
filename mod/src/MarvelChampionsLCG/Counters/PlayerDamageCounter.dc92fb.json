@@ -1,17 +1,17 @@
 {
   "Object": {
-    "GUID": "232691",
+    "GUID": "dc92fb",
     "Name": "Custom_Token",
     "Transform": {
-      "posX": -3.287236,
-      "posY": 1.27720535,
-      "posZ": 35.5165329,
-      "rotX": 1.83263467e-8,
-      "rotY": 0.00105196284,
-      "rotZ": -0.00000161920821,
-      "scaleX": 0.5,
+      "posX": -19.4662018,
+      "posY": 1.23702288,
+      "posZ": 26.3792152,
+      "rotX": 359.993744,
+      "rotY": 0.000107477805,
+      "rotZ": 0.00530204037,
+      "scaleX": 0.306216359,
       "scaleY": 1,
-      "scaleZ": 0.5
+      "scaleZ": 0.306216359
     },
     "Nickname": "",
     "Description": "",
@@ -41,19 +41,19 @@
     "HideWhenFaceDown": false,
     "Hands": false,
     "CustomImage": {
-      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/1470941757168316639/D0252AC3E40D9E1A76512D0F1F10E38C2D5EAFE6/",
+      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/1470941757168436942/BD014D190905D3513949EC948BFBFE3E6E27668C/",
       "ImageSecondaryURL": "",
       "ImageScalar": 1,
       "WidthScale": 0,
       "CustomToken": {
         "Thickness": 0.2,
-        "MergeDistancePixels": 8.065111,
+        "MergeDistancePixels": 15,
         "StandUp": false,
         "Stackable": false
       }
     },
-    "LuaScript": "#include ./Custom_Token.232691.lua",
-    "LuaScriptState": "#include ./Custom_Token.232691.state.json",
+    "LuaScript": "#include ./PlayerDamageCounter.dc92fb.lua",
+    "LuaScriptState": "#include ./PlayerDamageCounter.dc92fb.state.json",
     "XmlUI": ""
   },
   "StatesPaths": {}

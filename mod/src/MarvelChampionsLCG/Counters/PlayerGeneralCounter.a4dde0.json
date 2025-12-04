@@ -1,17 +1,17 @@
 {
   "Object": {
-    "GUID": "fb7e21",
+    "GUID": "a4dde0",
     "Name": "Custom_Token",
     "Transform": {
-      "posX": -8.046082,
-      "posY": 1.22721946,
-      "posZ": 35.9190369,
-      "rotX": 0.001696642,
-      "rotY": 0.02593264,
-      "rotZ": 0.0005076626,
-      "scaleX": 0.7,
+      "posX": -19.4663353,
+      "posY": 1.23076212,
+      "posZ": 24.3572044,
+      "rotX": -0.005247433,
+      "rotY": -0.000259818218,
+      "rotZ": 0.000293637975,
+      "scaleX": 0.306216359,
       "scaleY": 1,
-      "scaleZ": 0.7
+      "scaleZ": 0.306216359
     },
     "Nickname": "",
     "Description": "",
@@ -36,24 +36,24 @@
     "DragSelectable": true,
     "Autoraise": true,
     "Sticky": true,
-    "Tooltip": false,
+    "Tooltip": true,
     "GridProjection": false,
     "HideWhenFaceDown": false,
     "Hands": false,
     "CustomImage": {
-      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/1291919813158779419/14CA7D5088762912830BD1C0B5DC98B9B92CBBA3/",
+      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/1470941757168316639/D0252AC3E40D9E1A76512D0F1F10E38C2D5EAFE6/",
       "ImageSecondaryURL": "",
       "ImageScalar": 1,
       "WidthScale": 0,
       "CustomToken": {
-        "Thickness": 0.1,
-        "MergeDistancePixels": 5,
+        "Thickness": 0.2,
+        "MergeDistancePixels": 8.065111,
         "StandUp": false,
         "Stackable": false
       }
     },
-    "LuaScript": "#include ./Custom_Token.fb7e21.lua",
-    "LuaScriptState": "#include ./Custom_Token.fb7e21.state.json",
+    "LuaScript": "#include ./PlayerGeneralCounter.a4dde0.lua",
+    "LuaScriptState": "#include ./PlayerGeneralCounter.a4dde0.state.json",
     "XmlUI": ""
   },
   "StatesPaths": {}

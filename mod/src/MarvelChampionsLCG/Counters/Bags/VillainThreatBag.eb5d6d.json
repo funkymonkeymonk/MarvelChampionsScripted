@@ -13,7 +13,7 @@
       "scaleY": 1,
       "scaleZ": 1
     },
-    "Nickname": "Threat (Variable)",
+    "Nickname": "Threat",
     "Description": "",
     "GMNotes": "",
     "AltLookAngle": {
@@ -69,6 +69,6 @@
   },
   "StatesPaths": {},
   "ContainedObjectPaths": [
-    "Custom_Token.fb7e21.json"
+    "../../VillainThreatCounter.fb7e21.json"
   ]
 }

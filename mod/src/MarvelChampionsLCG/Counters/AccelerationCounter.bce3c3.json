@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "74e050",
+    "GUID": "bce3c3",
     "Name": "Custom_Token",
     "Transform": {
-      "posX": -5.65529,
-      "posY": 1.27720559,
-      "posZ": 35.9946938,
-      "rotX": 2.66743882e-7,
-      "rotY": 0.00008207596,
-      "rotZ": 0.00000217578736,
+      "posX": -0.75,
+      "posY": 1.21563447,
+      "posZ": 35.75,
+      "rotX": 0.00000225645931,
+      "rotY": -0.00163230149,
+      "rotZ": -8.97503156e-8,
       "scaleX": 0.5,
       "scaleY": 1,
       "scaleZ": 0.5
     },
-    "Nickname": "",
+    "Nickname": "Acceleration",
     "Description": "",
     "GMNotes": "",
     "AltLookAngle": {
@@ -26,11 +26,16 @@
       "g": 1,
       "b": 1
     },
+    "Tags": [
+      "counter",
+      "acceleration",
+      "delete-with-scenario"
+    ],
     "LayoutGroupSortIndex": 0,
     "Value": 0,
     "Locked": false,
-    "Grid": false,
-    "Snap": false,
+    "Grid": true,
+    "Snap": true,
     "IgnoreFoW": false,
     "MeasureMovement": false,
     "DragSelectable": true,
@@ -41,19 +46,19 @@
     "HideWhenFaceDown": false,
     "Hands": false,
     "CustomImage": {
-      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/1470941757168436942/BD014D190905D3513949EC948BFBFE3E6E27668C/",
+      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/14329734849073547461/364D39C131AFA971BB660EB2C3947F98794DCAF6/",
       "ImageSecondaryURL": "",
       "ImageScalar": 1,
       "WidthScale": 0,
       "CustomToken": {
-        "Thickness": 0.2,
+        "Thickness": 0.1,
         "MergeDistancePixels": 15,
         "StandUp": false,
         "Stackable": false
       }
     },
-    "LuaScript": "#include ./Custom_Token.74e050.lua",
-    "LuaScriptState": "#include ./Custom_Token.74e050.state.json",
+    "LuaScript": "#include ./AccelerationCounter.bce3c3.lua",
+    "LuaScriptState": "#include ./AccelerationCounter.bce3c3.state.json",
     "XmlUI": ""
   },
   "StatesPaths": {}
