@@ -149,14 +149,14 @@ function placeVillainStage_mansionAttack(params)
             value = hitPoints
         })
 
-        villainHpCounter.call("setAdvanceButtonOptions", {
+        villainHpCounter.call("setPrimaryButtonOptions", {
             label = "Next!"
         })
 
         if (stage.showAdvanceButton) then
-            villainHpCounter.call("showAdvanceButton")
+            villainHpCounter.call("showPrimaryButton")
         else
-            villainHpCounter.call("hideAdvanceButton")
+            villainHpCounter.call("hidePrimaryButton")
         end
     end, 20)
 end

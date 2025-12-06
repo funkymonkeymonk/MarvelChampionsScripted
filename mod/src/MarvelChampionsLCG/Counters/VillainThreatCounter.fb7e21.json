@@ -53,7 +53,7 @@
       }
     },
     "LuaScript": "#include ./VillainThreatCounter.fb7e21.lua",
-    "LuaScriptState": "#include ./VillainThreatCounter.fb7e21.state.json",
+    "LuaScriptState": "",
     "XmlUI": ""
   },
   "StatesPaths": {}

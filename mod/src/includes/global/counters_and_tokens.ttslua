@@ -291,7 +291,7 @@ function addCounterToCard(params)
           obj.setName(counterName)
           obj.call("setValue", {value = value})
         end, 
-        1)
+        10)
       end
     })
     setCardValue({cardGuid = card.getGUID(), property = counterClass .. "CounterGuid", value = counter.getGUID()})

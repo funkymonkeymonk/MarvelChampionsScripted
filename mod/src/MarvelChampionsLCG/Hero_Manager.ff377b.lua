@@ -870,7 +870,7 @@ function setFirstPlayer(params)
   playerToken.setPositionSmooth(playmatPosition + Vector{12.05, 0.3, 6.45}, false, false)
   
   local turnCounter = getObjectFromGUID("turncounter")
-  turnCounter.call('add_subtract')
+  turnCounter.call('adjustValue', {adjustment = 1})
 
   Global.call("displayMessage", {message = playerColor .. " is the first player!", messageType = Global.getVar("MESSAGE_TYPE_INFO")})
   firstPlayer = playerColor

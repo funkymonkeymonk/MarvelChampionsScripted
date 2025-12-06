@@ -46,14 +46,14 @@
       "ImageScalar": 1,
       "WidthScale": 0,
       "CustomToken": {
-        "Thickness": 0.2,
+        "Thickness": 0.1,
         "MergeDistancePixels": 8.065111,
         "StandUp": false,
         "Stackable": false
       }
     },
     "LuaScript": "#include ./VillainGeneralCounter.232691.lua",
-    "LuaScriptState": "#include ./VillainGeneralCounter.232691.state.json",
+    "LuaScriptState": "",
     "XmlUI": ""
   },
   "StatesPaths": {}

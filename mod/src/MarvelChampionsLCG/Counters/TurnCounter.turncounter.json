@@ -50,13 +50,13 @@
       "WidthScale": 0,
       "CustomTile": {
         "Type": 3,
-        "Thickness": 0.197297364,
+        "Thickness": 0.1,
         "Stackable": true,
         "Stretch": true
       }
     },
     "LuaScript": "#include ./TurnCounter.turncounter.lua",
-    "LuaScriptState": "#include ./TurnCounter.turncounter.state.json",
+    "LuaScriptState": "",
     "XmlUI": ""
   },
   "StatesPaths": {}

@@ -472,7 +472,7 @@ function kangStage2AddAccelerationForSideSchemes(sideSchemeCount)
 
   Wait.frames(function()
     accelerationCounter.setPositionSmooth({49.25, 1.01, 28.75}, false, false)
-    accelerationCounter.call("addToValue", {valueToAdd = sideSchemeCount})
+    accelerationCounter.call("adjustValue", {adjustment = sideSchemeCount})
   end,
   30)
 end

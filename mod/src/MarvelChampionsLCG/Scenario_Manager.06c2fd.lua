@@ -845,7 +845,7 @@ function configureMainSchemeThreatCounter(params)
             schemeKey = scheme.key
         })
         if (showAdvanceButton) then
-            configureAdvanceSchemeButton(counter, true)
+            configureThreatCounterPrimaryButton(counter, true)
         end
         local threatCounter = currentScenario.schemes[scheme.key].threatCounter or {}
         threatCounter.guid = counter.getGUID()
@@ -1945,6 +1945,7 @@ function placeSchemeStage(schemeKey, stage, heroCount)
     end
 
     local threat = (stage.startingThreat or 0) + ((stage.startingThreatPerPlayer or 0) * heroCount)
+    local targetThreat = (stage.targetThreat or 0) + ((stage.targetThreatPerPlayer or 0) * heroCount)
     local schemeThreatCounter = getObjectFromGUID(counter.guid)
 
     if (stage.flavorText) then
@@ -1958,7 +1959,10 @@ function placeSchemeStage(schemeKey, stage, heroCount)
         schemeThreatCounter.call("setValue", {
             value = threat
         })
-        configureAdvanceSchemeButton(schemeThreatCounter, stage.showAdvanceButton)
+        schemeThreatCounter.call("setTargetValue", {
+            value = targetThreat
+        })
+        configureThreatCounterPrimaryButton(schemeThreatCounter, stage.showAdvanceButton)
     end, 20)
 end
 
@@ -1979,13 +1983,13 @@ function configureAdvanceVillainButton(villainHpCounter, showAdvanceButton)
     local villain = currentScenario.villains[villainHpCounter.call("getVillainKey")]
 
     if (showAdvanceButton) then
-        villainHpCounter.call("setAdvanceButtonOptions", {
+        villainHpCounter.call("setPrimaryButtonOptions", {
             label = villain.hpCounter.primaryButtonLabel or "ADVANCE",
             clickFunction = villain.hpCounter.primaryButtonClickFunction
         })
-        villainHpCounter.call("showAdvanceButton")
+        villainHpCounter.call("showPrimaryButton")
     else
-        villainHpCounter.call("hideAdvanceButton")
+        villainHpCounter.call("hidePrimaryButton")
     end
 end
 
@@ -1998,7 +2002,7 @@ function configureSecondaryVillainButton(villainHpCounter, secondaryButton)
     end
 end
 
-function configureAdvanceSchemeButton(threatCounter, showAdvanceButton)
+function configureThreatCounterPrimaryButton(threatCounter, showAdvanceButton)
     local scheme = currentScenario.schemes[threatCounter.call("getSchemeKey")]
 
     if (scheme.threatCounter.showAdvanceButton ~= nil) then
@@ -2006,13 +2010,13 @@ function configureAdvanceSchemeButton(threatCounter, showAdvanceButton)
     end
 
     if (showAdvanceButton) then
-        threatCounter.call("setAdvanceButtonOptions", {
+        threatCounter.call("setPrimaryButtonOptions", {
             label = scheme.threatCounter.primaryButtonLabel or "ADVANCE",
             clickFunction = scheme.threatCounter.primaryButtonClickFunction
         })
-        threatCounter.call("showAdvanceButton")
+        threatCounter.call("showPrimaryButton")
     else
-        threatCounter.call("hideAdvanceButton")
+        threatCounter.call("hidePrimaryButton")
     end
 end
 

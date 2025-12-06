@@ -1,7 +1,7 @@
 {
   "Object": {
-    "GUID": "a9f7b8",
-    "Name": "Custom_Token",
+    "GUID": "8cf3d6",
+    "Name": "Custom_Tile",
     "Transform": {
       "posX": 70.25,
       "posY": -9.690033,
@@ -9,11 +9,11 @@
       "rotX": -8.55444853e-7,
       "rotY": -0.0007417825,
       "rotZ": -5.78626157e-7,
-      "scaleX": 0.7,
+      "scaleX": 2.00505972,
       "scaleY": 1,
-      "scaleZ": 0.7
+      "scaleZ": 2.00505972
     },
-    "Nickname": "Main Scheme Threat Counter",
+    "Nickname": "Villain HP Counter",
     "Description": "",
     "GMNotes": "",
     "AltLookAngle": {
@@ -22,43 +22,38 @@
       "z": 0
     },
     "ColorDiffuse": {
-      "r": 1,
-      "g": 1,
-      "b": 1
+      "r": 0.249981582,
+      "g": 0.249981582,
+      "b": 0.249981582
     },
-    "Tags": [
-      "counter",
-      "threat",
-      "main-scheme"
-    ],
     "LayoutGroupSortIndex": 0,
     "Value": 0,
     "Locked": false,
-    "Grid": false,
-    "Snap": false,
+    "Grid": true,
+    "Snap": true,
     "IgnoreFoW": false,
     "MeasureMovement": false,
     "DragSelectable": true,
     "Autoraise": true,
     "Sticky": true,
-    "Tooltip": false,
+    "Tooltip": true,
     "GridProjection": false,
     "HideWhenFaceDown": false,
     "Hands": false,
     "CustomImage": {
-      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/1291919813158779419/14CA7D5088762912830BD1C0B5DC98B9B92CBBA3/",
+      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/1867319584748543443/C10AF8349C00327F6CD68B4001654610E565A6E3/",
       "ImageSecondaryURL": "",
       "ImageScalar": 1,
       "WidthScale": 0,
-      "CustomToken": {
+      "CustomTile": {
+        "Type": 3,
         "Thickness": 0.1,
-        "MergeDistancePixels": 5,
-        "StandUp": false,
-        "Stackable": false
+        "Stackable": false,
+        "Stretch": true
       }
     },
-    "LuaScript": "#include ./Main_Scheme_Threat_Counter.a9f7b8.lua",
-    "LuaScriptState": "#include ./Main_Scheme_Threat_Counter.a9f7b8.state.json",
+    "LuaScript": "#include ./VillainHPCounter.8cf3d6.lua",
+    "LuaScriptState": "",
     "XmlUI": ""
   },
   "StatesPaths": {}

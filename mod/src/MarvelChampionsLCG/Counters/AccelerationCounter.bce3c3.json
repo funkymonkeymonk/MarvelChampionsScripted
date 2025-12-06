@@ -58,7 +58,7 @@
       }
     },
     "LuaScript": "#include ./AccelerationCounter.bce3c3.lua",
-    "LuaScriptState": "#include ./AccelerationCounter.bce3c3.state.json",
+    "LuaScriptState": "",
     "XmlUI": ""
   },
   "StatesPaths": {}

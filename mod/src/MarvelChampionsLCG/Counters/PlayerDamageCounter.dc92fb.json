@@ -46,14 +46,14 @@
       "ImageScalar": 1,
       "WidthScale": 0,
       "CustomToken": {
-        "Thickness": 0.2,
+        "Thickness": 0.1,
         "MergeDistancePixels": 15,
         "StandUp": false,
         "Stackable": false
       }
     },
     "LuaScript": "#include ./PlayerDamageCounter.dc92fb.lua",
-    "LuaScriptState": "#include ./PlayerDamageCounter.dc92fb.state.json",
+    "LuaScriptState": "",
     "XmlUI": ""
   },
   "StatesPaths": {}
