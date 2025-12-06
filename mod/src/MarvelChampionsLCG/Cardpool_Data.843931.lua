@@ -37854,7 +37854,7 @@ PACK_01 = [[
   {
     "name": "Upgraded Drones",
     "code": "01142",
-    "type": "attachment",
+    "type": "environment",
     "aspect": "encounter",
     "BackURL": "/card-backs/encounter.jpg",
     "FrontURL": "/card-faces/01142.jpg",

@@ -76,8 +76,6 @@ scenarios["magog"] =
 
 function prepareScenario_magog()
   buildGenreQueue()
-  log(currentScenario.genreQueue)
   local genreSetKey = currentScenario.genreQueue[1].genreSetKey
-  log(genreSetKey)
   addRemoveSelectedSet({encounterSetKey = genreSetKey})
 end

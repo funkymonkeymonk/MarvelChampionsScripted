@@ -767,22 +767,6 @@ function getScenarioDetailsLeftColumn()
                 {
                     tag = "Panel",
                     attributes = {
-                        padding = "0 0 0 0",
-                        preferredHeight = "35"
-                    },
-                    children = {
-                        {
-                            tag = "Text",
-                            value = "Selected Encounter Sets:",
-                            attributes = {
-                                class = "sectionHeading"
-                            }
-                        }
-                    }
-                },
-                {
-                    tag = "Panel",
-                    attributes = {
                         preferredHeight = "120",
                         preferredWidth = "480",
                         padding = "0 0 20 0",
@@ -1061,19 +1045,19 @@ end
 
 function standardEncounterSetToggleClicked(player, value, id)
     if(id == "standardEncounterSetToggleI") then
-        selectedScenario.standardEncounterSet = "I"
+        selectedScenario.standardSet = "i"
         styleTogglePanel("standardEncounterSetToggleI", true)
         styleTogglePanel("standardEncounterSetToggleII", false)
         styleTogglePanel("standardEncounterSetToggleIII", false)
 
     elseif(id == "standardEncounterSetToggleII") then
-        selectedScenario.standardEncounterSet = "II"
+        selectedScenario.standardSet = "ii"
         styleTogglePanel("standardEncounterSetToggleI", false)
         styleTogglePanel("standardEncounterSetToggleII", true)
         styleTogglePanel("standardEncounterSetToggleIII", false)
 
     elseif(id == "standardEncounterSetToggleIII") then
-        selectedScenario.standardEncounterSet = "III"
+        selectedScenario.standardSet = "iii"
         styleTogglePanel("standardEncounterSetToggleI", false)
         styleTogglePanel("standardEncounterSetToggleII", false)
         styleTogglePanel("standardEncounterSetToggleIII", true)
@@ -1082,12 +1066,12 @@ end
 
 function expertEncounterSetToggleClicked(player, value, id)
     if(id == "expertEncounterSetToggleI") then
-        selectedScenario.expertEncounterSet = "I"
+        selectedScenario.expertSet = "i"
         styleTogglePanel("expertEncounterSetToggleI", true)
         styleTogglePanel("expertEncounterSetToggleII", false)
 
     elseif(id == "expertEncounterSetToggleII") then
-        selectedScenario.expertEncounterSet = "II"
+        selectedScenario.expertSet = "ii"
         styleTogglePanel("expertEncounterSetToggleI", false)
         styleTogglePanel("expertEncounterSetToggleII", true)
     end

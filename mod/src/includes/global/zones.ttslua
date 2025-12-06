@@ -102,6 +102,7 @@ function getNewZoneCardPosition(params)
     local horizontalGap = zoneDef.horizontalGap or 0
     local verticalGap = zoneDef.verticalGap or 0
     local layoutDirection = zoneDef.layoutDirection or "horizontal"
+    local layoutPath = zoneDef.layoutPath or "down"
     local width = zoneDef.width
     local height = zoneDef.height
  
@@ -125,9 +126,10 @@ function getNewZoneCardPosition(params)
           row = cardNumber % height
        end
     end
- 
-    local x = origin.x + horizontalGap * (column - 1) --XXX error
-    local z = origin.z - verticalGap * (row - 1)
+
+    local verticalMultiplier = layoutPath == "down" and -1 or 1
+    local x = origin.x + horizontalGap * (column - 1)
+    local z = origin.z + ((verticalGap * (row - 1)) * verticalMultiplier)
  
    return {x, origin.y, z}
 end

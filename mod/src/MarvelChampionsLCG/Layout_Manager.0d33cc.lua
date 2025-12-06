@@ -57,21 +57,21 @@ function onload(saved_data)
     self.interactable = false
     loadSavedData(saved_data)
 
-    local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
+    -- local scenarioManager = getObjectFromGUID(Global.getVar("GUID_SCENARIO_MANAGER"))
 
-    Wait.condition(
-        function()
-            local scenarioIsInProgress = scenarioManager.call("isScenarioInProgress")
-            layOutAllSelectors(scenarioIsInProgress)
-        end, 
-        function()
-            return scenarioManager.getVar("loaded") == true
-        end,
-        7,
-        function()
-            layOutAllSelectors(false)
-        end
-    )
+    -- Wait.condition(
+    --     function()
+    --         local scenarioIsInProgress = scenarioManager.call("isScenarioInProgress")
+    --         layOutAllSelectors(scenarioIsInProgress)
+    --     end, 
+    --     function()
+    --         return scenarioManager.getVar("loaded") == true
+    --     end,
+    --     7,
+    --     function()
+    --         layOutAllSelectors(false)
+    --     end
+    -- )
 end
 
 function loadSavedData(saved_data)
@@ -842,6 +842,14 @@ function getZoneDefinition(params)
     end
 
     return nil
+end
+
+function updateZoneDefinitions(params)
+    local zoneDefs = params.zoneDefinitions
+    for _, zoneDef in pairs(zoneDefs) do
+        zones[zoneDef.guid] = zoneDef
+    end
+    saveData()
 end
 
 function setCardValue(params)
