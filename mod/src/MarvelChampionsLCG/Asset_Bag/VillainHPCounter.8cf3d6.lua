@@ -23,7 +23,7 @@ function extendUI(params)
             rectAlignment = "MiddleCenter",
             offsetXY = "0 230",
             onClick = "primaryButtonClicked",
-            color = "rgba(0,0,0,0)",
+            color = "rgba(0,0,1,1)",
             textColor = "rgb(1,1,1)",
             height = "120",
             width = "475",

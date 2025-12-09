@@ -47,13 +47,13 @@
       "WidthScale": 0,
       "CustomTile": {
         "Type": 3,
-        "Thickness": 0.197297364,
+        "Thickness": 0.1,
         "Stackable": true,
         "Stretch": true
       }
     },
-    "LuaScript": "#include ./HP_Counter.16b5bd.lua",
-    "LuaScriptState": "#include ./HP_Counter.16b5bd.state.json",
+    "LuaScript": "#include ./HeroHPCounter.16b5bd.lua",
+    "LuaScriptState": "",
     "XmlUI": ""
   },
   "StatesPaths": {}
