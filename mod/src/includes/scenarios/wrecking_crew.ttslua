@@ -129,7 +129,7 @@ scenarios["wreckingCrew"] =
                 stage1={
                     cardId="07004",
                     startingThreat=6,
-                    targetThreat=0,
+                    targetThreat=10,
                     flipCard = false
                 }
             },
@@ -145,7 +145,7 @@ scenarios["wreckingCrew"] =
                 stage1={
                     cardId="07019",
                     startingThreat=5,
-                    targetThreat=0,
+                    targetThreat=10,
                     flipCard = false
                 }
             },
@@ -161,7 +161,7 @@ scenarios["wreckingCrew"] =
                 stage1={
                     cardId="07034",
                     startingThreat=3,
-                    targetThreat=0,
+                    targetThreat=10,
                     flipCard = false
                 }
             },
@@ -177,7 +177,7 @@ scenarios["wreckingCrew"] =
                 stage1={
                     cardId="07048",
                     startingThreat=4,
-                    targetThreat=0,
+                    targetThreat=10,
                     flipCard = false 
                 }
             },

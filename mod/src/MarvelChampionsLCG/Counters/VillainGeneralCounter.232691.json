@@ -1,0 +1,60 @@
+{
+  "Object": {
+    "GUID": "232691",
+    "Name": "Custom_Token",
+    "Transform": {
+      "posX": -3.287236,
+      "posY": 1.27720535,
+      "posZ": 35.5165329,
+      "rotX": 1.83263467e-8,
+      "rotY": 0.00105196284,
+      "rotZ": -0.00000161920821,
+      "scaleX": 0.5,
+      "scaleY": 1,
+      "scaleZ": 0.5
+    },
+    "Nickname": "",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 1,
+      "g": 1,
+      "b": 1
+    },
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": false,
+    "Grid": false,
+    "Snap": false,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/1470941757168316639/D0252AC3E40D9E1A76512D0F1F10E38C2D5EAFE6/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomToken": {
+        "Thickness": 0.1,
+        "MergeDistancePixels": 8.065111,
+        "StandUp": false,
+        "Stackable": false
+      }
+    },
+    "LuaScript": "#include ./VillainGeneralCounter.232691.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}

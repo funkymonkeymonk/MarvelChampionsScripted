@@ -151,14 +151,14 @@ function placeVillainStage_loki(params)
         function()
             villainHpCounter.call("setValue", {value = hitPoints}) 
           
-            villainHpCounter.call("setAdvanceButtonOptions", {label = "Next!"})
+            villainHpCounter.call("setPrimaryButtonOptions", {label = "Next!"})
             villainHpCounter.call("setSecondaryButtonOptions", {label = "Swap!", clickFunction = "lokiSwapVillain"})
 
             if(stage.showAdvanceButton) then
-                villainHpCounter.call("showAdvanceButton")
+                villainHpCounter.call("showPrimaryButton")
                 villainHpCounter.call("showSecondaryButton")
             else
-                villainHpCounter.call("hideAdvanceButton")
+                villainHpCounter.call("hidePrimaryButton")
                 villainHpCounter.call("hideSecondaryButton")
             end
         end,

@@ -1,0 +1,63 @@
+{
+  "Object": {
+    "GUID": "turncounter",
+    "Name": "Custom_Tile",
+    "Transform": {
+      "posX": 92.2299,
+      "posY": -1.5,
+      "posZ": 35.75,
+      "rotX": 0,
+      "rotY": 180,
+      "rotZ": 0,
+      "scaleX": 1.9,
+      "scaleY": 1,
+      "scaleZ": 1.9
+    },
+    "Nickname": "Turn Counter",
+    "Description": "",
+    "GMNotes": "",
+    "AltLookAngle": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "ColorDiffuse": {
+      "r": 0.249999583,
+      "g": 0.249999583,
+      "b": 0.249999583
+    },
+    "Tags": [
+      "game-ui"
+    ],
+    "LayoutGroupSortIndex": 0,
+    "Value": 0,
+    "Locked": true,
+    "Grid": true,
+    "Snap": true,
+    "IgnoreFoW": false,
+    "MeasureMovement": false,
+    "DragSelectable": true,
+    "Autoraise": true,
+    "Sticky": true,
+    "Tooltip": true,
+    "GridProjection": false,
+    "HideWhenFaceDown": false,
+    "Hands": false,
+    "CustomImage": {
+      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/1781759425425498518/18F7ED913D850AE7DD56F452DED214F5A7251756/",
+      "ImageSecondaryURL": "",
+      "ImageScalar": 1,
+      "WidthScale": 0,
+      "CustomTile": {
+        "Type": 3,
+        "Thickness": 0.1,
+        "Stackable": true,
+        "Stretch": true
+      }
+    },
+    "LuaScript": "#include ./TurnCounter.turncounter.lua",
+    "LuaScriptState": "",
+    "XmlUI": ""
+  },
+  "StatesPaths": {}
+}
