@@ -22,7 +22,7 @@
     "Gravity": 0.5,
     "PlayArea": 0.5,
     "Table": "Table_Custom",
-    "TableURL": "https://steamusercontent-a.akamaihd.net/ugc/1484453085526915756/8D76F40C34245458F5C9506BCAFA236A5067E285/",
+    "TableURL": "https://d2xdqryaauvaie.cloudfront.net/tabletops/tabletop_marvel_blue.png",
     "Sky": "Sky_Regal",
     "SkyURL": "http://kelexo.thedailypos.org/games/tabletop/backgrounds/TTSBG6.jpg",
     "Note": "",
@@ -387,7 +387,6 @@
     "HandTrigger.f1618d.json",
     "HandTrigger.b0eff5.json",
     "HandTrigger.cabb0d.json",
-    "Custom_Board.321cd7.json",
     "Left_Panel.74c1d6.json",
     "Back_Panel.ed0a82.json",
     "Counters/Bags/PlayerDamageBagLeft.1ac38f.json",
@@ -411,7 +410,6 @@
     "Custom_Token.9d342e.json",
     "Custom_Token.57a99c.json",
     "Custom_Token.071416.json",
-    "Table_Blocker.5e531c.json",
     "Red_Player.faa6bd.json",
     "Blue_Player.6066d3.json",
     "Green_Player.34be58.json",
@@ -452,6 +450,6 @@
     "Campaign_Button.2364bf.json",
     "Scenario_Button.40c742.json",
     "First_Player.d93792.json",
-    "New_Scenario_Setup_UI.1f0008.json"
+    "TableControl.d5baba.json"
   ]
 }

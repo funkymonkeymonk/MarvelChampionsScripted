@@ -1,19 +1,19 @@
 {
   "Object": {
-    "GUID": "321cd7",
-    "Name": "Custom_Board",
+    "GUID": "d5baba",
+    "Name": "Custom_Token",
     "Transform": {
-      "posX": 0,
-      "posY": 0,
-      "posZ": 0,
-      "rotX": -0.00002985713,
-      "rotY": 180.000122,
-      "rotZ": 180,
-      "scaleX": 1.95,
+      "posX": -49.5,
+      "posY": -1,
+      "posZ": 28.75,
+      "rotX": 0,
+      "rotY": 180,
+      "rotZ": 0,
+      "scaleX": 1,
       "scaleY": 1,
-      "scaleZ": 1.82
+      "scaleZ": 1
     },
-    "Nickname": "",
+    "Nickname": "TableControl",
     "Description": "",
     "GMNotes": "",
     "AltLookAngle": {
@@ -22,9 +22,9 @@
       "z": 0
     },
     "ColorDiffuse": {
-      "r": 0.1654877,
-      "g": 0.1654877,
-      "b": 0.1654877
+      "r": 1,
+      "g": 1,
+      "b": 1
     },
     "LayoutGroupSortIndex": 0,
     "Value": 0,
@@ -41,12 +41,18 @@
     "HideWhenFaceDown": false,
     "Hands": false,
     "CustomImage": {
-      "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/1484453085526915756/8D76F40C34245458F5C9506BCAFA236A5067E285/",
+      "ImageURL": "https://d2xdqryaauvaie.cloudfront.net/card-backs/encounter.jpg",
       "ImageSecondaryURL": "",
       "ImageScalar": 1,
-      "WidthScale": 1.57781208
+      "WidthScale": 0,
+      "CustomToken": {
+        "Thickness": 0.1,
+        "MergeDistancePixels": 15,
+        "StandUp": false,
+        "Stackable": false
+      }
     },
-    "LuaScript": "#include ./Custom_Board.321cd7.lua",
+    "LuaScript": "#include ./TableControl.d5baba.lua",
     "LuaScriptState": "",
     "XmlUI": ""
   },
