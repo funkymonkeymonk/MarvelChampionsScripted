@@ -24,9 +24,17 @@ function clearScenario()
 end
 
 function showTile()
+  local currentPos = self.getPosition()
+
+  self.setPosition({x = currentPos.x, y = 0.5, z = currentPos.z})
+
   createClearButton()
 end
 
 function hideTile()
+  local currentPos = self.getPosition()
+
+  self.setPosition({x = currentPos.x, y = -2, z = currentPos.z})
+
   self.clearButtons()
 end

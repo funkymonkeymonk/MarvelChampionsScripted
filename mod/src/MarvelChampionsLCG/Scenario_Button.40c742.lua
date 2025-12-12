@@ -14,11 +14,11 @@ local encounterSetColumns = 4
 local encounterSetButtonSpacing = 0
 
 function showTile() --TODO: delete
-  createButton()
+    showUI()
 end
 
 function hideTile() -- TODO: delete
-  self.clearButtons()
+    self.UI.setXml("")
 end
 
 function onload(saved_data)
@@ -29,22 +29,51 @@ function onload(saved_data)
     allScenarios = scenarioManager.call("getScenarios", {})
     allEncounterSets = encounterSetManager.call("getEncounterSets", {})
 
-    createButton()
+    showUI()
 end
 
-function createButton()
-    self.createButton({
-        label = "SCENARIO",
-        click_function = "displayScenarioSelectionUI",
-        function_owner = self,
-        position = {0, 0.1, 0},
-        rotation = {0, 0, 0},
-        width = 2470,
-        height = 970,
-        font_size = 400,
-        color = {0, 0, 0, 0},
-        font_color = {1, 1, 1, 100}
-    })
+function showUI()
+    local buttonImageUrl = Global.getVar("CDN_URL") .. "/assets/scenario-setup-button.png"
+    
+	local ui = 
+    {
+        {
+            tag="Panel",
+            attributes= {
+                height = "100",
+                width = "300",
+                position = "0 0 -200",
+				color = "rgba(0,0,0,0)",
+                rotation = "0 0 180"
+            },
+            children = {
+                {
+                    tag = "Image",
+                    attributes = {
+                        image = buttonImageUrl,
+                        raycastTarget = "true",
+                        position = "-390 17 0",
+                        height = "2654",
+                        width = "3030"
+                    }
+                },
+                {
+                    tag = "Button",
+                    attributes = {
+                        rectAlignment = "MiddleCenter",
+                        onClick = "displayScenarioSelectionUI",
+                        color = "rgba(0,0,0,0)",
+                        height = "550",
+                        width = "1400",
+                        fontSize = "120",
+                        fontStyle = "Bold"
+                    }
+                }
+            }
+        }
+    }
+
+    self.UI.setXmlTable(ui) 
 end
 
 function getScenarioButtons(guid)

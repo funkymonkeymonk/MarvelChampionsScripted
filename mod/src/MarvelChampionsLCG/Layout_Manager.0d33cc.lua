@@ -419,34 +419,11 @@ function hideSetupUI()
 end
 
 function showTile(tile, sendHeroes)
-    local currentPos = tile.getPosition()
-
-    if(currentPos.y < 0) then
-        tile.setPosition({x = currentPos.x, y = currentPos.y + hiddenSelectorOffset, z = currentPos.z})
-
-        if(sendHeroes) then
-            local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
-            local selectedHeroes = heroManager.call("getSelectedHeroes")
-            local heroNames = {}
-
-            for color, hero in pairs(selectedHeroes) do
-                heroNames[color] = hero.name
-            end
-
-            tile.call("showTile", {selectedHeroes = heroNames})
-        else
-            tile.call("showTile")
-        end
-    end
+    tile.call("showTile")
 end
 
 function hideTile(tile)
-    local currentPos = tile.getPosition()
-
-    if(currentPos.y >= 0) then
-        tile.setPosition({x = currentPos.x, y = currentPos.y - hiddenSelectorOffset, z = currentPos.z})
-        tile.call("hideTile")
-    end
+    tile.call("hideTile")
 end
 
 function setView(params)
