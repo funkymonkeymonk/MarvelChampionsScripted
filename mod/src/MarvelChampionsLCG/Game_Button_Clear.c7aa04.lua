@@ -20,7 +20,7 @@ end
 
 function clearScenario()
   local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
-   layoutManager.call("clearScenario")
+  layoutManager.call("clearScenario")
 end
 
 function showTile()

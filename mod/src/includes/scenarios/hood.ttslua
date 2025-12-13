@@ -115,76 +115,6 @@ function prepareScenario_hood()
   clearSelectedSets()
 end
 
-function createHoodModularSetButtons()
-  local modularSetupButton = getObjectFromGUID("6979cc")
-  local buttons = modularSetupButton.getButtons()
-
-  if(#buttons > 1) then return end
-
-  modularSetupButton.createButton({
-    label = "EASY",
-    click_function = "selectHoodEasyModularSets",
-    function_owner = self,
-    position = {-5.5,0.1,2.5},
-    rotation = {0,0,0},
-    width = 650,
-    height = 350,
-    font_size = 275,
-    color = {0,0,0,0},
-    font_color = {1,1,1,100}
-  })
-
-  modularSetupButton.createButton({
-    label = "MEDIUM",
-    click_function = "selectHoodMediumModularSets",
-    function_owner = self,
-    position = {-3.25,0.1,2.5},
-    rotation = {0,0,0},
-    width = 1050,
-    height = 350,
-    font_size = 275,
-    color = {0,0,0,0},
-    font_color = {1,1,1,100}
-  })
-
-  modularSetupButton.createButton({
-    label = "HARD",
-    click_function = "selectHoodHardModularSets",
-    function_owner = self,
-    position = {-1.0,0.1,2.5},
-    rotation = {0,0,0},
-    width = 700,
-    height = 350,
-    font_size = 275,
-    color = {0,0,0,0},
-    font_color = {1,1,1,100}
-  })
-
-  modularSetupButton.createButton({
-    label = "RANDOM",
-    click_function = "selectHoodRandomModularSets",
-    function_owner = self,
-    position = {1.5,0.1,2.5},
-    rotation = {0,0,0},
-    width = 1150,
-    height = 350,
-    font_size = 275,
-    color = {0,0,0,0},
-    font_color = {1,1,1,100}
-  })
-end
-
-function removeHoodModularSetButtons()
-  local modularSetupButton = getObjectFromGUID("6979cc")
-  local buttons = modularSetupButton.getButtons()
-
-  if(#buttons < 5) then return end
-
-  for i = 4, 1, -1 do
-    modularSetupButton.removeButton(i)
-  end
-end
-
 function selectHoodEasyModularSets()
   clearSelectedSets()
 
@@ -195,9 +125,6 @@ function selectHoodEasyModularSets()
   addRemoveSelectedSet({encounterSetKey = "beastyBoys"})
   addRemoveSelectedSet({encounterSetKey = "misterHyde"})
   addRemoveSelectedSet({encounterSetKey = "sinisterSyndicate"})
-
-  local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
-  layoutManager.call("showCurrentView")
 end
 
 function selectHoodMediumModularSets()
@@ -210,9 +137,6 @@ function selectHoodMediumModularSets()
   addRemoveSelectedSet({encounterSetKey = "misterHyde"})
   addRemoveSelectedSet({encounterSetKey = "sinisterSyndicate"})
   addRemoveSelectedSet({encounterSetKey = "crossfiresCrew"})
-
-  local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
-  layoutManager.call("showCurrentView")
 end
 
 function selectHoodHardModularSets()
@@ -225,9 +149,6 @@ function selectHoodHardModularSets()
   addRemoveSelectedSet({encounterSetKey = "sinisterSyndicate"})
   addRemoveSelectedSet({encounterSetKey = "crossfiresCrew"})
   addRemoveSelectedSet({encounterSetKey = "wreckingCrew"})
-
-  local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
-  layoutManager.call("showCurrentView")
 end
 
 function selectHoodRandomModularSets()
@@ -250,9 +171,6 @@ function selectHoodRandomModularSets()
     local randomSetKey = unselectedSets[math.random(#unselectedSets)]
     addRemoveSelectedSet({encounterSetKey = randomSetKey})
   end
-
-  local layoutManager = getObjectFromGUID(Global.getVar("GUID_LAYOUT_MANAGER"))
-  layoutManager.call("showCurrentView")
 end
 
 function addHoodEncounterSet()

@@ -42,7 +42,7 @@ function showUI()
             attributes= {
                 height = "100",
                 width = "300",
-                position = "0 0 -200",
+                position = "0 0 -195",
 				color = "rgba(0,0,0,0)",
                 rotation = "0 0 180"
             },
