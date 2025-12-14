@@ -106,42 +106,13 @@ function setUpSchemeStage_baronZemo_main(params)
         table.insert(environments, "50182")
         table.insert(environments, "50183")
 
-        local environmentCardValues = {
-            overrideFaceUp = true
-        }
-        local environmentCardTags = {"attachment"}
-        local environmentCardSettings = {
-            hideWhenFaceDown = false
-        }
+        for i = 1,3 do
+            local execCardId = environments[i]
+            local execCard = Global.call("findCard", {cardId = execCardId})
 
-        local tempExecPosition = getEncounterDeckPosition()
-
-        function placeExecutiveBoardCoroutine()
-            for i = 1,3 do
-                local execCardId = environments[i]
-                Global.call("moveCardFromEncounterDeckById", {
-                    cardId = execCardId, 
-                    destinationPosition = tempExecPosition,
-                    destinationRotation = {0,180,0},
-                    values = environmentCardValues,
-                    tags = environmentCardTags,
-                    settings = environmentCardSettings
-                })
-
-                Wait.frames(function()
-                    local execCard = Global.call("findCard", {cardId = execCardId})
-                    Global.call("moveCard", {card = execCard, zoneIndex = "environment"})
-                end, 20)
-
-                for i = 1, 50 do
-                    coroutine.yield(0)
-                end
-            end
-      
-            return 1
+            execCard.hide_when_face_down = false
+            execCard.addTag("attachment")
         end
-      
-        startLuaCoroutine(self, "placeExecutiveBoardCoroutine")
     end
 
     if(stageNumber == "2") then

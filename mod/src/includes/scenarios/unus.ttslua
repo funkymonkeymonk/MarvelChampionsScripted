@@ -34,14 +34,6 @@ scenarios["unus"] =
             }
         }
     },
-    cards={
-        genePool={
-            cardId="45071",
-            position={7.25, 0.97, 16.75},
-            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER")),
-            landscape=true
-        }
-    },
     decks={
         encounterDeck={
             name="Unus' Encounter Deck",

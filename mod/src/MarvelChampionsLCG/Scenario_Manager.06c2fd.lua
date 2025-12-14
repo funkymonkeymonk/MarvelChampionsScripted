@@ -233,8 +233,7 @@ function placeScenario(scenarioKey, mode)
         return
     end
 
-    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
-    local heroCount = heroManager.call("getHeroCount")
+    local heroCount = getHeroCount()
     local scenario = scenarios[scenarioKey];
     local delay = 0
 
@@ -397,8 +396,10 @@ function setUpScenario()
 
     startLuaCoroutine(self, "setUpDecks")
 
+    local deckPosition = getEncounterDeckPosition()
+
     Global.call("shuffleDeck", {
-        deckPosition = getEncounterDeckPosition()
+        deckPosition = deckPosition
     })
 
     setUpSnapPoints()
@@ -411,7 +412,7 @@ function setUpScenario()
     -- )
 
     Wait.frames(function()
-        placeStandardSetEnvironments()
+        Global.call("placeSetupCardsFromDeck", {deckPosition = deckPosition})
     end, 15)
 
     Wait.frames(function()
@@ -560,8 +561,7 @@ function setUpSnapPoints()
 end
 
 function heroCountIsValid(params)
-    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
-    local heroCountIsValid = heroManager.call("getHeroCount") > 0
+    local heroCountIsValid = getHeroCount() > 0
 
     if (params and params.postMessage and not heroCountIsValid) then
         broadcastToAll("Please select at least one hero.", {1, 1, 1})
@@ -697,8 +697,7 @@ function getRequiredEncounterSetCount()
 end
 
 function setUpVillains()
-    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
-    local heroCount = heroManager.call("getHeroCount")
+    local heroCount = getHeroCount()
 
     for key, villain in pairs(currentScenario.villains) do
         villain.key = key
@@ -854,8 +853,7 @@ function configureMainSchemeThreatCounter(params)
 end
 
 function setUpSchemes()
-    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
-    local heroCount = heroManager.call("getHeroCount")
+    local heroCount = getHeroCount()
 
     for _, scheme in pairs(currentScenario.schemes) do
         setUpScheme(scheme, heroCount)
@@ -962,6 +960,9 @@ function addObligationCardsToEncounterDeck(deck)
 end
 
 function addStandardEncounterSetsToEncounterDeck(deck)
+    local mode = currentScenario.mode
+    local formidableFoeCardId = mode == "standard" and "24049a" or "24049b"
+
     if (currentScenario.standardSet == "i") then
         deck.cards["01186"] = 2
         deck.cards["01187"] = 2
@@ -969,14 +970,14 @@ function addStandardEncounterSetsToEncounterDeck(deck)
         deck.cards["01189"] = 1
         deck.cards["01190"] = 1
     elseif (currentScenario.standardSet == "ii") then
-        deck.cards["24049"] = 1 -- TODO: Place environment card 24049
+        deck.cards[formidableFoeCardId] = 1
         deck.cards["24050"] = 2
         deck.cards["24051"] = 1
         deck.cards["24052"] = 1
         deck.cards["24053"] = 1
         deck.cards["24054"] = 2
     elseif (currentScenario.standardSet == "iii") then
-        deck.cards["45075"] = 1 -- TODO: Place environment card 45075
+        deck.cards["45075"] = 1
         deck.cards["45076"] = 2
         deck.cards["45077"] = 2
         deck.cards["45078"] = 1
@@ -994,25 +995,6 @@ function addStandardEncounterSetsToEncounterDeck(deck)
         deck.cards["24031"] = 1
         deck.cards["24032"] = 1
     end
-end
-
-function placeStandardSetEnvironments()
-    local encounterDeckPosition = getEncounterDeckPosition()
-    local formidableFoeCardId = "24049"
-    local pursuedByThePastCardId = "45075"
-    local mode = getMode()
-
-    Global.call("moveCardFromEncounterDeckById", {
-        cardId = formidableFoeCardId,
-        searchInDiscard = true,
-        zoneIndex = "environment",
-        flipCard = mode == "expert"
-    })
-    Global.call("moveCardFromEncounterDeckById", {
-        cardId = pursuedByThePastCardId,
-        searchInDiscard = true,
-        zoneIndex = "environment"
-    })
 end
 
 function setUpCards()
@@ -1708,8 +1690,7 @@ function deepCopy(obj, seen)
 end
 
 function advanceVillain(params)
-    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
-    local heroCount = heroManager.call("getHeroCount")
+    local heroCount = getHeroCount()
     advanceVillainStage(params.villainKey, heroCount)
 end
 
@@ -1853,8 +1834,7 @@ function setUpVillainStage(villain, stage, heroCount)
 end
 
 function advanceScheme(params)
-    local heroManager = getObjectFromGUID(Global.getVar("GUID_HERO_MANAGER"))
-    local heroCount = heroManager.call("getHeroCount")
+    local heroCount = getHeroCount()
     advanceSchemeStage(params.schemeKey, heroCount)
 end
 
