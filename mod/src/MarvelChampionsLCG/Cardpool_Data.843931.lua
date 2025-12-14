@@ -5292,7 +5292,8 @@ PACK_16 = [[
     "FrontURL": "/card-faces/16142.jpg",
     "text": "Permanent. Setup.\nThe first player controls the Milano.\n<i>Piloting</i> - <b>Resource:</b> Exhaust the Milano → generate a [wild] resource for any player.",
     "isUnique": true,
-    "traits": "Aerial. Vehicle."
+    "traits": "Aerial. Vehicle.",
+    "setup": true
   },
   {
     "name": "Rogue Vessel",
@@ -5367,7 +5368,8 @@ PACK_16 = [[
     "FrontURL": "/card-faces/16149.jpg",
     "text": "Setup. Attach to the villain.\nPermanent.\n<b>Forced Response:</b> After a hero or villain deals 3 or more damage to attached character with a single attack, attach Power Stone to the attacking hero or villain.",
     "isUnique": true,
-    "traits": "Infinity Stone."
+    "traits": "Infinity Stone.",
+    "setup": true
   },
   {
     "name": "Badoon Blitz",
@@ -8280,7 +8282,8 @@ PACK_21 = [[
     "BackURL": "/card-faces/21187B.jpg",
     "FrontURL": "/card-faces/21187A.jpg",
     "text": "Permanent. Setup.\nYour hero gets +1 TWW, +1 ATK, +1 THW, and +1 DEF.\n<b>Hero Action:</b> Ready your hero. Flip this card over.",
-    "traits": "Asgard. Artifact."
+    "traits": "Asgard. Artifact.",
+    "setup": true
   },
   {
     "name": "Norn Stone",
@@ -9318,13 +9321,14 @@ PACK_21 = [[
     "aspect": "encounter",
     "BackURL": "/card-backs/encounter.jpg",
     "FrontURL": "/card-faces/21129.jpg",
-    "text": "Permanent. setup\n[star] <b>Forced Response</b>: After attached villain activates, resolve the <b> Special </b> ability of each [infinity stone] in play. Otherwise, put the top card of the [infinity stone] deck into play.",
+    "text": "Permanent. Setup.\n[star] <b>Forced Response</b>: After attached villain activates, resolve the <b> Special </b> ability of each [infinity stone] in play. Otherwise, put the top card of the [infinity stone] deck into play.",
     "isUnique": true,
     "traits": "Artifact. Weapon.",
     "attack": 1,
     "scheme": 1,
     "attackStar": true,
-    "schemeStar": true
+    "schemeStar": true,
+    "setup": true
   },
   {
     "name": "Mind Stone",
@@ -11558,7 +11562,29 @@ PACK_24 = [[
     "BackURL": "/card-faces/24049B.jpg",
     "FrontURL": "/card-faces/24049A.jpg",
     "text": "<b><i>Standard Mode Only.</i></b>\nPermanent. Setup.\nThe villain gains steady. <i>(Steady characters require 2 status cards of the same type to be stunned or confused.)</i>",
-    "backText": "<b><i>Expert Mode Only.</i></b>\nPermanent. Setup.\nEach enemy gains steady. <i>(Steady characters require 2 status cards of the same type to be stunned or confused.)</i>"
+    "backText": "<b><i>Expert Mode Only.</i></b>\nPermanent. Setup.\nEach enemy gains steady. <i>(Steady characters require 2 status cards of the same type to be stunned or confused.)</i>",
+    "setup": true
+  },
+  {
+    "name": "Formidable Foe",
+    "code": "24049a",
+    "type": "environment",
+    "aspect": "encounter",
+    "BackURL": "/card-backs/encounter.jpg",
+    "FrontURL": "/card-faces/24049A.jpg",
+    "text": "<b><i>Standard Mode Only.</i></b>\nPermanent. Setup.\nThe villain gains steady. <i>(Steady characters require 2 status cards of the same type to be stunned or confused.)</i>",
+    "setup": true
+  },
+  {
+    "name": "Formidable Foe",
+    "code": "24049b",
+    "type": "environment",
+    "aspect": "encounter",
+    "BackURL": "/card-backs/encounter.jpg",
+    "FrontURL": "/card-faces/24049B.jpg",
+    "text": "<b><i>Expert Mode Only.</i></b>\nPermanent. Setup.\nEach enemy gains steady. <i>(Steady characters require 2 status cards of the same type to be stunned or confused.)</i>",
+    "acceleration": 1,
+    "setup": true
   },
   {
     "name": "Dark Dealings",
@@ -20884,27 +20910,19 @@ PACK_34 = [[
   },
   {
     "name": "Phoenix Force",
-    "code": "34002a",
+    "code": "34002",
     "type": "upgrade",
     "aspect": "hero",
     "BackURL": "/card-faces/34002B.jpg",
     "FrontURL": "/card-faces/34002A.jpg",
     "text": "Permanent.\nYou gain the [RESTRAINED] trait.\n<b>Forced Response</b>: After the last power counter is removed from here, flip this card.",
+    "backText": "Permanent.\nYou gain the [UNLEASHED] trait.\nPhoenix gets -2 THW and +2 ATK.\n<b>Forced Response</b>: After a power counter is placed here, if there are 4 or more power counters here, flip this card.",
     "traits": "Restrained.",
     "deckLimit": 1,
-    "resourceMental": 1
-  },
-  {
-    "name": "Phoenix Force",
-    "code": "34002b",
-    "type": "upgrade",
-    "aspect": "hero",
-    "BackURL": "/card-faces/34002A.jpg",
-    "FrontURL": "/card-faces/34002B.jpg",
-    "text": "Permanent.\nYou gain the [UNLEASHED] trait.\nPhoenix gets -2 THW and +2 ATK.\n<b>Forced Response</b>: After a power counter is placed here, if there are 4 or more power counters here, flip this card.",
-    "traits": "Unleashed.",
-    "deckLimit": 1,
-    "resourcePhysical": 1
+    "resourceMental": 1,
+    "counter": "general",
+    "counterName": "Power",
+    "counterValue": "4"
   },
   {
     "name": "Cyclops",
@@ -26371,7 +26389,8 @@ PACK_40 = [[
     "isUnique": true,
     "traits": "Psionic. X-Force. X-Men.",
     "resourceMental": 1,
-    "attackStar": true
+    "attackStar": true,
+    "setup": true
   },
   {
     "name": "Captive Hope",
@@ -26649,7 +26668,8 @@ PACK_40 = [[
     "text": "Setup. Attach to the villain.\nPermanent.\nAttached villain gains the [AERIAL] trait.\n[star] Attached villain's attacks gain overkill.",
     "traits": "Superpower.",
     "attack": 1,
-    "attackStar": true
+    "attackStar": true,
+    "setup": true
   },
   {
     "name": "Aerial Bombardment",
@@ -26694,7 +26714,8 @@ PACK_40 = [[
     "FrontURL": "/card-faces/40155.jpg",
     "text": "Setup. Attach to the villain.\nPermanent.\nAttached villain gains the [BRUTE] trait and steady. <i>(Steady characters require 2 status cards of the same type to be stunned or confused.)</i>",
     "traits": "Superpower.",
-    "attack": 1
+    "attack": 1,
+    "setup": true
   },
   {
     "name": "Impervious",
@@ -26738,7 +26759,8 @@ PACK_40 = [[
     "FrontURL": "/card-faces/40159.jpg",
     "text": "Setup. Attach to the villain.\nPermanent.\nAttached villain gains the [PSIONIC] trait and retaliate 1. <i>(After this character is attacked, deal 1 damage to the attacking character.)</i>",
     "traits": "Superpower.",
-    "scheme": 1
+    "scheme": 1,
+    "setup": true
   },
   {
     "name": "Manufactured Drama",
@@ -30674,7 +30696,8 @@ PACK_45 = [[
     "flavor": "Apocalypse uses the raw genetic material of his victims to create the Infinites.",
     "baseThreat": 4,
     "baseThreatIsFixed": true,
-    "scheme": 1
+    "scheme": 1,
+    "setup": true
   },
   {
     "name": "Hunted",
@@ -30713,23 +30736,16 @@ PACK_45 = [[
   },
   {
     "name": "Pursued by the Past",
-    "code": "45075a",
+    "code": "45075",
     "type": "environment",
     "aspect": "encounter",
     "BackURL": "/card-faces/45075B.jpg",
     "FrontURL": "/card-faces/45075A.jpg",
     "text": "Permanent. Setup.\n<b>Forced Response</b>: After you place a pursuit counter here, if the number of counters here is at least 3 more than the number of players, remove each counter here → if your nemesis minion is in play, it activates against you. Otherwise, flip this card over.",
+    "backText": "Permanent.\n<b>Forced Response</b>: After you flip to this side, find your nemesis minion and reveal it. Search the set-aside area for your nemesis side scheme and reveal it. Shuffle your remaining set-aside nemesis set into the encounter deck. Flip this card over.",
     "counter": "general",
-    "counterName": "Pursuit"
-  },
-  {
-    "name": "Pursued by the Past",
-    "code": "45075b",
-    "type": "environment",
-    "aspect": "encounter",
-    "BackURL": "/card-faces/45075A.jpg",
-    "FrontURL": "/card-faces/45075B.jpg",
-    "text": "Permanent.\n<b>Forced Response</b>: After you flip to this side, find your nemesis minion and reveal it. Search the set-aside area for your nemesis side scheme and reveal it. Shuffle your remaining set-aside nemesis set into the encounter deck. Flip this card over."
+    "counterName": "Pursuit",
+    "setup": true
   },
   {
     "name": "Dark Design",
@@ -31560,7 +31576,8 @@ PACK_45 = [[
     "FrontURL": "/card-faces/45127.jpg",
     "text": "Setup.\nThe villain gains retaliate 1.\n<b>Special</b>: Discard the top 3 cards of your deck.\n<b>When Revealed</b>: Discard each other [Setting] environment in play.",
     "traits": "Location. Setting.",
-    "boost": 3
+    "boost": 3,
+    "setup": true
   },
   {
     "name": "Pterosaur",
@@ -31639,7 +31656,8 @@ PACK_45 = [[
     "FrontURL": "/card-faces/45133.jpg",
     "text": "Setup.\nThe villain gains steady.\n<b>Special</b>: Place 1 threat on the main scheme.\n<b>When Revealed</b>: Discard each other [Setting] environment in play.",
     "traits": "Location. Setting.",
-    "boost": 3
+    "boost": 3,
+    "setup": true
   },
   {
     "name": "Magistrate",
@@ -31721,7 +31739,8 @@ PACK_45 = [[
     "FrontURL": "/card-faces/45139.jpg",
     "text": "Setup.\nEach minion gains guard.\n<b>Special</b>: Deal 1 damage to your identity.\n<b>When Revealed</b>: Discard each other [Setting] environment in play.",
     "traits": "Location. Setting.",
-    "boost": 3
+    "boost": 3,
+    "setup": true
   },
   {
     "name": "Gladiator",
@@ -32046,7 +32065,8 @@ PACK_45 = [[
     "text": "Permanent. Setup.\n<b>Forced Response</b>: After threat is placed here, if there is at least 10 threat here, remove 5 threat from this scheme and deal each player a facedown encounter card.",
     "flavor": "\"Not sure what they're doing, but I'm sure it's not good.\" —Iceman",
     "baseThreat": 5,
-    "baseThreatIsFixed": true
+    "baseThreatIsFixed": true,
+    "setup": true
   },
   {
     "name": "Agent of Apocalypse",
@@ -41250,7 +41270,8 @@ PACK_04 = [[
     "text": "Setup.\n<b>Hero Action:</b> Discard this card and remove it from the campaign log → ready your hero and heal 5 damage from them.",
     "traits": "Tech.",
     "deckLimit": 1,
-    "resourceWild": 1
+    "resourceWild": 1,
+    "setup": true
   },
   {
     "name": "Tactical Scanner",
@@ -41262,7 +41283,8 @@ PACK_04 = [[
     "text": "Setup.\n<b>Hero Action:</b> Discard this card and remove it from the campaign log → draw 5 cards.",
     "traits": "Tech.",
     "deckLimit": 1,
-    "resourceWild": 1
+    "resourceWild": 1,
+    "setup": true
   },
   {
     "name": "Emergency Teleporter",
@@ -41274,7 +41296,8 @@ PACK_04 = [[
     "text": "Setup.\n<b>Hero Action:</b> Discard this card and remove it from the campaign log → search your deck and discard pile for an ally, put it into play, and give it a tough status card.",
     "traits": "Tech.",
     "deckLimit": 1,
-    "resourceWild": 1
+    "resourceWild": 1,
+    "setup": true
   },
   {
     "name": "Laser Cannon",
@@ -41286,95 +41309,56 @@ PACK_04 = [[
     "text": "Setup.\n<b>Hero Action:</b> Discard this card and remove it from the campaign log → deal 5 damage to the villain and each enemy engaged with you.",
     "traits": "Tech.",
     "deckLimit": 1,
-    "resourceWild": 1
+    "resourceWild": 1,
+    "setup": true
   },
   {
-    "name": "Basic Thwart Upgrade",
-    "code": "04159a",
+    "name": "Thwart Upgrade",
+    "code": "04159",
     "type": "upgrade",
     "aspect": "campaign",
     "BackURL": "/card-faces/04159B.jpg",
     "FrontURL": "/card-faces/04159A.jpg",
     "text": "Permanent. Setup.\nYou get +2 hit points.\nYour hero gets +1 THW.",
     "traits": "Condition.",
-    "deckLimit": 1
+    "deckLimit": 1,
+    "setup": true
   },
   {
-    "name": "Improved Thwart Upgrade",
-    "code": "04159b",
-    "type": "upgrade",
-    "aspect": "campaign",
-    "BackURL": "/card-faces/04159A.jpg",
-    "FrontURL": "/card-faces/04159B.jpg",
-    "text": "Permanent. Setup.\nYou get +2 hit points.\nYour hero gets +1 THW.\n<b>Response:</b> After you defeat a side scheme, exhaust this card → draw 1 card.",
-    "traits": "Condition.",
-    "deckLimit": 1
-  },
-  {
-    "name": "Basic Attack Upgrade",
-    "code": "04160a",
+    "name": "Attack Upgrade",
+    "code": "04160",
     "type": "upgrade",
     "aspect": "campaign",
     "BackURL": "/card-faces/04160B.jpg",
     "FrontURL": "/card-faces/04160A.jpg",
     "text": "Permanent. Setup.\nYou get +1 hit points.\nYour hero gets +1 ATK.",
     "traits": "Condition.",
-    "deckLimit": 1
+    "deckLimit": 1,
+    "setup": true
   },
   {
-    "name": "Improved Attack Upgrade",
-    "code": "04160b",
-    "type": "upgrade",
-    "aspect": "campaign",
-    "BackURL": "/card-faces/04160A.jpg",
-    "FrontURL": "/card-faces/04160B.jpg",
-    "text": "Permanent. Setup.\nYou get +1 hit points.\nYour hero gets +1 ATK.\n<b>Hero Response:</b> After you defeat a minion, exhaust this card → draw 1 card.",
-    "traits": "Condition.",
-    "deckLimit": 1
-  },
-  {
-    "name": "Basic Defense Upgrade",
-    "code": "04161a",
+    "name": "Defense Upgrade",
+    "code": "04161",
     "type": "upgrade",
     "aspect": "campaign",
     "BackURL": "/card-faces/04161B.jpg",
     "FrontURL": "/card-faces/04161A.jpg",
     "text": "Permanent. Setup.\nYou get +3 hit points.\nYour hero gets +1 DEF.",
     "traits": "Condition.",
-    "deckLimit": 1
+    "deckLimit": 1,
+    "setup": true
   },
   {
-    "name": "Improved Defense Upgrade",
-    "code": "04161b",
-    "type": "upgrade",
-    "aspect": "campaign",
-    "BackURL": "/card-faces/04161A.jpg",
-    "FrontURL": "/card-faces/04161B.jpg",
-    "text": "Permanent. Setup.\nYou get +3 hit points.\nYour hero gets +1 DEF.\n<b>Hero Response:</b> After you defend against an attack, exhaust this card → draw 1 card.",
-    "traits": "Condition.",
-    "deckLimit": 1
-  },
-  {
-    "name": "Basic Recovery Upgrade",
-    "code": "04162a",
+    "name": "Recovery Upgrade",
+    "code": "04162",
     "type": "upgrade",
     "aspect": "campaign",
     "BackURL": "/card-faces/04162B.jpg",
     "FrontURL": "/card-faces/04162A.jpg",
     "text": "Permanent. Setup.\nYou get +4 hit points.\nYour alter-ego gets +1 REC.",
     "traits": "Condition.",
-    "deckLimit": 1
-  },
-  {
-    "name": "Improved Recovery Upgrade",
-    "code": "04162b",
-    "type": "upgrade",
-    "aspect": "campaign",
-    "BackURL": "/card-faces/04162A.jpg",
-    "FrontURL": "/card-faces/04162B.jpg",
-    "text": "Permanent. Setup.\nYou get +4 hit points.\nYour alter-ego gets +1 REC.\n<b>Response:</b> After you use your REC, exhaust this card → draw 1 card.",
-    "traits": "Condition.",
-    "deckLimit": 1
+    "deckLimit": 1,
+    "setup": true
   },
   {
     "name": "Zola's Algorithm",
@@ -46289,7 +46273,8 @@ PACK_50 = [[
     "traits": "Board Member.",
     "counter": "general",
     "counterName": "Secret",
-    "counterValue": 2
+    "counterValue": 2,
+    "setup": true
   },
   {
     "name": "Medical Officer's Aid",
@@ -46313,7 +46298,8 @@ PACK_50 = [[
     "traits": "Board Member.",
     "counter": "general",
     "counterName": "Secret",
-    "counterValue": 2
+    "counterValue": 2,
+    "setup": true
   },
   {
     "name": "Surveillance Officer's Aid",
@@ -46337,7 +46323,8 @@ PACK_50 = [[
     "traits": "Board Member.",
     "counter": "general",
     "counterName": "Secret",
-    "counterValue": 2
+    "counterValue": 2,
+    "setup": true
   },
   {
     "name": "Tactical Officer's Aid",

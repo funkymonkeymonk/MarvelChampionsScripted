@@ -51,15 +51,5 @@ heroes["phoenix"] = {
             name = "Phoenix Force",
             offset = {-4.94, 3, -0.02}
         }
-    },
-    extras = {
-        powerCounter = {
-            name="Power",
-            type = "counter",
-            counterType = "general",
-            offset = {-5.69, 0.23, 1.34},
-            value = 4,
-            locked = true
-        }
-    } 
+    }
 }

@@ -264,6 +264,15 @@ function isFaceUp(params)
     return z > 355 or z < 5 or not object.hide_when_face_down
 end
 
+function isFaceDown(params)
+    local object = params.object
+    if(not object.hide_when_face_down) then return false end
+
+    local z = object.getRotation()["z"]
+
+    return z >= 170 and z <= 190 and object.hide_when_face_down
+end
+
 function deleteCardAtPosition(params)
     local position = params.position
     local items = findInRadiusBy(position, 3, isCard, false)
@@ -491,6 +500,48 @@ function moveCardFromEncounterDeckById(params)
     moveCardParams.deckPosition = Vector(scenarioManager.call('getEncounterDeckPosition'))
 
     return moveCardFromDeckById(moveCardParams)
+end
+
+function placeSetupCardsFromDeck(params)
+    local deckPosition = params.deckPosition
+    local deck = getDeckOrCardAtPosition({position = deckPosition})
+
+    if not deck then
+        log("No deck found at position " .. tostring(deckPosition))
+        return
+    end
+
+    for i, card in ipairs(deck.getObjects()) do
+        local cardData = getCardData({card = card})
+        if cardData.setup then
+            local cardType = cardData.type
+            local zoneIndex = nil
+            local destinationPosition = nil
+
+            if(cardType == "environment") then
+                zoneIndex = "environment"
+            elseif(cardType == "side_scheme") then
+                zoneIndex = "sideScheme"
+            elseif(cardType == "attachment") then
+                zoneIndex = "attachment"
+            else
+                destinationPosition = {0, 1, 0}
+            end
+
+            local destination = calculateDestination({
+                zoneIndex = zoneIndex,
+                destinationPosition = destinationPosition,
+                minimumY = 1.0
+            })
+
+            moveCardFromDeckById({
+                cardId = cardData.code,
+                deckPosition = deckPosition,
+                destinationPosition = destination.position,
+                destinationRotation = destination.rotation
+            })
+        end
+    end
 end
 
 function getItemsOnCard(params)

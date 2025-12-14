@@ -72,7 +72,6 @@ function setUpSchemeStage_nebula_main(params)
     if(stageNumber == "1") then
         Global.call("moveCardFromEncounterDeckById", {cardId = "16093", searchInDiscard = true, zoneIndex = "environment"})
         Global.call("moveCardFromEncounterDeckById", {cardId = "16142", searchInDiscard = true})
-        Global.call("moveCardFromEncounterDeckById", {cardId = "16149", searchInDiscard = true, zoneIndex = "attachment"})
 
         return
     end

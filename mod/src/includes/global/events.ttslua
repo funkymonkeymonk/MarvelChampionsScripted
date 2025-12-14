@@ -40,9 +40,10 @@ function onObjectEnterZone(zone, card)
         return
     end
     if (not isCard(card)) then return end
-    if (not isFaceUp({object = card})) then
-        return
-    end
+    if(isFaceDown({object = card})) then return end
+    -- if (not isFaceUp({object = card})) then
+    --     return
+    -- end
 
     local cardData = getCardData({
         card = card

@@ -40,32 +40,12 @@ scenarios["ronan"] =
             }
         }
     },
-    cards={
-        kreeCommandShip={
-            cardId="16108",
-            position={15.75, 1.00, 29.25},
-            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
-        },
-        milano={
-            cardId="16142",
-            position={-3, 1.00, 1.25},
-            scale=Vector(Global.getVar("CARD_SCALE_PLAYER"))
-        },
-        powerStone={
-            cardId="16149",
-            position={3, 1.00, 1.25},
-            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
-        },
-        universalWeapon={
-            cardId="16109",
-            position={-7.25, 0.97, 22.25},
-            scale=Vector(Global.getVar("CARD_SCALE_ENCOUNTER"))
-        }
-    },            
     decks={
         encounterDeck={
             name="Ronan's Encounter Deck",
             cards={
+                ["16108"]=1,
+                ["16109"]=1,
                 ["16110"]=2,
                 ["16111"]=1,
                 ["16112"]=2,
@@ -82,3 +62,16 @@ scenarios["ronan"] =
         kreeMilitants="recommended"
     }
 }
+
+function setUpSchemeStage_ronan_main(params)
+    local stage = params.stage
+    local stageNumber = string.sub(stage.key, -1)
+
+    local kreeCommandShipCardId = "16108"
+    local universalWeaponCardId = "16109"
+
+    if(stageNumber == "1") then
+        Global.call("moveCardFromEncounterDeckById", {cardId = kreeCommandShipCardId, searchInDiscard = true, zoneIndex = "environment"})
+        Global.call("moveCardFromEncounterDeckById", {cardId = universalWeaponCardId, searchInDiscard = true, zoneIndex = "attachment"})
+    end
+end
