@@ -1,8 +1,6 @@
 local MARVEL_CDB_PUBLIC_DECK_URL = "https://marvelcdb.com/api/public/decklist/"
 local MARVEL_CDB_PRIVATE_DECK_URL = "https://marvelcdb.com/api/public/deck/"
 
-IS_RESHUFFLING = false
-
 function isCard(x)
     return x.tag == 'Card'
 end
@@ -57,26 +55,35 @@ function dealEncounterCardToPlayer(params)
 
     local items = findInRadiusBy(encounterDeckPosition, 4, isCardOrDeck)
 
+    --If there is no encounter deck, refresh the deck and try again
     if #items == 0 then
-        reshuffleEncounterDeck(dealToPosition, dealToRotation)
+        refreshEncounterDeck()
+
+        Wait.frames(function()
+            dealEncounterCardToPlayer(params)
+        end, 
+        30)
+
         return
     end
 
-    for i, v in ipairs(items) do
-        if v.tag == 'Deck' then
-            supressZones()
-            v.takeObject({
-                index = 0,
-                position = dealToPosition,
-                rotation = dealToRotation
-            })
-            return
-        end
+    --If there is a deck, deal the card
+    if items[1].tag == 'Deck' then
+        supressZones()
+        items[1].takeObject({
+            index = 0,
+            position = dealToPosition,
+            rotation = dealToRotation
+        })
+        return
     end
 
+    --IF there is a single card, deal it and refresh the encounter deck
     supressZones()
     items[1].setPositionSmooth(dealToPosition, false, false)
     items[1].setRotationSmooth(dealToRotation, false, false)
+
+    refreshEncounterDeck()
 end
 
 function drawBoostcard()
@@ -86,26 +93,35 @@ function drawBoostcard()
     local drawToRotation = {0, 180, 180}
     local items = findInRadiusBy(encounterDeckPosition, 4, isCardOrDeck)
 
-    if #items > 0 then
-        for i, v in ipairs(items) do
-            if v.tag == 'Deck' then
-                supressZones()
-                v.takeObject({
-                    index = 0,
-                    position = drawToPosition,
-                    rotation = drawToRotation
-                })
-                return
-            end
-        end
+    --If there is no encounter deck, refresh the deck and try again
+    if #items == 0 then
+        refreshEncounterDeck()
 
-        supressZones()
-        items[1].setPositionSmooth(drawToPosition, false, false)
-        items[1].setRotationSmooth(drawToRotation, false, false)
+        Wait.frames(function()
+            drawBoostcard()
+        end, 
+        30)
+
         return
     end
+    
+    --If there is a deck, deal the card
+    if items[1].tag == 'Deck' then
+        supressZones()
+        items[1].takeObject({
+            index = 0,
+            position = drawToPosition,
+            rotation = drawToRotation
+        })
+        return
+    end
+    
+    --IF there is a single card, deal it and refresh the encounter deck
+    supressZones()
+    items[1].setPositionSmooth(drawToPosition, false, false)
+    items[1].setRotationSmooth(drawToRotation, false, false)
 
-    reshuffleEncounterDeck(drawToPosition, drawToRotation)
+    refreshEncounterDeck()
 end
 
 function discardBoostcard(params)
@@ -176,57 +192,19 @@ function discardEncounterCard(params)
     end
 end
 
-function reshuffleEncounterDeck(drawToPosition, drawToRotation)
+function refreshEncounterDeck()
     local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
+    local encounterDeckPosition = Vector(scenarioManager.call('getEncounterDeckPosition')) + Vector(0,1.5,0)
     local encounterDiscardPosition = Vector(scenarioManager.call('getEncounterDiscardPosition'))
-    local encounterDeckPosition = Vector(scenarioManager.call('getEncounterDeckPosition'))
-    local encounterDeckSpawnPosition = {
-        x = encounterDeckPosition.x,
-        y = encounterDeckPosition.y + 1.5,
-        z = encounterDeckPosition.z
-    }
 
-    local function move(deck)
-        deck.setPositionSmooth(encounterDeckSpawnPosition, true, false)
+    refreshDeck({deckPosition = encounterDeckPosition, discardPosition = encounterDiscardPosition})
 
-        Wait.frames(function()
-            IS_RESHUFFLING = false
-        end, 15)
+    displayMessage({
+        message = "Reshuffled the encounter deck.",
+        messageType = MESSAGE_TYPE_INFO
+    })
 
-        if (drawToPosition) then
-            Wait.time(function()
-                deck.takeObject({
-                    index = 0,
-                    position = drawToPosition,
-                    rotation = drawToRotation
-                })
-            end, 15)
-        end
-    end
-
-    if IS_RESHUFFLING then
-        return
-    end
-
-    local discarded = findInRadiusBy(encounterDiscardPosition, 4, isDeck)
-
-    if #discarded > 0 then
-        IS_RESHUFFLING = true
-        local deck = discarded[1]
-        if not deck.is_face_down then
-            deck.flip()
-        end
-        deck.shuffle()
-        Wait.time(function()
-            move(deck)
-        end, 0.3)
-        displayMessage({
-            message = "Reshuffling the encounter deck. Add an acceleration token.",
-            messageType = MESSAGE_TYPE_INSTRUCTION
-        })
-    else
-        printToAll("Couldn't find encounter discard pile to reshuffle", {1, 0, 0})
-    end
+    incrementAccelerationCounter()
 end
 
 function nameDeck(params)
@@ -628,7 +606,7 @@ function discardFromEncounterDeck(params)
     })
 
     if not deck then
-        reshuffleEncounterDeck()
+        refreshEncounterDeck()
     end
 
     Wait.condition(
@@ -703,7 +681,7 @@ function discardFromEncounterDeck(params)
                 position = deckPosition
             })
             if (not deck) then
-                reshuffleEncounterDeck()
+                refreshEncounterDeck()
             end
         end, 30)
 

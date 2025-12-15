@@ -24,7 +24,7 @@ function getAccelerationCounter(params)
         end
     
         local threatCounterPosition = mainSchemeThreatCounter.getPosition()
-        accelerationCounterPosition = threatCounterPosition + Vector(2.5, 0, 2.5)    
+        accelerationCounterPosition = threatCounterPosition + Vector(2.5, 0, 1.5)    
     end
 
     local accelerationCounterBag = getObjectFromGUID(Global.getVar("GUID_ACCELERATION_COUNTER_BAG"))
@@ -484,4 +484,16 @@ function getTotalAccelerationFromCounters()
   end
 
   return totalAcceleration
+end
+
+function incrementAccelerationCounter()
+  local accelerationCounter = getAccelerationCounter({createIfNotFound = true})
+
+  Wait.frames(function()
+    accelerationCounter.call("adjustValue", {adjustment = 1})
+    displayMessage({
+        message = "The main scheme accelerates!",
+        messageType = MESSAGE_TYPE_INFO
+    })    
+  end, 30)
 end
