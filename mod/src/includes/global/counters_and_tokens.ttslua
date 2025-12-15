@@ -472,3 +472,16 @@ function rotateCountersWithCard(params)
     end
   end
 end
+
+function getTotalAccelerationFromCounters()
+  local allObjects = getAllObjects()
+  local totalAcceleration = 0
+
+  for _, obj in ipairs(allObjects) do
+      if obj.hasTag("counter") and obj.hasTag("acceleration") then
+          totalAcceleration = totalAcceleration + obj.call("getValue")
+      end
+  end
+
+  return totalAcceleration
+end

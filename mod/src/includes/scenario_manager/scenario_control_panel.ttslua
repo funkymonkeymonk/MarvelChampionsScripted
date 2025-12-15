@@ -1,0 +1,48 @@
+function showScenarioControlPanel()
+    local scenarioControlPanelUI = {{
+        tag = "Panel",
+        attributes = {
+            height = "100",
+            width = "150",
+            color = "rgba(,0,0,1)",
+			position = "600 450 0",
+        },
+        children = {
+			{
+				tag = "Button",
+				value = "Threat",
+				attributes = {
+					height = "80",
+					width = "130",
+					fontSize = "30",
+					onClick = self.getGUID() .. "/threatButtonClicked"
+				}
+			}
+    	}
+	}}
+
+    Global.UI.setXmlTable(scenarioControlPanelUI)
+end
+
+function hideScenarioControlPanel()
+	Global.UI.setXml("")
+end
+
+
+function threatButtonClicked(player, value, id)
+	local scheme = currentScenario.schemes["main"]
+	local threatCounterGuid = scheme.threatCounter.guid
+	local threatCounter = getObjectFromGUID(threatCounterGuid)
+	local currentSchemeStageNumber = scheme.currentStageNumber
+	local schemeStageKey = "stage" .. tostring(currentSchemeStageNumber)
+	local schemeStage = scheme.stages[schemeStageKey]
+	local heroCount = getHeroCount()
+
+	local accelerationFromSchemeStage = (schemeStage.accelaration or 0) + ((schemeStage.accelarationPerPlayer or 1) * heroCount)
+	local accelerationFromCards = Global.call("countCardIconsInPlay", {iconType="acceleration"})
+	local accelerationFromCounters = Global.call("getTotalAccelerationFromCounters")
+
+	local totalAcceleration = accelerationFromSchemeStage + accelerationFromCards + accelerationFromCounters
+
+	threatCounter.call("adjustValue", {adjustment=totalAcceleration})
+end

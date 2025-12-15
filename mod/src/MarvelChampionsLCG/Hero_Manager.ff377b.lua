@@ -294,6 +294,21 @@ function getPlayerDeckPositions(params)
  return deckPositions
 end
 
+function getAllPlayerDeckPositions(params)
+  local includeDiscard = params.includeDiscard or false
+  local deckPositions = {}
+
+  for _, hero in pairs(selectedHeroes) do
+    local playerDeckPositions = getPlayerDeckPositions({hero = hero, includeDiscard = includeDiscard})
+
+    for _, position in pairs(playerDeckPositions) do
+      table.insert(deckPositions, position)
+    end
+ end
+
+ return deckPositions
+end
+
 function confirmPlayerIsSeated(playerColor)
  if(playerColor ~= "Red" and playerColor ~= "Blue" and playerColor ~= "Green" and playerColor ~= "Yellow") then
   broadcastToAll("Take a seat, hero! (Red, Blue, Green, or Yellow.)", {1,1,1})
