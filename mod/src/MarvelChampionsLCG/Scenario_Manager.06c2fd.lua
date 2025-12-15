@@ -432,6 +432,10 @@ function setUpScenario()
     finalizeSetUp(currentScenario)
 
     saveData()
+
+    -- Wait.frames(function()
+    --     showScenarioControlPanel()
+    -- end, 120)
 end
 
 function setInitialFirstPlayer()
@@ -1472,6 +1476,7 @@ function finalizeSetUp(scenario)
 end
 
 function clearScenario()
+    Global.UI.setXml("")
     Global.call("deleteZoneGroup", {group = "scenario"})
 
     local allObjects = getAllObjects()
@@ -2128,7 +2133,7 @@ function getSelectedSetCount()
     return count
 end
 
-
+require('!/scenario_manager/scenario_control_panel')
 
 
 require('!/scenarios/rhino')

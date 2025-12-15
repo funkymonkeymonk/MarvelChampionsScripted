@@ -33,7 +33,7 @@ function onload(saved_data)
 end
 
 function showUI()
-    local buttonImageUrl = Global.getVar("CDN_URL") .. "/assets/scenario-setup-button.png"
+    local buttonImageUrl = Global.getVar("CDN_URL") .. "/assets/scenario-setup-button-v2.png"
     
 	local ui = 
     {
@@ -42,7 +42,7 @@ function showUI()
             attributes= {
                 height = "100",
                 width = "300",
-                position = "0 0 -200",
+                position = "0 0 -198",
 				color = "rgba(0,0,0,0)",
                 rotation = "0 0 180"
             },
@@ -51,10 +51,10 @@ function showUI()
                     tag = "Image",
                     attributes = {
                         image = buttonImageUrl,
-                        raycastTarget = "true",
-                        position = "-390 17 0",
-                        height = "2654",
-                        width = "3030"
+                        --raycastTarget = "true",
+                        position = "-380 430 0",
+                        height = "1838",
+                        width = "2912"
                     }
                 },
                 {

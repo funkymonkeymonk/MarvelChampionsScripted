@@ -989,6 +989,59 @@ function getEncounterDeck()
     })
 end
 
+function countCardIconsInPlay(params)
+    local iconType = params.iconType
+    local count = 0
+    local allObjects = getAllObjects()
+    local deckPositions = getDeckPositions()
+
+    for _, object in pairs(allObjects) do
+        if object.tag == "Card" then
+            local cardData = getCardData({
+                card = object
+            })
+
+            if(not cardData) then goto continueIconCount end
+            if(not isFaceUp({object = object})) then goto continueIconCount end
+
+            for _, deckPosition in pairs(deckPositions) do
+                if objectIsAtPosition({
+                    object = object,
+                    position = deckPosition
+                }) then
+                    goto continueIconCount
+                end
+            end
+
+            count = count + tonumber(cardData[iconType] or "0")
+        end
+
+        ::continueIconCount::
+    end
+
+    return count
+end
+
+function getDeckPositions()
+    local deckPositions = {}
+    local scenarioManager = getObjectFromGUID(GUID_SCENARIO_MANAGER)
+    local heroManager = getObjectFromGUID(GUID_HERO_MANAGER)
+
+    if(not scenarioManager or not heroManager) then
+        return deckPositions
+    end
+
+    local heroDeckPositions = heroManager.call("getAllPlayerDeckPositions", {includeDiscard = true}) or {}
+
+    table.insert(deckPositions, Vector(scenarioManager.call('getEncounterDeckPosition')))
+    table.insert(deckPositions, Vector(scenarioManager.call('getEncounterDiscardPosition')))
+
+    for _, position in pairs(heroDeckPositions) do
+        table.insert(deckPositions, Vector(position))
+    end
+
+    return deckPositions
+end
 
 --Zone Manager pass-throughs
 
